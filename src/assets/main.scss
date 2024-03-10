@@ -1,0 +1,202 @@
+@import './base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-optical-sizing: auto;
+  font-size: 18px;
+
+  --color-background: rgb(245,245,245);
+
+  --color-scheme: light;
+
+  --mainTransition: all 0.5s ease;
+  --cardTransition: all 200ms;
+  --navigationButtonTransition: text-decoration-color 300ms;
+
+  color-scheme: var(--color-scheme);
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    --mainTransition: none;
+    --cardTransition: none;
+    --navigationButtonTransition: none;
+  }
+}
+
+html:has(.dark) {
+  --color-scheme: dark;
+  --color-background: rgb(10,10,10);
+}
+
+@supports (font-size-adjust: 1) {
+  :root {
+    font-size-adjust: 0.5;
+  }
+}
+
+#body {
+  @apply bg-neutral-100;
+
+  min-height: 100dvh;
+  display: flex;
+  flex-flow: column;
+}
+
+footer {
+  font-size: 0.75rem;
+}
+
+.macVisibleOnDarkTheme {
+  display: var(--macDarkVisible);
+}
+
+.macInvisibleOnDarkTheme {
+  display: var(--macDarkInvisible);
+}
+
+.link {
+  @apply text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white;
+
+  text-decoration-thickness: 1px;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-line: underline;
+  text-underline-offset: 0.15rem;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+.articleLinkHeight {
+  line-height: calc(1ex / 0.32);
+}
+
+.article {
+  max-width: 65ch;
+}
+
+article p {
+  @apply text-justify articleLinkHeight;
+}
+
+article img {
+  @apply my-4 w-full;
+}
+
+article a {
+  @apply link;
+}
+
+.cc_image {
+  width: 0.75rem;
+}
+
+.cutAfterFourRows {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card {
+  transition: var(--cardTransition);
+}
+
+.navigation-button {
+  position: relative;
+
+  text-decoration-thickness: 2px;
+  text-decoration-color: transparent;
+  text-decoration-line: underline;
+  text-underline-offset: 0.15rem;
+
+  transition: var(--navigationButtonTransition);
+
+  &:hover {
+    text-decoration-color: initial;
+  }
+}
+
+h1 {
+  font-size: 1.67rem;
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.33rem;
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.05rem;
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 0.78rem;
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
+  font-weight: 600;
+}
+
+// ==========================================
+// Transitions
+// ==========================================
+.fade-enter-active,
+.fade-leave-active {
+  transition: var(--mainTransition);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.scale-enter-active,
+.scale-leave-active {
+  transition: var(--mainTransition);
+  overflow: hidden;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(0);
+  height: 0;
+  overflow: hidden;
+}
+
+.scale-enter-to,
+.scale-leave-from {
+  height: 1.75rem;
+}
+
+.scale-card-enter-active,
+.scale-card-leave-active {
+  transition: var(--mainTransition);
+  overflow: hidden;
+}
+
+.scale-card-enter-from,
+.scale-card-leave-to {
+  opacity: 0;
+  transform: scale(0);
+  height: 0;
+  overflow: hidden;
+}
+
+.scale-card-enter-to,
+.scale-card-leave-from {
+  height: 100%;
+}

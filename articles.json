@@ -1,0 +1,64 @@
+[
+  {
+    "name": "What_is_Application_Integration",
+    "title": "What is Application Integration?",
+    "short": "This seems to be a very easy question, ain't it? But if you go to google and search the phrase \"Application Integration\", you will get a multitude of vendor specific sites that try to define application integration to align with their marketing philosophy, not entirely saying what it is. Some focus on heavy integration platforms, others around message brokers, while some also speak of API Management solutions. All of those are components that compose application integration and can be used or not, depending on what are the requirements and what is the architecture of a particular application, system or IT ecosystem. Don't even try asking ChatGPT, as it will also produce an answer that has all of the Internet bias.",
+    "tags": [
+      "Basics",
+      "History"
+    ],
+    "publishDate": "2023-01-30",
+    "lastUpdate": "2023-02-23",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "U.S. Media Consumption to Rise to 15.5 Hours a Day – Per Person – by 2015",
+        "link": "https://www.sdsc.edu/News%20Items/PR110613_hmi.html",
+        "ISBN": "",
+        "type": "article",
+        "author": "James Short"
+      },
+      {
+        "title": "RFC33 - New HOST-HOST Protocol",
+        "link": "http://datatracker.ietf.org/doc/html/rfc33",
+        "ISBN": "",
+        "type": "rfc",
+        "author": "S. Crocker, S. Carr, V. Cerf"
+      },
+      {
+        "title": "RFC114 - A FILE TRANSFER PROTOCOL",
+        "link": "https://datatracker.ietf.org/doc/html/rfc114",
+        "ISBN": "",
+        "type": "rfc",
+        "author": "A. Bhushan"
+      }
+    ],
+    "reviewers": [
+      {
+        "reviewer": "Marcin Nowiński",
+        "link": "https://www.linkedin.com/in/marcin-nowinski-13ab7310?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAJOz_4BuZw1DP5UZReS-kr1Gv5amDT9fqk&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1B6WHcioQBuQGKNTUKuLPg%3D%3D"
+      },
+      {
+        "reviewer": "William Beshilas",
+        "link": "https://www.linkedin.com/in/williambeshilas/"
+      },
+      {
+        "reviewer": "Bartosz Sosnowski",
+        "link": "https://www.linkedin.com/in/bartosz-sosnowski/"
+      },
+      {
+        "reviewer": "Emmanuel Marchiset",
+        "link": "https://www.linkedin.com/in/emarchiset/"
+      }
+    ]
+  }
+]

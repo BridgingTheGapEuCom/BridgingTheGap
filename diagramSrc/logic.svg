@@ -1,0 +1,24 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+     y="0px"
+     width="100%" viewBox="0 0 380 280" enable-background="new 0 0 380 280" xml:space="preserve">
+    <defs>
+        <style type="text/css">
+            .logic {
+                fill: #e5e7eb;
+                stroke: #374151;
+                stroke-width: 2;
+            }
+            @media (prefers-color-scheme: dark) {
+                .logic {
+                    fill: #f9fafb;
+                    stroke: #374151;
+                    stroke-width: 4;
+                }
+            }
+        </style>
+    </defs>
+    <path fill="#FFF" stroke-width="2" stroke="#000"
+          d="m 20 10 L 360 10 C 365 10 370 15 370 20 L 370 260 C 370 265 365 270 360 270 L 20 270 C 15 270 10 265 10 260 L 10 20 C 10 15 15 10 20 10"/>
+    <path class="logic"
+          d="m 30 50 L 40 60 L 30 70 L 40 60 M 45 60 L 45 60 L 120 60 M 125 30 L 125 90 L 195 60 L 125 30 M 196 60 L 245 60 L 245 105 L 305 105 L 245 105 L 245 60 M 310 95 C 335 95 355 110 355 130 C 355 150 335 165 310 165 L 310 95 M 305 155 L 245 155 L 245 210 L 196 210 L 245 210 L 245 155 M 195 210 C 195 190 175 175 150 175 L 150 245 C 175 245 195 230 195 210 M 145 185 L 45 185 M 145 235 L 45 235 M 30 175 L 40 185 L 30 195 L 40 185 M 30 225 L 40 235 L 30 245 L 40 235 M 146 185 C 146 183 148 182 149 182 L 149 189 C 148 189 146 188 146 185 M 146 235 C 146 233 148 232 149 232 L 149 238 C 148 238 146 237 146 235 M 306 105 C 306 103 308 102 309 102 L 309 108 C 308 108 306 107 306 105 M 306 155 C 306 153 308 152 309 152 L 309 158 C 308 158 306 157 306 155 M 121 60 C 121 58 123 57 124 57 L 124 63 C 123 63 121 62 121 60 z"/>
+</svg>
