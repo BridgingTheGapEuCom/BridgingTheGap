@@ -3,13 +3,11 @@
     <div class="flex justify-center flex-grow">
       <div class="article">
         <div class="mb-5">
-          <router-link to="/"
-                       class="flex link items-end text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white">
-            <SvgIcon
-              type="mdi"
-              :path="mdiArrowLeft"
-              :size="24"
-            />
+          <router-link
+            to="/"
+            class="flex link items-end text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+          >
+            <SvgIcon type="mdi" :path="mdiArrowLeft" :size="24" />
             <h5 class="my-0 ml-1">Back to articles list</h5>
           </router-link>
         </div>
@@ -24,19 +22,26 @@
             #{{ tag }}
           </router-link>
         </div>
-        <div class="my-2 border-b dark:border-neutral-800 lg:hidden" />
         <div class="text-justify hyphens-auto mb-2 block lg:hidden">
-          <div class="text-gray-600 dark:text-gray-400">Published</div>
-          <div><b>{{ published }}</b></div>
-          <div class="text-gray-600 dark:text-gray-400">Last update</div>
-          <div><b>{{ lastUpdate }}</b></div>
+          <div class="my-2 border-b dark:border-neutral-800 lg:hidden" />
+          <h4 class="mb-1">Published</h4>
+          <div class="text-gray-600 dark:text-gray-400">
+            {{ published }}
+          </div>
+          <h4 class="mb-1">Last update</h4>
+          <div class="text-gray-600 dark:text-gray-400">
+            {{ lastUpdate }}
+          </div>
         </div>
         <div class="lg:hidden">
-          <div class="mt-3 border-b dark:border-neutral-800" />
           <h4>Authors</h4>
           <div v-for="author of authors" :key="author.author">
-            <a target="_blank" class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
-               :href="author.link">{{ author.author }}</a>
+            <a
+              target="_blank"
+              class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
+              :href="author.link"
+              >{{ author.author }}</a
+            >
           </div>
         </div>
         <div class="my-2 border-b dark:border-neutral-800 lg:hidden" />
@@ -45,57 +50,59 @@
           <div class="mt-3 border-b dark:border-neutral-800" />
           <h4>Article Reviewers</h4>
           <div v-for="reviewer of sortedReviewers" :key="reviewer.reviewer">
-            <a target="_blank" class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
-               :href="reviewer.link">{{ reviewer.reviewer }}</a>
+            <a
+              target="_blank"
+              class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
+              :href="reviewer.link"
+              >{{ reviewer.reviewer }}</a
+            >
           </div>
         </div>
         <div v-if="bibliography.length > 0">
           <div class="mt-3 border-b dark:border-neutral-800" />
           <h4>Bibliography</h4>
           <div class="articleLinkHeight" v-for="bib of bibliography" :key="bib.title">
-            <a class="link" target="_blank"
-               :href="bib.link">{{
-                bib.title
-              }}</a>
+            <a class="link" target="_blank" :href="bib.link">{{ bib.title }}</a>
             <span>;&nbsp;{{ bib.author }}</span>
           </div>
         </div>
       </div>
     </div>
-    <div class="w-[10rem] self-stretch border-l dark:border-neutral-900 ml-3 text-right hidden lg:block">
+    <div
+      class="w-[10rem] self-stretch border-l dark:border-neutral-900 ml-3 text-right hidden lg:block"
+    >
       <div class="mx-3 sticky top-24">
-        <h4 class="mt-0 mb-2">Tags</h4>
+        <div class="text-right hyphens-auto mb-2">
+          <h4 class="mt-0 mb-2">Authors</h4>
+          <div v-for="author of authors" :key="author.author">
+            <a target="_blank" class="link" :href="author.link">{{ author.author }}</a>
+          </div>
+        </div>
+        <div class="text-right hyphens-auto mb-2 mt-4" v-if="reviewers.length > 0">
+          <h4 class="mt-0 mb-2">Article Reviewers</h4>
+          <div v-for="reviewer of sortedReviewers" :key="reviewer.reviewer">
+            <a target="_blank" class="link" :href="reviewer.link">{{ reviewer.reviewer }}</a>
+          </div>
+        </div>
+        <div class="text-right hyphens-auto mb-2 mt-4">
+          <h4 class="mb-2">Published</h4>
+          <div class="mb-2 text-gray-600 dark:text-gray-400">
+            {{ published }}
+          </div>
+          <h4 class="my-2">Last update</h4>
+          <div class="text-gray-600 dark:text-gray-400">
+            {{ lastUpdate }}
+          </div>
+        </div>
+        <h4 class="mt-4 mb-2">Tags</h4>
         <div>
           <router-link
-            class="inline-block pl-2 pt-1 text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
+            class="inline-block pl-2 text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
             v-for="tag of tags"
             :key="tag"
             :to="tagLink(tag)"
-          >#{{ tag }}
+            >#{{ tag }}
           </router-link>
-        </div>
-        <div class="mt-3 border-b dark:border-neutral-800" v-if="reviewers.length > 0" />
-        <div class="text-right hyphens-auto mb-2 mt-3">
-          <h4 class="mt-0 mb-2">Authors</h4>
-          <div v-for="author of authors" :key="author.author">
-            <a target="_blank" class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
-               :href="author.link">{{ author.author }}</a>
-          </div>
-        </div>
-        <div class="mt-3 border-b dark:border-neutral-800" />
-        <div class="text-right hyphens-auto mb-2 mt-3" v-if="reviewers.length > 0">
-          <h4 class="mt-0 mb-2">Article Reviewers</h4>
-          <div v-for="reviewer of sortedReviewers" :key="reviewer.reviewer">
-            <a target="_blank" class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
-               :href="reviewer.link">{{ reviewer.reviewer }}</a>
-          </div>
-        </div>
-        <div class="mt-3 border-b dark:border-neutral-800" />
-        <div class="text-right hyphens-auto mb-2 mt-3">
-          <div class="text-gray-600 dark:text-gray-400">Published</div>
-          <div><b>{{ published }}</b></div>
-          <div class="text-gray-600 dark:text-gray-400">Last update</div>
-          <div><b>{{ lastUpdate }}</b></div>
         </div>
       </div>
     </div>
@@ -194,9 +201,6 @@ const getArticleContent = async () => {
     // IGNORE ??
   }
 }
-
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

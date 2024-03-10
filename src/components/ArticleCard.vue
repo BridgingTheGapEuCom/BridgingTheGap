@@ -14,7 +14,7 @@
     </router-link>
     <div class="my-2 mx-3 flex flex-col justify-between">
       <router-link :to="`/articles/${name}`">
-        <div class="text-2xl my-0 font-semibold">{{ title }}</div>
+        <div class="text-2xl my-0 font-semibold hover:underline">{{ title }}</div>
       </router-link>
       <div class="cutAfterFourRows my-0 font-thin">{{ short }}</div>
       <div class="flex flex-wrap gap-1">
