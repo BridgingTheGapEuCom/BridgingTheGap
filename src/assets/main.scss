@@ -92,6 +92,10 @@ article a {
   @apply link;
 }
 
+article ul {
+  @apply list-disc list-inside pl-7;
+}
+
 .cc_image {
   width: 0.75rem;
 }
@@ -123,28 +127,28 @@ article a {
 }
 
 h1 {
-  font-size: 1.67rem;
+  font-size: 1.67rem; //30px
   line-height: calc(1ex / 0.42);
   margin: calc(1ex / 0.42) 0;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 1.33rem;
+  font-size: 1.33rem; //24px
   line-height: calc(1ex / 0.42);
   margin: calc(1ex / 0.42) 0;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.05rem;
+  font-size: 1.05rem; //19px
   line-height: calc(1ex / 0.42);
   margin: calc(1ex / 0.42) 0;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 0.78rem;
+  font-size: 0.84rem; //15px
   line-height: calc(1ex / 0.42);
   margin: calc(1ex / 0.42) 0;
   font-weight: 600;
