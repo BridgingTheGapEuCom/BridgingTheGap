@@ -33,4 +33,4 @@ jobs:
 
       # Move built directory to the correct path
       - name: Install
-        run: mv -R dist ${{ secrets.BTG_PATH }}
+        run: mv dist ${{ secrets.BTG_PATH }}
