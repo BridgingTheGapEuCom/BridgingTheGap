@@ -29,6 +29,10 @@ jobs:
         env:
           NODE_ENV: production
 
+      # Remove old page
+      - name: Cleanup
+        run: rm ${{ secrets.BTG_PATH }}
+
       # Move built directory to the correct path
       - name: Install
         run: mv dist ${{ secrets.BTG_PATH }}
