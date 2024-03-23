@@ -2,50 +2,71 @@
   <div class="flex-col gap-5 items-center">
     <div class="flex flex-grow flex-col lg:flex-row items-center gap-3">
       <img
-        src="https://media.licdn.com/dms/image/C4E03AQFcsizHdNXkfw/profile-displayphoto-shrink_800_800/0/1640981279846?e=1710979200&v=beta&t=OJtu0_INxyRU0PAjyYX9qcJLniBSB0BJBVKj53NEuGg"
-        class="w-[15rem] h-[15rem] mr-3 grayImage rounded-xl lg:self-start"
+        src="@/assets/Karol.webp"
+        class="w-[18rem] h-[18rem] mr-3 grayImage rounded-xl"
+        width="1500"
+        height="1500"
         alt="Karol Skrzymowski's picture"
       />
       <div class="flex flex-col items-center">
         <div class="text-3xl font-bold my-0">Karol Skrzymowski</div>
-        <div class="text-base font-semibold mb-2">Enterprise Architect</div>
-        <p class="text-justify hyphens-auto article">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolor dolore enim et
-          ex necessitatibus, quo ratione voluptatibus! Accusantium cumque deserunt id in
-          necessitatibus omnis pariatur saepe. Laudantium, nisi, reiciendis?
-        </p>
-        <p class="text-justify hyphens-auto article">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur expedita
-          harum illum laborum, magnam minus perferendis perspiciatis voluptatem! Ab atque fugit
-          laudantium minima mollitia quae quam qui quo ut. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Accusamus aspernatur dolorum ea ex facere id iste laudantium nobis
-          voluptatem voluptates. Deleniti doloremque illum ipsum odit omnis perferendis provident
-          quo repellat.
-        </p>
+        <div class="text-base font-semibold mb-2">Enterprise / Integration Architect</div>
+        <div class="flex clex-col">
+          <article class="article hyphens-auto">
+            <p class="indent-6">
+              I'm an Enterprise and Integration Architect with a passion for application integration
+              and over a decade of specialized experience in the field. My journey began as a junior
+              developer, who stumbled onto Application Integration by pure chance and stayed for the
+              joy of learning.
+            </p>
+            <p class="indent-6">
+              My expertise lies primarily in orchestration driven service-oriented architecture
+              (ODSOA), although I've also delved into the realm of event-driven architecture (EDA)
+              to broaden my professional toolkit. I've worked extensively with a myriad of
+              integration platforms, including Tibco BusinessWorks 5.x and 6.x, Boomi, WebMethods,
+              Mulesoft, Azure Integration Services, and WSO2, constantly adapting to the evolving
+              landscape of integration technologies.
+            </p>
+            <p class="indent-6">
+              I see the world of Application Integration as not just a profession but a passion. I
+              believe it to be one of the most fascinating fields in IT, with endless possibilities
+              for innovation and problem-solving. To further this belief, I actively try to
+              contribute to helping others understand this field by creating whitepapers and
+              training materials that explain complex integration concepts, empowering others to
+              navigate this exciting domain with confidence.
+            </p>
+          </article>
+        </div>
       </div>
     </div>
     <div class="flex flex-grow flex-col lg:flex-row items-center gap-3 mt-4">
       <img
-        src="https://media.licdn.com/dms/image/C4E03AQGmJe15HxN00A/profile-displayphoto-shrink_800_800/0/1657117114839?e=1710979200&v=beta&t=k3latha8PRddTTDJ9FkEZ3bJJT9DkCyQaLqNC5EWGNA"
-        class="w-[15rem] h-[15rem] mr-3 grayImage rounded-xl lg:self-start"
+        src="@/assets/Radek.webp"
+        class="w-[18rem] h-[18rem] mr-3 grayImage rounded-xl"
         alt="Radoslaw Przewuski's picture"
+        width="2014"
+        height="2014"
       />
       <div class="flex flex-col items-center">
         <div class="text-3xl font-bold my-0">Radosław Przewuski</div>
         <div class="text-base font-semibold mb-2">Integration Platforms Expert</div>
-        <p class="text-justify hyphens-auto article">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolor dolore enim et
-          ex necessitatibus, quo ratione voluptatibus! Accusantium cumque deserunt id in
-          necessitatibus omnis pariatur saepe. Laudantium, nisi, reiciendis?
-        </p>
-        <p class="text-justify hyphens-auto article">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur expedita
-          harum illum laborum, magnam minus perferendis perspiciatis voluptatem! Ab atque fugit
-          laudantium minima mollitia quae quam qui quo ut. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Accusamus aspernatur dolorum ea ex facere id iste laudantium nobis
-          voluptatem voluptates. Deleniti doloremque illum ipsum odit omnis perferendis provident
-          quo repellat.
-        </p>
+        <article class="article hyphens-auto">
+          <p class="indent-6">
+            Greetings, tech aficionados! I'm the Integration Whisperer, boasting over a decade of
+            experience in the mystical arts of integration platforms. Picture me as the Gandalf of
+            your digital realm, wielding my staff of code with the wisdom of a thousand sages. From
+            the humble beginnings of coding in caves to now surfing the binary waves of innovation,
+            I've journeyed through the ages of technology. It's like I've embarked on an epic quest
+            through the realms of integration, slaying dragons of data inconsistency and forging
+            alliances between disparate systems.
+          </p>
+          <p class="indent-6">
+            With extensive experience in Tibco BusinessWorks, WebMethods, Mulesoft, and more, I'm
+            equipped to cast spells of integration magic like no other. So, whether you're lost in
+            the labyrinth of legacy systems or venturing into the unknown territories of modern
+            APIs, fear not! I'm here to help.
+          </p>
+        </article>
       </div>
     </div>
     <div class="flex flex-grow items-center gap-3">
@@ -63,7 +84,7 @@
             class="link font-bold text-gray-800 dark:text-gray-200 text-lg hover:text-black dark:hover:text-white"
             target="_blank"
             :href="reviewer.link"
-          >{{ reviewer.name }}</a
+            >{{ reviewer.name }}</a
           >
           <div class="flex flex-col lg:items-end items-center justify-self-end gap-1">
             <div class="mb-1 lg:mt-0 mt-3">Articles reviewed by {{ reviewer.name }}</div>
@@ -71,7 +92,7 @@
               <router-link
                 class="link text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
                 :to="`/articles/${article.link}`"
-              >{{ article.title }}
+                >{{ article.title }}
               </router-link>
             </template>
             <template v-if="reviewer.reviewed.length > reviewMax">
@@ -80,19 +101,19 @@
                   v-for="article of reviewer.reviewed.slice(reviewMax)"
                   class="link text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
                   :to="`/articles/${article.link}`"
-                >{{ article.title }}
+                  >{{ article.title }}
                 </router-link>
                 <router-link
                   class="link text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white font-bold"
                   to="about"
-                >show less
+                  >show less
                 </router-link>
               </template>
               <template v-else>
                 <router-link
                   class="link text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white font-bold"
                   :to="{ name: 'about', query: { reviewed: reviewer.name } }"
-                >show more
+                  >show more
                 </router-link>
               </template>
             </template>
@@ -103,12 +124,14 @@
     <div class="flex flex-grow items-center">
       <div class="flex flex-grow flex-col items-center gap-3">
         <h3>Source</h3>
-        <span>Content of this webpage, including it's code, can be found on our
+        <span
+          >Content of this webpage, including it's code, can be found on our
           <a
             href="https://github.com/BridgingTheGapEuCom/BridgingTheGap"
             class="link text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
             target="_blank"
-          ><b>GitHub</b></a>
+            ><b>GitHub</b></a
+          >
         </span>
       </div>
     </div>

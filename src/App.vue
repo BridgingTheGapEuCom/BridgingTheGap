@@ -1,12 +1,15 @@
 <template>
-  <div id="body" :class="{ dark: darkTheme }">
+  <div id="body" ref="body" :class="{ dark: darkTheme }">
+    <div v-if="readingHelper" class="absolute h-full bottom-0 w-full pointer-events-none">
+      <div class="readingLine"></div>
+    </div>
     <nav
       class="z-10 antialiased bg-neutral-200 dark:bg-neutral-800 shadow-md dark:shadow-none border-gray-200 sticky top-0"
     >
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
         <RouterLink to="/">
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
-            <template v-if="isMac">
+            <template v-if="darkTheme">
               <img
                 v-if="darkTheme"
                 class="h-7 m-1"
@@ -51,7 +54,7 @@
         </button>
         <div class="antialiased hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="flex items-center flex-col gap-1 md:gap-0 p-4 md:p-0 mt-4 border bg-transparent border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+            class="flex items-center flex-col gap-1 md:gap-0 p-4 md:p-0 mt-4 border bg-transparent border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-3 rtl:space-x-reverse md:mt-0 md:border-0"
           >
             <li>
               <RouterLink
@@ -60,6 +63,16 @@
                 aria-current="page"
                 >About us
               </RouterLink>
+            </li>
+            <li v-if="route.name !== 'home' && route.name !== 'about' && !isMobile">
+              <button aria-label="Focus helper" type="button" @click="focusHelper">
+                <SvgIcon
+                  class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white card"
+                  type="mdi"
+                  :path="mdiEyeMinus"
+                  :size="32"
+                />
+              </button>
             </li>
             <li class="flex items-center">
               <button aria-label="Change theme" class="mr-1" type="button" @click="changeTheme">
@@ -80,7 +93,7 @@
     >
       <RouterView v-slot="{ Component }" class="max-w-screen-xl flex flex-grow">
         <transition name="fade" mode="out-in">
-          <component :is="Component" />
+          <component :is="Component" :dark="darkTheme" />
         </transition>
       </RouterView>
     </main>
@@ -133,21 +146,28 @@
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
 import { initFlowbite } from 'flowbite'
-import { onMounted, ref } from 'vue'
+import { computed, onMounted, reactive, ref, watch } from 'vue'
 import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiThemeLightDark } from '@mdi/js'
+import { mdiEyeMinus, mdiThemeLightDark } from '@mdi/js'
+import { useMouse, useWindowFocus } from '@vueuse/core'
 
 const darkTheme = ref(false)
-const isMac = ref(false)
+
+const body = ref()
+
+const mouse = reactive(useMouse({ target: body, touch: false, type: 'client' }))
+const readingHelper = ref(true)
+const focused = useWindowFocus()
+
+const route = useRoute()
 
 // initialize components based on data attribute selectors
 onMounted(() => {
   initFlowbite()
 
-  isMac.value = navigator.userAgent.includes('Mac OS')
-  document.querySelector(':root').style.setProperty('--macDarkVisible', 'none')
+  readingHelper.value = false
 
   if (localStorage.theme) {
     darkTheme.value = localStorage.theme === 'true'
@@ -161,15 +181,6 @@ onMounted(() => {
   } else {
     metaThemeColor.setAttribute('content', 'rgb(245,245,245)')
   }
-
-  if (isMac.value) {
-    document
-      .querySelector(':root')
-      .style.setProperty('--macDarkVisible', darkTheme.value ? 'initial' : 'none')
-    document
-      .querySelector(':root')
-      .style.setProperty('--macDarkInvisible', darkTheme.value ? 'none' : 'initial')
-  }
 })
 
 const changeTheme = () => {
@@ -182,16 +193,35 @@ const changeTheme = () => {
   } else {
     metaThemeColor.setAttribute('content', 'rgb(245,245,245)')
   }
-
-  if (isMac.value) {
-    document
-      .querySelector(':root')
-      .style.setProperty('--macDarkVisible', darkTheme.value ? 'initial' : 'none')
-    document
-      .querySelector(':root')
-      .style.setProperty('--macDarkInvisible', darkTheme.value ? 'none' : 'initial')
-  }
 }
+
+const focusHelper = () => {
+  readingHelper.value = !readingHelper.value
+}
+
+const isMobile = computed(() => {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    return true
+  } else {
+    return false
+  }
+})
+
+watch(route, (current) => {
+  if (current.name === 'home' || current.name === 'about') {
+    readingHelper.value = false
+  }
+})
+
+watch(
+  mouse,
+  (current) => {
+    if (focused && readingHelper.value && current.y < body.value.clientHeight) {
+      document.querySelector(':root').style.setProperty('--mouseY', `${current.y - 80}px`)
+    }
+  },
+  { deep: true }
+)
 </script>
 
 <style scoped lang="scss"></style>
