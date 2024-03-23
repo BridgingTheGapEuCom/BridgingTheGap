@@ -1,8 +1,9 @@
 <template>
   <div class="flex-col gap-5 items-center">
     <div class="flex flex-grow flex-col lg:flex-row items-center gap-3">
-      <img
-        src="@/assets/Karol.webp"
+      <v-lazy-image
+        :src="getImage('Karol')"
+        :src-placeholder="getImage('Karol_small')"
         class="w-[18rem] h-[18rem] mr-3 grayImage rounded-xl"
         width="1500"
         height="1500"
@@ -40,8 +41,9 @@
       </div>
     </div>
     <div class="flex flex-grow flex-col lg:flex-row items-center gap-3 mt-4">
-      <img
-        src="@/assets/Radek.webp"
+      <v-lazy-image
+        :src="getImage('Radek')"
+        :src-placeholder="getImage('Radek_small')"
         class="w-[18rem] h-[18rem] mr-3 grayImage rounded-xl"
         alt="Radoslaw Przewuski's picture"
         width="2014"
@@ -176,6 +178,7 @@
 import articles from '../../articles.json' with { type: 'json' }
 import { onBeforeMount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import VLazyImage from 'v-lazy-image'
 
 const route = useRoute()
 
@@ -230,6 +233,10 @@ onBeforeMount(() => {
     return a.name.localeCompare(b.name)
   })
 })
+
+const getImage = (image) => {
+  return `/bridgingTheGap/${image}.webp`
+}
 
 watch(route, (current) => {
   showMore.value = current.query.reviewed
