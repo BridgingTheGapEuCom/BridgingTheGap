@@ -114,7 +114,6 @@
 import { computed, onBeforeMount, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import articles from '../../articles.json' with { type: 'json' }
-import axios from 'axios'
 import { mdiArrowLeft } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
 
@@ -203,18 +202,6 @@ const tagLink = (tag) => {
     return `/?tags=${tag}`
   }
 }
-
-// const getArticleContent = async () => {
-//   try {
-//     const response = await axios.get(`/bridgingTheGap/articles/${articleName.value}/html/index.html`)
-//
-//     if (response.status === 200) {
-//       articleContent.value = response.data
-//     }
-//   } catch (e) {
-//     // IGNORE ??
-//   }
-// }
 </script>
 
 <style scoped></style>
