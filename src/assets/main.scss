@@ -8,7 +8,7 @@
   font-optical-sizing: auto;
   font-size: 18px;
 
-  --color-background: rgb(245,245,245);
+  --color-background: rgb(245, 245, 245);
 
   --color-scheme: light;
 
@@ -16,7 +16,42 @@
   --cardTransition: all 200ms;
   --navigationButtonTransition: text-decoration-color 300ms;
 
+  --focusHelperColor: rgba(55, 65, 81, 0.85);
+  --focusHelperHeight: 6ex;
+  --focusHelperLineColor: rgba(55, 65, 81, 0.3);
+
   color-scheme: var(--color-scheme);
+}
+
+.readingLine {
+  position: fixed;
+  z-index: 20;
+  pointer-events: none;
+  width: 100%;
+  height: 2px;
+  top: calc(var(--mouseY) + 78px);
+
+  background-color: var(--focusHelperLineColor);
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: var(--focusHelperHeight);
+    height: 100vh;
+    width: 100%;
+
+    background-color: var(--focusHelperColor);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: var(--focusHelperHeight);
+    height: calc(100vh - var(--mouseY) - var(--focusHelperHeight) - 2px);
+    width: 100%;
+
+    background-color: var(--focusHelperColor);
+  }
 }
 
 @media (prefers-reduced-motion) {
@@ -29,7 +64,10 @@
 
 html:has(.dark) {
   --color-scheme: dark;
-  --color-background: rgb(10,10,10);
+  --color-background: rgb(10, 10, 10);
+
+  --focusHelperColor: rgba(156, 163, 175, 0.9);
+  --focusHelperLineColor: rgba(156, 163, 175, 0.7);
 }
 
 @supports (font-size-adjust: 1) {
@@ -48,14 +86,6 @@ html:has(.dark) {
 
 footer {
   font-size: 0.75rem;
-}
-
-.macVisibleOnDarkTheme {
-  display: var(--macDarkVisible);
-}
-
-.macInvisibleOnDarkTheme {
-  display: var(--macDarkInvisible);
 }
 
 .link {

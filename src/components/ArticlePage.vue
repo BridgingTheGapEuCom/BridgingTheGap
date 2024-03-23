@@ -45,7 +45,8 @@
           </div>
         </div>
         <div class="my-2 border-b dark:border-neutral-800 lg:hidden" />
-        <div v-html="articleContent" />
+        <!--        <div v-html="articleContent" />-->
+        <component :is="currentArticle" :dark="props.dark" />
         <div class="lg:hidden" v-if="reviewers.length > 0">
           <div class="mt-3 border-b dark:border-neutral-800" />
           <h4>Article Reviewers</h4>
@@ -117,6 +118,13 @@ import axios from 'axios'
 import { mdiArrowLeft } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
 
+import What_is_Application_Integration
+  from '../../public/articles/What_is_Application_Integration/html/What_is_Application_Integration.vue'
+import Data_Integration_vs_Application_Integration
+  from '../../public/articles/Data_Integration_vs_Application_Integration/html/Data_Integration_vs_Application_Integration.vue'
+
+const props = defineProps(['dark'])
+
 const route = useRoute()
 const router = useRouter()
 
@@ -130,6 +138,9 @@ const reviewers = ref([])
 const authors = ref([])
 
 const tags = ref([])
+
+const allArticles = [What_is_Application_Integration, Data_Integration_vs_Application_Integration]
+let currentArticle = What_is_Application_Integration;
 
 onBeforeMount(async () => {
   await updateData()
@@ -168,7 +179,10 @@ const updateData = async () => {
     authors.value = articleMeta.authors ? articleMeta.authors : []
   }
 
-  await getArticleContent()
+  // await getArticleContent()
+  currentArticle = allArticles.find( el => {
+    return el.__name === articleName.value
+  })
 }
 
 const tagLink = (tag) => {
@@ -190,17 +204,17 @@ const tagLink = (tag) => {
   }
 }
 
-const getArticleContent = async () => {
-  try {
-    const response = await axios.get(`/bridgingTheGap/articles/${articleName.value}/html/index.html`)
-
-    if (response.status === 200) {
-      articleContent.value = response.data
-    }
-  } catch (e) {
-    // IGNORE ??
-  }
-}
+// const getArticleContent = async () => {
+//   try {
+//     const response = await axios.get(`/bridgingTheGap/articles/${articleName.value}/html/index.html`)
+//
+//     if (response.status === 200) {
+//       articleContent.value = response.data
+//     }
+//   } catch (e) {
+//     // IGNORE ??
+//   }
+// }
 </script>
 
 <style scoped></style>
