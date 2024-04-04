@@ -1,13 +1,21 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-     y="0px"
-     width="100%" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
-    <style>
-        path {
-            fill: #f3f4f6;
-        }
-    </style>
-    <path opacity="1.000000" stroke="none"
-          d="
+<template>
+  <svg
+    version="1.1"
+    id="Layer_1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px"
+    y="0px"
+    width="100%"
+    viewBox="0 0 1024 1024"
+    enable-background="new 0 0 1024 1024"
+    xml:space="preserve"
+  >
+    <path
+      opacity="1.000000"
+      stroke="none"
+      :fill="currentFill"
+      d="
 M1.000000,694.416626
 	C14.956784,696.320557 29.084965,697.093323 43.127476,698.638611
 	C63.790138,700.912537 84.473267,702.999695 105.143028,705.209839
@@ -2659,12 +2667,34 @@ M507.029236,117.914330
 M281.034882,927.729736
 	C283.850739,927.729736 286.666595,927.729736 289.482452,927.729736
 	C285.102478,925.656982 284.519806,925.680542 281.034882,927.729736
-z"/>
-    <path fill="#000000" opacity="1.000000" stroke="none"
-          d="
+z"
+    />
+    <path
+      opacity="1.000000"
+      stroke="none"
+      :fill="currentFill"
+      d="
 M803.893555,730.017639
 	C806.818359,727.959717 808.847473,727.933289 808.600281,731.932434
 	C808.503906,733.492188 807.816345,735.575684 805.786194,735.276855
 	C802.854858,734.845520 803.265747,732.451172 803.893555,730.017639
-z"/>
-</svg>
+z"
+    />
+  </svg>
+</template>
+
+<script setup>
+import { computed } from 'vue'
+
+const props = defineProps(['dark'])
+
+const isDark = computed(() => {
+  return props.dark
+})
+
+const currentFill = computed(() => {
+  return isDark.value ? '#f3f4f6' : '#030712'
+})
+</script>
+
+<style scoped></style>

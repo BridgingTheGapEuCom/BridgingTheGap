@@ -1,26 +1,25 @@
 <template>
   <div id="body" ref="body" :class="{ dark: darkTheme }">
     <div v-if="readingHelper" class="absolute h-full bottom-0 w-full pointer-events-none">
-      <div class="readingLine"></div>
+      <div class="readingLine">
+        <div v-if="isMobile">
+          <SvgIcon
+            class="pointer-events-auto absolute right-2 top-6 z-20 bg-neutral-200 rounded-full p-1 text-gray-800"
+            type="mdi"
+            :path="mdiHandBackLeftOutline"
+            :size="48"
+            @touchmove.prevent="moveDragFocusHelper"
+          />
+        </div>
+      </div>
     </div>
     <nav
-      class="z-10 antialiased bg-neutral-200 dark:bg-neutral-800 shadow-md dark:shadow-none border-gray-200 sticky top-0"
+      class="z-10 bg-neutral-200 dark:bg-neutral-800 shadow-md dark:shadow-none border-gray-200 sticky top-0"
     >
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
         <RouterLink to="/">
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
-            <template v-if="darkTheme">
-              <img
-                v-if="darkTheme"
-                class="h-7 m-1"
-                src="@/assets/logo_dark.svg"
-                alt="Bridging the Gap logo"
-              />
-              <img v-else class="h-7 m-1" src="@/assets/logo.svg" alt="Bridging the Gap logo" />
-            </template>
-            <template v-else>
-              <img class="h-7 m-1" src="@/assets/logo.svg" alt="Bridging the Gap logo" />
-            </template>
+            <logo-s-v-g :dark="darkTheme" class="h-7 w-7 m-1" />
             <div
               class="text-base mt-1 font-semibold whitespace-nowrap hidden xs:block text-black dark:text-gray-50 tracking-wide"
             >
@@ -52,7 +51,7 @@
             />
           </svg>
         </button>
-        <div class="antialiased hidden w-full md:block md:w-auto" id="navbar-default">
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
             class="flex items-center flex-col gap-1 md:gap-0 p-4 md:p-0 mt-4 border bg-transparent border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-3 rtl:space-x-reverse md:mt-0 md:border-0"
           >
@@ -64,7 +63,7 @@
                 >About us
               </RouterLink>
             </li>
-            <li v-if="route.name !== 'home' && route.name !== 'about' && !isMobile">
+            <li v-if="route.name !== 'home' && route.name !== 'about'">
               <button aria-label="Focus helper" type="button" @click="focusHelper">
                 <SvgIcon
                   class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white card"
@@ -89,7 +88,7 @@
       </div>
     </nav>
     <main
-      class="antialiased bg-neutral-100 dark:bg-neutral-950 text-black dark:text-gray-50 w-full px-4 py-4 flex justify-center items-stretch flex-grow"
+      class="bg-neutral-100 dark:bg-neutral-950 text-black dark:text-gray-50 w-full px-4 py-4 flex justify-center items-stretch flex-grow"
     >
       <RouterView v-slot="{ Component }" class="max-w-screen-xl flex flex-grow">
         <transition name="fade" mode="out-in">
@@ -98,7 +97,7 @@
       </RouterView>
     </main>
     <footer
-      class="sticky bottom-0 w-full shadow-up dark:shadow-none antialiased pr-4 py-1 hidden md:flex bg-neutral-200 dark:bg-neutral-800 text-black dark:text-white"
+      class="sticky bottom-0 w-full shadow-up dark:shadow-none pr-4 py-1 hidden md:flex bg-neutral-200 dark:bg-neutral-800 text-black dark:text-white"
     >
       <div class="flex mx-2 justify-start max-w-screen-xl w-full text-[0.65rem]">
         <a
@@ -147,17 +146,19 @@
 
 <script setup>
 import { RouterLink, RouterView, useRoute } from 'vue-router'
-import { initFlowbite } from 'flowbite'
+import { initFlowbite, Collapse } from 'flowbite'
 import { computed, onMounted, reactive, ref, watch } from 'vue'
 import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiEyeMinus, mdiThemeLightDark } from '@mdi/js'
-import { useMouse, useWindowFocus } from '@vueuse/core'
+import { mdiEyeMinus, mdiThemeLightDark, mdiHandBackLeftOutline } from '@mdi/js'
+import { useMouse, useWindowFocus, useWindowSize } from '@vueuse/core'
+import LogoSVG from '@/components/svg/logoSVG.vue'
 
 const darkTheme = ref(false)
 
 const body = ref()
 
 const mouse = reactive(useMouse({ target: body, touch: false, type: 'client' }))
+const { height } = useWindowSize()
 const readingHelper = ref(true)
 const focused = useWindowFocus()
 
@@ -197,14 +198,22 @@ const changeTheme = () => {
 
 const focusHelper = () => {
   readingHelper.value = !readingHelper.value
+
+  if (isMobile.value) {
+    document.querySelector(':root').style.setProperty('--mouseY', `${height.value / 2}px`)
+  }
+}
+
+const moveDragFocusHelper = (data) => {
+  if (data.targetTouches[0]) {
+    document
+      .querySelector(':root')
+      .style.setProperty('--mouseY', `${data.targetTouches[0].clientY - 110}px`)
+  }
 }
 
 const isMobile = computed(() => {
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    return true
-  } else {
-    return false
-  }
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 })
 
 watch(route, (current) => {
@@ -216,7 +225,7 @@ watch(route, (current) => {
 watch(
   mouse,
   (current) => {
-    if (focused && readingHelper.value && current.y < body.value.clientHeight) {
+    if (!isMobile.value && focused && readingHelper.value && current.y < body.value.clientHeight) {
       document.querySelector(':root').style.setProperty('--mouseY', `${current.y - 80}px`)
     }
   },
@@ -224,4 +233,8 @@ watch(
 )
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.darkThemeLogo {
+  fill: #f3f4f6;
+}
+</style>
