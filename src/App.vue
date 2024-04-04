@@ -9,18 +9,7 @@
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
         <RouterLink to="/">
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
-            <template v-if="darkTheme">
-              <img
-                v-if="darkTheme"
-                class="h-7 m-1"
-                src="@/assets/logo_dark.svg"
-                alt="Bridging the Gap logo"
-              />
-              <img v-else class="h-7 m-1" src="@/assets/logo.svg" alt="Bridging the Gap logo" />
-            </template>
-            <template v-else>
-              <img class="h-7 m-1" src="@/assets/logo.svg" alt="Bridging the Gap logo" />
-            </template>
+            <logo-s-v-g :dark="darkTheme" class="h-7 w-7 m-1" />
             <div
               class="text-base mt-1 font-semibold whitespace-nowrap hidden xs:block text-black dark:text-gray-50 tracking-wide"
             >
@@ -152,6 +141,7 @@ import { computed, onMounted, reactive, ref, watch } from 'vue'
 import SvgIcon from '@jamescoyle/vue-icon'
 import { mdiEyeMinus, mdiThemeLightDark } from '@mdi/js'
 import { useMouse, useWindowFocus } from '@vueuse/core'
+import LogoSVG from '@/components/svg/logoSVG.vue'
 
 const darkTheme = ref(false)
 
@@ -224,4 +214,8 @@ watch(
 )
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.darkThemeLogo {
+  fill: #f3f4f6;
+}
+</style>
