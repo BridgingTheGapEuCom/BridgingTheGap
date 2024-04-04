@@ -212,22 +212,23 @@
         libraries and common processes.
       </li>
     </ul>
-    <img
-      v-if="!dark"
-      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-Broker.svg"
-      alt="On the top of a drawing you can find a 'Client' box connected with two lines to 'Integration Broker' box,
-       which is connected to 'Provider' box. Each of those lines are labeled 'Request' and 'Response'.
-       On the bottom there's another set of boxes similar to one described before,
-       but with only one connecting line labeled 'Event'"
-    />
-    <img
-      v-else
-      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-Broker_dark.svg"
-      alt="On the top of a drawing you can find a 'Client' box connected with two lines to 'Integration Broker' box,
-       which is connected to 'Provider' box. Each of those lines are labeled 'Request' and 'Response'.
-       On the bottom there's another set of boxes similar to one described before,
-       but with only one connecting line labeled 'Event'"
-    />
+    <What_is_application_integrationBroker :dark="isDark" />
+    <!--    <img-->
+    <!--      v-if="!dark"-->
+    <!--      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-Broker.svg"-->
+    <!--      alt="On the top of a drawing you can find a 'Client' box connected with two lines to 'Integration Broker' box,-->
+    <!--       which is connected to 'Provider' box. Each of those lines are labeled 'Request' and 'Response'.-->
+    <!--       On the bottom there's another set of boxes similar to one described before,-->
+    <!--       but with only one connecting line labeled 'Event'"-->
+    <!--    />-->
+    <!--    <img-->
+    <!--      v-else-->
+    <!--      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-Broker_dark.svg"-->
+    <!--      alt="On the top of a drawing you can find a 'Client' box connected with two lines to 'Integration Broker' box,-->
+    <!--       which is connected to 'Provider' box. Each of those lines are labeled 'Request' and 'Response'.-->
+    <!--       On the bottom there's another set of boxes similar to one described before,-->
+    <!--       but with only one connecting line labeled 'Event'"-->
+    <!--    />-->
     Benefits:
     <ul>
       <li>Provides partial loose coupling of applications</li>
@@ -309,7 +310,14 @@
 </template>
 
 <script setup>
-defineProps(['dark'])
+import What_is_application_integrationBroker from '../img/www/What_is_application_integration-Broker.vue'
+import { computed } from 'vue'
+
+const props = defineProps(['dark'])
+
+const isDark = computed(() => {
+  return props.dark
+})
 </script>
 
 <style scoped></style>
