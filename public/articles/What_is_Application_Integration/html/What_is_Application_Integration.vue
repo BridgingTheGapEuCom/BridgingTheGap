@@ -99,17 +99,7 @@
       Request-Reply relationship.
     </p>
 
-    <img
-      v-if="!dark"
-      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-Client-Server.svg"
-      alt="Box labeled 'Client' on the left hand side and a box labeled 'Server' on the other side, connected with 'Request' and 'Response' lines"
-    />
-    <img
-      v-else
-      class="macVisibleOnDarkTheme"
-      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-Client-Server_dark.svg"
-      alt="Box labeled 'Client' on the left hand side and a box labeled 'Server' on the other side, connected with 'Request' and 'Response' lines"
-    />
+    <What_is_application_integrationClientServer :dark="isDark" />
 
     <div class="mb-4">
       Benefits:
@@ -147,19 +137,7 @@
       systems. While it enabled applications to exchange larger sets of data early on and is used
       until this day, it is usually not the best choice for interoperability.
     </p>
-
-    <img
-      v-if="!dark"
-      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-File_Transfer.svg"
-      alt="Add description"
-    />
-    <img
-      v-else
-      class="macVisibleOnDarkTheme"
-      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-File_Transfer_dark.svg"
-      alt="Add description"
-    />
-
+    <What_is_application_integrationFile_Transfer :dark="isDark" />
     <div>
       Benefits:
       <ul>
@@ -212,22 +190,7 @@
         libraries and common processes.
       </li>
     </ul>
-    <img
-      v-if="!dark"
-      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-Broker.svg"
-      alt="On the top of a drawing you can find a 'Client' box connected with two lines to 'Integration Broker' box,
-       which is connected to 'Provider' box. Each of those lines are labeled 'Request' and 'Response'.
-       On the bottom there's another set of boxes similar to one described before,
-       but with only one connecting line labeled 'Event'"
-    />
-    <img
-      v-else
-      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-Broker_dark.svg"
-      alt="On the top of a drawing you can find a 'Client' box connected with two lines to 'Integration Broker' box,
-       which is connected to 'Provider' box. Each of those lines are labeled 'Request' and 'Response'.
-       On the bottom there's another set of boxes similar to one described before,
-       but with only one connecting line labeled 'Event'"
-    />
+    <What_is_application_integrationBroker :dark="isDark" />
     Benefits:
     <ul>
       <li>Provides partial loose coupling of applications</li>
@@ -260,16 +223,7 @@
       successful approach for supporting large scale enterprise application integration, especially
       in organizations that are not technology driven.
     </p>
-    <img
-      v-if="!dark"
-      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-ODSOA.svg"
-      alt="Very descriptive description of the image"
-    />
-    <img
-      v-else
-      src="/articles/What_is_Application_Integration/img/www/What_is_application_integration-ODSOA_dark.svg"
-      alt="Very descriptive description of the image"
-    />
+    <What_is_application_integrationODSOA :dark="isDark" />
     <div class="mb-4">
       Benefits:
       <ul class="list-disc list-inside pl-7 mb-4">
@@ -309,7 +263,17 @@
 </template>
 
 <script setup>
-defineProps(['dark'])
+import What_is_application_integrationBroker from '../img/www/What_is_application_integration-Broker.vue'
+import { computed } from 'vue'
+import What_is_application_integrationClientServer from '../img/www/What_is_application_integration-Client-Server.vue'
+import What_is_application_integrationFile_Transfer from '../img/www/What_is_application_integration-File_Transfer.vue'
+import What_is_application_integrationODSOA from '../img/www/What_is_application_integration-ODSOA.vue'
+
+const props = defineProps(['dark'])
+
+const isDark = computed(() => {
+  return props.dark
+})
 </script>
 
 <style scoped></style>
