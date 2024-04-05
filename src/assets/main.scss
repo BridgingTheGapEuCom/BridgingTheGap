@@ -16,6 +16,7 @@
 
   --mainTransition: all 0.5s ease;
   --cardTransition: all 200ms;
+  --diagramColorTransition: all 500ms ease-in-out;
   --navigationButtonTransition: text-decoration-color 300ms;
 
   --focusHelperColor: rgba(55, 65, 81, 0.85);
@@ -60,6 +61,7 @@
     --mainTransition: none;
     --cardTransition: none;
     --navigationButtonTransition: none;
+    --diagramColorTransition: none;
   }
 }
 
@@ -117,6 +119,10 @@ article p {
 
 article img {
   @apply my-4 w-full;
+}
+
+article svg {
+  @apply my-4 w-full h-full;
 }
 
 article a {

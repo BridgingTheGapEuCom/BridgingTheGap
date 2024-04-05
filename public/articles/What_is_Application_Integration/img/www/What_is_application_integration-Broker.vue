@@ -3,8 +3,8 @@
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     version="1.1"
-    width="527px"
-    height="262px"
+    width="827px"
+    height="462px"
     viewBox="-0.5 -0.5 527 262"
     class="ge-export-svg-auto"
   >
@@ -43,7 +43,7 @@
                   justify-content: unsafe center;
                   width: 1px;
                   height: 1px;
-                  padding-top: 40px;
+                  padding-top: 42px;
                   margin-left: 361px;
                 "
               >
@@ -112,7 +112,7 @@
                   justify-content: unsafe center;
                   width: 1px;
                   height: 1px;
-                  padding-top: 65px;
+                  padding-top: 71px;
                   margin-left: 162px;
                 "
               >
@@ -187,7 +187,7 @@
                   justify-content: unsafe center;
                   width: 1px;
                   height: 1px;
-                  padding-top: 40px;
+                  padding-top: 42px;
                   margin-left: 162px;
                 "
               >
@@ -288,7 +288,7 @@
                   justify-content: unsafe center;
                   width: 1px;
                   height: 1px;
-                  padding-top: 66px;
+                  padding-top: 71px;
                   margin-left: 361px;
                 "
               >
@@ -391,7 +391,7 @@
                   justify-content: unsafe center;
                   width: 58px;
                   height: 1px;
-                  padding-top: 106px;
+                  padding-top: 111px;
                   margin-left: 22px;
                 "
               >
@@ -455,7 +455,7 @@
                   justify-content: unsafe center;
                   width: 58px;
                   height: 1px;
-                  padding-top: 106px;
+                  padding-top: 111px;
                   margin-left: 445px;
                 "
               >
@@ -723,7 +723,7 @@
                   justify-content: unsafe center;
                   width: 58px;
                   height: 1px;
-                  padding-top: 246px;
+                  padding-top: 251px;
                   margin-left: 22px;
                 "
               >
@@ -787,7 +787,7 @@
                   justify-content: unsafe center;
                   width: 58px;
                   height: 1px;
-                  padding-top: 246px;
+                  padding-top: 251px;
                   margin-left: 445px;
                 "
               >
@@ -851,7 +851,7 @@
                   justify-content: unsafe center;
                   width: 97px;
                   height: 1px;
-                  padding-top: 106px;
+                  padding-top: 101px;
                   margin-left: 212px;
                 "
               >
@@ -915,7 +915,7 @@
                   justify-content: unsafe center;
                   width: 97px;
                   height: 1px;
-                  padding-top: 246px;
+                  padding-top: 240px;
                   margin-left: 212px;
                 "
               >
@@ -1070,52 +1070,63 @@ watch(isDark, () => {
 }
 
 .shadow {
+  transition: var(--diagramColorTransition);
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
 }
 .text {
+  transition: var(--diagramColorTransition);
   color: var(--themeColor);
   fill: var(--themeColor);
 }
 path {
+  transition: var(--diagramColorTransition);
   stroke: var(--themeColor);
   fill: var(--themeColor);
 }
 
 .pathNoFill {
+  transition: var(--diagramColorTransition);
   fill: none;
 }
 
 .darkShadow {
+  transition: var(--diagramColorTransition);
   filter: drop-shadow(0px 2px 2px rgba(98, 98, 98, 1));
 }
 
 .top {
+  transition: var(--diagramColorTransition);
   fill: var(--themeTop);
   stroke: black;
   stroke-width: 2;
 }
 .left {
+  transition: var(--diagramColorTransition);
   fill: var(--themeLeft);
   stroke: black;
   stroke-width: 2;
 }
 .right {
+  transition: var(--diagramColorTransition);
   fill: var(--themeRight);
   stroke: black;
   stroke-width: 2;
 }
 
 .logic {
+  transition: var(--diagramColorTransition);
   fill: var(--themeLogic);
   stroke: #374151;
   stroke-width: 8;
 }
 .logicBackground {
+  transition: var(--diagramColorTransition);
   fill: var(--themeLogicBackground);
   stroke: #374151;
   stroke-width: 8;
 }
 .envelope {
+  transition: var(--diagramColorTransition);
   fill: var(--themeEnvelope);
   stroke: #374151;
   stroke-width: 14;
