@@ -233,6 +233,10 @@ watch(
 )
 </script>
 
+<style>
+@import url('https://fonts.googleapis.com/css?family=%22Atkinson+Hyperlegible%22%2C+sans+serif');
+</style>
+
 <style scoped lang="scss">
 .darkThemeLogo {
   fill: #f3f4f6;

@@ -582,8 +582,6 @@ watch(isDark, () => {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=%22Atkinson+Hyperlegible%22%2C+sans+serif');
-
 :root {
   --themeColor: #000000;
   --themeTop: #6b7280;
