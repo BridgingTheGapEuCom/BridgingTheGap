@@ -23,6 +23,11 @@
   --focusHelperHeight: 6ex;
   --focusHelperLineColor: rgba(55, 65, 81, 0.3);
 
+  --h1: 1.67rem;
+  --h2: 1.33rem;
+  --h3: 1.05rem;
+  --h4: 0.84rem;
+
   color-scheme: var(--color-scheme);
 }
 
@@ -171,33 +176,29 @@ p:has(+ p) {
   @apply mb-4;
 }
 
-h1,
-.h1 {
-  font-size: 1.67rem; //30px
+h1{
+  font-size: var(--h1); //30px
   line-height: calc(1ex / 0.42);
   margin: calc(1ex / 0.42) 0;
   font-weight: 600;
 }
 
-h2,
-.h2 {
-  font-size: 1.33rem; //24px
+h2 {
+  font-size: var(--h2); //24px
   line-height: calc(1ex / 0.42);
   margin: calc(1ex / 0.42) 0;
   font-weight: 600;
 }
 
-h3,
-.h3 {
-  font-size: 1.05rem; //19px
+h3 {
+  font-size: var(--h3); //19px
   line-height: calc(1ex / 0.38);
   margin: calc(1ex / 0.38) 0;
   font-weight: 600;
 }
 
-h4,
-.h4 {
-  font-size: 0.84rem; //15px
+h4 {
+  font-size: var(--h4); //15px
   line-height: calc(1ex / 0.37);
   margin: calc(1ex / 0.37) 0;
   font-weight: 600;
