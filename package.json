@@ -13,11 +13,11 @@
   "dependencies": {
     "@mdi/js": "^7.4.47",
     "@jamescoyle/vue-icon": "^0.1.2",
-    "axios": "^1.6.5",
-    "flowbite": "^2.2.1",
+    "axios": "^1.6.8",
+    "flowbite": "^2.3.0",
     "v-lazy-image": "^2.1.1",
-    "vue": "^3.3.11",
-    "vue-router": "^4.2.5",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
     "@vueuse/core": "^10.9.0"
   },
   "devDependencies": {

@@ -62,7 +62,7 @@
 
 <script setup>
 import ArticleCard from '@/components/ArticleCard.vue'
-import { computed, onBeforeMount, onMounted, ref, watch } from 'vue'
+import { computed, onBeforeMount, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 
 const tags = ref([])

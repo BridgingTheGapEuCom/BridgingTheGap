@@ -8,7 +8,7 @@
             class="flex link items-end text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
           >
             <SvgIcon type="mdi" :path="mdiArrowLeft" :size="24" />
-            <h5 class="my-0 ml-1">Back to articles list</h5>
+            <div class="ml-1">Back to articles list</div>
           </router-link>
         </div>
         <h1 class="mt-3 mb-2.5">{{ title }}</h1>
@@ -24,17 +24,17 @@
         </div>
         <div class="text-justify hyphens-auto mb-2 block lg:hidden">
           <div class="my-2 border-b dark:border-neutral-800 lg:hidden" />
-          <h4 class="mb-1">Published</h4>
+          <div class="mb-1 h4">Published</div>
           <div class="text-gray-600 dark:text-gray-400">
             {{ published }}
           </div>
-          <h4 class="mb-1">Last update</h4>
+          <div class="h4 mb-1">Last update</div>
           <div class="text-gray-600 dark:text-gray-400">
             {{ lastUpdate }}
           </div>
         </div>
         <div class="lg:hidden">
-          <h4>Authors</h4>
+          <div class="h4">Authors</div>
           <div v-for="author of authors" :key="author.author">
             <a
               target="_blank"
@@ -49,7 +49,7 @@
         <component :is="currentArticle" :dark="props.dark" />
         <div class="lg:hidden" v-if="reviewers.length > 0">
           <div class="mt-3 border-b dark:border-neutral-800" />
-          <h4>Article Reviewers</h4>
+          <div class="h4">Article Reviewers</div>
           <div v-for="reviewer of sortedReviewers" :key="reviewer.reviewer">
             <a
               target="_blank"
@@ -61,7 +61,7 @@
         </div>
         <div v-if="bibliography.length > 0">
           <div class="mt-3 border-b dark:border-neutral-800" />
-          <h4>Bibliography</h4>
+          <div class="h4">Bibliography</div>
           <div class="articleLinkHeight" v-for="bib of bibliography" :key="bib.title">
             <a class="link" target="_blank" :href="bib.link">{{ bib.title }}</a>
             <span>;&nbsp;{{ bib.author }}</span>
@@ -74,28 +74,28 @@
     >
       <div class="mx-3 sticky top-24">
         <div class="text-right hyphens-auto mb-2">
-          <h4 class="mt-0 mb-2">Authors</h4>
+          <div class="h4 mt-0 mb-2">Authors</div>
           <div v-for="author of authors" :key="author.author">
             <a target="_blank" class="link" :href="author.link">{{ author.author }}</a>
           </div>
         </div>
         <div class="text-right hyphens-auto mb-2 mt-4" v-if="reviewers.length > 0">
-          <h4 class="mt-0 mb-2">Article Reviewers</h4>
+          <div class="h4 mt-0 mb-2">Article Reviewers</div>
           <div v-for="reviewer of sortedReviewers" :key="reviewer.reviewer">
             <a target="_blank" class="link" :href="reviewer.link">{{ reviewer.reviewer }}</a>
           </div>
         </div>
         <div class="text-right hyphens-auto mb-2 mt-4">
-          <h4 class="mb-2">Published</h4>
+          <div class="h4 mb-2">Published</div>
           <div class="mb-2 text-gray-600 dark:text-gray-400">
             {{ published }}
           </div>
-          <h4 class="my-2">Last update</h4>
+          <div class="h4 my-2">Last update</div>
           <div class="text-gray-600 dark:text-gray-400">
             {{ lastUpdate }}
           </div>
         </div>
-        <h4 class="mt-4 mb-2">Tags</h4>
+        <div class="h4 mt-4 mb-2">Tags</div>
         <div>
           <router-link
             class="inline-block pl-2 text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
@@ -112,23 +112,19 @@
 
 <script setup>
 import { computed, onBeforeMount, ref, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import articles from '../../articles.json' with { type: 'json' }
+import { useRoute } from 'vue-router'
+import articles from '../../articles.json'
 import { mdiArrowLeft } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
 
-import What_is_Application_Integration
-  from '../../public/articles/What_is_Application_Integration/html/What_is_Application_Integration.vue'
-import Data_Integration_vs_Application_Integration
-  from '../../public/articles/Data_Integration_vs_Application_Integration/html/Data_Integration_vs_Application_Integration.vue'
+import What_is_Application_Integration from '../../public/articles/What_is_Application_Integration/html/What_is_Application_Integration.vue'
+import Data_Integration_vs_Application_Integration from '../../public/articles/Data_Integration_vs_Application_Integration/html/Data_Integration_vs_Application_Integration.vue'
 
 const props = defineProps(['dark'])
 
 const route = useRoute()
-const router = useRouter()
 
 const articleName = ref('')
-const articleContent = ref('')
 const title = ref('')
 const published = ref('')
 const lastUpdate = ref('')
@@ -139,7 +135,7 @@ const authors = ref([])
 const tags = ref([])
 
 const allArticles = [What_is_Application_Integration, Data_Integration_vs_Application_Integration]
-let currentArticle = What_is_Application_Integration;
+let currentArticle = What_is_Application_Integration
 
 onBeforeMount(async () => {
   await updateData()
@@ -164,7 +160,7 @@ const updateData = async () => {
 
   bibliography.value = []
 
-  const articleMeta = articles.find(el => {
+  const articleMeta = articles.find((el) => {
     return el.name === articleName.value
   })
 
@@ -179,7 +175,7 @@ const updateData = async () => {
   }
 
   // await getArticleContent()
-  currentArticle = allArticles.find( el => {
+  currentArticle = allArticles.find((el) => {
     return el.__name === articleName.value
   })
 }
