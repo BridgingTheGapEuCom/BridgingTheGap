@@ -47,9 +47,15 @@
       point-to-point (P2P) connection between two separate instances of some sort of software. In
       layman's terms this is a form of communication resembling a conversation in person between two
       people. This kind of communication was the first of its kind recognised in computer science,
-      starting with the creation of ARPANet and the first connection between computers in 1969 made
-      with the NCP and later on in 1974 implementing the use of TCP. This is the protocol we rely on
-      to this day, last updated in August 2022 as RFC 9293.
+      starting with the creation of
+      <a target="_blank" href="https://en.wikipedia.org/wiki/ARPANET">ARPANet</a> and the first
+      connection between computers in 1969 made with the
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Network_Control_Protocol_(ARPANET)"
+        >NCP</a
+      >
+      and later on in 1974 implementing the use of TCP. This is the protocol we rely on to this day,
+      last updated in August 2022 as
+      <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc9293">RFC 9293</a>.
     </p>
     <h2>So what is Application Integration?</h2>
     <p>
@@ -83,6 +89,9 @@
       communication onwards, as all applications, even with middleware in place, rely on a
       Request-Reply relationship.
     </p>
+
+    <What_is_application_integrationClientServer :dark="isDark" />
+
     <p>Benefits:</p>
     <ul>
       <li>Fast and fairly easy to build, quick to deploy,</li>
@@ -107,12 +116,14 @@
     <p>
       As of the creation of ARPANet, further software development followed with the creation of File
       Transfer Protocol in 1971. This is a direct result of the creation of TELNET and NETRJS as
-      described in the RFC114. This protocol is among the first to provide indirect access to other
-      systems. What that means is that it was the first protocol enabling abstracting of interfaces
-      as well as decoupling of systems. While it enabled applications to exchange larger sets of
-      data early on and is used until this day, it is usually not the best choice for
-      interoperability.
+      described in the
+      <a href="https://datatracker.ietf.org/doc/html/rfc114" target="_blank">RFC114</a>. This
+      protocol is among the first to provide indirect access to other systems. What that means is
+      that it was the first protocol enabling abstracting of interfaces as well as decoupling of
+      systems. While it enabled applications to exchange larger sets of data early on and is used
+      until this day, it is usually not the best choice for interoperability.
     </p>
+    <What_is_application_integrationFile_Transfer :dark="isDark" />
     <p>Benefits:</p>
     <ul>
       <li>Fast and fairly easy to build, quick to deploy,</li>
@@ -158,6 +169,7 @@
         libraries and common processes.
       </li>
     </ul>
+    <What_is_application_integrationBroker :dark="isDark" />
     <p>Benefits:</p>
     <ul>
       <li>Provides partial loose coupling of applications,</li>
@@ -183,12 +195,14 @@
       process and data services, where the logic of a process service is responsible for
       orchestrating the flow of data. Data services expose data in a standardized manner to enable
       the creation of services providing different data objects or functions related to said objects
-      (e.g. CRUD). Although it was originally built around SOAP services and XML, it embraced
-      RESTful Services as easily. Before the emergence of cloud-native technologies, this approach
-      struggled with similar problems as the broker architectures in terms of availability and
-      performance. So far this is the most successful approach for supporting large scale enterprise
-      application integration, especially in organizations that are not technology driven.
+      (e.g. <a href="https://en.wikipedia.org/wiki/CRUD" target="_blank">CRUD</a>). Although it was
+      originally built around SOAP services and XML, it embraced RESTful Services as easily. Before
+      the emergence of cloud-native technologies, this approach struggled with similar problems as
+      the broker architectures in terms of availability and performance. So far this is the most
+      successful approach for supporting large scale enterprise application integration, especially
+      in organizations that are not technology driven.
     </p>
+    <What_is_application_integrationODSOA :dark="isDark" />
     <p>Benefits:</p>
     <ul>
       <li>Provides loose coupling,</li>
@@ -220,17 +234,15 @@
       Integration with us and dive into the complex details of different styles, approaches and
       architectural trade-offs that come with modern day challenges of an IT landscape.
     </p>
-    <p>Placeholder for glossary, terms, definitions, abbreviations...</p>
-    <h2>Bibliography</h2>
-    <p>U.S. Media Consumption to Rise to 15.5 Hours a Day – Per Person – by 2015; James Short</p>
-    <p>RFC33 - New HOST-HOST Protocol; S. Crocker, S. Carr, V. Cerf</p>
-    <p>RFC114 - A FILE TRANSFER PROTOCOL; A. Bhushan</p>
-    <p>Placeholder for credits given to peer reviewers, contributors, etc.</p>
   </article>
 </template>
 
 <script setup>
 import { computed } from 'vue'
+import What_is_application_integrationClientServer from '../img/www/What_is_application_integration-Client-Server.vue'
+import What_is_application_integrationFile_Transfer from '../img/www/What_is_application_integration-File_Transfer.vue'
+import What_is_application_integrationBroker from '../img/www/What_is_application_integration-Broker.vue'
+import What_is_application_integrationODSOA from '../img/www/What_is_application_integration-ODSOA.vue'
 
 const props = defineProps(['dark'])
 
