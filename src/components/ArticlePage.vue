@@ -61,7 +61,7 @@
         </div>
         <div v-if="bibliography.length > 0">
           <div class="mt-3 border-b dark:border-neutral-800" />
-          <div class="h4">Bibliography</div>
+          <div class="h4 mt-3">Bibliography</div>
           <div class="articleLinkHeight" v-for="bib of bibliography" :key="bib.title">
             <a class="link" target="_blank" :href="bib.link">{{ bib.title }}</a>
             <span>;&nbsp;{{ bib.author }}</span>
@@ -119,6 +119,7 @@ import SvgIcon from '@jamescoyle/vue-icon'
 
 import What_is_Application_Integration from '../../public/articles/What_is_Application_Integration/html/What_is_Application_Integration.vue'
 import Data_Integration_vs_Application_Integration from '../../public/articles/Data_Integration_vs_Application_Integration/html/Data_Integration_vs_Application_Integration.vue'
+import Modern_Application_Integration_Principles from '../../public/articles/Modern_Application_Integration_Principles/html/Modern_Application_Integration_Principles.vue'
 
 const props = defineProps(['dark'])
 
@@ -134,7 +135,11 @@ const authors = ref([])
 
 const tags = ref([])
 
-const allArticles = [What_is_Application_Integration, Data_Integration_vs_Application_Integration]
+const allArticles = [
+  What_is_Application_Integration,
+  Data_Integration_vs_Application_Integration,
+  Modern_Application_Integration_Principles
+]
 let currentArticle = What_is_Application_Integration
 
 onBeforeMount(async () => {

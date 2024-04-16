@@ -1,110 +1,152 @@
 [
- {
-  "name": "What_is_Application_Integration",
-  "title": "What is Application Integration?",
-  "short": "This seems to be a very easy question, ain't it? But if you go to google and search the phrase \"Application Integration\", you will get a multitude of vendor specific sites that try to define application integration to align with their marketing philosophy, not entirely saying what it is. Some focus on heavy integration platforms, others around message brokers, while some also speak of API Management solutions. All of those are components that compose application integration and can be used or not, depending on what are the requirements and what is the architecture of a particular application, system or IT ecosystem. Don't even try asking ChatGPT, as it will also produce an answer that has all of the Internet bias.",
-  "tags": [
-   "Basics",
-   "History"
-  ],
-  "publishDate": "2024-03-10",
-  "lastUpdate": "2024-03-23",
-  "authors": [
-   {
-    "author": "Karol Skrzymowski",
-    "link": "https://www.linkedin.com/in/karolskrzymowski/"
-   },
-   {
-    "author": "Radosław Przewuski",
-    "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
-   }
-  ],
-  "bibliography": [
-   {
-    "title": "U.S. Media Consumption to Rise to 15.5 Hours a Day – Per Person – by 2015",
-    "link": "https://www.sdsc.edu/News%20Items/PR110613_hmi.html",
-    "ISBN": "",
-    "type": "article",
-    "author": "James Short"
-   },
-   {
-    "title": "RFC33 - New HOST-HOST Protocol",
-    "link": "http://datatracker.ietf.org/doc/html/rfc33",
-    "ISBN": "",
-    "type": "rfc",
-    "author": "S. Crocker, S. Carr, V. Cerf"
-   },
-   {
-    "title": "RFC114 - A FILE TRANSFER PROTOCOL",
-    "link": "https://datatracker.ietf.org/doc/html/rfc114",
-    "ISBN": "",
-    "type": "rfc",
-    "author": "A. Bhushan"
-   }
-  ],
-  "reviewers": [
-   {
-    "reviewer": "Marcin Nowiński",
-    "link": "https://www.linkedin.com/in/marcin-nowinski-13ab7310?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAJOz_4BuZw1DP5UZReS-kr1Gv5amDT9fqk&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1B6WHcioQBuQGKNTUKuLPg%3D%3D"
-   },
-   {
-    "reviewer": "William Beshilas",
-    "link": "https://www.linkedin.com/in/williambeshilas/"
-   },
-   {
-    "reviewer": "Bartosz Sosnowski",
-    "link": "https://www.linkedin.com/in/bartosz-sosnowski/"
-   },
-   {
-    "reviewer": "Emmanuel Marchiset",
-    "link": "https://www.linkedin.com/in/emarchiset/"
-   }
-  ]
- },
- {
-  "name": "Data_Integration_vs_Application_Integration",
-  "title": "Data Integration vs Application Integration",
-  "short": "Working in any industry brings all sorts of terms and abbreviations that are specific to that particular industry or even specific to a narrow field of it. During our working day we more often use job specific jargon then we think, and that jargon when used outside of the industry context may be a cause of a lot of misunderstandings or even problems. That is exactly the case with Data Integration and Application Integration. Both of these terms have the word “integration” in them, which is commonly used by specialists of those two fields alone without the preceding word meaning their respective terms. Why is that a problem? People outside of that field mostly hear the word “integration” instead of the full term and because of that they tend to think that this is one and the same thing. To be honest even specialists in those fields make that mistake when they are not aware of the existence of the other field in IT. An application integration specialist might think: “Oh, data integration, yes, we move data from place to place, hence we integrate it! That is the same thing!”.",
-  "tags": [
-   "Basics"
-  ],
-  "publishDate": "2024-03-10",
-  "lastUpdate": "2024-03-10",
-  "authors": [
-   {
-    "author": "Karol Skrzymowski",
-    "link": "https://www.linkedin.com/in/karolskrzymowski/"
-   },
-   {
-    "author": "Radosław Przewuski",
-    "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
-   }
-  ],
-  "bibliography": [
-   {
-    "title": "Top 10 Data Integration Tools & Software for 2024",
-    "link": "https://www.astera.com/type/blog/data-integration-tools-for-businesses/?utm_source=dataversity&utm_medium=organic",
-    "ISBN": "",
-    "type": "article",
-    "author": "Khurram Haider"
-   },
-   {
-    "title": "Data Integration",
-    "link": "https://www.qlik.com/us/data-integration",
-    "ISBN": "",
-    "type": "article",
-    "author": "Qlik"
-   }
-  ],
-  "reviewers": [
-   {
-    "reviewer": "Maciej Grabowski",
-    "link": "https://www.linkedin.com/in/maciejg/"
-   },
-   {
-    "reviewer": "Maciej Skorupka",
-    "link": "https://www.linkedin.com/in/maciej-skorupka/"
-   }
-  ]
- }
+  {
+    "name": "What_is_Application_Integration",
+    "title": "What is Application Integration?",
+    "short": "This seems to be a very easy question, ain't it? But if you go to google and search the phrase \"Application Integration\", you will get a multitude of vendor specific sites that try to define application integration to align with their marketing philosophy, not entirely saying what it is. Some focus on heavy integration platforms, others around message brokers, while some also speak of API Management solutions. All of those are components that compose application integration and can be used or not, depending on what are the requirements and what is the architecture of a particular application, system or IT ecosystem. Don't even try asking ChatGPT, as it will also produce an answer that has all of the Internet bias.",
+    "tags": [
+      "Basics",
+      "History"
+    ],
+    "publishDate": "2024-03-10",
+    "lastUpdate": "2024-03-23",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "U.S. Media Consumption to Rise to 15.5 Hours a Day – Per Person – by 2015",
+        "link": "https://www.sdsc.edu/News%20Items/PR110613_hmi.html",
+        "ISBN": "",
+        "type": "article",
+        "author": "James Short"
+      },
+      {
+        "title": "RFC33 - New HOST-HOST Protocol",
+        "link": "http://datatracker.ietf.org/doc/html/rfc33",
+        "ISBN": "",
+        "type": "rfc",
+        "author": "S. Crocker, S. Carr, V. Cerf"
+      },
+      {
+        "title": "RFC114 - A FILE TRANSFER PROTOCOL",
+        "link": "https://datatracker.ietf.org/doc/html/rfc114",
+        "ISBN": "",
+        "type": "rfc",
+        "author": "A. Bhushan"
+      }
+    ],
+    "reviewers": [
+      {
+        "reviewer": "Marcin Nowiński",
+        "link": "https://www.linkedin.com/in/marcin-nowinski-13ab7310?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAJOz_4BuZw1DP5UZReS-kr1Gv5amDT9fqk&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1B6WHcioQBuQGKNTUKuLPg%3D%3D"
+      },
+      {
+        "reviewer": "William Beshilas",
+        "link": "https://www.linkedin.com/in/williambeshilas/"
+      },
+      {
+        "reviewer": "Bartosz Sosnowski",
+        "link": "https://www.linkedin.com/in/bartosz-sosnowski/"
+      },
+      {
+        "reviewer": "Emmanuel Marchiset",
+        "link": "https://www.linkedin.com/in/emarchiset/"
+      }
+    ]
+  },
+  {
+    "name": "Data_Integration_vs_Application_Integration",
+    "title": "Data Integration vs Application Integration",
+    "short": "Working in any industry brings all sorts of terms and abbreviations that are specific to that particular industry or even specific to a narrow field of it. During our working day we more often use job specific jargon then we think, and that jargon when used outside of the industry context may be a cause of a lot of misunderstandings or even problems. That is exactly the case with Data Integration and Application Integration. Both of these terms have the word “integration” in them, which is commonly used by specialists of those two fields alone without the preceding word meaning their respective terms. Why is that a problem? People outside of that field mostly hear the word “integration” instead of the full term and because of that they tend to think that this is one and the same thing. To be honest even specialists in those fields make that mistake when they are not aware of the existence of the other field in IT. An application integration specialist might think: “Oh, data integration, yes, we move data from place to place, hence we integrate it! That is the same thing!”.",
+    "tags": [
+      "Basics"
+    ],
+    "publishDate": "2024-03-10",
+    "lastUpdate": "2024-03-10",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "Top 10 Data Integration Tools & Software for 2024",
+        "link": "https://www.astera.com/type/blog/data-integration-tools-for-businesses/?utm_source=dataversity&utm_medium=organic",
+        "ISBN": "",
+        "type": "article",
+        "author": "Khurram Haider"
+      },
+      {
+        "title": "Data Integration",
+        "link": "https://www.qlik.com/us/data-integration",
+        "ISBN": "",
+        "type": "article",
+        "author": "Qlik"
+      }
+    ],
+    "reviewers": [
+      {
+        "reviewer": "Maciej Grabowski",
+        "link": "https://www.linkedin.com/in/maciejg/"
+      },
+      {
+        "reviewer": "Maciej Skorupka",
+        "link": "https://www.linkedin.com/in/maciej-skorupka/"
+      }
+    ]
+  },
+  {
+    "name": "Modern_Application_Integration_Principles",
+    "title": "Modern Application Integration Principles",
+    "short": "Working in corporate environments often entails dealing with technical debt that arose over the years of the company building up its IT, merging with other companies, acquiring software, SaaS solutions, etc.. Technical systems are often at the very end of this list, as they have lower priority in the eyes of the business, as they do not provide direct business value, at least not one that will be easily understood. Application Integration is unfortunately one of those technical systems that are often neglected, especially if the business is not technology driven (so not e.g. telecommunications, technology vendors, SaaS solution vendors).",
+    "tags": [
+      "Basics",
+      "Guidelines"
+    ],
+    "publishDate": "2024-04-16",
+    "lastUpdate": "2024-04-16",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "Principle definition",
+        "link": "https://swagger.io/resources/articles/best-practices-in-api-governance/",
+        "ISBN": "",
+        "type": "article",
+        "author": "swagger.io, Janet Wagner"
+      },{
+        "title": "Best Practices in API Governance",
+        "link": "https://merriam-webster.com/dictionary/principle",
+        "ISBN": "",
+        "type": "article",
+        "author": "Merriam-Webster"
+      }
+    ],
+    "reviewers": [
+      {
+        "reviewer": "Marcin Nowiński",
+        "link": "https://www.linkedin.com/in/marcin-nowinski-13ab7310?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAJOz_4BuZw1DP5UZReS-kr1Gv5amDT9fqk&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1B6WHcioQBuQGKNTUKuLPg%3D%3D"
+      }
+    ]
+  }
 ]

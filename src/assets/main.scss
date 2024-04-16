@@ -142,6 +142,10 @@ article ul {
   @apply list-disc list-inside pl-7;
 }
 
+article ul ul {
+  list-style-type: circle;
+}
+
 .cc_image {
   width: 0.75rem;
 }
@@ -174,6 +178,26 @@ article ul {
 
 p:has(+ p) {
   @apply mb-4;
+}
+
+.h1 {
+  font-size: var(--h1); //30px
+  font-weight: 600;
+}
+
+.h2 {
+  font-size: var(--h2); //30px
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: var(--h3); //30px
+  font-weight: 600;
+}
+
+.h4 {
+  font-size: var(--h4); //30px
+  font-weight: 600;
 }
 
 h1{
