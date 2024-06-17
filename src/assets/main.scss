@@ -74,8 +74,12 @@ html:has(.dark) {
   --color-scheme: dark;
   --color-background: rgb(10, 10, 10);
 
-  --focusHelperColor: rgba(156, 163, 175, 0.9);
+  --focusHelperColor: rgba(156, 163, 175, 0.85);
   --focusHelperLineColor: rgba(156, 163, 175, 0.7);
+}
+
+html {
+  overflow-y: scroll;
 }
 
 @supports (font-size-adjust: 1) {
@@ -277,4 +281,23 @@ h4 {
 .scale-card-enter-to,
 .scale-card-leave-from {
   height: 100%;
+}
+
+.scale-navigation-enter-active,
+.scale-navigation-leave-active {
+  transition: var(--mainTransition);
+  overflow: hidden;
+}
+
+.scale-navigation-enter-from,
+.scale-navigation-leave-to {
+  //opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+}
+
+.scale-navigation-enter-to,
+.scale-navigation-leave-from {
+  height: 8rem;
 }

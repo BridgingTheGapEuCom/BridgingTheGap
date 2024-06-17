@@ -1,6 +1,6 @@
 <template>
-  <div class="flex-col gap-5 items-center">
-    <div class="flex flex-grow flex-col lg:flex-row items-center gap-3">
+  <div class="flex-col items-center">
+    <div class="flex flex-col lg:flex-row items-center gap-3">
       <v-lazy-image
         :src="getImage('Karol')"
         :src-placeholder="getImage('Karol_small')"
@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-grow flex-col lg:flex-row items-center gap-3 mt-4">
+    <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
       <v-lazy-image
         :src="getImage('Radek')"
         :src-placeholder="getImage('Radek_small')"
@@ -69,106 +69,6 @@
             APIs, fear not! I'm here to help.
           </p>
         </article>
-      </div>
-    </div>
-    <div class="flex flex-grow items-center gap-3">
-      <h3>Our Reviewers</h3>
-    </div>
-    <div
-      class="flex flex-grow flex-col gap-3 xl:w-[77%] lg:w-[55rem] w-[80%] max-w-[70ch] lg:max-w-[100%]"
-    >
-      <div v-for="reviewer of reviewers" :key="reviewer.id" class="flex flex-col items-stretch">
-        <div class="min-w-[60vw] lg:min-w-[0] my-2 border-b dark:border-neutral-800" />
-        <div
-          class="flex flex-col lg:items-start items-center lg:grid gap-3 lg:grid-flow-col grid-flow-row"
-        >
-          <a
-            class="link font-bold text-gray-800 dark:text-gray-200 text-lg hover:text-black dark:hover:text-white"
-            target="_blank"
-            :href="reviewer.link"
-            >{{ reviewer.name }}</a
-          >
-          <div class="flex flex-col lg:items-end items-center justify-self-end gap-1">
-            <div class="mb-1 lg:mt-0 mt-3">Articles reviewed by {{ reviewer.name }}</div>
-            <template v-for="article of reviewer.reviewed.slice(0, reviewMax)">
-              <router-link
-                class="link text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                :to="`/articles/${article.link}`"
-                >{{ article.title }}
-              </router-link>
-            </template>
-            <template v-if="reviewer.reviewed.length > reviewMax">
-              <template v-if="showMore === reviewer.name">
-                <router-link
-                  v-for="article of reviewer.reviewed.slice(reviewMax)"
-                  class="link text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-                  :to="`/articles/${article.link}`"
-                  >{{ article.title }}
-                </router-link>
-                <router-link
-                  class="link text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white font-bold"
-                  to="about"
-                  >show less
-                </router-link>
-              </template>
-              <template v-else>
-                <router-link
-                  class="link text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white font-bold"
-                  :to="{ name: 'about', query: { reviewed: reviewer.name } }"
-                  >show more
-                </router-link>
-              </template>
-            </template>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-grow items-center">
-      <div class="flex flex-grow flex-col items-center gap-3">
-        <h3>Source</h3>
-        <span
-          >Content of this webpage, including it's code, can be found on our
-          <a
-            href="https://github.com/BridgingTheGapEuCom/BridgingTheGap"
-            class="link text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
-            target="_blank"
-            ><b>GitHub</b></a
-          >
-        </span>
-      </div>
-    </div>
-    <div class="md:hidden flex flex-grow items-center">
-      <div class="flex flex-grow flex-col items-center gap-3">
-        <div class="min-w-[60vw] lg:min-w-[0] my-2 border-b dark:border-neutral-800" />
-        <h3>License</h3>
-        <div><b>Bridging the Gap</b> © 2024</div>
-        <div>is licensed under</div>
-        <div class="flex">
-          <a
-            href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
-            rel="license noopener noreferrer"
-            style="display: inline-block"
-            target="_blank"
-          >
-          </a>
-          &nbsp;CC BY 4.0
-        </div>
-        <div class="flex">
-          <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank">
-            <img
-              alt=""
-              class="w-[1.5rem] mx-1 self-center"
-              src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
-            />
-          </a>
-          <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank">
-            <img
-              alt=""
-              class="w-[1.5rem]"
-              src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
-            />
-          </a>
-        </div>
       </div>
     </div>
   </div>
