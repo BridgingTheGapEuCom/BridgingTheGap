@@ -45,7 +45,6 @@
           </div>
         </div>
         <div class="my-2 border-b dark:border-neutral-800 lg:hidden" />
-        <!--        <div v-html="articleContent" />-->
         <component :is="currentArticle" :dark="props.dark" />
         <div class="lg:hidden" v-if="reviewers.length > 0">
           <div class="mt-3 border-b dark:border-neutral-800" />

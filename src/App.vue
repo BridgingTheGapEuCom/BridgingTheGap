@@ -1,5 +1,5 @@
 <template>
-  <div id="body" ref="body" :class="{ dark: darkTheme }">
+  <div id="body" ref="body" :class="{ dark: darkTheme }" @click="hamburgerOpened = false">
     <div v-if="readingHelper" class="absolute h-full bottom-0 w-full pointer-events-none">
       <div class="readingLine">
         <div v-if="isMobile">
@@ -16,7 +16,7 @@
     <nav
       class="z-10 bg-neutral-200 dark:bg-neutral-800 shadow-md dark:shadow-none border-gray-200 sticky top-0"
     >
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
+      <div class="max-w-screen-xl relative flex flex-wrap items-center justify-between mx-auto p-1">
         <RouterLink to="/">
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
             <logo-s-v-g :dark="darkTheme" class="h-7 w-7 m-1" />
@@ -27,64 +27,87 @@
             </div>
           </div>
         </RouterLink>
-        <button
-          data-collapse-toggle="navbar-default"
-          type="button"
-          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-default"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-5 h-5"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 17 14"
+        <div>
+          <button
+            v-if="route.name && route.name !== 'home' && !route.name.startsWith('about')"
+            class="inline-flex items-center navigation-button p-2 w-10 h-10 justify-end text-sm text-black rounded-lg hover:bg-gray-100 dark:text-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-label="Focus helper"
+            type="button"
+            @click="focusHelper"
           >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul
-            class="flex items-center flex-col gap-1 md:gap-0 p-4 md:p-0 mt-4 border bg-transparent border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-3 rtl:space-x-reverse md:mt-0 md:border-0"
+            <SvgIcon type="mdi" :path="mdiEyeMinus" :size="26" />
+          </button>
+          <button
+            type="button"
+            class="inline-flex items-center navigation-button p-2 w-10 h-10 justify-end text-sm text-black rounded-lg hover:bg-gray-100 dark:text-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            :aria-expanded="hamburgerOpened"
+            @click.stop="expandNavigation"
           >
-            <li>
-              <RouterLink
-                to="/about"
-                class="text-black dark:text-white navigation-button"
-                aria-current="page"
-                >About us
-              </RouterLink>
-            </li>
-            <li v-if="route.name !== 'home' && route.name !== 'about'">
-              <button aria-label="Focus helper" type="button" @click="focusHelper">
-                <SvgIcon
-                  class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white card"
-                  type="mdi"
-                  :path="mdiEyeMinus"
-                  :size="32"
-                />
-              </button>
-            </li>
-            <li class="flex items-center">
-              <button aria-label="Change theme" class="mr-1" type="button" @click="changeTheme">
-                <SvgIcon
-                  class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white card"
-                  type="mdi"
-                  :path="mdiThemeLightDark"
-                  :size="32"
-                />
-              </button>
-            </li>
-          </ul>
+            <span class="sr-only">Open main menu</span>
+            <SvgIcon :path="mdiMenu" type="mdi" size="26" />
+          </button>
         </div>
+        <transition name="scale-navigation" mode="in-out">
+          <div
+            v-if="hamburgerOpened"
+            @click="stopPropagation"
+            class="absolute h-32 bg-neutral-200 shadow-md dark:bg-neutral-800 right-0"
+            :class="{
+              border: !smallWidth,
+              'border-gray-300': !smallWidth,
+              'dark:border-gray-700': !smallWidth,
+              'rounded-lg': !smallWidth,
+              'rounded-b-lg': smallWidth,
+              'dark:shadow-none': !smallWidth,
+              'dark:shadow-neutral-800': smallWidth,
+              'w-full': smallWidth,
+              'top-12': smallWidth,
+              'top-14': !smallWidth
+            }"
+            id="navbar-default"
+          >
+            <ul
+              class="flex flex-col gap-1 p-2 m-2 bg-transparent border-gray-100 rounded-lg bg-gray-50 rtl:space-x-reverse"
+              :class="{ 'items-end': !smallWidth, 'items-center': smallWidth }"
+            >
+              <li>
+                <RouterLink
+                  to="/about"
+                  class="text-black dark:text-white navigation-button p-1"
+                  aria-current="page"
+                  >About us
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink
+                  to="/aboutTheProject"
+                  class="text-black dark:text-white navigation-button p-1"
+                  aria-current="page"
+                  >About the project
+                </RouterLink>
+              </li>
+              <li>
+                <RouterLink
+                  to="/aboutOurReviewers"
+                  class="text-black dark:text-white navigation-button p-1"
+                  aria-current="page"
+                  >About our reviewers
+                </RouterLink>
+              </li>
+              <li class="flex items-center">
+                <button aria-label="Change theme" type="button" @click="changeTheme">
+                  <SvgIcon
+                    class="text-black dark:text-gray-100 hover:text-black dark:hover:text-white card"
+                    type="mdi"
+                    :path="mdiThemeLightDark"
+                    :size="32"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </transition>
       </div>
     </nav>
     <main
@@ -146,10 +169,9 @@
 
 <script setup>
 import { RouterLink, RouterView, useRoute } from 'vue-router'
-import { initFlowbite, Collapse } from 'flowbite'
 import { computed, onMounted, reactive, ref, watch } from 'vue'
 import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiEyeMinus, mdiThemeLightDark, mdiHandBackLeftOutline } from '@mdi/js'
+import { mdiEyeMinus, mdiHandBackLeftOutline, mdiMenu, mdiThemeLightDark } from '@mdi/js'
 import { useMouse, useWindowFocus, useWindowSize } from '@vueuse/core'
 import LogoSVG from '@/components/svg/logoSVG.vue'
 
@@ -158,16 +180,16 @@ const darkTheme = ref(false)
 const body = ref()
 
 const mouse = reactive(useMouse({ target: body, touch: false, type: 'client' }))
-const { height } = useWindowSize()
+const { height, width } = useWindowSize()
 const readingHelper = ref(true)
 const focused = useWindowFocus()
+
+const hamburgerOpened = ref(false)
 
 const route = useRoute()
 
 // initialize components based on data attribute selectors
 onMounted(() => {
-  initFlowbite()
-
   readingHelper.value = false
 
   if (localStorage.theme) {
@@ -184,9 +206,18 @@ onMounted(() => {
   }
 })
 
-const changeTheme = () => {
+const stopPropagation = (event) => {
+  event.stopImmediatePropagation()
+}
+
+/**
+ * Changes the page theme
+ */
+const changeTheme = (event) => {
   darkTheme.value = !darkTheme.value
   localStorage.theme = darkTheme.value
+
+  event.stopImmediatePropagation()
 
   let metaThemeColor = document.querySelector('meta[name=theme-color]')
   if (darkTheme.value === true) {
@@ -196,14 +227,22 @@ const changeTheme = () => {
   }
 }
 
+/**
+ * Turn on or off the focus helper
+ */
 const focusHelper = () => {
   readingHelper.value = !readingHelper.value
+  hamburgerOpened.value = false
 
   if (isMobile.value) {
     document.querySelector(':root').style.setProperty('--mouseY', `${height.value / 2}px`)
   }
 }
 
+/**
+ * Sets the mouseY CSS property for the focus helper lines
+ * @param data
+ */
 const moveDragFocusHelper = (data) => {
   if (data.targetTouches[0]) {
     document
@@ -212,11 +251,23 @@ const moveDragFocusHelper = (data) => {
   }
 }
 
+/**
+ * Expands or collapses the navigation hamburger menu
+ */
+const expandNavigation = () => {
+  hamburgerOpened.value = !hamburgerOpened.value
+}
+
 const isMobile = computed(() => {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 })
 
+const smallWidth = computed(() => {
+  return isMobile.value && width.value < 1024
+})
+
 watch(route, (current) => {
+  hamburgerOpened.value = false
   if (current.name === 'home' || current.name === 'about') {
     readingHelper.value = false
   }
