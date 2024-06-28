@@ -123,17 +123,14 @@
       class="sticky bottom-0 w-full shadow-up dark:shadow-none pr-4 py-1 hidden md:flex bg-neutral-200 dark:bg-neutral-800 text-black dark:text-white"
     >
       <div class="flex mx-2 justify-start max-w-screen-xl w-full text-[0.65rem]">
-        <a
-          href="https://github.com/skrzymek/BridgingTheGap"
-          property="dct:title"
-          rel="cc:attributionURL"
-          target="_blank"
+        <a href="/bridgingTheGap" property="dct:title" rel="cc:attributionURL" target="_blank"
           ><b>Bridging the Gap</b></a
         >
         &nbsp;© 2024 by&nbsp;
         <a
           href="https://www.linkedin.com/in/karolskrzymowski/"
           property="cc:attributionName"
+          aria-label="Karol Skrzymowski's linkedin page"
           rel="cc:attributionURL dct:creator"
           target="_blank"
           class="link text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
@@ -144,6 +141,7 @@
           href="https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
           property="cc:attributionName"
           rel="cc:attributionURL dct:creator"
+          aria-label="Radoslaw Przewuski's linkedin page"
           target="_blank"
           class="link text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
           ><b>Radosław Przewuski</b></a
@@ -174,6 +172,11 @@ import SvgIcon from '@jamescoyle/vue-icon'
 import { mdiEyeMinus, mdiHandBackLeftOutline, mdiMenu, mdiThemeLightDark } from '@mdi/js'
 import { useMouse, useWindowFocus, useWindowSize } from '@vueuse/core'
 import LogoSVG from '@/components/svg/logoSVG.vue'
+import '@fontsource/atkinson-hyperlegible'
+import '@fontsource/atkinson-hyperlegible/400.css'
+import '@fontsource/atkinson-hyperlegible/400-italic.css'
+import '@fontsource/atkinson-hyperlegible/700.css'
+import '@fontsource/atkinson-hyperlegible/700-italic.css'
 
 const darkTheme = ref(false)
 
@@ -283,10 +286,6 @@ watch(
   { deep: true }
 )
 </script>
-
-<style>
-@import url('https://fonts.googleapis.com/css?family=%22Atkinson+Hyperlegible%22%2C+sans+serif');
-</style>
 
 <style scoped lang="scss">
 .darkThemeLogo {
