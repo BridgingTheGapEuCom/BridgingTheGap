@@ -152,5 +152,54 @@
         "link": "https://www.linkedin.com/in/marcin-nowinski-13ab7310?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAJOz_4BuZw1DP5UZReS-kr1Gv5amDT9fqk&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1B6WHcioQBuQGKNTUKuLPg%3D%3D"
       }
     ]
+  },
+  {
+    "name": "System_vs_Ecosystem_Architectural_Styles",
+    "title": "System vs Ecosystem Architectural Styles",
+    "short": "When we think about architecture, we usually think of building a system. There are no right answers to how to build, most of the time we use our experience and expertise, or we look towards more advanced techniques like trade-off analysis to choose “the least worst” solution. Luckily there are shortcuts that can help make decisions over what type of architectural style (or mix of those) you could use to build your system based on the architectural capabilities rather than functional behavior.",
+    "tags": [
+      "Basics",
+      "Architectural styles"
+    ],
+    "publishDate": "2024-10-07",
+    "lastUpdate": "2024-10-07",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "Fundamentals of Software Architecture",
+        "link": "https://www.oreilly.com/library/view/fundamentals-of-software/9781663728357/",
+        "ISBN": "978-1-492-04345-4",
+        "type": "article",
+        "author": "Mark Richards, Neal Ford"
+      },{
+        "title": "Architecture Foundations: Styles & Patterns",
+        "link": "https://nealford.com/downloads/Architecture_Foundations_Styles_and_Patterns_by_Neal_Ford.pdf",
+        "ISBN": "",
+        "type": "presentation",
+        "author": "Neal Ford"
+      },{
+        "title": "Qualitative Analysis",
+        "link": "https://www.investopedia.com/terms/q/qualitativeanalysis.asp#:~:text=Qualitative%20analysis%20relies%20on%20thick,used%20to%20understand%20local%20phenomena.",
+        "ISBN": "",
+        "type": "article",
+        "author": "Tim Smith, Investopedia"
+      }
+    ],
+    "reviewers": [
+
+    ]
   }
 ]
