@@ -138,7 +138,8 @@
         "ISBN": "",
         "type": "article",
         "author": "swagger.io, Janet Wagner"
-      },{
+      },
+      {
         "title": "Best Practices in API Governance",
         "link": "https://merriam-webster.com/dictionary/principle",
         "ISBN": "",
@@ -184,13 +185,15 @@
         "ISBN": "978-1-492-04345-4",
         "type": "article",
         "author": "Mark Richards, Neal Ford"
-      },{
+      },
+      {
         "title": "Architecture Foundations: Styles & Patterns",
         "link": "https://nealford.com/downloads/Architecture_Foundations_Styles_and_Patterns_by_Neal_Ford.pdf",
         "ISBN": "",
         "type": "presentation",
         "author": "Neal Ford"
-      },{
+      },
+      {
         "title": "Qualitative Analysis",
         "link": "https://www.investopedia.com/terms/q/qualitativeanalysis.asp#:~:text=Qualitative%20analysis%20relies%20on%20thick,used%20to%20understand%20local%20phenomena.",
         "ISBN": "",
@@ -199,7 +202,57 @@
       }
     ],
     "reviewers": [
-
+    ]
+  },
+  {
+    "name": "Qualitative_Analysis_of_Ecosystem_Architectural_Styles",
+    "title": "Qualitative Analysis of Ecosystem Architectural Styles",
+    "short": "As we were preparing to write some of the articles and outlined our collective knowledge about Enterprise Application Integration (EAI), we identified many gaps in our understanding of the field we work in. Some were assumptions made over time, others simply lack of working experience in certain areas, simply by a lack of customers that wanted to do something in a specific way. Usually those gaps were easy to fill in, by discussion, a bit of research or reaching out to other specialists for an architectural sparring.",
+    "tags": [
+      "Method",
+      "Architectural styles",
+      "Qualitative analysis"
+    ],
+    "publishDate": "2024-10-07",
+    "lastUpdate": "2024-10-07",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "Qualitative Analysis",
+        "link": "https://www.investopedia.com/terms/q/qualitativeanalysis.asp#:~:text=Qualitative%20analysis%20relies%20on%20thick,used%20to%20understand%20local%20phenomena.",
+        "ISBN": "",
+        "type": "article",
+        "author": "Tim Smith, Investopedia"
+      },
+      {
+        "title": "Software Architecture Characteristics: Defining, Discovering, and Protecting Architecture",
+        "link": "https://www.oreilly.com/live-events/software-architecture-characteristics-defining-discovering-and-protecting-architecture/0636920282488/",
+        "ISBN": "",
+        "type": "course",
+        "author": "Neal Ford, Raju Gandhi; O’Reilly Media"
+      },
+      {
+        "title": "Head First Software Architecture",
+        "link": "https://www.investopedia.com/terms/q/qualitativeanalysis.asp#:~:text=Qualitative%20analysis%20relies%20on%20thick,used%20to%20understand%20local%20phenomena.",
+        "ISBN": "9781098134358",
+        "type": "book",
+        "author": "Raju Gandhi, Mark Richards, Neal Ford; O'Reilly Media, Inc."
+      }
+    ],
+    "reviewers": [
     ]
   }
 ]

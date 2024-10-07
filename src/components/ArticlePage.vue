@@ -120,6 +120,7 @@ import What_is_Application_Integration from '../../public/articles/What_is_Appli
 import Data_Integration_vs_Application_Integration from '../../public/articles/Data_Integration_vs_Application_Integration/html/Data_Integration_vs_Application_Integration.vue'
 import Modern_Application_Integration_Principles from '../../public/articles/Modern_Application_Integration_Principles/html/Modern_Application_Integration_Principles.vue'
 import System_vs_Ecosystem_Architectural_Styles from '../../public/articles/System_vs_Ecosystem_Architectural_Styles/html/System_vs_Ecosystem_Architectural_Styles.vue'
+import Qualitative_Analysis_of_Ecosystem_Architectural_Styles from '../../public/articles/Qualitative_Analysis_of_Ecosystem_Architectural_Styles/html/Qualitative_Analysis_of_Ecosystem_Architectural_Styles.vue'
 
 const props = defineProps(['dark'])
 
@@ -139,7 +140,8 @@ const allArticles = [
   What_is_Application_Integration,
   Data_Integration_vs_Application_Integration,
   Modern_Application_Integration_Principles,
-  System_vs_Ecosystem_Architectural_Styles
+  System_vs_Ecosystem_Architectural_Styles,
+  Qualitative_Analysis_of_Ecosystem_Architectural_Styles
 ]
 let currentArticle = What_is_Application_Integration
 
