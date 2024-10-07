@@ -27,6 +27,7 @@
   --h2: 1.33rem;
   --h3: 1.05rem;
   --h4: 0.84rem;
+  --h5: 0.84rem;
 
   color-scheme: var(--color-scheme);
 }
@@ -211,22 +212,27 @@ p:has(+ p) {
 }
 
 .h1 {
-  font-size: var(--h1); //30px
+  font-size: var(--h1);
   font-weight: 600;
 }
 
 .h2 {
-  font-size: var(--h2); //30px
+  font-size: var(--h2);
   font-weight: 600;
 }
 
 .h3 {
-  font-size: var(--h3); //30px
+  font-size: var(--h3);
   font-weight: 600;
 }
 
 .h4 {
-  font-size: var(--h4); //30px
+  font-size: var(--h4);
+  font-weight: 600;
+}
+
+.h5 {
+  font-size: var(--h5);
   font-weight: 600;
 }
 
@@ -256,6 +262,15 @@ h4 {
   line-height: calc(1ex / 0.37);
   margin: calc(1ex / 0.37) 0;
   font-weight: 600;
+}
+
+h5 {
+  @apply text-gray-600 dark:text-gray-400;
+
+  font-size: var(--h5); //15px
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
+  font-weight: 200;
 }
 
 // ==========================================
