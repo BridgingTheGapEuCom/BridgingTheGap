@@ -114,6 +114,32 @@ footer {
   }
 }
 
+table {
+  border: 1px solid;
+  border-spacing: 0;
+  font-size: 0.75rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  tr {
+    text-align: left;
+
+    &:nth-child(2n) {
+      background-color: #e5e7eb;
+    }
+
+    th {
+      border-bottom: 3px solid;
+    }
+  }
+}
+
+th, td {
+  vertical-align:bottom;
+  border: 1px solid;
+}
+
 .articleLinkHeight {
   line-height: calc(1ex / 0.32);
 }
