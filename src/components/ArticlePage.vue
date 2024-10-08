@@ -64,6 +64,7 @@
           <div class="h4 mt-3">Bibliography</div>
           <div class="articleLinkHeight" v-for="bib of bibliography" :key="bib.title">
             <a class="link" target="_blank" :href="bib.link">{{ bib.title }}</a>
+            <span v-if="bib.ISBN">;&nbsp;ISBN {{ bib.ISBN }}</span>
             <span>;&nbsp;{{ bib.author }}</span>
           </div>
         </div>
@@ -140,6 +141,26 @@
                     >
                   </div>
                 </template>
+                <template v-if="element.localName === 'h5'">
+                  <div
+                    class="ml-2 pl-10 border-l-2"
+                    :class="{
+                      'border-black': lowestIntersecting === i,
+                      'dark:border-white': lowestIntersecting === i,
+                      'border-transparent': lowestIntersecting !== i
+                    }"
+                  >
+                    <a
+                      class="articleContentLink hover:underline"
+                      :class="{
+                        'text-black': lowestIntersecting === i,
+                        'dark:text-white': lowestIntersecting === i
+                      }"
+                      :href="`#${encodeURI(element.id)}`"
+                      >{{ element.textContent }}</a
+                    >
+                  </div>
+                </template>
               </div>
             </template>
           </div>
@@ -159,6 +180,8 @@ import SvgIcon from '@jamescoyle/vue-icon'
 import What_is_Application_Integration from '../../public/articles/What_is_Application_Integration/html/What_is_Application_Integration.vue'
 import Data_Integration_vs_Application_Integration from '../../public/articles/Data_Integration_vs_Application_Integration/html/Data_Integration_vs_Application_Integration.vue'
 import Modern_Application_Integration_Principles from '../../public/articles/Modern_Application_Integration_Principles/html/Modern_Application_Integration_Principles.vue'
+import System_vs_Ecosystem_Architectural_Styles from '../../public/articles/System_vs_Ecosystem_Architectural_Styles/html/System_vs_Ecosystem_Architectural_Styles.vue'
+import Qualitative_Analysis_of_Ecosystem_Architectural_Styles from '../../public/articles/Qualitative_Analysis_of_Ecosystem_Architectural_Styles/html/Qualitative_Analysis_of_Ecosystem_Architectural_Styles.vue'
 
 const props = defineProps(['dark'])
 
@@ -181,7 +204,9 @@ const tags = ref([])
 const allArticles = [
   What_is_Application_Integration,
   Data_Integration_vs_Application_Integration,
-  Modern_Application_Integration_Principles
+  Modern_Application_Integration_Principles,
+  System_vs_Ecosystem_Architectural_Styles,
+  Qualitative_Analysis_of_Ecosystem_Architectural_Styles
 ]
 let currentArticle = What_is_Application_Integration
 
@@ -225,6 +250,7 @@ const onScroll = () => {
   if (contentElements.value.length > 0) {
     last = contentElements.value[0].intersectionId
   }
+
   const scrollValue = window.top.scrollY + 80
   for (let i = 0; i < contentElements.value.length; i++) {
     if (contentElements.value[i].offsetTop > scrollValue) {
@@ -238,6 +264,13 @@ const onScroll = () => {
       return
     }
     last = contentElements.value[i].intersectionId
+  }
+
+  if (contentElements.value.length > 0) {
+    if (contentElements.value[contentElements.value.length - 1].offsetTop < scrollValue) {
+      lowestIntersecting.value =
+        contentElements.value[contentElements.value.length - 1].intersectionId
+    }
   }
 }
 
@@ -291,7 +324,7 @@ const createContents = () => {
     const allIds = []
     Object.keys(article.children).forEach((childKey) => {
       const child = article.children[childKey]
-      if (['h2', 'h3', 'h4'].includes(child.localName)) {
+      if (['h2', 'h3', 'h4', 'h5'].includes(child.localName)) {
         contentElements.value.push(child)
         intersectionId++
         child.intersectionId = intersectionId
@@ -349,6 +382,29 @@ const createContents = () => {
           allIds.push(child.id)
 
           contents.value[h2Length - 1].children[h3Length - 1].children.push({
+            title: child.textContent,
+            intersectionId: intersectionId,
+            id: child.id,
+            children: []
+          })
+        } else if (child.localName === 'h5') {
+          const h2Length = contents.value.length
+          const h3Length = contents.value[h2Length - 1].children.length
+          const h4Length = contents.value[h2Length - 1].children[h3Length - 1].children.length
+
+          child.id = `${encodeURI(child.textContent)}`
+          if (allIds.includes(child.id)) {
+            let count = 0
+            allIds.forEach((el) => {
+              if (el === child.id) {
+                count++
+              }
+            })
+            child.id = `${encodeURI(child.textContent)}_${count}`
+          }
+          allIds.push(child.id)
+
+          contents.value[h2Length - 1].children[h3Length - 1].children[h4Length - 1].children.push({
             title: child.textContent,
             intersectionId: intersectionId,
             id: child.id

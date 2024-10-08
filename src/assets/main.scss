@@ -27,6 +27,7 @@
   --h2: 1.33rem;
   --h3: 1.05rem;
   --h4: 0.84rem;
+  --h5: 0.84rem;
 
   color-scheme: var(--color-scheme);
 }
@@ -123,6 +124,32 @@ footer {
   text-underline-offset: 0.15rem;
 }
 
+table {
+  border: 1px solid;
+  border-spacing: 0;
+  font-size: 0.75rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  tr {
+    text-align: left;
+
+    &:nth-child(2n) {
+      background-color: #e5e7eb;
+    }
+
+    th {
+      border-bottom: 3px solid;
+    }
+  }
+}
+
+th, td {
+  vertical-align:bottom;
+  border: 1px solid;
+}
+
 .articleLinkHeight {
   line-height: calc(1ex / 0.32);
 }
@@ -194,22 +221,27 @@ p:has(+ p) {
 }
 
 .h1 {
-  font-size: var(--h1); //30px
+  font-size: var(--h1);
   font-weight: 600;
 }
 
 .h2 {
-  font-size: var(--h2); //30px
+  font-size: var(--h2);
   font-weight: 600;
 }
 
 .h3 {
-  font-size: var(--h3); //30px
+  font-size: var(--h3);
   font-weight: 600;
 }
 
 .h4 {
-  font-size: var(--h4); //30px
+  font-size: var(--h4);
+  font-weight: 600;
+}
+
+.h5 {
+  font-size: var(--h5);
   font-weight: 600;
 }
 
@@ -242,6 +274,16 @@ h4 {
   line-height: calc(1ex / 0.37);
   margin: calc(1ex / 0.37) 0;
   font-weight: 600;
+  scroll-margin-top: 4rem;
+}
+
+h5 {
+  @apply text-gray-600 dark:text-gray-400;
+
+  font-size: var(--h5); //15px
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
+  font-weight: 200;
   scroll-margin-top: 4rem;
 }
 
