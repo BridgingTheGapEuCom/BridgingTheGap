@@ -1,9 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
-  scrollBehavior() {
+  scrollBehavior(to, from) {
     // always scroll to top
-    return { top: 0 }
+    if (from.path !== to.path) {
+      return { top: 0 }
+    }
   },
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [

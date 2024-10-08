@@ -10,7 +10,7 @@
 
   scroll-behavior: smooth;
 
-  --color-background: rgb(245, 245, 245);
+  --color-background: #f8fafc;
 
   --color-scheme: light;
 
@@ -102,7 +102,7 @@ footer {
 }
 
 .link {
-  @apply text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white;
+  @apply text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white;
 
   text-decoration-thickness: 1px;
   text-decoration-style: solid;
@@ -113,6 +113,15 @@ footer {
   &:hover {
     text-decoration-thickness: 2px;
   }
+}
+
+.articleContentLink {
+  @apply hover:text-black dark:hover:text-white;
+
+  text-decoration-thickness: 1px;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 0.15rem;
 }
 
 table {
@@ -241,6 +250,7 @@ h1{
   line-height: calc(1ex / 0.42);
   margin: calc(1ex / 0.42) 0;
   font-weight: 600;
+  scroll-margin-top: 4rem;
 }
 
 h2 {
@@ -248,6 +258,7 @@ h2 {
   line-height: calc(1ex / 0.42);
   margin: calc(1ex / 0.42) 0;
   font-weight: 600;
+  scroll-margin-top: 4rem;
 }
 
 h3 {
@@ -255,6 +266,7 @@ h3 {
   line-height: calc(1ex / 0.38);
   margin: calc(1ex / 0.38) 0;
   font-weight: 600;
+  scroll-margin-top: 4rem;
 }
 
 h4 {
@@ -262,6 +274,7 @@ h4 {
   line-height: calc(1ex / 0.37);
   margin: calc(1ex / 0.37) 0;
   font-weight: 600;
+  scroll-margin-top: 4rem;
 }
 
 h5 {
@@ -271,6 +284,7 @@ h5 {
   line-height: calc(1ex / 0.42);
   margin: calc(1ex / 0.42) 0;
   font-weight: 200;
+  scroll-margin-top: 4rem;
 }
 
 // ==========================================
