@@ -57,7 +57,7 @@
       last updated in August 2022 as
       <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc9293">RFC 9293</a>.
     </p>
-    <h2>So what is Application Integration?</h2>
+    <h2>The essence of Application Integration</h2>
     <p>
       Application Integration is the strive to connect different applications into a larger
       ecosystem that functions as one. But what does that mean to function as one? In essence, it is
@@ -89,9 +89,7 @@
       communication onwards, as all applications, even with middleware in place, rely on a
       Request-Reply relationship.
     </p>
-
     <What_is_application_integrationClientServer :dark="isDark" />
-
     <p>Benefits:</p>
     <ul>
       <li>Fast and fairly easy to build, quick to deploy,</li>
@@ -187,20 +185,21 @@
       <li>Limited capability to refactor or introduce changes fast,</li>
       <li>Requires effort and resources to build,</li>
     </ul>
-    <h4>Orchestration-Driven Service Oriented Architecture (ODSOA) Application Integration</h4>
+    <h4>API-Led Architecture Application Integration</h4>
     <p>
-      SOA is an architectural concept that emerged in the late 1990s. While it had its ups and
-      downs, it evolved over the years. The original approach focused heavily on exposing business
-      services first, with underlying layers of services to support them. ODSOA focuses around
-      process and data services, where the logic of a process service is responsible for
-      orchestrating the flow of data. Data services expose data in a standardized manner to enable
-      the creation of services providing different data objects or functions related to said objects
-      (e.g. <a href="https://en.wikipedia.org/wiki/CRUD" target="_blank">CRUD</a>). Although it was
-      originally built around SOAP services and XML, it embraced RESTful Services as easily. Before
-      the emergence of cloud-native technologies, this approach struggled with similar problems as
-      the broker architectures in terms of availability and performance. So far this is the most
-      successful approach for supporting large scale enterprise application integration, especially
-      in organizations that are not technology driven.
+      API-Led is an architectural concept that emerged as a refinement of Service-Oriented
+      Architecture (SOA) that emerged in the late 1990s. While SOA had its ups and downs, it evolved
+      over the years to the current form. The original approach focused heavily on exposing business
+      services first, with underlying layers of services to support them. API-Led focuses around
+      domain and data services, where the logic of a domain service is responsible for orchestrating
+      the flow of data. Data services expose data in a standardized manner to enable the creation of
+      services providing different data objects or functions related to said objects (e.g.
+      <a href="https://en.wikipedia.org/wiki/CRUD" target="_blank">CRUD</a>). Although originally
+      SOA was built around SOAP services and XML, APL-Led embraced RESTful Services as easily.
+      Before the emergence of cloud-native technologies, this approach struggled with similar
+      problems as the broker architectures in terms of availability and performance. So far this is
+      the most successful approach for supporting large scale enterprise application integration,
+      especially in organizations that are not technology driven.
     </p>
     <What_is_application_integrationODSOA :dark="isDark" />
     <p>Benefits:</p>
