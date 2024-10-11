@@ -270,6 +270,9 @@ const onScroll = () => {
     if (contentElements.value[contentElements.value.length - 1].offsetTop < scrollValue) {
       lowestIntersecting.value =
         contentElements.value[contentElements.value.length - 1].intersectionId
+      router.replace({
+        hash: `#${decodeURI(contentElements.value[contentElements.value.length - 1].id)}`
+      })
     }
   }
 }

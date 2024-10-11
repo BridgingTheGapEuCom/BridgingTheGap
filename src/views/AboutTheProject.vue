@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-neutral-100 dark:bg-neutral-950 text-black dark:text-gray-50 w-full px-4 py-4 flex justify-center items-stretch flex-grow article"
+    class="bg-neutral-50 dark:bg-neutral-950 text-black dark:text-gray-50 w-full px-4 py-4 flex justify-center items-stretch flex-grow article"
   >
     <article>
       <h1 class="text-center">About the project</h1>
