@@ -5,8 +5,7 @@
 @tailwind utilities;
 
 :root {
-  font-optical-sizing: auto;
-  font-size: 18px;
+  @apply bg-neutral-50;
 
   scroll-behavior: smooth;
 
@@ -23,6 +22,8 @@
   --focusHelperHeight: 6ex;
   --focusHelperLineColor: rgba(55, 65, 81, 0.3);
 
+  --default-font-size: 18px;
+
   --h1: 1.67rem;
   --h2: 1.33rem;
   --h3: 1.05rem;
@@ -30,6 +31,9 @@
   --h5: 0.84rem;
 
   color-scheme: var(--color-scheme);
+
+  font-optical-sizing: auto;
+  font-size: var(--default-font-size);
 }
 
 .readingLine {
@@ -122,32 +126,6 @@ footer {
   text-decoration-style: solid;
   text-decoration-skip-ink: auto;
   text-underline-offset: 0.15rem;
-}
-
-table {
-  border: 1px solid;
-  border-spacing: 0;
-  font-size: 0.75rem;
-
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-
-  tr {
-    text-align: left;
-
-    &:nth-child(2n) {
-      background-color: #e5e7eb;
-    }
-
-    th {
-      border-bottom: 3px solid;
-    }
-  }
-}
-
-th, td {
-  vertical-align:bottom;
-  border: 1px solid;
 }
 
 .articleLinkHeight {

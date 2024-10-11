@@ -52,6 +52,7 @@
           <div
             v-if="hamburgerOpened"
             @click="stopPropagation"
+            tabindex="-1"
             class="absolute h-32 bg-neutral-200 shadow-md dark:bg-neutral-800 right-0"
             :class="{
               border: !smallWidth,
@@ -111,7 +112,7 @@
       </div>
     </nav>
     <main
-      class="bg-neutral-100 dark:bg-neutral-950 text-black dark:text-gray-50 w-full px-4 py-4 flex justify-center items-stretch flex-grow"
+      class="bg-neutral-50 dark:bg-neutral-950 text-black dark:text-gray-50 w-full px-4 py-4 flex justify-center items-stretch flex-grow"
     >
       <RouterView v-slot="{ Component }" class="max-w-screen-xl flex flex-grow">
         <transition name="fade" mode="out-in">
@@ -150,12 +151,12 @@
         <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" class="flex">
           &nbsp;CC BY 4.0
           <img
-            alt=""
+            alt="Creative Commons BY 4.0 icon"
             class="cc_image mx-1 self-center"
             src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
           />
           <img
-            alt=""
+            alt="Creative Commons person icon"
             class="cc_image"
             src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
           />

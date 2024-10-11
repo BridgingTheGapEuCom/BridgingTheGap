@@ -9,10 +9,7 @@
       (or mix of those) you could use to build your system based on the architectural capabilities
       rather than functional behavior.
     </p>
-    <img
-      src="/articles/System_vs_Ecosystem_Architectural_Styles/img/www/system_vs_ecosystem-Generic Architectural Styles.drawio.png"
-      alt=""
-    />
+    <system_vs_ecosystem-generic_-architectural_-styles :dark="dark" />
     <p>
       IP: Neal Ford,
       <a
@@ -37,10 +34,7 @@
       landscape) level. This in itself brings different architectural styles that can be leveraged
       to ease the burdens of interoperability, amongst many other troubles.
     </p>
-    <img
-      src="/articles/System_vs_Ecosystem_Architectural_Styles/img/www/system_vs_ecosystem-Ecosystem%20Architecural%20Styles.drawio.png"
-      alt=""
-    />
+    <system_vs_ecosystem-ecosystem_-architectural_-styles :dark="dark" />
     <p>
       Looking from a perspective of an Integration Architect, that knows a few integration
       technologies, we can identify four distinct architectural styles, that can be used in various
@@ -136,136 +130,100 @@
       of the characteristics and the score for each architectural style will be provided in separate
       articles!
     </p>
-    <p>
-      Before you jump into analyzing this table please note that while these are a result of our
-      research, the actual outcomes in implementation may vary depending on several factors (e.g.
-      organization and IT maturity, used technology, ecosystem composition, business processes).
-      This table should not be treated as a source of definitive truth, but rather as generalized
-      guidelines by which you may choose an architectural style for ecosystem wide interoperability.
-    </p>
+    <div class="mt-2">
+      <div
+        class="flex justify-between border-b border-neutral-500 dark:border-neutral-400 cursor-pointer"
+        @click="extended = !extended"
+      >
+        <div class="text-neutral-500 dark:text-neutral-400">Disclaimer</div>
+        <div :class="{ 'rotate-180': extended }" class="extendableChevron">
+          <SvgIcon
+            class="text-neutral-500 dark:text-neutral-400 w-4 m-0 inline-block"
+            type="mdi"
+            :path="mdiChevronDown"
+          />
+        </div>
+      </div>
+      <div class="extendable my-1 px-2" :class="{ extended: extended }" :aria-expanded="extended">
+        <div class="overflow-hidden">
+          <p>
+            Before you jump into analyzing this table please note that while these are a result of
+            our research, the actual outcomes in implementation may vary depending on several
+            factors (e.g. organization and IT maturity, used technology, ecosystem composition,
+            business processes). This table should not be treated as a source of definitive truth,
+            but rather as generalized guidelines by which you may choose an architectural style for
+            ecosystem wide interoperability.
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <table>
+    <table class="sm:table hidden my-5">
       <tr>
-        <th>Architectural Characteristic Name</th>
-        <th>Point-to-point</th>
-        <th>Spaghetti Architecture</th>
-        <th>Event-Driven Architecture</th>
-        <th>Broker (Mediator topology)</th>
-        <th>API-led Architecture</th>
+        <th scope="col" class="w-20 px-1">Architectural Characteristic</th>
+        <template v-for="(key, characteristic) in table" :key="characteristic">
+          <th scope="col" class="px-1">{{ characteristic }}</th>
+        </template>
       </tr>
-      <tr>
-        <td>Development Cost</td>
-        <td>💲</td>
-        <td>💲</td>
-        <td>💲💲</td>
-        <td>💲💲</td>
-        <td>💲💲💲</td>
-      </tr>
-      <tr>
-        <td>Operational Cost</td>
-        <td>💲</td>
-        <td>💲💲💲💲💲</td>
-        <td>💲💲💲</td>
-        <td>💲💲💲</td>
-        <td>💲💲💲💲</td>
-      </tr>
-      <tr>
-        <td>Architectural Changes Cost</td>
-        <td>💲</td>
-        <td>💲💲💲💲</td>
-        <td>💲💲</td>
-        <td>💲💲💲</td>
-        <td>💲💲</td>
-      </tr>
-      <tr>
-        <td>Abstraction</td>
-        <td>⭐</td>
-        <td>⭐</td>
-        <td>⭐⭐</td>
-        <td>⭐⭐⭐</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Contract Resilience</td>
-        <td>⭐</td>
-        <td>⭐</td>
-        <td>⭐⭐</td>
-        <td>⭐⭐⭐</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Simplicity</td>
-        <td>⭐⭐⭐⭐⭐</td>
-        <td>⭐</td>
-        <td>⭐⭐⭐⭐</td>
-        <td>⭐⭐⭐</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Composability</td>
-        <td>⭐</td>
-        <td>⭐</td>
-        <td>⭐⭐⭐</td>
-        <td>⭐⭐</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Extensibility</td>
-        <td>⭐</td>
-        <td>⭐</td>
-        <td>⭐⭐</td>
-        <td>⭐⭐⭐</td>
-        <td>⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Testability</td>
-        <td>⭐⭐⭐⭐⭐</td>
-        <td>⭐</td>
-        <td>⭐⭐⭐⭐</td>
-        <td>⭐⭐⭐</td>
-        <td>⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Scalability</td>
-        <td>⭐⭐</td>
-        <td>⭐⭐</td>
-        <td>⭐⭐⭐⭐</td>
-        <td>⭐⭐⭐⭐</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Performance</td>
-        <td>⭐⭐⭐⭐</td>
-        <td>⭐⭐⭐</td>
-        <td>⭐⭐⭐⭐⭐</td>
-        <td>⭐⭐⭐</td>
-        <td>⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Security</td>
-        <td>⭐⭐⭐</td>
-        <td>⭐</td>
-        <td>⭐⭐</td>
-        <td>⭐⭐⭐⭐</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Observability</td>
-        <td>⭐⭐</td>
-        <td>⭐</td>
-        <td>⭐⭐⭐</td>
-        <td>⭐⭐⭐</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>Auditability</td>
-        <td>⭐⭐</td>
-        <td>⭐</td>
-        <td>⭐⭐</td>
-        <td>⭐⭐⭐⭐</td>
-        <td>⭐⭐⭐⭐⭐</td>
-      </tr>
+      <template
+        v-for="(key, characteristic, i) in table[Object.keys(table)[0]]"
+        :key="characteristic"
+      >
+        <tr>
+          <td class="px-1">{{ characteristic }}</td>
+          <td v-for="index in table" :key="index">
+            <div
+              tabindex="0"
+              :aria-label="
+                i < 3 ? `${index[characteristic]} dollars` : `${index[characteristic]} stars`
+              "
+              role="img"
+            >
+              <SvgIcon
+                v-for="j of index[characteristic]"
+                :key="j"
+                class="text-neutral-500 dark:text-neutral-200 w-3.5 m-0 inline-block"
+                type="mdi"
+                :path="`${i < 3 ? mdiCurrencyUsd : mdiStar}`"
+              />
+            </div>
+          </td>
+        </tr>
+      </template>
     </table>
+
+    <div class="sm:hidden block my-5">
+      <div
+        class="border rounded-md mb-5 mt-1 dark:border-neutral-600"
+        v-for="(architecture, architectureName) in table"
+        :key="architectureName"
+      >
+        <div
+          class="border-b font-bold p-1 pl-2 bg-neutral-200 dark:bg-neutral-600 dark:border-neutral-600"
+        >
+          {{ architectureName }}
+        </div>
+        <div>
+          <div
+            class="grid grid-cols-2"
+            v-for="(key, name, i) in architecture"
+            :key="name"
+            :class="i === 2 ? `border-b col-span-2 dark:border-neutral-600` : ''"
+          >
+            <div class="p-1 pl-2">{{ name }}</div>
+            <div>
+              <SvgIcon
+                v-for="j of key"
+                :key="j"
+                class="text-neutral-600 dark:text-neutral-200 w-4 m-0 inline-block"
+                type="mdi"
+                :path="`${i < 3 ? mdiCurrencyUsd : mdiStar}`"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <p>
       If you wish to learn more about architectural styles for system architecture, you can do so by
@@ -281,7 +239,152 @@
 </template>
 
 <script setup>
+import System_vs_ecosystemGeneric_Architectural_Styles from '../img/www/system_vs_ecosystem-Generic_Architectural_Styles.vue'
+import System_vs_ecosystemEcosystem_Architectural_Styles from '../img/www/system_vs_ecosystem-Ecosystem_Architectural_Styles.vue'
+import { mdiChevronDown, mdiCurrencyUsd, mdiStar } from '@mdi/js'
+import SvgIcon from '@jamescoyle/vue-icon'
+import { ref } from 'vue'
+
 defineProps(['dark'])
+
+const extended = ref(false)
+
+const table = {
+  'Point-to-point': {
+    'Development Cost': 1,
+    'Operational Cost': 1,
+    'Architectural Changes Cost': 1,
+    Abstraction: 1,
+    'Contract Resilience': 1,
+    Simplicity: 5,
+    Composability: 1,
+    Extensibility: 1,
+    Testability: 5,
+    Scalability: 2,
+    Performance: 4,
+    Security: 3,
+    Observability: 2,
+    Auditability: 2
+  },
+  'Spaghetti Architecture': {
+    'Development Cost': 1,
+    'Operational Cost': 5,
+    'Architectural Changes Cost': 4,
+    Abstraction: 1,
+    'Contract Resilience': 1,
+    Simplicity: 1,
+    Composability: 1,
+    Extensibility: 1,
+    Testability: 1,
+    Scalability: 2,
+    Performance: 3,
+    Security: 1,
+    Observability: 1,
+    Auditability: 1
+  },
+  'Event-Driven Architecture': {
+    'Development Cost': 2,
+    'Operational Cost': 3,
+    'Architectural Changes Cost': 2,
+    Abstraction: 2,
+    'Contract Resilience': 2,
+    Simplicity: 4,
+    Composability: 3,
+    Extensibility: 2,
+    Testability: 4,
+    Scalability: 4,
+    Performance: 5,
+    Security: 2,
+    Observability: 3,
+    Auditability: 2
+  },
+  'Broker (Mediator topology)': {
+    'Development Cost': 2,
+    'Operational Cost': 3,
+    'Architectural Changes Cost': 3,
+    Abstraction: 3,
+    'Contract Resilience': 3,
+    Simplicity: 3,
+    Composability: 2,
+    Extensibility: 3,
+    Testability: 3,
+    Scalability: 4,
+    Performance: 3,
+    Security: 4,
+    Observability: 3,
+    Auditability: 4
+  },
+  'API-led Architecture': {
+    'Development Cost': 3,
+    'Operational Cost': 4,
+    'Architectural Changes Cost': 2,
+    Abstraction: 5,
+    'Contract Resilience': 4,
+    Simplicity: 3,
+    Composability: 5,
+    Extensibility: 4,
+    Testability: 2,
+    Scalability: 5,
+    Performance: 2,
+    Security: 5,
+    Observability: 5,
+    Auditability: 5
+  }
+}
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+table {
+  @apply bg-transparent;
+
+  font-size: 0.7rem;
+
+  tr:nth-child(4) {
+    @apply dark:border-neutral-500;
+    border-bottom: 2px solid;
+  }
+
+  tr:first-child {
+    @apply dark:border-neutral-500;
+    border-bottom: 2px solid;
+  }
+
+  tr {
+    @apply border-b dark:border-neutral-500;
+
+    th {
+      @apply py-2 text-left border-t-2 border-black dark:border-neutral-500 bg-neutral-200 dark:bg-neutral-700;
+      vertical-align: top;
+    }
+
+    td {
+      @apply sm:text-nowrap text-wrap py-1;
+
+      min-width: 5.4rem;
+    }
+
+    td:nth-child(n + 2) {
+      white-space: nowrap;
+
+      svg {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.extendable {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: var(--mainTransition);
+  overflow: hidden;
+}
+
+.extendable.extended {
+  grid-template-rows: 1fr;
+}
+
+.extendableChevron {
+  transition: var(--mainTransition);
+}
+</style>
