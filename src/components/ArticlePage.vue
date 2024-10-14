@@ -71,7 +71,7 @@
       </div>
     </div>
     <div class="w-[12rem] self-stretch ml-3 hidden lg:block">
-      <div class="sticky top-16 dark:border-neutral-900 border-l">
+      <div class="sticky top-16 dark:border-neutral-900 border-l overflow-auto">
         <div class="flex flex-col justify-between items-stretch pageHeight">
           <div class="text-left">
             <div class="font-bold h3 mb-2 pl-3">Table of contents</div>
@@ -83,7 +83,7 @@
               >
                 <template v-if="element.localName === 'h2'">
                   <div
-                    class="ml-2 pl-1 border-l-2"
+                    class="ml-2 pl-1 border-l-2 py-0.5"
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
@@ -103,7 +103,7 @@
                 </template>
                 <template v-if="element.localName === 'h3'">
                   <div
-                    class="ml-2 pl-4 border-l-2"
+                    class="ml-2 pl-4 border-l-2 py-0.5"
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
@@ -123,7 +123,7 @@
                 </template>
                 <template v-if="element.localName === 'h4'">
                   <div
-                    class="ml-2 pl-7 border-l-2"
+                    class="ml-2 pl-7 border-l-2 py-0.5"
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
@@ -143,7 +143,7 @@
                 </template>
                 <template v-if="element.localName === 'h5'">
                   <div
-                    class="ml-2 pl-10 border-l-2"
+                    class="ml-2 pl-10 border-l-2 py-0.5"
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
