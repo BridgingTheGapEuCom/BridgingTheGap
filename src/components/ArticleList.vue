@@ -39,12 +39,14 @@
         </div>
       </transition>
     </div>
-    <div class="flex flex-col">
+    <div class="flex flex-col" id="articleList">
       <transition-group name="scale-card">
         <div
           class="flex md:flex-row flex-col text-justify"
-          v-for="article of filteredArticles"
+          v-for="(article, index) of filteredArticles"
           :key="article.name"
+          :id="`article-${index}`"
+          v-resize-observer="onResizeOne"
         >
           <article-card
             class="mb-4"
@@ -62,12 +64,15 @@
 
 <script setup>
 import ArticleCard from '@/components/ArticleCard.vue'
-import { computed, onBeforeMount, ref, watch } from 'vue'
+import { computed, onBeforeMount, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { vResizeObserver } from '@vueuse/components'
 
 const tags = ref([])
 const route = useRoute()
 const router = useRouter()
+
+const maxHeight = ref(0)
 
 const props = defineProps({
   articles: Array
@@ -79,12 +84,50 @@ onBeforeMount(() => {
   }
 })
 
+onMounted(() => {
+  window.addEventListener('resize', onResize)
+})
+
 watch(route, (current) => {
   tags.value = []
   if (current.query && current.query.tags) {
     tags.value = current.query.tags.split(',')
   }
 })
+
+/**
+ * onResizeOne
+ *
+ * @param resizeEvent
+ */
+const onResizeOne = (resizeEvent) => {
+  if (resizeEvent && resizeEvent[0] && resizeEvent[0].borderBoxSize[0]) {
+    if (maxHeight.value < resizeEvent[0].borderBoxSize[0].blockSize) {
+      maxHeight.value = resizeEvent[0].borderBoxSize[0].blockSize
+
+      document
+        .querySelector(':root')
+        .style.setProperty('--scaleTransitionMaxHeight', `${maxHeight.value}px`)
+    }
+  }
+}
+
+/**
+ * onResize
+ */
+const onResize = () => {
+  maxHeight.value = 0
+  for (const articleIndex in filteredArticles.value) {
+    const el = document.getElementById(`article-${articleIndex}`)
+    if (el && el.offsetHeight > maxHeight.value) {
+      maxHeight.value = el.offsetHeight
+    }
+  }
+
+  document
+    .querySelector(':root')
+    .style.setProperty('--scaleTransitionMaxHeight', `${maxHeight.value}px`)
+}
 
 /**
  * removeTag
@@ -102,6 +145,11 @@ const removeTag = (tag) => {
   }
 }
 
+/**
+ * filteredArticles
+ *
+ * @type {ComputedRef<any[]|*>}
+ */
 const filteredArticles = computed(() => {
   if (tags.value.length === 0) {
     return props.articles

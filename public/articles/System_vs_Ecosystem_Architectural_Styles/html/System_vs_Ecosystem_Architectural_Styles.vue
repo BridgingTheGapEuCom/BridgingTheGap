@@ -339,6 +339,10 @@ table {
 
   font-size: 0.7rem;
 
+  tr:nth-child(2n + 1) {
+    @apply bg-gray-100;
+  }
+
   tr:nth-child(4) {
     @apply dark:border-neutral-500;
     border-bottom: 2px solid;

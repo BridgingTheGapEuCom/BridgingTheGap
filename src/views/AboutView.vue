@@ -21,12 +21,11 @@
               joy of learning.
             </p>
             <p class="indent-6">
-              My expertise lies primarily in orchestration driven service-oriented architecture
-              (ODSOA), although I've also delved into the realm of event-driven architecture (EDA)
-              to broaden my professional toolkit. I've worked extensively with a myriad of
-              integration platforms, including Tibco BusinessWorks 5.x and 6.x, Boomi, WebMethods,
-              Mulesoft, Azure Integration Services, and WSO2, constantly adapting to the evolving
-              landscape of integration technologies.
+              My expertise lies primarily in API-Led Architecture, although I've also delved into
+              the realm of Event-Driven Architecture (EDA) to broaden my professional toolkit. I've
+              worked extensively with a myriad of integration platforms, including Tibco
+              BusinessWorks 5.x and 6.x, Boomi, WebMethods, Mulesoft, Azure Integration Services,
+              and WSO2, constantly adapting to the evolving landscape of integration technologies.
             </p>
             <p class="indent-6">
               I see the world of Application Integration as not just a profession but a passion. I
