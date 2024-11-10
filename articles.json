@@ -163,6 +163,10 @@
       {
         "reviewer": "Marcin Nowiński",
         "link": "https://www.linkedin.com/in/marcin-nowinski-13ab7310?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAAJOz_4BuZw1DP5UZReS-kr1Gv5amDT9fqk&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B1B6WHcioQBuQGKNTUKuLPg%3D%3D"
+      },
+      {
+        "reviewer": "Alwyn Van Niekerk",
+        "link": "https://www.linkedin.com/in/alwynvanniekerk/"
       }
     ]
   },
@@ -172,6 +176,9 @@
     "short": "When we think about architecture, we usually think of building a system. There are no right answers to how to build, most of the time we use our experience and expertise, or we look towards more advanced techniques like trade-off analysis to choose “the least worst” solution. Luckily there are shortcuts that can help make decisions over what type of architectural style (or mix of those) you could use to build your system based on the architectural capabilities rather than functional behavior.",
     "tags": [
       "Basics",
+      "Architectural styles"
+    ],
+    "relatedTags": [
       "Architectural styles"
     ],
     "publishDate": "2024-10-07",
@@ -214,6 +221,10 @@
       }
     ],
     "reviewers": [
+      {
+        "reviewer": "Alwyn Van Niekerk",
+        "link": "https://www.linkedin.com/in/alwynvanniekerk/"
+      }
     ]
   },
   {
@@ -265,6 +276,10 @@
       }
     ],
     "reviewers": [
+      {
+        "reviewer": "Alwyn Van Niekerk",
+        "link": "https://www.linkedin.com/in/alwynvanniekerk/"
+      }
     ]
   }
 ]
