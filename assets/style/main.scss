@@ -1,0 +1,344 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  @apply bg-neutral-50;
+
+  scroll-behavior: smooth;
+
+  --color-background: #f8fafc;
+
+  --color-scheme: light;
+
+  --mainTransition: all 0.5s ease;
+  --cardTransition: all 200ms;
+  --diagramColorTransition: all 500ms ease-in-out;
+  --navigationButtonTransition: text-decoration-color 300ms;
+
+  --scaleTransitionMaxHeight: 15rem;
+
+  --focusHelperColor: rgba(55, 65, 81, 0.85);
+  --focusHelperHeight: 6ex;
+  --focusHelperLineColor: rgba(55, 65, 81, 0.3);
+
+  --default-font-size: 18px;
+
+  --h1: 1.67rem;
+  --h2: 1.33rem;
+  --h3: 1.05rem;
+  --h4: 0.84rem;
+  --h5: 0.84rem;
+
+  color-scheme: var(--color-scheme);
+
+  font-optical-sizing: auto;
+  font-size: var(--default-font-size);
+}
+
+.readingLine {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 2px;
+  top: calc(var(--mouseY) + 78px);
+
+  background-color: var(--focusHelperLineColor);
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: var(--focusHelperHeight);
+    height: 100vh;
+    width: 100%;
+
+    background-color: var(--focusHelperColor);
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: var(--focusHelperHeight);
+    height: calc(100vh - var(--mouseY) - var(--focusHelperHeight) - 2px);
+    width: 100%;
+
+    background-color: var(--focusHelperColor);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  html {
+    --mainTransition: none !important;
+    --cardTransition: none !important;
+    --navigationButtonTransition: none !important;
+    --diagramColorTransition: none !important;
+
+    scroll-behavior: inherit !important;
+  }
+}
+
+html:has(.dark) {
+  --color-scheme: dark;
+  --color-background: rgb(10, 10, 10);
+
+  --focusHelperColor: rgba(156, 163, 175, 0.85);
+  --focusHelperLineColor: rgba(156, 163, 175, 0.7);
+}
+
+html {
+  overflow-y: scroll;
+}
+
+@supports (font-size-adjust: 1) {
+  :root {
+    font-size-adjust: 0.5;
+  }
+}
+
+#body {
+  @apply bg-neutral-100;
+
+  min-height: 100dvh;
+  display: flex;
+  flex-flow: column;
+}
+
+footer {
+  font-size: 0.75rem;
+}
+
+.link {
+  text-decoration-thickness: 1px;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-line: underline;
+  text-underline-offset: 0.15rem;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+.headerLink {
+  @apply link text-gray-700 hover:text-black dark:text-gray-200 dark:hover:text-white;
+}
+
+.articleContentLink {
+  @apply hover:text-black dark:hover:text-white;
+
+  text-decoration-thickness: 1px;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-underline-offset: 0.15rem;
+}
+
+.articleLinkHeight {
+  line-height: calc(1ex / 0.32);
+}
+
+.article {
+  max-width: 65ch;
+}
+
+article {
+  @apply hyphens-auto;
+}
+
+article p {
+  @apply md:text-justify articleLinkHeight;
+}
+
+article img {
+  @apply my-4 w-full;
+}
+
+article svg {
+  @apply my-4 w-full h-full;
+}
+
+article a {
+  @apply link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white;
+}
+
+article ul {
+  @apply list-disc list-inside pl-7;
+}
+
+article ul ul {
+  list-style-type: circle;
+}
+
+.cc_image {
+  width: 0.75rem;
+}
+
+.cutAfterFourRows {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card {
+  transition: var(--cardTransition);
+}
+
+.navigation-button {
+  position: relative;
+
+  text-decoration-thickness: 2px;
+  text-decoration-color: transparent;
+  text-decoration-line: underline;
+  text-underline-offset: 0.15rem;
+
+  transition: var(--navigationButtonTransition);
+
+  &:hover {
+    text-decoration-color: initial;
+  }
+}
+
+p:has(+ p) {
+  @apply mb-4;
+}
+
+.h1 {
+  font-size: var(--h1);
+  font-weight: 600;
+}
+
+.h2 {
+  font-size: var(--h2);
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: var(--h3);
+  font-weight: 600;
+}
+
+.h4 {
+  font-size: var(--h4);
+  font-weight: 600;
+}
+
+.h5 {
+  font-size: var(--h5);
+  font-weight: 600;
+}
+
+h1{
+  font-size: var(--h1); //30px
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
+  font-weight: 600;
+  scroll-margin-top: 4rem;
+}
+
+h2 {
+  font-size: var(--h2); //24px
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
+  font-weight: 600;
+  scroll-margin-top: 4rem;
+}
+
+h3 {
+  font-size: var(--h3); //19px
+  line-height: calc(1ex / 0.38);
+  margin: calc(1ex / 0.38) 0;
+  font-weight: 600;
+  scroll-margin-top: 4rem;
+}
+
+h4 {
+  font-size: var(--h4); //15px
+  line-height: calc(1ex / 0.37);
+  margin: calc(1ex / 0.37) 0;
+  font-weight: 600;
+  scroll-margin-top: 4rem;
+}
+
+h5 {
+  @apply text-gray-600 dark:text-gray-400;
+
+  font-size: var(--h5); //15px
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
+  font-weight: 200;
+  scroll-margin-top: 4rem;
+}
+
+// ==========================================
+// Transitions
+// ==========================================
+.fade-enter-active,
+.fade-leave-active {
+  transition: var(--mainTransition);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.scale-enter-active,
+.scale-leave-active {
+  transition: var(--mainTransition);
+  overflow: hidden;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(0);
+  height: 0;
+  overflow: hidden;
+}
+
+.scale-enter-to,
+.scale-leave-from {
+  height: 1.75rem;
+}
+
+.scale-card-move,
+.scale-card-enter-active,
+.scale-card-leave-active {
+  transition: var(--mainTransition);
+  overflow: hidden;
+}
+
+.scale-card-enter-from,
+.scale-card-leave-to {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.scale-card-move {
+  position: absolute;
+}
+
+.scale-card-enter-to,
+.scale-card-leave-from {
+  max-height: var(--scaleTransitionMaxHeight);
+}
+
+.scale-navigation-enter-active,
+.scale-navigation-leave-active {
+  transition: var(--mainTransition);
+  overflow: hidden;
+}
+
+.scale-navigation-enter-from,
+.scale-navigation-leave-to {
+  //opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+}
+
+.scale-navigation-enter-to,
+.scale-navigation-leave-from {
+  height: 8rem;
+}
