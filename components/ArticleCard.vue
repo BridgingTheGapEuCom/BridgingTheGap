@@ -21,16 +21,16 @@
       <div class="cutAfterFourRows my-0 font-thin">{{ short }}</div>
       <div class="flex flex-wrap gap-1">
         <router-link
+          v-for="(tag, index) of tags"
+          :key="`${tag}-${index}`"
           class="md:inline pr-2 hover:text-black hover:dark:text-gray-50 navigation-button"
           :class="{
-            'text-gray-600': !currentTags.includes(tag),
-            'dark:text-gray-400': !currentTags.includes(tag),
-            'text-black': currentTags.includes(tag),
-            'dark:text-white': currentTags.includes(tag),
-            'font-bold': currentTags.includes(tag),
+            'text-gray-600': !currentTags?.includes(tag),
+            'dark:text-gray-400': !currentTags?.includes(tag),
+            'text-black': currentTags?.includes(tag),
+            'dark:text-white': currentTags?.includes(tag),
+            'font-bold': currentTags?.includes(tag)
           }"
-          v-for="tag of tags"
-          :key="tag"
           :to="tagLink(tag)"
         >
           #{{ tag }}
@@ -41,36 +41,41 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute } from "vue-router";
+import { useRoute } from 'vue-router'
 
 defineProps({
-  name: String,
-  title: String,
-  short: String,
-  tags: Array,
-  currentTags: Array,
-});
+  name: { type: String, required: true },
+  title: { type: String, required: true },
+  short: { type: String, required: true },
+  tags: { type: Array<String>, required: false, default: [] },
+  currentTags: { type: Array<String>, required: true }
+})
 
-const route = useRoute();
+const route = useRoute()
 
-const tagLink = (tag) => {
+/**
+ * tagLink
+ *
+ * @param tag
+ */
+const tagLink = (tag: string) => {
   if (route.query && route.query.tags) {
-    if (!route.query.tags.split(",").includes(tag)) {
-      return `/?tags=${route.query.tags + "," + tag}`;
+    if (!(route.query.tags as string).split(',').includes(tag)) {
+      return `/?tags=${route.query.tags + ',' + tag}`
     } else {
-      const filter = route.query.tags.split(",").filter((el) => {
-        return el !== tag;
-      });
+      const filter = (route.query.tags as string).split(',').filter((el) => {
+        return el !== tag
+      })
       if (filter.length === 0) {
-        return `/`;
+        return `/`
       } else {
-        return `/?tags=${filter}`;
+        return `/?tags=${filter}`
       }
     }
   } else {
-    return `/?tags=${tag}`;
+    return `/?tags=${tag}`
   }
-};
+}
 </script>
 
 <style scoped></style>

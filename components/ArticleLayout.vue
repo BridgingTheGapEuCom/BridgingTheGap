@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="justify-between w-full articleLinkHeight max-w-screen-xl flex flex-grow"
-  >
+  <div class="justify-between w-full articleLinkHeight max-w-screen-xl flex flex-grow">
     <div class="flex justify-center flex-grow">
       <div class="article">
         <div class="mb-5">
@@ -16,19 +14,17 @@
         <h1 class="mt-3 mb-2.5">{{ title }}</h1>
         <div class="text-justify hyphens-auto my-2 block">
           <NuxtLink
-            class="pr-2 navigation-button text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
             v-for="tag of tags"
             :key="tag"
+            class="pr-2 navigation-button text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
             :to="tagLink(tag)"
           >
             #{{ tag }}
           </NuxtLink>
         </div>
-        <div
-          class="flex flex-col lg:flex-row justify-between border-t dark:border-neutral-800"
-        >
+        <div class="flex flex-col lg:flex-row justify-between border-t dark:border-neutral-800">
           <div>
-            <div class="h4 mt-3" id="article_authors">Authors</div>
+            <div id="article_authors" class="h4 mt-3">Authors</div>
             <div v-for="author of authors" :key="author.author">
               <a
                 target="_blank"
@@ -68,11 +64,7 @@
         <div v-if="relatedArticles.length > 0">
           <div class="mt-3 border-b dark:border-neutral-800" />
           <div class="h4 mt-3">Related articles</div>
-          <div
-            class="articleLinkHeight"
-            v-for="related of relatedArticles"
-            :key="related.title"
-          >
+          <div v-for="related of relatedArticles" :key="related.title" class="articleLinkHeight">
             <NuxtLink class="link" :href="`/articles/${related.name}`">{{
               related.title
             }}</NuxtLink>
@@ -81,11 +73,7 @@
         <div v-if="bibliography.length > 0">
           <div class="mt-3 border-b dark:border-neutral-800" />
           <div class="h4 mt-3">Bibliography</div>
-          <div
-            class="articleLinkHeight"
-            v-for="bib of bibliography"
-            :key="bib.title"
-          >
+          <div v-for="bib of bibliography" :key="bib.title" class="articleLinkHeight">
             <a class="link" target="_blank" :href="bib.link">{{ bib.title }}</a>
             <span v-if="bib.ISBN">;&nbsp;ISBN {{ bib.ISBN }}</span>
             <span>;&nbsp;{{ bib.author }}</span>
@@ -100,9 +88,9 @@
             <div class="font-bold h3 mb-2 pl-3">Table of contents</div>
             <template v-if="contentElements.length > 0">
               <div
-                class="text-gray-500 dark:text-gray-400"
                 v-for="(element, i) of contentElements"
                 :key="element.id"
+                class="text-gray-500 dark:text-gray-400"
               >
                 <template v-if="element.localName === 'h2'">
                   <div
@@ -110,16 +98,16 @@
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
-                      'border-transparent': lowestIntersecting !== i,
+                      'border-transparent': lowestIntersecting !== i
                     }"
                   >
                     <a
+                      :id="`${encodeURI(element.id)}_anchor`"
                       class="articleContentLink hover:underline"
                       :class="{
                         'text-black': lowestIntersecting === i,
-                        'dark:text-white': lowestIntersecting === i,
+                        'dark:text-white': lowestIntersecting === i
                       }"
-                      :id="`${encodeURI(element.id)}_anchor`"
                       :href="`#${encodeURI(element.id)}`"
                       >{{ element.textContent }}</a
                     >
@@ -131,16 +119,16 @@
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
-                      'border-transparent': lowestIntersecting !== i,
+                      'border-transparent': lowestIntersecting !== i
                     }"
                   >
                     <a
+                      :id="`${encodeURI(element.id)}_anchor`"
                       class="articleContentLink hover:underline"
                       :class="{
                         'text-black': lowestIntersecting === i,
-                        'dark:text-white': lowestIntersecting === i,
+                        'dark:text-white': lowestIntersecting === i
                       }"
-                      :id="`${encodeURI(element.id)}_anchor`"
                       :href="`#${encodeURI(element.id)}`"
                       >{{ element.textContent }}</a
                     >
@@ -152,16 +140,16 @@
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
-                      'border-transparent': lowestIntersecting !== i,
+                      'border-transparent': lowestIntersecting !== i
                     }"
                   >
                     <a
+                      :id="`${encodeURI(element.id)}_anchor`"
                       class="articleContentLink hover:underline"
                       :class="{
                         'text-black': lowestIntersecting === i,
-                        'dark:text-white': lowestIntersecting === i,
+                        'dark:text-white': lowestIntersecting === i
                       }"
-                      :id="`${encodeURI(element.id)}_anchor`"
                       :href="`#${encodeURI(element.id)}`"
                       >{{ element.textContent }}</a
                     >
@@ -173,16 +161,16 @@
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
-                      'border-transparent': lowestIntersecting !== i,
+                      'border-transparent': lowestIntersecting !== i
                     }"
                   >
                     <a
+                      :id="`${encodeURI(element.id)}_anchor`"
                       class="articleContentLink hover:underline"
                       :class="{
                         'text-black': lowestIntersecting === i,
-                        'dark:text-white': lowestIntersecting === i,
+                        'dark:text-white': lowestIntersecting === i
                       }"
-                      :id="`${encodeURI(element.id)}_anchor`"
                       :href="`#${encodeURI(element.id)}`"
                       >{{ element.textContent }}</a
                     >
@@ -197,53 +185,48 @@
   </div>
 </template>
 
-<script setup>
-import {
-  computed,
-  nextTick,
-  onBeforeUnmount,
-  onMounted,
-  ref,
-  watch,
-} from "vue";
-import { useRoute, useRouter } from "vue-router";
-import articles from "../articles.json";
-import { mdiArrowLeft } from "@mdi/js";
-import SvgIcon from "@jamescoyle/vue-icon";
+<script setup lang="ts">
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import articles from '../articles.json'
+import { mdiArrowLeft } from '@mdi/js'
+import SvgIcon from '@jamescoyle/vue-icon'
 
-const props = defineProps(["dark"]);
+const props = defineProps({
+  dark: { type: Boolean, default: false }
+})
 
-const route = useRoute();
-const router = useRouter();
+const route = useRoute()
+const router = useRouter()
 
-const articleName = ref("");
-const title = ref("");
-const published = ref("");
-const lastUpdate = ref("");
-const bibliography = ref([]);
-const relatedArticles = ref([]);
-const reviewers = ref([]);
-const authors = ref([]);
-const contents = ref([]);
-const lowestIntersecting = ref(-1);
-const contentElements = ref([]);
+const articleName = ref('')
+const title = ref('')
+const published = ref('')
+const lastUpdate = ref('')
+const bibliography = ref([])
+const relatedArticles = ref([])
+const reviewers = ref([])
+const authors = ref([])
+const contents = ref([])
+const lowestIntersecting = ref(-1)
+const contentElements = ref([])
 
-const tags = ref([]);
+const tags = ref([])
 
 onMounted(async () => {
-  updateData(false);
-  window.addEventListener("scroll", onScroll);
-});
+  await updateData(false)
+  window.addEventListener('scroll', onScroll)
+})
 
 onBeforeUnmount(() => {
-  window.removeEventListener("scroll", onScroll);
-});
+  window.removeEventListener('scroll', onScroll)
+})
 
 watch(route, async (current, prev) => {
   if (current.fullPath !== prev.fullPath) {
-    await updateData(false);
+    await updateData(false)
   }
-});
+})
 
 /**
  * sortedReviewers
@@ -252,51 +235,48 @@ watch(route, async (current, prev) => {
  */
 const sortedReviewers = computed(() => {
   if (reviewers.value) {
-    return reviewers.value.sort((a, b) => {
-      return a.reviewer.localeCompare(b.reviewer);
-    });
+    return [...reviewers.value].value.sort((a, b) => {
+      return a.reviewer.localeCompare(b.reviewer)
+    })
   }
 
-  return [];
-});
+  return []
+})
 
 /**
  * onScroll
  */
 const onScroll = () => {
-  let last = null;
+  let last = null
   if (contentElements.value.length > 0) {
-    last = contentElements.value[0].intersectionId;
+    last = contentElements.value[0].intersectionId
   }
 
-  const scrollValue = window.top.scrollY + 80;
+  const scrollValue = window.top.scrollY + 80
   for (let i = 0; i < contentElements.value.length; i++) {
     if (contentElements.value[i].offsetTop > scrollValue) {
       if (contentElements.value[i - 1]) {
         router.replace({
-          hash: `#${contentElements.value[i - 1].id}`,
-        });
+          hash: `#${contentElements.value[i - 1].id}`
+        })
       }
-      i = contentElements.value.length;
-      lowestIntersecting.value = last;
-      return;
+      i = contentElements.value.length
+      lowestIntersecting.value = last
+      return
     }
-    last = contentElements.value[i].intersectionId;
+    last = contentElements.value[i].intersectionId
   }
 
   if (contentElements.value.length > 0) {
-    if (
-      contentElements.value[contentElements.value.length - 1].offsetTop <
-      scrollValue
-    ) {
+    if (contentElements.value[contentElements.value.length - 1].offsetTop < scrollValue) {
       lowestIntersecting.value =
-        contentElements.value[contentElements.value.length - 1].intersectionId;
+        contentElements.value[contentElements.value.length - 1].intersectionId
       router.replace({
-        hash: `#${contentElements.value[contentElements.value.length - 1].id}`,
-      });
+        hash: `#${contentElements.value[contentElements.value.length - 1].id}`
+      })
     }
   }
-};
+}
 
 /**
  * updateData
@@ -304,47 +284,45 @@ const onScroll = () => {
  * @returns {Promise<void>}
  */
 const updateData = async (ssr) => {
-  if (articleName.value === route.name.replace("articles-", "")) {
+  if (articleName.value === route.name.replace('articles-', '')) {
     await nextTick(() => {
-      onScroll();
-    });
-    return;
+      onScroll()
+    })
+    return
   }
 
-  articleName.value = route.name.replace("articles-", "");
+  articleName.value = route.name.replace('articles-', '')
 
-  bibliography.value = [];
+  bibliography.value = []
 
   const articleMeta = articles.find((el) => {
-    return el.name === articleName.value;
-  });
+    return el.name === articleName.value
+  })
 
   if (articleMeta) {
-    title.value = articleMeta.title;
-    published.value = new Date(articleMeta.publishDate).toLocaleDateString();
-    lastUpdate.value = new Date(articleMeta.lastUpdate).toLocaleDateString();
-    tags.value = articleMeta.tags ? articleMeta.tags : [];
-    bibliography.value = articleMeta.bibliography
-      ? articleMeta.bibliography
-      : [];
-    reviewers.value = articleMeta.reviewers ? articleMeta.reviewers : [];
-    authors.value = articleMeta.authors ? articleMeta.authors : [];
+    title.value = articleMeta.title
+    published.value = new Date(articleMeta.publishDate).toLocaleDateString()
+    lastUpdate.value = new Date(articleMeta.lastUpdate).toLocaleDateString()
+    tags.value = articleMeta.tags ? articleMeta.tags : []
+    bibliography.value = articleMeta.bibliography ? articleMeta.bibliography : []
+    reviewers.value = articleMeta.reviewers ? articleMeta.reviewers : []
+    authors.value = articleMeta.authors ? articleMeta.authors : []
 
-    relatedArticles.value = [];
+    relatedArticles.value = []
     if (articleMeta.relatedTags && articleMeta.relatedTags.length > 0) {
-      relatedArticles.value = findRelatedArticles(articleMeta.relatedTags);
+      relatedArticles.value = findRelatedArticles(articleMeta.relatedTags)
     }
   }
 
   if (!ssr) {
     await nextTick(() => {
-      createContents();
-      onScroll();
-    });
+      createContents()
+      onScroll()
+    })
   } else {
-    articleName.value = "waiting for client mount";
+    articleName.value = 'waiting for client mount'
   }
-};
+}
 
 /**
  * findRelatedArticles
@@ -353,139 +331,132 @@ const updateData = async (ssr) => {
  * @returns {any[]}
  */
 const findRelatedArticles = (relatedTags) => {
-  const articleSet = new Set();
+  const articleSet = new Set()
   relatedTags.forEach((tag) => {
     articles.forEach((article) => {
-      if (
-        article.title !== title.value &&
-        article.tags &&
-        article.tags.includes(tag)
-      ) {
-        articleSet.add({ title: article.title, name: article.name });
+      if (article.title !== title.value && article.tags && article.tags.includes(tag)) {
+        articleSet.add({ title: article.title, name: article.name })
       }
-    });
-  });
+    })
+  })
 
-  return Array.from(articleSet);
-};
+  return Array.from(articleSet)
+}
 
 /**
  * createContents
  */
 const createContents = () => {
-  const article = document.getElementsByTagName("article")[0];
+  const article = document.getElementsByTagName('article')[0]
 
-  contentElements.value = [];
+  contentElements.value = []
 
   if (article && article.children) {
-    let intersectionId = -1;
-    const allIds = [];
+    let intersectionId = -1
+    const allIds = []
     Object.keys(article.children).forEach((childKey) => {
-      const child = article.children[childKey];
-      if (["h2", "h3", "h4", "h5"].includes(child.localName)) {
-        contentElements.value.push(child);
-        intersectionId++;
-        child.intersectionId = intersectionId;
-        if (child.localName === "h2") {
-          child.id = `${encodeURI(child.textContent.replaceAll(" ", "_"))}`;
+      const child = article.children[childKey]
+      if (['h2', 'h3', 'h4', 'h5'].includes(child.localName)) {
+        contentElements.value.push(child)
+        intersectionId++
+        child.intersectionId = intersectionId
+        if (child.localName === 'h2') {
+          child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}`
           if (allIds.includes(child.id)) {
-            let count = 0;
+            let count = 0
             allIds.forEach((el) => {
               if (el === child.id) {
-                count++;
+                count++
               }
-            });
-            child.id = `${encodeURI(child.textContent.replaceAll(" ", "_"))}_${count}`;
+            })
+            child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}_${count}`
           }
-          allIds.push(child.id);
+          allIds.push(child.id)
           contents.value.push({
             title: child.textContent,
             id: child.id,
             intersectionId: intersectionId,
-            children: [],
-          });
-        } else if (child.localName === "h3") {
-          child.id = `${encodeURI(child.textContent.replaceAll(" ", "_"))}`;
+            children: []
+          })
+        } else if (child.localName === 'h3') {
+          child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}`
           if (allIds.includes(child.id)) {
-            let count = 0;
+            let count = 0
             allIds.forEach((el) => {
               if (el === child.id) {
-                count++;
+                count++
               }
-            });
-            child.id = `${encodeURI(child.textContent.replaceAll(" ", "_"))}_${count}`;
+            })
+            child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}_${count}`
           }
-          allIds.push(child.id);
+          allIds.push(child.id)
 
           contents.value[contents.value.length - 1].children.push({
             title: child.textContent,
             id: child.id,
             intersectionId: intersectionId,
-            children: [],
-          });
-        } else if (child.localName === "h4") {
-          const h2Length = contents.value.length;
-          const h3Length = contents.value[h2Length - 1].children.length;
+            children: []
+          })
+        } else if (child.localName === 'h4') {
+          const h2Length = contents.value.length
+          const h3Length = contents.value[h2Length - 1].children.length
 
-          child.id = `${encodeURI(child.textContent.replaceAll(" ", "_"))}`;
+          child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}`
           if (allIds.includes(child.id)) {
-            let count = 0;
+            let count = 0
             allIds.forEach((el) => {
               if (el === child.id) {
-                count++;
+                count++
               }
-            });
-            child.id = `${encodeURI(child.textContent.replaceAll(" ", "_"))}_${count}`;
+            })
+            child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}_${count}`
           }
-          allIds.push(child.id);
+          allIds.push(child.id)
 
           contents.value[h2Length - 1].children[h3Length - 1].children.push({
             title: child.textContent,
             intersectionId: intersectionId,
             id: child.id,
-            children: [],
-          });
-        } else if (child.localName === "h5") {
-          const h2Length = contents.value.length;
-          const h3Length = contents.value[h2Length - 1].children.length;
-          const h4Length =
-            contents.value[h2Length - 1].children[h3Length - 1].children.length;
+            children: []
+          })
+        } else if (child.localName === 'h5') {
+          const h2Length = contents.value.length
+          const h3Length = contents.value[h2Length - 1].children.length
+          const h4Length = contents.value[h2Length - 1].children[h3Length - 1].children.length
 
-          child.id = `${encodeURI(child.textContent.replaceAll(" ", "_"))}`;
+          child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}`
           if (allIds.includes(child.id)) {
-            let count = 0;
+            let count = 0
             allIds.forEach((el) => {
               if (el === child.id) {
-                count++;
+                count++
               }
-            });
-            child.id = `${encodeURI(child.textContent.replaceAll(" ", "_"))}_${count}`;
+            })
+            child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}_${count}`
           }
-          allIds.push(child.id);
+          allIds.push(child.id)
 
-          contents.value[h2Length - 1].children[h3Length - 1].children[
-            h4Length - 1
-          ].children.push({
+          contents.value[h2Length - 1].children[h3Length - 1].children[h4Length - 1].children.push({
             title: child.textContent,
             intersectionId: intersectionId,
-            id: child.id,
-          });
+            id: child.id
+          })
         }
       }
-    });
+    })
 
     nextTick(() => {
-      let hash = route.hash;
+      let hash = route.hash
       if (hash) {
-        hash = encodeURI(hash).substring(1);
-        const el = document.getElementById(`${hash}_anchor`);
+        hash = encodeURI(hash).substring(1)
+        const el = document.getElementById(`${hash}_anchor`)
         if (el) {
-          el.click();
+          el.click()
         }
       }
-    });
+    })
   }
-};
+}
 
 /**
  * tagLink
@@ -495,24 +466,24 @@ const createContents = () => {
  */
 const tagLink = (tag) => {
   if (route.query && route.query.tags) {
-    if (!route.query.tags.split(",").includes(tag)) {
-      return `/?tags=${route.query.tags + "," + tag}`;
+    if (!route.query.tags.split(',').includes(tag)) {
+      return `/?tags=${route.query.tags + ',' + tag}`
     } else {
-      const filter = route.query.tags.split(",").filter((el) => {
-        return el !== tag;
-      });
+      const filter = route.query.tags.split(',').filter((el) => {
+        return el !== tag
+      })
       if (filter.length === 0) {
-        return `/`;
+        return `/`
       } else {
-        return `/?tags=${filter}`;
+        return `/?tags=${filter}`
       }
     }
   } else {
-    return `/?tags=${tag}`;
+    return `/?tags=${tag}`
   }
-};
+}
 
-updateData(true);
+updateData(true)
 </script>
 
 <style scoped>
