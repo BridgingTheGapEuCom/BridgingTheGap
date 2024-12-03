@@ -5,7 +5,9 @@ export default defineNuxtConfig({
   },
 
   ssr: true,
+
   compatibilityDate: '2024-04-03',
+
   css: ['~/assets/style/main.scss'],
   vite: {
     css: {
@@ -13,6 +15,18 @@ export default defineNuxtConfig({
         scss: {
           api: 'modern-compiler'
         }
+      }
+    }
+  },
+
+  security: {
+    nonce: true, // Enables HTML nonce support in SSR mode
+    headers: {
+      contentSecurityPolicy: {
+        'script-src': [
+          "'strict-dynamic'", // Modify with your custom CSP sources
+          "'nonce-{{nonce}}'" // Enables CSP nonce support for scripts in SSR mode, supported by almost any browser (level 2)
+        ]
       }
     }
   },
@@ -55,5 +69,5 @@ export default defineNuxtConfig({
     pageTransition: { name: 'fade', mode: 'out-in' }
   },
 
-  modules: ['@nuxt/eslint']
+  modules: ['@nuxt/eslint', 'nuxt-security']
 })

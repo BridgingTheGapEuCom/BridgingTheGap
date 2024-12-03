@@ -5,10 +5,10 @@
         <div v-if="tags.length > 0" class="flex gap-2">
           <div class="text-base pt-0.5 pl-5">Filtered tags</div>
           <span
-            id="badge-dismiss-default"
-            class="inline-flex items-center px-2 py-1 font-medium text-neutral-800 bg-neutral-300 rounded dark:bg-neutral-700 dark:text-neutral-300"
             v-for="tag of tags"
+            id="badge-dismiss-default"
             :key="tag"
+            class="inline-flex items-center px-2 py-1 font-medium text-neutral-800 bg-neutral-300 rounded dark:bg-neutral-700 dark:text-neutral-300"
           >
             {{ tag }}
             <button
@@ -39,14 +39,14 @@
         </div>
       </transition>
     </div>
-    <div class="flex flex-col" id="articleList">
+    <div id="articleList" class="flex flex-col">
       <transition-group name="scale-card">
         <div
-          class="flex md:flex-row flex-col text-justify"
           v-for="(article, index) of filteredArticles"
-          :key="article.name"
           :id="`article-${index}`"
+          :key="article.name"
           v-resize-observer="onResizeOne"
+          class="flex md:flex-row flex-col text-justify"
         >
           <ArticleCard
             class="mb-4"
@@ -54,7 +54,7 @@
             :short="article.short"
             :title="article.title"
             :tags="article.tags"
-            :currentTags="tags"
+            :current-tags="tags"
           />
         </div>
       </transition-group>
@@ -63,36 +63,36 @@
 </template>
 
 <script setup>
-import { computed, onBeforeMount, onMounted, ref, watch } from "vue";
-import { useRoute, useRouter } from "vue-router";
-import { vResizeObserver } from "@vueuse/components";
+import { computed, onBeforeMount, onMounted, ref, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import { vResizeObserver } from '@vueuse/components'
 
-const tags = ref([]);
-const route = useRoute();
-const router = useRouter();
+const tags = ref([])
+const route = useRoute()
+const router = useRouter()
 
-const maxHeight = ref(0);
+const maxHeight = ref(0)
 
 const props = defineProps({
-  articles: Array,
-});
+  articles: Array
+})
 
 onBeforeMount(() => {
   if (route.query && route.query.tags) {
-    tags.value = route.query.tags.split(",");
+    tags.value = route.query.tags.split(',')
   }
-});
+})
 
 onMounted(() => {
-  window.addEventListener("resize", onResize);
-});
+  window.addEventListener('resize', onResize)
+})
 
 watch(route, (current) => {
-  tags.value = [];
+  tags.value = []
   if (current.query && current.query.tags) {
-    tags.value = current.query.tags.split(",");
+    tags.value = current.query.tags.split(',')
   }
-});
+})
 
 /**
  * onResizeOne
@@ -102,34 +102,31 @@ watch(route, (current) => {
 const onResizeOne = (resizeEvent) => {
   if (resizeEvent && resizeEvent[0] && resizeEvent[0].borderBoxSize[0]) {
     if (maxHeight.value < resizeEvent[0].borderBoxSize[0].blockSize) {
-      maxHeight.value = resizeEvent[0].borderBoxSize[0].blockSize;
+      maxHeight.value = resizeEvent[0].borderBoxSize[0].blockSize
 
       document
-        .querySelector(":root")
-        .style.setProperty(
-          "--scaleTransitionMaxHeight",
-          `${maxHeight.value}px`,
-        );
+        .querySelector(':root')
+        .style.setProperty('--scaleTransitionMaxHeight', `${maxHeight.value}px`)
     }
   }
-};
+}
 
 /**
  * onResize
  */
 const onResize = () => {
-  maxHeight.value = 0;
+  maxHeight.value = 0
   for (const articleIndex in filteredArticles.value) {
-    const el = document.getElementById(`article-${articleIndex}`);
+    const el = document.getElementById(`article-${articleIndex}`)
     if (el && el.offsetHeight > maxHeight.value) {
-      maxHeight.value = el.offsetHeight;
+      maxHeight.value = el.offsetHeight
     }
   }
 
   document
-    .querySelector(":root")
-    .style.setProperty("--scaleTransitionMaxHeight", `${maxHeight.value}px`);
-};
+    .querySelector(':root')
+    .style.setProperty('--scaleTransitionMaxHeight', `${maxHeight.value}px`)
+}
 
 /**
  * removeTag
@@ -137,15 +134,15 @@ const onResize = () => {
  */
 const removeTag = (tag) => {
   const tempArray = [...tags.value].filter((el) => {
-    return el !== tag;
-  });
+    return el !== tag
+  })
 
   if (tempArray.length > 0) {
-    router.push(`/?tags=${tempArray.join(",")}`);
+    router.push(`/?tags=${tempArray.join(',')}`)
   } else {
-    router.push(`/`);
+    router.push(`/`)
   }
-};
+}
 
 /**
  * filteredArticles
@@ -154,19 +151,19 @@ const removeTag = (tag) => {
  */
 const filteredArticles = computed(() => {
   if (tags.value.length === 0) {
-    return props.articles;
+    return props.articles
   }
 
   return props.articles.filter((article) => {
     for (let i = 0; i < tags.value.length; i++) {
       if (article.tags.includes(tags.value[i])) {
-        return true;
+        return true
       }
     }
 
-    return false;
-  });
-});
+    return false
+  })
+})
 </script>
 
 <style scoped></style>

@@ -470,6 +470,7 @@
         </g>
         <g>
           <svg
+            id="svg-image-YkDXto43T4GbDHSxEXTJ"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 850 850"
             version="1.1"
@@ -477,7 +478,6 @@
             y="15"
             width="70"
             height="70"
-            id="svg-image-YkDXto43T4GbDHSxEXTJ"
           >
             <g>
               <path

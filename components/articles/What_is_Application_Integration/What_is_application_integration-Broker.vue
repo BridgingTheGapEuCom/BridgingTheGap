@@ -12,7 +12,7 @@
       viewBox="-0.5 -0.5 527 262"
       class="ge-export-svg-auto"
     >
-      <title></title>
+      <title />
       <g>
         <g>
           <path
@@ -634,6 +634,7 @@
         </g>
         <g :class="{ shadow: !isDark, darkShadow: isDark }">
           <svg
+            id="svg-image-YkDXto43T4GbDHSxEXTJ"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 850 850"
             version="1.1"
@@ -641,7 +642,6 @@
             y="143.5"
             width="93"
             height="93"
-            id="svg-image-YkDXto43T4GbDHSxEXTJ"
           >
             &#xa;
             <g>
@@ -667,6 +667,7 @@
         </g>
         <g :class="{ shadow: !isDark, darkShadow: isDark }">
           <svg
+            id="svg-image-YkDXto43T4GbDHSxEXTJ"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 850 850"
             version="1.1"
@@ -674,7 +675,6 @@
             y="143.5"
             width="93"
             height="93"
-            id="svg-image-YkDXto43T4GbDHSxEXTJ"
           >
             &#xa;
             <g>
