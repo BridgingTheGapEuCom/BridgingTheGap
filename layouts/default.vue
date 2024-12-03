@@ -1,14 +1,6 @@
 <template>
-  <div
-    id="body"
-    ref="body"
-    :class="{ dark: darkTheme }"
-    @click="hamburgerOpened = false"
-  >
-    <div
-      v-if="readingHelper"
-      class="absolute h-full bottom-0 w-full pointer-events-none"
-    >
+  <div id="body" ref="body" :class="{ dark: darkTheme }" @click="hamburgerOpened = false">
+    <div v-if="readingHelper" class="absolute h-full bottom-0 w-full pointer-events-none">
       <div class="readingLine">
         <div v-if="isMobile">
           <SvgIcon
@@ -24,9 +16,7 @@
     <nav
       class="z-10 bg-neutral-200 dark:bg-neutral-800 shadow-md dark:shadow-none border-gray-200 sticky top-0"
     >
-      <div
-        class="max-w-screen-xl relative flex flex-wrap items-center justify-between mx-auto p-1"
-      >
+      <div class="max-w-screen-xl relative flex flex-wrap items-center justify-between mx-auto p-1">
         <NuxtLink to="/">
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
             <logo-s-v-g :dark="darkTheme" class="h-7 w-7 m-1" />
@@ -39,11 +29,7 @@
         </NuxtLink>
         <div>
           <button
-            v-if="
-              route.name &&
-              route.name !== 'index' &&
-              !route.name.startsWith('about')
-            "
+            v-if="route.name && route.name !== 'index' && !route.name.startsWith('about')"
             class="inline-flex items-center navigation-button p-2 w-10 h-10 justify-end text-sm text-black rounded-lg hover:bg-gray-100 dark:text-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-label="Focus helper"
             type="button"
@@ -65,7 +51,7 @@
         <transition name="scale-navigation" mode="in-out">
           <div
             v-if="hamburgerOpened"
-            @click="stopPropagation"
+            id="navbar-default"
             tabindex="-1"
             class="absolute h-32 bg-neutral-200 shadow-md dark:bg-neutral-800 right-0"
             :class="{
@@ -78,9 +64,9 @@
               'dark:shadow-neutral-800': smallWidth,
               'w-full': smallWidth,
               'top-12': smallWidth,
-              'top-14': !smallWidth,
+              'top-14': !smallWidth
             }"
-            id="navbar-default"
+            @click="stopPropagation"
           >
             <ul
               class="flex flex-col gap-1 p-2 m-2 bg-transparent border-gray-100 rounded-lg bg-gray-50 rtl:space-x-reverse"
@@ -111,11 +97,7 @@
                 </NuxtLink>
               </li>
               <li class="flex items-center">
-                <button
-                  aria-label="Change theme"
-                  type="button"
-                  @click="changeTheme"
-                >
+                <button aria-label="Change theme" type="button" @click="changeTheme">
                   <SvgIcon
                     class="text-black dark:text-gray-100 hover:text-black dark:hover:text-white card"
                     type="mdi"
@@ -137,9 +119,7 @@
     <footer
       class="sticky bottom-0 w-full shadow-up dark:shadow-none pr-4 py-1 hidden md:flex bg-neutral-200 dark:bg-neutral-800 text-black dark:text-white"
     >
-      <div
-        class="flex mx-2 justify-start max-w-screen-xl w-full text-[0.65rem]"
-      >
+      <div class="flex mx-2 justify-start max-w-screen-xl w-full text-[0.65rem]">
         <a href="/" property="dct:title" rel="cc:attributionURL" target="_blank"
           ><b>Bridging the Gap</b></a
         >
@@ -153,7 +133,7 @@
           class="headerLink dark:hover:text-white"
           ><b>Karol Skrzymowski</b></a
         >
-        <div>,&nbsp</div>
+        <div>,&nbsp;</div>
         <a
           href="https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
           property="cc:attributionName"
@@ -163,7 +143,7 @@
           class="headerLink hover:text-black dark:hover:text-white"
           ><b>Radosław Przewuski</b></a
         >
-        <div>&nbspand&nbsp</div>
+        <div>&nbsp;and&nbsp;</div>
         <a
           href="https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
           property="cc:attributionName"
@@ -174,24 +154,10 @@
           ><b>Hubert Drabczyk</b></a
         >
         &nbsp;is licensed under
-        <a
-          href="https://creativecommons.org/licenses/by/4.0"
-          target="_blank"
-          class="flex"
-        >
+        <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" class="flex">
           &nbsp;CC BY 4.0
-          <img
-            alt="Creative Commons BY 4.0 icon"
-            class="cc_image mx-1 self-center"
-            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
-            loading="lazy"
-          />
-          <img
-            alt="Creative Commons person icon"
-            class="cc_image"
-            src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
-            loading="lazy"
-          />
+          <cc class="mx-0.5" />
+          <cc_person />
         </a>
       </div>
     </footer>
@@ -199,91 +165,83 @@
 </template>
 
 <script setup>
-import { RouterView, useRoute } from "vue-router";
-import { computed, onMounted, reactive, ref, watch } from "vue";
-import SvgIcon from "@jamescoyle/vue-icon";
-import {
-  mdiEyeMinus,
-  mdiHandBackLeftOutline,
-  mdiMenu,
-  mdiThemeLightDark,
-} from "@mdi/js";
-import { useMouse, useWindowFocus, useWindowSize } from "@vueuse/core";
-import "@fontsource/atkinson-hyperlegible";
-import "@fontsource/atkinson-hyperlegible/400.css";
-import "@fontsource/atkinson-hyperlegible/400-italic.css";
-import "@fontsource/atkinson-hyperlegible/700.css";
-import "@fontsource/atkinson-hyperlegible/700-italic.css";
+import { useRoute } from 'vue-router'
+import { computed, onMounted, reactive, ref, watch } from 'vue'
+import SvgIcon from '@jamescoyle/vue-icon'
+import { mdiEyeMinus, mdiHandBackLeftOutline, mdiMenu, mdiThemeLightDark } from '@mdi/js'
+import { useMouse, useWindowFocus, useWindowSize } from '@vueuse/core'
+import '@fontsource/atkinson-hyperlegible'
+import '@fontsource/atkinson-hyperlegible/400.css'
+import '@fontsource/atkinson-hyperlegible/400-italic.css'
+import '@fontsource/atkinson-hyperlegible/700.css'
+import '@fontsource/atkinson-hyperlegible/700-italic.css'
+import Cc_person from '~/components/cc_person.vue'
 
-const darkTheme = useState("dark", () => false);
-const themeCookie = useCookie("theme");
+const darkTheme = useState('dark', () => false)
+const themeCookie = useCookie('theme')
 
-const body = ref();
+const body = ref()
 
-const mouse = reactive(
-  useMouse({ target: body, touch: false, type: "client" }),
-);
-const { height, width } = useWindowSize();
-const readingHelper = ref(true);
-const focused = useWindowFocus();
+const mouse = reactive(useMouse({ target: body, touch: false, type: 'client' }))
+const { height, width } = useWindowSize()
+const readingHelper = ref(true)
+const focused = useWindowFocus()
 
-const hamburgerOpened = ref(false);
+const hamburgerOpened = ref(false)
 
-const route = useRoute();
+const route = useRoute()
 
 // initialize components based on data attribute selectors
 onMounted(() => {
-  readingHelper.value = false;
+  readingHelper.value = false
 
   if (themeCookie.value !== undefined) {
-    darkTheme.value = themeCookie.value === true;
+    darkTheme.value = themeCookie.value === true
   } else {
-    darkTheme.value = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    themeCookie.value = `${darkTheme.value}`;
+    darkTheme.value = window.matchMedia('(prefers-color-scheme: dark)').matches
+    themeCookie.value = `${darkTheme.value}`
   }
 
-  let metaThemeColor = document.querySelector("meta[name=theme-color]");
+  let metaThemeColor = document.querySelector('meta[name=theme-color]')
   if (darkTheme.value === true) {
-    metaThemeColor.setAttribute("content", "rgb(10,10,10)");
+    metaThemeColor.setAttribute('content', 'rgb(10,10,10)')
   } else {
-    metaThemeColor.setAttribute("content", "rgb(245,245,245)");
+    metaThemeColor.setAttribute('content', 'rgb(245,245,245)')
   }
-});
+})
 
 const stopPropagation = (event) => {
-  event.stopImmediatePropagation();
-};
+  event.stopImmediatePropagation()
+}
 
 /**
  * Changes the page theme
  */
 const changeTheme = (event) => {
-  darkTheme.value = !darkTheme.value;
-  themeCookie.value = `${darkTheme.value}`;
+  darkTheme.value = !darkTheme.value
+  themeCookie.value = `${darkTheme.value}`
 
-  event.stopImmediatePropagation();
+  event.stopImmediatePropagation()
 
-  let metaThemeColor = document.querySelector("meta[name=theme-color]");
+  let metaThemeColor = document.querySelector('meta[name=theme-color]')
   if (darkTheme.value === true) {
-    metaThemeColor.setAttribute("content", "rgb(10,10,10)");
+    metaThemeColor.setAttribute('content', 'rgb(10,10,10)')
   } else {
-    metaThemeColor.setAttribute("content", "rgb(250,250,250)");
+    metaThemeColor.setAttribute('content', 'rgb(250,250,250)')
   }
-};
+}
 
 /**
  * Turn on or off the focus helper
  */
 const focusHelper = () => {
-  readingHelper.value = !readingHelper.value;
-  hamburgerOpened.value = false;
+  readingHelper.value = !readingHelper.value
+  hamburgerOpened.value = false
 
   if (isMobile.value) {
-    document
-      .querySelector(":root")
-      .style.setProperty("--mouseY", `${height.value / 2}px`);
+    document.querySelector(':root').style.setProperty('--mouseY', `${height.value / 2}px`)
   }
-};
+}
 
 /**
  * Sets the mouseY CSS property for the focus helper lines
@@ -292,58 +250,48 @@ const focusHelper = () => {
 const moveDragFocusHelper = (data) => {
   if (data.targetTouches[0]) {
     document
-      .querySelector(":root")
-      .style.setProperty(
-        "--mouseY",
-        `${data.targetTouches[0].clientY - 110}px`,
-      );
+      .querySelector(':root')
+      .style.setProperty('--mouseY', `${data.targetTouches[0].clientY - 110}px`)
   }
-};
+}
 
 /**
  * Expands or collapses the navigation hamburger menu
  */
 const expandNavigation = () => {
-  hamburgerOpened.value = !hamburgerOpened.value;
-};
+  hamburgerOpened.value = !hamburgerOpened.value
+}
 
 const isMobile = computed(() => {
   if (navigator) {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent,
-    );
+      navigator.userAgent
+    )
   }
 
-  return false;
-});
+  return false
+})
 
 const smallWidth = computed(() => {
-  return isMobile.value && width.value < 1024;
-});
+  return isMobile.value && width.value < 1024
+})
 
 watch(route, (current) => {
-  hamburgerOpened.value = false;
-  if (current.name === "home" || current.name === "about") {
-    readingHelper.value = false;
+  hamburgerOpened.value = false
+  if (current.name === 'home' || current.name === 'about') {
+    readingHelper.value = false
   }
-});
+})
 
 watch(
   mouse,
   (current) => {
-    if (
-      !isMobile.value &&
-      focused &&
-      readingHelper.value &&
-      current.y < body.value.clientHeight
-    ) {
-      document
-        .querySelector(":root")
-        .style.setProperty("--mouseY", `${current.y - 80}px`);
+    if (!isMobile.value && focused && readingHelper.value && current.y < body.value.clientHeight) {
+      document.querySelector(':root').style.setProperty('--mouseY', `${current.y - 80}px`)
     }
   },
-  { deep: true },
-);
+  { deep: true }
+)
 </script>
 
 <style scoped lang="scss">
