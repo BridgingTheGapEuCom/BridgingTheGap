@@ -6,7 +6,6 @@
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
       width="762px"
       height="172px"
       viewBox="-0.5 -0.5 762 172"

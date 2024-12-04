@@ -281,5 +281,55 @@
         "link": "https://www.linkedin.com/in/alwynvanniekerk/"
       }
     ]
+  },
+  {
+    "name": "Synchronous_vs_Asynchronous",
+    "title": "Synchronous vs Asynchronous",
+    "short": "While communication was always the key to success for humankind, since 1969 and the  creation of ARPANet, communication has become something very different, quicker and more robust with every single decade, ever speeding up. The forecasts for 2025 are that we will produce 147 ZB of data over the year, this means about 407200000 TB a day. To put that in perspective, YouTube alone currently uses approximately 440000 TB daily, and your message on Whatsapp is under the size of 5KB = 5120 characters (1 TB = 1073741824 KB, so around 214.7 million messages).",
+    "tags": [
+      "Basics",
+      "Concepts"
+    ],
+    "publishDate": "2024-12-03",
+    "lastUpdate": "2024-12-03",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "Synchronous",
+        "link": "https://www.merriam-webster.com/dictionary/synchronous",
+        "ISBN": "",
+        "type": "link",
+        "author": "Merriam-Webster"
+      },
+      {
+        "title": "Asynchronous",
+        "link": "https://www.merriam-webster.com/dictionary/asynchronous",
+        "ISBN": "",
+        "type": "link",
+        "author": "Merriam-Webster"
+      },
+      {
+        "title": "Volume of data/information created, captured, copied, and consumed worldwide from 2010 to 2020, with forecasts from 2021 to 2025",
+        "link": "https://www.statista.com/statistics/871513/worldwide-data-created/",
+        "ISBN": "",
+        "type": "chart",
+        "author": "Petroc Taylor"
+      }
+    ],
+    "reviewers": [
+    ]
   }
 ]

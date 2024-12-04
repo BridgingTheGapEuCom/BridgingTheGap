@@ -107,7 +107,7 @@
 </template>
 
 <script setup>
-import articles from '../../articles.json' with { type: 'json' }
+import articles from '../articles.json'
 import { onBeforeMount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 

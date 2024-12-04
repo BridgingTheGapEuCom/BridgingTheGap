@@ -5,5 +5,5 @@
 </template>
 
 <script setup>
-import articles from "../articles.json" with { type: "json" };
+import articles from '../articles.json'
 </script>
