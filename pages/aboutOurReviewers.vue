@@ -58,7 +58,7 @@
 </template>
 
 <script setup>
-import articles from '../../articles.json' with { type: 'json' }
+import articles from '../articles.json'
 import { ref } from 'vue'
 
 const reviewers = ref([])

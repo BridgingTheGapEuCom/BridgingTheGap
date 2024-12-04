@@ -18,8 +18,7 @@
             :key="tag"
             class="pr-2 navigation-button text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
             :to="tagLink(tag)"
-          >
-            #{{ tag }}
+            >#{{ tag }}
           </NuxtLink>
         </div>
         <div class="flex flex-col lg:flex-row justify-between border-t dark:border-neutral-800">
@@ -74,7 +73,12 @@
           <div class="mt-3 border-b dark:border-neutral-800" />
           <div class="h4 mt-3">Bibliography</div>
           <div v-for="bib of bibliography" :key="bib.title" class="articleLinkHeight">
-            <a class="link" target="_blank" :href="bib.link">{{ bib.title }}</a>
+            <a
+              class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
+              target="_blank"
+              :href="bib.link"
+              >{{ bib.title }}</a
+            >
             <span v-if="bib.ISBN">;&nbsp;ISBN {{ bib.ISBN }}</span>
             <span>;&nbsp;{{ bib.author }}</span>
           </div>
@@ -185,7 +189,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import articles from '../articles.json'
@@ -235,7 +239,7 @@ watch(route, async (current, prev) => {
  */
 const sortedReviewers = computed(() => {
   if (reviewers.value) {
-    return [...reviewers.value].value.sort((a, b) => {
+    return [...reviewers.value].sort((a, b) => {
       return a.reviewer.localeCompare(b.reviewer)
     })
   }

@@ -31,6 +31,15 @@ export default defineNuxtConfig({
     }
   },
 
+  robots: {
+    blockNonSeoBots: true
+  },
+
+  site: {
+    url: 'https://bridgingthegap.eu.com',
+    name: 'Bridging The Gap'
+  },
+
   devServer: {
     host: '0.0.0.0',
     port: 3000
@@ -69,5 +78,5 @@ export default defineNuxtConfig({
     pageTransition: { name: 'fade', mode: 'out-in' }
   },
 
-  modules: ['@nuxt/eslint', 'nuxt-security']
+  modules: ['@nuxt/eslint', 'nuxt-security', '@nuxtjs/sitemap', '@nuxtjs/robots']
 })
