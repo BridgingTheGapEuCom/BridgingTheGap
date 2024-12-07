@@ -14,7 +14,7 @@
     </NuxtLink>
     <div class="my-2 mx-3 flex flex-col justify-between">
       <NuxtLink :to="`/articles/${name}`">
-        <div class="text-xl md:text-2xl my-0 font-semibold hover:underline">
+        <div class="text-left text-xl md:text-2xl my-0 font-semibold hover:underline">
           {{ title }}
         </div>
       </NuxtLink>

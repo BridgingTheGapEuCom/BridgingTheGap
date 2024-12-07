@@ -217,6 +217,10 @@ const contentElements = ref([])
 
 const tags = ref([])
 
+useHead({
+  title: title
+})
+
 onMounted(async () => {
   await updateData(false)
   window.addEventListener('scroll', onScroll)
