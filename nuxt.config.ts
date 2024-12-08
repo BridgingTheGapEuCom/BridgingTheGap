@@ -78,5 +78,5 @@ export default defineNuxtConfig({
     pageTransition: { name: 'fade', mode: 'out-in' }
   },
 
-  modules: ['@nuxt/eslint', 'nuxt-security', '@nuxtjs/sitemap', '@nuxtjs/robots']
+  modules: ['@nuxt/eslint', 'nuxt-security', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-seo-utils']
 })

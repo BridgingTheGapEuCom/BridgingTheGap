@@ -210,6 +210,11 @@ onMounted(() => {
   }
 })
 
+/**
+ * stopPropagation
+ *
+ * @param event
+ */
 const stopPropagation = (event) => {
   event.stopImmediatePropagation()
 }
@@ -272,6 +277,11 @@ const isMobile = computed(() => {
   return false
 })
 
+/**
+ * smallWidth
+ *
+ * @type {ComputedRef<unknown>}
+ */
 const smallWidth = computed(() => {
   return isMobile.value && width.value < 1024
 })

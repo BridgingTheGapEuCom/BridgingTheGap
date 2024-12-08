@@ -18,6 +18,8 @@ if (route && route.query) {
   router.replace(`${route.path}${route.hash}`)
 }
 
+useRobotsRule('index, follow')
+
 watch(route, (current) => {
   if (current && current.query) {
     router.replace(`${current.path}${current.hash}`)
@@ -26,6 +28,9 @@ watch(route, (current) => {
 
 useHead({
   title: 'Bridging the Gap',
+  titleTemplate: (siteTitle) => {
+    return siteTitle ? `Bridging The Gap - ${siteTitle}` : 'Bridging The Gap'
+  },
   link: {
     rel: 'icon',
     type: 'image/x-icon',
@@ -57,12 +62,12 @@ useSeoMeta({
     'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
   ogDescription:
     'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
-  ogImage: 'https://bridgingthegap.eu.com/bridgingTheGap/favicon.svg',
+  ogImage: 'https://bridgingthegap.eu.com/favicon.svg',
   ogUrl: 'https://bridgingthegap.eu.com',
   twitterTitle: 'Bridging the Gap',
   twitterDescription:
     'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
-  twitterImage: 'https://bridgingthegap.eu.com/bridgingTheGap/favicon.svg',
+  twitterImage: 'https://bridgingthegap.eu.com/favicon.svg',
   twitterCard: 'summary'
 })
 </script>
