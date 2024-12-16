@@ -331,5 +331,34 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "From_Point-to-point_to_Spaghetti_Architecture",
+    "title": "From Point-to-point to Spaghetti Architecture",
+    "short": "While we’d like to discuss Enterprise Application Integration it is important to start with the most basic approach to data exchange and why is it crucial to understand it fully before jumping into more complex architectural styles that support ecosystem interoperability. Point-to-point as an architectural approach is exactly that. This is the most commonly known approach used by all developers and architects. So let’s take the time to explore the benefits and pitfalls of this architectural style.",
+    "tags": [
+      "Architectural styles",
+      "Qualitative analysis"
+    ],
+    "publishDate": "2024-12-08",
+    "lastUpdate": "2024-12-08",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      }
+    ],
+    "bibliography": [
+    ],
+    "reviewers": [
+    ]
   }
 ]
