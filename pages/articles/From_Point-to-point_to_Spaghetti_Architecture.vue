@@ -105,7 +105,7 @@
 
       <div class="sm:hidden block my-5">
         <div
-          v-for="(_index, characteristicName) in table['Point-to-point']"
+          v-for="(_count, characteristicName, index) in table['Point-to-point']"
           :key="characteristicName"
           class="border rounded-md mb-5 mt-1 dark:border-neutral-600"
         >
@@ -132,7 +132,7 @@
                   :key="j"
                   class="w-4 m-0 inline-block"
                   type="mdi"
-                  :path="`${i < 3 ? mdiCurrencyUsd : mdiStar}`"
+                  :path="`${index < 3 ? mdiCurrencyUsd : mdiStar}`"
                 />
               </div>
             </div>
