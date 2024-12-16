@@ -63,7 +63,7 @@
 </template>
 
 <script setup>
-import { computed, onBeforeMount, onMounted, ref, watch } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { vResizeObserver } from '@vueuse/components'
 
@@ -77,20 +77,21 @@ const props = defineProps({
   articles: Array
 })
 
-onBeforeMount(() => {
+onMounted(() => {
+  window.addEventListener('resize', onResize)
+
   if (route.query && route.query.tags) {
     tags.value = route.query.tags.split(',')
+  } else {
+    tags.value = []
   }
 })
 
-onMounted(() => {
-  window.addEventListener('resize', onResize)
-})
-
 watch(route, (current) => {
-  tags.value = []
   if (current.query && current.query.tags) {
     tags.value = current.query.tags.split(',')
+  } else {
+    tags.value = []
   }
 })
 
@@ -136,6 +137,8 @@ const removeTag = (tag) => {
   const tempArray = [...tags.value].filter((el) => {
     return el !== tag
   })
+
+  console.log('removeTag')
 
   if (tempArray.length > 0) {
     router.push(`/?tags=${tempArray.join(',')}`)

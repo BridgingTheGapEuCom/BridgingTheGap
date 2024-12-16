@@ -15,14 +15,22 @@ const route = useRoute()
 const router = useRouter()
 
 if (route && route.query) {
-  router.replace(`${route.path}${route.hash}`)
+  if (route.query.tags) {
+    router.replace(`${route.path}${route.hash}?tags=${route.query.tags.split(',')}`)
+  } else {
+    router.replace(`${route.path}${route.hash}`)
+  }
 }
 
 useRobotsRule('index, follow')
 
 watch(route, (current) => {
   if (current && current.query) {
-    router.replace(`${current.path}${current.hash}`)
+    if (current.query.tags) {
+      router.replace(`${current.path}${current.hash}?tags=${current.query.tags.split(',')}`)
+    } else {
+      router.replace(`${current.path}${current.hash}`)
+    }
   }
 })
 
