@@ -316,10 +316,41 @@ const updateData = async (ssr) => {
     reviewers.value = articleMeta.reviewers ? articleMeta.reviewers : []
     authors.value = articleMeta.authors ? articleMeta.authors : []
 
+    const seoAuthors = []
+    for (let author of authors.value) {
+      seoAuthors.push({
+        '@type': 'Person',
+        name: author.author,
+        url: author.link
+      })
+    }
+
     relatedArticles.value = []
     if (articleMeta.relatedTags && articleMeta.relatedTags.length > 0) {
       relatedArticles.value = findRelatedArticles(articleMeta.relatedTags)
     }
+
+    useHead(
+      {
+        title: `Bridging the Gap - ${title.value}`,
+        script: [
+          {
+            key: 'pageMeta',
+            type: 'application/ld+json',
+            children: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Article',
+              headline: title.value,
+              image: [],
+              datePublished: published.value,
+              dateModified: lastUpdate.value,
+              author: seoAuthors
+            })
+          }
+        ]
+      },
+      {}
+    )
   }
 
   if (!ssr) {

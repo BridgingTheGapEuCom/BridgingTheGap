@@ -31,7 +31,7 @@
             'dark:text-white': currentTags?.includes(tag),
             'font-bold': currentTags?.includes(tag)
           }"
-          :to="tagLink(tag)"
+          :to="tagLink(tag as string)"
         >
           #{{ tag }}
         </router-link>

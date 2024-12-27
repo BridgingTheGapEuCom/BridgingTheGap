@@ -3,12 +3,9 @@
 @tailwind utilities;
 
 :root {
-  @apply bg-neutral-50;
-
   scroll-behavior: smooth;
 
-  --color-background: #f8fafc;
-
+  --color-background: --tw-white;
   --color-scheme: light;
 
   --mainTransition: all 0.5s ease;
@@ -105,7 +102,7 @@
 
 html:has(.dark) {
   --color-scheme: dark;
-  --color-background: rgb(10, 10, 10);
+  --color-background: var(--tw-color-black);
 
   --focusHelperColor: rgba(156, 163, 175, 0.85);
   --focusHelperLineColor: rgba(156, 163, 175, 0.7);
@@ -122,7 +119,7 @@ html {
 }
 
 #body {
-  @apply bg-neutral-100;
+  background-color: var(--color-background);
 
   min-height: 100dvh;
   display: flex;

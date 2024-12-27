@@ -56,6 +56,7 @@ useHead({
       'data-website-id': '138c939d-5f34-4771-a0da-405393793fe8'
     },
     {
+      key: 'pageMeta',
       type: 'application/ld+json',
       children: JSON.stringify({
         '@context': 'https://schema.org',
