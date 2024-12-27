@@ -191,10 +191,7 @@ const hamburgerOpened = ref(false)
 
 const route = useRoute()
 
-// initialize components based on data attribute selectors
-onMounted(() => {
-  readingHelper.value = false
-
+onBeforeMount(() => {
   if (themeCookie.value !== undefined) {
     darkTheme.value = themeCookie.value === true
   } else {
@@ -208,6 +205,10 @@ onMounted(() => {
   } else {
     metaThemeColor.setAttribute('content', 'rgb(245,245,245)')
   }
+})
+
+onMounted(() => {
+  readingHelper.value = false
 })
 
 /**
