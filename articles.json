@@ -419,5 +419,70 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "Event-Driven_Architecture_for_IT_ecosystems",
+    "title": "Event-Driven Architecture for IT ecosystems",
+    "short": "Modern businesses rely on a diverse ecosystem of applications, including custom-built systems and cloud-based services. Integrating these disparate systems can be challenging, often leading to tightly coupled (spaghetti) integrations that are difficult to maintain and scale. Event-Driven Architecture (EDA) offers a more flexible approach to interoperability. By leveraging events as the foundation for communication, EDA enables systems to exchange data more loosely, improving maintainability and facilitating easier adaptation to changing business requirements.",
+    "tags": [
+      "Architecture",
+      "Ecosystem Architectural Styles",
+      "Event-Driven Architecture"
+    ],
+    "relatedTags": [
+      "Event-Driven Architecture"
+    ],
+    "publishDate": "2024-12-31",
+    "lastUpdate": "2024-12-31",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "Event definition",
+        "link": "https://www.merriam-webster.com/dictionary/event",
+        "ISBN": "",
+        "type": "dictionary",
+        "author": "Merriam-Webster dictionary"
+      },
+      {
+        "title": "Every Event Everywhere All at Once",
+        "link": "https://jacquiread.com/files/2024-05-29-Every-event-everywhere-all-at-once-dddeu.pdf",
+        "ISBN": "",
+        "type": "presentation",
+        "author": "Jacqui Read; DDD Europe 2024"
+      },
+      {
+        "title": "I made everything loosely coupled - will my app fall apart?",
+        "link": "https://www.youtube.com/watch?v=fwwcixB6fQE",
+        "ISBN": "",
+        "type": "video",
+        "author": "Gregor Hohpe"
+      },
+      {
+        "title": "Lesson 138 - Dynamic Quantum Entanglement",
+        "link": "https://www.youtube.com/watch?v=-1DxY4hDWWM",
+        "ISBN": "",
+        "type": "video",
+        "author": "Mark Richards; DeveloperToArchitect.com"
+      }
+    ],
+    "reviewers": [
+    ]
   }
 ]
