@@ -1,6 +1,7 @@
 <template>
   <ArticleLayout>
     <article>
+      <h2>EAI and coupling</h2>
       <p>
         One of the key problems Enterprise Application Integration (EAI) is addressing in various
         ways is coupling. While we explore how we can address it by applying specific architectural
@@ -49,26 +50,23 @@
       </p>
       <ul>
         <li>
-          No system is free from coupling, as there is always some sort of a dependency, e.g.
-          dependency to the operating system, infrastructure or other components, modules,
-          applications. It is a matter of understanding the strength, distance and volatility of
-          coupling.
+          No system is free from coupling, as there is always some sort of a dependency, e.g. to the
+          operating system, infrastructure or other components, modules or applications. It is a
+          matter of understanding the strength, distance and volatility of coupling.
         </li>
-        <p>Therefore a system, on its own, cannot be decoupled from its environment.</p>
-
+        <p>- Therefore a system, on its own, cannot be decoupled from its environment.</p>
         <li>
-          Coupling is binary by design, meaning it is intentional or implicit. The components,
-          applications, are either coupled to each other or not, meaning they either have or do not
+          Coupling is binary by design, meaning it is either intentional or implicit. Components and
+          applications are either coupled to each other or not, meaning they either have or do not
           have a dependency to one another (e.g. two systems exchanging data with each other have a
-          dependency, or mobile game on your phone and your HR system at your work most likely have
-          no dependencies between each other). For most cases those dependencies can be derived for
-          architectural blueprints, architectural decision records, documentation or other knowledge
-          sources. The issue is when those dependencies are hidden or indirect, so we cannot rule
-          out their existence, especially if we have limited knowledge of the (eco)system at hand.
+          dependency, whereas a mobile game on your phone and your HR system at your workplace most
+          likely have no dependencies between each other). In most cases, those dependencies can be
+          derived from architectural blueprints, architectural decision records, documentation, or
+          other knowledge sources. However, the challenge arises when those dependencies are hidden
+          or indirect, so we cannot rule out their existence, especially if we have limited
+          knowledge of the (eco)system at hand.
         </li>
-        <ul>
-          <li>Therefore the system can be coupled or decoupled with another system.</li>
-        </ul>
+        <p>- Therefore the system can be coupled or decoupled with another system.</p>
       </ul>
       <p>
         In essence coupling cannot be treated as an on-off switch, it has multiple dimensions and
@@ -98,9 +96,9 @@
       </p>
       <h3>Types of coupling</h3>
       <p>
-        While there are various types of coupling, we discuss them on different abstraction levels,
-        some may be seen in the fine details of designs, others on a much broader scale. We can
-        clearly differentiate between two distinct groups of coupling types based on where do they
+        While there are various types of coupling, we discuss them on different abstraction levels.
+        Some may be seen in the fine details of designs, others on a much broader scale. We can
+        clearly differentiate between two distinct groups of coupling types based on where they
         derive from:
       </p>
       <ul>
@@ -110,16 +108,19 @@
         </li>
         <ul>
           <li>
-            Data format and type - deriving from contracts between modules, applications, where data
-            models are described in conjunction with respective formats,
+            Data format and type - deriving from contracts between modules and applications where
+            data models are described in conjunction with respective formats,
           </li>
-          <li>Semantic - the understanding and meaning of data transferred,</li>
+          <li>
+            Semantic - the generalized understanding and meaning of transferred data, both business
+            and metadata, on the level of users, business processes, purpose and usage,
+          </li>
           <li>
             Interaction - is the communication done in the synchronous or asynchronous fashion,
           </li>
           <li>
-            Conversation - the specifics of how does the communication happen (e.g. pagination,
-            caching, retry policies, technical and business error handling),
+            Conversation - the specifics of how the communication happens (e.g. pagination, caching,
+            retry policies, technical and business error handling),
           </li>
         </ul>
         <li>
@@ -171,11 +172,11 @@
       <h3>Coupling Strength</h3>
       <p>
         One of the three main characteristics of coupling is its strength. Over the years we were
-        accustomed to having those somewhat meaningless terms like “decoupled” or “loosely coupled”,
-        which could have been interpreted in various ways depending on the context of the
-        conversation or person interpreting them. That’s why a more precise classification is
-        required. Strength in this case would be classified as one of the following ordered from
-        weakest to strongest:
+        accustomed to having somewhat meaningless terms like “decoupled” or “loosely coupled”, which
+        could have been interpreted in various ways depending on the context of the conversation or
+        the individual interpreting them. That’s why a more precise classification is required.
+        Strength in this case would be classified as one of the following ordered from weakest to
+        strongest:
       </p>
       <ul>
         <li>
@@ -203,9 +204,11 @@
             of work, thus a transaction,
           </li>
           <li>
-            symmetric functional coupling - two or more applications implement the same
-            functionality (implementation does not have to be the same, as long as the result is).
-            The change of business requirements impacts all involved applications,
+            symmetric coupling - happens when two or more applications implement the same
+            functionality independently, giving the same goal by means of different implementations.
+            When the requirements for the shared behaviour change, all applications need to
+            reimplement the logic at the same time at risk of introducing bugs (e.g. mismatch in
+            data cohesion),
           </li>
         </ul>
         <li>
@@ -244,7 +247,7 @@
         <li>
           Cost of change over distance - the greater the distance between components that have to
           change together, the higher the effort, and with that the cost of the shared change, e.g.
-          changing a small statement in a method is far less costly then changing two systems that
+          changing a small statement in a method is far less costly than changing two systems that
           are coupled with each other with a contract coupling influenced by new requirements and
           changes to the data models. The cost is usually proportionate to the distance,
         </li>
@@ -255,7 +258,7 @@
           inversely proportional to the distance,
         </li>
       </ul>
-      <h3>Volatility</h3>
+      <h3>Coupling volatility</h3>
       <p>
         The last characteristic that is crucial in understanding coupling, and especially the risks
         involved with certain tighter coupling instances, is volatility. This is a bit of a compound
