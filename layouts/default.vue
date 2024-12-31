@@ -19,7 +19,11 @@
       <div class="max-w-screen-xl relative flex flex-wrap items-center justify-between mx-auto p-1">
         <NuxtLink to="/">
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
-            <logo-s-v-g :dark="darkTheme" class="h-7 w-7 m-1" />
+            <img
+              src="~/assets/logo_low_poly.png"
+              class="h-7 w-7 m-1 dark:invert"
+              alt="Bridging the Gap logo"
+            />
             <div
               class="text-base mt-1 font-semibold whitespace-nowrap hidden xs:block text-black dark:text-gray-50 tracking-wide"
             >
@@ -117,7 +121,7 @@
       <slot :dark="darkTheme" />
     </main>
     <footer
-      class="sticky bottom-0 w-full shadow-up dark:shadow-none pr-4 py-1 hidden md:flex bg-neutral-200 dark:bg-neutral-800 text-black dark:text-white"
+      class="sticky bottom-0 w-full shadow-up dark:shadow-none pr-4 pt-1 hidden md:flex bg-neutral-200 dark:bg-neutral-800 text-black dark:text-white"
     >
       <div class="flex mx-2 justify-start max-w-screen-xl w-full text-[0.65rem]">
         <a href="/" property="dct:title" rel="cc:attributionURL" target="_blank"
@@ -195,6 +199,9 @@ const hamburgerOpened = ref(false)
 
 const route = useRoute()
 
+/**
+ * onBeforeMount
+ */
 onBeforeMount(() => {
   if (themeCookie.value !== undefined) {
     darkTheme.value = themeCookie.value === true
@@ -211,6 +218,9 @@ onBeforeMount(() => {
   }
 })
 
+/**
+ * onMounted
+ */
 onMounted(() => {
   readingHelper.value = false
 })

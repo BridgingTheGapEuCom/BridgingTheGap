@@ -40,7 +40,7 @@ useHead({
   link: {
     rel: 'icon',
     type: 'image/x-icon',
-    href: '/favicon.svg'
+    href: '/favicon.png'
   },
   meta: [
     {
@@ -79,12 +79,12 @@ useSeoMeta({
     'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
   ogDescription:
     'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
-  ogImage: 'https://bridgingthegap.eu.com/favicon.svg',
+  ogImage: 'https://bridgingthegap.eu.com/favicon.png',
   ogUrl: 'https://bridgingthegap.eu.com',
   twitterTitle: 'Bridging the Gap',
   twitterDescription:
     'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
-  twitterImage: 'https://bridgingthegap.eu.com/favicon.svg',
+  twitterImage: 'https://bridgingthegap.eu.com/favicon.png',
   twitterCard: 'summary'
 })
 </script>

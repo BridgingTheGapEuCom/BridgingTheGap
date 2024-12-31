@@ -1,45 +1,70 @@
 <template>
   <div class="flex flex-col w-full justify-start items-start">
-    <div class="mb-3">
-      <transition name="scale">
-        <div v-if="tags.length > 0" class="flex gap-2">
-          <div class="text-base pt-0.5 pl-5">Filtered tags</div>
-          <span
-            v-for="tag of tags"
-            id="badge-dismiss-default"
-            :key="tag"
-            class="inline-flex items-center px-2 py-1 font-medium text-neutral-800 bg-neutral-300 rounded dark:bg-neutral-700 dark:text-neutral-300"
-          >
-            {{ tag }}
-            <button
-              type="button"
-              class="inline-flex items-center p-1 ms-2 text-sm text-neutral-400 bg-transparent rounded-sm hover:bg-neutral-200 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-300"
-              data-dismiss-target="#badge-dismiss-default"
-              aria-label="Remove Tag"
-              @click="removeTag(tag)"
+    <div id="articleList" class="flex flex-col w-full">
+      <div class="mb-3 w-full">
+        <div
+          class="w-full border rounded-md px-3 dark:border-neutral-800 dark:bg-neutral-900 border-neutral-400 bg-neutral-100"
+        >
+          <BTGInput v-model="articleFilter" class="mt-7 mb-5" />
+          <div class="flex flex-wrap justify-center gap-2 mb-5">
+            <span
+              v-for="tag of allTags"
+              :key="tag"
+              class="inline-flex items-center px-2 py-1 font-medium mainTransition"
+              :class="{
+                'cursor-pointer': !tags.includes(tag as string),
+                tag: !tags.includes(tag),
+                taggedTag: tags.includes(tag)
+              }"
+              @click="addTag(tag)"
             >
-              <svg
-                class="w-2 h-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                />
-              </svg>
-              <span class="sr-only">Remove badge</span>
-            </button>
-          </span>
+              <span>
+                #{{ tag }}
+                <button
+                  v-if="tags.includes(tag)"
+                  type="button"
+                  class="inline-flex items-center p-1 ms-2 text-sm text-neutral-300 dark:text-neutral-400 bg-transparent rounded-sm hover:bg-neutral-600 hover:text-neutral-100 dark:hover:bg-neutral-200 dark:hover:text-neutral-950"
+                  data-dismiss-target="#badge-dismiss-default"
+                  aria-label="Remove Tag"
+                  @click="removeTag(tag)"
+                >
+                  <svg
+                    class="w-2 h-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 14"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                    />
+                  </svg>
+                  <span class="sr-only">Remove badge</span>
+                </button>
+              </span>
+            </span>
+          </div>
         </div>
-      </transition>
-    </div>
-    <div id="articleList" class="flex flex-col">
+      </div>
+      <div class="w-full px-3 pb-3 flex items-center justify-center">
+        <div>
+          Showing <span class="font-bold">{{ filteredArticles.length }}</span> of
+          <span class="font-bold">{{ props.articles.length }}</span> articles
+        </div>
+      </div>
+      <div
+        v-if="filteredArticles.length === 0"
+        class="w-full border rounded-md px-3 dark:border-neutral-800 dark:bg-neutral-900 border-neutral-400 bg-neutral-100 min-h-32 flex items-center justify-center"
+      >
+        <div class="font-bold">
+          Oops! We couldn't find any articles matching your current search. Try broadening your
+          search terms.
+        </div>
+      </div>
       <transition-group name="scale-card">
         <div
           v-for="(article, index) of filteredArticles"
@@ -62,37 +87,41 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { vResizeObserver } from '@vueuse/components'
+import BTGInput from '~/components/helpers/BTGInput.vue'
+import type { Article, ArticleContentRaw } from '~/Types/Article'
+import fuse from 'fuse.js'
 
-const tags = ref([])
+const tags: Ref<Array<string>> = ref([])
 const route = useRoute()
 const router = useRouter()
 
+const articleFilter = ref('')
+const articlesFilteredByName: Ref<Array<Article>> = ref([])
+const articlesContent: Ref<Array<ArticleContentRaw>> = ref([])
+
 const maxHeight = ref(0)
 
+let debounceWait = false
+
 const props = defineProps({
-  articles: Array
+  articles: Array<Article>
 })
 
-onMounted(() => {
+onMounted(async () => {
+  articlesFilteredByName.value = props.articles as Article[]
   window.addEventListener('resize', onResize)
 
   if (route.query && route.query.tags) {
-    tags.value = route.query.tags.split(',')
+    tags.value = (route.query.tags as string).split(',')
   } else {
     tags.value = []
   }
-})
 
-watch(route, (current) => {
-  if (current.query && current.query.tags) {
-    tags.value = current.query.tags.split(',')
-  } else {
-    tags.value = []
-  }
+  articlesContent.value = (await import('../articlesContent.json')).default
 })
 
 /**
@@ -100,14 +129,14 @@ watch(route, (current) => {
  *
  * @param resizeEvent
  */
-const onResizeOne = (resizeEvent) => {
+const onResizeOne = (resizeEvent: ResizeObserverEntry[]) => {
   if (resizeEvent && resizeEvent[0] && resizeEvent[0].borderBoxSize[0]) {
     if (maxHeight.value < resizeEvent[0].borderBoxSize[0].blockSize) {
       maxHeight.value = resizeEvent[0].borderBoxSize[0].blockSize
 
       document
-        .querySelector(':root')
-        .style.setProperty('--scaleTransitionMaxHeight', `${maxHeight.value}px`)
+        ?.querySelector(':root')
+        ?.style.setProperty('--scaleTransitionMaxHeight', `${maxHeight.value}px`)
     }
   }
 }
@@ -125,20 +154,18 @@ const onResize = () => {
   }
 
   document
-    .querySelector(':root')
-    .style.setProperty('--scaleTransitionMaxHeight', `${maxHeight.value}px`)
+    ?.querySelector(':root')
+    ?.style.setProperty('--scaleTransitionMaxHeight', `${maxHeight.value}px`)
 }
 
 /**
  * removeTag
  * @param tag
  */
-const removeTag = (tag) => {
+const removeTag = (tag: string) => {
   const tempArray = [...tags.value].filter((el) => {
     return el !== tag
   })
-
-  console.log('removeTag')
 
   if (tempArray.length > 0) {
     router.push(`/?tags=${tempArray.join(',')}`)
@@ -148,25 +175,144 @@ const removeTag = (tag) => {
 }
 
 /**
+ * addTag
+ *
+ * @param tag
+ */
+const addTag = (tag: string) => {
+  if (tags.value.includes(tag)) {
+    return
+  }
+
+  const query = { ...route.query }
+  if (query.tags) {
+    query.tags = query.tags + ',' + tag
+  } else {
+    query.tags = tag
+  }
+  router.replace({ query })
+}
+
+/**
  * filteredArticles
  *
  * @type {ComputedRef<any[]|*>}
  */
 const filteredArticles = computed(() => {
-  if (tags.value.length === 0) {
+  if (tags.value.length === 0 && articleFilter.value.length === 0) {
     return props.articles
   }
 
-  return props.articles.filter((article) => {
-    for (let i = 0; i < tags.value.length; i++) {
-      if (article.tags.includes(tags.value[i])) {
-        return true
+  let tagFiltered = props.articles ? props.articles : []
+  if (tags.value.length > 0) {
+    tagFiltered = tagFiltered.filter((article) => {
+      for (let i = 0; i < tags.value.length; i++) {
+        if (article.tags.includes(tags.value[i])) {
+          return true
+        }
+      }
+
+      return false
+    })
+  }
+
+  return tagFiltered.filter((el) => {
+    return articlesFilteredByName.value.some((article) => article.title === el.title)
+  })
+})
+
+/**
+ * allTags
+ *
+ * @type {ComputedRef<any[]>}
+ */
+const allTags = computed((): Array<string> => {
+  let all = new Set()
+  if (props.articles) {
+    for (const article of props.articles) {
+      for (const tag of article.tags) {
+        all.add(tag)
       }
     }
+  }
 
-    return false
-  })
+  return [...all].sort() as Array<string>
+})
+
+/**
+ * debounce
+ *
+ * @param func
+ * @param wait
+ * @returns {(function(...[*]): void)|*}
+ */
+const debounce = (func: () => void, wait: number) => {
+  return function executedFunction(...args) {
+    clearTimeout(debounceWait) // Clear any previous timeout
+    debounceWait = setTimeout(() => func.apply(this, args), wait)
+  }
+}
+
+/**
+ * searchForArticles
+ */
+const searchForArticles = () => {
+  if (articlesContent.value.length === 0) {
+    const func = debounce(searchForArticles, 300)
+    func()
+  } else {
+    if (articleFilter.value.length > 2) {
+      const filterLower = articleFilter.value.toLowerCase().trim()
+
+      const tempArticles = props.articles ? props.articles : []
+
+      const options = {
+        isCaseSensitive: true,
+        keys: ['title', 'raw'],
+        minMatchCharLength: 3,
+        distance: 300,
+        threshold: 0.2,
+        ignoreLocation: true
+      }
+
+      const Fuse = new fuse(articlesContent.value, options)
+      const fuseSearchResult = Fuse.search(filterLower)
+
+      articlesFilteredByName.value = tempArticles.filter((article) => {
+        if (
+          fuseSearchResult.some((el) => {
+            return el.item.title === article.title
+          })
+        ) {
+          return true
+        }
+      })
+    } else {
+      articlesFilteredByName.value = props.articles ? props.articles : []
+    }
+  }
+}
+
+watch(articleFilter, async () => {
+  const func = debounce(searchForArticles, 300)
+  func()
+})
+
+watch(route, (current) => {
+  if (current.query && current.query.tags) {
+    tags.value = current.query.tags.split(',')
+  } else {
+    tags.value = []
+  }
 })
 </script>
 
-<style scoped></style>
+<style scoped lang="scss">
+.tag {
+  @apply text-neutral-700 bg-neutral-300 rounded-md dark:bg-neutral-700 dark:text-neutral-300;
+}
+
+.taggedTag {
+  @apply text-white bg-neutral-900 rounded-md dark:bg-neutral-100 dark:text-black;
+}
+</style>

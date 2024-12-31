@@ -3,9 +3,34 @@
 @tailwind utilities;
 
 :root {
+  --tw-color-white: theme('colors.white');
+  --tw-color-black: theme('colors.black');
+  --tw-color-gray-50: theme('colors.gray.50');
+  --tw-color-gray-100: theme('colors.gray.100');
+  --tw-color-gray-200: theme('colors.gray.200');
+  --tw-color-gray-300: theme('colors.gray.300');
+  --tw-color-gray-400: theme('colors.gray.400');
+  --tw-color-gray-500: theme('colors.gray.500');
+  --tw-color-gray-600: theme('colors.gray.600');
+  --tw-color-gray-700: theme('colors.gray.700');
+  --tw-color-gray-800: theme('colors.gray.800');
+  --tw-color-gray-900: theme('colors.gray.900');
+  --tw-color-gray-950: theme('colors.gray.950');
+
+  --tw-color-neutral-50: theme('colors.neutral.50');
+  --tw-color-neutral-100: theme('colors.neutral.100');
+  --tw-color-neutral-200: theme('colors.neutral.200');
+  --tw-color-neutral-300: theme('colors.neutral.300');
+  --tw-color-neutral-400: theme('colors.neutral.400');
+  --tw-color-neutral-500: theme('colors.neutral.500');
+  --tw-color-neutral-600: theme('colors.neutral.600');
+  --tw-color-neutral-700: theme('colors.neutral.700');
+  --tw-color-neutral-800: theme('colors.neutral.800');
+  --tw-color-neutral-900: theme('colors.neutral.900');
+  --tw-color-neutral-950: theme('colors.neutral.950');
+
   scroll-behavior: smooth;
 
-  --color-background: --tw-white;
   --color-scheme: light;
 
   --mainTransition: all 0.5s ease;
@@ -32,31 +57,7 @@
   font-optical-sizing: auto;
   font-size: var(--default-font-size);
 
-  --tw-color-white: theme('colors.white');
-  --tw-color-black: theme('colors.black');
-  --tw-color-gray-50: theme('colors.gray.50');
-  --tw-color-gray-100: theme('colors.gray.100');
-  --tw-color-gray-200: theme('colors.gray.200');
-  --tw-color-gray-300: theme('colors.gray.300');
-  --tw-color-gray-400: theme('colors.gray.400');
-  --tw-color-gray-500: theme('colors.gray.500');
-  --tw-color-gray-600: theme('colors.gray.600');
-  --tw-color-gray-700: theme('colors.gray.700');
-  --tw-color-gray-800: theme('colors.gray.800');
-  --tw-color-gray-900: theme('colors.gray.900');
-  --tw-color-gray-950: theme('colors.gray.950');
-
-  --tw-color-neutral-50: theme('colors.neutral.50');
-  --tw-color-neutral-100: theme('colors.neutral.100');
-  --tw-color-neutral-200: theme('colors.neutral.200');
-  --tw-color-neutral-300: theme('colors.neutral.300');
-  --tw-color-neutral-400: theme('colors.neutral.400');
-  --tw-color-neutral-500: theme('colors.neutral.500');
-  --tw-color-neutral-600: theme('colors.neutral.600');
-  --tw-color-neutral-700: theme('colors.neutral.700');
-  --tw-color-neutral-800: theme('colors.neutral.800');
-  --tw-color-neutral-900: theme('colors.neutral.900');
-  --tw-color-neutral-950: theme('colors.neutral.950');
+  --color-background: var(--tw-color-white);
 }
 
 .readingLine {
@@ -295,6 +296,10 @@ h5 {
 // ==========================================
 // Transitions
 // ==========================================
+.mainTransition {
+  transition: var(--mainTransition);
+}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: var(--mainTransition);
@@ -313,15 +318,13 @@ h5 {
 
 .scale-enter-from,
 .scale-leave-to {
-  opacity: 0;
   transform: scale(0);
-  height: 0;
   overflow: hidden;
 }
 
 .scale-enter-to,
 .scale-leave-from {
-  height: 1.75rem;
+  transform: scale(1);
 }
 
 .scale-card-move,
