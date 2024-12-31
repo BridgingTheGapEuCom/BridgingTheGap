@@ -38,7 +38,9 @@
         education in application integration, empowering learners to navigate the complexities of
         modern IT with confidence and clarity.
       </p>
-      <div class="flex-1 h-[1px] mx-auto max-w-screen-xs my-10 bg-neutral-50 self-center" />
+      <div
+        class="flex-1 h-[1px] mx-auto max-w-screen-xs mt-10 dark:bg-neutral-700 bg-neutral-300 self-center"
+      />
       <div class="flex flex-grow items-center">
         <div class="flex flex-grow flex-col items-center">
           <h1>Source code</h1>
