@@ -17,6 +17,7 @@
     "@vueuse/components": "^11.1.0",
     "@vueuse/core": "^11.1.0",
     "axios": "^1.7.7",
+    "fuse.js": "^7.0.0",
     "nuxt": "^3.13.0",
     "nuxt-security": "^2.0.0",
     "v-lazy-image": "^2.1.1",

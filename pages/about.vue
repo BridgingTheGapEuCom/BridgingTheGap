@@ -1,5 +1,9 @@
 <template>
   <div class="flex-col items-center">
+    <div class="flex flex-col mt-10 mb-10">
+      <img src="~/assets/logo.png" class="m-auto max-w-96 dark:invert" />
+    </div>
+    <div class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 bg-neutral-50 self-center" />
     <div class="flex flex-col lg:flex-row items-center gap-3">
       <img
         src="/Karol.webp"
@@ -38,6 +42,7 @@
         </div>
       </div>
     </div>
+    <div class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 bg-neutral-50 self-center" />
     <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
       <img
         src="/Radek.webp"
@@ -68,6 +73,7 @@
         </article>
       </div>
     </div>
+    <div class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 bg-neutral-50 self-center" />
     <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
       <img
         src="/Hubert.webp"
