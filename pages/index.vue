@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full">
     <ArticleList :articles="articles" />
   </div>
 </template>
