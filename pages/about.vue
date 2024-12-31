@@ -3,7 +3,9 @@
     <div class="flex flex-col mt-10 mb-10">
       <img src="~/assets/logo.png" class="m-auto max-w-96 dark:invert" />
     </div>
-    <div class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 bg-neutral-50 self-center" />
+    <div
+      class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
+    />
     <div class="flex flex-col lg:flex-row items-center gap-3">
       <img
         src="/Karol.webp"
@@ -42,7 +44,9 @@
         </div>
       </div>
     </div>
-    <div class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 bg-neutral-50 self-center" />
+    <div
+      class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
+    />
     <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
       <img
         src="/Radek.webp"
@@ -73,7 +77,9 @@
         </article>
       </div>
     </div>
-    <div class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 bg-neutral-50 self-center" />
+    <div
+      class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
+    />
     <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
       <img
         src="/Hubert.webp"
@@ -105,6 +111,41 @@
             data and mapping it between domains and systems. I see integration as next level of IT
             systems evolution, the level which brings its own challenges and promises. I&#39;m eager
             to help solving the challenges to take the promised profit.
+          </p>
+        </article>
+      </div>
+    </div>
+    <div
+      class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
+    />
+    <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
+      <img
+        src="/Dominik.webp"
+        class="w-[18rem] h-[18rem] mr-3 grayImage rounded-xl"
+        width="904"
+        height="904"
+        alt="Dominik Kruszewski's picture"
+      />
+      <div class="flex flex-col items-center">
+        <div class="text-3xl font-bold my-0">Dominik Kruszewski</div>
+        <div class="text-base font-semibold mb-2">DevOps Expert</div>
+        <article class="article hyphens-auto">
+          <p class="indent-6">
+            For over a decade, I've been roaming the IT landscape, building, breaking, and fixing
+            whatever crosses my path. My tools? BASH, CLI, and a steady supply of energy drinks.
+            Part caffeine-fueled coding machine, part stay-at-home dad with a secret identity as a
+            gym rat.
+          </p>
+          <p class="indent-6">
+            My expertise spans a wide range of technologies, from in-depth details of Linux to the
+            lofty heights of cloud computing - Oracle Cloud, Azure, GCP and AWS. I've wrangled
+            containers, managed Kubernetes and OpenShift clusters from cradle to grave, and battled
+            the complexities of on-premises installations.
+          </p>
+          <p class="indent-6">
+            Integration? Been there, done that. I've stitched together systems with numerous
+            providers such as SoftwareAG WebMethods, TIBCO, and MuleSoft to ensure smooth data flow
+            between platforms. Need a one-man army? I've got you covered.
           </p>
         </article>
       </div>
