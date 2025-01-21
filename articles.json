@@ -484,5 +484,49 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "Event-Driven_One-way_point-to-point",
+    "title": "Event-Driven One-way point-to-point",
+    "short": "As we describe the architectural styles for ecosystems, for some of them we can identify distinct and repeatable architectural patterns that we can leverage to build better interoperability. As we dive into Event-Driven Architecture, let’s take a look at the first of the integration patterns deriving from this architectural style. Pattern nameplate. Let’s start with a small summary, we dubbed the “pattern nameplate” (an analog to a device nameplate that you can find on any electrical device, that describes its basic characteristics).",
+    "tags": [
+      "Architecture",
+      "Ecosystem Architectural Styles",
+      "Event-Driven Architecture"
+    ],
+    "relatedTags": [
+      "Event-Driven Architecture"
+    ],
+    "publishDate": "2024-12-31",
+    "lastUpdate": "2024-12-31",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "AMQP-0-10",
+        "link": "https://www.amqp.org/specification/0-10/amqp-org-download",
+        "ISBN": "",
+        "type": "document",
+        "author": "AMQP.org"
+      }
+    ],
+    "reviewers": [
+    ]
   }
 ]
