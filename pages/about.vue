@@ -1,7 +1,7 @@
 <template>
-  <div class="flex-col items-center">
+  <div class="flex-col items-center sm:article">
     <div class="flex flex-col mt-10 mb-10">
-      <img src="~/assets/logo.png" class="m-auto max-w-96 dark:invert" />
+      <img src="~/assets/logo.png" class="m-auto dark:invert" />
     </div>
     <div
       class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
@@ -40,6 +40,18 @@
               training materials that explain complex integration concepts, empowering others to
               navigate this exciting domain with confidence.
             </p>
+            <p class="flex items-center justify-center">
+              <SvgIcon :path="mdiLinkedin" type="mdi" :size="24" class="max-w-8 my-0" />
+              <a class="link ml-2" href="https://www.linkedin.com/in/karolskrzymowski/"
+                >https://www.linkedin.com/in/karolskrzymowski</a
+              >
+            </p>
+            <p class="flex items-center justify-center">
+              <SvgIcon :path="mdiAt" type="mdi" :size="24" class="max-w-6 my-0" />
+              <a class="link ml-2" href="mailto:karol@bridgingthegap.eu.com"
+                >karol@bridgingthegap.eu.com</a
+              >
+            </p>
           </article>
         </div>
       </div>
@@ -58,7 +70,7 @@
       <div class="flex flex-col items-center">
         <div class="text-3xl font-bold my-0">Radosław Przewuski</div>
         <div class="text-base font-semibold mb-2">Integration Platforms Expert</div>
-        <article class="article hyphens-auto">
+        <article class="hyphens-auto">
           <p class="indent-6">
             Greetings, tech aficionados! I'm the Integration Whisperer, boasting over a decade of
             experience in the mystical arts of integration platforms. Picture me as the Gandalf of
@@ -73,6 +85,18 @@
             equipped to cast spells of integration magic like no other. So, whether you're lost in
             the labyrinth of legacy systems or venturing into the unknown territories of modern
             APIs, fear not! I'm here to help.
+          </p>
+          <p class="flex items-center justify-center">
+            <SvgIcon :path="mdiLinkedin" type="mdi" :size="24" class="max-w-8 my-0" />
+            <a class="link ml-2" href="https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+              >https://www.linkedin.com/in/radosław-przewuski/</a
+            >
+          </p>
+          <p class="flex items-center justify-center">
+            <SvgIcon :path="mdiAt" type="mdi" :size="24" class="max-w-6 my-0" />
+            <a class="link ml-2" href="mailto:radek@bridgingthegap.eu.com"
+              >radek@bridgingthegap.eu.com</a
+            >
           </p>
         </article>
       </div>
@@ -112,6 +136,18 @@
             systems evolution, the level which brings its own challenges and promises. I&#39;m eager
             to help solving the challenges to take the promised profit.
           </p>
+          <p class="flex items-center justify-center">
+            <SvgIcon :path="mdiLinkedin" type="mdi" :size="24" class="max-w-8 my-0" />
+            <a class="link ml-2" href="https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+              >https://www.linkedin.com/in/hubert-drabczyk-63b06628</a
+            >
+          </p>
+          <p class="flex items-center justify-center">
+            <SvgIcon :path="mdiAt" type="mdi" :size="24" class="max-w-6 my-0" />
+            <a class="link ml-2" href="mailto:hubert@bridgingthegap.eu.com"
+              >hubert@bridgingthegap.eu.com</a
+            >
+          </p>
         </article>
       </div>
     </div>
@@ -147,6 +183,18 @@
             providers such as SoftwareAG WebMethods, TIBCO, and MuleSoft to ensure smooth data flow
             between platforms. Need a one-man army? I've got you covered.
           </p>
+          <p class="flex items-center justify-center">
+            <SvgIcon :path="mdiLinkedin" type="mdi" :size="24" class="max-w-8 my-0" />
+            <a class="link ml-2" href="https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+              >https://www.linkedin.com/in/dominik-kruszewski-a30829aa</a
+            >
+          </p>
+          <p class="flex items-center justify-center">
+            <SvgIcon :path="mdiAt" type="mdi" :size="24" class="max-w-6 my-0" />
+            <a class="link ml-2" href="mailto:dominik@bridgingthegap.eu.com"
+              >dominik@bridgingthegap.eu.com</a
+            >
+          </p>
         </article>
       </div>
     </div>
@@ -157,6 +205,8 @@
 import articles from '../articles.json'
 import { onBeforeMount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import { mdiAt, mdiLinkedin } from '@mdi/js'
+import SvgIcon from '@jamescoyle/vue-icon'
 
 const route = useRoute()
 
@@ -209,15 +259,6 @@ onBeforeMount(() => {
     return a.name.localeCompare(b.name)
   })
 })
-
-/**
- * getImage
- * @param image
- * @returns {`/${string}.webp`}
- */
-const getImage = (image) => {
-  return `/${image}.webp`
-}
 
 watch(route, (current) => {
   showMore.value = current.query.reviewed
