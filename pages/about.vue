@@ -17,7 +17,7 @@
       <div class="flex flex-col items-center">
         <div class="text-3xl font-bold my-0">Karol Skrzymowski</div>
         <div class="text-base font-semibold mb-2">Enterprise / Integration Architect</div>
-        <div class="flex clex-col">
+        <div class="flex flex-col">
           <article class="article hyphens-auto">
             <p class="indent-6">
               I'm an Enterprise and Integration Architect with a passion for application integration
@@ -70,35 +70,37 @@
       <div class="flex flex-col items-center">
         <div class="text-3xl font-bold my-0">Radosław Przewuski</div>
         <div class="text-base font-semibold mb-2">Integration Platforms Expert</div>
-        <article class="hyphens-auto">
-          <p class="indent-6">
-            Greetings, tech aficionados! I'm the Integration Whisperer, boasting over a decade of
-            experience in the mystical arts of integration platforms. Picture me as the Gandalf of
-            your digital realm, wielding my staff of code with the wisdom of a thousand sages. From
-            the humble beginnings of coding in caves to now surfing the binary waves of innovation,
-            I've journeyed through the ages of technology. It's like I've embarked on an epic quest
-            through the realms of integration, slaying dragons of data inconsistency and forging
-            alliances between disparate systems.
-          </p>
-          <p class="indent-6">
-            With extensive experience in Tibco BusinessWorks, WebMethods, Mulesoft, and more, I'm
-            equipped to cast spells of integration magic like no other. So, whether you're lost in
-            the labyrinth of legacy systems or venturing into the unknown territories of modern
-            APIs, fear not! I'm here to help.
-          </p>
-          <p class="flex items-center justify-center">
-            <SvgIcon :path="mdiLinkedin" type="mdi" :size="24" class="max-w-8 my-0" />
-            <a class="link ml-2" href="https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
-              >https://www.linkedin.com/in/radosław-przewuski/</a
-            >
-          </p>
-          <p class="flex items-center justify-center">
-            <SvgIcon :path="mdiAt" type="mdi" :size="24" class="max-w-6 my-0" />
-            <a class="link ml-2" href="mailto:radek@bridgingthegap.eu.com"
-              >radek@bridgingthegap.eu.com</a
-            >
-          </p>
-        </article>
+        <div class="flex flex-col">
+          <article class="article hyphens-auto">
+            <p class="indent-6">
+              Greetings, tech aficionados! I'm the Integration Whisperer, boasting over a decade of
+              experience in the mystical arts of integration platforms. Picture me as the Gandalf of
+              your digital realm, wielding my staff of code with the wisdom of a thousand sages.
+              From the humble beginnings of coding in caves to now surfing the binary waves of
+              innovation, I've journeyed through the ages of technology. It's like I've embarked on
+              an epic quest through the realms of integration, slaying dragons of data inconsistency
+              and forging alliances between disparate systems.
+            </p>
+            <p class="indent-6">
+              With extensive experience in Tibco BusinessWorks, WebMethods, Mulesoft, and more, I'm
+              equipped to cast spells of integration magic like no other. So, whether you're lost in
+              the labyrinth of legacy systems or venturing into the unknown territories of modern
+              APIs, fear not! I'm here to help.
+            </p>
+            <p class="flex items-center justify-center">
+              <SvgIcon :path="mdiLinkedin" type="mdi" :size="24" class="max-w-8 my-0" />
+              <a class="link ml-2" href="https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+                >https://www.linkedin.com/in/radosław-przewuski/</a
+              >
+            </p>
+            <p class="flex items-center justify-center">
+              <SvgIcon :path="mdiAt" type="mdi" :size="24" class="max-w-6 my-0" />
+              <a class="link ml-2" href="mailto:radek@bridgingthegap.eu.com"
+                >radek@bridgingthegap.eu.com</a
+              >
+            </p>
+          </article>
+        </div>
       </div>
     </div>
     <div
