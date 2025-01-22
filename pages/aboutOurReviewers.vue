@@ -1,7 +1,7 @@
 <template>
   <div class="flex-grow flex-col flex items-center max-w-screen-lg">
     <div class="flex flex-col mt-10 mb-20">
-      <img src="~/assets/logo.png" class="m-auto max-w-96 dark:invert" />
+      <img src="~/assets/logo.png" class="m-auto dark:invert" />
     </div>
     <div>
       <h1 class="text-center">Our Reviewers</h1>

@@ -128,34 +128,10 @@
           ><b>Bridging the Gap</b></a
         >
         &nbsp;© 2024 by&nbsp;
-        <a
-          href="https://www.linkedin.com/in/karolskrzymowski/"
-          property="cc:attributionName"
-          aria-label="Karol Skrzymowski's linkedin page"
-          rel="cc:attributionURL dct:creator"
-          target="_blank"
-          class="headerLink dark:hover:text-white"
-          ><b>Karol Skrzymowski</b></a
-        >
-        <div>,&nbsp;</div>
-        <a
-          href="https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
-          property="cc:attributionName"
-          rel="cc:attributionURL dct:creator"
-          aria-label="Radoslaw Przewuski's linkedin page"
-          target="_blank"
-          class="headerLink hover:text-black dark:hover:text-white"
-          ><b>Radosław Przewuski</b></a
-        >
-        <div>&nbsp;and&nbsp;</div>
-        <a
-          href="https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
-          property="cc:attributionName"
-          rel="cc:attributionURL dct:creator"
-          aria-label="Huber Drabczyk's linkedin page"
-          target="_blank"
-          class="headerLink hover:text-black dark:hover:text-white"
-          ><b>Hubert Drabczyk</b></a
+        <NuxtLink
+          class="link text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white font-bold"
+          href="/about"
+          >Bridging the Gap team</NuxtLink
         >
         &nbsp;is licensed under
         <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" class="flex">

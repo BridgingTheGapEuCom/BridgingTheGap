@@ -64,9 +64,11 @@
           <div class="mt-3 border-b dark:border-neutral-800" />
           <div class="h4 mt-3">Related articles</div>
           <div v-for="related of relatedArticles" :key="related.title" class="articleLinkHeight">
-            <NuxtLink class="link" :href="`/articles/${related.name}`">{{
-              related.title
-            }}</NuxtLink>
+            <NuxtLink
+              class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
+              :href="`/articles/${related.name}`"
+              >{{ related.title }}</NuxtLink
+            >
           </div>
         </div>
         <div v-if="bibliography.length > 0">
@@ -217,10 +219,6 @@ const contentElements = ref([])
 
 const tags = ref([])
 
-useHead({
-  title: title
-})
-
 onMounted(async () => {
   await updateData(false)
   window.addEventListener('scroll', onScroll)
@@ -317,12 +315,14 @@ const updateData = async (ssr) => {
     authors.value = articleMeta.authors ? articleMeta.authors : []
 
     const seoAuthors = []
+    const articleAuthors = []
     for (let author of authors.value) {
       seoAuthors.push({
         '@type': 'Person',
         name: author.author,
         url: author.link
       })
+      articleAuthors.push(author.author)
     }
 
     relatedArticles.value = []
@@ -351,6 +351,17 @@ const updateData = async (ssr) => {
       },
       {}
     )
+
+    useSeoMeta({
+      ogType: 'article',
+      title: `Bridging the Gap - ${title.value}`,
+      ogTitle: `Bridging the Gap - ${title.value}`,
+      twitterTitle: `Bridging the Gap - ${title.value}`,
+      description: articleMeta.short,
+      ogDescription: articleMeta.short,
+      twitterDescription: articleMeta.short,
+      author: articleAuthors
+    })
   }
 
   if (!ssr) {
