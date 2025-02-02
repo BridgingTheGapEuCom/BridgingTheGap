@@ -528,5 +528,49 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "EDA_Broadcast_and_Multicast",
+    "title": "EDA Broadcast and Multicast",
+    "short": "When you dive into the world of Event-Driven Architecture, the phrase you hear most often is “pub-sub” or “publish-subscribe”, which seems to be the most commonly used data distribution pattern in this architecture. And for a lot of cases this will be very true, especially when we'd take a look at MQTT, where the only available structure on the broker is a topic. In essence, this pattern could cover all possible cases for the number of communication participants: one-to-one, one-to-many, many-to-one, and many-to-many.",
+    "tags": [
+      "Architecture",
+      "Ecosystem Architectural Styles",
+      "Event-Driven Architecture"
+    ],
+    "relatedTags": [
+      "Event-Driven Architecture"
+    ],
+    "publishDate": "2025-02-02",
+    "lastUpdate": "2025-02-02",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "AMQP-0-10",
+        "link": "https://www.amqp.org/specification/0-10/amqp-org-download",
+        "ISBN": "",
+        "type": "document",
+        "author": "AMQP.org"
+      }
+    ],
+    "reviewers": [
+    ]
   }
 ]
