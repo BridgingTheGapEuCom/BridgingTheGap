@@ -572,5 +572,49 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "Event-Driven_Callbacks",
+    "title": "Event-Driven Callbacks",
+    "short": "Callbacks are one of those patterns that might be a bit troublesome to form a philosophical point of view. They are fairly straightforward technically speaking, but it is debatable whether or not they fall under the category of event-driven. The key question to explore here is that if we are sending a message and we are expecting a response, perhaps not an instantaneous one, rather over time or in an undetermined time, is that still event-driven? If we consider the callback alone, without the triggering subscription or event, then it seems to always be an event of sorts, marking the completion of a processing task, an occurrence in a system, etc. Let us consider this when exploring this pattern.",
+    "tags": [
+      "Architecture",
+      "Ecosystem Architectural Styles",
+      "Event-Driven Architecture"
+    ],
+    "relatedTags": [
+      "Event-Driven Architecture"
+    ],
+    "publishDate": "2025-02-09",
+    "lastUpdate": "2025-02-09",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "AMQP-0-10",
+        "link": "https://www.amqp.org/specification/0-10/amqp-org-download",
+        "ISBN": "",
+        "type": "document",
+        "author": "AMQP.org"
+      }
+    ],
+    "reviewers": [
+    ]
   }
 ]
