@@ -92,10 +92,12 @@
         What can be an additional consideration to be had, is that since the number of callbacks
         will be usually more than one per event triggering the processing, this requires mindful
         handling of persistence and errors, especially when running parallel jobs. As there might be
-        a connectivity problem (as per the first fallacy of distributed computing), the number of
-        messages pending being sent from the callback producer or delivered and temporarily stored
-        on the message broker, will gradually increase. This in turn might pose a risk of
-        overwhelming the message broker and disabling the event based communication for all
+        a connectivity problem (as per the
+        <a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing" target="_blank"
+          >first fallacy of distributed computing</a
+        >), the number of messages pending being sent from the callback producer or delivered and
+        temporarily stored on the message broker, will gradually increase. This in turn might pose a
+        risk of overwhelming the message broker and disabling the event based communication for all
         involved, making it important to be managed on an architectural level first.
       </p>
       <h3>Operational Considerations</h3>
