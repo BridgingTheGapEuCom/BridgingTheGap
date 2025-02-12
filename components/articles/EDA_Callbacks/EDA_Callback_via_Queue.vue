@@ -2,7 +2,8 @@
   <div tabindex="0" aria-label="" role="img" class="syncSvgParent w-full">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      style="color-scheme: light dark; margin: 0"
+      style="color-scheme: light dark"
+      version="1.1"
       width="531px"
       height="251px"
       viewBox="-0.5 -0.5 531 251"
@@ -117,6 +118,8 @@
                     y="60"
                     width="10"
                     height="30"
+                    rx="1.5"
+                    ry="1.5"
                     pointer-events="all"
                     class="sequenceDiagram_action"
                   />
@@ -145,6 +148,7 @@
                         pointer-events="none"
                         width="100%"
                         height="100%"
+                        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
                         class="sequenceDiagram_actor"
                       >
                         <div
@@ -215,6 +219,8 @@
                     y="70"
                     width="10"
                     height="40"
+                    rx="1.5"
+                    ry="1.5"
                     pointer-events="all"
                     class="sequenceDiagram_action"
                   />
@@ -261,6 +267,7 @@
                         pointer-events="none"
                         width="100%"
                         height="100%"
+                        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
                         class="sequenceDiagram_actor"
                       >
                         <div
@@ -430,6 +437,8 @@
                     y="90"
                     width="10"
                     height="80"
+                    rx="1.5"
+                    ry="1.5"
                     pointer-events="all"
                     class="sequenceDiagram_action"
                   />
@@ -444,6 +453,8 @@
                     y="120"
                     width="10"
                     height="30"
+                    rx="1.5"
+                    ry="1.5"
                     pointer-events="all"
                     class="sequenceDiagram_action"
                   />
@@ -476,6 +487,8 @@
                     y="150"
                     width="10"
                     height="40"
+                    rx="1.5"
+                    ry="1.5"
                     pointer-events="all"
                     class="sequenceDiagram_action"
                   />
@@ -522,6 +535,8 @@
                     y="170"
                     width="10"
                     height="30"
+                    rx="1.5"
+                    ry="1.5"
                     pointer-events="all"
                     class="sequenceDiagram_action"
                   />
@@ -632,7 +647,7 @@
               <g class="textWithBackground">
                 <g>
                   <rect
-                    x="125"
+                    x="110"
                     y="160"
                     width="90"
                     height="20"
@@ -660,7 +675,7 @@
                             width: 88px;
                             height: 1px;
                             padding-top: 170px;
-                            margin-left: 126px;
+                            margin-left: 111px;
                           "
                           class="textWithBackground"
                         >
@@ -682,15 +697,14 @@
                               <span
                                 style="font-size: 11px; text-wrap-mode: nowrap"
                                 class="textWithBackground"
+                                >read(callback)</span
                               >
-                                read(callback)
-                              </span>
                             </div>
                           </div>
                         </div>
                       </foreignObject>
                       <text
-                        x="170"
+                        x="155"
                         y="174"
                         font-size="12px"
                         text-anchor="middle"
@@ -757,9 +771,8 @@
                               <span
                                 style="font-size: 11px; text-wrap-mode: nowrap"
                                 class="textWithBackground"
+                                >publish(event)</span
                               >
-                                publish(event)
-                              </span>
                             </div>
                           </div>
                         </div>
@@ -829,14 +842,13 @@
                               "
                               class="textWithBackground"
                             >
-                              <div face="Atkinson Hyperlegible" class="textWithBackground">
+                              <font face="Atkinson Hyperlegible" class="textWithBackground">
                                 <span
                                   style="font-size: 11px; text-wrap-mode: nowrap"
                                   class="textWithBackground"
+                                  >read(event)</span
                                 >
-                                  read(event)
-                                </span>
-                              </div>
+                              </font>
                             </div>
                           </div>
                         </div>
@@ -909,9 +921,8 @@
                               <span
                                 style="font-size: 11px; text-align: left; text-wrap-mode: nowrap"
                                 class="textWithBackground"
+                                >processEvent()</span
                               >
-                                processEvent()
-                              </span>
                             </div>
                           </div>
                         </div>
@@ -984,15 +995,14 @@
                               <span
                                 style="font-size: 11px; text-wrap-mode: nowrap"
                                 class="textWithBackground"
+                                >publish(callback)</span
                               >
-                                publish(callback)
-                              </span>
                             </div>
                           </div>
                         </div>
                       </foreignObject>
                       <text
-                        x="355"
+                        x="356"
                         y="154"
                         font-size="12px"
                         text-anchor="middle"
