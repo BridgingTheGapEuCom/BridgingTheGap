@@ -616,5 +616,49 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "Event-Driven_Waiter_Pattern",
+    "title": "Event-Driven Waiter Pattern",
+    "short": "Processing, please do not wait... As we dive deeper into Event-Driven Architecture (EDA), there is a specific scenario that deserves attention on its own. As we already established that EDA patterns can be used to loosen the coupling between different applications and systems so they can operate in a more independent manner. The waiter pattern builds on top of that capability allowing the applications that produce data over a long span of time to deliver them in an organized and standardized way.",
+    "tags": [
+      "Architecture",
+      "Ecosystem Architectural Styles",
+      "Event-Driven Architecture"
+    ],
+    "relatedTags": [
+      "Event-Driven Architecture"
+    ],
+    "publishDate": "2025-02-11",
+    "lastUpdate": "2025-02-11",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "AMQP-0-10",
+        "link": "https://www.amqp.org/specification/0-10/amqp-org-download",
+        "ISBN": "",
+        "type": "document",
+        "author": "AMQP.org"
+      }
+    ],
+    "reviewers": [
+    ]
   }
 ]
