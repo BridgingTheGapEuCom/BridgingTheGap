@@ -842,13 +842,11 @@
                               "
                               class="textWithBackground"
                             >
-                              <font face="Atkinson Hyperlegible" class="textWithBackground">
-                                <span
-                                  style="font-size: 11px; text-wrap-mode: nowrap"
-                                  class="textWithBackground"
-                                  >read(event)</span
-                                >
-                              </font>
+                              <span
+                                style="font-size: 11px; text-wrap-mode: nowrap"
+                                class="textWithBackground"
+                                >read(event)</span
+                              >
                             </div>
                           </div>
                         </div>
