@@ -21,10 +21,30 @@
             >#{{ tag }}
           </NuxtLink>
         </div>
+        <div class="border-t dark:border-neutral-800">
+          <div class="my-2 pb-1 flex lg:flex-row flex-col flex-1 justify-between">
+            <div v-for="author of authors" :key="author.author" class="flex flex-row">
+              <img
+                :alt="`${author.author}s photo`"
+                :src="author.photo"
+                width="90"
+                height="90"
+                class="grayscale rounded-md max-h-20"
+              />
+              <div id="article_authors" class="ml-3 flex flex-col justify-end">
+                <div>Author</div>
+                <div>
+                  <div class="font-bold h2">{{ author.author }}</div>
+                  <div>{{ author.title }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="flex flex-col lg:flex-row justify-between border-t dark:border-neutral-800">
-          <div>
-            <div id="article_authors" class="h4 mt-3">Authors</div>
-            <div v-for="author of authors" :key="author.author">
+          <div v-if="coAuthors.length > 0">
+            <div class="h4 mt-3">Co-authors</div>
+            <div v-for="author of coAuthors" :key="author.author">
               <a
                 target="_blank"
                 class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
@@ -67,8 +87,8 @@
             <NuxtLink
               class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
               :href="`/articles/${related.name}`"
-              >{{ related.title }}</NuxtLink
-            >
+              >{{ related.title }}
+            </NuxtLink>
           </div>
         </div>
         <div v-if="bibliography.length > 0">
@@ -213,6 +233,7 @@ const bibliography = ref([])
 const relatedArticles = ref([])
 const reviewers = ref([])
 const authors = ref([])
+const coAuthors = ref([])
 const contents = ref([])
 const lowestIntersecting = ref(-1)
 const contentElements = ref([])
@@ -313,6 +334,7 @@ const updateData = async (ssr) => {
     bibliography.value = articleMeta.bibliography ? articleMeta.bibliography : []
     reviewers.value = articleMeta.reviewers ? articleMeta.reviewers : []
     authors.value = articleMeta.authors ? articleMeta.authors : []
+    coAuthors.value = articleMeta.coAuthors ? articleMeta.coAuthors : []
 
     const seoAuthors = []
     const articleAuthors = []
