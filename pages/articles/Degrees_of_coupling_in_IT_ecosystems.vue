@@ -147,6 +147,11 @@
             Location - the geographic location of where the systems are deployed, where are they
             available, what is the network configuration between them,
           </li>
+          <li>
+            Semantic - extending the architectural aspect of this coupling, the meaning of an
+            instance of data being exchanged and how that data influences the behavior of the
+            implementation through data validation, transformation and error handling,
+          </li>
         </ul>
       </ul>
       <h3>Coupling direction</h3>
