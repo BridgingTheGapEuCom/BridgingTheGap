@@ -33,7 +33,9 @@
         </NuxtLink>
         <div>
           <button
-            v-if="route.name && route.name !== 'index' && !route.name.startsWith('about')"
+            v-show="
+              route && route.name && route.name !== 'index' && !route.name.startsWith('about')
+            "
             class="inline-flex items-center navigation-button p-2 w-10 h-10 justify-end text-sm text-black rounded-lg hover:bg-gray-100 dark:text-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-label="Focus helper"
             type="button"
@@ -161,8 +163,8 @@ import tailwindConfig from '../tailwind.config.js'
 
 const fullConfig = resolveConfig(tailwindConfig)
 
-const darkTheme = useState('dark', () => false)
-const themeCookie = useCookie('theme')
+const themeCookie = useCookie('theme', () => ref(false))
+const darkTheme = useState('dark', () => ref(false))
 
 const body = ref()
 
@@ -176,10 +178,12 @@ const hamburgerOpened = ref(false)
 const route = useRoute()
 
 /**
- * onBeforeMount
+ * onMounted
  */
-onBeforeMount(() => {
-  if (themeCookie.value !== undefined) {
+onMounted(() => {
+  readingHelper.value = false
+
+  if (themeCookie.value !== undefined && themeCookie.value !== 'unset') {
     darkTheme.value = themeCookie.value === true
   } else {
     darkTheme.value = window.matchMedia('(prefers-color-scheme: dark)').matches
@@ -187,18 +191,11 @@ onBeforeMount(() => {
   }
 
   let metaThemeColor = document.querySelector('meta[name=theme-color]')
-  if (darkTheme.value === true) {
+  if (darkTheme.value !== true) {
     metaThemeColor.setAttribute('content', 'rgb(10,10,10)')
   } else {
     metaThemeColor.setAttribute('content', 'rgb(245,245,245)')
   }
-})
-
-/**
- * onMounted
- */
-onMounted(() => {
-  readingHelper.value = false
 })
 
 /**
@@ -207,7 +204,9 @@ onMounted(() => {
  * @param event
  */
 const stopPropagation = (event) => {
-  event.stopImmediatePropagation()
+  if (event) {
+    event.stopImmediatePropagation()
+  }
 }
 
 /**
@@ -279,7 +278,7 @@ const smallWidth = computed(() => {
 
 watch(route, (current) => {
   hamburgerOpened.value = false
-  if (current.name === 'home' || current.name === 'about') {
+  if (current && (current.name === 'home' || current.name === 'about')) {
     readingHelper.value = false
   }
 })
