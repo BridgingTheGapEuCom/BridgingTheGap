@@ -6,6 +6,8 @@ export default defineNuxtPlugin({
       const cookie = useCookie('theme')
       if (cookie.value !== undefined) {
         useState('dark', () => cookie.value)
+      } else {
+        cookie.value = 'unset'
       }
     }
   }
