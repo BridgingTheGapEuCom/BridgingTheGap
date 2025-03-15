@@ -725,5 +725,54 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "Broker_Architecture",
+    "title": "Broker Architecture",
+    "short": "There comes a certain point in an ecosystem's growth, when due to its expansion and business growth, operating and maintaining point-to-point, or event-driven interoperability becomes a nightmare of tangled dependencies for each system involved in the communication. All of this is the result of complexity that is not only specific to the business domain, which dictates functional requirements for each of those systems, but also due to the communication overhead that forces the systems to manage connections, various API contracts, data access logic, or credentials. All of this builds up to a hefty load of work, shifting the balance of time consumed on operations and development. This can further lead to bottlenecks in project development or complete stop of further growth as the team will be busy with solving production issues or locked in a fight between development and operations. This is where we can find help by looking into a law postulated in the mid-1980s.",
+    "tags": [
+      "Architecture",
+      "Ecosystem Architectural Styles",
+      "Broker Architecture"
+    ],
+    "relatedTags": [
+      "Broker Architecture"
+    ],
+    "publishDate": "2025-03-15",
+    "lastUpdate": "2025-03-15",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/",
+        "photo": "/Karol_portrait.webp",
+        "title": "Enterprise/Integration Architect",
+        "mail": "karol@bridgingthegap.eu.com"
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "https://en.wikipedia.org/wiki/Law_of_conservation_of_complexity",
+        "link": "https://en.wikipedia.org/wiki/Law_of_conservation_of_complexity",
+        "ISBN": "",
+        "type": "article",
+        "author": "Wikipedia"
+      }
+    ],
+    "reviewers": [
+    ]
   }
 ]
