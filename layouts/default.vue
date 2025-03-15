@@ -1,6 +1,14 @@
 <template>
-  <div id="body" ref="body" :class="{ dark: darkTheme }" @click="hamburgerOpened = false">
-    <div v-if="readingHelper" class="absolute h-full bottom-0 w-full pointer-events-none">
+  <div
+    id="body"
+    ref="body"
+    :class="{ dark: darkTheme }"
+    @click="hamburgerOpened = false"
+  >
+    <div
+      v-if="readingHelper"
+      class="absolute h-full bottom-0 w-full pointer-events-none"
+    >
       <div class="readingLine">
         <div v-if="isMobile">
           <SvgIcon
@@ -23,7 +31,7 @@
               src="~/assets/logo_low_poly.png"
               class="h-7 w-7 m-1 dark:invert"
               alt="Bridging the Gap logo"
-            />
+            >
             <div
               class="text-base mt-1 font-semibold whitespace-nowrap hidden xs:block text-black dark:text-gray-50 tracking-wide"
             >
@@ -41,7 +49,11 @@
             type="button"
             @click="focusHelper"
           >
-            <SvgIcon type="mdi" :path="mdiEyeMinus" :size="26" />
+            <SvgIcon
+              type="mdi"
+              :path="mdiEyeMinus"
+              :size="26"
+            />
           </button>
           <button
             type="button"
@@ -51,10 +63,17 @@
             @click.stop="expandNavigation"
           >
             <span class="sr-only">Open main menu</span>
-            <SvgIcon :path="mdiMenu" type="mdi" size="26" />
+            <SvgIcon
+              :path="mdiMenu"
+              type="mdi"
+              size="26"
+            />
           </button>
         </div>
-        <transition name="scale-navigation" mode="in-out">
+        <transition
+          name="scale-navigation"
+          mode="in-out"
+        >
           <div
             v-if="hamburgerOpened"
             id="navbar-default"
@@ -83,7 +102,8 @@
                   to="/about"
                   class="text-black dark:text-white navigation-button p-1"
                   aria-current="page"
-                  >About us
+                >
+                  About us
                 </NuxtLink>
               </li>
               <li>
@@ -91,7 +111,8 @@
                   to="/aboutTheProject"
                   class="text-black dark:text-white navigation-button p-1"
                   aria-current="page"
-                  >About the project
+                >
+                  About the project
                 </NuxtLink>
               </li>
               <li>
@@ -99,11 +120,16 @@
                   to="/aboutOurReviewers"
                   class="text-black dark:text-white navigation-button p-1"
                   aria-current="page"
-                  >About our reviewers
+                >
+                  About our reviewers
                 </NuxtLink>
               </li>
               <li class="flex items-center">
-                <button aria-label="Change theme" type="button" @click="changeTheme">
+                <button
+                  aria-label="Change theme"
+                  type="button"
+                  @click="changeTheme"
+                >
                   <SvgIcon
                     class="text-black dark:text-gray-100 hover:text-black dark:hover:text-white card"
                     type="mdi"
@@ -126,17 +152,25 @@
       class="sticky bottom-0 w-full shadow-up dark:shadow-none pr-4 pt-1 hidden md:flex bg-neutral-200 dark:bg-neutral-800 text-black dark:text-white"
     >
       <div class="flex mx-2 justify-start max-w-screen-xl w-full text-[0.65rem]">
-        <a href="/" property="dct:title" rel="cc:attributionURL" target="_blank"
-          ><b>Bridging the Gap</b></a
-        >
+        <a
+          href="/"
+          property="dct:title"
+          rel="cc:attributionURL"
+          target="_blank"
+        ><b>Bridging the Gap</b></a>
         &nbsp;© 2024 by&nbsp;
         <NuxtLink
           class="link text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white font-bold"
           href="/about"
-          >Bridging the Gap team</NuxtLink
         >
+          Bridging the Gap team
+        </NuxtLink>
         &nbsp;is licensed under
-        <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" class="flex">
+        <a
+          href="https://creativecommons.org/licenses/by/4.0"
+          target="_blank"
+          class="flex"
+        >
           &nbsp;CC BY 4.0
           <cc class="mx-0.5" />
           <cc_person />
