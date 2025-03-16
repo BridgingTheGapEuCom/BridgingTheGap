@@ -774,5 +774,87 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "Pattern_of_an_antipattern",
+    "title": "Pattern of an antipattern",
+    "short": "Working in IT we hear a lot of jargon, phrases that have a specific meaning often only in this industry. While those terms are fairly common, and we hear them a lot, everyone has their own definitions as to what they actually mean. A large part of the role of an IT specialist, an architect especially, is to clarify those definitions and foster ubiquitous language in conversations within IT and when talking with any stakeholders. One of such words that constantly escapes a proper definition in common use is an antipattern. We hear it all the time in meetings, discussions over code and changes made to systems. Most commonly it is used as a description of something that should not be done that particular way, meaning it’s been done badly.",
+    "tags": [
+      "Basic Definitions",
+      "Definitions"
+    ],
+    "relatedTags": [
+    ],
+    "publishDate": "2025-03-16",
+    "lastUpdate": "2025-03-16",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/",
+        "photo": "/Karol_portrait.webp",
+        "title": "Enterprise/Integration Architect",
+        "mail": "karol@bridgingthegap.eu.com"
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "Anti Pattern",
+        "link": "https://martinfowler.com/bliki/AntiPattern.html",
+        "ISBN": "",
+        "type": "article",
+        "author": "Martin Fowler"
+      },
+      {
+        "title": "SQL Antipatterns, Volume 1",
+        "link": "https://learning.oreilly.com/library/view/sql-antipatterns-volume/9798888650011/",
+        "ISBN": "9781680508987",
+        "type": "book",
+        "author": "Bill Karwin"
+      },
+      {
+        "title": "Rails™ AntiPatterns: Best Practice Ruby on Rails™ Refactoring",
+        "link": "https://www.oreilly.com/library/view/railstm-antipatterns-best/9780321620293/",
+        "ISBN": "",
+        "type": "book",
+        "author": "Chad Pytel, Tammer Saleh"
+      },
+      {
+        "title": "False equivalence",
+        "link": "https://en.wikipedia.org/wiki/False_equivalence",
+        "ISBN": "",
+        "type": "article",
+        "author": "Wikipedia"
+      },
+      {
+        "title": "Bandwagon effect",
+        "link": "https://en.wikipedia.org/wiki/Bandwagon_effect",
+        "ISBN": "",
+        "type": "article",
+        "author": "Wikipedia"
+      },
+      {
+        "title": "Status quo bias",
+        "link": "https://en.wikipedia.org/wiki/Status_quo_bias",
+        "ISBN": "",
+        "type": "article",
+        "author": "Wikipedia"
+      }
+    ],
+    "reviewers": [
+    ]
   }
 ]
