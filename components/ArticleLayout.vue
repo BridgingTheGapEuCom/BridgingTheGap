@@ -7,34 +7,52 @@
             to="/"
             class="flex link items-end text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
           >
-            <SvgIcon type="mdi" :path="mdiArrowLeft" :size="24" />
-            <div class="ml-1">Back to articles list</div>
+            <SvgIcon
+              type="mdi"
+              :path="mdiArrowLeft"
+              :size="24"
+            />
+            <div class="ml-1">
+              Back to articles list
+            </div>
           </NuxtLink>
         </div>
-        <h1 class="mt-3 mb-2.5">{{ title }}</h1>
-        <div class="text-justify hyphens-auto my-2 block">
+        <h1 class="mt-3 mb-2.5">
+          {{ title }}
+        </h1>
+        <div class="text-justify hyphens-auto my-2 sm:block flex flex-col">
           <NuxtLink
             v-for="tag of tags"
             :key="tag"
             class="pr-2 navigation-button text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
             :to="tagLink(tag)"
-            >#{{ tag }}
+          >
+            #{{ tag }}
           </NuxtLink>
         </div>
         <div class="border-t dark:border-neutral-800">
           <div class="my-2 pb-1 flex lg:flex-row flex-col flex-1 justify-between">
-            <div v-for="author of authors" :key="author.author" class="flex flex-row">
+            <div
+              v-for="author of authors"
+              :key="author.author"
+              class="flex flex-row"
+            >
               <img
                 :alt="`${author.author}s photo`"
                 :src="author.photo"
                 width="90"
                 height="90"
                 class="grayscale rounded-md max-h-20"
-              />
-              <div id="article_authors" class="ml-3 flex flex-col justify-end">
+              >
+              <div
+                id="article_authors"
+                class="ml-3 flex flex-col justify-end"
+              >
                 <div>Author</div>
                 <div>
-                  <div class="font-bold h2">{{ author.author }}</div>
+                  <div class="font-bold h2">
+                    {{ author.author }}
+                  </div>
                   <div>{{ author.title }}</div>
                 </div>
               </div>
@@ -43,34 +61,46 @@
         </div>
         <div class="flex flex-col lg:flex-row justify-between border-t dark:border-neutral-800">
           <div v-if="coAuthors.length > 0">
-            <div class="h4 mt-3">Co-authors</div>
-            <div v-for="author of coAuthors" :key="author.author">
+            <div class="h4 mt-3">
+              Co-authors
+            </div>
+            <div
+              v-for="author of coAuthors"
+              :key="author.author"
+            >
               <a
                 target="_blank"
                 class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
                 :href="author.link"
-                >{{ author.author }}</a
-              >
+              >{{ author.author }}</a>
             </div>
           </div>
           <div v-if="reviewers.length > 0">
-            <div class="h4 mt-3">Article Reviewers</div>
-            <div v-for="reviewer of sortedReviewers" :key="reviewer.reviewer">
+            <div class="h4 mt-3">
+              Article Reviewers
+            </div>
+            <div
+              v-for="reviewer of sortedReviewers"
+              :key="reviewer.reviewer"
+            >
               <a
                 target="_blank"
                 class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
                 :href="reviewer.link"
-                >{{ reviewer.reviewer }}</a
-              >
+              >{{ reviewer.reviewer }}</a>
             </div>
           </div>
           <div class="text-justify hyphens-auto block">
             <div class="mt-3" />
-            <div class="h4">Published</div>
+            <div class="h4">
+              Published
+            </div>
             <div class="text-gray-600 dark:text-gray-400">
               {{ published }}
             </div>
-            <div class="h4 mb-1">Last update</div>
+            <div class="h4 mb-1">
+              Last update
+            </div>
             <div class="text-gray-600 dark:text-gray-400">
               {{ lastUpdate }}
             </div>
@@ -82,25 +112,37 @@
         </div>
         <div v-if="relatedArticles.length > 0">
           <div class="mt-3 border-b dark:border-neutral-800" />
-          <div class="h4 mt-3">Related articles</div>
-          <div v-for="related of relatedArticles" :key="related.title" class="articleLinkHeight">
+          <div class="h4 mt-3">
+            Related articles
+          </div>
+          <div
+            v-for="related of relatedArticles"
+            :key="related.title"
+            class="articleLinkHeight"
+          >
             <NuxtLink
               class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
               :href="`/articles/${related.name}`"
-              >{{ related.title }}
+            >
+              {{ related.title }}
             </NuxtLink>
           </div>
         </div>
         <div v-if="bibliography.length > 0">
           <div class="mt-3 border-b dark:border-neutral-800" />
-          <div class="h4 mt-3">Bibliography</div>
-          <div v-for="bib of bibliography" :key="bib.title" class="articleLinkHeight">
+          <div class="h4 mt-3">
+            Bibliography
+          </div>
+          <div
+            v-for="bib of bibliography"
+            :key="bib.title"
+            class="articleLinkHeight break-all"
+          >
             <a
               class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
               target="_blank"
               :href="bib.link"
-              >{{ bib.title }}</a
-            >
+            >{{ bib.title }}</a>
             <span v-if="bib.ISBN">;&nbsp;ISBN {{ bib.ISBN }}</span>
             <span>;&nbsp;{{ bib.author }}</span>
           </div>
@@ -111,7 +153,9 @@
       <div class="sticky top-16 dark:border-neutral-900 border-l overflow-auto">
         <div class="flex flex-col justify-between items-stretch pageHeight">
           <div class="text-left">
-            <div class="font-bold h3 mb-2 pl-3">Table of contents</div>
+            <div class="font-bold h3 mb-2 pl-3">
+              Table of contents
+            </div>
             <template v-if="contentElements.length > 0">
               <div
                 v-for="(element, i) of contentElements"
@@ -135,8 +179,7 @@
                         'dark:text-white': lowestIntersecting === i
                       }"
                       :href="`#${encodeURI(element.id)}`"
-                      >{{ element.textContent }}</a
-                    >
+                    >{{ element.textContent }}</a>
                   </div>
                 </template>
                 <template v-if="element.localName === 'h3'">
@@ -156,8 +199,7 @@
                         'dark:text-white': lowestIntersecting === i
                       }"
                       :href="`#${encodeURI(element.id)}`"
-                      >{{ element.textContent }}</a
-                    >
+                    >{{ element.textContent }}</a>
                   </div>
                 </template>
                 <template v-if="element.localName === 'h4'">
@@ -177,8 +219,7 @@
                         'dark:text-white': lowestIntersecting === i
                       }"
                       :href="`#${encodeURI(element.id)}`"
-                      >{{ element.textContent }}</a
-                    >
+                    >{{ element.textContent }}</a>
                   </div>
                 </template>
                 <template v-if="element.localName === 'h5'">
@@ -198,8 +239,7 @@
                         'dark:text-white': lowestIntersecting === i
                       }"
                       :href="`#${encodeURI(element.id)}`"
-                      >{{ element.textContent }}</a
-                    >
+                    >{{ element.textContent }}</a>
                   </div>
                 </template>
               </div>
