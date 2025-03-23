@@ -3,9 +3,13 @@
     class="card bg-neutral-50 dark:bg-neutral-900 dark:text-gray-50 text-black grid md:flex md:grid-cols-2 border-gray-400 rounded-md border dark:border-gray-800 md:hover:shadow-lg relative"
   >
     <NuxtLink :to="`/articles/${name}`">
-      <div class="md:min-w-[12rem] max-h-[14rem] overflow-hidden">
+      <div
+        v-intersection-observer="onImageInView"
+        class="md:min-w-[12rem] max-h-[14rem] overflow-hidden"
+      >
         <img
           loading="lazy"
+          v-show="imageVisible"
           :src="`/articles/${name}/image.webp`"
           class="md:max-w-[12rem] md:max-h-[12rem] w-full rounded-l-md"
           :alt="`${title} image`"
@@ -52,6 +56,7 @@ import { useRoute } from 'vue-router'
 import type { Author } from '~/Types/Article'
 import { mdiCircleSmall } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
+import { vIntersectionObserver } from '@vueuse/components'
 
 defineProps({
   name: { type: String, required: true },
@@ -64,6 +69,8 @@ defineProps({
 })
 
 const route = useRoute()
+
+const imageVisible = ref(false)
 
 /**
  * tagLink
@@ -86,6 +93,16 @@ const tagLink = (tag: string) => {
     }
   } else {
     return `/?tags=${tag}`
+  }
+}
+
+/**
+ * onImageInView
+ * @param data
+ */
+const onImageInView = (data: Array<IntersectionObserverEntry>) => {
+  if (data && data.length > 0 && imageVisible.value === false) {
+    imageVisible.value = data[0].isIntersecting
   }
 }
 </script>

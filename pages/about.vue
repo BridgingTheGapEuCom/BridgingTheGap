@@ -1,7 +1,10 @@
 <template>
   <div class="flex-col items-center sm:article">
     <div class="flex flex-col mt-10 mb-10">
-      <img src="~/assets/logo.png" class="m-auto dark:invert" />
+      <img
+        src="~/assets/logo.webp"
+        class="m-auto dark:invert"
+      >
     </div>
     <div
       class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
@@ -13,10 +16,14 @@
         width="1500"
         height="1500"
         alt="Karol Skrzymowski's picture"
-      />
+      >
       <div class="flex flex-col items-center">
-        <div class="text-3xl font-bold my-0">Karol Skrzymowski</div>
-        <div class="text-base font-semibold mb-2">Enterprise / Integration Architect</div>
+        <div class="text-3xl font-bold my-0">
+          Karol Skrzymowski
+        </div>
+        <div class="text-base font-semibold mb-2">
+          Enterprise / Integration Architect
+        </div>
         <div class="flex flex-col">
           <article class="article hyphens-auto">
             <p class="indent-6">
@@ -41,16 +48,28 @@
               navigate this exciting domain with confidence.
             </p>
             <p class="flex items-center justify-center">
-              <SvgIcon :path="mdiLinkedin" type="mdi" :size="24" class="max-w-8 my-0" />
-              <a class="link ml-2" href="https://www.linkedin.com/in/karolskrzymowski/"
-                >https://www.linkedin.com/in/karolskrzymowski</a
-              >
+              <SvgIcon
+                :path="mdiLinkedin"
+                type="mdi"
+                :size="24"
+                class="max-w-8 my-0"
+              />
+              <a
+                class="link ml-2"
+                href="https://www.linkedin.com/in/karolskrzymowski/"
+              >https://www.linkedin.com/in/karolskrzymowski</a>
             </p>
             <p class="flex items-center justify-center">
-              <SvgIcon :path="mdiAt" type="mdi" :size="24" class="max-w-6 my-0" />
-              <a class="link ml-2" href="mailto:karol@bridgingthegap.eu.com"
-                >karol@bridgingthegap.eu.com</a
-              >
+              <SvgIcon
+                :path="mdiAt"
+                type="mdi"
+                :size="24"
+                class="max-w-6 my-0"
+              />
+              <a
+                class="link ml-2"
+                href="mailto:karol@bridgingthegap.eu.com"
+              >karol@bridgingthegap.eu.com</a>
             </p>
           </article>
         </div>
@@ -66,10 +85,14 @@
         width="2014"
         height="2014"
         alt="Radoslaw Przewuski's picture"
-      />
+      >
       <div class="flex flex-col items-center">
-        <div class="text-3xl font-bold my-0">Radosław Przewuski</div>
-        <div class="text-base font-semibold mb-2">Integration Platforms Expert</div>
+        <div class="text-3xl font-bold my-0">
+          Radosław Przewuski
+        </div>
+        <div class="text-base font-semibold mb-2">
+          Integration Platforms Expert
+        </div>
         <div class="flex flex-col">
           <article class="article hyphens-auto">
             <p class="indent-6">
@@ -88,16 +111,28 @@
               APIs, fear not! I'm here to help.
             </p>
             <p class="flex items-center justify-center">
-              <SvgIcon :path="mdiLinkedin" type="mdi" :size="24" class="max-w-8 my-0" />
-              <a class="link ml-2" href="https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
-                >https://www.linkedin.com/in/radosław-przewuski/</a
-              >
+              <SvgIcon
+                :path="mdiLinkedin"
+                type="mdi"
+                :size="24"
+                class="max-w-8 my-0"
+              />
+              <a
+                class="link ml-2"
+                href="https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+              >https://www.linkedin.com/in/radosław-przewuski/</a>
             </p>
             <p class="flex items-center justify-center">
-              <SvgIcon :path="mdiAt" type="mdi" :size="24" class="max-w-6 my-0" />
-              <a class="link ml-2" href="mailto:radek@bridgingthegap.eu.com"
-                >radek@bridgingthegap.eu.com</a
-              >
+              <SvgIcon
+                :path="mdiAt"
+                type="mdi"
+                :size="24"
+                class="max-w-6 my-0"
+              />
+              <a
+                class="link ml-2"
+                href="mailto:radek@bridgingthegap.eu.com"
+              >radek@bridgingthegap.eu.com</a>
             </p>
           </article>
         </div>
@@ -113,10 +148,14 @@
         width="2014"
         height="2014"
         alt="Hubert Drabczyk's picture"
-      />
+      >
       <div class="flex flex-col items-center">
-        <div class="text-3xl font-bold my-0">Hubert Drabczyk</div>
-        <div class="text-base font-semibold mb-2">Business Analyst / Solution Architect</div>
+        <div class="text-3xl font-bold my-0">
+          Hubert Drabczyk
+        </div>
+        <div class="text-base font-semibold mb-2">
+          Business Analyst / Solution Architect
+        </div>
         <article class="article hyphens-auto">
           <p class="indent-6">
             With background in electronics and actual experience in turning an idea into a
@@ -139,16 +178,28 @@
             to help solving the challenges to take the promised profit.
           </p>
           <p class="flex items-center justify-center">
-            <SvgIcon :path="mdiLinkedin" type="mdi" :size="24" class="max-w-8 my-0" />
-            <a class="link ml-2" href="https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
-              >https://www.linkedin.com/in/hubert-drabczyk-63b06628</a
-            >
+            <SvgIcon
+              :path="mdiLinkedin"
+              type="mdi"
+              :size="24"
+              class="max-w-8 my-0"
+            />
+            <a
+              class="link ml-2"
+              href="https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+            >https://www.linkedin.com/in/hubert-drabczyk-63b06628</a>
           </p>
           <p class="flex items-center justify-center">
-            <SvgIcon :path="mdiAt" type="mdi" :size="24" class="max-w-6 my-0" />
-            <a class="link ml-2" href="mailto:hubert@bridgingthegap.eu.com"
-              >hubert@bridgingthegap.eu.com</a
-            >
+            <SvgIcon
+              :path="mdiAt"
+              type="mdi"
+              :size="24"
+              class="max-w-6 my-0"
+            />
+            <a
+              class="link ml-2"
+              href="mailto:hubert@bridgingthegap.eu.com"
+            >hubert@bridgingthegap.eu.com</a>
           </p>
         </article>
       </div>
@@ -163,10 +214,14 @@
         width="904"
         height="904"
         alt="Dominik Kruszewski's picture"
-      />
+      >
       <div class="flex flex-col items-center">
-        <div class="text-3xl font-bold my-0">Dominik Kruszewski</div>
-        <div class="text-base font-semibold mb-2">DevOps Expert</div>
+        <div class="text-3xl font-bold my-0">
+          Dominik Kruszewski
+        </div>
+        <div class="text-base font-semibold mb-2">
+          DevOps Expert
+        </div>
         <article class="article hyphens-auto">
           <p class="indent-6">
             For over a decade, I've been roaming the IT landscape, building, breaking, and fixing
@@ -186,16 +241,28 @@
             between platforms. Need a one-man army? I've got you covered.
           </p>
           <p class="flex items-center justify-center">
-            <SvgIcon :path="mdiLinkedin" type="mdi" :size="24" class="max-w-8 my-0" />
-            <a class="link ml-2" href="https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
-              >https://www.linkedin.com/in/dominik-kruszewski-a30829aa</a
-            >
+            <SvgIcon
+              :path="mdiLinkedin"
+              type="mdi"
+              :size="24"
+              class="max-w-8 my-0"
+            />
+            <a
+              class="link ml-2"
+              href="https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+            >https://www.linkedin.com/in/dominik-kruszewski-a30829aa</a>
           </p>
           <p class="flex items-center justify-center">
-            <SvgIcon :path="mdiAt" type="mdi" :size="24" class="max-w-6 my-0" />
-            <a class="link ml-2" href="mailto:dominik@bridgingthegap.eu.com"
-              >dominik@bridgingthegap.eu.com</a
-            >
+            <SvgIcon
+              :path="mdiAt"
+              type="mdi"
+              :size="24"
+              class="max-w-6 my-0"
+            />
+            <a
+              class="link ml-2"
+              href="mailto:dominik@bridgingthegap.eu.com"
+            >dominik@bridgingthegap.eu.com</a>
           </p>
         </article>
       </div>

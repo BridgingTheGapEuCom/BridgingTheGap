@@ -28,7 +28,7 @@
         <NuxtLink to="/">
           <div class="flex items-center space-x-3 rtl:space-x-reverse">
             <img
-              src="~/assets/logo_low_poly.png"
+              src="~/assets/logo_low_poly.webp"
               class="h-7 w-7 m-1 dark:invert"
               alt="Bridging the Gap logo"
             >

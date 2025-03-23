@@ -4,9 +4,14 @@
   >
     <article>
       <div class="flex flex-col mt-10 mb-20">
-        <img src="~/assets/logo.png" class="m-auto max-w-96 dark:invert" />
+        <img
+          src="~/assets/logo.webp"
+          class="m-auto max-w-96 dark:invert"
+        >
       </div>
-      <h1 class="text-center">About the project</h1>
+      <h1 class="text-center">
+        About the project
+      </h1>
       <p>
         Welcome to Bridging the Gap, an open-source educational project aimed at closing the
         knowledge divide in the IT field of Application Integration. Our mission is to empower
@@ -44,14 +49,12 @@
       <div class="flex flex-grow items-center">
         <div class="flex flex-grow flex-col items-center">
           <h1>Source code</h1>
-          <span
-            >A full content of this webpage, including it's code, can be found in our
+          <span>A full content of this webpage, including it's code, can be found in our
             <a
               href="https://github.com/BridgingTheGapEuCom/BridgingTheGap"
               class="link text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white"
               target="_blank"
-              ><b>GitHub</b></a
-            >
+            ><b>GitHub</b></a>
             repository
           </span>
         </div>
@@ -72,19 +75,25 @@
             &nbsp;CC BY 4.0
           </div>
           <div class="flex">
-            <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank">
+            <a
+              href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
+              target="_blank"
+            >
               <img
                 alt=""
                 class="w-[1.5rem] mx-1 self-center"
                 src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
-              />
+              >
             </a>
-            <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank">
+            <a
+              href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
+              target="_blank"
+            >
               <img
                 alt=""
                 class="w-[1.5rem]"
                 src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
-              />
+              >
             </a>
           </div>
         </div>
