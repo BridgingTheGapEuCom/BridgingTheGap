@@ -197,7 +197,7 @@ import tailwindConfig from '../tailwind.config.js'
 
 const fullConfig = resolveConfig(tailwindConfig)
 
-const themeCookie = useCookie('theme', () => ref(false))
+const themeCookie = useCookie('theme', { maxAge: 31556926, default: () => ref(false) })
 const darkTheme = useState('dark', () => ref(false))
 
 const body = ref()
