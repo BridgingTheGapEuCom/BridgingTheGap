@@ -13,6 +13,9 @@ export interface Article {
 export interface Author {
   author: string
   link: string
+  photo: string
+  title: string
+  mail: string
 }
 
 export interface Bibliography {
