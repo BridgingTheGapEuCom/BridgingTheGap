@@ -52,12 +52,12 @@
       </div>
       <div class="w-full px-3 pb-3 flex items-center justify-center">
         <div>
-          Showing <span class="font-bold">{{ filteredArticles.length }}</span> of
-          <span class="font-bold">{{ props.articles.length }}</span> articles
+          Showing <span class="font-bold">{{ filteredArticles?.length }}</span> of
+          <span class="font-bold">{{ props?.articles?.length }}</span> articles
         </div>
       </div>
       <div
-        v-if="filteredArticles.length === 0"
+        v-if="filteredArticles?.length === 0"
         class="w-full border rounded-md px-3 dark:border-neutral-800 dark:bg-neutral-900 border-neutral-400 bg-neutral-100 min-h-32 flex items-center justify-center"
       >
         <div class="font-bold">
@@ -80,6 +80,8 @@
             :title="article.title"
             :tags="article.tags"
             :current-tags="tags"
+            :publication-date="article.publishDate"
+            :authors="article.authors"
           />
         </div>
       </transition-group>
@@ -109,6 +111,10 @@ let debounceWait = false
 
 const props = defineProps({
   articles: Array<Article>
+})
+
+props.articles?.sort((a, b) => {
+  return Date.parse(a.publishDate) > Date.parse(b.publishDate) ? -1 : 1
 })
 
 onMounted(async () => {
@@ -223,8 +229,6 @@ const filteredArticles = computed(() => {
 
 /**
  * allTags
- *
- * @type {ComputedRef<any[]>}
  */
 const allTags = computed((): Array<string> => {
   let all = new Set()
