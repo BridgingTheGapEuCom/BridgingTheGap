@@ -15,9 +15,15 @@
         characteristics).
       </p>
 
-      <p style="margin: 0">Name: <b>One-way p2p</b></p>
-      <p style="margin: 0">Communication mode: <b>Asynchronous</b></p>
-      <p style="margin: 0">Architectural style: <b>Event-Driven Architecture</b></p>
+      <p style="margin: 0">
+        Name: <b>One-way p2p</b>
+      </p>
+      <p style="margin: 0">
+        Communication mode: <b>Asynchronous</b>
+      </p>
+      <p style="margin: 0">
+        Architectural style: <b>Event-Driven Architecture</b>
+      </p>
       <p>Common use cases:</p>
       <ul>
         <li>
@@ -44,9 +50,13 @@
       <ul>
         <li>
           Contract coupling - the provider and consumer of the event are locked by an agreed
-          contract, it is wanted within the bounds of a p2p communication, might turn to a form of
-          model coupling, if it is extended into a broadcast or multicast pattern with additional
-          consumers that only use a subset of the data model,
+          contract, it is wanted within the bounds of a p2p communication, might become tighter, if
+          it is extended into a broadcast or multicast pattern with additional consumers that only
+          use a subset of the data model,
+        </li>
+        <li>
+          Data type and format coupling - the provider and consumer must have the same understanding
+          of the data model types and format (e.g. JSON, XML, CSV)
         </li>
         <li>
           Conversation coupling - depending on the broker implementation, the consumer and provider
@@ -65,14 +75,18 @@
       <div class="flex justify-center">
         <P2P_Queue :dark="dark" />
       </div>
-      <p class="text-center font-bold mt-4">One-way p2p using a queue</p>
+      <p class="text-center font-bold mt-4">
+        One-way p2p using a queue
+      </p>
       <div
         class="flex-1 h-[1px] mx-auto max-w-screen-sm mt-10 mb-3 dark:bg-neutral-700 bg-neutral-300 self-center"
       />
       <div class="flex justify-center">
         <p2-p_-topic :dark="dark" />
       </div>
-      <p class="text-center font-bold mt-4">Alternative: One-way p2p using a topic</p>
+      <p class="text-center font-bold mt-4">
+        Alternative: One-way p2p using a topic
+      </p>
       <div
         class="flex-1 h-[1px] mx-auto max-w-screen-sm mt-10 dark:bg-neutral-700 bg-neutral-300 self-center"
       />
