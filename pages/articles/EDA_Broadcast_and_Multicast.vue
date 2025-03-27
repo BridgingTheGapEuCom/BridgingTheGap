@@ -11,9 +11,15 @@
         participants: one-to-one, one-to-many, many-to-one, and many-to-many.
       </p>
       <h2>Pattern nameplate</h2>
-      <p style="margin: 0">Name: <b>Broadcast and Multicast</b></p>
-      <p style="margin: 0">Communication mode: <b>Asynchronous</b></p>
-      <p style="margin: 0">Architectural style: <b>Event-Driven Architecture</b></p>
+      <p style="margin: 0">
+        Name: <b>Broadcast and Multicast</b>
+      </p>
+      <p style="margin: 0">
+        Communication mode: <b>Asynchronous</b>
+      </p>
+      <p style="margin: 0">
+        Architectural style: <b>Event-Driven Architecture</b>
+      </p>
       <p>Common use cases:</p>
       <ul>
         <li>
@@ -29,6 +35,10 @@
           problematic with a broadcast or multicast pattern and multiple consumers that only use a
           subset of the payload described by the contract. This, if left unmanaged, may lead to
           potential data security problems and cause contract brittleness,
+        </li>
+        <li>
+          Data type and format coupling - the provider and consumers must have the same
+          understanding of the data model types and format (e.g. JSON, XML, CSV)
         </li>
         <li>
           Conversation coupling - depending on the broker implementation, the consumer and provider
@@ -48,7 +58,9 @@
       <div class="flex justify-center">
         <EDA_Asynchronous_Broadcast_Multicast />
       </div>
-      <p class="text-center font-bold mt-4">Asynchronous Broadcast/Multicast using a topic</p>
+      <p class="text-center font-bold mt-4">
+        Asynchronous Broadcast/Multicast using a topic
+      </p>
       <div class="flex justify-center">
         <EDA_Asynchronous_Broadcast_Multicast_Bridged />
       </div>
