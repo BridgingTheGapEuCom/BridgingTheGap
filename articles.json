@@ -401,13 +401,11 @@
     "title": "Degrees of coupling in IT ecosystems",
     "short": "One of the key problems Enterprise Application Integration (EAI) is addressing in various ways is coupling. While we explore how we can address it by applying specific architectural styles and patterns in other articles, we’d like to explore what is coupling and define, from a variety of types, which coupling types are relevant in ecosystem interoperability topics. What is coupling?\nTo take a closer look at coupling, let’s start by looking at a few definitions:\n\nIn software engineering, coupling is the degree of interdependence between software modules; a measure of how closely connected two routines or modules are; the strength of the relationships between modules. Coupling is not binary but it is multi-dimensional.",
     "tags": [
-      "Architecture",
       "Complexity",
-      "Development",
-      "The hard parts"
+      "The Hard Parts"
     ],
     "publishDate": "2024-12-31",
-    "lastUpdate": "2025-03-06",
+    "lastUpdate": "2025-03-27",
     "authors": [
       {
         "author": "Karol Skrzymowski",
