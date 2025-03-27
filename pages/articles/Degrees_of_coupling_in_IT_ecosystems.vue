@@ -17,22 +17,22 @@
           modules; a measure of how closely connected two routines or modules are; the strength of
           the relationships between modules. Coupling is not binary but it is multi-dimensional.
         </span>
-        <br />
-        <a href="https://en.wikipedia.org/wiki/Coupling_(computer_programming)" target="_blank"
-          >Wikipedia</a
-        >
+        <br>
+        <a
+          href="https://en.wikipedia.org/wiki/Coupling_(computer_programming)"
+          target="_blank"
+        >Wikipedia</a>
       </p>
       <p>
         <span class="italic">
           Coupling describes the independent variability of connected systems, i.e., whether a
           change in System A affects System B. If it does, A and B are coupled.
         </span>
-        <br />
+        <br>
         <a
           href="https://www.enterpriseintegrationpatterns.com/ramblings/coupling_facets.html"
           target="_blank"
-          >Gregor Hohpe</a
-        >
+        >Gregor Hohpe</a>
       </p>
 
       <p>
@@ -40,8 +40,11 @@
           If a change in one system, service or component, defined broadly, might facilitate a
           change in another system, service or component, they are coupled.
         </span>
-        <br />
-        <a href="https://www.developertoarchitect.com/" target="_blank">Mark Richards</a>
+        <br>
+        <a
+          href="https://www.developertoarchitect.com/"
+          target="_blank"
+        >Mark Richards</a>
       </p>
 
       <p>
@@ -84,8 +87,7 @@
         <a
           href="https://learning.oreilly.com/library/view/balancing-coupling-in/9780137353514/"
           target="_blank"
-          >Balancing Coupling in Software Design</a
-        >. As we are going to dive into the topic we will be focusing only on those that bear
+        >Balancing Coupling in Software Design</a>. As we are going to dive into the topic we will be focusing only on those that bear
         significant relevance for interoperability on an ecosystem abstraction level.
       </p>
       <p>
@@ -107,6 +109,11 @@
           the design in place.
         </li>
         <ul>
+          <li>
+            Contract - described by the agreed scope of data that will be transferred between
+            involved parties. While contracts can be one-sided or negotiated between parties, all
+            involved are coupled this way
+          </li>
           <li>
             Data format and type - deriving from contracts between modules and applications where
             data models are described in conjunction with respective formats,
@@ -150,7 +157,7 @@
           <li>
             Semantic - extending the architectural aspect of this coupling, the meaning of an
             instance of data being exchanged and how that data influences the behavior of the
-            implementation through data validation, transformation and error handling,
+            implementation through data validation, transformation and error handling
           </li>
         </ul>
       </ul>
