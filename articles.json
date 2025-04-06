@@ -401,13 +401,11 @@
     "title": "Degrees of coupling in IT ecosystems",
     "short": "One of the key problems Enterprise Application Integration (EAI) is addressing in various ways is coupling. While we explore how we can address it by applying specific architectural styles and patterns in other articles, we’d like to explore what is coupling and define, from a variety of types, which coupling types are relevant in ecosystem interoperability topics. What is coupling?\nTo take a closer look at coupling, let’s start by looking at a few definitions:\n\nIn software engineering, coupling is the degree of interdependence between software modules; a measure of how closely connected two routines or modules are; the strength of the relationships between modules. Coupling is not binary but it is multi-dimensional.",
     "tags": [
-      "Architecture",
       "Complexity",
-      "Development",
-      "The hard parts"
+      "The Hard Parts"
     ],
     "publishDate": "2024-12-31",
-    "lastUpdate": "2025-03-06",
+    "lastUpdate": "2025-03-27",
     "authors": [
       {
         "author": "Karol Skrzymowski",
@@ -543,7 +541,7 @@
       "Event-Driven Architecture"
     ],
     "publishDate": "2024-12-31",
-    "lastUpdate": "2024-12-31",
+    "lastUpdate": "2025-03-27",
     "authors": [
       {
         "author": "Karol Skrzymowski",
@@ -592,7 +590,7 @@
       "Event-Driven Architecture"
     ],
     "publishDate": "2025-02-02",
-    "lastUpdate": "2025-02-02",
+    "lastUpdate": "2025-03-27",
     "authors": [
       {
         "author": "Karol Skrzymowski",
@@ -641,7 +639,7 @@
       "Event-Driven Architecture"
     ],
     "publishDate": "2025-02-09",
-    "lastUpdate": "2025-02-09",
+    "lastUpdate": "2025-03-27",
     "authors": [
       {
         "author": "Karol Skrzymowski",
@@ -690,7 +688,7 @@
       "Event-Driven Architecture"
     ],
     "publishDate": "2025-02-11",
-    "lastUpdate": "2025-02-11",
+    "lastUpdate": "2025-03-27",
     "authors": [
       {
         "author": "Karol Skrzymowski",
@@ -852,6 +850,54 @@
         "ISBN": "",
         "type": "article",
         "author": "Wikipedia"
+      }
+    ],
+    "reviewers": [
+    ]
+  },
+  {
+    "name": "Event-Driven_Polling",
+    "title": "Event-Driven Polling",
+    "short": "There are many controversial patterns in the world of IT architecture, some are even considered antipatterns, which by most people are flagged as “avoid at all cost”, or “always bad”. So like with any other architectural style, Event-Driven Architecture (EDA) also has a pattern that brings controversy to the table. While initially this article was supposed to be named an antipattern, we decided not to name it so, due to the fact that this is still a valid pattern, but one that is difficult to place in the right context where it should be used. To cover that problem area we wrote a separate article that provides a bit more explanation on the matter. Instead of discussing how problematic this pattern might be we decided to present it to you as any pattern and provide the right context to understand it and be able to use it with success.",
+    "tags": [
+      "Ecosystem Architectural Styles",
+      "Event-Driven Architecture"
+    ],
+    "relatedTags": [
+      "Event-Driven Architecture"
+    ],
+    "publishDate": "2025-03-30",
+    "lastUpdate": "2025-03-30",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/",
+        "photo": "/Karol_portrait.webp",
+        "title": "Enterprise/Integration Architect",
+        "mail": "karol@bridgingthegap.eu.com"
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "Mastering Patterns in Event-Driven Architecture",
+        "link": "https://learning.oreilly.com/live-events/mastering-patterns-in-event-driven-architecture/0636920064167/",
+        "ISBN": "",
+        "type": "training",
+        "author": "Mark Richards"
       }
     ],
     "reviewers": [

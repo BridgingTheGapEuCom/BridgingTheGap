@@ -21,9 +21,15 @@
         etc. Let us consider this when exploring this pattern.
       </p>
       <h2>Pattern nameplate</h2>
-      <p style="margin: 0">Name: <b>Callback</b></p>
-      <p style="margin: 0">Communication mode: <b>Asynchronous</b></p>
-      <p style="margin: 0">Architectural style: <b>Event-Driven Architecture</b></p>
+      <p style="margin: 0">
+        Name: <b>Callback</b>
+      </p>
+      <p style="margin: 0">
+        Communication mode: <b>Asynchronous</b>
+      </p>
+      <p style="margin: 0">
+        Architectural style: <b>Event-Driven Architecture</b>
+      </p>
       <p>Common use cases:</p>
       <ul>
         <li>Data quality assurance based on API contracts,</li>
@@ -35,25 +41,30 @@
       <ul>
         <li>
           Contract coupling - the provider and consumer of the event are locked by an agreed data
-          model, it is tolerable within the bounds of a p2p communication, might not be, if it is
+          model, it is wanted within the bounds of a p2p communication, might not be, if it is
           extended into a broadcast or multicast pattern with additional consumers that only use a
-          subset of the data model,
+          subset of the data model. Furthermore, there are at least two contract couplings present
+          in this pattern, depending on the variant (e.g. if dedicated callback queues are used)
+        </li>
+        <li>
+          Data type and format coupling - the provider and consumer must have the same understanding
+          of the data model types and format (e.g. JSON, XML, CSV)
         </li>
         <li>
           Conversation coupling - depending on the broker implementation, the consumer and provider
-          may be locked by the protocol of the event broker,
+          may be locked by the protocol of the event broker
         </li>
       </ul>
       <p>Operational coupling:</p>
       <ul>
-        <li>Semantic coupling - unavoidable with any data exchange,</li>
+        <li>Semantic coupling - unavoidable with any data exchange</li>
         <li>
           There are two or more distinct architectural quanta, one for each event producer, one for
-          each event consumer, both overlapping on the event broker structure used (topic or queue),
+          each event consumer, both overlapping on the event broker structure used (topic or queue)
         </li>
         <li>
           Temporal coupling - for a callback to occur successfully, there must be first a successful
-          event/command/message that results in said callback,
+          event/command/message that results in said callback
         </li>
       </ul>
       <h3>Diagrams</h3>
@@ -61,21 +72,27 @@
       <div class="flex justify-center">
         <EDA_Asynchronous_Callbacks />
       </div>
-      <p class="text-center font-bold mt-4">Simple callback</p>
+      <p class="text-center font-bold mt-4">
+        Simple callback
+      </p>
       <div
         class="flex-1 h-[1px] mx-auto max-w-screen-sm mt-10 mb-3 dark:bg-neutral-700 bg-neutral-300 self-center"
       />
       <div class="flex justify-center">
         <EDA_Asynchronous_Callbacks_to_a_Broadcast_ACK />
       </div>
-      <p class="text-center font-bold mt-4">Callback to a broadcast with a single contract queue</p>
+      <p class="text-center font-bold mt-4">
+        Callback to a broadcast with a single contract queue
+      </p>
       <div
         class="flex-1 h-[1px] mx-auto max-w-screen-sm mt-10 mb-3 dark:bg-neutral-700 bg-neutral-300 self-center"
       />
       <div class="flex justify-center">
         <EDA_Asynchronous_Callbacks_to_a_Broadcast_dedicated_schema />
       </div>
-      <p class="text-center font-bold mt-4">Callback to a broadcast with dedicated queues</p>
+      <p class="text-center font-bold mt-4">
+        Callback to a broadcast with dedicated queues
+      </p>
       <h4>Behavioral diagram</h4>
       <div class="flex justify-center">
         <EDA_Callback_via_Queue />
@@ -129,8 +146,9 @@
         <NuxtLink
           class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
           to="/articles/EDA_Broadcast_and_Multicast"
-          >broadcast/multicast</NuxtLink
         >
+          broadcast/multicast
+        </NuxtLink>
         and an one-way point-to-point patterns in sequence. One of the key use cases for this
         pattern is mitigating the operational lack of delivery or processing confirmation, which
         makes error handling and IT operations a bit more difficult. This might at times be crucial

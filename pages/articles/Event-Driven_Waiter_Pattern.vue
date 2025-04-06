@@ -10,9 +10,15 @@
         standardized way.
       </p>
       <h2>Pattern nameplate</h2>
-      <p style="margin: 0">Name: <b>Waiter pattern</b></p>
-      <p style="margin: 0">Communication mode: <b>Asynchronous</b></p>
-      <p style="margin: 0">Architectural style: <b>Event-Driven Architecture</b></p>
+      <p style="margin: 0">
+        Name: <b>Waiter pattern</b>
+      </p>
+      <p style="margin: 0">
+        Communication mode: <b>Asynchronous</b>
+      </p>
+      <p style="margin: 0">
+        Architectural style: <b>Event-Driven Architecture</b>
+      </p>
       <p>Common use cases:</p>
       <ul>
         <li>
@@ -28,23 +34,28 @@
           Contract coupling - the provider and consumer of the event are locked by an agreed data
           model, it is tolerable within the bounds of a p2p communication, might not be, if it is
           extended into a broadcast or multicast pattern with additional consumers that only use a
-          subset of the data model,
+          subset of the data model. Furthermore, there are at least two contract couplings present
+          in this pattern, depending on the number of callback producers
+        </li>
+        <li>
+          Data type and format coupling - the provider and consumer must have the same understanding
+          of the data model types and format (e.g. JSON, XML, CSV)
         </li>
         <li>
           Conversation coupling - depending on the broker implementation, the consumer and provider
-          may be locked by the protocol of the event broker,
+          may be locked by the protocol of the event broker
         </li>
       </ul>
       <p>Operational coupling:</p>
       <ul>
-        <li>Semantic coupling - unavoidable with any data exchange,</li>
+        <li>Semantic coupling - unavoidable with any data exchange</li>
         <li>
           There are two or more distinct architectural quanta, one for each event producer, one for
-          each event consumer, both overlapping on the event broker structure used (topic or queue).
+          each event consumer, both overlapping on the event broker structure used (topic or queue)
         </li>
         <li>
           Temporal coupling - for a subscription callback to occur successfully, there must be first
-          a successful event/command/message that results in said callback.
+          a successful event/command/message that results in said callback
         </li>
       </ul>
       <h3>Diagram(s)</h3>
@@ -52,7 +63,9 @@
       <div class="flex justify-center">
         <EDA_Waiter_Pattern />
       </div>
-      <p class="text-center font-bold mt-4">Waiter pattern behaviour</p>
+      <p class="text-center font-bold mt-4">
+        Waiter pattern behaviour
+      </p>
       <h2>Pattern analysis</h2>
       <p>
         The core function of the waiter pattern is to provide value with produced data as soon as
@@ -85,17 +98,19 @@
         <NuxtLink
           class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
           to="/articles/Event-Driven_Callbacks"
-          >callbacks</NuxtLink
-        >.
+        >
+          callbacks
+        </NuxtLink>.
       </p>
       <p>
         What can be an additional consideration to be had, is that since the number of callbacks
         will be usually more than one per event triggering the processing, this requires mindful
         handling of persistence and errors, especially when running parallel jobs. As there might be
         a connectivity problem (as per the
-        <a href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing" target="_blank"
-          >first fallacy of distributed computing</a
-        >), the number of messages pending being sent from the callback producer or delivered and
+        <a
+          href="https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing"
+          target="_blank"
+        >first fallacy of distributed computing</a>), the number of messages pending being sent from the callback producer or delivered and
         temporarily stored on the message broker, will gradually increase. This in turn might pose a
         risk of overwhelming the message broker and disabling the event based communication for all
         involved, making it important to be managed on an architectural level first.
