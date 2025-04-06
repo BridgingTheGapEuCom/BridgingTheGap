@@ -4,8 +4,8 @@
     "title": "What is Application Integration?",
     "short": "This seems to be a very easy question, ain't it? But if you go to google and search the phrase \"Application Integration\", you will get a multitude of vendor specific sites that try to define application integration to align with their marketing philosophy, not entirely saying what it is. Some focus on heavy integration platforms, others around message brokers, while some also speak of API Management solutions. All of those are components that compose application integration and can be used or not, depending on what are the requirements and what is the architecture of a particular application, system or IT ecosystem. Don't even try asking ChatGPT, as it will also produce an answer that has all of the Internet bias.",
     "tags": [
-      "Basics",
-      "History"
+      "Basic Definitions",
+      "Concepts"
     ],
     "publishDate": "2024-03-10",
     "lastUpdate": "2024-10-11",
@@ -75,7 +75,8 @@
     "title": "Data Integration vs Application Integration",
     "short": "Working in any industry brings all sorts of terms and abbreviations that are specific to that particular industry or even specific to a narrow field of it. During our working day we more often use job specific jargon then we think, and that jargon when used outside of the industry context may be a cause of a lot of misunderstandings or even problems. That is exactly the case with Data Integration and Application Integration. Both of these terms have the word “integration” in them, which is commonly used by specialists of those two fields alone without the preceding word meaning their respective terms. Why is that a problem? People outside of that field mostly hear the word “integration” instead of the full term and because of that they tend to think that this is one and the same thing. To be honest even specialists in those fields make that mistake when they are not aware of the existence of the other field in IT. An application integration specialist might think: “Oh, data integration, yes, we move data from place to place, hence we integrate it! That is the same thing!”.",
     "tags": [
-      "Basics"
+      "Basic Definitions",
+      "Concepts"
     ],
     "publishDate": "2024-03-10",
     "lastUpdate": "2024-03-10",
@@ -134,8 +135,8 @@
     "title": "Modern Application Integration Principles",
     "short": "Working in corporate environments often entails dealing with technical debt that arose over the years of the company building up its IT, merging with other companies, acquiring software, SaaS solutions, etc.. Technical systems are often at the very end of this list, as they have lower priority in the eyes of the business, as they do not provide direct business value, at least not one that will be easily understood. Application Integration is unfortunately one of those technical systems that are often neglected, especially if the business is not technology driven (so not e.g. telecommunications, technology vendors, SaaS solution vendors).",
     "tags": [
-      "Basics",
-      "Guidelines"
+      "Basic Definitions",
+      "Concepts"
     ],
     "publishDate": "2024-04-16",
     "lastUpdate": "2024-04-16",
@@ -190,11 +191,10 @@
     "title": "System vs Ecosystem Architectural Styles",
     "short": "When we think about architecture, we usually think of building a system. There are no right answers to how to build, most of the time we use our experience and expertise, or we look towards more advanced techniques like trade-off analysis to choose “the least worst” solution. Luckily there are shortcuts that can help make decisions over what type of architectural style (or mix of those) you could use to build your system based on the architectural capabilities rather than functional behavior.",
     "tags": [
-      "Basics",
-      "Architectural styles"
+      "Ecosystem Architectural Styles"
     ],
     "relatedTags": [
-      "Architectural styles"
+      "Ecosystem Architectural Styles"
     ],
     "publishDate": "2024-10-07",
     "lastUpdate": "2025-03-06",
@@ -252,9 +252,7 @@
     "title": "Qualitative Analysis of Ecosystem Architectural Styles",
     "short": "As we were preparing to write some of the articles and outlined our collective knowledge about Enterprise Application Integration (EAI), we identified many gaps in our understanding of the field we work in. Some were assumptions made over time, others simply lack of working experience in certain areas, simply by a lack of customers that wanted to do something in a specific way. Usually those gaps were easy to fill in, by discussion, a bit of research or reaching out to other specialists for an architectural sparring.",
     "tags": [
-      "Method",
-      "Architectural styles",
-      "Qualitative analysis"
+      "Ecosystem Architectural Styles"
     ],
     "publishDate": "2024-10-07",
     "lastUpdate": "2024-10-07",
@@ -312,7 +310,7 @@
     "title": "Synchronous vs Asynchronous",
     "short": "While communication was always the key to success for humankind, since 1969 and the  creation of ARPANet, communication has become something very different, quicker and more robust with every single decade, ever speeding up. The forecasts for 2025 are that we will produce 147 ZB of data over the year, this means about 407200000 TB a day. To put that in perspective, YouTube alone currently uses approximately 440000 TB daily, and your message on Whatsapp is under the size of 5KB = 5120 characters (1 TB = 1073741824 KB, so around 214.7 million messages).",
     "tags": [
-      "Basics",
+      "Basic Definitions",
       "Concepts"
     ],
     "publishDate": "2024-12-03",
@@ -463,7 +461,6 @@
     "title": "Event-Driven Architecture for IT ecosystems",
     "short": "Modern businesses rely on a diverse ecosystem of applications, including custom-built systems and cloud-based services. Integrating these disparate systems can be challenging, often leading to tightly coupled (spaghetti) integrations that are difficult to maintain and scale. Event-Driven Architecture (EDA) offers a more flexible approach to interoperability. By leveraging events as the foundation for communication, EDA enables systems to exchange data more loosely, improving maintainability and facilitating easier adaptation to changing business requirements.",
     "tags": [
-      "Architecture",
       "Ecosystem Architectural Styles",
       "Event-Driven Architecture"
     ],
@@ -533,7 +530,6 @@
     "title": "Event-Driven One-way point-to-point",
     "short": "As we describe the architectural styles for ecosystems, for some of them we can identify distinct and repeatable architectural patterns that we can leverage to build better interoperability. As we dive into Event-Driven Architecture, let’s take a look at the first of the integration patterns deriving from this architectural style. Pattern nameplate. Let’s start with a small summary, we dubbed the “pattern nameplate” (an analog to a device nameplate that you can find on any electrical device, that describes its basic characteristics).",
     "tags": [
-      "Architecture",
       "Ecosystem Architectural Styles",
       "Event-Driven Architecture"
     ],
@@ -582,7 +578,6 @@
     "title": "EDA Broadcast and Multicast",
     "short": "When you dive into the world of Event-Driven Architecture, the phrase you hear most often is “pub-sub” or “publish-subscribe”, which seems to be the most commonly used data distribution pattern in this architecture. And for a lot of cases this will be very true, especially when we'd take a look at MQTT, where the only available structure on the broker is a topic. In essence, this pattern could cover all possible cases for the number of communication participants: one-to-one, one-to-many, many-to-one, and many-to-many.",
     "tags": [
-      "Architecture",
       "Ecosystem Architectural Styles",
       "Event-Driven Architecture"
     ],
@@ -631,7 +626,6 @@
     "title": "Event-Driven Callbacks",
     "short": "Callbacks are one of those patterns that might be a bit troublesome to form a philosophical point of view. They are fairly straightforward technically speaking, but it is debatable whether or not they fall under the category of event-driven. The key question to explore here is that if we are sending a message and we are expecting a response, perhaps not an instantaneous one, rather over time or in an undetermined time, is that still event-driven? If we consider the callback alone, without the triggering subscription or event, then it seems to always be an event of sorts, marking the completion of a processing task, an occurrence in a system, etc. Let us consider this when exploring this pattern.",
     "tags": [
-      "Architecture",
       "Ecosystem Architectural Styles",
       "Event-Driven Architecture"
     ],
@@ -680,7 +674,6 @@
     "title": "Event-Driven Waiter Pattern",
     "short": "Processing, please do not wait... As we dive deeper into Event-Driven Architecture (EDA), there is a specific scenario that deserves attention on its own. As we already established that EDA patterns can be used to loosen the coupling between different applications and systems so they can operate in a more independent manner. The waiter pattern builds on top of that capability allowing the applications that produce data over a long span of time to deliver them in an organized and standardized way.",
     "tags": [
-      "Architecture",
       "Ecosystem Architectural Styles",
       "Event-Driven Architecture"
     ],
@@ -729,7 +722,6 @@
     "title": "Broker Architecture",
     "short": "There comes a certain point in an ecosystem's growth, when due to its expansion and business growth, operating and maintaining point-to-point, or event-driven interoperability becomes a nightmare of tangled dependencies for each system involved in the communication. All of this is the result of complexity that is not only specific to the business domain, which dictates functional requirements for each of those systems, but also due to the communication overhead that forces the systems to manage connections, various API contracts, data access logic, or credentials. All of this builds up to a hefty load of work, shifting the balance of time consumed on operations and development. This can further lead to bottlenecks in project development or complete stop of further growth as the team will be busy with solving production issues or locked in a fight between development and operations. This is where we can find help by looking into a law postulated in the mid-1980s.",
     "tags": [
-      "Architecture",
       "Ecosystem Architectural Styles",
       "Broker Architecture"
     ],
@@ -778,8 +770,7 @@
     "title": "Pattern of an antipattern",
     "short": "Working in IT we hear a lot of jargon, phrases that have a specific meaning often only in this industry. While those terms are fairly common, and we hear them a lot, everyone has their own definitions as to what they actually mean. A large part of the role of an IT specialist, an architect especially, is to clarify those definitions and foster ubiquitous language in conversations within IT and when talking with any stakeholders. One of such words that constantly escapes a proper definition in common use is an antipattern. We hear it all the time in meetings, discussions over code and changes made to systems. Most commonly it is used as a description of something that should not be done that particular way, meaning it’s been done badly.",
     "tags": [
-      "Basic Definitions",
-      "Definitions"
+      "Basic Definitions"
     ],
     "relatedTags": [
     ],
