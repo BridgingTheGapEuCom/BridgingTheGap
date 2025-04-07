@@ -893,5 +893,46 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "EDA_Content-based_filtering",
+    "title": "EDA Content-based filtering",
+    "short": "Event-Driven Content-based routing Sorting through the messages When working with Event-Driven Architecture on an ecosystem level, efficient message routing is an essential feature. Typically, routing decisions are based on metadata included with the message, so a structure like a JMS Header, routing key in AMQP0.9 or variables in topic name in AMQP1.0. But what if the producer does not provide these metadata? The common sense is to go to that particular system and make changes to it so that it supplements the communication with additional information. Well then, what if that is not possible? This might lead to a number of communication inefficiencies and consumers processing data they don’t need to process.",
+    "tags": [
+      "Ecosystem Architectural Styles",
+      "Event-Driven Architecture"
+    ],
+    "relatedTags": [
+      "Event-Driven Architecture"
+    ],
+    "publishDate": "2025-04-07",
+    "lastUpdate": "2025-04-07",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/",
+        "photo": "/Karol_portrait.webp",
+        "title": "Enterprise/Integration Architect",
+        "mail": "karol@bridgingthegap.eu.com"
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+    ],
+    "reviewers": [
+    ]
   }
 ]
