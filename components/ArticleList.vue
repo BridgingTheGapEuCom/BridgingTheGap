@@ -6,15 +6,16 @@
           class="w-full border rounded-md px-3 dark:border-neutral-800 dark:bg-neutral-900 border-neutral-400 bg-neutral-100"
         >
           <BTGInput v-model="articleFilter" class="mt-7 mb-5" />
-          <div class="flex flex-wrap justify-center gap-2 mb-5">
+          <div class="flex flex-wrap justify-center gap-2 mb-5 tab line-clamp-1">
             <span
-              v-for="tag of allTags"
+              v-for="(tag, i) of allTags"
               :key="tag"
-              class="inline-flex items-center px-2 py-1 font-medium mainTransition"
+              class="inline-flex items-center px-2 py-1 font-medium mainTransition md:block"
               :class="{
                 'cursor-pointer': !tags.includes(tag as string),
                 tag: !tags.includes(tag),
-                taggedTag: tags.includes(tag)
+                taggedTag: tags.includes(tag),
+                hidden: i > 2 && tags.length == 0 && !showAllTags
               }"
               @click="addTag(tag)"
             >
@@ -46,6 +47,17 @@
                   <span class="sr-only">Remove badge</span>
                 </button>
               </span>
+            </span>
+            <span
+              class="inline-flex items-center px-2 py-1 font-medium mainTransition cursor-pointer md:hidden taggedTag"
+              :class="{
+                hidden: tags.length > 0
+              }"
+              @click="showAllTags = !showAllTags"
+            >
+              <span>{{
+                showAllTags ? 'Hide Tags' : `Show Hidden Tags (${allTags.length - 3})`
+              }}</span>
             </span>
           </div>
         </div>
@@ -106,8 +118,9 @@ const articlesFilteredByName: Ref<Array<Article>> = ref([])
 const articlesContent: Ref<Array<ArticleContentRaw>> = ref([])
 
 const maxHeight = ref(0)
+const showAllTags = ref(false)
 
-let debounceWait = false
+let debounceWait: Ref<NodeJS.Timeout | null> = ref(null)
 
 const props = defineProps({
   articles: Array<Article>
@@ -176,6 +189,7 @@ const removeTag = (tag: string) => {
   if (tempArray.length > 0) {
     router.push(`/?tags=${tempArray.join(',')}`)
   } else {
+    showAllTags.value = false
     router.push(`/`)
   }
 }
@@ -252,7 +266,9 @@ const allTags = computed((): Array<string> => {
  */
 const debounce = (func: () => void, wait: number) => {
   return function executedFunction(...args) {
-    clearTimeout(debounceWait) // Clear any previous timeout
+    if (debounceWait) {
+      clearTimeout(debounceWait) // Clear any previous timeout
+    }
     debounceWait = setTimeout(() => func.apply(this, args), wait)
   }
 }

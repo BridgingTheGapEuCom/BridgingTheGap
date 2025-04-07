@@ -11,7 +11,7 @@
           loading="lazy"
           v-show="imageVisible"
           :src="`/articles/${name}/image.webp`"
-          class="md:max-w-[12rem] md:max-h-[12rem] w-full rounded-l-md"
+          class="md:max-w-[12rem] md:max-h-[12rem] w-full md:rounded-l-md md:rounded-r-none rounded-t-md"
           :alt="`${title} image`"
         />
       </div>
