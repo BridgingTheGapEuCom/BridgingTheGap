@@ -4,7 +4,10 @@
       <h2>Lifeblood of modern communication</h2>
       <p>
         While communication was always the key to success for humankind, since 1969 and the creation
-        of <a href="https://en.wikipedia.org/wiki/ARPANET" target="_blank">ARPANet</a>,
+        of <a
+          href="https://en.wikipedia.org/wiki/ARPANET"
+          target="_blank"
+        >ARPANet</a>,
         communication has become something very different, quicker and more robust with every single
         decade, ever speeding up. The forecasts for 2025 are that we will produce 147 ZB of data
         over the year, this means about 407200000 TB a day. To put that in perspective, YouTube
@@ -26,10 +29,10 @@
       <p>Let’s try to define those in simple terms, starting with a proper definition:</p>
       <p>
         <span class="italic">Synchronous</span>
-        <br />
+        <br>
         <span class="font-bold">1&emsp;: </span>
         <span class="italic">happening, existing, or arising at precisely the same time</span>
-        <br />
+        <br>
         <span class="font-bold">2&emsp;: </span>
         <span class="italic">recurring or operating at exactly the same periods [...] </span>
       </p>
@@ -41,7 +44,7 @@
       </p>
       <p>
         <span class="italic">Asynchronous</span>
-        <br />
+        <br>
         <span class="font-bold">1&emsp;: </span>
         <span class="italic">not simultaneous or concurrent in time : not synchronous [...]</span>
       </p>
@@ -67,7 +70,9 @@
         for the response, so the resources used to make the call (RAM, thread, etc.) are locked and
         the process will not move on until it gets a response or times out.
       </p>
-      <Synchronous :dark="dark" />
+      <div class="flex justify-center mb-3">
+        <Synchronous />
+      </div>
       <p>
         The key consideration here is that the blocking time is directly dependent on the called
         application and the time that it needs to process the request to produce a response. This
@@ -86,7 +91,7 @@
         separated by a Message Broker, file server or other persistence, which provides a separation
         between the provider and the consumer making it possible for them to behave this way.
       </p>
-      <Asynchronous :dark="dark" />
+      <Asynchronous />
       <p>
         While sending a message to a message broker is also a synchronous operation as the message
         broker responds with an acknowledgement of getting the message, the application sending that
@@ -145,7 +150,10 @@
           <li>Real-time interactions</li>
           <li>
             Transactional communication (related to
-            <a href="https://en.wikipedia.org/wiki/ACID" target="_blank">ACID</a>)
+            <a
+              href="https://en.wikipedia.org/wiki/ACID"
+              target="_blank"
+            >ACID</a>)
           </li>
           <li>
             Situations where immediate feedback is essential, like data retrieval if data has to be
@@ -160,8 +168,7 @@
             Data synchronization between systems (<a
               href="https://en.wikipedia.org/wiki/Eventual_consistency"
               target="_blank"
-              >Eventual Consistency</a
-            >)
+            >Eventual Consistency</a>)
           </li>
           <li>Situations where decoupling and scalability are important</li>
           <li>Handling long processing times in one of the systems</li>
