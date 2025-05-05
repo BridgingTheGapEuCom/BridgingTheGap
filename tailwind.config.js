@@ -12,7 +12,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        xs: "400px",
+        xs: "500px",
       },
       boxShadow: {
         up: "0 2px 6px -1px",
