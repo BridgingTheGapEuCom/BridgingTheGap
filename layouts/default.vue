@@ -158,7 +158,7 @@
           rel="cc:attributionURL"
           target="_blank"
         ><b>Bridging the Gap</b></a>
-        &nbsp;© 2024 by&nbsp;
+        &nbsp;© {{ new Date().getFullYear() }} by&nbsp;
         <NuxtLink
           class="link text-gray-700 hover:text-black dark:text-gray-300 dark:hover:text-white font-bold"
           href="/about"
@@ -224,7 +224,7 @@ onMounted(() => {
     themeCookie.value = `${darkTheme.value}`
   }
 
-  let metaThemeColor = document.querySelector('meta[name=theme-color]')
+  const metaThemeColor = document.querySelector('meta[name=theme-color]')
   if (darkTheme.value !== true) {
     metaThemeColor.setAttribute('content', 'rgb(10,10,10)')
   } else {
@@ -252,7 +252,7 @@ const changeTheme = (event) => {
 
   event.stopImmediatePropagation()
 
-  let metaThemeColor = document.querySelector('meta[name=theme-color]')
+  const metaThemeColor = document.querySelector('meta[name=theme-color]')
   if (darkTheme.value === true) {
     metaThemeColor.setAttribute('content', 'rgb(10,10,10)')
   } else {
