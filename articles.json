@@ -971,13 +971,56 @@
         "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
       }
     ],
-    "bibliography": [{
-      "title": "Law of conservation of complexity",
-      "link": "https://en.wikipedia.org/wiki/Law_of_conservation_of_complexity",
-      "ISBN": "",
-      "type": "article",
-      "author": "Wikipedia"
-    }],
+    "bibliography": [
+      {
+        "title": "Law of conservation of complexity",
+        "link": "https://en.wikipedia.org/wiki/Law_of_conservation_of_complexity",
+        "ISBN": "",
+        "type": "article",
+        "author": "Wikipedia"
+      }
+    ],
+    "reviewers": [
+    ]
+  },
+  {
+    "name": "API-Led_Synchronous_point-to-point",
+    "title": "API-Led Synchronous point-to-point",
+    "short": "In the landscape of API-Led Architecture, the Synchronous point-to-point pattern might initially appear as a roundabout route for a simple exchange. One could question the need for mediating applications within an integration platform when a direct system-to-system call seems more straightforward. However, to view it this way is to miss the fundamental purpose of this pattern. It isn't just about connecting two points; it's about constructing a robust, adaptable, and reusable infrastructure that transcends individual interactions. With this article we will explore this pattern shifting the perspective from the grain of sand to a wider picture.",
+    "tags": [
+      "Ecosystem Architectural Styles",
+      "API-Led Architecture"
+    ],
+    "relatedTags": [
+      "API-Led Architecture"
+    ],
+    "publishDate": "2025-05-12",
+    "lastUpdate": "2025-05-12",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/",
+        "photo": "/Karol_portrait.webp",
+        "title": "Enterprise/Integration Architect",
+        "mail": "karol@bridgingthegap.eu.com"
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+    ],
     "reviewers": [
     ]
   }
