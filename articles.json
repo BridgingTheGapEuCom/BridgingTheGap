@@ -1023,5 +1023,46 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "API-Led_Synchronous_Service",
+    "title": "API-Led Synchronous Service",
+    "short": "In the world of application integration, managing complexity is an unending challenge. As we navigate the labyrinth of data flows and system interactions, we must acknowledge that complexity, especially that of communication, is inherent and unavoidable. The core issue lies not in eliminating it altogether, but rather in strategically assigning the responsibility of handling it. This is perfectly captured by Tesler’s Law: “Every application must have an inherent amount of irreducible complexity. The only question is who will have to deal with it.” Law of conservation of complexity, Larry Tesler As we dive into Synchronous Services in API-Led Architecture we can see that this pattern is a crucial strategy for addressing communication complexity and moving it away from business systems through orchestrating complex data flows in distributed environments. Unlike direct point-to-point integrations, this pattern leverages the qualities of an API-Led Integration Platform to manage and orchestrate data traffic and transformation between multiple business systems. This approach simplifies the communication logic required on the consumer side to a minimum. At the same time it promotes reusability of composed and data services. In environments where data sources are fragmented and fulfilling a specific use case requires orchestrating multiple calls, the Synchronous Service pattern proves invaluable.",
+    "tags": [
+      "Ecosystem Architectural Styles",
+      "API-Led Architecture"
+    ],
+    "relatedTags": [
+      "API-Led Architecture"
+    ],
+    "publishDate": "2025-05-18",
+    "lastUpdate": "2025-05-18",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/",
+        "photo": "/Karol_portrait.webp",
+        "title": "Enterprise/Integration Architect",
+        "mail": "karol@bridgingthegap.eu.com"
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+    ],
+    "reviewers": [
+    ]
   }
 ]
