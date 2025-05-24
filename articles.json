@@ -1064,5 +1064,51 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "Understanding_Active_and_Passive_Broker",
+    "title": "Understanding Active and Passive Broker",
+    "short": "There are many various approaches to application integration, as we may see by looking at least at the ecosystem architectural styles. Today we’ll have a closer look at one such approach rooted in the broker architectural style, where we encounter two distinct behaviors in integration platforms and integration flows built within them: the active and passive participant. These behaviors define how communication is initiated and managed, significantly impacting the overall architecture, operational efficiency, and reusability of the integration flows. Understanding the nuances of these behaviors is crucial for designing robust and scalable integration solutions.",
+    "tags": [
+      "Ecosystem Architectural Styles",
+      "Broker Architecture"
+    ],
+    "relatedTags": [
+      "Broker Architecture"
+    ],
+    "publishDate": "2025-05-24",
+    "lastUpdate": "2025-05-24",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/",
+        "photo": "/Karol_portrait.webp",
+        "title": "Enterprise/Integration Architect",
+        "mail": "karol@bridgingthegap.eu.com"
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [{
+      "title": "Introducing RESTHooks.org",
+      "link": "https://zapier.com/engineering/introducing-resthooksorg/",
+      "ISBN": "",
+      "type": "article",
+      "author": "Brian Cooksey; Zapier"
+    }],
+    "reviewers": [
+    ]
   }
 ]
