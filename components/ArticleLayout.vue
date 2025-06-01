@@ -31,11 +31,12 @@
           </NuxtLink>
         </div>
         <div class="border-t dark:border-neutral-800">
-          <div class="my-2 pb-1 flex lg:flex-row flex-col flex-1 justify-between">
+          <div class="my-2 pb-1 flex lg:flex-col flex-col flex-1 justify-between">
             <div
-              v-for="author of authors"
+              v-for="(author, i) of authors"
               :key="author.author"
               class="flex flex-row"
+              :class="{ 'mb-2': i < authors.length - 1 }"
             >
               <img
                 :alt="`${author.author}s photo`"
