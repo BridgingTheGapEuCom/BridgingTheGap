@@ -146,7 +146,9 @@
     <main
       class="text-black dark:text-gray-50 w-full px-4 py-4 flex justify-center items-stretch flex-grow"
     >
-      <slot :dark="darkTheme" />
+      <div class="max-w-screen-xl flex flex-grow justify-center">
+        <slot :dark="darkTheme" />
+      </div>
     </main>
     <footer
       class="sticky bottom-0 w-full shadow-up dark:shadow-none pr-4 pt-1 hidden md:flex bg-neutral-200 dark:bg-neutral-800 text-black dark:text-white"

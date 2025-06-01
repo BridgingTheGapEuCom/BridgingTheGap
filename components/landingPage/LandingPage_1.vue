@@ -1,7 +1,6 @@
 <template>
   <LandingPageLandingLayout
     :page-id="1"
-    style="margin-top: -1rem"
   >
     <div class="text-center flex flex-col items-center justify-center">
       <b style="font-size: min(4.3dvh, 13dvw)">Tame Your</b>
