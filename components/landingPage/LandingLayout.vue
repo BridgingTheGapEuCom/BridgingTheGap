@@ -1,15 +1,8 @@
 <template>
   <div
-    :class="{ 'bg-neutral-100': pageId % 2 === 1 }"
-    style="margin-inline: -20px"
-    :style="`${pageId === 1 ? 'margin-top: -20px' : undefined}`"
-    class="h-8"
-  />
-  <div
     :id="`page_${pageId}`"
-    class="min-dvh-minus-header flex flex-col justify-between px-5"
+    class="min-dvh-minus-header flex flex-col justify-between px-5 snap-center"
     :class="{ 'bg-neutral-100': pageId % 2 === 1 }"
-    style="margin-inline: -20px"
   >
     <div
       class="flex flex-col gap-3 mt-2 flex-1"
@@ -37,11 +30,6 @@
       />
     </a>
   </div>
-  <div
-    :class="{ 'bg-neutral-100': pageId % 2 === 1 }"
-    class="h-8"
-    style="margin-inline: -20px"
-  />
 </template>
 
 <script setup lang="ts">
@@ -63,9 +51,8 @@ defineProps({
 
 <style scoped>
 .min-dvh-minus-header {
-  min-height: calc(100dvh - 54px);
+  min-height: 100dvh;
   max-height: 100dvh;
-  scroll-margin-top: 54px;
 }
 
 .animateBounceOnParentHover {

@@ -1,8 +1,6 @@
 <template>
   <NuxtLayout>
-    <div class="max-w-screen-xl flex flex-grow justify-center">
-      <NuxtPage />
-    </div>
+    <NuxtPage />
   </NuxtLayout>
 </template>
 
