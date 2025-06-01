@@ -59,3 +59,9 @@ defineProps({
   @apply animate-bounce;
 }
 </style>
+
+<style>
+html {
+  overflow: hidden;
+}
+</style>
