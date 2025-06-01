@@ -20,6 +20,7 @@
     "axios": "^1.7.7",
     "fuse.js": "^7.0.0",
     "nuxt": "^3.13.0",
+    "nuxt-mongoose": "^1.0.6",
     "nuxt-security": "^2.0.0",
     "v-lazy-image": "^2.1.1",
     "vue": "^3.5.12",
