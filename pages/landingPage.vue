@@ -1,19 +1,12 @@
 <template>
   <div class="flex-col items-center article overflowHidden">
     <LandingPage1 />
-    <div style="height: 64px" />
     <LandingPage2 />
-    <div style="height: 64px" />
     <LandingPage3 />
-    <div style="height: 64px" />
     <LandingPage4 />
-    <div style="height: 64px" />
     <LandingPage5 />
-    <div style="height: 64px" />
     <LandingPage6 />
-    <div style="height: 64px" />
     <LandingPage7 />
-    <div style="height: 64px" />
     <LandingPage8 />
   </div>
 </template>
@@ -31,7 +24,7 @@ import LandingPage8 from '~/components/landingPage/LandingPage_8.vue'
 
 const router = useRouter()
 let lastIntersection = null
-const { isScrolling } = useScroll(document, { throttle: 20 })
+const { isScrolling } = useScroll(document)
 
 onMounted(() => {
   nextTick(() => {
@@ -44,46 +37,94 @@ onMounted(() => {
     const page_7 = document.getElementById('page_7')
     const page_8 = document.getElementById('page_8')
 
-    useIntersectionObserver(page_1, ([entry]) => {
-      if (entry?.isIntersecting) {
-        lastIntersection = 'page_1'
+    useIntersectionObserver(
+      page_1,
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          lastIntersection = 'page_1'
+        }
+      },
+      {
+        threshold: 0.1
       }
-    })
-    useIntersectionObserver(page_2, ([entry]) => {
-      if (entry?.isIntersecting) {
-        lastIntersection = 'page_2'
+    )
+    useIntersectionObserver(
+      page_2,
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          lastIntersection = 'page_2'
+        }
+      },
+      {
+        threshold: 0.1
       }
-    })
-    useIntersectionObserver(page_3, ([entry]) => {
-      if (entry?.isIntersecting) {
-        lastIntersection = 'page_3'
+    )
+    useIntersectionObserver(
+      page_3,
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          lastIntersection = 'page_3'
+        }
+      },
+      {
+        threshold: 0.1
       }
-    })
-    useIntersectionObserver(page_4, ([entry]) => {
-      if (entry?.isIntersecting) {
-        lastIntersection = 'page_4'
+    )
+    useIntersectionObserver(
+      page_4,
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          lastIntersection = 'page_4'
+        }
+      },
+      {
+        threshold: 0.1
       }
-    })
-    useIntersectionObserver(page_5, ([entry]) => {
-      if (entry?.isIntersecting) {
-        lastIntersection = 'page_5'
+    )
+    useIntersectionObserver(
+      page_5,
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          lastIntersection = 'page_5'
+        }
+      },
+      {
+        threshold: 0.1
       }
-    })
-    useIntersectionObserver(page_6, ([entry]) => {
-      if (entry?.isIntersecting) {
-        lastIntersection = 'page_6'
+    )
+    useIntersectionObserver(
+      page_6,
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          lastIntersection = 'page_6'
+        }
+      },
+      {
+        threshold: 0.1
       }
-    })
-    useIntersectionObserver(page_7, ([entry]) => {
-      if (entry?.isIntersecting) {
-        lastIntersection = 'page_7'
+    )
+    useIntersectionObserver(
+      page_7,
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          lastIntersection = 'page_7'
+        }
+      },
+      {
+        threshold: 0.1
       }
-    })
-    useIntersectionObserver(page_8, ([entry]) => {
-      if (entry?.isIntersecting) {
-        lastIntersection = 'page_8'
+    )
+    useIntersectionObserver(
+      page_8,
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          lastIntersection = 'page_8'
+        }
+      },
+      {
+        threshold: 0.1
       }
-    })
+    )
   })
 })
 
