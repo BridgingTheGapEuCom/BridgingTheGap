@@ -1101,13 +1101,113 @@
         "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
       }
     ],
-    "bibliography": [{
-      "title": "Introducing RESTHooks.org",
-      "link": "https://zapier.com/engineering/introducing-resthooksorg/",
-      "ISBN": "",
-      "type": "article",
-      "author": "Brian Cooksey; Zapier"
-    }],
+    "bibliography": [
+      {
+        "title": "Introducing RESTHooks.org",
+        "link": "https://zapier.com/engineering/introducing-resthooksorg/",
+        "ISBN": "",
+        "type": "article",
+        "author": "Brian Cooksey; Zapier"
+      }
+    ],
+    "reviewers": [
+    ]
+  },
+  {
+    "name": "When_Worlds_Collide_EAI_and_DDD",
+    "title": "When Worlds Collide: EAI and DDD",
+    "short": "As Integration Architects, we are navigating a constantly shifting landscape. It’s a world where rapid change, complex systems, and sprawling networks of interconnected applications are the daily bread. These systems often stretch across departments, technologies, and ownership models - making it incredibly hard to achieve smooth collaboration and seamless interoperability. That’s why Enterprise Application Integration (EAI) has been and most likely always will be a critical discipline: it allows us to exchange data reliably, automate shared processes across diverse systems, and provide much-needed visibility into the flows that connect our businesses.",
+    "tags": [
+      "The Hard Parts",
+      "Complexity",
+      "DDD"
+    ],
+    "relatedTags": [
+      "DDD"
+    ],
+    "publishDate": "2025-06-01",
+    "lastUpdate": "2025-06-01",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/",
+        "photo": "/Karol_portrait.webp",
+        "title": "Enterprise/Integration Architect",
+        "mail": "karol@bridgingthegap.eu.com"
+      },
+      {
+        "author": "Philipp Kostyra",
+        "link": "https://www.linkedin.com/in/philipp-kostyra-246a69b3/",
+        "photo": "/Philipp_portrait.webp",
+        "title": "Development Architect, DDD Coach and Enabler",
+        "mail": ""
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "What is Enterprise Application Integration? - EAI Explained",
+        "link": "https://aws.amazon.com/what-is/enterprise-application-integration/",
+        "ISBN": "",
+        "type": "article",
+        "author": "AWS"
+      },
+      {
+        "title": "Context Mapping",
+        "link": "https://github.com/ddd-crew/context-mapping",
+        "ISBN": "",
+        "type": "article",
+        "author": "DDD Crew"
+      },
+      {
+        "title": "Subdomains in DDD",
+        "link": "https://deviq.com/domain-driven-design/subdomain/",
+        "ISBN": "",
+        "type": "article",
+        "author": "DevIQ"
+      },
+      {
+        "title": "Tactical Design in DDD",
+        "link": "https://deviq.com/domain-driven-design/tactical-design",
+        "ISBN": "",
+        "type": "article",
+        "author": "DevIQ"
+      },
+      {
+        "title": "Strategic Domain Driven Design with Context Mapping",
+        "link": "https://www.infoq.com/articles/ddd-contextmapping/",
+        "ISBN": "",
+        "type": "article",
+        "author": "InfoQ"
+      },
+      {
+        "title": "Ubiquitous Language",
+        "link": "https://www.infoq.com/articles/ddd-contextmapping/",
+        "ISBN": "",
+        "type": "article",
+        "author": "Martin Fowler"
+      },
+      {
+        "title": "Domain events: Design and implementation",
+        "link": "https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/domain-events-design-implementation",
+        "ISBN": "",
+        "type": "article",
+        "author": "Microsoft"
+      }
+    ],
     "reviewers": [
     ]
   }
