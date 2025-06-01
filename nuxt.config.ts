@@ -24,8 +24,8 @@ export default defineNuxtConfig({
     headers: {
       contentSecurityPolicy: {
         'script-src': [
-          "'strict-dynamic'", // Modify with your custom CSP sources
-          "'nonce-{{nonce}}'" // Enables CSP nonce support for scripts in SSR mode, supported by almost any browser (level 2)
+          '\'strict-dynamic\'', // Modify with your custom CSP sources
+          '\'nonce-{{nonce}}\'' // Enables CSP nonce support for scripts in SSR mode, supported by almost any browser (level 2)
         ]
       }
     }
@@ -78,5 +78,5 @@ export default defineNuxtConfig({
     pageTransition: { name: 'fade', mode: 'out-in' }
   },
 
-  modules: ['@nuxt/eslint', 'nuxt-security', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-seo-utils']
+  modules: ['@nuxt/eslint', 'nuxt-security', '@nuxtjs/sitemap', '@nuxtjs/robots', 'nuxt-seo-utils', '@vueuse/nuxt']
 })
