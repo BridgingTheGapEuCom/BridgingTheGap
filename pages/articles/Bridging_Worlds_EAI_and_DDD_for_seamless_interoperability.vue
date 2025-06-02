@@ -88,7 +88,7 @@
       </div>
       <p class="text-neutral-600 dark:text-neutral-400 text-sm">
         <SvgIcon
-          class="text-neutral-950 dark:text-neutral-50 w-4 m-0 inline-block cursor-pointer"
+          class="text-neutral-950 dark:text-neutral-50 w-4 m-0 inline-block"
           type="mdi"
           :path="mdiMessageAlert"
         />
