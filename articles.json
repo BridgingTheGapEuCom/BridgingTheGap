@@ -1066,6 +1066,55 @@
     ]
   },
   {
+    "name": "Bridging_Worlds_EAI_and_DDD_for_seamless_interoperability",
+    "title": "Bridging Worlds: EAI and DDD for seamless interoperability",
+    "short": "In the intricate landscape of modern enterprise systems, the challenge of integrating diverse applications and data sources is a constant. Often, these systems evolve independently, leading to a complex web of interactions that can be difficult to manage and maintain. We can address the technical challenges of communication with proper integration patterns, good practices and architectural styles. Unfortunately there are aspects of communication, like understanding data, business behaviour and language in various contexts, or mapping out dependencies, that also need to be addressed. This is where the purely technical approach fails.",
+    "tags": [
+      "The Hard Parts",
+      "Complexity",
+      "DDD"
+    ],
+    "relatedTags": [
+      "DDD"
+    ],
+    "publishDate": "2025-06-02",
+    "lastUpdate": "2025-06-02",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/",
+        "photo": "/Karol_portrait.webp",
+        "title": "Enterprise/Integration Architect",
+        "mail": "karol@bridgingthegap.eu.com"
+      },
+      {
+        "author": "Philipp Kostyra",
+        "link": "https://www.linkedin.com/in/philipp-kostyra-246a69b3/",
+        "photo": "/Philipp_portrait.webp",
+        "title": "Development Architect, DDD Coach and Enabler",
+        "mail": ""
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+    ],
+    "reviewers": [
+    ]
+  },
+  {
     "name": "Understanding_Active_and_Passive_Broker",
     "title": "Understanding Active and Passive Broker",
     "short": "There are many various approaches to application integration, as we may see by looking at least at the ecosystem architectural styles. Today we’ll have a closer look at one such approach rooted in the broker architectural style, where we encounter two distinct behaviors in integration platforms and integration flows built within them: the active and passive participant. These behaviors define how communication is initiated and managed, significantly impacting the overall architecture, operational efficiency, and reusability of the integration flows. Understanding the nuances of these behaviors is crucial for designing robust and scalable integration solutions.",
