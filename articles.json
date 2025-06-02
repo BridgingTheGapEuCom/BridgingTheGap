@@ -1077,8 +1077,8 @@
     "relatedTags": [
       "DDD"
     ],
-    "publishDate": "2025-05-18",
-    "lastUpdate": "2025-05-18",
+    "publishDate": "2025-06-02",
+    "lastUpdate": "2025-06-02",
     "authors": [
       {
         "author": "Karol Skrzymowski",
@@ -1088,11 +1088,11 @@
         "mail": "karol@bridgingthegap.eu.com"
       },
       {
-        "author": "Philip Kostyra",
-        "link": "https://www.linkedin.com/in/karolskrzymowski/",
-        "photo": "/Karol_portrait.webp",
-        "title": "Enterprise/Integration Architect",
-        "mail": "karol@bridgingthegap.eu.com"
+        "author": "Philipp Kostyra",
+        "link": "https://www.linkedin.com/in/philipp-kostyra-246a69b3/",
+        "photo": "/Philipp_portrait.webp",
+        "title": "Development Architect, DDD Coach and Enabler",
+        "mail": ""
       }
     ],
     "coAuthors": [
