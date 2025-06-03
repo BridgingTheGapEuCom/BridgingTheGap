@@ -1259,5 +1259,68 @@
     ],
     "reviewers": [
     ]
+  },
+  {
+    "name": "Putting_Broker_Architectural_style_into_context_maps",
+    "title": "Putting Broker Architectural style into context (maps)",
+    "short": "Ever felt like integrating with various systems is a bit like trying to deliver mail without any idea how postal codes work? One mistake and you're overrun by chaos, bombarded by complaints from unhappy customers. In our hyper-connected era, where applications must collaborate seamlessly, this integration battleground can swiftly become a nightmare. We're not merely transferring data; we're managing systems that speak different protocols, possess incompatible data structures, and occasionally exhibit unpredictable behaviors.",
+    "tags": [
+      "The Hard Parts",
+      "Complexity",
+      "DDD"
+    ],
+    "relatedTags": [
+      "DDD"
+    ],
+    "publishDate": "2025-06-03",
+    "lastUpdate": "2025-06-03",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/",
+        "photo": "/Karol_portrait.webp",
+        "title": "Enterprise/Integration Architect",
+        "mail": "karol@bridgingthegap.eu.com"
+      },
+      {
+        "author": "Philipp Kostyra",
+        "link": "https://www.linkedin.com/in/philipp-kostyra-246a69b3/",
+        "photo": "/Philipp_portrait.webp",
+        "title": "Development Architect, DDD Coach and Enabler",
+        "mail": ""
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "Learning Domain-Driven Design: Aligning Software Architecture and Business Strategy",
+        "link": "https://learning.oreilly.com/library/view/learning-domain-driven-design/9781098100124/",
+        "ISBN": "9781098100131",
+        "type": "book",
+        "author": "Vlad Khononov; O'Reilly Media, Inc."
+      },
+      {
+        "title": "Indirection",
+        "link": "https://en.wikipedia.org/wiki/Indirection",
+        "ISBN": "",
+        "type": "article",
+        "author": "Wikipedia"
+      }
+    ],
+    "reviewers": [
+    ]
   }
 ]
