@@ -1,0 +1,140 @@
+[
+  {
+    "name": "DDD for Enterprise Application Integration Workshop",
+    "img": "/events/DDD_for_Enterprise_Application_Integration.webp",
+    "description": "Integrating today's interconnected systems presents significant challenges, requiring more than just technical solutions; this workshop explores how to leverage Domain-Driven Design (DDD) to tackle Enterprise Application Integration (EAI) by aligning technical efforts with core business domains. Moving beyond simple system connections, the interactive session provides practical, hands-on experience through scenarios, discussions, and trade-off analysis, equipping you with the skills and tools to design for interoperability, strategically manage system coupling with DDD, select appropriate EAI styles, and avoid common pitfalls in real-world integration challenges.",
+    "date": "2025-05-21",
+    "eventType": "Workshop",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-05-21",
+        "endDate": "2025-05-21",
+        "startTime": "18:30",
+        "endTime": "20:00"
+      },
+      "place": "Online - limited seats, open call",
+      "eventTopic": "We’re exploring the use of Domain-Driven Design to augment the design of Enterprise Application Integration",
+      "eventType": "Workshop",
+      "registrationLink": {
+        "type": "link",
+        "link": "https://forms.gle/zLJsN8YBFGboJcjy7",
+        "name": "Apply here!"
+      }
+    }
+  },
+  {
+    "name": "DDD for Enterprise Application Integration",
+    "img": "/events/DDD_for_Enterprise_Application_Integration_classroom.webp",
+    "description": "Integrating today's interconnected systems presents significant challenges, requiring more than just technical solutions; this workshop explores how to leverage Domain-Driven Design (DDD) to tackle Enterprise Application Integration (EAI) by aligning technical efforts with core business domains. Moving beyond simple system connections, the interactive session provides practical, hands-on experience through scenarios, discussions, and trade-off analysis, equipping you with the skills and tools to design for interoperability, strategically manage system coupling with DDD, select appropriate EAI styles, and avoid common pitfalls in real-world integration challenges.",
+    "date": "2025-06-04",
+    "eventType": "Workshop",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-06-04",
+        "endDate": "2025-06-04",
+        "startTime": "14:20",
+        "endTime": "16:20"
+      },
+      "place": "Classroom - limited seats, for conference attendees",
+      "eventTopic": "We’re exploring the use of Domain-Driven Design to augment the design of Enterprise Application Integration",
+      "eventType": "Workshop",
+      "eventLink": {
+        "type": "link",
+        "link": "https://2025.dddeurope.com/program/use-ddd-for-enterprise-application-integration/",
+        "name": "DDD Europe 2025"
+      }
+    }
+  },
+  {
+    "name": "Unlock Your Path to being an Architect: A Panel Discussion",
+    "img": "/events/Unlock_Your_Path_to_being_an_Architect_A_Panel_Discussion.webp",
+    "description": "Curious about making the leap from developer to architect? The Utrecht Mulesoft Meetup invites you to an engaging and insightful online discussion happening on June 18th at 18:30. This is a wonderful opportunity for developers aspiring to shift gears and step into the exciting world of architecture.\n\nJoin hosts Nicky van Steensel van der Aa and Karol Skrzymowski as they orchestrate a lively conversation with distinguished guests who have successfully walked this path:\n\n • Patryk Bandurski, an experienced Mulesoft Integration Architect currently working at PwC, proudly holding the title of Mulesoft Ambassador. He will share his insights and journey.\n\n • Mark Richards, a renowned Solutions Architect known all over the world. As an independent consultant and the mastermind behind developertoarchitect.com, Mark offers invaluable wisdom and practical advice on bridging the gap between development and architectural roles.\n\nThis panel discussion promises a deep dive into each of their personal journeys, elaborating on the challenges they faced, the resources, and the learning paths that paved their way. They'll discuss what contributed to their successful transitions, useful strategies for staying involved with coding despite the shift, and how becoming an architect has altered their view on development.\n\nFor those contemplating a career shift towards an architect role, this session is crafted particularly for you. Align your aspirations with knowledge and learn directly from the experts. Let their experiences guide you in carving your very own path to architecture success. Secure your spot and arm yourself with the insights necessary to elevate your professional journey!\n\nDon't miss out on this unique chance to learn, ask questions, and perhaps even network with these industry leaders. This session is not just a conversation; it's a stepping stone towards achieving your career dreams. Whether you're just starting to explore or are already on your way, there’s something beneficial here for everyone.\n\nPrepare to be inspired and informed through this enriching experience that aims to ignite your passion for growth and continuous learning in the field of software architecture.",
+    "date": "2025-06-18",
+    "eventType": "Workshop",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-06-18",
+        "endDate": "2025-06-18",
+        "startTime": "18:30",
+        "endTime": "20:00"
+      },
+      "place": "Online Mulesoft Meetup",
+      "eventTopic": "Transitioning from being a developer to an architect",
+      "eventType": "Panel Discussion",
+      "eventLink": {
+        "type": "link",
+        "link": "https://meetups.mulesoft.com/events/details/mulesoft-utrecht-presents-unlock-your-path-to-being-an-architect-a-panel-discussion/",
+        "name": "Meetups.Mulesoft.com"
+      }
+    }
+  },
+  {
+    "name": "Loosely Coupled - Adopting Event-Driven Architecture",
+    "img": "/events/Loosely_Coupled_Adopting_Event_Driven_Architecture.webp",
+    "description": "Welcome to \"Loosely Coupled,\" the brand new Live Stream series brought to you by BridgingTheGap.eu.com! Our project is dedicated to closing the knowledge divide in the IT field of Enterprise Application Integration by providing vendor-agnostic knowledge and comprehensive insights.\n\nFor our highly anticipated debut session, we are thrilled to host Fran Mendez, the creator of AsyncAPI, as our special guest. Together, we will explore the critical topic of \"Adopting Event-Driven Architecture.\"\n\nEvent-Driven Architecture plays a crucial role in ensuring seamless communication and functionality across diverse systems. However, its adoption often comes with significant challenges. In this session, we will deep-dive into the common hurdles, complexities, and real-world problemscape that organizations encounter when integrating EDA into their ecosystems. We aim to shed light on these obstacles, offering valuable perspectives to help you navigate this intricate domain.\n\nThis is a unique opportunity to gain a broader perspective on architectural styles and understand how application integration fits within them, empowering you with the knowledge to make informed decisions.\n\nAt Bridging the Gap, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of application integration!",
+    "date": "2025-06-25",
+    "eventType": "Stream",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-06-25",
+        "endDate": "2025-06-25",
+        "startTime": "19:30",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "The challenges, pitfalls, and practical considerations for organizations adopting Event-Driven Architecture",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/looselycoupled-adoptingevent-dr7339424982973751296/about/",
+    "YT": "https://tinyurl.com/56rj848e"
+  },
+  {
+    "name": "Effective Enterprise Application Integration",
+    "img": "/events/Effective_Enterprise_Application_Integration.webp",
+    "description": "This O'Reilly live event focuses on Effective Enterprise Application Integration (EAI), addressing the complexities of integrating distributed systems in today's data-driven world where data consistency and adaptability are crucial, especially with the rise of generative AI. Led by expert Karol Skrzymowski, the course delves into established architectural styles and patterns, teaching participants how to design and implement effective integration strategies, analyze trade-offs, and tackle common challenges like data quality and security, making it ideal for those working with complex integration solutions or looking to advance their skills in building interoperable IT ecosystems.",
+    "date": "2025-07-30",
+    "eventType": "Training",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-07-30",
+        "endDate": "2025-07-30",
+        "startTime": "18:00",
+        "endTime": "22:00"
+      },
+      "place": "Online Training - O’Reilly Learning Platform",
+      "eventTopic": "Enterprise Application Integration and Ecosystem Architectural Styles",
+      "eventType": "Training",
+      "eventLink": {
+        "type": "link",
+        "link": "https://learning.oreilly.com/live-events/effective-enterprise-application-integration-eai/0642572010790/",
+        "name": "O'Reilly Learning Platform"
+      }
+    }
+  },
+  {
+    "name": "Loosely Coupled - The IT Talent Trap",
+    "img": "/events/Loosely_Coupled_The_IT_Talent_Trap.webp",
+    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our upcoming session, we are thrilled to host two exceptional guests: Gabi Preston-Phypers, Founder at Tooled Up Raccoons, and Phillip Poynton, who is Recruiting Salesforce Superstars. Together, we will explore the critical topic of \"The IT Talent Trap.\"\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nIn this session, we will deep-dive into the current challenges in IT recruitment and how to work with a broken process. We aim to shed light on these obstacles, offering valuable perspectives for both employers struggling to find the right people and candidates seeking to navigate the job market more effectively. We'll explore advice for candidates on how they can help themselves find better roles and overcome these pervasive problems.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.\n\nAt Bridging the Gap, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of IT talent!",
+    "date": "2025-07-31",
+    "eventType": "Stream",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-07-31",
+        "endDate": "2025-07-31",
+        "startTime": "19:30",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "The current challenges in IT recruitment, how to work with a broken process, advice for candidates on finding better roles and navigating job market problems.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/looselycoupled-theittalenttrap7343534031860359168/about/",
+    "YT": "https://youtube.com/live/s4gn1t8-nWw"
+  }
+]

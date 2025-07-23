@@ -1,17 +1,22 @@
 <template>
+  <!-- Main container for the 'About the Project' page -->
   <div
     class="text-black dark:text-gray-50 w-full px-4 py-4 flex justify-center items-stretch flex-grow article"
   >
     <article>
+      <!-- Logo display -->
       <div class="flex flex-col mt-10 mb-20">
         <img
           src="~/assets/logo.webp"
           class="m-auto max-w-96 dark:invert"
+          alt="Bridging the Gap Logo"
         >
       </div>
+      <!-- Page Title -->
       <h1 class="text-center">
         About the project
       </h1>
+      <!-- Project description paragraphs -->
       <p>
         Welcome to Bridging the Gap, an open-source educational project aimed at closing the
         knowledge divide in the IT field of Application Integration. Our mission is to empower
@@ -43,9 +48,11 @@
         education in application integration, empowering learners to navigate the complexities of
         modern IT with confidence and clarity.
       </p>
+      <!-- Divider line -->
       <div
         class="flex-1 h-[1px] mx-auto max-w-screen-xs mt-10 dark:bg-neutral-700 bg-neutral-300 self-center"
       />
+      <!-- Source Code Section -->
       <div class="flex flex-grow items-center">
         <div class="flex flex-grow flex-col items-center">
           <h1>Source code</h1>
@@ -59,6 +66,7 @@
           </span>
         </div>
       </div>
+      <!-- License Section - specific to medium and smaller screens -->
       <div class="md:hidden flex flex-grow items-center">
         <div class="flex flex-grow flex-col items-center gap-3">
           <div class="min-w-[60vw] lg:min-w-[0] my-2 border-b dark:border-neutral-800" />
@@ -74,13 +82,14 @@
             />
             &nbsp;CC BY 4.0
           </div>
+          <!-- Creative Commons license icons -->
           <div class="flex">
             <a
               href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
               target="_blank"
             >
               <img
-                alt=""
+                alt="Creative Commons License"
                 class="w-[1.5rem] mx-1 self-center"
                 src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
               >
@@ -90,7 +99,7 @@
               target="_blank"
             >
               <img
-                alt=""
+                alt="Attribution"
                 class="w-[1.5rem]"
                 src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
               >
@@ -102,6 +111,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+</script>
 
-<style scoped></style>
+<style scoped>
+</style>

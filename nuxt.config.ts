@@ -41,11 +41,9 @@ export default defineNuxtConfig({
           "'strict-dynamic'", // Modify with your custom CSP sources
           "'nonce-{{nonce}}'" // Enables CSP nonce support for scripts in SSR mode, supported by almost any browser (level 2)
         ],
-        'script-src-attr': [
-          "'unsafe-inline'"
-        ]
-      },
-    },
+        'script-src-attr': ["'unsafe-inline'"]
+      }
+    }
   },
 
   hooks: {
@@ -53,7 +51,17 @@ export default defineNuxtConfig({
       nitroConfig.esbuild = nitroConfig.esbuild || {}
       nitroConfig.esbuild.define = nitroConfig.esbuild.define || {}
       nitroConfig.esbuild.define.nonce = () => `"${generateNonce()}"`
-    },
+    }
+  },
+
+  runtimeConfig: {
+    RECAPTCHA_SECRET_KEY: process.env.RECAPTCHA_SECRET_KEY,
+    RECIPIENT_EMAIL: process.env.RECIPIENT_EMAIL,
+    USER_TO_IMPERSONATE: process.env.USER_TO_IMPERSONATE,
+
+    public: {
+      RECAPTCHA_SITE_KEY: process.env.RECAPTCHA_SITE_KEY // This will be exposed to the client
+    }
   },
 
   robots: {
@@ -102,6 +110,10 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'fade', mode: 'out-in' }
   },
+
+  plugins: [
+    { src: '~/plugins/recaptcha.client.ts', mode: 'client' } // Ensure .ts extension and mode: 'client'
+  ],
 
   modules: [
     '@nuxt/eslint',

@@ -29,7 +29,8 @@
   --tw-color-neutral-900: theme('colors.neutral.900');
   --tw-color-neutral-950: theme('colors.neutral.950');
 
-  scroll-behavior: smooth;
+  --scroll-behavior: smooth;
+  scroll-behavior: var(--scroll-behavior);
 
   --color-scheme: light;
 
@@ -96,8 +97,7 @@
     --cardTransition: none !important;
     --navigationButtonTransition: none !important;
     --diagramColorTransition: none !important;
-
-    scroll-behavior: inherit !important;
+    --scroll-behavior: inherit !important;
   }
 }
 
@@ -110,7 +110,7 @@ html:has(.dark) {
 }
 
 html {
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 @supports (font-size-adjust: 1) {
@@ -123,8 +123,12 @@ html {
   background-color: var(--color-background);
 
   min-height: 100dvh;
+  max-height: 100dvh;
   display: flex;
   flex-flow: column;
+
+  overflow: auto;
+  scroll-behavior: var(--scroll-behavior);
 }
 
 footer {
@@ -293,6 +297,10 @@ h5 {
   scroll-margin-top: 4rem;
 }
 
+.currentBackground {
+  background-color: var(--color-background);
+}
+
 // ==========================================
 // Transitions
 // ==========================================
@@ -358,7 +366,6 @@ h5 {
 
 .scale-navigation-enter-from,
 .scale-navigation-leave-to {
-  //opacity: 0;
   height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
@@ -367,4 +374,42 @@ h5 {
 .scale-navigation-enter-to,
 .scale-navigation-leave-from {
   height: 8rem;
+}
+
+.appearFromLeft-enter-active,
+.appearFromLeft-leave-active {
+  transition: var(--mainTransition);
+  overflow: hidden;
+}
+
+.appearFromLeft-enter-from,
+.appearFromLeft-leave-to {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+}
+
+.appearFromLeft-enter-to,
+.appearFromLeft-leave-from {
+  width: 14rem;
+}
+
+.appearFromTop-enter-active,
+.appearFromTop-leave-active {
+  transition: var(--mainTransition);
+  overflow: hidden;
+}
+
+.appearFromTop-enter-from,
+.appearFromTop-leave-to {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+}
+
+.appearFromTop-enter-to,
+.appearFromTop-leave-from {
+  height: 20.2rem;
 }
