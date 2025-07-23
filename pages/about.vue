@@ -1,14 +1,18 @@
 <template>
   <div class="flex-col items-center sm:article">
+    <!-- Logo display -->
     <div class="flex flex-col mt-10 mb-10">
       <img
         src="~/assets/logo.webp"
         class="m-auto dark:invert"
+        alt="Bridging the Gap Logo"
       >
     </div>
+    <!-- Divider line -->
     <div
       class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
     />
+    <!-- Profile section for Karol Skrzymowski -->
     <div class="flex flex-col lg:flex-row items-center gap-3">
       <img
         src="/Karol.webp"
@@ -26,6 +30,7 @@
         </div>
         <div class="flex flex-col">
           <article class="article hyphens-auto">
+            <!-- Bio -->
             <p class="indent-6">
               I'm an Enterprise and Integration Architect with a passion for application integration
               and over a decade of specialized experience in the field. My journey began as a junior
@@ -47,6 +52,7 @@
               training materials that explain complex integration concepts, empowering others to
               navigate this exciting domain with confidence.
             </p>
+            <!-- Social and contact links -->
             <p class="flex items-center justify-center">
               <SvgIcon
                 :path="mdiLinkedin"
@@ -75,15 +81,17 @@
         </div>
       </div>
     </div>
+    <!-- Divider line -->
     <div
       class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
     />
+    <!-- Profile section for Radosław Przewuski -->
     <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
       <img
         src="/Radek.webp"
         class="w-[18rem] h-[18rem] mr-3 grayImage rounded-xl"
-        width="2014"
-        height="2014"
+        width="1500"
+        height="1500"
         alt="Radoslaw Przewuski's picture"
       >
       <div class="flex flex-col items-center">
@@ -95,6 +103,7 @@
         </div>
         <div class="flex flex-col">
           <article class="article hyphens-auto">
+            <!-- Bio -->
             <p class="indent-6">
               Greetings, tech aficionados! I'm the Integration Whisperer, boasting over a decade of
               experience in the mystical arts of integration platforms. Picture me as the Gandalf of
@@ -110,6 +119,7 @@
               the labyrinth of legacy systems or venturing into the unknown territories of modern
               APIs, fear not! I'm here to help.
             </p>
+            <!-- Social and contact links -->
             <p class="flex items-center justify-center">
               <SvgIcon
                 :path="mdiLinkedin"
@@ -138,9 +148,11 @@
         </div>
       </div>
     </div>
+    <!-- Divider line -->
     <div
       class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
     />
+    <!-- Profile section for Hubert Drabczyk -->
     <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
       <img
         src="/Hubert.webp"
@@ -157,6 +169,7 @@
           Business Analyst / Solution Architect
         </div>
         <article class="article hyphens-auto">
+          <!-- Bio -->
           <p class="indent-6">
             With background in electronics and actual experience in turning an idea into a
             manufactured device, I also studied IT management and most of my career was in IT. I
@@ -177,6 +190,7 @@
             systems evolution, the level which brings its own challenges and promises. I&#39;m eager
             to help solving the challenges to take the promised profit.
           </p>
+          <!-- Social and contact links -->
           <p class="flex items-center justify-center">
             <SvgIcon
               :path="mdiLinkedin"
@@ -204,9 +218,11 @@
         </article>
       </div>
     </div>
+    <!-- Divider line -->
     <div
       class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
     />
+    <!-- Profile section for Dominik Kruszewski -->
     <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
       <img
         src="/Dominik.webp"
@@ -223,6 +239,7 @@
           DevOps Expert
         </div>
         <article class="article hyphens-auto">
+          <!-- Bio -->
           <p class="indent-6">
             For over a decade, I've been roaming the IT landscape, building, breaking, and fixing
             whatever crosses my path. My tools? BASH, CLI, and a steady supply of energy drinks.
@@ -240,6 +257,7 @@
             providers such as SoftwareAG WebMethods, TIBCO, and MuleSoft to ensure smooth data flow
             between platforms. Need a one-man army? I've got you covered.
           </p>
+          <!-- Social and contact links -->
           <p class="flex items-center justify-center">
             <SvgIcon
               :path="mdiLinkedin"
@@ -271,29 +289,43 @@
 </template>
 
 <script setup>
+// This page introduces the core team members.
+// The script section contains logic for processing and displaying article reviewers,
+// which seems to be intended for the 'About our Reviewers' page and is not used in this component's template.
+
 import articles from '../articles.json'
 import { onBeforeMount, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { mdiAt, mdiLinkedin } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
 
+// Gets the current route object to access route parameters.
 const route = useRoute()
 
+// Reactive references for reviewer data and UI state. Note: These are not used by the template above.
 const reviewers = ref([])
 const showMore = ref('')
 
+/**
+ * Lifecycle hook that runs before the component is mounted.
+ * It processes the articles.json file to build a list of reviewers and the articles they have reviewed.
+ */
 onBeforeMount(() => {
   reviewers.value = []
 
+  // Reads a query parameter, likely to highlight a specific reviewer.
   showMore.value = route.query.reviewed
 
   const reviewersMap = new Map()
   const reviewerDetails = new Map()
 
+  // Loop through all articles to find reviewers.
   for (const article of articles) {
     if (article.reviewers) {
       for (const reviewer of article.reviewers) {
+        // Store reviewer details (name and link).
         reviewerDetails.set(reviewer.reviewer, reviewer.link)
+        // Group articles by reviewer.
         if (reviewersMap.has(reviewer.reviewer)) {
           const newArray = reviewersMap.get(reviewer.reviewer)
           newArray.push({
@@ -315,6 +347,7 @@ onBeforeMount(() => {
 
   let i = 0
 
+  // Create the final, structured list of reviewers.
   for (const reviewer of reviewersMap.keys()) {
     reviewers.value.push({
       id: i++,
@@ -324,17 +357,23 @@ onBeforeMount(() => {
     })
   }
 
+  // Sort reviewers alphabetically by name.
   reviewers.value = reviewers.value.sort((a, b) => {
     return a.name.localeCompare(b.name)
   })
 })
 
+/**
+ * Watches for changes in the route's query parameters.
+ * @param {object} current - The new route object.
+ */
 watch(route, (current) => {
   showMore.value = current.query.reviewed
 })
 </script>
 
 <style scoped>
+/* Applies a grayscale filter to images, typically used for profile pictures. */
 .grayImage {
   filter: grayscale(100%);
 }
