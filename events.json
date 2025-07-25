@@ -103,8 +103,8 @@
         "type": "date",
         "startDate": "2025-07-30",
         "endDate": "2025-07-30",
-        "startTime": "15:00",
-        "endTime": "19:00"
+        "startTime": "18:00",
+        "endTime": "22:00"
       },
       "place": "Online Training - O’Reilly Learning Platform",
       "eventTopic": "Enterprise Application Integration and Ecosystem Architectural Styles",
@@ -119,7 +119,7 @@
   {
     "name": "Loosely Coupled - The IT Talent Trap",
     "img": "/events/Loosely_Coupled_The_IT_Talent_Trap.webp",
-    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our upcoming session, we are thrilled to host an exceptional guest: Phillip Poynton, who is Recruiting Salesforce Superstars. Together, we will explore the critical topic of \"The IT Talent Trap.\"\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nIn this session, we will deep-dive into the current challenges in IT recruitment and how to work with a broken process. We aim to shed light on these obstacles, offering valuable perspectives for both employers struggling to find the right people and candidates seeking to navigate the job market more effectively. We'll explore advice for candidates on how they can help themselves find better roles and overcome these pervasive problems.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.\n\nAt Bridging the Gap, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of IT talent!",
+    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our upcoming session, we are thrilled to host two exceptional guests: Gabi Preston-Phypers, Founder at Tooled Up Raccoons, and Phillip Poynton, who is Recruiting Salesforce Superstars. Together, we will explore the critical topic of \"The IT Talent Trap.\"\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nIn this session, we will deep-dive into the current challenges in IT recruitment and how to work with a broken process. We aim to shed light on these obstacles, offering valuable perspectives for both employers struggling to find the right people and candidates seeking to navigate the job market more effectively. We'll explore advice for candidates on how they can help themselves find better roles and overcome these pervasive problems.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.\n\nAt Bridging the Gap, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of IT talent!",
     "date": "2025-07-31",
     "eventType": "Stream",
     "details": {
@@ -136,68 +136,5 @@
     },
     "LN": "https://www.linkedin.com/events/looselycoupled-theittalenttrap7343534031860359168/about/",
     "YT": "https://youtube.com/live/s4gn1t8-nWw"
-  },
-  {
-    "name": "Loosely Coupled - Recognizing and managing Cognitive Load",
-    "img": "/events/Loosely_Coupled_Recognizing_and_managing_Cognitive_Load.webp",
-    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our next insightful session, we are thrilled to host Radek Orszewski, a distinguished Lean Agile Coach & Consultant, as our special guest. Together, we will explore the critical and often overlooked topic of \"Recognizing and Managing Cognitive Load.\"\n\nIn the demanding world of IT, cognitive load may significantly influence specialists in the industry. But what exactly is cognitive load? How can we effectively spot it, and more importantly, how do we get to the core of the problem to handle it? In this session we will dive into real-life examples of cognitive load and its impact, providing insight into how it may cause burnout and employee churn. This is an important discussion from the perspective of every employee, and an extremely vital one for team leaders and company management seeking to foster healthier, more productive environments.\n\nWe'll also touch upon the fascinating topic of how the popularization of Generative AI tools may change cognitive load, and how this relates to the evolving idea of a \"10x developer.\"\n\nThis is a unique opportunity to gain a broader perspective on mental well-being in the tech industry and empower yourself with the knowledge to make informed decisions for a more sustainable and effective work life.",
-    "date": "2025-08-06",
-    "eventType": "Stream",
-    "details": {
-      "date": {
-        "type": "date",
-        "startDate": "2025-08-06",
-        "endDate": "2025-08-06",
-        "startTime": "19:00",
-        "endTime": "21:00"
-      },
-      "place": "Live Stream on LinkedIn and YouTube",
-      "eventTopic": "Life examples of cognitive load in IT, how to spot and manage it to prevent burnout and churn, and the potential influence of Generative AI on cognitive load and the \"10x developer\" concept.",
-      "eventType": "Live Stream Discussion"
-    },
-    "LN": "https://www.linkedin.com/events/7348276239352184833/about/",
-    "YT": "https://youtube.com/live/esFSrNG9GAI"
-  },
-  {
-    "name": "Loosely Coupled - Understanding Cognitive Load",
-    "img": "/events/Loosely_Coupled_Understanding_Cognitive_Load.webp",
-    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nAs a powerful follow-up to our upcoming session on \"Recognizing and Managing Cognitive Load\" with Radek Orszewski, we're excited to continue this crucial conversation with a deeper dive. For this session, we are thrilled to host Aleix Morgadas, an esteemed Engineering Strategy Consultant and CPTO at Teamperature, as our special guest. Together, we will further explore \"Understanding Cognitive Load\" and how to approach it in a more organized and impactful way.\n\nIn the demanding world of IT, truly understanding cognitive load goes beyond just recognizing its symptoms. This session will move beyond surface-level indicators like Key Performance Indicators (KPIs) to ask the right questions and delve into the core of how cognitive load influences IT specialists. We'll explore practical ways to gain a more comprehensive understanding of its presence and effects within teams and organizations.\n\nCrucially, we'll examine how to effectively bring this awareness to leadership and enable a better, more supportive workplace. This is an essential discussion for individuals looking to deepen their understanding, and particularly vital for team leaders and company management committed to fostering healthier, more productive, and sustainable environments.\n\nThis is a unique opportunity to gain advanced insights into managing mental well-being in the tech industry and empower yourself with the knowledge to make informed, systemic decisions for your team and organization.",
-    "date": "2025-09-10",
-    "eventType": "Stream",
-    "details": {
-      "date": {
-        "type": "date",
-        "startDate": "2025-09-10",
-        "endDate": "2025-09-10",
-        "startTime": "19:00",
-        "endTime": "21:00"
-      },
-      "place": "Live Stream on LinkedIn and YouTube",
-      "eventTopic": "A deeper dive into understanding cognitive load, asking the right questions beyond KPIs, bringing awareness to leadership, and enabling a better workplace.",
-      "eventType": "Live Stream Discussion"
-    },
-    "LN": "https://www.linkedin.com/events/7349009933549404161/about/",
-    "YT": "https://youtube.com/live/GWESP6WGRAU"
-  },
-  {
-    "name": "Loosely Coupled - Data Mesh vs Application Integration",
-    "img": "/events/Loosely_Coupled_Data_Mesh_vs_Application_Integration.webp",
-    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nIn this session, we're tackling a crucial topic: \"Data Mesh vs Application Integration.\" Join our guests Rachel Barton and Andrew Jones as we demystify the data mesh concept, contrasting it with traditional approaches and highlighting its focus on domain-based data products. We'll explore the link between application integration and data mesh, revealing what is the role of application integration in a successful data mesh implementation.\n\nOur discussion will bridge the language gap between data integration and application integration, stressing the need for a shared vocabulary across teams. We'll emphasize the critical collaboration required between data and integration architects to streamline data flow and achieve an enterprise-wide view of data, ensuring lineage and observability.\n\nFurthermore, we'll delve into the practical challenges of data mesh adoption, including the \"data product\" mindset and the tendency to overcomplicate new frameworks. This session will shed light on how organizational barriers - people, power struggles, and egos - often outweigh technical hurdles, underscoring the importance of data literacy and addressing resistance. Finally, we'll examine data contracts as a powerful mechanism for governance and quality in data movement, connecting them to real-world application integration practices.\n\nThis is an unmissable opportunity to gain clarity and strategic insights into these interconnected domains!",
-    "date": "2025-08-20",
-    "eventType": "Stream",
-    "details": {
-      "date": {
-        "type": "date",
-        "startDate": "2025-08-20",
-        "endDate": "2025-08-20",
-        "startTime": "19:00",
-        "endTime": "21:00"
-      },
-      "place": "Live Stream on LinkedIn and YouTube",
-      "eventTopic": "Demystifying Data Mesh, its link to Application integration, bridging the language gap between the two fields, collaboration between data and integration architects, achieving data lineage and observability, navigating data mesh adoption challenges, and data contracts for governance and quality.",
-      "eventType": "Live Stream Discussion"
-    },
-    "LN": "https://www.linkedin.com/events/7354538501184360448/about/",
-    "YT": "https://youtube.com/live/JaCuv8gRnJg"
   }
 ]
