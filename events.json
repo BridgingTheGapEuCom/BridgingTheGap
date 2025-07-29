@@ -119,7 +119,7 @@
   {
     "name": "Loosely Coupled - The IT Talent Trap",
     "img": "/events/Loosely_Coupled_The_IT_Talent_Trap.webp",
-    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our upcoming session, we are thrilled to host an exceptional guest: Phillip Poynton, who is Recruiting Salesforce Superstars. Together, we will explore the critical topic of \"The IT Talent Trap.\"\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nIn this session, we will deep-dive into the current challenges in IT recruitment and how to work with a broken process. We aim to shed light on these obstacles, offering valuable perspectives for both employers struggling to find the right people and candidates seeking to navigate the job market more effectively. We'll explore advice for candidates on how they can help themselves find better roles and overcome these pervasive problems.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.\n\nAt Bridging the Gap, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of IT talent!",
+    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our next session, I'll be joined by Phillip Poynton - a recruiter with over 18 years of experience, and for the past 6 years, he's been exclusively focused on hiring Salesforce talent. Half British, half Polish, and living in Poland, Phillip brings a unique perspective on both the international and local recruitment landscapes.\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nThis will be a no-filter conversation about recruitment - the good, the bad, and the ugly. From the perspective of both recruiters and candidates, we'll dive into what's really going on in the job market today. With Phillip's candid approach, you can expect zero sugar-coating and plenty of real talk about what works (and what doesn't) in hiring.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.\n\nAt Bridging the Gap, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of IT talent!",
     "date": "2025-07-31",
     "eventType": "Stream",
     "details": {
@@ -199,5 +199,26 @@
     },
     "LN": "https://www.linkedin.com/events/7354538501184360448/about/",
     "YT": "https://youtube.com/live/JaCuv8gRnJg"
-  }
+  },
+  {
+    "name": "Loosely Coupled - Exploring Publish-Subscribe (EDA)",
+    "img": "/events/Loosely_Coupled_Exploring_Publish_Subscribe.webp",
+    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our next session, we're excited to host Aaron Lee, Solutions Engineer at Solace. Aaron enjoys coding demos, making videos, and running workshops. He's an expert in Event-Driven Architecture (EDA), Microservices, application design, monitoring, time-series data, and visualization frameworks.\n\nIn this session, we'll explore how Publish-Subscribe differs from point-to-point communication, supported by engaging demos and real-life examples, including an interactive game!\n\nThis time around, we'll dive into the fundamental differences between Publish-Subscribe and point-to-point communication patterns. Get ready for some seriously cool demos and real-life examples! Plus, we've got an interactive game lined up to show the differences in practice, so we can get a real feel for how EDA works. It's going to be a blast!",
+    "date": "2025-08-13",
+    "eventType": "Stream",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-08-13",
+        "endDate": "2025-08-13",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "A deep dive into Publish-Subscribe patterns using implementations based on the Solace Event Broker as an example.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/looselycoupled-exploringpublish7356036430386585602/about/",
+    "YT": "https://youtube.com/live/-MOfx55GRcc"
+  } 
 ]
