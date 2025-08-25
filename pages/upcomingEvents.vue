@@ -6,10 +6,11 @@
           ref="calendarRef"
           v-model="chosenDate"
           :attributes="eventAttributes"
-          color="gray"
           :is-dark="darkTheme"
-          expanded
           borderless
+          color="gray"
+          expanded
+          transparent
         />
         <template #fallback>
           <p>Loading events calendar...</p>
@@ -27,14 +28,14 @@
           <div class="overflow-auto h-full maxHeightEventList">
             <div
               v-for="event in chosenMonthList"
-              tabindex="0"
               :key="event.id"
-              class="p-1 mx-1 cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-xl border-neutral-400 my-1"
               :class="{
                 border: currentEvent?.id === event.id,
                 'bg-neutral-100': currentEvent?.id === event.id,
                 'dark:bg-neutral-900': currentEvent?.id === event.id
               }"
+              class="p-1 mx-1 cursor-pointer hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-xl border-neutral-400 my-1"
+              tabindex="0"
               @click="setEvent(event)"
             >
               <strong>{{ getEventDatesAsString(event) }}</strong
@@ -62,19 +63,19 @@
         @click.stop="calendarOverlay = false"
       >
         <ClientOnly>
-          <VDatePicker
-            ref="calendarRef"
-            v-model="chosenDate"
-            :attributes="eventAttributes"
-            color="gray"
-            :is-dark="darkTheme"
-            expanded
-            borderless
-            @click.stop
-          />
-          <template #fallback>
-            <p>Loading events calendar...</p>
-          </template>
+          <div class="bg-transparent dark:bg-neutral-900">
+            <VDatePicker
+              ref="calendarRef"
+              v-model="chosenDate"
+              :attributes="eventAttributes"
+              :is-dark="darkTheme"
+              borderless
+              color="gray"
+              expanded
+              transparent
+              @click.stop
+            />
+          </div>
         </ClientOnly>
       </div>
       <div
@@ -86,19 +87,19 @@
             class="rounded-full border w-12 h-12 my-5 flex justify-center items-center"
             @click="eventsListOverlay = false"
           >
-            <SvgIcon class="cursor-pointer" type="mdi" :path="mdiClose" :size="32" />
+            <SvgIcon :path="mdiClose" :size="32" class="cursor-pointer" type="mdi" />
           </div>
         </div>
         <div class="h-full overflow-auto">
           <div
             v-for="event in events"
             :key="event.id"
-            class="p-1 mx-1 cursor-pointer text-center hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-xl border-neutral-400 my-1"
             :class="{
               border: currentEvent?.id === event.id,
               'bg-neutral-100': currentEvent?.id === event.id,
               'dark:bg-neutral-900': currentEvent?.id === event.id
             }"
+            class="p-1 mx-1 cursor-pointer text-center hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-xl border-neutral-400 my-1"
             @click="setEventAndCloseEventsList(event)"
           >
             <strong>{{ new Date(event.date).toLocaleDateString() }}</strong
@@ -108,28 +109,28 @@
       </div>
       <div class="lg:hidden sticky top-2 right-0 flex">
         <SvgIcon
-          class="cursor-pointer"
-          type="mdi"
           :path="mdiCalendarClock"
           :size="32"
+          class="cursor-pointer"
+          type="mdi"
           @click="calendarOverlay = true"
         />
         <SvgIcon
-          class="cursor-pointer xs:ml-2"
-          type="mdi"
           :path="mdiFormatListNumbered"
           :size="32"
+          class="cursor-pointer xs:ml-2"
+          type="mdi"
           @click="eventsListOverlay = true"
         />
       </div>
       <template v-if="events && events.length > 0 && events[0].id >= 0">
-        <div class="w-full" v-for="(event, index) of events" :key="event.id">
+        <div v-for="(event, index) of events" :key="event.id" class="w-full">
           <EventsLayout
-            :page-id="index"
-            :tabindex="currentEvent?.id === event.id ? undefined : '-1'"
-            :current-event-id="currentEvent?.id && currentEvent?.id > 0 ? currentEvent?.id + 1 : -1"
-            :pre="true"
             v-if="visiblePre === event.id"
+            :current-event-id="currentEvent?.id && currentEvent?.id > 0 ? currentEvent?.id + 1 : -1"
+            :page-id="index"
+            :pre="true"
+            :tabindex="currentEvent?.id === event.id ? undefined : '-1'"
             @page-change="pageChange"
           >
             <div class="flex flex-col w-full justify-center items-center text-center">
@@ -139,10 +140,10 @@
             </div>
           </EventsLayout>
           <EventsLayout
-            :page-id="index + 1"
-            :tabindex="currentEvent?.id === event.id ? undefined : '-1'"
             :current-event-id="currentEvent?.id && currentEvent?.id > 0 ? currentEvent?.id + 1 : -1"
             :last-page="index === events.length - 1"
+            :page-id="index + 1"
+            :tabindex="currentEvent?.id === event.id ? undefined : '-1'"
             @page-change="pageChange"
           >
             <div class="flex flex-col justify-center">
@@ -151,15 +152,15 @@
               </div>
               <div>
                 <img
-                  class="lg:w-2/3 lg:float-left lg:mr-5 px-1 lg:px-0 mb-1 m-auto"
-                  :class="{ grayscale: new Date(event.date) < new Date() }"
-                  :src="event.img"
                   :alt="`${event.name} event image`"
+                  :class="{ grayscale: isOldEvent(event) }"
+                  :src="event.img"
+                  class="lg:w-2/3 lg:float-left lg:mr-5 px-1 lg:px-0 mb-1 m-auto"
                 />
                 <ul class="lg:mt-0 mt-3">
                   <li
-                    v-if="event.details"
                     v-for="detailKey of Object.keys(event.details)"
+                    v-if="event.details"
                     :key="event.name"
                   >
                     <div class="my-1">
@@ -167,10 +168,10 @@
                       <template v-if="typeof event.details[detailKey] === 'object'">
                         <template v-if="event.details[detailKey].type === EventDetailTypes.Link">
                           <a
-                            class="link cursor-pointer text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
                             :href="(event.details[detailKey] as EventDetailsLink).link"
-                            target="_blank"
                             :tabindex="currentEvent?.id === event.id ? undefined : '-1'"
+                            class="link cursor-pointer text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
+                            target="_blank"
                             >{{ (event.details[detailKey] as EventDetailsLink).name }}</a
                           >
                         </template>
@@ -240,25 +241,25 @@
                   style="font-family: 'Atkinson Hyperlegible', sans-serif"
                   >{{ event.description }}</pre
                 >
-                <div class="flex flex-row justify-center my-5" v-if="event.LN || event.YT">
-                  <div class="flex items-center" v-if="event.LN">
+                <div v-if="event.LN || event.YT" class="flex flex-row justify-center my-5">
+                  <div v-if="event.LN" class="flex items-center">
                     <a
-                      class="link ml-2"
                       :href="event.LN"
-                      target="_blank"
                       :tabindex="currentEvent?.id === event.id ? undefined : '-1'"
+                      class="link ml-2"
+                      target="_blank"
                     >
-                      <SvgIcon :path="mdiLinkedin" type="mdi" :size="46" class="my-0" />
+                      <SvgIcon :path="mdiLinkedin" :size="46" class="my-0" type="mdi" />
                     </a>
                   </div>
-                  <div class="flex items-center" v-if="event.YT">
+                  <div v-if="event.YT" class="flex items-center">
                     <a
-                      class="link ml-2"
                       :href="event.YT"
-                      target="_blank"
                       :tabindex="currentEvent?.id === event.id ? undefined : '-1'"
+                      class="link ml-2"
+                      target="_blank"
                     >
-                      <SvgIcon :path="mdiYoutube" type="mdi" :size="46" class="my-0" />
+                      <SvgIcon :path="mdiYoutube" :size="46" class="my-0" type="mdi" />
                     </a>
                   </div>
                 </div>
@@ -268,12 +269,12 @@
         </div>
         <div>
           <EventsLayout
-            :page-id="events.length + 1"
-            :pre="true"
+            v-if="visiblePre === events.length + 1"
             :current-event-id="currentEvent?.id && currentEvent?.id > 0 ? currentEvent?.id + 1 : -1"
             :last-page="true"
+            :page-id="events.length + 1"
+            :pre="true"
             :target-previous-page="`#event_${events.length}`"
-            v-if="visiblePre === events.length + 1"
             @page-change="pageChange"
           >
             <div class="flex flex-col w-full justify-center items-center text-center h-full">
@@ -288,16 +289,10 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { computed, ref, type Ref } from 'vue'
 import jsonEvents from '../events.json'
-import {
-  type Event,
-  type EventDetailsDate,
-  type EventDetailsLink,
-  EventDetailTypes,
-  EventType
-} from '~/Types/Event'
+import { type Event, type EventDetailsDate, type EventDetailsLink, EventDetailTypes, EventType } from '~/Types/Event'
 import { mdiCalendarClock, mdiClose, mdiFormatListNumbered, mdiLinkedin, mdiYoutube } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
 import { DateTime } from 'luxon'
@@ -449,6 +444,23 @@ const camelToFlat = (camel: string) => {
     flat = flat + word.charAt(0).toUpperCase() + word.slice(1) + ' '
   })
   return flat
+}
+
+/**
+ * Evaluates if a given event has occurred in the past.
+ *
+ * This function checks the date of the provided event and determines if it
+ * is older than the current date. The event date is extended by one day
+ * before performing the comparison to account for the specific time constraints.
+ *
+ * @param {Event} event - The event object containing the date to be evaluated. The date property must be a valid JavaScript Date object.
+ * @returns {boolean} - Returns true if the event occurred in the past, otherwise false.
+ */
+const isOldEvent = (event: Event) => {
+  let date = DateTime.fromJSDate(event.date)
+  date = date.plus({ days: 1 })
+
+  return date.toJSDate() < new Date()
 }
 
 /**
@@ -660,7 +672,7 @@ const findClosestUpcomingEventByDate = (events: Array<Event>, date?: Date, previ
  */
 const eventAttributes = computed(() => {
   return events.value.map((event) => {
-    let attribute: Partial<AttributeConfig> = {
+    const attribute: Partial<AttributeConfig> = {
       key: event.id,
       popover: {
         label: event.name, // Text to show on hover
@@ -741,7 +753,7 @@ watch(currentEvent, (newEvent) => {
 })
 </script>
 
-<style>
+<style scoped>
 .maxHeight {
   max-height: calc(100dvh - 8rem);
 }

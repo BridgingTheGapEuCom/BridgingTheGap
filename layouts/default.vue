@@ -97,6 +97,20 @@
                 <NuxtLink
                   aria-current="page"
                   class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white text-nowrap link overflow-hidden"
+                  to="/badgesList"
+                >
+                  Badges
+                </NuxtLink>
+              </li>
+            </ul>
+            <div class="h-0.5 w-14 mx-auto my-3 dark:bg-neutral-700 bg-neutral-300" />
+            <ul
+              class="flex flex-col gap-2 p-2 m-2 bg-transparent border-gray-100 rounded-lg bg-gray-50 rtl:space-x-reverse items-center"
+            >
+              <li>
+                <NuxtLink
+                  aria-current="page"
+                  class="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white text-nowrap link overflow-hidden"
                   to="/upcomingEvents"
                 >
                   Upcoming Events

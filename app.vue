@@ -4,28 +4,23 @@
   </NuxtLayout>
 </template>
 
-<script setup lang="ts">
-import { useRoute, useRouter } from 'vue-router'
+<script lang="ts" setup>
+import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import { watch } from 'vue'
 
 const route = useRoute()
-const router = useRouter()
 
 if (route && route.query) {
   if (route.query.tags) {
-    router.replace(`${route.path}${route.hash}?tags=${route.query.tags.split(',')}`)
-  } else {
-    router.replace(`${route.path}${route.hash}`)
+    route.query.tags = route.query.tags.split(',')
   }
 }
 
 watch(route, (current) => {
   if (current && current.query) {
-    if (current.query.tags) {
-      router.replace(`${current.path}${current.hash}?tags=${current.query.tags.split(',')}`)
-    } else {
-      router.replace(`${current.path}${current.hash}`)
+    if (route.query.tags) {
+      route.query.tags = route.query.tags.split(',')
     }
   }
 })

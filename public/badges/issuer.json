@@ -1,0 +1,21 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://purl.imsglobal.org/spec/ob/v3p0/context.json"
+  ],
+  "id": "https://bridgingthegap.eu.com/issuer.json",
+  "type": "Profile",
+  "name": "BridgingTheGap.eu.com",
+  "url": "https://bridgingthegap.eu.com",
+  "email": "workshops@bridgingthegap.eu.com",
+  "description": "Bridging the Gap is an open-source educational project dedicated to closing the knowledge divide in IT Application Integration. Our mission is to empower learners with comprehensive, vendor-agnostic insights – including definitions, examples, and patterns – into this crucial field often overlooked in formal education and dominated by biased, vendor-centric training.\n\nWe strive to offer a broad, accessible knowledge base, fostering open collaboration and community-driven learning. By democratizing access to unbiased information, we aim to bridge the gap between theoretical understanding and practical application, enabling learners to confidently navigate the complexities of modern IT. Join us in this mission!",
+  "image": "https://bridgingthegap.eu.com/logo.webp",
+  "verification": {
+    "type": "VerificationObject",
+    "verificationProperty": "id",
+    "allowedOrigins": [
+      "bridgingthegap.eu.com"
+    ],
+    "verificationMethod": "https://bridgingthegap.eu.com/keys/public_key.pem"
+  }
+}
