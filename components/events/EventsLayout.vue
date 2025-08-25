@@ -9,52 +9,50 @@
         class="flex flex-col items-center cursor-pointer hover:text-black dark:hover:text-white text-neutral-500 dark:text-neutral-400"
       >
         <a
-          :tabindex="currentEventId === pageId ? undefined : '-1'"
           :href="previousPage"
+          :tabindex="currentEventId === pageId ? undefined : '-1'"
           class="flex flex-col items-center cursor-pointer"
           @click="emitPageChangeEvent(true)"
         >
           <div class="border-b border-gray-200 mt-1" />
-          <SvgIcon class="animateBounceOnParentHover" type="mdi" :path="mdiArrowUp" :size="24" />
+          <SvgIcon :path="mdiArrowUp" :size="24" class="animateBounceOnParentHover" type="mdi" />
           <div class="text-center mb-1" style="font-size: min(2dvh, 4.5dvw)">
             Go to previous event
           </div>
         </a>
       </div>
       <template v-else>
-        <div></div>
+        <div />
       </template>
-      <div class="gap-3 pt-2 overflow-auto" :tabindex="currentEventId === pageId ? '0' : '-1'">
-        <slot></slot>
+      <div :tabindex="currentEventId === pageId ? '0' : '-1'" class="gap-3 pt-2 overflow-auto">
+        <slot />
       </div>
       <div
         v-if="!lastPage"
         class="flex flex-col items-center cursor-pointer hover:text-black dark:hover:text-white text-neutral-500 dark:text-neutral-400"
       >
         <a
+          :href="`#event_${pageId + 1}`"
           :tabindex="currentEventId === pageId ? undefined : '-1'"
           class="flex flex-col items-center justify-end cursor-pointer hover:text-black dark:hover:text-white text-neutral-500 dark:text-neutral-400"
-          :href="`#event_${pageId + 1}`"
           @click="emitPageChangeEvent(false)"
         >
           <div class="border-b border-neutral-200 mb-1" />
           <div class="text-center mb-1" style="font-size: min(2dvh, 4.5dvw)">Go to next event</div>
-          <SvgIcon class="animateBounceOnParentHover" type="mdi" :path="mdiArrowDown" :size="24" />
+          <SvgIcon :path="mdiArrowDown" :size="24" class="animateBounceOnParentHover" type="mdi" />
         </a>
       </div>
       <template v-else>
-        <div></div>
+        <div />
       </template>
     </div>
-    <div class="h-16"></div>
+    <div class="h-16" />
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { mdiArrowDown, mdiArrowUp } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
-
-const router = useRouter()
 
 const props = defineProps({
   pageId: {
@@ -73,7 +71,8 @@ const props = defineProps({
   },
   targetPreviousPage: {
     type: String,
-    required: false
+    required: false,
+    default: ''
   },
   currentEventId: {
     type: Number,

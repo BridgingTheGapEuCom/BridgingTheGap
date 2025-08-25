@@ -4,10 +4,10 @@
       <div class="article">
         <div class="mb-5">
           <NuxtLink
-            to="/"
             class="flex link items-end text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+            to="/"
           >
-            <SvgIcon type="mdi" :path="mdiArrowLeft" :size="24" />
+            <SvgIcon :path="mdiArrowLeft" :size="24" type="mdi" />
             <div class="ml-1">Back to articles list</div>
           </NuxtLink>
         </div>
@@ -18,8 +18,8 @@
           <NuxtLink
             v-for="tag of tags"
             :key="tag"
-            class="pr-2 navigation-button text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
             :to="tagLink(tag)"
+            class="pr-2 navigation-button text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
           >
             #{{ tag }}
           </NuxtLink>
@@ -29,15 +29,15 @@
             <div
               v-for="(author, i) of authors"
               :key="author.author"
-              class="flex flex-row"
               :class="{ 'mb-2': i < authors.length - 1 }"
+              class="flex flex-row"
             >
               <img
                 :alt="`${author.author}s photo`"
                 :src="author.photo"
-                width="90"
-                height="90"
                 class="grayscale rounded-md max-h-20"
+                height="90"
+                width="90"
               />
               <div id="article_authors" class="ml-3 flex flex-col justify-end">
                 <div>Author</div>
@@ -56,9 +56,9 @@
             <div class="h4 mt-3">Co-authors</div>
             <div v-for="author of coAuthors" :key="author.author">
               <a
-                target="_blank"
-                class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
                 :href="author.link"
+                class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
+                target="_blank"
                 >{{ author.author }}</a
               >
             </div>
@@ -67,9 +67,9 @@
             <div class="h4 mt-3">Article Reviewers</div>
             <div v-for="reviewer of sortedReviewers" :key="reviewer.reviewer">
               <a
-                target="_blank"
-                class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
                 :href="reviewer.link"
+                class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
+                target="_blank"
                 >{{ reviewer.reviewer }}</a
               >
             </div>
@@ -95,8 +95,8 @@
           <div class="h4 mt-3">Related articles</div>
           <div v-for="related of relatedArticles" :key="related.title" class="articleLinkHeight">
             <NuxtLink
-              class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
               :href="`/articles/${related.name}`"
+              class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
             >
               {{ related.title }}
             </NuxtLink>
@@ -107,9 +107,9 @@
           <div class="h4 mt-3">Bibliography</div>
           <div v-for="bib of bibliography" :key="bib.title" class="articleLinkHeight break-all">
             <a
+              :href="bib.link"
               class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
               target="_blank"
-              :href="bib.link"
               >{{ bib.title }}</a
             >
             <span v-if="bib.ISBN">;&nbsp;ISBN {{ bib.ISBN }}</span>
@@ -131,84 +131,84 @@
               >
                 <template v-if="element.localName === 'h2'">
                   <div
-                    class="ml-2 pl-1 border-l-2 py-0.5"
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
                       'border-transparent': lowestIntersecting !== i
                     }"
+                    class="ml-2 pl-1 border-l-2 py-0.5"
                   >
                     <a
                       :id="`${encodeURI(element.id)}_anchor`"
-                      class="articleContentLink hover:underline"
                       :class="{
                         'text-black': lowestIntersecting === i,
                         'dark:text-white': lowestIntersecting === i
                       }"
                       :href="`#${encodeURI(element.id)}`"
+                      class="articleContentLink hover:underline"
                       >{{ element.textContent }}</a
                     >
                   </div>
                 </template>
                 <template v-if="element.localName === 'h3'">
                   <div
-                    class="ml-2 pl-4 border-l-2 py-0.5"
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
                       'border-transparent': lowestIntersecting !== i
                     }"
+                    class="ml-2 pl-4 border-l-2 py-0.5"
                   >
                     <a
                       :id="`${encodeURI(element.id)}_anchor`"
-                      class="articleContentLink hover:underline"
                       :class="{
                         'text-black': lowestIntersecting === i,
                         'dark:text-white': lowestIntersecting === i
                       }"
                       :href="`#${encodeURI(element.id)}`"
+                      class="articleContentLink hover:underline"
                       >{{ element.textContent }}</a
                     >
                   </div>
                 </template>
                 <template v-if="element.localName === 'h4'">
                   <div
-                    class="ml-2 pl-7 border-l-2 py-0.5"
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
                       'border-transparent': lowestIntersecting !== i
                     }"
+                    class="ml-2 pl-7 border-l-2 py-0.5"
                   >
                     <a
                       :id="`${encodeURI(element.id)}_anchor`"
-                      class="articleContentLink hover:underline"
                       :class="{
                         'text-black': lowestIntersecting === i,
                         'dark:text-white': lowestIntersecting === i
                       }"
                       :href="`#${encodeURI(element.id)}`"
+                      class="articleContentLink hover:underline"
                       >{{ element.textContent }}</a
                     >
                   </div>
                 </template>
                 <template v-if="element.localName === 'h5'">
                   <div
-                    class="ml-2 pl-10 border-l-2 py-0.5"
                     :class="{
                       'border-black': lowestIntersecting === i,
                       'dark:border-white': lowestIntersecting === i,
                       'border-transparent': lowestIntersecting !== i
                     }"
+                    class="ml-2 pl-10 border-l-2 py-0.5"
                   >
                     <a
                       :id="`${encodeURI(element.id)}_anchor`"
-                      class="articleContentLink hover:underline"
                       :class="{
                         'text-black': lowestIntersecting === i,
                         'dark:text-white': lowestIntersecting === i
                       }"
                       :href="`#${encodeURI(element.id)}`"
+                      class="articleContentLink hover:underline"
                       >{{ element.textContent }}</a
                     >
                   </div>
@@ -353,7 +353,7 @@ const updateData = async (ssr) => {
 
     const seoAuthors = []
     const articleAuthors = []
-    for (let author of authors.value) {
+    for (const author of authors.value) {
       seoAuthors.push({
         '@type': 'Person',
         name: author.author,

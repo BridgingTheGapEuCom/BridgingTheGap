@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://purl.imsglobal.org/spec/ob/v3p0/context.json"
+  ],
+  "id": "https://bridgingthegap.eu.com/badges/achievements/ddd-europe-2025-integration.json",
+  "type": "Achievement",
+  "name": "DDD for Enterprise Application Integration (DDD Europe 2025)",
+  "description": "Holder of this badge attended and completed DDD for Enterprise Application Integration by BridgingTheGap.eu.com at DDD Europe 2025.",
+  "image": {
+    "id": "https://bridgingthegap.eu.com/badges/images/ddd-europe-2025-integration.png",
+    "type": "Image"
+  },
+  "criteria": {
+    "type": "Criteria",
+    "narrative": "Attend and complete the workshop DDD for Enterprise Application Integration by BridgingTheGap.eu.com at DDD Europe 2025."
+  }
+}

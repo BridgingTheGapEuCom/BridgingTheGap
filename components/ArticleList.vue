@@ -10,38 +10,38 @@
             <span
               v-for="(tag, i) of allTags"
               :key="tag"
-              class="inline-flex items-center px-2 py-1 font-medium mainTransition md:block"
               :class="{
                 'cursor-pointer': !tags.includes(tag as string),
                 tag: !tags.includes(tag),
                 taggedTag: tags.includes(tag),
                 hidden: i > 2 && tags.length == 0 && !showAllTags
               }"
+              class="inline-flex items-center px-2 py-1 font-medium mainTransition md:block"
               @click="addTag(tag)"
             >
               <span>
                 #{{ tag }}
                 <button
                   v-if="tags.includes(tag)"
-                  type="button"
+                  aria-label="Remove Tag"
                   class="inline-flex items-center p-1 ms-2 text-sm text-neutral-300 dark:text-neutral-400 bg-transparent rounded-sm hover:bg-neutral-600 hover:text-neutral-100 dark:hover:bg-neutral-200 dark:hover:text-neutral-950"
                   data-dismiss-target="#badge-dismiss-default"
-                  aria-label="Remove Tag"
+                  type="button"
                   @click="removeTag(tag)"
                 >
                   <svg
-                    class="w-2 h-2"
                     aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-2 h-2"
                     fill="none"
                     viewBox="0 0 14 14"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
+                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
                       stroke="currentColor"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
-                      d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
                     />
                   </svg>
                   <span class="sr-only">Remove badge</span>
@@ -49,10 +49,10 @@
               </span>
             </span>
             <span
-              class="inline-flex items-center px-2 py-1 font-medium mainTransition cursor-pointer md:hidden taggedTag"
               :class="{
                 hidden: tags.length > 0
               }"
+              class="inline-flex items-center px-2 py-1 font-medium mainTransition cursor-pointer md:hidden taggedTag"
               @click="showAllTags = !showAllTags"
             >
               <span>{{
@@ -86,14 +86,14 @@
           class="flex md:flex-row flex-col text-justify"
         >
           <ArticleCard
-            class="mb-4"
-            :name="article.name"
-            :short="article.short"
-            :title="article.title"
-            :tags="article.tags"
-            :current-tags="tags"
-            :publication-date="article.publishDate"
             :authors="article.authors"
+            :current-tags="tags"
+            :name="article.name"
+            :publication-date="article.publishDate"
+            :short="article.short"
+            :tags="article.tags"
+            :title="article.title"
+            class="mb-4"
           />
         </div>
       </transition-group>
@@ -101,7 +101,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { computed, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { vResizeObserver } from '@vueuse/components'
@@ -120,7 +120,7 @@ const articlesContent: Ref<Array<ArticleContentRaw>> = ref([])
 const maxHeight = ref(0)
 const showAllTags = ref(false)
 
-let debounceWait: Ref<NodeJS.Timeout | null> = ref(null)
+const debounceWait: Ref<NodeJS.Timeout | null> = ref(null)
 
 const props = defineProps({
   articles: Array<Article>
@@ -135,7 +135,7 @@ onMounted(async () => {
   window.addEventListener('resize', onResize)
 
   if (route.query && route.query.tags) {
-    tags.value = (route.query.tags as string).split(',')
+    tags.value = route.query.tags
   } else {
     tags.value = []
   }
@@ -245,7 +245,7 @@ const filteredArticles = computed(() => {
  * allTags
  */
 const allTags = computed((): Array<string> => {
-  let all = new Set()
+  const all = new Set()
   if (props.articles) {
     for (const article of props.articles) {
       for (const tag of article.tags) {
@@ -266,10 +266,10 @@ const allTags = computed((): Array<string> => {
  */
 const debounce = (func: () => void, wait: number) => {
   return function executedFunction(...args) {
-    if (debounceWait) {
+    if (debounceWait.value) {
       clearTimeout(debounceWait) // Clear any previous timeout
     }
-    debounceWait = setTimeout(() => func.apply(this, args), wait)
+    debounceWait.value = setTimeout(() => func.apply(this, args), wait)
   }
 }
 
@@ -320,14 +320,14 @@ watch(articleFilter, async () => {
 
 watch(route, (current) => {
   if (current.query && current.query.tags) {
-    tags.value = current.query.tags.split(',')
+    tags.value = current.query.tags as Array<string>
   } else {
     tags.value = []
   }
 })
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .tag {
   @apply text-neutral-700 bg-neutral-300 rounded-md dark:bg-neutral-700 dark:text-neutral-300;
 }

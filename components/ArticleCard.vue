@@ -12,11 +12,11 @@
       >
         <!-- The article image, shown only when visible in the viewport -->
         <img
-          loading="lazy"
           v-show="imageVisible"
+          :alt="`${title} image`"
           :src="`/articles/${name}/image.webp`"
           class="md:max-w-[12rem] md:max-h-[12rem] w-full md:rounded-l-md md:rounded-r-none rounded-t-md"
-          :alt="`${title} image`"
+          loading="lazy"
         />
       </div>
     </NuxtLink>
@@ -34,7 +34,7 @@
         <span v-for="(author, key) of authors" :key="author.author">
           {{ author.author }}{{ key < authors.length - 1 ? ', ' : '' }}
         </span>
-        <SvgIcon class="pb-1 w-4 m-0 inline-block text" type="mdi" :path="mdiCircleSmall" />
+        <SvgIcon :path="mdiCircleSmall" class="pb-1 w-4 m-0 inline-block text" type="mdi" />
         {{ new Date(Date.parse(publicationDate)).toLocaleDateString() }}
       </div>
       <!-- Short Description -->
@@ -45,7 +45,6 @@
         <router-link
           v-for="(tag, index) of tags"
           :key="`${tag}-${index}`"
-          class="md:inline pr-2 hover:text-black hover:dark:text-gray-50 navigation-button"
           :class="{
             'text-gray-600': !currentTags?.includes(tag),
             'dark:text-gray-400': !currentTags?.includes(tag),
@@ -54,6 +53,7 @@
             'font-bold': currentTags?.includes(tag)
           }"
           :to="tagLink(tag)"
+          class="md:inline pr-2 hover:text-black hover:dark:text-gray-50 navigation-button"
         >
           #{{ tag }}
         </router-link>
@@ -62,7 +62,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { useRoute } from 'vue-router'
 import type { Author } from '~/Types/Article'
 import { mdiCircleSmall } from '@mdi/js'
@@ -74,8 +74,8 @@ defineProps({
   name: { type: String, required: true }, // The unique name/slug of the article.
   title: { type: String, required: true }, // The title of the article.
   short: { type: String, required: true }, // A short description of the article.
-  tags: { type: Array<String>, required: false, default: [] }, // A list of tags associated with the article.
-  currentTags: { type: Array<String>, required: true }, // A list of currently active tags for filtering.
+  tags: { type: Array<string>, required: false, default: [] }, // A list of tags associated with the article.
+  currentTags: { type: Array<string>, required: true }, // A list of currently active tags for filtering.
   publicationDate: { type: String, required: true }, // The publication date of the article.
   authors: { type: Array<Author>, required: true } // A list of authors of the article.
 })
@@ -94,10 +94,10 @@ const imageVisible = ref(false)
  */
 const tagLink = (tag: string) => {
   if (route.query && route.query.tags) {
-    if (!(route.query.tags as string).split(',').includes(tag)) {
+    if (!route.query.tags.includes(tag)) {
       return `/?tags=${route.query.tags + ',' + tag}`
     } else {
-      const filter = (route.query.tags as string).split(',').filter((el) => {
+      const filter = route.query.tags.filter((el) => {
         return el !== tag
       })
       if (filter.length === 0) {
