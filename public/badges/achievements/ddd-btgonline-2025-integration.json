@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://purl.imsglobal.org/spec/ob/v3p0/context.json"
+  ],
+  "id": "https://bridgingthegap.eu.com/badges/achievements/ddd-btgonline-2025-integration.json",
+  "type": "Achievement",
+  "name": "DDD for Enterprise Application Integration (BridgingTheGap.eu.com)",
+  "description": "Holder of this badge attended and completed DDD for Enterprise Application Integration by BridgingTheGap.eu.com.",
+  "image": {
+    "id": "https://bridgingthegap.eu.com/badges/images/ddd-btgonline-2025-integration.png",
+    "type": "Image"
+  },
+  "criteria": {
+    "type": "Criteria",
+    "narrative": "This badge confirms active engagement in our “DDD for Enterprise Application Integration” workshop. Earners attended the live session, collaborated on Lucidspark exercises, and provided feedback for our DDD Europe 2025 presentation. It signifies applied understanding of DDD for EAI and a commitment to professional development."
+  }
+}

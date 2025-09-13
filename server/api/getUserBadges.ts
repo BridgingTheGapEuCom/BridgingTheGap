@@ -1,4 +1,5 @@
 import BadgeSchema from '~/server/models/badge.schema'
+import { createHash } from 'crypto'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
@@ -33,7 +34,11 @@ export default defineEventHandler(async (event) => {
 
   let badges
   try {
-    badges = await BadgeSchema.find({ 'credentialSubject.email': email })
+    const salt = 'BridgingTheGap'
+    const sha = createHash('sha256').update(`${email}${salt}`).digest('hex')
+    badges = await BadgeSchema.find({
+      'credentialSubject.identifier.identityHash': `sha256:${sha}`
+    })
   } catch (error) {
     console.error('Error fetching badges:', error)
     throw createError({
