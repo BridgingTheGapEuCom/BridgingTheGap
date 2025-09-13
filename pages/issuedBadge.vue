@@ -5,7 +5,7 @@
       class="absolute flex items-center justify-center w-screen h-screen top-0 left-0 bg-gray-500/75 transition-opacity z-10"
     >
       <div
-        class="bg-white max-w-full max-h-full relative dark:bg-neutral-950 rounded-lg p-8 flex flex-col justify-center text-center"
+        class="bg-white max-w-[90%] max-h-[90%] relative dark:bg-neutral-950 rounded-lg p-8 flex flex-col justify-center text-center"
       >
         <div class="mb-3">
           This code defines your badge award and conforms to the
@@ -18,13 +18,13 @@
           Assertion specification.
         </div>
 
-        <SvgIcon
-          :path="mdiContentCopy"
-          class="right-12 z-10 top-20 cursor-pointer text-neutral-600 hover:text-black dark:hover:text-white w-5 m-0 absolute text"
-          type="mdi"
-          @click="copyToClipboard"
-        />
-        <div class="relative flex">
+        <div class="relative flex overflow-auto">
+          <SvgIcon
+            :path="mdiContentCopy"
+            class="right-4 z-10 top-4 cursor-pointer text-neutral-600 hover:text-black dark:hover:text-white w-5 m-0 absolute text"
+            type="mdi"
+            @click="copyToClipboard"
+          />
           <h2
             :class="{ invisible: !jsonCopied }"
             class="absolute z-10 self-center w-full m-auto opacity-100"
@@ -57,7 +57,7 @@
       class="h-full max-h-[50rem] flex flex-col items-center justify-between"
     >
       <div class="flex flex-col items-center justify-center">
-        <img :src="image" alt="Achievement badge" class="w-48 dark:invert" />
+        <img :src="image" alt="Achievement badge" class="w-[250px] dark:invert" />
         <h2 class="mx-9">{{ achievementDetails.name }}</h2>
       </div>
       <div class="flex flex-col items-center justify-center">
