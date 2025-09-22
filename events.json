@@ -222,7 +222,49 @@
     "YT": "https://youtube.com/live/-MOfx55GRcc"
   },
   {
-    "name": "Loosely Coupled - Exploring Publish-Subscribe (EDA)",
+    "name": "Loosely Coupled - The IT Talent Trap vol.2",
+    "img": "/events/Loosely_Coupled_The_IT_Talent_Trap_2.webp",
+    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nWe’ve tackled this topic before and it’s making a comeback! We’ll be diving into IT recruitment once again! Joining us on this turbulent journey is: Gabi Preston-Phypers, Founder at Tooled Up Raccoons, and coming back to the stream: Phillip Poynton, who is Recruiting Salesforce Superstars.\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nIn this follow-up session, we will broaden the scope and look at the problem from various angles. We’ll discuss things like boolean searches, where candidates just fall through the cracks. We’ll take a go at unicorn hunting, where companies try to hire half a department in a single position. We’ll look underneath buzzwords and try to put that in the candidates perspective! We will be sprinting through various obstacles that sometimes we set for ourselves as candidates, recruiters or hiring managers! This isn't just about working with a broken process. It's about understanding how to survive it from both the employer and candidate perspectives.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.",
+    "date": "2025-09-24",
+    "eventType": "Stream",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-09-24",
+        "endDate": "2025-09-24",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "The current challenges in IT recruitment, how to work with a broken process, advice for candidates on finding better roles and navigating job market problems.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7369024803392991233/",
+    "YT": "https://www.youtube.com/live/wZwI0jMUpZs"
+  },
+  {
+    "name": "Loosely Coupled - Navigating through API Design",
+    "img": "/events/Loosely_Coupled_Navigating_through_API_Design.webp",
+    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nAre you struggling to find the right API design for your project? Or perhaps your organization is suffering from “we’ve always done it this way” statements? The landscape is constantly evolving, and a \"one-size-fits-all\" approach just doesn't work.\n\nTune in to our next Live Stream: Navigating API Design. We’re bringing together two amazing minds from Codecentric, Dr. Miriam Greis and Daniel Kocot, to help you tackle the challenge of navigating API design!\n\nIn this session we’ll be diving head first into the Data Interface Quadrants (DIQs), a very interesting concept that goes beyond traditional API definitions. We'll discuss different approaches to APIs. We’ll touch upon the typical problems that we can stumble into at various companies in terms of perception of what APIs are for. On top of that we’ll have a chance to discuss how to turn APIs from just technical interfaces into being a part of the business model!\n\nJoin us if you’d like to move past the buzzwords and get a practical understanding of the role of APIs and API design in the modern IT landscape!",
+    "date": "2025-10-08",
+    "eventType": "Stream",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-10-08",
+        "endDate": "2025-10-08",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "API design for modern enterprises using Data Interface Quadrants to navigate the purpose of APIs.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7375831037614120960/",
+    "YT": "https://www.youtube.com/live/ORUcj_0NhGA"
+  },
+  {
+    "name": "Loosely Coupled - Federate API_Management",
     "img": "/events/Loosely_Coupled_Federated_API_Management.webp",
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our next insightful session, we are thrilled to host Adeeb Tahir, the Field CTO at APIwiz, as our special guest. Together, we will dive deep into the critical topic of \"Federated API Management\", exploring the challenges and solutions in today's complex IT ecosystems.\n\nIn the modern world of distributed systems and microservices, the API Management problem is more complex than ever. What exactly is the core issue, and why are traditional approaches falling short? In this session, we will take a closer look at how API Management Federation is currently being done and, more importantly, how it could be done better. We’ll explore the essential components and strategic steps required to implement it properly, ensuring a more scalable and organized approach to your API landscape.\n\nThis is a unique opportunity to gain a broader perspective on modern API strategy and empower yourself with the knowledge to make informed decisions for a more coherent and effective API management framework.",
     "date": "2025-09-03",
