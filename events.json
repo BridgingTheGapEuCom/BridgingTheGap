@@ -264,7 +264,7 @@
     "YT": "https://www.youtube.com/live/ORUcj_0NhGA"
   },
   {
-    "name": "Loosely Coupled - Federate API_Management",
+    "name": "Loosely Coupled - Federated API Management",
     "img": "/events/Loosely_Coupled_Federated_API_Management.webp",
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our next insightful session, we are thrilled to host Adeeb Tahir, the Field CTO at APIwiz, as our special guest. Together, we will dive deep into the critical topic of \"Federated API Management\", exploring the challenges and solutions in today's complex IT ecosystems.\n\nIn the modern world of distributed systems and microservices, the API Management problem is more complex than ever. What exactly is the core issue, and why are traditional approaches falling short? In this session, we will take a closer look at how API Management Federation is currently being done and, more importantly, how it could be done better. We’ll explore the essential components and strategic steps required to implement it properly, ensuring a more scalable and organized approach to your API landscape.\n\nThis is a unique opportunity to gain a broader perspective on modern API strategy and empower yourself with the knowledge to make informed decisions for a more coherent and effective API management framework.",
     "date": "2025-09-03",
