@@ -140,6 +140,7 @@
             </div>
           </EventsLayout>
           <EventsLayout
+            ref="eventRefsList"
             :current-event-id="currentEvent?.id && currentEvent?.id > 0 ? currentEvent?.id + 1 : -1"
             :last-page="index === events.length - 1"
             :page-id="index + 1"
@@ -183,46 +184,19 @@
                             "
                           >
                             <span
-                              >{{
-                                DateTime.fromISO(
-                                  (event.details[detailKey] as EventDetailsDate).startDate,
-                                  { zone: 'cet' }
-                                )
-                                  .toJSDate()
-                                  .toLocaleDateString()
-                              }}&nbsp;{{
+                              >{{ getDateFromEvent(event).toJSDate().toLocaleDateString() }}&nbsp;{{
                                 (event.details[detailKey] as EventDetailsDate).startTime
                               }}&nbsp;-&nbsp;{{
                                 (event.details[detailKey] as EventDetailsDate).endTime
                               }}
-                              {{
-                                DateTime.fromISO(
-                                  (event.details[detailKey] as EventDetailsDate).startDate,
-                                  { zone: 'CET' }
-                                )?.zoneName?.toUpperCase()
-                              }}
+                              {{ getDateFromEvent(event)?.zoneName?.toUpperCase() }}
                             </span>
                           </template>
                           <template v-else>
                             <span
-                              >{{
-                                DateTime.fromISO(
-                                  `${(event.details[detailKey] as EventDetailsDate).startDate}T${(event.details[detailKey] as EventDetailsDate).startTime}`,
-                                  { zone: 'CET' }
-                                )
-                                  .toJSDate()
-                                  .toLocaleString()
-                              }}
-                              {{
-                                DateTime.fromISO(
-                                  (event.details[detailKey] as EventDetailsDate).startDate,
-                                  { zone: 'CET' }
-                                )?.zoneName?.toUpperCase()
-                              }}&nbsp;-&nbsp;{{
-                                DateTime.fromISO(
-                                  `${(event.details[detailKey] as EventDetailsDate).endDate}T${(event.details[detailKey] as EventDetailsDate).endTime}`,
-                                  { zone: 'CET' }
-                                )
+                              >{{ getDateTimeFromEvent(event).toJSDate().toLocaleString() }}
+                              {{ getDateFromEvent(event)?.zoneName?.toUpperCase() }}&nbsp;-&nbsp;{{
+                                getDateTimeFromEvent(event, false, false)
                                   .toJSDate()
                                   .toLocaleString()
                               }}</span
@@ -292,7 +266,13 @@
 <script lang="ts" setup>
 import { computed, ref, type Ref } from 'vue'
 import jsonEvents from '../events.json'
-import { type Event, type EventDetailsDate, type EventDetailsLink, EventDetailTypes, EventType } from '~/Types/Event'
+import {
+  type Event,
+  type EventDetailsDate,
+  type EventDetailsLink,
+  EventDetailTypes,
+  EventType
+} from '~/Types/Event'
 import { mdiCalendarClock, mdiClose, mdiFormatListNumbered, mdiLinkedin, mdiYoutube } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
 import { DateTime } from 'luxon'
@@ -343,6 +323,8 @@ const calendarOverlay = ref(false)
  * @type {Ref<boolean>}
  */
 const eventsListOverlay = ref(false)
+
+const eventRefsList = ref<any>([])
 
 /**
  * Lifecycle hook that runs after the component has been mounted.
@@ -400,6 +382,34 @@ onMounted(() => {
     }
   }
 })
+
+const getDateFromEvent = (event: Event) => {
+  return DateTime.fromISO((event.details[EventDetailTypes.Date] as EventDetailsDate).startDate, {
+    zone: 'CET'
+  })
+}
+
+const getDateTimeFromEvent = (
+  event: Event,
+  startDate: boolean = true,
+  startTime: boolean = true
+) => {
+  let time = (event.details[EventDetailTypes.Date] as EventDetailsDate).startTime
+  if (!startTime) {
+    time = (event.details[EventDetailTypes.Date] as EventDetailsDate).endTime
+  }
+
+  if (time.length === 4) {
+    time = `0${time}`
+  }
+
+  let date = (event.details[EventDetailTypes.Date] as EventDetailsDate).startDate
+  if (!startDate) {
+    date = (event.details[EventDetailTypes.Date] as EventDetailsDate).endDate
+  }
+
+  return DateTime.fromISO(`${date}T${time}`, { zone: 'CET' })
+}
 
 /**
  * A computed property that returns a list of events for the currently chosen month and year.
@@ -745,6 +755,9 @@ watch(chosenDate, (newDate) => {
  */
 watch(currentEvent, (newEvent) => {
   if (newEvent) {
+    if (eventRefsList.value[newEvent.id]) {
+      eventRefsList.value[newEvent.id].scrollEventToTop()
+    }
     nextTick(() => {
       router.replace({ hash: `#event_${Number(newEvent.id) + 1}` })
       window.document.getElementById(`event_${Number(newEvent.id) + 1}`)?.scrollIntoView()

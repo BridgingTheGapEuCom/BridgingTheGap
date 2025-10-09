@@ -88,7 +88,7 @@
         </g>
         <g />
         <g>
-          <svg style="height: 77px; width: 77px" viewBox="0 0 850 850"  x="276.5" y="19.5">
+          <svg style="height: 77px; width: 77px" viewBox="0 0 850 850" x="276.5" y="19.5">
             <g>
               <path
                 class="top"

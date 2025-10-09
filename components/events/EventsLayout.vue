@@ -24,7 +24,11 @@
       <template v-else>
         <div />
       </template>
-      <div :tabindex="currentEventId === pageId ? '0' : '-1'" class="gap-3 pt-2 overflow-auto">
+      <div
+        ref="event"
+        :tabindex="currentEventId === pageId ? '0' : '-1'"
+        class="gap-3 pt-2 overflow-auto"
+      >
         <slot />
       </div>
       <div
@@ -81,7 +85,29 @@ const props = defineProps({
   }
 })
 
+const event = ref<HTMLElement | null>(null)
+
 const emit = defineEmits(['pageChange'])
+
+/**
+ * scrollEventToTop
+ *
+ * A function that resets the scroll position of an event to the top.
+ * The function checks if the event has a defined `value` property.
+ * If the `value` exists, the `scrollTop` property of the `value` is set to `0`,
+ * effectively scrolling it to the top.
+ *
+ * Note: Ensure `event` is defined and has a `value` property before usage.
+ */
+const scrollEventToTop = () => {
+  if (event.value) {
+    event.value.scrollTop = 0
+  }
+}
+
+defineExpose({
+  scrollEventToTop
+})
 
 /**
  * A computed property that determines the URL or identifier of the previous page.
