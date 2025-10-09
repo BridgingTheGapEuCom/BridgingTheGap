@@ -1,13 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { randomBytes } from 'crypto'
-
-function generateNonce(): string {
-  return randomBytes(16).toString('base64')
-}
 
 export default defineNuxtConfig({
   nitro: {
-    compressPublicAssets: true
+    compressPublicAssets: true,
+    preset: 'node-server'
   },
 
   ssr: true,
@@ -26,7 +22,7 @@ export default defineNuxtConfig({
   },
 
   security: {
-    nonce: true, // Enables HTML nonce support in SSR mode
+    nonce: true,
     ssg: {
       meta: true, // Enables CSP as a meta tag in SSG mode
       hashScripts: false, // Enables CSP hash support for scripts in SSG mode
@@ -38,10 +34,11 @@ export default defineNuxtConfig({
       contentSecurityPolicy: {
         'script-src': [
           "'self'",
-          "'strict-dynamic'", // Modify with your custom CSP sources
-          "'nonce-{{nonce}}'" // Enables CSP nonce support for scripts in SSR mode, supported by almost any browser (level 2)
+          "'strict-dynamic'",
+          "'nonce-{{nonce}}'",
+          "'sha256-CXuv9HeSMBFjwH6VgXbNh8vf6PwIWNqMI6hN1wgH+AA='"
         ],
-        'script-src-attr': ["'unsafe-inline'"]
+        'style-src': ["'self'", "'unsafe-inline'"]
       }
     }
   },

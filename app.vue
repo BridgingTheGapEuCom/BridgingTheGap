@@ -38,12 +38,12 @@ const script = [
   }
 ]
 
-if (process.env.NODE_ENV !== 'development') {
-  script.push({
-    src: 'https://bridgingthegap.eu.com:3000/script.js',
-    'data-website-id': '138c939d-5f34-4771-a0da-405393793fe8'
-  })
-}
+// if (process.env.NODE_ENV !== 'development') {
+// script.push({
+//   src: 'https://bridgingthegap.eu.com:3000/script.js',
+//   'data-website-id': '138c939d-5f34-4771-a0da-405393793fe8'
+// })
+// }
 
 useHead({
   title: 'Bridging the Gap',

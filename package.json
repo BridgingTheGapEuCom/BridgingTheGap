@@ -6,8 +6,8 @@
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "startprod": "node .output/server/index.mjs",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
