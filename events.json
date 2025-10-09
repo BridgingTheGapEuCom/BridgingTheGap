@@ -246,13 +246,13 @@
     "name": "Loosely Coupled - Navigating through API Design",
     "img": "/events/Loosely_Coupled_Navigating_through_API_Design.webp",
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nAre you struggling to find the right API design for your project? Or perhaps your organization is suffering from “we’ve always done it this way” statements? The landscape is constantly evolving, and a \"one-size-fits-all\" approach just doesn't work.\n\nTune in to our next Live Stream: Navigating API Design. We’re bringing together two amazing minds from Codecentric, Dr. Miriam Greis and Daniel Kocot, to help you tackle the challenge of navigating API design!\n\nIn this session we’ll be diving head first into the Data Interface Quadrants (DIQs), a very interesting concept that goes beyond traditional API definitions. We'll discuss different approaches to APIs. We’ll touch upon the typical problems that we can stumble into at various companies in terms of perception of what APIs are for. On top of that we’ll have a chance to discuss how to turn APIs from just technical interfaces into being a part of the business model!\n\nJoin us if you’d like to move past the buzzwords and get a practical understanding of the role of APIs and API design in the modern IT landscape!",
-    "date": "2025-10-08",
+    "date": "2025-10-09",
     "eventType": "Stream",
     "details": {
       "date": {
         "type": "date",
-        "startDate": "2025-10-08",
-        "endDate": "2025-10-08",
+        "startDate": "2025-10-09",
+        "endDate": "2025-10-09",
         "startTime": "19:00",
         "endTime": "21:00"
       },
@@ -283,5 +283,26 @@
     },
     "LN": "https://www.linkedin.com/events/looselycoupled-apimanagementfed7363502010723196931/",
     "YT": "https://youtube.com/live/Uoidbs9oXPM"
+  },
+  {
+    "name": "Loosely Coupled Special Edition - Architects Navigating the Human Condition",
+    "img": "/events/Loosely_Coupled_Architects_Navigating_the_Human_Condition.webp",
+    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nAre you constantly grappling with the paradox of IT architecture? You have a vision for an elegant, perfect system (the desire), but you’re constrained by legacy debt, tight budgets, and shifting requirements (the limitation). Do you ever feel the unique psychological weight of constantly building for a future that doesn't yet exist?\n\nTune in to our next Live Stream: Architects Navigating the Human Condition, a special edition! We are thrilled to host renowned expert Mark Richards, architect, author, and founder of developertoarchitect.com, to help us unpack the challenges unique to the architect role.\n\nIn this session, we’ll move beyond diagrams and technical patterns to explore the human element of architecture. We will discuss:\n\n- The Cycle of Triumph and Failure: How to develop resilience and manage the emotional extremes of shipping a successful product versus a critical system failure.\n\n- The Burden of Foresight (Consciousness): Strategies for coping with the constant pressure of future-proofing and making today's decisions that impact tomorrow’s operations.\n\n- Making Order from Chaos: The psychological drive to simplify complexity and how architects can find meaning by connecting technical blueprints to clear, tangible business value.\n\nJoin us if you’re ready to acknowledge and conquer the shared, universal struggles of the IT Architect role, turning constraints into creative catalysts!",
+    "date": "2025-10-11",
+    "eventType": "Stream",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-10-11",
+        "endDate": "2025-10-11",
+        "startTime": "20:00",
+        "endTime": "22:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "The universal challenges of the IT Architect, focusing on the human side of the equation.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7380893554547511296/",
+    "YT": "https://www.youtube.com/live/2x3kKD4gzSk"
   }
 ]
