@@ -304,5 +304,50 @@
     },
     "LN": "https://www.linkedin.com/events/7380893554547511296/",
     "YT": "https://www.youtube.com/live/2x3kKD4gzSk"
+  },
+  {
+    "name": "Loosely Coupled - EDA to Power Warehouse Systems",
+    "img": "/events/Loosely_Coupled_EDA_to_Power_Warehouse_Systems.webp",
+    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nEver wonder what it takes to design a truly maintainable and scalable system in a very complex environment? On our next live stream, we'll be looking into a scenario, where IT architecture meets the physical world within a very lively environment of a Fast Moving Consumer Goods (FMCG) Warehouse!\n\nWe're thrilled to be joined by Valeriia Filimonova, a Staff Engineer at Picnic with extensive experience in Event-Driven Architecture. Valeriia will be pulling back the curtain to show us how they've leveraged EDA to power the warehouse systems. This is your chance to hear about a real-world implementation, from the initial problem statement to the specific decisions that led to their current success.\n\nDon't miss out on this practical session where we’ll discuss the role of EDA in warehouse systems, as well as, the journey of implementing this approach, including the challenges, successes and the rationale behind key architectural decisions.",
+    "date": "2025-10-22",
+    "eventType": "Stream",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-10-22",
+        "endDate": "2025-10-22",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "How we can leverage Event-Driven Architecture in a physical space of a Warehouse!",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7381972750149783552/",
+    "YT": "https://www.youtube.com/live/sC71XVs3LHU"
+  },
+  {
+    "name": "Strategic Integration Design with DDD",
+    "img": "/events/Strategic_Integration_Design_with_DDD_1.webp",
+    "description": "Most integration landscapes grow messy, siloed, and become hard to change. This course shows you how to design interoperability with purpose. Apply Domain-Driven Design to integrate architecture so your systems work together, scale with your organization, and stay aligned to your business needs.\n\nOrganisations often reinvent the wheel when connecting systems. Custom point-to-point solutions emerge, silos deepen, and technical decisions drift away from business intent. This results in unwanted complexity that slows delivery and limits agility.\n\nStrategic Integration Design with DDD equips your team to turn integration into a strategic capability. By combining collaborative modelling with proven integration patterns, you will learn how to design flows that serve business goals, create reusable assets instead of one-off fixes, and evaluate when larger transformation steps are needed. Along the way, you will see how interoperability follows organizational structure (Conway’s Law in action) and how reducing different kinds of coupling leads to systems that can evolve with the business.\n\nParticipants value this course because it gives names and theories for practices they already use informally, demystifies industry jargon and introduces practical tools for comparing trade-offs.\n\nFor who?\n• Solution & Integration Architects,\n• Staff/Principal Engineers,\n• Engineering Managers, Directors, and Business Analysts, Consultants.\n\nLearning outcomes\n\nWhat You’ll Learn\n• Elicit integration requirements with EventStorming: Quickly map business processes, events, and bounded contexts to uncover where systems must interoperate.\n• Depict flows with Domain Message Flow: Visualize how events, commands, and queries travel across systems, and match them to well established integration patterns.\n• Apply trade-off analysis: Use a structured tool to weigh integration options and choose with confidence.\n• Recognize maturity stages: Understand the complexities of Enterprise Application Integration (EAI), and that they are not binary choices.\n• Reduce coupling: Identify different types of coupling, and learn how to balance them.\n• Demystify architecture styles: Place different approaches in context, clarifying what they solve and where their limits are.\n• Plan integrations purposefully: Design reusable solutions directly aligned with business needs, rather than ad-hoc fixes.\n\nWhy Attend?\n• Strategic clarity: Understand which integration approaches fit your context and how to explain trade-offs to stakeholders.\n• Shared language: Give teams a vocabulary to describe integration patterns and styles, reducing confusion and reliance on constantly misused buzzwords.\n• Direct applicability: Learn techniques & methods, which you can apply directly to your current business problems and system.\n• Organizational awareness: See how interoperability depends on the way teams are structured, and how to align system boundaries with business domains.\n• Future-proofing: Design integrations that remain flexible and reusable as your organization and technology landscape evolve.",
+    "date": "2026-01-19",
+    "eventType": "Workshop",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-01-19",
+        "endDate": "2025-01-30",
+        "startTime": "9:30",
+        "endTime": "13:00"
+      },
+      "place": "Online workshop",
+      "eventTopic": "Practical patterns for scalable, evolvable integrations using Domain-Driven Design",
+      "eventType": "Workshop",
+      "registrationLink": {
+        "type": "link",
+        "link": "https://ddd.academy/strategic-integration-design-with-ddd/",
+        "name": "Sign-up here!"
+      }
+    }
   }
 ]
