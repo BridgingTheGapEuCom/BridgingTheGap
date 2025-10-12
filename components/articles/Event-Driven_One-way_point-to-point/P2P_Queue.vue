@@ -20,7 +20,14 @@
               <g />
               <g data-cell-id="SUh7fJCfBhAYlD9i4jNa-108">
                 <g>
-                  <svg style="height: 77px; width: 77px" viewBox="0 0 850 850" x="-0.5" y="21.5">
+                  <svg
+                    height="77"
+                    style="height: 77px; width: 77px"
+                    viewBox="0 0 850 850"
+                    width="77"
+                    x="-0.5"
+                    y="21.5"
+                  >
                     <g>
                       <path
                         class="top"
@@ -110,7 +117,7 @@
               <g />
               <g data-cell-id="SUh7fJCfBhAYlD9i4jNa-111">
                 <g>
-                  <svg style="height: 77px; width: 77px" viewBox="0 0 850 850" x="277.5" y="20.5">
+                  <svg width="77" height="77" style="height: 77px; width: 77px" viewBox="0 0 850 850" x="277.5" y="20.5">
                     <g>
                       <path
                         class="top"

@@ -163,7 +163,14 @@
             <g data-cell-id="G1Dc8bW87VyKCwaa7jI_-59">
               <g />
               <g data-cell-id="G1Dc8bW87VyKCwaa7jI_-60">
-                <svg style="height: 77px; width: 77px" viewBox="0 0 850 850" x="19.5" y="39.5">
+                <svg
+                  height="77"
+                  style="height: 77px; width: 77px"
+                  viewBox="0 0 850 850"
+                  width="77"
+                  x="19.5"
+                  y="39.5"
+                >
                   <g>
                     <path
                       class="top"
@@ -236,7 +243,14 @@
             </g>
             <g data-cell-id="G1Dc8bW87VyKCwaa7jI_-62">
               <g data-cell-id="G1Dc8bW87VyKCwaa7jI_-63">
-                <svg style="height: 77px; width: 77px" viewBox="0 0 850 850" x="349.5" y="39.5">
+                <svg
+                  height="77"
+                  style="height: 77px; width: 77px"
+                  viewBox="0 0 850 850"
+                  width="77"
+                  x="349.5"
+                  y="39.5"
+                >
                   <g>
                     <path
                       class="top"

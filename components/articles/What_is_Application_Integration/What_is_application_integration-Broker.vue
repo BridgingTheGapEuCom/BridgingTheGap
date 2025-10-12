@@ -227,9 +227,10 @@
         </g>
         <g :class="{ shadow: !isDark, darkShadow: isDark }">
           <svg
+            height="77"
             style="height: 93px; width: 93px"
-            version="1.1"
             viewBox="0 0 850 850"
+            width="77"
             x="3.5"
             xmlns="http://www.w3.org/2000/svg"
             y="3.5"
@@ -336,9 +337,11 @@
         </g>
         <g :class="{ shadow: !isDark, darkShadow: isDark }">
           <svg
+            height="77"
             style="height: 93px; width: 93px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="77"
             x="427"
             xmlns="http://www.w3.org/2000/svg"
             y="3.5"
@@ -633,9 +636,10 @@
         <g :class="{ shadow: !isDark, darkShadow: isDark }">
           <svg
             id="svg-image-YkDXto43T4GbDHSxEXTJ"
+            height="77"
             style="height: 93px; width: 93px"
-            version="1.1"
             viewBox="0 0 850 850"
+            width="77"
             x="3.5"
             xmlns="http://www.w3.org/2000/svg"
             y="143.5"
@@ -665,9 +669,11 @@
         <g :class="{ shadow: !isDark, darkShadow: isDark }">
           <svg
             id="svg-image-YkDXto43T4GbDHSxEXTJ"
+            height="77"
             style="height: 93px; width: 93px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="77"
             x="427"
             xmlns="http://www.w3.org/2000/svg"
             y="143.5"
@@ -952,9 +958,11 @@
         </g>
         <g>
           <svg
+            height="60"
             style="height: 60px; width: 60px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="60"
             x="230.08"
             xmlns="http://www.w3.org/2000/svg"
             y="160"
@@ -981,9 +989,11 @@
         </g>
         <g>
           <svg
+            height="63.5"
             style="height: 63.5px; width: 63.5px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="63.5"
             x="228.32"
             xmlns="http://www.w3.org/2000/svg"
             y="18.25"

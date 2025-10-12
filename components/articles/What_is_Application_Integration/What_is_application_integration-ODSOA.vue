@@ -100,9 +100,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="60"
             style="height: 60px; width: 60px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="60"
             x="3.5"
             xmlns="http://www.w3.org/2000/svg"
             y="23.5"
@@ -204,9 +206,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="60"
             style="height: 60px; width: 60px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="60"
             x="3.5"
             xmlns="http://www.w3.org/2000/svg"
             y="103.5"
@@ -310,9 +314,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="60"
             style="height: 60px; width: 60px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="60"
             x="483.5"
             xmlns="http://www.w3.org/2000/svg"
             y="23.5"
@@ -399,9 +405,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="60"
             style="height: 60px; width: 60px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="60"
             x="483.5"
             xmlns="http://www.w3.org/2000/svg"
             y="103.5"
@@ -522,9 +530,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="3h"
             style="height: 30px; width: 30px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="30"
             x="133.5"
             xmlns="http://www.w3.org/2000/svg"
             y="38.5"
@@ -581,9 +591,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="30"
             style="height: 30px; width: 30px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="30"
             x="133.5"
             xmlns="http://www.w3.org/2000/svg"
             y="118.5"
@@ -676,9 +688,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="60"
             style="height: 60px; width: 60px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="60"
             x="238.5"
             xmlns="http://www.w3.org/2000/svg"
             y="58.5"
@@ -735,9 +749,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="30"
             style="height: 30px; width: 30px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="30"
             x="373.5"
             xmlns="http://www.w3.org/2000/svg"
             y="38.5"
@@ -794,9 +810,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="30"
             style="height: 30px; width: 30px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="30"
             x="373.5"
             xmlns="http://www.w3.org/2000/svg"
             y="118.5"
@@ -852,9 +870,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="60"
             style="height: 60px; width: 60px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="60"
             x="3.5"
             xmlns="http://www.w3.org/2000/svg"
             y="187.5"
@@ -957,9 +977,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="60"
             style="height: 60px; width: 60px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="60"
             x="3.5"
             xmlns="http://www.w3.org/2000/svg"
             y="267.5"
@@ -1063,9 +1085,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="60"
             style="height: 60px; width: 60px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="60"
             x="483.5"
             xmlns="http://www.w3.org/2000/svg"
             y="187.5"
@@ -1169,9 +1193,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="60"
             style="height: 60px; width: 60px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="60"
             x="483.5"
             xmlns="http://www.w3.org/2000/svg"
             y="267.5"
@@ -1293,9 +1319,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="30"
             style="height: 30px; width: 30px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="30"
             x="133.5"
             xmlns="http://www.w3.org/2000/svg"
             y="202.5"
@@ -1353,9 +1381,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="30"
             style="height: 30px; width: 30px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="30"
             x="133.5"
             xmlns="http://www.w3.org/2000/svg"
             y="282.5"
@@ -1394,9 +1424,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="30"
             style="height: 30px; width: 30px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="30"
             x="373.5"
             xmlns="http://www.w3.org/2000/svg"
             y="202.5"
@@ -1435,9 +1467,11 @@
         </g>
         <g class="backgroundShadow">
           <svg
+            height="30"
             style="height: 30px; width: 30px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="30"
             x="373.5"
             xmlns="http://www.w3.org/2000/svg"
             y="282.5"
@@ -1496,9 +1530,10 @@
         </g>
         <g class="backgroundShadow">
           <svg
-            style="height: 65px; width: 76.47px"
-            version="1.1"
+            height="76"
+            style="height: 65px; width: 76px"
             viewBox="0 0 850 850"
+            width="65"
             x="230.27"
             xmlns="http://www.w3.org/2000/svg"
             y="227.5"

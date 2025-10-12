@@ -150,9 +150,11 @@
         </g>
         <g class="shadow">
           <svg
+            height="93"
             style="height: 93px; width: 93px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="93"
             x="3.5"
             xmlns="http://www.w3.org/2000/svg"
             y="3.5"
@@ -254,9 +256,11 @@
         </g>
         <g class="shadow">
           <svg
+            height="93"
             style="height: 93px; width: 93px"
             version="1.1"
             viewBox="0 0 850 850"
+            width="93"
             x="427"
             xmlns="http://www.w3.org/2000/svg"
             y="3.5"
@@ -468,6 +472,7 @@
         </g>
         <g>
           <svg
+            width="70" height="70"
             id="svg-image-YkDXto43T4GbDHSxEXTJ"
             style="height: 70px; width: 70px"
             version="1.1"

@@ -485,7 +485,14 @@
               <g>
                 <g>
                   <g>
-                    <svg style="height: 77px; width: 77px" viewBox="0 0 850 850" x="-0.5" y="89.5">
+                    <svg
+                      height="77"
+                      style="height: 77px; width: 77px"
+                      viewBox="0 0 850 850"
+                      width="77"
+                      x="-0.5"
+                      y="89.5"
+                    >
                       <g>
                         <path
                           class="top"
@@ -578,8 +585,10 @@
                 <g>
                   <g>
                     <svg
+                      height="77"
                       style="height: 77px; width: 77px"
                       viewBox="0 0 850 850"
+                      width="77"
                       x="356.5"
                       y="190.5"
                     >
@@ -674,7 +683,14 @@
               <g>
                 <g>
                   <g>
-                    <svg style="height: 77px; width: 77px" viewBox="0 0 850 850" x="356.5" y="10.5">
+                    <svg
+                      height="77"
+                      style="height: 77px; width: 77px"
+                      viewBox="0 0 850 850"
+                      width="77"
+                      x="356.5"
+                      y="10.5"
+                    >
                       <g>
                         <path
                           class="top"
