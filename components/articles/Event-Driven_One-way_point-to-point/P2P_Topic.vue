@@ -17,7 +17,14 @@
       <g>
         <g />
         <g>
-          <svg style="height: 77px; width: 77px" viewBox="0 0 850 850" x="0" y="18">
+          <svg
+            height="77"
+            style="height: 77px; width: 77px"
+            viewBox="0 0 850 850"
+            width="77"
+            x="0"
+            y="18"
+          >
             <g>
               <path
                 class="top"
@@ -88,7 +95,14 @@
         </g>
         <g />
         <g>
-          <svg style="height: 77px; width: 77px" viewBox="0 0 850 850" x="276.5" y="19.5">
+          <svg
+            height="77"
+            style="height: 77px; width: 77px"
+            viewBox="0 0 850 850"
+            width="77"
+            x="276.5"
+            y="19.5"
+          >
             <g>
               <path
                 class="top"

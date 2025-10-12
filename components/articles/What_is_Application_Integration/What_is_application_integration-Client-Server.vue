@@ -90,7 +90,14 @@
           </g>
         </g>
         <g class="shadow">
-          <svg style="height: 93px; width: 93px" viewBox="0 0 850 850" x="3.5" y="3.5">
+          <svg
+            height="93"
+            style="height: 93px; width: 93px"
+            viewBox="0 0 850 850"
+            width="93"
+            x="3.5"
+            y="3.5"
+          >
             <title>Client</title>
             <g>
               <path
@@ -247,6 +254,7 @@
         </g>
         <g class="shadow">
           <svg
+            width="93" height="93"
             style="height: 93px; width: 93px"
             version="1.1"
             viewBox="0 0 850 850"
