@@ -32,7 +32,6 @@
                   <svg
                     aria-hidden="true"
                     class="w-2 h-2"
-                    fill="none"
                     viewBox="0 0 14 14"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -65,7 +64,11 @@
       <div class="w-full px-3 pb-3 flex items-center justify-center">
         <div>
           Showing <span class="font-bold">{{ filteredArticles?.length }}</span> of
-          <span class="font-bold">{{ props?.articles?.length }}</span> articles
+          <span class="font-bold">{{
+            (props?.articles ? props?.articles?.length : 0) +
+            (props?.events ? props?.events?.length : 0)
+          }}</span>
+          articles
         </div>
       </div>
       <div
@@ -85,16 +88,28 @@
           v-resize-observer="onResizeOne"
           class="flex md:flex-row flex-col text-justify"
         >
-          <ArticleCard
-            :authors="article.authors"
-            :current-tags="tags"
-            :name="article.name"
-            :publication-date="article.publishDate"
-            :short="article.short"
-            :tags="article.tags"
-            :title="article.title"
-            class="mb-4"
-          />
+          <template v-if="(article as Event).eventType">
+            <EventCard
+              :current-tags="tags"
+              :description="(article as Event).description"
+              :img="(article as Event).img"
+              :name="(article as Event).name"
+              :publication-date="(article as Event).date as string"
+              :tags="(article as Event).tags"
+              class="mb-4"
+            ></EventCard>
+          </template>
+          <template v-else
+            ><ArticleCard
+              :authors="(article as Article).authors"
+              :current-tags="tags"
+              :name="(article as Article).name"
+              :publication-date="(article as Article).publishDate"
+              :short="(article as Article).short"
+              :tags="(article as Article).tags"
+              :title="(article as Article).title"
+              class="mb-4"
+          /></template>
         </div>
       </transition-group>
     </div>
@@ -103,35 +118,99 @@
 
 <script lang="ts" setup>
 import { computed, onMounted, ref, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { type LocationQueryValue, useRoute, useRouter } from 'vue-router'
 import { vResizeObserver } from '@vueuse/components'
 import BTGInput from '~/components/helpers/BTGInput.vue'
 import type { Article, ArticleContentRaw } from '~/Types/Article'
+import type { Event } from '~/Types/Event'
 import fuse from 'fuse.js'
 
-const tags: Ref<Array<string>> = ref([])
+/**
+ * Reactive reference to a string or array of LocationQueryValue.
+ *
+ * @type {Ref<(string | Array<LocationQueryValue>)>}
+ * @default ref([])
+ */
+const tags: Ref<string | Array<LocationQueryValue>> = ref([])
+/**
+ * Returns the current route object.
+ * The route object contains information about the current location in a web application,
+ * including the path, query parameters, and other relevant details.
+ *
+ * @returns {Object} The current route object.
+ */
 const route = useRoute()
+/**
+ * Returns a router instance that provides methods for managing navigation between different views or pages in a web application.
+ * The returned router can be used to programmatically navigate to new routes, check the current route, and listen for changes in the route.
+ */
 const router = useRouter()
 
+/**
+ * Reactive reference to a filter string used for searching or filtering articles. The value of this reference is a string that represents the current state of the article filter.
+ *
+ * @type {Ref<string>}
+ */
 const articleFilter = ref('')
-const articlesFilteredByName: Ref<Array<Article>> = ref([])
+/**
+ * Reactive reference to an array of articles and events filtered by name.
+ *
+ * @type {Ref<Array<Article | Event>>}
+ * @description Holds a reactive collection of article and event objects that have been filtered based on their names. This is typically used in data-driven applications where filtering based on user input or other dynamic criteria is required.
+ */
+const articlesFilteredByName: Ref<Array<Article | Event>> = ref([])
+/**
+ * Reactive reference to an array of raw article content objects.
+ * Used to store and manage the current list of articles fetched or generated within the application.
+ * Each ArticleContentRaw object represents a single piece of article data, its structure is not specified here.
+ */
 const articlesContent: Ref<Array<ArticleContentRaw>> = ref([])
 
+/**
+ * maxHeight is a reactive reference that holds the maximum height value.
+ * It is typically used to dynamically set the height of elements or containers.
+ */
 const maxHeight = ref(0)
+/**
+ * A reactive reference indicating whether all tags should be shown.
+ *
+ * @type {Ref<boolean>}
+ * @default false
+ */
 const showAllTags = ref(false)
 
+/**
+ * A reactive reference to a Node.js timeout object, used to debounce function calls.
+ * This variable is initialized as `null` and can be set to a timeout object when debouncing is required,
+ * or reset to `null` when debouncing is not active.
+ *
+ * @type {Ref<NodeJS.Timeout | null>}
+ * @ref
+ */
 const debounceWait: Ref<NodeJS.Timeout | null> = ref(null)
 
+/**
+ * Object containing arrays of data.
+ *
+ * @typedef {Object} Props
+ * @property {Array<Article>} articles - List of article objects.
+ * @property {Array<Event>} events - List of event objects.
+ */
 const props = defineProps({
-  articles: Array<Article>
+  articles: Array<Article>,
+  events: Array<Event>
 })
 
 props.articles?.sort((a, b) => {
   return Date.parse(a.publishDate) > Date.parse(b.publishDate) ? -1 : 1
 })
 
+props.events?.sort((a, b) => {
+  return Date.parse(a.date as string) > Date.parse(b.date as string) ? -1 : 1
+})
+
 onMounted(async () => {
-  articlesFilteredByName.value = props.articles as Article[]
+  articlesFilteredByName.value = [...(props.articles as Article[]), ...(props.events as Event[])]
   window.addEventListener('resize', onResize)
 
   if (route.query && route.query.tags) {
@@ -144,9 +223,10 @@ onMounted(async () => {
 })
 
 /**
- * onResizeOne
+ * Callback function for handling the resizing of an element.
+ * Updates the 'max-height' CSS variable in the :root selector based on the border box size of the resized element, if it exceeds the current max height.
  *
- * @param resizeEvent
+ * @param {ResizeObserverEntry[]} resizeEvent - Array containing one or more ResizeObserverEntry objects representing the elements that have been resized.
  */
 const onResizeOne = (resizeEvent: ResizeObserverEntry[]) => {
   if (resizeEvent && resizeEvent[0] && resizeEvent[0].borderBoxSize[0]) {
@@ -161,7 +241,13 @@ const onResizeOne = (resizeEvent: ResizeObserverEntry[]) => {
 }
 
 /**
- * onResize
+ * This function is called when the window size is resized.
+ * It updates the maximum height of articles and sets a CSS variable
+ * for smooth transition effects based on the new height.
+ *
+ * @function onResize
+ * @type {function}
+ * @description Adjusts maxHeight based on article heights and updates CSS variable
  */
 const onResize = () => {
   maxHeight.value = 0
@@ -178,8 +264,9 @@ const onResize = () => {
 }
 
 /**
- * removeTag
- * @param tag
+ * Removes a specified tag from the current list of tags and updates the URL accordingly.
+ *
+ * @param {string} tag - The tag to be removed.
  */
 const removeTag = (tag: string) => {
   const tempArray = [...tags.value].filter((el) => {
@@ -195,9 +282,13 @@ const removeTag = (tag: string) => {
 }
 
 /**
- * addTag
+ * Adds a tag to the current route's query parameters.
  *
- * @param tag
+ * If the specified tag is already present, no action is taken.
+ * Otherwise, the tag is appended to the 'tags' parameter in the route's query string,
+ * separating multiple tags with commas if necessary.
+ *
+ * @param {string} tag - The tag to be added.
  */
 const addTag = (tag: string) => {
   if (tags.value.includes(tag)) {
@@ -214,20 +305,32 @@ const addTag = (tag: string) => {
 }
 
 /**
- * filteredArticles
+ * A computed property that filters and sorts articles and events based on tags and a filter.
+ * It combines both articles and events into one array, then applies the following filters:
+ * 1. Tags: Filters articles/events that include any of the specified tags.
+ * 2. Name Filter: Filters articles/events whose titles match any item in `articlesFilteredByName`.
  *
- * @type {ComputedRef<any[]|*>}
+ * The resulting array is sorted by date, with more recent items appearing first.
+ *
+ * @type {ComputedRef<Array<Article | Event>>}
+ * @returns {Array<Article | Event>} - An array of filtered and sorted articles and events.
  */
 const filteredArticles = computed(() => {
   if (tags.value.length === 0 && articleFilter.value.length === 0) {
-    return props.articles
+    const array = [...(props.articles as Article[]), ...(props.events as Event[])]
+    return array.sort((a: Article | Event, b: Article | Event) => {
+      const ADate = (a as Article).publishDate ? (a as Article).publishDate : (a as Event).date
+      const BDate = (b as Article).publishDate ? (b as Article).publishDate : (b as Event).date
+
+      return Date.parse(ADate as string) > Date.parse(BDate as string) ? -1 : 1
+    })
   }
 
-  let tagFiltered = props.articles ? props.articles : []
+  let tagFiltered = [...(props.articles as Article[]), ...(props.events as Event[])]
   if (tags.value.length > 0) {
     tagFiltered = tagFiltered.filter((article) => {
       for (let i = 0; i < tags.value.length; i++) {
-        if (article.tags.includes(tags.value[i])) {
+        if (article.tags.includes(tags.value[i] as string)) {
           return true
         }
       }
@@ -236,13 +339,25 @@ const filteredArticles = computed(() => {
     })
   }
 
-  return tagFiltered.filter((el) => {
-    return articlesFilteredByName.value.some((article) => article.title === el.title)
+  const array = tagFiltered.filter((el) => {
+    const title = (el as Article).title ? (el as Article).title : el.name
+    return articlesFilteredByName.value.some(
+      (article) => (article as Article).title === title || (article as Event).name === title
+    )
+  })
+
+  return array.sort((a: Article | Event, b: Article | Event) => {
+    const ADate = (a as Article).publishDate ? (a as Article).publishDate : (a as Event).date
+    const BDate = (b as Article).publishDate ? (b as Article).publishDate : (b as Event).date
+
+    return Date.parse(ADate as string) > Date.parse(BDate as string) ? -1 : 1
   })
 })
 
 /**
- * allTags
+ * Computed property that retrieves and sorts unique tags from articles.
+ *
+ * @returns {Array<string>} - A sorted array of unique tags extracted from the `props.articles`.
  */
 const allTags = computed((): Array<string> => {
   const all = new Set()
@@ -258,11 +373,11 @@ const allTags = computed((): Array<string> => {
 })
 
 /**
- * debounce
+ * Debounces a given function so it is only called after a specified wait time has elapsed since the last call.
  *
- * @param func
- * @param wait
- * @returns {(function(...[*]): void)|*}
+ * @param {Function} func - The function to be debounced.
+ * @param {number} wait - The number of milliseconds that must elapse before `func` is invoked again.
+ * @returns {Function} A new function that, when invoked, will debounce the original `func`.
  */
 const debounce = (func: () => void, wait: number) => {
   return function executedFunction(...args) {
@@ -274,7 +389,17 @@ const debounce = (func: () => void, wait: number) => {
 }
 
 /**
- * searchForArticles
+ * Searches for articles based on user input.
+ *
+ * This function debounces the search process to avoid excessive calls,
+ * filters articles by a given keyword, and updates the filtered list accordingly.
+ * If no keyword is provided or the keyword is too short, it displays all available articles.
+ *
+ * @param {Article[]} props.articles - List of article objects to be searched.
+ * @param {Event[]} props.events - List of event objects to be searched.
+ * @param {string} articleFilter.value - The current user input used for filtering articles.
+ * @param {Article[]} articlesContent.value - Array containing all articles and events.
+ * @param {Article[]} articlesFilteredByName.value - Output array displaying filtered articles.
  */
 const searchForArticles = () => {
   if (articlesContent.value.length === 0) {
@@ -284,7 +409,7 @@ const searchForArticles = () => {
     if (articleFilter.value.length > 2) {
       const filterLower = articleFilter.value.toLowerCase().trim()
 
-      const tempArticles = props.articles ? props.articles : []
+      const tempArticles = [...(props.articles as Article[]), ...(props.events as Event[])]
 
       const options = {
         isCaseSensitive: true,
@@ -301,14 +426,30 @@ const searchForArticles = () => {
       articlesFilteredByName.value = tempArticles.filter((article) => {
         if (
           fuseSearchResult.some((el) => {
-            return el.item.title === article.title
+            return (
+              el.item.title === (article as Article).title ||
+              el.item.title === (article as Event).name
+            )
           })
         ) {
           return true
         }
+
+        if ((article as Article).title) {
+          if ((article as Article).title.toLocaleLowerCase().includes(filterLower)) {
+            return true
+          }
+        } else {
+          if ((article as Event).name.toLocaleLowerCase().includes(filterLower)) {
+            return true
+          }
+        }
       })
     } else {
-      articlesFilteredByName.value = props.articles ? props.articles : []
+      articlesFilteredByName.value = [
+        ...(props.articles as Article[]),
+        ...(props.events as Event[])
+      ]
     }
   }
 }
