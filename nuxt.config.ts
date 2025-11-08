@@ -21,28 +21,6 @@ export default defineNuxtConfig({
     }
   },
 
-  security: {
-    nonce: true,
-    ssg: {
-      meta: true, // Enables CSP as a meta tag in SSG mode
-      hashScripts: false, // Enables CSP hash support for scripts in SSG mode
-      hashStyles: false, // Disables CSP hash support for styles in SSG mode (recommended)
-      exportToPresets: true // Export security headers to Nitro presets
-    },
-    sri: true,
-    headers: {
-      contentSecurityPolicy: {
-        'script-src': [
-          "'self'",
-          "'strict-dynamic'",
-          "'nonce-{{nonce}}'",
-          "'sha256-CXuv9HeSMBFjwH6VgXbNh8vf6PwIWNqMI6hN1wgH+AA='"
-        ],
-        'style-src': ["'self'", "'unsafe-inline'"]
-      }
-    }
-  },
-
   hooks: {
     'nitro:config': (nitroConfig) => {
       nitroConfig.esbuild = nitroConfig.esbuild || {}
@@ -118,6 +96,20 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     'nuxt-seo-utils',
-    'nuxt-mongoose'
-  ]
+    'nuxt-mongoose',
+    'nuxt-gtag'
+  ],
+
+  gtag: {
+    id: 'G-PTPGZG8THC',
+    config: {
+      anonymize_ip: true,
+      send_page_view: false,
+      linker: {
+        domains: ['bridgingthegap.eu.com']
+      }
+    },
+    debug: true,
+    disableAutoPageTrack: false
+  }
 })

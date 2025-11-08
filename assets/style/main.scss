@@ -36,6 +36,7 @@
 
   --mainTransition: all 0.5s ease;
   --cardTransition: all 200ms;
+  --transcriptTransition: all 0.5s;
   --diagramColorTransition: all 500ms ease-in-out;
   --navigationButtonTransition: text-decoration-color 300ms;
 
@@ -97,6 +98,7 @@
     --cardTransition: none !important;
     --navigationButtonTransition: none !important;
     --diagramColorTransition: none !important;
+    --transcriptTransition: none !important;
     --scroll-behavior: inherit !important;
   }
 }
@@ -200,9 +202,18 @@ article ul ul {
   width: 0.75rem;
 }
 
+.cutAfterOneRow {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .cutAfterFourRows {
   display: -webkit-box;
   -webkit-line-clamp: 4;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -255,7 +266,7 @@ p:has(+ p) {
   font-weight: 600;
 }
 
-h1{
+h1 {
   font-size: var(--h1); //30px
   line-height: calc(1ex / 0.42);
   margin: calc(1ex / 0.42) 0;
@@ -413,3 +424,4 @@ h5 {
 .appearFromTop-leave-from {
   height: 24rem;
 }
+

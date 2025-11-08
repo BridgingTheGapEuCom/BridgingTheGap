@@ -314,18 +314,20 @@ const processBadges = async (badges: Array<SignedBadge>) => {
         imageUrl = imageUrl.replace('https://bridgingthegap.eu.com', 'http://localhost:3000')
       }
 
-      badgesList.value.push({
-        _id: badge._id,
-        issuanceDate: DateTime.fromISO(badge.issuanceDate).toJSDate().toLocaleString('en-GB', {
-          weekday: 'long',
-          month: 'long',
-          day: 'numeric',
-          year: 'numeric'
-        }),
-        description: achievement.description,
-        image: imageUrl,
-        name: achievement.name
-      })
+      if (badge) {
+        badgesList.value.push({
+          _id: badge._id,
+          issuanceDate: DateTime.fromISO(badge.issuanceDate).toJSDate().toLocaleString('en-GB', {
+            weekday: 'long',
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'
+          }),
+          description: achievement.description,
+          image: imageUrl,
+          name: achievement.name
+        })
+      }
     }
   } catch (e) {
     console.log(e)

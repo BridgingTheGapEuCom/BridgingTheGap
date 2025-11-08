@@ -46,13 +46,13 @@
           v-for="(tag, index) of tags"
           :key="`${tag}-${index}`"
           :class="{
-            'text-gray-600': !currentTags?.includes(tag),
-            'dark:text-gray-400': !currentTags?.includes(tag),
-            'text-black': currentTags?.includes(tag),
-            'dark:text-white': currentTags?.includes(tag),
-            'font-bold': currentTags?.includes(tag)
+            'text-gray-600': !currentTags?.includes(tag as string),
+            'dark:text-gray-400': !currentTags?.includes(tag as string),
+            'text-black': currentTags?.includes(tag as string),
+            'dark:text-white': currentTags?.includes(tag as string),
+            'font-bold': currentTags?.includes(tag as string)
           }"
-          :to="tagLink(tag)"
+          :to="tagLink(tag as string)"
           class="md:inline pr-2 hover:text-black hover:dark:text-gray-50 navigation-button"
         >
           #{{ tag }}
@@ -63,7 +63,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useRoute } from 'vue-router'
+import { type LocationQueryValue, useRoute } from 'vue-router'
 import type { Author } from '~/Types/Article'
 import { mdiCircleSmall } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
@@ -74,8 +74,8 @@ defineProps({
   name: { type: String, required: true }, // The unique name/slug of the article.
   title: { type: String, required: true }, // The title of the article.
   short: { type: String, required: true }, // A short description of the article.
-  tags: { type: Array<string>, required: false, default: [] }, // A list of tags associated with the article.
-  currentTags: { type: Array<string>, required: true }, // A list of currently active tags for filtering.
+  tags: { type: Array<String>, required: false, default: [] }, // A list of tags associated with the article.
+  currentTags: { type: [String, Array<LocationQueryValue>], required: true }, // A list of currently active tags for filtering.
   publicationDate: { type: String, required: true }, // The publication date of the article.
   authors: { type: Array<Author>, required: true } // A list of authors of the article.
 })

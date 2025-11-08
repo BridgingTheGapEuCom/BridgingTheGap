@@ -229,26 +229,123 @@ import articles from '../articles.json'
 import { mdiArrowLeft } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
 
+/**
+ * @typedef {Object} Props
+ * @property {boolean} [dark=false] - Determines if the component should render in dark mode. Default is false.
+ */
 const props = defineProps({
   dark: { type: Boolean, default: false }
 })
 
+/**
+ * Provides access to the current route information within a React component.
+ * Returns an object containing details about the active route, such as the path, parameters, and query string.
+ *
+ * @returns {Object} An object with the following properties:
+ *  - path: A string representing the current URL path.
+ *  - params: An object containing dynamic route parameters if any.
+ *  - query: An object containing query parameters from the URL.
+ */
 const route = useRoute()
+/**
+ * Returns the router instance associated with the current component or application context.
+ * This instance provides methods for navigation, route management, and obtaining information about the current route.
+ *
+ * @returns {Router} The router instance.
+ */
 const router = useRouter()
 
+/**
+ * A reactive reference to the name of an article.
+ * Used for managing state in Vue 3 components, especially when dealing with form data or dynamic content rendering.
+ */
 const articleName = ref('')
+/**
+ * A reactive reference that holds a string value.
+ * This is useful for managing state in reactive applications, allowing the value to be observed and updated.
+ */
 const title = ref('')
+/**
+ * Reactive reference to a string that indicates whether content is published or not.
+ *
+ * @type {Ref<string>}
+ * @public
+ */
 const published = ref('')
+/**
+ * Reactive reference to the last update timestamp of some data.
+ * This variable holds a string representing the most recent modification time in ISO 8601 format.
+ * It is typically updated whenever the associated data is changed, ensuring that it reflects the latest update.
+ */
 const lastUpdate = ref('')
+/**
+ * An array reference used to store bibliographic entries. This variable acts as a container for managing collections of sources, such as books, articles, or other scholarly works, that are referenced in a document or project.
+ *
+ * @type {Array}
+ * @property {Object} bibliography - The array storing bibliographic entries.
+ */
 const bibliography = ref([])
+/**
+ * A reactive reference to an array of related articles.
+ * This variable is used to store and manage a list of articles that are relevant or similar to the current content being viewed.
+ * It provides reactivity, allowing components to automatically update when the related articles change.
+ */
 const relatedArticles = ref([])
+/**
+ * An array that holds references to reviewers.
+ * Each element in the array should be a reference object representing a reviewer.
+ */
 const reviewers = ref([])
+/**
+ * An array of author objects. Each object represents an author with their details.
+ * The array is mutable and can be modified to add, remove, or update authors.
+ *
+ * @type {Array<Object>}
+ * @property {string} name - The full name of the author.
+ * @property {string} email - The contact email address of the author.
+ * @property {string} affiliation - The organization or institution the author belongs to.
+ * @property {boolean} isPrimary - Indicates if this author is the primary point of contact for a work.
+ *
+ * Example:
+ * const authors = ref([
+ *   {
+ *     name: 'John Doe',
+ *     email: 'john.doe@example.com',
+ *     affiliation: 'Example Corp',
+ *     isPrimary: true
+ *   }
+ * ]);
+ */
 const authors = ref([])
+/**
+ * A reference to an array of co-authors.
+ * Initially empty, it can be used to store information about contributors to a project or document.
+ * Each element in the array is expected to represent a single co-author and could contain relevant data like name, email, etc.
+ */
 const coAuthors = ref([])
+/**
+ * A reference to an empty array.
+ *
+ * @type {Array}
+ */
 const contents = ref([])
+/**
+ * Variable representing the lowest intersecting index.
+ * Default value is -1, indicating no intersection found.
+ */
 const lowestIntersecting = ref(-1)
+/**
+ * A reference to an array that holds content elements.
+ * This array is used to store and manage various components or data
+ * that are dynamically added or manipulated within a user interface.
+ */
 const contentElements = ref([])
 
+/**
+ * A reference to an array of elements. This variable holds a mutable list that can be modified at runtime, including adding or removing items.
+ *
+ * @type {Array}
+ */
 const tags = ref([])
 
 onMounted(async () => {
@@ -269,9 +366,12 @@ watch(route, async (current, prev) => {
 })
 
 /**
- * sortedReviewers
+ * A computed property that returns a sorted array of reviewers.
  *
- * @type {ComputedRef<Array<UnwrapRefSimple<*>>|[]>}
+ * The sorting is based on the 'reviewer' field of each item in ascending order.
+ * If `reviewers.value` is not defined or null, an empty array is returned.
+ *
+ * @type {Ref<Array<Object>>}
  */
 const sortedReviewers = computed(() => {
   if (reviewers.value) {
@@ -284,7 +384,14 @@ const sortedReviewers = computed(() => {
 })
 
 /**
- * onScroll
+ * Handles the scroll event for a list of content elements.
+ * Updates the URL hash based on the current visible content element.
+ * Scrolls to the top of the body if the list is empty.
+ *
+ * @function
+ * @name onScroll
+ * @listens window#scroll
+ * @returns {void}
  */
 const onScroll = () => {
   let last = null
@@ -321,9 +428,11 @@ const onScroll = () => {
 }
 
 /**
- * updateData
+ * Asynchronously updates the article data based on the current route and SSR status.
  *
- * @returns {Promise<void>}
+ * @param {boolean} ssr - Indicates whether the function is running in a server-side rendering environment.
+ * @async
+ * @returns {void}
  */
 const updateData = async (ssr) => {
   if (articleName.value === route.name.replace('articles-', '')) {
@@ -412,10 +521,10 @@ const updateData = async (ssr) => {
 }
 
 /**
- * findRelatedArticles
+ * Finds and returns an array of articles related to the given tags.
  *
- * @param relatedTags
- * @returns {any[]}
+ * @param {Array<string>} relatedTags - An array of tags to search for.
+ * @returns {Array<{ title: string, name: string }>} - An array of objects containing the title and name of related articles.
  */
 const findRelatedArticles = (relatedTags) => {
   const articleSet = new Set()
@@ -431,7 +540,10 @@ const findRelatedArticles = (relatedTags) => {
 }
 
 /**
- * createContents
+ * Creates a hierarchical structure of content elements from the first 'article' element in the DOM.
+ * Each heading ('h2', 'h3', 'h4', 'h5') becomes a node in this hierarchy, with IDs and intersection IDs.
+ * Handles duplicate IDs by appending a count to them.
+ * Updates the route hash if it matches an ID within the content structure.
  */
 const createContents = () => {
   const article = document.getElementsByTagName('article')[0]
@@ -546,10 +658,10 @@ const createContents = () => {
 }
 
 /**
- * tagLink
+ * Generates a URL with the specified tag added or removed from the query parameter 'tags'.
  *
- * @param tag
- * @returns {string}
+ * @param {string} tag - The tag to add or remove from the URL.
+ * @return {string} - The new URL with the updated 'tags' query parameter.
  */
 const tagLink = (tag) => {
   if (route.query && route.query.tags) {
