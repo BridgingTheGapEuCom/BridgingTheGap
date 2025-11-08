@@ -4,28 +4,32 @@
     class="card bg-neutral-50 dark:bg-neutral-900 dark:text-gray-50 text-black grid md:flex md:grid-cols-2 w-full border-gray-400 rounded-md border dark:border-gray-800 md:hover:shadow-lg relative"
   >
     <!-- Link wrapping the article image, navigates to the article's page -->
-    <NuxtLink v-if="smallWidth" :to="`/streams/${name}/video`">
+    <NuxtLink v-if="smallWidth" :to="prepareLink">
       <!-- Intersection observer for lazy loading the image -->
       <div
         v-intersection-observer="onImageInView"
-        class="md:min-w-[20rem] max-h-[18rem] overflow-hidden"
+        class="md:min-w-[20rem] max-h-[18rem] overflow-hidden image-container"
       >
         <!-- The article image, shown only when visible in the viewport -->
         <img
           v-show="imageVisible"
           :alt="`${name} image`"
           :src="img"
-          class="md:max-w-[30rem] md:max-h-[16rem] w-full md:rounded-l-none md:rounded-r-md rounded-t-md"
+          class="md:max-w-[30rem] md:max-h-[16rem] w-full md:rounded-l-none md:rounded-r-md rounded-t-md original-image"
           loading="lazy"
         />
+        <div
+          v-if="new Date(publicationDate) > new Date()"
+          class="watermark-overlay whitespace-nowrap text-5xl font-bold text-neutral-700"
+        >
+          Upcoming Event
+        </div>
       </div>
     </NuxtLink>
     <!-- Container for the article's textual content -->
     <div class="my-2 mx-3 flex flex-col justify-between">
       <!-- Article Title -->
-      <NuxtLink
-        :to="`/streams/${name.replaceAll(' ', '_').replaceAll('(', '').replaceAll(')', '')}/video`"
-      >
+      <NuxtLink :to="prepareLink">
         <div class="cutAfterOneRow text-left text-xl my-0 font-semibold hover:underline">
           {{ name }}
         </div>
@@ -43,13 +47,13 @@
           v-for="(tag, index) of tags"
           :key="`${tag}-${index}`"
           :class="{
-            'text-gray-600': !currentTags?.includes(tag),
-            'dark:text-gray-400': !currentTags?.includes(tag),
-            'text-black': currentTags?.includes(tag),
-            'dark:text-white': currentTags?.includes(tag),
-            'font-bold': currentTags?.includes(tag)
+            'text-gray-600': !currentTags?.includes(tag as string),
+            'dark:text-gray-400': !currentTags?.includes(tag as string),
+            'text-black': currentTags?.includes(tag as string),
+            'dark:text-white': currentTags?.includes(tag as string),
+            'font-bold': currentTags?.includes(tag as string)
           }"
-          :to="tagLink(tag)"
+          :to="tagLink(tag as string)"
           class="md:inline pr-2 hover:text-black hover:dark:text-gray-50 navigation-button"
         >
           #{{ tag }}
@@ -57,20 +61,26 @@
       </div>
     </div>
     <!-- Link wrapping the article image, navigates to the article's page -->
-    <NuxtLink v-if="!smallWidth" :to="`/streams/${name}/video`">
+    <NuxtLink v-if="!smallWidth" :to="prepareLink">
       <!-- Intersection observer for lazy loading the image -->
       <div
         v-intersection-observer="onImageInView"
-        class="md:min-w-[20rem] max-h-[18rem] overflow-hidden"
+        class="md:min-w-[20rem] max-h-[18rem] overflow-hidden image-container"
       >
         <!-- The article image, shown only when visible in the viewport -->
         <img
           v-show="imageVisible"
           :alt="`${name} image`"
           :src="img"
-          class="md:max-w-[30rem] md:max-h-[16rem] w-full md:rounded-l-none md:rounded-r-md rounded-t-md"
+          class="md:max-w-[30rem] md:max-h-[16rem] w-full md:rounded-l-none md:rounded-r-md rounded-t-md original-image"
           loading="lazy"
         />
+        <div
+          class="watermark-overlay whitespace-nowrap text-4xl font-bold text-neutral-700"
+          v-if="new Date(publicationDate) > new Date()"
+        >
+          Upcoming Event
+        </div>
       </div>
     </NuxtLink>
   </div>
@@ -84,11 +94,11 @@ import tailwindConfig from '../tailwind.config.js'
 import { useWindowSize } from '@vueuse/core'
 
 // Defines the props that this component accepts.
-defineProps({
+const props = defineProps({
   name: { type: String, required: true }, // The unique name/slug of the article.
-  tags: { type: Array<String>, required: false, default: [] }, // A list of tags associated with the article.
+  tags: { type: Array<String>, required: false, default: [] }, // A list of tags associated with the video.
   currentTags: { type: [String, Array<LocationQueryValue>], required: true }, // A list of currently active tags for filtering.
-  publicationDate: { type: String, required: true }, // The publication date of the article.
+  publicationDate: { type: String, required: true }, // The publication date of the video.
 
   img: { type: String, required: true },
   description: { type: String, required: true }
@@ -138,6 +148,14 @@ const smallWidth = computed(() => {
 })
 
 /**
+ * This computed property prepares the link to the stream's video page.
+ * @returns {string} The formatted link to the stream's video page.
+ */
+const prepareLink = computed(() => {
+  return `/streams/${props.name.replaceAll(' ', '_').replaceAll('(', '').replaceAll(')', '')}/video`
+})
+
+/**
  * Callback for the intersection observer.
  * Sets 'imageVisible' to true when the image enters the viewport.
  *
@@ -150,4 +168,30 @@ const onImageInView = (data: Array<IntersectionObserverEntry>) => {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.image-container {
+  /* This is crucial for positioning the watermark relative to the image */
+  position: relative;
+  /* Adjust size as needed, e.g., max-width: 500px; */
+  display: inline-block; /* To contain the absolute watermark within the image size */
+}
+
+.original-image {
+  /* Ensures the image fills the container */
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.watermark-overlay {
+  /* Overlay properties */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%) rotate(-20deg); /* Center and rotate for classic look */
+
+  /* Appearance */
+  pointer-events: none; /* Allows clicks to pass through to the image below */
+  z-index: 2;
+}
+</style>

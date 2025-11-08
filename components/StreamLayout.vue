@@ -28,6 +28,7 @@
     </div>
 
     <div
+      v-if="transcript.length > 0"
       class="flex justify-center items-center mt-2 gap-2 cursor-pointer hover:text-black dark:hover:text-white text-neutral-500"
       @click="showVideo = !showVideo"
     >
@@ -40,8 +41,17 @@
     >
       <div class="transcript-list">
         <div class="w-full">
-          <div class="grid grid-cols-[min-content_1fr]">
+          <div
+            :class="{
+              'grid-cols-[min-content_min-content_1fr]': !showVideo,
+              'grid-cols-[min-content_1fr]': showVideo
+            }"
+            class="grid"
+          >
             <template v-for="(line, index) in transcript" :key="index">
+              <div v-if="!showVideo" class="transcript-line-full">
+                {{ secondsToDate(line.startTime) }}
+              </div>
               <div
                 :ref="(el) => setLineRef(el, index)"
                 :class="{
@@ -96,8 +106,11 @@ const props = defineProps({
     required: true
   },
   transcript: {
-    type: Object,
-    required: true
+    type: Array,
+    required: false,
+    default() {
+      return []
+    }
   }
 })
 
@@ -206,6 +219,12 @@ const setLineRef = (el, index) => {
   if (el) {
     lineRefs.value[index] = el
   }
+}
+
+const secondsToDate = (seconds) => {
+  const date = new Date(null)
+  date.setSeconds(seconds)
+  return date.toISOString().slice(11, 19)
 }
 
 /**

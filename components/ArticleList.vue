@@ -68,7 +68,7 @@
             (props?.articles ? props?.articles?.length : 0) +
             (props?.events ? props?.events?.length : 0)
           }}</span>
-          articles
+          articles/events
         </div>
       </div>
       <div
@@ -361,9 +361,14 @@ const filteredArticles = computed(() => {
  */
 const allTags = computed((): Array<string> => {
   const all = new Set()
-  if (props.articles) {
+  if (props.articles && props.events) {
     for (const article of props.articles) {
       for (const tag of article.tags) {
+        all.add(tag)
+      }
+    }
+    for (const event of props.events) {
+      for (const tag of event.tags) {
         all.add(tag)
       }
     }
