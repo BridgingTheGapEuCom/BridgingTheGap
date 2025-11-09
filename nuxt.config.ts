@@ -1,13 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { randomBytes } from 'crypto'
-
-function generateNonce(): string {
-  return randomBytes(16).toString('base64')
-}
 
 export default defineNuxtConfig({
   nitro: {
-    compressPublicAssets: true
+    compressPublicAssets: true,
+    preset: 'node-server'
   },
 
   ssr: true,
@@ -25,32 +21,71 @@ export default defineNuxtConfig({
     }
   },
 
-  security: {
-    nonce: true, // Enables HTML nonce support in SSR mode
-    ssg: {
-      meta: true, // Enables CSP as a meta tag in SSG mode
-      hashScripts: false, // Enables CSP hash support for scripts in SSG mode
-      hashStyles: false, // Disables CSP hash support for styles in SSG mode (recommended)
-      exportToPresets: true // Export security headers to Nitro presets
-    },
-    sri: true,
-    headers: {
-      contentSecurityPolicy: {
-        'script-src': [
-          "'self'",
-          "'strict-dynamic'", // Modify with your custom CSP sources
-          "'nonce-{{nonce}}'" // Enables CSP nonce support for scripts in SSR mode, supported by almost any browser (level 2)
-        ],
-        'script-src-attr': ["'unsafe-inline'"]
-      }
-    }
-  },
-
   hooks: {
     'nitro:config': (nitroConfig) => {
       nitroConfig.esbuild = nitroConfig.esbuild || {}
       nitroConfig.esbuild.define = nitroConfig.esbuild.define || {}
       nitroConfig.esbuild.define.nonce = () => `"${generateNonce()}"`
+    }
+  },
+
+  security: {
+    strict: true,
+    headers: {
+      contentSecurityPolicy: {
+        'img-src': [
+          "'self'",
+          'data:',
+          'https://i.ytimg.com',
+          'https://www.youtube.com',
+          'www.youtube-nocookie.com'
+        ],
+        'script-src': [
+          "'self'",
+          "'unsafe-inline'",
+          '*.youtube.com',
+          'https://www.googletagmanager.com',
+          'https://www.google.com',
+          'https://www.gstatic.com',
+          'www.youtube-nocookie.com'
+        ],
+        'connect-src': [
+          "'self'",
+          'https://www.googletagmanager.com',
+          'https://www.google-analytics.com',
+          'https://*.google-analytics.com'
+        ],
+        'style-src': ["'self'", 'https:', "'unsafe-inline'"],
+        'frame-src': [
+          "'self'",
+          'https://www.youtube.com',
+          'https://www.youtube-nocookie.com',
+          'https://www.google.com'
+        ],
+        'frame-ancestors': ["'self'", 'https://www.youtube.com']
+      },
+      crossOriginEmbedderPolicy: 'unsafe-none',
+      crossOriginOpenerPolicy: 'same-origin',
+      permissionsPolicy: {
+        camera: [],
+        'display-capture': [],
+        fullscreen: ['self', '"https://www.youtube.com"', '"https://www.youtube-nocookie.com"'],
+        autoplay: ['self', '"https://www.youtube.com"', '"https://www.youtube-nocookie.com"'],
+        'encrypted-media': [
+          'self',
+          '"https://www.youtube.com"',
+          '"https://www.youtube-nocookie.com"'
+        ],
+        accelerometer: ['self', '"https://www.youtube.com"', '"https://www.youtube-nocookie.com"'],
+        gyroscope: ['self', '"https://www.youtube.com"', '"https://www.youtube-nocookie.com"'],
+        'picture-in-picture': [
+          'self',
+          '"https://www.youtube.com"',
+          '"https://www.youtube-nocookie.com"'
+        ],
+        geolocation: [],
+        microphone: []
+      }
     }
   },
 
@@ -121,6 +156,21 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     'nuxt-seo-utils',
-    'nuxt-mongoose'
-  ]
+    'nuxt-mongoose',
+    'nuxt-gtag',
+    '@nuxt/scripts'
+  ],
+
+  gtag: {
+    id: 'G-PTPGZG8THC',
+    enabled: true,
+    initMode: 'auto',
+    config: {
+      anonymize_ip: true,
+      send_page_view: true,
+      linker: {
+        domains: ['bridgingthegap.eu.com']
+      }
+    }
+  }
 })

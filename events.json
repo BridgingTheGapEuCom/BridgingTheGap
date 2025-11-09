@@ -5,6 +5,7 @@
     "description": "Integrating today's interconnected systems presents significant challenges, requiring more than just technical solutions; this workshop explores how to leverage Domain-Driven Design (DDD) to tackle Enterprise Application Integration (EAI) by aligning technical efforts with core business domains. Moving beyond simple system connections, the interactive session provides practical, hands-on experience through scenarios, discussions, and trade-off analysis, equipping you with the skills and tools to design for interoperability, strategically manage system coupling with DDD, select appropriate EAI styles, and avoid common pitfalls in real-world integration challenges.",
     "date": "2025-05-21",
     "eventType": "Workshop",
+    "tags": ["Workshop"],
     "details": {
       "date": {
         "type": "date",
@@ -29,6 +30,7 @@
     "description": "Integrating today's interconnected systems presents significant challenges, requiring more than just technical solutions; this workshop explores how to leverage Domain-Driven Design (DDD) to tackle Enterprise Application Integration (EAI) by aligning technical efforts with core business domains. Moving beyond simple system connections, the interactive session provides practical, hands-on experience through scenarios, discussions, and trade-off analysis, equipping you with the skills and tools to design for interoperability, strategically manage system coupling with DDD, select appropriate EAI styles, and avoid common pitfalls in real-world integration challenges.",
     "date": "2025-06-04",
     "eventType": "Workshop",
+    "tags": ["Workshop"],
     "details": {
       "date": {
         "type": "date",
@@ -53,6 +55,7 @@
     "description": "Curious about making the leap from developer to architect? The Utrecht Mulesoft Meetup invites you to an engaging and insightful online discussion happening on June 18th at 18:30. This is a wonderful opportunity for developers aspiring to shift gears and step into the exciting world of architecture.\n\nJoin hosts Nicky van Steensel van der Aa and Karol Skrzymowski as they orchestrate a lively conversation with distinguished guests who have successfully walked this path:\n\n • Patryk Bandurski, an experienced Mulesoft Integration Architect currently working at PwC, proudly holding the title of Mulesoft Ambassador. He will share his insights and journey.\n\n • Mark Richards, a renowned Solutions Architect known all over the world. As an independent consultant and the mastermind behind developertoarchitect.com, Mark offers invaluable wisdom and practical advice on bridging the gap between development and architectural roles.\n\nThis panel discussion promises a deep dive into each of their personal journeys, elaborating on the challenges they faced, the resources, and the learning paths that paved their way. They'll discuss what contributed to their successful transitions, useful strategies for staying involved with coding despite the shift, and how becoming an architect has altered their view on development.\n\nFor those contemplating a career shift towards an architect role, this session is crafted particularly for you. Align your aspirations with knowledge and learn directly from the experts. Let their experiences guide you in carving your very own path to architecture success. Secure your spot and arm yourself with the insights necessary to elevate your professional journey!\n\nDon't miss out on this unique chance to learn, ask questions, and perhaps even network with these industry leaders. This session is not just a conversation; it's a stepping stone towards achieving your career dreams. Whether you're just starting to explore or are already on your way, there’s something beneficial here for everyone.\n\nPrepare to be inspired and informed through this enriching experience that aims to ignite your passion for growth and continuous learning in the field of software architecture.",
     "date": "2025-06-18",
     "eventType": "Workshop",
+    "tags": ["Workshop"],
     "details": {
       "date": {
         "type": "date",
@@ -77,6 +80,7 @@
     "description": "Welcome to \"Loosely Coupled,\" the brand new Live Stream series brought to you by BridgingTheGap.eu.com! Our project is dedicated to closing the knowledge divide in the IT field of Enterprise Application Integration by providing vendor-agnostic knowledge and comprehensive insights.\n\nFor our highly anticipated debut session, we are thrilled to host Fran Mendez, the creator of AsyncAPI, as our special guest. Together, we will explore the critical topic of \"Adopting Event-Driven Architecture.\"\n\nEvent-Driven Architecture plays a crucial role in ensuring seamless communication and functionality across diverse systems. However, its adoption often comes with significant challenges. In this session, we will deep-dive into the common hurdles, complexities, and real-world problemscape that organizations encounter when integrating EDA into their ecosystems. We aim to shed light on these obstacles, offering valuable perspectives to help you navigate this intricate domain.\n\nThis is a unique opportunity to gain a broader perspective on architectural styles and understand how application integration fits within them, empowering you with the knowledge to make informed decisions.\n\nAt Bridging the Gap, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of application integration!",
     "date": "2025-06-25",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -98,6 +102,7 @@
     "description": "This O'Reilly live event focuses on Effective Enterprise Application Integration (EAI), addressing the complexities of integrating distributed systems in today's data-driven world where data consistency and adaptability are crucial, especially with the rise of generative AI. Led by expert Karol Skrzymowski, the course delves into established architectural styles and patterns, teaching participants how to design and implement effective integration strategies, analyze trade-offs, and tackle common challenges like data quality and security, making it ideal for those working with complex integration solutions or looking to advance their skills in building interoperable IT ecosystems.",
     "date": "2025-07-30",
     "eventType": "Training",
+    "tags": ["Training"],
     "details": {
       "date": {
         "type": "date",
@@ -122,6 +127,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our next session, I'll be joined by Phillip Poynton - a recruiter with over 18 years of experience, and for the past 6 years, he's been exclusively focused on hiring Salesforce talent. Half British, half Polish, and living in Poland, Phillip brings a unique perspective on both the international and local recruitment landscapes.\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nThis will be a no-filter conversation about recruitment - the good, the bad, and the ugly. From the perspective of both recruiters and candidates, we'll dive into what's really going on in the job market today. With Phillip's candid approach, you can expect zero sugar-coating and plenty of real talk about what works (and what doesn't) in hiring.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.\n\nAt Bridging the Gap, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of IT talent!",
     "date": "2025-07-31",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -143,6 +149,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our next insightful session, we are thrilled to host Radek Orszewski, a distinguished Lean Agile Coach & Consultant, as our special guest. Together, we will explore the critical and often overlooked topic of \"Recognizing and Managing Cognitive Load.\"\n\nIn the demanding world of IT, cognitive load may significantly influence specialists in the industry. But what exactly is cognitive load? How can we effectively spot it, and more importantly, how do we get to the core of the problem to handle it? In this session we will dive into real-life examples of cognitive load and its impact, providing insight into how it may cause burnout and employee churn. This is an important discussion from the perspective of every employee, and an extremely vital one for team leaders and company management seeking to foster healthier, more productive environments.\n\nWe'll also touch upon the fascinating topic of how the popularization of Generative AI tools may change cognitive load, and how this relates to the evolving idea of a \"10x developer.\"\n\nThis is a unique opportunity to gain a broader perspective on mental well-being in the tech industry and empower yourself with the knowledge to make informed decisions for a more sustainable and effective work life.",
     "date": "2025-08-06",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -164,6 +171,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nAs a powerful follow-up to our upcoming session on \"Recognizing and Managing Cognitive Load\" with Radek Orszewski, we're excited to continue this crucial conversation with a deeper dive. For this session, we are thrilled to host Aleix Morgadas, an esteemed Engineering Strategy Consultant and CPTO at Teamperature, as our special guest. Together, we will further explore \"Understanding Cognitive Load\" and how to approach it in a more organized and impactful way.\n\nIn the demanding world of IT, truly understanding cognitive load goes beyond just recognizing its symptoms. This session will move beyond surface-level indicators like Key Performance Indicators (KPIs) to ask the right questions and delve into the core of how cognitive load influences IT specialists. We'll explore practical ways to gain a more comprehensive understanding of its presence and effects within teams and organizations.\n\nCrucially, we'll examine how to effectively bring this awareness to leadership and enable a better, more supportive workplace. This is an essential discussion for individuals looking to deepen their understanding, and particularly vital for team leaders and company management committed to fostering healthier, more productive, and sustainable environments.\n\nThis is a unique opportunity to gain advanced insights into managing mental well-being in the tech industry and empower yourself with the knowledge to make informed, systemic decisions for your team and organization.",
     "date": "2025-09-10",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -185,6 +193,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nIn this session, we're tackling a crucial topic: \"Data Mesh vs Application Integration.\" Join our guests Rachel Barton and Andrew Jones as we demystify the data mesh concept, contrasting it with traditional approaches and highlighting its focus on domain-based data products. We'll explore the link between application integration and data mesh, revealing what is the role of application integration in a successful data mesh implementation.\n\nOur discussion will bridge the language gap between data integration and application integration, stressing the need for a shared vocabulary across teams. We'll emphasize the critical collaboration required between data and integration architects to streamline data flow and achieve an enterprise-wide view of data, ensuring lineage and observability.\n\nFurthermore, we'll delve into the practical challenges of data mesh adoption, including the \"data product\" mindset and the tendency to overcomplicate new frameworks. This session will shed light on how organizational barriers - people, power struggles, and egos - often outweigh technical hurdles, underscoring the importance of data literacy and addressing resistance. Finally, we'll examine data contracts as a powerful mechanism for governance and quality in data movement, connecting them to real-world application integration practices.\n\nThis is an unmissable opportunity to gain clarity and strategic insights into these interconnected domains!",
     "date": "2025-08-20",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -206,6 +215,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our next session, we're excited to host Aaron Lee, Solutions Engineer at Solace. Aaron enjoys coding demos, making videos, and running workshops. He's an expert in Event-Driven Architecture (EDA), Microservices, application design, monitoring, time-series data, and visualization frameworks.\n\nIn this session, we'll explore how Publish-Subscribe differs from point-to-point communication, supported by engaging demos and real-life examples, including an interactive game!\n\nThis time around, we'll dive into the fundamental differences between Publish-Subscribe and point-to-point communication patterns. Get ready for some seriously cool demos and real-life examples! Plus, we've got an interactive game lined up to show the differences in practice, so we can get a real feel for how EDA works. It's going to be a blast!",
     "date": "2025-08-13",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -227,6 +237,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nWe’ve tackled this topic before and it’s making a comeback! We’ll be diving into IT recruitment once again! Joining us on this turbulent journey is: Gabi Preston-Phypers, Founder at Tooled Up Raccoons, and coming back to the stream: Phillip Poynton, who is Recruiting Salesforce Superstars.\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nIn this follow-up session, we will broaden the scope and look at the problem from various angles. We’ll discuss things like boolean searches, where candidates just fall through the cracks. We’ll take a go at unicorn hunting, where companies try to hire half a department in a single position. We’ll look underneath buzzwords and try to put that in the candidates perspective! We will be sprinting through various obstacles that sometimes we set for ourselves as candidates, recruiters or hiring managers! This isn't just about working with a broken process. It's about understanding how to survive it from both the employer and candidate perspectives.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.",
     "date": "2025-09-24",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -248,6 +259,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nAre you struggling to find the right API design for your project? Or perhaps your organization is suffering from “we’ve always done it this way” statements? The landscape is constantly evolving, and a \"one-size-fits-all\" approach just doesn't work.\n\nTune in to our next Live Stream: Navigating API Design. We’re bringing together two amazing minds from Codecentric, Dr. Miriam Greis and Daniel Kocot, to help you tackle the challenge of navigating API design!\n\nIn this session we’ll be diving head first into the Data Interface Quadrants (DIQs), a very interesting concept that goes beyond traditional API definitions. We'll discuss different approaches to APIs. We’ll touch upon the typical problems that we can stumble into at various companies in terms of perception of what APIs are for. On top of that we’ll have a chance to discuss how to turn APIs from just technical interfaces into being a part of the business model!\n\nJoin us if you’d like to move past the buzzwords and get a practical understanding of the role of APIs and API design in the modern IT landscape!",
     "date": "2025-10-09",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -269,6 +281,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nFor our next insightful session, we are thrilled to host Adeeb Tahir, the Field CTO at APIwiz, as our special guest. Together, we will dive deep into the critical topic of \"Federated API Management\", exploring the challenges and solutions in today's complex IT ecosystems.\n\nIn the modern world of distributed systems and microservices, the API Management problem is more complex than ever. What exactly is the core issue, and why are traditional approaches falling short? In this session, we will take a closer look at how API Management Federation is currently being done and, more importantly, how it could be done better. We’ll explore the essential components and strategic steps required to implement it properly, ensuring a more scalable and organized approach to your API landscape.\n\nThis is a unique opportunity to gain a broader perspective on modern API strategy and empower yourself with the knowledge to make informed decisions for a more coherent and effective API management framework.",
     "date": "2025-09-03",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -290,6 +303,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nAre you constantly grappling with the paradox of IT architecture? You have a vision for an elegant, perfect system (the desire), but you’re constrained by legacy debt, tight budgets, and shifting requirements (the limitation). Do you ever feel the unique psychological weight of constantly building for a future that doesn't yet exist?\n\nTune in to our next Live Stream: Architects Navigating the Human Condition, a special edition! We are thrilled to host renowned expert Mark Richards, architect, author, and founder of developertoarchitect.com, to help us unpack the challenges unique to the architect role.\n\nIn this session, we’ll move beyond diagrams and technical patterns to explore the human element of architecture. We will discuss:\n• The Cycle of Triumph and Failure: How to develop resilience and manage the emotional extremes of shipping a successful product versus a critical system failure.\n• The Burden of Foresight (Consciousness): Strategies for coping with the constant pressure of future-proofing and making today's decisions that impact tomorrow’s operations.\n• Making Order from Chaos: The psychological drive to simplify complexity and how architects can find meaning by connecting technical blueprints to clear, tangible business value.\n\nJoin us if you’re ready to acknowledge and conquer the shared, universal struggles of the IT Architect role, turning constraints into creative catalysts!",
     "date": "2025-10-11",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -311,6 +325,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nEver wonder what it takes to design a truly maintainable and scalable system in a very complex environment? On our next live stream, we'll be looking into a scenario, where IT architecture meets the physical world within a very lively environment of a Fast Moving Consumer Goods (FMCG) Warehouse!\n\nWe're thrilled to be joined by Valeriia Filimonova, a Staff Engineer at Picnic with extensive experience in Event-Driven Architecture. Valeriia will be pulling back the curtain to show us how they've leveraged EDA to power the warehouse systems. This is your chance to hear about a real-world implementation, from the initial problem statement to the specific decisions that led to their current success.\n\nDon't miss out on this practical session where we’ll discuss the role of EDA in warehouse systems, as well as, the journey of implementing this approach, including the challenges, successes and the rationale behind key architectural decisions.",
     "date": "2025-10-22",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -332,6 +347,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nIs the high cost of your IPaaS license forcing your company to reconsider their technology choices? Many companies are looking to escape platform lock-in by migrating from IPaaS technology vendors to open-source integration solutions or even just build interoperability capabilities from scratch. It sounds like a clear cost-saver, but are the hidden costs of such endeavor truly understood?\n\nIn line with our mission at Bridging the Gap to provide vendor-agnostic insight, we’re thrilled to host Brian Labelle, Enterprise Architect at Bribelle Business Solution Limited, for a crucial conversation that goes beyond the spreadsheet. We’ll be looking at how to approach such a migration and explain all the dependencies that reach way beyond technology and licenses.\n\nBrian will help us dissect:\n• The strategic drivers (beyond just licensing) pushing companies towards pure Java.\n• The critical challenges and hidden costs associated with this large-scale migration.\n• How to ensure you’re aware of all the costs before making the final decision.\n\nJoin the discussion! Don't make a multi-year architecture decision without the full picture.",
     "date": "2025-11-05",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -353,6 +369,7 @@
     "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nDo you struggle to build APIs whose purpose is shared and understood throughout your system landscape and beyond into the ecosystem? We’re continuing the conversation about proper API design and giving them purpose! This time, we’ll be tackling the design aspect from a more practical perspective with a live design session, where we’ll dismantle a use case - step-by-step! We’ll focus not only on designing a good API but also on building a shared understanding of its purpose using tools from Domain-Driven Design!\n\nTune in to our next Live Stream: Collaborative Modelling and API definitions in the age of AI. Guiding us through the process will be Dr. Annegret Junker, Chief Software Architect @ codecentric AG, a specialist in collaborative modelling and API design. We’ll be exploring not only modelling, but also speeding up the process by using Generative AI to craft a ready-to-implement specification more quickly.\n\nThis session will provide a practical viewpoint, covering:\n• Building a shared understanding with Domain Storytelling and a Visual Glossary.\n• Modeling a domain system's internal and external interoperability using domain events and context mapping to outline the interactions between various system modules,\n• Generating OpenAPI specifications by using the modeling output as input for Large Language Models (LLMs).\n\nIf you want to build APIs that are clearer, more purposeful, and driven by collective domain knowledge, join us live! Remember to ask questions!.",
     "date": "2025-11-12",
     "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -374,6 +391,7 @@
     "description": "Most integration landscapes grow messy, siloed, and become hard to change. This course shows you how to design interoperability with purpose. Apply Domain-Driven Design to integrate architecture so your systems work together, scale with your organization, and stay aligned to your business needs.\n\nOrganisations often reinvent the wheel when connecting systems. Custom point-to-point solutions emerge, silos deepen, and technical decisions drift away from business intent. This results in unwanted complexity that slows delivery and limits agility.\n\nStrategic Integration Design with DDD equips your team to turn integration into a strategic capability. By combining collaborative modelling with proven integration patterns, you will learn how to design flows that serve business goals, create reusable assets instead of one-off fixes, and evaluate when larger transformation steps are needed. Along the way, you will see how interoperability follows organizational structure (Conway’s Law in action) and how reducing different kinds of coupling leads to systems that can evolve with the business.\n\nParticipants value this course because it gives names and theories for practices they already use informally, demystifies industry jargon and introduces practical tools for comparing trade-offs.\n\nFor who?\n• Solution & Integration Architects,\n• Staff/Principal Engineers,\n• Engineering Managers, Directors, and Business Analysts, Consultants.\n\nLearning outcomes\n\nWhat You’ll Learn\n• Elicit integration requirements with EventStorming: Quickly map business processes, events, and bounded contexts to uncover where systems must interoperate.\n• Depict flows with Domain Message Flow: Visualize how events, commands, and queries travel across systems, and match them to well established integration patterns.\n• Apply trade-off analysis: Use a structured tool to weigh integration options and choose with confidence.\n• Recognize maturity stages: Understand the complexities of Enterprise Application Integration (EAI), and that they are not binary choices.\n• Reduce coupling: Identify different types of coupling, and learn how to balance them.\n• Demystify architecture styles: Place different approaches in context, clarifying what they solve and where their limits are.\n• Plan integrations purposefully: Design reusable solutions directly aligned with business needs, rather than ad-hoc fixes.\n\nWhy Attend?\n• Strategic clarity: Understand which integration approaches fit your context and how to explain trade-offs to stakeholders.\n• Shared language: Give teams a vocabulary to describe integration patterns and styles, reducing confusion and reliance on constantly misused buzzwords.\n• Direct applicability: Learn techniques & methods, which you can apply directly to your current business problems and system.\n• Organizational awareness: See how interoperability depends on the way teams are structured, and how to align system boundaries with business domains.\n• Future-proofing: Design integrations that remain flexible and reusable as your organization and technology landscape evolve.",
     "date": "2026-01-19",
     "eventType": "Workshop",
+    "tags": ["Workshop"],
     "details": {
       "date": {
         "type": "date",
@@ -435,3 +453,4 @@
     "YT": "https://youtube.com/live/5u9em8r0th8"
   }
 ]
+

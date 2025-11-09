@@ -100,7 +100,7 @@
         benefits, particularly in scenarios where security and controlled access to data are
         paramount.
       </p>
-      <h4>Architectural considerations</h4>
+      <h3>Architectural considerations</h3>
       <p>
         When considering the Event-Driven Polling pattern it is important to note that it is more
         complex compared to other EDA patterns due to the required two-step interaction. This comes
@@ -131,7 +131,7 @@
         all consumers. Adding a new consumer might introduce a requirement to change the API to
         accommodate business needs, that in turn might impact all other consumers.
       </p>
-      <h4>Operational Considerations</h4>
+      <h3>Operational Considerations</h3>
       <p>
         Operationally, the Event-Driven Polling pattern introduces some challenges as a consequence
         of adopting this pattern.

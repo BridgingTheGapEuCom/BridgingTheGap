@@ -1,17 +1,12 @@
 <template>
-  <div
-    tabindex="0"
-    aria-label=""
-    role="img"
-    class="syncSvgParent w-full"
-  >
+  <div aria-label="" class="syncSvgParent w-full" role="img" tabindex="0">
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      style="color-scheme:light dark;"
-      version="1.1"
-      width="800px"
       height="422px"
+      style="color-scheme: light dark"
+      version="1.1"
       viewBox="-0.5 -0.5 800 422"
+      width="800px"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <defs />
       <g>
@@ -25,24 +20,25 @@
                 <g>
                   <g>
                     <svg
+                      height="77"
+                      style="height: 77px; width: 77px"
                       viewBox="0 0 850 850"
+                      width="77"
                       x="-0.5"
                       y="99.5"
-                      width="77"
-                      height="77"
                     >
                       <g>
                         <path
-                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                           class="top"
+                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                         />
                         <path
-                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                           class="left"
+                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                         />
                         <path
-                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                           class="right"
+                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                         />
                       </g>
                     </svg>
@@ -53,41 +49,62 @@
                 <g>
                   <g>
                     <rect
+                      fill="none"
+                      height="30"
+                      pointer-events="all"
+                      stroke="none"
+                      width="60"
                       x="8.5"
                       y="174"
-                      width="60"
-                      height="30"
-                      fill="none"
-                      stroke="none"
-                      pointer-events="all"
                     />
                   </g>
                   <g>
                     <g transform="translate(-0.5 -0.5)">
                       <switch>
                         <foreignObject
-                          style="overflow:visible;text-align:left;"
-                          pointer-events="none"
-                          width="100%"
                           height="100%"
+                          pointer-events="none"
                           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                          style="overflow: visible; text-align: left"
+                          width="100%"
                         >
                           <div
+                            style="
+                              display: flex;
+                              align-items: unsafe center;
+                              justify-content: unsafe center;
+                              width: 58px;
+                              height: 1px;
+                              padding-top: 189px;
+                              margin-left: 9px;
+                            "
                             xmlns="http://www.w3.org/1999/xhtml"
-                            style="display:flex;align-items:unsafe center;justify-content:unsafe center;width:58px;height:1px;padding-top:189px;margin-left:9px;"
                           >
-                            <div style="box-sizing:border-box;font-size:0;text-align:center;">
-                              <div style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;">System A</div>
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center">
+                              <div
+                                style="
+                                  display: inline-block;
+                                  font-size: 12px;
+                                  line-height: 1.2;
+                                  pointer-events: all;
+                                  white-space: normal;
+                                  word-wrap: normal;
+                                "
+                              >
+                                System A
+                              </div>
                             </div>
                           </div>
                         </foreignObject>
                         <text
+                          fill="light-dark(#000000, #ffffff)"
+                          font-size="12px"
+                          text-anchor="middle"
                           x="39"
                           y="193"
-                          fill="light-dark(#000000, #ffffff)"
-                          font-size="12px"
-                          text-anchor="middle"
-                        >System A</text>
+                        >
+                          System A
+                        </text>
                       </switch>
                     </g>
                   </g>
@@ -102,24 +119,25 @@
                 <g>
                   <g>
                     <svg
+                      height="77"
+                      style="height: 77px; width: 77px"
                       viewBox="0 0 850 850"
+                      width="77"
                       x="719.5"
                       y="185.5"
-                      width="77"
-                      height="77"
                     >
                       <g>
                         <path
-                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                           class="top"
+                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                         />
                         <path
-                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                           class="left"
+                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                         />
                         <path
-                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                           class="right"
+                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                         />
                       </g>
                     </svg>
@@ -130,41 +148,62 @@
                 <g>
                   <g>
                     <rect
+                      fill="none"
+                      height="30"
+                      pointer-events="all"
+                      stroke="none"
+                      width="60"
                       x="730"
                       y="260"
-                      width="60"
-                      height="30"
-                      fill="none"
-                      stroke="none"
-                      pointer-events="all"
                     />
                   </g>
                   <g>
                     <g transform="translate(-0.5 -0.5)">
                       <switch>
                         <foreignObject
-                          style="overflow:visible;text-align:left;"
-                          pointer-events="none"
-                          width="100%"
                           height="100%"
+                          pointer-events="none"
                           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                          style="overflow: visible; text-align: left"
+                          width="100%"
                         >
                           <div
+                            style="
+                              display: flex;
+                              align-items: unsafe center;
+                              justify-content: unsafe center;
+                              width: 58px;
+                              height: 1px;
+                              padding-top: 275px;
+                              margin-left: 731px;
+                            "
                             xmlns="http://www.w3.org/1999/xhtml"
-                            style="display:flex;align-items:unsafe center;justify-content:unsafe center;width:58px;height:1px;padding-top:275px;margin-left:731px;"
                           >
-                            <div style="box-sizing:border-box;font-size:0;text-align:center;">
-                              <div style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;">System B</div>
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center">
+                              <div
+                                style="
+                                  display: inline-block;
+                                  font-size: 12px;
+                                  line-height: 1.2;
+                                  pointer-events: all;
+                                  white-space: normal;
+                                  word-wrap: normal;
+                                "
+                              >
+                                System B
+                              </div>
                             </div>
                           </div>
                         </foreignObject>
                         <text
-                          x="760"
-                          y="279"
                           fill="light-dark(#000000, #ffffff)"
                           font-size="12px"
                           text-anchor="middle"
-                        >System B</text>
+                          x="760"
+                          y="279"
+                        >
+                          System B
+                        </text>
                       </switch>
                     </g>
                   </g>
@@ -179,24 +218,25 @@
                 <g>
                   <g>
                     <svg
+                      height="77"
+                      style="height: 77px; width: 77px"
                       viewBox="0 0 850 850"
+                      width="77"
                       x="-0.5"
                       y="269.5"
-                      width="77"
-                      height="77"
                     >
                       <g>
                         <path
-                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                           class="top"
+                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                         />
                         <path
-                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                           class="left"
+                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                         />
                         <path
-                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                           class="right"
+                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                         />
                       </g>
                     </svg>
@@ -207,41 +247,62 @@
                 <g>
                   <g>
                     <rect
+                      fill="none"
+                      height="30"
+                      pointer-events="all"
+                      stroke="none"
+                      width="60"
                       x="8.5"
                       y="344"
-                      width="60"
-                      height="30"
-                      fill="none"
-                      stroke="none"
-                      pointer-events="all"
                     />
                   </g>
                   <g>
                     <g transform="translate(-0.5 -0.5)">
                       <switch>
                         <foreignObject
-                          style="overflow:visible;text-align:left;"
-                          pointer-events="none"
-                          width="100%"
                           height="100%"
+                          pointer-events="none"
                           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                          style="overflow: visible; text-align: left"
+                          width="100%"
                         >
                           <div
+                            style="
+                              display: flex;
+                              align-items: unsafe center;
+                              justify-content: unsafe center;
+                              width: 58px;
+                              height: 1px;
+                              padding-top: 359px;
+                              margin-left: 9px;
+                            "
                             xmlns="http://www.w3.org/1999/xhtml"
-                            style="display:flex;align-items:unsafe center;justify-content:unsafe center;width:58px;height:1px;padding-top:359px;margin-left:9px;"
                           >
-                            <div style="box-sizing:border-box;font-size:0;text-align:center;">
-                              <div style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;">System C</div>
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center">
+                              <div
+                                style="
+                                  display: inline-block;
+                                  font-size: 12px;
+                                  line-height: 1.2;
+                                  pointer-events: all;
+                                  white-space: normal;
+                                  word-wrap: normal;
+                                "
+                              >
+                                System C
+                              </div>
                             </div>
                           </div>
                         </foreignObject>
                         <text
-                          x="39"
-                          y="363"
                           fill="light-dark(#000000, #ffffff)"
                           font-size="12px"
                           text-anchor="middle"
-                        >System C</text>
+                          x="39"
+                          y="363"
+                        >
+                          System C
+                        </text>
                       </switch>
                     </g>
                   </g>
@@ -256,14 +317,14 @@
                 <g>
                   <g>
                     <rect
-                      x="120"
-                      y="30"
-                      width="180"
-                      height="370"
                       fill="none"
+                      height="370"
+                      pointer-events="all"
                       stroke="#6b7280"
                       stroke-dasharray="3 3"
-                      pointer-events="all"
+                      width="180"
+                      x="120"
+                      y="30"
                     />
                   </g>
                 </g>
@@ -273,40 +334,56 @@
               <g>
                 <g>
                   <rect
+                    fill="none"
+                    height="30"
+                    pointer-events="all"
+                    stroke="none"
+                    width="130"
                     x="130"
                     y="0"
-                    width="130"
-                    height="30"
-                    fill="none"
-                    stroke="none"
-                    pointer-events="all"
                   />
                 </g>
                 <g>
                   <g transform="translate(-0.5 -0.5)">
                     <switch>
                       <foreignObject
-                        style="overflow:visible;text-align:left;"
-                        pointer-events="none"
-                        width="100%"
                         height="100%"
+                        pointer-events="none"
                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                        style="overflow: visible; text-align: left"
+                        width="100%"
                       >
                         <div
+                          style="
+                            display: flex;
+                            align-items: unsafe flex-start;
+                            justify-content: unsafe flex-start;
+                            width: 128px;
+                            height: 1px;
+                            padding-top: 7px;
+                            margin-left: 132px;
+                          "
                           xmlns="http://www.w3.org/1999/xhtml"
-                          style="display:flex;align-items:unsafe flex-start;justify-content:unsafe flex-start;width:128px;height:1px;padding-top:7px;margin-left:132px;"
                         >
-                          <div style="box-sizing:border-box;font-size:0;text-align:left;">
-                            <div style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;">Integration Platform</div>
+                          <div style="box-sizing: border-box; font-size: 0; text-align: left">
+                            <div
+                              style="
+                                display: inline-block;
+                                font-size: 12px;
+                                line-height: 1.2;
+                                pointer-events: all;
+                                white-space: normal;
+                                word-wrap: normal;
+                              "
+                            >
+                              Integration Platform
+                            </div>
                           </div>
                         </div>
                       </foreignObject>
-                      <text
-                        x="132"
-                        y="19"
-                        fill="light-dark(#000000, #ffffff)"
-                        font-size="12px"
-                      >Integration Platform</text>
+                      <text fill="light-dark(#000000, #ffffff)" font-size="12px" x="132" y="19">
+                        Integration Platform
+                      </text>
                     </switch>
                   </g>
                 </g>
@@ -320,13 +397,13 @@
                 <g>
                   <g>
                     <rect
+                      fill="#6b7280"
+                      height="25"
+                      pointer-events="all"
+                      stroke="#6b7280"
+                      width="25"
                       x="120"
                       y="30"
-                      width="25"
-                      height="25"
-                      fill="#6b7280"
-                      stroke="#6b7280"
-                      pointer-events="all"
                     />
                   </g>
                 </g>
@@ -337,18 +414,18 @@
                     <path
                       d="M 125.5 40 L 128 41.2 L 128 43.8 L 125.5 45 L 123 43.8 L 123 41.2 Z"
                       fill="none"
-                      stroke="#ffffff"
-                      stroke-width="0.5"
-                      stroke-miterlimit="10"
                       pointer-events="all"
+                      stroke="#ffffff"
+                      stroke-miterlimit="10"
+                      stroke-width="0.5"
                     />
                     <path
                       d="M 123 41.2 L 125.5 42.4 L 128 41.2 M 125.5 42.4 L 125.5 45"
                       fill="none"
-                      stroke="#ffffff"
-                      stroke-width="0.5"
-                      stroke-miterlimit="10"
                       pointer-events="all"
+                      stroke="#ffffff"
+                      stroke-miterlimit="10"
+                      stroke-width="0.5"
                     />
                   </g>
                 </g>
@@ -359,18 +436,18 @@
                     <path
                       d="M 139.5 47 L 142 48.2 L 142 50.8 L 139.5 52 L 137 50.8 L 137 48.2 Z"
                       fill="none"
-                      stroke="#ffffff"
-                      stroke-width="0.5"
-                      stroke-miterlimit="10"
                       pointer-events="all"
+                      stroke="#ffffff"
+                      stroke-miterlimit="10"
+                      stroke-width="0.5"
                     />
                     <path
                       d="M 137 48.2 L 139.5 49.4 L 142 48.2 M 139.5 49.4 L 139.5 52"
                       fill="none"
-                      stroke="#ffffff"
-                      stroke-width="0.5"
-                      stroke-miterlimit="10"
                       pointer-events="all"
+                      stroke="#ffffff"
+                      stroke-miterlimit="10"
+                      stroke-width="0.5"
                     />
                   </g>
                 </g>
@@ -381,18 +458,18 @@
                     <path
                       d="M 139.5 33 L 142 34.2 L 142 36.8 L 139.5 38 L 137 36.8 L 137 34.2 Z"
                       fill="none"
-                      stroke="#ffffff"
-                      stroke-width="0.5"
-                      stroke-miterlimit="10"
                       pointer-events="all"
+                      stroke="#ffffff"
+                      stroke-miterlimit="10"
+                      stroke-width="0.5"
                     />
                     <path
                       d="M 137 34.2 L 139.5 35.4 L 142 34.2 M 139.5 35.4 L 139.5 38"
                       fill="none"
-                      stroke="#ffffff"
-                      stroke-width="0.5"
-                      stroke-miterlimit="10"
                       pointer-events="all"
+                      stroke="#ffffff"
+                      stroke-miterlimit="10"
+                      stroke-width="0.5"
                     />
                   </g>
                 </g>
@@ -403,10 +480,10 @@
                     <path
                       d="M 128.13 42.5 L 130.25 42.56 Q 132.37 42.63 132.37 45.75 L 132.37 47.31 Q 132.37 48.88 134.63 49.13 L 136.88 49.38"
                       fill="none"
-                      stroke="#ffffff"
-                      stroke-width="0.5"
-                      stroke-miterlimit="10"
                       pointer-events="stroke"
+                      stroke="#ffffff"
+                      stroke-miterlimit="10"
+                      stroke-width="0.5"
                     />
                   </g>
                 </g>
@@ -418,10 +495,10 @@
                   <path
                     d="M 128.13 42.5 L 130.31 42.5 Q 132.5 42.5 132.5 39.38 L 132.5 37.81 Q 132.5 36.25 134.69 35.94 L 136.88 35.63"
                     fill="none"
-                    stroke="#ffffff"
-                    stroke-width="0.5"
-                    stroke-miterlimit="10"
                     pointer-events="stroke"
+                    stroke="#ffffff"
+                    stroke-miterlimit="10"
+                    stroke-width="0.5"
                   />
                 </g>
               </g>
@@ -430,14 +507,14 @@
               <g>
                 <g>
                   <rect
-                    x="100"
-                    y="0"
-                    width="600"
-                    height="420"
                     fill="none"
+                    height="420"
+                    pointer-events="all"
                     stroke="#9ca3af"
                     stroke-dasharray="12 12"
-                    pointer-events="all"
+                    width="600"
+                    x="100"
+                    y="0"
                   />
                 </g>
               </g>
@@ -450,14 +527,14 @@
                 <g>
                   <g>
                     <rect
-                      x="130"
-                      y="60"
-                      width="160"
-                      height="160"
                       fill="none"
+                      height="160"
+                      pointer-events="all"
                       stroke="#374151"
                       stroke-dasharray="1 4"
-                      pointer-events="all"
+                      width="160"
+                      x="130"
+                      y="60"
                     />
                   </g>
                 </g>
@@ -470,13 +547,13 @@
                   <g>
                     <g>
                       <rect
+                        fill="#374151"
+                        height="25"
+                        pointer-events="all"
+                        stroke="#374151"
+                        width="25"
                         x="130"
                         y="60"
-                        width="25"
-                        height="25"
-                        fill="#374151"
-                        stroke="#374151"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -485,16 +562,16 @@
                   <g>
                     <g>
                       <rect
-                        x="137.5"
-                        y="67.5"
-                        width="10"
+                        fill="none"
                         height="10"
+                        pointer-events="all"
                         rx="1.5"
                         ry="1.5"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
+                        width="10"
+                        x="137.5"
+                        y="67.5"
                       />
                     </g>
                   </g>
@@ -503,16 +580,16 @@
                   <g>
                     <g>
                       <rect
-                        x="140"
-                        y="70"
-                        width="5"
+                        fill="none"
                         height="5"
+                        pointer-events="all"
                         rx="0.75"
                         ry="0.75"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
+                        width="5"
+                        x="140"
+                        y="70"
                       />
                     </g>
                   </g>
@@ -523,12 +600,12 @@
                       <ellipse
                         cx="138.44"
                         cy="63.75"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -539,12 +616,12 @@
                       <ellipse
                         cx="146.56"
                         cy="63.75"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -555,12 +632,12 @@
                       <ellipse
                         cx="151.56"
                         cy="69.69"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -571,12 +648,12 @@
                       <ellipse
                         cx="151.56"
                         cy="75.31"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -587,12 +664,12 @@
                       <ellipse
                         cx="146.56"
                         cy="81.25"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -603,12 +680,12 @@
                       <ellipse
                         cx="138.44"
                         cy="81.25"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -619,12 +696,12 @@
                       <ellipse
                         cx="133.44"
                         cy="75.31"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -635,12 +712,12 @@
                       <ellipse
                         cx="133.44"
                         cy="69.69"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -651,10 +728,10 @@
                       <path
                         d="M 139.38 81.25 L 140.31 81.25 Q 141.25 81.25 141.25 79.38 L 141.25 77.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -665,10 +742,10 @@
                       <path
                         d="M 145.63 81.25 L 144.69 81.25 Q 143.75 81.25 143.75 79.38 L 143.75 77.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -679,10 +756,10 @@
                       <path
                         d="M 139.38 63.75 L 140.31 63.75 Q 141.25 63.75 141.25 65.63 L 141.25 67.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -693,10 +770,10 @@
                       <path
                         d="M 145.63 63.75 L 144.69 63.75 Q 143.75 63.75 143.75 65.63 L 143.75 67.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -707,10 +784,10 @@
                       <path
                         d="M 134.38 75.31 L 137.5 75.31"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -721,10 +798,10 @@
                       <path
                         d="M 134.38 69.69 L 137.5 69.69"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -735,10 +812,10 @@
                       <path
                         d="M 147.5 69.69 L 150.63 69.69"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -749,10 +826,10 @@
                       <path
                         d="M 147.5 75.31 L 150.63 75.31"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -763,40 +840,56 @@
               <g>
                 <g>
                   <rect
+                    fill="none"
+                    height="30"
+                    pointer-events="all"
+                    stroke="none"
+                    width="130"
                     x="160"
                     y="60"
-                    width="130"
-                    height="30"
-                    fill="none"
-                    stroke="none"
-                    pointer-events="all"
                   />
                 </g>
                 <g>
                   <g transform="translate(-0.5 -0.5)">
                     <switch>
                       <foreignObject
-                        style="overflow:visible;text-align:left;"
-                        pointer-events="none"
-                        width="100%"
                         height="100%"
+                        pointer-events="none"
                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                        style="overflow: visible; text-align: left"
+                        width="100%"
                       >
                         <div
+                          style="
+                            display: flex;
+                            align-items: unsafe flex-start;
+                            justify-content: unsafe flex-start;
+                            width: 128px;
+                            height: 1px;
+                            padding-top: 67px;
+                            margin-left: 162px;
+                          "
                           xmlns="http://www.w3.org/1999/xhtml"
-                          style="display:flex;align-items:unsafe flex-start;justify-content:unsafe flex-start;width:128px;height:1px;padding-top:67px;margin-left:162px;"
                         >
-                          <div style="box-sizing:border-box;font-size:0;text-align:left;">
-                            <div style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;">System A Channel</div>
+                          <div style="box-sizing: border-box; font-size: 0; text-align: left">
+                            <div
+                              style="
+                                display: inline-block;
+                                font-size: 12px;
+                                line-height: 1.2;
+                                pointer-events: all;
+                                white-space: normal;
+                                word-wrap: normal;
+                              "
+                            >
+                              System A Channel
+                            </div>
                           </div>
                         </div>
                       </foreignObject>
-                      <text
-                        x="162"
-                        y="79"
-                        fill="light-dark(#000000, #ffffff)"
-                        font-size="12px"
-                      >System A Channel</text>
+                      <text fill="light-dark(#000000, #ffffff)" font-size="12px" x="162" y="79">
+                        System A Channel
+                      </text>
                     </switch>
                   </g>
                 </g>
@@ -806,40 +899,56 @@
               <g>
                 <g>
                   <rect
+                    fill="none"
+                    height="30"
+                    pointer-events="all"
+                    stroke="none"
+                    width="130"
                     x="160"
                     y="230"
-                    width="130"
-                    height="30"
-                    fill="none"
-                    stroke="none"
-                    pointer-events="all"
                   />
                 </g>
                 <g>
                   <g transform="translate(-0.5 -0.5)">
                     <switch>
                       <foreignObject
-                        style="overflow:visible;text-align:left;"
-                        pointer-events="none"
-                        width="100%"
                         height="100%"
+                        pointer-events="none"
                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                        style="overflow: visible; text-align: left"
+                        width="100%"
                       >
                         <div
+                          style="
+                            display: flex;
+                            align-items: unsafe flex-start;
+                            justify-content: unsafe flex-start;
+                            width: 128px;
+                            height: 1px;
+                            padding-top: 237px;
+                            margin-left: 162px;
+                          "
                           xmlns="http://www.w3.org/1999/xhtml"
-                          style="display:flex;align-items:unsafe flex-start;justify-content:unsafe flex-start;width:128px;height:1px;padding-top:237px;margin-left:162px;"
                         >
-                          <div style="box-sizing:border-box;font-size:0;text-align:left;">
-                            <div style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;">System C Channel</div>
+                          <div style="box-sizing: border-box; font-size: 0; text-align: left">
+                            <div
+                              style="
+                                display: inline-block;
+                                font-size: 12px;
+                                line-height: 1.2;
+                                pointer-events: all;
+                                white-space: normal;
+                                word-wrap: normal;
+                              "
+                            >
+                              System C Channel
+                            </div>
                           </div>
                         </div>
                       </foreignObject>
-                      <text
-                        x="162"
-                        y="249"
-                        fill="light-dark(#000000, #ffffff)"
-                        font-size="12px"
-                      >System C Channel</text>
+                      <text fill="light-dark(#000000, #ffffff)" font-size="12px" x="162" y="249">
+                        System C Channel
+                      </text>
                     </switch>
                   </g>
                 </g>
@@ -865,13 +974,13 @@
                       <g>
                         <g>
                           <rect
+                            fill="#9ca3af"
+                            height="25"
+                            pointer-events="all"
+                            stroke="#9ca3af"
+                            width="25"
                             x="100"
                             y="0"
-                            width="25"
-                            height="25"
-                            fill="#9ca3af"
-                            stroke="#9ca3af"
-                            pointer-events="all"
                           />
                         </g>
                       </g>
@@ -882,10 +991,10 @@
                           <path
                             d="M 104.69 12.5 L 108.59 12.5"
                             fill="none"
-                            stroke="#ffffff"
-                            stroke-width="0.5"
-                            stroke-miterlimit="10"
                             pointer-events="stroke"
+                            stroke="#ffffff"
+                            stroke-miterlimit="10"
+                            stroke-width="0.5"
                           />
                         </g>
                       </g>
@@ -896,10 +1005,10 @@
                           <path
                             d="M 106.25 7.81 L 106.25 9.38 L 108.59 10.47"
                             fill="none"
-                            stroke="#ffffff"
-                            stroke-width="0.5"
-                            stroke-miterlimit="10"
                             pointer-events="stroke"
+                            stroke="#ffffff"
+                            stroke-miterlimit="10"
+                            stroke-width="0.5"
                           />
                         </g>
                       </g>
@@ -910,10 +1019,10 @@
                           <path
                             d="M 112.5 4.69 L 112.5 8.59"
                             fill="none"
-                            stroke="#ffffff"
-                            stroke-width="0.5"
-                            stroke-miterlimit="10"
                             pointer-events="stroke"
+                            stroke="#ffffff"
+                            stroke-miterlimit="10"
+                            stroke-width="0.5"
                           />
                         </g>
                       </g>
@@ -924,10 +1033,10 @@
                           <path
                             d="M 118.75 7.81 L 118.75 9.38 L 116.41 10.47"
                             fill="none"
-                            stroke="#ffffff"
-                            stroke-width="0.5"
-                            stroke-miterlimit="10"
                             pointer-events="stroke"
+                            stroke="#ffffff"
+                            stroke-miterlimit="10"
+                            stroke-width="0.5"
                           />
                         </g>
                       </g>
@@ -938,10 +1047,10 @@
                           <path
                             d="M 120.31 12.5 L 116.41 12.5"
                             fill="none"
-                            stroke="#ffffff"
-                            stroke-width="0.5"
-                            stroke-miterlimit="10"
                             pointer-events="stroke"
+                            stroke="#ffffff"
+                            stroke-miterlimit="10"
+                            stroke-width="0.5"
                           />
                         </g>
                       </g>
@@ -952,10 +1061,10 @@
                           <path
                             d="M 118.75 17.19 L 118.75 15.63 L 116.41 14.53"
                             fill="none"
-                            stroke="#ffffff"
-                            stroke-width="0.5"
-                            stroke-miterlimit="10"
                             pointer-events="stroke"
+                            stroke="#ffffff"
+                            stroke-miterlimit="10"
+                            stroke-width="0.5"
                           />
                         </g>
                       </g>
@@ -966,10 +1075,10 @@
                           <path
                             d="M 106.25 17.19 L 106.25 15.63 L 108.59 14.53"
                             fill="none"
-                            stroke="#ffffff"
-                            stroke-width="0.5"
-                            stroke-miterlimit="10"
                             pointer-events="stroke"
+                            stroke="#ffffff"
+                            stroke-miterlimit="10"
+                            stroke-width="0.5"
                           />
                         </g>
                       </g>
@@ -980,10 +1089,10 @@
                           <path
                             d="M 112.5 16.41 L 112.5 20.31"
                             fill="none"
-                            stroke="#ffffff"
-                            stroke-width="0.5"
-                            stroke-miterlimit="10"
                             pointer-events="stroke"
+                            stroke="#ffffff"
+                            stroke-miterlimit="10"
+                            stroke-width="0.5"
                           />
                         </g>
                       </g>
@@ -995,18 +1104,18 @@
                         <path
                           d="M 118.75 17.19 L 120.31 17.94 L 120.31 19.56 L 118.75 20.31 L 117.19 19.56 L 117.19 17.94 Z"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                         <path
                           d="M 117.19 17.94 L 118.75 18.69 L 120.31 17.94 M 118.75 18.69 L 118.75 20.31"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1017,18 +1126,18 @@
                         <path
                           d="M 121.88 10.94 L 123.44 11.69 L 123.44 13.31 L 121.88 14.06 L 120.31 13.31 L 120.31 11.69 Z"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                         <path
                           d="M 120.31 11.69 L 121.88 12.44 L 123.44 11.69 M 121.88 12.44 L 121.88 14.06"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1039,18 +1148,18 @@
                         <path
                           d="M 118.75 4.69 L 120.31 5.44 L 120.31 7.06 L 118.75 7.81 L 117.19 7.06 L 117.19 5.44 Z"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                         <path
                           d="M 117.19 5.44 L 118.75 6.19 L 120.31 5.44 M 118.75 6.19 L 118.75 7.81"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1061,18 +1170,18 @@
                         <path
                           d="M 112.5 1.56 L 114.06 2.31 L 114.06 3.94 L 112.5 4.69 L 110.94 3.94 L 110.94 2.31 Z"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                         <path
                           d="M 110.94 2.31 L 112.5 3.06 L 114.06 2.31 M 112.5 3.06 L 112.5 4.69"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1083,18 +1192,18 @@
                         <path
                           d="M 106.25 4.69 L 107.81 5.44 L 107.81 7.06 L 106.25 7.81 L 104.69 7.06 L 104.69 5.44 Z"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                         <path
                           d="M 104.69 5.44 L 106.25 6.19 L 107.81 5.44 M 106.25 6.19 L 106.25 7.81"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1105,18 +1214,18 @@
                         <path
                           d="M 103.13 10.94 L 104.69 11.69 L 104.69 13.31 L 103.13 14.06 L 101.56 13.31 L 101.56 11.69 Z"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                         <path
                           d="M 101.56 11.69 L 103.13 12.44 L 104.69 11.69 M 103.13 12.44 L 103.13 14.06"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1127,18 +1236,18 @@
                         <path
                           d="M 106.25 17.19 L 107.81 17.94 L 107.81 19.56 L 106.25 20.31 L 104.69 19.56 L 104.69 17.94 Z"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                         <path
                           d="M 104.69 17.94 L 106.25 18.69 L 107.81 17.94 M 106.25 18.69 L 106.25 20.31"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1149,18 +1258,18 @@
                         <path
                           d="M 112.5 20.31 L 114.06 21.06 L 114.06 22.69 L 112.5 23.44 L 110.94 22.69 L 110.94 21.06 Z"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                         <path
                           d="M 110.94 21.06 L 112.5 21.81 L 114.06 21.06 M 112.5 21.81 L 112.5 23.44"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="all"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1173,18 +1282,18 @@
                     <path
                       d="M 112.5 8.59 L 116.41 10.47 L 116.41 14.53 L 112.5 16.41 L 108.59 14.53 L 108.59 10.47 Z"
                       fill="none"
-                      stroke="#ffffff"
-                      stroke-width="0.5"
-                      stroke-miterlimit="10"
                       pointer-events="all"
+                      stroke="#ffffff"
+                      stroke-miterlimit="10"
+                      stroke-width="0.5"
                     />
                     <path
                       d="M 108.59 10.47 L 112.5 12.34 L 116.41 10.47 M 112.5 12.34 L 112.5 16.41"
                       fill="none"
-                      stroke="#ffffff"
-                      stroke-width="0.5"
-                      stroke-miterlimit="10"
                       pointer-events="all"
+                      stroke="#ffffff"
+                      stroke-miterlimit="10"
+                      stroke-width="0.5"
                     />
                   </g>
                 </g>
@@ -1194,40 +1303,56 @@
               <g>
                 <g>
                   <rect
+                    fill="none"
+                    height="30"
+                    pointer-events="all"
+                    stroke="none"
+                    width="130"
                     x="150"
                     y="30"
-                    width="130"
-                    height="30"
-                    fill="none"
-                    stroke="none"
-                    pointer-events="all"
                   />
                 </g>
                 <g>
                   <g transform="translate(-0.5 -0.5)">
                     <switch>
                       <foreignObject
-                        style="overflow:visible;text-align:left;"
-                        pointer-events="none"
-                        width="100%"
                         height="100%"
+                        pointer-events="none"
                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                        style="overflow: visible; text-align: left"
+                        width="100%"
                       >
                         <div
+                          style="
+                            display: flex;
+                            align-items: unsafe flex-start;
+                            justify-content: unsafe flex-start;
+                            width: 128px;
+                            height: 1px;
+                            padding-top: 37px;
+                            margin-left: 152px;
+                          "
                           xmlns="http://www.w3.org/1999/xhtml"
-                          style="display:flex;align-items:unsafe flex-start;justify-content:unsafe flex-start;width:128px;height:1px;padding-top:37px;margin-left:152px;"
                         >
-                          <div style="box-sizing:border-box;font-size:0;text-align:left;">
-                            <div style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;">Channel Layer</div>
+                          <div style="box-sizing: border-box; font-size: 0; text-align: left">
+                            <div
+                              style="
+                                display: inline-block;
+                                font-size: 12px;
+                                line-height: 1.2;
+                                pointer-events: all;
+                                white-space: normal;
+                                word-wrap: normal;
+                              "
+                            >
+                              Channel Layer
+                            </div>
                           </div>
                         </div>
                       </foreignObject>
-                      <text
-                        x="152"
-                        y="49"
-                        fill="light-dark(#000000, #ffffff)"
-                        font-size="12px"
-                      >Channel Layer</text>
+                      <text fill="light-dark(#000000, #ffffff)" font-size="12px" x="152" y="49">
+                        Channel Layer
+                      </text>
                     </switch>
                   </g>
                 </g>
@@ -1245,14 +1370,14 @@
                   <g>
                     <g>
                       <rect
-                        x="500"
-                        y="30"
-                        width="180"
-                        height="370"
                         fill="none"
+                        height="370"
+                        pointer-events="all"
                         stroke="#6b7280"
                         stroke-dasharray="3 3"
-                        pointer-events="all"
+                        width="180"
+                        x="500"
+                        y="30"
                       />
                     </g>
                   </g>
@@ -1265,13 +1390,13 @@
                     <g>
                       <g>
                         <rect
+                          fill="#6b7280"
+                          height="25"
+                          pointer-events="all"
+                          stroke="#6b7280"
+                          width="25"
                           x="500"
                           y="30"
-                          width="25"
-                          height="25"
-                          fill="#6b7280"
-                          stroke="#6b7280"
-                          pointer-events="all"
                         />
                       </g>
                     </g>
@@ -1280,16 +1405,16 @@
                     <g>
                       <g>
                         <rect
-                          x="510.63"
-                          y="38.75"
-                          width="6.25"
+                          fill="none"
                           height="7.5"
+                          pointer-events="all"
                           rx="0.94"
                           ry="0.94"
-                          fill="none"
                           stroke="#ffffff"
                           stroke-width="0.5"
-                          pointer-events="all"
+                          width="6.25"
+                          x="510.63"
+                          y="38.75"
                         />
                       </g>
                     </g>
@@ -1298,16 +1423,16 @@
                     <g>
                       <g>
                         <rect
-                          x="509.38"
-                          y="38.13"
-                          width="1.87"
+                          fill="#6b7280"
                           height="8.75"
+                          pointer-events="all"
                           rx="0.28"
                           ry="0.28"
-                          fill="#6b7280"
                           stroke="#ffffff"
                           stroke-width="0.5"
-                          pointer-events="all"
+                          width="1.87"
+                          x="509.38"
+                          y="38.13"
                         />
                       </g>
                     </g>
@@ -1318,10 +1443,10 @@
                         <path
                           d="M 505 40 L 509.38 40"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="stroke"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1332,10 +1457,10 @@
                         <path
                           d="M 505 45 L 509.38 45"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="stroke"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1346,10 +1471,10 @@
                         <path
                           d="M 506.25 42.5 L 509.38 42.5"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="stroke"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1360,10 +1485,10 @@
                         <path
                           d="M 516.88 41.25 L 520 41.25"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="stroke"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1374,10 +1499,10 @@
                         <path
                           d="M 516.88 44.38 L 520 44.38"
                           fill="none"
-                          stroke="#ffffff"
-                          stroke-width="0.5"
-                          stroke-miterlimit="10"
                           pointer-events="stroke"
+                          stroke="#ffffff"
+                          stroke-miterlimit="10"
+                          stroke-width="0.5"
                         />
                       </g>
                     </g>
@@ -1388,40 +1513,56 @@
                 <g>
                   <g>
                     <rect
+                      fill="none"
+                      height="30"
+                      pointer-events="all"
+                      stroke="none"
+                      width="130"
                       x="530"
                       y="30"
-                      width="130"
-                      height="30"
-                      fill="none"
-                      stroke="none"
-                      pointer-events="all"
                     />
                   </g>
                   <g>
                     <g transform="translate(-0.5 -0.5)">
                       <switch>
                         <foreignObject
-                          style="overflow:visible;text-align:left;"
-                          pointer-events="none"
-                          width="100%"
                           height="100%"
+                          pointer-events="none"
                           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                          style="overflow: visible; text-align: left"
+                          width="100%"
                         >
                           <div
+                            style="
+                              display: flex;
+                              align-items: unsafe flex-start;
+                              justify-content: unsafe flex-start;
+                              width: 128px;
+                              height: 1px;
+                              padding-top: 37px;
+                              margin-left: 532px;
+                            "
                             xmlns="http://www.w3.org/1999/xhtml"
-                            style="display:flex;align-items:unsafe flex-start;justify-content:unsafe flex-start;width:128px;height:1px;padding-top:37px;margin-left:532px;"
                           >
-                            <div style="box-sizing:border-box;font-size:0;text-align:left;">
-                              <div style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;">Adapter Layer</div>
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left">
+                              <div
+                                style="
+                                  display: inline-block;
+                                  font-size: 12px;
+                                  line-height: 1.2;
+                                  pointer-events: all;
+                                  white-space: normal;
+                                  word-wrap: normal;
+                                "
+                              >
+                                Adapter Layer
+                              </div>
                             </div>
                           </div>
                         </foreignObject>
-                        <text
-                          x="532"
-                          y="49"
-                          fill="light-dark(#000000, #ffffff)"
-                          font-size="12px"
-                        >Adapter Layer</text>
+                        <text fill="light-dark(#000000, #ffffff)" font-size="12px" x="532" y="49">
+                          Adapter Layer
+                        </text>
                       </switch>
                     </g>
                   </g>
@@ -1436,14 +1577,14 @@
                 <g>
                   <g>
                     <rect
-                      x="320"
-                      y="30"
-                      width="160"
-                      height="370"
                       fill="none"
+                      height="370"
+                      pointer-events="all"
                       stroke="#4b5563"
                       stroke-dasharray="3 3"
-                      pointer-events="all"
+                      width="160"
+                      x="320"
+                      y="30"
                     />
                   </g>
                 </g>
@@ -1456,13 +1597,13 @@
                   <g>
                     <g>
                       <rect
+                        fill="#4b5563"
+                        height="25"
+                        pointer-events="all"
+                        stroke="#4b5563"
+                        width="25"
                         x="320"
                         y="30"
-                        width="25"
-                        height="25"
-                        fill="#4b5563"
-                        stroke="#4b5563"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1473,10 +1614,10 @@
                       <path
                         d="M 328.21 32.63 L 329.46 32.63 L 329.46 33.61 C 330.16 33.71 330.82 33.98 331.39 34.4 L 332.06 33.72 L 332.95 34.59 L 332.26 35.27 C 332.68 35.84 332.95 36.51 333.05 37.21 L 334.04 37.21 L 334.04 38.46 L 333.05 38.46 C 332.95 39.15 332.68 39.81 332.26 40.38 L 332.95 41.06 L 332.06 41.95 L 331.39 41.27 C 330.82 41.69 330.16 41.95 329.46 42.05 L 329.46 43.04 L 328.21 43.04 L 328.21 42.05 C 327.51 41.95 326.85 41.69 326.28 41.27 L 325.6 41.95 L 324.72 41.08 L 325.4 40.38 C 324.98 39.81 324.71 39.15 324.61 38.46 L 323.63 38.46 L 323.63 37.21 L 324.61 37.21 C 324.71 36.51 324.98 35.84 325.4 35.27 L 324.72 34.59 L 325.6 33.72 L 326.28 34.4 C 326.85 33.98 327.51 33.71 328.21 33.61 Z M 328.83 36.27 C 328.28 36.27 327.76 36.57 327.48 37.05 C 327.2 37.54 327.2 38.13 327.48 38.61 C 327.76 39.1 328.28 39.4 328.83 39.4 C 329.39 39.4 329.91 39.1 330.19 38.61 C 330.47 38.13 330.47 37.54 330.19 37.05 C 329.91 36.57 329.39 36.27 328.83 36.27 Z"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -1487,11 +1628,11 @@
                       <path
                         d="M 336.77 37.25 L 337.83 37.25 L 337.83 38.09 C 338.43 38.17 338.99 38.4 339.47 38.76 L 340.05 38.18 L 340.8 38.92 L 340.22 39.5 C 340.57 39.98 340.8 40.55 340.89 41.15 L 341.73 41.15 L 341.73 42.21 L 340.89 42.21 C 340.8 42.8 340.57 43.36 340.22 43.84 L 340.8 44.42 L 340.05 45.17 L 339.47 44.6 C 338.99 44.95 338.43 45.18 337.83 45.26 L 337.83 46.1 L 336.77 46.1 L 336.77 45.26 C 336.18 45.18 335.62 44.95 335.13 44.6 L 334.56 45.17 L 333.8 44.44 L 334.38 43.84 C 334.03 43.36 333.8 42.8 333.72 42.21 L 332.88 42.21 L 332.88 41.15 L 333.72 41.15 C 333.8 40.55 334.03 39.98 334.38 39.5 L 333.8 38.92 L 334.56 38.18 L 335.13 38.76 C 335.62 38.4 336.18 38.17 336.77 38.09 Z M 337.3 40.35 C 336.83 40.35 336.39 40.6 336.15 41.01 C 335.91 41.42 335.91 41.93 336.15 42.34 C 336.39 42.75 336.83 43.01 337.3 43.01 C 337.78 43.01 338.22 42.75 338.45 42.34 C 338.69 41.93 338.69 41.42 338.45 41.01 C 338.22 40.6 337.78 40.35 337.3 40.35 Z"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
-                        transform="rotate(345,337.3,41.68)"
                         pointer-events="all"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
+                        transform="rotate(345,337.3,41.68)"
                       />
                     </g>
                   </g>
@@ -1502,11 +1643,11 @@
                       <path
                         d="M 335.63 46.25 L 336.38 46.25 L 336.38 46.84 C 336.79 46.9 337.19 47.06 337.53 47.31 L 337.94 46.91 L 338.47 47.43 L 338.06 47.84 C 338.31 48.18 338.47 48.58 338.53 49 L 339.13 49 L 339.13 49.75 L 338.53 49.75 C 338.47 50.17 338.31 50.56 338.06 50.9 L 338.47 51.31 L 337.94 51.84 L 337.53 51.44 C 337.19 51.69 336.79 51.85 336.38 51.91 L 336.38 52.5 L 335.63 52.5 L 335.63 51.91 C 335.21 51.85 334.81 51.69 334.47 51.44 L 334.06 51.84 L 333.53 51.33 L 333.94 50.9 C 333.69 50.56 333.53 50.17 333.47 49.75 L 332.88 49.75 L 332.88 49 L 333.47 49 C 333.53 48.58 333.69 48.18 333.94 47.84 L 333.53 47.43 L 334.06 46.91 L 334.47 47.31 C 334.81 47.06 335.21 46.9 335.63 46.84 Z M 336 48.44 C 335.48 48.44 335.06 48.86 335.06 49.38 C 335.06 49.89 335.48 50.31 336 50.31 C 336.52 50.31 336.94 49.89 336.94 49.38 C 336.94 48.86 336.52 48.44 336 48.44 Z"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
-                        transform="rotate(12,336,49.38)"
                         pointer-events="all"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
+                        transform="rotate(12,336,49.38)"
                       />
                     </g>
                   </g>
@@ -1517,40 +1658,56 @@
               <g>
                 <g>
                   <rect
+                    fill="none"
+                    height="30"
+                    pointer-events="all"
+                    stroke="none"
+                    width="130"
                     x="350"
                     y="30"
-                    width="130"
-                    height="30"
-                    fill="none"
-                    stroke="none"
-                    pointer-events="all"
                   />
                 </g>
                 <g>
                   <g transform="translate(-0.5 -0.5)">
                     <switch>
                       <foreignObject
-                        style="overflow:visible;text-align:left;"
-                        pointer-events="none"
-                        width="100%"
                         height="100%"
+                        pointer-events="none"
                         requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                        style="overflow: visible; text-align: left"
+                        width="100%"
                       >
                         <div
+                          style="
+                            display: flex;
+                            align-items: unsafe flex-start;
+                            justify-content: unsafe flex-start;
+                            width: 128px;
+                            height: 1px;
+                            padding-top: 37px;
+                            margin-left: 352px;
+                          "
                           xmlns="http://www.w3.org/1999/xhtml"
-                          style="display:flex;align-items:unsafe flex-start;justify-content:unsafe flex-start;width:128px;height:1px;padding-top:37px;margin-left:352px;"
                         >
-                          <div style="box-sizing:border-box;font-size:0;text-align:left;">
-                            <div style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;">Composition Layer</div>
+                          <div style="box-sizing: border-box; font-size: 0; text-align: left">
+                            <div
+                              style="
+                                display: inline-block;
+                                font-size: 12px;
+                                line-height: 1.2;
+                                pointer-events: all;
+                                white-space: normal;
+                                word-wrap: normal;
+                              "
+                            >
+                              Composition Layer
+                            </div>
                           </div>
                         </div>
                       </foreignObject>
-                      <text
-                        x="352"
-                        y="49"
-                        fill="light-dark(#000000, #ffffff)"
-                        font-size="12px"
-                      >Composition Layer</text>
+                      <text fill="light-dark(#000000, #ffffff)" font-size="12px" x="352" y="49">
+                        Composition Layer
+                      </text>
                     </switch>
                   </g>
                 </g>
@@ -1564,14 +1721,14 @@
                 <g>
                   <g>
                     <rect
-                      x="130"
-                      y="230"
-                      width="160"
-                      height="160"
                       fill="none"
+                      height="160"
+                      pointer-events="all"
                       stroke="#374151"
                       stroke-dasharray="1 4"
-                      pointer-events="all"
+                      width="160"
+                      x="130"
+                      y="230"
                     />
                   </g>
                 </g>
@@ -1584,13 +1741,13 @@
                   <g>
                     <g>
                       <rect
+                        fill="#374151"
+                        height="25"
+                        pointer-events="all"
+                        stroke="#374151"
+                        width="25"
                         x="130"
                         y="230"
-                        width="25"
-                        height="25"
-                        fill="#374151"
-                        stroke="#374151"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1599,16 +1756,16 @@
                   <g>
                     <g>
                       <rect
-                        x="137.5"
-                        y="237.5"
-                        width="10"
+                        fill="none"
                         height="10"
+                        pointer-events="all"
                         rx="1.5"
                         ry="1.5"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
+                        width="10"
+                        x="137.5"
+                        y="237.5"
                       />
                     </g>
                   </g>
@@ -1617,16 +1774,16 @@
                   <g>
                     <g>
                       <rect
-                        x="140"
-                        y="240"
-                        width="5"
+                        fill="none"
                         height="5"
+                        pointer-events="all"
                         rx="0.75"
                         ry="0.75"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
+                        width="5"
+                        x="140"
+                        y="240"
                       />
                     </g>
                   </g>
@@ -1637,12 +1794,12 @@
                       <ellipse
                         cx="138.44"
                         cy="233.75"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1653,12 +1810,12 @@
                       <ellipse
                         cx="146.56"
                         cy="233.75"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1669,12 +1826,12 @@
                       <ellipse
                         cx="151.56"
                         cy="239.69"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1685,12 +1842,12 @@
                       <ellipse
                         cx="151.56"
                         cy="245.31"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1701,12 +1858,12 @@
                       <ellipse
                         cx="146.56"
                         cy="251.25"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1717,12 +1874,12 @@
                       <ellipse
                         cx="138.44"
                         cy="251.25"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1733,12 +1890,12 @@
                       <ellipse
                         cx="133.44"
                         cy="245.31"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1749,12 +1906,12 @@
                       <ellipse
                         cx="133.44"
                         cy="239.69"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1765,10 +1922,10 @@
                       <path
                         d="M 139.38 251.25 L 140.31 251.25 Q 141.25 251.25 141.25 249.38 L 141.25 247.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -1779,10 +1936,10 @@
                       <path
                         d="M 145.63 251.25 L 144.69 251.25 Q 143.75 251.25 143.75 249.38 L 143.75 247.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -1793,10 +1950,10 @@
                       <path
                         d="M 139.38 233.75 L 140.31 233.75 Q 141.25 233.75 141.25 235.63 L 141.25 237.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -1807,10 +1964,10 @@
                       <path
                         d="M 145.63 233.75 L 144.69 233.75 Q 143.75 233.75 143.75 235.63 L 143.75 237.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -1821,10 +1978,10 @@
                       <path
                         d="M 134.38 245.31 L 137.5 245.31"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -1835,10 +1992,10 @@
                       <path
                         d="M 134.38 239.69 L 137.5 239.69"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -1849,10 +2006,10 @@
                       <path
                         d="M 147.5 239.69 L 150.63 239.69"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -1863,10 +2020,10 @@
                       <path
                         d="M 147.5 245.31 L 150.63 245.31"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -1881,14 +2038,14 @@
                 <g>
                   <g>
                     <rect
-                      x="510"
-                      y="60"
-                      width="160"
-                      height="330"
                       fill="none"
+                      height="330"
+                      pointer-events="all"
                       stroke="#374151"
                       stroke-dasharray="1 4"
-                      pointer-events="all"
+                      width="160"
+                      x="510"
+                      y="60"
                     />
                   </g>
                 </g>
@@ -1901,13 +2058,13 @@
                   <g>
                     <g>
                       <rect
+                        fill="#374151"
+                        height="25"
+                        pointer-events="all"
+                        stroke="#374151"
+                        width="25"
                         x="510"
                         y="60"
-                        width="25"
-                        height="25"
-                        fill="#374151"
-                        stroke="#374151"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1916,16 +2073,16 @@
                   <g>
                     <g>
                       <rect
-                        x="517.5"
-                        y="67.5"
-                        width="10"
+                        fill="none"
                         height="10"
+                        pointer-events="all"
                         rx="1.5"
                         ry="1.5"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
+                        width="10"
+                        x="517.5"
+                        y="67.5"
                       />
                     </g>
                   </g>
@@ -1934,16 +2091,16 @@
                   <g>
                     <g>
                       <rect
-                        x="520"
-                        y="70"
-                        width="5"
+                        fill="none"
                         height="5"
+                        pointer-events="all"
                         rx="0.75"
                         ry="0.75"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
+                        width="5"
+                        x="520"
+                        y="70"
                       />
                     </g>
                   </g>
@@ -1954,12 +2111,12 @@
                       <ellipse
                         cx="518.44"
                         cy="63.75"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1970,12 +2127,12 @@
                       <ellipse
                         cx="526.56"
                         cy="63.75"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -1986,12 +2143,12 @@
                       <ellipse
                         cx="531.56"
                         cy="69.69"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -2002,12 +2159,12 @@
                       <ellipse
                         cx="531.56"
                         cy="75.31"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -2018,12 +2175,12 @@
                       <ellipse
                         cx="526.56"
                         cy="81.25"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -2034,12 +2191,12 @@
                       <ellipse
                         cx="518.44"
                         cy="81.25"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -2050,12 +2207,12 @@
                       <ellipse
                         cx="513.44"
                         cy="75.31"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -2066,12 +2223,12 @@
                       <ellipse
                         cx="513.44"
                         cy="69.69"
+                        fill="none"
+                        pointer-events="all"
                         rx="0.9374999999999999"
                         ry="0.9374999999999999"
-                        fill="none"
                         stroke="#ffffff"
                         stroke-width="0.5"
-                        pointer-events="all"
                       />
                     </g>
                   </g>
@@ -2082,10 +2239,10 @@
                       <path
                         d="M 519.38 81.25 L 520.31 81.25 Q 521.25 81.25 521.25 79.38 L 521.25 77.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -2096,10 +2253,10 @@
                       <path
                         d="M 525.63 81.25 L 524.69 81.25 Q 523.75 81.25 523.75 79.38 L 523.75 77.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -2110,10 +2267,10 @@
                       <path
                         d="M 519.38 63.75 L 520.31 63.75 Q 521.25 63.75 521.25 65.63 L 521.25 67.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -2124,10 +2281,10 @@
                       <path
                         d="M 525.63 63.75 L 524.69 63.75 Q 523.75 63.75 523.75 65.63 L 523.75 67.5"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -2138,10 +2295,10 @@
                       <path
                         d="M 514.38 75.31 L 517.5 75.31"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -2152,10 +2309,10 @@
                       <path
                         d="M 514.38 69.69 L 517.5 69.69"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -2166,10 +2323,10 @@
                       <path
                         d="M 527.5 69.69 L 530.63 69.69"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -2180,10 +2337,10 @@
                       <path
                         d="M 527.5 75.31 L 530.63 75.31"
                         fill="none"
-                        stroke="#ffffff"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
+                        stroke="#ffffff"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -2193,40 +2350,56 @@
                 <g>
                   <g>
                     <rect
+                      fill="none"
+                      height="30"
+                      pointer-events="all"
+                      stroke="none"
+                      width="130"
                       x="540"
                       y="60"
-                      width="130"
-                      height="30"
-                      fill="none"
-                      stroke="none"
-                      pointer-events="all"
                     />
                   </g>
                   <g>
                     <g transform="translate(-0.5 -0.5)">
                       <switch>
                         <foreignObject
-                          style="overflow:visible;text-align:left;"
-                          pointer-events="none"
-                          width="100%"
                           height="100%"
+                          pointer-events="none"
                           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                          style="overflow: visible; text-align: left"
+                          width="100%"
                         >
                           <div
+                            style="
+                              display: flex;
+                              align-items: unsafe flex-start;
+                              justify-content: unsafe flex-start;
+                              width: 128px;
+                              height: 1px;
+                              padding-top: 67px;
+                              margin-left: 542px;
+                            "
                             xmlns="http://www.w3.org/1999/xhtml"
-                            style="display:flex;align-items:unsafe flex-start;justify-content:unsafe flex-start;width:128px;height:1px;padding-top:67px;margin-left:542px;"
                           >
-                            <div style="box-sizing:border-box;font-size:0;text-align:left;">
-                              <div style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;">System B Adapter</div>
+                            <div style="box-sizing: border-box; font-size: 0; text-align: left">
+                              <div
+                                style="
+                                  display: inline-block;
+                                  font-size: 12px;
+                                  line-height: 1.2;
+                                  pointer-events: all;
+                                  white-space: normal;
+                                  word-wrap: normal;
+                                "
+                              >
+                                System B Adapter
+                              </div>
                             </div>
                           </div>
                         </foreignObject>
-                        <text
-                          x="542"
-                          y="79"
-                          fill="light-dark(#000000, #ffffff)"
-                          font-size="12px"
-                        >System B Adapter</text>
+                        <text fill="light-dark(#000000, #ffffff)" font-size="12px" x="542" y="79">
+                          System B Adapter
+                        </text>
                       </switch>
                     </g>
                   </g>
@@ -2237,55 +2410,65 @@
               <g class="blackText">
                 <g>
                   <rect
+                    class="blackText"
+                    fill="#cccccc"
+                    height="80"
+                    pointer-events="all"
+                    rx="12"
+                    ry="12"
+                    stroke="#000000"
+                    width="120"
                     x="150"
                     y="100"
-                    width="120"
-                    height="80"
-                    rx="12"
-                    ry="12"
-                    fill="#cccccc"
-                    stroke="#000000"
-                    pointer-events="all"
-                    class="blackText"
                   />
                 </g>
                 <g>
-                  <g
-                    transform="translate(-0.5 -0.5)"
-                    class="blackText"
-                  >
+                  <g class="blackText" transform="translate(-0.5 -0.5)">
                     <switch>
                       <foreignObject
-                        style="overflow:visible;text-align:left;"
-                        pointer-events="none"
-                        width="100%"
-                        height="100%"
-                        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
                         class="blackText"
+                        height="100%"
+                        pointer-events="none"
+                        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                        style="overflow: visible; text-align: left"
+                        width="100%"
                       >
                         <div
-                          xmlns="http://www.w3.org/1999/xhtml"
-                          style="display:flex;align-items:unsafe center;justify-content:unsafe center;width:118px;height:1px;padding-top:140px;margin-left:151px;"
                           class="blackText"
+                          style="
+                            display: flex;
+                            align-items: unsafe center;
+                            justify-content: unsafe center;
+                            width: 118px;
+                            height: 1px;
+                            padding-top: 140px;
+                            margin-left: 151px;
+                          "
+                          xmlns="http://www.w3.org/1999/xhtml"
                         >
                           <div
-                            style="box-sizing:border-box;font-size:0;text-align:center;"
                             class="blackText"
+                            style="box-sizing: border-box; font-size: 0; text-align: center"
                           >
                             <div
-                              style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;"
                               class="blackText"
-                            >Dedicated Service</div>
+                              style="
+                                display: inline-block;
+                                font-size: 12px;
+                                line-height: 1.2;
+                                pointer-events: all;
+                                white-space: normal;
+                                word-wrap: normal;
+                              "
+                            >
+                              Dedicated Service
+                            </div>
                           </div>
                         </div>
                       </foreignObject>
-                      <text
-                        x="210"
-                        y="144"
-                        font-size="12px"
-                        text-anchor="middle"
-                        class="blackText"
-                      >Dedicated Service</text>
+                      <text class="blackText" font-size="12px" text-anchor="middle" x="210" y="144">
+                        Dedicated Service
+                      </text>
                     </switch>
                   </g>
                 </g>
@@ -2295,55 +2478,65 @@
               <g class="blackText">
                 <g>
                   <rect
+                    class="blackText"
+                    fill="#cccccc"
+                    height="80"
+                    pointer-events="all"
+                    rx="12"
+                    ry="12"
+                    stroke="#000000"
+                    width="120"
                     x="530"
                     y="186"
-                    width="120"
-                    height="80"
-                    rx="12"
-                    ry="12"
-                    fill="#cccccc"
-                    stroke="#000000"
-                    pointer-events="all"
-                    class="blackText"
                   />
                 </g>
                 <g>
-                  <g
-                    transform="translate(-0.5 -0.5)"
-                    class="blackText"
-                  >
+                  <g class="blackText" transform="translate(-0.5 -0.5)">
                     <switch>
                       <foreignObject
-                        style="overflow:visible;text-align:left;"
-                        pointer-events="none"
-                        width="100%"
-                        height="100%"
-                        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
                         class="blackText"
+                        height="100%"
+                        pointer-events="none"
+                        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                        style="overflow: visible; text-align: left"
+                        width="100%"
                       >
                         <div
-                          xmlns="http://www.w3.org/1999/xhtml"
-                          style="display:flex;align-items:unsafe center;justify-content:unsafe center;width:118px;height:1px;padding-top:226px;margin-left:531px;"
                           class="blackText"
+                          style="
+                            display: flex;
+                            align-items: unsafe center;
+                            justify-content: unsafe center;
+                            width: 118px;
+                            height: 1px;
+                            padding-top: 226px;
+                            margin-left: 531px;
+                          "
+                          xmlns="http://www.w3.org/1999/xhtml"
                         >
                           <div
-                            style="box-sizing:border-box;font-size:0;text-align:center;"
                             class="blackText"
+                            style="box-sizing: border-box; font-size: 0; text-align: center"
                           >
                             <div
-                              style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;"
                               class="blackText"
-                            >Data Service</div>
+                              style="
+                                display: inline-block;
+                                font-size: 12px;
+                                line-height: 1.2;
+                                pointer-events: all;
+                                white-space: normal;
+                                word-wrap: normal;
+                              "
+                            >
+                              Data Service
+                            </div>
                           </div>
                         </div>
                       </foreignObject>
-                      <text
-                        x="590"
-                        y="230"
-                        font-size="12px"
-                        text-anchor="middle"
-                        class="blackText"
-                      >Data Service</text>
+                      <text class="blackText" font-size="12px" text-anchor="middle" x="590" y="230">
+                        Data Service
+                      </text>
                     </switch>
                   </g>
                 </g>
@@ -2353,16 +2546,16 @@
               <g class="arrow">
                 <g>
                   <path
+                    class="arrow"
                     d="M 80 120 L 143.63 120"
-                    stroke-miterlimit="10"
                     pointer-events="stroke"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                   <path
+                    class="arrow"
                     d="M 148.88 120 L 141.88 123.5 L 143.63 120 L 141.88 116.5 Z"
-                    stroke-miterlimit="10"
                     pointer-events="all"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -2371,16 +2564,16 @@
               <g class="arrow">
                 <g>
                   <path
+                    class="arrow"
                     d="M 150 160 L 86.37 160"
-                    stroke-miterlimit="10"
                     pointer-events="stroke"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                   <path
+                    class="arrow"
                     d="M 81.12 160 L 88.12 156.5 L 86.37 160 L 88.12 163.5 Z"
-                    stroke-miterlimit="10"
                     pointer-events="all"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -2389,16 +2582,16 @@
               <g class="arrow">
                 <g>
                   <path
+                    class="arrow"
                     d="M 650 206 L 713.63 206"
-                    stroke-miterlimit="10"
                     pointer-events="stroke"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                   <path
+                    class="arrow"
                     d="M 718.88 206 L 711.88 209.5 L 713.63 206 L 711.88 202.5 Z"
-                    stroke-miterlimit="10"
                     pointer-events="all"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -2407,16 +2600,16 @@
               <g class="arrow">
                 <g>
                   <path
+                    class="arrow"
                     d="M 720 246 L 656.37 246"
-                    stroke-miterlimit="10"
                     pointer-events="stroke"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                   <path
+                    class="arrow"
                     d="M 651.12 246 L 658.12 242.5 L 656.37 246 L 658.12 249.5 Z"
-                    stroke-miterlimit="10"
                     pointer-events="all"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -2425,16 +2618,16 @@
               <g class="arrow">
                 <g>
                   <path
+                    class="arrow"
                     d="M 270 120 L 370 120 Q 380 120 380 130 L 380 196 Q 380 206 390 206 L 523.63 206"
-                    stroke-miterlimit="10"
                     pointer-events="stroke"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                   <path
-                    d="M 528.88 206 L 521.88 209.5 L 523.63 206 L 521.88 202.5 Z"
-                    stroke-miterlimit="10"
-                    pointer-events="all"
                     class="arrow"
+                    d="M 528.88 206 L 521.88 209.5 L 523.63 206 L 521.88 202.5 Z"
+                    pointer-events="all"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -2443,16 +2636,16 @@
               <g class="arrow">
                 <g>
                   <path
-                    d="M 530 246 L 350 246 Q 340 246 340 236 L 340 170 Q 340 160 330 160 L 276.37 160"
-                    stroke-miterlimit="10"
-                    pointer-events="stroke"
                     class="arrow"
+                    d="M 530 246 L 350 246 Q 340 246 340 236 L 340 170 Q 340 160 330 160 L 276.37 160"
+                    pointer-events="stroke"
+                    stroke-miterlimit="10"
                   />
                   <path
-                    d="M 271.12 160 L 278.12 156.5 L 276.37 160 L 278.12 163.5 Z"
-                    stroke-miterlimit="10"
-                    pointer-events="all"
                     class="arrow"
+                    d="M 271.12 160 L 278.12 156.5 L 276.37 160 L 278.12 163.5 Z"
+                    pointer-events="all"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -2461,55 +2654,65 @@
               <g class="blackText">
                 <g>
                   <rect
-                    x="150"
-                    y="270"
-                    width="120"
+                    class="blackText"
+                    fill="#cccccc"
                     height="80"
+                    pointer-events="all"
                     rx="12"
                     ry="12"
-                    fill="#cccccc"
                     stroke="#000000"
-                    pointer-events="all"
-                    class="blackText"
+                    width="120"
+                    x="150"
+                    y="270"
                   />
                 </g>
                 <g>
-                  <g
-                    transform="translate(-0.5 -0.5)"
-                    class="blackText"
-                  >
+                  <g class="blackText" transform="translate(-0.5 -0.5)">
                     <switch>
                       <foreignObject
-                        style="overflow:visible;text-align:left;"
-                        pointer-events="none"
-                        width="100%"
-                        height="100%"
-                        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
                         class="blackText"
+                        height="100%"
+                        pointer-events="none"
+                        requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                        style="overflow: visible; text-align: left"
+                        width="100%"
                       >
                         <div
-                          xmlns="http://www.w3.org/1999/xhtml"
-                          style="display:flex;align-items:unsafe center;justify-content:unsafe center;width:118px;height:1px;padding-top:310px;margin-left:151px;"
                           class="blackText"
+                          style="
+                            display: flex;
+                            align-items: unsafe center;
+                            justify-content: unsafe center;
+                            width: 118px;
+                            height: 1px;
+                            padding-top: 310px;
+                            margin-left: 151px;
+                          "
+                          xmlns="http://www.w3.org/1999/xhtml"
                         >
                           <div
-                            style="box-sizing:border-box;font-size:0;text-align:center;"
                             class="blackText"
+                            style="box-sizing: border-box; font-size: 0; text-align: center"
                           >
                             <div
-                              style="display:inline-block;font-size:12px;line-height:1.2;pointer-events:all;white-space:normal;word-wrap:normal;"
                               class="blackText"
-                            >Dedicated Service</div>
+                              style="
+                                display: inline-block;
+                                font-size: 12px;
+                                line-height: 1.2;
+                                pointer-events: all;
+                                white-space: normal;
+                                word-wrap: normal;
+                              "
+                            >
+                              Dedicated Service
+                            </div>
                           </div>
                         </div>
                       </foreignObject>
-                      <text
-                        x="210"
-                        y="314"
-                        font-size="12px"
-                        text-anchor="middle"
-                        class="blackText"
-                      >Dedicated Service</text>
+                      <text class="blackText" font-size="12px" text-anchor="middle" x="210" y="314">
+                        Dedicated Service
+                      </text>
                     </switch>
                   </g>
                 </g>
@@ -2519,16 +2722,16 @@
               <g class="arrow">
                 <g>
                   <path
+                    class="arrow"
                     d="M 80 290 L 143.63 290"
-                    stroke-miterlimit="10"
                     pointer-events="stroke"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                   <path
+                    class="arrow"
                     d="M 148.88 290 L 141.88 293.5 L 143.63 290 L 141.88 286.5 Z"
-                    stroke-miterlimit="10"
                     pointer-events="all"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -2537,16 +2740,16 @@
               <g class="arrow">
                 <g>
                   <path
+                    class="arrow"
                     d="M 150 330 L 86.37 330"
-                    stroke-miterlimit="10"
                     pointer-events="stroke"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                   <path
+                    class="arrow"
                     d="M 81.12 330 L 88.12 326.5 L 86.37 330 L 88.12 333.5 Z"
-                    stroke-miterlimit="10"
                     pointer-events="all"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -2555,16 +2758,16 @@
               <g class="arrow">
                 <g>
                   <path
+                    class="arrow"
                     d="M 270 290 L 370 290 Q 380 290 380 280 L 380 216 Q 380 206 390 206 L 523.63 206"
-                    stroke-miterlimit="10"
                     pointer-events="stroke"
-                    class="arrow"
+                    stroke-miterlimit="10"
                   />
                   <path
-                    d="M 528.88 206 L 521.88 209.5 L 523.63 206 L 521.88 202.5 Z"
-                    stroke-miterlimit="10"
-                    pointer-events="all"
                     class="arrow"
+                    d="M 528.88 206 L 521.88 209.5 L 523.63 206 L 521.88 202.5 Z"
+                    pointer-events="all"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -2573,16 +2776,16 @@
               <g class="arrow">
                 <g>
                   <path
-                    d="M 530 246 L 350 246 Q 340 246 340 256 L 340 320 Q 340 330 330 330 L 276.37 330"
-                    stroke-miterlimit="10"
-                    pointer-events="stroke"
                     class="arrow"
+                    d="M 530 246 L 350 246 Q 340 246 340 256 L 340 320 Q 340 330 330 330 L 276.37 330"
+                    pointer-events="stroke"
+                    stroke-miterlimit="10"
                   />
                   <path
-                    d="M 271.12 330 L 278.12 326.5 L 276.37 330 L 278.12 333.5 Z"
-                    stroke-miterlimit="10"
-                    pointer-events="all"
                     class="arrow"
+                    d="M 271.12 330 L 278.12 326.5 L 276.37 330 L 278.12 333.5 Z"
+                    pointer-events="all"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -2594,52 +2797,51 @@
   </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .syncSvgParent {
   transition: var(--diagramColorTransition);
 }
-.top{
+.top {
   fill: var(--tw-color-gray-500);
   stroke: black;
   stroke-width: 2;
   .dark > * & {
     fill: var(--tw-color-gray-50);
   }
-};
-.left{
+}
+.left {
   fill: var(--tw-color-gray-600);
   stroke: black;
   stroke-width: 2;
   .dark > * & {
     fill: var(--tw-color-gray-200);
   }
-};
-.right{
+}
+.right {
   fill: var(--tw-color-gray-800);
   stroke: black;
   stroke-width: 2;
   .dark > * & {
     fill: var(--tw-color-gray-400);
   }
-};
-.blackText{
+}
+.blackText {
   color: var(--tw-color-black);
   .dark > * & {
     color: var(--tw-color-black);
   }
-};
-.arrow{
+}
+.arrow {
   stroke: var(--tw-color-black);
   fill: none;
   .dark > * & {
     stroke: var(--tw-color-white);
   }
-};
-.arrow:nth-child(2){
+}
+.arrow:nth-child(2) {
   fill: var(--tw-color-black);
   .dark > * & {
     fill: var(--tw-color-white);
   }
-};
-
+}
 </style>

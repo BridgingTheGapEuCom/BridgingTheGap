@@ -1,16 +1,16 @@
 <template>
   <div
-    tabindex="0"
     aria-label="Illustration of a message broker distributing messages. System A publishes messages to the broker, which are then delivered to System B and System C."
-    role="img"
     class="syncSvgParent w-full sm:w-9/12"
+    role="img"
+    tabindex="0"
   >
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      style="background: transparent; background-color: transparent; color-scheme: light dark"
-      width="357px"
       height="224px"
+      style="background: transparent; background-color: transparent; color-scheme: light dark"
       viewBox="-0.5 -0.5 357 224"
+      width="357px"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <defs />
       <g>
@@ -24,13 +24,13 @@
                 <g class="messageBrokerBorder">
                   <g>
                     <rect
+                      class="messageBrokerBorder"
+                      height="200"
+                      pointer-events="all"
+                      stroke-dasharray="1 4"
+                      width="160"
                       x="100"
                       y="9"
-                      width="160"
-                      height="200"
-                      stroke-dasharray="1 4"
-                      pointer-events="all"
-                      class="messageBrokerBorder"
                     />
                   </g>
                 </g>
@@ -43,12 +43,12 @@
                   <g class="messageBrokerBackground">
                     <g>
                       <rect
-                        x="100"
-                        y="9"
-                        width="25"
+                        class="messageBrokerBackground"
                         height="25"
                         pointer-events="all"
-                        class="messageBrokerBackground"
+                        width="25"
+                        x="100"
+                        y="9"
                       />
                     </g>
                   </g>
@@ -57,18 +57,18 @@
                   <g class="messageIcon">
                     <g>
                       <rect
-                        x="107.81"
-                        y="17.09"
-                        width="14.06"
+                        class="messageIcon"
                         height="8.83"
                         pointer-events="all"
-                        class="messageIcon"
+                        width="14.06"
+                        x="107.81"
+                        y="17.09"
                       />
                       <path
+                        class="messageIcon"
                         d="M 107.81 17.09 L 114.84 24.31 L 121.88 17.09 M 107.81 25.92 L 112.17 21.5 M 121.88 25.92 L 117.52 21.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="messageIcon"
+                        stroke-miterlimit="10"
                       />
                     </g>
                   </g>
@@ -77,10 +77,10 @@
                   <g class="messageIcon">
                     <g>
                       <path
+                        class="messageIcon"
                         d="M 101.56 18.38 L 107.81 18.38"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
-                        class="messageIcon"
+                        stroke-miterlimit="10"
                       />
                     </g>
                   </g>
@@ -89,10 +89,10 @@
                   <g class="messageIcon">
                     <g>
                       <path
+                        class="messageIcon"
                         d="M 102.5 19.63 L 107.81 19.63"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
-                        class="messageIcon"
+                        stroke-miterlimit="10"
                       />
                     </g>
                   </g>
@@ -101,10 +101,10 @@
                   <g class="messageIcon">
                     <g>
                       <path
-                        d="M 103.44 20.88 L 107.81 20.88"
-                        stroke-miterlimit="10"
-                        pointer-events="stroke"
                         class="messageIcon"
+                        d="M 103.44 20.88 L 107.81 20.88"
+                        pointer-events="stroke"
+                        stroke-miterlimit="10"
                       />
                     </g>
                   </g>
@@ -114,27 +114,26 @@
                 <g>
                   <g>
                     <rect
+                      fill="none"
+                      height="25"
+                      pointer-events="all"
+                      stroke="none"
+                      width="132.36"
                       x="130"
                       y="9"
-                      width="132.36"
-                      height="25"
-                      fill="none"
-                      stroke="none"
-                      pointer-events="all"
                     />
                   </g>
                   <g>
                     <g transform="translate(-0.5 -0.5)">
                       <switch>
                         <foreignObject
-                          style="overflow: visible; text-align: left"
-                          pointer-events="none"
-                          width="100%"
                           height="100%"
+                          pointer-events="none"
                           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                          style="overflow: visible; text-align: left"
+                          width="100%"
                         >
                           <div
-                            xmlns="http://www.w3.org/1999/xhtml"
                             style="
                               display: flex;
                               align-items: unsafe flex-start;
@@ -144,6 +143,7 @@
                               padding-top: 16px;
                               margin-left: 132px;
                             "
+                            xmlns="http://www.w3.org/1999/xhtml"
                           >
                             <div style="box-sizing: border-box; font-size: 0; text-align: left">
                               <div
@@ -161,7 +161,7 @@
                             </div>
                           </div>
                         </foreignObject>
-                        <text x="132" y="28" fill="light-dark(#000000, #ffffff)" font-size="12px">
+                        <text fill="light-dark(#000000, #ffffff)" font-size="12px" x="132" y="28">
                           Message Broker
                         </text>
                       </switch>
@@ -177,18 +177,18 @@
                   <g class="topic">
                     <g>
                       <path
+                        class="topic"
                         d="M 170 64 C 170 61.24 174.48 59 180 59 C 182.65 59 185.2 59.53 187.07 60.46 C 188.95 61.4 190 62.67 190 64 L 190 134 C 190 136.76 185.52 139 180 139 C 174.48 139 170 136.76 170 134 Z"
+                        pointer-events="all"
                         stroke-miterlimit="10"
                         transform="rotate(90,180,99)"
-                        pointer-events="all"
-                        class="topic"
                       />
                       <path
+                        class="topic"
                         d="M 190 64 C 190 66.76 185.52 69 180 69 C 174.48 69 170 66.76 170 64"
+                        pointer-events="all"
                         stroke-miterlimit="10"
                         transform="rotate(90,180,99)"
-                        pointer-events="all"
-                        class="topic"
                       />
                     </g>
                   </g>
@@ -197,10 +197,10 @@
                   <g class="topicTriangle">
                     <g>
                       <path
+                        class="topicTriangle"
                         d="M 166 92.73 L 176 99 L 166 105.26 Z"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="topicTriangle"
+                        stroke-miterlimit="10"
                       />
                     </g>
                   </g>
@@ -209,10 +209,10 @@
                   <g class="topicTriangle">
                     <g>
                       <path
+                        class="topicTriangle"
                         d="M 150 92.73 L 160 99 L 150 105.26 Z"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="topicTriangle"
+                        stroke-miterlimit="10"
                       />
                     </g>
                   </g>
@@ -221,18 +221,18 @@
                   <g class="blackArrow">
                     <g>
                       <path
+                        class="blackArrow"
                         d="M 176 96 L 181 92.74 L 184.32 92.74"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
-                        class="blackArrow"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                       <path
+                        class="blackArrow"
                         d="M 185.44 92.74 L 183.94 93.49 L 184.32 92.74 L 183.94 91.99 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="blackArrow"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -241,18 +241,18 @@
                   <g class="blackArrow">
                     <g>
                       <path
+                        class="blackArrow"
                         d="M 176 102 L 181 105.26 L 184.32 105.26"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
-                        class="blackArrow"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                       <path
-                        d="M 185.44 105.26 L 183.94 106.01 L 184.32 105.26 L 183.94 104.51 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
-                        pointer-events="all"
                         class="blackArrow"
+                        d="M 185.44 105.26 L 183.94 106.01 L 184.32 105.26 L 183.94 104.51 Z"
+                        pointer-events="all"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -261,18 +261,18 @@
                   <g class="blackArrow">
                     <g>
                       <path
+                        class="blackArrow"
                         d="M 177 98.95 L 185.32 98.95"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="stroke"
-                        class="blackArrow"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                       <path
+                        class="blackArrow"
                         d="M 186.44 98.95 L 184.94 99.7 L 185.32 98.95 L 184.94 98.2 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="blackArrow"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -281,11 +281,11 @@
                   <g class="topicTriangle">
                     <g>
                       <path
+                        class="topicTriangle"
                         d="M 194 91.2 L 197 92.7 L 194 94.2 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="topicTriangle"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -294,11 +294,11 @@
                   <g class="topicTriangle">
                     <g>
                       <path
+                        class="topicTriangle"
                         d="M 188 91.2 L 191 92.7 L 188 94.2 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="topicTriangle"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -307,11 +307,11 @@
                   <g class="topicTriangle">
                     <g>
                       <path
+                        class="topicTriangle"
                         d="M 194 97.5 L 197 99 L 194 100.5 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="topicTriangle"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -320,11 +320,11 @@
                   <g class="topicTriangle">
                     <g>
                       <path
+                        class="topicTriangle"
                         d="M 188 97.5 L 191 99 L 188 100.5 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="topicTriangle"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -333,11 +333,11 @@
                   <g class="topicTriangle">
                     <g>
                       <path
+                        class="topicTriangle"
                         d="M 194 103.8 L 197 105.3 L 194 106.8 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="topicTriangle"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -346,11 +346,11 @@
                   <g class="topicTriangle">
                     <g>
                       <path
+                        class="topicTriangle"
                         d="M 188 103.8 L 191 105.3 L 188 106.8 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="topicTriangle"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -359,11 +359,11 @@
                   <g class="topicTriangle">
                     <g>
                       <path
+                        class="topicTriangle"
                         d="M 200 97.5 L 203 99 L 200 100.5 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="topicTriangle"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -372,11 +372,11 @@
                   <g class="topicTriangle">
                     <g>
                       <path
+                        class="topicTriangle"
                         d="M 200 91.2 L 203 92.7 L 200 94.2 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
                         pointer-events="all"
-                        class="topicTriangle"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -385,11 +385,11 @@
                   <g class="topicTriangle">
                     <g>
                       <path
-                        d="M 200 103.8 L 203 105.3 L 200 106.8 Z"
-                        stroke-width="0.5"
-                        stroke-miterlimit="10"
-                        pointer-events="all"
                         class="topicTriangle"
+                        d="M 200 103.8 L 203 105.3 L 200 106.8 Z"
+                        pointer-events="all"
+                        stroke-miterlimit="10"
+                        stroke-width="0.5"
                       />
                     </g>
                   </g>
@@ -403,19 +403,26 @@
               <g>
                 <g>
                   <g>
-                    <svg viewBox="0 0 850 850" x="-0.5" y="61.5" width="77" height="77">
+                    <svg
+                      height="77"
+                      style="height: 77px; width: 77px"
+                      viewBox="0 0 850 850"
+                      width="77"
+                      x="-0.5"
+                      y="61.5"
+                    >
                       <g>
                         <path
-                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                           class="top"
+                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                         />
                         <path
-                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                           class="left"
+                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                         />
                         <path
-                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                           class="right"
+                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                         />
                       </g>
                     </svg>
@@ -426,27 +433,26 @@
                 <g>
                   <g>
                     <rect
+                      fill="none"
+                      height="30"
+                      pointer-events="all"
+                      stroke="none"
+                      width="60"
                       x="8.5"
                       y="136"
-                      width="60"
-                      height="30"
-                      fill="none"
-                      stroke="none"
-                      pointer-events="all"
                     />
                   </g>
                   <g>
                     <g transform="translate(-0.5 -0.5)">
                       <switch>
                         <foreignObject
-                          style="overflow: visible; text-align: left"
-                          pointer-events="none"
-                          width="100%"
                           height="100%"
+                          pointer-events="none"
                           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                          style="overflow: visible; text-align: left"
+                          width="100%"
                         >
                           <div
-                            xmlns="http://www.w3.org/1999/xhtml"
                             style="
                               display: flex;
                               align-items: unsafe center;
@@ -456,6 +462,7 @@
                               padding-top: 151px;
                               margin-left: 10px;
                             "
+                            xmlns="http://www.w3.org/1999/xhtml"
                           >
                             <div style="box-sizing: border-box; font-size: 0; text-align: center">
                               <div
@@ -474,11 +481,11 @@
                           </div>
                         </foreignObject>
                         <text
-                          x="39"
-                          y="155"
                           fill="light-dark(#000000, #ffffff)"
                           font-size="12px"
                           text-anchor="middle"
+                          x="39"
+                          y="155"
                         >
                           System A
                         </text>
@@ -492,16 +499,16 @@
               <g class="arrow">
                 <g>
                   <path
-                    d="M 75.46 99.04 L 133.63 99"
-                    stroke-miterlimit="10"
-                    pointer-events="stroke"
                     class="arrow"
+                    d="M 75.46 99.04 L 133.63 99"
+                    pointer-events="stroke"
+                    stroke-miterlimit="10"
                   />
                   <path
-                    d="M 138.88 99 L 131.88 102.5 L 133.63 99 L 131.88 95.5 Z"
-                    stroke-miterlimit="10"
-                    pointer-events="all"
                     class="arrow"
+                    d="M 138.88 99 L 131.88 102.5 L 133.63 99 L 131.88 95.5 Z"
+                    pointer-events="all"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -510,16 +517,16 @@
               <g class="arrow">
                 <g>
                   <path
-                    d="M 220 99 L 225 99 Q 230 99 235 99 L 237.5 99 Q 240 99 240 89 L 240 49 Q 240 39 250 38.88 L 273.63 38.58"
-                    stroke-miterlimit="10"
-                    pointer-events="stroke"
                     class="arrow"
+                    d="M 220 99 L 225 99 Q 230 99 235 99 L 237.5 99 Q 240 99 240 89 L 240 49 Q 240 39 250 38.88 L 273.63 38.58"
+                    pointer-events="stroke"
+                    stroke-miterlimit="10"
                   />
                   <path
-                    d="M 278.88 38.51 L 271.93 42.1 L 273.63 38.58 L 271.84 35.1 Z"
-                    stroke-miterlimit="10"
-                    pointer-events="all"
                     class="arrow"
+                    d="M 278.88 38.51 L 271.93 42.1 L 273.63 38.58 L 271.84 35.1 Z"
+                    pointer-events="all"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -531,19 +538,26 @@
               <g>
                 <g>
                   <g>
-                    <svg viewBox="0 0 850 850" x="279.5" y="119.5" width="77" height="77">
+                    <svg
+                      height="77"
+                      style="height: 77px; width: 77px"
+                      viewBox="0 0 850 850"
+                      width="77"
+                      x="279.5"
+                      y="119.5"
+                    >
                       <g>
                         <path
-                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                           class="top"
+                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                         />
                         <path
-                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                           class="left"
+                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                         />
                         <path
-                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                           class="right"
+                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                         />
                       </g>
                     </svg>
@@ -554,27 +568,26 @@
                 <g>
                   <g>
                     <rect
+                      fill="none"
+                      height="30"
+                      pointer-events="all"
+                      stroke="none"
+                      width="60"
                       x="288.5"
                       y="194"
-                      width="60"
-                      height="30"
-                      fill="none"
-                      stroke="none"
-                      pointer-events="all"
                     />
                   </g>
                   <g>
                     <g transform="translate(-0.5 -0.5)">
                       <switch>
                         <foreignObject
-                          style="overflow: visible; text-align: left"
-                          pointer-events="none"
-                          width="100%"
                           height="100%"
+                          pointer-events="none"
                           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                          style="overflow: visible; text-align: left"
+                          width="100%"
                         >
                           <div
-                            xmlns="http://www.w3.org/1999/xhtml"
                             style="
                               display: flex;
                               align-items: unsafe center;
@@ -584,6 +597,7 @@
                               padding-top: 209px;
                               margin-left: 290px;
                             "
+                            xmlns="http://www.w3.org/1999/xhtml"
                           >
                             <div style="box-sizing: border-box; font-size: 0; text-align: center">
                               <div
@@ -602,11 +616,11 @@
                           </div>
                         </foreignObject>
                         <text
-                          x="319"
-                          y="213"
                           fill="light-dark(#000000, #ffffff)"
                           font-size="12px"
                           text-anchor="middle"
+                          x="319"
+                          y="213"
                         >
                           System C
                         </text>
@@ -623,19 +637,26 @@
               <g>
                 <g>
                   <g>
-                    <svg viewBox="0 0 850 850" x="279.5" y="-0.5" width="77" height="77">
+                    <svg
+                      height="77"
+                      style="height: 77px; width: 77px"
+                      viewBox="0 0 850 850"
+                      width="77"
+                      x="279.5"
+                      y="-0.5"
+                    >
                       <g>
                         <path
-                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                           class="top"
+                          d="M 230 280 l 157.18 72.352 c 20.668 9.5156 54.496 9.5156 75.145 0 l 132.64 -61.055 l 217.53 -103.74 c -4.5742 -3.4336 -9.25 -6.5156 -14.191 -8.7734 l -317.09 -146.01 c -30.992 -14.277 -81.746 -14.277 -112.76 0 l -317.19 146.01 c -5.0703 2.3164 -9.8672 5.5234 -14.543 9.0625 z"
                         />
                         <path
-                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                           class="left"
+                          d="m 423.34 420.96 c 0 -22.801 -16.902 -49.16 -37.574 -58.695 l -239.42 -110.15 c -0.207 -0.082 -0.3711 -0.25 -0.5781 -0.3516 l -108.25 -49.883 v 372.25 c 0 34.137 25.387 73.738 56.398 88.035 l 317.19 146.03 c 2.8125 1.3047 5.957 2.3398 9.0625 3.3945 l 3.1445 -193.8 l 0.0039 -196.82 z"
                         />
                         <path
-                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                           class="right"
+                          d="m 708.59 250.96 c -0.4336 0.2266 -0.8086 0.5391 -1.2812 0.7656 l -239.46 110.21 c -20.691 9.4961 -37.574 35.918 -37.574 58.676 v 162.12 l 0.4766 -0.0195 l -0.7461 229.8 c 4.4688 -1.3438 8.7109 -2.9375 12.621 -4.7383 l 317.17 -146.03 c 30.992 -14.277 56.398 -53.875 56.398 -88.035 l -0.0625 -372.39 z"
                         />
                       </g>
                     </svg>
@@ -646,27 +667,26 @@
                 <g>
                   <g>
                     <rect
+                      fill="none"
+                      height="30"
+                      pointer-events="all"
+                      stroke="none"
+                      width="60"
                       x="288.5"
                       y="74"
-                      width="60"
-                      height="30"
-                      fill="none"
-                      stroke="none"
-                      pointer-events="all"
                     />
                   </g>
                   <g>
                     <g transform="translate(-0.5 -0.5)">
                       <switch>
                         <foreignObject
-                          style="overflow: visible; text-align: left"
-                          pointer-events="none"
-                          width="100%"
                           height="100%"
+                          pointer-events="none"
                           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                          style="overflow: visible; text-align: left"
+                          width="100%"
                         >
                           <div
-                            xmlns="http://www.w3.org/1999/xhtml"
                             style="
                               display: flex;
                               align-items: unsafe center;
@@ -676,6 +696,7 @@
                               padding-top: 89px;
                               margin-left: 290px;
                             "
+                            xmlns="http://www.w3.org/1999/xhtml"
                           >
                             <div style="box-sizing: border-box; font-size: 0; text-align: center">
                               <div
@@ -694,11 +715,11 @@
                           </div>
                         </foreignObject>
                         <text
-                          x="319"
-                          y="93"
                           fill="light-dark(#000000, #ffffff)"
                           font-size="12px"
                           text-anchor="middle"
+                          x="319"
+                          y="93"
                         >
                           System B
                         </text>
@@ -712,16 +733,16 @@
               <g class="arrow">
                 <g>
                   <path
-                    d="M 220 99 L 225 99 Q 230 99 235 99 L 237.5 99 Q 240 99 240 109 L 240 149 Q 240 159 250 158.88 L 273.63 158.58"
-                    stroke-miterlimit="10"
-                    pointer-events="stroke"
                     class="arrow"
+                    d="M 220 99 L 225 99 Q 230 99 235 99 L 237.5 99 Q 240 99 240 109 L 240 149 Q 240 159 250 158.88 L 273.63 158.58"
+                    pointer-events="stroke"
+                    stroke-miterlimit="10"
                   />
                   <path
-                    d="M 278.88 158.51 L 271.93 162.1 L 273.63 158.58 L 271.84 155.1 Z"
-                    stroke-miterlimit="10"
-                    pointer-events="all"
                     class="arrow"
+                    d="M 278.88 158.51 L 271.93 162.1 L 273.63 158.58 L 271.84 155.1 Z"
+                    pointer-events="all"
+                    stroke-miterlimit="10"
                   />
                 </g>
               </g>
@@ -733,9 +754,9 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script lang="ts" setup></script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .syncSvgParent {
   --color: var(--tw-color-black);
 

@@ -122,6 +122,9 @@ const jsonCopied = ref(false)
 
 loading.value = true
 
+/**
+ * Fetch badge details from the API using the badge ID from the route query.
+ */
 try {
   const response = await useFetch(`/api/getBadgeDetails?id=${route.query.id}`)
 
