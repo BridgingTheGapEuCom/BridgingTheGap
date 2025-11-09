@@ -49,6 +49,12 @@ export default defineNuxtConfig({
           'https://www.gstatic.com',
           'www.youtube-nocookie.com'
         ],
+        'connect-src': [
+          "'self'",
+          'https://www.googletagmanager.com',
+          'https://www.google-analytics.com',
+          'https://*.google-analytics.com'
+        ],
         'style-src': ["'self'", 'https:', "'unsafe-inline'"],
         'frame-src': [
           "'self'",
@@ -157,14 +163,14 @@ export default defineNuxtConfig({
 
   gtag: {
     id: 'G-PTPGZG8THC',
+    enabled: true,
+    initMode: 'auto',
     config: {
       anonymize_ip: true,
-      send_page_view: false,
+      send_page_view: true,
       linker: {
         domains: ['bridgingthegap.eu.com']
       }
-    },
-    debug: true,
-    disableAutoPageTrack: false
+    }
   }
 })
