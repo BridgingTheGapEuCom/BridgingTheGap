@@ -3,7 +3,7 @@
     <StreamLayout
       :transcript="transcript"
       name="Loosely Coupled - EDA to Power Warehouse Systems"
-      video-id="ORUcj_0NhGA"
+      video-id="sC71XVs3LHU"
     />
   </div>
 </template>
@@ -11,7075 +11,4325 @@
 <script lang="ts" setup>
 const transcript = ref([
   {
-    startTime: 107.32,
+    startTime: 104.39,
     person: 'Karol',
-    text: ' Good morning, good afternoon and good evening, everybody I hope everybody has a nice beverage to enjoy this wonderful time.'
+    text: ' Good morning, good afternoon, good evening, everybody.'
   },
   {
-    startTime: 128.66,
+    startTime: 107.87,
     person: 'Karol',
-    text: " It's 7pm Central European Standard Time and I welcome you again to another episode of loosely coupled by bridging the gap."
+    text: ' Welcome to Loosely Coupled, brought to you by Bridging the App.'
   },
   {
-    startTime: 137.76,
+    startTime: 111.27,
     person: 'Karol',
-    text: " I'm your host, Karol Skrzymowski."
+    text: " My name is Karol Skrzymowski and I'll be your host tonight."
   },
   {
-    startTime: 140.18,
+    startTime: 115.03,
     person: 'Karol',
-    text: " And today we're having a, whew, that's an interesting topic and quite so in line of my work because, well, professionally I do design APIs."
+    text: " And today we're having quite an interesting topic to tackle."
   },
   {
-    startTime: 152.36,
+    startTime: 119.65,
     person: 'Karol',
-    text: " So we're gonna be navigating API design with two wonderful guests from CodeCentric from Germany, Dr. Miriam Greis and Daniel Kocot."
+    text: " We're going to be talking about event-driven architecture, but in a very different edition than the usual, which means that we're going to be talking about an architecture that actually touches the physical world."
   },
+  { startTime: 132.19, person: 'Karol', text: " Normally, we don't really get to see that." },
   {
-    startTime: 165.14,
+    startTime: 134.45,
     person: 'Karol',
-    text: ' Yeah, I see Daniel already on the preview laughing that I made a small mistake in pronunciation.'
+    text: ' We see just, you know, pixels on the screen, etc.'
   },
   {
-    startTime: 174.4,
+    startTime: 138.11,
     person: 'Karol',
-    text: ' Difficult last names for me always, right?'
+    text: " Today, we're having a very interesting instalment of having event-driven architecture in a warehouse."
   },
   {
-    startTime: 178.42,
+    startTime: 143.45,
     person: 'Karol',
-    text: ' And today they will be talking with us here about designing APIs and also a lovely topic of data interface quadrants, which is something that they worked on together in CodeCentric.'
+    text: " And to tell you all about that, we're going to be having Valeriia Filimonova, a staff engineer from Picnic Technologies, a FMCG company in the Netherlands."
   },
   {
-    startTime: 193.88,
+    startTime: 155.33,
     person: 'Karol',
-    text: ' So without further ado, hello, hello.'
+    text: ' Now, Valeria is a person passionate about software architecture, clean code, and distributed systems.'
   },
+  { startTime: 162.23, person: 'Karol', text: ' Also, the expert in the company on RabbitMQ.' },
   {
-    startTime: 196.6,
+    startTime: 166.15,
     person: 'Karol',
-    text: ' Welcome to the stream.'
+    text: ' And she loves designing maintainable systems with a focus on EDA.'
   },
   {
-    startTime: 197.68,
+    startTime: 172.95,
     person: 'Karol',
-    text: ' Hello, Miriam.'
+    text: " So, that's exactly what we're talking about today."
   },
+  { startTime: 175.45, person: 'Karol', text: ' So, Valeria, welcome to the stream.' },
+  { startTime: 178.23, person: 'Valeri', text: ' Hey, hello, hello.' },
+  { startTime: 180.17, person: 'Valeri', text: ' Good morning, good evening, good afternoon.' },
+  { startTime: 184.29, person: 'Karol', text: " I see you're adopting my welcome message." },
   {
-    startTime: 198.42,
-    person: 'Karol',
-    text: ' Hello, Daniel.'
-  },
-  {
-    startTime: 201.12,
-    person: 'Karol',
-    text: ' All right.'
-  },
-  {
-    startTime: 202.38,
-    person: 'Karol',
-    text: " So before we jump into the design topic, the dramas of designing a good API, it's about yourselves a little bit."
-  },
-  {
-    startTime: 214.28,
-    person: 'Miriam',
-    text: ' Yeah, I just go ahead, maybe.'
-  },
-  {
-    startTime: 216.48,
-    person: 'Miriam',
-    text: ' Yeah, sure.'
-  },
-  {
-    startTime: 216.92,
-    person: 'Miriam',
-    text: ' So hi everyone.'
-  },
-  {
-    startTime: 218.88,
-    person: 'Miriam',
-    text: ' Great to be here.'
-  },
-  {
-    startTime: 219.66,
-    person: 'Miriam',
-    text: " I'm Miriam."
-  },
-  {
-    startTime: 221.8,
-    person: 'Miriam',
-    text: " I'm actually working with CodeCentric for more than seven years now, seven and a half years."
-  },
-  {
-    startTime: 228.58,
-    person: 'Miriam',
-    text: ' And when I started there, I mainly started as a front end and full stack developer pretty quickly.'
-  },
-  {
-    startTime: 233.48,
-    person: 'Miriam',
-    text: ' But I always, from the beginning, I was in API related projects.'
-  },
-  {
-    startTime: 237.08,
-    person: 'Miriam',
-    text: ' So my first project at CodeCentric was a project where we developed an API developer portal, right?'
-  },
-  {
-    startTime: 244,
-    person: 'Miriam',
-    text: ' So very API specific.'
-  },
-  {
-    startTime: 245.52,
-    person: 'Miriam',
-    text: " And that's how I got into the API topic."
-  },
-  {
-    startTime: 248.14,
-    person: 'Miriam',
-    text: ' And when I looked for followup projects, I somehow landed in API consulting.'
-  },
-  {
-    startTime: 252.28,
-    person: 'Miriam',
-    text: " So the last three and a half years, I mainly did API consulting, which means I'm working with teams, helping them to get the journey done from the day they need an API until it's on production, mainly like with enabling."
-  },
-  {
-    startTime: 267.32,
-    person: 'Miriam',
-    text: ' So not really doing the work, but helping them like in a driving school to not take the wrong turn and land in a desert or wherever, but to always go to the right direction and to reach their goal at the end.'
-  },
-  {
-    startTime: 279.24,
-    person: 'Miriam',
-    text: " So I saw a lot of API designs, many bad ones, I have to admit, but I think we'll get to that later as well."
-  },
-  {
-    startTime: 287.1,
-    person: 'Karol',
-    text: ' Probably, yes.'
-  },
-  {
-    startTime: 288.6,
-    person: 'Karol',
-    text: " So just to put that into perspective, because some of the audience are my fellow integration specialists, you're not working specifically with integration platforms, right?"
-  },
-  {
-    startTime: 299.52,
-    person: 'Karol',
-    text: " You're working more with the main systems exposing their functionality as APIs."
-  },
-  {
-    startTime: 303.92,
-    person: 'Karol',
-    text: ' Yes, yes.'
-  },
-  {
-    startTime: 305.68,
-    person: 'Miriam',
-    text: " I mean, as well, of course, I mean, there's always some gateway or something, but it doesn't really matter for us what it is, let's say, or for me at least."
-  },
-  {
-    startTime: 314.08,
-    person: 'Miriam',
-    text: " There is something, right, that we need to integrate with, but it's not a specific platform or a specific tool or a specific thing, right?"
-  },
-  {
-    startTime: 323.02,
-    person: 'Miriam',
-    text: ' We also spend some time with customers designing and doing concepts for integration platforms recently and all these things.'
-  },
-  {
-    startTime: 330.7,
-    person: 'Miriam',
-    text: " So we're also doing stuff like that."
-  },
-  {
-    startTime: 332.26,
-    person: 'Miriam',
-    text: ' But my main focus really for me was enablement and also automation, like a lot of automation around APIs.'
-  },
-  {
-    startTime: 340.6,
-    person: 'Miriam',
-    text: ' Okay.'
-  },
-  {
-    startTime: 342,
-    person: 'Karol',
-    text: ' Daniel, how about you?'
-  },
-  {
-    startTime: 343.38,
-    person: 'Karol',
-    text: ' What do you do in CodeCentric?'
-  },
-  {
-    startTime: 345.16,
-    person: 'Daniel',
-    text: " So I'm nine years at CodeCentric right now."
-  },
-  {
-    startTime: 348.32,
-    person: 'Daniel',
-    text: ' So October was the date for being nine years with CodeCentric, and I did several things there.'
-  },
-  {
-    startTime: 355.24,
-    person: 'Daniel',
-    text: ' So I started as an Atlassian consultant.'
-  },
-  {
-    startTime: 358.32,
-    person: 'Daniel',
-    text: ' As Atlassian is not always on the green field, you have to really integrate the stuff.'
-  },
-  {
-    startTime: 364.98,
-    person: 'Daniel',
-    text: ' So there was a lot of prospectuses in going integration stuff.'
-  },
-  {
-    startTime: 369.04,
-    person: 'Daniel',
-    text: ' And before CodeCentric, I also did a lot of in the integration space.'
-  },
-  {
-    startTime: 373.08,
-    person: 'Daniel',
-    text: ' So building catalogues around data and so on and so on.'
-  },
-  {
-    startTime: 377.26,
-    person: 'Daniel',
-    text: ' And over the time I got in contact with a MuleSoft project.'
-  },
-  {
-    startTime: 384.08,
-    person: 'Daniel',
-    text: ' So everybody has some kind of dark sides in it.'
-  },
-  {
-    startTime: 388.62,
-    person: 'Daniel',
-    text: ' And I saw not how to actually use this, but I understood, okay, there is more.'
-  },
-  {
-    startTime: 396.12,
-    person: 'Daniel',
-    text: ' So I read the book from Yoko about API as a product and so on and so on.'
-  },
-  {
-    startTime: 401.58,
-    person: 'Daniel',
-    text: ' And the economy stuff.'
-  },
-  {
-    startTime: 402.94,
-    person: 'Daniel',
-    text: ' So really thinking about the things and I got deeper into it.'
-  },
-  {
-    startTime: 407.12,
-    person: 'Daniel',
-    text: ' I did a lot of consultancy in regards of API management systems by just using a gateway.'
-  },
-  {
-    startTime: 413.34,
-    person: 'Daniel',
-    text: ' So Kong was one of the first things we did at CodeCentric.'
-  },
-  {
-    startTime: 416.84,
-    person: 'Daniel',
-    text: ' A lot of times.'
-  },
-  {
-    startTime: 418.78,
-    person: 'Daniel',
-    text: " And over the time I really understood, okay, it's not about the tooling."
-  },
-  {
-    startTime: 422.58,
-    person: 'Daniel',
-    text: " It's really about designing stuff, understanding things."
-  },
-  {
-    startTime: 427.1,
-    person: 'Daniel',
-    text: ' And our CTO did a lot of stuff with me then in the background really to grow up a topic where we talked about experiences.'
-  },
-  {
-    startTime: 436.16,
-    person: 'Daniel',
-    text: ' This is also what Miriam knows.'
-  },
-  {
-    startTime: 437.66,
-    person: 'Daniel',
-    text: ' And we ended now in API consulting and talking about API thinking.'
-  },
-  {
-    startTime: 442.12,
-    person: 'Daniel',
-    text: ' And now we are moving on because we see a lot of things when we design these kinds of integration platforms out there with the customers we have.'
-  },
-  {
-    startTime: 453.6,
-    person: 'Daniel',
-    text: " And we really see, okay, there's an impact on enterprise architecture."
-  },
-  {
-    startTime: 458.3,
-    person: 'Daniel',
-    text: ' There is another meaning now in how to interact actually with systems.'
-  },
-  {
-    startTime: 463.24,
-    person: 'Daniel',
-    text: " And that's why we are actually here."
-  },
-  {
-    startTime: 466.18,
-    person: 'Daniel',
-    text: " So that's why the data interface correlates came up."
-  },
-  {
-    startTime: 470.44,
-    person: 'Daniel',
-    text: ' So, and this is really what we are looking at.'
-  },
-  {
-    startTime: 472.54,
-    person: 'Daniel',
-    text: ' So not really just, as you mentioned, to focus on tools.'
-  },
-  {
-    startTime: 476.3,
-    person: 'Daniel',
-    text: ' We need to focus on really what matters on how to integrate things and really think about the integration steps there.'
-  },
-  {
-    startTime: 485.1,
-    person: 'Karol',
-    text: ' Right.'
-  },
-  {
-    startTime: 485.82,
-    person: 'Karol',
-    text: " So I'm gonna name some things."
-  },
-  {
-    startTime: 489.02,
-    person: 'Karol',
-    text: ' You guys point me which is the area that you actually look at.'
-  },
-  {
-    startTime: 493.86,
-    person: 'Karol',
-    text: " So from my perspective as an integration architect, well, I mostly work with integration platforms, but that's not all the work that I do."
-  },
-  {
-    startTime: 501.88,
-    person: 'Karol',
-    text: " There's a lot more to it, including API management, including event message brokers."
+    startTime: 189.39,
+    person: 'Valeri',
+    text: " Yeah, it also makes me feel a bit better, because behind my window, it's quite dark, and I was thinking that someone has a morning and probably sunshine."
   },
+  { startTime: 197.71, person: 'Valeri', text: " That's a nice thought." },
+  { startTime: 200.03, person: 'Karol', text: ' We sometimes get people watching from the US.' },
   {
-    startTime: 509.92,
+    startTime: 204.63,
     person: 'Karol',
-    text: ' I usually, when I look at integration practises or APIs and API design, I look at it from a perspective.'
+    text: " So, you know, East Coast, that's a six-hour stiff, so they're in the middle of the day."
   },
   {
-    startTime: 518.12,
+    startTime: 210.15,
     person: 'Karol',
-    text: ' Okay.'
+    text: ' And West Coast, it would be, what, 10 a.m. on that side of the world.'
   },
+  { startTime: 215.35, person: 'Karol', text: " So, sometimes it's morning." },
   {
-    startTime: 519.14,
+    startTime: 219.05,
     person: 'Karol',
-    text: ' Is this internal communication or is it externalised?'
+    text: " Like they say, there's always noon somewhere, right, if somebody's, well, enjoying other drinks than coffee at this hour."
   },
+  { startTime: 229.75, person: 'Karol', text: ' Valeria, tell us a little bit about yourself.' },
+  { startTime: 232.87, person: 'Karol', text: ' What do you do?' },
+  { startTime: 234.23, person: 'Karol', text: ' How did you get to the place you are?' },
   {
-    startTime: 523.059,
+    startTime: 237.81,
     person: 'Karol',
-    text: ' Is that externalised communication productized or is it partner?'
+    text: ' How did you get to do even driven architecture, etcétera?'
   },
   {
-    startTime: 527.76,
-    person: 'Karol',
-    text: ' Because these are two different topics there.'
-  },
-  {
-    startTime: 532.78,
-    person: 'Karol',
-    text: " Then internally, is it again productized service-based because sometimes it's data, sometimes it's services."
-  },
-  {
-    startTime: 543,
-    person: 'Karol',
-    text: ' And depending how long ago somebody started in the world of application integration, some of us may still remember something called service-orientated architecture, which is basically defining APIs as a business services.'
-  },
-  {
-    startTime: 557.12,
-    person: 'Karol',
-    text: ' So verbs, always a post, never get or put or anything else in terms of the HTTP verbs, but always a verb-based name of a service, get customer, set customer, whatever that is.'
+    startTime: 242.97,
+    person: 'Valeri',
+    text: " Yeah, well, I'm very willing to give you a big story worth a fully book, but it's a pretty boring one, like all the way from the university in software engineering till that days."
   },
   {
-    startTime: 571.96,
-    person: 'Karol',
-    text: ' Now the difference is nowadays we use rest or try to be restful.'
+    startTime: 254.99,
+    person: 'Valeri',
+    text: " So, I'll just skip to the part how I ended up being in the Netherlands, because I have a non-Dutch name, so for people who might know."
   },
   {
-    startTime: 578.24,
-    person: 'Karol',
-    text: " And then we have access to resources and we're modifying those resources using the HTTP verbs, right?"
+    startTime: 264.73,
+    person: 'Valeri',
+    text: " Like five years ago, I moved here, exactly at the point of time when Technica Technologies, the company I'm working in, has been starting a new automated warehouse."
   },
   {
-    startTime: 586.44,
-    person: 'Karol',
-    text: ' As actions to what we want to do.'
+    startTime: 275.77,
+    person: 'Valeri',
+    text: " So, I originally joined to build the software that's going to follow this huge, fancy thing."
   },
   {
-    startTime: 589.36,
-    person: 'Karol',
-    text: " And then additionally, all of this is usually covered by some sort of an API management from my perspective, whether or not it's a singular system in Azure, AWS, on-premise, microservice swarm, because hard to name them otherwise than swarms at times, also often prompted by an API management."
+    startTime: 282.05,
+    person: 'Valeri',
+    text: " And I loved it so much, exactly because of the reason you mentioned on the opening, that you write a line of code, and it's not just pixels, it's a physical thing, you can see things move, and you're like, whoa, that's something new."
   },
   {
-    startTime: 613.64,
-    person: 'Karol',
-    text: " And I'm usually, as a architect, I'm usually the consumer of all those APIs of different domain systems."
+    startTime: 293.91,
+    person: 'Valeri',
+    text: " Because before I've been working on microservices, there's also events, but for lawyers, that's not that exciting, to be honest."
   },
   {
-    startTime: 621.44,
-    person: 'Karol',
-    text: " That's my perspective on API."
+    startTime: 302.29,
+    person: 'Valeri',
+    text: ' So, and now having those fancy things around, moving, doing stuff, like, yeah.'
   },
   {
-    startTime: 623.88,
-    person: 'Karol',
-    text: " So I see the APIs, sometimes they're easy to use, sometimes horrendous to use."
+    startTime: 307.37,
+    person: 'Valeri',
+    text: " So, I basically stuck with the thing, and seeing the baby growing from that very first early stage to a bigger, more complex system now, it's just irresistible."
   },
+  { startTime: 320.77, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 629.68,
+    startTime: 321.63,
     person: 'Karol',
-    text: ' And my job as an architect is to make them useful.'
+    text: ' I mean, I remember my times at university, where I spent hours in the robotics lab.'
   },
   {
-    startTime: 633.36,
+    startTime: 329.23,
     person: 'Karol',
-    text: ' So probably something similar but in a completely different way.'
+    text: ' We had several sets of Lego Mindstorms, and we used pseudocode, or NXC, so not exactly C, to programme those, and that was, like, the most fun thing I could do after study hours, when I just sat in the lab, took Lego blocks, the Lego Technics blocks, and assembled them, and then programmed the controller to make a move and do things.'
   },
+  { startTime: 353.21, person: 'Karol', text: ' That was, like, so satisfying.' },
   {
-    startTime: 640.55,
+    startTime: 354.87,
     person: 'Karol',
-    text: ' Yeah, something, a little bit.'
-  },
-  {
-    startTime: 645.27,
-    person: 'Daniel',
-    text: ' Would you like to start?'
-  },
-  {
-    startTime: 647.61,
-    person: 'Miriam',
-    text: ' Yeah, I think, I mean, I mainly agree with most things you said.'
+    text: ' So, I guess that this kind of thrill of satisfaction kind of translates here, on a completely different scale.'
   },
   {
-    startTime: 653.25,
-    person: 'Miriam',
-    text: ' I think I see it more from a provider perspective most of the time because I mostly work with people providing APIs right now, right?'
+    startTime: 362.51,
+    person: 'Valeri',
+    text: " I honestly didn't know that I would end up with such a cool project with this my first and only experience with the real technical and physical world was also, like, in the university, during master's, when I was writing my thesis, and it just felt fun, squished in a full microservices event, driven into a small controller to make a robot that you can extend and talk to, because why not, right?"
   },
+  { startTime: 386.35, person: 'Valeri', text: ' Sure.' },
+  { startTime: 389.26, person: 'Karol', text: ' Yeah.' },
+  { startTime: 389.56, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 662.99,
+    startTime: 390.78,
     person: 'Karol',
-    text: ' Okay.'
-  },
-  {
-    startTime: 663.31,
-    person: 'Miriam',
-    text: ' So I more or less support them to actually get to an API that others can understand.'
-  },
-  {
-    startTime: 667.89,
-    person: 'Miriam',
-    text: " And that's hopefully intuitive to use and not just something, right?"
-  },
-  {
-    startTime: 674.03,
-    person: 'Miriam',
-    text: " So, but I also realised that lots of times it's really good if you have both sides, you actually need both sides to really understand like what does the other person on the other side really need, right?"
-  },
-  {
-    startTime: 687.25,
-    person: 'Miriam',
-    text: " It's not enough to only know one side of the game, right?"
-  },
-  {
-    startTime: 690.29,
-    person: 'Miriam',
-    text: " You always need to take in both sides, the consumer and the provider and not just one of them and think that's it, right?"
+    text: ' So, background, university, from university, EDA, microservices, events, all that since university?'
   },
+  { startTime: 398.28, person: 'Valeri', text: ' Yeah, pretty much.' },
   {
-    startTime: 695.75,
-    person: 'Miriam',
-    text: " And I think that's also quite an interesting topic that most people underestimate actually."
+    startTime: 399.88,
+    person: 'Valeri',
+    text: " Well, in that regard, I was happy, because, like, I'm lucky, in a sense, because the first company I joined during the studies was also pretty modern already, and I've learned a lot of good stuff, but mostly how not to do microservices."
   },
   {
-    startTime: 704.57,
-    person: 'Karol',
-    text: ' Probably to a very big extent, they underestimate that.'
+    startTime: 417.68,
+    person: 'Valeri',
+    text: " So now I'm trying not to repeat what I already know."
   },
   {
-    startTime: 709.37,
-    person: 'Karol',
-    text: ' All right, so that said, what is the problem with designing APIs?'
+    startTime: 424.3,
+    person: 'Valeri',
+    text: " Yeah, and what I do in Picnic, I'm a staff engineer, so I'm not already, strictly speaking, belong to a house systems loan, so now I work across the company with any kind of cool projects."
   },
+  { startTime: 440.22, person: 'Karol', text: ' Okay.' },
+  { startTime: 440.52, person: 'Valeri', text: ' So, always a lot of fun things to do.' },
   {
-    startTime: 716.05,
+    startTime: 444.46,
     person: 'Karol',
-    text: ' Can we define that kind of a problem?'
+    text: ' So, because titles differ from company to company, what does, in the Picnic hierarchy, what does this entail?'
   },
   {
-    startTime: 718.23,
+    startTime: 452.84,
     person: 'Karol',
-    text: ' What is that?'
-  },
-  {
-    startTime: 720.01,
-    person: 'Daniel',
-    text: " You're missing actually the experience because this is really something where all the ideas started actually because a lot of people talk about UX actually, so really user experience and this is somehow lacking because we have this technical aspect still there because this is what Mira mentioned."
-  },
-  {
-    startTime: 743.17,
-    person: 'Daniel',
-    text: " We don't really get into the conversation with people and really asking what is needed."
-  },
-  {
-    startTime: 748.99,
-    person: 'Daniel',
-    text: ' We do this when we create UIs.'
-  },
-  {
-    startTime: 752.71,
-    person: 'Daniel',
-    text: ' We ask people, we do tests and all about.'
-  },
-  {
-    startTime: 756.01,
-    person: 'Daniel',
-    text: ' This was really at the point where I started to learn from Uwe actually what he did in the past was something that was really missing, this experience aspect.'
-  },
-  {
-    startTime: 767.13,
-    person: 'Daniel',
-    text: " And so we started saying, okay, we call it API experience to make clear, okay, we don't talk about the technical behaviour behind all that because this is clear."
-  },
-  {
-    startTime: 776.91,
-    person: 'Daniel',
-    text: ' This should be clear.'
-  },
-  {
-    startTime: 778.29,
-    person: 'Daniel',
-    text: ' We learned over the time that still is not clear what technical to be done.'
-  },
-  {
-    startTime: 782.99,
-    person: 'Daniel',
-    text: " That's the other aspect of it, but we have to stress this experience layer more and more because when you remember MuleSoft, what is the layer above?"
-  },
-  {
-    startTime: 792.71,
-    person: 'Daniel',
-    text: ' The experience layer.'
-  },
-  {
-    startTime: 794.71,
-    person: 'Daniel',
-    text: ' But normally when you look at integrations built by that, they are not really experiences they provide.'
+    text: ' Staff engineer, because we have different titles everywhere.'
   },
   {
-    startTime: 802.59,
+    startTime: 456.62,
     person: 'Karol',
-    text: ' Would that tie into thinking in terms of data products then?'
-  },
-  {
-    startTime: 808.83,
-    person: 'Daniel',
-    text: " Yeah, that's the other point around because then it comes into the productisation type of thing really to stress this word."
-  },
-  {
-    startTime: 816.41,
-    person: 'Daniel',
-    text: " For now, it's really buzz wording to say, hi, we do APIs as a product because nobody really has in mind that it's real product management."
-  },
-  {
-    startTime: 825.27,
-    person: 'Daniel',
-    text: " It's real, the capabilities of providing a real product and not just to say, okay, this is a technical somehow thing."
-  },
-  {
-    startTime: 833.01,
-    person: 'Daniel',
-    text: ' I just throw it over the fence and it would work.'
-  },
-  {
-    startTime: 835.05,
-    person: 'Daniel',
-    text: " So it's really that I have to do the marketing aspects into that."
-  },
-  {
-    startTime: 839.21,
-    person: 'Daniel',
-    text: " I have to build up a community inside an organisation to really make sure that everybody understands what I'm doing there."
-  },
-  {
-    startTime: 845.69,
-    person: 'Daniel',
-    text: ' So many, many perspectives there that we actually know from this classical product type marketing fluff.'
-  },
-  {
-    startTime: 853.89,
-    person: 'Miriam',
-    text: ' Yeah, to also add something to the user experience thing.'
-  },
-  {
-    startTime: 858.27,
-    person: 'Miriam',
-    text: " I think, I mean, that's why I have on LinkedIn also my slogan, APIs are user interfaces too, because I think most people forget for them, they're a technical asset, right?"
+    text: ' I sometimes see that staff engineer is, like, one below principal engineer, whatever that means in general, and, yeah.'
   },
   {
-    startTime: 867.49,
-    person: 'Miriam',
-    text: " So pretty easy, you do something technical, you're done, but that's not the issue most of the time."
+    startTime: 465.84,
+    person: 'Valeri',
+    text: ' Yeah, staff engineer and title is somewhat new in the company.'
   },
   {
-    startTime: 872.23,
-    person: 'Miriam',
-    text: " There are lots of other things that you need to know to design a really good API and it's not only technical stuff."
+    startTime: 470.04,
+    person: 'Valeri',
+    text: ' We kicked off it, actually, beginning of this year, like, officially, and the best way to explain it, so we do have levels, pretty classical from junior to senior, but then when you reach a certain seniority level and you want to grow, you have three posts to grow.'
   },
   {
-    startTime: 878.49,
-    person: 'Miriam',
-    text: " And I think most people forget, especially for an API, that there's also a user on the other side."
+    startTime: 484.86,
+    person: 'Valeri',
+    text: ' Tech leadership is one of them, like, you run your team, blah, blah, nothing new.'
   },
   {
-    startTime: 885.75,
-    person: 'Miriam',
-    text: " I mean, it's easy."
+    startTime: 489.64,
+    person: 'Valeri',
+    text: " Then you can simply skill up as an individual contributor more and more, or you can go staff engineering way, meaning that you don't belong to a product, to a team, so you're basically a unit of acceleration within the company that can do whatever."
   },
   {
-    startTime: 886.95,
-    person: 'Miriam',
-    text: " We've all been developers, right?"
+    startTime: 503.68,
+    person: 'Valeri',
+    text: " If someone needs help with architecture, here's staff engineer for you."
   },
   {
-    startTime: 888.47,
-    person: 'Miriam',
-    text: ' We think, oh, I know what a developer needs, right?'
+    startTime: 507.5,
+    person: 'Valeri',
+    text: " If you have problem with, I don't know, migration or durability, AI, whatever, here's staff engineer for you."
   },
   {
-    startTime: 891.75,
+    startTime: 514.059,
     person: 'Karol',
-    text: ' Right.'
-  },
-  {
-    startTime: 892.07,
-    person: 'Miriam',
-    text: ' Do I really know?'
-  },
-  {
-    startTime: 893.05,
-    person: 'Miriam',
-    text: ' I mean, I worked with teams that were SAP developers on the other side, you had a mobile developer.'
-  },
-  {
-    startTime: 899.23,
-    person: 'Miriam',
-    text: ' They had nothing in common from how they work, right?'
-  },
-  {
-    startTime: 901.91,
-    person: 'Miriam',
-    text: ' But they just think the other person will know what to do because hell, everyone knows this function module in SAP could possibly go wrong, right?'
-  },
-  {
-    startTime: 909.83,
-    person: 'Miriam',
-    text: ' Everybody knows.'
+    text: " Right, so that's more of a broader role outside of specific domain areas and specific projects."
   },
+  { startTime: 522.64, person: 'Karol', text: ' Okay, that kind of approach.' },
   {
-    startTime: 910.89,
+    startTime: 525.5,
     person: 'Karol',
-    text: ' You touched a very painful memory here because I used to integrate SAP R3 back in the day.'
+    text: " All right, and that differs from the staff engineers I used to be exposed to because these were usually specialised in an area, so that's like, again, different companies, different definitions of such role, same with architecture."
   },
   {
-    startTime: 919.21,
-    person: 'Karol',
-    text: ' And that used to be with very specialised adapters that were on JMS. The RFCs were horrendous to work with and the debugging of that was horrendous.'
+    startTime: 537.88,
+    person: 'Valeri',
+    text: ' Definitely, but you still inevitably have some speciality for people, right?'
   },
   {
-    startTime: 933.39,
-    person: 'Karol',
-    text: ' And understanding the interface, I mean, I get it.'
+    startTime: 542.38,
+    person: 'Valeri',
+    text: ' Even though we are supposed to be trained, like, in breadth of knowledge, you still gravitate towards certain things, and for me, like, event-driven microservices, I inevitably go that way.'
   },
   {
-    startTime: 939.73,
+    startTime: 556.1,
     person: 'Karol',
-    text: ' Germans wrote it for use within Germany.'
+    text: ' Just out of curiosity, do you have, like, an integration platform also in Picnic?'
   },
   {
-    startTime: 943.49,
+    startTime: 562.08,
     person: 'Karol',
-    text: ' That was obvious.'
+    text: ' No, so even driven all the way, or point-to-point between systems?'
   },
+  { startTime: 567, person: 'Karol', text: ' Yeah.' },
+  { startTime: 568.24, person: 'Karol', text: ' Okay, okay.' },
   {
-    startTime: 945.85,
+    startTime: 570.06,
     person: 'Karol',
-    text: " Well, that's the story I get from SAP people, all right?"
+    text: " Just out of curiosity, I don't know what the scale of the systems are in Picnic in general, in the ecosystem, so it may work, may not, and you may have different problems or not known problems at all."
   },
+  { startTime: 581.32, person: 'Karol', text: " That's always interesting to ask." },
+  { startTime: 584.14, person: 'Karol', text: " All right, but today's topic, I'm quite curious." },
+  { startTime: 587.56, person: 'Karol', text: ' Event-driven in a warehouse system.' },
   {
-    startTime: 948.63,
+    startTime: 589.68,
     person: 'Karol',
-    text: ' Just to be clear, I work with a colleague from SAP.'
+    text: " I mean, I've seen a warehouse once in my lifetime, in my career, when I was working back at T-Mobile, but that was a completely different day and age, and we didn't have microservices yet."
   },
+  { startTime: 600.58, person: 'Karol', text: ' That was so long ago.' },
   {
-    startTime: 951.21,
+    startTime: 602.12,
     person: 'Karol',
-    text: " That's usually the kind of story that I said."
+    text: " I mean, we didn't even have cloud at that point yet."
   },
+  { startTime: 606.14, person: 'Karol', text: ' Yeah, that was that long ago, yes.' },
   {
-    startTime: 953.65,
+    startTime: 609,
     person: 'Karol',
-    text: ' And then it sprawled all over the place, right?'
+    text: ' So, all the things that we did was in on-premise server rooms.'
   },
   {
-    startTime: 956.53,
+    startTime: 613.24,
     person: 'Karol',
-    text: " So it sprawled, but then I'm sitting there in Poland trying to integrate R3 into the ecosystem."
+    text: " We didn't even have proper virtualisation at the time for servers, so some of the servers were, like, still physical machines that we just connected to over the network instead of just virtual machines, so that was a long time ago."
   },
   {
-    startTime: 963.45,
+    startTime: 629.4,
     person: 'Karol',
-    text: " And I'm looking at this interface and all I see is gibberish because these are abbreviations of German words that I have no idea what they mean."
+    text: " Probably from that time, quite a bit has changed, so what's going on there?"
   },
   {
-    startTime: 970.95,
+    startTime: 636.94,
     person: 'Karol',
-    text: ' Only people from SAP actually knew what the hell that means.'
+    text: " What's the deal with having the EDA in a warehouse?"
   },
   {
-    startTime: 973.93,
-    person: 'Miriam',
-    text: " So I'm like- Believe me, it's not only a language issue."
-  },
-  {
-    startTime: 977.87,
-    person: 'Miriam',
-    text: " It's not only a language issue."
-  },
-  {
-    startTime: 979.49,
+    startTime: 639.64,
     person: 'Karol',
-    text: ' Oh, no, absolutely.'
+    text: " Because I think that's a, for some viewers, that might be something very interesting and specific, and like you said and I said, then pixels on the screen, right?"
   },
   {
-    startTime: 980.59,
+    startTime: 649.54,
     person: 'Karol',
-    text: ' Not only a language issue, just using abbreviations.'
+    text: " For most of us, when we deal with architecture, when we deal with coding, that's pixels on the screen."
   },
   {
-    startTime: 983.25,
+    startTime: 653.78,
     person: 'Karol',
-    text: ' Who in their sane mind uses abbreviations in the data model of an API?'
-  },
-  {
-    startTime: 988.57,
-    person: 'Miriam',
-    text: ' Yes.'
+    text: ' We get a front-end, we do something at the front-end, etc.'
   },
   {
-    startTime: 989.55,
+    startTime: 657.92,
     person: 'Karol',
-    text: ' If they were, at least if they were full words in German, I would take a Google translator or something like that or a dictionary and translate them.'
+    text: ' What does it entail to have an EDA-like system in a warehouse?'
   },
   {
-    startTime: 996.49,
-    person: 'Karol',
-    text: ' That would be usable because I could actually decipher them.'
+    startTime: 663.86,
+    person: 'Valeri',
+    text: " Well, first of all, it's quite natural because it's, for instance, a domain where an event is not"
   },
   {
-    startTime: 1000.81,
-    person: 'Karol',
-    text: " What was there, I had to just literally grab an SME and explain to me, please either give me a data set that works with this data model or explain to me what I'm doing because I have no idea."
+    startTime: 669.92,
+    person: 'Valeri',
+    text: ' an abstract thing but an actual physical thing happening in the physical world, so the way you'
   },
   {
-    startTime: 1013.93,
-    person: 'Miriam',
-    text: " Yeah, that's what the team actually told me."
+    startTime: 675.7,
+    person: 'Valeri',
+    text: " would see it's like those long, long stretches of conveyors, very physical, boxes moving around,"
   },
   {
-    startTime: 1015.93,
-    person: 'Miriam',
-    text: ' You know what they told me?'
+    startTime: 681.88,
+    person: 'Valeri',
+    text: ' actually we call them crates, and then on distance from each other, there are scanners,'
   },
   {
-    startTime: 1017.09,
-    person: 'Miriam',
-    text: ' If someone wants to use our API, they have to call us.'
+    startTime: 687.84,
+    person: 'Valeri',
+    text: ' so whenever the crate passes by, the barcode is scanned, and this is a natural event that you'
   },
   {
-    startTime: 1021.51,
-    person: 'Miriam',
-    text: " And I was like, well, we're trying to do intuitive APIs."
+    startTime: 693.84,
+    person: 'Valeri',
+    text: ' would get from the physical machinery, and now you know, hey, this particular crate, this number'
   },
   {
-    startTime: 1024.67,
-    person: 'Miriam',
-    text: ' Please think a minute.'
+    startTime: 699.34,
+    person: 'Valeri',
+    text: " is at this point in your physical warehouse, and that's one type of event, and the other is, of"
   },
   {
-    startTime: 1025.71,
-    person: 'Miriam',
-    text: " I don't think you want anyone to call you to use your API."
+    startTime: 714.38,
+    person: 'Valeri',
+    text: ' course, you can say, hey, I want this particular crate, like five kilometres from here in a'
   },
+  { startTime: 725.68, person: 'Valeri', text: ' different part of the system.' },
   {
-    startTime: 1030.43,
+    startTime: 728.42,
     person: 'Karol',
-    text: ' That is basically the death of a product nowadays.'
+    text: ' So, is the warehouse that big that you can get it in kilometres?'
   },
   {
-    startTime: 1034.849,
-    person: 'Karol',
-    text: ' At least with smaller companies because SAP is too big to die off like that.'
+    startTime: 732.76,
+    person: 'Valeri',
+    text: ' Yes, you do have kilometres of conveyors, but of course they are not just stretched, that would be an efficient use of space, they are stacked on top of each other, right?'
   },
   {
-    startTime: 1039.069,
+    startTime: 740.3,
     person: 'Karol',
-    text: ' But I think that if a small digital product would do such a thing, they would not have any adoption.'
+    text: ' So, you can say, hey, yeah, so if you would estimate how many kilometres of conveyors you have in a warehouse at this point?'
   },
+  { startTime: 749.66, person: 'Karol', text: ' Educated guess.' },
   {
-    startTime: 1049.88,
-    person: 'Karol',
-    text: ' You touched upon an interesting thing and I pondered upon user experience as well.'
+    startTime: 751.02,
+    person: 'Valeri',
+    text: " Yeah, I don't want to lie, I think one of the biggest we have in Germany should have at least 20 kilometres, yes, and being at three by now, so multiply, and the fourth one is coming, so in total you have already quite some."
   },
   {
-    startTime: 1056.04,
+    startTime: 767.44,
     person: 'Karol',
-    text: " There is a lovely UX law that is, I think it's completely underestimated in software design as it is and not meaning front-end only."
+    text: " And that's condensed into, of course, a 3D space, so they're not outlined in a 2D like flat surface, but they're like stacked on top of each other."
   },
   {
-    startTime: 1066.48,
-    person: 'Karol',
-    text: " And I'm gonna just shoot a slide from my training deck on the screen for a moment."
+    startTime: 777.04,
+    person: 'Valeri',
+    text: ' Yes, like in general, like the full automated warehouse at least three storeys high.'
   },
+  { startTime: 782.96, person: 'Karol', text: " Okay, that's a lot." },
   {
-    startTime: 1074.82,
+    startTime: 785.78,
     person: 'Karol',
-    text: " So there is this lovely law called Tesla's law."
+    text: ' So, in that sense, we have a warehouse, we have conveyor belts, we have scanners on those conveyor belts, the natural event is the position of the crate, the box on the conveyor belt.'
   },
+  { startTime: 798.78, person: 'Valeri', text: ' Yeah.' },
   {
-    startTime: 1080.62,
+    startTime: 799.54,
     person: 'Karol',
-    text: ' And yeah, every application must have an inherent amount of irreducible complexity.'
+    text: " Okay, the next, let's say, event is like telling where you want that box, and what does that entail from this process perspective?"
   },
   {
-    startTime: 1086.76,
-    person: 'Karol',
-    text: ' The only question is who will deal with that, right?'
+    startTime: 810.1,
+    person: 'Valeri',
+    text: " Well, what's good to understand here is the system is layered, so the bottom one layer is basically what controls the conveyors themselves, it's like the lowest possible machinery level."
   },
   {
-    startTime: 1089.94,
-    person: 'Karol',
-    text: " So what happens there is if I look at it from an interoperability perspective, we're moving around complexity or adding complexity by doing bad API design."
+    startTime: 825.9,
+    person: 'Valeri',
+    text: ' Then on top of that, the hardware providers give you a bit of a better abstraction, which has different names, but we refer to it as a transport system.'
   },
   {
-    startTime: 1104.66,
-    person: 'Karol',
-    text: ' And if we talk about interoperability from my perspective as an integration architect, well, okay, if we talk APIs, yeah, sure.'
+    startTime: 835.88,
+    person: 'Valeri',
+    text: " So, that's what we normally would talk to from the business perspective, because that already gives you an abstraction of exactly, so my crate is here, or if I get commands to get delivery there, this is how it executes it."
   },
   {
-    startTime: 1112.08,
+    startTime: 850.6,
     person: 'Karol',
-    text: " If I put an integration platform, I move a lot of inherent complexity of communication to the integration platform, which makes life easier for the domain system, but this still doesn't fix the quality of an API."
+    text: ' So, is it like that the belts actually fork and join at certain times?'
   },
+  { startTime: 856.56, person: 'Valeri', text: ' Yes.' },
+  { startTime: 857.4, person: 'Valeri', text: ' Oh, wow.' },
+  { startTime: 858.86, person: 'Karol', text: ' Okay, that would be fun.' },
   {
-    startTime: 1123.66,
+    startTime: 861.72,
     person: 'Karol',
-    text: ' So that moves the added complexity of a bad API towards the integration platform that has to consume that API and understand that API.'
-  },
-  {
-    startTime: 1131.56,
-    person: 'Miriam',
-    text: " Yeah, yeah, I think if I talk to developers recently, it's always like, oh, we don't want to do that on the back end, that's so much work."
-  },
-  {
-    startTime: 1140.62,
-    person: 'Miriam',
-    text: ' And I say, well, then who does it?'
-  },
-  {
-    startTime: 1142.38,
-    person: 'Miriam',
-    text: ' Then someone else on the front end needs to do it or on the other side.'
+    text: " My brain is opening now Factorio, you know, the game with lots of conveyor belts in it, and I'm looking at this and my brain is like, oh, the conveyor is going, joining, splitting, whatnot."
   },
+  { startTime: 874.12, person: 'Karol', text: ' Okay, and from continuing, sorry.' },
   {
-    startTime: 1145.42,
-    person: 'Miriam',
-    text: " I mean, if you don't do it, someone else has to do it."
+    startTime: 877.66,
+    person: 'Valeri',
+    text: " Yeah, well, but actually that's a good transition, because it's quite simple just to think that, oh, I have a scan and here is my crate, or I give a command to send it there, it's delivered, but it's never that good in real life, it's way more complex."
   },
+  { startTime: 895.96, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 1147.86,
-    person: 'Miriam',
-    text: " You're just moving the work somewhere else."
-  },
-  {
-    startTime: 1149.64,
-    person: 'Miriam',
-    text: " That's exactly that."
-  },
-  {
-    startTime: 1151.06,
-    person: 'Karol',
-    text: " You're moving inherent complexity."
+    startTime: 896.9,
+    person: 'Valeri',
+    text: " If you have a fork, it means that at any point of time machinery can fail, and either won't be able to scan, barcode can be damaged, or malfunction of a scanner, or actually the crate can misdivert and go the other way around."
   },
   {
-    startTime: 1153.36,
-    person: 'Miriam',
-    text: ' Yeah, exactly.'
+    startTime: 912.68,
+    person: 'Valeri',
+    text: " You want it left, and it went right, and you'll have to deal with that."
   },
+  { startTime: 917.56, person: 'Karol', text: ' And reroute them, in that sense.' },
   {
-    startTime: 1154.78,
-    person: 'Miriam',
-    text: " And I like that you cited UX law because I think we didn't talk about it before, but my PhD is actually in human-computer interaction."
+    startTime: 920.3,
+    person: 'Valeri',
+    text: ' Yeah, reroutes are not always possible, because here we actually, we are working with different hardware providers, and even though the conveyor belts are produced by the same company, this SAC transporting is proprietary to those companies, and one of them has a limitation.'
   },
   {
-    startTime: 1162.02,
-    person: 'Miriam',
-    text: " So that's very much why I like API design so much."
+    startTime: 942.06,
+    person: 'Valeri',
+    text: ' So the warehouse is so big, that is, from the transport system perspective, is split into smaller units.'
   },
   {
-    startTime: 1165.88,
-    person: 'Miriam',
-    text: " And I like trying to do it in a good way because it's like in my DNA, right?"
+    startTime: 948.26,
+    person: 'Valeri',
+    text: " So basically, different microservices, deployables, whatever you want to call it, and the thing is that you can't send a request for a crate to breach the boundary, in the sense that if your crate is in the middle of one transport system, and you want it in the other one, you can't send a direct transport."
   },
   {
-    startTime: 1172.82,
-    person: 'Karol',
-    text: ' It is user experience.'
+    startTime: 968.94,
+    person: 'Valeri',
+    text: ' You have to go all the way to the border, then it will naturally cross, and only then it appears in the new system.'
   },
   {
-    startTime: 1174.96,
-    person: 'Karol',
-    text: " It doesn't translate to user experiences and clickable in the front end because that's called developer experience."
+    startTime: 977.94,
+    person: 'Valeri',
+    text: ' And that leads to limitations to how you can design your transportation, and you will have to handle a lot of those cases.'
   },
   {
-    startTime: 1180.92,
+    startTime: 986.3,
     person: 'Karol',
-    text: ' So the experience of a developer trying to connect their system to whatever array of APIs we have.'
+    text: ' So okay, let me put it like my brain tries to imagine the warehouse.'
   },
   {
-    startTime: 1187.22,
+    startTime: 990.76,
     person: 'Karol',
-    text: ' And this is still somewhat of a user experience just from a technical perspective, not from a actual productized usage perspective as the end user, the consumer clicking on the app, right?'
+    text: ' So conveyor belts, scanners scanning for the position, so obviously you probably have a scanner just before a fork, for example, right, to identify, oh, this crate is now at the fork, and then based on that, you switch the fork towards one of the conveyors, right?'
   },
   {
-    startTime: 1200.76,
+    startTime: 1008.48,
     person: 'Karol',
-    text: " That's the difference there, but it's still the same user experience in that sense."
+    text: ' And then that moves on, and then do you have traffic jams in those conveyor belts at times?'
   },
+  { startTime: 1015.74, person: 'Karol', text: ' Yes, you do.' },
+  { startTime: 1017.48, person: 'Karol', text: ' Oh, wow, okay.' },
   {
-    startTime: 1205.88,
+    startTime: 1018.66,
     person: 'Karol',
-    text: " And as I work with integration platforms in large environments where we have a variety of systems, SaaS solutions, legacy, on-premise, in-cloud, hybrid, well, it makes sense to put that complexity to the integration platform because there's too much to handle rather than solve it on the backend."
+    text: ' That sounds like one of the warehouses I visited back in Poland, in working for T-Mobile, that at times they also experienced traffic jams, but that was a lot less automation in that sense.'
   },
   {
-    startTime: 1228.98,
+    startTime: 1030.72,
     person: 'Karol',
-    text: ' And of course the backend quality matters.'
+    text: ' Most of them are while the conveyors were moving by electric engines, but most of that was manually clicking and then move the conveyor, right?'
   },
   {
-    startTime: 1231.78,
+    startTime: 1045.04,
     person: 'Karol',
-    text: " So if somebody is starting to expose to the integration platform a relational database table by table, well, that's not good API design, but it differs for a domain system or a productized system when we externalise our APIs."
+    text: ' A good question popped up in the meantime on YouTube.'
   },
   {
-    startTime: 1246.96,
+    startTime: 1049.36,
     person: 'Karol',
-    text: " Now, because I have no experience in externalising APIs to clients, that's not my scope of work, tell us perhaps how does that look like from that productized perspective?"
-  },
-  {
-    startTime: 1261.82,
-    person: 'Daniel',
-    text: " Yeah, it's actually when we think about design because this is something we actually didn't spot on because what we do with API thinking is really look at the design perspectives."
-  },
-  {
-    startTime: 1274.18,
-    person: 'Daniel',
-    text: " And to really say, to go into this productisation type of thing, I think it's mostly important that we reference to Dieter Rams in regards of design."
-  },
-  {
-    startTime: 1285.9,
-    person: 'Daniel',
-    text: ' So somebody who was really deep into designing good things actually like a calculator from Brown and other things, a shaver.'
-  },
-  {
-    startTime: 1296.88,
-    person: 'Daniel',
-    text: ' And also he has been acknowledged by Apple for the iPhone design and so on.'
+    text: ' Do all warehouses have the same implementation, as in, actually the same systems and the same physical components, I guess, or do you like customise?'
   },
   {
-    startTime: 1302.72,
-    person: 'Daniel',
-    text: " So it's really interesting that we actually had a look at it because you mentioned the UX and UI laws that are existing, there are even more."
+    startTime: 1062.9,
+    person: 'Valeri',
+    text: ' Yeah, honestly, I would have loved to say yes, but of course not.'
   },
   {
-    startTime: 1313.46,
-    person: 'Daniel',
-    text: ' So Nielsen and Muller are also there.'
+    startTime: 1070.04,
+    person: 'Valeri',
+    text: ' So all the three warehouses that are actually running, automated ones, they are different.'
   },
   {
-    startTime: 1315.82,
-    person: 'Daniel',
-    text: ' And this is what really matters in the end to build these experience to the outside world.'
+    startTime: 1077.08,
+    person: 'Valeri',
+    text: " The fourth one that's coming is also different."
   },
   {
-    startTime: 1322.68,
-    person: 'Daniel',
-    text: ' So even thinking in a productized way, because I worked or wanted to start to work with a payment company and they had a key value API and they thought it would be the best idea to productize that.'
+    startTime: 1080.3,
+    person: 'Valeri',
+    text: " It's first that our hardware providers are different, so this transport system layer works differently, and that actually bridges us towards what was the requirements and how we ended up with event-driven all the way through, just because we want interoperability."
   },
   {
-    startTime: 1337.96,
-    person: 'Daniel',
-    text: ' And this was really something that felt quite hard because it was in the beginning.'
+    startTime: 1096.76,
+    person: 'Valeri',
+    text: ' So now you need to work with multiple ways to control the hardware, and also you want to plug in different pieces at different points of time.'
   },
   {
-    startTime: 1343.18,
-    person: 'Daniel',
-    text: ' So it was around 2019 before Corona, I think also.'
+    startTime: 1107.66,
+    person: 'Valeri',
+    text: " What I mean is that a fully automated warehouse has a tonne of conveyors, various special stations, fully automated, big storage, like imagine a bookshelf is thousands of places to put a crate into, but the neighbour does have conveyors and some types of stations, but doesn't have the storage, and a lot of different, like, robot parts, and the third one has something else."
   },
   {
-    startTime: 1347.88,
-    person: 'Daniel',
-    text: ' And it was quite hard because we were just starting with the thing.'
+    startTime: 1133.8,
+    person: 'Valeri',
+    text: " So the way we've been designing the system is so that any new warehouse coming in, you can simply choose the parts you need, plug them in together, and make them work."
   },
+  { startTime: 1144.32, person: 'Karol', text: " So it's like building with Lego blocks." },
+  { startTime: 1146.74, person: 'Valeri', text: ' Exactly.' },
+  { startTime: 1147.56, person: 'Karol', text: ' A physical and digital Lego blocks.' },
+  { startTime: 1149.82, person: 'Valeri', text: ' Exactly.' },
   {
-    startTime: 1350.88,
-    person: 'Daniel',
-    text: ' So Mir was actually not onboarded into this topic.'
-  },
-  {
-    startTime: 1355.1,
-    person: 'Daniel',
-    text: " And it was quite hard to make people understand that there are so many differences in there because there's no literature about it."
-  },
-  {
-    startTime: 1362.56,
-    person: 'Daniel',
-    text: ' And people always reference into it.'
-  },
-  {
-    startTime: 1364.7,
-    person: 'Daniel',
-    text: " So it's literature about API management systems, it's about RESTful APIs and so on and so on, but not all the things really in regards of good designing stuff."
-  },
-  {
-    startTime: 1375.5,
-    person: 'Daniel',
-    text: " Because thinking about technical stuff, so having RESTful web APIs or whatever, it's totally different than thinking about, okay, what really needs the person outside of our some kind bounded context to really understand what we provide with our data actually."
-  },
-  {
-    startTime: 1395.72,
-    person: 'Daniel',
-    text: " And this is something where I see there's still a lot of things around."
-  },
-  {
-    startTime: 1401.46,
-    person: 'Daniel',
-    text: ' So you really have to go into the field and really ask the people.'
-  },
-  {
-    startTime: 1408.58,
-    person: 'Daniel',
-    text: ' And then bring the stuff up there.'
-  },
-  {
-    startTime: 1412.56,
-    person: 'Daniel',
-    text: ' So this is why we got really deep into this API thinking stuff there and really adopting things from that perspective.'
-  },
-  {
-    startTime: 1424.38,
-    person: 'Daniel',
-    text: ' Okay.'
+    startTime: 1151.44,
+    person: 'Karol',
+    text: " So you have different hardware suppliers for warehouses, so different physical implementation, and then you plug and apply to that, based on their specification of interfaces, let's say somewhat generic microservices doing the same things, controlling the environment with that minimal adaptation towards that specific interface?"
   },
+  { startTime: 1178.6, person: 'Valeri', text: ' Kind of.' },
   {
-    startTime: 1425.46,
-    person: 'Daniel',
-    text: ' This is what I think because we strive design, but really to make it clear, because it was always the perspective on this integration platforms, you mentioned that.'
+    startTime: 1179.54,
+    person: 'Valeri',
+    text: " So what happens, we, on our side, so our part of the deal, we split the microservices, abstractly speaking, into two buckets, and there are those kind of executors, that's basically those services that compartmentalise a specific part of the business flows and the touched hardware."
   },
   {
-    startTime: 1438.68,
-    person: 'Daniel',
-    text: " And so we talked with a lot of people and when you go into real integrations, it's always this EDI topic."
+    startTime: 1203.74,
+    person: 'Valeri',
+    text: ' Picking is a process when a crate is in front of you, one is product, one for the customer, and you make a simple motion of pick up the paper and move to another crate.'
   },
+  { startTime: 1213.08, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 1447.24,
-    person: 'Daniel',
-    text: " Yeah, and it's quite hard to make it visible to people."
+    startTime: 1214.06,
+    person: 'Valeri',
+    text: ' This specific one, and even this picking system already has three different implementations, because of the hardware providers.'
   },
   {
-    startTime: 1451.26,
-    person: 'Daniel',
-    text: ' And then some people say, oh yeah, we have to do EDI because people actually in retail use it a lot.'
+    startTime: 1221.24,
+    person: 'Valeri',
+    text: ' There is also manual ones, where people manually walk, where there are no conveyors.'
   },
   {
-    startTime: 1457.76,
-    person: 'Daniel',
-    text: ' And this is where it all goes there.'
+    startTime: 1228.66,
+    person: 'Valeri',
+    text: " So there are a bunch of those executors, which you can basically say that for this warehouse, we do have picking, we do have automated gel packing, it's a process when you need to put gel pack, something frozen to keep your cool product cool all the way to the customer, and etc, etc."
   },
+  { startTime: 1247.22, person: 'Valeri', text: ' There are a lot of them.' },
   {
-    startTime: 1461.3,
-    person: 'Daniel',
-    text: ' And in the end, there is also the principle really, and this is the principle, good design is as little design as possible.'
+    startTime: 1248.78,
+    person: 'Valeri',
+    text: ' But then you have also even higher level, another bucket of services,'
   },
   {
-    startTime: 1469.46,
-    person: 'Daniel',
-    text: " So I don't have to reinvent the wheel to get things to work."
+    startTime: 1252.54,
+    person: 'Valeri',
+    text: ' which are orchestrators, and those are invariably basically the business flows and the controls'
   },
   {
-    startTime: 1472.8,
-    person: 'Daniel',
-    text: " So I don't have to think in a new solution or build a bluster-full API when there is a need for real EDI exchange."
+    startTime: 1260.08,
+    person: 'Valeri',
+    text: ' over the executors, saying how to route things, how to basically, what are the stages of the'
   },
   {
-    startTime: 1481.92,
-    person: 'Daniel',
-    text: " So there are still products in the space that do this and you don't have to do the things and say, okay, let's build an API up on this and have it a shiny REST interface or something like that."
+    startTime: 1268.52,
+    person: 'Valeri',
+    text: ' order processing should be, because from the moment you get your order from a customer,'
   },
   {
-    startTime: 1495.98,
-    person: 'Daniel',
-    text: " So it's really about to really keep the focus on what the customer or the consumer on the other side really needs there."
+    startTime: 1274.72,
+    person: 'Valeri',
+    text: ' depending on what kind of order you want to pick it, to gel pack, to dispatch, or maybe rework,'
   },
   {
-    startTime: 1505.02,
-    person: 'Karol',
-    text: " Because in that sense, it's all about doing proper trade-offs, which basically means that if we want to design properly or architect properly for a business problem, we're not looking for the best solution because that's gonna be over-engineering things."
+    startTime: 1280.56,
+    person: 'Valeri',
+    text: " and it's like the whole world of decision trees, and how you do it, depending on all the"
   },
+  { startTime: 1288.3, person: 'Valeri', text: ' parameters.' },
   {
-    startTime: 1520.2,
+    startTime: 1289.88,
     person: 'Karol',
-    text: " We're looking for the least worst solution."
+    text: ' So from what I heard from you, in terms of the names of specific microservices, you do not do choreography, you do orchestration, in terms of the topology of EDA.'
   },
+  { startTime: 1304.02, person: 'Valeri', text: ' Okay.' },
+  { startTime: 1305.54, person: 'Karol', text: " You're trying to." },
   {
-    startTime: 1522.6,
+    startTime: 1306.94,
     person: 'Karol',
-    text: ' So the one that will be sufficient to solve the problem and nothing more.'
+    text: " But this then comes to mind that there is actually another actor in the play, other than the conveyor belts with scanners, it's actually the automation that moves around the products, right?"
   },
   {
-    startTime: 1528.7,
+    startTime: 1320.88,
     person: 'Karol',
-    text: " And if we need more, then we'll do more, but we don't know if we need more yet in that sense."
+    text: ' So, like, some sort of a robotic arms in that sense?'
   },
   {
-    startTime: 1534.68,
-    person: 'Miriam',
-    text: " But I think my experience with that is, especially with REST, people are so focused on it, they don't think of anything else, right?"
+    startTime: 1326.74,
+    person: 'Valeri',
+    text: " Yeah, like the majority of picking currently happens via a human, a real arm, but we're already installing a robotic arm in certain warehouses to try it out, because it definitely has its own benefits."
   },
   {
-    startTime: 1544.82,
-    person: 'Miriam',
-    text: ' You will have people and talk to them and they say, we definitely need a REST API.'
+    startTime: 1343.94,
+    person: 'Valeri',
+    text: " It doesn't need to be paid extra during weekends and out of office hours."
   },
+  { startTime: 1349.5, person: 'Valeri', text: " Okay, that's fair." },
   {
-    startTime: 1549.04,
-    person: 'Miriam',
-    text: ' This is what everyone is doing.'
+    startTime: 1351.18,
+    person: 'Valeri',
+    text: " Yeah, but it also has limitations, obviously, not everything can be nicely and neatly picked by a robotic arm, and it's actually slower than it may be previous."
   },
+  { startTime: 1361.48, person: 'Karol', text: ' Yeah, possibly.' },
+  { startTime: 1362.52, person: 'Karol', text: " Yeah, that's possibly true." },
   {
-    startTime: 1551.1,
-    person: 'Miriam',
-    text: ' We need to do it too.'
-  },
-  {
-    startTime: 1552.66,
-    person: 'Miriam',
-    text: " And then if you're talking to them and you're saying, well, wait a second, what do you want to do?"
-  },
-  {
-    startTime: 1556.6,
-    person: 'Miriam',
-    text: ' Why do you want to do REST?'
-  },
-  {
-    startTime: 1558.04,
-    person: 'Miriam',
-    text: " Most people don't even know how old it is, where it comes from, why you need it."
-  },
-  {
-    startTime: 1563.24,
-    person: 'Miriam',
-    text: ' They just heard it somewhere, they picked it up.'
-  },
-  {
-    startTime: 1565.54,
-    person: 'Miriam',
-    text: " They say, everyone's doing that, we need to do it too."
-  },
-  {
-    startTime: 1567.7,
-    person: 'Miriam',
-    text: " And I said, well, wait a minute, let's see what you want to do."
-  },
-  {
-    startTime: 1570.76,
-    person: 'Miriam',
-    text: ' And then we can discuss whether you need REST or not, right?'
-  },
-  {
-    startTime: 1574.72,
-    person: 'Karol',
-    text: ' I mean, the beginnings of REST. I remember the first occurrences because REST was designed for communication back and fronted, right?'
-  },
-  {
-    startTime: 1584.94,
-    person: 'Karol',
-    text: " So it wasn't designed per se for system to system interoperability."
-  },
-  {
-    startTime: 1591.1,
-    person: 'Karol',
-    text: " And when people started using REST for a system to system interoperability, it wasn't mature enough yet to do so."
-  },
-  {
-    startTime: 1599.14,
+    startTime: 1364.12,
     person: 'Karol',
-    text: ' So no data validation, no support in libraries, no proper support for simple types.'
+    text: " I remember from the days when I was still in my bachelor's studies, because I studied electrical engineering, I was fascinated in the robotics labs and also in general, working with automation, so PLC controls and these kind of things."
   },
   {
-    startTime: 1606.16,
+    startTime: 1384.72,
     person: 'Karol',
-    text: ' Everything was a string.'
+    text: ' There was a very known company back in the day that they actually designed robotic arms for FMCG, which those robotic arms, they showcased them, like those arms could literally go in and pick up an apple and move it without leaving any trace on the apple.'
   },
   {
-    startTime: 1607.7,
+    startTime: 1403.3,
     person: 'Karol',
-    text: ' And no support for a regular expressions, no support for enumeration, etc.'
+    text: ' So they were very sensitive in terms of the pressure, how much pressure they apply on the object.'
   },
+  { startTime: 1408.8, person: 'Karol', text: ' So that was already quite interesting back then.' },
   {
-    startTime: 1613.48,
+    startTime: 1412.72,
     person: 'Karol',
-    text: " Now it's a lot better."
+    text: ' I have no idea how that industry developed, because I went into IT instead of robotics and automation.'
   },
   {
-    startTime: 1614.78,
+    startTime: 1419.22,
     person: 'Karol',
-    text: ' Now we can do all those things with a open API specification and RAML if somebody is using MuleSoft.'
+    text: " But I'm guessing this is the level of the automation in terms of robotic arms that you would be looking at in a warehouse so that you do not damage the goods."
   },
+  { startTime: 1433.18, person: 'Karol', text: ' Exactly.' },
   {
-    startTime: 1623.04,
+    startTime: 1434.12,
     person: 'Karol',
-    text: ' But a few years ago, that was a nightmare to do that over REST where I was looking at a XSD and a WSDL definition of a SOAP service.'
+    text: " Out of curiosity, in the meantime, I'll try to Google out the company and see if there are still some images of these kind of robotic arms so we can show it on screen."
   },
   {
-    startTime: 1633.68,
+    startTime: 1448.76,
     person: 'Karol',
-    text: " It's like, I can do so much better in terms of the quality of an API that will be better defined, properly defined and giving me a proper service."
+    text: " But the thing I'm interested in is to get, well, you're in PICNIC for about five years now, a bit more maybe."
   },
   {
-    startTime: 1645.22,
+    startTime: 1462.4,
     person: 'Karol',
-    text: " And here I'm like, how am I supposed to even validate that where I don't have even the tools to do so?"
+    text: ' What was the original problem statement to start working on such a warehouse and working on an EDA system for warehouses?'
   },
+  { startTime: 1473.18, person: 'Valeri', text: ' Okay.' },
+  { startTime: 1474.08, person: 'Valeri', text: ' Backstory.' },
   {
-    startTime: 1650.46,
-    person: 'Karol',
-    text: " And still, okay, it's a lot better nowadays, but still in certain cases, XSD wins over anything REST related, well, JSON related per se because REST doesn't exactly mean JSON, it means verb use over HTTP with a specific data format, which also some people don't understand that REST doesn't mean JSON."
+    startTime: 1474.88,
+    person: 'Valeri',
+    text: ' So for the first five years of PICNIC, obviously, the company was only starting.'
   },
+  { startTime: 1480.66, person: 'Valeri', text: ' And all of...' },
+  { startTime: 1481.78, person: 'Valeri', text: ' Oh, well, first, let me introduce the company.' },
   {
-    startTime: 1674.54,
-    person: 'Karol',
-    text: ' It may mean as well, XML or well, you could put any other format for that sake.'
+    startTime: 1484.4,
+    person: 'Valeri',
+    text: ' I think that not everybody from the Netherlands knows what PICNIC is about.'
   },
+  { startTime: 1488.9, person: 'Karol', text: ' Some do and buy groceries for PICNIC, so...' },
+  { startTime: 1492.22, person: 'Valeri', text: ' Just in case.' },
+  { startTime: 1493.24, person: 'Valeri', text: " It's an online grocery store." },
   {
-    startTime: 1682.38,
-    person: 'Miriam',
-    text: " I mean, most APIs that claim they are REST are not really REST because if you don't do hypermedia, you know."
+    startTime: 1495.42,
+    person: 'Valeri',
+    text: ' So what does it mean is actually that there are no physical stores you can go to and pick things yourself.'
   },
+  { startTime: 1502.48, person: 'Valeri', text: " So it's always delivered to your door." },
   {
-    startTime: 1690.1,
-    person: 'Karol',
-    text: " And that's a conversation I had on LinkedIn recently."
+    startTime: 1504.8,
+    person: 'Valeri',
+    text: ' And what that means is that you extra invest into supply chain and warehousing specifically, because you want to be extra efficient and productive on that side of things.'
   },
+  { startTime: 1515.92, person: 'Valeri', text: ' And we started small.' },
+  { startTime: 1518.26, person: 'Valeri', text: ' Most of the warehouses were manual.' },
   {
-    startTime: 1693.24,
-    person: 'Miriam',
-    text: ' Yeah.'
+    startTime: 1520.74,
+    person: 'Valeri',
+    text: ' People walking around, pushing the crates, moving things, heavy, hard, slow.'
   },
   {
-    startTime: 1693.56,
-    person: 'Karol',
-    text: " It's actually not a true statement because there's difference in doing a REST API and doing a RESTful API."
+    startTime: 1529.46,
+    person: 'Valeri',
+    text: " It's like insane numbers of how many kilometres per day single people would walk through the building and facility."
   },
   {
-    startTime: 1703.4,
-    person: 'Miriam',
-    text: " That's correct."
+    startTime: 1536.04,
+    person: 'Valeri',
+    text: " So obviously, the first moment we got, let's say, time and capacity, let's invest into automation, because that's the next very natural state."
   },
   {
-    startTime: 1704.22,
-    person: 'Karol',
-    text: ' These are two different things.'
+    startTime: 1546.7,
+    person: 'Valeri',
+    text: " And it's always been in the mind of the company and on the roadmap."
   },
   {
-    startTime: 1705.44,
-    person: 'Miriam',
-    text: ' Yes.'
+    startTime: 1550.68,
+    person: 'Valeri',
+    text: " And that's exactly what happened five years ago."
   },
   {
-    startTime: 1705.92,
-    person: 'Karol',
-    text: " RESTful API is, and we touched upon this just before the stream, so I think I'm gonna just Google it, the Richardson maturity model, right?"
+    startTime: 1552.9,
+    person: 'Valeri',
+    text: " That's when I was hired, exactly for the first automated warehouse to be built."
   },
   {
-    startTime: 1715.54,
-    person: 'Miriam',
-    text: ' Yeah.'
+    startTime: 1557.88,
+    person: 'Valeri',
+    text: ' And the problem was simple, how we can be more efficient, how we can increase the UPH, basically, pick more products per unit of time.'
   },
+  { startTime: 1568.36, person: 'Valeri', text: ' As simple as that.' },
   {
-    startTime: 1716.12,
-    person: 'Karol',
-    text: " So a RESTful API is the third level of the Richardson maturity model, but that doesn't mean that the second level or the first level are not REST. They are REST. They can be REST, but they're not RESTful."
+    startTime: 1569.84,
+    person: 'Valeri',
+    text: " And of course, for the first place we've been building, going straight microservices would have been insane."
   },
   {
-    startTime: 1730.12,
-    person: 'Karol',
-    text: ' RESTful is hypermedia.'
+    startTime: 1576.9,
+    person: 'Valeri',
+    text: " We didn't have experience whatsoever in the domain of robotics and automated processes."
   },
   {
-    startTime: 1731.58,
-    person: 'Karol',
-    text: ' And a lot of people claim or dilute this, that REST means RESTful.'
+    startTime: 1583.94,
+    person: 'Valeri',
+    text: ' So we decided to go small and just build a monolith side by side with the existing one.'
   },
   {
-    startTime: 1738.12,
-    person: 'Karol',
-    text: " No, it doesn't."
+    startTime: 1590.02,
+    person: 'Valeri',
+    text: ' So we had one for manual processes, one for automated.'
   },
   {
-    startTime: 1741.04,
-    person: 'Miriam',
-    text: ' Yeah.'
+    startTime: 1594.1,
+    person: 'Valeri',
+    text: " But we already knew that it's not going to lead for long, because there are roadmaps through business appetites, we know we would want to grow."
   },
   {
-    startTime: 1741.36,
-    person: 'Miriam',
-    text: ' I think I like most what one participant of one of our training said once.'
+    startTime: 1603.18,
+    person: 'Valeri',
+    text: " So the way we approach monoliths, it's already was nicely decoupled."
   },
   {
-    startTime: 1749.1,
-    person: 'Miriam',
-    text: " And I think that's one thing we also quote in our trainings all the time."
+    startTime: 1609.76,
+    person: 'Valeri',
+    text: " And like picking, you already heard this word, like, gel packing, that's already like isolated."
   },
   {
-    startTime: 1752.26,
-    person: 'Miriam',
-    text: ' And I liked it very much.'
+    startTime: 1617.2,
+    person: 'Valeri',
+    text: ' And even within the monoliths been talking by news of events to reach exactly this decoupling that in future should have helped us to transition towards a more distributed scalable system.'
   },
   {
-    startTime: 1753.54,
-    person: 'Miriam',
-    text: " She said, if you're honest, we're all just doing JSON via HTTP."
+    startTime: 1631.18,
+    person: 'Valeri',
+    text: ' And then with every new warehouse, we started splitting this big thing into smaller pieces.'
   },
   {
-    startTime: 1759.98,
-    person: 'Miriam',
-    text: ' I mean, right?'
+    startTime: 1637.72,
+    person: 'Valeri',
+    text: ' And it was only natural that the communication between physical and our world is event driven.'
   },
+  { startTime: 1645.36, person: 'Valeri', text: " Because it's physical event driven." },
   {
-    startTime: 1761.52,
-    person: 'Miriam',
-    text: " We're not doing REST. We're doing JSON-based HTTP APIs."
+    startTime: 1649.8,
+    person: 'Valeri',
+    text: ' But then the communication between our services also went event driven way to decouple.'
   },
   {
-    startTime: 1766.32,
-    person: 'Miriam',
-    text: " And that's what we actually do, right?"
+    startTime: 1658.48,
+    person: 'Valeri',
+    text: ' And also, the way we approach designing the system is that we invested a lot into the unhappy flows.'
   },
   {
-    startTime: 1768.28,
-    person: 'Miriam',
-    text: ' Most of the time.'
+    startTime: 1667.06,
+    person: 'Valeri',
+    text: " So basically, you have as we've been talking already today, anything can go wrong, the crate can go right instead of left, it can be stuck in the middle of the shelf, you can have a conjunction, whatever."
   },
   {
-    startTime: 1770.86,
-    person: 'Karol',
-    text: " Well, again, that's REST. That's not RESTful."
+    startTime: 1686.54,
+    person: 'Valeri',
+    text: ' So basically, how can we make this system robust enough to deal with all those things.'
   },
   {
-    startTime: 1775.04,
-    person: 'Karol',
-    text: " So we're doing REST. We're not doing RESTful, definitely."
+    startTime: 1693.34,
+    person: 'Valeri',
+    text: ' And, and on top of that, that, okay, different hardware providers, we want to create our warehouses from those lego pieces and kind of very natural event driven way.'
   },
   {
-    startTime: 1778.24,
+    startTime: 1708.78,
     person: 'Karol',
-    text: " And that's the problem here."
+    text: " Okay, so the problem statement was that actually the, I think one of the problems in the whole statement was that actually, because it's the physical world, a lot more things can go wrong very fast."
   },
   {
-    startTime: 1780.14,
+    startTime: 1724.12,
     person: 'Karol',
-    text: ' And people forget about that.'
+    text: " And they're very specifically, so there's a lot more logic to be built around these kind of things."
   },
   {
-    startTime: 1781.64,
+    startTime: 1732.23,
     person: 'Karol',
-    text: ' I already know people that when they hear XML or SOAP, they get, why?'
+    text: ' This pops out to me, because in general, when we, at least what I encounter when working with various types of architects, a lot of architects think, and business also, they think happy path only.'
   },
+  { startTime: 1746.06, person: 'Karol', text: ' So the design is happy path.' },
   {
-    startTime: 1790.92,
+    startTime: 1747.88,
     person: 'Karol',
-    text: " It's like, these are valid formats."
+    text: ' And then when things go wrong, they start thinking about actual error handling.'
   },
   {
-    startTime: 1793.54,
+    startTime: 1752.48,
     person: 'Karol',
-    text: ' We still use XML everywhere.'
+    text: " Whereas here, you can go wrong, and it can go wrong very bad, because it's physical."
   },
+  { startTime: 1759.26, person: 'Valeri', text: ' Mm hmm.' },
+  { startTime: 1760.2, person: 'Karol', text: ' Right.' },
   {
-    startTime: 1796.1,
+    startTime: 1760.8,
     person: 'Karol',
-    text: " Most of the low-code tools that I use or my colleagues use, they're XML-based."
+    text: " So if you would give some examples of, apart from like, a crate being stuck, or routed the wrong conveyor belt, what other like, let's say, more spectacular wrongs can go, what can actually go into very wrong in a warehouse environment?"
   },
   {
-    startTime: 1802.46,
-    person: 'Karol',
-    text: " They're defined with XMLs."
+    startTime: 1782.9,
+    person: 'Valeri',
+    text: ' Well, the things that go wrong, we still can handle, is for instance, the whole area, just like a single piece of hardware, just switching off, and the whole area becoming unavailable.'
   },
   {
-    startTime: 1804.24,
-    person: 'Karol',
-    text: ' A lot of configuration for a lot of things is defined in XMLs because it gives that rigidity that you need for those kind of definitions.'
+    startTime: 1798.1,
+    person: 'Valeri',
+    text: " So suddenly, you have to deal with the fact that now you have like, several hundreds of orders unavailable, you have to do something with that, either start anew, or reroute, like basically, disable the whole part and deal without that until it's fixed."
   },
   {
-    startTime: 1813.44,
-    person: 'Karol',
-    text: ' And especially that, not sure, but I think that still there is a lacking space in using parts of a OpenAPI specification outside of an API because XSD is very much usable outside of an API.'
+    startTime: 1815.18,
+    person: 'Valeri',
+    text: " And you're kind of lucky if maintenance people can fix it within like an hour or two, sometimes it's a day."
   },
+  { startTime: 1822.64, person: 'Valeri', text: ' Of course, they work as fast as possible.' },
   {
-    startTime: 1830.18,
-    person: 'Karol',
-    text: ' You can use that for data validation.'
+    startTime: 1825.36,
+    person: 'Valeri',
+    text: ' But even an hour is a big loss in terms of money and efficiency.'
   },
+  { startTime: 1830.48, person: 'Valeri', text: " So that's one example." },
   {
     startTime: 1832.32,
-    person: 'Karol',
-    text: ' You can use that within your code, somewhere in Java, C-sharp, whatever that is, and use it with XPaths, XSLT to transform data.'
-  },
-  {
-    startTime: 1841.56,
-    person: 'Karol',
-    text: ' Whereas using the same with OpenAPI spec or RAML is not exactly yet available, at least to my knowledge.'
-  },
-  {
-    startTime: 1850.5,
-    person: 'Karol',
-    text: " Maybe I'm wrong because I haven't done research in that space for a longer time, but that's, again, the difference, right?"
-  },
-  {
-    startTime: 1859.38,
-    person: 'Daniel',
-    text: " Yeah, this data thing, I think it's also on another part because for most people, it's not really clear what they actually share."
-  },
-  {
-    startTime: 1869.12,
-    person: 'Daniel',
-    text: " So even if they would do SOAP or whatever, it's not really clear what they're actually sharing there in regards of data."
-  },
-  {
-    startTime: 1877.18,
-    person: 'Daniel',
-    text: " That's another point."
-  },
-  {
-    startTime: 1878.48,
-    person: 'Daniel',
-    text: " That's why we put it in the methodology with API thinking, what we prefer and bring to customers we have in this perspective, because it's really relevant because most people are not really aware what is being shared actually, or don't know who is the owner of this data set actually, or if is this data set somewhere defined."
-  },
-  {
-    startTime: 1902.96,
-    person: 'Daniel',
-    text: " So when we talk about data catalogues and all the things there, so I'm not dropping this mesh thing because this opens another bottle there, but in the end it's really something that things we do are actually quite old, but it feels we are not mature enough to really use them, or we didn't understand them right."
-  },
-  {
-    startTime: 1929.55,
-    person: 'Daniel',
-    text: ' So this is what we see when we go into the field.'
-  },
-  {
-    startTime: 1933.79,
-    person: 'Daniel',
-    text: " There's always this tool clashing."
-  },
-  {
-    startTime: 1936.85,
-    person: 'Daniel',
-    text: " So even when we go into the perspective of REST versus events, it's always that you have a RESTful integration platform versus the event broker or something like that."
-  },
-  {
-    startTime: 1952.53,
-    person: 'Daniel',
-    text: ' And this is really, really interesting in a bad way on the other side.'
+    person: 'Valeri',
+    text: " The other one, that's not something actually can easily deal with is like once we had the whole, like, because of the malfunctioning, all the freezers in the warehouse went just down."
   },
   {
-    startTime: 1958.51,
-    person: 'Daniel',
-    text: " And I think with this, even when we show up this maturity model, it's always confusing for some people that there is something, and we make fun out of it because we point the date on the slide deck which we use."
+    startTime: 1844.06,
+    person: 'Valeri',
+    text: " So you can't deliver any frozen products, and it's all leaking."
   },
   {
-    startTime: 1975.73,
-    person: 'Daniel',
-    text: " So it's 2008."
+    startTime: 1848.42,
+    person: 'Valeri',
+    text: " But that's not something even any software can deal with, I think."
   },
   {
-    startTime: 1978.07,
-    person: 'Daniel',
-    text: " And I think for most people it's not clear that this model has this mature age actually."
+    startTime: 1851.9,
+    person: 'Valeri',
+    text: ' So you just deal with the fact that, okay, no frozen products today, and it is what it is.'
   },
   {
-    startTime: 1984.37,
+    startTime: 1860.76,
     person: 'Karol',
-    text: ' Yeah.'
+    text: ' I mean, that must have been a horrendous site, all freezers out and not working.'
   },
   {
-    startTime: 1985.01,
+    startTime: 1867.7,
     person: 'Karol',
-    text: " So Richardson maturity model, I don't know the date on that, but basically it was on Martin Fowler's blog in 2010."
+    text: ' And if you have like, because, okay, I imagined myself that you probably have like a main path going for all the conveyors to like the exit to the actual shipping.'
   },
   {
-    startTime: 1992.43,
+    startTime: 1878.24,
     person: 'Karol',
-    text: ' That was the link, the QR code you saw on screen just a second ago.'
+    text: " Correct me if I'm wrong, there's like those, you mentioned those sections, like whole sections, isolated sections that you need to reach a border with Crate to move it to elsewhere."
   },
   {
-    startTime: 1996.81,
+    startTime: 1891.44,
     person: 'Karol',
-    text: ' The photo there, that was not Richardson, that was Martin Fowler nowadays, just to be clear.'
+    text: ' So you can have an outage of a section, or you can have an outage of the probably complete thing, probably rarer due to this compartmentalisation of elements in the warehouse.'
   },
   {
-    startTime: 2003.51,
+    startTime: 1907.6,
     person: 'Karol',
-    text: " So it's very old."
+    text: " So if you have that kind of outage of the section, let's say it takes an hour for maintenance to clear it up."
   },
   {
-    startTime: 2005.57,
+    startTime: 1918.38,
     person: 'Karol',
-    text: ' REST itself is very old.'
+    text: ' Is there like a workaround that you put in people in to handle things to do the offloading of the workflow?'
   },
+  { startTime: 1927.38, person: 'Karol', text: ' Or is that like, just stop entirely?' },
+  { startTime: 1931.76, person: 'Valeri', text: ' Neither actually.' },
   {
-    startTime: 2008.55,
-    person: 'Karol',
-    text: ' When you got here, 25.'
+    startTime: 1933.56,
+    person: 'Valeri',
+    text: ' Well, of the first stages, there were times where people have been fixing things, even like if you have a full conveyor and that cannot move because there are too many crates, someone come in and physically take off the crates to start the movement again, that happens.'
   },
   {
-    startTime: 2011.29,
-    person: 'Karol',
-    text: ' Yeah.'
+    startTime: 1948.46,
+    person: 'Valeri',
+    text: ' But what happens these days, we obviously build some automation around that.'
   },
   {
-    startTime: 2012.41,
-    person: 'Karol',
-    text: ' SOAP is quite older in that sense.'
+    startTime: 1953.9,
+    person: 'Valeri',
+    text: ' Yeah, you just register, okay, this whole piece of equipment is not available and the system deals with that.'
   },
   {
-    startTime: 2015.77,
-    person: 'Karol',
-    text: ' If we look at service-orientated architecture, the pinnacle of service-orientated architecture was 2000s, and SOAP is much older than that.'
+    startTime: 1961.2,
+    person: 'Valeri',
+    text: ' So this propagates through all the necessary components on our side.'
   },
   {
-    startTime: 2024.33,
-    person: 'Karol',
-    text: ' XML is extremely old already from our perspectives, right?'
+    startTime: 1964.98,
+    person: 'Valeri',
+    text: ' So that if routing needs to happen, we will bypass, we exclude this area.'
   },
+  { startTime: 1969.56, person: 'Valeri', text: ' So now we can work without that.' },
   {
-    startTime: 2028.67,
-    person: 'Karol',
-    text: " So people don't understand that these standards are there, but we just didn't grow into them yet in that sense."
+    startTime: 1972.9,
+    person: 'Valeri',
+    text: " Everything that's been locked in these areas and how deprioritized or prioritised, depending."
   },
   {
-    startTime: 2037.97,
-    person: 'Karol',
-    text: " Just as a small segue, I literally saw a YouTube short today, just before the stream, where a girl was saying, I told a teenager today that I'm older than Google."
+    startTime: 1979.78,
+    person: 'Valeri',
+    text: " So to the most part, the largest part, you don't need actually human intervention apart from the maintenance crew who fixes the actual hardware problem."
   },
+  { startTime: 1992.38, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 2048.63,
+    startTime: 1993.72,
     person: 'Karol',
-    text: " And the teenager was like, that's not possible."
+    text: " Just to give you folks an idea how a robotic arm looks like for handling food, it's not the image I remember."
   },
   {
-    startTime: 2051.87,
+    startTime: 2002.38,
     person: 'Karol',
-    text: ' Yeah, if you were born before 1998, it is possible.'
+    text: " This is from some sort of a expo show, but basically it's something built like that."
   },
   {
-    startTime: 2055.17,
+    startTime: 2011.08,
     person: 'Karol',
-    text: ' So all of us, I think are older than Google here.'
+    text: " So it's not like the industrial arm that people often see that they have the duty arms, but this is more of a delicate equipment."
   },
   {
-    startTime: 2059.73,
+    startTime: 2021,
     person: 'Karol',
-    text: ' Well, it is what it is.'
+    text: " It will be mostly a lot slower because of the construction and it doesn't really grip with grips that are solid, but they envelop the object like this."
   },
   {
-    startTime: 2061.429,
+    startTime: 2034.38,
     person: 'Karol',
-    text: " So people don't know."
-  },
-  {
-    startTime: 2064.71,
-    person: 'Miriam',
-    text: ' My favourite story regarding this is always then, when I went to school, I had a card for the telephone outside the school because I had no mobile phone.'
-  },
-  {
-    startTime: 2073.929,
-    person: 'Miriam',
-    text: ' So if the school would like, you know, I need to go home early because a teacher was ill or whatever happened, I would go to the phone box, put in my card and call my mom, you know?'
+    text: ' So this is what kind of equipment is used by the company Festo or designed by the company Festo.'
   },
   {
-    startTime: 2085.429,
-    person: 'Miriam',
-    text: " And everyone's like, if you tell that to any young people today, they're like, what?"
+    startTime: 2041.56,
+    person: 'Karol',
+    text: ' And this is what I saw back in the day when I was in university.'
   },
   {
-    startTime: 2090.07,
-    person: 'Miriam',
-    text: " And I'm like, yeah, well, that's how it was, right?"
+    startTime: 2046.48,
+    person: 'Karol',
+    text: " So probably I'm guessing similar kind of equipment in the warehouse?"
   },
   {
-    startTime: 2093.31,
-    person: 'Miriam',
-    text: ' There was no mobile phone that you could just call anyone.'
+    startTime: 2052.44,
+    person: 'Valeri',
+    text: " Actually, I don't want to say it looks more advanced now."
   },
+  { startTime: 2058.9, person: 'Valeri', text: ' Yes, it is.' },
   {
-    startTime: 2096.07,
-    person: 'Miriam',
-    text: " You would like need to check if someone's home or if you need a key, you would need a phone card and you would go out to this one phone box in front of the school, right?"
+    startTime: 2061.34,
+    person: 'Valeri',
+    text: " Unfortunately, I can't share those particular pictures."
   },
   {
-    startTime: 2105.51,
-    person: 'Karol',
-    text: " I'm still waiting."
+    startTime: 2064.34,
+    person: 'Valeri',
+    text: " We are testing robot arms now and the provider, so the robotic arms, even enclosed them so that it's not shown yet exactly."
   },
+  { startTime: 2075.139, person: 'Karol', text: ' But it looks pretty cool.' },
   {
-    startTime: 2106.65,
+    startTime: 2077.84,
     person: 'Karol',
-    text: " I'm still waiting with my kids to show them a rotary phone, you know?"
+    text: " Just to put it in the frame of reference, this video that I found is actually 13 years old, so it's more advanced."
   },
   {
-    startTime: 2111.57,
+    startTime: 2086.08,
     person: 'Karol',
-    text: ' And properly connected somewhere.'
+    text: ' I mean, I saw it already a lot better over years that it was like a wireframe just moving a few pieces and that just goes like that.'
   },
   {
-    startTime: 2114.25,
+    startTime: 2097.7,
     person: 'Karol',
-    text: " I don't know if I even have cables to connect the phone in my house nowadays."
+    text: ' A good question around incidents again from YouTube.'
   },
+  { startTime: 2101.92, person: 'Karol', text: ' So how many incidents per year?' },
+  { startTime: 2104.8, person: 'Karol', text: " That's an interesting one." },
   {
-    startTime: 2118.65,
+    startTime: 2106.16,
     person: 'Karol',
-    text: ' But to connect it and tell them to call somebody.'
+    text: " How often do you actually get outages on certain sections or entire warehouses or what's the scope in that sense?"
   },
   {
-    startTime: 2122.79,
+    startTime: 2115.04,
     person: 'Karol',
-    text: " I'm curious what will happen in the few years that they will be able actually to understand how to use a phone like that."
+    text: " Because from engineering perspective, it's an interesting question how things go wrong and how often things go wrong."
   },
   {
-    startTime: 2129.13,
+    startTime: 2120.86,
     person: 'Karol',
-    text: " It's like, that's gonna be interesting."
+    text: ' So how often you need to compensate and then what kind of incidents are the most common ones?'
   },
+  { startTime: 2128.14, person: 'Valeri', text: " Yeah, it's a good one." },
   {
-    startTime: 2131.15,
-    person: 'Karol',
-    text: ' People have no idea.'
+    startTime: 2129.08,
+    person: 'Valeri',
+    text: " I don't have a good overview, to be honest, but in the very abstract terms, like the big ones is like all freezers going down."
   },
   {
-    startTime: 2132.39,
-    person: 'Karol',
-    text: " If we look at specification of XML, I don't know if this is, I would have to look at that W3C, but basically 1996."
+    startTime: 2137.54,
+    person: 'Valeri',
+    text: " It's like hopefully one-time events, but of course not."
   },
   {
-    startTime: 2144.95,
-    person: 'Daniel',
-    text: ' Yeah, that was also on my mind.'
+    startTime: 2140.88,
+    person: 'Valeri',
+    text: ' But that happened once so far and this scale of incidents you probably have once a year in the warehouse because they also have the regular maintenance shifts in terms of the replacement of tuning of different hardware parts.'
   },
+  { startTime: 2156.06, person: 'Valeri', text: ' So in that sense, the job is being done.' },
   {
-    startTime: 2146.99,
-    person: 'Daniel',
-    text: ' So there they are.'
+    startTime: 2160.04,
+    person: 'Valeri',
+    text: " More often than not, it's us who breaks the system, not the hardware actually."
   },
+  { startTime: 2165.88, person: 'Karol', text: ' So the IT breaks the system, okay.' },
+  { startTime: 2169.54, person: 'Karol', text: ' How does it happen though?' },
+  { startTime: 2171.02, person: 'Karol', text: " It's like a faulty deployment of production?" },
   {
-    startTime: 2149.53,
-    person: 'Karol',
-    text: " So it's extremely old."
+    startTime: 2175.16,
+    person: 'Valeri',
+    text: ' Yeah, I mean, as I was saying, the story like five years ago, we started with monoliths, then we started breaking it apart, but you can imagine that three years is not enough to go completely from monoliths to microservices, such transition takes longer, especially when you need to support new warehouses, new features.'
   },
   {
-    startTime: 2152.45,
-    person: 'Karol',
-    text: " And if you dig in ever, try to dig into the original specification for XML one, there's plenty of things that were solved out of the box in the first specification."
+    startTime: 2193.38,
+    person: 'Valeri',
+    text: ' So we are still in the face of a migration and basically these kinds of migrations is quite challenging, especially on a side that already deals with thousands of orders per day and like serves half the country.'
   },
+  { startTime: 2211.14, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 2163.73,
-    person: 'Karol',
-    text: ' That if you look at the early stages of Jason and Swagger, not solved at all.'
+    startTime: 2212.66,
+    person: 'Valeri',
+    text: " That's where it gets tricky to not break at all."
   },
   {
-    startTime: 2172.13,
-    person: 'Karol',
-    text: ' Nobody thought even about these problems at the beginning of those formats.'
+    startTime: 2216.92,
+    person: 'Valeri',
+    text: ' So we do kind of a consensus with the operations on when it is safe to deploy, especially if we know the changes are risky because there are always low days, depending on the demands and like Wednesdays, for instance, are normally low.'
   },
+  { startTime: 2232.34, person: 'Valeri', text: " So that's the day we used to use the system." },
   {
-    startTime: 2178.07,
-    person: 'Karol',
-    text: " So it's difficult in that sense."
+    startTime: 2235.44,
+    person: 'Valeri',
+    text: ' But of course, we think a lot of, okay, if we roll it out and something goes wrong, if we roll back, is it enough?'
   },
   {
-    startTime: 2180.87,
-    person: 'Karol',
-    text: " We're trying to reinvent the wheel and I get bandwidth costs."
+    startTime: 2244.06,
+    person: 'Valeri',
+    text: ' What should be the steps to make sure we write as fast as possible?'
   },
   {
-    startTime: 2184.09,
-    person: 'Karol',
-    text: " So that's why we have Jason because it's lighter than XML."
+    startTime: 2249.62,
+    person: 'Valeri',
+    text: " The other way to break a system is actually not so long ago, I almost put down the Reddit cluster and you can imagine it's pretty central to the system."
   },
   {
-    startTime: 2188.63,
+    startTime: 2261.2,
     person: 'Karol',
-    text: " But it's the question of what we use that for."
+    text: ' So it was like a beating heart of the system, basically.'
   },
+  { startTime: 2265.04, person: 'Karol', text: ' Exactly.' },
+  { startTime: 2266.48, person: 'Valeri', text: ' So it was like just tiny bit from crush.' },
   {
-    startTime: 2194.54,
-    person: 'Karol',
-    text: ' But going back to designing API.'
+    startTime: 2269.98,
+    person: 'Valeri',
+    text: " So it didn't end up bad, but had all the possibilities to become one."
   },
+  { startTime: 2278.24, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 2197.68,
+    startTime: 2278.66,
     person: 'Karol',
-    text: ' So just put the perspective on things.'
+    text: ' So first let me unpack a little on the maintenance and operations side.'
   },
   {
-    startTime: 2201.88,
+    startTime: 2285.18,
     person: 'Karol',
-    text: ' What would you consider a bad design of an API?'
+    text: " So basically I assume that it kind of handles like an old school on-premise setup where you, at least where we were working in T-Mobile, we always deployed over weekends because all the systems, given that T-Mobile as a telco company was heavy duty technological without the IT systems that the business wouldn't work."
   },
   {
-    startTime: 2207.39,
+    startTime: 2312.76,
     person: 'Karol',
-    text: ' I know, Pandora box.'
+    text: " That is the other way around with most companies because they're not relying on technology for the core of their business."
   },
+  { startTime: 2319.84, person: 'Karol', text: ' Right.' },
+  { startTime: 2320.84, person: 'Karol', text: ' So here again, we have the same situation.' },
   {
-    startTime: 2209.39,
+    startTime: 2324.08,
     person: 'Karol',
-    text: " Let's open it."
+    text: ' You as in the warehouse setting, you rely on technology to actually facilitate the business, to do the business.'
   },
   {
-    startTime: 2213.87,
-    person: 'Miriam',
-    text: ' Bad in what sense?'
-  },
-  {
-    startTime: 2215.67,
-    person: 'Miriam',
-    text: ' I mean.'
-  },
-  {
-    startTime: 2220.23,
+    startTime: 2332.28,
     person: 'Karol',
-    text: " Okay, let's categorise what sense we can have."
-  },
-  {
-    startTime: 2224.31,
-    person: 'Miriam',
-    text: ' Okay, so one bad thing.'
-  },
-  {
-    startTime: 2226.33,
-    person: 'Miriam',
-    text: " I don't know whether anyone of the ones who's listening in ever tried to use the Azure DevOps API."
-  },
-  {
-    startTime: 2231.07,
-    person: 'Miriam',
-    text: " That's my favourite API to use because all the examples are wrong."
-  },
-  {
-    startTime: 2236.81,
-    person: 'Miriam',
-    text: " You don't have any example of a valid request body."
-  },
-  {
-    startTime: 2239.43,
-    person: 'Miriam',
-    text: " So you're just doing trial and error until you guess the correct request body."
-  },
-  {
-    startTime: 2243.53,
-    person: 'Miriam',
-    text: " So that's something I consider really bad quality because guessing request bodies is nothing I like to do actually."
-  },
-  {
-    startTime: 2251.37,
-    person: 'Miriam',
-    text: ' I mean, it depends on the endpoints.'
-  },
-  {
-    startTime: 2253.27,
-    person: 'Miriam',
-    text: ' There are some that are maybe used by lots of, but if you really want to automate stuff, you need to go to many endpoints and then it gets funny.'
-  },
-  {
-    startTime: 2260.33,
-    person: 'Miriam',
-    text: " So that's one thing."
-  },
-  {
-    startTime: 2262.17,
-    person: 'Miriam',
-    text: ' Another really bad thing I saw was from a, I think it was a pizza delivering API or something like that.'
+    text: ' Otherwise, if the technology is not working, you have a business stop.'
   },
   {
-    startTime: 2269.29,
-    person: 'Miriam',
-    text: ' And it was a real example from someone who showed it to me.'
-  },
-  {
-    startTime: 2271.85,
-    person: 'Miriam',
-    text: ' So the API was used for ordering the pizza in a front end.'
-  },
-  {
-    startTime: 2277.11,
-    person: 'Miriam',
-    text: ' And the IDs were integer, which means you could just take the next integer and then get the credit card details plus address from the person who ordered the pizza, where I say like, well, this is like, I mean, this is bad design on another level.'
-  },
-  {
-    startTime: 2290.91,
-    person: 'Miriam',
-    text: " It's a security related fail, but that was interesting too."
-  },
-  {
-    startTime: 2294.47,
-    person: 'Miriam',
-    text: ' So integer SIDs is usually always like bad.'
-  },
-  {
-    startTime: 2299.11,
-    person: 'Miriam',
-    text: ' And what else?'
-  },
-  {
-    startTime: 2300.45,
-    person: 'Miriam',
-    text: " All our three APIs, basically more or less, if people don't know how to convert a Boolean to a correct Boolean, and then you get an X or an empty string and you have to guess whether this is now a Boolean or not in SAP, for example."
-  },
-  {
-    startTime: 2314.33,
+    startTime: 2336.1,
     person: 'Karol',
-    text: ' Okay, okay, fair enough.'
-  },
-  {
-    startTime: 2316.57,
-    person: 'Miriam',
-    text: ' Microsoft date timestamps, also very nice with our three systems.'
-  },
-  {
-    startTime: 2321.37,
-    person: 'Miriam',
-    text: ' Timestamps that nobody can convert because nobody knows how they work, right?'
-  },
-  {
-    startTime: 2325.49,
-    person: 'Miriam',
-    text: ' Why are there standards for timestamps if we can invent our own, right?'
-  },
-  {
-    startTime: 2329.87,
-    person: 'Miriam',
-    text: ' But these are all minor things, like Daniel, you want to add something?'
-  },
-  {
-    startTime: 2334.07,
-    person: 'Daniel',
-    text: ' Quite interesting because it was all technical in terms of that.'
-  },
-  {
-    startTime: 2340.17,
-    person: 'Miriam',
-    text: ' Yeah.'
-  },
-  {
-    startTime: 2340.71,
-    person: 'Daniel',
-    text: ' Okay.'
-  },
-  {
-    startTime: 2341.57,
-    person: 'Daniel',
-    text: ' For me, this wording of good and bad really depends on the scope and actually on the type of organisation of the structure, the people involved actually.'
-  },
-  {
-    startTime: 2356.03,
-    person: 'Daniel',
-    text: ' So there can be a really bad design for somebody outside of the scope, but it can be the best and good design inside the scope.'
-  },
-  {
-    startTime: 2366.35,
-    person: 'Daniel',
-    text: ' And now we are actually touching indirectly the DIQs somehow.'
-  },
-  {
-    startTime: 2371.27,
-    person: 'Daniel',
-    text: ' Okay.'
-  },
-  {
-    startTime: 2372.07,
-    person: 'Daniel',
-    text: " This is where it actually all came from somehow because we saw things about, okay, actually for this purpose, it's good, but it's not reusable."
-  },
-  {
-    startTime: 2383.43,
-    person: 'Daniel',
-    text: " So we really have to think about, okay, for the scope, for the bounded context, it's a good design."
-  },
-  {
-    startTime: 2390.35,
-    person: 'Daniel',
-    text: ' So no discussions about that.'
-  },
-  {
-    startTime: 2392.55,
-    person: 'Daniel',
-    text: ' Because a lot of people are triggered by this good design.'
-  },
-  {
-    startTime: 2396.59,
-    person: 'Daniel',
-    text: ' They think, okay, there is some kind of guideline book, somewhere somebody wrote this, everybody adds something to that.'
-  },
-  {
-    startTime: 2406.15,
-    person: 'Daniel',
-    text: " And that's why a lot of people also look at guidelines from other companies to really get a glimpse what good API design can be."
-  },
-  {
-    startTime: 2415.47,
-    person: 'Daniel',
-    text: ' And this is the perspective I have on this because moving away from the technology, because it depends.'
-  },
-  {
-    startTime: 2423.57,
-    person: 'Daniel',
-    text: ' Yeah.'
-  },
-  {
-    startTime: 2423.71,
-    person: 'Daniel',
-    text: ' If I understood things good, then my design will be correct.'
-  },
-  {
-    startTime: 2427.25,
-    person: 'Daniel',
-    text: " If not, my design will be not so good, but it could be right for the purpose I'm using it."
-  },
-  {
-    startTime: 2435.05,
-    person: 'Daniel',
-    text: ' So this is really to think about.'
-  },
-  {
-    startTime: 2438.75,
-    person: 'Daniel',
-    text: ' So, and this is what we see in trainings.'
-  },
-  {
-    startTime: 2440.95,
-    person: 'Daniel',
-    text: ' This is what we see in discussions with people.'
-  },
-  {
-    startTime: 2443.75,
-    person: 'Daniel',
-    text: " It's always that they think that we have some kind of magic book with us presenting good API designs."
-  },
-  {
-    startTime: 2452.17,
-    person: 'Miriam',
-    text: " And we're always asked for the, you know, the, how do you say in English?"
-  },
-  {
-    startTime: 2456.87,
-    person: 'Miriam',
-    text: ' The like solution for a task.'
-  },
-  {
-    startTime: 2459.13,
-    person: 'Miriam',
-    text: " And we're saying, well, there is not the one right solution."
-  },
-  {
-    startTime: 2462.21,
-    person: 'Miriam',
-    text: " That's exactly the funny part about API design."
-  },
-  {
-    startTime: 2464.99,
-    person: 'Miriam',
-    text: ' There is not the one solution is for everyone, right?'
+    text: ' So when I was working for T-Mobile, it was like, we always deploy on a Friday evening and do all the checks and all the tests over a weekend because this is where our business is not working or on a Saturday evening, because this is where our business will not be working.'
   },
   {
-    startTime: 2468.73,
-    person: 'Miriam',
-    text: ' It depends on who are you designing for?'
-  },
-  {
-    startTime: 2471.21,
-    person: 'Miriam',
-    text: ' What use case?'
-  },
-  {
-    startTime: 2472.59,
-    person: 'Miriam',
-    text: ' What do the people want to do with it?'
-  },
-  {
-    startTime: 2474.23,
-    person: 'Miriam',
-    text: " Like what's the, what are the systems involved?"
-  },
-  {
-    startTime: 2476.71,
-    person: 'Miriam',
-    text: " What can they even do if they don't, if they can't do JSON and only XML, then well, you don't do J, right?"
-  },
-  {
-    startTime: 2483.17,
-    person: 'Miriam',
-    text: " I mean, there's so many things that you need to take care of."
-  },
-  {
-    startTime: 2487.47,
-    person: 'Miriam',
-    text: " So people always expect that we have the one solution and we're always disappointing them saying, no, there is not the one best solution will never be, right?"
-  },
-  {
-    startTime: 2496.67,
+    startTime: 2354.92,
     person: 'Karol',
-    text: ' And I concur here because it, from at least architecture perspective, when I deal with different architects of different levels and kinds, because there are so many abstraction levels of architecture.'
+    text: " And we're doing all the tests over a Saturday, Sunday, because these are the slow dates."
   },
   {
-    startTime: 2510.37,
+    startTime: 2361.82,
     person: 'Karol',
-    text: ' It always is about context.'
+    text: ' That was the specificity of the telco industry that Monday to Friday, no changes on production allowed because this is where the heavy duty work is in office hours or in the shop working hours.'
   },
+  { startTime: 2376.82, person: 'Karol', text: ' And evenings, yes, bug fixes, no problem.' },
+  { startTime: 2379.74, person: 'Karol', text: ' Weekends, deploy full releases and test them.' },
   {
-    startTime: 2513.03,
+    startTime: 2384.74,
     person: 'Karol',
-    text: ' Context is king.'
+    text: " I'm guessing it's a similar setup in the warehouse, but it's actually probably not related to a weekend."
   },
   {
-    startTime: 2513.93,
+    startTime: 2391.84,
     person: 'Karol',
-    text: ' And if we just talk in an academic sense, the answer will always be, it depends.'
+    text: " I'm guessing weekends are actually the busier parts."
   },
+  { startTime: 2394.74, person: 'Valeri', text: ' Yeah.' },
   {
-    startTime: 2521.99,
-    person: 'Karol',
-    text: " If we put that in a specific context of a specific problem we're solving, then we can put it in specific terms, what would be the guidelines for this kind of problem?"
+    startTime: 2395,
+    person: 'Valeri',
+    text: ' The thing is that warehouse operates almost 24 by 7.'
   },
+  { startTime: 2399.34, person: 'Valeri', text: " So we don't have days when it's not working." },
+  { startTime: 2403.22, person: 'Karol', text: ' Wow.' },
+  { startTime: 2404.8, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 2532.99,
+    startTime: 2405.64,
     person: 'Karol',
-    text: ' But there are no universal guidelines for APIs.'
+    text: " So if 24 by 7, then I'm guessing the middle of the night is the slowest?"
   },
+  { startTime: 2409.64, person: 'Valeri', text: ' Yeah.' },
   {
-    startTime: 2537.13,
-    person: 'Karol',
-    text: ' Well, maybe a few hints, few.'
+    startTime: 2409.86,
+    person: 'Valeri',
+    text: ' Well, actually, I think actual people stop working somewhat 11 and start to shift at 5 or so.'
   },
   {
-    startTime: 2540.39,
-    person: 'Miriam',
-    text: " Something like don't use the wrong data type, like the basics that I just mentioned."
+    startTime: 2416.52,
+    person: 'Valeri',
+    text: " So you have this gap of five hours in the night, but IT doesn't work in those hours."
   },
+  { startTime: 2422.28, person: 'Valeri', text: ' So pretty much a no-go.' },
   {
-    startTime: 2544.61,
-    person: 'Miriam',
-    text: ' I mean, I think we agree with the basics, right?'
+    startTime: 2425.3,
+    person: 'Valeri',
+    text: ' So we always deploy in the middle of the operations, like when operations are running.'
   },
+  { startTime: 2430.3, person: 'Valeri', text: ' So for us, the system always works.' },
+  { startTime: 2433.56, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 2547.47,
+    startTime: 2434.26,
     person: 'Karol',
-    text: ' Or use human readable names for attributes.'
-  },
-  {
-    startTime: 2552.73,
-    person: 'Daniel',
-    text: ' Or free here.'
-  },
-  {
-    startTime: 2554.01,
-    person: 'Daniel',
-    text: ' Defined something like that.'
-  },
-  {
-    startTime: 2555.55,
-    person: 'Daniel',
-    text: ' So the easy parts, but what we see really is there must be one solution.'
-  },
-  {
-    startTime: 2561.91,
-    person: 'Daniel',
-    text: ' There must be this golden record.'
-  },
-  {
-    startTime: 2563.79,
-    person: 'Daniel',
-    text: ' Everybody ever thought about in data structures.'
-  },
-  {
-    startTime: 2568.23,
-    person: 'Daniel',
-    text: ' And this is what we then have to reflect, even in the trainings we do.'
-  },
-  {
-    startTime: 2573.21,
-    person: 'Daniel',
-    text: ' They always think there is this one solution.'
-  },
-  {
-    startTime: 2576.87,
-    person: 'Daniel',
-    text: ' The both will present at the end the solution, how it should be to solve this specific problem.'
-  },
-  {
-    startTime: 2584.69,
-    person: 'Daniel',
-    text: ' So we have some kind of example with us when we do this API thinking training.'
-  },
-  {
-    startTime: 2591.33,
-    person: 'Daniel',
-    text: ' And there is really, from the beginning, the expectation that we will present the final solution at the end.'
-  },
-  {
-    startTime: 2598.89,
-    person: 'Miriam',
-    text: " That's why we have a slide at the beginning saying, we're never going to do that."
-  },
-  {
-    startTime: 2602.25,
-    person: 'Miriam',
-    text: " Don't expect that from us."
-  },
-  {
-    startTime: 2604.49,
-    person: 'Miriam',
-    text: " And the fun part is that people always like, if you give them a task to design an API, at first they think it's very easy."
-  },
-  {
-    startTime: 2611.07,
-    person: 'Miriam',
-    text: ' We do a room booking API.'
-  },
-  {
-    startTime: 2612.89,
-    person: 'Miriam',
-    text: ' I mean, how difficult can it be, right?'
-  },
-  {
-    startTime: 2614.83,
-    person: 'Miriam',
-    text: ' Pretty easy example.'
-  },
-  {
-    startTime: 2616.07,
-    person: 'Miriam',
-    text: ' Everybody understands.'
+    text: ' So how does that happen in terms of the deployment?'
   },
   {
-    startTime: 2617.37,
-    person: 'Miriam',
-    text: " And when they start discussing, you know, and you're really going there, for example, it has some tasks like it should be a filter for the size, the amount of people that fit into the room."
-  },
-  {
-    startTime: 2628.03,
-    person: 'Miriam',
-    text: ' And then people design a filter saying size.'
-  },
-  {
-    startTime: 2630.21,
-    person: 'Miriam',
-    text: ' And I come there and the first thing I say, oh, in square metres, great.'
-  },
-  {
-    startTime: 2634.41,
-    person: 'Miriam',
-    text: ' I need a very large room.'
-  },
-  {
-    startTime: 2635.49,
-    person: 'Miriam',
-    text: " And then, no, no, no, that's a number of people."
+    startTime: 2438.82,
+    person: 'Karol',
+    text: ' You get a bunch of microservices in the warehouse, right?'
   },
+  { startTime: 2446.24, person: 'Valeri', text: ' Yeah.' },
+  { startTime: 2446.64, person: 'Karol', text: ' You do it section by section.' },
+  { startTime: 2449.88, person: 'Karol', text: " What's the logic there behind that?" },
+  { startTime: 2453.56, person: 'Valeri', text: " Well, ideally, so let's put it this way." },
   {
-    startTime: 2637.77,
-    person: 'Miriam',
-    text: " And so, well, I didn't read the documentation."
+    startTime: 2459.86,
+    person: 'Valeri',
+    text: ' So now we are still at the position where some of the hardware parts are deployed together.'
   },
+  { startTime: 2464.56, person: 'Valeri', text: ' They are part of this monolith unit.' },
+  { startTime: 2466.5, person: 'Valeri', text: ' So there you can roll out all together.' },
+  { startTime: 2469.26, person: 'Valeri', text: " It's good." },
   {
-    startTime: 2639.51,
-    person: 'Miriam',
-    text: " It's the size."
+    startTime: 2470.3,
+    person: 'Valeri',
+    text: " But again, without the orchestration part that actually relies on some of those spaces, it's also pretty much useless."
   },
+  { startTime: 2477.8, person: 'Valeri', text: ' So whenever we deploy, we deploy independently.' },
   {
-    startTime: 2640.15,
-    person: 'Miriam',
-    text: " It's clearly square metres, right?"
+    startTime: 2480.84,
+    person: 'Valeri',
+    text: ' So each team has their own cycles, but everything is covered by Feature Flags.'
   },
   {
-    startTime: 2641.73,
-    person: 'Miriam',
-    text: ' Why should I read the documentation?'
+    startTime: 2486.82,
+    person: 'Valeri',
+    text: ' So only when all the services are ready and deployed, then you start turning them on and see that actual changes.'
   },
+  { startTime: 2494.74, person: 'Karol', text: ' Oh, through Feature Flags.' },
+  { startTime: 2498.02, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 2643.51,
-    person: 'Miriam',
-    text: ' Pretty easy.'
+    startTime: 2498.38,
+    person: 'Karol',
+    text: " So you're basically enabling on the fly, oh, we're ready and now we're going to enable everything."
   },
+  { startTime: 2503.96, person: 'Karol', text: ' So you just do a switch on in that sense.' },
+  { startTime: 2508.7, person: 'Valeri', text: ' Yeah.' },
+  { startTime: 2509.4, person: 'Valeri', text: " But maybe I'm confusing you." },
   {
-    startTime: 2644.23,
-    person: 'Miriam',
-    text: " And they're like, well, and it starts number of seats, capacity, and they're discussing several things, right?"
+    startTime: 2511.38,
+    person: 'Valeri',
+    text: " So we never had so far a use case where you need to add an area on the go in the sense that, oh, now we have a new, I don't know."
   },
+  { startTime: 2522.1, person: 'Valeri', text: ' Oh, well, no, we actually had these robot arms.' },
+  { startTime: 2524.72, person: 'Valeri', text: " That's exactly what we had." },
   {
-    startTime: 2649.97,
-    person: 'Miriam',
-    text: " It's not only about the technical things."
+    startTime: 2526.12,
+    person: 'Valeri',
+    text: " Like when you had to add this new picking system to your already existing landscape to try out how the robot's going to pick your products."
   },
+  { startTime: 2535.54, person: 'Valeri', text: " But again, it's pretty isolated." },
+  { startTime: 2537.34, person: 'Valeri', text: ' You just deploy it.' },
   {
-    startTime: 2652.21,
-    person: 'Miriam',
-    text: " It's also about the semantic."
+    startTime: 2539.02,
+    person: 'Valeri',
+    text: " And without this orchestration part that gives you the commands, it's just, okay, it gets the scans or whatever the events from the physical world are coming."
   },
+  { startTime: 2548.42, person: 'Valeri', text: ' Okay, sure.' },
   {
-    startTime: 2654.67,
-    person: 'Miriam',
-    text: ' What do you want to say with your words?'
+    startTime: 2549.46,
+    person: 'Valeri',
+    text: ' I see you, but I have no tasks, so I do nothing.'
   },
   {
-    startTime: 2656.29,
-    person: 'Miriam',
-    text: " And it's very difficult to come up with something that you cannot trick, or you cannot come there and say, well, I agree."
+    startTime: 2552.78,
+    person: 'Valeri',
+    text: ' And only when this orchestration part comes in, then you, oh, now I know what to do with this thing.'
   },
   {
-    startTime: 2662.13,
-    person: 'Miriam',
-    text: ' Do you mean this?'
+    startTime: 2558.4,
+    person: 'Karol',
+    text: ' So the feature flags would be what in the orchestration units?'
   },
+  { startTime: 2563.52, person: 'Valeri', text: ' In every service.' },
   {
-    startTime: 2662.83,
-    person: 'Miriam',
-    text: " And they're looking at you like, no."
+    startTime: 2565.6,
+    person: 'Valeri',
+    text: " So if you have to create a new flow that spans all the way from orchestration services to this execution hardware parts, you'll obviously need the feature flags on those sides."
   },
   {
-    startTime: 2666.81,
-    person: 'Karol',
-    text: ' When we were researching coupling in interoperability between integration platforms and trying to define that, because we define all integration patterns with coupling definitions.'
+    startTime: 2580.06,
+    person: 'Valeri',
+    text: " But some features that were hardware related, so you'll have them in a specific service."
   },
   {
-    startTime: 2680.59,
+    startTime: 2587.59,
     person: 'Karol',
-    text: ' And there are different levels of coupling.'
+    text: ' Oof, that is already quite complex in that sense.'
   },
   {
-    startTime: 2682.17,
+    startTime: 2593.81,
     person: 'Karol',
-    text: " So if somebody doesn't know about coupling, I recommend reading balancing coupling in a software designed by Vlad Kononov."
+    text: " So in that sense, you don't have to coordinate between specific teams in terms of the actual deployment, but you coordinate only in terms of enabling that deployment to work, that part of the code."
   },
+  { startTime: 2607.63, person: 'Valeri', text: ' Yes.' },
   {
-    startTime: 2690.07,
-    person: 'Karol',
-    text: ' Absolutely amazing book.'
+    startTime: 2609.13,
+    person: 'Valeri',
+    text: " However, we also, I'm actually not sure which phase it's currently in, but there is this configuration service, of course, that allows you to basically have a single feature flag for all flows, but then separate services can rely on that."
   },
+  { startTime: 2624.91, person: 'Valeri', text: " So you don't need to coordinate the turn on." },
   {
-    startTime: 2691.21,
-    person: 'Karol',
-    text: " I'll put the QR code in a moment."
+    startTime: 2628.65,
+    person: 'Valeri',
+    text: " You just reach a single flip and you're happy as long as all the deployments are in."
   },
+  { startTime: 2635.25, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 2695.19,
+    startTime: 2635.79,
     person: 'Karol',
-    text: ' And people treat coupling, first of all, as it is binary.'
+    text: " Now we have a very curious person in YouTube on the chat there asking questions, and I relate to that question because we've just been talking about deployment."
   },
+  { startTime: 2645.09, person: 'Karol', text: ' What about testing the changes?' },
   {
-    startTime: 2700.61,
+    startTime: 2646.75,
     person: 'Karol',
-    text: " It's not."
+    text: ' So how do you test that code to work in production?'
   },
+  { startTime: 2651.83, person: 'Karol', text: ' Your production is physical.' },
   {
-    startTime: 2702.31,
+    startTime: 2653.65,
     person: 'Karol',
-    text: " Because if it were binary, we wouldn't be communicating."
+    text: ' Is there a physical pre-prod or is there a simulation of it?'
   },
+  { startTime: 2659.65, person: 'Karol', text: ' How do you test this kind of environment?' },
+  { startTime: 2661.99, person: 'Karol', text: " Because that's a unique setup, right?" },
   {
-    startTime: 2705.33,
+    startTime: 2665.61,
     person: 'Karol',
-    text: ' And our applications will be in the vacuum of space, which is a non-existent scenario.'
+    text: ' Because normally you just have a dev test environment, SIT, UAT, prod, right?'
   },
+  { startTime: 2672.87, person: 'Karol', text: ' You just move through those stages of testing.' },
   {
-    startTime: 2713.25,
+    startTime: 2677.33,
     person: 'Karol',
-    text: ' But there are different levels.'
+    text: ' How do you test code for a physical environment?'
   },
   {
-    startTime: 2715.31,
+    startTime: 2681.69,
     person: 'Karol',
-    text: " And people don't really realise that some types of coupling we actually want in our applications."
+    text: ' Because I believe it would be extremely expensive to do a pre-prod on a physical environment.'
   },
+  { startTime: 2687.99, person: 'Valeri', text: ' Yes.' },
+  { startTime: 2688.67, person: 'Valeri', text: ' Yes.' },
+  { startTime: 2689.35, person: 'Valeri', text: " And that's a waste of resources for sure." },
   {
-    startTime: 2721.07,
-    person: 'Karol',
-    text: ' And this, what you mentioned here is semantic coupling.'
+    startTime: 2693.21,
+    person: 'Valeri',
+    text: ' So yeah, you basically actually already mentioned how we do this two ways.'
   },
+  { startTime: 2698.89, person: 'Valeri', text: ' There is simulation and there is emulation.' },
   {
-    startTime: 2723.87,
-    person: 'Karol',
-    text: " The semantics of understanding of the data we're trying to convey through our APIs."
+    startTime: 2702.75,
+    person: 'Valeri',
+    text: ' Simulation is basically something we run ourselves.'
   },
   {
-    startTime: 2730.75,
-    person: 'Karol',
-    text: " That's something that we actually need to discuss every single time, whether it's a productized API of a SaaS solution or an internal API used for a singular purpose."
+    startTime: 2706.51,
+    person: 'Valeri',
+    text: " It's the way we see transport system, basically exempt of the contract with hardware."
   },
+  { startTime: 2712.99, person: 'Valeri', text: " It's fast." },
   {
-    startTime: 2743.69,
-    person: 'Karol',
-    text: " And that's a very difficult conversation because people think that they can solve it with just a technical bubble without a conversation."
+    startTime: 2714.97,
+    person: 'Valeri',
+    text: ' So we have tonnes of basically end-to-end tests or integration tests to test all those flows while kind of having the simulated hardware environment under the hood.'
   },
   {
-    startTime: 2751.91,
-    person: 'Karol',
-    text: " And it's not the case."
+    startTime: 2726.57,
+    person: 'Valeri',
+    text: " But you can imagine the reason for here is that that's something self-written and it can always differ from the actual environment."
   },
   {
-    startTime: 2755.43,
-    person: 'Karol',
-    text: ' To give you a very short example, I dug up just a moment ago, a very old WSDL file that I recreated, but I really sent this kind of WSDL file to a colleague of mine back in the day.'
+    startTime: 2737.29,
+    person: 'Valeri',
+    text: ' So what we also have is very often hardware providers provide not only hardware, but the emulation of the hardware too.'
   },
+  { startTime: 2746.45, person: 'Valeri', text: ' It differs per provider.' },
   {
-    startTime: 2771.53,
-    person: 'Karol',
-    text: ' Let me just find the right window.'
+    startTime: 2749.61,
+    person: 'Valeri',
+    text: ' The most fascinating one is the one that Harvard called TGW.'
   },
   {
-    startTime: 2773.07,
-    person: 'Karol',
-    text: ' There we go.'
+    startTime: 2754.73,
+    person: 'Valeri',
+    text: ' We work together for fully automated warehouses, those three-story big buildings.'
   },
   {
-    startTime: 2775.63,
-    person: 'Karol',
-    text: " And that's obviously a joke."
+    startTime: 2760.81,
+    person: 'Valeri',
+    text: " That's basically 3D environment of boxes moving on rail conveyors."
   },
   {
-    startTime: 2777.01,
-    person: 'Karol',
-    text: " I don't know if you can read it, but I can probably make it a little bit bigger."
+    startTime: 2766.19,
+    person: 'Valeri',
+    text: " And that's like a full representation of an actual site in models and responding and behaving the way an actual site would be."
   },
   {
-    startTime: 2782.73,
-    person: 'Karol',
-    text: " So it's a very simple WSDL file."
+    startTime: 2774.75,
+    person: 'Valeri',
+    text: " And that's something basically provides part of the contract."
   },
+  { startTime: 2778.87, person: 'Valeri', text: ' And we do have an access to such environment.' },
   {
-    startTime: 2784.49,
-    person: 'Karol',
-    text: " It's a very short one."
+    startTime: 2782.55,
+    person: 'Valeri',
+    text: " So at any point of time, if our simulation team is behind the schedule and can't deliver you particular pieces of functionality, or you really want to see how fancy it is looking in 3D world, then you can do that."
   },
+  { startTime: 2798.33, person: 'Valeri', text: ' Actually click around, see crates moving.' },
   {
-    startTime: 2785.37,
+    startTime: 2801.51,
     person: 'Karol',
-    text: " It's only has 44 lines."
+    text: ' So you would hook up your microservices, your orchestrators and executors to that emulated environment, which would expose something like a mock-up services.'
   },
   {
-    startTime: 2791.28,
+    startTime: 2814.59,
     person: 'Karol',
-    text: ' Basically not a lot there.'
+    text: ' But those mock-up services, instead of executing in a physical environment, they execute in that emulation of an environment, which is like a 3D.'
   },
   {
-    startTime: 2794,
-    person: 'Karol',
-    text: ' The story behind it is that a colleague of mine, when I was working in T-Mobile asked me for a WSDL file and I was substituting for a different colleague who was an other integration architect and she went for a vacation, but I was taking over several projects from her.'
+    startTime: 2825.21,
+    person: 'Valeri',
+    text: ' Yeah, I can probably even quickly find you the video of that.'
   },
+  { startTime: 2831.47, person: 'Valeri', text: " Yes, so it's exactly how you said that." },
   {
-    startTime: 2811.5,
-    person: 'Karol',
-    text: ' And that particular person asking for a WSDL file covered several other systems, small domain systems.'
+    startTime: 2836.51,
+    person: 'Valeri',
+    text: " So remember these layers, I tried to explain that you have this PLC layer, that's basically hardware itself and transport system and us."
   },
   {
-    startTime: 2817.8,
-    person: 'Karol',
-    text: " So he didn't tell me what kind of system he's representing in his ask."
+    startTime: 2844.51,
+    person: 'Valeri',
+    text: ' So we do have a dev environment, basically our services in dev, then transport system, real transport system, and only this PLC bottom part is emulated.'
   },
   {
-    startTime: 2822.08,
+    startTime: 2855.15,
     person: 'Karol',
-    text: " He didn't tell me which project he's looking for."
+    text: ' You did prepare for us some diagrams, maybe we should actually visualise that with those diagrams in a moment, after you find that lovely video of the emulator.'
   },
+  { startTime: 2865.43, person: 'Valeri', text: ' Yes, let me find the video first.' },
   {
-    startTime: 2826.94,
+    startTime: 2868.51,
     person: 'Karol',
-    text: ' So I was feeling very whimsical at that day and I gave him exactly what he asked for, a WSDL file.'
+    text: " Because that's, okay, that's really interesting, because this is the kind of systems we don't really get to play with as in regular IT, so to speak."
   },
   {
-    startTime: 2832.98,
+    startTime: 2881.63,
     person: 'Karol',
-    text: ' The worst part of it, there was no conversation.'
+    text: " We don't get that manifestation, because of course, testing that is a problem."
   },
+  { startTime: 2887.47, person: 'Karol', text: ' But also, how good are these emulators then?' },
   {
-    startTime: 2836.38,
+    startTime: 2890.35,
     person: 'Karol',
-    text: " He didn't even open the WSDL file."
+    text: " That's also the quality of those emulators will relate to the results in production, right?"
   },
   {
-    startTime: 2838.1,
-    person: 'Karol',
-    text: ' He just forwarded that to the development team and they came back two weeks later asking, is that the final form of the WSDL?'
+    startTime: 2894.97,
+    person: 'Valeri',
+    text: " Yes, and I can tell you that it's not an easy experience to work with those."
   },
+  { startTime: 2899.45, person: 'Valeri', text: " It's slow, not always reliable." },
   {
-    startTime: 2845.88,
-    person: 'Karol',
-    text: " So while this is a, let's say sloppy recreation of that lovely WSDL file, it actually was something like this."
+    startTime: 2903.55,
+    person: 'Valeri',
+    text: ' We actually once cherished an ambition to have performance full-scale testing in this environment, really have it on and running.'
   },
   {
-    startTime: 2854.84,
-    person: 'Karol',
-    text: ' And then again, for the purpose of defining an interface, was that a bad API for the purpose of making a joke and making a statement?'
+    startTime: 2912.71,
+    person: 'Valeri',
+    text: " Well, that's how I got the videos, because I was part of the squad that's been developing that."
   },
   {
-    startTime: 2866.4,
-    person: 'Karol',
-    text: ' But again, context is king because this definition was for a joke, not for you.'
+    startTime: 2918.61,
+    person: 'Valeri',
+    text: " But we came to realisation that it's not something actually reliable enough to run the tests."
   },
   {
-    startTime: 2872.02,
+    startTime: 2927.27,
     person: 'Karol',
-    text: ' So perfect.'
+    text: ' Yeah, I think, well, to run in regular environments, to run performance tests or load tests, you have to have a replica of the production environment with emulated traffic of a production environment, right?'
   },
   {
-    startTime: 2873.28,
+    startTime: 2940.27,
     person: 'Karol',
-    text: ' If you would use that for an actual API to convey something, uh-uh, well, dummy, dummy, dummy, and any type everywhere.'
+    text: " So, it's already difficult to translate from a physical environment to a fully digital environment."
   },
+  { startTime: 2950.33, person: 'Karol', text: " That's a layer of complexity there." },
   {
-    startTime: 2881.38,
+    startTime: 2952.51,
     person: 'Karol',
-    text: " So that wouldn't work, right?"
+    text: " And then to emulate all the traffic, you'd have to have a very decent snapshot of what the daily traffic in the warehouse is."
   },
+  { startTime: 2961.17, person: 'Valeri', text: " Yes, but that's what we've been doing." },
   {
-    startTime: 2884.2,
-    person: 'Miriam',
-    text: " But maybe people are used to seeing such bad things so they think it's real, you know?"
-  },
-  {
-    startTime: 2890.6,
-    person: 'Karol',
-    text: " Yeah, I've seen a share of APIs, SOAP APIs that were defined some fields and then any type."
+    startTime: 2964.63,
+    person: 'Valeri',
+    text: ' We had a set of scripts that would create the full scale, all those thousands of orders and those crates moving around.'
   },
   {
-    startTime: 2899.74,
-    person: 'Karol',
-    text: ' And you put CDATA in it, because why not?'
+    startTime: 2972.07,
+    person: 'Valeri',
+    text: " Sorry, it's like there are synonyms for those things, and I go back and forth between them."
   },
   {
-    startTime: 2903.5,
+    startTime: 2977.01,
     person: 'Karol',
-    text: ' And then you guess that CDATA.'
+    text: " I mean, I've dealt with automated test data generation before, but this is like a whole different level of automation to emulate such traffic in general."
   },
+  { startTime: 2991.31, person: 'Karol', text: " It's like, wow." },
   {
-    startTime: 2904.92,
+    startTime: 2994.23,
     person: 'Karol',
-    text: " I've seen APIs that were interfaces written in, like REST APIs written with JSON, and then CDATA XML embedded in them because something underneath understood XML and somebody just exposed an easy JSON-based API to just get that XML inside."
-  },
-  {
-    startTime: 2926.12,
-    person: 'Miriam',
-    text: ' Yeah, I also like these REST APIs that just return objects.'
-  },
-  {
-    startTime: 2929.94,
-    person: 'Miriam',
-    text: ' And in the object, you have the key, the value, and the data type.'
-  },
-  {
-    startTime: 2933.54,
-    person: 'Miriam',
-    text: ' I mean, easy in the backend.'
-  },
-  {
-    startTime: 2935.2,
-    person: 'Miriam',
-    text: ' You just develop it once.'
-  },
-  {
-    startTime: 2936.44,
-    person: 'Miriam',
-    text: ' You can easily document it, but nobody understands what this API is supposed to do, right, because you get a random number of objects with random values, with random names, and random data types.'
-  },
-  {
-    startTime: 2947.32,
-    person: 'Miriam',
-    text: ' I mean, how, and then I asked the team, how do you want to document this API?'
+    text: " You know, before hopping on the stream, I didn't even consider asking about testing this kind of scenario and what deployment looks like, but this is like, at the same time, it's very analogue to traditional IT, meaning all digital on servers, but at the same time, so different and exciting in a way to hear about that this is, there are the same principles, but executed completely differently."
   },
   {
-    startTime: 2950.94,
-    person: 'Miriam',
-    text: ' And they were like, yeah, well, I was like, right, exactly.'
+    startTime: 3024.57,
+    person: 'Valeri',
+    text: " Yeah, but it's legitimately a very good question, because we as engineers, we get used to delivering something that's actually been tested and working, and here you have an absolutely new problem."
   },
+  { startTime: 3036.25, person: 'Valeri', text: ' How can you actually say that?' },
+  { startTime: 3038.61, person: 'Valeri', text: ' And the answer is that you never 100% sure.' },
   {
-    startTime: 2956.12,
-    person: 'Miriam',
-    text: " That's the problem."
+    startTime: 3042.31,
+    person: 'Valeri',
+    text: " So you take risks, and it's not only that, it's also, it's an integration problem."
   },
   {
-    startTime: 2957.32,
-    person: 'Miriam',
-    text: " You can easily document it, but nobody will understand what it's doing because you can return anything in your objects, right?"
+    startTime: 3049.83,
+    person: 'Valeri',
+    text: " So if you've been told that the contract is X, but it's actually Y, and you're like, boom, and that's not something you can easily anticipate or deal with unless you roll out."
   },
+  { startTime: 3061.49, person: 'Karol', text: " Yeah, that's the usual problem." },
   {
-    startTime: 2964.3,
+    startTime: 3066.15,
     person: 'Karol',
-    text: ' Another example of this kind of behaviour would be putting every field as optional.'
+    text: ' Also, in regular IT systems, we agree to have a contract in a specific way, and then we realise that the contract is nowhere near such a thing.'
   },
   {
-    startTime: 2970.97,
+    startTime: 3076.71,
     person: 'Karol',
-    text: ' You put a array of attributes in your API, even in a flat structure as a flat JSON with one level, and all of them are optional.'
+    text: ' And it is at times very challenging, depending on the maturity of the organisation, of course.'
   },
   {
-    startTime: 2979.69,
+    startTime: 3083.25,
     person: 'Karol',
-    text: ' How the hell should I understand which fields do I need to actually put in or which fields should I expect for what scenario?'
+    text: " But here you have a different level of complexity, because you deal with machines, and they are contracts that you do not really negotiate in a sense, because they're just supplied to you by the producer."
   },
   {
-    startTime: 2987.59,
+    startTime: 3096.29,
     person: 'Karol',
-    text: " It's unrealistic to use that in a timely fashion to consume."
+    text: " I don't know, is there a level of customizability to those contracts, or they're just, they just drop you a piece of hardware with a piece of software, and the definition of a contract?"
   },
   {
-    startTime: 2994.45,
-    person: 'Karol',
-    text: " It's a cognitive load that the consumer just takes on."
-  },
-  {
-    startTime: 2998.77,
-    person: 'Karol',
-    text: " We're moving that complexity to the consumer."
-  },
-  {
-    startTime: 3000.97,
-    person: 'Miriam',
-    text: " Yeah, again, that's what we said before."
-  },
-  {
-    startTime: 3002.71,
-    person: 'Miriam',
-    text: " We're just moving the complexity somewhere else."
-  },
-  {
-    startTime: 3004.77,
-    person: 'Miriam',
-    text: ' I had a real example with an API that had actually 120 fields in the body with nothing being required.'
-  },
-  {
-    startTime: 3015.13,
-    person: 'Miriam',
-    text: ' And it was like- Wow.'
+    startTime: 3108.61,
+    person: 'Valeri',
+    text: " No, well, in that sense, we've been working, and the hardware providers we've been working with are very flexible enough."
   },
   {
-    startTime: 3016.65,
-    person: 'Miriam',
-    text: ' Exactly.'
+    startTime: 3117.09,
+    person: 'Valeri',
+    text: ' So the contracts are defined up front in the collaboration.'
   },
   {
-    startTime: 3017.33,
-    person: 'Miriam',
-    text: ' The developer sat in front of it and said, how should I use it?'
+    startTime: 3121.93,
+    person: 'Valeri',
+    text: ' So the very first contract, we drafted it together with the TGW.'
   },
   {
-    startTime: 3020.35,
-    person: 'Miriam',
-    text: ' I have a mobile application.'
+    startTime: 3127.39,
+    person: 'Valeri',
+    text: ' And then for the new hardware providers, we actually try to reuse the contracts as much as possible.'
   },
   {
-    startTime: 3022.19,
-    person: 'Miriam',
-    text: ' So what do I do?'
+    startTime: 3133.99,
+    person: 'Valeri',
+    text: " So it's also easier for us, one less layer of mapping, translation."
   },
+  { startTime: 3138.49, person: 'Valeri', text: " And so far, it's been working well." },
   {
-    startTime: 3023.01,
-    person: 'Miriam',
-    text: " I don't even know which field is required."
-  },
-  {
-    startTime: 3024.83,
-    person: 'Miriam',
-    text: ' I cannot show a form with 120 fields.'
-  },
-  {
-    startTime: 3027.43,
-    person: 'Miriam',
-    text: " I don't even know what I need to actually make this work."
-  },
-  {
-    startTime: 3030.83,
-    person: 'Miriam',
-    text: ' Yeah, so because you guess what?'
-  },
-  {
-    startTime: 3034.67,
-    person: 'Miriam',
-    text: ' You can guess why it had 120 fields?'
-  },
-  {
-    startTime: 3038.43,
+    startTime: 3140.91,
     person: 'Karol',
-    text: ' No.'
-  },
-  {
-    startTime: 3039.51,
-    person: 'Miriam',
-    text: ' Someone took the database from my one, of course.'
+    text: ' Okay, so the hardware providers are quite flexible in customising the solutions towards your needs, then?'
   },
+  { startTime: 3148.65, person: 'Valeri', text: ' Yeah.' },
+  { startTime: 3149.41, person: 'Karol', text: ' Okay.' },
+  { startTime: 3150.81, person: 'Karol', text: ' That lowers the complexity a bit.' },
+  { startTime: 3154.83, person: 'Valeri', text: ' Yeah, you found the video, finally.' },
+  { startTime: 3157.23, person: 'Valeri', text: ' It took me a bit of clicking.' },
+  { startTime: 3158.19, person: 'Karol', text: ' All right, let me put that on screen, then.' },
   {
-    startTime: 3042.75,
-    person: 'Miriam',
-    text: ' From our three, because you can.'
+    startTime: 3161.69,
+    person: 'Valeri',
+    text: " Yeah, it's not very exciting, whatever I found."
   },
+  { startTime: 3165.25, person: 'Valeri', text: ' But do you see those small red dots?' },
   {
-    startTime: 3046.19,
-    person: 'Miriam',
-    text: ' Because nobody told the developer what the API was for, why it was needed, what was needed.'
+    startTime: 3167.85,
+    person: 'Valeri',
+    text: " It's like actual boxes moving in one of the areas."
   },
+  { startTime: 3171.19, person: 'Valeri', text: " Here's like a lift." },
+  { startTime: 3173.17, person: 'Valeri', text: " Oh, it's me." },
+  { startTime: 3174.37, person: 'Valeri', text: ' I see.' },
   {
-    startTime: 3052.73,
-    person: 'Miriam',
-    text: ' She was told, create an API for this database table.'
+    startTime: 3175.21,
+    person: 'Valeri',
+    text: " That's my intelligence, because that was one of the run tests."
   },
+  { startTime: 3178.25, person: 'Valeri', text: " I'll put the pause on here." },
   {
-    startTime: 3057.45,
-    person: 'Miriam',
-    text: ' Of course, I mean, you know?'
+    startTime: 3180.21,
+    person: 'Valeri',
+    text: " So the different colours, that's how we denote a different state of crates, whether it's empty, whether it's supposed to have stock or already picked orders."
   },
   {
-    startTime: 3060.39,
-    person: 'Karol',
-    text: ' Makes sense that the API is that way then.'
+    startTime: 3189.27,
+    person: 'Valeri',
+    text: " Behind this area, I'm not sure if you're seeing the cursor, but it's like tonnes of picking stations, and the crates are moving in there."
   },
   {
-    startTime: 3062.75,
-    person: 'Karol',
-    text: ' Yes, exactly.'
+    startTime: 3198.15,
+    person: 'Valeri',
+    text: ' And there is an automation on our side that does the picks.'
   },
   {
-    startTime: 3064.05,
-    person: 'Karol',
-    text: ' From a logical perspective, it makes sense.'
+    startTime: 3202.49,
+    person: 'Valeri',
+    text: ' And here, for instance, is a big buffer, a lot of lanes stacked on top of each other, where crates can rest between the areas, so that we have room for breathing, basically, to do the optimisation, and which crate goes where and when for the maximum throughput of the system.'
   },
+  { startTime: 3222.31, person: 'Karol', text: ' Wow.' },
   {
-    startTime: 3066.71,
+    startTime: 3223.59,
     person: 'Karol',
-    text: " It's a classical joke."
+    text: ' And the tracks just go on and on and on in the background.'
   },
   {
-    startTime: 3070.89,
+    startTime: 3227.77,
     person: 'Karol',
-    text: ' What was that?'
+    text: " I see there's several layers, and the spirals basically going up and down."
   },
   {
-    startTime: 3075.27,
-    person: 'Karol',
-    text: ' Wife tells the programmer husband, go to the shop and buy milk.'
+    startTime: 3234.31,
+    person: 'Valeri',
+    text: " And it's actually only one-sixth of the whole warehouse, this particular one."
   },
   {
-    startTime: 3081.27,
-    person: 'Karol',
-    text: ' If there are eggs, buy six.'
+    startTime: 3242.35,
+    person: 'Valeri',
+    text: " Remember, I was saying that there are multiple transport systems, so the site is split into those areas, so that's only one of them, and we have one model per area."
   },
   {
-    startTime: 3083.63,
-    person: 'Karol',
-    text: ' And the husband comes back with six milks.'
+    startTime: 3252.55,
+    person: 'Valeri',
+    text: ' So if you want to test the whole setup, you need to open 10 of them.'
   },
   {
-    startTime: 3088.13,
+    startTime: 3257.37,
     person: 'Karol',
-    text: ' Logical.'
+    text: " So okay, that's, wow, that's a, okay, that's impressive."
   },
   {
-    startTime: 3090.13,
+    startTime: 3267.21,
     person: 'Karol',
-    text: ' That was a logical statement.'
+    text: ' I rarely get surprised by things at scale, but this is literally overwhelming my brain at this point.'
   },
   {
-    startTime: 3091.67,
+    startTime: 3275.75,
     person: 'Karol',
-    text: ' That was how, from a perspective of logic, you would understand it exactly that way, but.'
+    text: " It's like, wow, it's something I have not seen in a while."
   },
+  { startTime: 3281.15, person: 'Karol', text: ' Quite interesting.' },
+  { startTime: 3284.09, person: 'Karol', text: ' Wow.' },
   {
-    startTime: 3100.19,
+    startTime: 3286.63,
     person: 'Karol',
-    text: " It's dramatic at that sense."
+    text: " That's so different from what I do in my daily work as an integration specialist."
   },
   {
-    startTime: 3102.93,
+    startTime: 3292.15,
     person: 'Karol',
-    text: ' Another example is that there are interdependencies between attributes, optional attributes, or some are required, some are optional, but optional attributes are required based on the existence or values of other attributes.'
+    text: " It's like, I look at the screen, neural boards, specs in the dock, and then code as an, you know, integration flows."
   },
   {
-    startTime: 3116.37,
+    startTime: 3303.07,
     person: 'Karol',
-    text: " That's another common problem with a lot of SaaS solutions products that expose APIs, and they try to solve something because they couldn't solve it otherwise, for whatever reason, or they didn't have the time and product capacity to solve it."
-  },
-  {
-    startTime: 3135.65,
-    person: 'Miriam',
-    text: " It's a nightmare."
-  },
-  {
-    startTime: 3136.67,
-    person: 'Miriam',
-    text: ' You either need to have this field, this field, or this field.'
-  },
-  {
-    startTime: 3140.11,
-    person: 'Miriam',
-    text: ' These are also things that you cannot really document very well with the current tools, right?'
+    text: " Looking at a simulation of a warehouse, it's like, I don't know where I would have to be to just encounter that in that sense."
   },
   {
-    startTime: 3144.45,
-    person: 'Miriam',
-    text: " So if people come and say, well, there's a combination of fields, and one of them is required, that's also always kind of difficult, right, to bring across from a design perspective."
+    startTime: 3312.73,
+    person: 'Valeri',
+    text: " Yeah, that's one of the factors why I stayed for all the five years in warehouse systems and didn't even breach the boundaries of the domain at first because it was so many interesting things to indulge in."
   },
+  { startTime: 3325.91, person: 'Valeri', text: ' So like, okay, I still have a lot of fun.' },
   {
-    startTime: 3154.71,
-    person: 'Miriam',
-    text: ' Like, why is it like this, right?'
+    startTime: 3329.21,
+    person: 'Valeri',
+    text: " Then at some point, I got curious in more things, but still, I, it's like, you know, it's like a baby that I've seen from the inception, and I was in its teenage era."
   },
+  { startTime: 3341.61, person: 'Karol', text: ' Aw.' },
+  { startTime: 3342.85, person: 'Karol', text: ' But I do get that.' },
   {
-    startTime: 3156.95,
+    startTime: 3344.61,
     person: 'Karol',
-    text: " And then lastly, I think that a very common mistake that happens a lot of times, and I think this is a good segue to go to the AQs in a moment, is that people don't think about what they're exposing."
+    text: " I remember, like, working for a few years in a singular company, and when you see how your work progresses and changes how the company operates and how it influences the business, it's something really, really amazing, and the satisfaction coming from that is, wow."
   },
   {
-    startTime: 3171.63,
+    startTime: 3366.23,
     person: 'Karol',
-    text: ' And I saw several times that instead of exposing a more complex of a structure of an XML or a JSON tree-like structure, I have an array of functions that expose flat structures as literally as the database table, relational database table shows.'
+    text: " At a certain point, it's choosing either you want new experiences in the variety of experiences, or you want to experience that kind of sensation of, you know, accomplishment, that satisfaction."
   },
   {
-    startTime: 3190.51,
+    startTime: 3376.43,
     person: 'Karol',
-    text: " So it's fun if it's a NoSQL database, because these are already complex structures, usually not flat JSONs."
+    text: " I don't know which is better, and probably it depends on where you are in life, which do you want to, like, expand your knowledge, or do you want to, like, dive into deep into that specific field?"
   },
   {
-    startTime: 3198.21,
+    startTime: 3386.83,
     person: 'Karol',
-    text: " But if it's a relational SQL database, and people start putting APIs on top of that, it's like, oh yeah, but you're gonna expose the tables directly."
-  },
-  {
-    startTime: 3208.51,
-    person: 'Karol',
-    text: " And then the consumer needs to join the tables together by calling several APIs, and that brings another set of various problems, not only from the perspective of the cognitive load of understanding those, but if this is alive somewhere in the cloud, that's a realistic cost, because data at rest costs nothing, but movement of data in cloud costs quite a lot."
-  },
-  {
-    startTime: 3236.53,
-    person: 'Karol',
-    text: " And we're now calling several APIs, so we're basically sprawling costs."
-  },
-  {
-    startTime: 3241.47,
-    person: 'Miriam',
-    text: " I think that's also something that's really underestimated by lots of people."
-  },
-  {
-    startTime: 3246.61,
-    person: 'Miriam',
-    text: ' I had discussions with developers saying, well, but data transfer costs us nothing.'
-  },
-  {
-    startTime: 3251.09,
-    person: 'Miriam',
-    text: " And I was like, wait a second, that's not true."
-  },
-  {
-    startTime: 3257.41,
-    person: 'Miriam',
-    text: " I think that's really underestimated by a lot of people."
-  },
-  {
-    startTime: 3261.21,
-    person: 'Miriam',
-    text: " They think it's better to always, I mean, there was a discussion where we had a table as well in R3 that they wanted to expose via a REST API."
-  },
-  {
-    startTime: 3269.53,
-    person: 'Miriam',
-    text: ' And one of my favourite questions is, how often does the table change?'
-  },
-  {
-    startTime: 3273.73,
-    person: 'Miriam',
-    text: ' And they said twice or three times a year.'
-  },
-  {
-    startTime: 3276.85,
-    person: 'Miriam',
-    text: ' And they wanted to call it every time the user does an interaction.'
-  },
-  {
-    startTime: 3280.29,
-    person: 'Miriam',
-    text: " And I was like, no way you're loading it every time the user does an interaction."
-  },
-  {
-    startTime: 3284.17,
-    person: 'Miriam',
-    text: ' If it only changes at maximum three times a year, right?'
-  },
-  {
-    startTime: 3288.83,
-    person: 'Miriam',
-    text: " But that's then data transfer doesn't cost us anything."
+    text: ' Both can be very quite satisfying, but I absolutely get how much satisfaction you get from actually seeing these things work.'
   },
+  { startTime: 3394.27, person: 'Karol', text: " It's like, wow, I would love it, specifically." },
   {
-    startTime: 3291.83,
-    person: 'Miriam',
-    text: ' And I was like, well, not you personally, but.'
-  },
-  {
-    startTime: 3297.89,
+    startTime: 3400.19,
     person: 'Karol',
-    text: ' Yeah, if they own a data centre and they host that on premise, yeah, sure, do it.'
-  },
-  {
-    startTime: 3305.09,
-    person: 'Daniel',
-    text: ' But this is the thing.'
-  },
-  {
-    startTime: 3307.71,
-    person: 'Daniel',
-    text: ' People are still there.'
-  },
-  {
-    startTime: 3309.93,
-    person: 'Daniel',
-    text: ' This is, these are the people we meet actually a lot when we do trainings.'
-  },
-  {
-    startTime: 3315.83,
-    person: 'Daniel',
-    text: ' Okay.'
-  },
-  {
-    startTime: 3316.33,
-    person: 'Daniel',
-    text: " They still have this perspective and they didn't get the shift into the cloud."
+    text: ' Do you want to show the complexity of such an endeavour in diagrams, because I see you already have them ready?'
   },
+  { startTime: 3406.87, person: 'Karol', text: " All right, let's put it on screen." },
+  { startTime: 3410.77, person: 'Valeri', text: ' So, okay.' },
+  { startTime: 3412.81, person: 'Valeri', text: ' This is the diagram built by us.' },
   {
-    startTime: 3321.55,
-    person: 'Daniel',
-    text: " And now they're shifted again to do things."
+    startTime: 3416.19,
+    person: 'Valeri',
+    text: " It's basically a representation of a physical world"
   },
   {
-    startTime: 3324.63,
-    person: 'Daniel',
-    text: ' So we hear a lot of things then.'
+    startTime: 3419.25,
+    person: 'Valeri',
+    text: ' of one of the fully automated warehouses in Germany, and basically, every colourful box'
   },
   {
-    startTime: 3328.27,
-    person: 'Daniel',
-    text: ' Oh yeah, we are using MQ.'
+    startTime: 3426.9,
+    person: 'Valeri',
+    text: ' is a system, is a service, this executor service, and this graph actually shows you all the'
   },
   {
-    startTime: 3329.89,
-    person: 'Daniel',
-    text: ' We have to get rid of it because of costs, blah, blah, blah.'
+    startTime: 3432.51,
+    person: 'Valeri',
+    text: " possible routings between systems, not within them, only between, and remember this thing I've"
   },
   {
-    startTime: 3333.93,
-    person: 'Daniel',
-    text: ' Now we will do REST as an alternative.'
+    startTime: 3439.09,
+    person: 'Valeri',
+    text: ' been trying to explain on fingers that you are in this blue area, which is the whole set of picking'
   },
   {
-    startTime: 3337.01,
-    person: 'Daniel',
-    text: ' This is reality.'
+    startTime: 3447.03,
+    person: 'Valeri',
+    text: ' stations, and you finished your picking, so you basically want to dispatch the code and deliver it'
   },
+  { startTime: 3452.67, person: 'Valeri', text: ' all the way here.' },
   {
-    startTime: 3337.91,
-    person: 'Daniel',
-    text: ' This is what we see at customer side.'
+    startTime: 3454.93,
+    person: 'Valeri',
+    text: " You can't send a single command saying just go straight, even though there are a multitude of paths leading here."
   },
   {
-    startTime: 3341.05,
-    person: 'Daniel',
-    text: ' Going from asynchronous messaging stuff to RESTful APIs.'
+    startTime: 3462.33,
+    person: 'Valeri',
+    text: ' You have to deliver to the exit of this blue system, then make it routed within the red one, and etcétera, etcétera, and cross all those fancy colourful blocks in order to get here.'
   },
   {
-    startTime: 3346.33,
-    person: 'Karol',
-    text: " Oh my, oh, that's painful."
+    startTime: 3477.05,
+    person: 'Valeri',
+    text: " So, and that's, yeah, I think it's like 80-something in this particular site, all those execution systems, but then, of course, you add on top the orchestration part, and you get a bit more, and that's the scale and complexity of such system."
   },
   {
-    startTime: 3349.99,
-    person: 'Daniel',
-    text: " Yeah, that's painful."
+    startTime: 3493.91,
+    person: 'Valeri',
+    text: " I think I also have, yeah, that's, for instance, a station, just to show some cool conveyors, so it also becomes more concrete and physical, and here, on the left, you will typically see one crate, on the right, the other, and a person standing in front of that, and putting toilet paper from one to another, for instance."
   },
   {
-    startTime: 3351.05,
+    startTime: 3515.45,
     person: 'Karol',
-    text: " Yeah, that's absolutely."
-  },
-  {
-    startTime: 3352.31,
-    person: 'Daniel',
-    text: ' This is what we see in the field.'
-  },
-  {
-    startTime: 3355.59,
-    person: 'Daniel',
-    text: " And that's why we are actually in this space of the IQs because we hadn't, we did the training a lot of times and we were struggling in this context because we had to hit somehow the backend."
-  },
-  {
-    startTime: 3376.71,
-    person: 'Daniel',
-    text: ' We had to hit somehow gateway structures, middleware, whatever.'
-  },
-  {
-    startTime: 3381.41,
-    person: 'Daniel',
-    text: ' And it was quite hard really to illustrate what to choose actually, what data set will be transferred somewhere, how to call it actually.'
+    text: " So that's the not exactly automated warehouse, in that sense, that's with manual labour involved, right?"
   },
   {
-    startTime: 3393.45,
-    person: 'Daniel',
-    text: ' But we started with some kind of two-way thinking but this was not explicitly because we left out back at forefront and at that point and so on and so on.'
+    startTime: 3522.25,
+    person: 'Valeri',
+    text: ' Okay, so how we do distinguish it at this point?'
   },
   {
-    startTime: 3404.95,
-    person: 'Daniel',
-    text: " And this is actually what happens there because people, and this is what we see in the field, are just replacing technology by technology but not doing the upskilling to really understand what's the real integration problem."
+    startTime: 3525.73,
+    person: 'Valeri',
+    text: ' In every warehouse we have, there is manual labour.'
   },
   {
-    startTime: 3421.55,
-    person: 'Daniel',
-    text: ' Another fun fact, I always ask this question in my talks when we do trainings and when we are on customer side doing negotiations and preset or whatever.'
+    startTime: 3529.79,
+    person: 'Valeri',
+    text: " The question is to what degree, and what we call automated means it's like real minimum of what was possible at the point we've been building, so now, of course, with the robotic coming into play, you minimise that even further, but there are always humans who at least will need to work the operation of the system, if not doing the stuff themselves manually, but there are always humans."
   },
   {
-    startTime: 3433.37,
-    person: 'Daniel',
-    text: " The question is always, did you have ever read the book from Gregor Hohpe, Enterprise Integration Patterns because we're talking about this and you can think about what the answer is."
-  },
-  {
-    startTime: 3446.81,
-    person: 'Karol',
-    text: ' Now, I do have a little bit of a beef with that particular book for one good reason.'
-  },
-  {
-    startTime: 3455.19,
-    person: 'Karol',
-    text: ' It was written way before we had cloud computing and integration platforms that were microservice systems which gives a completely different perspective on interoperability.'
-  },
-  {
-    startTime: 3466.39,
+    startTime: 3555.25,
     person: 'Karol',
-    text: " But if we're talking system design and system interoperability, that is basically your guidebook on doing proper event-driven integrations within your system and why you need to do them."
+    text: ' Yeah, of course, you always also need maintenance, you always will need somebody to get the crate unstuck, etc.'
   },
   {
-    startTime: 3479.41,
+    startTime: 3562.77,
     person: 'Karol',
-    text: " So that's a very valid book from a system design perspective and system architecture perspective."
+    text: " We're not replaceable by automation, unless we start building bots that are actually doing that job, but I don't think that's feasible in the near future, to be able to build such mechanisms to do that kind of labour."
   },
   {
-    startTime: 3484.39,
-    person: 'Karol',
-    text: " So that's something still very much applicable."
+    startTime: 3579.23,
+    person: 'Valeri',
+    text: ' Yeah, another example, this is the, I think, two or three storey high storage for pallets.'
   },
   {
-    startTime: 3487.23,
-    person: 'Karol',
-    text: " If you look at interoperability at scale of an ecosystem, it became less relevant over the years and this is still a huge gap to be filled and that's the problem there because that gap is not yet sufficiently filled."
+    startTime: 3588.01,
+    person: 'Valeri',
+    text: " You've probably seen plenty if you go to a big store like Ikea, or whatever they have, like those pallets, crammed with goods, and that's basically a huge lift that can pick up those pallets and store them automatically, so that you don't need to do that with those small cars."
   },
+  { startTime: 3608.03, person: 'Valeri', text: ' Fully automated in that sense.' },
   {
-    startTime: 3501.73,
+    startTime: 3611.25,
     person: 'Karol',
-    text: " And if we have materials on that, they're paywalled with specific vendors and that's a completely different problem."
+    text: " Yeah, but it's a little bit different than Ikea in that sense, because in Ikea, while you have those very high storage units, the clients actually access only the lowest parts, the other parts are not accessible, and you need a forklift for that to get into there and just move the merchandise down to the level that is accessible, right?"
   },
   {
-    startTime: 3509.39,
+    startTime: 3632.05,
     person: 'Karol',
-    text: ' But yes, this is a very good book.'
-  },
-  {
-    startTime: 3510.85,
-    person: 'Daniel',
-    text: ' This book is really the starting point.'
-  },
-  {
-    startTime: 3512.65,
-    person: 'Daniel',
-    text: ' So when I would like to go into the integration space, this is the one I should read.'
-  },
-  {
-    startTime: 3517.77,
-    person: 'Daniel',
-    text: " This was the one somebody at CodeCentric forced me to read when I got more into the integration space to really understand, to get the wording, to understand how there's things to actually present and really make it visible there."
-  },
-  {
-    startTime: 3535.47,
-    person: 'Daniel',
-    text: ' And then you are totally right because the next thing is we have the Richardson book in regards of microservice patterns and so on.'
-  },
-  {
-    startTime: 3543.85,
-    person: 'Daniel',
-    text: " That's the next thing."
-  },
-  {
-    startTime: 3545.95,
-    person: 'Daniel',
-    text: ' Nobody, it looks like nobody is really reading these pattern books to understand the basic things around architecture.'
-  },
-  {
-    startTime: 3553.49,
-    person: 'Daniel',
-    text: " As you mentioned, we have different roles, levels of architecture and it's always even for us a mess to then talk with people and hear what they're actually talking about."
-  },
-  {
-    startTime: 3567.41,
-    person: 'Daniel',
-    text: " We have trainings and it's sometimes hard that we have to resist to really tell, okay, this is not true what you are telling here."
-  },
-  {
-    startTime: 3576.71,
-    person: 'Daniel',
-    text: ' Yeah, and this is not what comes up.'
-  },
-  {
-    startTime: 3579.85,
-    person: 'Daniel',
-    text: " And normally in these trainings, when you have these strong characters, I would call them, it's always, I didn't learn anything."
-  },
-  {
-    startTime: 3589.01,
-    person: 'Daniel',
-    text: ' Right.'
+    text: ' While here, the whole thing is working constantly, 24-7, right?'
   },
   {
-    startTime: 3589.71,
-    person: 'Daniel',
-    text: " And it's like, okay, yeah, fine."
+    startTime: 3636.73,
+    person: 'Valeri',
+    text: " Yeah, exactly, and you're also optimising the background, so of course you put the most urgent stuff to the bottom, where it's easier and faster to retrieve."
   },
   {
-    startTime: 3592.67,
-    person: 'Daniel',
-    text: ' We make a check mark.'
+    startTime: 3647.59,
+    person: 'Valeri',
+    text: " It's actually also, this one maybe not, the other storages also have depth, so you can have things, one at the back and one in front, so if you want to access something from the back, you have to pick up the front, move it somewhere, and only then take the back."
   },
   {
-    startTime: 3594.81,
-    person: 'Karol',
-    text: " Yeah, because they came already full so they didn't have capacity to learn anything because they were convinced they are right."
+    startTime: 3664.99,
+    person: 'Valeri',
+    text: " This particular one, I don't remember, but that's one of the services we do have that optimises for that storage, choosing what to store where, reshuffling, so that in the fastest possible moment, you get whatever you need."
   },
   {
-    startTime: 3600.61,
+    startTime: 3678.39,
     person: 'Karol',
-    text: " So obviously they didn't learn because they didn't listen."
-  },
-  {
-    startTime: 3603.71,
-    person: 'Daniel',
-    text: " So that's a problem."
-  },
-  {
-    startTime: 3605.03,
-    person: 'Daniel',
-    text: ' Boxes, okay, this is what I think.'
-  },
-  {
-    startTime: 3607.01,
-    person: 'Daniel',
-    text: ' Oh yeah, they said it also, they said it also.'
-  },
-  {
-    startTime: 3609.61,
-    person: 'Daniel',
-    text: " But in the end, it's more about, and this is what we're telling always in trainings about adapting things."
-  },
-  {
-    startTime: 3615.85,
-    person: 'Daniel',
-    text: ' So we know when we talk about API thinking that nobody will fully adapt this way of structuring what we developed there.'
-  },
-  {
-    startTime: 3625.83,
-    person: 'Daniel',
-    text: " It's really some kind of, I can take parts of it and make it work for the situation or the organisation I'm in."
-  },
-  {
-    startTime: 3635.09,
-    person: 'Daniel',
-    text: ' And this is really funny that people think they have to go the whole way.'
-  },
-  {
-    startTime: 3638.93,
-    person: 'Daniel',
-    text: " It's always, it's also the same with the API obstacles which we are also using."
-  },
-  {
-    startTime: 3643.19,
-    person: 'Daniel',
-    text: " And it's always to really bring up the whole space."
-  },
-  {
-    startTime: 3647.03,
-    person: 'Daniel',
-    text: " And it's sometimes just enough to go at some point, at some level and bring it into this."
-  },
-  {
-    startTime: 3654.53,
-    person: 'Daniel',
-    text: " So Miriam's I think already pointing there to the obstacles."
-  },
-  {
-    startTime: 3660.31,
-    person: 'Daniel',
-    text: " So I'm at first, Marjukka Niinioja developed 2017 or something like that."
-  },
-  {
-    startTime: 3668.29,
-    person: 'Daniel',
-    text: " And it's really bring to bring more the business side into the game to really make it understandable what we are doing with, yeah, with building APIs even if there are synchronous or asynchronous."
-  },
-  {
-    startTime: 3683.39,
-    person: 'Daniel',
-    text: ' This is one of the points there.'
-  },
-  {
-    startTime: 3686.41,
-    person: 'Daniel',
-    text: " So it's really, I think it's something, what we also, I think Miriam can also agree on that is really the upscaling factor."
+    text: ' So basically, you need to really coordinate and put things and be aware that there are things in those shelves, so always track the state of the actual storage.'
   },
+  { startTime: 3691.69, person: 'Valeri', text: " Yeah, it's also, things can fail." },
   {
-    startTime: 3696.97,
-    person: 'Daniel',
-    text: " Because there's this discontinuous learning we have to learn."
+    startTime: 3694.77,
+    person: 'Valeri',
+    text: " You ask this fancy lift, please store my pallet, crate, whatever, at this position, and it's like, yeah, yeah, sure, but then suddenly, oh, your crate appeared at a different place, and you're like, what?"
   },
+  { startTime: 3706.91, person: 'Valeri', text: ' Why?' },
   {
-    startTime: 3700.91,
-    person: 'Daniel',
-    text: " So it's not set in stone that when somebody is at university and had some kind of development courses, they are ready to go into this integration game or can be sent to an training for doing this."
+    startTime: 3707.75,
+    person: 'Valeri',
+    text: " But you have to deal with that, or it's like, no, I can't do anything, so you're okay, please retrieve it back and start all over, or whatever the mechanisms are."
   },
   {
     startTime: 3716.49,
-    person: 'Daniel',
-    text: " It's really also understand and learn over time."
-  },
-  {
-    startTime: 3719.39,
-    person: 'Daniel',
-    text: " So it's really about learning."
-  },
-  {
-    startTime: 3721.67,
-    person: 'Miriam',
-    text: " But I think that's also something we didn't tackle yet when we talked about the topic, but you now touched it, Daniel, the knowledge thing."
-  },
-  {
-    startTime: 3731.23,
-    person: 'Miriam',
-    text: " I think one thing that I'm always asked as well is, isn't this a problem that you tell people stuff about API design?"
-  },
-  {
-    startTime: 3740.29,
-    person: 'Miriam',
-    text: " Won't they feel offended if you try to support them with enablement and say, well, no."
-  },
-  {
-    startTime: 3745.23,
-    person: 'Miriam',
-    text: ' And the reason is none of the teams that I usually work with are API experts.'
-  },
-  {
-    startTime: 3749.93,
-    person: 'Miriam',
-    text: ' They have no clue.'
-  },
-  {
-    startTime: 3751.33,
-    person: 'Miriam',
-    text: " They're happy that there's someone who can guide them."
-  },
-  {
-    startTime: 3753.85,
-    person: 'Miriam',
-    text: ' And I think this is what many people underestimate.'
-  },
-  {
-    startTime: 3756.47,
-    person: 'Miriam',
-    text: " They put a lot of, whether it's whatever it is, they put a lot of integration pressure on teams that already have a backend, they already have a system, they already have a database and their job is something completely else, maintaining the system, making sure it runs, making sure the backend runs, making sure the database runs."
-  },
-  {
-    startTime: 3773.85,
-    person: 'Miriam',
-    text: " And on top, someone's coming saying, hey, we need your data."
-  },
-  {
-    startTime: 3777.43,
-    person: 'Miriam',
-    text: ' Give us something we can integrate against, right?'
-  },
-  {
-    startTime: 3780.93,
-    person: 'Karol',
-    text: " So- And that's also a architecture problem because a lot of those systems were designed without interoperability in the design."
-  },
-  {
-    startTime: 3788.77,
-    person: 'Karol',
-    text: ' The interoperability is slapped onto those systems.'
-  },
-  {
-    startTime: 3791.81,
-    person: 'Karol',
-    text: " So it's not thought through from the beginning."
-  },
-  {
-    startTime: 3793.93,
-    person: 'Karol',
-    text: ' What are we actually gonna do with that data?'
-  },
-  {
-    startTime: 3795.89,
-    person: 'Karol',
-    text: " Where it's gonna go?"
-  },
-  {
-    startTime: 3796.69,
-    person: 'Karol',
-    text: ' And nowadays, all systems are distributed.'
-  },
-  {
-    startTime: 3799.57,
-    person: 'Karol',
-    text: ' There are very few systems that are actually isolated and work in isolation, which basically means that most systems nowadays require interoperability to be a first-class citizen, really, right?'
-  },
-  {
-    startTime: 3813.47,
-    person: 'Karol',
-    text: " So it's difficult."
-  },
-  {
-    startTime: 3815.09,
-    person: 'Karol',
-    text: ' And then it goes even worse in large-scale environments,'
-  },
-  {
-    startTime: 3819.97,
-    person: 'Karol',
-    text: ' corporate environments,'
-  },
-  {
-    startTime: 3820.87,
-    person: 'Karol',
-    text: ' because some people get the lovely notions'
-  },
-  {
-    startTime: 3822.81,
-    person: 'Karol',
-    text: ' of the centre of enablement and citizen development,'
-  },
-  {
-    startTime: 3829.23,
-    person: 'Karol',
-    text: ' and then they force those domain system teams'
-  },
-  {
-    startTime: 3833.89,
-    person: 'Karol',
-    text: ' to also do application integration'
-  },
-  {
-    startTime: 3837.04,
-    person: 'Karol',
-    text: ' as an integration platforms'
-  },
-  {
-    startTime: 3838.91,
-    person: 'Karol',
-    text: ' and cater to the modules of the integration platforms'
-  },
-  {
-    startTime: 3842.79,
-    person: 'Karol',
-    text: ' and take responsibility for that'
-  },
-  {
-    startTime: 3845.65,
-    person: 'Karol',
-    text: ' without even knowing what that is'
-  },
-  {
-    startTime: 3849.51,
-    person: 'Karol',
-    text: ' and how to deal with that,'
-  },
-  {
-    startTime: 3850.65,
-    person: 'Karol',
-    text: " because they're database experts."
-  },
-  {
-    startTime: 3852.15,
-    person: 'Karol',
-    text: " They're domain experts."
-  },
-  {
-    startTime: 3853.51,
-    person: 'Karol',
-    text: " They're whatever else."
-  },
-  {
-    startTime: 3854.81,
-    person: 'Karol',
-    text: " So it's the difficult part there."
-  },
-  {
-    startTime: 3858.45,
-    person: 'Karol',
-    text: " All right, let's touch upon, because we know that Daniel has to go tend to his fatherly duties."
-  },
-  {
-    startTime: 3865.39,
-    person: 'Karol',
-    text: " That's the downside of having kids at times."
-  },
-  {
-    startTime: 3870.29,
-    person: 'Karol',
-    text: " It's fun, but there are responsibilities."
-  },
-  {
-    startTime: 3874.05,
-    person: 'Karol',
-    text: ' Mine are covered by my wife, luckily, this time around.'
-  },
-  {
-    startTime: 3877.47,
-    person: 'Karol',
-    text: " So let's dive into the AQs."
-  },
-  {
-    startTime: 3880.07,
-    person: 'Karol',
-    text: ' And I already took the liberty of taking the diagram earlier from the side.'
-  },
-  {
-    startTime: 3889.45,
-    person: 'Karol',
-    text: ' So let me just bring that up.'
-  },
-  {
-    startTime: 3892.49,
-    person: 'Karol',
-    text: ' Where do I have this?'
-  },
-  {
-    startTime: 3893.79,
-    person: 'Karol',
-    text: ' This is this one.'
-  },
-  {
-    startTime: 3895.37,
-    person: 'Karol',
-    text: ' So I have this for my convenience in Draw.io, because I do have some drawings on this in different tabs.'
-  },
-  {
-    startTime: 3903.99,
-    person: 'Karol',
-    text: ' So the AQs, data interface quadrants.'
-  },
-  {
-    startTime: 3910.07,
-    person: 'Karol',
-    text: ' Tell us, what are we looking at here?'
-  },
-  {
-    startTime: 3913.69,
-    person: 'Karol',
-    text: ' Because this is probably quite foreign to a large number of people.'
-  },
-  {
-    startTime: 3918.29,
-    person: 'Karol',
-    text: ' I mean, for me, the concept was very foreign when I read the article.'
-  },
-  {
-    startTime: 3921.49,
-    person: 'Karol',
-    text: " Now I'm quite a fan, because it's very useful."
-  },
-  {
-    startTime: 3926.47,
-    person: 'Karol',
-    text: ' So walk us through, what are we looking at right now at this particular diagram?'
-  },
-  {
-    startTime: 3933.51,
-    person: 'Karol',
-    text: ' And just for those who want to read the article, this is the lovely QR for said article on the code-centric side.'
-  },
-  {
-    startTime: 3942.51,
-    person: 'Miriam',
-    text: ' Yeah, let me start.'
-  },
-  {
-    startTime: 3944.17,
-    person: 'Miriam',
-    text: ' So basically, this came out of a bit of all the discussions that we had before, right?'
-  },
-  {
-    startTime: 3949.11,
-    person: 'Miriam',
-    text: ' We have just discussions with people regarding what is good API design?'
-  },
-  {
-    startTime: 3953.15,
-    person: 'Miriam',
-    text: ' What is actually a good API design?'
-  },
-  {
-    startTime: 3955.11,
-    person: 'Miriam',
-    text: ' How do I know?'
-  },
-  {
-    startTime: 3956.51,
-    person: 'Miriam',
-    text: " And we realised that most people don't know what they actually build their API for, right?"
-  },
-  {
-    startTime: 3961.09,
-    person: 'Miriam',
-    text: " If you ask them, they don't really know, what are we actually building?"
-  },
-  {
-    startTime: 3964.55,
-    person: 'Miriam',
-    text: ' Like, so we tried to put it in a picture to make people clear, where you are is not where everyone is, right?'
-  },
-  {
-    startTime: 3972.49,
-    person: 'Miriam',
-    text: ' There are different people who are building different things.'
-  },
-  {
-    startTime: 3974.87,
-    person: 'Miriam',
-    text: " And depending on what they're building, there might be different requirements for those things, right?"
-  },
-  {
-    startTime: 3981.21,
-    person: 'Miriam',
-    text: ' So basically, on the horizontal axis, we put raw data and aggregated or transformed data.'
-  },
-  {
-    startTime: 3988.43,
-    person: 'Miriam',
-    text: " So raw data doesn't really mean unreadable names, right?"
-  },
-  {
-    startTime: 3992.39,
-    person: 'Miriam',
-    text: ' I think we agree to that.'
-  },
-  {
-    startTime: 3993.57,
-    person: 'Miriam',
-    text: ' There are standards, I mean, because some people said, yeah, then I just use the database names and say, well, this is not what raw data means, right?'
-  },
-  {
-    startTime: 3999.15,
-    person: 'Miriam',
-    text: ' Raw data means at least like, it has to be readable, right?'
-  },
-  {
-    startTime: 4003.17,
-    person: 'Miriam',
-    text: ' But aggregated and transformed data means the data is nicely packaged and put together right in a good way, right?'
-  },
-  {
-    startTime: 4010.81,
-    person: 'Miriam',
-    text: ' And then we have the vertical axis, which is product internal and use case specific and external and reusable on the top, right?'
-  },
-  {
-    startTime: 4018.23,
-    person: 'Miriam',
-    text: " So the idea is not to say, left is bad and right is good or bottom is bad and top is good, because I think that's what most people think, but it's more about to say, where are we actually at a team, right?"
-  },
-  {
-    startTime: 4031.35,
-    person: 'Miriam',
-    text: ' What type of interface are we building and what are we aiming for, right?'
-  },
-  {
-    startTime: 4035.55,
-    person: 'Miriam',
-    text: ' And we mainly use this then in discussions with people like developers and architects, for example, to say, or also product owners to say, where are you and where do you need to be and why, right?'
-  },
-  {
-    startTime: 4047.61,
-    person: 'Miriam',
-    text: " Because sometimes architects, product owners, business people have a very different understanding of what they want or what they're aiming for than the developers, for example."
-  },
-  {
-    startTime: 4055.43,
-    person: 'Miriam',
-    text: " And it's easiest to put it in a picture and say, please position yourself."
-  },
-  {
-    startTime: 4059.13,
-    person: 'Miriam',
-    text: ' Where do you think you are?'
-  },
-  {
-    startTime: 4060.83,
-    person: 'Miriam',
-    text: ' What do you think where you should be?'
-  },
-  {
-    startTime: 4062.93,
-    person: 'Miriam',
-    text: ' What does it need to get there, right?'
-  },
-  {
-    startTime: 4066.29,
-    person: 'Karol',
-    text: ' Okay, so if we could define the quadrants.'
-  },
-  {
-    startTime: 4069.45,
-    person: 'Daniel',
-    text: ' One thing maybe to think about is, Miri already mentioned, is this black and white thinking there.'
-  },
-  {
-    startTime: 4074.91,
-    person: 'Daniel',
-    text: ' So people are really, oh yeah, where I have to be directly in the middle of the composition service.'
-  },
-  {
-    startTime: 4082.33,
-    person: 'Daniel',
-    text: " So it's really hard to, or I want to be on the highest top."
-  },
-  {
-    startTime: 4087.25,
-    person: 'Daniel',
-    text: " It's just put yourself somewhere."
-  },
-  {
-    startTime: 4090.25,
-    person: 'Daniel',
-    text: " Maybe you're on the cross."
-  },
-  {
-    startTime: 4092.23,
-    person: 'Daniel',
-    text: " It's totally fine, but it gives direction."
-  },
-  {
-    startTime: 4095.75,
-    person: 'Daniel',
-    text: ' It makes clear where all the things are actually moving somehow and make it also clear for non-technical people what is actually happening.'
-  },
-  {
-    startTime: 4106.109,
-    person: 'Daniel',
-    text: ' So when we look at back and forefront and stuff and everything involved there.'
-  },
-  {
-    startTime: 4111.27,
-    person: 'Miriam',
-    text: " Yeah, let's go to the quadrants quickly, Daniel."
-  },
-  {
-    startTime: 4113.529,
-    person: 'Miriam',
-    text: ' So I think you started with the top, no, bottom right now.'
-  },
-  {
-    startTime: 4117.569,
-    person: 'Miriam',
-    text: ' Maybe go ahead.'
-  },
-  {
-    startTime: 4119.87,
-    person: 'Daniel',
-    text: ' And that we can move it to a composition service, which is more fruitful than just having this technical back end for front end type of thing.'
-  },
-  {
-    startTime: 4130.93,
-    person: 'Daniel',
-    text: " So it's really something to move on."
-  },
-  {
-    startTime: 4133.59,
-    person: 'Daniel',
-    text: ' And to be honest, we started with the two things above.'
-  },
-  {
-    startTime: 4137.229,
-    person: 'Daniel',
-    text: ' That was the starting point because we needed for a project because the idea of the project we did was to deliver core services.'
-  },
-  {
-    startTime: 4146.83,
-    person: 'Daniel',
-    text: ' So platform data products somehow.'
-  },
-  {
-    startTime: 4149.59,
-    person: 'Daniel',
-    text: ' The people were not at that time talking about data products.'
-  },
-  {
-    startTime: 4152.77,
-    person: 'Daniel',
-    text: ' So it was called core services.'
-  },
-  {
-    startTime: 4155.13,
-    person: 'Daniel',
-    text: ' What happened was over time, we built a lot of composition services and then somebody asked, did we actually reach the goal?'
-  },
-  {
-    startTime: 4164.37,
-    person: 'Daniel',
-    text: ' So we had to find something and this was actually the start.'
-  },
-  {
-    startTime: 4167.85,
-    person: 'Daniel',
-    text: ' And then Miri came and built this whole diagram or the quadrants out of it.'
-  },
-  {
-    startTime: 4174.029,
-    person: 'Daniel',
-    text: ' This is really where it all came from.'
-  },
-  {
-    startTime: 4176.529,
-    person: 'Karol',
-    text: ' Okay, so what would be the definitions for the quadrants then?'
-  },
-  {
-    startTime: 4181.99,
-    person: 'Miriam',
-    text: " Okay, so let's start bottom right, back end for front end."
-  },
-  {
-    startTime: 4187.029,
-    person: 'Miriam',
-    text: " I think most people know what it is, but basically we expect there's a team."
-  },
-  {
-    startTime: 4191.29,
-    person: 'Miriam',
-    text: ' They have a front end and a back end.'
-  },
-  {
-    startTime: 4192.93,
-    person: 'Miriam',
-    text: " Maybe it's in the same team."
-  },
-  {
-    startTime: 4194.01,
-    person: 'Miriam',
-    text: " Maybe it's the neighbour team that we know very well."
-  },
-  {
-    startTime: 4196.03,
-    person: 'Miriam',
-    text: ' We build our interface exactly for the front end.'
-  },
-  {
-    startTime: 4199.15,
-    person: 'Miriam',
-    text: " We don't do raw data."
-  },
-  {
-    startTime: 4200.35,
-    person: 'Miriam',
-    text: ' We transform the data exactly in the way the front end needs it.'
-  },
-  {
-    startTime: 4203.33,
-    person: 'Miriam',
-    text: ' We design it very nicely so that the front end developers have it very easy.'
-  },
-  {
-    startTime: 4207.03,
-    person: 'Miriam',
-    text: ' Nobody else will ever use our API, right?'
-  },
-  {
-    startTime: 4209.23,
-    person: 'Miriam',
-    text: " We use it internally, that's it."
-  },
-  {
-    startTime: 4211.39,
-    person: 'Karol',
-    text: ' So single purpose, very, very fine, strictly defined and not reusable at all.'
-  },
-  {
-    startTime: 4220.15,
-    person: 'Miriam',
-    text: ' Exactly.'
-  },
-  {
-    startTime: 4221.25,
-    person: 'Miriam',
-    text: ' And you can make, for example, you can make breaking changes anytime because the front end developer sits right next to it.'
-  },
-  {
-    startTime: 4226.83,
-    person: 'Miriam',
-    text: " You say, hey, I'm making here a breaking change."
-  },
-  {
-    startTime: 4228.95,
-    person: 'Miriam',
-    text: ' Please change.'
-  },
-  {
-    startTime: 4230.25,
-    person: 'Miriam',
-    text: ' You may be changing even the front end in the same much request, right?'
-  },
-  {
-    startTime: 4233.07,
-    person: 'Miriam',
-    text: ' No problem.'
-  },
-  {
-    startTime: 4233.91,
-    person: 'Miriam',
-    text: ' You can do that, right?'
-  },
-  {
-    startTime: 4235.41,
-    person: 'Karol',
-    text: ' Yeah.'
-  },
-  {
-    startTime: 4236.57,
-    person: 'Miriam',
-    text: ' Then we have on top of that, the composition service.'
-  },
-  {
-    startTime: 4239.17,
-    person: 'Miriam',
-    text: " So let's go that way."
-  },
-  {
-    startTime: 4240.93,
-    person: 'Miriam',
-    text: ' The composition service is also with aggregated and transformed data.'
-  },
-  {
-    startTime: 4246.53,
-    person: 'Miriam',
-    text: ' So very well-defined data, very curated data, but it is designed in a way to be external and reusable, right?'
-  },
-  {
-    startTime: 4254.61,
-    person: 'Miriam',
-    text: ' So I need to pay more attention to who wants to use it.'
-  },
-  {
-    startTime: 4258.15,
-    person: 'Miriam',
-    text: ' Why do they want to use it?'
-  },
-  {
-    startTime: 4259.75,
-    person: 'Miriam',
-    text: ' What do I need to do to make it actually usable for them?'
-  },
-  {
-    startTime: 4262.71,
-    person: 'Miriam',
-    text: ' And also I cannot do as much changes, right?'
-  },
-  {
-    startTime: 4265.39,
-    person: 'Miriam',
-    text: ' I cannot change it tomorrow and say, well, all my lovely external users, now I have a version three of my API.'
-  },
-  {
-    startTime: 4271.43,
-    person: 'Miriam',
-    text: " And if you don't migrate, version two will be not working anymore tomorrow, right?"
-  },
-  {
-    startTime: 4275.35,
-    person: 'Miriam',
-    text: ' I cannot do that, right?'
-  },
-  {
-    startTime: 4276.69,
-    person: 'Miriam',
-    text: " So I have lots of implications I have to take care of if I'm in that space, right?"
-  },
-  {
-    startTime: 4280.93,
-    person: 'Miriam',
-    text: ' I cannot just say, well, I change it tomorrow.'
-  },
-  {
-    startTime: 4283.17,
-    person: 'Miriam',
-    text: " I don't care, right?"
-  },
-  {
-    startTime: 4284.43,
-    person: 'Miriam',
-    text: " And that's also something that many people don't get at the beginning, right?"
-  },
-  {
-    startTime: 4288.15,
-    person: 'Miriam',
-    text: ' And I have a very funny story of a team that I talked to who actually had a backend for frontend.'
-  },
-  {
-    startTime: 4294.23,
-    person: 'Miriam',
-    text: " That's what they thought, right?"
-  },
-  {
-    startTime: 4295.93,
-    person: 'Miriam',
-    text: ' But the product owner decided to put their API in the internal API catalogue because it was there, right?'
-  },
-  {
-    startTime: 4302.21,
-    person: 'Miriam',
-    text: ' It was a nice API.'
-  },
-  {
-    startTime: 4303.71,
-    person: 'Miriam',
-    text: ' So what happened?'
-  },
-  {
-    startTime: 4304.89,
-    person: 'Miriam',
-    text: " Other teams started using it and they didn't know."
-  },
-  {
-    startTime: 4308.09,
-    person: 'Miriam',
-    text: ' And when they made a breaking change, suddenly three teams dropped them a message saying, hey, you broke your API, why?'
-  },
-  {
-    startTime: 4314.63,
-    person: 'Miriam',
-    text: ' We use it.'
-  },
-  {
-    startTime: 4315.23,
-    person: 'Miriam',
-    text: ' And they were like, wait, this is our API, you know?'
-  },
-  {
-    startTime: 4318.67,
-    person: 'Karol',
-    text: ' That was actually- Why are you using it?'
-  },
-  {
-    startTime: 4319.87,
-    person: 'Miriam',
-    text: " If you would have talked about it with the IQs, you would have known that someone thinks it's there and others think it's there, right?"
-  },
-  {
-    startTime: 4325.47,
-    person: 'Miriam',
-    text: ' So there was a different perception in the team.'
-  },
-  {
-    startTime: 4328.89,
-    person: 'Miriam',
-    text: ' And then the left side, maybe Daniel, you can go ahead.'
-  },
-  {
-    startTime: 4332.49,
-    person: 'Daniel',
-    text: ' Yeah, and then we have actually on the left side when we start on the low ground, this data link type of thing.'
-  },
-  {
-    startTime: 4339.53,
-    person: 'Daniel',
-    text: " It could be a database API, but it shouldn't."
-  },
-  {
-    startTime: 4345.75,
-    person: 'Daniel',
-    text: " It's really bringing this raw data up to be used by composition services or even then by the platform data product."
-  },
-  {
-    startTime: 4359.15,
-    person: 'Daniel',
-    text: ' And this platform data product is really meant in type of productisation to really think about in data products to really say, okay, this is what we deliver internally, somehow externally then also, and we make things reusable.'
-  },
-  {
-    startTime: 4376.73,
-    person: 'Daniel',
-    text: " So we can build then composition service out of this platform data products because they provide the real value because this is what we actually want to share with people inside the organisation or even also external because this internal external thing is it's a quite complicated thing there."
-  },
-  {
-    startTime: 4395.25,
-    person: 'Karol',
-    text: ' Okay, so I do have my take on this for integration platform.'
-  },
-  {
-    startTime: 4404.23,
-    person: 'Karol',
-    text: " So we'll do that in a moment, but I'm looking at this also from a perspective of domain driven design."
-  },
-  {
-    startTime: 4411.13,
-    person: 'Karol',
-    text: " And I'm just trying to find the right image in Vlad Kononov's book, Learning Domain Driven Design, and I think I got it."
-  },
-  {
-    startTime: 4419.43,
-    person: 'Karol',
-    text: " So I'm just gonna paste it right here."
-  },
-  {
-    startTime: 4422.73,
-    person: 'Karol',
-    text: ' So if I look at these layers, this is an overall picture of different types of context mapping within domain driven design, right?'
-  },
-  {
-    startTime: 4432.41,
-    person: 'Karol',
-    text: ' So in context mapping, we have different relationships.'
-  },
-  {
-    startTime: 4437.39,
-    person: 'Karol',
-    text: ' So if I would look at data link, that would be probably either shared kernel or partnership.'
-  },
-  {
-    startTime: 4447.03,
-    person: 'Karol',
-    text: ' So very tight connection between them.'
-  },
-  {
-    startTime: 4451.01,
-    person: 'Karol',
-    text: ' Then if we look at back and forefront, then that would be probably also partnership because there are separate pieces of code connected and non-reusable, etc.'
-  },
-  {
-    startTime: 4462.65,
-    person: 'Karol',
-    text: ' Then composition service would be then probably open host service in that sense.'
-  },
-  {
-    startTime: 4469.17,
-    person: 'Daniel',
-    text: ' I have to leave you now.'
-  },
-  {
-    startTime: 4470.75,
-    person: 'Daniel',
-    text: ' Have fun and see you all, bye.'
-  },
-  {
-    startTime: 4474.09,
-    person: 'Karol',
-    text: ' Thank you, Daniel.'
-  },
-  {
-    startTime: 4475.03,
-    person: 'Karol',
-    text: ' Thank you for joining us.'
-  },
-  {
-    startTime: 4475.59,
-    person: 'Karol',
-    text: " You're welcome, you're welcome, bye."
-  },
-  {
-    startTime: 4478.77,
-    person: 'Karol',
-    text: ' All right.'
-  },
-  {
-    startTime: 4480.01,
-    person: 'Karol',
-    text: " So correct me if I'm wrong, but I'm looking at this from this particular perspective, that this would be like composition services is our open host service with these published languages that we cater to that are specific use."
-  },
-  {
-    startTime: 4498.09,
-    person: 'Karol',
-    text: ' And then they are basically conveying a specific functionality, right?'
-  },
-  {
-    startTime: 4505.93,
-    person: 'Karol',
-    text: ' Yeah.'
-  },
-  {
-    startTime: 4506.91,
-    person: 'Karol',
-    text: " Data products might also land in the part of being an open host service because we don't, in terms of ACLs, we don't really expose them, the ACLs as APIs."
-  },
-  {
-    startTime: 4520.99,
-    person: 'Karol',
-    text: " The ACLs are within the software itself, whether we're consuming or providing an API."
-  },
-  {
-    startTime: 4527.17,
-    person: 'Karol',
-    text: " So that's a different thing."
-  },
-  {
-    startTime: 4530.43,
-    person: 'Karol',
-    text: " And then back and forefront, and it's also, it's a conformism pattern because the front end is conforming to the back end."
-  },
-  {
-    startTime: 4538.95,
-    person: 'Karol',
-    text: ' Yeah.'
-  },
-  {
-    startTime: 4539.39,
-    person: 'Karol',
-    text: ' Right?'
-  },
-  {
-    startTime: 4540.11,
-    person: 'Karol',
-    text: ' Yeah.'
-  },
-  {
-    startTime: 4540.43,
-    person: 'Karol',
-    text: ' So does that aligns with the thinking for the- Okay.'
-  },
-  {
-    startTime: 4546.39,
-    person: 'Karol',
-    text: ' Totally, yeah.'
-  },
-  {
-    startTime: 4548.43,
-    person: 'Miriam',
-    text: " All right, so- It's a good perspective to look at as well, yeah."
-  },
-  {
-    startTime: 4553.39,
-    person: 'Karol',
-    text: ' Okay, fair.'
-  },
-  {
-    startTime: 4555.87,
-    person: 'Karol',
-    text: ' All right, so if we can map these things to good, bad designs or example, real world, very real world examples of what we would use.'
-  },
-  {
-    startTime: 4569.13,
-    person: 'Karol',
-    text: ' So let me see, let me have a go at it.'
-  },
-  {
-    startTime: 4572.57,
-    person: 'Karol',
-    text: ' So if I would do a data link, that would be, literally could be a database link, DB link between two databases replicating data.'
-  },
-  {
-    startTime: 4583.21,
-    person: 'Karol',
-    text: ' A data link could be also a batch or an ELT process running somewhere, right?'
-  },
-  {
-    startTime: 4589.53,
-    person: 'Karol',
-    text: ' Because it just moves raw data.'
-  },
-  {
-    startTime: 4591.71,
-    person: 'Karol',
-    text: ' Yes.'
-  },
-  {
-    startTime: 4593.81,
-    person: 'Karol',
-    text: " ETL, somewhere probably in the data link space as well, but probably closer to the middle of the whole thing because it's acting a little bit as a composed service, a little bit in that direction, but still in the data link part."
-  },
-  {
-    startTime: 4610.31,
-    person: 'Karol',
-    text: " Back and forefront, I think that's self-descriptive here."
-  },
-  {
-    startTime: 4615.27,
-    person: 'Karol',
-    text: ' Composition service, any SaaS solution with an API array externalised, that would be pretty much it.'
-  },
-  {
-    startTime: 4622.89,
-    person: 'Karol',
-    text: ' So any CLI of any tool would be in the composition service, I guess.'
-  },
-  {
-    startTime: 4630.97,
-    person: 'Karol',
-    text: ' Any API of AWS, Azure as products.'
-  },
-  {
-    startTime: 4637.55,
-    person: 'Karol',
-    text: ' Yeah, Salesforce API, Microsoft Dynamics API, these would be all composition services.'
-  },
-  {
-    startTime: 4643.05,
-    person: 'Karol',
-    text: ' Then in that sense, what would be the data products?'
-  },
-  {
-    startTime: 4648.97,
-    person: 'Karol',
-    text: ' Okay, so if we have Salesforce, for example, as in CRM, Salesforce as a platform gives us composition services, but if we implement it in a specific context of our own organisation and start exposing specific data in a productized way from Salesforce, from that organisation, that would be then in the direction of the data products.'
-  },
-  {
-    startTime: 4677.69,
-    person: 'Miriam',
-    text: ' Yeah, I see it more in a way like how close is the data still to the raw data, right?'
-  },
-  {
-    startTime: 4682.85,
-    person: 'Miriam',
-    text: " A platform data product would be more, let's say, less data from different sources."
-  },
-  {
-    startTime: 4687.81,
-    person: 'Miriam',
-    text: ' A composition service can also have very different data, right?'
-  },
-  {
-    startTime: 4691.55,
-    person: 'Miriam',
-    text: ' A composition service could also have data from Salesforce, but data also from a completely different source, theoretically, right?'
-  },
-  {
-    startTime: 4698.51,
-    person: 'Miriam',
-    text: " So it's more like about where do you get your data from, like how close is the data to each other, right?"
-  },
-  {
-    startTime: 4703.93,
-    person: 'Miriam',
-    text: " If it's a very, I would say, a very bounded context with very, like data is from the same place everywhere, like, right, it's more on the data product side for me, while if we have data that we aggregate, we transform, we take other data that we mix in, right, from somewhere else, that would be more on a composition side."
-  },
-  {
-    startTime: 4721.73,
-    person: 'Miriam',
-    text: ' So it depends a bit on how, where do you get the data from, right?'
-  },
-  {
-    startTime: 4725.35,
-    person: 'Miriam',
-    text: ' How restricted are you in the data you present, right?'
-  },
-  {
-    startTime: 4730.09,
-    person: 'Karol',
-    text: " Okay, I'm gonna counter that because if I look at ecosystem architecture from perspective of domain-driven design, I mean, it's a holy grail of domain-driven design to have a bounded context and the functionalities of a specific subdomain containerised in a singular system."
-  },
-  {
-    startTime: 4747.19,
-    person: 'Karol',
-    text: " That's like the holy grail."
-  },
-  {
-    startTime: 4748.85,
-    person: 'Karol',
-    text: ' The reality of things is that usually a singular domain system implements several bounded contexts, not one, but a few.'
-  },
-  {
-    startTime: 4762.65,
-    person: 'Karol',
-    text: " So if we look at, again, Salesforce, a CRM system as an example, okay, we have the customer domain, but the moment an opportunity is won, we're going into the order domain, right?"
-  },
-  {
-    startTime: 4776.19,
-    person: 'Karol',
-    text: " So we're already from that perspective, functional perspective of a business, we're already having at least two bounded contexts in a CRM, right?"
-  },
-  {
-    startTime: 4786.51,
-    person: 'Karol',
-    text: " So if I'm looking at the distribution of systems and bounded context in an ecosystem, also from a perspective of an integration platform, the data product can be on an API of an integration platform, but the data can originate from multiple systems, right?"
-  },
-  {
-    startTime: 4807.97,
-    person: 'Karol',
-    text: ' Because if I have a order domain, okay, I have some sort of an ERP or order fulfilment system beneath, but part of that data originates from a CRM.'
-  },
-  {
-    startTime: 4821.05,
-    person: 'Karol',
-    text: " So I combine the two as a singular purpose of a data product, which is not exactly transformed because I don't transform the data on an integration platform, I just merge it as a, join that into a singular, not data model, but a singular instance of a model, right?"
-  },
-  {
-    startTime: 4846.55,
-    person: 'Karol',
-    text: ' So that is then, that could also, from my perspective, be raw data without transformation.'
-  },
-  {
-    startTime: 4852.43,
-    person: 'Miriam',
-    text: ' Right, yes.'
-  },
-  {
-    startTime: 4853.33,
-    person: 'Miriam',
-    text: ' Depending on how much you do with the data, right?'
-  },
-  {
-    startTime: 4855.57,
-    person: 'Miriam',
-    text: ' It also depends a bit, what do you really do with it?'
-  },
-  {
-    startTime: 4858.35,
-    person: 'Miriam',
-    text: ' How difficult is it to put it together?'
-  },
-  {
-    startTime: 4860.51,
-    person: 'Miriam',
-    text: ' Do you just take the fields and throw them in one, right?'
-  },
-  {
-    startTime: 4863.35,
-    person: 'Miriam',
-    text: ' Or do you really do more with it?'
-  },
-  {
-    startTime: 4865.05,
-    person: 'Miriam',
-    text: " I think it's really a fine, it's not so, it's not black and white as well here, right?"
-  },
-  {
-    startTime: 4869.83,
-    person: 'Miriam',
-    text: ' Most of the things will probably be somewhere in the middle, right?'
-  },
-  {
-    startTime: 4872.75,
-    person: 'Miriam',
-    text: ' Some will be clearly left or right, but most will be somewhere more to the middle, right?'
-  },
-  {
-    startTime: 4876.67,
-    person: 'Miriam',
-    text: " That's also what people always ask."
-  },
-  {
-    startTime: 4878.89,
-    person: 'Miriam',
-    text: " Do I need to pick one of the quadrants and then I'm there?"
-  },
-  {
-    startTime: 4881.17,
-    person: 'Miriam',
-    text: " And we said, no, you can say I'm more in the middle, I'm more to the edge."
-  },
-  {
-    startTime: 4885.39,
-    person: 'Miriam',
-    text: ' I mean, if I have two consumers, where am I?'
-  },
-  {
-    startTime: 4888.21,
-    person: 'Miriam',
-    text: ' Am I already, am I external or am I internal?'
-  },
-  {
-    startTime: 4891.15,
-    person: 'Miriam',
-    text: " I said, well, you can still say we're internal because the second consumer is our neighbour team or whatever, right?"
-  },
-  {
-    startTime: 4896.95,
-    person: 'Miriam',
-    text: " You can still draw your thought there and say, well, we technically have more than one, but it's still like internal, right?"
-  },
-  {
-    startTime: 4903.35,
-    person: 'Miriam',
-    text: " So it's not really about the maximum or I always have to be on one clear end, right?"
-  },
-  {
-    startTime: 4908.13,
-    person: 'Miriam',
-    text: ' I can be somewhere in the middle as well.'
-  },
-  {
-    startTime: 4909.91,
-    person: 'Miriam',
-    text: ' This is more to keep the conversation going.'
-  },
-  {
-    startTime: 4912.63,
-    person: 'Miriam',
-    text: ' And actually one of the reasons why we designed it as well was that we had the training with the customer where the architects were very keen on having the training with the developers because they said, well, they need to learn how to build reusable APIs, right?'
-  },
-  {
-    startTime: 4929.09,
-    person: 'Miriam',
-    text: " And then we talked with the developers and they said, well, I have a back end for front end, I don't care about any reusable API, right?"
-  },
-  {
-    startTime: 4935.33,
-    person: 'Miriam',
-    text: ' Very true because it depends on the use case.'
-  },
-  {
-    startTime: 4938.13,
-    person: 'Miriam',
-    text: " And then it's good to pick up this picture and say, well, your architect wants you to build a red or blue thing."
-  },
-  {
-    startTime: 4943.37,
-    person: 'Miriam',
-    text: " You're telling me you're only building green things."
-  },
-  {
-    startTime: 4945.57,
-    person: 'Miriam',
-    text: ' So where are you really and why?'
-  },
-  {
-    startTime: 4947.17,
-    person: 'Miriam',
-    text: ' And what do you need to go there?'
-  },
-  {
-    startTime: 4948.79,
-    person: 'Miriam',
-    text: ' Or does it even make sense to go there, right?'
-  },
-  {
-    startTime: 4950.93,
-    person: 'Miriam',
-    text: " It doesn't make sense for every interface to be a composition service or a platform data product, right?"
-  },
-  {
-    startTime: 4955.85,
-    person: 'Miriam',
-    text: ' Every quadrant has their strength and their place to be in our opinion, right?'
-  },
-  {
-    startTime: 4961.13,
-    person: 'Miriam',
-    text: ' So I really need to know where am I and where do I want to be and where do I have to be and why, right?'
-  },
-  {
-    startTime: 4967.09,
-    person: 'Karol',
-    text: " It's always the only plausible and correct answer in all cases it depends because we first need to understand the context of things rather than jump into universal truths because those universal truths are not really universal in that sense."
-  },
-  {
-    startTime: 4986.77,
-    person: 'Karol',
-    text: ' If we just look at the relationships of context mapping in domain-driven design, we can identify that these actually map to the data interface quadrants very nicely.'
-  },
-  {
-    startTime: 5001.25,
-    person: 'Karol',
-    text: " By the way, if somebody wants to find this lovely diagram that I posted in Draw.io, this is the book I'm referencing it from, that's by Vlad Kononov, Learning Domain-Driven Design."
-  },
-  {
-    startTime: 5012.67,
-    person: 'Karol',
-    text: " It's a book a lot easier to digest than the books of Eric Evans, not that they are bad, they're just written in a different language that might be a little bit harder to grasp."
-  },
-  {
-    startTime: 5023.49,
-    person: 'Karol',
-    text: " So if you don't have experience with domain-driven design and you're just starting with that, I recommend reading this one first and then going to Eric's books would be a better basis to get the grasp on what Eric Evans is saying in his."
-  },
-  {
-    startTime: 5039.39,
-    person: 'Karol',
-    text: ' So the relationships are there and if we look and map our relationships and understand those relationships between teams, between systems, we can then have that conversation over quadrants and then everybody will say, well, it depends, what are the use cases?'
-  },
-  {
-    startTime: 5056.35,
-    person: 'Karol',
-    text: " And that is very helpful in my opinion to have these kinds of conversations because it's all about building those relationships and those relationships, according to Conway's law, trickle from between teams to systems anyway."
-  },
-  {
-    startTime: 5069.45,
-    person: 'Karol',
-    text: " So it's always worth having that discussion in that sense of classification, right?"
-  },
-  {
-    startTime: 5075.07,
-    person: 'Miriam',
-    text: " And I think it helps just to get everyone on the same page because mostly people don't talk about the topic."
-  },
-  {
-    startTime: 5081.01,
-    person: 'Miriam',
-    text: ' So everyone has their thing in mind, but nobody pins it down and then it goes to the opposite directions.'
-  },
-  {
-    startTime: 5087.43,
-    person: 'Miriam',
-    text: " And I think the hope, if you talk to companies who want to be, call it API first, call it whatever, API is a product, they hope that people only build the red and blue things, but then teams don't understand why and teams don't understand when this is needed and teams don't, you can't only say, now we're API first, so, right?"
-  },
-  {
-    startTime: 5106.91,
-    person: 'Miriam',
-    text: " We do API as a product now, but then you also need to tell teams why this is necessary and why this makes sense for their case that they're building, right?"
-  },
-  {
-    startTime: 5114.89,
-    person: 'Miriam',
-    text: " If the team says, no, we're building a backend for frontend, then someone has to go there and explain to them why they should write about the composition service or something else than a backend for frontend and why this is the right way to go, right?"
-  },
-  {
-    startTime: 5125.91,
-    person: 'Miriam',
-    text: ' So these are the interesting discussions that happen then because people need to get into that and discuss really like, what are we building and why are we building it like that and what implications does it have if we suddenly build something else?'
-  },
-  {
-    startTime: 5139.15,
-    person: 'Miriam',
-    text: " And it's also something we always say, if a team build a backend for frontend for years, they would not magically know how to build a composition service and what applies to that, right?"
-  },
-  {
-    startTime: 5148.31,
-    person: 'Karol',
-    text: ' Absolutely.'
-  },
-  {
-    startTime: 5149.13,
-    person: 'Miriam',
-    text: " Training and enablement and stuff, you cannot just expect them to jump there in every quadrant and know exactly what they're building, especially as we discussed, they're not expert for interfaces, APIs, integration, any of that, right?"
-  },
-  {
-    startTime: 5161.53,
-    person: 'Miriam',
-    text: " They're just a team building a backend or maintaining their database or whatever, right?"
-  },
-  {
-    startTime: 5166.03,
-    person: 'Karol',
-    text: ' So just putting that in a perspective of ecosystem interoperability, I literally was in a situation where a company composed their integration team based on former DBAs, former DBAs and database administrators, and they were expecting them to provide a decent integration platform.'
-  },
-  {
-    startTime: 5196.19,
-    person: 'Karol',
-    text: " Now, if you look at mindsets of these people, well, no, that's not gonna happen because the mindset of interoperability is persist nothing."
-  },
-  {
-    startTime: 5207.93,
-    person: 'Karol',
-    text: ' The mindset of a DBA is persist everything.'
-  },
-  {
-    startTime: 5210.95,
-    person: 'Karol',
-    text: ' So what they did, they did basically an MDM solution covered around with Azure functions to feed the data into the MDM and then redistribute the data from the MDM.'
-  },
-  {
-    startTime: 5222.21,
-    person: 'Karol',
-    text: ' That was their integration platform.'
-  },
-  {
-    startTime: 5224.47,
-    person: 'Karol',
-    text: ' Was that anywhere near a composition service?'
-  },
-  {
-    startTime: 5227.61,
-    person: 'Karol',
-    text: ' No, that was all data links, basically, right?'
-  },
-  {
-    startTime: 5230.93,
-    person: 'Karol',
-    text: ' So it is a difficult topic to tackle in terms of skillset and mindset over the design and working on things.'
-  },
-  {
-    startTime: 5242.27,
-    person: 'Karol',
-    text: ' So if, again, another topic that I discussed today'
-  },
-  {
-    startTime: 5245.39,
-    person: 'Karol',
-    text: ' and scheduled for a later stream somewhere in November,'
-  },
-  {
-    startTime: 5250.75,
-    person: 'Karol',
-    text: ' migrating, for example, from Mule platform'
-  },
-  {
-    startTime: 5253.6,
-    person: 'Karol',
-    text: ' as a MuleSoft integration platform to just pure Java,'
-  },
-  {
-    startTime: 5258.57,
-    person: 'Karol',
-    text: ' I mean, okay, the cost of licences are high,'
-  },
-  {
-    startTime: 5262.71,
-    person: 'Karol',
-    text: " but companies still don't think about the cost of retraining"
-  },
-  {
-    startTime: 5267.38,
-    person: 'Karol',
-    text: ' or rehiring the whole teams, the cost of lost knowledge,'
-  },
-  {
-    startTime: 5271.1,
-    person: 'Karol',
-    text: ' because if they start-'
-  },
-  {
-    startTime: 5271.91,
-    person: 'Miriam',
-    text: ' The migration cost.'
-  },
-  {
-    startTime: 5272.91,
-    person: 'Karol',
-    text: " Oh, the migration cost, yeah, that's another thing."
-  },
-  {
-    startTime: 5277.17,
-    person: 'Karol',
-    text: " But there are other implied costs other than the OPEX of licences, and that's the difficult part as well, because if they suddenly drop a low-code integration platform, their developers will go away to a different company to continue doing a low-code platform."
-  },
-  {
-    startTime: 5294.81,
-    person: 'Karol',
-    text: ' So they will lose all knowledge.'
-  },
-  {
-    startTime: 5296.45,
-    person: 'Karol',
-    text: ' They will have to rehire the whole team.'
-  },
-  {
-    startTime: 5297.89,
-    person: 'Karol',
-    text: " They'll get probably Java developers or something like that, and they'll have to retrain them in thinking about interoperability, because those Java developers will be set to back-and-forth front-end or data link."
-  },
-  {
-    startTime: 5311.57,
-    person: 'Karol',
-    text: " That's just not feasible in that sense."
-  },
-  {
-    startTime: 5314.65,
-    person: 'Karol',
-    text: " So, yeah, so that's the difficulty there."
-  },
-  {
-    startTime: 5318.81,
-    person: 'Karol',
-    text: ' Right, here we have Tom Donker referring other books about DDD.'
-  },
-  {
-    startTime: 5324.45,
-    person: 'Karol',
-    text: " Yes, we have also Vernon with a red and green book, also a nice read if you're learning DDD."
-  },
-  {
-    startTime: 5330.77,
-    person: 'Karol',
-    text: ' So, yeah, okay, you know what?'
-  },
-  {
-    startTime: 5334.71,
-    person: 'Karol',
-    text: ' I do have also, somewhere here in the tab, I did some playing around thinking about the quadrants.'
-  },
-  {
-    startTime: 5341.69,
-    person: 'Karol',
-    text: ' I think I showed you that when we chatted about the livestream earlier.'
-  },
-  {
-    startTime: 5345.07,
-    person: 'Karol',
-    text: ' I actually tried to map even-driven architecture and different patterns from even-driven architecture into the quadrants.'
-  },
-  {
-    startTime: 5354.57,
-    person: 'Karol',
-    text: ' I must say mapping async to this is quite a challenge.'
-  },
-  {
-    startTime: 5360.31,
-    person: 'Karol',
-    text: " At least that's my take of how I would use those certain patterns in terms of various options."
-  },
-  {
-    startTime: 5369.69,
-    person: 'Karol',
-    text: ' So this, again, depends on what you wanna achieve and why you wanna do it, and those patterns are various, and people understand them also differently.'
-  },
-  {
-    startTime: 5379.75,
-    person: 'Karol',
-    text: ' But just looking at the data link, content-based routing went into the data link straight away, right?'
-  },
-  {
-    startTime: 5386.73,
-    person: 'Karol',
-    text: " Because in pure EDA, you shouldn't do content-based routing because that introduces additional complexity."
-  },
-  {
-    startTime: 5392.47,
-    person: 'Karol',
-    text: " And I was like, hmm, yeah, we're pulling, even sourcing from legacy systems that cannot do events."
-  },
-  {
-    startTime: 5401.34,
-    person: 'Karol',
-    text: ' That feels like the data link.'
-  },
-  {
-    startTime: 5404.18,
-    person: 'Karol',
-    text: ' I know that I asked Daniel about mapping EDA to the quadrants, and he said he never tried it.'
-  },
-  {
-    startTime: 5412,
-    person: 'Karol',
-    text: " What's your perspective on that?"
-  },
-  {
-    startTime: 5415.38,
-    person: 'Miriam',
-    text: " I think in general, I mean, I think it's great to also bring it more to the architecture and ecosystem perspective, right?"
-  },
-  {
-    startTime: 5422.9,
-    person: 'Miriam',
-    text: " We never did that because we didn't require it, let's be honest."
-  },
-  {
-    startTime: 5426.28,
-    person: 'Miriam',
-    text: ' We develop tools if we need them right now, right?'
-  },
-  {
-    startTime: 5429.5,
-    person: 'Miriam',
-    text: ' Of course.'
-  },
-  {
-    startTime: 5430.18,
-    person: 'Miriam',
-    text: ' With people, mainly.'
-  },
-  {
-    startTime: 5432.06,
-    person: 'Miriam',
-    text: ' So this was really interesting what you brought up.'
-  },
-  {
-    startTime: 5434.3,
-    person: 'Miriam',
-    text: ' I never traded myself media, but I think this is a really interesting thing that you came up with, and I really like it because I think it gives it another layer, right, on top of it.'
-  },
-  {
-    startTime: 5443.48,
-    person: 'Miriam',
-    text: ' We also discussed other topics, like on an architectural ecosystem level that we never thought of when we designed it the first time, right?'
-  },
-  {
-    startTime: 5450.94,
-    person: 'Miriam',
-    text: ' Because we just needed something to discuss with developers and architects.'
-  },
-  {
-    startTime: 5454.22,
-    person: 'Miriam',
-    text: ' That was the need we had at the time where we came up with it, right?'
-  },
-  {
-    startTime: 5458.02,
-    person: 'Karol',
-    text: " So I think- The key difference is that I'm a researcher and I do research, so I ponder on things that I'm not pragmatic in them because I just start thinking about them and then see if they apply to anything practical."
-  },
-  {
-    startTime: 5472.26,
-    person: 'Karol',
-    text: " So that's the difference there."
-  },
-  {
-    startTime: 5475.1,
-    person: 'Miriam',
-    text: ' I did a lot of research too, especially during my PhD.'
-  },
-  {
-    startTime: 5479.38,
-    person: 'Miriam',
-    text: ' But I think, as I said, most of the times right now we develop things that we really need based on what we discuss with people, right?'
-  },
-  {
-    startTime: 5487.36,
-    person: 'Miriam',
-    text: ' We come up with solutions for problems we already see just because this is interesting.'
-  },
-  {
-    startTime: 5492.12,
-    person: 'Miriam',
-    text: ' But I think also, I mean, we work on different things, right?'
-  },
-  {
-    startTime: 5496.84,
-    person: 'Miriam',
-    text: " That's also what you see here because I mainly work with teams, right?"
-  },
-  {
-    startTime: 5499.8,
-    person: 'Miriam',
-    text: ' I have lots of different- If I would come with that, they would be completely overwhelmed, right?'
-  },
-  {
-    startTime: 5505.72,
-    person: 'Miriam',
-    text: ' So just a whole different level of people to discuss, right?'
-  },
-  {
-    startTime: 5509.66,
-    person: 'Karol',
-    text: " Yeah, this is basically taking Gregor Horst's book, Enterprise Integration Patterns and just throwing it on the quadrants."
-  },
-  {
-    startTime: 5518.5,
     person: 'Karol',
-    text: ' Some of those patterns are literally taken from that book.'
+    text: ' And how often does these kind of errors happen that the crate is misplaced, or you need to like, start again?'
   },
   {
-    startTime: 5521.9,
-    person: 'Miriam',
-    text: ' Yeah.'
+    startTime: 3724.27,
+    person: 'Valeri',
+    text: ' In this particular case, not often, but you can take this piece, copy-paste it like 20 times, and you will get the back of the building.'
   },
   {
-    startTime: 5522.42,
-    person: 'Karol',
-    text: ' Others are redefined.'
+    startTime: 3734.27,
+    person: 'Valeri',
+    text: " It's the storage with all those crates, like 50k per a single piece, so it would be like 150k crates or positions per warehouse, somewhat, give or take, so it actually happens quite often, so thousands of times per day, so the whole storage area is built around these unhappy flows, so that you can deal with them."
   },
   {
-    startTime: 5524.6,
+    startTime: 3765.44,
     person: 'Karol',
-    text: ' And it just pops up patterns and there are different flavours to pops up.'
+    text: " Okay, so just from that perspective, I understand why you do orchestration instead of choreography, because if you're dealing with so many unhappy flows that you need to compensate for, it's always better to have that state in an orchestrator that manages all states of different executors, rather than have it choreographed, because choreography is a lot more complex in error handling."
   },
   {
-    startTime: 5528.46,
-    person: 'Karol',
-    text: ' And we have them, the pops up we have as a broadcast with a rich event, with broadcast with anaemic, multicasts, and waiter pattern, which is a completely different way of broadcasting, right?'
+    startTime: 3788.38,
+    person: 'Valeri',
+    text: " It's not actually like that, so the logic of all the errors related to storage is like 95% isolated in the storage service, or whatever it's called."
   },
   {
-    startTime: 5540.7,
-    person: 'Karol',
-    text: ' And these are all certain types of data movement and application integration that is completely different than traditional synchronous APIs, right?'
+    startTime: 3800.72,
+    person: 'Valeri',
+    text: " It's pretty down to physical, but of course, you still have a bit of a trickle back to the orchestrator if something you are trying to store has a high impact on the business flow."
   },
   {
-    startTime: 5553.46,
-    person: 'Karol',
-    text: ' So that makes quite a difference in thinking.'
+    startTime: 3814.34,
+    person: 'Valeri',
+    text: ' For instance, you want to store a crate for an order of some customer that is really urgent, that needs to be sent out of the warehouse in the next 30 minutes, or actually not store, retrieve, and if something goes wrong, orchestrator needs to know, so that it can take an executive decision of what do we do for this particular customer, right?'
   },
   {
-    startTime: 5558.16,
-    person: 'Karol',
-    text: " And then I'll go back to the raw image here."
+    startTime: 3838.72,
+    person: 'Valeri',
+    text: ' In that sense, there is a bit of a trickling, but orchestrator is largely unaware of the hardware world.'
   },
   {
-    startTime: 5564.2,
-    person: 'Karol',
-    text: ' Then I was pondering on this from a perspective of an enterprise application integration from that ecosystem perspective that I do research on.'
+    startTime: 3846.76,
+    person: 'Valeri',
+    text: " Actually, not largely, it's completely unaware of the hardware world."
   },
   {
-    startTime: 5574.18,
+    startTime: 3850.72,
     person: 'Karol',
-    text: " And basically, oh, well, maybe I'll shift here."
+    text: ' Okay, so majority of the error handling is actually in the executor for that specific area, or piece of an area.'
   },
   {
-    startTime: 5577.34,
-    person: 'Karol',
-    text: ' Basically we have in the research, we have four different architectural styles for interoperability on an ecosystem level.'
+    startTime: 3859.48,
+    person: 'Valeri',
+    text: ' That actually depends on what kind of errors are we talking about, because there are a multitude of errors.'
   },
   {
-    startTime: 5586.76,
-    person: 'Karol',
-    text: " Ignore the spaghetti architecture because it's just for reference."
+    startTime: 3866.08,
+    person: 'Valeri',
+    text: " There are those that are hardware-driven, and some of them can be solved locally, then you're in a good state."
   },
   {
-    startTime: 5590.72,
-    person: 'Karol',
-    text: " That's not an architectural style."
+    startTime: 3872.52,
+    person: 'Valeri',
+    text: ' Some of them have to trickle all the way up, so that you get this high-level command, what the hell do I do with that?'
   },
+  { startTime: 3879.2, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 5592.04,
-    person: 'Karol',
-    text: " That's a consequence of unmanaged point to point."
+    startTime: 3879.76,
+    person: 'Valeri',
+    text: ' And some of them are not hardware-related, but process-related.'
   },
   {
-    startTime: 5596.34,
-    person: 'Karol',
-    text: " So if we're looking at DIQs from a perspective of a system, we're looking from a perspective of point to point in ecosystem styles."
+    startTime: 3885.32,
+    person: 'Valeri',
+    text: " Imagine, you're standing in front of a station, and the screen shows you, please pick five bananas to the crate on the right, but you're like, but there are only three."
   },
+  { startTime: 3896.46, person: 'Valeri', text: ' Oh.' },
   {
-    startTime: 5608.1,
-    person: 'Karol',
-    text: " That's basically just client server relationship, right?"
+    startTime: 3896.92,
+    person: 'Valeri',
+    text: " Yeah, and that is something you have to deal with, because now you apparently have less stock than you assume there is, or you're looking inside the crate, oh, the milk spilled, and it's not safe to send back on the conveyor, so you go into the rework flow, how do I fix that?"
   },
+  { startTime: 3914.72, person: 'Valeri', text: ' So, for that, you have also the workstations.' },
   {
-    startTime: 5612.88,
-    person: 'Karol',
-    text: ' But then I tried to map it as event driven.'
+    startTime: 3917.92,
+    person: 'Valeri',
+    text: " Everything that can be fixed there goes there, apart from the spilled milk, because that's not safe."
   },
   {
-    startTime: 5618.06,
-    person: 'Karol',
-    text: ' Broker, yeah, you can do through broker, which is most parts is batch ETL, ELT, but you can do single record processing as well.'
+    startTime: 3924.44,
+    person: 'Valeri',
+    text: " And these kind of unhappy flows, they go through the whole system, because executors, executive systems are involved, orchestrators are involved, because that's part of the business flow."
   },
+  { startTime: 3937.7, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 5629.28,
+    startTime: 3938.82,
     person: 'Karol',
-    text: ' It depends how you build that integration flow.'
+    text: ' So, from a perspective of events, and the workflow in such an environment, how do you identify these kind of errors, like spilled milk, or insufficient bananas?'
   },
+  { startTime: 3952.72, person: 'Valeri', text: ' Two types.' },
   {
-    startTime: 5631.84,
-    person: 'Karol',
-    text: ' The fun part is when you go into API led architecture, which is an offshoot of a service orientated architecture with three distinct layers.'
+    startTime: 3953.8,
+    person: 'Valeri',
+    text: ' Some of them are done by scanners, or actually specific pieces of equipment.'
   },
   {
-    startTime: 5641.71,
-    person: 'Karol',
-    text: " And this is where the fun part began for me because I looked at the diagram and basically I'm looking like, oh, okay."
+    startTime: 3960.84,
+    person: 'Valeri',
+    text: " You can do the height check to know how high the crate is, because if it's too high, it's not safe to send, because it will start bumping into things."
   },
   {
-    startTime: 5651.7,
-    person: 'Karol',
-    text: ' I would probably rename the quadrants a little bit for that perspective.'
+    startTime: 3971.72,
+    person: 'Valeri',
+    text: " That's automatically done, creates a physical check."
   },
+  { startTime: 3974.88, person: 'Valeri', text: ' Same goes to weight.' },
   {
-    startTime: 5655.6,
-    person: 'Karol',
-    text: " But in API led architecture, I do not see data links at all because I'm on an ecosystem level."
+    startTime: 3975.88,
+    person: 'Valeri',
+    text: " You have a certain limitation of how heavy the stuff can be, so you can simply weigh it down and decide whether it's safe or not."
   },
   {
-    startTime: 5662.84,
-    person: 'Karol',
-    text: " So they're not relevant."
+    startTime: 3983.92,
+    person: 'Valeri',
+    text: " But types of like, oh, I have less stock than I thought, or it's something that is normally reported by humans at the stations who do the picking."
   },
   {
-    startTime: 5664.82,
-    person: 'Karol',
-    text: " So if I'm looking at this from API led, so this here backend for frontend, this is the exposure of data in certain way."
+    startTime: 3992.74,
+    person: 'Valeri',
+    text: ' However, the new thinking is also like, we do trial the visions of cameras that look into the crate and do the counting of stock, checking, oh, you actually have all those five bananas, so whatever is countable.'
   },
+  { startTime: 4012, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 5674.72,
+    startTime: 4012.54,
     person: 'Karol',
-    text: ' Okay, so that would be in MuleSoft nomenclature, my experience layer.'
+    text: ' Can you move to the next picture, just to show our viewers the scale of the endeavour here?'
   },
+  { startTime: 4020.6, person: 'Karol', text: ' Yes.' },
   {
-    startTime: 5680.88,
-    person: 'Karol',
-    text: " In my nomenclature, that's the channel."
+    startTime: 4020.98,
+    person: 'Valeri',
+    text: " That's actually a very small part of conveyors."
   },
   {
-    startTime: 5682.56,
-    person: 'Karol',
-    text: ' So this is the layer that is consumed by the main systems.'
+    startTime: 4024.84,
+    person: 'Valeri',
+    text: " That's how they are stacked, and that's only one floor of the building."
   },
   {
-    startTime: 5687.68,
-    person: 'Karol',
-    text: ' Then the data product layer is the access to raw data, the raw services, unfiltered, generic.'
+    startTime: 4030.5,
+    person: 'Valeri',
+    text: " Oh, I don't remember the specific one, but I think there are more."
   },
   {
-    startTime: 5695.4,
-    person: 'Karol',
-    text: " So that's my adapter layer or the system layer in MuleSoft, right?"
+    startTime: 4034.82,
+    person: 'Valeri',
+    text: ' At the bottom, there are stations, actually, where actual humans are, and then the top is just more layers of the belts where the crates travel to different parts of the system.'
   },
   {
-    startTime: 5700.72,
-    person: 'Karol',
-    text: ' And then the composition service, quite funny enough, is the exact same naming that I use for the middle layer, which is the composition layer.'
+    startTime: 4047.08,
+    person: 'Valeri',
+    text: " So, that's where I've spent an insane amount of hours testing the system."
   },
   {
-    startTime: 5708.6,
+    startTime: 4052.6,
     person: 'Karol',
-    text: ' And we have composition services in there, which is the layer where we take the data products and the raw data from different systems from the adapter layer and create services from them.'
+    text: ' So, basically, the whole warehouse in terms of conveyors are divided into layers that actually have different functions in that sense?'
   },
+  { startTime: 4062.32, person: 'Valeri', text: ' Yeah.' },
+  { startTime: 4063.02, person: 'Valeri', text: ' Well, it depends, again, on the site.' },
   {
-    startTime: 5721.54,
-    person: 'Karol',
-    text: ' So create some sort of generic products that we can offer as reusable services.'
+    startTime: 4067.44,
+    person: 'Valeri',
+    text: ' Our very first one was a bit of a, you know, first babies are always the most interesting ones, and there we had a ready building already, like all the walls and the roof, so we tried to squeeze the equipment in.'
   },
+  { startTime: 4083.46, person: 'Valeri', text: ' It was hard.' },
   {
-    startTime: 5730.34,
-    person: 'Karol',
-    text: ' And then we offer those reusable services to the channel layer.'
+    startTime: 4084.38,
+    person: 'Valeri',
+    text: ' There, you had to put some imagination, not us, but the hardware providers to squeeze all those conveyors so that everything that has been planned fits.'
   },
   {
-    startTime: 5736.18,
-    person: 'Karol',
-    text: ' And that channel layer is specialised towards a specific consumer.'
+    startTime: 4094.24,
+    person: 'Valeri',
+    text: ' For this particular site, we took the different approach.'
   },
   {
-    startTime: 5739.94,
-    person: 'Karol',
-    text: ' There is a single API per consumer.'
+    startTime: 4098.359,
+    person: 'Valeri',
+    text: " Basically, building is built for the project, not the project's questions as existing buildings."
   },
   {
-    startTime: 5743.42,
+    startTime: 4104.8,
     person: 'Karol',
-    text: ' They do not reuse API between one another.'
+    text: ' So, you first design the actual conveyors and whatnot, and then build the building around it, at least in the design, and then build the building and place the conveyors in as per specification.'
   },
+  { startTime: 4117.02, person: 'Valeri', text: ' Yeah.' },
   {
-    startTime: 5745.9,
-    person: 'Karol',
-    text: ' So if I have a Salesforce instance, that Salesforce will be consuming Salesforce channel API.'
+    startTime: 4117.279,
+    person: 'Valeri',
+    text: " So, you have a space, so now you don't need to solve this puzzle."
   },
   {
-    startTime: 5751.34,
-    person: 'Karol',
-    text: ' If I have a SAP, SAP will be consuming SAP channel, etcétera, etcétera, right?'
+    startTime: 4120.74,
+    person: 'Valeri',
+    text: ' How do I plan this piece so that it still fits?'
   },
   {
-    startTime: 5757.66,
-    person: 'Karol',
-    text: ' So this is a tailored, specific, non-reusable API.'
+    startTime: 4123.88,
+    person: 'Valeri',
+    text: " Because, actually, there is a column in there, and I didn't think about that column."
   },
+  { startTime: 4131.96, person: 'Karol', text: ' This reminds me of me playing Satisfactory.' },
   {
-    startTime: 5764.48,
+    startTime: 4136.939,
     person: 'Karol',
-    text: ' And that made it very interesting because this is very applicable and a very nice way to explain the layers of API-led architecture and their purpose when designing APIs for people that are not integrators.'
+    text: " It's basically a game about conveyor belts and production elements and moving all the pieces around."
   },
+  { startTime: 4143.96, person: 'Karol', text: " It's kind of the same way." },
   {
-    startTime: 5780.68,
+    startTime: 4145.14,
     person: 'Karol',
-    text: " Because some people think that, oh, putting that iPaaS, that's an overkill."
+    text: ' You first build the building and then start placing conveyors inside.'
   },
+  { startTime: 4148.319, person: 'Karol', text: " It's like, huh, this doesn't fit." },
+  { startTime: 4152.2, person: 'Karol', text: " It's pretty much it." },
   {
-    startTime: 5784.68,
+    startTime: 4153.52,
     person: 'Karol',
-    text: " That's too much."
+    text: ' If you ever want to emulate this for your own, just play Satisfactory.'
   },
   {
-    startTime: 5786.56,
-    person: 'Karol',
-    text: " I mean, yes, if you put an API-led architecture in a company that has five systems total, that's definitely an overkill."
+    startTime: 4157.66,
+    person: 'Valeri',
+    text: " I think that's already been done for one of the sites."
   },
   {
-    startTime: 5795.48,
-    person: 'Karol',
-    text: " They don't probably even need an iPaaS."
+    startTime: 4161.12,
+    person: 'Valeri',
+    text: " Engineers couldn't resist this possibility, so I believe it already exists."
   },
+  { startTime: 4166.1, person: 'Karol', text: ' Oh, wow.' },
+  { startTime: 4170.34, person: 'Karol', text: ' That must be quite a puzzle to solve.' },
   {
-    startTime: 5797.46,
+    startTime: 4175.3,
     person: 'Karol',
-    text: " They could do well with even driven architecture and they'll be fine."
-  },
-  {
-    startTime: 5801.22,
-    person: 'Miriam',
-    text: ' Yes.'
+    text: " It's basically a physical puzzle, how to place all of this together."
   },
   {
-    startTime: 5802.44,
+    startTime: 4179.68,
     person: 'Karol',
-    text: ' But if you have a company, a corporate environment that has a hundred domain systems, good luck doing that point-to-point or EDA without any capacity for transformations and protocol mediation, etcétera, etcétera.'
+    text: ' If you would try to say, what is the amount of people that are needed to work on this to solve this in terms of lining this up in physical space as in conveyors, then the electrical, then all the placement of paths so that people can move around safely?'
   },
   {
-    startTime: 5819.02,
+    startTime: 4205.24,
     person: 'Karol',
-    text: ' Not feasible at all.'
-  },
-  {
-    startTime: 5821.6,
-    person: 'Miriam',
-    text: " I found it very interesting because I recently talked to some people that said, well, all these API-led, we decided we don't need it."
-  },
-  {
-    startTime: 5830.98,
-    person: 'Miriam',
-    text: ' We go back to point-to-point.'
-  },
-  {
-    startTime: 5832.86,
-    person: 'Miriam',
-    text: " That was something that I already heard, which was very interesting because I thought actually what was missing and that's what you touched before is the mindset shift, right?"
-  },
-  {
-    startTime: 5844.44,
-    person: 'Miriam',
-    text: " That's what you're saying."
-  },
-  {
-    startTime: 5845.48,
-    person: 'Miriam',
-    text: ' You need to shift the mindset.'
-  },
-  {
-    startTime: 5847.54,
-    person: 'Miriam',
-    text: " Even if you want to do something like that, you need to completely understand that's a different mindset."
+    text: ' How many people work on the design of such a thing?'
   },
+  { startTime: 4209.8, person: 'Valeri', text: " I actually don't know." },
+  { startTime: 4211.6, person: 'Valeri', text: ' I have no idea.' },
   {
-    startTime: 5852.66,
-    person: 'Miriam',
-    text: " And I think that some companies that don't really manage to do this mindset shift are actually going back because it costs them a lot of money and they don't see the benefits."
+    startTime: 4213.46,
+    person: 'Valeri',
+    text: " I can't imagine how many people, physical business crew, their driver go around and collect thousands of them because the site is huge."
   },
   {
-    startTime: 5863.2,
-    person: 'Miriam',
-    text: ' So did you already hear about something like that or can you imagine that as well?'
+    startTime: 4223.94,
+    person: 'Valeri',
+    text: " But in terms of the design, you don't need that many, actually."
   },
+  { startTime: 4229.8, person: 'Karol', text: ' Quite possibly.' },
   {
-    startTime: 5868.72,
-    person: 'Miriam',
-    text: ' Because I heard that and I was really surprised that the mindset shift is so difficult for some people, right?'
-  },
-  {
-    startTime: 5875.6,
+    startTime: 4231.78,
     person: 'Karol',
-    text: " I'm not surprised because that's literally the consequence of Conway's law."
-  },
-  {
-    startTime: 5881.4,
-    person: 'Miriam',
-    text: ' Yeah.'
+    text: " It's like a big puzzle box in that sense, just to weave that all in, plant that in, and those layers of different aspects."
   },
   {
-    startTime: 5881.78,
+    startTime: 4241.48,
     person: 'Karol',
-    text: ' Literally.'
+    text: ' I remember from studies in terms of electrical engineering, we got blueprints of a building and we were supposed to place an electrical design into it.'
   },
   {
-    startTime: 5882.98,
-    person: 'Miriam',
-    text: ' Yeah, exactly.'
+    startTime: 4253.36,
+    person: 'Karol',
+    text: ' And then you layer on top of that all the waterworks.'
   },
   {
-    startTime: 5884.24,
+    startTime: 4258.54,
     person: 'Karol',
-    text: " I'm not surprised by this to the extent that this was literally the problem of, in a lot of cases, of the early adoptions of ESBs."
+    text: " And it's layers of layers of layers that need to cooperate with one another because you cannot place the electrical in the same spot as the water going, right?"
   },
   {
-    startTime: 5897.18,
-    person: 'Miriam',
-    text: ' Yes.'
+    startTime: 4269.94,
+    person: 'Karol',
+    text: " It's a big puzzle box of collaboration between different experts."
   },
   {
-    startTime: 5897.8,
+    startTime: 4276.3,
     person: 'Karol',
-    text: ' Because companies think they can solve their interoperability problems by throwing technology at them.'
+    text: " Here it is mostly mechanical and electrical, but still, it's..."
   },
+  { startTime: 4281.2, person: 'Valeri', text: ' That reminds me of one of my favourite stories.' },
   {
-    startTime: 5903.78,
-    person: 'Miriam',
-    text: ' Of course, always.'
+    startTime: 4286.94,
+    person: 'Valeri',
+    text: " I didn't have to deal a lot with the people who assemble the sites because normally when the engineers go in there, it's already mostly assembled and we already start testing."
   },
   {
-    startTime: 5905.04,
-    person: 'Miriam',
-    text: ' Yeah.'
+    startTime: 4299.46,
+    person: 'Valeri',
+    text: ' But then I just moved to the Netherlands after COVID exactly for our first warehouse for basically sightseeing.'
   },
+  { startTime: 4308.96, person: 'Valeri', text: " That's where I'm going to be working on." },
   {
-    startTime: 5905.46,
-    person: 'Karol',
-    text: " That's not the case."
+    startTime: 4310.88,
+    person: 'Valeri',
+    text: " And so I'm walking around with these big starry eyes."
   },
+  { startTime: 4314.48, person: 'Valeri', text: " I'm like, wow, it's so cool." },
+  { startTime: 4316.26, person: 'Valeri', text: ' And on the floor, there are two guys sitting.' },
   {
-    startTime: 5906.76,
-    person: 'Karol',
-    text: " Technology doesn't solve the problems."
+    startTime: 4320.16,
+    person: 'Valeri',
+    text: ' You can imagine the type of man who did construction, tough build, quite crazy age, with the screwdrivers.'
   },
   {
-    startTime: 5908.58,
-    person: 'Karol',
-    text: ' If you just throw technology at it without the underlying organisational change with it, the technology will fail.'
+    startTime: 4329,
+    person: 'Valeri',
+    text: " And it happened so that they'd been speaking Russian."
   },
   {
-    startTime: 5915.64,
-    person: 'Karol',
-    text: ' No matter how good that technology is.'
+    startTime: 4332.3,
+    person: 'Valeri',
+    text: " And of course, they didn't know that I do speak Russian."
   },
   {
-    startTime: 5917.96,
-    person: 'Karol',
-    text: " And it's not the fault of the technology because the technology without proper implementation and governance will solve no problems."
+    startTime: 4334.42,
+    person: 'Valeri',
+    text: ' And then they look at us and like, what are all those kids are doing in here?'
   },
   {
-    startTime: 5925.96,
-    person: 'Karol',
-    text: " That's just the case it is."
+    startTime: 4342.56,
+    person: 'Valeri',
+    text: " And I'm thinking, oh my God, these kids are going to build a system around that."
   },
   {
-    startTime: 5928.18,
+    startTime: 4348.38,
     person: 'Karol',
-    text: " That's why we don't use the term ESB anymore in general conversation about interoperability because too many companies have burned on ESBs, burned a lot of money, a lot of effort with very little return on investment because they just did technology without changing the way they work, without changing the processes, without changing the governance."
+    text: " That's what kids do nowadays, build systems, right?"
   },
+  { startTime: 4356.12, person: 'Karol', text: ' Wow.' },
+  { startTime: 4356.46, person: 'Karol', text: " That's something." },
+  { startTime: 4358.86, person: 'Karol', text: " It's a completely different scale." },
+  { startTime: 4361.14, person: 'Karol', text: ' Yeah.' },
   {
-    startTime: 5953.74,
+    startTime: 4364.62,
     person: 'Karol',
-    text: ' And they expected magical miracles.'
+    text: " Looking at a bit of a skeleton of our conversation, you want to walk us through the actual implementation of what's the logic behind implementing like more in details."
   },
   {
-    startTime: 5956.36,
+    startTime: 4380,
     person: 'Karol',
-    text: ' This is one of the problems we face as integration architects that we need to go in and have a conversation about the organisation rather than technology.'
-  },
-  {
-    startTime: 5968.54,
-    person: 'Miriam',
-    text: ' Yeah.'
-  },
-  {
-    startTime: 5968.88,
-    person: 'Miriam',
-    text: " Daniel and me wrote actually an article on the code centric block, which is when your API platform lacks the desired impact, because that's exactly what we see, right?"
+    text: " We already touched upon the orchestrators and executors I think it's worth to give it the proper visual overview and just do a quick walkthrough because that's probably a bit of a unique setup in terms of VDA and the cooperation of different classes of software."
   },
+  { startTime: 4401.14, person: 'Valeri', text: ' Yeah.' },
   {
-    startTime: 5978.16,
-    person: 'Miriam',
-    text: " When we talk to customers, they would say, well, we bought the tool, we're done."
+    startTime: 4401.76,
+    person: 'Valeri',
+    text: " Well, I definitely can accompany those few diagrams I prepared, but that's going to be mostly a rehearsal of what's been already mentioned."
   },
+  { startTime: 4411.94, person: 'Valeri', text: ' All right.' },
+  { startTime: 4412.68, person: 'Valeri', text: " So that's what I've been saying." },
   {
-    startTime: 5983.5,
-    person: 'Miriam',
-    text: " And then they realise, oh no, we're not."
+    startTime: 4415.4,
+    person: 'Valeri',
+    text: " So there's two bottom layers is something you already have provided for us and we build this kind of top pile of the pyramid."
   },
   {
-    startTime: 5985.12,
-    person: 'Miriam',
-    text: " And it's not working as expected, but why, right?"
+    startTime: 4422.46,
+    person: 'Valeri',
+    text: ' And then this top pile is split naturally in those executors, like beginning and dispatching something you hopefully already heard.'
   },
   {
-    startTime: 5987.98,
-    person: 'Miriam',
-    text: " And that's exactly what you're saying."
+    startTime: 4431.1,
+    person: 'Valeri',
+    text: " There's basically processes that's very tied to the machinery and this fancy colours actually already show that we have at least three different types of these systems depending on hardware in implementation and God knows what."
   },
   {
-    startTime: 5989.52,
-    person: 'Miriam',
-    text: ' Most people think that technology is enough, but as you stated at the beginning, or we stated all at the beginning, the technical aspect is not the most important one.'
+    startTime: 4446.08,
+    person: 'Valeri',
+    text: ' And here the events going back and forth is basically transport system tells us that this can happen.'
   },
   {
-    startTime: 5997.74,
-    person: 'Miriam',
-    text: ' I mean, you can solve that clearly, but the other aspects, right?'
+    startTime: 4451.98,
+    person: 'Valeri',
+    text: ' And we most often say, hey, please transport this particular crate somewhere.'
   },
+  { startTime: 4458.12, person: 'Valeri', text: ' This type of communication we expect here.' },
   {
-    startTime: 6002.46,
-    person: 'Miriam',
-    text: ' The aspects like how do we communicate?'
+    startTime: 4460.76,
+    person: 'Valeri',
+    text: ' But of course, there are many more errors exactly for all the unhappy flows that might happen.'
   },
+  { startTime: 4465.92, person: 'Karol', text: ' Yeah.' },
   {
-    startTime: 6005,
-    person: 'Miriam',
-    text: ' How do we build up our teams?'
-  },
-  {
-    startTime: 6007.92,
-    person: 'Miriam',
-    text: ' How do we organise governance?'
-  },
-  {
-    startTime: 6010.16,
-    person: 'Miriam',
-    text: ' All these things.'
-  },
-  {
-    startTime: 6010.98,
-    person: 'Miriam',
-    text: " How do we shift people's mindset from we're just building our back end for front end and we don't care about anything else, right?"
-  },
-  {
-    startTime: 6017.42,
-    person: 'Miriam',
-    text: " I had in a training, a guy who said, well, I don't care if anyone likes my APIs."
-  },
-  {
-    startTime: 6023.08,
-    person: 'Miriam',
-    text: ' I built them the way I want them.'
-  },
-  {
-    startTime: 6024.26,
-    person: 'Miriam',
-    text: " And if nobody likes them, that's it."
+    startTime: 4466.58,
+    person: 'Karol',
+    text: ' So these are basically machine events, events coming from specific machines like scanners.'
   },
+  { startTime: 4472.9, person: 'Valeri', text: ' Exactly.' },
+  { startTime: 4473.58, person: 'Valeri', text: ' Scanners, one of them.' },
   {
-    startTime: 6026.36,
-    person: 'Miriam',
-    text: " They're like, yeah, well, you can think like that, but if your company wants to be like design APIs as a product and be API first, you need to change your mindset."
+    startTime: 4474.98,
+    person: 'Valeri',
+    text: " Then you also have those scale, weigh scales and height checks, the whole new separate world of this big storage we've been looking at because it has very intricate contract because there are like aisles, levels, positions, and it's not that just transport there."
   },
+  { startTime: 4493.34, person: 'Valeri', text: ' You have it in multiple stages.' },
+  { startTime: 4494.98, person: 'Valeri', text: ' So a lot of things can happen in between.' },
   {
-    startTime: 6038.72,
-    person: 'Miriam',
-    text: " And it's very difficult to reach these people and change their mindset, right?"
+    startTime: 4499.04,
+    person: 'Valeri',
+    text: " It's all happens at this layer between the transport system and our executor systems."
   },
   {
-    startTime: 6042.24,
-    person: 'Miriam',
-    text: ' You need, it needs a lots of time.'
+    startTime: 4505.16,
+    person: 'Valeri',
+    text: " And then on top of that, we do have orchestrators that don't know anything about physical worlds in terms of scans, crates, etcétera."
   },
+  { startTime: 4515.78, person: 'Valeri', text: " It's of no importance to them." },
   {
-    startTime: 6044.4,
-    person: 'Miriam',
-    text: ' It needs special effort.'
+    startTime: 4518.98,
+    person: 'Valeri',
+    text: " That's the way we abstract things away, but they deal with the higher level terms of basically processes, how to route things, how to do the full order from the picking to dispatching."
   },
   {
-    startTime: 6045.92,
-    person: 'Miriam',
-    text: " You can't just put a tool there and assume people will love it and know what to do with it and how it works and why they need it, right?"
+    startTime: 4531.72,
+    person: 'Valeri',
+    text: ' They send the commands that executors would take and do something about, and then report the status, hopefully completed in most cases, but of course, whatever, nothing happens.'
   },
   {
-    startTime: 6051.92,
+    startTime: 4546.48,
     person: 'Karol',
-    text: " It's about applying the value, showing the value of these tools and where they bring help and value to the conversation."
+    text: ' So answering the one question that was in chat earlier in terms of Lego blocks and abstraction and plug and play.'
   },
   {
-    startTime: 6061.82,
+    startTime: 4555,
     person: 'Karol',
-    text: " That's one of the biggest challenges there, because a lot of the times, if we look at companies that are not digital, right?"
+    text: ' So looking at this, it means that executors know about the physical world and their adapters towards the machines that are actually in the physical world in the warehouse.'
   },
   {
-    startTime: 6072.74,
+    startTime: 4566.58,
     person: 'Karol',
-    text: ' They see IT as just a syphon of cost.'
+    text: ' And then orchestrators are more generic, completely abstracted away from the physical world and they plug and play with the executors.'
   },
   {
-    startTime: 6078.04,
+    startTime: 4575.38,
     person: 'Karol',
-    text: " It's just draining money, right?"
+    text: ' Well, plug and play probably with small adaptations, smaller than the executors then.'
   },
+  { startTime: 4581.48, person: 'Karol', text: ' Yeah, indeed.' },
+  { startTime: 4584.96, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 6080.56,
+    startTime: 4586.9,
     person: 'Karol',
-    text: ' Explaining this in these kinds of companies is already a nightmarish challenge.'
+    text: ' And so the orchestrators, they basically orchestrate, oversee the actions of multiple executors.'
   },
+  { startTime: 4594.2, person: 'Karol', text: ' So you have what?' },
   {
-    startTime: 6084.8,
+    startTime: 4595.84,
     person: 'Karol',
-    text: ' And then while you can still justify the ownership and the alignment here on the business around the main systems that have front-ends and people use directly, this is easy.'
+    text: ' For a zone, you would have multiple executors and an orchestrator?'
   },
+  { startTime: 4602.02, person: 'Karol', text: " What's the dispersal there?" },
   {
-    startTime: 6102.76,
-    person: 'Karol',
-    text: " But if you try to justify that for an integration platform where that integration platform does not have a direct impact on the business, well, doesn't, it does have a direct impact on the business."
+    startTime: 4606,
+    person: 'Valeri',
+    text: " You always have multiple orchestrators because that's basically your business flow."
   },
+  { startTime: 4611.4, person: 'Valeri', text: ' So bounded context isolated somewhat.' },
   {
-    startTime: 6114.78,
-    person: 'Karol',
-    text: " But business does not see that because they don't see a front-end for an integration platform."
+    startTime: 4614.18,
+    person: 'Valeri',
+    text: ' So what we have here is the routing one has a sole purpose of solving the problem, how to deliver those across those big physical areas.'
   },
   {
-    startTime: 6120.4,
-    person: 'Karol',
-    text: " They don't use an integration platform."
+    startTime: 4625.86,
+    person: 'Valeri',
+    text: ' So not from A to B in the sense of on the conveyor belt, but from A to B in terms of the executors, how do I go from picking to dispatching all the way?'
   },
   {
-    startTime: 6122.6,
-    person: 'Karol',
-    text: " They don't know they're using the integration platform."
+    startTime: 4637,
+    person: 'Valeri',
+    text: ' And it will solve all the problems like how many hops do I need to make?'
   },
+  { startTime: 4641.3, person: 'Valeri', text: ' What is the most efficient path?' },
   {
-    startTime: 6125.88,
-    person: 'Karol',
-    text: ' So for them, an integration platform is just a cost.'
+    startTime: 4643.72,
+    person: 'Valeri',
+    text: ' And efficient might mean that they do the few hops or that actually part of the warehouse is combusted or so loaded that I would rather go around because it would be a more efficient way to do that.'
   },
   {
-    startTime: 6128.86,
-    person: 'Karol',
-    text: " It's just infrastructure."
+    startTime: 4656.82,
+    person: 'Valeri',
+    text: ' But basically controlling traffic while releasing here is solely responsible for the journey over a customer order through the warehouse because the goal of the whole warehouse is basically assemble the order that has been ordered, right?'
   },
   {
-    startTime: 6131.78,
-    person: 'Karol',
-    text: " And from that perspective, when we start treating interoperability as infrastructure, well, we don't design for it."
+    startTime: 4674.9,
+    person: 'Valeri',
+    text: ' How can I get this order fully picked if needed, cooled and dispatched?'
   },
   {
-    startTime: 6139.68,
-    person: 'Karol',
-    text: " We don't think about it."
+    startTime: 4682.1,
+    person: 'Valeri',
+    text: ' And in between, if something goes wrong, how do I get to this dispatching state through the rework processes we have?'
   },
   {
-    startTime: 6140.86,
-    person: 'Karol',
-    text: " We don't care about it."
+    startTime: 4690.43,
+    person: 'Valeri',
+    text: " So normally you would expect that most of the orchestrators are present for all the sites while executors depending on the hardware or whether it's actually manual or automated warehouse might be present just as upset for some form or not present at all."
   },
   {
-    startTime: 6141.88,
+    startTime: 4708.19,
     person: 'Karol',
-    text: " We don't design our domain systems for it."
+    text: ' So if you have a specific level of automation that would involve then that we have certain signals about packing inputted by a human or in the near future inputted by the machine, that the machine completed packing and the conveyor can move on with the box.'
   },
   {
-    startTime: 6145.84,
+    startTime: 4728.97,
     person: 'Karol',
-    text: ' And it gives, oh, so many problems.'
+    text: ' And so these would be like types of events that also happen, right?'
   },
   {
-    startTime: 6149.86,
+    startTime: 4733.37,
     person: 'Karol',
-    text: ' The moment we start thinking of an integration platform and our interoperability capabilities as the heart pumping the blood of the business, the shift becomes something real.'
+    text: ' The person packing marks that this has been packed through whatever means of a machinery, like a scanner or something like that.'
   },
+  { startTime: 4744.29, person: 'Karol', text: ' And then the equipment.' },
+  { startTime: 4746.35, person: 'Valeri', text: " Yeah, that's all the events." },
   {
-    startTime: 6163.14,
-    person: 'Karol',
-    text: ' And then the understanding is brought in.'
+    startTime: 4747.91,
+    person: 'Valeri',
+    text: ' So basically the interfaces, we try to keep the interfaces the same.'
   },
   {
-    startTime: 6166.5,
-    person: 'Karol',
-    text: " But that's, to achieve that, that's very difficult."
+    startTime: 4753.71,
+    person: 'Valeri',
+    text: ' So be it a human or a robot, they will eventually call an endpoint in the picking system saying that what has been done and then the picking system will already propagate further.'
   },
   {
-    startTime: 6169.02,
-    person: 'Karol',
-    text: ' That maturity happens in organisations that are very technically driven because they have that understanding.'
+    startTime: 4765.99,
+    person: 'Valeri',
+    text: " But in terms of a higher level, like for this order, that's the result I've got in accordance to what was the command and then do whatever now is needed with this because I'm kind of done with that."
   },
   {
-    startTime: 6178.38,
+    startTime: 4780.21,
     person: 'Karol',
-    text: " So telco, that's one industry where this is just the golden standard."
+    text: " So you're basically also managing the state of the box in that sense."
   },
+  { startTime: 4788.21, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 6185.82,
+    startTime: 4788.77,
     person: 'Karol',
-    text: ' Sometimes happens in banking, not always.'
+    text: " I'm trying to grasp the amount of complexity that goes into just like a single box and it's quite a lot there already."
   },
+  { startTime: 4800.51, person: 'Valeri', text: ' Yeah.' },
   {
-    startTime: 6189.22,
-    person: 'Karol',
-    text: ' I recently saw a implementation of a MuleSoft platform in a bank.'
+    startTime: 4801.03,
+    person: 'Valeri',
+    text: " And now imagine that you've started with a single monolith and it's been already there."
   },
   {
-    startTime: 6194.34,
-    person: 'Karol',
-    text: ' And I was surprised because they even thought about proper domain partitioning over each layer.'
+    startTime: 4806.57,
+    person: 'Valeri',
+    text: " So we don't know this variability of different hardware providers and sites yet, but already on that stage, we figured that, okay, it's not going to be simple."
   },
+  { startTime: 4816.75, person: 'Valeri', text: " It's not going to be beautiful straight away." },
   {
-    startTime: 6200.62,
-    person: 'Karol',
-    text: " I was like, I need to talk to the architect that figured this out because that's just the most mature implementation of an API-led architecture I have saw in my life."
+    startTime: 4818.47,
+    person: 'Valeri',
+    text: " So let's not shoot ourselves and go in microservices straight."
   },
   {
-    startTime: 6210.62,
-    person: 'Karol',
-    text: ' And I saw many, I saw really plenty of implementations of API-led.'
+    startTime: 4822.53,
+    person: 'Valeri',
+    text: " Let's first learn about the main as much as we can, but we already try to decouple as much as possible."
   },
   {
-    startTime: 6215.24,
-    person: 'Karol',
-    text: ' None of them were this mature.'
+    startTime: 4831.61,
+    person: 'Valeri',
+    text: " So that even on the monolith level, dispatching system never knew anything about picking system because in the real world, they don't need to know about each other."
   },
+  { startTime: 4841.23, person: 'Karol', text: ' Yeah.' },
+  { startTime: 4841.93, person: 'Karol', text: " They don't have to be aware." },
   {
-    startTime: 6217.42,
+    startTime: 4843.37,
     person: 'Karol',
-    text: ' I was literally like, give me the person that designed this, that figured this out because I wanna know how he achieved that in an organisation.'
+    text: ' They just have transition elements that go from one to another.'
   },
+  { startTime: 4849.19, person: 'Karol', text: ' Right.' },
+  { startTime: 4850.23, person: 'Karol', text: ' So how does that transition happen?' },
+  { startTime: 4855.71, person: 'Karol', text: ' You do have a few diagrams in that, right?' },
   {
-    startTime: 6226.52,
-    person: 'Karol',
-    text: " I don't care about the technical part because I know how to do this properly."
+    startTime: 4860.01,
+    person: 'Valeri',
+    text: " The laptop of the diagrams actually show the routing problem, but that's, we already kind of covered multiple times."
   },
+  { startTime: 4866.11, person: 'Valeri', text: " So I'm not sure." },
+  { startTime: 4867.29, person: 'Karol', text: ' Yeah.' },
   {
-    startTime: 6230.84,
+    startTime: 4867.69,
     person: 'Karol',
-    text: " But to convince an organisation to follow that and go through with that, it's like, tell me how."
+    text: " Let's just see them for the sake of visuals because they interact with people, right?"
   },
   {
-    startTime: 6238.22,
-    person: 'Karol',
-    text: ' I wanna know.'
+    startTime: 4874.29,
+    person: 'Valeri',
+    text: ' So what the storyline I was preparing while drawing those diagrams.'
   },
   {
-    startTime: 6240.46,
-    person: 'Karol',
-    text: ' It differs from company to company.'
+    startTime: 4878.57,
+    person: 'Valeri',
+    text: ' So all the familiar kind of names, hopefully by now you have picking, dispatching, and you want to go all the way from picking to dispatching, but in between you have other systems.'
   },
+  { startTime: 4889.05, person: 'Valeri', text: ' I call them buffers.' },
   {
-    startTime: 6242.6,
-    person: 'Karol',
-    text: " It's gonna be, yeah, we're gonna tell the same story over and over again and try to explain interoperability."
+    startTime: 4890.11,
+    person: 'Valeri',
+    text: ' It might be conveyor belts, straight, can be looped, can be other systems, God knows what.'
   },
   {
-    startTime: 6249.5,
-    person: 'Karol',
-    text: ' It will land or will not land.'
+    startTime: 4897.89,
+    person: 'Valeri',
+    text: ' So the dark dots are the exits, white dots are the entries.'
   },
   {
-    startTime: 6251.68,
-    person: 'Karol',
-    text: ' It depends on the, oh, on so many aspects.'
+    startTime: 4903.11,
+    person: 'Valeri',
+    text: " So at this particular diagram, it's kind of looks simple, right?"
   },
   {
-    startTime: 6255.6,
-    person: 'Karol',
-    text: ' The first live stream on Loosely Coupled we talked, I talked with Fran Mendes about adoption of EDA in organisations.'
+    startTime: 4906.43,
+    person: 'Valeri',
+    text: ' You just do those three hops and you are happy.'
   },
   {
-    startTime: 6264.7,
-    person: 'Karol',
-    text: ' Like I said in our conversation just before the stream, the conversation shifted to mental health because mental health of your employees in your IT of the organisation impacts the adoption of architecture.'
+    startTime: 4909.39,
+    person: 'Valeri',
+    text: ' However, then you figure out that actually one system can have multiple exits and you have multiple routes.'
   },
   {
-    startTime: 6282.84,
-    person: 'Karol',
-    text: " If those people do not feel psychologically safe, they'll be resistant to change."
+    startTime: 4916.47,
+    person: 'Valeri',
+    text: ' So now you need to decide how each route to take.'
   },
   {
-    startTime: 6288.24,
-    person: 'Karol',
-    text: ' So I think that translates very well to the people that come to your trainings.'
+    startTime: 4919.87,
+    person: 'Valeri',
+    text: ' And what if this particular route is actually super busy because there is a traffic jam there.'
   },
   {
-    startTime: 6292.68,
-    person: 'Karol',
-    text: " If they're not psychologically safe, they are not able to learn."
+    startTime: 4926.59,
+    person: 'Valeri',
+    text: " And that's how you ended up with this routing service, one of our interesting babies."
   },
   {
-    startTime: 6296.66,
-    person: 'Karol',
-    text: " So they come out of the trainings being opinionated and saying that they didn't learn anything."
+    startTime: 4932.07,
+    person: 'Valeri',
+    text: " And here, what's interesting in terms of communication is, so it gets the command that the dispatching system wants the crate."
   },
   {
-    startTime: 6301.62,
-    person: 'Miriam',
-    text: ' Yeah, I think you always have one or two of those.'
+    startTime: 4943.83,
+    person: 'Valeri',
+    text: ' But before it can send the next command to picking saying, hey, actually give away the crate, it has to figure out which route to take.'
   },
   {
-    startTime: 6304.02,
-    person: 'Miriam',
-    text: " Usually most people want to learn, that's my experience."
+    startTime: 4955.31,
+    person: 'Valeri',
+    text: ' And for that, it has to figure out whether the systems in between are available and what state they are in.'
   },
   {
-    startTime: 6307.26,
-    person: 'Miriam',
-    text: " But also I think sometimes it's also the underestimated pressure on people."
+    startTime: 4961.61,
+    person: 'Valeri',
+    text: ' But not in the sense like, oh, give me all your state.'
   },
+  { startTime: 4965.13, person: 'Valeri', text: " It's rather, hey, I have a request for you." },
+  { startTime: 4967.73, person: 'Valeri', text: " It's like this number two to all of them." },
   {
-    startTime: 6312.7,
-    person: 'Miriam',
-    text: " What I also tell a lot of times, and that's also a real story, a developer that I work with who needed to do an API, she told me, if I don't finish this until tomorrow, I'm dead."
+    startTime: 4972.27,
+    person: 'Valeri',
+    text: " And then optimistically, you expect a response saying, yes, I've got you, everything is fine."
   },
   {
-    startTime: 6324.74,
-    person: 'Miriam',
-    text: " That's a quote, you know?"
+    startTime: 4977.91,
+    person: 'Valeri',
+    text: " But then in case one of the responses doesn't come, it might be lost, system is not available, then you deal with this ambiguity."
   },
   {
-    startTime: 6326.48,
-    person: 'Miriam',
-    text: " And if you're in an enterprise context where people are so much under pressure that they need to finish something in no time, what type of good solutions do you expect, right?"
+    startTime: 4986.91,
+    person: 'Valeri',
+    text: ' Okay, apparently the system can be considered unavailable.'
   },
   {
-    startTime: 6335.7,
-    person: 'Karol',
-    text: ' I mean- Oh yeah.'
+    startTime: 4989.75,
+    person: 'Valeri',
+    text: ' So I deal with whatever I have, this is the only one available.'
   },
+  { startTime: 4993.01, person: 'Valeri', text: ' So I will build my route around that.' },
   {
-    startTime: 6337.86,
-    person: 'Miriam',
-    text: " That's always the problem because people are so much under pressure to finish stuff in no time with no experience for it."
+    startTime: 4995.69,
+    person: 'Valeri',
+    text: ' And this kind of logic goes into this bucket of unhappy flows.'
   },
   {
-    startTime: 6345.06,
-    person: 'Miriam',
-    text: " So they're trying to get it done fast."
+    startTime: 4999.59,
+    person: 'Valeri',
+    text: ' So this is completely event driven communication in the sense that there are no rest calls whatsoever.'
   },
   {
-    startTime: 6346.92,
-    person: 'Miriam',
-    text: " And the faster people work, the less time they have to shift their mindset or to learn something new because they're just trying to get it finished as quickly as possible."
+    startTime: 5005.99,
+    person: 'Valeri',
+    text: " And the system, the challenge here that for the systems to build the handling in such a way that you don't assume too much, you work just exactly with the amount of information you have."
   },
   {
-    startTime: 6355.12,
-    person: 'Miriam',
-    text: " It's just lots of pressure on them."
+    startTime: 5021.06,
+    person: 'Karol',
+    text: " Yeah, that's actual real, real time instead of like, near real time or mimicking the real time reactions."
   },
   {
-    startTime: 6357.4,
-    person: 'Miriam',
-    text: ' So I think this is also an important aspect of that mindset.'
+    startTime: 5029.16,
+    person: 'Karol',
+    text: ' This is actually all happens in seconds or less.'
   },
+  { startTime: 5033.98, person: 'Valeri', text: ' Yeah.' },
   {
-    startTime: 6360.4,
-    person: 'Miriam',
-    text: ' People need time to change their mindset.'
+    startTime: 5034.64,
+    person: 'Valeri',
+    text: ' And we do have a requirement that remember those forks, if you, the scanner before a fork, and you want to take a decision left or right, you actually have like 200 milliseconds to do so.'
   },
+  { startTime: 5045.06, person: 'Valeri', text: ' Wow.' },
   {
-    startTime: 6362.44,
-    person: 'Miriam',
-    text: " They won't do it overnight."
+    startTime: 5045.78,
+    person: 'Valeri',
+    text: ' In most cases, it should be already built to solve this problem too.'
   },
+  { startTime: 5052.46, person: 'Karol', text: ' So very low latency communication.' },
+  { startTime: 5055.56, person: 'Karol', text: ' Yeah.' },
   {
-    startTime: 6365.6,
+    startTime: 5056.52,
     person: 'Karol',
-    text: " That's a horrendous situation to be in."
+    text: " This wouldn't make sense to proxy that through anything else than just a messaging service in that sense to just keep that latency very low."
   },
   {
-    startTime: 6368.16,
+    startTime: 5065.86,
     person: 'Karol',
-    text: ' If I need to just finish things and output things, this will never be quality.'
+    text: ' In that case, that requires that async component.'
   },
+  { startTime: 5070.62, person: 'Valeri', text: ' Yeah.' },
   {
-    startTime: 6374.04,
-    person: 'Karol',
-    text: ' This will be just done just to be done.'
+    startTime: 5070.88,
+    person: 'Valeri',
+    text: ' And you also, in most of the cases, you shift the decision a bit earlier to give you a space for thinking so that like, you not always need to make a decision to take a decision exactly at the scan.'
   },
   {
-    startTime: 6377,
-    person: 'Karol',
-    text: " That's like, I find that this is quite often in certain organisations, especially in certain consulting organisations, that's quite often it's, we need to output."
+    startTime: 5083.74,
+    person: 'Valeri',
+    text: " You can take it in advance in terms of routing so that by the time the crate reaches the scanner, you're ready."
   },
   {
-    startTime: 6386.42,
-    person: 'Karol',
-    text: " It doesn't matter if it's shitty, as long as the client signs off, we're good."
+    startTime: 5091.06,
+    person: 'Valeri',
+    text: ' Oh, actually I had the command that whenever crate appears there, I can take right turn.'
   },
   {
-    startTime: 6391.4,
-    person: 'Karol',
-    text: ' And that contradicts my standards.'
+    startTime: 5097.56,
+    person: 'Valeri',
+    text: " That's also another way to satisfy this latency requirement."
   },
+  { startTime: 5105.57, person: 'Valeri', text: ' Yeah.' },
+  { startTime: 5107.29, person: 'Karol', text: " I'm thoroughly impressed in this sense." },
   {
-    startTime: 6396.24,
+    startTime: 5110.71,
     person: 'Karol',
-    text: ' And I literally had to refuse signing off on things and releasing them to the client because they were not up to par.'
+    text: " There's a lot of logic to take care of here to be able to make it work."
   },
   {
-    startTime: 6404.86,
+    startTime: 5115.39,
     person: 'Karol',
-    text: " And I didn't care that we're gonna lose money on that."
+    text: " And just looking at this from a perspective of just passing through the crate passing through, it's like, yeah, if you put it as a sequential pass through, this would not be efficient at all because any small thing that happens on the conveyor belt just derails the whole process for a long time so that this actually requires multiple routes so we can have workarounds between the zones."
   },
+  { startTime: 5144.23, person: 'Karol', text: " So that's, oh, the complexity there." },
   {
-    startTime: 6408.02,
+    startTime: 5147.99,
     person: 'Karol',
-    text: ' Somebody screwed up along the way.'
+    text: ' It would take a while for a person to learn with the complexities of a particular warehouse to just understand the problem domain there.'
   },
+  { startTime: 5158.49, person: 'Valeri', text: ' Yeah.' },
   {
-    startTime: 6410.22,
-    person: 'Karol',
-    text: ' We cannot produce quality.'
+    startTime: 5158.85,
+    person: 'Valeri',
+    text: " And that's what we're actually seeing for the newcomers, how difficult it is to onboard."
   },
+  { startTime: 5166.39, person: 'Valeri', text: " I'm obviously biassed." },
   {
-    startTime: 6412.16,
-    person: 'Karol',
-    text: " I'm not gonna sign it with my name because that says something about me."
+    startTime: 5168.05,
+    person: 'Valeri',
+    text: " I've been there for five years and seen it from the beginning."
   },
   {
-    startTime: 6417.92,
-    person: 'Karol',
-    text: " I have the moral integrity to say no, but a lot of people will just sign it because they're scared about their job, their position."
+    startTime: 5171.75,
+    person: 'Valeri',
+    text: " And even though I left warehouse systems in terms of I'm not working directly every day on the system, it's still insane to think that my knowledge is very valid still."
   },
   {
-    startTime: 6426.64,
-    person: 'Karol',
-    text: ' They have mortgages.'
+    startTime: 5183.81,
+    person: 'Valeri',
+    text: " Yeah, because, and like for the people who join, my heart truly aches for them because it's hard."
   },
   {
-    startTime: 6427.98,
+    startTime: 5193.57,
     person: 'Karol',
-    text: ' They have families they need to feed.'
+    text: " Yeah, we've been talking on this stream about cognitive load some time ago, two streams, actually."
   },
   {
-    startTime: 6430.1,
+    startTime: 5200.23,
     person: 'Karol',
-    text: ' Oh, so many things.'
+    text: " It's a lot of extraneous cognitive load there just to learn all of this and just to cope with that."
   },
+  { startTime: 5209.43, person: 'Karol', text: ' The complexity is large.' },
   {
-    startTime: 6432.38,
+    startTime: 5212.21,
     person: 'Karol',
-    text: ' And these are all impacts on everything, right?'
+    text: " If you have 20 kilometres of a conveyor belt in one warehouse and all the combinations of routes that can go there and all the actions that can happen within such a warehouse, that's..."
   },
   {
-    startTime: 6436.36,
+    startTime: 5228.63,
     person: 'Karol',
-    text: " And it's a difficult puzzle to see, especially if you're in certain places in an organisation, you don't see that at all."
+    text: " Technology-wise now it's just switching a little bit because we have an interesting comment again on YouTube."
   },
+  { startTime: 5239.03, person: 'Karol', text: ' Why not Kafka?' },
   {
-    startTime: 6445.8,
+    startTime: 5243.95,
     person: 'Karol',
-    text: ' In the end, we are all human and we have our troubles and this will impact the business one way or another.'
-  },
-  {
-    startTime: 6452.88,
-    person: 'Miriam',
-    text: ' Of course.'
-  },
-  {
-    startTime: 6454.16,
-    person: 'Miriam',
-    text: ' In that way, it was good because I was as an external in a good position.'
-  },
-  {
-    startTime: 6459.28,
-    person: 'Miriam',
-    text: ' So I said, well, I can talk to your product owner.'
-  },
-  {
-    startTime: 6462,
-    person: 'Miriam',
-    text: ' I have nothing to do with him or your product manager.'
-  },
-  {
-    startTime: 6464.38,
-    person: 'Miriam',
-    text: " I will never see this person again and I will tell them why you won't finish tomorrow."
-  },
-  {
-    startTime: 6467.86,
-    person: 'Miriam',
-    text: ' No problem, right?'
+    text: " I think we're dealing here with a little bit of the Kafka cold followers, as unfortunate as it is, but I'm going to shut up about my opinion about that."
   },
+  { startTime: 5256.69, person: 'Karol', text: " Let's have your voice in that." },
   {
-    startTime: 6469.08,
-    person: 'Miriam',
-    text: ' Yeah.'
+    startTime: 5258.53,
+    person: 'Valeri',
+    text: " I'll tell you that, honestly, there is no reason."
   },
+  { startTime: 5262.53, person: 'Valeri', text: ' Both Rabbit and Kafka would work.' },
   {
-    startTime: 6469.4,
-    person: 'Miriam',
-    text: ' And if you have a certain knowledge, you can also argue, right?'
+    startTime: 5264.39,
+    person: 'Valeri',
+    text: " We don't do anything so super special about the events that just a decent message broker wouldn't be able to deal with."
   },
   {
-    startTime: 6472.88,
-    person: 'Miriam',
-    text: " But if you're a developer who never did that before, who doesn't know how long it takes, who doesn't know why it takes longer than expected, it's very difficult to explain yourself, right?"
+    startTime: 5272.47,
+    person: 'Valeri',
+    text: " In the end, it's just messages going back and forth, and as long as they are durable, we are good."
   },
+  { startTime: 5279.43, person: 'Valeri', text: ' Why Rabbit?' },
+  { startTime: 5280.55, person: 'Valeri', text: ' Historical reasons.' },
+  { startTime: 5282.33, person: 'Valeri', text: ' When it has been started, there was no Kafka.' },
+  { startTime: 5284.35, person: 'Valeri', text: ' There were no experts on Kafka either.' },
+  { startTime: 5288.07, person: 'Valeri', text: ' It was a larger part.' },
+  { startTime: 5289.57, person: 'Valeri', text: ' Rabbit worked for us.' },
+  { startTime: 5291.91, person: 'Valeri', text: ' Historically, we stayed there.' },
   {
-    startTime: 6480.98,
-    person: 'Miriam',
-    text: " You just don't have the arguments."
+    startTime: 5294.95,
+    person: 'Karol',
+    text: ' I would probably figure a few more reasons why not Kafka.'
   },
   {
-    startTime: 6483.3,
-    person: 'Miriam',
-    text: " And that's what I think what's really great about like the enablement aspect, right?"
+    startTime: 5298.23,
+    person: 'Karol',
+    text: ' Just the sheer complexity of running Kafka as a cluster.'
   },
   {
-    startTime: 6491.1,
-    person: 'Miriam',
-    text: " If I'm in an enabling team, like according to team topologies, if anyone knows that I can easily step in and say, well, dear manager of this person, nice that you want to see tomorrow, but you know, we have to do all these steps and they are complicated because, and that's why it will need time, right?"
+    startTime: 5304.79,
+    person: 'Karol',
+    text: ' I think in terms of operability and maintainability, running Rabbit and Q would be a lot simpler than running a Kafka cluster.'
   },
+  { startTime: 5315.99, person: 'Valeri', text: " Yeah, but again, don't self-host." },
+  { startTime: 5322.31, person: 'Valeri', text: " In that sense, it doesn't really matter." },
   {
-    startTime: 6510.18,
-    person: 'Miriam',
-    text: " No matter how, when your deadline is tomorrow, I'm sorry, but we won't do that, right?"
+    startTime: 5326.17,
+    person: 'Valeri',
+    text: " I would say even if you're not self-hosting, and you're simply relying on the cloud hosting somewhere or actually already existing platform, in that sense, Kafka is easier."
   },
+  { startTime: 5337.69, person: 'Valeri', text: ' You just use Confluent, everything works.' },
   {
-    startTime: 6516.1,
-    person: 'Miriam',
-    text: " So I think if you have that layer, you can at least support people in finding the right arguments and give them the arguments that they need to convince someone that they can't be done tomorrow, but alone they are lost, right?"
+    startTime: 5340.75,
+    person: 'Valeri',
+    text: " Whereas for Rabbit, you don't have that many hosting platforms that already give you all the necessary tools so that the maintenance burdens is actually minimal."
   },
+  { startTime: 5353.81, person: 'Valeri', text: " That's what we struggle with now." },
   {
-    startTime: 6527.48,
-    person: 'Miriam',
-    text: " That's my experience because- Absolutely, yes."
+    startTime: 5356.03,
+    person: 'Valeri',
+    text: " It's fine, because if you check the big systems, big companies, players out there that use Rabbit for their messaging, they do self-host or do the hybrid of self-hosting and cloud hosting."
   },
   {
-    startTime: 6531.86,
-    person: 'Miriam',
-    text: " Where do you get the arguments from if you don't know them or you never use them, right?"
+    startTime: 5371.05,
+    person: 'Valeri',
+    text: " Self-hosting is not something we do have expertise for or resources for, but it's not."
   },
+  { startTime: 5376.51, person: 'Valeri', text: ' For now, we are on the cloud MQP.' },
   {
-    startTime: 6536.36,
-    person: 'Miriam',
-    text: " And you're not like an expert on these things, where do you get them from?"
+    startTime: 5380.59,
+    person: 'Valeri',
+    text: " It's been working so far, but we do question that it's going to still work with the planned expansions and the scale that's growing and evolving."
   },
   {
-    startTime: 6540.68,
+    startTime: 5391.01,
     person: 'Karol',
-    text: " Exactly, and then if you think of it from even the perspective of cognitive load, which is something team topologies touches upon very strongly, think about how little germane cognitive load those people have when they, what's that, intrinsic load?"
+    text: ' I would just comment that basically learning to work with Kafka, because hosting and maintaining Kafka is one story, just looking at the complexity.'
   },
   {
-    startTime: 6562.74,
+    startTime: 5401.57,
     person: 'Karol',
-    text: ' Yeah, extraneous and intrinsic, right?'
+    text: " If you have it outsourced as a SaaS solution or a PaaS solution, then you don't deal with the infrastructure part and having it running."
   },
   {
-    startTime: 6564.94,
+    startTime: 5413.13,
     person: 'Karol',
-    text: " They're the other two."
+    text: ' But you still need to build the logic that is on Kafka with topics and how to work with the partitions.'
   },
   {
-    startTime: 6565.5,
+    startTime: 5424.13,
     person: 'Karol',
-    text: " The intrinsic load is so high on them because their own emotions, their own psychological safety, the pressure that's put on them, the stress just completely blocks their capacity to think in that sense, right?"
+    text: " I think running on AMQP 0.9 or 0.10, I don't know version of protocol you use."
   },
   {
-    startTime: 6585.12,
+    startTime: 5432.27,
     person: 'Karol',
-    text: ' And if we put it in the way that often management sees that, management often sees this lovely triangle, right?'
+    text: ' 0.9. 0.9. Running AMQP 0.9 in terms of the logic of setting up routing in Rabbit MQ and these kinds of things is a lot simpler than running Kafka, especially from the perspective of filtration and FIFO.'
   },
+  { startTime: 5454.21, person: 'Valeri', text: " That's the motto of Rabbit, right?" },
   {
-    startTime: 6595.86,
-    person: 'Karol',
-    text: ' Which is a fake, this is not the actual thing.'
+    startTime: 5455.95,
+    person: 'Valeri',
+    text: " Smart server, stupid client, so that your applications don't need to sync much."
   },
   {
-    startTime: 6600.02,
-    person: 'Karol',
-    text: " It's time, cost, quality."
+    startTime: 5461.83,
+    person: 'Valeri',
+    text: ' But in practise, if you take any technology and if you want to use it to its best, you need to understand how it works.'
   },
+  { startTime: 5468.49, person: 'Karol', text: ' Of course.' },
   {
-    startTime: 6601.48,
-    person: 'Karol',
-    text: " No, that's not how it is."
+    startTime: 5469.69,
+    person: 'Valeri',
+    text: " That's exactly why we are running Rabbit MQ teaching course in the company, because it's so essential to operations."
   },
   {
-    startTime: 6603.66,
-    person: 'Miriam',
-    text: ' You can only pick two of them, right?'
+    startTime: 5475.85,
+    person: 'Valeri',
+    text: ' Actually, even with the simple way of using it, kind of easy user experience, you still can mess up quite nicely.'
   },
+  { startTime: 5485.23, person: 'Karol', text: ' Like with any tool.' },
+  { startTime: 5487.45, person: 'Valeri', text: ' Exactly.' },
   {
-    startTime: 6606.18,
-    person: 'Karol',
-    text: " That's what they say, right?"
+    startTime: 5488.27,
+    person: 'Valeri',
+    text: ' In that sense, yes, you might need more investment at the beginning if you go for Kafka.'
   },
   {
-    startTime: 6607.58,
-    person: 'Miriam',
-    text: " Yeah, exactly, that's the story behind it if someone doesn't know, right?"
+    startTime: 5494.15,
+    person: 'Valeri',
+    text: " But I don't see it honestly as the biggest challenge or necessary."
   },
+  { startTime: 5502.23, person: 'Valeri', text: " So for us, it's more historical." },
+  { startTime: 5506.23, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 6610.92,
+    startTime: 5507.21,
     person: 'Karol',
-    text: ' But this is the actual thing.'
+    text: ' The usual quote I get from my colleagues, a fool with a tool is still a fool.'
   },
   {
-    startTime: 6613.82,
+    startTime: 5514.37,
     person: 'Karol',
-    text: " It's cost, time and scope, which impact quality."
+    text: " So yeah, if you don't know what you're doing and you're using a tool, you're still not going to do well in that sense."
   },
+  { startTime: 5520.49, person: 'Karol', text: " And that's the basis for it." },
   {
-    startTime: 6616.88,
+    startTime: 5523.55,
     person: 'Karol',
-    text: " If we don't have time, we close this up."
+    text: ' But I think just from the perspective of technology, the learning curve to get going with Rabbit is definitely lower than the learning curve of having Kafka in the ecosystem.'
   },
+  { startTime: 5539.09, person: 'Karol', text: " So it's probably simpler to work it." },
   {
-    startTime: 6619.78,
+    startTime: 5542.17,
     person: 'Karol',
-    text: ' We can do it also at low cost, but the scope will, well, be the same.'
+    text: " And given the complexities you're dealing in the problem domain, I would say, yeah, use something that is simple and faster to learn so that you can be operational quicker and put your focus on the complexity of the problem domain instead of the technical part of the implementation."
   },
+  { startTime: 5564.23, person: 'Karol', text: " Yeah, that's very true." },
   {
-    startTime: 6625.12,
+    startTime: 5567.55,
     person: 'Karol',
-    text: ' The quality will be squished, will be bad.'
+    text: ' So answering the question from YouTube, how Rabbit would help solve the communication problem, just by simplicity, we refocus here to the problem domain itself instead of learning the tech.'
   },
+  { startTime: 5582.25, person: 'Karol', text: ' That already helps, I think.' },
+  { startTime: 5589.44, person: 'Karol', text: ' All right.' },
   {
-    startTime: 6627.94,
+    startTime: 5590.02,
     person: 'Karol',
-    text: " So if that's the case, it's gonna be always a problem."
+    text: ' Now, the juicy part, we have the complexity part, the tech part, the problem domain, but I love the juicy part of how does the organisation play into it?'
   },
   {
-    startTime: 6633.46,
+    startTime: 5602.46,
     person: 'Karol',
-    text: ' We have to keep the quality the same.'
+    text: " Because I'm guessing getting to the point you are here over the five years, catering to those babies of microservices, the monolith first, it was a technical journey, of course, architectural journey, because you started splitting up the monolith and building microservices, and you're still upgrading."
   },
+  { startTime: 5619.86, person: 'Karol', text: ' How does the organisation play into this?' },
+  { startTime: 5624.32, person: 'Karol', text: ' What were the organisational challenges?' },
   {
-    startTime: 6635.74,
-    person: 'Karol',
-    text: ' We have to adjust, when we change one, we have to adjust some others, right?'
+    startTime: 5628.36,
+    person: 'Valeri',
+    text: ' Well, obviously, our organisation changed with the way architecture progressed.'
   },
+  { startTime: 5635.12, person: 'Valeri', text: " It's kind of two dependent things." },
   {
-    startTime: 6639.92,
-    person: 'Karol',
-    text: ' To see if that keeps the quality.'
+    startTime: 5637.52,
+    person: 'Valeri',
+    text: ' And of course, we started as a single big team, relatively big, because we needed to deliver this monolith in a period of time.'
   },
   {
-    startTime: 6642.84,
-    person: 'Karol',
-    text: ' The quality should be looking at maintaining the quality.'
+    startTime: 5643.76,
+    person: 'Valeri',
+    text: " Then you already know that it's too big of a team."
   },
+  { startTime: 5646.52, person: 'Valeri', text: ' Now we go microservice landscape.' },
+  { startTime: 5648.16, person: 'Valeri', text: ' So teams start appearing.' },
   {
-    startTime: 6648.16,
-    person: 'Karol',
-    text: ' And if we squish the time to so little with remaining scope, and also try to compress the cost not to add to it, well, impossible to achieve the same quality.'
+    startTime: 5649.44,
+    person: 'Valeri',
+    text: " By now, I think it's ten teams with their isolated set of components."
   },
   {
-    startTime: 6663.62,
-    person: 'Karol',
-    text: ' Impossible to achieve something that is more than the exposition of a relational database.'
+    startTime: 5657.74,
+    person: 'Valeri',
+    text: ' And the challenge by now is, of course, how you make all those teams collaborate and communicate so that they keep this architecture running.'
   },
+  { startTime: 5667.86, person: 'Valeri', text: " For a lot of people, it's a mind shift, right?" },
   {
-    startTime: 6670.4,
-    person: 'Miriam',
-    text: ' That works today and maybe not tomorrow, right?'
+    startTime: 5670.68,
+    person: 'Valeri',
+    text: ' People coming from the background of like rest calls and somewhat synchronous systems.'
   },
   {
-    startTime: 6673.28,
-    person: 'Karol',
-    text: " Exactly, it's not gonna be reusable."
+    startTime: 5678.32,
+    person: 'Valeri',
+    text: " And here, it's like 99% asynchronous, but you still build with this back synchronous state of mind."
   },
   {
-    startTime: 6675.48,
-    person: 'Karol',
-    text: " It's not gonna be anything that will bring business, that will bring further development of the business, right?"
+    startTime: 5689.04,
+    person: 'Valeri',
+    text: ' Yeah, so the challenge here is that how do you teach people that if you want to do something in an event, expose it or consume it, that you have to communicate to your neighbours.'
   },
+  { startTime: 5703.36, person: 'Valeri', text: " So you don't work in silence." },
   {
-    startTime: 6684.44,
-    person: 'Karol',
-    text: ' It will just serve the purpose for now.'
+    startTime: 5705.94,
+    person: 'Valeri',
+    text: " But in that sense, I think it's not new to any microservices setup."
   },
   {
-    startTime: 6686.16,
-    person: 'Karol',
-    text: " It's a workaround, it's a tactical choice."
+    startTime: 5710.38,
+    person: 'Valeri',
+    text: ' You always need a high level of communication in there.'
   },
   {
-    startTime: 6687.9,
-    person: 'Miriam',
-    text: ' And next time someone needs it, they will do the same again, build it again, and again, and again.'
+    startTime: 5713.7,
+    person: 'Valeri',
+    text: " But the state of mind that now when you consume an event, and you write the handling around that, it's not that you're like, you basically have to keep this bigger picture in your mind, in a sense."
   },
+  { startTime: 5726.54, person: 'Valeri', text: " So what's the state I can be in?" },
+  { startTime: 5729.4, person: 'Valeri', text: ' And what can go wrong, etc.' },
+  { startTime: 5731.36, person: 'Valeri', text: " So that's where the challenge comes in." },
   {
-    startTime: 6693.94,
-    person: 'Karol',
-    text: " And then we go into the problem of API federation, API management federation, and repeated implementations of APIs that we have 10 APIs do exactly the same thing because they didn't even know that these things exist because they didn't have time to discover those."
+    startTime: 5737.98,
+    person: 'Valeri',
+    text: " And by now, it's also like we used to have basically two people as an architect in this particular domain."
   },
   {
-    startTime: 6716.14,
-    person: 'Karol',
-    text: " They didn't have time to think about them."
+    startTime: 5750.98,
+    person: 'Valeri',
+    text: " But by now, you realise that the system is too complex, it's too big, even for two minds."
   },
   {
-    startTime: 6718.14,
-    person: 'Karol',
-    text: " They didn't have time to ask anybody."
+    startTime: 5757.46,
+    person: 'Valeri',
+    text: " So you want somewhat an architecture group being there full time to actually help teams communicate, collaborate, and make sure that this architecture doesn't go spaghetti way."
   },
+  { startTime: 5772.9, person: 'Karol', text: " And that's the usual problem." },
   {
-    startTime: 6720.16,
+    startTime: 5775.26,
     person: 'Karol',
-    text: ' They were just like, you need to deliver.'
+    text: ' Just from experience of our large integration platforms, and nowadays, integration platforms themselves are just microservice systems, in combination with EDA, right?'
   },
+  { startTime: 5786.64, person: 'Karol', text: " They're both sync and async protocols." },
+  { startTime: 5791.7, person: 'Karol', text: ' Not that large of a async component into that.' },
+  { startTime: 5796.6, person: 'Karol', text: ' So it never reaches like 90%.' },
   {
-    startTime: 6722.28,
+    startTime: 5798.26,
     person: 'Karol',
-    text: ' Okay, boom.'
+    text: " It's usually the async and regular run of the mill integration platforms, maybe 20-30% at that kind of level."
   },
   {
-    startTime: 6723.64,
+    startTime: 5808.72,
     person: 'Karol',
-    text: ' API, a 10th API that does exactly the same thing that already the nine other teams figured out and did the same because they were pressured into.'
-  },
-  {
-    startTime: 6732.32,
-    person: 'Miriam',
-    text: ' And two are maybe not used anymore, but nobody knows about them.'
-  },
-  {
-    startTime: 6735.34,
-    person: 'Miriam',
-    text: " So they're still there, right?"
+    text: ' But if you get an ecosystem where you have 200 distinct microservices over an integration platform itself, that is usually governed by multiple architects, integration architects covering that.'
   },
   {
-    startTime: 6736.74,
+    startTime: 5825.98,
     person: 'Karol',
-    text: " But they're still burning air in the server room and they still cost."
+    text: ' So this is very analogous in that sense, where you basically do the same with such a big thing, because one person just cannot comprehend all of that, they need to cooperate and exchange that information and work on certain areas.'
   },
   {
-    startTime: 6740.8,
+    startTime: 5843.74,
     person: 'Karol',
-    text: ' Yeah.'
+    text: " But from what you're telling me in terms of an evolution of the organisational thing, you actually didn't hit the Conway's law that hard."
   },
   {
-    startTime: 6741.32,
-    person: 'Miriam',
-    text: ' And they might still be a security risk, right?'
-  },
-  {
-    startTime: 6744.72,
-    person: 'Miriam',
-    text: " Because nobody remembers that they're there."
-  },
-  {
-    startTime: 6747.5,
+    startTime: 5854.22,
     person: 'Karol',
-    text: ' Oh yeah, yeah, definitely.'
+    text: " You actually went straight into the inverse Conway manoeuvre from the perspective of how you can handle Conway's law."
   },
   {
-    startTime: 6750.58,
+    startTime: 5861.88,
     person: 'Karol',
-    text: " That's 100%, that's already."
+    text: " So you basically started changing the communication of the communication patterns between teams, alongside how the architecture grew, which is awesome, because you avoided the most painful problem of architecture, which is not adjusting the organisation to the architecture that's growing and evolving."
   },
   {
-    startTime: 6753.56,
+    startTime: 5881.26,
     person: 'Karol',
-    text: " So this way we build technical depth, we build security risks, we build low IT maturity, we contribute to, what's that?"
+    text: " And it seems like you just went like, oh, that's how it should be done."
   },
+  { startTime: 5886.22, person: 'Karol', text: ' It seems like you said it so effortlessly.' },
+  { startTime: 5890.06, person: 'Karol', text: ' It was like a natural thing for everybody.' },
   {
-    startTime: 6767.76,
-    person: 'Karol',
-    text: ' Not employee retention, the other way around, churn?'
+    startTime: 5893.12,
+    person: 'Valeri',
+    text: ' Well, it felt natural, because actually, the organisation structure really mirrored the amount of, almost a mirrored amount of services.'
   },
   {
-    startTime: 6771.96,
-    person: 'Karol',
-    text: " No, that's client churn."
+    startTime: 5904.36,
+    person: 'Valeri',
+    text: ' So there was one service, one team, manual automated.'
   },
+  { startTime: 5908.32, person: 'Valeri', text: ' Then you start spawning those microservices.' },
+  { startTime: 5911.46, person: 'Valeri', text: ' Oh, wow, you need the team for that.' },
   {
-    startTime: 6774.7,
-    person: 'Karol',
-    text: " What's the word?"
+    startTime: 5913.84,
+    person: 'Valeri',
+    text: " And it's like, rent-multiplying, so very naturally distributing."
   },
+  { startTime: 5920.56, person: 'Karol', text: " I must say that's quite rare." },
+  { startTime: 5922.8, person: 'Karol', text: ' You do realise that, or not really?' },
+  { startTime: 5928.14, person: 'Valeri', text: ' No, not really.' },
+  { startTime: 5930.74, person: 'Karol', text: ' Gotcha.' },
   {
-    startTime: 6775.64,
+    startTime: 5932.72,
     person: 'Karol',
-    text: ' Just employees leaving the company, right?'
+    text: " So just to put it in perspective, because I've been with multiple clients all over Europe, this kind of behaviour to naturally grow and change your organisation with the evolution of an architecture, that's not something that's common."
   },
   {
-    startTime: 6777.76,
+    startTime: 5950.17,
     person: 'Karol',
-    text: ' So we lose valuable knowledge about our ecosystem.'
+    text: ' Usually, the organisation is driven by the business, the way teams are organised.'
   },
   {
-    startTime: 6781.92,
+    startTime: 5957.29,
     person: 'Karol',
-    text: " There's so many downsides to this kind of behaviour, but it's a normal behaviour in a lot of companies."
+    text: " So it usually doesn't match the architecture itself."
   },
   {
-    startTime: 6788.52,
+    startTime: 5962.03,
     person: 'Karol',
-    text: ' Well, normal is a bad word.'
+    text: ' So one team can be responsible for multiple systems, and then you have a problem or two teams are responsible for one system, and you have a different problem in that sense, because they collide with each other.'
   },
+  { startTime: 5975.71, person: 'Karol', text: ' And you either create bottlenecks or friction.' },
+  { startTime: 5980.21, person: 'Karol', text: ' Yeah.' },
   {
-    startTime: 6791.44,
+    startTime: 5980.99,
     person: 'Karol',
-    text: ' Normalised behaviour in so many companies.'
+    text: " While here, it seems like you completely bypassed the problem of Conway's Law of ignoring it or accepting it, and you just went like, we're going to just grow as it is."
   },
   {
-    startTime: 6794.54,
+    startTime: 5991.71,
     person: 'Karol',
-    text: " And that's horrendous in that sense."
+    text: " As we grow with architecture, we're going to grow our organisations."
   },
+  { startTime: 5995.53, person: 'Valeri', text: " Well, it's not that black and white, right?" },
+  { startTime: 5997.45, person: 'Valeri', text: ' Okay.' },
   {
-    startTime: 6797.2,
-    person: 'Karol',
-    text: " That's a huge problem."
+    startTime: 5998.73,
+    person: 'Valeri',
+    text: " Remember, we have this monolith part that's not fully gone yet."
   },
   {
-    startTime: 6799.18,
-    person: 'Miriam',
-    text: ' And then, I mean, there are other things related to that that I just had to think of when we discussed it.'
+    startTime: 6002.67,
+    person: 'Valeri',
+    text: ' So you naturally would have, I think, two teams working there, and they kind of share the space.'
   },
   {
-    startTime: 6804.08,
-    person: 'Miriam',
-    text: " For example, the fact that people integrate an API and then their developer's leaving and after half a year it stops working and then they're complaining."
+    startTime: 6008.85,
+    person: 'Valeri',
+    text: ' But I believe both teams have the people from the very beginning who have been building the system.'
   },
   {
-    startTime: 6815.52,
-    person: 'Miriam',
-    text: " And you're like, well, I mean, you need to maintain this."
+    startTime: 6014.93,
+    person: 'Valeri',
+    text: ' So they nicely collaborate at that point, but you still have this natural friction when they need to work on the same code base.'
   },
+  { startTime: 6023.87, person: 'Valeri', text: ' Okay.' },
   {
-    startTime: 6820.44,
-    person: 'Miriam',
-    text: " And if you don't have the credentials anymore or they run out, what should the provider do, right?"
+    startTime: 6025.63,
+    person: 'Valeri',
+    text: ' And at the same time, if you naturally grow your teams as your architecture evolves, there is also a trade-off in there, because you add new people rapidly, and you need to educate them, so you will have this gap in the delivering of features while this whole new organisational setup stabilises.'
   },
   {
-    startTime: 6826.16,
-    person: 'Miriam',
-    text: ' I mean, you have to know how to use the API and how you integrated it.'
+    startTime: 6046.57,
+    person: 'Valeri',
+    text: ' And I basically saw two or three reorganisations in these five years in this domain only, and you see those dips when you do the reorganisation.'
   },
+  { startTime: 6055.29, person: 'Valeri', text: ' So at least you want to minimise those, right?' },
+  { startTime: 6061.28, person: 'Karol', text: ' Yeah.' },
   {
-    startTime: 6829.86,
-    person: 'Miriam',
-    text: " If you don't have any developer anymore, and that's what I see also very often, all those things, APIs and also API consumption are handled as a project."
+    startTime: 6062.58,
+    person: 'Karol',
+    text: " It's hard to nitpick on these things at this point."
   },
+  { startTime: 6065.98, person: 'Karol', text: " It's like, how?" },
   {
-    startTime: 6838.82,
-    person: 'Miriam',
-    text: " When they're done, all developers leave and it will work forever."
+    startTime: 6068.92,
+    person: 'Karol',
+    text: ' But it feels like you did it naturally, even with those reorganisations.'
   },
   {
-    startTime: 6843.14,
-    person: 'Miriam',
-    text: ' We never touch it, it will work forever.'
+    startTime: 6073.68,
+    person: 'Karol',
+    text: " It feels like you say it's like, it just happened."
   },
   {
-    startTime: 6845.56,
-    person: 'Miriam',
-    text: " And half a year later, a year later, the credentials run out or a certificate runs out or you don't know what."
+    startTime: 6079.04,
+    person: 'Karol',
+    text: " I mean, either you have somebody that's really mature about looking at things, about reorganising how you work, and to spot inefficiencies in ways of working, or the teams actually have a knack for that."
   },
+  { startTime: 6093.42, person: 'Karol', text: " What's the deal?" },
+  { startTime: 6095.22, person: 'Karol', text: ' Do you have somebody looking at those?' },
   {
-    startTime: 6854.32,
-    person: 'Miriam',
-    text: " And then there's a big disaster because nobody knows anymore, right?"
+    startTime: 6097.72,
+    person: 'Valeri',
+    text: ' Well, the organisation itself is flexible, and business is happy to realise when they need to change, and we need to change in order to meet the needs of the business.'
   },
+  { startTime: 6108.98, person: 'Valeri', text: ' So in that sense, people are very sensible.' },
   {
-    startTime: 6858.8,
-    person: 'Karol',
-    text: " That's very true."
+    startTime: 6112.44,
+    person: 'Valeri',
+    text: ' We definitely do have lots of smart people there, too.'
   },
+  { startTime: 6118.3, person: 'Valeri', text: ' That helps.' },
   {
-    startTime: 6861.04,
-    person: 'Karol',
-    text: " Like Eric here says, it's like a shower."
+    startTime: 6121.64,
+    person: 'Valeri',
+    text: " But also, if you look at the architecture itself, it wasn't that we are tech popping up and saying, oh, now from the monolith, we go to microservices and build all this event-driven thing."
   },
+  { startTime: 6132.38, person: 'Valeri', text: ' No, you have to build a narrative.' },
+  { startTime: 6134.23, person: 'Valeri', text: " You have to explain why it's important." },
   {
-    startTime: 6864.4,
-    person: 'Karol',
-    text: " We expect nice warm water, but don't know or want to understand how it gets there."
+    startTime: 6136.35,
+    person: 'Valeri',
+    text: ' Repeat this narrative half a year, at least, and still repeating and showing that it works.'
   },
+  { startTime: 6141.43, person: 'Valeri', text: " So it's there." },
+  { startTime: 6142.93, person: 'Valeri', text: " It's there." },
   {
-    startTime: 6870.86,
-    person: 'Karol',
-    text: " It's a problem."
+    startTime: 6143.57,
+    person: 'Valeri',
+    text: " But it's not as painful, maybe, as you would normally see it, as what we are referring to in other organisations."
   },
   {
-    startTime: 6873.52,
-    person: 'Karol',
-    text: ' I had a very clever thought on the APIs.'
+    startTime: 6151.09,
+    person: 'Valeri',
+    text: " That's why I don't have bitter feelings about it."
   },
+  { startTime: 6154.09, person: 'Valeri', text: ' So for me, it went well.' },
+  { startTime: 6156.11, person: 'Valeri', text: ' Okay.' },
   {
-    startTime: 6876.8,
+    startTime: 6157.77,
     person: 'Karol',
-    text: " Oh yeah, that's one of the lowest software architecture in general."
+    text: " So it still requires work and reiterating and communicating that architecture to stakeholders and other teams that we need a shift because we're hitting these kind of problems, and those problems will manifest harder later on, and we want to avoid that."
   },
+  { startTime: 6173.71, person: 'Karol', text: ' Yes.' },
   {
-    startTime: 6882.96,
+    startTime: 6174.47,
     person: 'Karol',
-    text: " Software architecture and trade-off analysis is not something we do once, it's a iterative effort."
+    text: " But it's still in the area of avoiding rather than we're hitting a wall."
   },
+  { startTime: 6180.81, person: 'Karol', text: ' Or did you hit a wall somewhere?' },
+  { startTime: 6183.83, person: 'Valeri', text: ' Always just in time.' },
+  { startTime: 6187.07, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 6890.66,
+    startTime: 6187.77,
     person: 'Karol',
-    text: ' And this goes to maintaining APIs, this goes to evaluating APIs.'
+    text: " I mean, as well as if it's just in time, that's perfect, right?"
   },
+  { startTime: 6193.11, person: 'Karol', text: ' But another curious question popping in.' },
   {
-    startTime: 6896.16,
+    startTime: 6196.41,
     person: 'Karol',
-    text: ' Are they still bringing us value?'
+    text: ' So if we have those teams and the composition of those teams, how many of those people are there from the beginning versus the fresh blot?'
   },
   {
-    startTime: 6898.5,
+    startTime: 6206.55,
     person: 'Karol',
-    text: ' Are they still used?'
+    text: ' What kind of a rotation in staff do you see over those teams?'
   },
   {
-    startTime: 6899.76,
+    startTime: 6212.11,
     person: 'Karol',
-    text: ' Are they still secure?'
+    text: ' Or how many more people you have to actually onboard into the whole thing to make it still viable and work?'
   },
+  { startTime: 6221.51, person: 'Valeri', text: ' Yeah.' },
+  { startTime: 6221.83, person: 'Valeri', text: " Well, let's see." },
   {
-    startTime: 6901.16,
-    person: 'Karol',
-    text: ' Are they still providing what they should be providing or should they be replaced, changed, modified, whatever that may be.'
+    startTime: 6222.57,
+    person: 'Valeri',
+    text: " In the pure numbers, we've started as a team of like 15 or so, but that included POs, engineers, leads, etcétera."
   },
   {
-    startTime: 6909.2,
-    person: 'Karol',
-    text: " It's an iterative effort because everything we do is an iterative effort."
+    startTime: 6233.17,
+    person: 'Valeri',
+    text: ' Two-thirds of those already left or not working on the system.'
   },
   {
-    startTime: 6914.22,
-    person: 'Karol',
-    text: " And if we look at IT that was 20 years ago, that wasn't changing that fast."
+    startTime: 6237.71,
+    person: 'Valeri',
+    text: ' So there are at least five people who have been there from the very beginning.'
   },
   {
-    startTime: 6921.42,
-    person: 'Karol',
-    text: ' Nowadays, everything is changing a lot faster.'
+    startTime: 6242.21,
+    person: 'Valeri',
+    text: ' And now we have 10 teams, each at least eight people.'
   },
+  { startTime: 6247.05, person: 'Valeri', text: ' So 75 new.' },
   {
-    startTime: 6926.76,
-    person: 'Karol',
-    text: " 20 years ago, we didn't live in a distributed world."
+    startTime: 6249.79,
+    person: 'Valeri',
+    text: ' But of course, the inflow was gradual at various points when the organisation had to change.'
   },
   {
-    startTime: 6929.82,
-    person: 'Karol',
-    text: " We had data centres for each company that had the tech, perfect, fantastic, everything is there, it's running."
+    startTime: 6255.67,
+    person: 'Valeri',
+    text: ' Okay, now we are not a single team, now we are three.'
   },
+  { startTime: 6258.09, person: 'Valeri', text: ' So you add more people, etcétera.' },
+  { startTime: 6260.63, person: 'Valeri', text: ' So you have different kind of generations.' },
   {
-    startTime: 6937.1,
-    person: 'Karol',
-    text: ' Now, everything is everywhere.'
+    startTime: 6264.87,
+    person: 'Valeri',
+    text: " But I would say at this point, it's like maybe 40% or one-third of people who's been long enough to comprehend the complexity and know what's going on and the rest at various stages of, oh, what the fuck, where I am?"
   },
   {
-    startTime: 6939.58,
-    person: 'Karol',
-    text: ' Now, everything is moving faster than we can catch it.'
+    startTime: 6284.63,
+    person: 'Valeri',
+    text: " Okay, I'm competitive enough within the boundaries of my team."
   },
   {
-    startTime: 6944.8,
-    person: 'Karol',
-    text: " If we look at the problems of architecture and applying architecture to specific topics, the moment I design something, it's already irrelevant."
+    startTime: 6288.71,
+    person: 'Valeri',
+    text: " But now if I do step left, they're like, oh, what the fuck, then go."
   },
   {
-    startTime: 6956.16,
+    startTime: 6294.93,
     person: 'Karol',
-    text: ' It will serve a purpose, but it will be not as good as the actual need is because the need already drifted away.'
+    text: " Okay, so there's a learning curve between the teams in terms of they focus on the narrow aspect of the whole thing."
   },
+  { startTime: 6303.21, person: 'Karol', text: ' And there are quite a few of those.' },
+  { startTime: 6304.03, person: 'Valeri', text: ' But that was the whole goal, right?' },
   {
-    startTime: 6963.46,
-    person: 'Karol',
-    text: " It's called the model drift."
+    startTime: 6305.77,
+    person: 'Valeri',
+    text: " You can't expect all 80 people to know the system in every inch of details and you don't want to."
   },
+  { startTime: 6311.63, person: 'Valeri', text: " It's a waste of time." },
+  { startTime: 6313.17, person: 'Karol', text: ' Yeah.' },
   {
-    startTime: 6965.82,
+    startTime: 6315.03,
     person: 'Karol',
-    text: " That's why concepts like residuality theory from Barry O'Reilly gained so much traction because they exactly address the problem of the model drift and exactly address the problem of this, that anything we model is already out of date."
+    text: " Yeah, I mean, I do agree of that premise because that's the regular thing."
   },
   {
-    startTime: 6981.24,
+    startTime: 6319.61,
     person: 'Karol',
-    text: " And it's a huge problem in that sense."
-  },
-  {
-    startTime: 6984.52,
-    person: 'Miriam',
-    text: ' I also listened to a very good keynote on actually complexity.'
-  },
-  {
-    startTime: 6988.44,
-    person: 'Miriam',
-    text: ' That was what it was about in a conference last year.'
+    text: " We want people to specialise and have some people that have a broader view so they can guide others in those specialisations and niches that they're handling so that we still can have that efficiency."
   },
   {
-    startTime: 6991.88,
-    person: 'Miriam',
-    text: ' And the actual take was, or what I liked most that afterwards in a conference, everybody discussed the topic that how can we really reduce complexity?'
+    startTime: 6333.37,
+    person: 'Karol',
+    text: " But in general, would you say that there is a broad understanding of how every, between different engineers, how the whole thing works and how they, what are the dependencies that they're working with between teams?"
   },
+  { startTime: 6351.3, person: 'Valeri', text: ' Yes and no.' },
   {
-    startTime: 7001.4,
-    person: 'Miriam',
-    text: ' Because the theory was that everyone believes that now that there is AI, it will reduce the complexity.'
+    startTime: 6352.54,
+    person: 'Valeri',
+    text: ' There is definitely this understanding in terms of the closest neighbours, because not, I hope that we never see that all systems are connected and know about each other.'
   },
   {
-    startTime: 7007.16,
-    person: 'Miriam',
-    text: ' But in reality, if we look at all the last years, every new thing that came up to reduce complexity increased the speed, which again increased the complexity.'
+    startTime: 6364.1,
+    person: 'Valeri',
+    text: " That's not the goal of this architecture and the split."
   },
   {
-    startTime: 7017.1,
-    person: 'Miriam',
-    text: ' So that was the theory.'
+    startTime: 6367,
+    person: 'Valeri',
+    text: ' So you definitely know to a certain degree what happens in the neighbouring teams.'
   },
   {
-    startTime: 7018.64,
-    person: 'Miriam',
-    text: ' And I liked that a lot because if you talk to the people on a conference that was really resonating with a lot of people because they said, yeah, it got very complex and it even gets more complex.'
+    startTime: 6373.18,
+    person: 'Valeri',
+    text: ' And there are people who know more about higher review too.'
   },
   {
-    startTime: 7027.84,
-    person: 'Miriam',
-    text: " And because it's getting faster, this means we're trying to reduce complexity by making things faster, which again introduces complexity."
+    startTime: 6377.14,
+    person: 'Valeri',
+    text: " But normally people who joined, let's say, half a year, a year ago, they wouldn't grasp the whole dependency picture as of yet."
   },
+  { startTime: 6388.98, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 7035.58,
+    startTime: 6390.58,
     person: 'Karol',
-    text: " It's horrendous."
+    text: ' There is that learning curve there probably for those later joiners in that sense.'
   },
   {
-    startTime: 7036.94,
-    person: 'Miriam',
-    text: " And that's what was troubling me because it was a good discussion on the conference as well."
-  },
-  {
-    startTime: 7040.08,
+    startTime: 6399.98,
     person: 'Karol',
-    text: " But this again touches Tesla's law, right?"
+    text: ' In terms of challenge, but not from a perspective of a technical, but more of a perspective of psychology, you started as 15 people designing the monolith and designing the first warehouse.'
   },
   {
-    startTime: 7044.02,
+    startTime: 6416.24,
     person: 'Karol',
-    text: ' If we look at the problem domain, there is an inherent irreducible complexity.'
+    text: ' How much of a psychological challenge was it from the perspective of pressure, perspective of stress?'
   },
   {
-    startTime: 7050.24,
+    startTime: 6424.52,
     person: 'Karol',
-    text: ' We cannot go around it.'
+    text: " And again, that's a lovely question from our constant commenter today, how stressful was it to develop the first warehouse?"
   },
   {
-    startTime: 7051.56,
+    startTime: 6433.42,
     person: 'Karol',
-    text: ' We need to address it.'
+    text: " But I want to expand it into like looking into also the stress of growth, because adding people to the mix is always stressful, because that's basically rearranging the groups, rearranging the relationships between people, relationships between people and systems, etcétera."
   },
   {
-    startTime: 7052.96,
+    startTime: 6451.76,
     person: 'Karol',
-    text: ' And then we go to UX, fully blown.'
+    text: " So that's always the ongoing change is a huge stressor for just the most moving part being humans."
   },
   {
-    startTime: 7056.68,
+    startTime: 6461.3,
     person: 'Karol',
-    text: ' And I love this book.'
+    text: ' So can you describe those challenges in terms of stress, psychological safety, relationship building?'
   },
   {
-    startTime: 7057.64,
+    startTime: 6469.9,
     person: 'Karol',
-    text: " So I'm just gonna throw in another lovely slide from my training deck."
+    text: ' How would you look at it from a perspective of those five years?'
   },
   {
-    startTime: 7065.22,
-    person: 'Karol',
-    text: ' Complexity is not bad.'
+    startTime: 6477.16,
+    person: 'Valeri',
+    text: " Honestly, in terms of the relationships, I think I haven't seen such tightly built group."
   },
   {
-    startTime: 7067.38,
-    person: 'Karol',
-    text: " It's confusion that's bad."
+    startTime: 6488.59,
+    person: 'Valeri',
+    text: " Now it's less so because there are like already an insane amount of people, but those few stages, first three or four years, we've been very close, because it's actually a coping mechanism."
   },
   {
-    startTime: 7068.84,
-    person: 'Karol',
-    text: ' So long live well-managed complexity.'
+    startTime: 6499.25,
+    person: 'Valeri',
+    text: " Even if you're in different teams, you're still like tight, like really holding each other tight to support and go through the stresses related to delivering, because like the stress levels you can like pretty much describe as a slowly building and reaching the climax."
   },
   {
-    startTime: 7071.18,
-    person: 'Karol',
-    text: ' And this is Don Norman, the designer of Everyday Things.'
+    startTime: 6517.43,
+    person: 'Valeri',
+    text: " It's when you, oh, actually, tomorrow, we have to run the whole new site, and it has to work."
   },
   {
-    startTime: 7074.26,
-    person: 'Karol',
-    text: ' This has nothing to do with IT per se.'
+    startTime: 6522.51,
+    person: 'Valeri',
+    text: " And you're like in a frenzy foam out of your mouth, exactly."
   },
   {
-    startTime: 7077.7,
-    person: 'Karol',
-    text: " It's about design principles."
+    startTime: 6526.59,
+    person: 'Valeri',
+    text: " And you know that tonne of things going to go wrong, and how you're going to deal with that."
   },
+  { startTime: 6531.31, person: 'Valeri', text: ' Then you stabilise the system, it works.' },
   {
-    startTime: 7079.56,
-    person: 'Miriam',
-    text: ' Yes, I actually have that book.'
+    startTime: 6534.75,
+    person: 'Valeri',
+    text: " You breathe out for a while, you're kind of in this deep of pleasure and sanity, and then it starts building up again, because a new warehouse is coming."
   },
   {
-    startTime: 7081.66,
-    person: 'Miriam',
-    text: ' I mean, I did my PhD in human computing.'
+    startTime: 6543.27,
+    person: 'Valeri',
+    text: ' And you know that you have to deliver features for the old ones, maintain them, migrate meanwhile, and support the new warehouse.'
   },
   {
-    startTime: 7083.86,
-    person: 'Karol',
-    text: ' Obviously.'
+    startTime: 6550.05,
+    person: 'Valeri',
+    text: " It's like, so what helped us through like this very original team and those few generations further is like really supporting each other."
   },
   {
-    startTime: 7084.04,
-    person: 'Miriam',
-    text: ' Don Norman is a very important person you need to know, right?'
+    startTime: 6561.13,
+    person: 'Valeri',
+    text: " Without that, I don't think it would have been possible."
   },
+  { startTime: 6569.67, person: 'Valeri', text: ' Can you hear me?' },
+  { startTime: 6570.53, person: 'Valeri', text: ' I see the connection lost.' },
+  { startTime: 6572.87, person: 'Valeri', text: ' Sorry.' },
+  { startTime: 6573.37, person: 'Karol', text: ' We still hear you.' },
   {
-    startTime: 7087.54,
+    startTime: 6574.93,
     person: 'Karol',
-    text: " Especially if you're doing front-end and you're doing UX, absolutely mandatory read."
+    text: " We just lost the video, and it happened a few times over the stream that you got kind of frozen a little bit, but don't worry about that."
   },
+  { startTime: 6584.95, person: 'Karol', text: ' Oh, for a moment, we did lose audio as well.' },
+  { startTime: 6590.73, person: 'Karol', text: " But you're here." },
+  { startTime: 6591.97, person: 'Karol', text: ' I still see you in the studio, so.' },
+  { startTime: 6594.81, person: 'Valeri', text: " Okay, I think it's getting better." },
+  { startTime: 6598.39, person: 'Valeri', text: ' At least now I can hear you.' },
+  { startTime: 6600.03, person: 'Karol', text: ' Okay.' },
+  { startTime: 6601.05, person: 'Valeri', text: ' Somewhat sequentially.' },
+  { startTime: 6606.61, person: 'Karol', text: ' Technical problems, that happens.' },
+  { startTime: 6610.15, person: 'Karol', text: ' Unfortunately, internet can be spotty at times.' },
+  { startTime: 6615.73, person: 'Karol', text: ' Yeah.' },
+  { startTime: 6617.91, person: 'Karol', text: " Oh, I'm sorry, folks." },
+  { startTime: 6622.17, person: 'Karol', text: ' I think a brief pause.' },
+  { startTime: 6623.87, person: 'Karol', text: ' We lost Valeria here for a moment.' },
+  { startTime: 6626.63, person: 'Karol', text: ' Internet problems.' },
   {
-    startTime: 7094.74,
+    startTime: 6628.81,
     person: 'Karol',
-    text: ' But it trickles down to everything.'
+    text: ' So while we are having this small of a post, we were going to the end of the stream anyways.'
   },
+  { startTime: 6635.47, person: 'Karol', text: " I'll just pop in with some advertisements." },
   {
-    startTime: 7097.04,
+    startTime: 6637.81,
     person: 'Karol',
-    text: " It's not only relevant for user experience."
+    text: " So next month, 5th of November, we're having another interesting stream, which is with Brian Labelle from Rubell Business Solutions Limited in Canada."
   },
   {
-    startTime: 7100.86,
+    startTime: 6654.05,
     person: 'Karol',
-    text: " It's relevant for architecture."
+    text: " We're going to be talking about migrating iPaaS technologies to something else."
   },
+  { startTime: 6661.83, person: 'Karol', text: ' So for example, pure Java implementation.' },
+  { startTime: 6665.13, person: 'Karol', text: " We'll see how that goes." },
   {
-    startTime: 7103.34,
+    startTime: 6666.69,
     person: 'Karol',
-    text: " It's relevant for interoperability."
+    text: " I'm going to play the devil's advocate here to see what are the angles and what are the angles that are usually missed by companies looking at iPaaS from the pure cost perspective of licencing."
   },
+  { startTime: 6684.33, person: 'Karol', text: " So we're going to be doing that." },
   {
-    startTime: 7107.04,
+    startTime: 6686.45,
     person: 'Karol',
-    text: " We're here not to reduce complexity because the complexity is already, we know it's irreducible."
+    text: " If you're new to the stream, if you haven't been here before, you can go and read more about the work we're doing in terms of knowledge sharing about enterprise application integration."
   },
+  { startTime: 6697.93, person: 'Karol', text: ' Just read more on bridging the gap EU comp.' },
   {
-    startTime: 7114.04,
+    startTime: 6700.89,
     person: 'Karol',
-    text: " We're about to manage complexity."
+    text: " You can also subscribe to our sub stack, although it's a little bit tiny bit neglected nowadays because of other priorities."
   },
   {
-    startTime: 7117.58,
+    startTime: 6709.75,
     person: 'Karol',
-    text: " So if we're looking at interoperability, if we do point to point at a scale of 100 domain systems in the corporate environment, that's adding complexity to the mix because that's not readable."
+    text: ' And please do subscribe to the channel to get notifications about other live streams.'
   },
+  { startTime: 6716.15, person: 'Karol', text: ' And I do see that Valeria is back.' },
+  { startTime: 6721.09, person: 'Karol', text: " So let's go back to the live stream." },
+  { startTime: 6727.71, person: 'Karol', text: ' Internet is internet.' },
+  { startTime: 6729.37, person: 'Karol', text: ' Sometimes it works.' },
+  { startTime: 6730.21, person: 'Karol', text: " Sometimes it doesn't." },
   {
-    startTime: 7129.28,
-    person: 'Karol',
-    text: " That's spaghetti architecture."
+    startTime: 6731.75,
+    person: 'Valeri',
+    text: ' So much for distributed system building, right?'
   },
+  { startTime: 6735.75, person: 'Karol', text: ' Fallacy of distributed computing.' },
+  { startTime: 6737.79, person: 'Karol', text: ' Latency is always zero.' },
+  { startTime: 6740.47, person: 'Karol', text: ' And the network is always reliable.' },
+  { startTime: 6743.17, person: 'Valeri', text: ' Yeah, exactly.' },
+  { startTime: 6745.15, person: 'Karol', text: " That's a nice one." },
+  { startTime: 6747.11, person: 'Karol', text: ' Always.' },
+  { startTime: 6748.35, person: 'Valeri', text: ' Yeah.' },
+  { startTime: 6748.75, person: 'Valeri', text: ' So where were we at?' },
+  { startTime: 6750.47, person: 'Valeri', text: ' Stress.' },
   {
-    startTime: 7130.42,
+    startTime: 6751.69,
     person: 'Karol',
-    text: " If we add an integration platform to the mix and streamline everything through an integration platform with proper abstraction layers, we're managing that complexity because we add monitoring and auditability to it and observability."
+    text: ' We were talking about the psychological aspects, relationships within the teams, looking at the five years, the starting 15 people, and then looking at how it developed later into the 80 people squad that you have right now for different services.'
   },
   {
-    startTime: 7145.18,
-    person: 'Karol',
-    text: ' We can actually understand what relates to what because we see those relationships through different elements that are in the platform.'
+    startTime: 6774.25,
+    person: 'Valeri',
+    text: ' So yeah, if I do a quick sketch, those first two insanely close.'
   },
   {
-    startTime: 7153.02,
-    person: 'Karol',
-    text: ' And by adding the abstraction layers, we can actually manage the change and manage dependencies better.'
+    startTime: 6780.47,
+    person: 'Valeri',
+    text: " That's how we survived this original big project."
   },
   {
-    startTime: 7157.88,
-    person: 'Karol',
-    text: " So it's a very hard problem to explain because people still live in the notion that we can reduce complexity forever."
+    startTime: 6783.81,
+    person: 'Valeri',
+    text: " Then there's even a new few teams coming in and us splitting into smaller batches since most of the people are still from this original batch."
   },
+  { startTime: 6792.93, person: 'Valeri', text: " We're still very close." },
   {
-    startTime: 7170.74,
-    person: 'Karol',
-    text: " It's a fairy tale."
+    startTime: 6794.75,
+    person: 'Valeri',
+    text: ' And the new people coming, it felt like we have new members of the family.'
   },
+  { startTime: 6800.11, person: 'Valeri', text: " It's always been very tight." },
   {
-    startTime: 7171.98,
-    person: 'Karol',
-    text: " It doesn't exist."
+    startTime: 6801.43,
+    person: 'Valeri',
+    text: " But of course, it was destined to go a bit less tight and less, let's say, family-like at some point."
   },
   {
-    startTime: 7175.24,
-    person: 'Miriam',
-    text: ' We should, we just shifted around in the end, right?'
+    startTime: 6811.01,
+    person: 'Valeri',
+    text: ' So what you would observe now is that there is still an insane support between the teams, especially in those teams where you have those old people from the very beginning.'
   },
+  { startTime: 6821.65, person: 'Valeri', text: ' They would help no matter what.' },
+  { startTime: 6823.41, person: 'Valeri', text: ' And that brings people together a lot.' },
   {
-    startTime: 7178.84,
-    person: 'Miriam',
-    text: " That's what"
+    startTime: 6826.57,
+    person: 'Valeri',
+    text: ' And even with reorganisation, when you move people around, it still feels safe, I would say.'
   },
+  { startTime: 6833.25, person: 'Valeri', text: ' And I see people are quite close.' },
   {
-    startTime: 7181.4,
-    person: 'Karol',
-    text: " Yeah. It's a matter of who's going to take that complexity and solve it."
+    startTime: 6837.13,
+    person: 'Valeri',
+    text: ' However, you also see a phenomenon that the more new people in the team are, the more isolated it gets in terms of now if something happens, incident, right, now you need to solve the problem.'
   },
   {
-    startTime: 7185.44,
-    person: 'Miriam',
-    text: " I also like Eric's statement."
+    startTime: 6851.05,
+    person: 'Valeri',
+    text: ' And you see this ping pong, oh, is it my team problem?'
   },
+  { startTime: 6855.09, person: 'Valeri', text: ' Maybe I can redirect it to my neighbour.' },
   {
-    startTime: 7187.66,
-    person: 'Miriam',
-    text: ' He just wrote that maybe the problem is that application is still in the age of API.'
+    startTime: 6858.53,
+    person: 'Valeri',
+    text: " So there is a bit of this, let's say, deep, where you see a ping pong during the incidents, like, oh, let me ping the other team."
   },
   {
-    startTime: 7194.96,
-    person: 'Miriam',
-    text: ' I think this is a whole another thing.'
+    startTime: 6875.73,
+    person: 'Valeri',
+    text: " But I feel like it's natural because, again, the system is so big that it's quite frightening for a lot of people, especially new to that they need to embrace that complexity."
   },
   {
-    startTime: 7197.6,
-    person: 'Miriam',
-    text: ' Like, discuss with people the definition of what an API is and have fun, really.'
+    startTime: 6890.57,
+    person: 'Valeri',
+    text: ' And I, for instance, remember myself when I just joined the company.'
   },
   {
-    startTime: 7203.38,
-    person: 'Miriam',
-    text: " I don't know if you did that already."
+    startTime: 6894.21,
+    person: 'Valeri',
+    text: ' I also was part of the incident crew for the systems.'
   },
+  { startTime: 6897.49, person: 'Valeri', text: " I didn't know." },
+  { startTime: 6898.65, person: 'Valeri', text: " I don't know what's going on." },
+  { startTime: 6901.09, person: 'Valeri', text: ' Whose problem can I make it, please?' },
+  { startTime: 6904.35, person: 'Valeri', text: ' Just to offload it from my shoulders.' },
+  { startTime: 6906.61, person: 'Valeri', text: ' So I completely get where this is coming from.' },
   {
-    startTime: 7206.04,
-    person: 'Miriam',
-    text: ' But- Several times.'
+    startTime: 6910.35,
+    person: 'Valeri',
+    text: " How it's dealt with is the teaching sessions on how to run the incidents, helping people to grasp this bigger picture of knowing where it is."
   },
   {
-    startTime: 7207.66,
-    person: 'Miriam',
-    text: ' We did that with clients and even if you are there for a long time, believe me, not everybody is on the same page.'
+    startTime: 6921.75,
+    person: 'Valeri',
+    text: " It's something you can do, or something you can really escalate or help, ask for help from your neighbours."
   },
   {
-    startTime: 7213.38,
-    person: 'Miriam',
-    text: " What an API is, even if you discussed it 100 times before, it's always a good discussion if you want to like, you know."
+    startTime: 6928.19,
+    person: 'Valeri',
+    text: ' But I also see quite often that if people are in the office, and now we are, of course, working hybrids, you often see people working remotely.'
   },
   {
-    startTime: 7220.6,
-    person: 'Karol',
-    text: " And companies that offer products around APIs, they don't help."
+    startTime: 6936.91,
+    person: 'Valeri',
+    text: ' But if people are in the office, they just stand up across the, like, 20 metres gap between the tables and go to another team saying, hey, can you help me, please?'
   },
+  { startTime: 6946.91, person: 'Valeri', text: " I don't know what's going on." },
+  { startTime: 6948.47, person: 'Valeri', text: ' And I never saw someone saying no to that.' },
+  { startTime: 6952.81, person: 'Karol', text: " Yeah, that's a good mindset." },
   {
-    startTime: 7225.56,
+    startTime: 6954.59,
     person: 'Karol',
-    text: " And I'm pointing towards MuleSoft right now and the bullshit that marketing from MuleSoft pressed onto us and it's stick with people."
+    text: ' I remember back in the office days before corona, roaming through the office between different business teams, well, business domain system teams, and just going to have a chat to see what the problem actually is.'
   },
   {
-    startTime: 7235.85,
+    startTime: 6971.65,
     person: 'Karol',
-    text: ' They started naming whole integration applications APIs.'
+    text: ' Because if the business issued the ticket, that usually was very devoid of information.'
   },
+  { startTime: 6976.83, person: 'Karol', text: ' That was the usual problem.' },
   {
-    startTime: 7240.77,
+    startTime: 6978.83,
     person: 'Karol',
-    text: " No, they're not APIs, they're applications."
+    text: ' So just going to a different team to see, hey, your business issued me a ticket.'
   },
+  { startTime: 6984.03, person: 'Karol', text: " It's like, I don't know what's going on." },
+  { startTime: 6985.39, person: 'Karol', text: ' Can you give me some context?' },
   {
-    startTime: 7244.01,
+    startTime: 6986.75,
     person: 'Karol',
-    text: ' They have APIs.'
+    text: " And let's solve that problem together to see if that's actually a problem that I can help you solve."
   },
   {
-    startTime: 7247.62,
+    startTime: 6991.75,
     person: 'Karol',
-    text: ' It was just a nightmare every single time.'
+    text: ' Or is it the problem that is actually somewhere else?'
   },
+  { startTime: 6994.63, person: 'Karol', text: " But let's cooperate on that." },
   {
-    startTime: 7250.42,
+    startTime: 6998.61,
     person: 'Karol',
-    text: " It's like, no, it's not a system API."
+    text: ' And it usually was a very good way just to walk by and just have a conversation.'
   },
   {
-    startTime: 7252.88,
+    startTime: 7003.31,
     person: 'Karol',
-    text: " It's a system application representing a specific system with a standardised API that is a REST API, blah, blah, blah."
+    text: ' Because pinging with incidents and just reassigning it, it was very, very bad psychologically.'
   },
+  { startTime: 7012.53, person: 'Karol', text: ' It was like, oh, this again.' },
+  { startTime: 7014.27, person: 'Karol', text: ' Those damn...' },
+  { startTime: 7016.93, person: 'Karol', text: " So that's good." },
   {
-    startTime: 7262.22,
+    startTime: 7018.65,
     person: 'Karol',
-    text: " And then people have the notion, oh, API is just a, it's REST. No."
-  },
-  {
-    startTime: 7268.2,
-    person: 'Miriam',
-    text: ' No.'
+    text: ' And you said you have support in terms of training to work with incidents?'
   },
+  { startTime: 7022.85, person: 'Valeri', text: ' Yes.' },
   {
-    startTime: 7268.92,
-    person: 'Miriam',
-    text: " Exactly, that's one of the perceptions."
+    startTime: 7024.91,
+    person: 'Valeri',
+    text: ' Because, of course, the system is big and complex.'
   },
+  { startTime: 7029.01, person: 'Valeri', text: " And you don't want to have..." },
+  { startTime: 7030.71, person: 'Valeri', text: ' And remember, 24-7 almost.' },
   {
-    startTime: 7271.32,
-    person: 'Karol',
-    text: ' Yeah, SOAP is an API.'
+    startTime: 7033.47,
+    person: 'Valeri',
+    text: ' So you actually need support throughout the day.'
   },
+  { startTime: 7037.63, person: 'Valeri', text: ' So when it was a single team, it was easy.' },
   {
-    startTime: 7272.76,
-    person: 'Karol',
-    text: ' You can have an API implemented with JMS, no problem.'
+    startTime: 7042.17,
+    person: 'Valeri',
+    text: ' One person from the whole team is on support per day.'
   },
   {
-    startTime: 7277.26,
-    person: 'Karol',
-    text: ' You can have, JDBC is a protocol for an API of a database.'
+    startTime: 7046.05,
+    person: 'Valeri',
+    text: ' Now when you have like 10, having 10 engineers doing constant support is expensive.'
   },
+  { startTime: 7051.79, person: 'Valeri', text: " It's also heavy duty-wise." },
   {
-    startTime: 7283.56,
-    person: 'Karol',
-    text: ' My tongue is, my ears are an API, if you want to talk to me.'
+    startTime: 7054.03,
+    person: 'Valeri',
+    text: " So you introduce this tier structure where there is the first tier that can identify at least what's the direction of the problem and then escalates all the way to the relevant people."
   },
   {
-    startTime: 7290.04,
-    person: 'Karol',
-    text: ' If you consider me a programme, right?'
+    startTime: 7068.81,
+    person: 'Valeri',
+    text: ' But in order to be able to do that and for the people to know how to deal with certain issues, you do need training and help.'
   },
   {
-    startTime: 7292.26,
-    person: 'Karol',
-    text: ' Or an application.'
+    startTime: 7076.47,
+    person: 'Valeri',
+    text: ' So that at least people feel psychologically safe to take this job.'
   },
+  { startTime: 7080.73, person: 'Valeri', text: " Because it's part of their responsibilities." },
   {
-    startTime: 7294.76,
-    person: 'Karol',
-    text: " It's difficult for people to comprehend that just throwing around acronyms like API doesn't contribute to anything."
+    startTime: 7083.13,
+    person: 'Valeri',
+    text: " But if you don't feel safe, because it's very different from just sitting and coding and delivering the code that builds and runs, here you still need to deal with real people sometimes."
   },
   {
-    startTime: 7303.12,
-    person: 'Karol',
-    text: " It's a very difficult aspect there."
+    startTime: 7095.47,
+    person: 'Valeri',
+    text: " Actually, very often you're on call with actual people from operations that are standing in front of the screen in the warehouse."
   },
+  { startTime: 7102.43, person: 'Valeri', text: ' You can hear this ringing of hardware.' },
   {
-    startTime: 7306.08,
-    person: 'Miriam',
-    text: ' Yeah, I have another good one, for example, SAP API management, the list where you can see the proxies, it says APIs.'
+    startTime: 7104.81,
+    person: 'Valeri',
+    text: " And they're also desperate because they have no clue what's going on."
   },
+  { startTime: 7108.45, person: 'Valeri', text: " And you have no clue what's going on." },
+  { startTime: 7109.93, person: 'Valeri', text: " You can imagine it's very stressful." },
   {
-    startTime: 7317.75,
+    startTime: 7111.67,
     person: 'Karol',
-    text: ' What?'
+    text: ' And you try to figure out the reality of things in combination of two worlds, digital and physical.'
   },
+  { startTime: 7118.33, person: 'Karol', text: ' That must be quite stressful in that sense.' },
   {
-    startTime: 7319.17,
-    person: 'Miriam',
-    text: ' Yeah.'
+    startTime: 7123.21,
+    person: 'Karol',
+    text: ' But if you say tiers, it kind of reminds me of the approach.'
   },
   {
-    startTime: 7320.69,
-    person: 'Miriam',
-    text: " Some people believe the proxy is the API, and I'm like, well, no, it's a proxy."
+    startTime: 7129.15,
+    person: 'Karol',
+    text: ' Because right now we have those development teams that they also handle the operations of the systems, right?'
   },
   {
-    startTime: 7328.81,
-    person: 'Miriam',
-    text: ' Because it really, it says APIs as the name of the top.'
+    startTime: 7136.55,
+    person: 'Karol',
+    text: ' So this is the singular responsibility of a team.'
   },
   {
-    startTime: 7332.45,
-    person: 'Miriam',
-    text: ' So in the UI, so people see these are the APIs, I mean, clearly, right?'
+    startTime: 7139.31,
+    person: 'Karol',
+    text: " You have a set of services that you're handling, you do the dev and you do the operations."
   },
   {
-    startTime: 7338.39,
-    person: 'Miriam',
-    text: ' No.'
+    startTime: 7144.27,
+    person: 'Karol',
+    text: ' The maintenance, the fixing, the troubleshooting, all of that.'
   },
   {
-    startTime: 7339.73,
-    person: 'Miriam',
-    text: " So, you know, you have to be careful what you name API because it's misused a lot, I agree, mainly in Python, but also by other people, so."
+    startTime: 7150.85,
+    person: 'Karol',
+    text: ' A different old school approach was like you have a dev team and you have a handover to the operations team.'
   },
   {
-    startTime: 7348.13,
+    startTime: 7157.43,
     person: 'Karol',
-    text: ' If you put it this way, if we talk about API management, nothing on the API management layer, well, precisely API gateway layer, nearly nothing is an API.'
+    text: ' And the operations team is handling operations, right?'
   },
   {
-    startTime: 7362.59,
+    startTime: 7160.37,
     person: 'Karol',
-    text: ' All of these are proxies.'
+    text: " You send it back to the dev team when there's something that requires a substantial- Oh, yeah."
   },
+  { startTime: 7164.65, person: 'Valeri', text: ' In that sense, this separation is there.' },
+  { startTime: 7167.73, person: 'Karol', text: ' Oh, it is?' },
+  { startTime: 7168.43, person: 'Karol', text: ' Okay.' },
+  { startTime: 7168.57, person: 'Valeri', text: ' Yes, of course.' },
   {
-    startTime: 7366.21,
-    person: 'Karol',
-    text: ' So, to be very, very rigid and specific, some of them may be APIs if there is actual logic involved and implementation over the API gateway.'
+    startTime: 7170.53,
+    person: 'Valeri',
+    text: ' So the operations is basically people for whom they are our customers.'
   },
   {
-    startTime: 7376.87,
-    person: 'Karol',
-    text: ' So for example, if the API gateway offers protocol mediation, you can consider that being an API because it has a specific function.'
+    startTime: 7176.37,
+    person: 'Valeri',
+    text: ' We are writing the system for them so that they can control this facility.'
   },
   {
-    startTime: 7386.75,
-    person: 'Karol',
-    text: ' But this is being very rigid.'
+    startTime: 7181.11,
+    person: 'Valeri',
+    text: ' Still, though, developers are quite close to operations and to hold this world too.'
   },
+  { startTime: 7185.77, person: 'Valeri', text: ' But this separation is there.' },
   {
-    startTime: 7388.63,
+    startTime: 7187.61,
     person: 'Karol',
-    text: " It's still a proxy."
+    text: ' But you have the operations, which are the physical operations inside the specific facility.'
   },
+  { startTime: 7192.91, person: 'Karol', text: ' Yes, yes.' },
+  { startTime: 7193.71, person: 'Karol', text: ' Right?' },
   {
-    startTime: 7392.25,
+    startTime: 7194.15,
     person: 'Karol',
-    text: ' But this is where things get lost because we have so many different types of appliances, types of applications that do things technically, and everybody has their own marketing, nomenclature.'
+    text: " So they're operating machinery, they're operating the crates, they're operating- Oh, no."
   },
   {
-    startTime: 7407.75,
-    person: 'Karol',
-    text: ' Every part of the industry has its own jargon.'
+    startTime: 7198.75,
+    person: 'Valeri',
+    text: ' There is also operations in the sense of analysts, people who look at the monitor from their home, if need be, to control this site.'
   },
   {
-    startTime: 7413.53,
-    person: 'Karol',
-    text: ' Greatest example, a few streams back, we were talking about data mesh.'
+    startTime: 7207.45,
+    person: 'Valeri',
+    text: ' And they are the natural translator between that and the operations team.'
   },
+  { startTime: 7211.97, person: 'Valeri', text: ' Okay.' },
   {
-    startTime: 7419.69,
+    startTime: 7212.07,
     person: 'Karol',
-    text: ' Here in the studio, there were two data architects, and we really got lost in the lingo from time to time, and that created hilarious misunderstandings.'
+    text: " So they have more context of their specific facility, but they have the context of the actual services that they're monitoring."
   },
+  { startTime: 7221.21, person: 'Valeri', text: ' To an extent, yes.' },
+  { startTime: 7223.15, person: 'Karol', text: ' To an extent.' },
   {
-    startTime: 7433.49,
-    person: 'Karol',
-    text: ' We were talking about contracts, and I had a completely different notion of a contract than my guests in the live stream.'
+    startTime: 7223.61,
+    person: 'Valeri',
+    text: ' One of the challenges with the evolvement of the architecture, how to make business to talk in our terms.'
   },
   {
-    startTime: 7444.73,
-    person: 'Karol',
-    text: " It's completely different."
+    startTime: 7232.11,
+    person: 'Valeri',
+    text: " Because before it was a single system, they get used to calling it whatever it's been called."
   },
   {
-    startTime: 7445.93,
-    person: 'Karol',
-    text: " If I look at a feedback from DDD Europe when I ran a workshop this year, we had a feedback that, oh, this was a missed opportunity because you didn't talk about data mesh when you were talking about interoperability."
+    startTime: 7237.55,
+    person: 'Valeri',
+    text: ' And now we inevitably, as a dev, speak in different terms, of course.'
   },
   {
-    startTime: 7458.29,
-    person: 'Karol',
-    text: " It's like, sorry, what?"
+    startTime: 7241.95,
+    person: 'Valeri',
+    text: " And then they come with a feature and you explain, oh, that can't be done because we have multiple systems and they need to communicate."
   },
+  { startTime: 7249.45, person: 'Valeri', text: ' So all those challenges are there.' },
+  { startTime: 7251.55, person: 'Karol', text: ' Okay.' },
+  { startTime: 7252.47, person: 'Karol', text: ' Yeah.' },
   {
-    startTime: 7461.31,
+    startTime: 7253.89,
     person: 'Karol',
-    text: ' We were talking about ETL batch and ELT.'
+    text: ' Orchestration of work between teams is probably quite a heavy challenge right now.'
   },
   {
-    startTime: 7464.49,
+    startTime: 7259.81,
     person: 'Karol',
-    text: " That's basically the key of a broker architecture."
+    text: ' I remember from the time when I was doing operations, we had the dev team doing the delivery of the code and that moved to the testing environments.'
   },
   {
-    startTime: 7468.49,
+    startTime: 7270.93,
     person: 'Karol',
-    text: " That's the most common use case for a broker architecture."
+    text: ' And in production, we had L1, L2, and L3, where L1 was just monitoring.'
   },
   {
-    startTime: 7471.79,
+    startTime: 7276.53,
     person: 'Karol',
-    text: ' Again, lingo.'
+    text: ' Those guys were on 12-hour shifts sitting in front of monitors looking for what problems are monitoring the ticket system, just looking at if there are any problems in production.'
   },
   {
-    startTime: 7473.33,
+    startTime: 7288.63,
     person: 'Karol',
-    text: " It's not that we didn't talk about it."
+    text: ' L2s were those that were usually solving those problems if they occurred and seeing if they can solve the problems just by reconfiguring, restarting, offloading something, etcétera.'
   },
   {
-    startTime: 7475.13,
+    startTime: 7305.67,
     person: 'Karol',
-    text: " We did, but somebody didn't know the terms and words that are used by integration architects."
+    text: ' If this problem could be contained within the integration platform, they usually fix that within the integration platforms.'
   },
   {
-    startTime: 7479.93,
+    startTime: 7311.81,
     person: 'Karol',
-    text: " They knew the words that were used by data architects, and if you say application integration to a data architect, they don't understand that this is data movement."
+    text: " If that couldn't be fixed just solely in the integration platform, that went to L3, which was usually me, to solve that by cooperating with other systems, often managing fixes on sites on the integration platform and the system as well."
   },
   {
-    startTime: 7489.51,
+    startTime: 7328.51,
     person: 'Karol',
-    text: " That's a different term."
+    text: ' So orchestrating that and then issuing that quick fix with an emergency release or planning that fix within a minor or major release were natural in that sense.'
   },
+  { startTime: 7340.49, person: 'Karol', text: ' So it was the kind of levels.' },
   {
-    startTime: 7490.57,
-    person: 'Miriam',
-    text: ' And they knew that.'
+    startTime: 7343.93,
+    person: 'Karol',
+    text: ' Does that resemble anything in picking them, this kind of classification?'
   },
+  { startTime: 7351.15, person: 'Valeri', text: ' Or is it a different classification?' },
+  { startTime: 7353.97, person: 'Valeri', text: " It's a bit different, yes." },
   {
-    startTime: 7491.37,
-    person: 'Miriam',
-    text: ' Application integration and data integration, there we have the next topic on how to define it and what that means.'
+    startTime: 7356.61,
+    person: 'Valeri',
+    text: ' So there are obviously people on the side themselves who are those monitors with different alerts for hardware malfunction, but they likely fix it manually, right?'
   },
+  { startTime: 7368.65, person: 'Valeri', text: ' So no involvement from that, etcétera.' },
   {
-    startTime: 7496.71,
-    person: 'Miriam',
-    text: " I think it's already too late to discuss this today."
+    startTime: 7371.05,
+    person: 'Valeri',
+    text: ' Then you have operations people who control the site in the sense of they have a plan, those ATK deliveries of how many per day that needs to be packed and dispatched.'
   },
   {
-    startTime: 7500.63,
-    person: 'Karol',
-    text: ' What I can do is drop an article because I literally wrote, one of my first articles is the differentiation between data integration and application integration.'
+    startTime: 7383.07,
+    person: 'Valeri',
+    text: ' So they look already at the business flows and alerts from that perspective.'
   },
   {
-    startTime: 7509.45,
-    person: 'Miriam',
-    text: " But still, you need to explain it to a lot of people and still a lot of people don't get it, right?"
+    startTime: 7387.79,
+    person: 'Valeri',
+    text: " And when they can solve operationally by rescheduling something or turning down one operation, so let's say no more gel packing, we all focus on picking only, they do that."
   },
   {
-    startTime: 7514.07,
-    person: 'Miriam',
-    text: ' The same with what is an API.'
+    startTime: 7403.15,
+    person: 'Valeri',
+    text: ' But when they see that the behaviour of the system, there is something wrong, they often escalate already towards that part.'
   },
+  { startTime: 7410.77, person: 'Valeri', text: ' And there you see tiers.' },
   {
-    startTime: 7515.63,
-    person: 'Miriam',
-    text: ' As I said, you can always start a discussion and see where it leads to, but you will see that if you usually start a discussion, people are not on the same page, no matter where you try it, right?'
+    startTime: 7412.63,
+    person: 'Valeri',
+    text: " The tier is one is the first single point of contact, but saying, hey, something's going wrong, can you then either solve it or find who's going to solve it?"
   },
+  { startTime: 7424.01, person: 'Valeri', text: " And then it's already..." },
   {
-    startTime: 7525.93,
-    person: 'Miriam',
-    text: ' In any company, you can usually try.'
+    startTime: 7426.75,
+    person: 'Valeri',
+    text: ' And then next tier is the people who more closely and closely related to a specific part.'
   },
   {
-    startTime: 7528.27,
-    person: 'Miriam',
-    text: ' And if you ask what is an API, people will disagree with each other.'
+    startTime: 7432.89,
+    person: 'Valeri',
+    text: " But it's not necessarily the behaviour of the system."
   },
   {
-    startTime: 7531.29,
-    person: 'Miriam',
-    text: " If you're in a room with multiple people, it's pretty, you can be pretty sure."
+    startTime: 7435.07,
+    person: 'Valeri',
+    text: ' It can be like, oh, exactly, something happened hardware-wise, and there is no easy workaround for that.'
   },
   {
-    startTime: 7535.19,
-    person: 'Miriam',
-    text: " And it's really interesting to watch and see."
+    startTime: 7441.65,
+    person: 'Valeri',
+    text: ' Can you help us figure out what we can do if this type of request also happens?'
   },
   {
-    startTime: 7537.79,
+    startTime: 7448.26,
     person: 'Karol',
-    text: ' Yes.'
+    text: ' Okay, so you kind of have that kind of layered system as well.'
   },
   {
-    startTime: 7538.47,
+    startTime: 7451.56,
     person: 'Karol',
-    text: ' And from my perspective as an integration architect, this is the role of an architect, any architect, not only the integration architect, to sit down with those people and establish a common dictionary.'
+    text: ' But this is specifically in the dev teams that how to manage the workload of incidents.'
   },
   {
-    startTime: 7553.29,
-    person: 'Miriam',
-    text: ' Yes.'
-  },
-  {
-    startTime: 7554.05,
+    startTime: 7458.32,
     person: 'Karol',
-    text: ' This is the most important part of the role when you come into a client and start working with clients.'
+    text: ' And the operations in Picking, they actually more on the business continuity and the line continuity.'
   },
   {
-    startTime: 7559.79,
+    startTime: 7469.18,
     person: 'Karol',
-    text: ' To just, first of all, learn their lingo and then check if everybody understands it the same way.'
+    text: ' So more of a progressing with packing, picking and packing, rather than looking at the operations of the specific services that are there.'
   },
   {
-    startTime: 7567.87,
-    person: 'Karol',
-    text: " Because 99% of the times, they don't."
+    startTime: 7479.7,
+    person: 'Valeri',
+    text: " It's more of a business process rather than a tech process."
   },
   {
-    startTime: 7570.85,
-    person: 'Karol',
-    text: " So it's a matter of going there, understanding, looking where the discrepancies are and start aligning people with one another, even using their own nomenclature, not using the actual proper terms."
+    startTime: 7484.14,
+    person: 'Valeri',
+    text: ' Specific service that goes to one of the dev people in that team.'
   },
+  { startTime: 7489.86, person: 'Valeri', text: " And that's a rotation, basically." },
   {
-    startTime: 7582.43,
+    startTime: 7492.78,
     person: 'Karol',
-    text: " I don't care about the proper terms when I'm in a client."
+    text: ' So someone calls, someone monitoring, this kind of thing.'
   },
+  { startTime: 7497.06, person: 'Karol', text: ' Mm-hmm.' },
+  { startTime: 7502.57, person: 'Karol', text: ' Complex stuff.' },
+  { startTime: 7504.67, person: 'Karol', text: ' Complex.' },
   {
-    startTime: 7585.17,
+    startTime: 7506.87,
     person: 'Karol',
-    text: ' They can use their terms.'
+    text: ' Now, just to change the topic a little, still being on the psychological side of things, rather than the technical one.'
   },
+  { startTime: 7518.59, person: 'Karol', text: ' But a completely different topic in that sense.' },
   {
-    startTime: 7586.23,
+    startTime: 7522.81,
     person: 'Karol',
-    text: " As long as everybody understands those terms the same way, I can make myself a translation table and I'll be fine."
+    text: ' You yourself, being a woman in tech, I must ask, did you have challenges about you being a woman in tech?'
   },
+  { startTime: 7534.99, person: 'Karol', text: ' Because the stories differ.' },
+  { startTime: 7539.21, person: 'Valeri', text: ' Yeah.' },
+  { startTime: 7540.11, person: 'Valeri', text: ' Are you sure, Flea?' },
+  { startTime: 7541.19, person: 'Karol', text: ' No.' },
+  { startTime: 7544.97, person: 'Karol', text: ' I knew that answer already, so.' },
+  { startTime: 7549.87, person: 'Valeri', text: ' Yeah.' },
+  { startTime: 7551.33, person: 'Valeri', text: " Yeah, I'm aware that the challenges exist." },
   {
-    startTime: 7594.59,
-    person: 'Miriam',
-    text: ' Yeah, in our last project, the first thing we did was a glossary because everybody was talking about things and nobody was talking about the same thing.'
+    startTime: 7555.29,
+    person: 'Valeri',
+    text: ' Well, luckily, you have quite a good portion of girls in tech in Picnic.'
   },
+  { startTime: 7561.83, person: 'Valeri', text: ' And I do hear their stories.' },
+  { startTime: 7563.87, person: 'Valeri', text: ' I was in the lackey spectrum.' },
+  { startTime: 7565.75, person: 'Valeri', text: " I've never encountered that." },
   {
-    startTime: 7601.69,
-    person: 'Miriam',
-    text: ' So it was like, well, we need a glossary.'
+    startTime: 7567.21,
+    person: 'Valeri',
+    text: ' So from the very day X, even though in university, the girls were obviously a minority, then same with the first companies, I never felt that my gender plays any role.'
   },
   {
-    startTime: 7604.03,
-    person: 'Miriam',
-    text: ' So, oh, depressing.'
+    startTime: 7582.33,
+    person: 'Valeri',
+    text: " I think only once it's been mentioned to me, all the way back in the university, from one of the teachers, because I was skipping her programming lessons."
   },
   {
-    startTime: 7606.21,
-    person: 'Miriam',
-    text: " What's depressing?"
+    startTime: 7591.49,
+    person: 'Valeri',
+    text: " I didn't like them, because she wasn't able to explain object-orientated programming well enough."
   },
+  { startTime: 7596.65, person: 'Valeri', text: " So I'm like, why are you skipping my classes?" },
+  { startTime: 7604.67, person: 'Valeri', text: ' You started on a nice project.' },
+  { startTime: 7607.13, person: 'Valeri', text: " But actually, girls don't become developers." },
   {
-    startTime: 7607.91,
-    person: 'Miriam',
-    text: ' Hopefully not our conversation.'
+    startTime: 7610.81,
+    person: 'Valeri',
+    text: ' So maybe you should reconsider and become a designer instead.'
   },
+  { startTime: 7616.17, person: 'Karol', text: " No, that doesn't work like that." },
+  { startTime: 7618.89, person: 'Karol', text: " In spite of her, I'm going to do development." },
+  { startTime: 7622.73, person: 'Valeri', text: ' Yeah.' },
   {
-    startTime: 7610.39,
-    person: 'Karol',
-    text: " Rather the problems we're discussing that people are facing or us as architects are facing."
+    startTime: 7623.59,
+    person: 'Valeri',
+    text: ' But I get that she probably had her own beta story, being she was trying to be a developer in tech from the 60s, whatever, and ended up in the university.'
   },
+  { startTime: 7635.13, person: 'Valeri', text: ' So I can imagine she has a story of her own.' },
   {
-    startTime: 7617.35,
-    person: 'Miriam',
-    text: " I guess to sum it up, I think that's also a good point to sum it up."
+    startTime: 7637.29,
+    person: 'Valeri',
+    text: " But apart from that very early story, I never felt that if I'm a woman, that changes anything."
   },
   {
-    startTime: 7621.19,
-    person: 'Miriam',
-    text: " I think my perception is most people think APIs are easy and in reality, they're not."
+    startTime: 7646.33,
+    person: 'Valeri',
+    text: ' To be honest, I felt more insecure about my age than gender.'
   },
+  { startTime: 7650.77, person: 'Karol', text: ' Oh, I got that one as well back in the day.' },
+  { startTime: 7653.51, person: 'Karol', text: " That's why I have this." },
   {
-    startTime: 7630.33,
+    startTime: 7656.87,
     person: 'Karol',
-    text: " No, they're absolutely not."
+    text: " Well, even if I try all I can, I think it's not possible."
   },
   {
-    startTime: 7632.03,
+    startTime: 7661.73,
     person: 'Karol',
-    text: " There's a lot more to it."
+    text: " That's a completely different set of problems to solve."
   },
   {
-    startTime: 7634.33,
+    startTime: 7664.77,
     person: 'Karol',
-    text: ' There are various angles we can take.'
+    text: " But the origin of my beard was that I was looking so young and people didn't take me seriously back in the day when I started as an architect, that I started having a beard to age myself visually."
   },
+  { startTime: 7677.93, person: 'Karol', text: ' Did it help?' },
+  { startTime: 7679.11, person: 'Karol', text: ' Yeah, it actually did help.' },
+  { startTime: 7681.45, person: 'Karol', text: ' And just the beard just stayed.' },
   {
-    startTime: 7636.41,
+    startTime: 7683.11,
     person: 'Karol',
-    text: ' The answer is always, it depends.'
-  },
-  {
-    startTime: 7639.01,
-    person: 'Miriam',
-    text: ' Yes, the consultant answer, the typical consultant answer, right?'
+    text: ' And I started like, oh, I actually like myself in a beard.'
   },
+  { startTime: 7685.77, person: 'Karol', text: " And I was like, let's leave it." },
   {
-    startTime: 7642.65,
-    person: 'Miriam',
-    text: ' It depends.'
+    startTime: 7688.01,
+    person: 'Karol',
+    text: " And so my kids, my wife, they have no idea how I look without the beard because they never seen me without the beard because it's so old."
   },
   {
-    startTime: 7644.47,
+    startTime: 7696.81,
     person: 'Karol',
-    text: " Yes, it depends, but it's about explaining, depends on what and what we want to achieve and having that honest conversation, cross layers from the business to implementation."
+    text: ' But for how long have you been having the beard?'
   },
+  { startTime: 7699.03, person: 'Karol', text: " Let's see." },
+  { startTime: 7699.81, person: 'Karol', text: ' The last time I shaved was 2014 or something.' },
+  { startTime: 7707.12, person: 'Valeri', text: ' Okay, okay.' },
+  { startTime: 7709.96, person: 'Valeri', text: ' So, oh my God, 10 years.' },
+  { startTime: 7712, person: 'Karol', text: ' 11, 11.' },
   {
-    startTime: 7656.45,
+    startTime: 7714.9,
     person: 'Karol',
-    text: ' What do we want to achieve?'
+    text: ' I can check that in actual timeline because that was somewhere around my best friend having a very specific party.'
   },
   {
-    startTime: 7658.15,
-    person: 'Miriam',
-    text: ' And then pick the- Why are we doing this?'
+    startTime: 7724.78,
+    person: 'Karol',
+    text: ' And that correlated somewhere with me changing a job.'
   },
+  { startTime: 7728.1, person: 'Karol', text: ' So let me just quickly look in LinkedIn.' },
+  { startTime: 7735.76, person: 'Karol', text: ' Yes, that would be somewhere around 2014.' },
   {
-    startTime: 7660.63,
+    startTime: 7738.5,
     person: 'Karol',
-    text: ' Why?'
+    text: " So that's 11 years ago that I shaved last and that related to that party because I already started growing a beard."
   },
   {
-    startTime: 7661.19,
+    startTime: 7746.84,
     person: 'Karol',
-    text: ' Yes, to have the rationale, to have the why.'
+    text: ' But the party was themed red, interpreted however you want.'
   },
   {
-    startTime: 7664.21,
+    startTime: 7751.38,
     person: 'Karol',
-    text: ' And then from that, we pick the tools that are suited for the job, not just implement an API.'
+    text: ' So basically, I dressed in a lab coat and painted my whole head, well, hair and beard red.'
   },
   {
-    startTime: 7669.97,
+    startTime: 7759.82,
     person: 'Karol',
-    text: ' We implement that with intent.'
+    text: " And despite the paint being washable, it didn't want to wash away."
   },
   {
-    startTime: 7671.63,
-    person: 'Miriam',
-    text: ' Why, what, and who is involved?'
+    startTime: 7768.5,
+    person: 'Karol',
+    text: ' So I had to shave my whole head and beard away, just not to be red anymore.'
   },
+  { startTime: 7776.36, person: 'Karol', text: ' And that was the last time I shaved.' },
   {
-    startTime: 7673.97,
-    person: 'Miriam',
-    text: ' These are the most important things to figure out.'
+    startTime: 7779.3,
+    person: 'Karol',
+    text: ' So 2014, just to make myself shows older, it had the same concern about my age or being perceived as too young.'
   },
+  { startTime: 7792.32, person: 'Karol', text: ' But afterwards, no more.' },
   {
-    startTime: 7676.53,
+    startTime: 7796.42,
     person: 'Karol',
-    text: ' Pretty much.'
+    text: ' To those daring me in the comments to show a photo of me without a beard, no, those do not exist anymore.'
   },
+  { startTime: 7805.16, person: 'Karol', text: ' I mean- Erased from all the service.' },
+  { startTime: 7807.8, person: 'Valeri', text: ' All right, yeah.' },
   {
-    startTime: 7678.21,
+    startTime: 7809.56,
     person: 'Karol',
-    text: ' All right, to end it off, a few announcements before we switch off completely.'
+    text: ' I was very diligent about erasing some parts of my digital identity, just to be- I mean, I dare anybody to find this.'
   },
   {
-    startTime: 7685.23,
+    startTime: 7819.06,
     person: 'Karol',
-    text: " So for those who still are with us, hopefully a few people, this time around, it's very interesting that we have another live stream so close by because it's literally in two days and it's going to be a very special edition."
+    text: " If they do, kudos, I'm going to buy you a beer if you come to the Netherlands."
   },
   {
-    startTime: 7702.75,
+    startTime: 7824.12,
     person: 'Karol',
-    text: " You'll learn why when you join on Saturday."
+    text: " Just to be fair, I'm going to buy a beer if somebody finds a photo of me without the beard."
   },
+  { startTime: 7830.54, person: 'Karol', text: ' Good luck with that.' },
   {
-    startTime: 7707.07,
+    startTime: 7832.68,
     person: 'Karol',
-    text: " I'm going to be having Mark Richards on the live stream and we're going to be talking about the human condition, the problems, exactly what we're just ended on a note here, the different problems that architects need to navigate from the human perspective, not from the technical perspective, not from architecture."
+    text: ' And then, okay, you were lucky as a woman in IT.'
   },
   {
-    startTime: 7726.59,
+    startTime: 7838.56,
     person: 'Karol',
-    text: " We're not going to jump into microservice sagas."
+    text: ' Given that, in my personal opinion, we still do not have enough women in IT, I would love to see more women architects.'
   },
+  { startTime: 7846.86, person: 'Karol', text: ' I would love to see more developers.' },
+  { startTime: 7849.42, person: 'Karol', text: " I mean, it's changing slowly, gradually." },
+  { startTime: 7851.6, person: 'Karol', text: ' I see more and more.' },
   {
-    startTime: 7730.09,
+    startTime: 7853.16,
     person: 'Karol',
-    text: " We're going to talk about the human condition."
+    text: ' If I compare it to 10 years ago, where most of the dev teams were men only.'
   },
   {
-    startTime: 7732.67,
+    startTime: 7859.2,
     person: 'Karol',
-    text: " So on Saturday, 8 p.m. Central European summertime, Mark Richards and I, we're going to have a nice conversation."
+    text: ' And if you would have a woman in a team, that would be the project manager or a scrum master, something like that.'
   },
+  { startTime: 7865.94, person: 'Karol', text: ' Now we have actually devs and architects.' },
+  { startTime: 7868.58, person: 'Karol', text: " That's already an amazing change." },
   {
-    startTime: 7743.03,
+    startTime: 7871.54,
     person: 'Karol',
-    text: " And if you're new to the stream, you can scan any of those QR codes, go to bridgingthegap.com, which is the open source site where I, with my colleagues from Bridging the Gap, write articles about enterprise application integration and integration architecture."
+    text: " What can you say from your perspective, even though you didn't have those challenges that much, to encourage women to be in IT, to pursue programming jobs or architecture or testers, whatever that may be?"
   },
+  { startTime: 7892.28, person: 'Karol', text: ' I know a difficult one.' },
   {
-    startTime: 7760.21,
-    person: 'Karol',
-    text: ' You can subscribe to Substack, although I neglected that one a little bit recently, so I need to get back to it.'
+    startTime: 7893.58,
+    person: 'Valeri',
+    text: " I would say, yeah, it's like with anything else."
   },
   {
-    startTime: 7766.51,
-    person: 'Karol',
-    text: ' And of course, subscribe to the YouTube channel to get notified about the upcoming streams.'
+    startTime: 7896.88,
+    person: 'Valeri',
+    text: ' For any other skill, I would give probably the same answer.'
   },
   {
-    startTime: 7772.45,
-    person: 'Karol',
-    text: ' All the streams are scheduled both on LinkedIn as events and on YouTube.'
+    startTime: 7900.3,
+    person: 'Valeri',
+    text: ' If you love something and you want to do this, fuck it all, just do it.'
   },
+  { startTime: 7906.54, person: 'Valeri', text: " It doesn't matter what's your gender." },
+  { startTime: 7908.72, person: 'Valeri', text: " It doesn't matter what people think about you." },
   {
-    startTime: 7778.71,
-    person: 'Karol',
-    text: ' So if you want to be notified about these, just hit subscribe.'
+    startTime: 7911.36,
+    person: 'Valeri',
+    text: " It only matters if you enjoy it and if you invest enough time in this, that's all."
   },
   {
-    startTime: 7783.85,
-    person: 'Karol',
-    text: " And I think that's the bell icon somewhere there to get the notifications or something like that."
+    startTime: 7916.16,
+    person: 'Valeri',
+    text: " Because whenever I felt, let's say, as if something is wrong with me while being in IT, I always attributed it for me not studying enough or not being good enough in the sense of knowledgeable enough, but never that it has to do something with my gender."
   },
   {
-    startTime: 7788.69,
+    startTime: 7933.74,
     person: 'Karol',
-    text: ' Not really that well-versed in YouTube, to be honest.'
+    text: ' Just to put it in perspective, how often did you fail at doing tasks?'
   },
+  { startTime: 7940.62, person: 'Karol', text: ' How often did you make errors over your career?' },
+  { startTime: 7945.28, person: 'Karol', text: ' Or how often do you do that now?' },
+  { startTime: 7946.4, person: 'Valeri', text: " That's a new definition of error, right?" },
   {
-    startTime: 7793.93,
-    person: 'Karol',
-    text: " So that's it for the record."
+    startTime: 7948.8,
+    person: 'Valeri',
+    text: " I told you, I almost put down the whole rabbit cluster, but it's not to say an error."
   },
   {
-    startTime: 7796.83,
-    person: 'Karol',
-    text: ' Thank you, Daniel, for joining.'
+    startTime: 7954.6,
+    person: 'Valeri',
+    text: " It's something you learn from, and you just accept it and you fix it."
   },
+  { startTime: 7958.64, person: 'Valeri', text: " That's it." },
   {
-    startTime: 7798.21,
-    person: 'Karol',
-    text: " Hope you're having fun with your kids."
+    startTime: 7962.32,
+    person: 'Valeri',
+    text: " I wouldn't say there were any big failures in terms of that the company suffered from that, or I was lying for a week on my couch, crying my eyes out, but definitely, if I turn back, I will find the amount of decisions I'm not happy about in terms of how the systems are built or technology with children."
   },
   {
-    startTime: 7801.85,
-    person: 'Miriam',
-    text: " And- I hope they're already sleeping."
+    startTime: 7982.98,
+    person: 'Valeri',
+    text: " But of course, they are, let's say, the minority, out of the blue, like 10%, 15% at least."
   },
+  { startTime: 7990.44, person: 'Valeri', text: ' Maybe more.' },
   {
-    startTime: 7803.63,
+    startTime: 7991.64,
     person: 'Karol',
-    text: ' Hopefully, right?'
+    text: ' But you would treat them as learning experiences, right?'
   },
+  { startTime: 7996.24, person: 'Valeri', text: ' Exactly.' },
+  { startTime: 7997.04, person: 'Valeri', text: " I mean, but that's one of the ways to learn." },
+  { startTime: 7999.88, person: 'Valeri', text: ' You fail, you learn, you learn.' },
+  { startTime: 8002.28, person: 'Valeri', text: ' I can learn.' },
   {
-    startTime: 7804.53,
-    person: 'Karol',
-    text: ' Yeah.'
+    startTime: 8005.4,
+    person: 'Valeri',
+    text: " I can do that because I'm not working in the industry where the failure is critical."
   },
   {
-    startTime: 7806.57,
-    person: 'Miriam',
-    text: " Let's hope for it."
+    startTime: 8010.6,
+    person: 'Valeri',
+    text: " I mean, obviously, if you're working with medical equipment and the human bias at stake, that's a different story."
   },
   {
-    startTime: 7807.87,
-    person: 'Karol',
-    text: " Let's hope for it."
+    startTime: 8016.78,
+    person: 'Valeri',
+    text: " In the worst case, yes, it costs my company money, but then I will be there on the line of fire to fix it as soon as possible because it's my mistake."
   },
   {
-    startTime: 7808.75,
+    startTime: 8027.86,
     person: 'Karol',
-    text: ' I guess sometimes it takes time.'
+    text: ' So, if we could translate that to an advice, that would be own your mistake and learn from it?'
   },
+  { startTime: 8035.74, person: 'Valeri', text: ' Yes, definitely.' },
   {
-    startTime: 7810.51,
-    person: 'Karol',
-    text: " I mean, I spent often more than two hours trying to put them to sleep and- That's why you say, let's hope."
+    startTime: 8037.32,
+    person: 'Valeri',
+    text: " And I think if you run into challenges, of course, we work, at least I'm working in a multicultural environment, and people coming from different countries and different backgrounds have different mindsets."
   },
   {
-    startTime: 7817.91,
-    person: 'Karol',
-    text: " Let's hope, let's hope."
+    startTime: 8049.34,
+    person: 'Valeri',
+    text: " And I did see that it's not for everyone very digestible when a female comes in and gives you, let's say, putting in quotes."
   },
   {
-    startTime: 7819.07,
-    person: 'Karol',
-    text: " Let's hope that Daniel has a peaceful end of the day with the kids sleeping."
+    startTime: 8060.12,
+    person: 'Valeri',
+    text: " But I've never seen people being so stubborn or so unconvertible that it becomes pain in the ass, like a good talk and just being consistently showing that you are here not for beautiful eyes, but because you do stuff, you learn, etc."
   },
+  { startTime: 8077.2, person: 'Valeri', text: " Never failed to change people's opinion." },
   {
-    startTime: 7823.03,
+    startTime: 8082.15,
     person: 'Karol',
-    text: ' And Mirjam, thank you so much for joining and having this discussion.'
+    text: ' So, just do what you love and be persistent about that and consistent.'
   },
+  { startTime: 8086.93, person: 'Valeri', text: ' Yeah, exactly.' },
   {
-    startTime: 7826.45,
+    startTime: 8089.33,
+    person: 'Valeri',
+    text: " And, you know, I do love stupid things like wearing cherries around me, and I don't care if I find myself in the room with 40-year-old guys or 60-year-old architects that look at me like, what this girl is doing here?"
+  },
+  {
+    startTime: 8102.51,
+    person: 'Valeri',
+    text: " I'm still going to jump and be happy while being a person who designs systems, yes?"
+  },
+  {
+    startTime: 8109.45,
     person: 'Karol',
-    text: ' It was amazing to go through data interface quadrants.'
+    text: " In the end, it's about delivering and being passionate about the job, I suppose."
   },
+  { startTime: 8116.19, person: 'Valeri', text: ' Yeah, definitely.' },
+  { startTime: 8117.77, person: 'Karol', text: ' Definitely.' },
   {
-    startTime: 7832.47,
+    startTime: 8119.31,
     person: 'Karol',
-    text: " It's an interesting way of explaining APIs."
+    text: " With this, we've been at it for two hours and 15 minutes."
   },
   {
-    startTime: 7836.29,
+    startTime: 8123.49,
     person: 'Karol',
-    text: ' And I think this would be very useful for every consultant to learn if they do any type of interoperability to be able to have that conversation with their clients just to align and put things into perspective so that we avoid those crazy wonky definitions of APIs that could be disastrous later on.'
+    text: " I think it's a good time and a good point to end the stream today, since I did all the advertisements already."
   },
+  { startTime: 8134.53, person: 'Karol', text: ' Dear viewers, thank you for your attention.' },
+  { startTime: 8137.77, person: 'Karol', text: ' Valeria, thank you for joining today.' },
   {
-    startTime: 7859.69,
+    startTime: 8140.59,
     person: 'Karol',
-    text: ' Thank you everybody for joining.'
-  }
+    text: " And everybody, have a lovely night or a lovely afternoon, wherever you're watching, and see you on the next stream."
+  },
+  { startTime: 8150.23, person: 'Valeri', text: ' Yeah, thank you for' }
 ])
 </script>
 
