@@ -15,6 +15,7 @@
     "@fontsource/atkinson-hyperlegible": "^5.2.6",
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/js": "^7.4.47",
+    "@nuxt/scripts": "^0.13.0",
     "@popperjs/core": "^2.11.8",
     "@vueuse/components": "^14.0.0",
     "@vueuse/core": "^14.0.0",
@@ -33,10 +34,10 @@
     "vue": "^3.5.20",
     "vue-recaptcha-v3": "^2.0.1",
     "vue-router": "^4.5.1",
-    "vue3-carousel": "^0.17.0",
-    "vue3-youtube": "^0.1.9"
+    "vue3-carousel": "^0.17.0"
   },
   "devDependencies": {
+    "@types/youtube": "^0.1.2",
     "@nuxt/eslint": "^1.9.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/robots": "^5.5.1",

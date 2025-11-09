@@ -29,6 +29,60 @@ export default defineNuxtConfig({
     }
   },
 
+  security: {
+    strict: true,
+    headers: {
+      contentSecurityPolicy: {
+        'img-src': [
+          "'self'",
+          'data:',
+          'https://i.ytimg.com',
+          'https://www.youtube.com',
+          'www.youtube-nocookie.com'
+        ],
+        'script-src': [
+          "'self'",
+          "'unsafe-inline'",
+          '*.youtube.com',
+          'https://www.googletagmanager.com',
+          'https://www.google.com',
+          'https://www.gstatic.com',
+          'www.youtube-nocookie.com'
+        ],
+        'style-src': ["'self'", 'https:', "'unsafe-inline'"],
+        'frame-src': [
+          "'self'",
+          'https://www.youtube.com',
+          'https://www.youtube-nocookie.com',
+          'https://www.google.com'
+        ],
+        'frame-ancestors': ["'self'", 'https://www.youtube.com']
+      },
+      crossOriginEmbedderPolicy: 'unsafe-none',
+      crossOriginOpenerPolicy: 'same-origin',
+      permissionsPolicy: {
+        camera: [],
+        'display-capture': [],
+        fullscreen: ['self', '"https://www.youtube.com"', '"https://www.youtube-nocookie.com"'],
+        autoplay: ['self', '"https://www.youtube.com"', '"https://www.youtube-nocookie.com"'],
+        'encrypted-media': [
+          'self',
+          '"https://www.youtube.com"',
+          '"https://www.youtube-nocookie.com"'
+        ],
+        accelerometer: ['self', '"https://www.youtube.com"', '"https://www.youtube-nocookie.com"'],
+        gyroscope: ['self', '"https://www.youtube.com"', '"https://www.youtube-nocookie.com"'],
+        'picture-in-picture': [
+          'self',
+          '"https://www.youtube.com"',
+          '"https://www.youtube-nocookie.com"'
+        ],
+        geolocation: [],
+        microphone: []
+      }
+    }
+  },
+
   runtimeConfig: {
     RECAPTCHA_SECRET_KEY: process.env.RECAPTCHA_SECRET_KEY,
     RECIPIENT_EMAIL: process.env.RECIPIENT_EMAIL,
@@ -97,7 +151,8 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
     'nuxt-seo-utils',
     'nuxt-mongoose',
-    'nuxt-gtag'
+    'nuxt-gtag',
+    '@nuxt/scripts'
   ],
 
   gtag: {
