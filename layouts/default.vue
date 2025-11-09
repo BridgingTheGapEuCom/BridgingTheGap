@@ -393,6 +393,10 @@ const expandNavigation = () => {
   }
 }
 
+/**
+ * Handles keydown events for the theme toggle.
+ * @param {KeyboardEvent} event - The keyboard event object.
+ */
 const atKeyDownThemeToggle = (event) => {
   if (event.key === 'Enter') {
     changeTheme()
