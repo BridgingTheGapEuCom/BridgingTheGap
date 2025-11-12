@@ -34,7 +34,7 @@ const transcript = ref([
   {
     startTime: 113.91,
     person: 'Karol',
-    text: ' And today, a controversial topic, migrating away from iPasses or iPass technologies.'
+    text: ' And today, a controversial topic, migrating away from iPaaS or iPaaS technologies.'
   },
   {
     startTime: 123.11,
@@ -47,7 +47,7 @@ const transcript = ref([
   {
     startTime: 139.89,
     person: 'Karol',
-    text: ' What are you starting to advocate for moving away from iPasses?'
+    text: ' What are you starting to advocate for moving away from iPaaSes?'
   },
   { startTime: 143.73, person: 'Karol', text: " Well, we'll dig into that." },
   {
@@ -56,7 +56,7 @@ const transcript = ref([
     text: " But before we dig into the topic, let me introduce you, Brian Labelle, coming to us from Canada, an enterprise architect with, correctly, if I'm wrong, 40 years of experience in IT."
   },
   { startTime: 159.55, person: 'Karol', text: ' Welcome, Brian.' },
-  { startTime: 160.35, person: 'Karol', text: ' Yeah.' },
+  { startTime: 160.35, person: 'Brian', text: ' Yeah.' },
   { startTime: 162.59, person: 'Brian', text: ' Thank you.' },
   { startTime: 163.17, person: 'Brian', text: ' Thanks for having me.' },
   {
@@ -67,7 +67,7 @@ const transcript = ref([
   {
     startTime: 173.05,
     person: 'Brian',
-    text: " And the idea of doing this, of moving away from iPass, let's say, or Boomi, MuleSoft, that kind of threatens these large organisations, I guess, and they wonder, oh, like, we're going to lose customers."
+    text: " And the idea of doing this, of moving away from iPaaS, let's say, or Boomi, MuleSoft, that kind of threatens these large organisations, I guess, and they wonder, oh, like, we're going to lose customers."
   },
   {
     startTime: 189.67,
@@ -243,7 +243,7 @@ const transcript = ref([
   {
     startTime: 454.25,
     person: 'Brian',
-    text: ' And then so lots of interesting things happened around like the 8990, where we had DB2 came around.'
+    text: ' And then so lots of interesting things happened around like the 89/90, where we had DB2 came around.'
   },
   {
     startTime: 463.01,
@@ -265,7 +265,7 @@ const transcript = ref([
   {
     startTime: 492.37,
     person: 'Brian',
-    text: " And I think that there's a lot of people now, maybe they grew up with Mulesoft, grew up with Boomi, grew up with iPasses, and that's what they've been using, right."
+    text: " And I think that there's a lot of people now, maybe they grew up with Mulesoft, grew up with Boomi, grew up with iPaaSes, and that's what they've been using, right."
   },
   {
     startTime: 500.23,
@@ -795,15 +795,15 @@ const transcript = ref([
     person: 'Karol',
     text: ' But basically, the architecture is pretty much the same.'
   },
-  { startTime: 1302.08, person: 'Karol', text: ' Mm hmm.' },
-  { startTime: 1303.04, person: 'Karol', text: ' Yeah.' },
+  { startTime: 1302.08, person: 'Brian', text: ' Mm hmm.' },
+  { startTime: 1303.04, person: 'Brian', text: ' Yeah.' },
   { startTime: 1304.04, person: 'Brian', text: ' Yeah.' },
   {
     startTime: 1304.52,
     person: 'Brian',
     text: ' And then and this is also where I wanted to show that that book, I guess, right, which was the enterprise.'
   },
-  { startTime: 1313.12, person: 'Brian', text: ' This one?' },
+  { startTime: 1313.12, person: 'Karol', text: ' This one?' },
   { startTime: 1314.06, person: 'Brian', text: ' Yeah, right.' },
   { startTime: 1314.84, person: 'Brian', text: ' Great.' },
   { startTime: 1315.26, person: 'Brian', text: ' Yeah.' },
@@ -978,18 +978,18 @@ const transcript = ref([
   {
     startTime: 1582.68,
     person: 'Karol',
-    text: ' And those kinds of integration platforms that were low code, well, if you remember Typical Business Works, and I guess you do, Typical Business Works was at least version five and six were never designed for cloud.'
+    text: ' And those kinds of integration platforms that were low code, well, if you remember Tibco Business Works, and I guess you do, Tibco Business Works was at least version five and six were never designed for cloud.'
   },
   { startTime: 1598.58, person: 'Karol', text: ' They were designed to run on premise.' },
   {
     startTime: 1601.2,
     person: 'Karol',
-    text: " Then Typical went into container edition, and well, that's designed to run wherever in containers."
+    text: " Then Tibco went into container edition, and well, that's designed to run wherever in containers."
   },
   {
     startTime: 1610.12,
     person: 'Karol',
-    text: ' So my start in my career as a junior developer was Typical Business Works five, I believe the first version was 5.4 that I touched.'
+    text: ' So my start in my career as a junior developer was Tibco Business Works 5, I believe the first version was 5.4 that I touched.'
   },
   { startTime: 1619.7, person: 'Karol', text: ' And that was already low code.' },
   {
@@ -1006,17 +1006,17 @@ const transcript = ref([
   {
     startTime: 1638.08,
     person: 'Karol',
-    text: " The only difference between an integration platform on premise and IaaS is where it's hosted in essence."
+    text: " The only difference between an integration platform on premise and iPaaS is where it's hosted in essence."
   },
   {
     startTime: 1645.22,
     person: 'Karol',
-    text: " So if we're looking at an IaaS just from the definition standpoint, IaaS to define it would be that a client of an IaaS doesn't really care about the infrastructure and the runtime because it's in the control of the vendor."
+    text: " So if we're looking at an iPaaS just from the definition standpoint, iPaaS to define it would be that a client of an iPaaS doesn't really care about the infrastructure and the runtime because it's in the control of the vendor."
   },
   {
     startTime: 1662.3,
     person: 'Karol',
-    text: " So whether that be Typical, MuleSoft, Boomi, Workato, whatever else, they're controlling the infrastructure, they're controlling the runtimes in the sense of upgrades, maintenance, etcétera."
+    text: " So whether that be Tibco, MuleSoft, Boomi, Workato, whatever else, they're controlling the infrastructure, they're controlling the runtimes in the sense of upgrades, maintenance, etcétera."
   },
   { startTime: 1675.9, person: 'Karol', text: " And we're only putting things on the platform." },
   { startTime: 1680, person: 'Brian', text: ' So business requirements of the business.' },
@@ -1054,7 +1054,7 @@ const transcript = ref([
     text: " If they're on premise, that's due to like special reasons."
   },
   { startTime: 1721.04, person: 'Karol', text: " Like let's say we have a European Union..." },
-  { startTime: 1723.2, person: 'Karol', text: ' Security.' },
+  { startTime: 1723.2, person: 'Brian', text: ' Security.' },
   { startTime: 1723.3, person: 'Karol', text: ' Yeah, security.' },
   { startTime: 1723.86, person: 'Karol', text: ' Exactly.' },
   {
@@ -1085,7 +1085,7 @@ const transcript = ref([
   {
     startTime: 1753.56,
     person: 'Karol',
-    text: " They moved entirely to looking at iPasses because that's the future."
+    text: " They moved entirely to looking at iPaaSes because that's the future."
   },
   {
     startTime: 1759.56,
@@ -1097,7 +1097,7 @@ const transcript = ref([
   {
     startTime: 1775.81,
     person: 'Karol',
-    text: " So if you get projects where you're migrating iPasses to Java Spring Boot, why?"
+    text: " So if you get projects where you're migrating iPaaSes to Java Spring Boot, why?"
   },
   { startTime: 1785.07, person: 'Karol', text: " What's the why of your clients?" },
   { startTime: 1788.39, person: 'Brian', text: ' Yeah.' },
@@ -1107,7 +1107,7 @@ const transcript = ref([
     person: 'Brian',
     text: ' I wonder even how far we are here for 30 minutes.'
   },
-  { startTime: 1796.99, person: 'Brian', text: ' We went deep into history.' },
+  { startTime: 1796.99, person: 'Karol', text: ' We went deep into history.' },
   {
     startTime: 1799.31,
     person: 'Brian',
@@ -1124,7 +1124,7 @@ const transcript = ref([
   {
     startTime: 1816.15,
     person: 'Brian',
-    text: ' I get the iPass and I think it was a good solution.'
+    text: ' I get the iPaaS and I think it was a good solution.'
   },
   {
     startTime: 1819.89,
@@ -1255,7 +1255,7 @@ const transcript = ref([
   {
     startTime: 2020.09,
     person: 'Karol',
-    text: " That's basically what the low code is in terms of bypasses."
+    text: " That's basically what the low code is in terms of iPaaSes."
   },
   { startTime: 2023.05, person: 'Karol', text: ' But why?' },
   {
@@ -1409,9 +1409,9 @@ const transcript = ref([
   {
     startTime: 2268.99,
     person: 'Karol',
-    text: " I think I'm going to just open dry.io and let's start putting things into, I'm just going to draft live."
+    text: " I think I'm going to just open draw.io and let's start putting things into, I'm just going to draft live."
   },
-  { startTime: 2281.01, person: 'Karol', text: " Let's say, let me find my dry.io. There we go." },
+  { startTime: 2281.01, person: 'Karol', text: " Let's say, let me find my draw.io. There we go." },
   {
     startTime: 2286.81,
     person: 'Karol',
@@ -1552,10 +1552,10 @@ const transcript = ref([
     person: 'Brian',
     text: ' With the, depending on which tier you are with MuleSoft, like gold tier, bronze tier, whatever, but there is a, you know.'
   },
-  { startTime: 2499.43, person: 'Brian', text: ' Okay.' },
-  { startTime: 2500.19, person: 'Brian', text: ' Support.' },
+  { startTime: 2499.43, person: 'Karol', text: ' Okay.' },
+  { startTime: 2500.19, person: 'Karol', text: ' Support.' },
   { startTime: 2500.57, person: 'Brian', text: " And that's, I think more on the MuleSoft side." },
-  { startTime: 2503.63, person: 'Brian', text: " So, so let's, let's put it another way." },
+  { startTime: 2503.63, person: 'Karol', text: " So, so let's, let's put it another way." },
   {
     startTime: 2508.09,
     person: 'Karol',
@@ -1612,7 +1612,7 @@ const transcript = ref([
     text: " And this is, again, I'm going to be the devil's advocate here."
   },
   { startTime: 2593.3, person: 'Karol', text: " Let's see." },
-  { startTime: 2594.76, person: 'Karol', text: ' So connectors.' },
+  { startTime: 2594.76, person: 'Brian', text: ' So connectors.' },
   { startTime: 2596.66, person: 'Karol', text: ' Yeah.' },
   {
     startTime: 2598.76,
@@ -1627,7 +1627,7 @@ const transcript = ref([
   {
     startTime: 2616.93,
     person: 'Karol',
-    text: ' We also have specific would be also DataWeave and other tools.'
+    text: ' MuleSoft specific would be also DataWeave and other tools.'
   },
   {
     startTime: 2620.47,
@@ -1699,13 +1699,13 @@ const transcript = ref([
   {
     startTime: 2766.67,
     person: 'Karol',
-    text: ' And most companies, when they do iPasses, they implement their own logging and monitoring practises that are centralised.'
+    text: ' And most companies, when they do iPaaSes, they implement their own logging and monitoring practises that are centralised.'
   },
   { startTime: 2775.11, person: 'Karol', text: " And it's a way to do it." },
   {
     startTime: 2776.69,
     person: 'Karol',
-    text: " That's a very good practise to have it centralised because then logs from a domain system that initiates the communication land at the same place as logs from the iPass and logs from the other systems that partake in that communication, right?"
+    text: " That's a very good practise to have it centralised because then logs from a domain system that initiates the communication land at the same place as logs from the iPaaS and logs from the other systems that partake in that communication, right?"
   },
   {
     startTime: 2792.71,
@@ -1725,12 +1725,12 @@ const transcript = ref([
   {
     startTime: 2805.21,
     person: 'Karol',
-    text: ' So these are out of the box things that come with an iPass.'
+    text: ' So these are out of the box things that come with an iPaaS.'
   },
   {
     startTime: 2811.15,
     person: 'Karol',
-    text: ' And I would also add to it that we also get with certain iPasses, not with all of them.'
+    text: ' And I would also add to it that we also get with certain iPaaSes, not with all of them.'
   },
   { startTime: 2817.85, person: 'Karol', text: ' And MuleSoft here is a bit of an exception.' },
   { startTime: 2821.61, person: 'Karol', text: ' We get the message broker as well.' },
@@ -2232,7 +2232,7 @@ const transcript = ref([
   {
     startTime: 3581.36,
     person: 'Karol',
-    text: ' And you can do it with MuleSoft, with Boomi, with Word Capital and doing pure Java.'
+    text: ' And you can do it with MuleSoft, with Boomi, with Workato and doing pure Java.'
   },
   {
     startTime: 3587.22,
@@ -2487,7 +2487,7 @@ const transcript = ref([
   { startTime: 4040, person: 'Karol', text: " I think that's a subset of what?" },
   { startTime: 4043.28, person: 'Karol', text: ' Less than 10%?' },
   { startTime: 4045.66, person: 'Karol', text: ' Educated guess?' },
-  { startTime: 4046.72, person: 'Karol', text: ' No.' },
+  { startTime: 4046.72, person: 'Brian', text: ' No.' },
   {
     startTime: 4049.3,
     person: 'Brian',
@@ -2526,10 +2526,10 @@ const transcript = ref([
   },
   {
     startTime: 4101.479,
-    person: 'Brian',
+    person: 'Karol',
     text: " And you're going to have integration developers, as well."
   },
-  { startTime: 4104.979, person: 'Brian', text: " That's normal." },
+  { startTime: 4104.979, person: 'Karol', text: " That's normal." },
   {
     startTime: 4106.56,
     person: 'Brian',
@@ -2588,7 +2588,7 @@ const transcript = ref([
   { startTime: 4196.16, person: 'Brian', text: ' And they...' },
   { startTime: 4197.28, person: 'Brian', text: ' Can I talk about that?' },
   { startTime: 4198.58, person: 'Brian', text: ' Okay.' },
-  { startTime: 4199.56, person: 'Brian', text: ' So, praising Java developers.' },
+  { startTime: 4199.56, person: 'Karol', text: ' So, praising Java developers.' },
   { startTime: 4205.12, person: 'Karol', text: ' And yeah, I do respect Java developers.' },
   { startTime: 4208.38, person: 'Karol', text: ' They can do some really good magic.' },
   {
@@ -2766,7 +2766,7 @@ const transcript = ref([
   {
     startTime: 4487.6,
     person: 'Karol',
-    text: ' Now, if I would jump back to Dryo this time around and we look at the other costs of ownership.'
+    text: ' Now, if I would jump back to draw.io this time around and we look at the other costs of ownership.'
   },
   {
     startTime: 4498.52,
@@ -2823,7 +2823,7 @@ const transcript = ref([
   {
     startTime: 4581.93,
     person: 'Karol',
-    text: " And I'm like, oh, this doesn't work in Draw.io. Okay."
+    text: " And I'm like, oh, this doesn't work in draw.io. Okay."
   },
   { startTime: 4585.13, person: 'Karol', text: " We're moving to Java." },
   { startTime: 4587.61, person: 'Karol', text: ' Okay.' },
@@ -2863,36 +2863,36 @@ const transcript = ref([
   {
     startTime: 4661.66,
     person: 'Karol',
-    text: " So if we have people and those people that have the knowledge about what's going on in the ecosystem in terms of interoperability, these would be our Mural developers, right?"
+    text: " So if we have people and those people that have the knowledge about what's going on in the ecosystem in terms of interoperability, these would be our Mule developers, right?"
   },
   { startTime: 4673.6, person: 'Karol', text: ' Okay.' },
-  { startTime: 4674.56, person: 'Karol', text: ' So we have our Muralies.' },
+  { startTime: 4674.56, person: 'Karol', text: ' So we have our Muleys.' },
   {
     startTime: 4678.58,
     person: 'Karol',
-    text: " Now, if we consider our Muralies, what's going to happen if you tell a team of Mural developers or teams of Mural developers, depending on the scale of the integration platform?"
+    text: " Now, if we consider our Muleys, what's going to happen if you tell a team of MuleSoft developers or teams of MuleSoft developers, depending on the scale of the integration platform?"
   },
   {
     startTime: 4692.72,
     person: 'Karol',
-    text: " Because just one of the clients I've working with recently, that's 190 Mules of applications."
+    text: " Because just one of the clients I've working with recently, that's 190 MuleSoft applications."
   },
   {
     startTime: 4700.76,
     person: 'Karol',
     text: ' They have 14 concurrent teams working on that platform.'
   },
-  { startTime: 4705.34, person: 'Karol', text: ' Each team has at least two Mules of developers.' },
+  { startTime: 4705.34, person: 'Karol', text: ' Each team has at least two MuleSoft developers.' },
   {
     startTime: 4708.56,
     person: 'Karol',
     text: ' So that gives you a team, a group of at least, well, around 30 developers, maybe a little bit more, right?'
   },
-  { startTime: 4716.82, person: 'Karol', text: ' So we have 30 Muralies.' },
+  { startTime: 4716.82, person: 'Karol', text: ' So we have 30 Muleys.' },
   {
     startTime: 4719.54,
     person: 'Karol',
-    text: " If you tell Muralies that you're going to be migrating to pure Java, what's going to happen, psychologically speaking?"
+    text: " If you tell Muleys that you're going to be migrating to pure Java, what's going to happen, psychologically speaking?"
   },
   {
     startTime: 4727.16,
@@ -2928,7 +2928,7 @@ const transcript = ref([
   {
     startTime: 4783.18,
     person: 'Karol',
-    text: " I'm not going to start learning Java all of a sudden, how to code in Apache camera or whatever other framework, because that's not what I trained over my life."
+    text: " I'm not going to start learning Java all of a sudden, how to code in Apache Camel or whatever other framework, because that's not what I trained over my life."
   },
   {
     startTime: 4791.32,
@@ -2967,19 +2967,19 @@ const transcript = ref([
   {
     startTime: 4842.69,
     person: 'Karol',
-    text: " And you'd still need people who will fix it according to how it was running in the assist state."
+    text: " And you'd still need people who will fix it according to how it was running in the AS-IS state."
   },
   {
     startTime: 4850.79,
     person: 'Karol',
-    text: " You're still not covering the problem of knowing the assist state and knowing the business processes because MuleSoft as a product is just a platform."
+    text: " You're still not covering the problem of knowing the AS-IS state and knowing the business processes because MuleSoft as a product is just a platform."
   },
   { startTime: 4863.29, person: 'Karol', text: ' The knowledge is not about the platform.' },
   { startTime: 4865.29, person: 'Karol', text: " It's about what's running on that platform." },
   {
     startTime: 4867.37,
     person: 'Karol',
-    text: ' So all the integration flows built with Mule applications and this local code solution.'
+    text: ' So all the integration flows built with Mule applications and this low code solution.'
   },
   {
     startTime: 4874.57,
@@ -3161,7 +3161,7 @@ const transcript = ref([
     text: " And I feel bad and I've, I've, you know, for 40 years, I think I've, I've, you know, kind of led to a lot of people losing their jobs and that, you know, that's the end point."
   },
   { startTime: 5137.87, person: 'Karol', text: ' Okay.' },
-  { startTime: 5138.63, person: 'Karol', text: " Let's dig into the TCR again, right?" },
+  { startTime: 5138.63, person: 'Karol', text: " Let's dig into the TCO again, right?" },
   { startTime: 5142.87, person: 'Karol', text: ' So, okay.' },
   {
     startTime: 5143.49,
@@ -3171,13 +3171,13 @@ const transcript = ref([
   { startTime: 5150.37, person: 'Karol', text: ' So in that sense, we need to retrain them.' },
   { startTime: 5155.71, person: 'Brian', text: ' Yeah.' },
   { startTime: 5156.29, person: 'Karol', text: ' Yes.' },
-  { startTime: 5156.93, person: 'Karol', text: ' People will be trained.' },
+  { startTime: 5156.93, person: 'Brian', text: ' People will be trained.' },
   {
     startTime: 5157.81,
     person: 'Brian',
     text: ' People will be trained and they need to learn this.'
   },
-  { startTime: 5161.23, person: 'Karol', text: ' Yeah.' },
+  { startTime: 5161.23, person: 'Brian', text: ' Yeah.' },
   { startTime: 5162.19, person: 'Karol', text: ' Okay.' },
   { startTime: 5162.87, person: 'Karol', text: ' Yes.' },
   { startTime: 5163.29, person: 'Karol', text: " So we'll, we'll need to do that." },
@@ -3191,7 +3191,7 @@ const transcript = ref([
   {
     startTime: 5190.71,
     person: 'Brian',
-    text: ' And actually, you know, once I was, once I had that situation, I was like, hi, I was asked to work as a team lead and learn Java Camel to write APIs.'
+    text: ' And actually, you know, once I was, once I had that situation, I was like, hire, I was asked to work as a team lead and learn Java Camel to write APIs.'
   },
   { startTime: 5202.81, person: 'Brian', text: ' And of course I would add to that sometimes.' },
   {
@@ -3221,7 +3221,7 @@ const transcript = ref([
     text: " Now, if we look at the availability of application integration specialists within the Java community, that's probably going to be a lot lower availability than Java developers in general."
   },
   { startTime: 5244.13, person: 'Karol', text: ' Would you concur to that?' },
-  { startTime: 5245.57, person: 'Brian', text: ' I agree.' },
+  { startTime: 5245.57, person: 'Karol', text: ' Agree.' },
   {
     startTime: 5246.15,
     person: 'Brian',
@@ -3300,7 +3300,7 @@ const transcript = ref([
     text: ' There is not a sufficient availability of good materials to train yourself from the web.'
   },
   { startTime: 5387.87, person: 'Karol', text: ' What then?' },
-  { startTime: 5390.61, person: 'Brian', text: ' And this is...' },
+  { startTime: 5390.61, person: 'Karol', text: ' And this is...' },
   {
     startTime: 5391.65,
     person: 'Brian',
@@ -3321,8 +3321,8 @@ const transcript = ref([
     person: 'Brian',
     text: " They'll send people over that they want you to learn."
   },
-  { startTime: 5437.01, person: 'Karol', text: ' But you have to pay for that too.' },
-  { startTime: 5439.63, person: 'Karol', text: ' Yeah.' },
+  { startTime: 5437.01, person: 'Brian', text: ' But you have to pay for that too.' },
+  { startTime: 5439.63, person: 'Brian', text: ' Yeah.' },
   {
     startTime: 5439.75,
     person: 'Karol',
@@ -3401,14 +3401,14 @@ const transcript = ref([
   {
     startTime: 5575.97,
     person: 'Karol',
-    text: ' They will know, okay, we need to hire somebody for Apache Camo.'
+    text: ' They will know, okay, we need to hire somebody for Apache Camel.'
   },
   { startTime: 5580.35, person: 'Karol', text: ' All right.' },
   { startTime: 5582.91, person: 'Karol', text: " That's our criteria." },
   {
     startTime: 5584.17,
     person: 'Karol',
-    text: ' How many people have Apache Camo written in their LinkedIn profile?'
+    text: ' How many people have Apache Camel written in their LinkedIn profile?'
   },
   { startTime: 5588.57, person: 'Karol', text: " That's a very small subset." },
   {
@@ -3419,7 +3419,7 @@ const transcript = ref([
   {
     startTime: 5600.85,
     person: 'Brian',
-    text: ' I want them to be able to thread, maybe be familiar with functional programming, and then the Apache Camo is a library.'
+    text: ' I want them to be able to thread, maybe be familiar with functional programming, and then the Apache Camel is a library.'
   },
   { startTime: 5610.83, person: 'Brian', text: " I don't think that that's a huge jump." },
   { startTime: 5613.73, person: 'Brian', text: " It's pretty straightforward in my opinion." },
@@ -3478,7 +3478,7 @@ const transcript = ref([
     person: 'Brian',
     text: " I mean, you're still like, as you're growing, you're hiring Muleys, you have to train them, you know, they have to, it's, it's, but then the other thing is that now we're saving $4 million a year, like just money."
   },
-  { startTime: 5707.13, person: 'Brian', text: ' Yeah.' },
+  { startTime: 5707.13, person: 'Karol', text: ' Yeah.' },
   {
     startTime: 5708.65,
     person: 'Karol',
@@ -3572,7 +3572,7 @@ const transcript = ref([
   {
     startTime: 5855.99,
     person: 'Karol',
-    text: ' Yeah, but, but then you have the additional cost, which is the cost of getting those people through consulting companies, or through body lacing companies, whatever that may be, right?'
+    text: ' Yeah, but, but then you have the additional cost, which is the cost of getting those people through consulting companies, or through body leasing companies, whatever that may be, right?'
   },
   {
     startTime: 5867.79,
@@ -3588,12 +3588,12 @@ const transcript = ref([
   {
     startTime: 5883.97,
     person: 'Karol',
-    text: " So it's, you know, it's saving maybe those $4 million in the short term, but how does that later go on into the costs occur over the transition, because you have to replace people, you have to get those people from somewhere, the fastest way will be, yes, consulting company, body lacing company, hello, cha-ching, different cost."
+    text: " So it's, you know, it's saving maybe those $4 million in the short term, but how does that later go on into the costs occur over the transition, because you have to replace people, you have to get those people from somewhere, the fastest way will be, yes, consulting company, body leasing company, hello, cha-ching, different cost."
   },
   {
     startTime: 5907.37,
     person: 'Karol',
-    text: " Now, if you look further, okay, we're migrating to Java functionally, okay, we run all the applications in Springboard."
+    text: " Now, if you look further, okay, we're migrating to Java functionally, okay, we run all the applications in Spring boot."
   },
   { startTime: 5915.41, person: 'Karol', text: ' Perfect.' },
   { startTime: 5916.25, person: 'Karol', text: ' We have the functional coverage.' },
@@ -3800,7 +3800,7 @@ const transcript = ref([
   {
     startTime: 6305.28,
     person: 'Karol',
-    text: ' Given that in EU we have very few iPaaS, so one of this is SAP having their integration platform.'
+    text: ' Given that in EU we have very few iPaaSes, so one of this is SAP having their integration platform.'
   },
   {
     startTime: 6314.48,
@@ -3812,7 +3812,7 @@ const transcript = ref([
   {
     startTime: 6326.24,
     person: 'Karol',
-    text: ' You have Friends, which is a kind of BPMN, kind of a iPaaS, like very close by to Camunda.'
+    text: ' You have Frends, which is a kind of BPMN, kind of a iPaaS, like very close by to Camunda.'
   },
   { startTime: 6336.46, person: 'Karol', text: ' Yeah, okay.' },
   { startTime: 6337.56, person: 'Karol', text: ' Might be okay.' },
@@ -3880,7 +3880,7 @@ const transcript = ref([
   {
     startTime: 6420.24,
     person: 'Brian',
-    text: ' But you do have a, the cost is not quite as bad as it has been for these iPasses that kind of lock you in a little bit more.'
+    text: ' But you do have a, the cost is not quite as bad as it has been for these iPaaSes that kind of lock you in a little bit more.'
   },
   {
     startTime: 6428.9,
@@ -4090,7 +4090,7 @@ const transcript = ref([
   {
     startTime: 6726.79,
     person: 'Brian',
-    text: " If they're using Postman, let's say, to be testing and running those tests and they have automated tests, everything is a Jmeter, let's say."
+    text: " If they're using Postman, let's say, to be testing and running those tests and they have automated tests, everything is a JMeter, let's say."
   },
   { startTime: 6736.79, person: 'Brian', text: " All of that's the same." },
   { startTime: 6738.55, person: 'Brian', text: ' So you can just carry that over.' },
@@ -4152,7 +4152,7 @@ const transcript = ref([
     person: 'Brian',
     text: ' But you could have, like I said, and I actually am forgetting the terminology now, but you can either use Cloud Hub or you can do it through Kubernetes and you have your own space.'
   },
-  { startTime: 6877.63, person: 'Brian', text: ' Yes.' },
+  { startTime: 6877.63, person: 'Karol', text: ' Yes.' },
   {
     startTime: 6878.17,
     person: 'Brian',
@@ -4294,7 +4294,7 @@ const transcript = ref([
     text: ' But that might be a stretch in scaling that team in terms of scope of responsibility.'
   },
   { startTime: 7142.19, person: 'Karol', text: ' So that would probably mean hire.' },
-  { startTime: 7145.89, person: 'Karol', text: ' Yeah, possibly.' },
+  { startTime: 7145.89, person: 'Brian', text: ' Yeah, possibly.' },
   { startTime: 7147.97, person: 'Karol', text: ' Okay.' },
   {
     startTime: 7149.31,
@@ -4308,7 +4308,7 @@ const transcript = ref([
   },
   { startTime: 7169.93, person: 'Karol', text: ' Your knowledge of your business.' },
   { startTime: 7172.27, person: 'Karol', text: ' Yes, that does not change.' },
-  { startTime: 7175.03, person: 'Karol', text: ' The SMEs.' },
+  { startTime: 7175.03, person: 'Brian', text: ' The SMEs.' },
   { startTime: 7181.71, person: 'Karol', text: ' Yes, knowledge of your business.' },
   {
     startTime: 7183.97,
@@ -4477,7 +4477,7 @@ const transcript = ref([
     text: ' But ultimately, I feel that will give you more flexibility in the future.'
   },
   { startTime: 7496.45, person: 'Brian', text: " And then we'll save you costs in the future." },
-  { startTime: 7499.27, person: 'Brian', text: ' A hundred people are to do it.' },
+  { startTime: 7499.27, person: 'Brian', text: ' Hire the people to do it.' },
   {
     startTime: 7501.85,
     person: 'Karol',
@@ -4596,13 +4596,14 @@ const transcript = ref([
   },
   { startTime: 7671.65, person: 'Karol', text: " Oh, yippee, let's do it." },
   { startTime: 7674.69, person: 'Brian', text: " It's free for six months or free for one year." },
-  { startTime: 7677.93, person: 'Brian', text: " And then the next year, it's like, we got you." },
+  { startTime: 7677.93, person: 'Brian', text: " And then the next year, it's like." },
+  { startTime: 7679.25, person: 'Karol', text: ' We got you.' },
   {
     startTime: 7681.71,
     person: 'Karol',
     text: " But that's a business practise that has nothing to do with architecture in that sense."
   },
-  { startTime: 7687.99, person: 'Karol', text: ' A lot of stuff is political.' },
+  { startTime: 7687.99, person: 'Brian', text: ' A lot of stuff is political.' },
   { startTime: 7690.21, person: 'Brian', text: ' A lot of stuff is financial.' },
   { startTime: 7693.31, person: 'Karol', text: ' Precisely.' },
   {
@@ -4684,7 +4685,7 @@ const transcript = ref([
   {
     startTime: 7839.13,
     person: 'Karol',
-    text: ' And on the stream, the speaker will be Dr. Annegret Juncker, chief software architect at CodeCentric AG.'
+    text: ' And on the stream, the speaker will be Dr. Annegret Junker, chief software architect at CodeCentric AG.'
   },
   {
     startTime: 7848.55,
@@ -4716,7 +4717,7 @@ const transcript = ref([
   {
     startTime: 7887.25,
     person: 'Karol',
-    text: " You can subscribe to our sub stack, although it's a little bit dead at the moment."
+    text: " You can subscribe to our Substack, although it's a little bit dead at the moment."
   },
   {
     startTime: 7892.59,
@@ -4733,7 +4734,7 @@ const transcript = ref([
     person: 'Karol',
     text: " And we're doing about three live streams a month on various topics related to interoperability, IT, but also psychology, cognitive loads, psychological health in IT, and the impact that this may have on adoption of architecture."
   },
-  { startTime: 7920.63, person: 'Karol', text: " So, that's it." },
+  { startTime: 7920.63, person: 'Karol', text: ' So, that said.' },
   { startTime: 7924.09, person: 'Karol', text: ' Thank you all for joining.' },
   { startTime: 7925.23, person: 'Karol', text: ' Thank you for listening.' },
   { startTime: 7926.55, person: 'Karol', text: ' Thank you for the comments.' },
