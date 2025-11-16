@@ -409,6 +409,48 @@
         "name": "Sign-up here!"
       }
     }
+  },
+  {
+    "name": "Loosely Coupled - Beyond the symptoms, A deeper dive into identifying problems",
+    "img": "/events/Loosely_Coupled_Beyond_the_symptoms.webp",
+    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nAre you tired of \"solving\" the same \"problem\" only to see it reappear a month later? That's the challenge of focusing on symptoms, not the source. The reality is, what we call a \"problem\" is often a signal of a deeper, unaddressed issue.\n\nTune in to our next Live Stream: Beyond the symptoms - a deeper dive into identifying problems. We’re thrilled to welcome Woody Zuill, the renowned Lean and Agile Guide to challenge your perception of obstacles.\n\nIn this session, we will look deeper beneath the surface of common complaints. We'll be focusing on the often-ignored symptoms that should be critical signals for change. Woody will dive into the complex space of identifying and surfacing true problems, empowering your organization to act and finally enable meaningful solutions.\n\nJoin us to move past superficial fixes and gain a practical understanding of how to find and solve the problems that truly matter!\n\nKey Details:\n• Date: November 19, 2025\n• Time: 19:00 CEST (GMT+1)\n• Platform: Live Streamed on LinkedIn and YouTube\n• Guest Speaker: Woody Zuill, Lean and Agile Guide",
+    "date": "2025-11-19",
+    "eventType": "Stream",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-11-19",
+        "endDate": "2025-11-19",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "We will dive into identifying problems through diving into symptoms and signals.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7392177746753454080/",
+    "YT": "https://youtube.com/live/ylWXcx2j2vc"
+  },
+  {
+    "name": "Loosely Coupled - Neuroatypicality in IT",
+    "img": "/events/Loosely_Coupled_Neuroatypicality_in_IT.webp",
+    "description": "Welcome back to \"Loosely Coupled,\" the Live Stream series brought to you by BridgingTheGap.eu.com!\n\nHave you ever heard casual remarks about IT professionals being autistic or having ADHD and wondered about the underlying truth? There might be more to it than just a joke! In this session, we will dive into the potential commonness of neuroatypicality within the IT sector. Is it a hidden aspect of the industry, or an ignored part within our workplaces? What are the potential consequences if it remains unrecognized and unaddressed, both for individuals and teams?\n\nFor our upcoming session, we are incredibly pleased to host Joanna Gruszczyńska, a dedicated Job & ADHD Coach. Together, we will explore the critical and often misunderstood topic of \"Neuroatypicality in IT\".\n\nArmed with essential facts and real-world examples, we will examine how neuroatypical employees can empower themselves, and crucially, how team leaders and managers can effectively support their neuroatypical team members.\n\nThis is a unique opportunity to gain a broader perspective on creating equitable and high-performing IT environments, empowering yourself with the knowledge to build workplaces where everyone feels valued and can flourish.\n\nKey Details:\n• Date: December 03, 2025\n• Time: 19:00 CET (GMT+1)\n• Platform: Live Streamed on LinkedIn and YouTube\n• Guest Speaker: Joanna Gruszczyńska, Job & ADHD Coach",
+    "date": "2025-12-03",
+    "eventType": "Stream",
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-12-03",
+        "endDate": "2025-12-03",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Neuroatypicality in IT, consequences of non-recognition and how leaders can foster inclusive growth environments.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7392221462759354369/",
+    "YT": "https://youtube.com/live/5u9em8r0th8"
   }
 ]
 
