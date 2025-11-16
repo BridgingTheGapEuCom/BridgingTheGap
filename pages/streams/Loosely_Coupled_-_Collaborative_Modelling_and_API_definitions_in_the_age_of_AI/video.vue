@@ -102,7 +102,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' So from a high-level perspective down rather than from bottom up.'
   },
-  { startTime: 252.53, person: 'Karol', text: ' Exactly, exactly, exactly.' },
+  { startTime: 252.53, person: 'Annagret', text: ' Exactly, exactly, exactly.' },
   {
     startTime: 254.59,
     person: 'Karol',
@@ -145,14 +145,14 @@ const transcript = ref([
   {
     startTime: 325.13,
     person: 'Annagret',
-    text: " And I knew every register by heart and which ones and O's were in there."
+    text: " And I knew every registr by heart and which ones and O's were in there."
   },
   {
     startTime: 333.19,
     person: 'Annagret',
     text: ' And MIMA is so, so much better because you really can express functionality almost in a natural language.'
   },
-  { startTime: 345.63, person: 'Annagret', text: ' Right.' },
+  { startTime: 345.63, person: 'Karol', text: ' Right.' },
   {
     startTime: 347.51,
     person: 'Karol',
@@ -223,7 +223,7 @@ const transcript = ref([
   },
   { startTime: 466.09, person: 'Annagret', text: " I'm an engineer by heart." },
   { startTime: 468.29, person: 'Annagret', text: " I'm really an engineer." },
-  { startTime: 469.63, person: 'Annagret', text: ' Yes.' },
+  { startTime: 469.63, person: 'Karol', text: ' Yes.' },
   {
     startTime: 471.27,
     person: 'Annagret',
@@ -244,7 +244,7 @@ const transcript = ref([
     person: 'Annagret',
     text: ' And I think to have the idea, what can I do that I fulfil the requirements that I can do really that new thing that is art.'
   },
-  { startTime: 514.39, person: 'Karol', text: ' Yeah, there is a little bit of part of it.' },
+  { startTime: 514.39, person: 'Karol', text: ' Yeah, there is a little bit of art of it.' },
   {
     startTime: 516.57,
     person: 'Karol',
@@ -285,13 +285,13 @@ const transcript = ref([
   {
     startTime: 582.57,
     person: 'Annagret',
-    text: ' And therefore, and here is, by the way, something where I think where our LMMs really can help.'
+    text: ' And therefore, and here is, by the way, something where I think where our LLMs really can help.'
   },
   { startTime: 592.65, person: 'Karol', text: ' Okay.' },
   {
     startTime: 593.17,
     person: 'Annagret',
-    text: ' Yeah, because they are fit with already solved problems.'
+    text: ' Yeah, because they are fed with already solved problems.'
   },
   { startTime: 600.15, person: 'Karol', text: ' Okay.' },
   {
@@ -309,7 +309,7 @@ const transcript = ref([
   {
     startTime: 617.69,
     person: 'Annagret',
-    text: " But when you have a really new problems and the LMM can't solve it for you, then you have to think by yourself."
+    text: " But when you have a really new problems and the LLM can't solve it for you, then you have to think by yourself."
   },
   { startTime: 626.87, person: 'Karol', text: " That's true." },
   {
@@ -373,7 +373,7 @@ const transcript = ref([
   },
   { startTime: 709.93, person: 'Annagret', text: " Luckily, it's not like that." },
   { startTime: 711.89, person: 'Annagret', text: ' So we can live on it.' },
-  { startTime: 712.97, person: 'Annagret', text: ' Yes.' },
+  { startTime: 712.97, person: 'Karol', text: ' Yes.' },
   {
     startTime: 714.49,
     person: 'Karol',
@@ -393,7 +393,7 @@ const transcript = ref([
   {
     startTime: 734.93,
     person: 'Karol',
-    text: ' Take a visual enterprise architect, whatever other tool, or just a piece of paper and start modelling.'
+    text: ' Take a viso, enterprise architect, whatever other tool, or just a piece of paper and start modelling.'
   },
   {
     startTime: 745.45,
@@ -619,7 +619,7 @@ const transcript = ref([
   {
     startTime: 1098.42,
     person: 'Karol',
-    text: ' Multiple personalities, this order would be useful.'
+    text: ' Multiple personalities, disorder would be useful.'
   },
   {
     startTime: 1102.22,
@@ -1057,7 +1057,7 @@ const transcript = ref([
   { startTime: 1884.27, person: 'Annagret', text: ' Yeah, commuter searches for a bike.' },
   { startTime: 1887.77, person: 'Karol', text: ' And you even added a bearded actor.' },
   { startTime: 1891.73, person: 'Annagret', text: ' Yeah, it was intentional.' },
-  { startTime: 1894.81, person: 'Annagret', text: ' Uh-huh.' },
+  { startTime: 1894.81, person: 'Karol', text: ' Uh-huh.' },
   { startTime: 1897.67, person: 'Karol', text: " That's nice." },
   { startTime: 1898.77, person: 'Karol', text: ' Okay.' },
   { startTime: 1900.37, person: 'Karol', text: ' So yes, so I would search for a bike.' },
@@ -1215,7 +1215,7 @@ const transcript = ref([
     text: ' And because we discuss words and decide for a certain word, we understand better what is meant.'
   },
   { startTime: 2162.4, person: 'Annagret', text: ' Reserve, books, etcétera.' },
-  { startTime: 2164.7, person: 'Annagret', text: ' Yeah.' },
+  { startTime: 2164.7, person: 'Karol', text: ' Yeah.' },
   { startTime: 2165.88, person: 'Karol', text: ' And I took it just from the model that was...' },
   {
     startTime: 2171.28,
@@ -1332,7 +1332,7 @@ const transcript = ref([
     person: 'Annagret',
     text: ' Usually, in my experience, I did those workshops a lot of times, you have a lot of business experts, and the business experts are mostly like architects, each has his own opinion and sometimes multiple opinions.'
   },
-  { startTime: 2428.67, person: 'Annagret', text: ' Yes.' },
+  { startTime: 2428.67, person: 'Karol', text: ' Yes.' },
   {
     startTime: 2428.93,
     person: 'Annagret',
@@ -1444,7 +1444,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' It resembles the business activity model because these are the steps that are...'
   },
-  { startTime: 2624.02, person: 'Karol', text: ' Exactly.' },
+  { startTime: 2624.02, person: 'Annagret', text: ' Exactly.' },
   {
     startTime: 2624.62,
     person: 'Karol',
@@ -1493,7 +1493,7 @@ const transcript = ref([
     person: 'Karol',
     text: " It's building our understanding of the problem domain we're going to be tackling from perspective of an IT system."
   },
-  { startTime: 2700.54, person: 'Annagret', text: ' Exactly.' },
+  { startTime: 2700.54, person: 'Annagret', text: ' Exactly. I mean' },
   { startTime: 2707.61, person: 'Annagret', text: ' Let me come to our example.' },
   { startTime: 2710.53, person: 'Annagret', text: ' Let me show you what I prepared.' },
   {
@@ -1626,13 +1626,13 @@ const transcript = ref([
   },
   { startTime: 2978.29, person: 'Annagret', text: ' Definitely not.' },
   { startTime: 2980.59, person: 'Annagret', text: " It's about logical tailoring." },
-  { startTime: 2983.69, person: 'Annagret', text: ' Yes.' },
+  { startTime: 2983.69, person: 'Karol', text: ' Yes.' },
   {
     startTime: 2984.49,
     person: 'Karol',
     text: " That's the remark I'm making because we're not jumping yet to any implementation and we'll probably not be jumping to anything related to implementation here at all during this session."
   },
-  { startTime: 2996.91, person: 'Karol', text: " Let's see." },
+  { startTime: 2996.91, person: 'Annagret', text: " Let's see." },
   { startTime: 2998.19, person: 'Karol', text: " Let's see." },
   { startTime: 2999.09, person: 'Karol', text: ' Okay.' },
   { startTime: 3000.67, person: 'Karol', text: " You'll surprise us." },
@@ -1925,7 +1925,7 @@ const transcript = ref([
     person: 'Annagret',
     text: " It's really nice when you do it with really physical sticky notes."
   },
-  { startTime: 3504.92, person: 'Annagret', text: ' But you can do it on a micro board as well.' },
+  { startTime: 3504.92, person: 'Annagret', text: ' But you can do it on a Miro board as well.' },
   { startTime: 3508.8, person: 'Annagret', text: " And it's not as dynamic." },
   { startTime: 3510.96, person: 'Karol', text: ' True.' },
   { startTime: 3512.26, person: 'Annagret', text: ' But you can do it on a whiteboard as well.' },
@@ -1937,7 +1937,7 @@ const transcript = ref([
   {
     startTime: 3522.52,
     person: 'Annagret',
-    text: " And it's an idea of the brainstorming technique developed in the 16th last century."
+    text: " And it's an idea of the brainstorming technique developed in the 60s last century."
   },
   {
     startTime: 3533.32,
@@ -1948,7 +1948,7 @@ const transcript = ref([
   {
     startTime: 3544.52,
     person: 'Karol',
-    text: " So to be able to get an idea of how extensive event storming is, here's a picture of a wall."
+    text: " Just for people to get an idea of how extensive event storming is, here's a picture of a wall."
   },
   { startTime: 3552.94, person: 'Karol', text: ' After event storming.' },
   {
@@ -2059,7 +2059,7 @@ const transcript = ref([
     text: ' So if we have parallel actions, they would be on top of each other.'
   },
   { startTime: 3742.16, person: 'Karol', text: ' Or parallel events.' },
-  { startTime: 3745.44, person: 'Karol', text: ' Exactly.' },
+  { startTime: 3745.44, person: 'Annagret', text: ' Exactly.' },
   { startTime: 3746.82, person: 'Annagret', text: ' We can hear bike reserved.' },
   { startTime: 3749.18, person: 'Annagret', text: ' And then we can see bike ridden.' },
   {
@@ -2067,7 +2067,7 @@ const transcript = ref([
     person: 'Annagret',
     text: ' So, and probably when he logged in, he first has to, let me see, monthly fee paid.'
   },
-  { startTime: 3775.72, person: 'Annagret', text: ' Hmm.' },
+  { startTime: 3775.72, person: 'Karol', text: ' Hmm.' },
   { startTime: 3777.9, person: 'Karol', text: " Especially if it's their first time logging in." },
   { startTime: 3781.7, person: 'Annagret', text: ' Yeah, exactly.' },
   {
@@ -2076,7 +2076,7 @@ const transcript = ref([
     text: ' And then we can probably even say that would be optional, and we can even mark it here with arrows.'
   },
   { startTime: 3790.36, person: 'Annagret', text: ' So everything is allowed in the end.' },
-  { startTime: 3793.86, person: 'Annagret', text: ' Hmm.' },
+  { startTime: 3793.86, person: 'Karol', text: ' Hmm.' },
   {
     startTime: 3796.54,
     person: 'Annagret',
@@ -2099,7 +2099,7 @@ const transcript = ref([
   { startTime: 3837.32, person: 'Karol', text: " I'm joking." },
   { startTime: 3839.5, person: 'Karol', text: " She wouldn't say go to work." },
   { startTime: 3840.92, person: 'Karol', text: ' She would want me not to work.' },
-  { startTime: 3843.42, person: 'Karol', text: ' Leave the house.' },
+  { startTime: 3843.42, person: 'Annagret', text: ' Leave the house.' },
   { startTime: 3845.48, person: 'Karol', text: ' Yeah.' },
   {
     startTime: 3846.78,
@@ -2143,7 +2143,7 @@ const transcript = ref([
   { startTime: 3911.72, person: 'Annagret', text: ' Do you allow to find more than one bike?' },
   { startTime: 3915.12, person: 'Karol', text: ' Hmm.' },
   { startTime: 3916.72, person: 'Annagret', text: ' Probably yes.' },
-  { startTime: 3918.88, person: 'Annagret', text: ' Probably.' },
+  { startTime: 3918.88, person: 'Karol', text: ' Probably.' },
   { startTime: 3920.88, person: 'Annagret', text: ' So and then choose bike.' },
   { startTime: 3926.68, person: 'Karol', text: ' Hmm.' },
   { startTime: 3930.89, person: 'Annagret', text: " So and then you'll see who is doing that." },
@@ -2156,7 +2156,7 @@ const transcript = ref([
   {
     startTime: 3948.81,
     person: 'Annagret',
-    text: ' But that are the, yeah, almost standard colours for events, Dominic, you find by Alberto Pandolini.'
+    text: ' But that are the, yeah, almost standard colours for event storming, you find by Alberto Bandolini.'
   },
   {
     startTime: 3958.07,
@@ -2167,7 +2167,7 @@ const transcript = ref([
   {
     startTime: 3970.15,
     person: 'Annagret',
-    text: ' So commute starters, of course, would be sensor computer.'
+    text: ' So commute starters, of course, would be the computer.'
   },
   {
     startTime: 3973.43,
@@ -2177,15 +2177,15 @@ const transcript = ref([
   { startTime: 3981.29, person: 'Annagret', text: ' So we left out, for example, the code.' },
   { startTime: 3999.78, person: 'Annagret', text: ' So and here we have that bike.' },
   { startTime: 4002.7, person: 'Annagret', text: ' Thank you for going further.' },
-  { startTime: 4005.72, person: 'Annagret', text: ' No problem.' },
+  { startTime: 4005.72, person: 'Karol', text: ' No problem.' },
   {
     startTime: 4008.46,
     person: 'Annagret',
     text: ' Because when we said that a code must be sent.'
   },
   { startTime: 4014.52, person: 'Karol', text: ' Hmm.' },
-  { startTime: 4015.3, person: 'Annagret', text: ' So that we can unlock the bike as XORed.' },
-  { startTime: 4020.3, person: 'Annagret', text: ' Mm hmm.' },
+  { startTime: 4015.3, person: 'Annagret', text: ' So that we can unlock the bike at the rack.' },
+  { startTime: 4020.3, person: 'Karol', text: ' Mm hmm.' },
   { startTime: 4021.76, person: 'Annagret', text: ' At the rack.' },
   { startTime: 4023.68, person: 'Karol', text: ' Yeah.' },
   {
@@ -2257,7 +2257,7 @@ const transcript = ref([
     text: " But I don't have that information as my system."
   },
   { startTime: 4152.13, person: 'Annagret', text: " So usually I won't model anything." },
-  { startTime: 4155.41, person: 'Annagret', text: ' Right.' },
+  { startTime: 4155.41, person: 'Karol', text: ' Right.' },
   { startTime: 4156.83, person: 'Annagret', text: ' So therefore we start with the login.' },
   {
     startTime: 4162.88,
@@ -2295,14 +2295,14 @@ const transcript = ref([
     person: 'Annagret',
     text: " And afterwards, a commuter is locked in and I don't need to."
   },
-  { startTime: 4217.31, person: 'Annagret', text: " We're simplifying." },
+  { startTime: 4217.31, person: 'Karol', text: " We're simplifying." },
   {
     startTime: 4218.77,
     person: 'Karol',
     text: " We're assuming for this process that the user already has an account."
   },
   { startTime: 4222.61, person: 'Annagret', text: ' Exactly.' },
-  { startTime: 4223.39, person: 'Karol', text: ' Exactly.' },
+  { startTime: 4223.39, person: 'Annagret', text: ' Exactly.' },
   {
     startTime: 4223.77,
     person: 'Annagret',
@@ -2320,7 +2320,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' If you leave on a diagram too many, too many abstraction layers.'
   },
-  { startTime: 4251.81, person: 'Karol', text: ' Exactly.' },
+  { startTime: 4251.81, person: 'Annagret', text: ' Exactly.' },
   {
     startTime: 4252.17,
     person: 'Karol',
@@ -2452,8 +2452,8 @@ const transcript = ref([
     text: ' And that you really can discuss with the business people.'
   },
   { startTime: 4492.11, person: 'Annagret', text: ' As a lot...' },
-  { startTime: 4495.47, person: 'Annagret', text: ' So the purple...' },
-  { startTime: 4498.01, person: 'Annagret', text: ' Not pickable for others for 50 minutes.' },
+  { startTime: 4495.47, person: 'Karol', text: ' So the purple...' },
+  { startTime: 4498.01, person: 'Annagret', text: ' Not selectable for others for 15 minutes.' },
   { startTime: 4509.32, person: 'Karol', text: ' Probably less in terms of chosen.' },
   { startTime: 4512.46, person: 'Annagret', text: " Yeah, doesn't matter." },
   { startTime: 4514.36, person: 'Annagret', text: ' You need to discuss it.' },
@@ -2461,7 +2461,7 @@ const transcript = ref([
   {
     startTime: 4518.16,
     person: 'Annagret',
-    text: " And then after 50 minutes, it's free again also."
+    text: " And then after 15 minutes, it's free again also."
   },
   {
     startTime: 4522.22,
@@ -2479,10 +2479,10 @@ const transcript = ref([
   {
     startTime: 4549.42,
     person: 'Annagret',
-    text: ' And not selectable for 50 minutes would then be...'
+    text: ' And not selectable for 15 minutes would then be...'
   },
   { startTime: 4555.58, person: 'Karol', text: ' The policy.' },
-  { startTime: 4556.48, person: 'Karol', text: ' Exactly.' },
+  { startTime: 4556.48, person: 'Annagret', text: ' Exactly.' },
   { startTime: 4556.96, person: 'Karol', text: ' Okay.' },
   {
     startTime: 4558.44,
@@ -2535,7 +2535,7 @@ const transcript = ref([
     person: 'Annagret',
     text: " The nice thing is even, and I think it comes out even of our discussion, we don't anymore discuss the whole flow, how the bicycle is, and do we need higher wheels, or do we need electro, and do we need distinguish between heavy bicycles or not so heavy bicycles, etcétera."
   },
-  { startTime: 4654.58, person: 'Annagret', text: ' Mm-hmm.' },
+  { startTime: 4654.58, person: 'Karol', text: ' Mm-hmm.' },
   {
     startTime: 4654.9,
     person: 'Annagret',
@@ -2633,13 +2633,13 @@ const transcript = ref([
     text: " And because I'm the door of the domain storing and the moderator, I can really moderate everything in a part so that those strong-headed guys are not taking over the whole discussion."
   },
   { startTime: 4880.39, person: 'Karol', text: ' Okay.' },
-  { startTime: 4880.91, person: 'Karol', text: ' Yeah.' },
+  { startTime: 4880.91, person: 'Annagret', text: ' Yeah.' },
   {
     startTime: 4882.45,
     person: 'Annagret',
     text: ' And here with the event storming, the nice thing is, when you have that prepared, the nice thing is that the events are collected from everyone in the room, even the guys, which are usually more silent than the others.'
   },
-  { startTime: 4903.67, person: 'Karol', text: ' Yeah.' },
+  { startTime: 4903.67, person: 'Annagret', text: ' Yeah.' },
   { startTime: 4903.85, person: 'Karol', text: ' Okay.' },
   {
     startTime: 4904.61,
@@ -2778,7 +2778,7 @@ const transcript = ref([
   {
     startTime: 5138.93,
     person: 'Karol',
-    text: " Because we can translate this nicely and this will form a very nice documentation of what we've done, which would be probably more readable than an event storing output."
+    text: " Because we can translate this nicely and this will form a very nice documentation of what we've done, which would be probably more readable than an event storming output."
   },
   {
     startTime: 5150.81,
@@ -2800,7 +2800,7 @@ const transcript = ref([
   {
     startTime: 5180.84,
     person: 'Annagret',
-    text: ' What we do in the event storing is that we even try to model the whole picture.'
+    text: ' What we do in the event storming is that we even try to model the whole picture.'
   },
   {
     startTime: 5190.16,
@@ -2825,7 +2825,7 @@ const transcript = ref([
     text: ' Exceptions will need to be modelled separately but, yeah.'
   },
   { startTime: 5229.58, person: 'Annagret', text: ' Exactly.' },
-  { startTime: 5230.64, person: 'Annagret', text: " That's always the case." },
+  { startTime: 5230.64, person: 'Karol', text: " That's always the case." },
   {
     startTime: 5232.76,
     person: 'Annagret',
@@ -2836,7 +2836,7 @@ const transcript = ref([
     person: 'Annagret',
     text: ' And what we model here is an overview model over several services.'
   },
-  { startTime: 5254.44, person: 'Annagret', text: ' My exception, of course, is there.' },
+  { startTime: 5254.44, person: 'Annagret', text: ' My exceptions of course are there.' },
   {
     startTime: 5260.12,
     person: 'Annagret',
@@ -2900,7 +2900,7 @@ const transcript = ref([
     person: 'Annagret',
     text: ' One of the guys attending, I can give you a free PDF version of it.'
   },
-  { startTime: 5369.49, person: 'Annagret', text: ' Giveaway.' },
+  { startTime: 5369.49, person: 'Karol', text: ' Giveaway.' },
   { startTime: 5371.75, person: 'Annagret', text: ' And I want...' },
   { startTime: 5374.71, person: 'Annagret', text: ' They can answer in the chat, right?' },
   { startTime: 5377.57, person: 'Karol', text: ' Yes.' },
@@ -2921,7 +2921,7 @@ const transcript = ref([
   },
   { startTime: 5411.97, person: 'Karol', text: ' Okay?' },
   { startTime: 5412.61, person: 'Karol', text: ' All right, Annegret, then.' },
-  { startTime: 5414.33, person: 'Karol', text: ' Okay.' },
+  { startTime: 5414.33, person: 'Annagret', text: ' Okay.' },
   { startTime: 5415.13, person: 'Karol', text: " Let's see what's going to happen in chat." },
   {
     startTime: 5418.01,
@@ -2954,7 +2954,7 @@ const transcript = ref([
   { startTime: 5489.19, person: 'Karol', text: ' Okay.' },
   { startTime: 5489.45, person: 'Karol', text: " So what you're looking for is context mapping." },
   { startTime: 5492.57, person: 'Karol', text: ' Context mapping has, I believe, six patterns.' },
-  { startTime: 5496.81, person: 'Karol', text: ' Exactly.' },
+  { startTime: 5496.81, person: 'Annagret', text: ' Exactly.' },
   { startTime: 5497.87, person: 'Karol', text: ' Yes.' },
   {
     startTime: 5499.05,
@@ -3025,7 +3025,7 @@ const transcript = ref([
     person: 'Annagret',
     text: ' As I said before, they can appear several times.'
   },
-  { startTime: 5620.24, person: 'Annagret', text: ' Yes.' },
+  { startTime: 5620.24, person: 'Karol', text: ' Yes.' },
   { startTime: 5620.62, person: 'Annagret', text: ' Here you find only.' },
   {
     startTime: 5622.04,
@@ -3174,7 +3174,7 @@ const transcript = ref([
   {
     startTime: 5857.7,
     person: 'Karol',
-    text: " Because that's actually one outlined as an anti-pattern by the DDP crew."
+    text: " Because that's actually one outlined as an anti-pattern by the DDD crew."
   },
   {
     startTime: 5863.88,
@@ -3212,7 +3212,7 @@ const transcript = ref([
   {
     startTime: 5922.76,
     person: 'Karol',
-    text: ' And if you want to read more about context mapping as outlined by the DDP crew, this is a link here for context mapping of their GitHub.'
+    text: ' And if you want to read more about context mapping as outlined by the DDD crew, this is a link here for context mapping of their GitHub.'
   },
   { startTime: 5933.44, person: 'Karol', text: " It's all explained there." },
   {
@@ -3248,7 +3248,7 @@ const transcript = ref([
     person: 'Annagret',
     text: " And I want to show that it's not so far away from implementation."
   },
-  { startTime: 5974.22, person: 'Annagret', text: ' All right.' },
+  { startTime: 5974.22, person: 'Karol', text: ' All right.' },
   {
     startTime: 5975.84,
     person: 'Annagret',
@@ -3263,13 +3263,13 @@ const transcript = ref([
   {
     startTime: 5995.78,
     person: 'Annagret',
-    text: ' So I have here a prompt that the AI is an async API.'
+    text: ' So I have here a prompt that the AI is an AsyncAPI.'
   },
-  { startTime: 6002.6, person: 'Annagret', text: ' An async API expert.' },
+  { startTime: 6002.6, person: 'Annagret', text: ' An AsyncAPI expert.' },
   {
     startTime: 6008.4,
     person: 'Annagret',
-    text: ' And for bicycle distribution we have here, the AI should generate the async API for me.'
+    text: ' And for bicycle distribution we have here, the AI should generate the AsyncAPI for me.'
   },
   { startTime: 6019.84, person: 'Annagret', text: ' So let me put it here in my cloud.' },
   {
@@ -3338,7 +3338,7 @@ const transcript = ref([
     person: 'Annagret',
     text: ' As I said, you need to give them extremely much of context, yeah?'
   },
-  { startTime: 6184.06, person: 'Annagret', text: ' Mm-hmm.' },
+  { startTime: 6184.06, person: 'Karol', text: ' Mm-hmm.' },
   {
     startTime: 6184.3,
     person: 'Annagret',
@@ -3362,12 +3362,9 @@ const transcript = ref([
     person: 'Karol',
     text: ' Either GitHub or just paste it into Miro as text.'
   },
-  { startTime: 6225.02, person: 'Annagret', text: ' Ah, so that I can – Or as a file.' },
-  {
-    startTime: 6227.76,
-    person: 'Annagret',
-    text: ' That either works because – Also, that is a good idea, yeah?'
-  },
+  { startTime: 6225.02, person: 'Annagret', text: ' Ah, so that I can' },
+  { startTime: 6226.22, person: 'Karol', text: ' Or as a file. Either works because' },
+  { startTime: 6228.76, person: 'Annagret', text: ' Also, that is a good idea, yeah?' },
   { startTime: 6231.22, person: 'Annagret', text: ' I can put it on the Miro.' },
   { startTime: 6233.1, person: 'Karol', text: ' That would be probably quicker.' },
   { startTime: 6236.82, person: 'Annagret', text: ' Voila.' },
@@ -3389,7 +3386,6 @@ const transcript = ref([
     person: 'Karol',
     text: " That's a lovely, spontaneous part of doing loosely coupled."
   },
-  { startTime: 6274.65, person: 'Annagret', text: ' La, la, la, la, la.' },
   {
     startTime: 6276.83,
     person: 'Annagret',
@@ -3408,7 +3404,7 @@ const transcript = ref([
   {
     startTime: 6325.49,
     person: 'Karol',
-    text: ' Well, you created a very long async API spec then.'
+    text: ' Well, you created a very long AsyncAPI spec then.'
   },
   { startTime: 6331.17, person: 'Annagret', text: " Yeah, it's really long, yeah." },
   {
@@ -3424,7 +3420,7 @@ const transcript = ref([
   { startTime: 6362.6, person: 'Annagret', text: ' You can use it.' },
   { startTime: 6363.34, person: 'Karol', text: ' Yes, yes, yes.' },
   { startTime: 6364.06, person: 'Karol', text: ' Got it.' },
-  { startTime: 6364.78, person: 'Annagret', text: ' Got it.' },
+  { startTime: 6364.78, person: 'Karol', text: ' Got it.' },
   {
     startTime: 6365.58,
     person: 'Annagret',
@@ -3439,7 +3435,7 @@ const transcript = ref([
     text: ' So, I have everything uploaded to Gemini already.'
   },
   { startTime: 6389.42, person: 'Karol', text: ' And I copied your prompt from Miro.' },
-  { startTime: 6397.15, person: 'Karol', text: " That's great." },
+  { startTime: 6397.15, person: 'Annagret', text: " That's great." },
   { startTime: 6403.96, person: 'Annagret', text: ' So, now let us see what comes out of it.' },
   { startTime: 6411.79, person: 'Karol', text: ' All right.' },
   { startTime: 6412.53, person: 'Karol', text: " And I'm clicking play." },
@@ -3449,7 +3445,7 @@ const transcript = ref([
   { startTime: 6425.89, person: 'Karol', text: ' Gemini has already given me a yaml.' },
   { startTime: 6431.73, person: 'Annagret', text: ' And how does it look for you?' },
   { startTime: 6434.27, person: 'Karol', text: " Let's see." },
-  { startTime: 6434.97, person: 'Karol', text: " I don't know Async API that well." },
+  { startTime: 6434.97, person: 'Karol', text: " I don't know AsyncAPI that well." },
   {
     startTime: 6438.05,
     person: 'Karol',
@@ -3521,7 +3517,7 @@ const transcript = ref([
     person: 'Annagret',
     text: ' And we have the bicycle book channel for the bicycle.'
   },
-  { startTime: 6531.21, person: 'Annagret', text: ' Books event.' },
+  { startTime: 6531.21, person: 'Karol', text: ' Books event.' },
   { startTime: 6532.81, person: 'Annagret', text: ' Yeah.' },
   { startTime: 6533.29, person: 'Annagret', text: " So, it's nice." },
   {
@@ -3552,7 +3548,7 @@ const transcript = ref([
   {
     startTime: 6587.87,
     person: 'Annagret',
-    text: ' Usually, one must be quite careful with the LMMs because they know too much.'
+    text: ' Usually, one must be quite careful with the LLMs because they know too much.'
   },
   { startTime: 6596.49, person: 'Karol', text: ' Yes.' },
   { startTime: 6596.81, person: 'Annagret', text: " And they can't leave out." },
@@ -3606,7 +3602,7 @@ const transcript = ref([
     text: " But it's even come up with certain ideas of the enum of the sizes, yeah?"
   },
   { startTime: 6668.67, person: 'Annagret', text: " It's really nice." },
-  { startTime: 6670.01, person: 'Annagret', text: ' Yes.' },
+  { startTime: 6670.01, person: 'Karol', text: ' Yes.' },
   { startTime: 6670.15, person: 'Annagret', text: ' And so far…' },
   { startTime: 6670.97, person: 'Karol', text: ' It would be nice.' },
   { startTime: 6672.33, person: 'Annagret', text: ' Yeah.' },
@@ -3647,7 +3643,7 @@ const transcript = ref([
     person: 'Annagret',
     text: ' And therefore, you spare so much time just in writing infrastructure in the end.'
   },
-  { startTime: 6723.67, person: 'Annagret', text: ' Mm-hmm.' },
+  { startTime: 6723.67, person: 'Karol', text: ' Mm-hmm.' },
   { startTime: 6724.09, person: 'Annagret', text: ' Yeah?' },
   {
     startTime: 6724.63,
@@ -3677,7 +3673,7 @@ const transcript = ref([
   {
     startTime: 6767.17,
     person: 'Karol',
-    text: " And he- And Claude is not wrong, because we would need that event from the rack to start billing somebody if they're on a paper use."
+    text: " And Claude is not wrong, because we would need that event from the rack to start billing somebody if they're on a paper use."
   },
   {
     startTime: 6779.33,
@@ -3736,7 +3732,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' For me, as a neuroatypical with ADHD, my biggest problem in writing literally anything is a blank page paralysis.'
   },
-  { startTime: 6866.73, person: 'Karol', text: ' Exactly.' },
+  { startTime: 6866.73, person: 'Annagret', text: ' Exactly.' },
   {
     startTime: 6867.17,
     person: 'Karol',
@@ -3805,7 +3801,7 @@ const transcript = ref([
     text: ' Yes, we can often generate some code of an API implementation, etc.'
   },
   { startTime: 6998.35, person: 'Annagret', text: " I'm completely with you." },
-  { startTime: 7001.03, person: 'Annagret', text: ' Yammer is not code.' },
+  { startTime: 7001.03, person: 'Annagret', text: ' YAML is not code.' },
   {
     startTime: 7003.93,
     person: 'Karol',
@@ -3872,12 +3868,12 @@ const transcript = ref([
   {
     startTime: 7107.18,
     person: 'Annagret',
-    text: ' We could have here generated even the open API.'
+    text: ' We could have here generated even the OpenAPI.'
   },
   {
     startTime: 7112.14,
     person: 'Annagret',
-    text: ' Then you can work close with the open API and can generate in a sense of a contract first approach, can generate your controller from it.'
+    text: ' Then you can work close with the OpenAPI and can generate in a sense of a contract first approach, can generate your controller from it.'
   },
   {
     startTime: 7121.8,
@@ -3915,7 +3911,7 @@ const transcript = ref([
     text: ' Just also on the note in terms of generating the class diagram, because there are different types of abstractions for class diagrams.'
   },
   { startTime: 7182.06, person: 'Karol', text: ' You have conceptual, logical, physical, right?' },
-  { startTime: 7185.14, person: 'Karol', text: ' Exactly.' },
+  { startTime: 7185.14, person: 'Annagret', text: ' Exactly.' },
   {
     startTime: 7186.04,
     person: 'Karol',
@@ -3924,7 +3920,7 @@ const transcript = ref([
   {
     startTime: 7191.58,
     person: 'Karol',
-    text: ' And when we go deeper through even storming context map and on the level that we generated the SIG API specification, we could actually generate a class diagram that would be the physical model, which is rich in information such as attributes, enumerations, regular expressions, examples, etc.'
+    text: ' And when we go deeper through even storming context map and on the level that we generated the AsyncAPI specification, we could actually generate a class diagram that would be the physical model, which is rich in information such as attributes, enumerations, regular expressions, examples, etc.'
   },
   {
     startTime: 7220.34,
@@ -3972,7 +3968,7 @@ const transcript = ref([
   {
     startTime: 7281,
     person: 'Karol',
-    text: ' And we actually had a discussion about that on Loosely Coupled some time ago with your colleagues from CodeCentric, Daniel Koltzot and Miriam Greis.'
+    text: ' And we actually had a discussion about that on Loosely Coupled some time ago with your colleagues from CodeCentric, Daniel Kocot and Miriam Greis.'
   },
   { startTime: 7293.08, person: 'Annagret', text: ' Greis.' },
   { startTime: 7293.8, person: 'Karol', text: ' Greis, yeah.' },
@@ -4068,7 +4064,101 @@ const transcript = ref([
     startTime: 7466.24,
     person: 'Karol',
     text: " Next week, we're diving into a completely different topic, looking at symptoms and problem solving and identifying the problems."
-  }
+  },
+  {
+    startTime: 7475.81,
+    person: 'Karol',
+    text: " So my guest next week will be Woody Zuill, coming to us, I believe, from US, as far as I remember, a Lean and Agile guide and coach, and we'll be diving into identifying things, looking at what are the actual problems, what are the actual symptoms, how can we dig into what the problem actually is, instead of just skimming over the surface and putting a Band-Aid on a gaping wound."
+  },
+  {
+    startTime: 7504.47,
+    person: 'Karol',
+    text: " So that's next week at 7 p.m. Central European Time."
+  },
+  {
+    startTime: 7510.31,
+    person: 'Karol',
+    text: " And if you're new to the stream, if you haven't been with us before, you can find more information."
+  },
+  {
+    startTime: 7518.93,
+    person: 'Karol',
+    text: ' You can find the recordings of previous streams on bridgingtheGap.eu.com'
+  },
+  {
+    startTime: 7523.29,
+    person: 'Karol',
+    text: ' You can find also all sorts of articles about ecosystem interoperability.'
+  },
+  {
+    startTime: 7528.81,
+    person: 'Karol',
+    text: ' You can also subscribe to our Substack and, of course, subscribe to the YouTube channel to get notifications about the upcoming live streams.'
+  },
+  {
+    startTime: 7537.81,
+    person: 'Karol',
+    text: ' And as far as my memory serves, we already have live streams outlined to January.'
+  },
+  {
+    startTime: 7543.39,
+    person: 'Karol',
+    text: ' So still about four of them coming up this year.'
+  },
+  {
+    startTime: 7548.85,
+    person: 'Karol',
+    text: ' And January is starting to fill up in my pipeline.'
+  },
+  { startTime: 7552.59, person: 'Karol', text: " So that's going to be interesting." },
+  { startTime: 7554.41, person: 'Karol', text: ' So more of them will show up soon.' },
+  {
+    startTime: 7558.19,
+    person: 'Karol',
+    text: " Now, that said, it's been a lovely conversation."
+  },
+  { startTime: 7566.19, person: 'Annagret', text: ' Thank you.' },
+  { startTime: 7566.83, person: 'Annagret', text: ' It was really fun with you.' },
+  { startTime: 7568.95, person: 'Karol', text: ' We can definitely do this some more.' },
+  {
+    startTime: 7576.39,
+    person: 'Karol',
+    text: ' If we would dive into edge cases and specifics of different notations, different exercises, we could probably be going for the next two hours.'
+  },
+  { startTime: 7589.87, person: 'Annagret', text: ' Yeah, definitely.' },
+  { startTime: 7590.75, person: 'Annagret', text: ' Definitely.' },
+  { startTime: 7591.75, person: 'Annagret', text: ' We will, I hope.' },
+  { startTime: 7593.27, person: 'Karol', text: ' We will.' },
+  { startTime: 7593.77, person: 'Karol', text: ' All right.' },
+  {
+    startTime: 7594.23,
+    person: 'Karol',
+    text: " I think we'll discuss this later as to how to put that to good use and have some sessions in more details about specific techniques because all those collaborative techniques are a really good way to start a conversation, especially if we don't have a common language."
+  },
+  { startTime: 7613.55, person: 'Annagret', text: ' So I think Maxim can contact me via...' },
+  { startTime: 7617.91, person: 'Karol', text: " I'll arrange all of that." },
+  { startTime: 7620.75, person: 'Karol', text: " Don't worry." },
+  { startTime: 7621.87, person: 'Karol', text: " We'll get that sorted." },
+  { startTime: 7624.09, person: 'Karol', text: " So I'll arrange that with Maxim." },
+  { startTime: 7626.17, person: 'Karol', text: ' Maxim, please ping me on LinkedIn.' },
+  { startTime: 7628.67, person: 'Karol', text: " If not, I'll ping you tomorrow." },
+  {
+    startTime: 7631.23,
+    person: 'Karol',
+    text: " And ladies and gentlemen, for those still watching, and I see on both YouTube and LinkedIn that there are still people watching, so that's amazing."
+  },
+  { startTime: 7638.37, person: 'Annagret', text: ' Oh, great.' },
+  { startTime: 7639.13, person: 'Annagret', text: ' Thank you.' },
+  { startTime: 7641.03, person: 'Karol', text: ' Super.' },
+  {
+    startTime: 7642.29,
+    person: 'Karol',
+    text: " Thank you for being with us and have a lovely, I assume, night being in Europe or afternoon or whatever is the time zone that you're watching us at."
+  },
+  { startTime: 7655.97, person: 'Karol', text: ' And see you next stream.' },
+  { startTime: 7658.57, person: 'Annagret', text: ' Thank you very much, Karol.' },
+  { startTime: 7660.23, person: 'Annagret', text: ' Thank you for having me.' },
+  { startTime: 7661.77, person: 'Karol', text: ' Always.' }
 ])
 </script>
 
