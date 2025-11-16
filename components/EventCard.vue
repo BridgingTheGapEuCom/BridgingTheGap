@@ -15,7 +15,7 @@
           v-show="imageVisible"
           :alt="`${name} image`"
           :src="img"
-          class="md:max-w-[30rem] md:max-h-[16rem] w-full md:rounded-l-none md:rounded-r-md rounded-t-md original-image"
+          class="md:max-w-[20rem] h-full w-full md:rounded-l-none md:rounded-r-md rounded-t-md original-image"
           loading="lazy"
         />
         <div
@@ -65,14 +65,14 @@
       <!-- Intersection observer for lazy loading the image -->
       <div
         v-intersection-observer="onImageInView"
-        class="md:min-w-[20rem] max-h-[18rem] overflow-hidden image-container"
+        class="md:min-w-[20rem] h-full overflow-hidden image-container"
       >
         <!-- The article image, shown only when visible in the viewport -->
         <img
           v-show="imageVisible"
           :alt="`${name} image`"
           :src="img"
-          class="md:max-w-[30rem] md:max-h-[16rem] w-full md:rounded-l-none md:rounded-r-md rounded-t-md original-image"
+          class="md:max-w-[20rem] h-full w-full md:rounded-l-none md:rounded-r-md rounded-t-md original-image"
           loading="lazy"
         />
         <div
@@ -170,21 +170,16 @@ const onImageInView = (data: Array<IntersectionObserverEntry>) => {
 
 <style scoped>
 .image-container {
-  /* This is crucial for positioning the watermark relative to the image */
   position: relative;
-  /* Adjust size as needed, e.g., max-width: 500px; */
-  display: inline-block; /* To contain the absolute watermark within the image size */
+  display: inline-block;
 }
 
 .original-image {
-  /* Ensures the image fills the container */
   display: block;
   width: 100%;
-  height: auto;
 }
 
 .watermark-overlay {
-  /* Overlay properties */
   position: absolute;
   top: 50%; /* Center vertically */
   left: 50%; /* Center horizontally */
