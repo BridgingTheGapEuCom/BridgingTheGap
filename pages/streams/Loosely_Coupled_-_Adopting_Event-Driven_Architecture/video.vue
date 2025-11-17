@@ -11,4192 +11,3534 @@
 <script lang="ts" setup>
 const transcript = ref([
   {
-    startTime: 176.06,
+    startTime: 176.058,
     person: 'Karol',
     text: ' Hello, hello, good evening, good afternoon, good morning, or well, maybe good night for some people watching in India, if anybody is in India.'
   },
   {
-    startTime: 186.02,
+    startTime: 186.018,
     person: 'Karol',
-    text: ' Welcome to loosely coupled, our first live stream from bridging the gap.'
+    text: ' Welcome to loosely coupled, our first live stream from Bridging The Gap.'
   },
   {
-    startTime: 191.94,
+    startTime: 191.938,
     person: 'Karol',
-    text: " I'm your host, I'm the co-founder of bridging the gap, an open source project aiming at educating about enterprise application integration."
+    text: " I'm your host Karol Skrzymowski, I'm the co-founder of Bridging The Gap, an open source project aiming at educating about enterprise application integration."
   },
   {
-    startTime: 204.44,
+    startTime: 204.438,
     person: 'Karol',
-    text: ' With this stream, I want to bring some interesting topics loosely coupled with the field of application integration, and very loosely coupled with technical topics.'
+    text: ' And with this stream, I want to bring some interesting topics loosely coupled with the field of application integration, and very loosely coupled with technical topics.'
   },
   {
-    startTime: 222.23,
+    startTime: 222.228,
     person: 'Karol',
     text: " Now I made a mistake of having too many windows open, so I'm actually hearing myself all over the place."
   },
-  { startTime: 229.65, person: 'Karol', text: ' All right.' },
-  { startTime: 231.55, person: 'Karol', text: ' A little bit of housekeeping.' },
-  { startTime: 233.29, person: 'Karol', text: " We're live on YouTube." },
-  { startTime: 234.25, person: 'Karol', text: " We're live on LinkedIn." },
+  { startTime: 229.648, person: 'Karol', text: ' All right.' },
+  { startTime: 231.548, person: 'Karol', text: ' A little bit of housekeeping.' },
+  { startTime: 233.288, person: 'Karol', text: " We're live on YouTube." },
+  { startTime: 234.248, person: 'Karol', text: " We're live on LinkedIn." },
   {
-    startTime: 236.75,
+    startTime: 236.748,
     person: 'Karol',
     text: ' Please keep the comments and questions and everything coming.'
   },
   {
-    startTime: 240.59,
+    startTime: 240.588,
     person: 'Karol',
     text: " If something will be relevant for the topic, we'll be showing that on stream and asking that directly."
   },
   {
-    startTime: 247.73,
+    startTime: 247.728,
     person: 'Karol',
     text: ' If not, we will still have some time at the end for a Q&A.'
   },
   {
-    startTime: 252.57,
+    startTime: 252.568,
     person: 'Karol',
     text: ' And with that, let me welcome our first guest to this lovely live stream.'
   },
-  { startTime: 257.89, person: 'Karol', text: ' First edition, Fran Mendes.' },
-  { startTime: 263.86, person: 'Karol', text: ' Hello, Fran.' },
-  { startTime: 265.56, person: 'Karol', text: ' Hello.' },
-  { startTime: 268.97, person: 'Karol', text: ' Well, how is your evening so far in Spain?' },
-  { startTime: 273.39, person: 'Fran', text: ' Packed and hot.' },
+  { startTime: 257.888, person: 'Karol', text: ' First edition, Fran Mendez.' },
+  { startTime: 263.858, person: 'Karol', text: ' Hello, Fran.' },
+  { startTime: 265.558, person: 'Fran', text: ' Hello.' },
+  { startTime: 268.968, person: 'Karol', text: ' Well, how is your evening so far in Spain?' },
+  { startTime: 273.388, person: 'Fran', text: ' Packed and hot.' },
   {
-    startTime: 276.91,
+    startTime: 276.908,
     person: 'Fran',
     text: " As you can imagine, I'm in the south, I'm in Balakot next to Portugal."
   },
   {
-    startTime: 281.45,
+    startTime: 281.448,
     person: 'Fran',
     text: ' And, you know, we have a saying here that 35 degrees Celsius is getting cold, you know.'
   },
-  { startTime: 291.53, person: 'Fran', text: " So, yeah, it's not getting cold." },
-  { startTime: 299.37, person: 'Karol', text: " It's quite toasty in the Netherlands as well." },
+  { startTime: 291.528, person: 'Fran', text: " So, yeah, it's not getting cold." },
+  { startTime: 299.368, person: 'Karol', text: " It's quite toasty in the Netherlands as well." },
   {
-    startTime: 302.05,
+    startTime: 302.048,
     person: 'Karol',
     text: ' The morning was cloudy and a little bit chilly, but the afternoon is quite, quite, quite warm.'
   },
-  { startTime: 309.67, person: 'Karol', text: ' So, very nice indeed.' },
-  { startTime: 312.21, person: 'Karol', text: ' All right.' },
+  { startTime: 309.668, person: 'Karol', text: ' So, very nice indeed.' },
+  { startTime: 312.208, person: 'Karol', text: ' All right.' },
   {
-    startTime: 313.11,
+    startTime: 313.108,
     person: 'Karol',
     text: " We're having a lovely topic today related to enterprise application integration and software architecture as it is."
   },
-  { startTime: 320.55, person: 'Karol', text: " We're talking about event-driven architecture." },
+  { startTime: 320.548, person: 'Karol', text: " We're talking about event-driven architecture." },
   {
-    startTime: 322.99,
+    startTime: 322.988,
     person: 'Karol',
-    text: ' And who better to talk about event-driven architecture than the creator of Async API himself?'
+    text: ' And who better to talk about event-driven architecture than the creator of AsyncAPI himself?'
   },
   {
-    startTime: 330.69,
+    startTime: 330.688,
     person: 'Karol',
-    text: ' So, Fran, tell us a little bit first about Async API and your context and your background here.'
+    text: ' So, Fran, tell us a little bit first about AsyncAPI and your context and your background here.'
   },
   {
-    startTime: 338.37,
+    startTime: 338.368,
     person: 'Karol',
-    text: " So, for the people who don't know you, who only heard about Async API from, let's say, when they used MuleSoft or Solace or any other technology, so they have the proper context of who you are and what the hell is Async API and why did you even create that?"
+    text: " So, for the people who don't know you, who only heard about AsyncAPI from, let's say, when they used MuleSoft or Solace or any other technology, so they have the proper context of who you are and what the hell is AsyncAPI and why did you even create that?"
   },
-  { startTime: 357.75, person: 'Fran', text: " Oh, that's a lot." },
-  { startTime: 359.17, person: 'Karol', text: ' Yeah.' },
-  { startTime: 359.61, person: 'Fran', text: ' I can own the whole live stream just with that.' },
-  { startTime: 363.67, person: 'Karol', text: " Let's keep that part brief." },
-  { startTime: 365.91, person: 'Fran', text: ' So, yeah, my name is Fran Mendez.' },
-  { startTime: 368.55, person: 'Fran', text: ' I live in Spain, as I mentioned.' },
-  { startTime: 374.77, person: 'Fran', text: " I don't even know how to categorise myself." },
+  { startTime: 357.748, person: 'Fran', text: " Oh, that's a lot." },
+  { startTime: 359.168, person: 'Fran', text: ' Yeah.' },
+  { startTime: 359.608, person: 'Fran', text: ' I can own the whole live stream just with that.' },
+  { startTime: 363.668, person: 'Fran', text: " Let's keep that part brief." },
+  { startTime: 365.908, person: 'Fran', text: ' So, yeah, my name is Fran Mendez.' },
+  { startTime: 368.548, person: 'Fran', text: ' I live in Spain, as mentioned.' },
+  { startTime: 374.768, person: 'Fran', text: " I don't even know how to categorise myself." },
   {
-    startTime: 377.37,
+    startTime: 377.368,
     person: 'Fran',
     text: " Like, I've been a director of engineering in my last position, but before I was a manager, but before I was an architect, but before I was a CTO."
   },
-  { startTime: 387.77, person: 'Fran', text: " So, I've been, like, jumping from role to role." },
+  { startTime: 387.768, person: 'Fran', text: " So, I've been, like, jumping from role to role." },
   {
-    startTime: 394.23,
+    startTime: 394.228,
     person: 'Fran',
     text: " And I keep saying that I'm just an engineer, and I do whatever it's needed to do, and I'm always adapting to whatever it's needed in each situation."
   },
   {
-    startTime: 407.65,
+    startTime: 407.648,
     person: 'Fran',
     text: " So, I don't like to label myself as one thing, for the good, for the bad."
   },
   {
-    startTime: 415.81,
+    startTime: 415.808,
     person: 'Fran',
-    text: ' And, yeah, so, I created Async API, as Karol mentioned.'
+    text: ' And, yeah, so, I created AsyncAPI, as Carole mentioned.'
   },
-  { startTime: 420.73, person: 'Fran', text: ' So, this was almost nine years ago.' },
+  { startTime: 420.728, person: 'Fran', text: ' So, this was almost nine years ago.' },
   {
-    startTime: 426.27,
+    startTime: 426.268,
     person: 'Fran',
-    text: ' And the reason I created Async API, it was just for me.'
+    text: ' And the reason I created AsyncAPI, it was just for me.'
   },
   {
-    startTime: 431.83,
+    startTime: 431.828,
     person: 'Fran',
     text: ' It might sound egocentric looking back or explaining it like this.'
   },
   {
-    startTime: 437.83,
+    startTime: 437.828,
     person: 'Fran',
     text: " But the reality is that I wasn't expecting this kind of success."
   },
-  { startTime: 441.93, person: 'Fran', text: ' I was just building it for me for two reasons.' },
-  { startTime: 447.97, person: 'Fran', text: ' One of them is I wanted to learn OpenAPI well.' },
-  { startTime: 453.33, person: 'Fran', text: ' So, I had to create Async API.' },
+  { startTime: 441.928, person: 'Fran', text: ' I was just building it for me for two reasons.' },
+  { startTime: 447.968, person: 'Fran', text: ' One of them is I wanted to learn OpenAPI well.' },
+  { startTime: 453.328, person: 'Fran', text: ' So, I had to create AsyncAPI.' },
   {
-    startTime: 455.95,
+    startTime: 455.948,
     person: 'Fran',
     text: " I had to go from top to bottom of OpenAPI specification and read it and change whatever didn't make sense to me."
   },
-  { startTime: 464.37, person: 'Fran', text: " Didn't make sense for my use case." },
-  { startTime: 467.11, person: 'Fran', text: ' And what was my use case?' },
-  { startTime: 468.39, person: 'Fran', text: " That's the second reason." },
+  { startTime: 464.368, person: 'Fran', text: " Didn't make sense for my use case." },
+  { startTime: 467.108, person: 'Fran', text: ' And what was my use case?' },
+  { startTime: 468.388, person: 'Fran', text: " That's the second reason." },
   {
-    startTime: 469.19,
+    startTime: 469.188,
     person: 'Fran',
     text: ' My use case was I was using RabbitMQ to coordinate some microservices and, you know, and communicate between them and so on.'
   },
-  { startTime: 479.81, person: 'Fran', text: ' I was building an event-driven architecture.' },
-  { startTime: 483.29, person: 'Fran', text: ' And there was nothing like OpenAPI for that.' },
-  { startTime: 487.01, person: 'Fran', text: ' So, I decided to go ahead and modify OpenAPI.' },
-  { startTime: 490.67, person: 'Fran', text: ' In the beginning, it was mostly me.' },
+  { startTime: 479.808, person: 'Fran', text: ' I was building an event-driven architecture.' },
+  { startTime: 483.288, person: 'Fran', text: ' And there was nothing like OpenAPI for that.' },
+  { startTime: 487.008, person: 'Fran', text: ' So, I decided to go ahead and modify OpenAPI.' },
+  { startTime: 490.668, person: 'Fran', text: ' In the beginning, it was mostly me.' },
   {
-    startTime: 493.41,
+    startTime: 493.408,
     person: 'Fran',
-    text: ' Like, okay, maybe when it says get, the documentation generator can say subscribe.'
+    text: ' Like, okay, maybe when it says GET, the documentation generator can say SUBSCRIBE.'
   },
   {
-    startTime: 500.85,
-    person: 'Fran',
-    text: ' And when it says post or something else, it can say publish.'
+    startTime: 500.848,
+    person: 'speaker 1',
+    text: ' And when it says POST or something else, it can say PUBLISH.'
   },
-  { startTime: 505.19, person: 'Fran', text: ' And that might do the trick.' },
+  { startTime: 505.188, person: 'Fran', text: ' And that might do the trick.' },
   {
-    startTime: 508.11,
+    startTime: 508.108,
     person: 'Fran',
     text: ' Well, for documentation, it kind of did the trick.'
   },
-  { startTime: 511.049, person: 'Fran', text: ' For code generation, not so much.' },
-  { startTime: 512.95, person: 'Fran', text: ' It felt a lot like a hack.' },
-  { startTime: 514.429, person: 'Fran', text: ' It was a hack.' },
-  { startTime: 517.309, person: 'Fran', text: ' So, yeah.' },
+  { startTime: 511.047, person: 'Fran', text: ' For code generation, not so much.' },
+  { startTime: 512.948, person: 'Fran', text: ' It felt a lot like a hack.' },
+  { startTime: 514.427, person: 'Fran', text: ' It was a hack.' },
+  { startTime: 517.307, person: 'Fran', text: ' So, yeah.' },
   {
-    startTime: 517.809,
+    startTime: 517.807,
     person: 'Fran',
     text: " And then that's when I realised I had to go through the whole thing and change it."
   },
   {
-    startTime: 524.51,
+    startTime: 524.508,
     person: 'Fran',
     text: " And it was all done in open source because that's always my default."
   },
-  { startTime: 530.51, person: 'Fran', text: ' So, I was not...' },
+  { startTime: 530.508, person: 'Fran', text: ' So, I was not...' },
   {
-    startTime: 532.39,
+    startTime: 532.388,
     person: 'Fran',
     text: ' I already had, like, a bunch of other open source projects, but they never took off.'
   },
   {
-    startTime: 538.63,
+    startTime: 538.628,
     person: 'Fran',
     text: ' And this one started taking off because, you know, I started talking about it in conferences.'
   },
-  { startTime: 544.79, person: 'Fran', text: ' And I saw some interest from people and so on.' },
-  { startTime: 549.43, person: 'Fran', text: " And it started to show some traction, let's say." },
-  { startTime: 554.45, person: 'Fran', text: ' So, I created Slack and so on.' },
-  { startTime: 557.41, person: 'Fran', text: ' And started inviting people there.' },
+  { startTime: 544.788, person: 'Fran', text: ' And I saw some interest from people and so on.' },
+  { startTime: 549.428, person: 'Fran', text: " And it started to show some traction, let's say." },
+  { startTime: 554.448, person: 'Fran', text: ' So, I created Slack and so on.' },
+  { startTime: 557.408, person: 'Fran', text: ' And started inviting people there.' },
   {
-    startTime: 559.57,
+    startTime: 559.568,
     person: 'Fran',
     text: ' In the beginning, it was me mainly talking to the wall, as we say in Spanish.'
   },
-  { startTime: 563.71, person: 'Fran', text: ' So, I was just like, hey, so today I did this.' },
-  { startTime: 566.07, person: 'Fran', text: ' And today I added that.' },
+  { startTime: 563.708, person: 'Fran', text: ' So, I was just like, hey, so today I did this.' },
+  { startTime: 566.068, person: 'Fran', text: ' And today I added that.' },
   {
-    startTime: 567.61,
+    startTime: 567.608,
     person: 'Fran',
     text: ' And the funny thing is that the other people on the Slack was the people from my own company, from the company I was working on.'
   },
-  { startTime: 575.09, person: 'Fran', text: ' And they already knew that.' },
-  { startTime: 576.87, person: 'Fran', text: " And they were like, hey, we don't care, friend." },
-  { startTime: 579.27, person: 'Fran', text: ' We already know.' },
-  { startTime: 580.31, person: 'Fran', text: ' So, they were not interacting with me.' },
+  { startTime: 575.088, person: 'Fran', text: ' And they already knew that.' },
+  { startTime: 576.868, person: 'Fran', text: " And they were like, hey, we don't care, Fran." },
+  { startTime: 579.268, person: 'Fran', text: ' We already know.' },
+  { startTime: 580.308, person: 'Fran', text: ' So, they were not interacting with me.' },
   {
-    startTime: 583.11,
+    startTime: 583.108,
     person: 'Fran',
     text: ' And that was funny and desparating at the same time.'
   },
   {
-    startTime: 585.97,
+    startTime: 585.968,
     person: 'Fran',
     text: ' But eventually people start getting in and asking and so on.'
   },
-  { startTime: 591.95, person: 'Fran', text: ' So, yeah.' },
-  { startTime: 593.05, person: 'Fran', text: ' So, that was...' },
-  { startTime: 593.97, person: 'Fran', text: ' And here we are.' },
-  { startTime: 595.43, person: 'Karol', text: ' Here we are.' },
+  { startTime: 591.948, person: 'Fran', text: ' So, yeah.' },
+  { startTime: 593.048, person: 'Fran', text: ' So, that was...' },
+  { startTime: 593.968, person: 'Fran', text: ' And here we are.' },
+  { startTime: 595.428, person: 'Karol', text: ' Here we are.' },
   {
-    startTime: 596.15,
+    startTime: 596.148,
     person: 'Karol',
-    text: ' And now I had a look through the async API Slack.'
+    text: ' And now I had a look through the AsyncAPI Slack.'
   },
-  { startTime: 602.43, person: 'Karol', text: " Wow, that's a busy place." },
-  { startTime: 605.53, person: 'Karol', text: ' I get so many messages.' },
+  { startTime: 602.428, person: 'Karol', text: " Wow, that's a busy place." },
+  { startTime: 605.528, person: 'Karol', text: ' I get so many messages.' },
   {
-    startTime: 607.79,
+    startTime: 607.788,
     person: 'Karol',
     text: ' There are so many pull requests going through the channel.'
   },
   {
-    startTime: 613.63,
+    startTime: 613.628,
     person: 'Karol',
     text: ' So many conversations happening around various topics.'
   },
-  { startTime: 618.65, person: 'Karol', text: " It's crazy." },
+  { startTime: 618.648, person: 'Karol', text: " It's crazy." },
   {
-    startTime: 620.77,
+    startTime: 620.768,
     person: 'Karol',
-    text: ' And so many people participating also with the async API conf and all that.'
+    text: ' And so many people participating also with the AsyncAPI conf and all that.'
   },
   {
-    startTime: 627.19,
+    startTime: 627.188,
     person: 'Karol',
     text: ' And I already saw a few streams online of the community.'
   },
-  { startTime: 632.17, person: 'Karol', text: " It's interesting how that can grow." },
+  { startTime: 632.168, person: 'Karol', text: " It's interesting how that can grow." },
   {
-    startTime: 634.49,
+    startTime: 634.488,
     person: 'Fran',
     text: ' Yeah, this is something I would love to highlight is we do everything in the open.'
   },
-  { startTime: 641.39, person: 'Fran', text: ' So, we aim for total transparency.' },
-  { startTime: 643.85, person: 'Fran', text: ' Not as a way to...' },
-  { startTime: 647.85, person: 'Fran', text: ' Not as a way to show off or something like that.' },
+  { startTime: 641.388, person: 'Fran', text: ' So, we aim for total transparency.' },
+  { startTime: 643.848, person: 'Fran', text: ' Not as a way to...' },
+  { startTime: 647.848, person: 'Fran', text: ' Not as a way to show off or something like that.' },
   {
-    startTime: 652.15,
+    startTime: 652.148,
     person: 'Fran',
     text: ' Or to justify our behaviour or something like that.'
   },
   {
-    startTime: 658.25,
+    startTime: 658.248,
     person: 'Fran',
     text: ' Because we believe in transparency, in radical transparency.'
   },
-  { startTime: 662.23, person: 'Fran', text: ' So, we try to do everything in the open.' },
-  { startTime: 667.57, person: 'Fran', text: ' We are conscious.' },
+  { startTime: 662.228, person: 'Fran', text: ' So, we try to do everything in the open.' },
+  { startTime: 667.568, person: 'Fran', text: ' We are conscious.' },
   {
-    startTime: 668.97,
+    startTime: 668.968,
     person: 'Fran',
     text: " We are aware that just because you make everything in the open, it's not necessarily transparent."
   },
-  { startTime: 675.01, person: 'Fran', text: ' You need to publicise it.' },
+  { startTime: 675.008, person: 'Fran', text: ' You need to publicise it.' },
   {
-    startTime: 677.67,
+    startTime: 677.668,
     person: 'Fran',
     text: ' You need to advertise it so people know where this information is and how to consume it and so on.'
   },
   {
-    startTime: 683.63,
+    startTime: 683.628,
     person: 'Fran',
     text: ' We try to do it, but as you said, we generate a lot of content that is almost impossible for us to promote all the content we create.'
   },
   {
-    startTime: 691.89,
+    startTime: 691.888,
     person: 'Fran',
     text: ' All these live streams, all these meetings and so on.'
   },
-  { startTime: 696.53, person: 'Fran', text: ' So, meetings are not recorded.' },
-  { startTime: 700.57, person: 'Fran', text: ' They are live streamed.' },
-  { startTime: 701.99, person: 'Fran', text: ' Always.' },
-  { startTime: 702.69, person: 'Fran', text: ' All the meetings.' },
+  { startTime: 696.528, person: 'Fran', text: ' So, meetings are not recorded.' },
+  { startTime: 700.568, person: 'Fran', text: ' They are live streamed.' },
+  { startTime: 701.988, person: 'Fran', text: ' Always.' },
+  { startTime: 702.688, person: 'Fran', text: ' All the meetings.' },
   {
-    startTime: 703.99,
+    startTime: 703.988,
     person: 'Fran',
     text: " Unless there's something like code of contact stuff that is obviously handled separately for privacy reasons."
   },
-  { startTime: 712.37, person: 'Fran', text: ' But other than that, everything is open.' },
-  { startTime: 715.15, person: 'Fran', text: ' Everything is live streamed.' },
+  { startTime: 712.368, person: 'Fran', text: ' But other than that, everything is open.' },
+  { startTime: 715.148, person: 'Fran', text: ' Everything is live streamed.' },
   {
-    startTime: 717.51,
+    startTime: 717.508,
     person: 'Fran',
     text: " And that's really cool because when someone wants to land on the community, the only thing they have to do, the only thing, is to start watching these live streams."
   },
-  { startTime: 729.11, person: 'Fran', text: ' Start joining these meetings if they can.' },
-  { startTime: 731.07, person: 'Fran', text: ' If not, they can watch the recording.' },
+  { startTime: 729.108, person: 'Fran', text: ' Start joining these meetings if they can.' },
+  { startTime: 731.068, person: 'Fran', text: ' If not, they can watch the recording.' },
   {
-    startTime: 733.29,
+    startTime: 733.288,
     person: 'Fran',
     text: ' Following these certain issues on their favourite repo and so on.'
   },
-  { startTime: 737.03, person: 'Fran', text: " And it's really..." },
-  { startTime: 739.21, person: 'Fran', text: " And it's easier, I would say, to get on board." },
-  { startTime: 743.11, person: 'Fran', text: " It's not easy." },
-  { startTime: 744.63, person: 'Fran', text: " It's easier." },
-  { startTime: 745.63, person: 'Fran', text: " It's not easy, though." },
-  { startTime: 747.23, person: 'Fran', text: " Because, as you said, it's huge." },
-  { startTime: 749.51, person: 'Fran', text: ' It became a huge project with lots of people.' },
-  { startTime: 752.43, person: 'Fran', text: ' So, filtering in the noise is always different.' },
-  { startTime: 756.75, person: 'Karol', text: ' Okay.' },
+  { startTime: 737.028, person: 'Fran', text: " And it's really..." },
+  { startTime: 739.208, person: 'Fran', text: " And it's easier, I would say, to get on board." },
+  { startTime: 743.108, person: 'Fran', text: " It's not easy." },
+  { startTime: 744.628, person: 'Fran', text: " It's easier." },
+  { startTime: 745.628, person: 'Fran', text: " It's not easy, though." },
+  { startTime: 747.228, person: 'Fran', text: " Because, as you said, it's huge." },
+  { startTime: 749.508, person: 'Fran', text: ' It became a huge project with lots of people.' },
+  { startTime: 752.428, person: 'Fran', text: ' So, filtering in the noise is always difficult.' },
+  { startTime: 756.748, person: 'Karol', text: ' Okay.' },
   {
-    startTime: 757.59,
+    startTime: 757.588,
     person: 'Karol',
     text: ' But we met today to talk about even-driven architecture.'
   },
-  { startTime: 762.45, person: 'Karol', text: ' An adoption of said even-driven architecture.' },
+  { startTime: 762.448, person: 'Karol', text: ' An adoption of said even-driven architecture.' },
   {
-    startTime: 765.59,
+    startTime: 765.588,
     person: 'Karol',
     text: ' Now, the key question I have is, how would you define even-driven architecture?'
   },
   {
-    startTime: 772.45,
+    startTime: 772.448,
     person: 'Karol',
     text: " Because I'm pretty certain that from your perspective, the definition's a little bit different than from my perspective."
   },
-  { startTime: 780.11, person: 'Fran', text: ' Okay.' },
+  { startTime: 780.108, person: 'Fran', text: ' Okay.' },
   {
-    startTime: 780.79,
+    startTime: 780.788,
     person: 'Fran',
     text: ' So, I mean, in general terms, I would say, I want to make a...'
   },
-  { startTime: 790.81, person: 'Fran', text: ' I want to clarify something here.' },
-  { startTime: 792.47, person: 'Fran', text: ' So, we often talk about even-driven architecture.' },
+  { startTime: 790.808, person: 'Fran', text: ' I want to clarify something here.' },
   {
-    startTime: 797.07,
+    startTime: 792.468,
+    person: 'Fran',
+    text: ' So, we often talk about even-driven architecture.'
+  },
+  {
+    startTime: 797.068,
     person: 'Fran',
     text: ' All of us, including myself, when we mean message-driven architecture, right?'
   },
-  { startTime: 804.33, person: 'Fran', text: " What's the difference?" },
+  { startTime: 804.328, person: 'Fran', text: " What's the difference?" },
   {
-    startTime: 805.43,
+    startTime: 805.428,
     person: 'Fran',
     text: " So, to me, I don't think it's only to me, but the difference is in the meaning of the message, right?"
   },
-  { startTime: 814.17, person: 'Fran', text: ' So, message is like the broad concept.' },
+  { startTime: 814.168, person: 'Fran', text: ' So, message is like the broad concept.' },
   {
-    startTime: 820.67,
+    startTime: 820.668,
     person: 'Fran',
     text: " There's a piece of data flowing, usually through a broker, from producers to consumers, and so on, right?"
   },
   {
-    startTime: 827.13,
+    startTime: 827.128,
     person: 'Fran',
     text: ' But to me, even-driven architecture is when you work with events, with facts that happened, right?'
   },
-  { startTime: 833.83, person: 'Fran', text: " That's it." },
+  { startTime: 833.828, person: 'Fran', text: " That's it." },
   {
-    startTime: 834.51,
+    startTime: 834.508,
     person: 'Fran',
     text: ' Like, you send events to a broker and consume them from other consumers, and so on.'
   },
-  { startTime: 841.29, person: 'Fran', text: ' For which purpose?' },
-  { startTime: 844.01, person: 'Fran', text: " That's not defining the term to me." },
-  { startTime: 845.99, person: 'Fran', text: " That's something that's kept open, right?" },
-  { startTime: 849.49, person: 'Fran', text: ' So, I just live there.' },
-  { startTime: 851.95, person: 'Fran', text: ' Even-driven architecture is something that is...' },
+  { startTime: 841.288, person: 'Fran', text: ' For which purpose?' },
+  { startTime: 844.008, person: 'Fran', text: " That's not defining the term to me." },
+  { startTime: 845.988, person: 'Fran', text: " That's something that's kept open, right?" },
+  { startTime: 849.488, person: 'Fran', text: ' So, I just live there.' },
+  { startTime: 851.948, person: 'Fran', text: ' Even-driven architecture is something that is...' },
   {
-    startTime: 855.79,
+    startTime: 855.788,
     person: 'Fran',
     text: " It's a kind of architecture that usually relies on a broker and where you exchange events as facts, let's say, right?"
   },
   {
-    startTime: 863.95,
+    startTime: 863.948,
     person: 'Fran',
     text: " But some people, as I said, like, some people also, including myself sometimes, because it's useful to talk about EBA all the time, if you send an action, a command, and expect a response over a broker, which is also possible, we sometimes also talk about these things as even-driven architecture."
   },
-  { startTime: 888.27, person: 'Fran', text: " When it's not, it's not an event, right?" },
-  { startTime: 890.57, person: 'Fran', text: " It's a command." },
-  { startTime: 891.17, person: 'Fran', text: " But that's a different discussion, let's say." },
-  { startTime: 894.99, person: 'Fran', text: " So, that's what I live at usually." },
+  { startTime: 888.268, person: 'Fran', text: " When it's not, it's not an event, right?" },
+  { startTime: 890.568, person: 'Fran', text: " It's a command." },
+  { startTime: 891.168, person: 'Fran', text: " But that's a different discussion, let's say." },
+  { startTime: 894.988, person: 'Fran', text: " So, that's what I live at usually." },
   {
-    startTime: 897.29,
+    startTime: 897.288,
     person: 'Fran',
     text: ' This can be just to communicate microservices in your team, your domain, or something, or it can be as a means to integrate, to build integrations inside your company, or with partners, or with public, you know, with the public audience.'
   },
-  { startTime: 913.61, person: 'Fran', text: ' That depends on your business.' },
-  { startTime: 915.71, person: 'Fran', text: ' For instance, robotics.' },
-  { startTime: 916.95, person: 'Fran', text: ' We see a lot of this in robotics with MQTT.' },
+  { startTime: 913.608, person: 'Fran', text: ' That depends on your business.' },
+  { startTime: 915.708, person: 'Fran', text: ' For instance, robotics.' },
+  { startTime: 916.948, person: 'Fran', text: ' We see a lot of this in robotics with MQTT.' },
   {
-    startTime: 920.37,
+    startTime: 920.368,
     person: 'Fran',
-    text: ' They offer their open API as an I think you pay file defining an MQTT API, right?'
+    text: ' They offer their OpenAPI as an I think you pay file defining an MQTT API, right?'
   },
-  { startTime: 931.39, person: 'Fran', text: ' So, and anyone can consume it, right?' },
-  { startTime: 933.97, person: 'Fran', text: ' Anyone, you only have to apply for a token.' },
+  { startTime: 931.388, person: 'Fran', text: ' So, and anyone can consume it, right?' },
+  { startTime: 933.968, person: 'Fran', text: ' Anyone, you only have to apply for a token.' },
   {
-    startTime: 937.65,
+    startTime: 937.648,
     person: 'Fran',
     text: " And that's it as a token that it's going to be prepared to your MQTT topics and so on."
   },
   {
-    startTime: 944.85,
+    startTime: 944.848,
     person: 'Fran',
     text: " So, it's effectively like the counterpart, or let's say the sister of a public REST API, but using MQTT in this case, right?"
   },
   {
-    startTime: 958.33,
+    startTime: 958.328,
     person: 'Fran',
     text: ' So, yeah, there are many usages of event-driven architecture.'
   },
   {
-    startTime: 963.19,
+    startTime: 963.188,
     person: 'Fran',
     text: ' There is a talk that we have it on the Cinque Bay website on the documentation.'
   },
-  { startTime: 971.39, person: 'Fran', text: " It's linked there from Martin Fowler." },
+  { startTime: 971.388, person: 'Fran', text: " It's linked there from Martin Fowler." },
   {
-    startTime: 976.07,
+    startTime: 976.068,
     person: 'Fran',
     text: ' And the talk is titled, the many meanings of event-driven architecture.'
   },
   {
-    startTime: 982.53,
+    startTime: 982.528,
     person: 'Fran',
     text: ' And I think that perfectly illustrates what I mean, this talk.'
   },
   {
-    startTime: 990.41,
+    startTime: 990.408,
     person: 'Fran',
     text: " So, if you go to the website, and you go to the documentation, if not the first page, one of the first pages, I'm sorry because I don't follow closely the docs anymore."
   },
-  { startTime: 1005.63, person: 'Fran', text: " It's too much." },
-  { startTime: 1007.15, person: 'Fran', text: " It's fine." },
+  { startTime: 1005.628, person: 'Fran', text: " It's too much." },
+  { startTime: 1007.148, person: 'Fran', text: " It's fine." },
   {
-    startTime: 1010.43,
+    startTime: 1010.428,
     person: 'Karol',
     text: " But I'm sure we can find it later and put it in the description of the recordings for people to find."
   },
-  { startTime: 1017.51, person: 'Karol', text: " That's going to be fine." },
+  { startTime: 1017.508, person: 'Karol', text: " That's going to be fine." },
   {
-    startTime: 1020.29,
+    startTime: 1020.288,
     person: 'Karol',
     text: ' See, one of the highlights I have in terms of event-driven architecture, I have two perspectives on that.'
   },
   {
-    startTime: 1028.47,
+    startTime: 1028.468,
     person: 'Karol',
     text: ' First one is the interoperability and the way we design communication within the system, which, for example, like microservices, microservices go well with event-driven and choreography and all that, right?'
   },
   {
-    startTime: 1043.369,
+    startTime: 1043.367,
     person: 'Karol',
     text: " Which is usually not of my concern because I don't design domain systems."
   },
   {
-    startTime: 1049.23,
+    startTime: 1049.228,
     person: 'Karol',
     text: ' I look always on an ecosystem level, so the communication and interactions between various systems.'
   },
   {
-    startTime: 1055.91,
+    startTime: 1055.908,
     person: 'Karol',
     text: ' And there, event-driven architecture has a lot to do, but it differs slightly in certain areas, like, for example, do we use data-based contracts or key-based contracts?'
   },
   {
-    startTime: 1074.87,
+    startTime: 1074.868,
     person: 'Karol',
     text: " So like anaemic events, usually in business systems, key-based contracts would be quite normal, while in ecosystems, they're actually more of a considered as an anti-pattern."
   },
   {
-    startTime: 1091.31,
+    startTime: 1091.308,
     person: 'Karol',
     text: ' So there are these kind of small discrepancies of what would be acceptable on the level of a system using EDA and what would be acceptable on the level of an ecosystem using EDA.'
   },
   {
-    startTime: 1102.37,
+    startTime: 1102.368,
     person: 'Karol',
     text: ' Then also the differences are like the sets of patterns sometimes differ or what is the database topology.'
   },
   {
-    startTime: 1114.12,
+    startTime: 1114.118,
     person: 'Karol',
     text: ' So we usually work with completely distributed separate databases, separate sets of models, data, everything separated.'
   },
-  { startTime: 1126.62, person: 'Karol', text: " So that's my kind of take on EDA." },
+  { startTime: 1126.618, person: 'Karol', text: " So that's my kind of take on EDA." },
   {
-    startTime: 1129.84,
+    startTime: 1129.838,
     person: 'Karol',
     text: ' For me, these are just two types which drive my conversations in enterprise application integration at least.'
   },
-  { startTime: 1141.12, person: 'Fran', text: ' I would say even more than two types.' },
+  { startTime: 1141.118, person: 'Fran', text: ' I would say even more than two types.' },
   {
-    startTime: 1143.9,
+    startTime: 1143.898,
     person: 'Fran',
     text: " It's like inside a certain domain, a domain understood as a domain-driven design."
   },
   {
-    startTime: 1150.84,
+    startTime: 1150.838,
     person: 'Fran',
     text: " It's inside a single domain to coordinate stuff in between a domain."
   },
   {
-    startTime: 1157.86,
+    startTime: 1157.858,
     person: 'Fran',
     text: ' Sometimes you have services or microservices inside the same domain and they need to coordinate for whatever reason.'
   },
   {
-    startTime: 1163.8,
+    startTime: 1163.798,
     person: 'Fran',
     text: ' Usually these events are not useful for anyone other than these people in this domain.'
   },
   {
-    startTime: 1170.1,
+    startTime: 1170.098,
     person: 'Fran',
     text: " But then you have cross-domain that starts behaving as integration as well, but inside the company, inside the organisation, doesn't have to be a company."
   },
-  { startTime: 1186.86, person: 'Fran', text: ' But then you have cross-organisation.' },
+  { startTime: 1186.858, person: 'Fran', text: ' But then you have cross-organisation.' },
   {
-    startTime: 1188.72,
+    startTime: 1188.718,
     person: 'Fran',
     text: ' Cross-organisations in plural, and you have partners, integrations, and so on, or public.'
   },
-  { startTime: 1196.06, person: 'Fran', text: ' So the scope can go well beyond my truth.' },
+  { startTime: 1196.058, person: 'Fran', text: ' So the scope can go well beyond my truth.' },
   {
-    startTime: 1198.72,
+    startTime: 1198.718,
     person: 'Karol',
     text: " The funny thing is, because I've been sitting recently with a lot of domain-driven design people and discussing the overlaps of domain-driven design and interoperability topics, and the most amazing thing is that actually if you look at it from the perspective of domains, a domain can span across several systems."
   },
   {
-    startTime: 1219.48,
+    startTime: 1219.478,
     person: 'Karol',
     text: ' And a specific system may represent within itself several domains.'
   },
   {
-    startTime: 1224.84,
+    startTime: 1224.838,
     person: 'Karol',
     text: ' So those overlays we can draw over those system boundaries and different block diagrams are quite elaborate at times, depending on how the company was built, how much design went up front into those systems.'
   },
   {
-    startTime: 1246.66,
+    startTime: 1246.658,
     person: 'Karol',
     text: ' And then the world of cloud comes in and with SaaS solutions, everything is wrecked all over again because obviously SaaS solutions have a completely different philosophy and they again represent multiple domains.'
   },
   {
-    startTime: 1262.39,
+    startTime: 1262.388,
     person: 'Karol',
     text: " And it's over a layer, on a layer, on a layer, depending how we want to approach those layers, but there's so much to it to walk around."
   },
   {
-    startTime: 1273.37,
+    startTime: 1273.368,
     person: 'Karol',
     text: " And with that so much, I think there's a level of hidden chaos in all ecosystems."
   },
   {
-    startTime: 1285.95,
+    startTime: 1285.948,
     person: 'Karol',
     text: ' I mean, entropy creeps in everywhere, so I would guess sooner or later everybody will experience chaos somewhere.'
   },
   {
-    startTime: 1293.45,
+    startTime: 1293.448,
     person: 'Karol',
     text: ' But in terms of even-driven architecture, I think one of the biggest challenges of a hidden chaos might be the overall lack of standards in a lot of companies or a lot of organisations.'
   },
   {
-    startTime: 1308.33,
+    startTime: 1308.328,
     person: 'Karol',
     text: ' While we have very robust standards for synchronous communication, I think not a lot of companies actually know how to standardise async.'
   },
-  { startTime: 1320.31, person: 'Fran', text: ' Yep.' },
-  { startTime: 1321.33, person: 'Karol', text: " What's your take on that?" },
-  { startTime: 1323.99, person: 'Fran', text: " That's a good point, actually." },
+  { startTime: 1320.308, person: 'Fran', text: ' Yep.' },
+  { startTime: 1321.328, person: 'Karol', text: " What's your take on that?" },
+  { startTime: 1323.988, person: 'Fran', text: " That's a good point, actually." },
   {
-    startTime: 1325.71,
+    startTime: 1325.708,
     person: 'Fran',
     text: " You're touching on the point of governance, right?"
   },
-  { startTime: 1328.11, person: 'Fran', text: ' So there are standards.' },
-  { startTime: 1331.19, person: 'Fran', text: " There's async API." },
+  { startTime: 1328.108, person: 'Fran', text: ' So there are standards.' },
+  { startTime: 1331.188, person: 'Fran', text: " There's AsyncAPI." },
   {
-    startTime: 1332.53,
+    startTime: 1332.528,
     person: 'Fran',
-    text: " There's cloud events that Alexander has mentioned on the LinkedIn comment."
+    text: " There's cloud events that Aleksandr has mentioned on the LinkedIn comment."
   },
   {
-    startTime: 1338.73,
+    startTime: 1338.728,
     person: 'Fran',
     text: ' There are a lot of different standards for messaging.'
   },
-  { startTime: 1342.69, person: 'Fran', text: ' Then you have Avra.' },
-  { startTime: 1343.85, person: 'Fran', text: ' Then you have for schema definition, right?' },
-  { startTime: 1347.65, person: 'Fran', text: " It's the schema itself." },
-  { startTime: 1350.25, person: 'Fran', text: ' Then you have this protobuf and so on.' },
+  { startTime: 1342.688, person: 'Fran', text: ' Then you have Avra.' },
+  { startTime: 1343.848, person: 'Fran', text: ' Then you have for schema definition, right?' },
+  { startTime: 1347.648, person: 'Fran', text: " It's the schema itself." },
+  { startTime: 1350.248, person: 'Fran', text: ' Then you have this protobuf and so on.' },
   {
-    startTime: 1352.95,
+    startTime: 1352.948,
     person: 'Fran',
     text: ' So there are many different layers, different levels, but there are different standards for that.'
   },
-  { startTime: 1359.09, person: 'Fran', text: " Now, the thing is that it's funny." },
+  { startTime: 1359.088, person: 'Fran', text: " Now, the thing is that it's funny." },
   {
-    startTime: 1362.63,
+    startTime: 1362.628,
     person: 'Fran',
     text: " Something that I'm seeing lately is that maybe I'm biassed."
   },
-  { startTime: 1368.67, person: 'Fran', text: ' So bear with me.' },
+  { startTime: 1368.668, person: 'Fran', text: ' So bear with me.' },
   {
-    startTime: 1369.85,
+    startTime: 1369.848,
     person: 'Fran',
     text: ' But way more companies now are starting to adopt an API-first mindset.'
   },
-  { startTime: 1377.29, person: 'Fran', text: " And I'm talking about synchronous, right?" },
-  { startTime: 1380.65, person: 'Fran', text: ' So now they are starting now.' },
+  { startTime: 1377.288, person: 'Fran', text: " And I'm talking about synchronous, right?" },
+  { startTime: 1380.648, person: 'Fran', text: ' So now they are starting now.' },
   {
-    startTime: 1382.67,
+    startTime: 1382.668,
     person: 'Fran',
     text: " It's like the bulk of it, the bulk of the companies like everywhere you look around or almost everywhere you look around in tech companies or in companies with a mature, let's say, technical team."
   },
   {
-    startTime: 1400.13,
+    startTime: 1400.128,
     person: 'Fran',
-    text: " You'll see more and more people adopting open API, adopting API-first mindset and so on, right?"
+    text: " You'll see more and more people adopting OpenAPI, adopting API-first mindset and so on, right?"
   },
-  { startTime: 1407.59, person: 'Fran', text: " So that's cool." },
-  { startTime: 1408.63, person: 'Fran', text: " That's really good." },
+  { startTime: 1407.588, person: 'Fran', text: " So that's cool." },
+  { startTime: 1408.628, person: 'Fran', text: " That's really good." },
   {
-    startTime: 1409.71,
+    startTime: 1409.708,
     person: 'Fran',
     text: " But that's just, to me, as I see it, that's just starting to happen now."
   },
-  { startTime: 1414.85, person: 'Fran', text: ' It started to happen many years ago.' },
+  { startTime: 1414.848, person: 'Fran', text: ' It started to happen many years ago.' },
   {
-    startTime: 1418.13,
+    startTime: 1418.128,
     person: 'Fran',
     text: " But now is when I'm seeing it like, oh, it's starting to be everywhere."
   },
-  { startTime: 1423.31, person: 'Fran', text: ' Cool.' },
-  { startTime: 1424.01, person: 'Fran', text: " That's good." },
-  { startTime: 1425.61, person: 'Fran', text: ' Finally.' },
-  { startTime: 1426.87, person: 'Fran', text: ' It only took us 20 years now, not 20.' },
+  { startTime: 1423.308, person: 'Fran', text: ' Cool.' },
+  { startTime: 1424.008, person: 'Fran', text: " That's good." },
+  { startTime: 1425.608, person: 'Fran', text: ' Finally.' },
+  { startTime: 1426.868, person: 'Fran', text: ' It only took us 20 years now, not 20.' },
   {
-    startTime: 1428.91,
+    startTime: 1428.908,
     person: 'Fran',
-    text: ' But yeah, like when I was working, when I created this in KPI, we were already building a product to work with open API.'
+    text: ' But yeah, like when I was working, when I created AsyncAPI, we were already building a product to work with OpenAPI.'
   },
   {
-    startTime: 1439.01,
+    startTime: 1439.008,
     person: 'Fran',
-    text: ' So open API was already around, not Swagger, open API.'
+    text: ' So OpenAPI was already around, not Swagger, OpenAPI.'
   },
   {
-    startTime: 1443.45,
+    startTime: 1443.448,
     person: 'Fran',
-    text: ' So open API was already like, Swagger was already renamed by then.'
+    text: ' So OpenAPI was already like, Swagger was already renamed by then.'
   },
   {
-    startTime: 1448.13,
+    startTime: 1448.128,
     person: 'Fran',
     text: ' So it means that it was there for a while already.'
   },
   {
-    startTime: 1453.65,
+    startTime: 1453.648,
     person: 'Fran',
     text: ' What I mean with this, and this reminds me to a panel I got invited in Silicon Valley, I think 2018, or something like that.'
   },
-  { startTime: 1466.47, person: 'Fran', text: ' And I was there.' },
+  { startTime: 1466.468, person: 'Fran', text: ' And I was there.' },
   {
-    startTime: 1467.55,
+    startTime: 1467.548,
     person: 'Fran',
-    text: ' I remember my phone sitting there in the panel and listening to everyone, not speaking at all, and thinking, everyone was saying that how cool open API was, how cool, how everyone was using standards, how beautiful everything was, right?'
+    text: ' I remember my phone sitting there in the panel and listening to everyone, not speaking at all, and thinking, everyone was saying that how cool OpenAPI was, how cool, how everyone was using standards, how beautiful everything was, right?'
   },
   {
-    startTime: 1486.33,
+    startTime: 1486.328,
     person: 'Fran',
     text: " And I was just sitting there and it's like, that's not what I'm seeing."
   },
-  { startTime: 1491.85, person: 'Fran', text: " Like, what's wrong with this?" },
+  { startTime: 1491.848, person: 'Fran', text: " Like, what's wrong with this?" },
   {
-    startTime: 1494.81,
+    startTime: 1494.808,
     person: 'Fran',
     text: " Like, is it just me that I'm not seeing enough or what's happening?"
   },
   {
-    startTime: 1501.19,
+    startTime: 1501.188,
     person: 'Fran',
     text: " And I recall someone from the event, I don't recall the name of the guy, sorry for that, but someone from the event said, like, mentioned my comment in Twitter, I think."
   },
   {
-    startTime: 1514.15,
+    startTime: 1514.148,
     person: 'Fran',
-    text: " And he was like, the point, the whole point of the day was this take by friend and they're saying, hey, get down to earth, like, this is pretty cool."
+    text: ' And he was like, the point, the whole point of the day was this take by Fran Mendez saying, hey, get down to earth, like, this is pretty cool.'
   },
-  { startTime: 1523.33, person: 'Fran', text: " But we're just a bunch of us using it, right?" },
+  { startTime: 1523.328, person: 'Fran', text: " But we're just a bunch of us using it, right?" },
   {
-    startTime: 1526.49,
+    startTime: 1526.488,
     person: 'Fran',
-    text: " Like, we're those nerds that love APIs and open API and so on and API first and sign first and we're thinking about these things, but nobody cares, nobody out there cares, right?"
-  },
-  {
-    startTime: 1539.33,
-    person: 'Fran',
-    text: " Many people are building microservices and they don't even know what open API or Swagger is."
+    text: " Like, we're those nerds that love APIs and OpenAPI and so on and API first and sign first and we're thinking about these things, but nobody cares, nobody out there cares, right?"
   },
   {
-    startTime: 1544.91,
+    startTime: 1539.328,
+    person: 'Fran',
+    text: " Many people are building microservices and they don't even know what OpenAPI or Swagger is."
+  },
+  {
+    startTime: 1544.908,
     person: 'Fran',
     text: " And it's not that they care about or not, it's that they don't even know what it is."
   },
-  { startTime: 1548.91, person: 'Fran', text: " They don't even know it exists." },
-  { startTime: 1551.53, person: 'Fran', text: " I'm talking about 2018, right?" },
+  { startTime: 1548.908, person: 'Fran', text: " They don't even know it exists." },
+  { startTime: 1551.528, person: 'Fran', text: " I'm talking about 2018, right?" },
   {
-    startTime: 1554.35,
+    startTime: 1554.348,
     person: 'Fran',
     text: " And I was like, I don't want to disappoint people here, but my feeling is that this is still very niche, looking as API nerds, right?"
   },
   {
-    startTime: 1565.93,
+    startTime: 1565.928,
     person: 'Fran',
     text: " Then now I'm seeing this with this in KPI as well, or with even driven architecture, driven in this case by this in KPI and or cloud events."
   },
   {
-    startTime: 1582.87,
+    startTime: 1582.868,
     person: 'Fran',
     text: " I'm seeing that more and more companies are adopting it."
   },
   {
-    startTime: 1587.09,
+    startTime: 1587.088,
     person: 'Fran',
     text: " But it's still very early in the days for these companies to even, some of them, they don't even know if these standards exist, right?"
   },
   {
-    startTime: 1598.49,
+    startTime: 1598.488,
     person: 'Fran',
     text: ' And I could even, I could see it from the Postman surveys.'
   },
   {
-    startTime: 1606.65,
+    startTime: 1606.648,
     person: 'Fran',
-    text: ' So Postman was organising a survey every year and I think it was around 1% of people knew what ACMPI was.'
+    text: ' So Postman was organising a survey every year and I think it was around 1% of people knew what API was.'
   },
   {
-    startTime: 1615.51,
+    startTime: 1615.508,
     person: 'Fran',
     text: " And I was like, I know it's a very specific target audience, APIs, but precisely, it's very related."
   },
   {
-    startTime: 1625.33,
+    startTime: 1625.328,
     person: 'Fran',
-    text: " It's actually coming from that same world when I created this in KPI, I created it from OpenAPI."
+    text: " It's actually coming from that same world when I created this in API, I created it from OpenAPI."
   },
   {
-    startTime: 1632.41,
+    startTime: 1632.408,
     person: 'Fran',
     text: ' And I was always advocating for it on API days conferences and in API related conferences because that was when I was feeling comfortable, not for any other reason.'
   },
   {
-    startTime: 1647.41,
+    startTime: 1647.408,
     person: 'Karol',
     text: " But you know what, I was like, when you're talking about the standards and the old nerds like hyping about those standards, I'm like looking back at my career, when I started doing application integration, REST was nowhere to be found."
   },
   {
-    startTime: 1665.27,
+    startTime: 1665.268,
     person: 'Karol',
     text: ' Nobody was using JSON because it was non-existent.'
   },
-  { startTime: 1667.39, person: 'Karol', text: ' We were using XML.' },
+  { startTime: 1667.388, person: 'Karol', text: ' We were using XML.' },
+  { startTime: 1668.388, person: 'Fran', text: " It's still nowhere to be found yet." },
+  { startTime: 1671.17, person: 'Karol', text: " I'm going to get to that one in a moment." },
   {
-    startTime: 1668.39,
-    person: 'Karol',
-    text: " It's still nowhere to be found, REST. I'm going to get to that one in a moment."
-  },
-  {
-    startTime: 1675.05,
+    startTime: 1675.048,
     person: 'Karol',
     text: ' So looking back 14 years ago when I started as a junior developer, we were building SOAP services over HTTP or SOAP services over JMS. And that was already a very robust standard and was already a very established standard.'
   },
   {
-    startTime: 1693.77,
+    startTime: 1693.768,
     person: 'Karol',
     text: ' Very rigid, had to be very precise, so it was very prone to errors.'
   },
   {
-    startTime: 1697.83,
+    startTime: 1697.828,
     person: 'Karol',
     text: ' You could do a lot of errors and everything will be just returning you a 500 HTTP error, right?'
   },
   {
-    startTime: 1706.51,
+    startTime: 1706.508,
     person: 'Karol',
     text: ' Which is fine because where I worked, we actually needed very high rigid standardisation of the APIs so that we can have that quality of data.'
   },
   {
-    startTime: 1717.31,
+    startTime: 1717.308,
     person: 'Karol',
     text: ' But even though that was a very established standard at the time, we still stumbled into people who had no idea what they were doing, even if they were senior, right?'
   },
   {
-    startTime: 1731.63,
+    startTime: 1731.628,
     person: 'Karol',
     text: ' So I remember this lovely conversation some time ago where somebody was debugging a SOAP service and the guy had no idea why it was not working.'
   },
-  { startTime: 1747.17, person: 'Karol', text: ' The message was sent according to specs.' },
+  { startTime: 1747.168, person: 'Karol', text: ' The message was sent according to specs.' },
   {
-    startTime: 1749.19,
+    startTime: 1749.188,
     person: 'Karol',
     text: ' The specs said that the specific element could be empty.'
   },
-  { startTime: 1754.92, person: 'Karol', text: ' Like no string at all, right?' },
-  { startTime: 1758.81, person: 'Karol', text: ' So basically in the XML, they got an empty tag.' },
+  { startTime: 1754.918, person: 'Karol', text: ' Like no string at all, right?' },
   {
-    startTime: 1763.25,
+    startTime: 1758.808,
+    person: 'Karol',
+    text: ' So basically in the XML, they got an empty tag.'
+  },
+  {
+    startTime: 1763.248,
     person: 'Karol',
     text: " So a tag that doesn't have two elements has one element so it's already closed."
   },
-  { startTime: 1768.43, person: 'Karol', text: ' Self-contained, yeah.' },
+  { startTime: 1768.428, person: 'Karol', text: ' Self-contained, yeah.' },
   {
-    startTime: 1771.25,
+    startTime: 1771.248,
     person: 'Karol',
     text: ' And I remember the lovely comment from that developer debugging that communication because it was wrongly interpreted.'
   },
-  { startTime: 1778.43, person: 'Karol', text: " It's like, I'm getting a very weird tag here." },
-  { startTime: 1781.37, person: 'Karol', text: " It's neither open nor closed." },
-  { startTime: 1783.13, person: 'Karol', text: " I don't know what that is." },
+  { startTime: 1778.428, person: 'Karol', text: " It's like, I'm getting a very weird tag here." },
+  { startTime: 1781.368, person: 'Karol', text: " It's neither open nor closed." },
+  { startTime: 1783.128, person: 'Karol', text: " I don't know what that is." },
   {
-    startTime: 1785.37,
+    startTime: 1785.368,
     person: 'Karol',
-    text: " And I'm like sitting there and it's like, after a few years later, I mean, when I started doing proper research into interoperability and why we're doing certain things the way we are doing things and I started reading the specification of our XML, I was like, that self-contained tag is in the first version of the specification."
+    text: " And I'm like sitting there and it's like, after a few years later, I mean, when I started doing proper research into interoperability and why we're doing certain things the way we are doing things and I started reading the specification of the XML, I was like, that self-contained tag is in the first version of the specification."
   },
-  { startTime: 1810.37, person: 'Karol', text: " It's old as hell." },
-  { startTime: 1814.25, person: 'Fran', text: ' It was there for a reason.' },
-  { startTime: 1816.01, person: 'Fran', text: " It's pretty common in HTML as well, yeah." },
-  { startTime: 1818.21, person: 'Karol', text: ' Yeah, exactly.' },
+  { startTime: 1810.368, person: 'Karol', text: " It's old as hell." },
+  { startTime: 1814.248, person: 'Karol', text: ' It was there for a reason.' },
+  { startTime: 1816.008, person: 'Fran', text: " It's pretty common in HTML as well, yeah." },
+  { startTime: 1818.208, person: 'Karol', text: ' Yeah, exactly.' },
   {
-    startTime: 1819.53,
+    startTime: 1819.528,
     person: 'Karol',
     text: " The new line tag, that's basically what it is, right?"
   },
-  { startTime: 1823.45, person: 'Karol', text: ' Line, link, all this stuff, yeah.' },
-  { startTime: 1826.31, person: 'Karol', text: ' Yeah, plenty of those.' },
-  { startTime: 1828.49, person: 'Karol', text: ' And I was like, right, perfect.' },
+  { startTime: 1823.448, person: 'Fran', text: ' Line, link, all this stuff, yeah.' },
+  { startTime: 1826.308, person: 'Karol', text: ' Yeah, plenty of those.' },
+  { startTime: 1828.488, person: 'Karol', text: ' And I was like, right, perfect.' },
   {
-    startTime: 1831.13,
+    startTime: 1831.128,
     person: 'Karol',
     text: ' So we have standards but nobody actually even reads them.'
   },
-  { startTime: 1835.61, person: 'Karol', text: ' They apply to the use case.' },
-  { startTime: 1840.11, person: 'Karol', text: ' Sometimes good, sometimes bad.' },
+  { startTime: 1835.608, person: 'Karol', text: ' They apply to the use case.' },
+  { startTime: 1840.108, person: 'Karol', text: ' Sometimes good, sometimes bad.' },
   {
-    startTime: 1841.53,
+    startTime: 1841.528,
     person: 'Karol',
     text: ' And now looking at the REST standard, I would say that over 95% of REST services are not aligned with the REST standard.'
   },
   {
-    startTime: 1853.51,
+    startTime: 1853.508,
     person: 'Karol',
     text: " We call them REST services, but they're not actually up to par."
   },
-  { startTime: 1857.47, person: 'Karol', text: " They don't have the next page." },
+  { startTime: 1857.468, person: 'Karol', text: " They don't have the next page." },
   {
-    startTime: 1858.77,
+    startTime: 1858.768,
     person: 'Karol',
     text: " They don't have the related objects, nothing like that."
   },
   {
-    startTime: 1862.19,
+    startTime: 1862.188,
     person: 'Karol',
-    text: ' We just use this to convey messages based on crude, create, read, update, delete.'
+    text: ' We just use this to convey messages based on CRUD, create, read, update, delete.'
   },
-  { startTime: 1872.07, person: 'Karol', text: ' And we have standards.' },
-  { startTime: 1874.91, person: 'Karol', text: ' But who read the REST API standard?' },
+  { startTime: 1872.068, person: 'Karol', text: ' And we have standards.' },
+  { startTime: 1874.908, person: 'Karol', text: ' But who read the REST API standard?' },
   {
-    startTime: 1877.91,
+    startTime: 1877.908,
     person: 'Karol',
     text: ' I mean, hands up, probably nobody, other than the two of us, I would guess.'
   },
-  { startTime: 1882.85, person: 'Fran', text: " No, no, no, I haven't." },
+  { startTime: 1882.848, person: 'Fran', text: " No, no, no, I haven't." },
   {
-    startTime: 1885.01,
+    startTime: 1885.008,
     person: 'Fran',
     text: " I just went through it like a little bit, but couldn't finish it."
   },
-  { startTime: 1890.19, person: 'Fran', text: " I mean, it's an interesting one, probably." },
+  { startTime: 1890.188, person: 'Fran', text: " I mean, it's an interesting one, probably." },
   {
-    startTime: 1892.73,
+    startTime: 1892.728,
     person: 'Fran',
     text: " I just didn't have the time or energy to do it, or even the need to do it."
   },
   {
-    startTime: 1896.73,
+    startTime: 1896.728,
     person: 'Fran',
     text: " So if I have had the need, probably I will have done it, and that's fine."
   },
-  { startTime: 1902.31, person: 'Karol', text: ' Yeah, the need is also quite important.' },
+  { startTime: 1902.308, person: 'Karol', text: ' Yeah, the need is also quite important.' },
   {
-    startTime: 1904.77,
+    startTime: 1904.768,
     person: 'Fran',
     text: " So I never had the need to have, let's say, a proper REST API."
   },
   {
-    startTime: 1911.09,
+    startTime: 1911.088,
     person: 'Fran',
     text: ' Because what you said, even consuming this kind of APIs will become more difficult for teams that are already like being pressured to deliver quickly, quickly, quickly.'
   },
-  { startTime: 1927.51, person: 'Fran', text: ' Right?' },
+  { startTime: 1927.508, person: 'Fran', text: ' Right?' },
   {
-    startTime: 1928.33,
+    startTime: 1928.328,
     person: 'Fran',
     text: " So yeah, this sort of SCRAM methodology that we have been applying for the last decade, it's a little bit of a culprit there as well for telling people that you should be rushing out and delivering things quickly in the next two weeks without looking farther than just two weeks."
   },
   {
-    startTime: 1951.19,
+    startTime: 1951.188,
     person: 'Fran',
     text: " So I know it's not exactly what SCRAM says, but that's how it was usually applied."
   },
-  { startTime: 1957.97, person: 'Fran', text: " So in the end, we'll get back to the same thing." },
   {
-    startTime: 1962.89,
+    startTime: 1957.968,
+    person: 'Fran',
+    text: " So in the end, we'll get back to the same thing."
+  },
+  {
+    startTime: 1962.888,
     person: 'Karol',
     text: " So basically we could say that, yes, we have standards, but nobody's adopting those standards."
   },
-  { startTime: 1968.29, person: 'Karol', text: ' So we basically live without standards.' },
-  { startTime: 1970.65, person: 'Karol', text: " And that's one of the usual problems." },
+  { startTime: 1968.288, person: 'Karol', text: ' So we basically live without standards.' },
+  { startTime: 1970.648, person: 'Karol', text: " And that's one of the usual problems." },
   {
-    startTime: 1975.43,
+    startTime: 1975.428,
     person: 'Fran',
     text: " Now, I would love to give, let's say, a vote here to these people who never reach standards and try to build things and so on."
   },
-  { startTime: 1988.07, person: 'Fran', text: " I'm one of them as well." },
+  { startTime: 1988.068, person: 'Fran', text: " I'm one of them as well." },
   {
-    startTime: 1992.09,
+    startTime: 1992.088,
     person: 'Fran',
     text: ' And I think everyone is, everyone, like we all do it with certain things, not with all of the things, right?'
   },
   {
-    startTime: 2000.35,
+    startTime: 2000.348,
     person: 'Fran',
     text: ' But the thing is that if you are under pressure to deliver, deliver, deliver, you could not be reading MSN.'
   },
   {
-    startTime: 2011.57,
+    startTime: 2011.568,
     person: 'Fran',
     text: " All the standards that are out there and so on, sometimes it's faster and easier for you to deliver something that is, meh, it works, right?"
   },
   {
-    startTime: 2024.37,
+    startTime: 2024.368,
     person: 'Fran',
     text: " And you're not going to be fired because you deliver."
   },
   {
-    startTime: 2029.23,
+    startTime: 2029.228,
     person: 'Fran',
     text: " Then to say, you know what, let me properly read this and let's build this in eight weeks instead of two."
   },
   {
-    startTime: 2038.55,
+    startTime: 2038.548,
     person: 'Fran',
     text: ' But the cool thing is that next time we have to build something like that.'
   },
   {
-    startTime: 2042.33,
+    startTime: 2042.328,
     person: 'Fran',
     text: " Actually, next time we have to build a feature on the API, we don't have to change the API."
   },
-  { startTime: 2047.55, person: 'Fran', text: ' Like the whole API will adapt itself, right?' },
-  { startTime: 2051.83, person: 'Fran', text: ' Like the web is doing with HTML, for instance.' },
+  { startTime: 2047.548, person: 'Fran', text: ' Like the whole API will adapt itself, right?' },
+  { startTime: 2051.828, person: 'Fran', text: ' Like the web is doing with HTML, for instance.' },
   {
-    startTime: 2054.53,
+    startTime: 2054.528,
     person: 'Fran',
     text: " You don't have to encode each website in the world, like everybody got a language, which is HTML, and then you can create the content."
   },
   {
-    startTime: 2064.77,
+    startTime: 2064.768,
     person: 'Fran',
     text: ' And then you have link tags and so on, script tags, and all this kind of references to other webs, the A tag, the anchor tag, and all this stuff, which are hyperlinks.'
   },
-  { startTime: 2078.989, person: 'Fran', text: " So there's a system there, right?" },
+  { startTime: 2078.987, person: 'Fran', text: " So there's a system there, right?" },
   {
-    startTime: 2082.77,
+    startTime: 2082.768,
     person: 'Fran',
     text: ' The thing is that for some reason, at some point, we decided to say that XML or HTML is not good enough.'
   },
   {
-    startTime: 2091.87,
+    startTime: 2091.868,
     person: 'Fran',
     text: " Let's just jump to JSON because it's more readable."
   },
-  { startTime: 2097.51, person: 'Fran', text: ' I can relate to this, like I failed myself.' },
-  { startTime: 2100.65, person: 'Fran', text: ' I prefer to read JSON than to read XML.' },
+  { startTime: 2097.508, person: 'Fran', text: ' I can relate to this, like I failed myself.' },
+  { startTime: 2100.648, person: 'Fran', text: ' I prefer to read JSON than to read XML.' },
   {
-    startTime: 2104.13,
+    startTime: 2104.128,
     person: 'Fran',
-    text: " But it's true that it's not comparable, so we're losing features when we jump from XML to JSON."
+    text: " But it's true that it's not compatible, so we're losing features when we jump from XML to JSON."
   },
   {
-    startTime: 2111.69,
+    startTime: 2111.688,
     person: 'Karol',
     text: ' I mean, I know a few people who would argue that nowadays JSON already has those features that XML has.'
   },
   {
-    startTime: 2120.41,
+    startTime: 2120.408,
     person: 'Fran',
     text: " That was like a kind of patches and so on, but at the time, it's already late, let's say, because people have too invested in using plain JSON with no structure and so on."
   },
   {
-    startTime: 2131.35,
+    startTime: 2131.348,
     person: 'Fran',
     text: " So it's a bit of a mess, but I will not point to those who are using the standards without reading the standards."
   },
   {
-    startTime: 2138.43,
+    startTime: 2138.428,
     person: 'Fran',
     text: " I will instead point to these organisations who don't give enough space to these engineers to iterate and to experiment and to build better systems, right?"
   },
   {
-    startTime: 2151.15,
+    startTime: 2151.148,
     person: 'Fran',
     text: " And instead, it's like ship, ship, ship, ship quickly because we need to go to another feature and another one more feature, one more feature."
   },
-  { startTime: 2159.11, person: 'Fran', text: " We don't care." },
-  { startTime: 2160.21, person: 'Fran', text: " It's like technical debt." },
-  { startTime: 2162.63, person: 'Fran', text: ' Who cares, right?' },
-  { startTime: 2163.47, person: 'Fran', text: ' This is not going to give us money, right?' },
-  { startTime: 2166.35, person: 'Fran', text: ' So I will point to these people instead.' },
+  { startTime: 2159.108, person: 'Fran', text: " We don't care." },
+  { startTime: 2160.208, person: 'Fran', text: " It's like technical debt." },
+  { startTime: 2162.628, person: 'Fran', text: ' Who cares, right?' },
+  { startTime: 2163.468, person: 'Fran', text: ' This is not going to give us money, right?' },
+  { startTime: 2166.348, person: 'Fran', text: ' So I will point to these people instead.' },
   {
-    startTime: 2169.81,
+    startTime: 2169.808,
     person: 'Fran',
     text: " Like there's company cultures, organisation cultures that don't enable for engineers to experiment and fail and develop things in a calm way while you're reading things and develop things properly."
   },
   {
-    startTime: 2188.29,
+    startTime: 2188.288,
     person: 'Fran',
     text: ' In the automotive industry or in the aerospace industry.'
   },
   {
-    startTime: 2201.49,
+    startTime: 2201.488,
     person: 'Fran',
     text: " I'm pretty sure it happens to some degree, but it doesn't happen as much as with software, right?"
   },
-  { startTime: 2207.29, person: 'Fran', text: ' Why?' },
+  { startTime: 2207.288, person: 'Fran', text: ' Why?' },
   {
-    startTime: 2207.89,
+    startTime: 2207.888,
     person: 'Fran',
     text: ' Because she cannot just ship a half-baked plane into the air with people, right?'
   },
-  { startTime: 2214.91, person: 'Fran', text: ' Because if it fails, it will kill people, right?' },
   {
-    startTime: 2217.47,
+    startTime: 2214.908,
+    person: 'Fran',
+    text: ' Because if it fails, it will kill people, right?'
+  },
+  {
+    startTime: 2217.468,
     person: 'Fran',
     text: " So that's why it takes so long time to build something that is, okay, this is now properly tested."
   },
-  { startTime: 2223.95, person: 'Fran', text: " It's not going to kill anyone." },
+  { startTime: 2223.948, person: 'Fran', text: " It's not going to kill anyone." },
   {
-    startTime: 2225.71,
+    startTime: 2225.708,
     person: 'Fran',
     text: " And if at some point there's an accident because of a failure of an aeroplane or something, that will become the rare news of a plane accident."
   },
-  { startTime: 2236.87, person: 'Fran', text: " That's really rare." },
-  { startTime: 2238.83, person: 'Fran', text: ' But blocks, software bags, we see them daily.' },
-  { startTime: 2242.51, person: 'Fran', text: ' Because who cares?' },
-  { startTime: 2243.19, person: 'Fran', text: " Who's going to die for this?" },
+  { startTime: 2236.868, person: 'Fran', text: " That's really rare." },
+  { startTime: 2238.828, person: 'Fran', text: ' But bugs, software bags, we see them daily.' },
+  { startTime: 2242.508, person: 'Fran', text: ' Because who cares?' },
+  { startTime: 2243.188, person: 'Fran', text: " Who's going to die for this?" },
   {
-    startTime: 2244.81,
+    startTime: 2244.808,
     person: 'Fran',
     text: ' I mean, yeah, one could argue that there are certain systems where people could die of software bags.'
   },
-  { startTime: 2249.99, person: 'Fran', text: ' But in general, who cares?' },
-  { startTime: 2252.27, person: 'Fran', text: " Like, well, what's going to happen?" },
-  { startTime: 2253.89, person: 'Fran', text: " Like, someone's not going to be satisfied." },
-  { startTime: 2256.57, person: 'Fran', text: " I don't care." },
-  { startTime: 2257.81, person: 'Fran', text: " Let's just keep rolling." },
+  { startTime: 2249.988, person: 'Fran', text: ' But in general, who cares?' },
+  { startTime: 2252.268, person: 'Fran', text: " Like, well, what's going to happen?" },
+  { startTime: 2253.888, person: 'Fran', text: " Like, someone's not going to be satisfied." },
+  { startTime: 2256.568, person: 'Fran', text: " I don't care." },
+  { startTime: 2257.808, person: 'Fran', text: " Let's just keep rolling." },
   {
-    startTime: 2259.59,
+    startTime: 2259.588,
     person: 'Karol',
     text: " That's why we say that if we're testing software, we're never 100% sure that there are no bugs."
   },
   {
-    startTime: 2268.51,
+    startTime: 2268.508,
     person: 'Karol',
     text: " There are always bugs, and software we just haven't found them yet because we just found that the right deterministic situation is everywhere."
   },
-  { startTime: 2276.89, person: 'Fran', text: " That's the situation." },
-  { startTime: 2277.93, person: 'Fran', text: ' Hardware as well.' },
-  { startTime: 2278.97, person: 'Fran', text: ' It happens as well.' },
+  { startTime: 2276.888, person: 'Fran', text: " That's the situation." },
+  { startTime: 2277.928, person: 'Fran', text: ' Hardware as well.' },
+  { startTime: 2278.968, person: 'Fran', text: ' It happens as well.' },
   {
-    startTime: 2279.89,
+    startTime: 2279.888,
     person: 'Fran',
     text: " So the thing is that if you are serious enough about it, if you have that need, like in the aerospace industry, you don't want to be in the news constantly because you killed a lot of people, you want to make sure that you reduce this probability to the very minimum you can, right?"
   },
-  { startTime: 2301.47, person: 'Fran', text: ' And you do a lot of tests.' },
+  { startTime: 2301.468, person: 'Fran', text: ' And you do a lot of tests.' },
   {
-    startTime: 2303.19,
+    startTime: 2303.188,
     person: 'Fran',
     text: ' And so before you even launch something, right, before you even launch a beta version, right?'
   },
-  { startTime: 2308.93, person: 'Fran', text: ' Yeah.' },
-  { startTime: 2309.17, person: 'Fran', text: " That's something they do at all." },
-  { startTime: 2311.33, person: 'Fran', text: " So that's my point." },
+  { startTime: 2308.928, person: 'Karol', text: ' Yeah.' },
+  { startTime: 2309.168, person: 'Fran', text: " That's something they do at all." },
+  { startTime: 2311.328, person: 'Fran', text: " So that's my point." },
   {
-    startTime: 2313.53,
+    startTime: 2313.528,
     person: 'Fran',
     text: " So I will not point to these people who don't understand the standards and so on, but instead point to our shitty organisation, organisation cultures, and that don't provide psychological safety to engineers to experiment and to fail."
   },
-  { startTime: 2329.45, person: 'Fran', text: ' That is my take.' },
-  { startTime: 2330.35, person: 'Fran', text: ' And learn from those failures.' },
-  { startTime: 2332.25, person: 'Fran', text: ' Yeah, exactly.' },
+  { startTime: 2329.448, person: 'Fran', text: ' That is my take.' },
+  { startTime: 2330.348, person: 'Karol', text: ' And learn from those failures.' },
+  { startTime: 2332.248, person: 'Fran', text: ' Yeah, exactly.' },
   {
-    startTime: 2332.77,
+    startTime: 2332.768,
     person: 'Karol',
     text: ' And this is a very nice segue to the next topic at hand, which is the non-technical barriers, but also the mindset shift that is required for proper governance and proper placement of even driven architecture within organisations.'
   },
   {
-    startTime: 2354.68,
+    startTime: 2354.678,
     person: 'Karol',
     text: " Because from my perspective, it's extremely easy to jump into doing point to point."
   },
   {
-    startTime: 2362.68,
+    startTime: 2362.678,
     person: 'Karol',
-    text: " That's amazingly easy with open API spec, with just all the libraries that enable you to put in just a REST API in seconds, with LLMs that just give you a definition of a REST endpoint in matters of seconds, and with a spec that you can send to somebody and they will use it."
+    text: " That's amazingly easy with OpenAPI spec, with just all the libraries that enable you to put in just a REST API in seconds, with LLMs that just give you a definition of a REST endpoint in matters of seconds, and with a spec that you can send to somebody and they will use it."
   },
-  { startTime: 2389.22, person: 'Karol', text: " I mean, it's extremely easy." },
+  { startTime: 2389.218, person: 'Karol', text: " I mean, it's extremely easy." },
   {
-    startTime: 2391.62,
+    startTime: 2391.618,
     person: 'Karol',
     text: " But to properly govern asynchronous communication, I think that's something completely different in that sense."
   },
-  { startTime: 2402.62, person: 'Fran', text: " That's really happening by the way." },
-  { startTime: 2404.32, person: 'Fran', text: ' So you can really do that.' },
+  { startTime: 2402.618, person: 'Fran', text: " That's really happening by the way." },
+  { startTime: 2404.318, person: 'Fran', text: ' So you can really do that.' },
   {
-    startTime: 2406.34,
+    startTime: 2406.338,
     person: 'Fran',
-    text: ' And with LLMs as well, like you can generate async API and you got pretty much, I will not say the same coverage as with open API, but this is not yet as mature as open API.'
+    text: ' And with LLMs as well, like you can generate AsyncAPI and you got pretty much, I will not say the same coverage as with OpenAPI, but this is not yet as mature as OpenAPI.'
   },
   {
-    startTime: 2419.38,
+    startTime: 2419.378,
     person: 'Fran',
-    text: ' I like to remember that open API has been around for probably around 10 more years, or a little bit less probably.'
+    text: ' I like to remember that OpenAPI has been around for probably around 10 more years, or a little bit less probably.'
   },
   {
-    startTime: 2427.58,
+    startTime: 2427.578,
     person: 'Karol',
     text: " Yes, while you can generate, that doesn't really change anything in terms of governance or the non-technical obstacles."
   },
-  { startTime: 2435.6, person: 'Fran', text: " That's my point." },
-  { startTime: 2436.32, person: 'Fran', text: " That's my point." },
+  { startTime: 2435.598, person: 'Fran', text: " That's my point." },
+  { startTime: 2436.318, person: 'Fran', text: " That's my point." },
   {
-    startTime: 2437.06,
+    startTime: 2437.058,
     person: 'Fran',
-    text: " So you can generate even mocks or stops for like people can use postman, for instance, for open API, but people can use also microx to generate mocks for, you know, for, I was going to say a Kafka topic, but I have to learn myself to stop saying Kafka for everything that it's even doing architecture because it seems like it's the same."
+    text: " So you can generate even mocks or stops for like people can use postman, for instance, for OpenAPI, but people can use also microx to generate mocks for, you know, for, I was going to say a Kafka topic, but I have to learn myself to stop saying Kafka for everything that it's even doing architecture because it seems like it's the same."
   },
   {
-    startTime: 2465.22,
+    startTime: 2465.218,
     person: 'Fran',
-    text: " So let's say for an A in QP topic or an A in QPQ, depending on your configuration, or an in QT topic or whatever, right?"
+    text: " So let's say for an AMQP topic or an AMQP queue, depending on your configuration, or an MQTT topic or whatever, right?"
   },
   {
-    startTime: 2476.8,
+    startTime: 2476.798,
     person: 'Fran',
-    text: ' So you can mock this already with microx as well and with A in QPQ contracts.'
+    text: ' So you can mock this already with microx as well and with AMQP contracts.'
   },
   {
-    startTime: 2482.18,
+    startTime: 2482.178,
     person: 'Fran',
     text: " And you can have people who are, let's say not very technical, like product managers who understand a little bit about the topic, but not so much."
   },
   {
-    startTime: 2491.68,
+    startTime: 2491.678,
     person: 'Fran',
     text: ' And they can already create some mocks, some fake data that will be published to a broker and things like that, right?'
   },
   {
-    startTime: 2501.86,
+    startTime: 2501.858,
     person: 'Fran',
     text: " So it enables, let's say, non-technical people to go one step, let's say one step ahead, one step beyond without having to wait for the engineering teams to apply these things."
   },
   {
-    startTime: 2521.72,
+    startTime: 2521.718,
     person: 'Fran',
-    text: " And you have similar technologies like Spectral that it's used to create, to link open APIs, to link this into API as well, right?"
+    text: " And you have similar technologies like Spectral that it's used to create, to link OpenAPIs, to link this into API as well, right?"
   },
-  { startTime: 2541.14, person: 'Fran', text: ' So you can use both, right?' },
-  { startTime: 2546.86, person: 'Karol', text: ' All right, but going to the mindset shift.' },
-  { startTime: 2551.4, person: 'Karol', text: ' Yeah.' },
+  { startTime: 2541.138, person: 'Fran', text: ' So you can use both, right?' },
+  { startTime: 2546.858, person: 'Karol', text: ' All right, but going to the mindset shift.' },
+  { startTime: 2551.398, person: 'Fran', text: ' Yeah.' },
   {
-    startTime: 2551.52,
+    startTime: 2551.518,
     person: 'Karol',
     text: " And that's actually a very nice, also a point where we could pop this lovely QR in."
   },
   {
-    startTime: 2559.36,
+    startTime: 2559.358,
     person: 'Karol',
     text: ' Fran is actually writing a lovely book about, what is that about, more human challenges of adoption of?'
   },
   {
-    startTime: 2570.34,
+    startTime: 2570.338,
     person: 'Fran',
     text: " No, no, no, actually, lately I'm talking about a lot about these things, the human challenges of adopting engineering architecture, because that is the most overseen aspect of it that I found out, right?"
   },
   {
-    startTime: 2585.7,
+    startTime: 2585.698,
     person: 'Fran',
     text: ' So I know, like I can write a book about the technology needed to build an event-driven architecture and apply some governance to it and so on.'
   },
-  { startTime: 2596.9, person: 'Fran', text: " That's fine." },
+  { startTime: 2596.898, person: 'Fran', text: " That's fine." },
   {
-    startTime: 2598.04,
+    startTime: 2598.038,
     person: 'Fran',
     text: " That's what I've been doing for the last 10 years or so."
   },
   {
-    startTime: 2603.14,
+    startTime: 2603.138,
     person: 'Fran',
     text: ' The problem usually relies on a more human side of things, right?'
   },
-  { startTime: 2611.58, person: 'Fran', text: " So like, I'll give you an example." },
+  { startTime: 2611.578, person: 'Fran', text: " So like, I'll give you an example." },
   {
-    startTime: 2613.64,
+    startTime: 2613.638,
     person: 'Fran',
     text: " So for context, in the last four or five months, I've been interviewing more than 20 people from different companies at different stages, but they all were doing event-driven architecture for the sake of the book, right?"
   },
   {
-    startTime: 2632.12,
+    startTime: 2632.118,
     person: 'Fran',
     text: ' I want to understand how people are doing, what are their challenges and so on.'
   },
   {
-    startTime: 2635.52,
+    startTime: 2635.518,
     person: 'Fran',
     text: " So I wanted to make sure that it's not, this book is not just based on my experience or in my opinion, but also on facts, let's say, right?"
   },
   {
-    startTime: 2644.22,
+    startTime: 2644.218,
     person: 'Fran',
     text: " And I'm glad I did because I was not going to even mention anything about the human side of things, right?"
   },
   {
-    startTime: 2652.7,
+    startTime: 2652.698,
     person: 'Fran',
-    text: ' And what I found out is that every single company out there, their major challenge is about communicating, you know, like convincing their faults.'
+    text: ' And what I found out is that every single company out there, their major challenge is about communicating, you know, like convincing their thoughts.'
   },
-  { startTime: 2666.74, person: 'Fran', text: " I'll put you an example." },
+  { startTime: 2666.738, person: 'Fran', text: " I'll put you an example." },
   {
-    startTime: 2667.64,
+    startTime: 2667.638,
     person: 'Fran',
     text: " If you're an engineer, if you're an architect that you want to introduce event-driven architecture or certain practises related to event-driven architecture, and you are in a well-established company, old company and so on, the rest of the teams, the rest of the engineers are super comfortable doing what they used to do, right?"
   },
-  { startTime: 2690.78, person: 'Fran', text: " They don't want to change, right?" },
+  { startTime: 2690.778, person: 'Fran', text: " They don't want to change, right?" },
   {
-    startTime: 2692.96,
+    startTime: 2692.958,
     person: 'Fran',
     text: ' So how do you convince them to adopt this new mindset?'
   },
   {
-    startTime: 2698.86,
+    startTime: 2698.858,
     person: 'Fran',
     text: " Likely if you are a, if you're a leader in the company, like let's say head of engineering, CTO, whatever, how do you convince the rest of the teams, the rest of the engineers that EDA is what they should be doing and there should be a mindset shift in this case."
   },
-  { startTime: 2720.3, person: 'Fran', text: " That's why it's called shift, right?" },
-  { startTime: 2723.14, person: 'Fran', text: ' So why, how do you do it and why?' },
+  { startTime: 2720.298, person: 'Fran', text: " That's why it's called shift, right?" },
+  { startTime: 2723.138, person: 'Fran', text: ' So why, how do you do it and why?' },
   {
-    startTime: 2728.46,
+    startTime: 2728.458,
     person: 'Fran',
-    text: ' Because what I found out is that people were sure that EDA is what they needed and what they should be doing, but they struggled to convince their faults, their peers on the why.'
+    text: ' Because what I found out is that people were sure that EDA is what they needed and what they should be doing, but they struggled to convince their thoughts, their peers on the why.'
   },
-  { startTime: 2743.08, person: 'Fran', text: ' Like why is it what we need?' },
+  { startTime: 2743.078, person: 'Fran', text: ' Like why is it what we need?' },
   {
-    startTime: 2744.9,
+    startTime: 2744.898,
     person: 'Fran',
     text: " Like we've been working with without it for years."
   },
-  { startTime: 2748.22, person: 'Fran', text: ' Why is it needed now?' },
+  { startTime: 2748.218, person: 'Fran', text: ' Why is it needed now?' },
   {
-    startTime: 2749.32,
+    startTime: 2749.318,
     person: 'Fran',
     text: " And what I found out is that most companies don't even know where to start."
   },
   {
-    startTime: 2755.26,
+    startTime: 2755.258,
     person: 'Fran',
     text: " I only found one, by the way, one company that I think in my opinion, either they were lying to me or they're doing it pretty well."
   },
-  { startTime: 2765.02, person: 'Fran', text: ' So it was like a combined effort.' },
-  { startTime: 2767.52, person: 'Fran', text: ' Like it was a bottom up and top down approach.' },
-  { startTime: 2770.24, person: 'Fran', text: ' It was a combination of both.' },
+  { startTime: 2765.018, person: 'Fran', text: ' So it was like a combined effort.' },
+  { startTime: 2767.518, person: 'Fran', text: ' Like it was a bottom up and top down approach.' },
+  { startTime: 2770.238, person: 'Fran', text: ' It was a combination of both.' },
   {
-    startTime: 2772.6,
+    startTime: 2772.598,
     person: 'Fran',
     text: " That was alignment from, let's say architects, but also senior engineers, staff engineers, all the stuff, stuff plus in here with the leadership."
   },
   {
-    startTime: 2785.12,
+    startTime: 2785.118,
     person: 'Fran',
     text: " So everything was coming from, let's say from the bottom of the organisation, not right and sideways as well as much as possible."
   },
   {
-    startTime: 2796.52,
+    startTime: 2796.518,
     person: 'Fran',
     text: ' But when someone was not buying the idea, then you have leadership saying, no, this is what you have to do.'
   },
-  { startTime: 2804.32, person: 'Fran', text: " I'm not asking for your opinion." },
-  { startTime: 2805.58, person: 'Fran', text: ' Like we want to convince you, right?' },
+  { startTime: 2804.318, person: 'Fran', text: " I'm not asking for your opinion." },
+  { startTime: 2805.578, person: 'Fran', text: ' Like we want to convince you, right?' },
   {
-    startTime: 2808.12,
+    startTime: 2808.118,
     person: 'Fran',
     text: ' We give you the option to be convinced by faults and so on, right?'
   },
   {
-    startTime: 2813.12,
+    startTime: 2813.118,
     person: 'Fran',
-    text: ' And everyone is pretty much in, but sometimes you have the black ship around, right?'
+    text: ' And everyone is pretty much in, but sometimes you have the black sheep around, right?'
   },
-  { startTime: 2818.04, person: 'Fran', text: " That said, I don't care about that." },
-  { startTime: 2819.94, person: 'Fran', text: " I'm disobeying whatever they tell me." },
-  { startTime: 2821.74, person: 'Fran', text: " I don't buy it." },
+  { startTime: 2818.038, person: 'Fran', text: " That said, I don't care about that." },
+  { startTime: 2819.938, person: 'Fran', text: " I'm disobeying whatever they tell me." },
+  { startTime: 2821.738, person: 'Fran', text: " I don't buy it." },
   {
-    startTime: 2822.96,
+    startTime: 2822.958,
     person: 'Fran',
     text: " Well, in this case, it's useful to have someone from above, right?"
   },
-  { startTime: 2825.6, person: 'Fran', text: ' And say, no, no, you have to do it.' },
+  { startTime: 2825.598, person: 'Fran', text: ' And say, no, no, you have to do it.' },
   {
-    startTime: 2828.12,
+    startTime: 2828.118,
     person: 'Fran',
     text: " Like there's no chance I'd say that this or you leave basically."
   },
   {
-    startTime: 2833.02,
+    startTime: 2833.018,
     person: 'Fran',
     text: " I mean, they should never be using that card if possible, but it's useful to have it, right?"
   },
-  { startTime: 2841.46, person: 'Karol', text: " I'll put a opposite example of not adoption." },
+  { startTime: 2841.458, person: 'Karol', text: " I'll put a opposite example of not adoption." },
   {
-    startTime: 2851.26,
+    startTime: 2851.258,
     person: 'Karol',
     text: " I've seen many companies adopting new practises in terms of interoperability."
   },
   {
-    startTime: 2859.08,
+    startTime: 2859.078,
     person: 'Karol',
     text: " And I've seen some really bad examples of those adoptions, one of which was to create a whole integration team from scratch from former database developers and database administrators."
   },
   {
-    startTime: 2875.52,
+    startTime: 2875.518,
     person: 'Karol',
     text: " And if we put people that don't have the right mindset into these kinds of roles where they need to do interoperability, I mean, some really wonky stuff happens."
   },
   {
-    startTime: 2889.96,
+    startTime: 2889.958,
     person: 'Karol',
     text: ' The wonky stuff that happened there was that they, with their database mindset, they persisted everything.'
   },
   {
-    startTime: 2898.98,
+    startTime: 2898.978,
     person: 'Karol',
     text: ' Imagine just purely persisted communication, like everything has to be written down, persisted in the database, then redistributed by usually point to point.'
   },
-  { startTime: 2911.1, person: 'Karol', text: ' It was magical.' },
+  { startTime: 2911.098, person: 'Karol', text: ' It was magical.' },
   {
-    startTime: 2912.85,
+    startTime: 2912.848,
     person: 'Karol',
     text: ' And one of the reasons I observed why they did that is because that company, in terms of how they communicated between teams or how they communicated between departments, between each other, was mostly on meetings and with robust documents.'
   },
-  { startTime: 2936.8, person: 'Karol', text: ' Like they just made humongous paper trails.' },
+  { startTime: 2936.798, person: 'Karol', text: ' Like they just made humongous paper trails.' },
   {
-    startTime: 2941.96,
+    startTime: 2941.958,
     person: 'Karol',
     text: ' And from my observation over the years in application integration is that if we look at the way that a company communicates internally, that translates directly to how systems communicate in that company.'
   },
   {
-    startTime: 2960.3,
+    startTime: 2960.298,
     person: 'Karol',
     text: " So if we have lots of meetings, we're going to have..."
   },
-  { startTime: 2963.94, person: 'Karol', text: ' Yeah, Commonwealth is low, pretty much, yeah.' },
+  { startTime: 2963.938, person: 'Karol', text: " Yeah, Conway's law, pretty much, yeah." },
   {
-    startTime: 2966.16,
+    startTime: 2966.158,
     person: 'Karol',
     text: " If we have meetings there's going to be a lot of request reply."
   },
-  { startTime: 2974.4, person: 'Karol', text: ' Yeah.' },
-  { startTime: 2974.52, person: 'Karol', text: ' If those people are accustomed to using...' },
-  { startTime: 2977.64, person: 'Fran', text: ' And synchronous.' },
-  { startTime: 2979.04, person: 'Karol', text: ' Yes, definitely synchronous, yes.' },
+  { startTime: 2974.398, person: 'Fran', text: ' Yeah.' },
+  { startTime: 2974.518, person: 'Karol', text: ' If those people are accustomed to using...' },
+  { startTime: 2977.638, person: 'Fran', text: ' And synchronous.' },
+  { startTime: 2979.038, person: 'Karol', text: ' Yes, definitely synchronous, yes.' },
   {
-    startTime: 2982.26,
+    startTime: 2982.258,
     person: 'Karol',
     text: " If that company is accustomed to using chats and they're accustomed to not rely on instant reply, well, we'll probably have some even driven in the systems, a decent amount."
   },
   {
-    startTime: 2996.54,
+    startTime: 2996.538,
     person: 'Karol',
     text: " And then if a company is relying on documents, that's going to be batch, batch, batch and file-based transfer, file-based transfer and file-based transfer all the way."
   },
   {
-    startTime: 3009.12,
+    startTime: 3009.118,
     person: 'Karol',
     text: " I mean, it's fine if it's proper ETL, ELT or batch, but if file-based transfer, I mean, come on, are we like in the 70s?"
   },
-  { startTime: 3018.26, person: 'Fran', text: " That's still useful sometimes." },
-  { startTime: 3019.94, person: 'Fran', text: ' It is.' },
-  { startTime: 3021.12, person: 'Fran', text: ' I mean, think about it.' },
-  { startTime: 3022.38, person: 'Fran', text: ' Like if your system is not...' },
+  { startTime: 3018.258, person: 'Fran', text: " That's still useful sometimes." },
+  { startTime: 3019.938, person: 'Karol', text: ' It is.' },
+  { startTime: 3021.118, person: 'Fran', text: ' I mean, think about it.' },
+  { startTime: 3022.378, person: 'Fran', text: ' Like if your system is not...' },
   {
-    startTime: 3024.64,
+    startTime: 3024.638,
     person: 'Fran',
     text: " I mean, if it's not relevant for your system or for your company, to have this information right straight away, like in real time, as much as real time, you want to define it."
   },
   {
-    startTime: 3040.18,
+    startTime: 3040.178,
     person: 'Fran',
     text: " File transfer, like a batch overnight, it's completely fine."
   },
-  { startTime: 3044.44, person: 'Fran', text: " Like if it works, if it's not, let's say..." },
+  { startTime: 3044.438, person: 'Fran', text: " Like if it works, if it's not, let's say..." },
   {
-    startTime: 3049.56,
+    startTime: 3049.558,
     person: 'Fran',
     text: " If it's not a problem, if it's something that can be done secondarily, it's not critical for your system and so on."
   },
-  { startTime: 3058.5, person: 'Fran', text: " That's another technology." },
-  { startTime: 3059.72, person: 'Fran', text: " Like I said, it's a technology." },
-  { startTime: 3061.44, person: 'Fran', text: ' Use it whenever it makes sense.' },
-  { startTime: 3063.64, person: 'Fran', text: ' Exactly.' },
-  { startTime: 3063.86, person: 'Fran', text: ' And I agree on that.' },
-  { startTime: 3064.98, person: 'Karol', text: ' Whenever it makes sense, but then...' },
-  { startTime: 3066.7, person: 'Fran', text: ' Exactly.' },
-  { startTime: 3066.94, person: 'Fran', text: " Don't use it for everything." },
+  { startTime: 3058.498, person: 'Fran', text: " That's another technology." },
+  { startTime: 3059.718, person: 'Fran', text: " Like I said, it's a technology." },
+  { startTime: 3061.438, person: 'Fran', text: ' Use it whenever it makes sense.' },
+  { startTime: 3063.638, person: 'Karol', text: ' Exactly.' },
+  { startTime: 3063.858, person: 'Karol', text: ' And I agree on that.' },
+  { startTime: 3064.978, person: 'Karol', text: ' Whenever it makes sense, but then...' },
+  { startTime: 3066.698, person: 'Fran', text: ' Exactly.' },
+  { startTime: 3066.938, person: 'Fran', text: " Don't use it for everything." },
   {
-    startTime: 3068.12,
+    startTime: 3068.118,
     person: 'Karol',
     text: " If you have 90% of your communication being robust operational communication because batch is great for analytics, batch is great for long-running processes, it's fine."
   },
   {
-    startTime: 3079,
+    startTime: 3078.998,
     person: 'Karol',
     text: " But if you're doing your operational communication with file transfers, there's something definitely very wrong in the way people do not communicate with each other."
   },
   {
-    startTime: 3092.56,
+    startTime: 3092.558,
     person: 'Karol',
     text: " Because if I'm looking, if most operational work is done over sending a document..."
   },
   {
-    startTime: 3102.3,
+    startTime: 3102.298,
     person: 'Fran',
     text: ' Honestly, I think, again, like every time I dig down into this topic, I find out that it has nothing to do with technology.'
   },
   {
-    startTime: 3109.98,
+    startTime: 3109.978,
     person: 'Fran',
     text: ' So every time I found that, and I scratched a little bit of surface and asked, why do you keep doing these file-based transfers, these batches overnight and so on?'
   },
   {
-    startTime: 3123.32,
+    startTime: 3123.318,
     person: 'Fran',
     text: ' Every time I kept scratching, I instantly found that...'
   },
   {
-    startTime: 3130.2,
+    startTime: 3130.198,
     person: 'Fran',
     text: ' Instantly, sometimes even in the same meeting, like one question away or two questions away, I was just not even asking directly, just asking around.'
   },
   {
-    startTime: 3144.64,
+    startTime: 3144.638,
     person: 'Fran',
     text: " And instantly what popped up is it's a psychological safety in the organisations."
   },
-  { startTime: 3152.42, person: 'Fran', text: ' So picture this.' },
+  { startTime: 3152.418, person: 'Fran', text: ' So picture this.' },
   {
-    startTime: 3153.88,
+    startTime: 3153.878,
     person: 'Fran',
-    text: " If you are an engineer that's been in a bank for 20 years working there, you know the system inside there, right?"
+    text: " If you are an engineer that's been in a bank for 20 years working there, you know the system inside-out, right?"
   },
   {
-    startTime: 3164.12,
+    startTime: 3164.118,
     person: 'Fran',
     text: ' Now someone comes to you and say, we now have this Kafka broker, right?'
   },
-  { startTime: 3171.24, person: 'Fran', text: ' And we are doing...' },
-  { startTime: 3173.72, person: 'Fran', text: " We're now doing everything over Kafka." },
-  { startTime: 3176.92, person: 'Fran', text: ' But you still have to deliver stuff, right?' },
+  { startTime: 3171.238, person: 'Fran', text: ' And we are doing...' },
+  { startTime: 3173.718, person: 'Fran', text: " We're now doing everything over Kafka." },
+  { startTime: 3176.918, person: 'Fran', text: ' But you still have to deliver stuff, right?' },
   {
-    startTime: 3179.28,
+    startTime: 3179.278,
     person: 'Fran',
     text: " So what you will probably do is either say, no, I'm not going to do this because I don't need it."
   },
   {
-    startTime: 3189.38,
+    startTime: 3189.378,
     person: 'Fran',
     text: " If you have the psychological safety to do that, and meaning that you know that you're not going to be fired for disobeying, or you say yes, but you don't do it, right?"
   },
-  { startTime: 3204, person: 'Fran', text: ' Which is even worse, right?' },
-  { startTime: 3205.42, person: 'Fran', text: " That's even worse because everything..." },
+  { startTime: 3203.998, person: 'Fran', text: ' Which is even worse, right?' },
+  { startTime: 3205.418, person: 'Fran', text: " That's even worse because everything..." },
   {
-    startTime: 3207.28,
+    startTime: 3207.278,
     person: 'Fran',
     text: ' What happens in this case is that everything seems to be working.'
   },
-  { startTime: 3211.34, person: 'Fran', text: ' Everybody is buying the argument.' },
-  { startTime: 3213.1, person: 'Fran', text: " Let's use Kafka." },
+  { startTime: 3211.338, person: 'Fran', text: ' Everybody is buying the argument.' },
+  { startTime: 3213.098, person: 'Fran', text: " Let's use Kafka." },
   {
-    startTime: 3214.1,
+    startTime: 3214.098,
     person: 'Fran',
     text: " Let's react on real time or, yeah, as it happens, to all the events and everything."
   },
-  { startTime: 3222.56, person: 'Fran', text: ' We process them and so on.' },
+  { startTime: 3222.558, person: 'Fran', text: ' We process them and so on.' },
   {
-    startTime: 3224.4,
+    startTime: 3224.398,
     person: 'Fran',
     text: ' And we do the calculations in the very moment as we get the event, right?'
   },
   {
-    startTime: 3231.54,
+    startTime: 3231.538,
     person: 'Fran',
     text: ' Instead of just relying on overnight batches, right?'
   },
-  { startTime: 3237.96, person: 'Fran', text: ' It seems that everybody is buying your argument.' },
   {
-    startTime: 3240.9,
+    startTime: 3237.958,
+    person: 'Fran',
+    text: ' It seems that everybody is buying your argument.'
+  },
+  {
+    startTime: 3240.898,
     person: 'Fran',
     text: ' But then you find out that adoption is like, this is not happening as fast as it should.'
   },
-  { startTime: 3246.72, person: 'Fran', text: " What's happening here?" },
+  { startTime: 3246.718, person: 'Fran', text: " What's happening here?" },
   {
-    startTime: 3247.66,
+    startTime: 3247.658,
     person: 'Fran',
     text: ' They keep putting excuses here and there, like we have some deadline that we have to match, whatever, which might be true as well.'
   },
   {
-    startTime: 3257.88,
+    startTime: 3257.878,
     person: 'Fran',
     text: " And then it's almost impossible to migrate to this new kind of system, right?"
   },
   {
-    startTime: 3265.52,
+    startTime: 3265.518,
     person: 'Fran',
     text: " Let's say in an acceptable time because these people are boycotting you, right?"
   },
-  { startTime: 3272.08, person: 'Fran', text: ' Even if you are their boss, right?' },
+  { startTime: 3272.078, person: 'Fran', text: ' Even if you are their boss, right?' },
   {
-    startTime: 3274.2,
+    startTime: 3274.198,
     person: 'Fran',
     text: ' Because for different reasons, it can be because their manager is not aligned with the leadership making this change.'
   },
   {
-    startTime: 3283.04,
+    startTime: 3283.038,
     person: 'Fran',
     text: ' So their manager is still like putting them pressure, like you need to deliver this, this, this, this, this, more feature, more things, more blah, blah, blah, whatever.'
   },
   {
-    startTime: 3291,
+    startTime: 3290.998,
     person: 'Fran',
     text: " So we don't have time to change our mindset here or to study or to start experimenting because it's a new technology."
   },
   {
-    startTime: 3297.78,
+    startTime: 3297.778,
     person: 'Fran',
     text: " You have to experiment because you don't know how it works."
   },
-  { startTime: 3300.54, person: 'Fran', text: " So you've got to experiment, right?" },
-  { startTime: 3302.46, person: 'Fran', text: ' So the manager is not letting them experiment.' },
-  { startTime: 3304.5, person: 'Fran', text: ' So they never have time to experiment.' },
+  { startTime: 3300.538, person: 'Fran', text: " So you've got to experiment, right?" },
+  { startTime: 3302.458, person: 'Fran', text: ' So the manager is not letting them experiment.' },
+  { startTime: 3304.498, person: 'Fran', text: ' So they never have time to experiment.' },
   {
-    startTime: 3307.48,
+    startTime: 3307.478,
     person: 'Fran',
-    text: " So since they don't have time to experiment, someone, some colleagues, some peer come to them, maybe an architect, usually an architect comes to them and say, hey, why are you not already publishing this information to Kafka or consuming from Kafka or whatever, or from, I mean, I mean, I mean, you're the brother, right?"
+    text: " So since they don't have time to experiment, someone, some colleagues, some peer come to them, maybe an architect, usually an architect comes to them and say, hey, why are you not already publishing this information to Kafka or consuming from Kafka or whatever, or from, I mean, why to bother, right?"
   },
-  { startTime: 3323.58, person: 'Fran', text: " Why aren't you doing this already?" },
-  { startTime: 3326.66, person: 'Fran', text: " Like it's been two months or whatever." },
+  { startTime: 3323.578, person: 'Fran', text: " Why aren't you doing this already?" },
+  { startTime: 3326.658, person: 'Fran', text: " Like it's been two months or whatever." },
   {
-    startTime: 3329.6,
+    startTime: 3329.598,
     person: 'Fran',
     text: ' Then you have this problem that they need to keep shipping because the manager is putting them deadlines.'
   },
   {
-    startTime: 3336.14,
+    startTime: 3336.138,
     person: 'Fran',
     text: " Now, the other thing that I've seen is this is if the whole technology changes, I may become redundant in this company."
   },
   {
-    startTime: 3350.52,
+    startTime: 3350.518,
     person: 'Fran',
     text: ' I may lose what makes me special and what makes this company not fire me, right?'
   },
   {
-    startTime: 3359.42,
+    startTime: 3359.418,
     person: 'Fran',
     text: " And so I will lose this job and I don't want to lose this job because as opposed to us who are passionate about software, many people are working in companies just in exchange of a salary just because of debt, which is perfectly fine."
   },
   {
-    startTime: 3378,
+    startTime: 3377.998,
     person: 'Fran',
     text: " You don't have to have a passion for software or for your job."
   },
-  { startTime: 3380.82, person: 'Fran', text: " That's completely fine." },
-  { startTime: 3382.26, person: 'Fran', text: " And it's totally acceptable, right?" },
+  { startTime: 3380.818, person: 'Fran', text: " That's completely fine." },
+  { startTime: 3382.258, person: 'Fran', text: " And it's totally acceptable, right?" },
   {
-    startTime: 3384.78,
+    startTime: 3384.778,
     person: 'Fran',
     text: " The thing is that if these people fear for their job and they know they've been doing this for 20 years, so they know that if they go out, they're going to struggle to find a new job because that world is not there anymore, right?"
   },
-  { startTime: 3401.04, person: 'Fran', text: " It's only in a few companies here and there." },
-  { startTime: 3403.4, person: 'Karol', text: ' Very true.' },
-  { startTime: 3404.42, person: 'Fran', text: " And they're not hiring for these roles anymore." },
+  { startTime: 3401.038, person: 'Fran', text: " It's only in a few companies here and there." },
+  { startTime: 3403.398, person: 'Karol', text: ' Very true.' },
+  { startTime: 3404.418, person: 'Fran', text: " And they're not hiring for these roles anymore." },
   {
-    startTime: 3406.72,
+    startTime: 3406.718,
     person: 'Fran',
     text: ' So that is creating a lot of stress and their instant reaction is saying...'
   },
-  { startTime: 3414.9, person: 'Fran', text: ' Resist, exactly.' },
-  { startTime: 3416.42, person: 'Fran', text: ' Resist here.' },
+  { startTime: 3414.898, person: 'Fran', text: ' Resist, exactly.' },
+  { startTime: 3416.418, person: 'Fran', text: ' Resist here.' },
   {
-    startTime: 3416.98,
+    startTime: 3416.978,
     person: 'Fran',
     text: " I'm going to boycott this initiative because that doesn't make sense."
   },
   {
-    startTime: 3422.4,
+    startTime: 3422.398,
     person: 'Fran',
     text: " Sometimes, I will even argue, most of the times, if not all of the time, they don't do it on purpose."
   },
-  { startTime: 3428.72, person: 'Fran', text: ' No.' },
-  { startTime: 3428.94, person: 'Fran', text: " It's just unconsciously." },
+  { startTime: 3428.718, person: 'Karol', text: ' No.' },
+  { startTime: 3428.938, person: 'Fran', text: " It's just unconsciously." },
   {
-    startTime: 3430.76,
+    startTime: 3430.758,
     person: 'Fran',
     text: ' And it happens to all of us in every aspect of our lives.'
   },
   {
-    startTime: 3435.28,
+    startTime: 3435.278,
     person: 'Fran',
     text: " So what I'm researching a lot for the book, for writing the book, is precisely on the organisational psychology."
   },
-  { startTime: 3446, person: 'Fran', text: ' I mentioned the safety.' },
-  { startTime: 3453.72, person: 'Fran', text: ' I mentioned also the resistance and so on.' },
+  { startTime: 3445.998, person: 'Fran', text: ' I mentioned the safety.' },
+  { startTime: 3453.718, person: 'Fran', text: ' I mentioned also the resistance and so on.' },
   {
-    startTime: 3457.98,
+    startTime: 3457.978,
     person: 'Fran',
-    text: " Alexander is in chat, he's mentioning the architectural comfort zone."
+    text: " Aleksandr is in chat, he's mentioning the architectural comfort zone."
   },
-  { startTime: 3463.52, person: 'Fran', text: ' Totally agree with that.' },
-  { startTime: 3464.56, person: 'Fran', text: " It's the comfort zone." },
+  { startTime: 3463.518, person: 'Fran', text: ' Totally agree with that.' },
+  { startTime: 3464.558, person: 'Fran', text: " It's the comfort zone." },
   {
-    startTime: 3466.66,
+    startTime: 3466.658,
     person: 'Fran',
     text: ' And nobody wants to leave the comfort zone because the comfort zone is comfortable.'
   },
-  { startTime: 3473.3, person: 'Fran', text: " That's why it's called comfort zone." },
-  { startTime: 3474.48, person: 'Fran', text: ' Nobody wants to leave that.' },
+  { startTime: 3473.298, person: 'Fran', text: " That's why it's called comfort zone." },
+  { startTime: 3474.478, person: 'Fran', text: ' Nobody wants to leave that.' },
   {
-    startTime: 3476.54,
+    startTime: 3476.538,
     person: 'Karol',
     text: ' It takes a lot of effort to leave your comfort zone.'
   },
-  { startTime: 3480.26, person: 'Karol', text: " It's very annoying to leave the comfort zone." },
+  { startTime: 3480.258, person: 'Karol', text: " It's very annoying to leave the comfort zone." },
   {
-    startTime: 3484.66,
+    startTime: 3484.658,
     person: 'Karol',
     text: ' It takes a lot of courage and a lot of energy to get used to pushing that comfort zone further and further.'
   },
   {
-    startTime: 3492.74,
+    startTime: 3492.738,
     person: 'Karol',
     text: " But it's a fallacy in its own if you don't do that."
   },
   {
-    startTime: 3496.3,
+    startTime: 3496.298,
     person: 'Karol',
     text: ' Because those people will, sooner or later, will end up without the job and they will realise how...'
   },
   {
-    startTime: 3501.74,
+    startTime: 3501.738,
     person: 'Fran',
     text: " Maybe these people are already 55 years old and they're aiming for less retirement without any complications."
   },
-  { startTime: 3512.72, person: 'Fran', text: " So that's also valid." },
+  { startTime: 3512.718, person: 'Fran', text: " So that's also valid." },
   {
-    startTime: 3514.56,
+    startTime: 3514.558,
     person: 'Fran',
     text: " The software industry is already becoming so old but it's already common to see people over 50 years old in teams."
   },
-  { startTime: 3523.4, person: 'Fran', text: " So we're getting there." },
+  { startTime: 3523.398, person: 'Fran', text: " So we're getting there." },
   {
-    startTime: 3526.06,
+    startTime: 3526.058,
     person: 'Karol',
     text: ' Just last week I spoke to Mark Riches on a live stream with Utrecht Mulesoft Meetup.'
   },
-  { startTime: 3532.84, person: 'Karol', text: ' And Mark has...' },
-  { startTime: 3535.92, person: 'Karol', text: ' Let me not get that wrong.' },
+  { startTime: 3532.838, person: 'Karol', text: ' And Mark has...' },
+  { startTime: 3535.918, person: 'Karol', text: ' Let me not get that wrong.' },
   {
-    startTime: 3537.86,
+    startTime: 3537.858,
     person: 'Karol',
     text: ' 42 years of experience in IT, 31 years of experience as an architect.'
   },
-  { startTime: 3544.22, person: 'Karol', text: " I mean, he's a dinosaur in the field." },
+  { startTime: 3544.218, person: 'Karol', text: " I mean, he's a dinosaur in the field." },
   {
-    startTime: 3548.16,
+    startTime: 3548.158,
     person: 'Karol',
     text: " An absolutely amazing guy and an absolutely amazing architect and he's very comfortable with moving his comfort zone and stepping out of his comfort zone which is an amazing thing to watch."
   },
   {
-    startTime: 3560.48,
+    startTime: 3560.478,
     person: 'Karol',
     text: " But he's one of the rare people there that actually is still capable to do this with his years of experience."
   },
   {
-    startTime: 3570.7,
+    startTime: 3570.698,
     person: 'Karol',
     text: " That's amazing but that's such a rare thing to observe."
   },
-  { startTime: 3573.84, person: 'Karol', text: " That's passion." },
-  { startTime: 3574.66, person: 'Fran', text: " That's passion." },
-  { startTime: 3575.28, person: 'Fran', text: " That's only possible because of passion." },
-  { startTime: 3577.42, person: 'Karol', text: ' And there is...' },
+  { startTime: 3573.838, person: 'Karol', text: " That's passion." },
+  { startTime: 3574.658, person: 'Fran', text: " That's passion." },
+  { startTime: 3575.278, person: 'Fran', text: " That's only possible because of passion." },
+  { startTime: 3577.418, person: 'Karol', text: ' And there is...' },
   {
-    startTime: 3578.34,
+    startTime: 3578.338,
     person: 'Karol',
     text: ' If we look at our organisations, I mean, those people are there to make a buck.'
   },
   {
-    startTime: 3585.72,
+    startTime: 3585.718,
     person: 'Karol',
     text: ' They want to make a living and move on with their lives.'
   },
-  { startTime: 3588.84, person: 'Karol', text: " They don't have to have that passion." },
-  { startTime: 3591.44, person: 'Karol', text: " It's fantastic if they do." },
-  { startTime: 3593.34, person: 'Karol', text: " That's awesome." },
+  { startTime: 3588.838, person: 'Karol', text: " They don't have to have that passion." },
+  { startTime: 3591.438, person: 'Karol', text: " It's fantastic if they do." },
+  { startTime: 3593.338, person: 'Karol', text: " That's awesome." },
   {
-    startTime: 3596.28,
+    startTime: 3596.278,
     person: 'Karol',
     text: ' But it requires really strong leadership and actual leadership that leads to spark the minimum of passion for those people to be able to step out of those comfort zones without fear with that psychological safety somewhere there.'
   },
-  { startTime: 3618.46, person: 'Karol', text: " And that's difficult." },
-  { startTime: 3620.24, person: 'Karol', text: " That's extremely difficult." },
-  { startTime: 3621.94, person: 'Fran', text: ' It is because we all have a boss, right?' },
-  { startTime: 3625.66, person: 'Fran', text: " So that's the thing." },
-  { startTime: 3627.3, person: 'Fran', text: ' We all have a boss.' },
-  { startTime: 3628.56, person: 'Fran', text: ' Even your boss has a boss, right?' },
+  { startTime: 3618.458, person: 'Karol', text: " And that's difficult." },
+  { startTime: 3620.238, person: 'Karol', text: " That's extremely difficult." },
+  { startTime: 3621.938, person: 'Fran', text: ' It is because we all have a boss, right?' },
+  { startTime: 3625.658, person: 'Fran', text: " So that's the thing." },
+  { startTime: 3627.298, person: 'Fran', text: ' We all have a boss.' },
+  { startTime: 3628.558, person: 'Fran', text: ' Even your boss has a boss, right?' },
   {
-    startTime: 3631.3,
+    startTime: 3631.298,
     person: 'Fran',
     text: ' Nobody wants to be the guy that is like, why are you so weak with your team?'
   },
   {
-    startTime: 3637.32,
+    startTime: 3637.318,
     person: 'Fran',
     text: " Like why don't you tell them what they have to do and if not, fire them, right?"
   },
   {
-    startTime: 3642.42,
+    startTime: 3642.418,
     person: 'Fran',
     text: " There's still this mentality, especially in these old industries like banking."
   },
   {
-    startTime: 3647.04,
+    startTime: 3647.038,
     person: 'Karol',
     text: " It's the mentality, the very specific mentality called the Peter Principle."
   },
-  { startTime: 3654.36, person: 'Karol', text: ' You heard probably about that.' },
+  { startTime: 3654.358, person: 'Karol', text: ' You heard probably about that.' },
   {
-    startTime: 3656.92,
+    startTime: 3656.918,
     person: 'Karol',
-    text: " So for those who don't know Peter Principle, it's a concept described in 1969 by Dr. Lawrence J."
+    text: " So for those who don't know Peter Principle, it's a concept described in 1969 by Dr. Lawrence J. Peter"
   },
-  { startTime: 3665.38, person: 'Karol', text: ' Peter.' },
   {
-    startTime: 3666.68,
+    startTime: 3666.678,
     person: 'Karol',
     text: ' It basically means that, especially in larger environments, the smaller the company, the less it happens.'
   },
   {
-    startTime: 3672.04,
+    startTime: 3672.038,
     person: 'Karol',
     text: ' But in large corporate environments, people tend to be promoted to higher positions based on their time with the company, not based on the competence for that next position.'
   },
-  { startTime: 3686.78, person: 'Karol', text: " So they're great at their role." },
+  { startTime: 3686.778, person: 'Karol', text: " So they're great at their role." },
   {
-    startTime: 3688.3,
+    startTime: 3688.298,
     person: 'Karol',
     text: " They're like, let's say, you're a great junior developer."
   },
   {
-    startTime: 3690.9,
+    startTime: 3690.898,
     person: 'Karol',
     text: ' Okay, you get a promotion to a mid developer role, right?'
   },
-  { startTime: 3694.08, person: 'Karol', text: " You're a great mid." },
-  { startTime: 3695.06, person: 'Karol', text: ' You get promoted to senior.' },
+  { startTime: 3694.078, person: 'Karol', text: " You're a great mid." },
+  { startTime: 3695.058, person: 'Karol', text: ' You get promoted to senior.' },
   {
-    startTime: 3697,
+    startTime: 3696.998,
     person: 'Karol',
     text: ' And then all of a sudden, you get promoted to a team lead, right?'
   },
   {
-    startTime: 3702.46,
+    startTime: 3702.458,
     person: 'Karol',
     text: ' And then you become incompetent because being a team lead is something completely different in terms of skill sets than being a senior developer.'
   },
   {
-    startTime: 3713.04,
+    startTime: 3713.038,
     person: 'Karol',
     text: ' Because being a team lead requires a different set of skills in terms of soft skills.'
   },
   {
-    startTime: 3717.88,
+    startTime: 3717.878,
     person: 'Karol',
     text: " Being a senior developer, you just need to communicate clearly about the code you're writing and the technology, maybe a little bit of a coaching of juniors, etcétera, your colleagues in the team."
   },
-  { startTime: 3728.88, person: 'Karol', text: " But as a team lead, that's something different." },
   {
-    startTime: 3732.32,
+    startTime: 3728.878,
+    person: 'Karol',
+    text: " But as a team lead, that's something different."
+  },
+  {
+    startTime: 3732.318,
     person: 'Karol',
     text: ' So if you never have any interest in psychology or any interest in building your soft skills as a developer, and you get promoted on the basis of a Peter principle, then all of a sudden, you become completely incompetent in your job.'
   },
-  { startTime: 3749.34, person: 'Karol', text: " And that's horrendous." },
+  { startTime: 3749.338, person: 'Karol', text: " And that's horrendous." },
   {
-    startTime: 3750.36,
+    startTime: 3750.358,
     person: 'Karol',
     text: " And I've seen managers and directors being promoted that way."
   },
   {
-    startTime: 3756.84,
+    startTime: 3756.838,
     person: 'Karol',
     text: " Where they're completely incompetent to lead the whole departments and they destroy the company from within."
   },
   {
-    startTime: 3765.2,
+    startTime: 3765.198,
     person: 'Karol',
     text: ' And then you have a large turn of employees and it all becomes very costly and difficult for everybody.'
   },
-  { startTime: 3776.9, person: 'Fran', text: ' I must say, I face that myself.' },
+  { startTime: 3776.898, person: 'Fran', text: ' I must say, I face that myself.' },
   {
-    startTime: 3780.08,
+    startTime: 3780.078,
     person: 'Fran',
     text: ' In my last job at Cosmo, I was a director of engineering.'
   },
   {
-    startTime: 3783.94,
+    startTime: 3783.938,
     person: 'Fran',
     text: " I don't know how to be a director of engineering."
   },
   {
-    startTime: 3787.8,
+    startTime: 3787.798,
     person: 'Fran',
     text: ' I still, I mean, I more or less know now after four years being in that position.'
   },
   {
-    startTime: 3792.76,
+    startTime: 3792.758,
     person: 'Fran',
     text: ' But when I landed there, I was like, I mean, can you imagine the imposter syndrome on me?'
   },
-  { startTime: 3801.92, person: 'Fran', text: " Let's not get started on my imposter syndrome." },
+  { startTime: 3801.918, person: 'Karol', text: " Let's not get started on my imposter syndrome." },
   {
-    startTime: 3804.64,
+    startTime: 3804.638,
     person: 'Fran',
-    text: ' Can you imagine that like, yeah, I created this in KPI, cool, whatever.'
+    text: ' Can you imagine that like, yeah, I created this AsyncAPI, cool, whatever.'
   },
   {
-    startTime: 3808.56,
+    startTime: 3808.558,
     person: 'Fran',
-    text: ' But when I quit my job to work 100% of my time, full-time, on Async API, I was just recently promoted as to manager position at New Relic.'
+    text: ' But when I quit my job to work 100% of my time, full-time, on AsyncAPI, I was just recently promoted as to manager position at New Relic.'
   },
-  { startTime: 3823.38, person: 'Fran', text: ' But I think I was in the manager position.' },
-  { startTime: 3826.32, person: 'Fran', text: ' I was just one month and then I quit.' },
-  { startTime: 3828.94, person: 'Fran', text: " So I didn't quit because of the company." },
+  { startTime: 3823.378, person: 'Fran', text: ' But I think I was in the manager position.' },
+  { startTime: 3826.318, person: 'Fran', text: ' I was just one month and then I quit.' },
+  { startTime: 3828.938, person: 'Fran', text: " So I didn't quit because of the company." },
   {
-    startTime: 3832.14,
+    startTime: 3832.138,
     person: 'Fran',
-    text: ' I quit because I had the opportunity to dedicate full-time to Async API and I took this opportunity and not looking back, right?'
+    text: ' I quit because I had the opportunity to dedicate full-time to AsyncAPI and I took this opportunity and not looking back, right?'
   },
-  { startTime: 3839.16, person: 'Fran', text: ' So it was a different reason.' },
+  { startTime: 3839.158, person: 'Fran', text: ' So it was a different reason.' },
   {
-    startTime: 3843.04,
+    startTime: 3843.038,
     person: 'Fran',
     text: " So I jumped straight from lead engineer, let's say that I was usually playing that role in different companies."
   },
-  { startTime: 3853.66, person: 'Fran', text: ' Sometimes architect but of smaller companies.' },
-  { startTime: 3857.48, person: 'Fran', text: " So it's effectively it's like lead engineer." },
+  { startTime: 3853.658, person: 'Fran', text: ' Sometimes architect but of smaller companies.' },
+  { startTime: 3857.478, person: 'Fran', text: " So it's effectively it's like lead engineer." },
   {
-    startTime: 3861.62,
+    startTime: 3861.618,
     person: 'Fran',
     text: ' I was instantly promoted to director of engineering, managing other managers managing people, managing the project, the budget, the strategy, you know, all these kind of things.'
   },
-  { startTime: 3881.34, person: 'Fran', text: ' Alexander says I figured that we make it.' },
-  { startTime: 3884.14, person: 'Fran', text: " That's what I did usually is I kept going." },
+  { startTime: 3881.338, person: 'Fran', text: ' Aleksandr says I figured that we make it.' },
+  { startTime: 3884.138, person: 'Fran', text: " That's what I did usually is I kept going." },
   {
-    startTime: 3888.26,
+    startTime: 3888.258,
     person: 'Fran',
-    text: " I kept going because also I was like, there's another point by Kubele saying that is it really being an imposter?"
+    text: " I kept going because also I was like, there's another point by Kubilay saying that is it really being an imposter?"
   },
   {
-    startTime: 3897,
+    startTime: 3896.998,
     person: 'Fran',
     text: " Well, if you hide it, and you don't try, you're imposter."
   },
-  { startTime: 3904.1, person: 'Fran', text: ' In my case, I was trying hard.' },
+  { startTime: 3904.098, person: 'Fran', text: ' In my case, I was trying hard.' },
   {
-    startTime: 3905.96,
+    startTime: 3905.958,
     person: 'Fran',
     text: ' I was trying to learn as much as possible, learning from peers within books, taking courses and so on.'
   },
-  { startTime: 3914.22, person: 'Fran', text: ' I was trying hard.' },
-  { startTime: 3915.86, person: 'Fran', text: ' It was just not made for me.' },
-  { startTime: 3917.52, person: 'Fran', text: " It's not what I should be." },
-  { startTime: 3920.04, person: 'Fran', text: " It's not what I like." },
-  { startTime: 3920.86, person: 'Fran', text: " It's not what I enjoy." },
-  { startTime: 3923, person: 'Fran', text: " And it's not what I'm good at, at managing." },
-  { startTime: 3927.26, person: 'Fran', text: ' I can be decently good.' },
-  { startTime: 3928.76, person: 'Fran', text: " At least I'm not." },
+  { startTime: 3914.218, person: 'Fran', text: ' I was trying hard.' },
+  { startTime: 3915.858, person: 'Fran', text: ' It was just not made for me.' },
+  { startTime: 3917.518, person: 'Fran', text: " It's not what I should be." },
+  { startTime: 3920.038, person: 'Fran', text: " It's not what I like." },
+  { startTime: 3920.858, person: 'Fran', text: " It's not what I enjoy." },
+  { startTime: 3922.998, person: 'Fran', text: " And it's not what I'm good at, at managing." },
+  { startTime: 3927.258, person: 'Fran', text: ' I can be decently good.' },
+  { startTime: 3928.758, person: 'Fran', text: " At least I'm not." },
   {
-    startTime: 3929.64,
+    startTime: 3929.638,
     person: 'Fran',
     text: " I'm really good at the human level in the sense of like something that I'm proud of is that I acted as a as an umbrella for my team."
   },
-  { startTime: 3941.72, person: 'Fran', text: ' kind of like a two way, two ways umbrella.' },
+  { startTime: 3941.718, person: 'Fran', text: ' kind of like a two way, two ways umbrella.' },
   {
-    startTime: 3944.96,
+    startTime: 3944.958,
     person: 'Fran',
     text: " So I was filtering all the shit from the organisation so they don't have to worry about things happening at the higher level."
   },
   {
-    startTime: 3953.36,
+    startTime: 3953.358,
     person: 'Fran',
     text: ' But letting them shine to the rest of the organisation and promoting their work and their achievements and so on.'
   },
-  { startTime: 3958.12, person: 'Fran', text: " So I'm happy with that work that I usually did." },
+  { startTime: 3958.118, person: 'Fran', text: " So I'm happy with that work that I usually did." },
   {
-    startTime: 3961.56,
+    startTime: 3961.558,
     person: 'Fran',
     text: ' And even when I quit and when they all were fired one month after I quit, the whole team, right, at Postman was led off.'
   },
   {
-    startTime: 3973.36,
+    startTime: 3973.358,
     person: 'Fran',
     text: ' Even after that, I was on holiday time and I was trying to find them a job and so on and talking to people so they could find a job.'
   },
-  { startTime: 3980.4, person: 'Fran', text: " So I'm happy." },
-  { startTime: 3981.54, person: 'Fran', text: " I'm proud of myself at the human level." },
-  { startTime: 3984.32, person: 'Fran', text: " But I don't know how to do that." },
+  { startTime: 3980.398, person: 'Fran', text: " So I'm happy." },
+  { startTime: 3981.538, person: 'Fran', text: " I'm proud of myself at the human level." },
+  { startTime: 3984.318, person: 'Fran', text: " But I don't know how to do that." },
   {
-    startTime: 3987.04,
+    startTime: 3987.038,
     person: 'Fran',
     text: " I don't know how to properly do that and I don't and even more important I don't enjoy it."
   },
-  { startTime: 3993.18, person: 'Fran', text: ' So yeah.' },
+  { startTime: 3993.178, person: 'Fran', text: ' So yeah.' },
   {
-    startTime: 3995.98,
+    startTime: 3995.978,
     person: 'Karol',
     text: ' I mean, I must compliment you because this kind of behaviour absolute leadership.'
   },
   {
-    startTime: 4004.98,
+    startTime: 4004.978,
     person: 'Fran',
     text: " Well, and I must say as well, I appreciate that but I must also mention something that I don't want to miss."
   },
   {
-    startTime: 4012.26,
+    startTime: 4012.258,
     person: 'Fran',
     text: ' I want to make sure that everybody understands this point.'
   },
-  { startTime: 4014.5, person: 'Fran', text: ' So and this took me a few sessions of therapy.' },
-  { startTime: 4018.24, person: 'Fran', text: " I'm not joking about that." },
-  { startTime: 4019.68, person: 'Fran', text: " It's true." },
-  { startTime: 4020.7, person: 'Fran', text: ' It took me a few sessions of therapy.' },
+  { startTime: 4014.498, person: 'Fran', text: ' So and this took me a few sessions of therapy.' },
+  { startTime: 4018.238, person: 'Fran', text: " I'm not joking about that." },
+  { startTime: 4019.678, person: 'Fran', text: " It's true." },
+  { startTime: 4020.698, person: 'Fran', text: ' It took me a few sessions of therapy.' },
   {
-    startTime: 4023.22,
+    startTime: 4023.218,
     person: 'Fran',
     text: ' So it was really painful for me to see my team being led off this way.'
   },
   {
-    startTime: 4031.98,
+    startTime: 4031.978,
     person: 'Fran',
     text: " it's really like it takes true leadership as you said and as many people say that this is what you should be doing and so on."
   },
   {
-    startTime: 4041.02,
+    startTime: 4041.018,
     person: 'Fran',
     text: " But if you ever if you are ever in this position my piece of advice is don't do it."
   },
-  { startTime: 4047.78, person: 'Fran', text: " Don't do it to that extreme." },
+  { startTime: 4047.778, person: 'Fran', text: " Don't do it to that extreme." },
   {
-    startTime: 4049.72,
+    startTime: 4049.718,
     person: 'Fran',
     text: " So I've spent more than a year at Postman being burned out just to protect my team because I knew or I felt it that if I quit they all will be fired."
   },
-  { startTime: 4067.04, person: 'Fran', text: ' Because our hire basically was a marketing hire.' },
   {
-    startTime: 4070.52,
+    startTime: 4067.038,
     person: 'Fran',
-    text: " It was not a technical hire or product hire it was a marketing hire so if they don't have the founder of Facing KPI why keep investing it in this ship right?"
+    text: ' Because our hire basically was a marketing hire.'
   },
-  { startTime: 4079.92, person: 'Fran', text: " Or they don't care." },
   {
-    startTime: 4080.9,
+    startTime: 4070.518,
+    person: 'Fran',
+    text: " It was not a technical hire or product hire it was a marketing hire so if they don't have the founder of AsyncAPI why keep investing it in this ship right?"
+  },
+  { startTime: 4079.918, person: 'Fran', text: " Or they don't care." },
+  {
+    startTime: 4080.898,
     person: 'Fran',
     text: ' And I felt that because of their comments and so on.'
   },
-  { startTime: 4084.16, person: 'Fran', text: " I don't agree." },
+  { startTime: 4084.158, person: 'Fran', text: " I don't agree." },
   {
-    startTime: 4084.82,
+    startTime: 4084.818,
     person: 'Fran',
-    text: ' I would have left the whole team there because also Lucas was still the director of the initiative so the director of Facing KPI was still there.'
+    text: ' I would have left the whole team there because also Lucas was still the director of the initiative so the director of AsyncAPI was still there.'
   },
   {
-    startTime: 4095.92,
+    startTime: 4095.918,
     person: 'Fran',
     text: ' So it could have continued even as a marketing hire or as a marketing investment.'
   },
   {
-    startTime: 4101.92,
+    startTime: 4101.918,
     person: 'Fran',
     text: ' Now the thing is that my biggest mistake there was allowing myself to stay there to protect the rest of my team.'
   },
   {
-    startTime: 4113.279,
+    startTime: 4113.277,
     person: 'Fran',
     text: " Don't ever do that because you can get to a point where recovering from the burnout is not recovering from the burnout anymore and it's recovering from the depression."
   },
   {
-    startTime: 4125.24,
+    startTime: 4125.238,
     person: 'Fran',
     text: ' So because you are trying to you are trying to protect people that first of all they never asked you to protect them.'
   },
-  { startTime: 4136.52, person: 'Fran', text: " That's the first thing." },
+  { startTime: 4136.518, person: 'Fran', text: " That's the first thing." },
   {
-    startTime: 4137.5,
+    startTime: 4137.498,
     person: 'Fran',
     text: " You're doing it just because you want to and you feel that you should be good."
   },
   {
-    startTime: 4142.56,
+    startTime: 4142.558,
     person: 'Fran',
     text: " That's like the saviour role like you want to save everyone from the pain and so on."
   },
   {
-    startTime: 4150.68,
+    startTime: 4150.678,
     person: 'Fran',
     text: ' And secondly, they are very good professionals and adults and so on.'
   },
   {
-    startTime: 4155.66,
+    startTime: 4155.658,
     person: 'Fran',
     text: " So when they were laid off nobody was like or almost none of them was like hey, let's rush out to find another job."
   },
-  { startTime: 4166, person: 'Fran', text: ' Most of them were like who cares?' },
-  { startTime: 4169.5, person: 'Fran', text: ' Cool.' },
+  { startTime: 4165.998, person: 'Fran', text: ' Most of them were like who cares?' },
+  { startTime: 4169.498, person: 'Fran', text: ' Cool.' },
   {
-    startTime: 4170.02,
+    startTime: 4170.018,
     person: 'Fran',
     text: " I've got holidays now and they were fired in June by the way."
   },
   {
-    startTime: 4173.08,
+    startTime: 4173.078,
     person: 'Fran',
     text: " So in the beginning of summer like it's been a year now."
   },
   {
-    startTime: 4177.64,
+    startTime: 4177.638,
     person: 'Fran',
     text: " So most of them thought like cool, let's just have holidays and proper holidays and so on and now slowly find another job at the end of the summer."
   },
-  { startTime: 4189.84, person: 'Fran', text: " That was like I've been worried." },
+  { startTime: 4189.838, person: 'Fran', text: " That was like I've been worried." },
   {
-    startTime: 4192.96,
+    startTime: 4192.958,
     person: 'Fran',
     text: " I've been worried for all these people when and yeah, they are sad that they've been laid off but they're not worried for their financial situation or anything like that."
   },
   {
-    startTime: 4204.76,
+    startTime: 4204.758,
     person: 'Fran',
     text: " So don't overload yourself with things that are not your problem."
   },
-  { startTime: 4210.18, person: 'Fran', text: ' Right.' },
-  { startTime: 4210.6, person: 'Fran', text: " If your team loses a job it's not your problem." },
+  { startTime: 4210.178, person: 'Fran', text: ' Right.' },
+  { startTime: 4210.598, person: 'Fran', text: " If your team loses a job it's not your problem." },
   {
-    startTime: 4213.72,
+    startTime: 4213.718,
     person: 'Fran',
     text: " I know it's hard to say but it's not your problem."
   },
-  { startTime: 4216.74, person: 'Fran', text: ' Yeah.' },
-  { startTime: 4217.26, person: 'Fran', text: " It's their problem." },
-  { startTime: 4219.18, person: 'Fran', text: " So it's something they have to solve, not you." },
+  { startTime: 4216.738, person: 'Fran', text: ' Yeah.' },
+  { startTime: 4217.258, person: 'Fran', text: " It's their problem." },
+  { startTime: 4219.178, person: 'Fran', text: " So it's something they have to solve, not you." },
   {
-    startTime: 4221.58,
+    startTime: 4221.578,
     person: 'Fran',
     text: ' You can try to make it harder to happen but not at the expense of your own health.'
   },
-  { startTime: 4228.56, person: 'Fran', text: " That's what I would say." },
-  { startTime: 4230.36, person: 'Fran', text: ' Never at the expense of your own health.' },
+  { startTime: 4228.558, person: 'Fran', text: " That's what I would say." },
+  { startTime: 4230.358, person: 'Fran', text: ' Never at the expense of your own health.' },
   {
-    startTime: 4232,
+    startTime: 4231.998,
     person: 'Karol',
     text: " And you're touching a very, very important topic which I didn't really expect to land in this stream which is mental health."
   },
   {
-    startTime: 4243.82,
+    startTime: 4243.818,
     person: 'Karol',
     text: ' We discussed that offline that the industry is just a perfect hiding spot for a lot of people with a lot of different disabilities as in ADHD or being on the spectrum of autism.'
   },
   {
-    startTime: 4261.48,
+    startTime: 4261.478,
     person: 'Karol',
     text: " A lot of the issues we're having we are having in our works especially also burnout and like the comment from you to Bright Hair will burn out middle name, right?"
   },
-  { startTime: 4276.06, person: 'Karol', text: ' Is that common?' },
-  { startTime: 4277, person: 'Karol', text: " Yes, that's very common in the industry." },
+  { startTime: 4276.058, person: 'Karol', text: ' Is that common?' },
+  { startTime: 4276.998, person: 'Karol', text: " Yes, that's very common in the industry." },
   {
-    startTime: 4279.44,
+    startTime: 4279.438,
     person: 'Karol',
     text: " But it's common also not because the industry is burning us out or the bad leadership or bad management more likely is burning us out."
   },
   {
-    startTime: 4291.9,
+    startTime: 4291.898,
     person: 'Karol',
     text: " It's because we also suffer from ailments that we are not even aware because our industry and our jobs are great at hiding those."
   },
   {
-    startTime: 4301.94,
+    startTime: 4301.938,
     person: 'Karol',
-    text: ' So, for example, there are actual studies that certain industries like IT, events, et etcétera are absolutely great at hiding ADHD.'
+    text: ' So, for example, there are actual studies that certain industries like IT, events, etcétera are absolutely great at hiding ADHD.'
   },
-  { startTime: 4313.16, person: 'Karol', text: ' People with ADHD can hide there indefinitely.' },
+  { startTime: 4313.158, person: 'Karol', text: ' People with ADHD can hide there indefinitely.' },
   {
-    startTime: 4318.18,
+    startTime: 4318.178,
     person: 'Karol',
     text: " But that also means that they will suffer because they don't even know that their ADHD is causing them a lot of problems including that burnout."
   },
   {
-    startTime: 4327.26,
+    startTime: 4327.258,
     person: 'Karol',
     text: " So, as we're talking about mental health and as a person that I've been diagnosed this year with ADHD, right?"
   },
   {
-    startTime: 4340.52,
+    startTime: 4340.518,
     person: 'Karol',
     text: " Go seek professional health help and dig into the topic because if you're having depressive thoughts if you're having a burnout that might be just the symptom."
   },
   {
-    startTime: 4353.94,
+    startTime: 4353.938,
     person: 'Karol',
     text: " That might be just the symptom of the fact that you have ADHD and it's wrecking up your life because you left it unmanaged for too long and you're overburdened with certain things and it starts kicking you in the butt."
   },
   {
-    startTime: 4368.8,
+    startTime: 4368.798,
     person: 'Karol',
     text: " If you're overstimulated constantly if you're constantly feeling overburdened if you're constantly feeling tired there might be something more to that."
   },
   {
-    startTime: 4380.44,
+    startTime: 4380.438,
     person: 'Karol',
     text: " It's not only your imposter syndrome kicking you down it's not some sort of a depressive thought or something."
   },
   {
-    startTime: 4386.5,
+    startTime: 4386.498,
     person: 'Karol',
     text: ' It actually might be something that was hidden because you work in IT because the amount of changes you need to go through oh man ADHD people love changes.'
   },
   {
-    startTime: 4400.36,
+    startTime: 4400.358,
     person: 'Karol',
     text: " If the environment changes around them in the fast-paced yes I'm really great at that right because I have ADHD we love those changes but then you don't realise that you actually have that."
   },
   {
-    startTime: 4412.3,
+    startTime: 4412.298,
     person: 'Karol',
     text: " You don't realise that your brain works a little bit different you kind of think that oh everybody has that everybody everybody's brain works the same way."
   },
   {
-    startTime: 4420.92,
+    startTime: 4420.918,
     person: 'Karol',
     text: " no it doesn't that's not normative that's neuroatypical so for those finding themselves in what Fran just said about burnout about depression about having that kind of a a little bit of a saviour syndrome because what you described in protecting your team was kind of that saviour syndrome there."
   },
-  { startTime: 4447.9, person: 'Karol', text: ' Take a look at that' },
-  { startTime: 4450.04, person: 'Karol', text: ' dig into the topic' },
-  { startTime: 4451.1, person: 'Karol', text: " if you're feeling" },
-  { startTime: 4452.14, person: 'Karol', text: ' burnt out' },
-  { startTime: 4452.68, person: 'Karol', text: " if you're feeling" },
-  { startTime: 4453.2, person: 'Karol', text: ' depressive' },
-  { startTime: 4453.66, person: 'Karol', text: ' and you feel like' },
-  { startTime: 4455.04, person: 'Karol', text: " it's because of your" },
-  { startTime: 4456.1, person: 'Karol', text: ' work' },
-  { startTime: 4456.42, person: 'Karol', text: ' it might not be' },
-  { startTime: 4457.82, person: 'Karol', text: ' have nothing to do' },
-  { startTime: 4458.72, person: 'Karol', text: ' with your work' },
-  { startTime: 4459.2, person: 'Karol', text: ' your work might be' },
-  { startTime: 4460.18, person: 'Karol', text: ' contributing to the' },
-  { startTime: 4461.02, person: 'Karol', text: ' state you are in' },
-  { startTime: 4462.56, person: 'Karol', text: ' but you might be' },
-  { startTime: 4463.56, person: 'Karol', text: ' just neuroatypical' },
-  { startTime: 4465.18, person: 'Karol', text: " and that's" },
-  { startTime: 4466.02, person: 'Karol', text: " that's also perfectly" },
-  { startTime: 4466.88, person: 'Karol', text: ' fine but' },
-  { startTime: 4467.54, person: 'Karol', text: ' go to a specialist' },
-  { startTime: 4468.84, person: 'Fran', text: ' yep exactly' },
-  { startTime: 4471.88, person: 'Fran', text: ' I agree with that' },
-  { startTime: 4472.92, person: 'Fran', text: ' and that' },
-  { startTime: 4474.72, person: 'Fran', text: ' links back to' },
-  { startTime: 4476.06, person: 'Fran', text: ' what I was saying' },
-  { startTime: 4476.66, person: 'Fran', text: ' that' },
-  { startTime: 4479.02, person: 'Fran', text: ' this psychological' },
-  { startTime: 4480.02, person: 'Fran', text: ' safety' },
-  { startTime: 4480.82, person: 'Fran', text: ' and organisations' },
-  { startTime: 4482.14, person: 'Fran', text: ' like' },
-  { startTime: 4482.7, person: 'Fran', text: " it's not just" },
-  { startTime: 4483.9, person: 'Fran', text: ' for experimenting' },
-  { startTime: 4484.92, person: 'Fran', text: " it's not just" },
-  { startTime: 4485.9, person: 'Fran', text: ' for you know' },
-  { startTime: 4486.62, person: 'Fran', text: ' for adopting' },
-  { startTime: 4487.26, person: 'Fran', text: ' any technology' },
-  { startTime: 4487.86, person: 'Fran', text: ' and so on' },
-  { startTime: 4488.48, person: 'Fran', text: " it's also for" },
-  { startTime: 4491.72, person: 'Fran', text: ' feeling this burnout' },
-  { startTime: 4493.12, person: 'Fran', text: ' which by the way' },
-  { startTime: 4493.7, person: 'Fran', text: ' I would like to clarify' },
-  { startTime: 4495.96, person: 'Fran', text: ' burnout is not' },
-  { startTime: 4496.84, person: 'Fran', text: ' a clinical term' },
-  { startTime: 4497.88, person: 'Fran', text: ' right' },
-  { startTime: 4498.76, person: 'Fran', text: ' this is a' },
-  { startTime: 4499.86, person: 'Fran', text: ' this is a' },
-  { startTime: 4500.72, person: 'Fran', text: ' beautiful name' },
-  { startTime: 4501.86, person: 'Fran', text: ' we invented' },
-  { startTime: 4502.84, person: 'Fran', text: ' to describe' },
-  { startTime: 4504.28, person: 'Fran', text: ' depression' },
-  { startTime: 4504.76, person: 'Fran', text: ' so that is' },
-  { startTime: 4505.86, person: 'Fran', text: ' depression' },
-  { startTime: 4506.32, person: 'Fran', text: ' right so when you' },
-  { startTime: 4507.34, person: 'Fran', text: ' when you feel' },
-  { startTime: 4509.12, person: 'Fran', text: ' burnout depending' },
-  { startTime: 4510, person: 'Fran', text: ' on the stage of it' },
-  { startTime: 4511.04, person: 'Fran', text: ' you might be in the' },
-  { startTime: 4511.94, person: 'Fran', text: ' beginning of a depression' },
-  { startTime: 4512.68, person: 'Fran', text: ' you might be like' },
-  { startTime: 4513.64, person: 'Fran', text: ' straight into a' },
-  { startTime: 4514.88, person: 'Fran', text: ' depression' },
-  { startTime: 4515.86, person: 'Fran', text: " so it's" },
-  { startTime: 4517.94, person: 'Fran', text: " let's call it" },
-  { startTime: 4518.62, person: 'Fran', text: ' for what it is' },
-  { startTime: 4519.96, person: 'Fran', text: " it's called to call" },
-  { startTime: 4520.94, person: 'Fran', text: ' it burnout because' },
-  { startTime: 4521.62, person: 'Fran', text: ' most people are' },
-  { startTime: 4523.44, person: 'Fran', text: ' searching for this' },
-  { startTime: 4524.26, person: 'Fran', text: ' work' },
-  { startTime: 4525.04, person: 'Fran', text: ' but' },
-  { startTime: 4525.86, person: 'Fran', text: " let's call it also" },
-  { startTime: 4526.44, person: 'Fran', text: ' for what it is' },
-  { startTime: 4527.08, person: 'Fran', text: ' the clinical term' },
-  { startTime: 4527.76, person: 'Fran', text: ' is depression right' },
-  { startTime: 4529.46, person: 'Fran', text: ' so' },
-  { startTime: 4530.72, person: 'Fran', text: ' search for help' },
-  { startTime: 4531.54, person: 'Fran', text: " that's what I would say" },
-  { startTime: 4533.5, person: 'Fran', text: ' and' },
-  { startTime: 4534.5, person: 'Fran', text: ' and yeah and' },
-  { startTime: 4535.42, person: 'Fran', text: ' if you are a manager' },
-  { startTime: 4536.58, person: 'Fran', text: ' if you are a team lead' },
-  { startTime: 4538.36, person: 'Fran', text: ' or something' },
-  { startTime: 4539.94, person: 'Fran', text: " or you're managing" },
-  { startTime: 4541.08, person: 'Fran', text: ' people' },
-  { startTime: 4543.18, person: 'Fran', text: " I'm not going to say" },
-  { startTime: 4544.6, person: 'Fran', text: " I'm not going to say" },
-  { startTime: 4545.5, person: 'Fran', text: ' that you should be' },
-  { startTime: 4546.76, person: 'Fran', text: ' acting as a' },
-  { startTime: 4548.84, person: 'Fran', text: ' as a' },
-  { startTime: 4549.52, person: 'Fran', text: ' as a psychologist' },
-  { startTime: 4550.88, person: 'Fran', text: " because that's" },
-  { startTime: 4552.3, person: 'Fran', text: ' probably not your' },
-  { startTime: 4552.88, person: 'Fran', text: ' not your problem again' },
-  { startTime: 4556.68, person: 'Fran', text: ' but at least give them' },
-  { startTime: 4558.16, person: 'Fran', text: ' space' },
-  { startTime: 4558.58, person: 'Fran', text: ' for expressing' },
-  { startTime: 4560.3, person: 'Fran', text: ' expressing their' },
-  { startTime: 4561.08, person: 'Fran', text: ' thoughts openly' },
-  { startTime: 4562.58, person: 'Fran', text: ' and if they need help' },
-  { startTime: 4564.68, person: 'Fran', text: ' and the company' },
-  { startTime: 4565.7, person: 'Fran', text: ' supports it' },
-  { startTime: 4566.48, person: 'Fran', text: ' like for instance' },
-  { startTime: 4567.76, person: 'Fran', text: ' paying for the treatment' },
-  { startTime: 4569.2, person: 'Fran', text: ' paying for' },
-  { startTime: 4570.08, person: 'Fran', text: ' the therapy' },
-  { startTime: 4570.64, person: 'Fran', text: ' sessions' },
-  { startTime: 4571.18, person: 'Fran', text: ' paying for coaching' },
-  { startTime: 4573.42, person: 'Fran', text: ' their ADHD' },
-  { startTime: 4574.5, person: 'Karol', text: ' coaching' },
-  { startTime: 4575.7, person: 'Karol', text: ' sessions' },
-  { startTime: 4576.3, person: 'Fran', text: ' paying for holidays' },
-  { startTime: 4577.5, person: 'Fran', text: ' like for instance' },
-  { startTime: 4578.52, person: 'Fran', text: ' I remember' },
-  { startTime: 4579.22, person: 'Fran', text: ' a friend of mine' },
-  { startTime: 4581.62, person: 'Fran', text: ' like he was' },
-  { startTime: 4582.14, person: 'Fran', text: ' he was in my team' },
-  { startTime: 4583.02, person: 'Fran', text: ' he was' },
-  { startTime: 4583.98, person: 'Fran', text: ' I immediately detected' },
-  { startTime: 4585.54, person: 'Fran', text: ' him to be like' },
-  { startTime: 4587.52, person: 'Fran', text: ' like super' },
-  { startTime: 4588.42, person: 'Fran', text: ' like' },
-  { startTime: 4589.24, person: 'Fran', text: ' about to collapse' },
-  { startTime: 4590.26, person: 'Fran', text: ' you know' },
-  { startTime: 4591.34, person: 'Fran', text: ' and he was not taking' },
-  { startTime: 4592.7, person: 'Fran', text: ' holidays' },
-  { startTime: 4594.84, person: 'Fran', text: ' because he' },
-  { startTime: 4595.56, person: 'Fran', text: ' in his own words' },
-  { startTime: 4597, person: 'Fran', text: ' I have to' },
-  { startTime: 4597.74, person: 'Fran', text: ' finish this' },
-  { startTime: 4598.36, person: 'Fran', text: ' I have to' },
-  { startTime: 4599.1, person: 'Fran', text: ' and I said no' },
-  { startTime: 4600.34, person: 'Fran', text: " no you don't have to" },
-  { startTime: 4601.34, person: 'Fran', text: " it's good if you have" },
-  { startTime: 4602.66, person: 'Fran', text: ' if you do it' },
-  { startTime: 4603.32, person: 'Fran', text: " it's good if it happens" },
-  { startTime: 4604.34, person: 'Fran', text: ' but you' },
-  { startTime: 4605.1, person: 'Fran', text: " you don't have to" },
-  { startTime: 4606.36, person: 'Fran', text: " you don't have to" },
-  { startTime: 4607.34, person: 'Fran', text: ' finish this' },
-  { startTime: 4607.82, person: 'Fran', text: " we're not" },
-  { startTime: 4608.28, person: 'Fran', text: " we're an open source project" },
-  { startTime: 4609.44, person: 'Fran', text: " it's okay" },
-  { startTime: 4610.1, person: 'Fran', text: ' if you leave this' },
-  { startTime: 4611.06, person: 'Fran', text: ' for the community to' },
-  { startTime: 4612.26, person: 'Fran', text: ' complete it' },
-  { startTime: 4612.88, person: 'Fran', text: ' to contribute and so on' },
-  { startTime: 4614.38, person: 'Fran', text: " and if it doesn't happen" },
-  { startTime: 4615.38, person: 'Fran', text: ' this summer' },
-  { startTime: 4616.54, person: 'Fran', text: ' and it has to happen' },
-  { startTime: 4617.74, person: 'Fran', text: ' next summer' },
-  { startTime: 4618.7, person: 'Fran', text: " that's completely fine" },
-  { startTime: 4619.9, person: 'Fran', text: " we're not a product" },
-  { startTime: 4620.68, person: 'Fran', text: ' company' },
-  { startTime: 4621.08, person: 'Fran', text: " we're not trying to sell" },
-  { startTime: 4621.9, person: 'Fran', text: ' anything' },
-  { startTime: 4622.2, person: 'Fran', text: " we're building an" },
-  { startTime: 4623.38, person: 'Fran', text: ' open source project' },
-  { startTime: 4624.3, person: 'Fran', text: ' so' },
-  { startTime: 4624.98, person: 'Fran', text: ' if something is not' },
-  { startTime: 4627.36, person: 'Fran', text: ' developed as fast' },
-  { startTime: 4628.52, person: 'Fran', text: ' as you like' },
-  { startTime: 4629.84, person: 'Fran', text: ' then maybe we' },
-  { startTime: 4631.14, person: 'Fran', text: ' should focus in' },
-  { startTime: 4631.86, person: 'Fran', text: ' inviting more people' },
-  { startTime: 4632.76, person: 'Fran', text: ' to join our community' },
-  { startTime: 4633.78, person: 'Fran', text: ' and contribute more' },
-  { startTime: 4634.88, person: 'Fran', text: ' not you doubling' },
-  { startTime: 4635.98, person: 'Fran', text: ' down' },
-  { startTime: 4636.44, person: 'Fran', text: ' the hours' },
-  { startTime: 4637.62, person: 'Fran', text: ' and the effort' },
-  { startTime: 4638.3, person: 'Fran', text: ' you put in' },
-  { startTime: 4638.88, person: 'Fran', text: ' right' },
-  { startTime: 4639.08, person: 'Fran', text: ' so' },
-  { startTime: 4639.88, person: 'Fran', text: ' and I sent him' },
-  { startTime: 4641.72, person: 'Fran', text: ' like four weeks' },
-  { startTime: 4643.08, person: 'Fran', text: ' straight in' },
-  { startTime: 4643.98, person: 'Fran', text: ' into holidays' },
-  { startTime: 4644.56, person: 'Fran', text: ' like' },
-  { startTime: 4646.22, person: 'Fran', text: ' finish whatever you' },
-  { startTime: 4647.32, person: 'Fran', text: ' have at hand today' },
-  { startTime: 4648.26, person: 'Fran', text: " tomorrow you're" },
-  { startTime: 4649.68, person: 'Fran', text: ' ready' },
-  { startTime: 4649.84, person: 'Fran', text: " and I don't want to see you" },
-  { startTime: 4650.84, person: 'Fran', text: ' connecting for weeks' },
-  { startTime: 4651.66, person: 'Fran', text: ' but he came back' },
-  { startTime: 4653.48, person: 'Fran', text: ' recovered' },
-  { startTime: 4654.72, person: 'Fran', text: ' and with the mind' },
-  { startTime: 4656.36, person: 'Fran', text: ' clear like' },
-  { startTime: 4657.18, person: 'Fran', text: ' shit' },
-  { startTime: 4657.74, person: 'Fran', text: ' I was like' },
-  { startTime: 4658.32, person: 'Fran', text: ' so deep into' },
-  { startTime: 4659.24, person: 'Fran', text: ' the' },
-  { startTime: 4659.48, person: 'Fran', text: ' into this' },
-  { startTime: 4660.44, person: 'Fran', text: ' that I was' },
-  { startTime: 4660.9, person: 'Fran', text: ' even like' },
-  { startTime: 4661.52, person: 'Fran', text: ' believing that this' },
-  { startTime: 4662.48, person: 'Fran', text: ' this was all my' },
-  { startTime: 4663.58, person: 'Fran', text: ' responsibility' },
-  { startTime: 4664.26, person: 'Fran', text: ' down the rabbit hole' },
-  { startTime: 4665.82, person: 'Fran', text: ' you go' },
-  { startTime: 4666.28, person: 'Fran', text: ' down the rabbit hole' },
-  { startTime: 4667.08, person: 'Fran', text: ' exactly' },
-  { startTime: 4667.34, person: 'Fran', text: ' and so' },
-  { startTime: 4669.2, person: 'Fran', text: ' this is something' },
-  { startTime: 4669.88, person: 'Fran', text: ' that I also ask' },
-  { startTime: 4671.32, person: 'Fran', text: ' managers whenever' },
-  { startTime: 4672.14, person: 'Fran', text: ' whenever they' },
-  { startTime: 4672.8, person: 'Fran', text: ' detect these kind of' },
-  { startTime: 4673.58, person: 'Fran', text: ' things' },
-  { startTime: 4673.82, person: 'Fran', text: ' protect your team' },
-  { startTime: 4674.64, person: 'Fran', text: " don't protect the company" },
-  { startTime: 4675.62, person: 'Fran', text: ' right' },
-  { startTime: 4676.62, person: 'Fran', text: ' I mean' },
-  { startTime: 4677.44, person: 'Fran', text: ' if you protect your team' },
-  { startTime: 4678.52, person: 'Fran', text: " you're going to protect" },
-  { startTime: 4679.2, person: 'Fran', text: ' the company anyways' },
-  { startTime: 4679.92, person: 'Fran', text: ' so' },
-  { startTime: 4680.54, person: 'Fran', text: ' yeah' },
-  { startTime: 4681.1, person: 'Fran', text: " but don't look" },
-  { startTime: 4681.9, person: 'Fran', text: ' at' },
-  { startTime: 4682.24, person: 'Fran', text: ' look down' },
-  { startTime: 4683.12, person: 'Fran', text: ' look to your team' },
-  { startTime: 4684.02, person: 'Fran', text: ' protect them' },
-  { startTime: 4685.24, person: 'Fran', text: ' right' },
-  { startTime: 4686.48, person: 'Fran', text: ' because in the end' },
-  { startTime: 4689.26, person: 'Fran', text: ' the company is going to' },
-  { startTime: 4690.62, person: 'Fran', text: ' fire you' },
-  { startTime: 4690.96, person: 'Fran', text: ' someday' },
-  { startTime: 4692.64, person: 'Fran', text: ' right' },
-  { startTime: 4693.16, person: 'Fran', text: " you're just an asset" },
-  { startTime: 4694.88, person: 'Karol', text: ' that is easily' },
-  { startTime: 4696.16, person: 'Fran', text: ' removable' },
-  { startTime: 4696.76, person: 'Fran', text: ' whatever company you work' },
-  { startTime: 4698.62, person: 'Fran', text: ' for' },
-  { startTime: 4699.18, person: 'Fran', text: " they're going to" },
-  { startTime: 4700.28, person: 'Fran', text: " either you're" },
-  { startTime: 4701.12, person: 'Fran', text: ' going to quit' },
-  { startTime: 4701.42, person: 'Fran', text: " or they're going to" },
-  { startTime: 4702.16, person: 'Fran', text: ' remove you' },
-  { startTime: 4702.86, person: 'Fran', text: ' so' },
-  { startTime: 4703.4, person: 'Fran', text: ' protect your team' },
-  { startTime: 4704.42, person: 'Fran', text: " because they're probably" },
-  { startTime: 4705.2, person: 'Fran', text: ' their colleagues' },
-  { startTime: 4705.84, person: 'Fran', text: ' as well' },
-  { startTime: 4706.42, person: 'Fran', text: ' and also for human' },
-  { startTime: 4707.54, person: 'Fran', text: ' for human' },
-  { startTime: 4708.12, person: 'Fran', text: ' for humanitarian reasons' },
-  { startTime: 4710.28, person: 'Fran', text: " don't let people" },
-  { startTime: 4711.2, person: 'Fran', text: ' suffer for' },
-  { startTime: 4711.84, person: 'Fran', text: ' for the' },
-  { startTime: 4712.98, person: 'Fran', text: ' for the sake of' },
-  { startTime: 4714.08, person: 'Fran', text: ' just a few' },
-  { startTime: 4714.7, person: 'Fran', text: ' movie layers' },
-  { startTime: 4715.36, person: 'Fran', text: ' right' },
-  { startTime: 4715.8, person: 'Fran', text: " I don't care about" },
-  { startTime: 4717.9, person: 'Fran', text: " that but I'm a little" },
-  { startTime: 4718.64, person: 'Fran', text: ' bit punk here' },
-  { startTime: 4719.32, person: 'Fran', text: ' I will say' },
-  { startTime: 4720.7, person: 'Karol', text: ' but you know' },
-  { startTime: 4721.82, person: 'Karol', text: ' what from my own' },
-  { startTime: 4722.6, person: 'Karol', text: ' experience when I' },
-  { startTime: 4723.44, person: 'Karol', text: ' learned that I have' },
-  { startTime: 4724.1, person: 'Karol', text: ' ADHD and I started' },
-  { startTime: 4725.38, person: 'Karol', text: ' sharing and talking' },
-  { startTime: 4726.6, person: 'Karol', text: ' about that with' },
-  { startTime: 4727.4, person: 'Karol', text: ' people' },
-  { startTime: 4732.86, person: 'Karol', text: ' and meeting' },
-  { startTime: 4734.12, person: 'Karol', text: ' with my previous' },
-  { startTime: 4735.12, person: 'Karol', text: ' employer' },
-  { startTime: 4737.4, person: 'Karol', text: ' and that was very' },
-  { startTime: 4740.15, person: 'Karol', text: ' interesting that' },
-  { startTime: 4741.11, person: 'Karol', text: ' all of the sudden' },
-  { startTime: 4742.33, person: 'Karol', text: ' I had things' },
-  { startTime: 4743.71, person: 'Karol', text: ' on slack' },
-  { startTime: 4744.31, person: 'Karol', text: ' from people' },
-  { startTime: 4745.75, person: 'Karol', text: " I didn't even know" },
-  { startTime: 4746.75, person: 'Karol', text: ' at the time' },
-  { startTime: 4747.99, person: 'Karol', text: ' in the company' },
-  { startTime: 4749.61, person: 'Karol', text: ' they were like' },
-  { startTime: 4750.49, person: 'Karol', text: ' hey' },
-  { startTime: 4751.05, person: 'Karol', text: ' I heard you have' },
-  { startTime: 4752.33, person: 'Karol', text: ' ADHD' },
-  { startTime: 4755.36, person: 'Karol', text: ' I also have ADHD' },
-  { startTime: 4757.56, person: 'Karol', text: " but I haven't" },
-  { startTime: 4758.4, person: 'Karol', text: ' come out of the' },
-  { startTime: 4759.08, person: 'Karol', text: ' closet' },
-  { startTime: 4759.96, person: 'Karol', text: ' nobody knows' },
-  { startTime: 4760.84, person: 'Karol', text: ' but I want you' },
-  { startTime: 4762.1, person: 'Karol', text: ' to know because' },
-  { startTime: 4764.02, person: 'Karol', text: ' you have' },
-  { startTime: 4764.68, person: 'Karol', text: " ADHD so you'll" },
-  { startTime: 4765.46, person: 'Karol', text: ' understand' },
-  { startTime: 4765.72, person: 'Karol', text: ' and there was so many' },
-  { startTime: 4767.54, person: 'Karol', text: " people that didn't" },
-  { startTime: 4768.46, person: 'Karol', text: ' feel' },
-  { startTime: 4769.36, person: 'Karol', text: ' psychologically' },
-  { startTime: 4770.32, person: 'Karol', text: ' safe' },
-  { startTime: 4771.72, person: 'Karol', text: ' in the company' },
-  { startTime: 4773.7, person: 'Karol', text: ' to be' },
-  { startTime: 4774.58, person: 'Karol', text: ' themselves' },
-  { startTime: 4776.1, person: 'Karol', text: ' and to be' },
-  { startTime: 4777.46, person: 'Karol', text: ' open about' },
-  { startTime: 4778.5, person: 'Karol', text: ' themselves' },
-  { startTime: 4779.98, person: 'Karol', text: ' so instead of being' },
-  { startTime: 4781.7, person: 'Karol', text: ' open about' },
-  { startTime: 4782.54, person: 'Karol', text: ' themselves they' },
-  { startTime: 4783.42, person: 'Karol', text: ' we just basically' },
-  { startTime: 4784.5, person: 'Karol', text: ' created an internal' },
-  { startTime: 4785.56, person: 'Karol', text: ' community' },
-  { startTime: 4786.28, person: 'Karol', text: ' of people with' },
-  { startTime: 4787.84, person: 'Karol', text: ' ADHD' },
-  { startTime: 4789.72, person: 'Karol', text: ' and that worked' },
-  { startTime: 4790.9, person: 'Karol', text: ' to an extent because' },
-  { startTime: 4792.06, person: 'Karol', text: ' we started' },
-  { startTime: 4792.58, person: 'Karol', text: ' doing body doubling' },
-  { startTime: 4793.46, person: 'Karol', text: ' sessions etc' },
-  { startTime: 4794.56, person: 'Karol', text: ' to just help us' },
-  { startTime: 4796.7, person: 'Karol', text: ' work through' },
-  { startTime: 4798.52, person: 'Karol', text: ' certain blocks' },
-  { startTime: 4799.74, person: 'Karol', text: " I didn't feel" },
-  { startTime: 4800.38, person: 'Karol', text: ' along as well' },
-  { startTime: 4801.22, person: 'Karol', text: ' and then you feel' },
-  { startTime: 4802.66, person: 'Karol', text: ' that you belong' },
-  { startTime: 4804.04, person: 'Karol', text: ' to somewhere' },
-  { startTime: 4804.96, person: 'Karol', text: ' right' },
-  { startTime: 4805.24, person: 'Karol', text: " but it's" },
-  { startTime: 4806.54, person: 'Karol', text: " it's" },
-  { startTime: 4807.02, person: 'Karol', text: " it's very difficult" },
-  { startTime: 4808.04, person: 'Karol', text: ' the psychological' },
-  { startTime: 4809.52, person: 'Karol', text: ' safety' },
-  { startTime: 4810.38, person: 'Karol', text: ' topic is a very' },
-  { startTime: 4811.96, person: 'Karol', text: ' broad topic' },
-  { startTime: 4812.68, person: 'Karol', text: ' and there are so' },
-  { startTime: 4813.72, person: 'Karol', text: ' many reasons why' },
-  { startTime: 4814.64, person: 'Karol', text: ' somebody might' },
-  { startTime: 4816.04, person: 'Karol', text: ' not' },
-  { startTime: 4816.66, person: 'Karol', text: ' feel safe' },
-  { startTime: 4817.9, person: 'Karol', text: ' psychologically' },
-  { startTime: 4818.6, person: 'Karol', text: ' in a company' },
-  { startTime: 4819.6, person: 'Karol', text: ' and then' },
-  { startTime: 4820.52, person: 'Karol', text: ' act out' },
-  { startTime: 4822.4, person: 'Karol', text: ' based on that' },
-  { startTime: 4823.48, person: 'Karol', text: ' lack of safety' },
-  { startTime: 4824.3, person: 'Karol', text: ' and create' },
-  { startTime: 4825.24, person: 'Karol', text: ' even more troubles' },
-  { startTime: 4826.38, person: 'Karol', text: ' in' },
-  { startTime: 4827.74, person: 'Karol', text: ' the core topic' },
-  { startTime: 4828.82, person: 'Karol', text: ' that we were' },
-  { startTime: 4829.16, person: 'Karol', text: ' talking about' },
-  { startTime: 4829.94, person: 'Karol', text: ' for example' },
-  { startTime: 4830.48, person: 'Karol', text: ' so adoption of' },
-  { startTime: 4831.92, person: 'Karol', text: ' event driven' },
-  { startTime: 4832.62, person: 'Karol', text: ' yeah' },
-  { startTime: 4834.8, person: 'Karol', text: ' yeah' },
-  { startTime: 4836.92, person: 'Fran', text: ' so' },
-  { startTime: 4838.04, person: 'Fran', text: ' let me let me' },
-  { startTime: 4838.98, person: 'Fran', text: ' get back' },
-  { startTime: 4839.86, person: 'Fran', text: ' because I was' },
-  { startTime: 4840.46, person: 'Fran', text: ' I was reading the' },
-  { startTime: 4841.18, person: 'Fran', text: ' comments' },
-  { startTime: 4841.56, person: 'Fran', text: ' yeah' },
-  { startTime: 4842.42, person: 'Fran', text: ' and' },
-  { startTime: 4844.48, person: 'Fran', text: ' we have some' },
-  { startTime: 4845.32, person: 'Fran', text: ' questions' },
-  { startTime: 4845.7, person: 'Karol', text: ' we have some' },
-  { startTime: 4846.82, person: 'Karol', text: ' really good' },
-  { startTime: 4847.26, person: 'Karol', text: ' technical questions' },
-  { startTime: 4848.32, person: 'Karol', text: ' and I think we' },
-  { startTime: 4849.1, person: 'Karol', text: ' can we can' },
-  { startTime: 4849.76, person: 'Karol', text: ' jump to' },
-  { startTime: 4851.08, person: 'Karol', text: ' another point' },
-  { startTime: 4852.04, person: 'Karol', text: ' of a discussion' },
-  { startTime: 4853.72, person: 'Karol', text: ' meaning the evolution' },
-  { startTime: 4855.24, person: 'Karol', text: ' of Async API' },
-  { startTime: 4856.18, person: 'Karol', text: ' which' },
-  { startTime: 4856.52, person: 'Karol', text: ' some of those' },
-  { startTime: 4857.52, person: 'Karol', text: ' questions would' },
-  { startTime: 4858.86, person: 'Karol', text: ' be very fitting' },
-  { startTime: 4861.64, person: 'Karol', text: ' so let me' },
-  { startTime: 4862.66, person: 'Karol', text: ' quickly scroll that' },
-  { startTime: 4863.88, person: 'Karol', text: ' up because' },
-  { startTime: 4864.44, person: 'Karol', text: ' I found one' },
-  { startTime: 4865.94, person: 'Karol', text: ' somewhere somewhere' },
-  { startTime: 4867.46, person: 'Karol', text: ' somewhere at' },
-  { startTime: 4868.34, person: 'Karol', text: ' the beginning' },
-  { startTime: 4868.72, person: 'Karol', text: ' of' },
-  { startTime: 4869.06, person: 'Karol', text: ' yeah' },
-  { startTime: 4869.62, person: 'Fran', text: ' Alexander I have' },
-  { startTime: 4870.8, person: 'Fran', text: ' first question' },
-  { startTime: 4871.28, person: 'Karol', text: ' yes there we go' },
-  { startTime: 4875.53, person: 'Karol', text: ' yes' },
-  { startTime: 4876.21, person: 'Karol', text: ' yes' },
-  { startTime: 4876.89, person: 'Karol', text: ' cloud event' },
-  { startTime: 4877.29, person: 'Karol', text: ' specification' },
-  { startTime: 4879.55, person: 'Fran', text: " if it's" },
-  { startTime: 4880.89, person: 'Fran', text: ' you want to' },
-  { startTime: 4881.57, person: 'Fran', text: ' reply' },
-  { startTime: 4884.54, person: 'Fran', text: ' go ahead' },
-  { startTime: 4885.62, person: 'Karol', text: ' I mean' },
-  { startTime: 4887.12, person: 'Karol', text: " it's about" },
-  { startTime: 4887.98, person: 'Karol', text: ' included as' },
-  { startTime: 4889.42, person: 'Karol', text: ' a recommendation' },
-  { startTime: 4889.98, person: 'Karol', text: ' to Async API' },
-  { startTime: 4890.8, person: 'Karol', text: ' I have nothing to do' },
-  { startTime: 4891.98, person: 'Karol', text: ' with Async API' },
-  { startTime: 4892.86, person: 'Karol', text: ' at this point' },
-  { startTime: 4894.08, person: 'Fran', text: ' I will say' },
-  { startTime: 4895.92, person: 'Fran', text: " it's" },
-  { startTime: 4896.52, person: 'Fran', text: ' mature enough' },
-  { startTime: 4897.5, person: 'Fran', text: ' yes' },
-  { startTime: 4900.66, person: 'Fran', text: ' not sure how' },
-  { startTime: 4901.68, person: 'Fran', text: ' widely adopted' },
-  { startTime: 4902.5, person: 'Fran', text: ' it is right now' },
-  { startTime: 4903.38, person: 'Fran', text: ' but I think' },
-  { startTime: 4904.02, person: 'Fran', text: ' I see it more and' },
-  { startTime: 4905, person: 'Fran', text: ' more' },
-  { startTime: 4905.22, person: 'Fran', text: ' which is good' },
-  { startTime: 4908.64, person: 'Fran', text: ' so everything that' },
-  { startTime: 4910.04, person: 'Fran', text: ' whatever' },
-  { startTime: 4911.02, person: 'Fran', text: ' it is' },
-  { startTime: 4912.18, person: 'Fran', text: ' sticking to standard' },
-  { startTime: 4913.16, person: 'Fran', text: ' is' },
-  { startTime: 4913.82, person: 'Fran', text: " it's always good" },
-  { startTime: 4915.28, person: 'Fran', text: ' so' },
-  { startTime: 4916.1, person: 'Fran', text: ' so I will celebrate that' },
-  { startTime: 4919.44, person: 'Fran', text: ' now I must clarify' },
-  { startTime: 4920.96, person: 'Fran', text: ' some things' },
-  { startTime: 4921.42, person: 'Fran', text: " some people think it's" },
-  { startTime: 4922.66, person: 'Fran', text: ' either' },
-  { startTime: 4922.94, person: 'Fran', text: ' cloud events or' },
-  { startTime: 4923.8, person: 'Fran', text: ' Async API' },
-  { startTime: 4925.12, person: 'Fran', text: ' and they are complimentary' },
-  { startTime: 4926.3, person: 'Fran', text: ' they' },
-  { startTime: 4927.02, person: 'Fran', text: ' we actually tackle' },
-  { startTime: 4927.94, person: 'Fran', text: ' different problems' },
-  { startTime: 4929.04, person: 'Fran', text: ' right so' },
-  { startTime: 4930.24, person: 'Fran', text: ' I wrote a' },
-  { startTime: 4931.7, person: 'Fran', text: ' blog post about it' },
-  { startTime: 4932.9, person: 'Fran', text: ' and' },
-  { startTime: 4933.38, person: 'Fran', text: " they think it's" },
-  { startTime: 4934.2, person: 'Fran', text: ' a blog' },
-  { startTime: 4934.56, person: 'Fran', text: ' because I found out' },
-  { startTime: 4935.8, person: 'Fran', text: ' at some point' },
-  { startTime: 4936.36, person: 'Fran', text: ' people were like' },
-  { startTime: 4937.32, person: 'Fran', text: ' even like' },
-  { startTime: 4938.3, person: 'Fran', text: ' throwing fire at us' },
-  { startTime: 4940.1, person: 'Fran', text: ' right like' },
-  { startTime: 4940.7, person: 'Fran', text: ' hey come on' },
-  { startTime: 4942.04, person: 'Fran', text: ' say something' },
-  { startTime: 4942.6, person: 'Fran', text: ' bad about cloud events' },
-  { startTime: 4946, person: 'Fran', text: ' somehow think about it' },
-  { startTime: 4947.52, person: 'Fran', text: " and it's like" },
-  { startTime: 4947.88, person: 'Fran', text: " no I'm not gonna say" },
-  { startTime: 4948.78, person: 'Fran', text: ' something bad' },
-  { startTime: 4949.24, person: 'Fran', text: ' because I always' },
-  { startTime: 4949.92, person: 'Fran', text: ' recommended myself' },
-  { startTime: 4950.76, person: 'Fran', text: ' I was' },
-  { startTime: 4951.92, person: 'Fran', text: ' when I was' },
-  { startTime: 4953.6, person: 'Fran', text: ' consulting with Adidas' },
-  { startTime: 4956.34, person: 'Fran', text: ' I was' },
-  { startTime: 4957.22, person: 'Fran', text: ' I was helping them' },
-  { startTime: 4958.72, person: 'Fran', text: ' to adapt' },
-  { startTime: 4959.22, person: 'Fran', text: ' Async API' },
-  { startTime: 4960.16, person: 'Fran', text: ' they were using Kafka' },
-  { startTime: 4961.36, person: 'Fran', text: ' as well' },
-  { startTime: 4961.88, person: 'Fran', text: ' and they were' },
-  { startTime: 4963.06, person: 'Fran', text: ' already' },
-  { startTime: 4964, person: 'Fran', text: ' using cloud events' },
-  { startTime: 4965.02, person: 'Fran', text: ' and I saw it' },
-  { startTime: 4966.54, person: 'Fran', text: ' in action' },
-  { startTime: 4967.3, person: 'Fran', text: ' and I think' },
-  { startTime: 4968.44, person: 'Fran', text: " it's pretty cool" },
-  { startTime: 4969.06, person: 'Fran', text: ' so' },
-  { startTime: 4969.38, person: 'Fran', text: ' let me clarify' },
-  { startTime: 4970.36, person: 'Fran', text: ' so cloud events' },
-  { startTime: 4971.46, person: 'Fran', text: " it's defining" },
-  { startTime: 4976.22, person: 'Fran', text: " what's it" },
-  { startTime: 4976.88, person: 'Fran', text: ' called' },
-  { startTime: 4977.08, person: 'Fran', text: ' the envelope' },
-  { startTime: 4977.82, person: 'Fran', text: ' the envelope' },
-  { startTime: 4978.6, person: 'Fran', text: ' of the data' },
-  { startTime: 4979.3, person: 'Fran', text: ' right' },
-  { startTime: 4979.78, person: 'Fran', text: ' pretty much' },
-  { startTime: 4980.56, person: 'Fran', text: " it's not exactly that" },
-  { startTime: 4981.78, person: 'Fran', text: " but it's pretty" },
-  { startTime: 4982.32, person: 'Fran', text: " it's pretty much" },
-  { startTime: 4983.36, person: 'Fran', text: ' the envelope of the data' },
-  { startTime: 4984.44, person: 'Fran', text: ' so I think about it' },
-  { startTime: 4985.92, person: 'Fran', text: ' like' },
-  { startTime: 4986.18, person: 'Fran', text: ' enveloped in the' },
-  { startTime: 4987.48, person: 'Fran', text: ' in the post' },
-  { startTime: 4988.02, person: 'Fran', text: ' in the post' },
-  { startTime: 4988.72, person: 'Fran', text: ' system' },
-  { startTime: 4989.18, person: 'Fran', text: ' in the postal system' },
-  { startTime: 4989.94, person: 'Fran', text: " you don't send" },
-  { startTime: 4991.52, person: 'Fran', text: ' your' },
-  { startTime: 4992.8, person: 'Fran', text: ' your letter' },
-  { startTime: 4993.66, person: 'Fran', text: ' straight away' },
-  { startTime: 4994.42, person: 'Fran', text: ' when you' },
-  { startTime: 4995.26, person: 'Fran', text: ' you put it inside' },
-  { startTime: 4996.9, person: 'Fran', text: ' a letter' },
-  { startTime: 4997.5, person: 'Fran', text: ' right' },
-  { startTime: 4998.38, person: 'Fran', text: ' an envelope' },
-  { startTime: 4999.3, person: 'Fran', text: ' sorry' },
-  { startTime: 5000.38, person: 'Fran', text: ' and then' },
-  { startTime: 5001.16, person: 'Fran', text: ' you send the' },
-  { startTime: 5002.22, person: 'Fran', text: ' you send the envelope' },
-  { startTime: 5003.18, person: 'Fran', text: ' with the letter inside' },
-  { startTime: 5004.12, person: 'Fran', text: ' right' },
-  { startTime: 5005.16, person: 'Fran', text: " so that's pretty much it" },
-  { startTime: 5006.52, person: 'Fran', text: " it's like" },
-  { startTime: 5006.86, person: 'Fran', text: " it's a common" },
-  { startTime: 5007.68, person: 'Fran', text: " it's a common" },
-  { startTime: 5008.6, person: 'Fran', text: ' envelope' },
-  { startTime: 5009.16, person: 'Fran', text: " it's a format" },
-  { startTime: 5010.82, person: 'Fran', text: ' so that' },
-  { startTime: 5011.64, person: 'Fran', text: ' all your messages' },
-  { startTime: 5012.8, person: 'Fran', text: ' across your system' },
-  { startTime: 5013.98, person: 'Fran', text: ' they all follow' },
-  { startTime: 5015.12, person: 'Fran', text: ' the same' },
-  { startTime: 5015.88, person: 'Fran', text: ' structure' },
-  { startTime: 5016.96, person: 'Fran', text: ' when it comes' },
-  { startTime: 5018.14, person: 'Fran', text: ' to' },
-  { startTime: 5019.08, person: 'Fran', text: ' metadata' },
-  { startTime: 5019.38, person: 'Fran', text: ' when it comes to' },
-  { startTime: 5020.36, person: 'Fran', text: ' specific data' },
-  { startTime: 5022.08, person: 'Fran', text: ' then' },
-  { startTime: 5023.16, person: 'Fran', text: ' each one is different' },
-  { startTime: 5024.14, person: 'Fran', text: ' right' },
-  { startTime: 5025.36, person: 'Fran', text: ' and' },
-  { startTime: 5025.96, person: 'Fran', text: ' not even' },
-  { startTime: 5027.16, person: 'Fran', text: ' cloud event' },
-  { startTime: 5027.66, person: 'Fran', text: ' patches on that point' },
-  { startTime: 5029.16, person: 'Fran', text: ' cloud events' },
-  { startTime: 5029.96, person: 'Fran', text: ' has a field that' },
-  { startTime: 5030.96, person: 'Fran', text: " it's called data" },
-  { startTime: 5031.52, person: 'Fran', text: ' and this is free form' },
-  { startTime: 5032.82, person: 'Fran', text: ' you can put there' },
-  { startTime: 5033.5, person: 'Fran', text: ' whatever you want' },
-  { startTime: 5034.77, person: 'Fran', text: ' now' },
-  { startTime: 5036.02, person: 'Fran', text: ' the funny thing' },
-  { startTime: 5036.94, person: 'Fran', text: ' about this' },
-  { startTime: 5037.42, person: 'Fran', text: ' is that' },
-  { startTime: 5038.89, person: 'Fran', text: ' async API' },
-  { startTime: 5039.54, person: 'Fran', text: ' helps you' },
-  { startTime: 5040.02, person: 'Fran', text: ' define' },
-  { startTime: 5041.98, person: 'Fran', text: ' helps you' },
-  { startTime: 5042.9, person: 'Fran', text: ' helps you define' },
-  { startTime: 5044.44, person: 'Fran', text: ' you know' },
-  { startTime: 5045.1, person: 'Fran', text: ' the communication' },
-  { startTime: 5045.66, person: 'Fran', text: ' not the communication' },
-  { startTime: 5046.92, person: 'Fran', text: ' the messages' },
-  { startTime: 5048.16, person: 'Fran', text: ' that your' },
-  { startTime: 5049, person: 'Fran', text: ' your application' },
-  { startTime: 5050.04, person: 'Fran', text: ' that' },
-  { startTime: 5050.52, person: 'Fran', text: ' think about microservices' },
-  { startTime: 5052.36, person: 'Fran', text: ' for instance' },
-  { startTime: 5052.82, person: 'Fran', text: ' your service' },
-  { startTime: 5053.6, person: 'Fran', text: ' is sending' },
-  { startTime: 5054.82, person: 'Fran', text: ' and or receiving' },
-  { startTime: 5055.98, person: 'Fran', text: ' from a topic' },
-  { startTime: 5057.06, person: 'Fran', text: ' from a broker' },
-  { startTime: 5057.86, person: 'Fran', text: ' from so on' },
-  { startTime: 5058.72, person: 'Fran', text: ' right' },
-  { startTime: 5058.9, person: 'Fran', text: ' you define this communication' },
-  { startTime: 5060.22, person: 'Fran', text: ' but when it comes to' },
-  { startTime: 5061.56, person: 'Fran', text: ' defining the message' },
-  { startTime: 5062.36, person: 'Fran', text: ' itself' },
-  { startTime: 5062.8, person: 'Fran', text: ' the message piece' },
-  { startTime: 5063.62, person: 'Fran', text: ' there is a field called' },
-  { startTime: 5065.3, person: 'Fran', text: ' payload' },
-  { startTime: 5065.82, person: 'Fran', text: ' right' },
-  { startTime: 5066.58, person: 'Fran', text: ' and this one' },
-  { startTime: 5067.78, person: 'Fran', text: ' is free form' },
-  { startTime: 5069.52, person: 'Fran', text: " so we don't dictate" },
-  { startTime: 5070.56, person: 'Fran', text: ' how' },
-  { startTime: 5070.96, person: 'Fran', text: ' the payload of a message' },
-  { startTime: 5072.64, person: 'Fran', text: ' should look like' },
-  { startTime: 5073.54, person: 'Fran', text: ' right' },
-  { startTime: 5074.24, person: 'Fran', text: ' this is free form' },
-  { startTime: 5075.22, person: 'Fran', text: ' you can put there' },
-  { startTime: 5075.86, person: 'Fran', text: ' whatever you want' },
-  { startTime: 5076.46, person: 'Fran', text: ' actually in the JSON' },
-  { startTime: 5077.36, person: 'Fran', text: ' schema definition' },
-  { startTime: 5078.04, person: 'Fran', text: ' this is' },
-  { startTime: 5078.52, person: 'Fran', text: ' the value is true' },
-  { startTime: 5079.9, person: 'Fran', text: ' because we always want' },
-  { startTime: 5081.18, person: 'Fran', text: ' to pass the validation' },
-  { startTime: 5082.58, person: 'Fran', text: ' like' },
-  { startTime: 5082.92, person: 'Fran', text: " we don't validate it" },
-  { startTime: 5084, person: 'Fran', text: " it's always" },
-  { startTime: 5084.48, person: 'Fran', text: ' whatever you put there' },
-  { startTime: 5085.4, person: 'Fran', text: " it's valid" },
-  { startTime: 5086.26, person: 'Fran', text: ' right' },
-  { startTime: 5086.52, person: 'Fran', text: " we don't want to get there" },
-  { startTime: 5088.22, person: 'Fran', text: ' so there' },
-  { startTime: 5088.96, person: 'Fran', text: ' in the payload' },
-  { startTime: 5089.62, person: 'Fran', text: ' is where' },
-  { startTime: 5091.66, person: 'Fran', text: ' payload' },
-  { startTime: 5092.18, person: 'Fran', text: ' and all also' },
-  { startTime: 5092.98, person: 'Fran', text: ' headers as well' },
-  { startTime: 5094.7, person: 'Fran', text: ' is where cloud events' },
-  { startTime: 5096.32, person: 'Fran', text: ' belong' },
-  { startTime: 5096.68, person: 'Fran', text: ' right' },
-  { startTime: 5097.3, person: 'Fran', text: ' the envelope' },
-  { startTime: 5098.08, person: 'Fran', text: ' and as the envelope' },
-  { startTime: 5100.04, person: 'Fran', text: ' of the data' },
-  { startTime: 5100.58, person: 'Fran', text: ' so actually' },
-  { startTime: 5102.58, person: 'Fran', text: ' I think there is a pull request' },
-  { startTime: 5104.08, person: 'Fran', text: ' or an issue discussion' },
-  { startTime: 5105.32, person: 'Fran', text: ' right now' },
-  { startTime: 5106.06, person: 'Fran', text: ' in async API' },
-  { startTime: 5108.02, person: 'Fran', text: ' if I recall correctly' },
-  { startTime: 5109.38, person: 'Fran', text: ' something I started' },
-  { startTime: 5110.24, person: 'Fran', text: ' at some point' },
-  { startTime: 5111.44, person: 'Fran', text: ' I want to integrate' },
-  { startTime: 5112.64, person: 'Fran', text: ' the two standards' },
-  { startTime: 5113.48, person: 'Fran', text: ' in a better way' },
-  { startTime: 5114.22, person: 'Fran', text: " like if you're using cloud events" },
-  { startTime: 5116.5, person: 'Fran', text: ' you should be able to somehow' },
-  { startTime: 5119.5, person: 'Fran', text: ' natively' },
-  { startTime: 5119.98, person: 'Fran', text: ' say it in async API' },
-  { startTime: 5122.52, person: 'Fran', text: " I'm using cloud events" },
-  { startTime: 5123.46, person: 'Fran', text: ' the format of the message' },
-  { startTime: 5124.48, person: 'Fran', text: ' is cloud events' },
-  { startTime: 5125.38, person: 'Fran', text: ' because the cloud events' },
-  { startTime: 5126.9, person: 'Fran', text: ' format itself' },
-  { startTime: 5127.6, person: 'Fran', text: " it's then going to tell you" },
-  { startTime: 5128.82, person: 'Fran', text: ' which format your data is in' },
-  { startTime: 5130.92, person: 'Fran', text: ' is it XML?' },
-  { startTime: 5132.2, person: 'Fran', text: ' is it JSON?' },
-  { startTime: 5132.86, person: 'Fran', text: ' is it following certain schema definition?' },
+  { startTime: 4448.21, person: 'Karol', text: ' Take a look at that.' },
+  { startTime: 4450.01, person: 'Karol', text: ' Dig into the topic.' },
   {
-    startTime: 5136,
-    person: 'Fran',
-    text: ' so it will be cool if they could if you can already use both together but it would be cool if it could be blended even better right right so so yeah so that is so just to just to be clear on the article because I did some quick Google searching would that be somewhere around May 2019?'
+    startTime: 4451.49,
+    person: 'Karol',
+    text: " If you're feeling burnt out, if you're feeling depressive and you feel like it's because of your work, it might not have nothing to do with your work."
   },
-  { startTime: 5156.76, person: 'Fran', text: ' but the thing' },
-  { startTime: 5157.62, person: 'Fran', text: ' I have to update' },
-  { startTime: 5159.3, person: 'Fran', text: ' this article' },
-  { startTime: 5160.12, person: 'Fran', text: ' at some point' },
-  { startTime: 5160.7, person: 'Fran', text: ' is not exactly' },
-  { startTime: 5162.68, person: 'Fran', text: " how it's done" },
-  { startTime: 5163.72, person: 'Fran', text: ' anymore' },
-  { startTime: 5164.16, person: 'Fran', text: ' yeah' },
-  { startTime: 5165.06, person: 'Fran', text: ' so' },
-  { startTime: 5165.44, person: 'Fran', text: ' but you see' },
-  { startTime: 5166.92, person: 'Fran', text: ' like six years now' },
-  { startTime: 5168.42, person: 'Fran', text: ' and I was already' },
-  { startTime: 5169.14, person: 'Fran', text: ' recommending this' },
-  { startTime: 5169.98, person: 'Fran', text: ' yeah' },
-  { startTime: 5170.78, person: 'Karol', text: " so that's the" },
-  { startTime: 5172.4, person: 'Karol', text: ' original article' },
-  { startTime: 5173.38, person: 'Karol', text: ' to be updated' },
-  { startTime: 5175.82, person: 'Karol', text: ' I see the' },
-  { startTime: 5177.1, person: 'Karol', text: ' different sheaters' },
-  { startTime: 5178, person: 'Karol', text: ' in the description' },
-  { startTime: 5178.7, person: 'Karol', text: ' is there' },
-  { startTime: 5179.26, person: 'Karol', text: ' as you' },
-  { startTime: 5180.4, person: 'Karol', text: ' as you just said it' },
-  { startTime: 5181.52, person: 'Karol', text: ' maybe there would be' },
-  { startTime: 5183.18, person: 'Karol', text: ' some' },
-  { startTime: 5185.04, person: 'Karol', text: ' discrepancies over the past' },
-  { startTime: 5186.46, person: 'Karol', text: ' six years' },
-  { startTime: 5187.08, person: 'Karol', text: ' yeah' },
-  { startTime: 5187.64, person: 'Karol', text: ' because things have changed' },
-  { startTime: 5188.5, person: 'Karol', text: ' but' },
-  { startTime: 5189.8, person: 'Fran', text: " that's pretty much it" },
-  { startTime: 5190.92, person: 'Fran', text: ' at this point' },
-  { startTime: 5191.52, person: 'Fran', text: ' I was exploring' },
-  { startTime: 5192.34, person: 'Fran', text: ' and telling people' },
-  { startTime: 5193.16, person: 'Fran', text: ' that different ways' },
-  { startTime: 5194.08, person: 'Fran', text: ' you could' },
-  { startTime: 5194.6, person: 'Fran', text: ' use both' },
-  { startTime: 5196.58, person: 'Fran', text: ' different ways to use both' },
-  { startTime: 5197.98, person: 'Fran', text: ' now' },
-  { startTime: 5199.1, person: 'Fran', text: ' there are' },
-  { startTime: 5199.84, person: 'Fran', text: " let's say" },
-  { startTime: 5200.22, person: 'Fran', text: ' best practises' },
-  { startTime: 5200.88, person: 'Fran', text: ' for using both' },
-  { startTime: 5202, person: 'Fran', text: ' that are not describing' },
-  { startTime: 5204, person: 'Fran', text: ' this article' },
-  { startTime: 5204.56, person: 'Fran', text: ' because now in version' },
-  { startTime: 5205.74, person: 'Fran', text: ' three of the spec' },
-  { startTime: 5206.58, person: 'Fran', text: ' things have changed' },
-  { startTime: 5207.58, person: 'Fran', text: ' a little bit' },
-  { startTime: 5208.14, person: 'Fran', text: " so now it's easier" },
-  { startTime: 5210.38, person: 'Fran', text: ' we have trades' },
-  { startTime: 5211.3, person: 'Fran', text: ' I think we had trades' },
-  { startTime: 5212.7, person: 'Fran', text: ' at that point' },
-  { startTime: 5214.04, person: 'Fran', text: ' but there are other ways' },
-  { startTime: 5215.04, person: 'Fran', text: ' to do it' },
-  { startTime: 5215.74, person: 'Fran', text: ' honestly' },
-  { startTime: 5216.32, person: 'Fran', text: ' from the top of my mind' },
-  { startTime: 5217.98, person: 'Fran', text: " I don't recall how" },
-  { startTime: 5218.72, person: 'Fran', text: ' people are doing it' },
-  { startTime: 5219.52, person: 'Fran', text: ' right now' },
-  { startTime: 5220.26, person: 'Fran', text: ' but there are' },
-  { startTime: 5221.92, person: 'Fran', text: " let's say" },
-  { startTime: 5222.22, person: 'Fran', text: ' best practises' },
-  { startTime: 5222.92, person: 'Fran', text: ' so' },
-  { startTime: 5227.62, person: 'Fran', text: " it's not like that" },
-  { startTime: 5229.4, person: 'Fran', text: ' like I described' },
-  { startTime: 5230.3, person: 'Fran', text: ' in this article' },
-  { startTime: 5232.16, person: 'Fran', text: ' yeah, but' },
-  { startTime: 5233.32, person: 'Karol', text: ' you know' },
-  { startTime: 5233.88, person: 'Karol', text: ' things change' },
-  { startTime: 5234.54, person: 'Karol', text: ' article has six years' },
-  { startTime: 5235.84, person: 'Karol', text: " that's only obvious" },
-  { startTime: 5237.46, person: 'Karol', text: ' that' },
-  { startTime: 5237.84, person: 'Karol', text: ' this will' },
-  { startTime: 5238.88, person: 'Karol', text: ' no longer be' },
-  { startTime: 5240.04, person: 'Karol', text: ' fully up to date' },
-  { startTime: 5241.4, person: 'Karol', text: ' so' },
-  { startTime: 5241.78, person: 'Karol', text: ' yeah' },
-  { startTime: 5242.74, person: 'Karol', text: ' it will require' },
-  { startTime: 5244.04, person: 'Karol', text: ' a little bit of a' },
-  { startTime: 5246.34, person: 'Karol', text: ' fixed nup' },
-  { startTime: 5247.92, person: 'Karol', text: ' in that sense' },
-  { startTime: 5250.12, person: 'Karol', text: ' all right' },
-  { startTime: 5251.92, person: 'Karol', text: " let's see" },
-  { startTime: 5252.6, person: 'Karol', text: ' there were some' },
-  { startTime: 5253.24, person: 'Karol', text: ' I think' },
-  { startTime: 5254.1, person: 'Karol', text: ' oh, quite long questions' },
-  { startTime: 5255.6, person: 'Karol', text: ' from' },
-  { startTime: 5255.94, person: 'Karol', text: ' Maxim' },
-  { startTime: 5258.16, person: 'Karol', text: ' really a packed one' },
-  { startTime: 5261.54, person: 'Karol', text: ' best practises' },
-  { startTime: 5262.88, person: 'Karol', text: ' for designing' },
-  { startTime: 5264.1, person: 'Karol', text: ' data models' },
-  { startTime: 5264.88, person: 'Karol', text: ' for messages' },
-  { startTime: 5266.86, person: 'Karol', text: ' hmm' },
-  { startTime: 5267.66, person: 'Karol', text: " that's a" },
-  { startTime: 5268.44, person: 'Karol', text: ' canonical data model' },
-  { startTime: 5269.98, person: 'Karol', text: " that's packed" },
-  { startTime: 5272.86, person: 'Karol', text: ' my personal take is' },
-  { startTime: 5274.52, person: 'Karol', text: " I'm not a fan" },
-  { startTime: 5275.24, person: 'Karol', text: ' of' },
-  { startTime: 5275.72, person: 'Karol', text: ' canonical data' },
-  { startTime: 5277.04, person: 'Karol', text: ' models' },
-  { startTime: 5277.54, person: 'Karol', text: ' never' },
-  { startTime: 5278.5, person: 'Karol', text: ' will be' },
-  { startTime: 5279.34, person: 'Karol', text: ' I seen that happen' },
-  { startTime: 5281.92, person: 'Karol', text: ' the larger' },
-  { startTime: 5282.88, person: 'Karol', text: ' the org' },
-  { startTime: 5283.54, person: 'Karol', text: ' the worse' },
-  { startTime: 5284.7, person: 'Karol', text: ' it gets' },
-  { startTime: 5285.2, person: 'Karol', text: ' in canonical data' },
-  { startTime: 5286.28, person: 'Karol', text: ' models' },
-  { startTime: 5286.78, person: 'Fran', text: ' or if you do it' },
-  { startTime: 5288.46, person: 'Fran', text: ' you do it as an afterthought' },
-  { startTime: 5289.74, person: 'Fran', text: ' so' },
-  { startTime: 5290.59, person: 'Fran', text: " after you've been" },
-  { startTime: 5292.44, person: 'Fran', text: " after you've been" },
-  { startTime: 5293.84, person: 'Fran', text: " having let's say" },
-  { startTime: 5295.92, person: 'Fran', text: ' probably hundreds' },
-  { startTime: 5296.96, person: 'Fran', text: ' or thousands of' },
-  { startTime: 5298.8, person: 'Fran', text: ' message' },
-  { startTime: 5299.46, person: 'Fran', text: ' types' },
-  { startTime: 5300.34, person: 'Fran', text: ' and you notice a pattern' },
-  { startTime: 5304.05, person: 'Fran', text: ' maybe you standardise that' },
-  { startTime: 5305.65, person: 'Fran', text: ' because you make it a pattern' },
-  { startTime: 5307.33, person: 'Fran', text: " because it's already a pattern" },
-  { startTime: 5308.37, person: 'Fran', text: ' anyways' },
-  { startTime: 5308.83, person: 'Fran', text: ' yeah' },
-  { startTime: 5309.39, person: 'Fran', text: ' so cool' },
-  { startTime: 5310.15, person: 'Fran', text: ' in that case' },
-  { startTime: 5310.99, person: 'Fran', text: ' cool but if you do it up front' },
-  { startTime: 5312.97, person: 'Fran', text: " you're probably going to be" },
-  { startTime: 5314.35, person: 'Fran', text: ' restricting yourself' },
-  { startTime: 5316.27, person: 'Fran', text: ' and' },
-  { startTime: 5316.93, person: 'Fran', text: ' unnecessarily' },
-  { startTime: 5318.84, person: 'Fran', text: ' well' },
-  { startTime: 5319.17, person: 'Fran', text: " that's" },
-  { startTime: 5319.75, person: 'Karol', text: " that's where I am a fan" },
-  { startTime: 5321.45, person: 'Karol', text: ' of domain driven' },
-  { startTime: 5322.27, person: 'Karol', text: ' design and bounded' },
-  { startTime: 5323.13, person: 'Karol', text: ' contexts' },
-  { startTime: 5323.79, person: 'Karol', text: ' with an' },
-  { startTime: 5325.03, person: 'Karol', text: ' interoperability' },
-  { startTime: 5326.03, person: 'Karol', text: ' topics' },
-  { startTime: 5326.41, person: 'Karol', text: ' exactly' },
-  { startTime: 5327.05, person: 'Karol', text: ' because then we can define' },
-  { startTime: 5329.17, person: 'Karol', text: ' each object' },
-  { startTime: 5330.21, person: 'Karol', text: ' several times' },
-  { startTime: 5331.37, person: 'Karol', text: ' for each bounded' },
-  { startTime: 5332.49, person: 'Karol', text: ' context' },
-  { startTime: 5333.01, person: 'Karol', text: ' or each domain' },
-  { startTime: 5333.89, person: 'Karol', text: ' separately' },
-  { startTime: 5335.08, person: 'Karol', text: ' so a definition of' },
-  { startTime: 5336.05, person: 'Karol', text: ' a customer' },
-  { startTime: 5336.57, person: 'Karol', text: ' in terms of a' },
-  { startTime: 5338.04, person: 'Karol', text: ' customer domain' },
-  { startTime: 5338.71, person: 'Karol', text: ' will be a different' },
-  { startTime: 5339.45, person: 'Karol', text: ' customer' },
-  { startTime: 5340.01, person: 'Karol', text: ' defined in the order' },
-  { startTime: 5341.55, person: 'Karol', text: ' domain' },
-  { startTime: 5342.03, person: 'Karol', text: ' different attributes' },
-  { startTime: 5343.47, person: 'Karol', text: " even that's still" },
-  { startTime: 5344.53, person: 'Karol', text: ' the same' },
-  { startTime: 5345.86, person: 'Karol', text: ' core object' },
-  { startTime: 5346.83, person: 'Karol', text: ' core' },
-  { startTime: 5348.11, person: 'Fran', text: ' data' },
-  { startTime: 5348.79, person: 'Fran', text: " it's still" },
-  { startTime: 5349.51, person: 'Fran', text: " it's still a customer" },
-  { startTime: 5350.47, person: 'Fran', text: " yeah but it's" },
-  { startTime: 5351.27, person: 'Fran', text: ' a different representation' },
-  { startTime: 5352.23, person: 'Fran', text: ' of the' },
-  { startTime: 5352.77, person: 'Fran', text: ' of the data' },
-  { startTime: 5353.77, person: 'Karol', text: ' yeah different' },
-  { startTime: 5354.49, person: 'Karol', text: ' context of usage' },
-  { startTime: 5355.47, person: 'Karol', text: ' which' },
-  { startTime: 5355.91, person: 'Fran', text: ' I will link it to the' },
-  { startTime: 5358.63, person: 'Fran', text: ' previous question' },
-  { startTime: 5359.29, person: 'Fran', text: ' about cloud' },
-  { startTime: 5360.07, person: 'Fran', text: ' events' },
-  { startTime: 5360.51, person: 'Fran', text: " it's needed" },
-  { startTime: 5361.47, person: 'Fran', text: " so I'm seeing" },
-  { startTime: 5363.25, person: 'Fran', text: ' many people' },
-  { startTime: 5364.97, person: 'Fran', text: ' define their canonical' },
-  { startTime: 5366.41, person: 'Fran', text: ' data models' },
-  { startTime: 5367.25, person: 'Fran', text: ' using cloud' },
-  { startTime: 5368.47, person: 'Fran', text: ' events' },
-  { startTime: 5369.13, person: 'Fran', text: ' as well' },
-  { startTime: 5369.69, person: 'Fran', text: ' so' },
-  { startTime: 5370.31, person: 'Fran', text: ' because cloud' },
-  { startTime: 5371.15, person: 'Fran', text: ' events is' },
-  { startTime: 5371.55, person: 'Fran', text: ' extensible' },
-  { startTime: 5372.11, person: 'Fran', text: ' so you can add' },
-  { startTime: 5373.29, person: 'Fran', text: ' your fields' },
-  { startTime: 5374.01, person: 'Fran', text: ' your own fields' },
-  { startTime: 5374.71, person: 'Fran', text: ' whatever you want' },
-  { startTime: 5376.01, person: 'Fran', text: ' so' },
-  { startTime: 5376.93, person: 'Fran', text: ' you just have to respect' },
-  { startTime: 5378.13, person: 'Fran', text: ' certain fields' },
-  { startTime: 5378.83, person: 'Fran', text: ' that are mandatory' },
-  { startTime: 5379.45, person: 'Fran', text: ' I think' },
-  { startTime: 5380.09, person: 'Fran', text: ' maybe one or two' },
-  { startTime: 5381.25, person: 'Fran', text: ' are mandatory' },
-  { startTime: 5381.93, person: 'Fran', text: ' if I recall correctly' },
-  { startTime: 5383.03, person: 'Fran', text: ' the rest are just' },
-  { startTime: 5384.41, person: 'Fran', text: ' like optional' },
-  { startTime: 5384.99, person: 'Fran', text: ' and you can add more' },
-  { startTime: 5386.13, person: 'Fran', text: ' of your own' },
-  { startTime: 5387.81, person: 'Fran', text: ' so' },
-  { startTime: 5389.67, person: 'Fran', text: ' so some people are' },
-  { startTime: 5390.79, person: 'Fran', text: ' opting for that' },
-  { startTime: 5392.07, person: 'Fran', text: " it's not exactly" },
-  { startTime: 5393.25, person: 'Fran', text: ' a canonical data model' },
-  { startTime: 5394.21, person: 'Fran', text: " but it's" },
-  { startTime: 5394.91, person: 'Fran', text: ' it gets close' },
-  { startTime: 5396.43, person: 'Karol', text: ' yeah' },
-  { startTime: 5398.77, person: 'Karol', text: ' and a twist' },
-  { startTime: 5399.59, person: 'Karol', text: ' which is a lot shorter' },
-  { startTime: 5401.05, person: 'Karol', text: ' of a question' },
-  { startTime: 5403.21, person: 'Karol', text: ' sharing resources' },
-  { startTime: 5404.41, person: 'Karol', text: ' data models' },
-  { startTime: 5405.55, person: 'Karol', text: ' between' },
-  { startTime: 5406.17, person: 'Karol', text: ' open API' },
-  { startTime: 5407.01, person: 'Karol', text: ' spec' },
-  { startTime: 5407.39, person: 'Karol', text: ' and async API' },
-  { startTime: 5409.51, person: 'Karol', text: ' ooh' },
-  { startTime: 5410.27, person: 'Fran', text: ' many people do that' },
-  { startTime: 5411.43, person: 'Fran', text: ' yeah' },
-  { startTime: 5412.23, person: 'Karol', text: " I think that's" },
-  { startTime: 5413.29, person: 'Karol', text: ' in general' },
-  { startTime: 5414.05, person: 'Karol', text: " that's not a bad idea" },
-  { startTime: 5415.13, person: 'Karol', text: " especially if you're" },
-  { startTime: 5416.47, person: 'Karol', text: " if you're having" },
-  { startTime: 5417.31, person: 'Karol', text: ' a' },
-  { startTime: 5417.91, person: 'Karol', text: ' integration platform' },
-  { startTime: 5420.07, person: 'Karol', text: ' and especially' },
-  { startTime: 5421.73, person: 'Karol', text: ' in API-led architecture' },
-  { startTime: 5423.07, person: 'Karol', text: ' where you' },
-  { startTime: 5423.57, person: 'Karol', text: ' can actually do' },
-  { startTime: 5424.53, person: 'Karol', text: ' the domain partitioning' },
-  { startTime: 5426.03, person: 'Karol', text: ' and' },
-  { startTime: 5427.37, person: 'Karol', text: ' some of your' },
-  { startTime: 5428.23, person: 'Karol', text: ' services' },
-  { startTime: 5428.81, person: 'Karol', text: ' are' },
-  { startTime: 5429.57, person: 'Karol', text: ' at the same time' },
-  { startTime: 5430.91, person: 'Karol', text: ' synchronous' },
-  { startTime: 5431.61, person: 'Karol', text: ' and asynchronous' },
-  { startTime: 5432.37, person: 'Karol', text: ' because you have' },
-  { startTime: 5433.29, person: 'Karol', text: ' a lot of' },
-  { startTime: 5433.87, person: 'Karol', text: ' orchestration' },
-  { startTime: 5434.53, person: 'Karol', text: ' and' },
-  { startTime: 5436.35, person: 'Karol', text: ' different things' },
-  { startTime: 5437.17, person: 'Karol', text: ' are happening' },
-  { startTime: 5437.69, person: 'Karol', text: ' within the' },
-  { startTime: 5440.11, person: 'Karol', text: ' composition layer' },
-  { startTime: 5441.71, person: 'Karol', text: ' yeah' },
-  { startTime: 5441.99, person: 'Karol', text: ' that means that' },
-  { startTime: 5442.71, person: 'Karol', text: ' that sharing' },
-  { startTime: 5443.81, person: 'Karol', text: ' would be' },
-  { startTime: 5444.43, person: 'Karol', text: ' actually a very good thing' },
-  { startTime: 5446.13, person: 'Fran', text: ' actually' },
-  { startTime: 5446.71, person: 'Fran', text: ' I actually recommend it' },
-  { startTime: 5448.75, person: 'Fran', text: ' because' },
-  { startTime: 5449.01, person: 'Fran', text: ' and actually the reason' },
-  { startTime: 5450.15, person: 'Fran', text: ' why async API' },
-  { startTime: 5451.05, person: 'Fran', text: ' is so similar' },
-  { startTime: 5451.83, person: 'Fran', text: " it's still so similar" },
-  { startTime: 5453.07, person: 'Fran', text: ' to open API' },
-  { startTime: 5454.57, person: 'Fran', text: " it's because we" },
-  { startTime: 5455.71, person: 'Fran', text: ' we want to be' },
-  { startTime: 5456.75, person: 'Fran', text: ' both of them' },
-  { startTime: 5457.85, person: 'Fran', text: ' as interpretable' },
-  { startTime: 5458.61, person: 'Fran', text: ' as possible' },
-  { startTime: 5459.11, person: 'Fran', text: ' to be' },
-  { startTime: 5460.11, person: 'Fran', text: ' as a fun fact' },
-  { startTime: 5461.37, person: 'Fran', text: ' while we were' },
-  { startTime: 5463.03, person: 'Fran', text: ' designing version' },
-  { startTime: 5463.91, person: 'Fran', text: ' three of the spec' },
-  { startTime: 5464.73, person: 'Fran', text: ' that is' },
-  { startTime: 5465.11, person: 'Fran', text: " it's a current version" },
-  { startTime: 5466.33, person: 'Fran', text: ' of async API' },
-  { startTime: 5468.59, person: 'Fran', text: ' we were even' },
-  { startTime: 5469.91, person: 'Fran', text: ' considering' },
-  { startTime: 5471.29, person: 'Fran', text: ' if there could be' },
-  { startTime: 5472.47, person: 'Fran', text: ' a way' },
-  { startTime: 5473.93, person: 'Fran', text: ' to make it' },
-  { startTime: 5476.37, person: 'Fran', text: ' like' },
-  { startTime: 5479.29, person: 'Fran', text: ' not the same as' },
-  { startTime: 5480.75, person: 'Fran', text: ' open API' },
-  { startTime: 5482.01, person: 'Fran', text: ' because we were' },
-  { startTime: 5483.03, person: 'Fran', text: ' already convinced that' },
-  { startTime: 5483.91, person: 'Fran', text: ' we had to change' },
-  { startTime: 5484.77, person: 'Fran', text: ' certain things' },
-  { startTime: 5485.99, person: 'Fran', text: ' in the spec' },
-  { startTime: 5487.11, person: 'Fran', text: ' but to' },
-  { startTime: 5487.91, person: 'Fran', text: ' in coordination' },
-  { startTime: 5488.77, person: 'Fran', text: ' with open API' },
-  { startTime: 5489.57, person: 'Fran', text: " which we're always" },
-  { startTime: 5490.91, person: 'Fran', text: ' in contact' },
-  { startTime: 5491.41, person: 'Fran', text: ' in constant' },
-  { startTime: 5493.35, person: 'Fran', text: ' attach' },
-  { startTime: 5493.91, person: 'Fran', text: ' the two communities' },
-  { startTime: 5495.39, person: 'Fran', text: ' right' },
-  { startTime: 5495.79, person: 'Fran', text: ' so' },
-  { startTime: 5497.53, person: 'Fran', text: ' to tell them' },
-  { startTime: 5498.57, person: 'Fran', text: ' that hey' },
-  { startTime: 5498.87, person: 'Fran', text: " we're going in" },
-  { startTime: 5499.55, person: 'Fran', text: ' this direction' },
-  { startTime: 5500.15, person: 'Fran', text: ' because of this' },
-  { startTime: 5501.11, person: 'Fran', text: ' this and that' },
-  { startTime: 5502.13, person: 'Fran', text: " we're putting" },
-  { startTime: 5502.93, person: 'Fran', text: ' operations on the' },
-  { startTime: 5504.15, person: 'Fran', text: ' root level of the spec' },
-  { startTime: 5505.39, person: 'Fran', text: ' instead of' },
-  { startTime: 5506.21, person: 'Fran', text: ' inside the' },
-  { startTime: 5507.89, person: 'Fran', text: ' the channels' },
-  { startTime: 5508.49, person: 'Fran', text: ' or' },
-  { startTime: 5508.85, person: 'Fran', text: ' like for instance' },
-  { startTime: 5510.23, person: 'Fran', text: " if you're familiar" },
-  { startTime: 5511.39, person: 'Fran', text: ' with open API' },
-  { startTime: 5511.99, person: 'Fran', text: ' they have the' },
-  { startTime: 5512.59, person: 'Fran', text: ' operations get put' },
-  { startTime: 5513.57, person: 'Fran', text: ' pause and so on' },
-  { startTime: 5514.45, person: 'Fran', text: ' inside the path' },
-  { startTime: 5515.45, person: 'Fran', text: ' right' },
-  { startTime: 5516.03, person: 'Karol', text: ' yeah' },
-  { startTime: 5516.57, person: 'Fran', text: ' instead of at the root level' },
-  { startTime: 5518.11, person: 'Fran', text: ' but there were some' },
-  { startTime: 5518.95, person: 'Fran', text: ' already some people' },
-  { startTime: 5520.45, person: 'Fran', text: ' in the open API' },
-  { startTime: 5521.21, person: 'Fran', text: ' community saying' },
-  { startTime: 5521.87, person: 'Fran', text: ' we should move' },
-  { startTime: 5522.85, person: 'Fran', text: ' the operations' },
-  { startTime: 5523.39, person: 'Fran', text: ' to the root level' },
-  { startTime: 5524.29, person: 'Fran', text: ' and then link them' },
-  { startTime: 5525.81, person: 'Fran', text: ' with dollar ref' },
-  { startTime: 5526.79, person: 'Fran', text: ' and so on' },
-  { startTime: 5527.43, person: 'Fran', text: ' right so' },
-  { startTime: 5527.81, person: 'Fran', text: ' instead of' },
-  { startTime: 5529.89, person: 'Fran', text: ' instead of having' },
-  { startTime: 5531.07, person: 'Fran', text: ' them nested' },
-  { startTime: 5532.11, person: 'Fran', text: ' inside the path' },
-  { startTime: 5532.89, person: 'Fran', text: ' and so on' },
-  { startTime: 5533.79, person: 'Fran', text: " that's the direction" },
-  { startTime: 5534.53, person: 'Fran', text: ' we took for async API' },
-  { startTime: 5535.65, person: 'Fran', text: ' so operations are now' },
-  { startTime: 5536.71, person: 'Fran', text: ' in the root level' },
-  { startTime: 5538.19, person: 'Fran', text: ' as a' },
-  { startTime: 5539.03, person: 'Fran', text: ' as a first' },
-  { startTime: 5539.47, person: 'Fran', text: ' first class' },
-  { startTime: 5540.65, person: 'Fran', text: ' citizens' },
-  { startTime: 5540.93, person: 'Fran', text: ' people call it' },
-  { startTime: 5542.23, person: 'Fran', text: ' right' },
-  { startTime: 5543.17, person: 'Fran', text: ' and we were thinking' },
-  { startTime: 5544.51, person: 'Fran', text: ' if we' },
-  { startTime: 5545.05, person: 'Fran', text: ' if we managed to' },
-  { startTime: 5546.07, person: 'Fran', text: ' convince the' },
-  { startTime: 5546.61, person: 'Fran', text: ' open API' },
-  { startTime: 5547.27, person: 'Fran', text: ' faults to do the same thing' },
-  { startTime: 5548.61, person: 'Fran', text: ' at some point' },
-  { startTime: 5550.47, person: 'Fran', text: ' we could even' },
-  { startTime: 5551.35, person: 'Fran', text: ' if not converge' },
-  { startTime: 5552.31, person: 'Fran', text: ' into a single spec' },
-  { startTime: 5553.33, person: 'Fran', text: ' we could build really' },
-  { startTime: 5555.47, person: 'Fran', text: ' close' },
-  { startTime: 5556.93, person: 'Fran', text: ' really really close' },
-  { startTime: 5558.31, person: 'Fran', text: ' right' },
-  { startTime: 5559.07, person: 'Karol', text: ' right' },
-  { startTime: 5560.31, person: 'Fran', text: ' but' },
-  { startTime: 5561.81, person: 'Karol', text: ' that is' },
-  { startTime: 5562.61, person: 'Fran', text: ' this is a' },
-  { startTime: 5563.47, person: 'Fran', text: ' philosophical' },
-  { startTime: 5564.15, person: 'Karol', text: ' philosophical problem' },
-  { startTime: 5565.67, person: 'Karol', text: ' because' },
-  { startTime: 5566.31, person: 'Karol', text: ' if you look at' },
-  { startTime: 5568.19, person: 'Karol', text: ' the' },
-  { startTime: 5569.67, person: 'Karol', text: ' days of saw' },
-  { startTime: 5570.83, person: 'Karol', text: ' and soap services' },
-  { startTime: 5573.09, person: 'Karol', text: ' the' },
-  { startTime: 5574.83, person: 'Karol', text: ' soap had' },
-  { startTime: 5575.97, person: 'Karol', text: ' a very different' },
-  { startTime: 5576.65, person: 'Karol', text: ' philosophy because' },
-  { startTime: 5577.75, person: 'Karol', text: ' soap was' },
-  { startTime: 5578.97, person: 'Karol', text: ' primarily used' },
-  { startTime: 5580.05, person: 'Karol', text: ' to build' },
-  { startTime: 5580.57, person: 'Karol', text: ' business services' },
-  { startTime: 5581.91, person: 'Karol', text: ' so they' },
-  { startTime: 5583.37, person: 'Karol', text: " they didn't" },
-  { startTime: 5584.59, person: 'Karol', text: ' represent an' },
-  { startTime: 5585.21, person: 'Karol', text: ' object' },
-  { startTime: 5585.45, person: 'Karol', text: ' they represent a' },
-  { startTime: 5586.45, person: 'Karol', text: ' function' },
-  { startTime: 5587.67, person: 'Karol', text: " while if we're" },
-  { startTime: 5588.63, person: 'Karol', text: ' looking at' },
-  { startTime: 5589.21, person: 'Karol', text: ' rest' },
-  { startTime: 5589.77, person: 'Karol', text: ' rest by nature' },
-  { startTime: 5591.41, person: 'Karol', text: ' is supposed to' },
-  { startTime: 5592.97, person: 'Karol', text: ' represent an' },
-  { startTime: 5594.07, person: 'Karol', text: ' object and' },
-  { startTime: 5594.69, person: 'Karol', text: ' functions on' },
-  { startTime: 5595.45, person: 'Karol', text: ' that specific' },
-  { startTime: 5596.11, person: 'Karol', text: ' object' },
-  { startTime: 5596.59, person: 'Karol', text: ' so' },
-  { startTime: 5598.87, person: 'Karol', text: ' moving' },
-  { startTime: 5599.75, person: 'Karol', text: ' the' },
-  { startTime: 5600.39, person: 'Karol', text: ' operations down' },
-  { startTime: 5601.47, person: 'Karol', text: ' to the' },
-  { startTime: 5602.55, person: 'Karol', text: ' to that level' },
-  { startTime: 5603.71, person: 'Karol', text: ' would' },
-  { startTime: 5604.79, person: 'Karol', text: ' shift back to' },
-  { startTime: 5606.11, person: 'Karol', text: ' kind of' },
-  { startTime: 5606.97, person: 'Karol', text: ' shift back to' },
-  { startTime: 5607.89, person: 'Karol', text: ' business services' },
-  { startTime: 5609.41, person: 'Karol', text: ' rather than' },
-  { startTime: 5610.59, person: 'Karol', text: ' representing' },
-  { startTime: 5611.07, person: 'Karol', text: ' objects' },
-  { startTime: 5611.69, person: 'Karol', text: ' and' },
-  { startTime: 5612.83, person: 'Karol', text: ' and that' },
-  { startTime: 5613.35, person: 'Karol', text: ' philosophically' },
-  { startTime: 5614.27, person: 'Karol', text: ' might' },
-  { startTime: 5615.87, person: 'Karol', text: ' rub' },
-  { startTime: 5617.75, person: 'Karol', text: ' rub people' },
-  { startTime: 5618.85, person: 'Karol', text: ' the wrong way' },
-  { startTime: 5619.71, person: 'Karol', text: " when we're" },
-  { startTime: 5620.75, person: 'Karol', text: ' looking at' },
-  { startTime: 5621.41, person: 'Karol', text: ' these kind of' },
-  { startTime: 5622.09, person: 'Karol', text: ' services' },
-  { startTime: 5622.59, person: 'Karol', text: ' this would be' },
-  { startTime: 5624.27, person: 'Karol', text: ' against' },
-  { startTime: 5624.71, person: 'Karol', text: ' rest principles right' },
-  { startTime: 5626.37, person: 'Fran', text: " that's my point" },
-  { startTime: 5627.39, person: 'Fran', text: ' so open API' },
-  { startTime: 5628.05, person: 'Fran', text: ' is' },
-  { startTime: 5628.69, person: 'Fran', text: ' not' },
-  { startTime: 5629.95, person: 'Fran', text: ' a' },
-  { startTime: 5630.79, person: 'Fran', text: ' spec for' },
-  { startTime: 5631.37, person: 'Fran', text: ' rest' },
-  { startTime: 5631.73, person: 'Fran', text: ' APIs' },
-  { startTime: 5632.49, person: 'Fran', text: ' it is' },
-  { startTime: 5633.85, person: 'Karol', text: ' very true' },
-  { startTime: 5634.39, person: 'Karol', text: ' but the' },
-  { startTime: 5635.31, person: 'Karol', text: ' underlying' },
-  { startTime: 5635.73, person: 'Karol', text: ' philosophy is' },
-  { startTime: 5636.81, person: 'Karol', text: ' coming from' },
-  { startTime: 5638.41, person: 'Karol', text: ' the rest' },
-  { startTime: 5639.41, person: 'Karol', text: ' specific' },
-  { startTime: 5639.83, person: 'Karol', text: ' yes' },
-  { startTime: 5640.39, person: 'Fran', text: ' I will call it' },
-  { startTime: 5642.35, person: 'Fran', text: " like it's" },
-  { startTime: 5642.75, person: 'Fran', text: ' for' },
-  { startTime: 5642.93, person: 'Fran', text: ' HTTP APIs' },
-  { startTime: 5644.03, person: 'Fran', text: ' in most' },
-  { startTime: 5646.35, person: 'Fran', text: ' in most cases' },
-  { startTime: 5647.59, person: 'Fran', text: ' I will say' },
-  { startTime: 5648.07, person: 'Fran', text: " it's a" },
-  { startTime: 5648.59, person: 'Fran', text: ' resource-based' },
-  { startTime: 5649.43, person: 'Fran', text: ' HTTP APIs' },
-  { startTime: 5650.75, person: 'Fran', text: ' and some' },
-  { startTime: 5652.51, person: 'Fran', text: ' cases' },
-  { startTime: 5652.89, person: 'Fran', text: " it's RPC" },
-  { startTime: 5653.43, person: 'Fran', text: ' APIs' },
-  { startTime: 5655.55, person: 'Fran', text: ' like you will do with GraphQL' },
-  { startTime: 5657.47, person: 'Fran', text: ' but instead of GraphQL' },
-  { startTime: 5658.63, person: 'Fran', text: ' you use your own' },
-  { startTime: 5659.49, person: 'Fran', text: ' syntax' },
-  { startTime: 5661.01, person: 'Fran', text: ' with endpoints' },
-  { startTime: 5662.01, person: 'Fran', text: ' containing the action' },
-  { startTime: 5663.25, person: 'Fran', text: ' and so on' },
-  { startTime: 5663.93, person: 'Fran', text: ' which is pretty common as well' },
-  { startTime: 5666.87, person: 'Karol', text: ' but that would be a very interesting' },
-  { startTime: 5668.49, person: 'Karol', text: ' evolution to actually' },
-  { startTime: 5670.87, person: 'Karol', text: ' shift back to that' },
-  { startTime: 5672.29, person: 'Fran', text: ' my point with this here is that' },
-  { startTime: 5674.19, person: 'Fran', text: ' we are' },
-  { startTime: 5674.75, person: 'Fran', text: " we've been trying" },
-  { startTime: 5675.77, person: 'Fran', text: " we're not trying right now" },
-  { startTime: 5676.97, person: 'Fran', text: " but we've been trying" },
-  { startTime: 5677.93, person: 'Fran', text: ' the thing is that' },
-  { startTime: 5679.37, person: 'Fran', text: ' this is a little bit like forcing' },
-  { startTime: 5681.07, person: 'Fran', text: ' the things' },
-  { startTime: 5682.09, person: 'Fran', text: ' to' },
-  { startTime: 5682.63, person: 'Fran', text: ' like to match together' },
-  { startTime: 5685.07, person: 'Fran', text: ' when they are not the same thing right' },
-  { startTime: 5686.93, person: 'Fran', text: " and it's not even representing the same" },
-  { startTime: 5688.75, person: 'Fran', text: ' kind of world' },
-  { startTime: 5690.01, person: 'Fran', text: " so it's a different thing altogether" },
-  { startTime: 5691.99, person: 'Fran', text: ' now' },
-  { startTime: 5693.75, person: 'Fran', text: ' whatever can be reused like schema' },
-  { startTime: 5696.25, person: 'Fran', text: ' definitions and so on' },
-  { startTime: 5697.71, person: 'Fran', text: " they're still the same" },
-  { startTime: 5699.21, person: 'Fran', text: ' mostly the same' },
-  { startTime: 5700.37, person: 'Fran', text: ' actually not the same' },
-  { startTime: 5702.15, person: 'Fran', text: ' they you can use' },
-  { startTime: 5703.29, person: 'Fran', text: ' so OpenAPI uses the' },
-  { startTime: 5705.69, person: 'Fran', text: ' the latest' },
-  { startTime: 5706.41, person: 'Fran', text: ' schema draft' },
-  { startTime: 5709.81, person: 'Fran', text: ' but the most' },
-  { startTime: 5710.95, person: 'Fran', text: ' used' },
-  { startTime: 5711.85, person: 'Fran', text: ' OpenAPI version which is' },
-  { startTime: 5713.45, person: 'Fran', text: ' two point' },
-  { startTime: 5714.51, person: 'Fran', text: ' something' },
-  { startTime: 5714.87, person: 'Fran', text: ' or the three' },
-  { startTime: 5716.39, person: 'Fran', text: " I think it's" },
-  { startTime: 5717.01, person: 'Fran', text: ' still two point something' },
-  { startTime: 5718.51, person: 'Fran', text: " it's still swagger" },
-  { startTime: 5719.35, person: 'Fran', text: ' the most used' },
-  { startTime: 5722.91, person: 'Fran', text: " it's on" },
-  { startTime: 5723.79, person: 'Fran', text: ' JSON schema' },
-  { startTime: 5724.61, person: 'Fran', text: ' draft four' },
-  { startTime: 5725.67, person: 'Fran', text: ' you can use' },
-  { startTime: 5727.21, person: 'Fran', text: ' any of these schema' },
-  { startTime: 5728.43, person: 'Fran', text: ' versions with' },
-  { startTime: 5729.49, person: 'Fran', text: ' some API' },
-  { startTime: 5730.29, person: 'Fran', text: ' for that very reason' },
-  { startTime: 5731.39, person: 'Fran', text: ' so' },
-  { startTime: 5732.63, person: 'Fran', text: ' they were interpretable' },
-  { startTime: 5733.99, person: 'Fran', text: ' right' },
-  { startTime: 5736.63, person: 'Fran', text: ' so yeah' },
-  { startTime: 5737.51, person: 'Fran', text: ' so' },
-  { startTime: 5739.01, person: 'Fran', text: ' we actually recommend it' },
-  { startTime: 5740.81, person: 'Fran', text: " because it's a" },
-  { startTime: 5741.81, person: 'Fran', text: " it's a really good idea" },
-  { startTime: 5742.73, person: 'Fran', text: ' because think about it' },
-  { startTime: 5744.01, person: 'Fran', text: ' like' },
-  { startTime: 5744.19, person: 'Fran', text: ' or picture this example' },
-  { startTime: 5745.49, person: 'Fran', text: ' you have a REST API' },
-  { startTime: 5746.69, person: 'Fran', text: ' or next to the API' },
-  { startTime: 5747.91, person: 'Fran', text: ' you receive a request' },
-  { startTime: 5749.51, person: 'Fran', text: ' and as a result' },
-  { startTime: 5750.67, person: 'Fran', text: ' you publish a message to a broker' },
-  { startTime: 5752.65, person: 'Fran', text: ' right' },
-  { startTime: 5752.89, person: 'Fran', text: ' as a result' },
-  { startTime: 5753.57, person: 'Fran', text: ' as a side effect of this request' },
-  { startTime: 5755.25, person: 'Fran', text: ' you publish a message to the broker' },
-  { startTime: 5756.51, person: 'Fran', text: ' containing' },
-  { startTime: 5757.91, person: 'Fran', text: ' some information' },
-  { startTime: 5758.77, person: 'Fran', text: ' that was in the request body' },
-  { startTime: 5760.19, person: 'Fran', text: ' right' },
-  { startTime: 5762.67, person: 'Fran', text: ' say for instance' },
-  { startTime: 5763.45, person: 'Fran', text: ' you are signing up a user' },
-  { startTime: 5764.67, person: 'Fran', text: ' or something like that' },
-  { startTime: 5765.45, person: 'Karol', text: " I mean that's a" },
-  { startTime: 5766.77, person: 'Karol', text: " that's a very common use case" },
-  { startTime: 5768.27, person: 'Karol', text: ' in API led architecture' },
-  { startTime: 5769.67, person: 'Karol', text: ' where you have the' },
-  { startTime: 5770.71, person: 'Karol', text: ' channel layer' },
-  { startTime: 5771.85, person: 'Karol', text: ' the first layer' },
-  { startTime: 5772.85, person: 'Karol', text: ' or as' },
-  { startTime: 5773.51, person: 'Karol', text: ' in mules what they call it' },
-  { startTime: 5774.67, person: 'Karol', text: ' the experience layer' },
-  { startTime: 5776.01, person: 'Karol', text: ' you basically call it' },
-  { startTime: 5778.01, person: 'Karol', text: ' call a REST service' },
-  { startTime: 5779.87, person: 'Karol', text: ' and then that translates into an' },
-  { startTime: 5782.05, person: 'Karol', text: ' asynchronous call' },
-  { startTime: 5783.31, person: 'Karol', text: ' for warding that event' },
-  { startTime: 5784.61, person: 'Karol', text: ' the request is actually' },
-  { startTime: 5785.97, person: 'Karol', text: ' a disguised event' },
-  { startTime: 5787.71, person: 'Karol', text: ' and the only' },
-  { startTime: 5788.99, person: 'Karol', text: " reason why it's" },
-  { startTime: 5790.45, person: 'Karol', text: ' done over a' },
-  { startTime: 5791.65, person: 'Karol', text: ' synchronous' },
-  { startTime: 5792.39, person: 'Karol', text: ' call' },
-  { startTime: 5793.67, person: 'Karol', text: ' is because' },
-  { startTime: 5794.55, person: 'Karol', text: ' we want to' },
-  { startTime: 5796.53, person: 'Karol', text: ' give back' },
-  { startTime: 5798.23, person: 'Karol', text: ' the information' },
-  { startTime: 5799.55, person: 'Karol', text: ' that it was' },
-  { startTime: 5801.33, person: 'Karol', text: ' accepted for processing' },
-  { startTime: 5802.67, person: 'Karol', text: ' to that system' },
-  { startTime: 5803.39, person: 'Karol', text: ' so that system can move on' },
-  { startTime: 5804.69, person: 'Karol', text: " and it's easier" },
-  { startTime: 5805.85, person: 'Karol', text: ' to consume' },
-  { startTime: 5807.13, person: 'Karol', text: ' a' },
-  { startTime: 5807.69, person: 'Karol', text: ' HTTP' },
-  { startTime: 5809.27, person: 'Karol', text: ' API' },
-  { startTime: 5810.53, person: 'Karol', text: ' than to figure out' },
-  { startTime: 5811.57, person: 'Karol', text: ' how do we connect' },
-  { startTime: 5812.75, person: 'Karol', text: ' directly to the broker' },
-  { startTime: 5814.39, person: 'Karol', text: ' from each' },
-  { startTime: 5815.47, person: 'Karol', text: ' separate team' },
-  { startTime: 5816.55, person: 'Karol', text: ' to learn that broker' },
-  { startTime: 5818.49, person: 'Karol', text: ' and then you' },
-  { startTime: 5819.65, person: 'Karol', text: ' move that complexity' },
-  { startTime: 5820.83, person: 'Karol', text: ' to the integration platform' },
-  { startTime: 5821.95, person: 'Karol', text: ' to learn' },
-  { startTime: 5822.49, person: 'Karol', text: ' how to use the broker' },
-  { startTime: 5823.61, person: 'Karol', text: ' and facilitate that use' },
-  { startTime: 5825.09, person: 'Karol', text: " so that's a very" },
-  { startTime: 5825.87, person: 'Karol', text: ' common use case' },
-  { startTime: 5826.57, person: 'Karol', text: ' and also a common' },
-  { startTime: 5827.91, person: 'Karol', text: ' use case is' },
-  { startTime: 5828.79, person: 'Karol', text: ' right now' },
-  { startTime: 5829.95, person: 'Karol', text: ' popping up in' },
-  { startTime: 5830.73, person: 'Karol', text: ' API management' },
-  { startTime: 5831.59, person: 'Karol', text: ' where they' },
-  { startTime: 5832.95, person: 'Karol', text: ' offer' },
-  { startTime: 5833.33, person: 'Karol', text: ' protocol' },
-  { startTime: 5833.97, person: 'Karol', text: ' mediation' },
-  { startTime: 5835.57, person: 'Karol', text: ' to mediate' },
-  { startTime: 5836.21, person: 'Karol', text: ' from a REST' },
-  { startTime: 5836.75, person: 'Karol', text: ' call to' },
-  { startTime: 5837.39, person: 'Karol', text: ' an event' },
-  { startTime: 5838.65, person: 'Karol', text: ' or from' },
-  { startTime: 5839.35, person: 'Karol', text: ' an event' },
-  { startTime: 5840.23, person: 'Karol', text: ' to a REST call' },
-  { startTime: 5842.03, person: 'Karol', text: ' like a web' },
-  { startTime: 5842.97, person: 'Karol', text: ' call' },
-  { startTime: 5843.87, person: 'Fran', text: ' in fact' },
-  { startTime: 5844.73, person: 'Fran', text: " it's a" },
-  { startTime: 5845.71, person: 'Fran', text: ' you know' },
-  { startTime: 5846.17, person: 'Fran', text: ' if you' },
-  { startTime: 5846.73, person: 'Fran', text: ' are building' },
-  { startTime: 5848.25, person: 'Fran', text: ' with a' },
-  { startTime: 5849.23, person: 'Fran', text: ' mindset of' },
-  { startTime: 5850.23, person: 'Fran', text: ' microservices' },
-  { startTime: 5850.83, person: 'Fran', text: ' you might have' },
-  { startTime: 5851.65, person: 'Fran', text: ' an API' },
-  { startTime: 5852.33, person: 'Fran', text: ' that is' },
-  { startTime: 5853.01, person: 'Fran', text: ' a REST API' },
-  { startTime: 5853.77, person: 'Fran', text: ' or an HTTP' },
-  { startTime: 5854.37, person: 'Fran', text: ' API that is' },
-  { startTime: 5855.69, person: 'Fran', text: ' receives a' },
-  { startTime: 5857.03, person: 'Fran', text: ' post' },
-  { startTime: 5857.37, person: 'Fran', text: ' call' },
-  { startTime: 5857.93, person: 'Fran', text: " let's say" },
-  { startTime: 5858.31, person: 'Fran', text: ' slash' },
-  { startTime: 5858.77, person: 'Fran', text: ' sign up' },
-  { startTime: 5859.81, person: 'Fran', text: ' whatever' },
-  { startTime: 5860.33, person: 'Fran', text: ' sign user' },
-  { startTime: 5861.49, person: 'Fran', text: ' app or whatever' },
-  { startTime: 5863.89, person: 'Fran', text: ' this microservice' },
-  { startTime: 5865.21, person: 'Fran', text: ' might have' },
-  { startTime: 5866.03, person: 'Fran', text: ' its own database' },
-  { startTime: 5867.67, person: 'Fran', text: ' where it' },
-  { startTime: 5868.43, person: 'Fran', text: ' stores' },
-  { startTime: 5869.01, person: 'Fran', text: ' the' },
-  { startTime: 5870.07, person: 'Fran', text: ' it stores' },
-  { startTime: 5871.51, person: 'Fran', text: ' the' },
-  { startTime: 5872.37, person: 'Fran', text: ' you know' },
-  { startTime: 5872.87, person: 'Fran', text: ' the user that' },
-  { startTime: 5873.51, person: 'Fran', text: ' just' },
-  { startTime: 5873.75, person: 'Fran', text: ' have signed up' },
-  { startTime: 5874.91, person: 'Fran', text: ' right now' },
-  { startTime: 5875.39, person: 'Fran', text: ' and as a result' },
-  { startTime: 5876.79, person: 'Fran', text: ' either the microservice' },
-  { startTime: 5878.13, person: 'Fran', text: ' or the database' },
-  { startTime: 5880.14, person: 'Fran', text: ' triggers' },
-  { startTime: 5881.37, person: 'Fran', text: ' a change data' },
-  { startTime: 5882.23, person: 'Fran', text: ' capture' },
-  { startTime: 5884.37, person: 'Fran', text: ' broker' },
-  { startTime: 5884.65, person: 'Fran', text: ' saying hey' },
-  { startTime: 5885.35, person: 'Fran', text: " there's a new" },
-  { startTime: 5886.45, person: 'Fran', text: " there's a new" },
-  { startTime: 5887.19, person: 'Fran', text: ' user' },
-  { startTime: 5887.97, person: 'Fran', text: ' in the database' },
-  { startTime: 5888.77, person: 'Fran', text: ' for whoever is' },
-  { startTime: 5890.31, person: 'Fran', text: ' interested in this' },
-  { startTime: 5891.01, person: 'Fran', text: ' right so' },
-  { startTime: 5891.47, person: 'Fran', text: ' this is very useful' },
-  { startTime: 5892.97, person: 'Fran', text: " and it's" },
-  { startTime: 5894.41, person: 'Fran', text: " it's constrained" },
-  { startTime: 5895.27, person: 'Fran', text: ' to this' },
-  { startTime: 5896.03, person: 'Fran', text: ' like' },
-  { startTime: 5897.61, person: 'Fran', text: " like it doesn't" },
-  { startTime: 5898.53, person: 'Fran', text: " it wouldn't even make" },
-  { startTime: 5899.61, person: 'Fran', text: ' sense for people to' },
-  { startTime: 5900.53, person: 'Fran', text: ' connect to' },
-  { startTime: 5901.11, person: 'Fran', text: ' to the broker' },
-  { startTime: 5901.85, person: 'Fran', text: ' to consume this kind' },
-  { startTime: 5902.65, person: 'Fran', text: ' of events' },
-  { startTime: 5903.09, person: 'Fran', text: ' from a browser' },
-  { startTime: 5904.63, person: 'Fran', text: ' or something like that' },
-  { startTime: 5905.35, person: 'Fran', text: ' because' },
-  { startTime: 5906.47, person: 'Fran', text: ' why would you like' },
-  { startTime: 5907.59, person: 'Fran', text: ' you want to have immediate' },
-  { startTime: 5908.45, person: 'Fran', text: ' feedback right like' },
-  { startTime: 5909.53, person: 'Fran', text: ' yeah you' },
-  { startTime: 5910.45, person: 'Fran', text: ' you want to have immediate' },
-  { startTime: 5911.09, person: 'Fran', text: ' feedback if the' },
-  { startTime: 5912.57, person: 'Fran', text: ' if the' },
-  { startTime: 5913.09, person: 'Fran', text: ' if the operation succeeded' },
-  { startTime: 5914.79, person: 'Fran', text: ' or not' },
-  { startTime: 5915.31, person: 'Fran', text: ' so' },
-  { startTime: 5915.61, person: 'Fran', text: ' and you have the database' },
-  { startTime: 5917.19, person: 'Fran', text: " there you don't have to" },
-  { startTime: 5918.29, person: 'Fran', text: ' send the message' },
-  { startTime: 5919.21, person: 'Fran', text: ' to some other system' },
-  { startTime: 5920.37, person: 'Fran', text: ' that will process' },
-  { startTime: 5921.35, person: 'Fran', text: ' this message at some' },
-  { startTime: 5922.47, person: 'Fran', text: ' point and' },
-  { startTime: 5923.09, person: 'Fran', text: ' will come back' },
-  { startTime: 5924.17, person: 'Fran', text: ' with a response' },
-  { startTime: 5924.99, person: 'Fran', text: ' or no no no' },
-  { startTime: 5925.91, person: 'Fran', text: " it's just" },
-  { startTime: 5926.41, person: 'Fran', text: ' here now like' },
-  { startTime: 5927.95, person: 'Fran', text: " it's either saving it" },
-  { startTime: 5929.19, person: 'Fran', text: ' into the database' },
-  { startTime: 5929.83, person: 'Fran', text: ' or not' },
-  { startTime: 5930.84, person: 'Fran', text: ' cool yeah give me the' },
-  { startTime: 5931.83, person: 'Fran', text: ' response immediately' },
-  { startTime: 5932.45, person: 'Fran', text: ' so that makes sense' },
-  { startTime: 5934.09, person: 'Fran', text: ' and then' },
-  { startTime: 5934.94, person: 'Fran', text: ' post this event' },
-  { startTime: 5935.99, person: 'Fran', text: ' for whoever else' },
-  { startTime: 5937.05, person: 'Fran', text: " let's say welcome" },
-  { startTime: 5937.99, person: 'Fran', text: ' email' },
-  { startTime: 5940.19, person: 'Fran', text: ' analytics' },
-  { startTime: 5941.47, person: 'Fran', text: ' whatever' },
-  { startTime: 5942.03, person: 'Fran', text: ' any other' },
-  { startTime: 5943.11, person: 'Fran', text: ' reason' },
-  { startTime: 5944.13, person: 'Fran', text: ' you might want to' },
-  { startTime: 5945.59, person: 'Fran', text: ' know that a user' },
-  { startTime: 5946.51, person: 'Fran', text: ' when a user' },
-  { startTime: 5947.59, person: 'Fran', text: ' has signed up right' },
-  { startTime: 5948.51, person: 'Karol', text: " yeah that's a" },
-  { startTime: 5949.39, person: 'Karol', text: " that's an" },
-  { startTime: 5949.87, person: 'Karol', text: ' issue of' },
-  { startTime: 5951.47, person: 'Karol', text: ' system responsiveness' },
-  { startTime: 5952.59, person: 'Karol', text: ' as an' },
-  { startTime: 5953.45, person: 'Karol', text: ' architectural' },
-  { startTime: 5954.33, person: 'Karol', text: ' characteristic' },
-  { startTime: 5954.61, person: 'Karol', text: " so it doesn't" },
-  { startTime: 5955.83, person: 'Karol', text: ' really matter if you' },
-  { startTime: 5956.55, person: 'Karol', text: ' put that in a database' },
-  { startTime: 5957.75, person: 'Karol', text: ' for sourcing later' },
-  { startTime: 5958.73, person: 'Karol', text: ' or you put that on' },
-  { startTime: 5959.87, person: 'Karol', text: ' a topic with a' },
-  { startTime: 5960.73, person: 'Karol', text: ' persistence' },
-  { startTime: 5962.21, person: 'Karol', text: ' you' },
-  { startTime: 5963.47, person: 'Karol', text: ' go on' },
-  { startTime: 5964.13, person: 'Karol', text: ' without' },
-  { startTime: 5964.81, person: 'Karol', text: ' with your day' },
-  { startTime: 5965.61, person: 'Karol', text: ' the system goes on' },
-  { startTime: 5966.99, person: 'Karol', text: ' because it gets a' },
-  { startTime: 5968.53, person: 'Karol', text: ' response that' },
-  { startTime: 5969.15, person: 'Karol', text: ' or an' },
-  { startTime: 5969.77, person: 'Karol', text: ' acknowledgement that' },
-  { startTime: 5970.53, person: 'Karol', text: ' something was published' },
-  { startTime: 5971.99, person: 'Karol', text: " it doesn't" },
-  { startTime: 5972.83, person: 'Karol', text: ' matter then' },
-  { startTime: 5973.45, person: 'Karol', text: " how it's later processed" },
-  { startTime: 5974.91, person: 'Karol', text: " and that's the" },
-  { startTime: 5975.49, person: 'Karol', text: ' lovely quality' },
-  { startTime: 5976.17, person: 'Karol', text: ' of putting the' },
-  { startTime: 5978.33, person: 'Karol', text: ' event broker' },
-  { startTime: 5979.39, person: 'Karol', text: ' as a transition' },
-  { startTime: 5980.29, person: 'Karol', text: ' between two systems' },
-  { startTime: 5982.47, person: 'Karol', text: ' to' },
-  { startTime: 5983.07, person: 'Karol', text: ' decouple them' },
-  { startTime: 5984.05, person: 'Karol', text: ' on the' },
-  { startTime: 5984.43, person: 'Karol', text: ' on that' },
-  { startTime: 5987.19, person: 'Karol', text: ' oh my God' },
-  { startTime: 5988.91, person: 'Karol', text: ' time' },
-  { startTime: 5989.89, person: 'Karol', text: ' time coupling' },
-  { startTime: 5990.75, person: 'Karol', text: ' temporal coupling' },
-  { startTime: 5992.63, person: 'Karol', text: " so that's" },
-  { startTime: 5993.73, person: 'Karol', text: " that's that" },
-  { startTime: 5994.63, person: 'Karol', text: ' in that sense' },
-  { startTime: 5995.97, person: 'Karol', text: ' is very lovely' },
-  { startTime: 5996.61, person: 'Karol', text: " it's very useful" },
-  { startTime: 5999.31, person: 'Karol', text: ' all right' },
-  { startTime: 6000.05, person: 'Karol', text: " Fran we've" },
-  { startTime: 6000.99, person: 'Karol', text: ' been talking for' },
-  { startTime: 6001.73, person: 'Karol', text: ' the last' },
-  { startTime: 6002.47, person: 'Karol', text: ' one and a half' },
-  { startTime: 6003.77, person: 'Karol', text: ' hour' },
-  { startTime: 6004.74, person: 'Karol', text: ' nearly 140' },
-  { startTime: 6005.53, person: 'Fran', text: ' and if we stay here' },
-  { startTime: 6006.87, person: 'Fran', text: ' for two more' },
-  { startTime: 6007.33, person: 'Fran', text: ' hours we can keep' },
-  { startTime: 6008.07, person: 'Fran', text: ' talking' },
-  { startTime: 6008.63, person: 'Karol', text: ' oh we could' },
-  { startTime: 6009.11, person: 'Karol', text: ' we could go on' },
-  { startTime: 6010.89, person: 'Karol', text: ' and on' },
-  { startTime: 6011.51, person: 'Karol', text: ' and on and on' },
-  { startTime: 6012.89, person: 'Karol', text: ' so' },
-  { startTime: 6014.09, person: 'Karol', text: ' dear audience' },
-  { startTime: 6015.11, person: 'Karol', text: ' I see we still' },
-  { startTime: 6016.59, person: 'Karol', text: ' have an audience' },
-  { startTime: 6017.31, person: 'Karol', text: " that's that's" },
-  { startTime: 6017.97, person: 'Karol', text: ' awesome' },
-  { startTime: 6018.33, person: 'Fran', text: " that's awesome" },
-  { startTime: 6019.65, person: 'Fran', text: ' and people say' },
-  { startTime: 6020.65, person: 'Karol', text: ' I love it' },
-  { startTime: 6023.13, person: 'Karol', text: ' I love it' },
-  { startTime: 6023.97, person: 'Karol', text: ' so' },
-  { startTime: 6025.37, person: 'Karol', text: ' kudos to all of you who' },
-  { startTime: 6026.59, person: 'Karol', text: ' who are staying' },
-  { startTime: 6027.29, person: 'Karol', text: ' still with us' },
-  { startTime: 6027.93, person: 'Karol', text: ' and still watching us' },
-  { startTime: 6029.89, person: 'Karol', text: ' if not' },
-  { startTime: 6030.53, person: 'Karol', text: ' you can always watch' },
-  { startTime: 6031.27, person: 'Karol', text: ' the recording' },
-  { startTime: 6032.81, person: 'Karol', text: ' before we jump' },
-  { startTime: 6033.63, person: 'Karol', text: ' into the QA' },
-  { startTime: 6034.71, person: 'Karol', text: ' I do' },
-  { startTime: 6035.31, person: 'Karol', text: ' would like to have' },
-  { startTime: 6036.57, person: 'Karol', text: ' some announcements' },
-  { startTime: 6037.39, person: 'Karol', text: ' and one of the announcements' },
-  { startTime: 6039.01, person: 'Karol', text: ' is that we already' },
-  { startTime: 6039.83, person: 'Karol', text: ' have a second' },
-  { startTime: 6040.57, person: 'Karol', text: ' livestream' },
-  { startTime: 6041.81, person: 'Karol', text: ' planned' },
-  { startTime: 6042.25, person: 'Karol', text: ' and the second' },
-  { startTime: 6043.11, person: 'Karol', text: ' livestream is not' },
-  { startTime: 6044.29, person: 'Karol', text: ' going to be about' },
-  { startTime: 6044.97, person: 'Karol', text: ' tech' },
-  { startTime: 6045.27, person: 'Karol', text: " it's going to be about" },
-  { startTime: 6046.47, person: 'Karol', text: ' recruitment' },
-  { startTime: 6048.55, person: 'Karol', text: " which I think it's" },
-  { startTime: 6049.51, person: 'Karol', text: ' going to be' },
-  { startTime: 6049.79, person: 'Karol', text: ' very very interesting' },
-  { startTime: 6051.49, person: 'Karol', text: " we're going to be talking" },
-  { startTime: 6052.41, person: 'Karol', text: ' with Gabi Preston' },
-  { startTime: 6053.31, person: 'Karol', text: ' Pfeiffers' },
-  { startTime: 6053.77, person: 'Karol', text: ' and Philip Pointon' },
-  { startTime: 6055.73, person: 'Karol', text: " they're really" },
-  { startTime: 6056.59, person: 'Karol', text: ' well versed' },
-  { startTime: 6057.59, person: 'Karol', text: ' people' },
-  { startTime: 6057.89, person: 'Karol', text: ' calling out' },
-  { startTime: 6059.69, person: 'Karol', text: ' the bullshit' },
-  { startTime: 6060.15, person: 'Karol', text: ' in IT' },
-  { startTime: 6061.21, person: 'Karol', text: ' recruitment' },
-  { startTime: 6062.69, person: 'Karol', text: ' so' },
-  { startTime: 6063.49, person: 'Karol', text: ' you know' },
-  { startTime: 6065.33, person: 'Karol', text: ' jump in on' },
-  { startTime: 6067.19, person: 'Karol', text: ' the 22nd of' },
-  { startTime: 6068.25, person: 'Karol', text: ' July' },
-  { startTime: 6068.59, person: 'Karol', text: ' to hear them out' },
-  { startTime: 6070.17, person: 'Karol', text: ' and also' },
-  { startTime: 6071.53, person: 'Karol', text: " I'll reiterate" },
-  { startTime: 6073.29, person: 'Karol', text: ' some things' },
-  { startTime: 6074.61, person: 'Karol', text: ' so if you want to' },
-  { startTime: 6075.43, person: 'Karol', text: ' read some articles' },
-  { startTime: 6076.41, person: 'Karol', text: ' about enterprise' },
-  { startTime: 6077.35, person: 'Karol', text: ' application integration' },
-  { startTime: 6078.45, person: 'Karol', text: ' and EDA' },
-  { startTime: 6079.57, person: 'Karol', text: ' included' },
-  { startTime: 6080.01, person: 'Karol', text: ' Visit bridgingthegap.eu.com' },
-  { startTime: 6082.17, person: 'Karol', text: ' or just' },
-  { startTime: 6083.27, person: 'Karol', text: ' subscribe to' },
-  { startTime: 6084.15, person: 'Karol', text: ' our sub-stack' },
-  { startTime: 6085.17, person: 'Karol', text: ' for the sake of it' },
-  { startTime: 6086.67, person: 'Karol', text: ' and then if you' },
-  { startTime: 6088.33, person: 'Karol', text: ' want to' },
-  { startTime: 6088.79, person: 'Karol', text: ' learn more about' },
-  { startTime: 6090.29, person: 'Karol', text: ' async' },
-  { startTime: 6091.21, person: 'Karol', text: ' API' },
-  { startTime: 6092.49, person: 'Karol', text: ' visit the' },
-  { startTime: 6093.73, person: 'Karol', text: ' initiative site' },
-  { startTime: 6095.69, person: 'Karol', text: ' and' },
-  { startTime: 6096.41, person: 'Karol', text: ' if you got' },
-  { startTime: 6097.47, person: 'Karol', text: ' hooked on' },
-  { startTime: 6098.47, person: 'Karol', text: ' our conversation' },
-  { startTime: 6099.23, person: 'Karol', text: ' about the' },
-  { startTime: 6100.19, person: 'Karol', text: ' organisational problems' },
-  { startTime: 6101.55, person: 'Karol', text: ' or' },
-  { startTime: 6102.17, person: 'Karol', text: ' the' },
-  { startTime: 6103.15, person: 'Karol', text: ' psychological' },
-  { startTime: 6104.21, person: 'Karol', text: ' safety' },
-  { startTime: 6104.57, person: 'Karol', text: ' of people' },
-  { startTime: 6105.69, person: 'Karol', text: ' and you want to' },
-  { startTime: 6106.73, person: 'Karol', text: ' be a better leader' },
-  { startTime: 6107.43, person: 'Karol', text: ' and you want to' },
-  { startTime: 6108.59, person: 'Karol', text: ' actually start' },
-  { startTime: 6109.63, person: 'Karol', text: ' addressing those' },
-  { startTime: 6110.25, person: 'Karol', text: ' topics' },
-  { startTime: 6111.55, person: 'Karol', text: " here's a QR code" },
-  { startTime: 6112.73, person: 'Karol', text: ' for' },
-  { startTime: 6113.15, person: 'Karol', text: " Fran's" },
-  { startTime: 6114.63, person: 'Karol', text: ' book' },
-  { startTime: 6115.53, person: 'Karol', text: " it's still in the" },
-  { startTime: 6116.31, person: 'Karol', text: ' making' },
-  { startTime: 6116.71, person: 'Karol', text: ' but Fran is' },
-  { startTime: 6117.99, person: 'Karol', text: ' giving the' },
-  { startTime: 6119.05, person: 'Karol', text: ' early bird' },
-  { startTime: 6120.01, person: 'Karol', text: ' available' },
-  { startTime: 6120.53, person: 'Karol', text: ' so you can' },
-  { startTime: 6122.43, person: 'Karol', text: ' take a look' },
-  { startTime: 6123.41, person: 'Karol', text: ' and read it' },
-  { startTime: 6125.37, person: 'Karol', text: ' comment it' },
-  { startTime: 6126.15, person: 'Karol', text: ' I think Fran you' },
-  { startTime: 6127.09, person: 'Karol', text: ' would welcome' },
-  { startTime: 6127.81, person: 'Karol', text: ' all feedback' },
-  { startTime: 6128.47, person: 'Karol', text: ' right?' },
-  { startTime: 6129.53, person: 'Fran', text: " Yeah actually it's" },
-  { startTime: 6130.03, person: 'Fran', text: ' already happening' },
-  { startTime: 6130.53, person: 'Fran', text: " we're having discussions" },
-  { startTime: 6131.27, person: 'Fran', text: ' in Notion' },
-  { startTime: 6132.45, person: 'Fran', text: ' about' },
-  { startTime: 6132.85, person: 'Fran', text: ' not a lot' },
-  { startTime: 6134.63, person: 'Fran', text: ' I must say' },
-  { startTime: 6135.25, person: 'Fran', text: ' which is normal' },
-  { startTime: 6136.01, person: 'Fran', text: ' like reading' },
-  { startTime: 6136.89, person: 'Fran', text: ' a book' },
-  { startTime: 6137.87, person: 'Fran', text: ' and maybe feedback' },
-  { startTime: 6138.65, person: 'Fran', text: ' on a book' },
-  { startTime: 6139.79, person: 'Fran', text: ' might feel' },
-  { startTime: 6140.69, person: 'Fran', text: ' intimidating' },
-  { startTime: 6141.13, person: 'Fran', text: ' to some people' },
-  { startTime: 6141.99, person: 'Fran', text: ' not just because' },
-  { startTime: 6143.39, person: 'Fran', text: ' of technical knowledge' },
-  { startTime: 6144.41, person: 'Fran', text: ' but also like' },
-  { startTime: 6145.73, person: 'Fran', text: ' this guy might' },
-  { startTime: 6146.47, person: 'Fran', text: ' think that' },
-  { startTime: 6147.75, person: 'Fran', text: " I'm" },
-  { startTime: 6148.07, person: 'Fran', text: ' you know like' },
-  { startTime: 6148.55, person: 'Fran', text: " I'm here" },
-  { startTime: 6150.33, person: 'Fran', text: " I'm bothering him" },
-  { startTime: 6151.07, person: 'Fran', text: ' or something' },
-  { startTime: 6151.47, person: 'Fran', text: ' no no no' },
-  { startTime: 6152.23, person: 'Fran', text: " I'm used to" },
-  { startTime: 6153.23, person: 'Fran', text: ' getting feedback' },
-  { startTime: 6154.65, person: 'Fran', text: ' respectful feedback' },
-  { startTime: 6155.87, person: 'Fran', text: ' obviously' },
-  { startTime: 6156.43, person: 'Fran', text: ' constructive' },
-  { startTime: 6157.17, person: 'Fran', text: " and we're already" },
-  { startTime: 6158.55, person: 'Fran', text: ' having some' },
-  { startTime: 6158.93, person: 'Fran', text: ' discussions there' },
-  { startTime: 6159.65, person: 'Fran', text: ' in Notion' },
-  { startTime: 6160.89, person: 'Fran', text: ' with the early' },
-  { startTime: 6162.21, person: 'Fran', text: ' readers' },
-  { startTime: 6162.61, person: 'Fran', text: " and that's cool" },
-  { startTime: 6164.91, person: 'Fran', text: ' I only' },
-  { startTime: 6166.39, person: 'Fran', text: " I've only written" },
-  { startTime: 6167.35, person: 'Fran', text: ' three chapters' },
-  { startTime: 6168.15, person: 'Fran', text: ' so far' },
-  { startTime: 6169.57, person: 'Fran', text: ' if everything goes' },
-  { startTime: 6170.61, person: 'Fran', text: ' well I think there' },
-  { startTime: 6171.21, person: 'Fran', text: ' will be' },
-  { startTime: 6171.59, person: 'Fran', text: ' 23' },
-  { startTime: 6173.65, person: 'Fran', text: ' so yeah' },
-  { startTime: 6174.59, person: 'Fran', text: ' I am' },
-  { startTime: 6175.19, person: 'Fran', text: ' I only have to' },
-  { startTime: 6176.47, person: 'Fran', text: ' write' },
-  { startTime: 6176.73, person: 'Fran', text: ' plenty more' },
-  { startTime: 6179.71, person: 'Fran', text: ' no pressure' },
-  { startTime: 6180.71, person: 'Fran', text: ' no pressure' },
-  { startTime: 6181.93, person: 'Karol', text: " you're going to" },
-  { startTime: 6182.85, person: 'Karol', text: ' lean pop the' },
-  { startTime: 6183.59, person: 'Karol', text: ' hell out of that' },
-  { startTime: 6184.69, person: 'Fran', text: ' yeah' },
-  { startTime: 6186.11, person: 'Fran', text: " I'm kind of" },
-  { startTime: 6186.95, person: 'Fran', text: ' doing like' },
-  { startTime: 6187.29, person: 'Fran', text: ' lean pop' },
-  { startTime: 6187.75, person: 'Fran', text: ' but on Notion' },
-  { startTime: 6188.69, person: 'Fran', text: ' pretty much the same thing' },
-  { startTime: 6191.15, person: 'Karol', text: ' only different medium' },
-  { startTime: 6192.05, person: 'Fran', text: ' exactly' },
-  { startTime: 6192.83, person: 'Fran', text: ' and but yeah' },
-  { startTime: 6195.81, person: 'Fran', text: " I'll take off" },
-  { startTime: 6196.47, person: 'Fran', text: " I'm taking" },
-  { startTime: 6197.23, person: 'Fran', text: ' August' },
-  { startTime: 6198.05, person: 'Fran', text: ' off' },
-  { startTime: 6198.73, person: 'Fran', text: ' kind of off' },
-  { startTime: 6199.65, person: 'Fran', text: ' like from' },
-  { startTime: 6200.33, person: 'Fran', text: ' the rest of the' },
-  { startTime: 6201.85, person: 'Fran', text: ' work' },
-  { startTime: 6202.71, person: 'Fran', text: ' just to focus on' },
-  { startTime: 6203.73, person: 'Fran', text: ' on the book' },
-  { startTime: 6204.35, person: 'Fran', text: ' and' },
-  { startTime: 6205.41, person: 'Fran', text: ' most likely' },
-  { startTime: 6206.35, person: 'Fran', text: ' September as well' },
-  { startTime: 6207.93, person: 'Fran', text: ' because I want to' },
-  { startTime: 6208.85, person: 'Fran', text: ' have it ready by October' },
-  { startTime: 6209.83, person: 'Fran', text: ' this year' },
-  { startTime: 6210.39, person: 'Fran', text: ' I hope this' },
-  { startTime: 6211.57, person: 'Fran', text: ' I have these' },
-  { startTime: 6212.95, person: 'Fran', text: " these words don't" },
-  { startTime: 6213.89, person: 'Fran', text: ' bite me in the future' },
-  { startTime: 6216.23, person: 'Fran', text: ' like' },
-  { startTime: 6216.79, person: 'Fran', text: ' you said that last year' },
-  { startTime: 6220.11, person: 'Fran', text: ' I mean' },
-  { startTime: 6221.23, person: 'Fran', text: " if I don't" },
-  { startTime: 6223.13, person: 'Fran', text: ' publish it by' },
-  { startTime: 6223.89, person: 'Fran', text: ' October bear with me' },
-  { startTime: 6225.01, person: 'Fran', text: ' please' },
-  { startTime: 6225.31, person: 'Fran', text: " it's my first time" },
-  { startTime: 6226.45, person: 'Fran', text: ' writing a book' },
-  { startTime: 6228.05, person: 'Fran', text: ' so' },
-  { startTime: 6228.37, person: 'Fran', text: " I don't know" },
-  { startTime: 6229.55, person: 'Fran', text: ' how to estimate' },
-  { startTime: 6230.19, person: 'Fran', text: ' this kind of work' },
-  { startTime: 6231.07, person: 'Fran', text: " because I've never" },
-  { startTime: 6232.19, person: 'Karol', text: ' done it' },
-  { startTime: 6233.07, person: 'Karol', text: " it's difficult" },
-  { startTime: 6234.01, person: 'Karol', text: ' yeah' },
-  { startTime: 6234.87, person: 'Fran', text: ' and especially because' },
-  { startTime: 6237.51, person: 'Fran', text: " I'm finding things" },
-  { startTime: 6238.31, person: 'Fran', text: ' that I never' },
-  { startTime: 6238.75, person: 'Fran', text: ' expected like having' },
-  { startTime: 6239.65, person: 'Fran', text: ' to read papers' },
-  { startTime: 6240.99, person: 'Fran', text: ' you know' },
-  { startTime: 6241.61, person: 'Fran', text: ' about psychology' },
-  { startTime: 6242.81, person: 'Fran', text: ' and' },
-  { startTime: 6243.99, person: 'Fran', text: ' psychology books' },
-  { startTime: 6245.19, person: 'Fran', text: ' and interviewing' },
-  { startTime: 6245.87, person: 'Fran', text: ' psychologists' },
-  { startTime: 6246.57, person: 'Fran', text: ' and so on' },
-  { startTime: 6247.43, person: 'Fran', text: " so it's" },
-  { startTime: 6248.17, person: 'Fran', text: " that's" },
-  { startTime: 6248.95, person: 'Fran', text: ' difficult' },
-  { startTime: 6250.15, person: 'Fran', text: " it's going" },
-  { startTime: 6251.99, person: 'Fran', text: ' completely unexpected' },
-  { startTime: 6253.11, person: 'Fran', text: ' about' },
-  { startTime: 6254.25, person: 'Fran', text: ' so yeah' },
-  { startTime: 6255.21, person: 'Fran', text: ' which is exciting' },
-  { startTime: 6256.27, person: 'Karol', text: " because you're" },
-  { startTime: 6257.09, person: 'Karol', text: " you're learning a lot" },
-  { startTime: 6257.89, person: 'Karol', text: ' while doing that' },
-  { startTime: 6259.01, person: 'Fran', text: " so that's why I'm" },
-  { startTime: 6260.05, person: 'Fran', text: ' writing the book' },
-  { startTime: 6260.63, person: 'Fran', text: " like I'm not" },
-  { startTime: 6261.49, person: 'Fran', text: " I'm not" },
-  { startTime: 6261.95, person: 'Fran', text: " I'm writing the book" },
-  { startTime: 6262.81, person: 'Fran', text: ' for me like I did' },
-  { startTime: 6263.67, person: 'Fran', text: ' with this in KPI' },
-  { startTime: 6264.47, person: 'Fran', text: ' it was like' },
-  { startTime: 6265.05, person: 'Fran', text: ' so I can learn' },
-  { startTime: 6266.55, person: 'Fran', text: ' properly about this' },
-  { startTime: 6267.71, person: 'Fran', text: ' by writing it down' },
-  { startTime: 6268.95, person: 'Fran', text: ' and by interviewing' },
-  { startTime: 6270.79, person: 'Fran', text: ' people and by' },
-  { startTime: 6271.73, person: 'Fran', text: ' listening to their' },
-  { startTime: 6273.05, person: 'Fran', text: ' stories and so on' },
-  { startTime: 6274.69, person: 'Fran', text: ' and then' },
-  { startTime: 6275.19, person: 'Fran', text: ' sharing with people' },
-  { startTime: 6275.99, person: 'Fran', text: ' so' },
-  { startTime: 6278.17, person: 'Fran', text: ' in a year or so' },
-  { startTime: 6279.89, person: 'Fran', text: ' I have to write' },
-  { startTime: 6280.85, person: 'Fran', text: ' the second edition' },
-  { startTime: 6281.49, person: 'Fran', text: ' because I made' },
-  { startTime: 6282.11, person: 'Fran', text: ' a lot of mistakes' },
-  { startTime: 6282.77, person: 'Fran', text: ' who knows' },
-  { startTime: 6284.01, person: 'Fran', text: " that's" },
-  { startTime: 6285.93, person: 'Fran', text: " that's" },
-  { startTime: 6286.49, person: 'Karol', text: ' I mean' },
-  { startTime: 6287.49, person: 'Karol', text: ' I just looked through' },
-  { startTime: 6289.07, person: 'Karol', text: ' the lovely fundamentals' },
-  { startTime: 6290.89, person: 'Karol', text: ' of software architecture' },
-  { startTime: 6292.07, person: 'Karol', text: ' by Mark Richards' },
-  { startTime: 6293.41, person: 'Karol', text: ' and Neil Ford' },
-  { startTime: 6294.05, person: 'Karol', text: ' they just released' },
-  { startTime: 6294.79, person: 'Karol', text: ' a second edition' },
-  { startTime: 6296.49, person: 'Karol', text: ' completely different read' },
-  { startTime: 6297.75, person: 'Karol', text: ' I have the first edition' },
-  { startTime: 6299.43, person: 'Karol', text: ' somewhere' },
-  { startTime: 6299.85, person: 'Karol', text: ' oh yeah' },
-  { startTime: 6301.13, person: 'Karol', text: ' like right here' },
-  { startTime: 6302.37, person: 'Karol', text: ' next to me' },
-  { startTime: 6303.13, person: 'Karol', text: ' I think it was' },
-  { startTime: 6304.01, person: 'Fran', text: ' still' },
-  { startTime: 6304.25, person: 'Fran', text: ' the first edition' },
-  { startTime: 6305.93, person: 'Fran', text: ' was still useful' },
-  { startTime: 6306.73, person: 'Fran', text: ' but now' },
-  { startTime: 6307.43, person: 'Fran', text: ' oh yeah' },
-  { startTime: 6308.54, person: 'Fran', text: ' with experience' },
-  { startTime: 6308.81, person: 'Fran', text: ' then you get to make' },
-  { startTime: 6310.79, person: 'Fran', text: ' a better book' },
-  { startTime: 6311.63, person: 'Fran', text: " it doesn't mean that" },
-  { startTime: 6312.31, person: 'Fran', text: ' the first edition' },
-  { startTime: 6313.01, person: 'Fran', text: ' is going to be wrong' },
-  { startTime: 6314.6, person: 'Fran', text: " it's just that it's probably" },
-  { startTime: 6315.51, person: 'Fran', text: ' not going to be' },
-  { startTime: 6316.35, person: 'Fran', text: ' exactly how I want it' },
-  { startTime: 6318.41, person: 'Karol', text: ' yeah they' },
-  { startTime: 6319.09, person: 'Karol', text: ' they learned a lot' },
-  { startTime: 6320.47, person: 'Karol', text: ' and they were like' },
-  { startTime: 6321.47, person: 'Karol', text: ' yep' },
-  { startTime: 6324.33, person: 'Karol', text: " that's interesting" },
-  { startTime: 6325.74, person: 'Karol', text: ' yeah' },
-  { startTime: 6327.28, person: 'Fran', text: ' cool man' },
-  { startTime: 6328.08, person: 'Karol', text: ' yeah all right' },
-  { startTime: 6329.44, person: 'Karol', text: ' so that said' },
-  { startTime: 6332.14, person: 'Karol', text: ' oh yes' },
-  { startTime: 6333.12, person: 'Karol', text: ' the QR code for the' },
-  { startTime: 6335.04, person: 'Karol', text: ' early reader' },
-  { startTime: 6336.84, person: 'Karol', text: ' to get access to the book' },
-  { startTime: 6338.64, person: 'Karol', text: ' so yes' },
-  { startTime: 6340.9, person: 'Karol', text: ' have that one' },
-  { startTime: 6341.86, person: 'Karol', text: ' sorry' },
-  { startTime: 6342.34, person: 'Karol', text: ' should have deleted' },
-  { startTime: 6343.64, person: 'Karol', text: ' the original ship' },
-  { startTime: 6345, person: 'Karol', text: ' one' },
-  { startTime: 6345.34, person: 'Karol', text: " that's fine" },
-  { startTime: 6346.26, person: 'Karol', text: ' from the list' },
-  { startTime: 6347.48, person: 'Karol', text: ' it would have been easier' },
-  { startTime: 6348.46, person: 'Karol', text: ' so if you want to be' },
-  { startTime: 6349.96, person: 'Karol', text: ' the early reader' },
-  { startTime: 6350.8, person: 'Karol', text: ' and leave friends' },
-  { startTime: 6351.64, person: 'Karol', text: ' and comments' },
-  { startTime: 6352.36, person: 'Karol', text: ' just scan the QR' },
-  { startTime: 6353.48, person: 'Karol', text: ' go ahead' },
-  { startTime: 6355.08, person: 'Karol', text: " it's" },
-  { startTime: 6356.26, person: 'Karol', text: " it's" },
-  { startTime: 6356.82, person: 'Karol', text: " yeah it's not a" },
-  { startTime: 6358.12, person: 'Karol', text: ' large cost to just' },
-  { startTime: 6359.08, person: 'Karol', text: ' join on the' },
-  { startTime: 6361.5, person: 'Karol', text: ' process of building' },
-  { startTime: 6362.94, person: 'Karol', text: ' that book' },
-  { startTime: 6363.38, person: 'Karol', text: ' from scratch' },
-  { startTime: 6364.2, person: 'Karol', text: " it's interesting to watch" },
-  { startTime: 6366.12, person: 'Karol', text: ' believe me' },
-  { startTime: 6368.92, person: 'Karol', text: ' that said' },
-  { startTime: 6370.86, person: 'Karol', text: " we're going to be" },
-  { startTime: 6372.92, person: 'Karol', text: ' closing the session' },
-  { startTime: 6373.8, person: 'Karol', text: ' in a moment' },
-  { startTime: 6375.1, person: 'Karol', text: ' but that leaves us' },
-  { startTime: 6376.26, person: 'Karol', text: ' open to' },
-  { startTime: 6378.32, person: 'Karol', text: ' any questions' },
-  { startTime: 6380.9, person: 'Karol', text: ' any QA questions' },
-  { startTime: 6382.34, person: 'Karol', text: ' out of the box' },
-  { startTime: 6383.38, person: 'Karol', text: ' out of the blue' },
-  { startTime: 6385, person: 'Karol', text: ' I mean we do have' },
-  { startTime: 6386.16, person: 'Karol', text: ' one from' },
-  { startTime: 6387.06, person: 'Karol', text: ' Alexander' },
-  { startTime: 6389.02, person: 'Karol', text: ' end-to-end traceability' },
-  { startTime: 6392.04, person: 'Karol', text: ' whoo' },
-  { startTime: 6394.13, person: 'Karol', text: ' batch message splits' },
-  { startTime: 6397.03, person: 'Karol', text: " that's" },
-  { startTime: 6397.55, person: 'Karol', text: ' I can take that one' },
-  { startTime: 6399.23, person: 'Karol', text: " because I've been" },
-  { startTime: 6399.85, person: 'Karol', text: " I've seen" },
-  { startTime: 6400.21, person: 'Fran', text: " I'm not an expert in traceability" },
-  { startTime: 6402.17, person: 'Fran', text: ' but I know some' },
-  { startTime: 6403.41, person: 'Fran', text: ' I mean you can take it' },
-  { startTime: 6404.41, person: 'Fran', text: ' because' },
-  { startTime: 6404.67, person: 'Karol', text: " yeah it's" },
-  { startTime: 6405.85, person: 'Karol', text: " it's actually not that" },
-  { startTime: 6406.83, person: 'Karol', text: ' that complicated' },
-  { startTime: 6407.99, person: 'Karol', text: ' as long as you have' },
-  { startTime: 6409.07, person: 'Karol', text: ' proper logging monitoring' },
-  { startTime: 6410.35, person: 'Karol', text: ' and observability' },
-  { startTime: 6411.21, person: 'Karol', text: ' within your systems' },
-  { startTime: 6412.19, person: 'Karol', text: ' so basically' },
-  { startTime: 6413.25, person: 'Karol', text: ' if you want to trace' },
-  { startTime: 6414.25, person: 'Karol', text: ' your' },
-  { startTime: 6414.57, person: 'Karol', text: ' your' },
-  { startTime: 6415.91, person: 'Karol', text: ' events' },
-  { startTime: 6416.43, person: 'Karol', text: ' and you have this kind of' },
-  { startTime: 6417.73, person: 'Karol', text: ' a batch scenario' },
-  { startTime: 6419.01, person: 'Karol', text: ' where you' },
-  { startTime: 6419.57, person: 'Karol', text: ' split it up' },
-  { startTime: 6420.51, person: 'Karol', text: ' you need to' },
-  { startTime: 6422.49, person: 'Karol', text: ' just make up a' },
-  { startTime: 6423.59, person: 'Karol', text: ' specific pattern' },
-  { startTime: 6424.41, person: 'Karol', text: ' which means that' },
-  { startTime: 6425.59, person: 'Karol', text: ' you have some sort of' },
-  { startTime: 6426.31, person: 'Karol', text: ' a correlation ID' },
-  { startTime: 6427.23, person: 'Karol', text: ' and then when you' },
-  { startTime: 6428.83, person: 'Karol', text: ' split it up' },
-  { startTime: 6429.95, person: 'Karol', text: ' just append that' },
-  { startTime: 6431.33, person: 'Karol', text: ' correlation ID' },
-  { startTime: 6432.07, person: 'Karol', text: ' with additional' },
-  { startTime: 6432.69, person: 'Karol', text: ' identifiers of those' },
-  { startTime: 6433.95, person: 'Karol', text: ' individual' },
-  { startTime: 6435.53, person: 'Karol', text: ' child elements' },
-  { startTime: 6437.61, person: 'Karol', text: ' and that makes' },
-  { startTime: 6438.87, person: 'Karol', text: ' that traceability' },
-  { startTime: 6440.51, person: 'Karol', text: ' really pop' },
-  { startTime: 6441.37, person: 'Karol', text: ' so' },
-  { startTime: 6444.11, person: 'Karol', text: ' you can still search' },
-  { startTime: 6445.71, person: 'Karol', text: ' all of those' },
-  { startTime: 6446.43, person: 'Karol', text: ' elements' },
-  { startTime: 6447.05, person: 'Karol', text: ' by using the original' },
-  { startTime: 6448.67, person: 'Karol', text: ' batch' },
-  { startTime: 6449.11, person: 'Karol', text: ' identifier' },
-  { startTime: 6450.77, person: 'Karol', text: ' the correlation ID' },
-  { startTime: 6452.01, person: 'Karol', text: ' there' },
-  { startTime: 6452.79, person: 'Karol', text: ' and then you can' },
-  { startTime: 6453.71, person: 'Karol', text: ' search individual' },
-  { startTime: 6454.99, person: 'Karol', text: ' child elements' },
-  { startTime: 6456.23, person: 'Karol', text: ' by the' },
-  { startTime: 6457.27, person: 'Karol', text: ' appended' },
-  { startTime: 6460.77, person: 'Karol', text: ' identifier' },
-  { startTime: 6461.53, person: 'Karol', text: ' right' },
-  { startTime: 6461.91, person: 'Karol', text: ' so that' },
-  { startTime: 6462.83, person: 'Karol', text: ' will be' },
-  { startTime: 6463.71, person: 'Karol', text: ' sufficiently unique' },
-  { startTime: 6465.89, person: 'Karol', text: ' because if you' },
-  { startTime: 6466.83, person: 'Karol', text: ' use' },
-  { startTime: 6467.89, person: 'Karol', text: ' UL ID' },
-  { startTime: 6469.11, person: 'Karol', text: ' that will be very unique' },
-  { startTime: 6470.45, person: 'Karol', text: ' very nice' },
-  { startTime: 6471.01, person: 'Karol', text: ' with a' },
-  { startTime: 6471.77, person: 'Karol', text: ' timestamp' },
-  { startTime: 6472.19, person: 'Karol', text: ' and then' },
-  { startTime: 6473.01, person: 'Karol', text: ' if you' },
-  { startTime: 6474.91, person: 'Karol', text: ' append' },
-  { startTime: 6475.29, person: 'Karol', text: ' you just append' },
-  { startTime: 6476.01, person: 'Karol', text: " that's not a big problem there" },
-  { startTime: 6477.23, person: 'Karol', text: ' right' },
-  { startTime: 6478.93, person: 'Karol', text: " so that's a" },
-  { startTime: 6479.69, person: 'Karol', text: " that's a good one" },
-  { startTime: 6480.29, person: 'Karol', text: ' for that' },
-  { startTime: 6480.77, person: 'Fran', text: ' and you can' },
-  { startTime: 6481.81, person: 'Fran', text: ' define it on' },
-  { startTime: 6482.61, person: 'Fran', text: ' ASIC API using' },
-  { startTime: 6483.47, person: 'Fran', text: ' the correlation ID' },
-  { startTime: 6484.45, person: 'Fran', text: ' field on' },
-  { startTime: 6485.27, person: 'Fran', text: ' ASIC API' },
-  { startTime: 6487.01, person: 'Fran', text: " so it's covered" },
-  { startTime: 6489.33, person: 'Karol', text: ' yeah exactly' },
-  { startTime: 6490.95, person: 'Karol', text: " that's a" },
-  { startTime: 6491.35, person: 'Karol', text: " that's a good thing" },
-  { startTime: 6492.03, person: 'Karol', text: " and that's also" },
-  { startTime: 6493.11, person: 'Karol', text: ' a very standard thing' },
-  { startTime: 6494.53, person: 'Karol', text: ' to do in' },
-  { startTime: 6495.37, person: 'Karol', text: ' open API' },
-  { startTime: 6496.33, person: 'Karol', text: ' spec as well' },
-  { startTime: 6497.01, person: 'Karol', text: ' to define those' },
-  { startTime: 6499.13, person: 'Karol', text: ' metadata' },
-  { startTime: 6500.17, person: 'Karol', text: ' and' },
-  { startTime: 6500.49, person: 'Karol', text: ' correlators' },
-  { startTime: 6501.15, person: 'Karol', text: ' usually for' },
-  { startTime: 6503.35, person: 'Karol', text: ' open' },
-  { startTime: 6503.99, person: 'Karol', text: " API that's" },
-  { startTime: 6506.33, person: 'Karol', text: ' within the' },
-  { startTime: 6507.11, person: 'Karol', text: ' HTTP' },
-  { startTime: 6507.61, person: 'Karol', text: ' headers' },
-  { startTime: 6508.59, person: 'Karol', text: ' right' },
-  { startTime: 6509.65, person: 'Karol', text: ' so' },
-  { startTime: 6511.35, person: 'Karol', text: " it's workable" },
-  { startTime: 6512.29, person: 'Karol', text: " it's just a" },
-  { startTime: 6512.95, person: 'Karol', text: ' matter of' },
-  { startTime: 6514.21, person: 'Karol', text: ' figuring out' },
-  { startTime: 6515.03, person: 'Karol', text: ' what the' },
-  { startTime: 6515.43, person: 'Karol', text: ' mapping is' },
-  { startTime: 6515.91, person: 'Karol', text: ' between those' },
-  { startTime: 6516.41, person: 'Karol', text: ' right' },
-  { startTime: 6518.31, person: 'Karol', text: ' all right' },
-  { startTime: 6520.61, person: 'Karol', text: ' I know we do' },
-  { startTime: 6521.53, person: 'Karol', text: ' have a little bit' },
-  { startTime: 6522.23, person: 'Karol', text: ' of a delay' },
-  { startTime: 6522.83, person: 'Karol', text: ' between' },
-  { startTime: 6524.31, person: 'Karol', text: ' what we see' },
-  { startTime: 6525.17, person: 'Karol', text: ' in the' },
-  { startTime: 6526.33, person: 'Karol', text: ' stream studio' },
-  { startTime: 6527.29, person: 'Karol', text: ' and what is' },
-  { startTime: 6527.97, person: 'Karol', text: ' out on' },
-  { startTime: 6529.19, person: 'Karol', text: ' LinkedIn' },
-  { startTime: 6529.69, person: 'Karol', text: ' and' },
-  { startTime: 6530.53, person: 'Karol', text: ' YouTube' },
-  { startTime: 6533.15, person: 'Karol', text: ' but I think' },
-  { startTime: 6534.01, person: 'Karol', text: ' we already' },
-  { startTime: 6534.41, person: 'Karol', text: ' passed through' },
-  { startTime: 6535.93, person: 'Fran', text: ' yeah and' },
-  { startTime: 6536.63, person: 'Karol', text: ' if not' },
-  { startTime: 6537.19, person: 'Fran', text: ' if not' },
-  { startTime: 6538.41, person: 'Fran', text: ' if people' },
-  { startTime: 6539.55, person: 'Fran', text: ' leave some' },
-  { startTime: 6539.97, person: 'Fran', text: ' questions after' },
-  { startTime: 6540.53, person: 'Fran', text: ' maybe people' },
-  { startTime: 6541.39, person: 'Fran', text: ' are watching' },
-  { startTime: 6541.81, person: 'Fran', text: ' the report' },
-  { startTime: 6542.23, person: 'Fran', text: ' if they want to' },
-  { startTime: 6544.21, person: 'Fran', text: ' leave some' },
-  { startTime: 6544.97, person: 'Fran', text: ' questions' },
-  { startTime: 6546.59, person: 'Fran', text: ' ping me' },
-  { startTime: 6547.37, person: 'Fran', text: ' or ping' },
-  { startTime: 6547.93, person: 'Fran', text: ' cattle' },
-  { startTime: 6549.89, person: 'Fran', text: " and if I don't" },
-  { startTime: 6551.27, person: 'Fran', text: ' get the notification' },
-  { startTime: 6551.91, person: 'Fran', text: ' please' },
-  { startTime: 6552.23, person: 'Fran', text: ' cattle with me now' },
-  { startTime: 6552.89, person: 'Fran', text: ' and I will reply after' },
-  { startTime: 6553.85, person: 'Fran', text: ' that so' },
-  { startTime: 6554.37, person: 'Fran', text: " it doesn't have to be" },
-  { startTime: 6555.21, person: 'Fran', text: ' sure' },
-  { startTime: 6555.51, person: 'Fran', text: ' we can make' },
-  { startTime: 6556.61, person: 'Fran', text: ' it a synchronous' },
-  { startTime: 6557.31, person: 'Karol', text: ' yeah we can make' },
-  { startTime: 6558.45, person: 'Karol', text: ' it a synchronous' },
-  { startTime: 6559.15, person: 'Karol', text: ' exactly' },
-  { startTime: 6559.55, person: 'Karol', text: ' so for all of you' },
-  { startTime: 6561.13, person: 'Karol', text: ' wondering and' },
-  { startTime: 6562.09, person: 'Karol', text: ' willing to' },
-  { startTime: 6563.05, person: 'Karol', text: ' share the stream' },
-  { startTime: 6564.09, person: 'Karol', text: ' or if you' },
-  { startTime: 6565.17, person: 'Karol', text: ' found it' },
-  { startTime: 6565.53, person: 'Karol', text: ' captivating the stream' },
-  { startTime: 6566.71, person: 'Karol', text: ' will be saved' },
-  { startTime: 6567.53, person: 'Karol', text: ' in a' },
-  { startTime: 6568.71, person: 'Karol', text: ' raw form' },
-  { startTime: 6569.99, person: 'Karol', text: ' on LinkedIn' },
-  { startTime: 6570.93, person: 'Karol', text: ' it will be also' },
-  { startTime: 6572.39, person: 'Karol', text: ' available on' },
-  { startTime: 6573.45, person: 'Karol', text: ' bridging the gap' },
-  { startTime: 6574.33, person: 'Karol', text: ' YouTube channel' },
-  { startTime: 6575.89, person: 'Karol', text: ' I do plan to' },
-  { startTime: 6577.15, person: 'Karol', text: ' do a little bit' },
-  { startTime: 6578.03, person: 'Karol', text: ' of touch-ups' },
-  { startTime: 6578.69, person: 'Karol', text: ' here and there' },
-  { startTime: 6580.47, person: 'Karol', text: ' over the stream' },
-  { startTime: 6581.47, person: 'Karol', text: ' and release it' },
-  { startTime: 6582.17, person: 'Karol', text: ' as a normal video' },
-  { startTime: 6582.99, person: 'Karol', text: ' but for the moment' },
-  { startTime: 6584.17, person: 'Karol', text: ' it was' },
-  { startTime: 6584.55, person: 'Karol', text: ' it will be' },
-  { startTime: 6586.09, person: 'Karol', text: ' available' },
-  { startTime: 6587.33, person: 'Karol', text: ' as a' },
-  { startTime: 6588.09, person: 'Karol', text: ' live stream' },
-  { startTime: 6589.21, person: 'Karol', text: ' recording' },
-  { startTime: 6589.83, person: 'Karol', text: ' on YouTube' },
-  { startTime: 6590.81, person: 'Karol', text: ' so you can' },
-  { startTime: 6591.89, person: 'Karol', text: ' always come back' },
-  { startTime: 6592.93, person: 'Karol', text: ' rewatch it' },
-  { startTime: 6594.11, person: 'Karol', text: ' figure out' },
-  { startTime: 6594.83, person: 'Karol', text: ' what you want' },
-  { startTime: 6595.49, person: 'Karol', text: ' to hear' },
-  { startTime: 6596.07, person: 'Karol', text: ' you know' },
-  { startTime: 6597.11, person: 'Karol', text: ' and ask additional' },
-  { startTime: 6598.69, person: 'Karol', text: ' questions' },
-  { startTime: 6599.19, person: 'Karol', text: ' if I find those' },
-  { startTime: 6601.03, person: 'Karol', text: ' in the comments' },
-  { startTime: 6603.27, person: 'Karol', text: ' somewhere' },
-  { startTime: 6603.95, person: 'Karol', text: " I'll make sure" },
-  { startTime: 6605.03, person: 'Karol', text: ' to relay those' },
-  { startTime: 6606.77, person: 'Karol', text: ' to Fran' },
-  { startTime: 6607.25, person: 'Karol', text: " if you don't" },
-  { startTime: 6608.11, person: 'Karol', text: ' tag him' },
-  { startTime: 6609.37, person: 'Karol', text: ' and then' },
-  { startTime: 6611.13, person: 'Karol', text: " we'll draft" },
-  { startTime: 6612.07, person: 'Karol', text: ' an asynchronous' },
-  { startTime: 6612.93, person: 'Karol', text: ' answer to those' },
-  { startTime: 6616.55, person: 'Karol', text: ' all right' },
-  { startTime: 6618.55, person: 'Karol', text: " that's it" },
-  { startTime: 6619.45, person: 'Karol', text: " because I don't see" },
-  { startTime: 6620.69, person: 'Karol', text: ' any more' },
-  { startTime: 6621.17, person: 'Karol', text: ' questions popping' },
-  { startTime: 6622.21, person: 'Karol', text: ' in in chat' },
-  { startTime: 6623.57, person: 'Karol', text: ' thank you all' },
-  { startTime: 6624.31, person: 'Karol', text: ' for attending' },
-  { startTime: 6624.83, person: 'Karol', text: ' thank you Fran' },
-  { startTime: 6625.57, person: 'Karol', text: ' for coming to' },
-  { startTime: 6626.95, person: 'Karol', text: ' the first' },
-  { startTime: 6627.53, person: 'Karol', text: ' edition of' },
-  { startTime: 6628.41, person: 'Karol', text: ' Loosely Coupled' },
-  { startTime: 6629.29, person: 'Karol', text: " that's absolutely" },
-  { startTime: 6631.15, person: 'Karol', text: ' amazing' },
-  { startTime: 6631.73, person: 'Karol', text: ' having you here' },
-  { startTime: 6633.81, person: 'Karol', text: ' and' },
-  { startTime: 6634.49, person: 'Fran', text: ' thank you for inviting' },
-  { startTime: 6636.45, person: 'Fran', text: ' me' },
-  { startTime: 6636.79, person: 'Fran', text: ' that was really' },
-  { startTime: 6638.57, person: 'Fran', text: ' my pleasure' },
-  { startTime: 6639.27, person: 'Karol', text: ' and' },
-  { startTime: 6641.11, person: 'Karol', text: ' everybody' },
-  { startTime: 6641.79, person: 'Karol', text: ' have a lovely' },
-  { startTime: 6642.65, person: 'Karol', text: ' evening' },
-  { startTime: 6643.29, person: 'Karol', text: ' rest of the night' },
-  { startTime: 6644.37, person: 'Karol', text: ' wherever you are' },
-  { startTime: 6646.21, person: 'Karol', text: ' maybe rest of the day' },
-  { startTime: 6648.67, person: 'Karol', text: ' and' },
-  { startTime: 6649.23, person: 'Karol', text: ' till next time' }
+  {
+    startTime: 4459.31,
+    person: 'Karol',
+    text: ' Your work might be contributing to the state you are in, but you might be just neuroatypical.'
+  },
+  {
+    startTime: 4465.65,
+    person: 'Karol',
+    text: " And that's also perfectly fine, but go to a specialist."
+  },
+  { startTime: 4469.63, person: 'Fran', text: ' Yep, exactly.' },
+  { startTime: 4471.97, person: 'Fran', text: ' I agree with that.' },
+  {
+    startTime: 4473.53,
+    person: 'Fran',
+    text: " And that links back to what I was saying that this psychological safety and organisations, like it's not just for experimenting."
+  },
+  {
+    startTime: 4485.43,
+    person: 'Fran',
+    text: " It's not just for, you know, for adopting a new technology and so on."
+  },
+  {
+    startTime: 4488.49,
+    person: 'Fran',
+    text: " It's also for feeling this burnout, which by the way, I would like to clarify, burnout is not a clinical term, right?"
+  },
+  {
+    startTime: 4499.05,
+    person: 'Fran',
+    text: ' This is a beautiful name we invented to describe depression.'
+  },
+  { startTime: 4505.17, person: 'Fran', text: ' So that is depression, right?' },
+  {
+    startTime: 4506.99,
+    person: 'Fran',
+    text: ' So when you feel burnout, depending on the stage of it, you might be in the beginning of a depression, you might be like straight into a depression.'
+  },
+  { startTime: 4517.63, person: 'Fran', text: " So let's call it for what it is." },
+  {
+    startTime: 4520.31,
+    person: 'Fran',
+    text: " It's cool to call it burnout because most people are searching for this word, but let's call it also for what it is."
+  },
+  { startTime: 4527.15, person: 'Fran', text: ' The clinical term is depression, right?' },
+  { startTime: 4530.47, person: 'Fran', text: ' So search for help.' },
+  { startTime: 4531.77, person: 'Fran', text: " That's what I would say." },
+  {
+    startTime: 4533.95,
+    person: 'Fran',
+    text: " And yeah, and if you are a manager, if you are a team lead or something, or you're managing people, I'm not gonna say that you should be acting as a psychologist, because that's probably not your problem, again, but at least give them space for expressing their thoughts openly."
+  },
+  {
+    startTime: 4563.03,
+    person: 'Fran',
+    text: ' And if they need help and the company supports it, like for instance, paying for the treatment, paying for the therapy sessions.'
+  },
+  { startTime: 4571.79, person: 'Karol', text: ' Paying for coaching, ADHD coaching sessions.' },
+  { startTime: 4576.67, person: 'Fran', text: ' Paying for holidays.' },
+  {
+    startTime: 4578.01,
+    person: 'Fran',
+    text: ' Like for instance, I remember a friend of mine, like he was in my team.'
+  },
+  {
+    startTime: 4583.39,
+    person: 'Fran',
+    text: ' He was, I immediately detected him to be like, like super, like about to collapse, you know?'
+  },
+  {
+    startTime: 4591.61,
+    person: 'Fran',
+    text: ' And he was not taking holidays because in his own words, I have to finish this.'
+  },
+  {
+    startTime: 4598.51,
+    person: 'Fran',
+    text: " I have to, and I said, no, no, you don't have to."
+  },
+  { startTime: 4601.71, person: 'Fran', text: " It's good if you do it." },
+  { startTime: 4603.41, person: 'Fran', text: " It's good if it happens, but you don't have to." },
+  { startTime: 4606.63, person: 'Fran', text: " You don't have to finish this." },
+  { startTime: 4607.97, person: 'Fran', text: " We're an open source project." },
+  {
+    startTime: 4609.53,
+    person: 'Fran',
+    text: " It's okay if you need this for the community to complete it, to contribute and so on."
+  },
+  {
+    startTime: 4614.53,
+    person: 'Fran',
+    text: " And if it doesn't happen this summer and it has to happen next summer, that's completely fine."
+  },
+  { startTime: 4620.03, person: 'Fran', text: " We're not a product company." },
+  { startTime: 4621.21, person: 'Fran', text: " We're not trying to sell anything." },
+  { startTime: 4622.47, person: 'Fran', text: " We're building an open source project." },
+  {
+    startTime: 4624.99,
+    person: 'Fran',
+    text: ' So if something is not developed as fast as you like, then maybe we should focus in inviting more people to join our community and contribute more, not you doubling down the hours and the effort you put in, right?'
+  },
+  {
+    startTime: 4639.59,
+    person: 'Fran',
+    text: ' So, and I sent him like four weeks straight into holidays, like finish whatever you have a time today.'
+  },
+  { startTime: 4648.71, person: 'Fran', text: " Tomorrow you're on holidays already." },
+  {
+    startTime: 4650.13,
+    person: 'Fran',
+    text: " And I don't want to see you connecting for weeks, right?"
+  },
+  {
+    startTime: 4652.55,
+    person: 'Fran',
+    text: ' He came back recovered and with a mind clear like shit, I was like so deep into this that I was even like believing that this was all my responsibility.'
+  },
+  { startTime: 4664.83, person: 'Fran', text: ' Yeah, down the rabbit hole you go.' },
+  { startTime: 4666.23, person: 'Fran', text: ' Down the rabbit hole exactly.' },
+  {
+    startTime: 4668.33,
+    person: 'Fran',
+    text: " And so this is something that I also ask managers whenever they detect this kind of things, protect your team, don't protect the company."
+  },
+  { startTime: 4676.55, person: 'Karol', text: ' Right.' },
+  {
+    startTime: 4677.19,
+    person: 'Fran',
+    text: " I mean, if you protect your team, you're going to protect the company anyway."
+  },
+  {
+    startTime: 4680.63,
+    person: 'Fran',
+    text: " So, but don't look up, look down, look to your team, protect them, right?"
+  },
+  {
+    startTime: 4686.83,
+    person: 'Fran',
+    text: ' Because in the end, the company is going to fire you someday, right?'
+  },
+  { startTime: 4693.87, person: 'Karol', text: " You're just an asset that is easily removable." },
+  {
+    startTime: 4697.47,
+    person: 'Fran',
+    text: " Whatever company you work for, they're going to either you're going to quit or they're going to remove you."
+  },
+  {
+    startTime: 4703.27,
+    person: 'Fran',
+    text: " So protect your team because they're probably their colleagues as well."
+  },
+  {
+    startTime: 4706.81,
+    person: 'Fran',
+    text: " And also for humanitarian reasons, don't let people suffer for the sake of just a few millionaires, right?"
+  },
+  {
+    startTime: 4716.97,
+    person: 'Fran',
+    text: " I don't care about that, but I'm a little bit punk here, I will say."
+  },
+  {
+    startTime: 4720.81,
+    person: 'Karol',
+    text: ' But you know what, from my own experience, when I learned that I have ADHD and I started sharing and talking about that with people, and I told that over a team meeting with my previous employer.'
+  },
+  {
+    startTime: 4737.23,
+    person: 'Karol',
+    text: " And that was very interesting that all of a sudden I had pings on Slack from people I didn't even know at the time in the company."
+  },
+  { startTime: 4749.66, person: 'Karol', text: ' They were like, hey, I heard you have ADHD.' },
+  {
+    startTime: 4752.82,
+    person: 'Karol',
+    text: " I also have ADHD, but I haven't come out of the closet."
+  },
+  {
+    startTime: 4760.31,
+    person: 'Karol',
+    text: " Nobody knows, but I want you to know because you have ADHD so you'll understand."
+  },
+  {
+    startTime: 4766.73,
+    person: 'Karol',
+    text: " And there was so many people that didn't feel psychologically safe in the company to be themselves and to be open about themselves."
+  },
+  {
+    startTime: 4780.15,
+    person: 'Karol',
+    text: ' So instead of being open about themselves, we just basically created an internal community of people with ADHD.'
+  },
+  {
+    startTime: 4790.03,
+    person: 'Karol',
+    text: ' And that worked to an extent because we started doing body doubling sessions, etcétera, to just help us work through certain blocks, right?'
+  },
+  { startTime: 4800.07, person: 'Fran', text: " You don't feel alone as well." },
+  {
+    startTime: 4801.77,
+    person: 'Karol',
+    text: ' And then you feel that you belong to somewhere, right?'
+  },
+  { startTime: 4805.77, person: 'Karol', text: " But it's very difficult." },
+  {
+    startTime: 4808.07,
+    person: 'Karol',
+    text: ' The psychological safety topic is a very broad topic.'
+  },
+  {
+    startTime: 4813.21,
+    person: 'Karol',
+    text: ' And there are so many reasons why somebody might not feel safe psychologically in a company and then act out based on that lack of safety and create even more troubles in the core topic that we were talking about, for example, so adoption of event-driven.'
+  },
+  { startTime: 4834.49, person: 'Karol', text: ' Yeah.' },
+  {
+    startTime: 4834.65,
+    person: 'Fran',
+    text: ' Yeah, so let me get back because I was reading the comments.'
+  },
+  { startTime: 4842.97, person: 'Fran', text: ' And we have some questions.' },
+  { startTime: 4846.29, person: 'Karol', text: ' We have some really good technical questions.' },
+  {
+    startTime: 4848.51,
+    person: 'Karol',
+    text: ' And I think we can jump to another point of a discussion, meaning the evolution of AsyncAPI, which some of those questions would be very fitting.'
+  },
+  {
+    startTime: 4862.01,
+    person: 'Karol',
+    text: ' So let me quickly scroll that up because I found one that was somewhere at the beginning of.'
+  },
+  { startTime: 4869.41, person: 'Fran', text: ' Yeah, Aleksandr, I have first question.' },
+  { startTime: 4871.71, person: 'Karol', text: ' Yes, there we go.' },
+  { startTime: 4875.67, person: 'Karol', text: ' Yes, cloud event specification.' },
+  { startTime: 4880.45, person: 'Fran', text: " If it's, you want to reply?" },
+  { startTime: 4885.09, person: 'Karol', text: ' Go ahead.' },
+  {
+    startTime: 4885.83,
+    person: 'Karol',
+    text: " I mean, it's about included as a recommendation to AsyncAPI."
+  },
+  {
+    startTime: 4891.09,
+    person: 'Karol',
+    text: ' I have nothing to do with AsyncAPI at this point.'
+  },
+  { startTime: 4895.23, person: 'Fran', text: " I'll say it's mature enough, yes." },
+  {
+    startTime: 4899.93,
+    person: 'Fran',
+    text: " I'm not sure how widely adopted it is right now, but I think I see it more and more, which is good."
+  },
+  {
+    startTime: 4908.93,
+    person: 'Fran',
+    text: ' So everything that, whatever it is sticking to standard is always good.'
+  },
+  { startTime: 4915.91, person: 'Fran', text: ' So I always celebrate that.' },
+  { startTime: 4919.49, person: 'Fran', text: ' Now I must clarify something.' },
+  {
+    startTime: 4921.55,
+    person: 'Fran',
+    text: " Some people think it's either cloud events or AsyncAPI, and they are complimentary."
+  },
+  { startTime: 4926.39, person: 'Fran', text: ' We actually tackle different problems, right?' },
+  {
+    startTime: 4930.11,
+    person: 'Fran',
+    text: ' So I wrote a blog post about it in the AsyncAPI blog, because I found out at some point people were like, even like throwing fire at us, right?'
+  },
+  {
+    startTime: 4940.53,
+    person: 'Fran',
+    text: ' Like, hey, come on, say something bad about cloud events.'
+  },
+  { startTime: 4944.29, person: 'Fran', text: ' And some hot take about it.' },
+  {
+    startTime: 4947.61,
+    person: 'Fran',
+    text: " And it's like, no, I'm not gonna say something bad because I always recommended myself."
+  },
+  {
+    startTime: 4951.05,
+    person: 'Fran',
+    text: ' I was, when I was consulting with Adidas, I was helping them to adopt AsyncAPI.'
+  },
+  {
+    startTime: 4960.53,
+    person: 'Fran',
+    text: ' They were using Kafka as well, and they were already using cloud events.'
+  },
+  {
+    startTime: 4965.45,
+    person: 'Fran',
+    text: " And I saw it in action, and I think it's pretty cool."
+  },
+  { startTime: 4969.37, person: 'Fran', text: ' So let me clarify.' },
+  {
+    startTime: 4970.59,
+    person: 'Fran',
+    text: " So cloud events, it's defining a, what's it called, like the envelope?"
+  },
+  { startTime: 4978.01, person: 'Fran', text: ' The envelope of the data, right?' },
+  {
+    startTime: 4980.11,
+    person: 'Fran',
+    text: " Pretty much, it's not exactly that, but it's pretty much the envelope of the data."
+  },
+  {
+    startTime: 4985.07,
+    person: 'Fran',
+    text: ' I think about it like enveloped in the post system, in the postal system, right?'
+  },
+  { startTime: 4990.59, person: 'Fran', text: " You don't send your letter straight away, right?" },
+  {
+    startTime: 4995.79,
+    person: 'Fran',
+    text: ' You put it inside a letter, right, an envelope, sorry.'
+  },
+  {
+    startTime: 5000.29,
+    person: 'Fran',
+    text: ' And then you send the envelope with the letter inside, right?'
+  },
+  { startTime: 5005.25, person: 'Fran', text: " So that's pretty much it." },
+  { startTime: 5006.61, person: 'Fran', text: " It's like, it's a common envelope." },
+  {
+    startTime: 5009.89,
+    person: 'Fran',
+    text: " It's a format so that all your messages across your system, they all follow the same structure when it comes to metadata."
+  },
+  {
+    startTime: 5019.75,
+    person: 'Fran',
+    text: ' When it comes to specific data, then each one is different, right?'
+  },
+  { startTime: 5025.83, person: 'Fran', text: ' And not even cloud event patches in that point.' },
+  {
+    startTime: 5029.17,
+    person: 'Fran',
+    text: " Cloud events has a field that it's called data, and this is free form."
+  },
+  { startTime: 5032.99, person: 'Fran', text: ' You can put there whatever you want.' },
+  {
+    startTime: 5035.61,
+    person: 'Fran',
+    text: " Now, the funny thing about this is that AsyncAPI helps you define, helps you define the communication, not the communication, the messages that your application, let's think about microservices, for instance."
+  },
+  {
+    startTime: 5052.99,
+    person: 'Fran',
+    text: ' Your service is sending and or receiving from a topic, from a broker, from so on, right?'
+  },
+  { startTime: 5059.25, person: 'Fran', text: ' You define this communication.' },
+  {
+    startTime: 5060.75,
+    person: 'Fran',
+    text: ' But when it comes to defining the message itself, the message piece, there is a field called payload, right?'
+  },
+  { startTime: 5067.13, person: 'Fran', text: ' And this one is free form.' },
+  {
+    startTime: 5069.53,
+    person: 'Fran',
+    text: " So we don't dictate how the payload of a message should look like, right?"
+  },
+  { startTime: 5074.41, person: 'Fran', text: ' This is free form.' },
+  { startTime: 5075.35, person: 'Fran', text: ' You can put there whatever you want.' },
+  {
+    startTime: 5076.71,
+    person: 'Fran',
+    text: ' Actually, in the JSON schema definition, this is, the value is true, because we always want to pass the validation.'
+  },
+  { startTime: 5082.87, person: 'Fran', text: " Like, we don't validate it." },
+  {
+    startTime: 5084.17,
+    person: 'Fran',
+    text: " It's always, whatever you put there is valid, right?"
+  },
+  { startTime: 5086.59, person: 'Fran', text: " We don't want to get there." },
+  {
+    startTime: 5088.35,
+    person: 'Fran',
+    text: ' So there in the payload is where, payload and also headers as well, is where cloud events belong, right?'
+  },
+  { startTime: 5097.35, person: 'Fran', text: ' The envelope and as the envelope of the data.' },
+  {
+    startTime: 5100.81,
+    person: 'Fran',
+    text: " So actually, I think there's a pull request or an issue discussion right now in AsyncAPI."
+  },
+  {
+    startTime: 5108.15,
+    person: 'Fran',
+    text: ' If I recall correctly, something I started at some point, I want to integrate the two standards in a better way.'
+  },
+  {
+    startTime: 5114.35,
+    person: 'Fran',
+    text: " Like if you're using cloud events, you should be able to somehow natively say it in AsyncAPI."
+  },
+  { startTime: 5122.65, person: 'Fran', text: " I'm using cloud events." },
+  {
+    startTime: 5123.61,
+    person: 'Fran',
+    text: ' The format of the message is cloud events because the cloud events format itself is then going to tell you which format your data is in.'
+  },
+  { startTime: 5131.51, person: 'Fran', text: ' Is it XML?' },
+  { startTime: 5132.21, person: 'Fran', text: ' Is it JSON?' },
+  { startTime: 5132.87, person: 'Fran', text: ' Is it following certain schema definition?' },
+  {
+    startTime: 5136.11,
+    person: 'Fran',
+    text: ' So it will be cool if they could, you can already use both together, but it will be cool if it could be blended even better, right?'
+  },
+  { startTime: 5144.95, person: 'Karol', text: ' Right.' },
+  { startTime: 5145.61, person: 'Fran', text: ' So, so yeah, so that is' },
+  {
+    startTime: 5148.49,
+    person: 'Karol',
+    text: ' Just to be clear on the article, because I did some quick Google searching, would that be somewhere around May 2019?'
+  },
+  {
+    startTime: 5156.51,
+    person: 'Fran',
+    text: ' Yes, but the thing, I have to update this article at some point.'
+  },
+  { startTime: 5160.93, person: 'Fran', text: " It's not exactly how it's done anymore." },
+  {
+    startTime: 5164.93,
+    person: 'Fran',
+    text: ' But you see, like six years now, and I was already recommending this.'
+  },
+  { startTime: 5170.59, person: 'Karol', text: ' Yeah.' },
+  { startTime: 5171.19, person: 'Karol', text: " So that's the original article to be updated." },
+  {
+    startTime: 5175.79,
+    person: 'Karol',
+    text: ' I see the differentiators in the description is there, as you just said it.'
+  },
+  {
+    startTime: 5181.51,
+    person: 'Karol',
+    text: " Maybe there would be probably some discrepancies over the past six years because things have changed, but that's pretty much it."
+  },
+  {
+    startTime: 5191.15,
+    person: 'Fran',
+    text: ' At this point, I was exploring and telling people the different ways you could use both, different ways to use both.'
+  },
+  {
+    startTime: 5198.23,
+    person: 'Fran',
+    text: " Now there are, let's say, best practises for using both that are not described in this article, because now in version three of the spec, things have changed a little bit, so now it's easier."
+  },
+  { startTime: 5210.09, person: 'Fran', text: ' We have traits.' },
+  {
+    startTime: 5211.65,
+    person: 'Fran',
+    text: ' I think we had traits at that point, but there are other ways to do it.'
+  },
+  {
+    startTime: 5216.09,
+    person: 'Fran',
+    text: " Honestly, on the top of my mind, I don't recall how people are doing it right now, but there are, let's say, best practises."
+  },
+  { startTime: 5223.65, person: 'Fran', text: ' So, yes.' },
+  { startTime: 5227.34, person: 'Karol', text: ' All right.' },
+  {
+    startTime: 5227.9,
+    person: 'Fran',
+    text: " It's not like that, like I described in this article."
+  },
+  { startTime: 5232.64, person: 'Karol', text: ' Yeah, but, you know, things change.' },
+  { startTime: 5234.7, person: 'Karol', text: ' Article has six years.' },
+  {
+    startTime: 5236.56,
+    person: 'Karol',
+    text: " That's only obvious that this will no longer be fully up to date, so, yeah."
+  },
+  {
+    startTime: 5242.98,
+    person: 'Karol',
+    text: ' It will require a little bit of a fixing up in that sense.'
+  },
+  { startTime: 5250.74, person: 'Karol', text: ' All right.' },
+  { startTime: 5252.12, person: 'Karol', text: " Let's see." },
+  {
+    startTime: 5252.72,
+    person: 'Karol',
+    text: ' There were some, I think, oh, quite long questions from Maksim.'
+  },
+  { startTime: 5258.86, person: 'Karol', text: ' Really a packed one.' },
+  {
+    startTime: 5261.86,
+    person: 'Karol',
+    text: ' Best practises for designing data models for messages.'
+  },
+  { startTime: 5266.74, person: 'Karol', text: " Ooh, that's a, ooh, la, la, la." },
+  { startTime: 5268.96, person: 'Fran', text: ' Canonical data model.' },
+  { startTime: 5270.26, person: 'Karol', text: " That's packed." },
+  {
+    startTime: 5273.04,
+    person: 'Karol',
+    text: " My personal take is I'm not a fan of canonical data models."
+  },
+  { startTime: 5278.38, person: 'Karol', text: ' Never will be.' },
+  { startTime: 5279.54, person: 'Karol', text: " I've seen that happen." },
+  {
+    startTime: 5282.22,
+    person: 'Karol',
+    text: ' The larger the org, the worse it gets in canonical data models.'
+  },
+  { startTime: 5287.32, person: 'Fran', text: ' Or if you do it, you do it as an afterthought.' },
+  {
+    startTime: 5290.02,
+    person: 'Fran',
+    text: " So, after you've been having, let's say, probably hundreds or thousands of message types, and you notice a pattern, maybe you standardise it."
+  },
+  {
+    startTime: 5306.04,
+    person: 'Fran',
+    text: " Because you make it a pattern, because it's already a pattern anyways."
+  },
+  { startTime: 5309.72, person: 'Fran', text: ' So, cool.' },
+  { startTime: 5310.5, person: 'Fran', text: ' In that case, cool.' },
+  {
+    startTime: 5311.66,
+    person: 'Fran',
+    text: " But if you do it up front, you're probably gonna be restricting yourself."
+  },
+  { startTime: 5317.16, person: 'Fran', text: ' And unnecessarily.' },
+  {
+    startTime: 5319.92,
+    person: 'Karol',
+    text: " That's where I am a fan of domain-driven design and bounded contexts within interoperability topics."
+  },
+  { startTime: 5326.46, person: 'Fran', text: ' Exactly.' },
+  {
+    startTime: 5327.24,
+    person: 'Karol',
+    text: ' Because then we can define each object several times for each bounded context or each domain separately.'
+  },
+  {
+    startTime: 5335.34,
+    person: 'Karol',
+    text: ' So, a definition of a customer in terms of a customer domain will be a different customer defined in the order domain.'
+  },
+  { startTime: 5342.38, person: 'Fran', text: ' Yeah, correct.' },
+  {
+    startTime: 5343,
+    person: 'Karol',
+    text: " Different attributes, even that's still the same core object, core data."
+  },
+  { startTime: 5349.18, person: 'Fran', text: " It's still the customer, yeah." },
+  {
+    startTime: 5350.78,
+    person: 'Fran',
+    text: " But it's a different representation of the data, yeah."
+  },
+  {
+    startTime: 5354.22,
+    person: 'Karol',
+    text: ' Different context of usage, which makes it better.'
+  },
+  {
+    startTime: 5358,
+    person: 'Fran',
+    text: ' I will link it to the previous question about cloud events.'
+  },
+  { startTime: 5361.08, person: 'Fran', text: " It's needed." },
+  {
+    startTime: 5361.88,
+    person: 'Fran',
+    text: " So, I'm seeing many people defining their canonical data models using cloud events as well."
+  },
+  { startTime: 5370.52, person: 'Fran', text: ' Because cloud events is extensible.' },
+  {
+    startTime: 5372.66,
+    person: 'Fran',
+    text: ' So, you can add your fields, your own fields, whatever you want.'
+  },
+  {
+    startTime: 5376.08,
+    person: 'Fran',
+    text: ' So, you just have to respect certain fields that are mandatory, I think.'
+  },
+  {
+    startTime: 5380.08,
+    person: 'Fran',
+    text: ' Maybe one or two are mandatory, if I recall correctly.'
+  },
+  {
+    startTime: 5383.28,
+    person: 'Fran',
+    text: ' The rest are just optional and you can add more of your own.'
+  },
+  { startTime: 5388.08, person: 'Fran', text: ' So, some people are opting for that.' },
+  {
+    startTime: 5392.48,
+    person: 'Fran',
+    text: " It's not exactly a canonical data model, but it gets close."
+  },
+  { startTime: 5397.04, person: 'Karol', text: ' Yeah.' },
+  {
+    startTime: 5398.8,
+    person: 'Karol',
+    text: ' And a twist, which is a lot shorter of a question.'
+  },
+  {
+    startTime: 5403.3,
+    person: 'Karol',
+    text: ' Sharing resources data models between OpenAPI spec and AsyncAPI.'
+  },
+  { startTime: 5409.33, person: 'Karol', text: ' Ooh.' },
+  { startTime: 5410.3, person: 'Fran', text: ' Many people do that, yeah.' },
+  {
+    startTime: 5412.24,
+    person: 'Karol',
+    text: " I think that's, in general, that's not a bad idea."
+  },
+  {
+    startTime: 5415.44,
+    person: 'Karol',
+    text: " Especially if you're having a integration platform, and especially in API-led architecture where you can actually do the domain partitioning."
+  },
+  {
+    startTime: 5426.92,
+    person: 'Karol',
+    text: ' And some of your services are, at the same time, synchronous and asynchronous, because you have a lot of orchestration and different things are happening within the composition layer.'
+  },
+  { startTime: 5441.84, person: 'Fran', text: ' Yeah.' },
+  {
+    startTime: 5442.08,
+    person: 'Karol',
+    text: ' That means that that sharing would be actually a very good thing.'
+  },
+  {
+    startTime: 5446.48,
+    person: 'Fran',
+    text: " I actually recommend it because, and actually, the reason why AsyncAPI is so similar, it's still so similar to OpenAPI, is because we want to be, both of them, as interoperable as possible."
+  },
+  {
+    startTime: 5459.48,
+    person: 'Fran',
+    text: " To be, as a fun fact, while we were designing version three of the spec, that is, it's the current version of AsyncAPI, we were even considering if there could be a way to make it not the same as OpenAPI, because we were already convinced that we had to change certain things in the spec, but to, in coordination with OpenAPI, which we are always in constant touch, the two communities, right?"
+  },
+  {
+    startTime: 5497.27,
+    person: 'Fran',
+    text: " So to tell them that, hey, we're going in this direction because of this, this, and that, we're putting operations on the root level of the spec instead of inside the channels, or like, for instance, if you're familiar with OpenAPI, they have the operations, get, put, post, and so on, inside the path, right?"
+  },
+  { startTime: 5516.29, person: 'Karol', text: ' Yeah.' },
+  { startTime: 5516.91, person: 'Fran', text: ' Instead of at the root level.' },
+  {
+    startTime: 5518.15,
+    person: 'Fran',
+    text: ' But there were some, already some people in the OpenAPI community saying, we should move the operations to the root level and then link them with $REF and so on, right?'
+  },
+  {
+    startTime: 5527.63,
+    person: 'Fran',
+    text: ' So instead of having them nested inside paths and so on.'
+  },
+  { startTime: 5533.79, person: 'Fran', text: " That's the direction we took for AsyncAPI." },
+  {
+    startTime: 5535.83,
+    person: 'Fran',
+    text: ' So operations are now in the root level as a first-class citizen, as people call it, right?'
+  },
+  {
+    startTime: 5543.83,
+    person: 'Fran',
+    text: ' And we were thinking, if we managed to convince the OpenAPI folks to do the same thing, at some point, we could even, if not converge into a single spec, we could build really close, really, really close, right?'
+  },
+  { startTime: 5559.73, person: 'Karol', text: ' Right.' },
+  {
+    startTime: 5561.89,
+    person: 'Karol',
+    text: ' But this is a philosophical problem because if you look at the days of SOA and SOAP services, SOAP had a very different philosophy because SOAP was primarily used to build business services.'
+  },
+  {
+    startTime: 5582.73,
+    person: 'Karol',
+    text: " So they didn't represent an object, they represent a function."
+  },
+  {
+    startTime: 5587.63,
+    person: 'Karol',
+    text: " While if we're looking at REST, REST by nature is supposed to represent an object and functions on that specific object."
+  },
+  {
+    startTime: 5597.45,
+    person: 'Karol',
+    text: ' So moving the operations down to that level would shift back to, kind of shift back to business services rather than representing objects.'
+  },
+  {
+    startTime: 5612.67,
+    person: 'Karol',
+    text: " And that philosophically might rub people the wrong way when we're looking at these kinds of services."
+  },
+  {
+    startTime: 5622.87,
+    person: 'Karol',
+    text: ' Of course, this would be against REST principles, right?'
+  },
+  { startTime: 5626.77, person: 'Fran', text: " That's my point." },
+  { startTime: 5627.47, person: 'Fran', text: ' So OpenAPI is not a spec for REST APIs.' },
+  { startTime: 5633.25, person: 'Fran', text: ' It is not.' },
+  { startTime: 5634.17, person: 'Karol', text: ' Very true.' },
+  {
+    startTime: 5634.67,
+    person: 'Karol',
+    text: ' But the underlying philosophy is coming from the REST specification.'
+  },
+  { startTime: 5640.19, person: 'Fran', text: ' Yes.' },
+  {
+    startTime: 5640.77,
+    person: 'Fran',
+    text: " The thing is that it's, I will call it like it's for HTTP APIs."
+  },
+  { startTime: 5644.31, person: 'Fran', text: " That's it." },
+  { startTime: 5644.89, person: 'Karol', text: ' Sure, yeah.' },
+  {
+    startTime: 5646.01,
+    person: 'Fran',
+    text: " In most cases, I would say it's just a resource-based HTTP APIs."
+  },
+  { startTime: 5651.85, person: 'Fran', text: " And in some cases, it's RPC APIs." },
+  {
+    startTime: 5655.73,
+    person: 'Fran',
+    text: ' Like you will do with GraphQL, but instead of GraphQL, you use your own syntax with endpoints containing the action and so on, which is pretty common as well.'
+  },
+  {
+    startTime: 5666.95,
+    person: 'Karol',
+    text: ' But that would be a very interesting evolution to actually see that shift back to that.'
+  },
+  {
+    startTime: 5672.85,
+    person: 'Fran',
+    text: " My point with this here is that we are, we've been trying."
+  },
+  {
+    startTime: 5676.03,
+    person: 'Fran',
+    text: " We're not trying right now, but we've been trying."
+  },
+  {
+    startTime: 5678.77,
+    person: 'Fran',
+    text: ' The thing is that this is a little bit like forcing the things to match together when they are not the same thing, right?'
+  },
+  {
+    startTime: 5686.99,
+    person: 'Fran',
+    text: " And it's not even representing the same kind of world."
+  },
+  { startTime: 5690.33, person: 'Fran', text: " So it's a different thing altogether." },
+  {
+    startTime: 5692.73,
+    person: 'Fran',
+    text: " Now, whatever can be reused, like schema definitions and so on, they're still the same, mostly the same."
+  },
+  { startTime: 5700.97, person: 'Fran', text: ' Actually, not the same.' },
+  {
+    startTime: 5702.57,
+    person: 'Fran',
+    text: ' You can use, so OpenAPI uses the latest JSON schema draft.'
+  },
+  {
+    startTime: 5710.17,
+    person: 'Fran',
+    text: " But the most used OpenAPI version, which is 2.something or the three, I think it's still 2.something. It's still swagger."
+  },
+  { startTime: 5719.93, person: 'Fran', text: ' The most used.' },
+  { startTime: 5723.07, person: 'Fran', text: " It's on JSON schema draft four." },
+  {
+    startTime: 5726.53,
+    person: 'Fran',
+    text: ' You can use any of these schemas versions with JSON KPI for that very reason.'
+  },
+  { startTime: 5732.01, person: 'Fran', text: ' So they were interoperable, right?' },
+  { startTime: 5736.79, person: 'Fran', text: ' So yeah.' },
+  {
+    startTime: 5737.67,
+    person: 'Fran',
+    text: " So we actually recommend it because it's a really good idea because think about it like, or picture this example."
+  },
+  {
+    startTime: 5745.49,
+    person: 'Fran',
+    text: ' You have a REST API or an HTTP API, you receive a request, and as a result, you publish a message to a broker, right?'
+  },
+  {
+    startTime: 5753.03,
+    person: 'Fran',
+    text: ' As a result, as a side effect of this request, you publish a message to the broker containing some information that was in the request body, right?'
+  },
+  {
+    startTime: 5762.87,
+    person: 'Fran',
+    text: ' Say, for instance, you are signing up a user or something like that.'
+  },
+  {
+    startTime: 5765.67,
+    person: 'Karol',
+    text: " I mean, that's a very common use case in API led architecture where you have the channel layer, the first layer, or as in MuleSoft, they call it the experience layer."
+  },
+  {
+    startTime: 5776.89,
+    person: 'Karol',
+    text: ' You basically call a REST service, and then that translates into a synchronous call forwarding that event.'
+  },
+  {
+    startTime: 5784.77,
+    person: 'Karol',
+    text: " The request is actually a disguised event, and the only reason why it's done over a synchronous call is because we want to give back the information that it was accepted for processing to that system so that system can move on."
+  },
+  {
+    startTime: 5805.35,
+    person: 'Karol',
+    text: " And it's easier to consume a HTTP API than to figure out how do we connect directly to the broker from each separate team to learn that broker."
+  },
+  {
+    startTime: 5819.27,
+    person: 'Karol',
+    text: ' And then you move that complexity to the integration platform to learn how to use the broker and facilitate that use.'
+  },
+  { startTime: 5825.33, person: 'Karol', text: " So that's a very common use case." },
+  {
+    startTime: 5826.95,
+    person: 'Karol',
+    text: ' And also a common use case is right now popping up in API managements where they offer protocol mediation to mediate from a REST call to an event or from an event to a REST call, like a webhook.'
+  },
+  {
+    startTime: 5844.21,
+    person: 'Fran',
+    text: " In fact, if you are building with a mindset of microservices, you might have an API that is a REST API or an HTTP API that receives a POST call, let's say, slash sign up, whatever, sign user up or whatever."
+  },
+  {
+    startTime: 5864.11,
+    person: 'Fran',
+    text: ' This microservice might have its own database where it stores the user that just have signed up right now, right?'
+  },
+  {
+    startTime: 5875.77,
+    person: 'Fran',
+    text: ' And as a result, either the microservice or the database triggers a change data capture event, right?'
+  },
+  {
+    startTime: 5884.19,
+    person: 'Fran',
+    text: " To the broker saying, hey, there's a new user in the database for whoever is interested in this, right?"
+  },
+  { startTime: 5891.31, person: 'Fran', text: ' So this is very useful.' },
+  { startTime: 5893.29, person: 'Fran', text: " And it's constrained to this." },
+  {
+    startTime: 5898.11,
+    person: 'Fran',
+    text: " It wouldn't even make sense for people to connect to the broker to consume this kind of events from a browser or something like that because why would you?"
+  },
+  { startTime: 5907.47, person: 'Fran', text: ' You want to have immediate feedback, right?' },
+  {
+    startTime: 5909.61,
+    person: 'Fran',
+    text: ' You want to have immediate feedback if the operation succeeded or not.'
+  },
+  {
+    startTime: 5916.05,
+    person: 'Fran',
+    text: " And you have the database there, you don't have to send the message to some other system that will process this message at some point and will come back with a response."
+  },
+  { startTime: 5925.35, person: 'Fran', text: " No, no, no, it's just here now." },
+  { startTime: 5928.03, person: 'Fran', text: " It's either saving it into the database or not." },
+  { startTime: 5930.97, person: 'Fran', text: ' Cool, give me the response immediately.' },
+  { startTime: 5932.75, person: 'Fran', text: ' So that makes sense.' },
+  {
+    startTime: 5934.13,
+    person: 'Fran',
+    text: " And then post this event for whoever else, let's say, welcome email, analytics, whatever."
+  },
+  {
+    startTime: 5942.39,
+    person: 'Fran',
+    text: ' Any other reason you might want to know that a user, when a user has signed up, right?'
+  },
+  {
+    startTime: 5948.85,
+    person: 'Karol',
+    text: " Yeah, that's an issue of system responsiveness as an architectural characteristic."
+  },
+  {
+    startTime: 5954.93,
+    person: 'Karol',
+    text: " So it doesn't really matter if you put that in a database for sourcing later or you put that on a topic with a persistence."
+  },
+  {
+    startTime: 5962.63,
+    person: 'Karol',
+    text: ' You go on with your day, but the system goes on because it gets a response or an acknowledgement that something was published.'
+  },
+  {
+    startTime: 5972.07,
+    person: 'Karol',
+    text: " It doesn't matter then how it's later processed."
+  },
+  {
+    startTime: 5975.17,
+    person: 'Karol',
+    text: " And that's the lovely quality of putting the event broker as a transition between two systems to decouple them on that."
+  },
+  { startTime: 5987.89, person: 'Karol', text: ' Oh my God, time coupling, temporal coupling.' },
+  { startTime: 5993.89, person: 'Karol', text: " So in that sense, it's very lovely." },
+  { startTime: 5996.99, person: 'Karol', text: " It's very useful." },
+  {
+    startTime: 5999.43,
+    person: 'Karol',
+    text: " All right, Fran, we've been talking for the last one and a half hour, well, nearly 1:40."
+  },
+  {
+    startTime: 6005.97,
+    person: 'Fran',
+    text: ' And if we stay here for two more hours, we can keep talking.'
+  },
+  { startTime: 6008.71, person: 'Karol', text: ' Oh, we could go on and on and on and on and on.' },
+  {
+    startTime: 6013.77,
+    person: 'Karol',
+    text: ' So dear audience, I see we still have an audience.'
+  },
+  { startTime: 6017.55, person: 'Karol', text: " That's awesome." },
+  { startTime: 6018.51, person: 'Fran', text: " That's awesome, yeah." },
+  { startTime: 6019.45, person: 'Karol', text: " That's awesome." },
+  { startTime: 6020.11, person: 'Fran', text: ' Some people stay with us years.' },
+  { startTime: 6021.25, person: 'Karol', text: ' Yeah, I love it, I love it.' },
+  {
+    startTime: 6024.49,
+    person: 'Karol',
+    text: ' So kudos to all of you who are staying still with us and still watching us.'
+  },
+  { startTime: 6029.97, person: 'Karol', text: ' If not, you can always watch the recording.' },
+  {
+    startTime: 6032.77,
+    person: 'Karol',
+    text: ' Before we jump into the QA, I would like to have some announcements.'
+  },
+  {
+    startTime: 6038.17,
+    person: 'Karol',
+    text: ' And one of the announcements is that we already have a second live stream planned.'
+  },
+  {
+    startTime: 6042.59,
+    person: 'Karol',
+    text: ' And the second live stream is not gonna be about tech.'
+  },
+  {
+    startTime: 6045.67,
+    person: 'Karol',
+    text: " It's gonna be about recruitment, which I think it's gonna be very, very interesting."
+  },
+  {
+    startTime: 6051.57,
+    person: 'Karol',
+    text: " We're gonna be talking with Gabby Preston-Pfeiffer and Philip Poynton."
+  },
+  {
+    startTime: 6055.53,
+    person: 'Karol',
+    text: " They're really well-versed people calling out the bullshit in IT recruitment."
+  },
+  {
+    startTime: 6062.79,
+    person: 'Karol',
+    text: ' So, you know, jump in on the 22nd of July to hear them out.'
+  },
+  { startTime: 6070.75, person: 'Karol', text: " And also, I'll reiterate some things." },
+  {
+    startTime: 6074.83,
+    person: 'Karol',
+    text: ' So if you wanna read some articles about enterprise application integration and EDA included, visit bridgingthegap.eu.com or just subscribe to our substack for the sake of it.'
+  },
+  {
+    startTime: 6087.39,
+    person: 'Karol',
+    text: ' And then if you wanna learn more about AsyncAPI, visit the initiative site.'
+  },
+  {
+    startTime: 6095.69,
+    person: 'Karol',
+    text: " And if you got hooked on our conversation about the organisational problems or the psychological safety of people and you wanna be a better leader and you wanna actually start addressing those topics, here's a QR code for Fran's book."
+  },
+  {
+    startTime: 6115.65,
+    person: 'Karol',
+    text: " It's still in the making, but Fran is giving the early bird available so you can take a look and read it, comment it."
+  },
+  {
+    startTime: 6126.35,
+    person: 'Karol',
+    text: ' I think, Fran, you would welcome all feedback, right?'
+  },
+  { startTime: 6129.15, person: 'Fran', text: " Yeah, actually, it's already happening." },
+  {
+    startTime: 6130.65,
+    person: 'Fran',
+    text: " We're having discussions in Notion about, not a lot, I must say, which is normal, like reading a book and leaving feedback on a book might feel intimidating to some people, not just because of technical knowledge, but also like this guy might think that I'm here, I'm bothering him or something."
+  },
+  {
+    startTime: 6151.75,
+    person: 'Fran',
+    text: " No, no, no, like I'm used to having, to getting feedback, respectful feedback obviously can construct it."
+  },
+  {
+    startTime: 6157.97,
+    person: 'Fran',
+    text: " And we're already having some discussions there in Notion with the early readers and it's cool."
+  },
+  { startTime: 6165.13, person: 'Fran', text: " I've only written three chapters so far." },
+  {
+    startTime: 6169.61,
+    person: 'Fran',
+    text: ' If everything goes well, I think there will be 23.'
+  },
+  { startTime: 6173.65, person: 'Fran', text: ' So yeah, I only have to write 20 more.' },
+  { startTime: 6179.73, person: 'Fran', text: ' No pressure.' },
+  { startTime: 6181.09, person: 'Karol', text: ' No pressure.' },
+  { startTime: 6182.31, person: 'Karol', text: " You're gonna lean pop the hell out of that." },
+  { startTime: 6186.31, person: 'Fran', text: " I'm gonna be like lean pop, but a notion, right?" },
+  {
+    startTime: 6190.21,
+    person: 'Karol',
+    text: ' Pretty much the same thing, only different medium.'
+  },
+  { startTime: 6192.03, person: 'Fran', text: ' Exactly.' },
+  { startTime: 6195.09, person: 'Fran', text: " But yeah, I'll take off." },
+  {
+    startTime: 6196.71,
+    person: 'Fran',
+    text: " I'm taking August off, like from the rest of the work, just to focus on the book and most likely September as well because I want to have it ready by October this year."
+  },
+  { startTime: 6210.95, person: 'Fran', text: " I hope these words don't bite me in the future." },
+  { startTime: 6216.39, person: 'Fran', text: ' Like you said that last year.' },
+  {
+    startTime: 6220.31,
+    person: 'Fran',
+    text: " I mean, if I don't publish it by October, bear with me, please."
+  },
+  { startTime: 6225.55, person: 'Fran', text: " It's my first time writing a book." },
+  {
+    startTime: 6227.89,
+    person: 'Fran',
+    text: " So I don't know how to estimate this kind of work because I've never done it."
+  },
+  { startTime: 6233.01, person: 'Karol', text: " It's difficult." },
+  { startTime: 6233.33, person: 'Fran', text: " It's difficult." },
+  { startTime: 6234.61, person: 'Karol', text: ' Yeah.' },
+  {
+    startTime: 6235.15,
+    person: 'Fran',
+    text: " But yeah, and especially because I'm finding things that I never expected, like having to read papers, you know, about psychology and psychology books and interviewing psychologists and so on."
+  },
+  { startTime: 6248.35, person: 'Karol', text: " That's difficult." },
+  { startTime: 6250.01, person: 'Fran', text: " It's going completely unexpected route." },
+  {
+    startTime: 6255.19,
+    person: 'Karol',
+    text: " Which is exciting because you're learning a lot while doing that, so."
+  },
+  { startTime: 6259.49, person: 'Fran', text: " That's why I'm writing the book." },
+  {
+    startTime: 6260.89,
+    person: 'Fran',
+    text: " Like I'm writing the book for me, like I did with this in AsyncAPI."
+  },
+  {
+    startTime: 6264.71,
+    person: 'Fran',
+    text: ' It was like, so I can learn properly about this by writing it down, right?'
+  },
+  {
+    startTime: 6269.63,
+    person: 'Fran',
+    text: ' And by interviewing people and by listening to their stories and so on and then sharing with people.'
+  },
+  {
+    startTime: 6276.01,
+    person: 'Fran',
+    text: " So who knows, maybe in a year or so, I'll have to write a second edition because I made a lot of mistakes."
+  },
+  { startTime: 6283.09, person: 'Fran', text: ' Who knows?' },
+  {
+    startTime: 6285.93,
+    person: 'Karol',
+    text: ' I mean, I just looked through the lovely Fundamentals of Software Architecture by Mark Richards and Neil Ford.'
+  },
+  { startTime: 6294.19, person: 'Karol', text: ' They just released a second edition.' },
+  { startTime: 6296.79, person: 'Karol', text: ' Completely different read.' },
+  { startTime: 6298.51, person: 'Karol', text: ' I have the first edition somewhere.' },
+  { startTime: 6300.45, person: 'Karol', text: ' Oh yeah, like right here next to me.' },
+  { startTime: 6303.33, person: 'Karol', text: ' I stole it.' },
+  { startTime: 6303.79, person: 'Fran', text: ' It was still useful there.' },
+  {
+    startTime: 6305.05,
+    person: 'Fran',
+    text: ' The first edition was still useful, but now with experience, then you get to make a better book.'
+  },
+  {
+    startTime: 6311.71,
+    person: 'Fran',
+    text: " It doesn't mean that the first edition is gonna be wrong."
+  },
+  {
+    startTime: 6314.75,
+    person: 'Fran',
+    text: " It's just that it's probably not gonna be exactly how I want it."
+  },
+  {
+    startTime: 6318.49,
+    person: 'Karol',
+    text: ' Yeah, they learned a lot and they were like, yep, definitely.'
+  },
+  { startTime: 6327.41, person: 'Fran', text: ' Cool, man.' },
+  { startTime: 6328.79, person: 'Karol', text: ' Yeah, all right.' },
+  {
+    startTime: 6329.87,
+    person: 'Karol',
+    text: ' So that said, oh yes, the QR code for the early reader to get access to the book.'
+  },
+  { startTime: 6338.95, person: 'Karol', text: ' So yes.' },
+  {
+    startTime: 6341.31,
+    person: 'Karol',
+    text: ' How that one, sorry, should have deleted the original shipped one from the list.'
+  },
+  { startTime: 6347.71, person: 'Karol', text: ' It would have been easier.' },
+  {
+    startTime: 6348.95,
+    person: 'Karol',
+    text: ' So if you wanna be the early reader and leave friends and comments, just scan the QR, go ahead.'
+  },
+  {
+    startTime: 6356.51,
+    person: 'Karol',
+    text: " Yeah, it's not a large cost to just join on the process of building that book from scratch."
+  },
+  { startTime: 6364.47, person: 'Karol', text: " It's interesting to watch, believe me." },
+  {
+    startTime: 6368.71,
+    person: 'Karol',
+    text: " That said, we're gonna be closing the session in a moment, but that leaves us open to any questions."
+  },
+  {
+    startTime: 6381.05,
+    person: 'Karol',
+    text: ' Any QA questions out of the box, out of the blue.'
+  },
+  { startTime: 6385.15, person: 'Karol', text: ' I mean, we do have one from Aleksandr.' },
+  { startTime: 6388.95, person: 'Karol', text: ' End-to-end traceability, batch message splits.' },
+  { startTime: 6397.81, person: 'Karol', text: " I can take that one because I've seen that one." },
+  {
+    startTime: 6400.29,
+    person: 'Fran',
+    text: " I'm not an expert in traceability, but I know some, I mean, you can take it because."
+  },
+  {
+    startTime: 6404.85,
+    person: 'Karol',
+    text: " Yeah, it's actually not that complicated as long as you have proper logging, monitoring and observability within your systems."
+  },
+  {
+    startTime: 6412.77,
+    person: 'Karol',
+    text: ' So basically if you wanna trace your events and you have this kind of a batch scenario where you split it up, you need to just make up a specific pattern, which means that you have some sort of a correlation ID.'
+  },
+  {
+    startTime: 6427.75,
+    person: 'Karol',
+    text: ' And then when you split it up, just append that correlation ID with additional identifiers of those individual child elements.'
+  },
+  { startTime: 6437.77, person: 'Karol', text: ' And that makes that traceability really pop.' },
+  {
+    startTime: 6442.39,
+    person: 'Karol',
+    text: ' So you can still search all of those elements by using the original batch identifier, the correlation ID there, and then you can search individual child elements by the appended identifier.'
+  },
+  {
+    startTime: 6462.03,
+    person: 'Karol',
+    text: ' So that will be sufficiently unique because if you use UL ID, that will be very unique, very nice with a timestamp.'
+  },
+  {
+    startTime: 6472.67,
+    person: 'Karol',
+    text: " And then if you append, you just append, that's not a big problem there, right?"
+  },
+  { startTime: 6478.95, person: 'Karol', text: " So that's a good one for that." },
+  {
+    startTime: 6481.17,
+    person: 'Fran',
+    text: ' And you can define it on AsyncAPI using the correlation ID field on AsyncAPI.'
+  },
+  { startTime: 6487.37, person: 'Fran', text: " So it's covered." },
+  { startTime: 6489.77, person: 'Karol', text: ' Yeah, exactly.' },
+  { startTime: 6490.87, person: 'Karol', text: " That's a good thing." },
+  {
+    startTime: 6492.39,
+    person: 'Karol',
+    text: " And that's also a very standard thing to do in the OpenAPI spec as well to define those metadata and correlators."
+  },
+  {
+    startTime: 6501.69,
+    person: 'Karol',
+    text: " Usually for OpenAPI, that's within the HTTP headers, right?"
+  },
+  { startTime: 6510.93, person: 'Karol', text: " So it's workable." },
+  {
+    startTime: 6512.47,
+    person: 'Karol',
+    text: " It's just a matter of figuring out what the mapping is between those, right?"
+  },
+  { startTime: 6518.87, person: 'Karol', text: ' All right.' },
+  {
+    startTime: 6520.65,
+    person: 'Karol',
+    text: ' I know we do have a little bit of a delay between what we see in the stream studio and what is out on LinkedIn and YouTube, but I think we already passed through.'
+  },
+  {
+    startTime: 6536.19,
+    person: 'Fran',
+    text: ' Yeah, and if not, people leave some questions after.'
+  },
+  { startTime: 6540.73, person: 'Fran', text: ' Maybe people are watching the recording.' },
+  {
+    startTime: 6543.07,
+    person: 'Fran',
+    text: ' If they want to leave some questions, ping me or ping Karol.'
+  },
+  { startTime: 6549.01, person: 'Karol', text: ' Yeah.' },
+  {
+    startTime: 6550.25,
+    person: 'Fran',
+    text: " And if I don't get the notification, please Karol, let me know."
+  },
+  { startTime: 6552.97, person: 'Fran', text: ' And I will reply after that.' },
+  { startTime: 6554.43, person: 'Fran', text: " So it doesn't have to be." },
+  { startTime: 6555.63, person: 'Fran', text: ' We can make it asynchronous.' },
+  { startTime: 6557.85, person: 'Karol', text: ' Yeah, we can make it asynchronous, exactly.' },
+  {
+    startTime: 6560.15,
+    person: 'Karol',
+    text: ' So for all of you wondering and willing to share the stream, or if you found it captivating, the stream will be saved in a raw form on LinkedIn.'
+  },
+  {
+    startTime: 6571.69,
+    person: 'Karol',
+    text: ' It will be also available on Bridging the Gap YouTube channel.'
+  },
+  {
+    startTime: 6575.93,
+    person: 'Karol',
+    text: ' I do plan to do a little bit of touch-ups here and there over the stream and release it as a normal video.'
+  },
+  {
+    startTime: 6583.05,
+    person: 'Karol',
+    text: ' But for the moment, it will be available as a live stream recording on YouTube.'
+  },
+  {
+    startTime: 6591.05,
+    person: 'Karol',
+    text: ' So you can always come back, re-watch it, figure out what you want to hear, and ask additional questions.'
+  },
+  {
+    startTime: 6599.69,
+    person: 'Karol',
+    text: " If I find those in the comments somewhere, I'll make sure to relay those to Fran if you don't tag him, and then we'll draft an asynchronous answer to those."
+  },
+  { startTime: 6616.69, person: 'Karol', text: ' All right.' },
+  {
+    startTime: 6618.67,
+    person: 'Karol',
+    text: " That said, because I don't see any more questions popping in in chat."
+  },
+  { startTime: 6623.53, person: 'Karol', text: ' Thank you all for attending.' },
+  {
+    startTime: 6625.07,
+    person: 'Karol',
+    text: ' Thank you, Fran, for coming to the first edition of Loosely Coupled.'
+  },
+  { startTime: 6629.61, person: 'Karol', text: ' Absolutely amazing having you here.' },
+  { startTime: 6634.01, person: 'Karol', text: ' And.' },
+  { startTime: 6634.91, person: 'Fran', text: ' Thank you for inviting me.' },
+  { startTime: 6636.99, person: 'Karol', text: " You're welcome." },
+  { startTime: 6638.47, person: 'Fran', text: ' My pleasure.' },
+  {
+    startTime: 6640.09,
+    person: 'Karol',
+    text: ' And everybody, have a lovely evening, rest of the night, wherever you are, maybe rest of the day.'
+  },
+  { startTime: 6649.03, person: 'Karol', text: ' And till next time.' }
 ])
 </script>
 
