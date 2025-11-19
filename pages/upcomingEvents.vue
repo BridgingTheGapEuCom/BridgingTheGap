@@ -28,7 +28,7 @@
           <div class="overflow-auto h-full maxHeightEventList">
             <div
               v-for="event in chosenMonthList"
-              :key="event.id"
+              :key="`${event.id}_1`"
               :class="{
                 border: currentEvent?.id === event.id,
                 'bg-neutral-100': currentEvent?.id === event.id,
@@ -93,7 +93,7 @@
         <div class="h-full overflow-auto">
           <div
             v-for="event in events"
-            :key="event.id"
+            :key="`${event.id}_2`"
             :class="{
               border: currentEvent?.id === event.id,
               'bg-neutral-100': currentEvent?.id === event.id,
@@ -277,6 +277,7 @@ import { mdiCalendarClock, mdiClose, mdiFormatListNumbered, mdiLinkedin, mdiYout
 import SvgIcon from '@jamescoyle/vue-icon'
 import { DateTime } from 'luxon'
 import type { AttributeConfig } from '~/Types/VCalendar'
+import lodash from 'lodash'
 
 /**
  * A ref to the calendar component instance.
@@ -303,7 +304,7 @@ const currentEvent: Ref<Event | undefined> = ref(undefined)
  * An array of all event objects, loaded from a JSON file.
  * @type {Ref<Array<Event>>}
  */
-const events: Ref<Array<Event>> = ref(jsonEvents as Array<Event>)
+const events: Ref<Array<Event>> = ref(lodash.cloneDeep(jsonEvents) as Array<Event>)
 /**
  * Controls the visibility of the "no events scheduled" message for a specific date.
  * @type {Ref<number>}
@@ -728,12 +729,15 @@ watch(chosenDate, (newDate) => {
   if (newDate) {
     const closest = findClosestUpcomingEventByDate(events.value, newDate)
     if (closest && closest.exactMatch) {
+      currentEvent.value = closest.event
+      router.replace({ hash: `#event_${Number(currentEvent.value.id) + 1}` })
+      window.document.getElementById(`event_${Number(currentEvent.value.id) + 1}`)?.scrollIntoView()
+
       setTimeout(() => {
         visiblePre.value = -1
       }, 500)
-      currentEvent.value = closest.event
     } else if (!closest) {
-      // If no upcoming event is found, set it to the very last event in the list
+      // If no upcoming event is found, set it to the very await event in the list
       currentEvent.value = events.value[events.value.length - 1]
     } else if (closest && !closest.exactMatch) {
       visiblePre.value = closest.event.id
@@ -761,6 +765,31 @@ watch(currentEvent, (newEvent) => {
     nextTick(() => {
       router.replace({ hash: `#event_${Number(newEvent.id) + 1}` })
       window.document.getElementById(`event_${Number(newEvent.id) + 1}`)?.scrollIntoView()
+    })
+  }
+})
+
+/**
+ * Watches for changes in the route's hash and updates the current event accordingly.
+ */
+watch(route, (newRoute) => {
+  if (newRoute.hash) {
+    let id = newRoute.hash.replace('#event_', '')
+    if (id.includes('_pre')) {
+      return
+    }
+
+    if (Number(id) > events.value.length) {
+      id = `${events.value.length}`
+    }
+
+    nextTick(() => {
+      currentEvent.value = events.value.find((el) => {
+        return `${el.id}` === `${Number(id) - 1}`
+      })
+      if (currentEvent.value) {
+        chosenDate.value = new Date(currentEvent.value.date)
+      }
     })
   }
 })

@@ -1,11 +1,6 @@
 <template>
   <div class="flex">
-    <SvgIcon
-      class="pointer-events-none mr-1.5"
-      type="mdi"
-      :path="icon"
-      :size="28"
-    />
+    <SvgIcon class="pointer-events-none mr-1.5" type="mdi" :path="icon" :size="28" />
     <div class="input-container">
       <input
         id="input"
@@ -13,7 +8,7 @@
         :value="model"
         required="true"
         @input="(event) => (model = event?.target?.value)"
-      >
+      />
       <label
         for="input"
         type="text"
@@ -22,7 +17,8 @@
         autocapitalize="none"
         spellcheck="false"
         class="label h2"
-      >{{ label }}</label>
+        >{{ label }}</label
+      >
       <div class="underline" />
     </div>
   </div>
@@ -35,7 +31,7 @@ import SvgIcon from '@jamescoyle/vue-icon'
 const model = defineModel()
 
 defineProps({
-  label: { type: String, required: false, default: 'Search in articles' },
+  label: { type: String, required: false, default: 'Search in articles and events' },
   icon: { type: String, required: false, default: mdiMagnify }
 })
 </script>

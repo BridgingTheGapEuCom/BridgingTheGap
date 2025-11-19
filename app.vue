@@ -17,6 +17,9 @@ if (route && route.query) {
   }
 }
 
+/**
+ * Watch for route changes to update query parameters
+ */
 watch(route, (current) => {
   if (current && current.query) {
     if (route.query.tags) {
@@ -38,6 +41,9 @@ const script = [
   }
 ]
 
+/**
+ * Set up head metadata
+ */
 useHead({
   title: 'Bridging the Gap',
   titleTemplate: (siteTitle) => {
@@ -62,6 +68,9 @@ useHead({
   }
 })
 
+/**
+ * SEO Meta Information
+ */
 useSeoMeta({
   title: 'Bridging the Gap',
   ogTitle: 'Bridging the Gap',
