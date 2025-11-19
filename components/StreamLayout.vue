@@ -3,93 +3,98 @@
     class="min-dvh-minus-header justify-start screenHeight overflow-hidden w-full h-full max-w-screen-xl flex flex-col flex-grow"
   >
     <div>
-      <NuxtLink
-        class="flex link items-end text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-        to="/"
-      >
-        <SvgIcon :path="mdiArrowLeft" :size="24" type="mdi" />
-        <div class="ml-1">Back to articles list</div>
-      </NuxtLink>
-    </div>
-    <h1 class="mt-3 mb-2.5">
-      {{ name }}
-    </h1>
-
-    <ClientOnly>
-      <div v-if="showVideo" class="flex justify-center items-center">
-        <div
-          :style="`max-width:${videoWidth}px; max-height:${videoHeight}px; min-width:${videoWidth}px; min-height:${videoHeight}px`"
+      <div>
+        <NuxtLink
+          class="flex link items-end text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
+          to="/"
         >
-          <ScriptYouTubePlayer ref="youtube" :video-id="videoId" @ready="onReady">
-            <template #awaitingLoad>
-              <div
-                class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[48px] w-[68px]"
-              >
-                <svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
-                  <path
-                    d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
-                    fill="#f00"
-                  />
-                  <path d="M 45,24 27,14 27,34" fill="#fff" />
-                </svg>
-              </div>
-            </template>
-          </ScriptYouTubePlayer>
-        </div>
+          <SvgIcon :path="mdiArrowLeft" :size="24" type="mdi" />
+          <div class="ml-1">Back to articles list</div>
+        </NuxtLink>
       </div>
-    </ClientOnly>
+      <h1 class="mt-3 mb-2.5">
+        {{ name }}
+      </h1>
 
-    <div
-      v-if="transcript.length > 0"
-      class="flex justify-center items-center mt-2 gap-2 cursor-pointer hover:text-black dark:hover:text-white text-neutral-500"
-      @click="showVideo = !showVideo"
-    >
-      <SvgIcon :path="showVideo ? mdiVideoBoxOff : mdiVideoBox" :size="24" type="mdi" />
-      <span>{{ showVideo ? 'Show full transcript' : 'Show video' }}</span>
-    </div>
-    <div
-      :class="{ 'overflow-auto': !showVideo, 'overflow-hidden': showVideo }"
-      class="transcript-container"
-    >
-      <div class="transcript-list">
-        <div class="w-full">
+      <ClientOnly>
+        <div v-if="showVideo" class="flex justify-center items-center">
           <div
-            :class="{
-              'grid-cols-[min-content_min-content_1fr]': !showVideo,
-              'grid-cols-[min-content_1fr]': showVideo
-            }"
-            class="grid"
+            :style="`max-width:${videoWidth}px; max-height:${videoHeight}px; min-width:${videoWidth}px; min-height:${videoHeight}px`"
           >
-            <template v-for="(line, index) in transcript" :key="index">
-              <div v-if="!showVideo" class="transcript-line-full">
-                {{ secondsToDate(line.startTime) }}
-              </div>
-              <div
-                :ref="(el) => setLineRef(el, index)"
-                :class="{
-                  active: index === currentIndex && showVideo,
-                  'transcript-line': showVideo,
-                  'transcript-line-full': !showVideo
-                }"
-                class="pr-2 whitespace-nowrap"
-              >
-                <p
-                  :class="{ 'transcript-person': showVideo, 'transcript-person-full': !showVideo }"
-                  class="transcript-person"
+            <ScriptYouTubePlayer ref="youtube" :video-id="videoId" @ready="onReady">
+              <template #awaitingLoad>
+                <div
+                  class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[48px] w-[68px]"
                 >
-                  {{ line.person }}:
-                </p>
-              </div>
-              <div
-                :class="{
-                  active: index === currentIndex && showVideo,
-                  'transcript-line': showVideo,
-                  'transcript-line-full': !showVideo
-                }"
-              >
-                <p class="text-wrap">{{ line.text }}</p>
-              </div>
-            </template>
+                  <svg height="100%" version="1.1" viewBox="0 0 68 48" width="100%">
+                    <path
+                      d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z"
+                      fill="#f00"
+                    />
+                    <path d="M 45,24 27,14 27,34" fill="#fff" />
+                  </svg>
+                </div>
+              </template>
+            </ScriptYouTubePlayer>
+          </div>
+        </div>
+      </ClientOnly>
+
+      <div
+        v-if="transcript.length > 0"
+        class="flex justify-center items-center mt-2 gap-2 cursor-pointer hover:text-black dark:hover:text-white text-neutral-500"
+        @click="showVideo = !showVideo"
+      >
+        <SvgIcon :path="showVideo ? mdiVideoBoxOff : mdiVideoBox" :size="24" type="mdi" />
+        <span>{{ showVideo ? 'Show full transcript' : 'Show video' }}</span>
+      </div>
+      <div
+        :class="{ 'overflow-auto': !showVideo, 'overflow-hidden': showVideo }"
+        class="transcript-container"
+      >
+        <div class="transcript-list">
+          <div class="w-full">
+            <div
+              :class="{
+                'grid-cols-[min-content_min-content_1fr]': !showVideo,
+                'grid-cols-[min-content_1fr]': showVideo
+              }"
+              class="grid"
+            >
+              <template v-for="(line, index) in transcript" :key="index">
+                <div v-if="!showVideo" class="transcript-line-full">
+                  {{ secondsToDate(line.startTime) }}
+                </div>
+                <div
+                  :ref="(el) => setLineRef(el, index)"
+                  :class="{
+                    active: index === currentIndex && showVideo,
+                    'transcript-line': showVideo,
+                    'transcript-line-full': !showVideo
+                  }"
+                  class="pr-2 whitespace-nowrap"
+                >
+                  <p
+                    :class="{
+                      'transcript-person': showVideo,
+                      'transcript-person-full': !showVideo
+                    }"
+                    class="transcript-person"
+                  >
+                    {{ line.person }}:
+                  </p>
+                </div>
+                <div
+                  :class="{
+                    active: index === currentIndex && showVideo,
+                    'transcript-line': showVideo,
+                    'transcript-line-full': !showVideo
+                  }"
+                >
+                  <p class="text-wrap">{{ line.text }}</p>
+                </div>
+              </template>
+            </div>
           </div>
         </div>
       </div>

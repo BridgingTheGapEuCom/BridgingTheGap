@@ -133,6 +133,15 @@ const previousPage = computed(() => {
   }
 })
 
+/**
+ * emitPageChangeEvent
+ *
+ * Emits a 'pageChange' event with the target page identifier.
+ * If the `previous` parameter is true, it emits the identifier for the previous page.
+ * Otherwise, it emits the identifier for the next page.
+ *
+ * @param {boolean} previous - A flag indicating whether to emit the previous page (true) or next page (false).
+ */
 const emitPageChangeEvent = (previous: boolean) => {
   if (previous) {
     const targetId = previousPage.value.replace('#event_', '')
