@@ -23,45 +23,18 @@
     </div>
     <div class="upcomingEventOverflow">
       <div
-        class="flex justify-around border border-neutral-500 bg-neutral-50 dark:bg-neutral-900 dark:text-gray-50 text-black rounded-md p-2 m-2"
+        class="flex md:flex-row flex-col items-center justify-around border border-neutral-500 bg-neutral-50 dark:bg-neutral-900 dark:text-gray-50 text-black rounded-md p-2 m-2"
       >
         <svg-icon type="mdi" :size="130" :path="mdiCalendarMonth" />
-        <div class="text-2xl pl-6 font-bold self-center">Looking for upcoming events?</div>
+        <div class="text-2xl pl-6 font-bold self-center text-center">
+          Looking for upcoming events?
+        </div>
         <div class="mt-3 sm:mt-0 sm:ml-4 self-center">
           <div
-            class="inline-flex items-center px-5 py-2 border border-transparent text-base font-medium rounded-md text-white bg-neutral-800 dark:bg-gray-100 dark:text-black transition-colors duration-200"
+            class="inline-flex md:mb-0 mb-4 items-center text-nowrap px-5 py-2 border border-transparent text-base font-medium rounded-md text-white bg-neutral-800 dark:bg-gray-100 dark:text-black transition-colors duration-200"
           >
             View Events Calendar
           </div>
-        </div>
-      </div>
-      <div
-        class="bg-gray-100 border-t border-b border-gray-200 py-4 px-4 sm:px-6 lg:px-8 flex items-center justify-between flex-wrap"
-      >
-        <div class="flex items-center">
-          <svg
-            class="h-8 w-8 text-gray-700 mr-3"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M8 7V3m8 4V3m-9 8h.01M7 11h.01M7 15h.01M16 15h.01M17 11h.01M14 7h.01M17 7h.01M12 19h.01M12 15h.01M12 11h.01M7 19h.01M16 19h.01"
-            ></path>
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          </svg>
-          <p class="text-lg text-gray-700 font-medium">Looking for upcoming events?</p>
-        </div>
-        <div class="mt-3 sm:mt-0 sm:ml-4">
-          <a
-            href="/events"
-            class="inline-flex items-center px-5 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-700 transition-colors duration-200"
-          >
-            View Event Calendar
-          </a>
         </div>
       </div>
     </div>
