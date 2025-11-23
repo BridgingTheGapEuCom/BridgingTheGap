@@ -251,7 +251,7 @@ const transcript = ref([
   {
     startTime: 460.64,
     person: 'Woody',
-    text: " And that, you know, you don't all get on the stage and then put on, hear earphones, listening to different music, and then play whatever it is you want to play."
+    text: " And that, you know, you don't all get on the stage and then put on, earphones, listening to different music, and then play whatever it is you want to play."
   },
   {
     startTime: 468.46,
@@ -351,7 +351,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' The organisation ends up putting a huge band-aid over a gaping wound.'
   },
-  { startTime: 605.2, person: 'Karol', text: ' Yes.' },
+  { startTime: 605.2, person: 'Woody', text: ' Yes.' },
   {
     startTime: 605.56,
     person: 'Karol',
@@ -418,7 +418,7 @@ const transcript = ref([
   {
     startTime: 718.7,
     person: 'Karol',
-    text: " I'm looking at this, for advertising the stream I quoted from Andrew Harmel Law, the situation that was over his talk at DDD Europe this year."
+    text: " I'm looking at this, for advertising the stream I quoted from Andrew Harmel-Law, the situation that was over his talk at DDD Europe this year."
   },
   {
     startTime: 732.24,
@@ -477,7 +477,7 @@ const transcript = ref([
   {
     startTime: 837.14,
     person: 'Karol',
-    text: " Another thing that I read recently in this, because I'm reading this lovely book, Domain-Driven Refactoring, by Alessandro Colla and Alberto, and I'm going to butcher this name, probably Akeravis, given that it's Italian."
+    text: " Another thing that I read recently in this, because I'm reading this lovely book, Domain-Driven Refactoring, by Alessandro Colla and Alberto, and I'm going to butcher this name, probably Acerbis, given that it's Italian."
   },
   { startTime: 856.32, person: 'Karol', text: " I suppose that's the right pronunciation." },
   { startTime: 858.52, person: 'Karol', text: ' Not entirely sure.' },
@@ -498,7 +498,7 @@ const transcript = ref([
     text: " I think this is very much the essence of what we're talking about today."
   },
   { startTime: 901, person: 'Karol', text: ' Okay.' },
-  { startTime: 901.62, person: 'Karol', text: " Let's get to that." },
+  { startTime: 901.62, person: 'Woody', text: " Let's get into that." },
   {
     startTime: 903.04,
     person: 'Karol',
@@ -520,7 +520,7 @@ const transcript = ref([
   {
     startTime: 926.3,
     person: 'Woody',
-    text: " There's a famous systems thinker, his name's Russell Acuff, and he used to talk about these four different ways of addressing a problem."
+    text: " There's a famous systems thinker, his name's Russell Ackoff, and he used to talk about these four different ways of addressing a problem."
   },
   {
     startTime: 936.96,
@@ -601,8 +601,8 @@ const transcript = ref([
     person: 'Woody',
     text: " We find the problem, and we fix whatever's causing that problem."
   },
-  { startTime: 1036.06, person: 'Karol', text: ' Then the question is, what is the solve then?' },
-  { startTime: 1039.26, person: 'Woody', text: ' The solve is taking it to a system level.' },
+  { startTime: 1036.06, person: 'Karol', text: ' Then the question is, what is desolve then?' },
+  { startTime: 1039.26, person: 'Woody', text: ' Desolve is taking it to a system level.' },
   {
     startTime: 1043.72,
     person: 'Woody',
@@ -616,12 +616,12 @@ const transcript = ref([
   {
     startTime: 1056.58,
     person: 'Woody',
-    text: ' I believe we can match this up a little bit to the Kinevan.'
+    text: ' I believe we can match this up a little bit to the Cynefin.'
   },
   {
     startTime: 1061.06,
     person: 'Woody',
-    text: " If your listeners are familiar with Kinevan, if they're not, they can be looking that up."
+    text: " If your listeners are familiar with Cynefin, if they're not, they can be looking that up."
   },
   {
     startTime: 1065.9,
@@ -638,8 +638,8 @@ const transcript = ref([
     person: 'Woody',
     text: " You've got the clear domain, the complicated domain, the complex domain, and chaos domain, or chaotic."
   },
-  { startTime: 1084.84, person: 'Woody', text: ' Or confusion, right?' },
-  { startTime: 1086.92, person: 'Woody', text: ' The middle one.' },
+  { startTime: 1084.84, person: 'Karol', text: ' Or confusion, right?' },
+  { startTime: 1086.92, person: 'Karol', text: ' The middle one.' },
   { startTime: 1087.52, person: 'Woody', text: " I think the middle one's sort of confusion." },
   {
     startTime: 1089.36,
@@ -735,7 +735,7 @@ const transcript = ref([
   {
     startTime: 1258.12,
     person: 'Karol',
-    text: " So for those who actually work with software and read the manuals of whatever technologies they're buying, I remember back in the day when we were working with Typko BusinessWorks 5, Typko had very standardised error codes everywhere."
+    text: " So for those who actually work with software and read the manuals of whatever technologies they're buying, I remember back in the day when we were working with Tibco BusinessWorks 5, Tibco had very standardised error codes everywhere."
   },
   {
     startTime: 1278.24,
@@ -884,7 +884,7 @@ const transcript = ref([
   {
     startTime: 1535.52,
     person: 'Woody',
-    text: " So we should take, that's a symptom, and we should get down to the root of that and try to figure out what we should do instead."
+    text: ' So we should take, that as a symptom, and we should get down to the root of that and try to figure out what we should do instead.'
   },
   {
     startTime: 1541.12,
@@ -914,12 +914,12 @@ const transcript = ref([
   {
     startTime: 1573.2,
     person: 'Woody',
-    text: ' And Standish Group or whoever that did the chaos report was discovering, sharing data about this.'
+    text: ' And Standish Group or whoever that did the chaos report was discovering, sharing data about this. So'
   },
   {
     startTime: 1580.3,
     person: 'Karol',
-    text: ' So- And this also, just to pitch in here, this also stopped working because also the velocity at which the environment changes, this just sped up drastically over the years.'
+    text: ' And this also, just to pitch in here, this also stopped working because also the velocity at which the environment changes, this just sped up drastically over the years.'
   },
   {
     startTime: 1594.5,
@@ -1071,7 +1071,7 @@ const transcript = ref([
   {
     startTime: 1816.62,
     person: 'Woody',
-    text: " I don't think Canevan came out as a public thing you could learn about until 2007, 2010, somewhere in there."
+    text: " I don't think Cynefin came out as a public thing you could learn about until 2007, 2010, somewhere in there."
   },
   { startTime: 1825.76, person: 'Woody', text: " So in the earlier years, I didn't know that." },
   {
@@ -1082,7 +1082,7 @@ const transcript = ref([
   {
     startTime: 1830.62,
     person: 'Woody',
-    text: ' There was a thing before this called the Stacy model, which is very much the same thing, uses the same kind of similar terminology.'
+    text: ' There was a thing before this called the Stacey model, which is very much the same thing, uses the same kind of similar terminology.'
   },
   {
     startTime: 1838.26,
@@ -1227,11 +1227,7 @@ const transcript = ref([
     person: 'Karol',
     text: " So maybe I'll shoot some, well, I cannot really say that I can answer this question for the position of my current employment, because I actually finally managed to find a good employer."
   },
-  {
-    startTime: 2041.82,
-    person: 'Karol',
-    text: " And I'm happy about my, my, my, my place right now."
-  },
+  { startTime: 2041.82, person: 'Karol', text: " And I'm happy about my place right now." },
   {
     startTime: 2046.02,
     person: 'Karol',
@@ -1239,7 +1235,7 @@ const transcript = ref([
   },
   { startTime: 2054.719, person: 'Woody', text: ' Oh, yeah, there you go.' },
   { startTime: 2055.42, person: 'Woody', text: " So that's a, that's a really good example." },
-  { startTime: 2057.659, person: 'Karol', text: " No, I don't have enough time." },
+  { startTime: 2057.659, person: 'Karol', text: ' No.' },
   { startTime: 2060.219, person: 'Karol', text: ' Yeah, let me elaborate.' },
   {
     startTime: 2062.08,
@@ -1410,7 +1406,7 @@ const transcript = ref([
   {
     startTime: 2288.12,
     person: 'Karol',
-    text: ' In consulting, there was a colleague in the CRM spice that just told us one day, and that landed as a meme on our desktops, as our actual background of the desktop, that we are all consultants.'
+    text: ' In consulting, there was a colleague in the CRM space that just told us one day, and that landed as a meme on our desktops, as our actual background of the desktop, that we are all consultants.'
   },
   { startTime: 2308.78, person: 'Karol', text: ' We all love a good dumpster fire.' },
   { startTime: 2311.64, person: 'Woody', text: ' Yes.' },
@@ -1456,7 +1452,7 @@ const transcript = ref([
   {
     startTime: 2364.9,
     person: 'Woody',
-    text: " Well, there's another good quote I'll share from, I think it's from Russell Acuff, which I usually paraphrase a little bit, but I'm going to try and do it exactly as he says, when a manager can't measure what they want, they start wanting what they can measure."
+    text: " Well, there's another good quote I'll share from, I think it's from Russell Ackoff, which I usually paraphrase a little bit, but I'm going to try and do it exactly as he says, when a manager can't measure what they want, they start wanting what they can measure."
   },
   { startTime: 2380.7, person: 'Woody', text: ' This is really problematic.' },
   { startTime: 2384.26, person: 'Woody', text: ' So this is a big part of the issue right here.' },
@@ -1488,7 +1484,7 @@ const transcript = ref([
     text: " Managers who don't know how to measure what they want."
   },
   { startTime: 2426.58, person: 'Woody', text: ' Yes.' },
-  { startTime: 2427.34, person: 'Karol', text: ' This is from Russell Acuff.' },
+  { startTime: 2427.34, person: 'Karol', text: ' This is from Russell Ackoff.' },
   { startTime: 2431.96, person: 'Woody', text: ' And I said it pretty much hit it.' },
   { startTime: 2434.78, person: 'Woody', text: ' Yeah.' },
   { startTime: 2435.14, person: 'Karol', text: " That's a great book." },
@@ -1501,7 +1497,7 @@ const transcript = ref([
     text: " And it's actually easily findable online if somebody wants to read it."
   },
   { startTime: 2452.66, person: 'Karol', text: ' This is quite an interesting read.' },
-  { startTime: 2456.36, person: 'Karol', text: " It's not that hard." },
+  { startTime: 2456.36, person: 'Karol', text: " It's not that hard to find." },
   { startTime: 2457.26, person: 'Woody', text: " And he's got a bigger version of that book too." },
   { startTime: 2459.6, person: 'Karol', text: ' Yes.' },
   {
@@ -1540,9 +1536,9 @@ const transcript = ref([
   {
     startTime: 2511.38,
     person: 'Karol',
-    text: ' We have Maxim here sharing on YouTube, not knowing expectations.'
+    text: ' We have Maksim here sharing on YouTube, not knowing expectations.'
   },
-  { startTime: 2517.66, person: 'Karol', text: ' Yes.' },
+  { startTime: 2517.66, person: 'Woody', text: ' Yes.' },
   {
     startTime: 2518.54,
     person: 'Karol',
@@ -1608,7 +1604,7 @@ const transcript = ref([
   {
     startTime: 2637.92,
     person: 'Karol',
-    text: ' And then those need to be translated to something that an architect can understand, and then later translated to something that developer can understand, et cetera, et cetera.'
+    text: ' And then those need to be translated to something that an architect can understand, and then later translated to something that developer can understand, etcétera, etcétera.'
   },
   { startTime: 2647.82, person: 'Karol', text: ' So there are levels of abstractions.' },
   {
@@ -1673,20 +1669,20 @@ const transcript = ref([
     person: 'Woody',
     text: ' For those kinds of apps in those days, it was probably good.'
   },
-  { startTime: 2725.6, person: 'Woody', text: ' Okay.' },
-  { startTime: 2725.94, person: 'Karol', text: " But let's dig into those symptoms." },
-  { startTime: 2727.76, person: 'Karol', text: " Maybe- Let's get back to the..." },
-  { startTime: 2729.34, person: 'Karol', text: ' Go ahead.' },
+  { startTime: 2725.6, person: 'Karol', text: ' Okay.' },
+  { startTime: 2725.94, person: 'Karol', text: " But let's dig into those symptoms, maybe" },
+  { startTime: 2727.76, person: 'Woody', text: " Let's get back to the..." },
+  { startTime: 2729.34, person: 'Woody', text: ' Go ahead.' },
   {
     startTime: 2729.56,
     person: 'Karol',
-    text: " Let's have your list, and then also get back to Carolina here, and let's try to dismantle this as symptoms and ponder a little bit here."
+    text: " Let's have your list, and then also get back to Karolina here, and let's try to dismantle this as symptoms and ponder a little bit here."
   },
   { startTime: 2740.2, person: 'Woody', text: ' So the list...' },
   {
     startTime: 2741.04,
     person: 'Woody',
-    text: ' So I have an example that I give that lists out...'
+    text: ' So I have an example that I give that is a list out...'
   },
   { startTime: 2745.4, person: 'Woody', text: ' I did this as an exercise with 20 people.' },
   {
@@ -1769,10 +1765,11 @@ const transcript = ref([
     text: ' Context switching, distractions, multitasking, and workflow interruptions.'
   },
   { startTime: 2841.78, person: 'Woody', text: ' Those things go closely together.' },
-  { startTime: 2844.34, person: 'Woody', text: ' Yes.' },
+  { startTime: 2844.42, person: 'Karol', text: ' Question' },
+  { startTime: 2845.34, person: 'Woody', text: ' Yes.' },
   { startTime: 2845.82, person: 'Karol', text: ' Were those people from IT?' },
   { startTime: 2847.94, person: 'Woody', text: ' These are all software developers.' },
-  { startTime: 2849.84, person: 'Woody', text: ' All software developers.' },
+  { startTime: 2849.84, person: 'Karol', text: ' All software developers.' },
   {
     startTime: 2851.16,
     person: 'Woody',
@@ -1784,7 +1781,7 @@ const transcript = ref([
     text: ' Sometimes I have managers, and sometimes I will have people from finance or people from HR or whatever in my workshops, or only managers or whatever.'
   },
   { startTime: 2866.16, person: 'Woody', text: ' So yeah.' },
-  { startTime: 2866.7, person: 'Woody', text: ' Okay.' },
+  { startTime: 2866.7, person: 'Karol', text: ' Okay.' },
   {
     startTime: 2867.08,
     person: 'Woody',
@@ -1821,8 +1818,8 @@ const transcript = ref([
   },
   { startTime: 2915.88, person: 'Woody', text: ' And we have a stack of unfinished work.' },
   { startTime: 2919.54, person: 'Woody', text: ' This is introduced.' },
-  { startTime: 2920.48, person: 'Karol', text: ' These are related.' },
-  { startTime: 2921.38, person: 'Karol', text: ' Go ahead.' },
+  { startTime: 2920.48, person: 'Woody', text: ' These are related.' },
+  { startTime: 2921.38, person: 'Woody', text: ' Go ahead.' },
   {
     startTime: 2921.54,
     person: 'Karol',
@@ -1906,7 +1903,7 @@ const transcript = ref([
     text: ' So they just recategorised the bugs and they were able to meet their deadline.'
   },
   { startTime: 3052.6, person: 'Woody', text: ' This is fake.' },
-  { startTime: 3053.94, person: 'Karol', text: ' Go ahead.' },
+  { startTime: 3053.94, person: 'Woody', text: ' Go ahead.' },
   {
     startTime: 3054.56,
     person: 'Karol',
@@ -2031,7 +2028,7 @@ const transcript = ref([
     person: 'Woody',
     text: " So let me go ahead, if you don't mind, I'm going to get, I have in front of me a slight description that will make it easier for me to state this."
   },
-  { startTime: 3263.56, person: 'Woody', text: ' Okay.' },
+  { startTime: 3263.56, person: 'Karol', text: ' Okay.' },
   {
     startTime: 3263.76,
     person: 'Woody',
@@ -2180,7 +2177,7 @@ const transcript = ref([
   {
     startTime: 3430.94,
     person: 'Woody',
-    text: " In some spaces, yeah, it's obvious and you take care of it."
+    text: " In some spaces it's obvious and you take care of it."
   },
   {
     startTime: 3433.6,
@@ -2224,7 +2221,7 @@ const transcript = ref([
   {
     startTime: 3476.98,
     person: 'Woody',
-    text: ' We should be interviewing Maxim Kogan because this is the point.'
+    text: ' We should be interviewing Maksim Kogan because this is the point.'
   },
   {
     startTime: 3484.02,
@@ -2283,25 +2280,25 @@ const transcript = ref([
     text: ' And this is, again, a systemic problem, not a problem that is of their own volition, so to speak.'
   },
   { startTime: 3605.26, person: 'Karol', text: ' But you know what?' },
-  { startTime: 3606.26, person: 'Karol', text: " All this kind of brought me to Tesla's law." },
-  { startTime: 3610.8, person: 'Karol', text: " You know Tesla's law?" },
+  { startTime: 3606.26, person: 'Karol', text: " All this kind of brought me to Tesler's law." },
+  { startTime: 3610.8, person: 'Karol', text: " You know Tesler's law?" },
   { startTime: 3612.56, person: 'Woody', text: ' No, no.' },
   { startTime: 3613.04, person: 'Woody', text: ' Tell me.' },
   {
     startTime: 3614,
     person: 'Karol',
-    text: " Tesla's law is the law of conversion of complexity."
+    text: " Tesler's law is the law of conversion of complexity."
   },
   {
     startTime: 3617.58,
     person: 'Karol',
     text: " It's very common in user experience, and it's, well, it's from the 80s, so it's quite old already."
   },
-  { startTime: 3624.88, person: 'Karol', text: " And it's from Larry Tesla." },
+  { startTime: 3624.88, person: 'Karol', text: " And it's from Larry Tesler." },
   {
     startTime: 3626.82,
     person: 'Karol',
-    text: " And the most basic form of Tesla's law is that every application must have an inherent amount of irreducible complexity."
+    text: " And the most basic form of Tesler's law is that every application must have an inherent amount of irreducible complexity."
   },
   {
     startTime: 3635.48,
@@ -2311,7 +2308,7 @@ const transcript = ref([
   {
     startTime: 3639.42,
     person: 'Karol',
-    text: " And what we're talking right now about problem solving and symptoms and moving the problems somewhere else is, I would say, the dark side of Tesla's law, because we're moving that complexity, which is the problem space, away from us, somewhere else, for it to burn somebody else."
+    text: " And what we're talking right now about problem solving and symptoms and moving the problems somewhere else is, I would say, the dark side of Tesler's law, because we're moving that complexity, which is the problem space, away from us, somewhere else, for it to burn somebody else."
   },
   { startTime: 3658.9, person: 'Karol', text: ' But basically, what would happen?' },
   {
@@ -2319,7 +2316,7 @@ const transcript = ref([
     person: 'Woody',
     text: " So this is, you know the book by Donald Norman, I think it's now called The Design of Everyday Things?"
   },
-  { startTime: 3670.7, person: 'Woody', text: ' Yes, a very good book.' },
+  { startTime: 3670.7, person: 'Karol', text: ' Yes, a very good book.' },
   {
     startTime: 3672.3,
     person: 'Woody',
@@ -2532,7 +2529,7 @@ const transcript = ref([
   {
     startTime: 3927.96,
     person: 'Woody',
-    text: ' And one of those things that I started taking as symptoms years ago is what Ken Beck and maybe Martin Fowler had talked about in their refactoring book or one of those books about code smells.'
+    text: ' And one of those things that I started taking as symptoms years ago is what Kent Beck and maybe Martin Fowler had talked about in their refactoring book or one of those books about code smells.'
   },
   { startTime: 3941.08, person: 'Woody', text: ' So I take code smells as a symptom.' },
   {
@@ -2871,7 +2868,7 @@ const transcript = ref([
   {
     startTime: 4382.14,
     person: 'Woody',
-    text: ' It could be, I finished my work and now I, you know, I put in a poll request, right?'
+    text: ' It could be, I finished my work and now I, you know, I put in a pull request, right?'
   },
   {
     startTime: 4387.38,
@@ -2959,14 +2956,14 @@ const transcript = ref([
   {
     startTime: 4513.82,
     person: 'Woody',
-    text: " So there's a Zygarnik effect and other things like this."
+    text: " So there's a Zeigarnik effect and other things like this."
   },
   {
     startTime: 4517.42,
     person: 'Woody',
     text: ' Our brains work on stuff in a way different than we wish it would.'
   },
-  { startTime: 4523.8, person: 'Woody', text: ' We are single threaded.' },
+  { startTime: 4523.8, person: 'Karol', text: ' We are single threaded.' },
   { startTime: 4526.08, person: 'Woody', text: ' We are single threaded.' },
   {
     startTime: 4527.58,
@@ -3020,7 +3017,7 @@ const transcript = ref([
     text: " First of all, there's a thousand right ways to do anything."
   },
   { startTime: 4586.08, person: 'Woody', text: " That's one of the things he would say." },
-  { startTime: 4587.34, person: 'Woody', text: " That's true." },
+  { startTime: 4587.34, person: 'Karol', text: " That's true." },
   {
     startTime: 4587.54,
     person: 'Woody',
@@ -3063,7 +3060,7 @@ const transcript = ref([
   {
     startTime: 4640.86,
     person: 'Woody',
-    text: ' So there was a guy who wrote a book called The Art of Thought 100 years ago.'
+    text: ' So there was a guy who wrote a book called The Art of Thought a 100 years ago.'
   },
   { startTime: 4646.94, person: 'Woody', text: ' I think it was almost exactly 100 years ago.' },
   { startTime: 4649.66, person: 'Woody', text: " The guy's name was Graham Wallace." },
@@ -3171,7 +3168,7 @@ const transcript = ref([
     text: " And then it comes to him to figure out, oh, this is how it's supposed to be done."
   },
   { startTime: 4774.74, person: 'Karol', text: " Because we're taking a break from that focus." },
-  { startTime: 4779.74, person: 'Karol', text: " That's right." },
+  { startTime: 4779.74, person: 'Woody', text: " That's right." },
   {
     startTime: 4780.34,
     person: 'Karol',
@@ -3183,7 +3180,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' But what I do with my ADHD is that I often play games and watch a series, TV series at the same time.'
   },
-  { startTime: 4801.06, person: 'Karol', text: ' Yes, yes.' },
+  { startTime: 4801.06, person: 'Woody', text: ' Yes, yes.' },
   { startTime: 4801.56, person: 'Karol', text: " That's not multitasking." },
   { startTime: 4802.74, person: 'Karol', text: " That's my brain just going numb." },
   {
@@ -3264,7 +3261,7 @@ const transcript = ref([
   {
     startTime: 4897.5,
     person: 'Woody',
-    text: ' I was reading a book from David Graber called The Dawn of Everything.'
+    text: ' I was reading a book from David Graeber called The Dawn of Everything.'
   },
   {
     startTime: 4902.84,
@@ -3330,7 +3327,7 @@ const transcript = ref([
   {
     startTime: 4974.46,
     person: 'Woody',
-    text: ' The window of consciousness during which we can hold a thought or work out a problem.'
+    text: ' The window of consciousness during which we can hold a thought or work on a problem.'
   },
   {
     startTime: 4978.56,
@@ -3405,7 +3402,7 @@ const transcript = ref([
   {
     startTime: 5061.36,
     person: 'Woody',
-    text: ' And another thing is from Nancy Klein, who has a book called something like this.'
+    text: ' And another thing is from Nancy Kline, who has a book called something like this.'
   },
   {
     startTime: 5071.62,
@@ -3417,7 +3414,7 @@ const transcript = ref([
     person: 'Woody',
     text: ' And so what she seems to think is that we can help people think better by being really good listeners.'
   },
-  { startTime: 5084.2, person: 'Karol', text: " Oh, that's very good." },
+  { startTime: 5084.2, person: 'Karol', text: " Oh, that's very true." },
   { startTime: 5085.34, person: 'Woody', text: ' She gave me an exercise I started doing.' },
   {
     startTime: 5088.52,
@@ -3432,8 +3429,8 @@ const transcript = ref([
   { startTime: 5105.54, person: 'Woody', text: ' Well, that takes a lot of effort.' },
   { startTime: 5107.86, person: 'Karol', text: ' It does.' },
   { startTime: 5108.46, person: 'Karol', text: ' But on the other side of this coin.' },
-  { startTime: 5112.04, person: 'Karol', text: ' Is the rubber ducky.' },
-  { startTime: 5113.42, person: 'Karol', text: ' Sure.' },
+  { startTime: 5112.04, person: 'Woody', text: ' Is the rubber ducky.' },
+  { startTime: 5113.42, person: 'Woody', text: ' Sure.' },
   { startTime: 5114.38, person: 'Karol', text: ' The rubber ducky debugging method.' },
   { startTime: 5116, person: 'Karol', text: ' Brilliant.' },
   {
@@ -3443,7 +3440,7 @@ const transcript = ref([
   },
   { startTime: 5124.56, person: 'Karol', text: " And you're just thinking." },
   { startTime: 5126.54, person: 'Woody', text: ' So you could play the role of the rubber ducky.' },
-  { startTime: 5129.24, person: 'Woody', text: ' Yeah.' },
+  { startTime: 5129.24, person: 'Karol', text: ' Yeah.' },
   {
     startTime: 5130.42,
     person: 'Woody',
@@ -3480,7 +3477,7 @@ const transcript = ref([
   {
     startTime: 5184.3,
     person: 'Woody',
-    text: " So in Nancy Klein's book, she's saying you can eventually you can ask a question like this."
+    text: " So in Nancy Kline's book, she's saying you can eventually you can ask a question like this."
   },
   { startTime: 5190.16, person: 'Woody', text: ' What more do you want to say about this?' },
   { startTime: 5194.46, person: 'Woody', text: " Or is there anything more you'd like to cover?" },
@@ -3571,7 +3568,7 @@ const transcript = ref([
   {
     startTime: 5301.98,
     person: 'Karol',
-    text: ' And I just go, yeah, OK, and what more, et cetera.'
+    text: ' And I just go, yeah, OK, and what more, etcétera.'
   },
   {
     startTime: 5306.38,
@@ -3677,7 +3674,7 @@ const transcript = ref([
   {
     startTime: 5441.86,
     person: 'Woody',
-    text: " Systems like here's an alert that this has been this has been here for, you know, two weeks or three weeks or four weeks."
+    text: " Like here's an alert that this has been this has been here for, you know, two weeks or three weeks or four weeks."
   },
   {
     startTime: 5450.06,
@@ -3742,7 +3739,7 @@ const transcript = ref([
   {
     startTime: 5555.06,
     person: 'Karol',
-    text: " So it's not an estimation over like a workload estimation spanning over days, et cetera, it's the next two hours, right?"
+    text: " So it's not an estimation over like a workload estimation spanning over days, etcétera, it's the next two hours, right?"
   },
   { startTime: 5565.04, person: 'Karol', text: ' People either do it very unrealistic.' },
   {
@@ -3753,7 +3750,7 @@ const transcript = ref([
   {
     startTime: 5578.48,
     person: 'Karol',
-    text: " And then they learn to estimate better because they learn how well they work in a specific state of mind, et cetera, because part of the check-in is how are you feeling today and what's on your mind."
+    text: " And then they learn to estimate better because they learn how well they work in a specific state of mind, etcétera, because part of the check-in is how are you feeling today and what's on your mind."
   },
   {
     startTime: 5591.66,
@@ -3775,7 +3772,7 @@ const transcript = ref([
   {
     startTime: 5631.24,
     person: 'Karol',
-    text: " But this sounds very vague and very general, which means you can just swirl around and declare you did it, but you didn't do it, but you did it, but it wasn't sufficient, et cetera."
+    text: " But this sounds very vague and very general, which means you can just swirl around and declare you did it, but you didn't do it, but you did it, but it wasn't sufficient, etcétera."
   },
   { startTime: 5644.56, person: 'Karol', text: ' So the outcome is far not deterministic.' },
   {
@@ -4079,7 +4076,7 @@ const transcript = ref([
   {
     startTime: 6084.24,
     person: 'Woody',
-    text: ' And Ryerson with another book, I can turn around and pull off my shelf.'
+    text: ' And Reinertsen with another book, I can turn around and pull off my shelf.'
   },
   { startTime: 6089.14, person: 'Woody', text: ' This is not a picture of a bookshelf.' },
   { startTime: 6091.14, person: 'Woody', text: " That's a real bookshelf." },
@@ -4209,7 +4206,7 @@ const transcript = ref([
     person: 'Karol',
     text: " Well, what I'm sharing right now is not the original comic because that was instead of chat GPT, that was compiling."
   },
-  { startTime: 6240.8, person: 'Karol', text: ' Yes.' },
+  { startTime: 6240.8, person: 'Woody', text: ' Yes.' },
   {
     startTime: 6241.66,
     person: 'Karol',
@@ -4343,7 +4340,7 @@ const transcript = ref([
   {
     startTime: 6435.28,
     person: 'Woody',
-    text: ' And then I learned, and then things like, you know, in the nineties, a visual BASIC came out and other tools.'
+    text: ' And then I learned, and then things like, you know, in the nineties, a Visual BASIC came out and other tools.'
   },
   {
     startTime: 6444.16,
@@ -4353,7 +4350,7 @@ const transcript = ref([
   { startTime: 6453.53, person: 'Woody', text: ' Yeah, but you know, anyways, I love this topic.' },
   { startTime: 6456.93, person: 'Woody', text: ' Yeah, go ahead.' },
   { startTime: 6458.03, person: 'Karol', text: ' Just to top the topic off.' },
-  { startTime: 6460.67, person: 'Karol', text: " Yes, let's do that." },
+  { startTime: 6460.67, person: 'Woody', text: " Yes, let's do that." },
   { startTime: 6461.59, person: 'Karol', text: ' How can we dig into what is the problem?' },
   {
     startTime: 6465.09,
@@ -4598,7 +4595,7 @@ const transcript = ref([
     person: 'Woody',
     text: " Yeah, so to put a cap on it, I'm not sure that actually..."
   },
-  { startTime: 6813.15, person: 'Woody', text: " So this was back to Akof's thing." },
+  { startTime: 6813.15, person: 'Woody', text: ' So this was back to Ackoffs thing.' },
   { startTime: 6816.13, person: 'Woody', text: " It's not necessarily the solve." },
   { startTime: 6818.75, person: 'Woody', text: " It's going to be the dissolve." },
   {
@@ -4640,7 +4637,7 @@ const transcript = ref([
   {
     startTime: 6866.27,
     person: 'Woody',
-    text: ' And that means five years commitment, 10 years commitment.'
+    text: ' And that means 5 years commitment, 10 years commitment.'
   },
   {
     startTime: 6869.53,
@@ -4755,7 +4752,7 @@ const transcript = ref([
     person: 'Woody',
     text: " The ones who come in the next week and didn't practise, they're never going to learn it."
   },
-  { startTime: 6988.73, person: 'Woody', text: ' So this is true.' },
+  { startTime: 6988.73, person: 'Karol', text: ' This is true.' },
   {
     startTime: 6990.13,
     person: 'Woody',
@@ -5004,7 +5001,7 @@ const transcript = ref([
     person: 'Karol',
     text: " I'm going to solution the hell out of it and go my way."
   },
-  { startTime: 7330.59, person: 'Woody', text: " No, it doesn't work that way." },
+  { startTime: 7330.59, person: 'Karol', text: " No, it doesn't work that way." },
   { startTime: 7332.19, person: 'Woody', text: ' That is really the point of this whole session.' },
   { startTime: 7335.55, person: 'Karol', text: ' Yeah.' },
   {
@@ -5023,7 +5020,7 @@ const transcript = ref([
     text: " And that's why you can then deliver a solution to the problem, not to the symptoms of said problem."
   },
   { startTime: 7366.15, person: 'Woody', text: ' So this...' },
-  { startTime: 7367.11, person: 'Woody', text: " That's difficult." },
+  { startTime: 7367.11, person: 'Karol', text: " That's difficult." },
   { startTime: 7367.71, person: 'Woody', text: ' Go ahead.' },
   { startTime: 7368.17, person: 'Woody', text: ' Go ahead.' },
   { startTime: 7368.79, person: 'Woody', text: ' Yeah.' },
@@ -5165,7 +5162,7 @@ const transcript = ref([
   {
     startTime: 7524.87,
     person: 'Woody',
-    text: ' I think it was the richness of communication by Alistair Colburn.'
+    text: ' I think it was the richness of communication by Alistair Coburn.'
   },
   { startTime: 7529.71, person: 'Woody', text: ' And this scale showed...' },
   { startTime: 7532.11, person: 'Woody', text: " I'm going to see if I can find it here." },
@@ -5290,7 +5287,7 @@ const transcript = ref([
   {
     startTime: 7710.52,
     person: 'Woody',
-    text: " And so when we're sitting and really working well with each other, we may not be contributing very much individually, but it's the old saying, I think from maybe Russell Aikoff, where he said that the..."
+    text: " And so when we're sitting and really working well with each other, we may not be contributing very much individually, but it's the old saying, I think from maybe Russell Acuff, where he said that the..."
   },
   {
     startTime: 7722.3,
@@ -5301,7 +5298,7 @@ const transcript = ref([
   {
     startTime: 7733.64,
     person: 'Woody',
-    text: ' So whoever said that, and it could have been Russell Aikoff.'
+    text: ' So whoever said that, and it could have been Russell Acuff.'
   },
   { startTime: 7736.92, person: 'Woody', text: ' You can easily look that up.' },
   { startTime: 7739.32, person: 'Woody', text: " It's not..." },
@@ -5315,7 +5312,7 @@ const transcript = ref([
   {
     startTime: 7748.64,
     person: 'Woody',
-    text: " But it sounds like the kind of thing that Russell Aikoff might've said."
+    text: " But it sounds like the kind of thing that Russell Acuff might've said."
   },
   { startTime: 7752.98, person: 'Karol', text: ' But this ties very much into...' },
   {
@@ -5328,7 +5325,7 @@ const transcript = ref([
     person: 'Karol',
     text: " And because I learned better when I'm designing trainings and teaching people."
   },
-  { startTime: 7776.62, person: 'Karol', text: ' Yes.' },
+  { startTime: 7776.62, person: 'Woody', text: ' Yes.' },
   {
     startTime: 7777.6,
     person: 'Karol',
@@ -5350,7 +5347,7 @@ const transcript = ref([
     text: ' I ask questions and I want to hear different opinions, not even answers to those questions, because there are no correct answers to the set of questions.'
   },
   { startTime: 7806.21, person: 'Karol', text: ' Just any answers, really.' },
-  { startTime: 7808.75, person: 'Karol', text: ' Yes.' },
+  { startTime: 7808.75, person: 'Woody', text: ' Yes.' },
   {
     startTime: 7808.91,
     person: 'Karol',
@@ -5618,14 +5615,14 @@ const transcript = ref([
     person: 'Karol',
     text: ' So tying it in also to our conversation here of symptoms and problems, this might be an exploration of a very specific type of a problem.'
   },
-  { startTime: 8236.83, person: 'Karol', text: ' I love it.' },
+  { startTime: 8236.83, person: 'Woody', text: ' I love it.' },
   { startTime: 8237.59, person: 'Karol', text: " That we'll be having." },
   {
     startTime: 8239.41,
     person: 'Karol',
     text: ' So that said, Woody, thank you again for joining us today.'
   },
-  { startTime: 8245.87, person: 'Karol', text: ' Thank you.' },
+  { startTime: 8245.87, person: 'Woody', text: ' Thank you.' },
   {
     startTime: 8246.17,
     person: 'Karol',
