@@ -53,17 +53,6 @@
                 />
               </div>
             </template>
-            <span
-              :class="{
-                hidden: tags.length > 0
-              }"
-              class="inline-flex items-center px-2 py-1 font-medium mainTransition cursor-pointer md:hidden taggedTag"
-              @click="showAllTags = !showAllTags"
-            >
-              <span>{{
-                showAllTags ? 'Hide Tags' : `Show Hidden Tags (${allTags.length - 3})`
-              }}</span>
-            </span>
           </div>
         </div>
       </div>
