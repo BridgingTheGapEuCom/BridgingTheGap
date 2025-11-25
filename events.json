@@ -453,6 +453,28 @@
     },
     "LN": "https://www.linkedin.com/events/7392221462759354369/",
     "YT": "https://youtube.com/live/5u9em8r0th8"
+  },
+  {
+    "name": "Loosely Coupled - Organizing a conference; Behind the scenes",
+    "img": "/events/Loosely_Coupled_Organizing_a_conference.webp",
+    "description": "Ever wonder what it takes to launch a successful tech conference? This is your all-access pass! We're pulling back the curtain on conference organization! 🤯\n\nWe'll dive into the real work and effort required to get an event off the ground, from managing venues to evaluating talk proposals. If you've ever wanted to speak, organize, or just appreciate the magic behind the curtain, you won't want to miss this!\n\nTune in to our next Loosely Coupled Live Stream, where Anneke Schoonjans and Maxime Sanglan-Charlier will be telling us about their work on DDD Europe and Newcrafts conferences.\n\nIf you’d like to know more, beyond the participant perspective, join us live!",
+    "date": "2025-12-09",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-12-09",
+        "endDate": "2025-12-09",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Backstage of organizing a conference. What effort goes into it from a logistical and content work perspective.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7399102281163632640/",
+    "YT": "https://youtube.com/live/c6U63Z1w3Yc"
   }
 ]
 
