@@ -497,6 +497,27 @@
     },
     "LN": "https://www.linkedin.com/events/7402786110831083520/",
     "YT": "https://youtube.com/live/PBW9Ls-VCoY"
+  },
+  {
+    "name": "Loosely Coupled - Talk the Talk and Walk the Walk with a Living Language",
+    "img": "/events/Loosely_Coupled_talk_the_talk_and_walk_the_walk.webp",
+    "description": "“Context is king!” - I hear very often now, as we dive into various discussions about software architecture. “It depends” - is something I often say, and I know it is one of the most annoying answers the business gets from architects. But why does it matter?\n\n“Context is king!” - I hear very often now, as we dive into various discussions about software architecture. “It depends” - is something I often say, and I know it is one of the most annoying answers the business gets from architects. But why does it matter?\n\nIt matters, because we do not live in a void of unified theory and single meaning semantics. All of us have their own dictionaries and models of reality. We strive to make it cohesive and put it into context, but it is a difficult task. This is where Domain-Driven Design (DDD) helps by introducing the concept Ubiquitous Language, but even this practice is subject to entropy, without an active effort to maintain it!\n\nIn this episode of Loosely Coupled: “Talk the Talk and Walk the Walk with a Living Language” we will be diving into the complexities of maintaining a shared language and the steps that are needed to properly maintain it! Joining us for this session will be Chris Simon, Technology Coach and Advisor, who is a DDD advocate and an expert on modelling in complex business environments.\n\nJoin us in the discussion on how to maintain a shared understanding and context in a constantly changing world of IT and business,",
+    "date": "2026-01-14",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-01-14",
+        "endDate": "2026-01-14",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "We will be discussing the maintenance of Ubiquitous Language in live organizations.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7406322612160864257/",
+    "YT": "https://youtube.com/live/cjxESvptq10"
   }
 ]
-
