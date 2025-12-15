@@ -475,6 +475,28 @@
     },
     "LN": "https://www.linkedin.com/events/7399102281163632640/",
     "YT": "https://youtube.com/live/c6U63Z1w3Yc"
+  },
+  {
+    "name": "Loosely Coupled - Interoperability in Micro-frontends",
+    "img": "/events/Loosely_Coupled_Interoperability_in_Micro-frontends.webp",
+    "description": "In modern IT ecosystems interoperability is a critical factor to success. As systems are distributed and developed by different teams, we deal with different types of architectural styles, as well as differences in interoperability needs within and externally of those systems.\n\nIn modern IT ecosystems interoperability is a critical factor to success. As systems are distributed and developed by different teams, we deal with different types of architectural styles, as well as differences in interoperability needs within and externally of those systems.\n\nFrom the perspective of an integration specialist there is one key area, where personally I get easily lost due to a completely different nature of the way these systems are designed: Frontends! It is a world of its own with a completely different level of complexity!\n\nFor the discussion on interoperability in Frontend design and taking a deeper dive into the more complex cases of Micro-frontends we have found the perfect guide: Luca Mezzalira, Serverless Specialist at AWS and the author of “Building Micro-Frontends”. Together we’ll look at how frontends built by different teams or technologies can fit into one seamless experience, and how this approach scales across an entire organisation using integration platforms.\n\nJoin us as we’ll explore the nuances of interoperability and gain a practical understanding of various patterns to move data in and out of frontend applications.",
+    "date": "2025-12-17",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2025-12-17",
+        "endDate": "2025-12-17",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "We'll be discussing the interoperability in frontend design, and how these systems communicate internally and across boundaries. ",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7402786110831083520/",
+    "YT": "https://youtube.com/live/PBW9Ls-VCoY"
   }
 ]
 
