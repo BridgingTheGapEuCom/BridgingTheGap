@@ -519,5 +519,28 @@
     },
     "LN": "https://www.linkedin.com/events/7406322612160864257/",
     "YT": "https://youtube.com/live/cjxESvptq10"
+  },
+  {
+    "name": "Loosely Coupled - Can we get rid of developers? Is ‘Specification’ the new superskill?",
+    "img": "/events/Loosely_Coupled_can_we_get_rid_of_developers.webp",
+    "description": "“Can we get rid of developers?” - this is a question I keep hearing quite often in discussions over all sorts of Generative AI topics. There is a lot to unpack here, with lots of emotions on all sides of the discussion. \n\nIf we take a look through the conversations under LinkedIn posts, we can find a few groups of people:\n• LLM enthusiasts, who claim they can build entire systems through vibe coding, by specifying what they want,\n• Sceptics that state that these tools are far from being useful and precise,\n• Users, who use LLMs with more or less success for various tasks and topics.\n\nThe truth, as usual, is probably something in the middle. In this episode of Loosely Coupled: “Can we get rid of developers? Is ‘Specification’ the new superskill?” we’ll dive into this topic and try to make sense of various claims stated by various sources. Joining us on this topic is Swen-Helge Huber, Senior Director with the Office of the CTO @ Solace. Together we will discuss if and why ‘drafting specifications’ might be the new super skill\n\nJoin us! Voice your opinion and arguments!",
+    "date": "2026-01-22",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-01-22",
+        "endDate": "2026-01-22",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "We'll be discussing can we remove developers in favour of designers and specification writers.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7408860899597291520/",
+    "YT": "https://youtube.com/live/oWH6dTCAQmE"
   }
 ]
+
