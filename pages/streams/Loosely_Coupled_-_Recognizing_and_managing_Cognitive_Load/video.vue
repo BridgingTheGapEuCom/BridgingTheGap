@@ -10,7 +10,6 @@
 
 <script lang="ts" setup>
 const transcript = ref([
-  { startTime: 28.76, person: 'Karol', text: ' Hello, welcome to my lecture.' },
   {
     startTime: 94.01,
     person: 'Karol',
@@ -34,22 +33,21 @@ const transcript = ref([
   {
     startTime: 132.43,
     person: 'Karol',
-    text: " I know that is a troublesome topic when I'm managed."
+    text: ' I know that is a troublesome topic when unmanaged.'
   },
   {
     startTime: 135.49,
     person: 'Karol',
-    text: ' And today joining me on the stage is Radek Oroszewski, a accredited Kanban coach and professional trainer and also a team topologies advocate who provides training and consulting across Europe to teach team topologies and implement all of that with customers.'
+    text: ' And today joining me on the stage is Radek Orszewski, a accredited Kanban coach and professional trainer and also a team topologies advocate who provides training and consulting across Europe to teach team topologies and implement all of that with customers.'
   },
   {
     startTime: 163.83,
     person: 'Karol',
     text: ' And Radek today is going to be talking with us here about cognitive load and the implications that it has on our work.'
   },
-  { startTime: 173.83, person: 'Radek', text: ' Hi Radek.' },
-  { startTime: 174.59, person: 'Radek', text: ' Hello.' },
-  { startTime: 175.29, person: 'Radek', text: ' Hello.' },
-  { startTime: 175.77, person: 'Radek', text: ' I got all good to be here.' },
+  { startTime: 173.83, person: 'Karol', text: ' Hi Radek.' },
+  { startTime: 174.59, person: 'Radek', text: ' Hello, hello' },
+  { startTime: 175.77, person: 'Radek', text: ' Hi Karol, good to be here.' },
   { startTime: 177.33, person: 'Radek', text: ' Thank you for for having me here today.' },
   { startTime: 180.95, person: 'Karol', text: ' All right.' },
   {
@@ -76,7 +74,7 @@ const transcript = ref([
   {
     startTime: 230.61,
     person: 'Radek',
-    text: ' And yeah, I discovered two years back, the topologies.'
+    text: ' And yeah, I discovered two years back, team topologies.'
   },
   { startTime: 235.19, person: 'Radek', text: ' Many of us have read the book probably.' },
   {
@@ -168,7 +166,7 @@ const transcript = ref([
   {
     startTime: 398.89,
     person: 'Karol',
-    text: ' So it affects cognitive load affects every one of us.'
+    text: ' So, it affects, cognitive load affects every one of us.'
   },
   { startTime: 404.19, person: 'Karol', text: ' Right.' },
   {
@@ -199,7 +197,7 @@ const transcript = ref([
     person: 'Karol',
     text: " So what would you say is the like the core elements that we need to watch for when we're talking about cognitive load?"
   },
-  { startTime: 456.22, person: 'Karol', text: ' How would we observe cognitive load as well?' },
+  { startTime: 456.22, person: 'Karol', text: ' How would we observe cognitive load as well.' },
   { startTime: 459.86, person: 'Karol', text: ' Specialists, human beings, whatever that is.' },
   { startTime: 462.78, person: 'Radek', text: ' Right, right.' },
   {
@@ -220,7 +218,7 @@ const transcript = ref([
   {
     startTime: 505.72,
     person: 'Radek',
-    text: " And that if we if we basically expose them to too complex content, if we don't deliver the content in the right way, if we don't provide instructions in the right way, we can lead really quickly to a situation of this cognitive overload, even that we say I cannot consume."
+    text: " And that if we if we basically expose them to too complex content, if we don't deliver the content in the right way, if we don't provide instructions in the right way, we can lead really quickly to a situation of this cognitive overload even that we say I cannot consume."
   },
   {
     startTime: 529.74,
@@ -307,7 +305,7 @@ const transcript = ref([
   {
     startTime: 697.8,
     person: 'Radek',
-    text: ' And and this is this is really interesting that we we say we enter our professional environment with certain capacity, with certain memory that we have available.'
+    text: ' And and this is this is really interesting that we say we enter our professional environment with certain capacity, with certain memory that we have available.'
   },
   { startTime: 713.14, person: 'Radek', text: ' Right.' },
   {
@@ -318,7 +316,7 @@ const transcript = ref([
   {
     startTime: 720.58,
     person: 'Radek',
-    text: " Individuals and teens exposed to to certain, let's just say, factors start showing the results symptoms that, you know, we cannot focus, we cannot deliver."
+    text: " Individuals and teams exposed to to certain, let's just say, factors start showing the results symptoms that, you know, we cannot focus, we cannot deliver."
   },
   { startTime: 737.54, person: 'Radek', text: ' We juggle too many topics.' },
   { startTime: 741.42, person: 'Radek', text: ' We do not meet the deadlines.' },
@@ -358,7 +356,7 @@ const transcript = ref([
   {
     startTime: 776.08,
     person: 'Radek',
-    text: " And yeah, it's it's it's good to say, are we not designing?"
+    text: " And yeah, it's it's it's good to say, are we not designing"
   },
   {
     startTime: 781.88,
@@ -390,7 +388,7 @@ const transcript = ref([
   {
     startTime: 815.34,
     person: 'Radek',
-    text: " And there's no one silver bullet solution because we need to first identify what type of cognitive load do we deal with and and then decide, OK, what kind of strategy, what kind of solution?"
+    text: " And there's no one silver bullet solution because we need to first identify what type of cognitive load do we deal with and and then decide, OK, what kind of strategy, what kind of solution"
   },
   {
     startTime: 829.2,
@@ -576,11 +574,11 @@ const transcript = ref([
   {
     startTime: 1145.76,
     person: 'Karol',
-    text: ' And I think there is a general assumption that people over a specific IQ, and I found that in some YouTube videos, people over a certain IQ are capable to pick up any topic.'
+    text: ' I think there is a general assumption that people over a specific IQ, and I found that in some YouTube videos, people over a certain IQ are capable to pick up any topic.'
   },
   {
     startTime: 1160.76,
-    person: 'Karol',
+    person: 'Radek',
     text: " Yeah, yeah, that's, that's an assumption, right?"
   },
   { startTime: 1164.3, person: 'Karol', text: " That's an assumption, right?" },
@@ -700,7 +698,7 @@ const transcript = ref([
   {
     startTime: 1405.64,
     person: 'Radek',
-    text: " So, if I spend enough time in the organisation, I will learn that if I need something from IT, I will write to Karl directly because he's the nice guy, he will reply me, he will explain me how to do it."
+    text: " So, if I spend enough time in the organisation, I will learn that if I need something from IT, I will write to Karol directly because he's the nice guy, he will reply me, he will explain me how to do it."
   },
   { startTime: 1420.28, person: 'Karol', text: ' There go procedures out of the window, right?' },
   { startTime: 1424.08, person: 'Radek', text: ' Exactly, yeah.' },
@@ -917,7 +915,7 @@ const transcript = ref([
     person: 'Radek',
     text: " They, yeah, it's beyond their capacity to really deliver it."
   },
-  { startTime: 1856.44, person: 'Karol', text: ' Yeah.' },
+  { startTime: 1856.44, person: 'Radek', text: ' Yeah.' },
   { startTime: 1856.54, person: 'Karol', text: ' Mm hmm.' },
   {
     startTime: 1861.64,
@@ -932,10 +930,10 @@ const transcript = ref([
   {
     startTime: 1875.38,
     person: 'Radek',
-    text: " Yeah, to understand that, to make it even more complex, there's always content context and context is the king, right?"
+    text: " Yeah, to make it even more complex, there's always content context and context is the king, right?"
   },
   { startTime: 1884.34, person: 'Radek', text: ' So.' },
-  { startTime: 1884.44, person: 'Radek', text: ' Right.' },
+  { startTime: 1884.44, person: 'Karol', text: ' Right.' },
   {
     startTime: 1885.52,
     person: 'Radek',
@@ -1001,7 +999,7 @@ const transcript = ref([
   {
     startTime: 1986.88,
     person: 'Radek',
-    text: " I mean, first of all, it's such a setup that we have a body that we can refer to with our questions."
+    text: " I mean, first of all, it's such a setup that we have a buddy that we can refer to with our questions."
   },
   {
     startTime: 1996.16,
@@ -1029,7 +1027,7 @@ const transcript = ref([
   {
     startTime: 2046.08,
     person: 'Radek',
-    text: ' So you may have this kind of virtual body, right?'
+    text: ' So you may have this kind of virtual buddy, right?'
   },
   {
     startTime: 2050.199,
@@ -1050,7 +1048,7 @@ const transcript = ref([
   {
     startTime: 2079.76,
     person: 'Radek',
-    text: ' So we can have our own, whatever, cloud, chat, GPT, or whatever instance, right?'
+    text: ' So we can have our own, whatever, Claude, chatGPT, or whatever instance, right?'
   },
   {
     startTime: 2084.62,
@@ -1065,7 +1063,7 @@ const transcript = ref([
   {
     startTime: 2093.9,
     person: 'Radek',
-    text: ' And this is our 24 hours never-sleeping body that will help us, right?'
+    text: ' And this is our 24 hours never-sleeping buddy that will help us, right?'
   },
   {
     startTime: 2102.3,
@@ -1145,7 +1143,7 @@ const transcript = ref([
   {
     startTime: 2252.8,
     person: 'Karol',
-    text: " So for example, if we're talking about marketing or business planning for trainings that I do, or planning even these live streams, I'm not first with the LinkedIn algorithm and doing social media."
+    text: " So for example, if we're talking about marketing or business planning or trainings that I do, or planning even these live streams, I'm not first with the LinkedIn algorithm and doing social media."
   },
   {
     startTime: 2271.14,
@@ -1178,7 +1176,7 @@ const transcript = ref([
   {
     startTime: 2324.74,
     person: 'Radek',
-    text: ' Yeah, I mean, we started the conversation talking about the cognitive load, something that is present in our lives every day.'
+    text: ' Yeah, I mean, you know, we started the conversation talking about the cognitive load, something that is present in our lives every day.'
   },
   {
     startTime: 2333.94,
@@ -1251,19 +1249,19 @@ const transcript = ref([
     person: 'Karol',
     text: " And I see it every day as an integrator because I'm in the middle of everybody and seeing how they are."
   },
-  { startTime: 2470.84, person: 'Karol', text: ' I bet you do, right?' },
+  { startTime: 2470.84, person: 'Radek', text: ' I bet you do, right?' },
   {
     startTime: 2472.48,
     person: 'Karol',
     text: ' Two systems are completely siloed and never exchange a single word between them.'
   },
-  { startTime: 2477.28, person: 'Radek', text: ' And they need to exchange data.' },
+  { startTime: 2477.28, person: 'Karol', text: ' And they need to exchange data.' },
   {
     startTime: 2478.7,
     person: 'Radek',
     text: ' Those people probably not even attended the same integration part, right?'
   },
-  { startTime: 2484.72, person: 'Radek', text: " That's another topic." },
+  { startTime: 2484.72, person: 'Karol', text: " That's another topic." },
   {
     startTime: 2485.84,
     person: 'Radek',
@@ -1354,7 +1352,7 @@ const transcript = ref([
     person: 'Radek',
     text: " We had three new people and six months later, unfortunately, we have six new people in total and just one single member of the team who knows what's being done before."
   },
-  { startTime: 2692.66, person: 'Radek', text: ' He cannot be the body for all of them, right?' },
+  { startTime: 2692.66, person: 'Radek', text: ' He cannot be the buddy for all of them, right?' },
   {
     startTime: 2696.8,
     person: 'Radek',
@@ -1414,7 +1412,7 @@ const transcript = ref([
   },
   { startTime: 2819, person: 'Karol', text: ' There we go.' },
   { startTime: 2821.82, person: 'Karol', text: ' Wow, there are so many variations.' },
-  { startTime: 2823.92, person: 'Karol', text: ' First word problems.' },
+  { startTime: 2823.92, person: 'Radek', text: ' First word problems.' },
   { startTime: 2824.9, person: 'Karol', text: ' Yeah, first word problems.' },
   {
     startTime: 2827.3,
@@ -1431,7 +1429,7 @@ const transcript = ref([
   {
     startTime: 2851.36,
     person: 'Karol',
-    text: ' The name was unfamiliar, but Jim and I helped really quickly resolve that one.'
+    text: ' The name was unfamiliar, but Gemini helped really quickly resolve that one.'
   },
   {
     startTime: 2857.01,
@@ -1491,7 +1489,7 @@ const transcript = ref([
   {
     startTime: 2954.98,
     person: 'Radek',
-    text: " I want to say not to overwhelm all of us, but you're right, Karl, the fact that if a person is somewhere on the spectrum of certain challenges with focus, with whatever else, is one aspect."
+    text: " I want to say not to overwhelm all of us, but you're right, Karol, the fact that if a person is somewhere on the spectrum of certain challenges with focus, with whatever else, is one aspect."
   },
   {
     startTime: 2978.34,
@@ -1521,7 +1519,7 @@ const transcript = ref([
   {
     startTime: 3019.12,
     person: 'Radek',
-    text: " And following Dominic's comment, I want to say, yeah, going into practise."
+    text: " And following Dominique's comment, I want to say, yeah, going into practise."
   },
   {
     startTime: 3026.4,
@@ -1531,7 +1529,7 @@ const transcript = ref([
   {
     startTime: 3039.92,
     person: 'Radek',
-    text: ' Maybe start, or start talking about, okay, what do we do it, right?'
+    text: " Maybe start, we'll start talking about, okay, what do we do it, right?"
   },
   {
     startTime: 3045.12,
@@ -1557,7 +1555,7 @@ const transcript = ref([
   {
     startTime: 3084.48,
     person: 'Radek',
-    text: ' Following the flow, or Trixie Nihali, the concept, yeah, how do we approach it, right?'
+    text: ' Following the flow, the concept, yeah, how do we approach it, right?'
   },
   {
     startTime: 3093.78,
@@ -1607,7 +1605,7 @@ const transcript = ref([
   {
     startTime: 3183.04,
     person: 'Karol',
-    text: ' So we basically solve the lack of scale by introducing extraneous cognitive load.'
+    text: ' So we basically solve the lack of skill by introducing extraneous cognitive load.'
   },
   { startTime: 3190.92, person: 'Radek', text: ' Yeah, exactly, right?' },
   {
@@ -1671,13 +1669,13 @@ const transcript = ref([
   {
     startTime: 3278.24,
     person: 'Radek',
-    text: " So let's just say you want to learn how to say it."
+    text: " So let's just say you want to learn how to sail."
   },
   { startTime: 3283.38, person: 'Radek', text: ' What do you do, right?' },
   {
     startTime: 3285.04,
     person: 'Radek',
-    text: ' I mean, you can go and say, I want to watch many YouTube videos about saying it.'
+    text: ' I mean, you can go and say, I want to watch many YouTube videos about sailing it.'
   },
   { startTime: 3290.97, person: 'Radek', text: ' Okay.' },
   {
@@ -1688,9 +1686,13 @@ const transcript = ref([
   {
     startTime: 3296.18,
     person: 'Radek',
-    text: " You don't know if actually theory applicable to your needs, because you may be watching videos about ocean sailing while you're going to be the lake sailor in the air, right?"
+    text: " You don't know if actually theory applicable to your needs, because you may be watching videos about ocean sailing while you're going to be the lake sailor in the end, right?"
   },
-  { startTime: 3314.98, person: 'Radek', text: " That's quite a difference." },
+  {
+    startTime: 3314.98,
+    person: 'Radek',
+    text: " You may say, I have very little time, but some money, so I'm gona go to some marina"
+  },
   {
     startTime: 3317.94,
     person: 'Radek',
@@ -1710,10 +1712,11 @@ const transcript = ref([
     text: " So for me, this is, of course, silly strategy, just like I would say, because I have flown this year already more than 20 times a commercial aeroplane, then I'll become a pilot."
   },
   { startTime: 3350.48, person: 'Radek', text: " No, I'm just a passenger, right?" },
+  { startTime: 3352.62, person: 'Radek', text: " It doesn't make me any closer to be..." },
   {
-    startTime: 3352.62,
+    startTime: 3355.93,
     person: 'Karol',
-    text: " It doesn't make me any closer to be in terms of sailing that would actually this approach would actually be probably closer than the YouTube tutorial."
+    text: ' In terms of sailing that would actually this approach would actually be probably closer than the YouTube tutorial.'
   },
   { startTime: 3361.89, person: 'Radek', text: ' Yeah, exactly.' },
   { startTime: 3363.41, person: 'Radek', text: " Yeah, yeah, yeah, you're right." },
@@ -1804,7 +1807,7 @@ const transcript = ref([
   {
     startTime: 3509.81,
     person: 'Radek',
-    text: ' He gives you the feedback, like, are you on track at all?'
+    text: ' He gives you the feedback, like, are you on track Karol?'
   },
   {
     startTime: 3512.17,
@@ -1846,10 +1849,15 @@ const transcript = ref([
   },
   {
     startTime: 3602.75,
-    person: 'Radek',
-    text: ' So the learning and development unit should be, but I would say the enabling team should not be a concept which is absolutely unknown to learning and development.'
+    person: 'Karol',
+    text: ' So the learning and development unit... should be, but...'
   },
-  { startTime: 3615.73, person: 'Radek', text: ' It should be something fairly new.' },
+  {
+    startTime: 3609.17,
+    person: 'Radek',
+    text: ' I would say the enabling team should not be a concept which is absolutely unknown to learning and development.'
+  },
+  { startTime: 3615.73, person: 'Karol', text: ' It should be something fairly new.' },
   {
     startTime: 3618.27,
     person: 'Karol',
