@@ -46,8 +46,8 @@ const transcript = ref([
     person: 'Karol',
     text: " He used to be a developer advocate for Solace, so a lot of talking with a lot of people, and also, Aaron is running office hours, Solace office hours with, well, with Aaron, obviously, and if you haven't seen those, they're available on the Solace channel on YouTube, and, without further ado, hello!"
   },
-  { startTime: 280.73, person: 'Aaron', text: " Hey, everybody, hey, Carol, how's it going, man?" },
-  { startTime: 284.37, person: 'Aaron', text: " I was quite surprised that you wouldn't make it!" },
+  { startTime: 280.73, person: 'Aaron', text: " Hey, everybody, hey, Karol, how's it going, man?" },
+  { startTime: 284.37, person: 'Karol', text: " I was quite surprised that you wouldn't make it!" },
   { startTime: 286.99, person: 'Aaron', text: ' I, it was touch and go there for a while.' },
   {
     startTime: 289.23,
@@ -111,7 +111,7 @@ const transcript = ref([
     person: 'Karol',
     text: " It's difficult to work at times because of the temperature, but global warming."
   },
-  { startTime: 401.63, person: 'Karol', text: " We'll do what we can." },
+  { startTime: 401.63, person: 'Aaron', text: " We'll do what we can." },
   { startTime: 402.39, person: 'Karol', text: " That's all right." },
   { startTime: 402.99, person: 'Karol', text: ' We do what we can.' },
   {
@@ -133,7 +133,7 @@ const transcript = ref([
   {
     startTime: 430.83,
     person: 'Aaron',
-    text: " So, Carol's written this whole implementation agnostic course, and I guess I'm on the other end of that, right?"
+    text: " So, Karol's written this whole implementation agnostic course, and I guess I'm on the other end of that, right?"
   },
   {
     startTime: 438.77,
@@ -200,7 +200,7 @@ const transcript = ref([
   {
     startTime: 520.21,
     person: 'Aaron',
-    text: ' I mean, Carol, from our very first time we had a conversation, I think it was via the talk to your dev advocate kind of like feedback link there.'
+    text: ' I mean, Karol, from our very first time we had a conversation, I think it was via the talk to your dev advocate kind of like feedback link there.'
   },
   {
     startTime: 527.68,
@@ -495,7 +495,7 @@ const transcript = ref([
     text: " The network infrastructure, it's a very, very, very narrow element, whereas..."
   },
   { startTime: 1020.77, person: 'Aaron', text: ' It is.' },
-  { startTime: 1021.41, person: 'Karol', text: ' But everybody uses it, right?' },
+  { startTime: 1021.41, person: 'Aaron', text: ' But everybody uses it, right?' },
   {
     startTime: 1025.01,
     person: 'Karol',
@@ -572,8 +572,8 @@ const transcript = ref([
   },
   { startTime: 1113.99, person: 'Karol', text: ' Hi, Stefan.' },
   { startTime: 1115.03, person: 'Karol', text: ' Nice to see you again.' },
-  { startTime: 1116.11, person: 'Karol', text: ' Hello.' },
-  { startTime: 1116.55, person: 'Karol', text: ' Hello.' },
+  { startTime: 1116.11, person: 'Aaron', text: ' Hello.' },
+  { startTime: 1116.55, person: 'Aaron', text: ' Hello.' },
   {
     startTime: 1117.79,
     person: 'Karol',
@@ -606,7 +606,7 @@ const transcript = ref([
     text: " Now, I'm going to blank out and forget what was Vlad's last name."
   },
   { startTime: 1182.27, person: 'Karol', text: " I'll look it up in a moment." },
-  { startTime: 1184.55, person: 'Karol', text: ' Sure.' },
+  { startTime: 1184.55, person: 'Aaron', text: ' Sure.' },
   {
     startTime: 1186.37,
     person: 'Karol',
@@ -621,7 +621,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' That took him about five years to do research and write that book.'
   },
-  { startTime: 1207.89, person: 'Karol', text: ' All right.' },
+  { startTime: 1207.89, person: 'Aaron', text: ' All right.' },
   {
     startTime: 1209.11,
     person: 'Karol',
@@ -639,7 +639,7 @@ const transcript = ref([
     person: 'Karol',
     text: " But yet, there is this notion in a lot of architects that they say, well, we're decoupling things."
   },
-  { startTime: 1245.25, person: 'Karol', text: ' Sure.' },
+  { startTime: 1245.25, person: 'Aaron', text: ' Sure.' },
   { startTime: 1246.41, person: 'Karol', text: " And that's problematic for me." },
   {
     startTime: 1249.39,
@@ -654,32 +654,32 @@ const transcript = ref([
     text: " And here's the thing that I figured about coupling."
   },
   { startTime: 1263.41, person: 'Karol', text: ' It has a dual nature, just like light.' },
-  { startTime: 1267.97, person: 'Karol', text: ' OK.' },
+  { startTime: 1267.97, person: 'Aaron', text: ' OK.' },
   {
     startTime: 1268.97,
     person: 'Karol',
     text: ' Did you ever hear me talk about this analogue there?'
   },
-  { startTime: 1273.89, person: 'Karol', text: ' This one specifically?' },
-  { startTime: 1275.37, person: 'Karol', text: " I don't think so." },
+  { startTime: 1273.89, person: 'Aaron', text: ' This one specifically?' },
+  { startTime: 1275.37, person: 'Aaron', text: " I don't think so." },
   { startTime: 1276.09, person: 'Aaron', text: " I don't think." },
   { startTime: 1276.57, person: 'Karol', text: ' OK.' },
-  { startTime: 1277.47, person: 'Karol', text: ' Yeah.' },
+  { startTime: 1277.47, person: 'Aaron', text: ' Yeah.' },
   { startTime: 1278.53, person: 'Karol', text: " So let's see if you agree." },
-  { startTime: 1279.83, person: 'Karol', text: ' OK.' },
+  { startTime: 1279.83, person: 'Aaron', text: ' OK.' },
   { startTime: 1280.55, person: 'Karol', text: ' My take on coupling, it can be binary.' },
   {
     startTime: 1285.41,
     person: 'Karol',
     text: ' So something being either coupled or decoupled, which basically means two pieces of software either communicate or not.'
   },
-  { startTime: 1293.89, person: 'Karol', text: ' OK.' },
+  { startTime: 1293.89, person: 'Aaron', text: ' OK.' },
   {
     startTime: 1294.59,
     person: 'Karol',
     text: " And then it's on a spectrum, can be tightly coupled or loosely coupled if they communicate."
   },
-  { startTime: 1303.23, person: 'Karol', text: ' OK.' },
+  { startTime: 1303.23, person: 'Aaron', text: ' OK.' },
   {
     startTime: 1304.09,
     person: 'Karol',
@@ -724,7 +724,7 @@ const transcript = ref([
   { startTime: 1368.51, person: 'Aaron', text: ' But let me click share my screen here.' },
   { startTime: 1371.37, person: 'Aaron', text: ' And hopefully this will come up there.' },
   { startTime: 1377.03, person: 'Aaron', text: ' Let me know if you can.' },
-  { startTime: 1378.89, person: 'Aaron', text: ' Yes.' },
+  { startTime: 1378.89, person: 'Karol', text: ' Yes.' },
   {
     startTime: 1379.75,
     person: 'Aaron',
@@ -811,7 +811,7 @@ const transcript = ref([
   { startTime: 1468.69, person: 'Karol', text: ' A lot of the functions are on something.' },
   { startTime: 1472.21, person: 'Karol', text: ' On click, on hover, on...' },
   { startTime: 1474.57, person: 'Aaron', text: ' Yeah.' },
-  { startTime: 1474.71, person: 'Karol', text: " So that's your event, right?" },
+  { startTime: 1474.71, person: 'Aaron', text: " So that's your event, right?" },
   { startTime: 1476.61, person: 'Aaron', text: ' So that the button has been clicked.' },
   {
     startTime: 1478.39,
@@ -866,7 +866,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' Basically, the subject would be doing a request reply to each one of them.'
   },
-  { startTime: 1556.23, person: 'Karol', text: ' Something like that.' },
+  { startTime: 1556.23, person: 'Aaron', text: ' Something like that.' },
   { startTime: 1556.89, person: 'Aaron', text: ' Yeah.' },
   { startTime: 1557.05, person: 'Aaron', text: ' It could be a UDP.' },
   { startTime: 1560.21, person: 'Aaron', text: " It doesn't have to be a request reply." },
@@ -996,13 +996,14 @@ const transcript = ref([
     text: ' It talks about loosening the coupling, not decoupling.'
   },
   { startTime: 1722.23, person: 'Aaron', text: ' Okay, all right, all right, cool.' },
-  { startTime: 1722.97, person: 'Aaron', text: ' We can take a slide down there, Carol.' },
+  { startTime: 1722.97, person: 'Aaron', text: ' We can take a slide down there, Karol.' },
   { startTime: 1725.57, person: 'Aaron', text: ' I just wanted to flash those two.' },
   { startTime: 1727.13, person: 'Karol', text: ' All right, all right, all right.' },
   { startTime: 1731.29, person: 'Karol', text: ' Oh, nope, not this one.' },
-  { startTime: 1733.31, person: 'Karol', text: ' Other way, other way.' },
+  { startTime: 1733.31, person: 'Aaron', text: ' Other way, other way.' },
   { startTime: 1734.23, person: 'Karol', text: ' Nope, nope.' },
-  { startTime: 1735.93, person: 'Karol', text: ' See, this is my- Too many buttons, there we go.' },
+  { startTime: 1735.93, person: 'Karol', text: ' See, this is my' },
+  { startTime: 1736.99, person: 'Aaron', text: ' Too many buttons, there we go.' },
   {
     startTime: 1739.05,
     person: 'Karol',
@@ -1060,7 +1061,7 @@ const transcript = ref([
     person: 'Karol',
     text: " We're obfuscating that knowledge through that mediation over a message or event broker."
   },
-  { startTime: 1823.73, person: 'Karol', text: " That's right." },
+  { startTime: 1823.73, person: 'Aaron', text: " That's right." },
   { startTime: 1824.43, person: 'Karol', text: ' But there are other types of coupling.' },
   {
     startTime: 1828.57,
@@ -1086,7 +1087,7 @@ const transcript = ref([
   {
     startTime: 1864.63,
     person: 'Karol',
-    text: ' So at this point, we already had this kind of a, not conversation coupling, but that was more of a technology coupling, protocol coupling, right?'
+    text: ' So at this point, we already have this kind of a, not conversation coupling, but that was more of a technology coupling, protocol coupling, right?'
   },
   {
     startTime: 1875.23,
@@ -1109,7 +1110,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' So JMS, AMQP, you can access the topics via REST, etcétera.'
   },
-  { startTime: 1904.71, person: 'Karol', text: ' MQTT, yeah.' },
+  { startTime: 1904.71, person: 'Aaron', text: ' MQTT, yeah.' },
   {
     startTime: 1906.01,
     person: 'Karol',
@@ -1200,7 +1201,7 @@ const transcript = ref([
   {
     startTime: 2064.83,
     person: 'Aaron',
-    text: ' I know some installers have considered this more.'
+    text: ' I know some in Solace have considered this more.'
   },
   {
     startTime: 2067.55,
@@ -1253,7 +1254,7 @@ const transcript = ref([
     text: " You don't have to all speak one common language."
   },
   { startTime: 2111.35, person: 'Aaron', text: " So it's more about the..." },
-  { startTime: 2113.19, person: 'Aaron', text: ' Would that be Star Wars or more like Star Trek?' },
+  { startTime: 2113.19, person: 'Karol', text: ' Would that be Star Wars or more like Star Trek?' },
   { startTime: 2116.69, person: 'Aaron', text: ' No, Star Wars, man.' },
   {
     startTime: 2117.87,
@@ -1271,7 +1272,7 @@ const transcript = ref([
   {
     startTime: 2135.67,
     person: 'Karol',
-    text: ' All right, but you mentioned a very interesting feature provided by Solus being the micro-integrations.'
+    text: ' All right, but you mentioned a very interesting feature provided by Solace being the micro-integrations.'
   },
   {
     startTime: 2143.25,
@@ -1309,14 +1310,14 @@ const transcript = ref([
   },
   { startTime: 2201.66, person: 'Karol', text: ' the EDA problem of publish-subscribe,' },
   { startTime: 2203.96, person: 'Karol', text: ' the problem being security.' },
-  { startTime: 2206.6, person: 'Karol', text: ' Okay.' },
+  { startTime: 2206.6, person: 'Aaron', text: ' Okay.' },
   {
     startTime: 2207.24,
     person: 'Karol',
-    text: " If we do broadcasts, publish-subscribe, one-to-many, the mechanism itself, it's secure because every message broker, Solus included, has ACLs, only those that are on the access list, only those can access the structures and actually read the messages from topics."
+    text: " If we do broadcasts, publish-subscribe, one-to-many, the mechanism itself, it's secure because every message broker, Solace included, has ACLs, only those that are on the access list, only those can access the structures and actually read the messages from topics."
   },
   { startTime: 2228.22, person: 'Karol', text: ' Perfectly fine.' },
-  { startTime: 2229.58, person: 'Karol', text: ' Sure, yeah.' },
+  { startTime: 2229.58, person: 'Aaron', text: ' Sure, yeah.' },
   {
     startTime: 2230.18,
     person: 'Karol',
@@ -1327,7 +1328,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' And the typical even driven architecture result of that is that every subscriber receives exactly the same payload.'
   },
-  { startTime: 2252.64, person: 'Karol', text: ' Sure, yeah.' },
+  { startTime: 2252.64, person: 'Aaron', text: ' Sure, yeah.' },
   {
     startTime: 2253.4,
     person: 'Karol',
@@ -1340,15 +1341,15 @@ const transcript = ref([
     person: 'Karol',
     text: " So let's say employee data, healthcare-related data, etcétera."
   },
-  { startTime: 2277.78, person: 'Karol', text: ' Sure.' },
+  { startTime: 2277.78, person: 'Aaron', text: ' Sure.' },
   { startTime: 2278.6, person: 'Karol', text: " And you're doing this via publish-subscribe." },
-  { startTime: 2281.56, person: 'Karol', text: ' Yep.' },
+  { startTime: 2281.56, person: 'Aaron', text: ' Yep.' },
   {
     startTime: 2281.76,
     person: 'Karol',
     text: ' So that means that every subscriber gets exactly the same set of data.'
   },
-  { startTime: 2286.76, person: 'Karol', text: ' Yep.' },
+  { startTime: 2286.76, person: 'Aaron', text: ' Yep.' },
   {
     startTime: 2287.38,
     person: 'Karol',
@@ -1418,7 +1419,7 @@ const transcript = ref([
     text: ' So if you put micro-integrations in the context of an integration platform in API-led architecture, micro-integrations serve as the channel or adapter layer.'
   },
   { startTime: 2397.06, person: 'Karol', text: ' In this architecture, right?' },
-  { startTime: 2402.22, person: 'Karol', text: ' Sure.' },
+  { startTime: 2402.22, person: 'Aaron', text: ' Sure.' },
   {
     startTime: 2402.96,
     person: 'Karol',
@@ -1562,11 +1563,11 @@ const transcript = ref([
     person: 'Aaron',
     text: ' Well, so Rabbit, Rabbit, AMQP-091, which is Rabbit.'
   },
-  { startTime: 2581.88, person: 'Aaron', text: ' Rabbit MQ.' },
+  { startTime: 2581.88, person: 'Karol', text: ' Rabbit MQ.' },
   { startTime: 2582.64, person: 'Aaron', text: ' Only, Rabbit only.' },
   { startTime: 2583.7, person: 'Aaron', text: ' Yeah, yeah.' },
   { startTime: 2584.14, person: 'Aaron', text: ' So you can use a key exchange and...' },
-  { startTime: 2587.44, person: 'Aaron', text: ' Routing key.' },
+  { startTime: 2587.44, person: 'Karol', text: ' Routing key.' },
   { startTime: 2588.48, person: 'Aaron', text: " Routing key, that's it, yeah." },
   {
     startTime: 2590.36,
@@ -1780,7 +1781,7 @@ const transcript = ref([
     text: ' But Andrew, Mintz, I think Mintz is a great name.'
   },
   { startTime: 2917.34, person: 'Aaron', text: ' So micro integration.' },
-  { startTime: 2918.82, person: 'Aaron', text: ' Oh man.' },
+  { startTime: 2918.82, person: 'Karol', text: ' Oh man.' },
   { startTime: 2920.24, person: 'Aaron', text: ' We got some questions popping up there.' },
   { startTime: 2922.26, person: 'Karol', text: ' Oh yeah, this is a good one.' },
   {
@@ -1843,14 +1844,11 @@ const transcript = ref([
     person: 'Aaron',
     text: " You know, you're not streaming hundreds of thousands of messages."
   },
-  {
-    startTime: 2995.38,
-    person: 'Karol',
-    text: " So we have this ability to- I'll only argue on one thing."
-  },
-  { startTime: 3000.38, person: 'Karol', text: " What's that?" },
+  { startTime: 2995.38, person: 'Aaron', text: ' So we have this ability to.' },
+  { startTime: 2996.98, person: 'Karol', text: " I'll only argue on one thing." },
+  { startTime: 3000.38, person: 'Aaron', text: " What's that?" },
   { startTime: 3001.92, person: 'Karol', text: ' It still can be very performant.' },
-  { startTime: 3004.2, person: 'Karol', text: " It's not very responsive." },
+  { startTime: 3004.2, person: 'Aaron', text: " It's not very responsive." },
   { startTime: 3009.52, person: 'Aaron', text: ' Responsiveness is the characteristic.' },
   {
     startTime: 3012.5,
@@ -1872,7 +1870,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' The communication can be still very performant and very low latency with a blocking communication.'
   },
-  { startTime: 3041.18, person: 'Karol', text: ' Sure, yep.' },
+  { startTime: 3041.18, person: 'Aaron', text: ' Sure, yep.' },
   { startTime: 3041.94, person: 'Karol', text: " But it's gonna be a lot better." },
   {
     startTime: 3044.12,
@@ -1978,7 +1976,7 @@ const transcript = ref([
   {
     startTime: 3235.06,
     person: 'Karol',
-    text: " And if you wanna go better in terms of what you're building in terms of communication, always use some sort of a metadata use a message ID, correlation ID for your messages whether or not they are rest or asynchronous or asynchronous, it doesn't matter."
+    text: " And if you wanna go better in terms of what you're building in terms of communication, always use some sort of a metadata use a message ID, correlation ID for your messages whether or not they are rest or synchronous or asynchronous, it doesn't matter."
   },
   {
     startTime: 3254.22,
@@ -2062,15 +2060,12 @@ const transcript = ref([
     person: 'Karol',
     text: " If you're an integrator, that's a must have just to understand even driven architecture well."
   },
-  {
-    startTime: 3369.94,
-    person: 'Aaron',
-    text: " And I'm trying to find- All sorts of integration patterns, yeah."
-  },
+  { startTime: 3369.94, person: 'Karol', text: " And I'm trying to find" },
+  { startTime: 3370.48, person: 'Aaron', text: ' All sorts of integration patterns, yeah.' },
   {
     startTime: 3372.24,
     person: 'Karol',
-    text: ' Yeah, all sorts of, well, most of them are related to even driven design on a- Messaging, yeah.'
+    text: ' Yeah, all sorts of, well, most of them are related to even driven design on a.'
   },
   {
     startTime: 3378.24,
@@ -2087,11 +2082,8 @@ const transcript = ref([
     person: 'Karol',
     text: " So that book doesn't cover a lot of the topics, which is somewhat of a problem."
   },
-  {
-    startTime: 3397.72,
-    person: 'Karol',
-    text: " It's 20 years old, so- 20 years old, yeah, exactly."
-  },
+  { startTime: 3397.72, person: 'Aaron', text: " It's 20 years old, so" },
+  { startTime: 3398.72, person: 'Karol', text: ' 20 years old, yeah, exactly.' },
   {
     startTime: 3400.62,
     person: 'Karol',
@@ -2183,7 +2175,7 @@ const transcript = ref([
     person: 'Aaron',
     text: " It's called subscribing to that topic or topics, right?"
   },
-  { startTime: 3538.86, person: 'Aaron', text: " It's nothing much." },
+  { startTime: 3538.86, person: 'Karol', text: ' Pretty much.' },
   {
     startTime: 3540,
     person: 'Aaron',
@@ -2306,7 +2298,7 @@ const transcript = ref([
   {
     startTime: 3717.3,
     person: 'Karol',
-    text: ' If there are discrepancies in the build of the headers, we know that Salesforce is, for example, sending a very standardised set of HTTP headers because we define those headers and the calls that these have to pay.'
+    text: ' If there are discrepancies in the build of the headers, we know that Salesforce is, for example, sending a very standardised set of HTTP headers because we define those headers and the calls that these have to be.'
   },
   { startTime: 3729.14, person: 'Karol', text: ' Okay.' },
   {
@@ -2356,7 +2348,7 @@ const transcript = ref([
   {
     startTime: 3807.86,
     person: 'Aaron',
-    text: " The thing I try to impress upon people when I'm doing these workshops, you know, around Publish, Subscribe, is that it kind of future-proofs you to some degree."
+    text: " The thing I try to impress upon people when I'm doing these workshops, you know, around Publish-Subscribe, is that it kind of future-proofs you to some degree."
   },
   {
     startTime: 3815.94,
@@ -2478,7 +2470,7 @@ const transcript = ref([
   {
     startTime: 3996.54,
     person: 'Karol',
-    text: ' So I mean, I still remember use cases from back in the day when I was working for T-Mobile and we had to secure the SMS gateway because SMSs have to be tested, right?'
+    text: ' I mean, I still remember use cases from back in the day when I was working for T-Mobile and we had to secure the SMS gateway because SMSs have to be tested, right?'
   },
   {
     startTime: 4015.22,
@@ -2510,8 +2502,8 @@ const transcript = ref([
     person: 'Karol',
     text: ' Maybe some harmless fun, maybe something a little bit more cringey or straight up illegal, right?'
   },
-  { startTime: 4089.7, person: 'Karol', text: ' Yep, yep.' },
-  { startTime: 4092.24, person: 'Aaron', text: " Where there's always a whole." },
+  { startTime: 4089.7, person: 'Aaron', text: ' Yep, yep.' },
+  { startTime: 4092.24, person: 'Karol', text: " Where there's always a whole." },
   { startTime: 4094.7, person: 'Aaron', text: ' So yeah, exactly.' },
   { startTime: 4095.68, person: 'Aaron', text: ' Humans are fallible, right?' },
   {
@@ -2680,7 +2672,7 @@ const transcript = ref([
     person: 'Karol',
     text: " But if we don't get that context right, we might misjudge the trade-offs."
   },
-  { startTime: 4313.74, person: 'Karol', text: ' Yeah, yeah, yeah, yeah.' },
+  { startTime: 4313.74, person: 'Aaron', text: ' Yeah, yeah, yeah, yeah.' },
   { startTime: 4316.06, person: 'Karol', text: " And that's problematic." },
   { startTime: 4318.56, person: 'Aaron', text: ' Yeah.' },
   { startTime: 4319.54, person: 'Aaron', text: ' What Stefan said there is pretty...' },
@@ -2689,7 +2681,7 @@ const transcript = ref([
   { startTime: 4324.38, person: 'Aaron', text: ' Yeah.' },
   { startTime: 4325.32, person: 'Aaron', text: ' Yeah.' },
   { startTime: 4325.96, person: 'Aaron', text: ' Trade-offs.' },
-  { startTime: 4327.28, person: 'Aaron', text: ' Trade-offs.' },
+  { startTime: 4327.28, person: 'Karol', text: ' Trade-offs.' },
   { startTime: 4328.24, person: 'Aaron', text: ' Yeah.' },
   { startTime: 4328.78, person: 'Karol', text: ' Fast or secure?' },
   { startTime: 4329.84, person: 'Karol', text: ' Fast or secure?' },
@@ -2701,7 +2693,7 @@ const transcript = ref([
     person: 'Karol',
     text: " I find it that one of the best explanations I've seen so far how to work with trade-offs is doing the trade-off analysis at the way that Mark Richards and Neil Ford portray it with a discussion around which characteristic is actually the driving characteristic for the business."
   },
-  { startTime: 4352.5, person: 'Karol', text: ' Okay.' },
+  { startTime: 4352.5, person: 'Aaron', text: ' Okay.' },
   {
     startTime: 4352.76,
     person: 'Karol',
@@ -2821,7 +2813,7 @@ const transcript = ref([
     person: 'Karol',
     text: " We'll dive into that somewhere around the end of the stream."
   },
-  { startTime: 4473.44, person: 'Karol', text: " Let's dive back into publish, subscribe." },
+  { startTime: 4473.44, person: 'Karol', text: " Let's dive back into publish-subscribe." },
   {
     startTime: 4476.08,
     person: 'Karol',
@@ -2832,18 +2824,18 @@ const transcript = ref([
     person: 'Karol',
     text: " Hope you stick with us and we'll touch upon that later."
   },
-  { startTime: 4488.94, person: 'Karol', text: ' But publish, subscribe.' },
-  { startTime: 4491.34, person: 'Karol', text: ' Adam, you have a game for us.' },
+  { startTime: 4488.94, person: 'Karol', text: ' But publish-subscribe.' },
+  { startTime: 4491.34, person: 'Karol', text: ' Aaron, you have a game for us.' },
   { startTime: 4493.6, person: 'Aaron', text: ' Oh, I was going to show the demo.' },
   { startTime: 4496.44, person: 'Aaron', text: ' I can do it.' },
   { startTime: 4496.76, person: 'Aaron', text: ' We can do the game.' },
   { startTime: 4497.58, person: 'Karol', text: ' Okay.' },
   {
     startTime: 4498.62,
-    person: 'Aaron',
+    person: 'Karol',
     text: " Do the demo first and then we're going to do the game."
   },
-  { startTime: 4501.2, person: 'Aaron', text: ' You ready with the demo?' },
+  { startTime: 4501.2, person: 'Karol', text: ' You ready with the demo?' },
   { startTime: 4502.62, person: 'Aaron', text: ' No, no.' },
   { startTime: 4503.12, person: 'Aaron', text: ' Give me a second here.' },
   { startTime: 4505.86, person: 'Aaron', text: ' So this is, yeah, just let it load.' },
@@ -2930,7 +2922,7 @@ const transcript = ref([
     text: ' So as these buses move, the map gets this message data and I just move the icon, right?'
   },
   { startTime: 4602.66, person: 'Aaron', text: " That's essentially all I'm doing here." },
-  { startTime: 4603.76, person: 'Aaron', text: ' So this is exactly publish, subscribe visually.' },
+  { startTime: 4603.76, person: 'Aaron', text: ' So this is exactly publish-subscribe visually.' },
   { startTime: 4607.3, person: 'Aaron', text: ' So buses are updating.' },
   {
     startTime: 4609.62,
@@ -3062,7 +3054,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' Of course, you can have also that, the same information in your payload.'
   },
-  { startTime: 4773.38, person: 'Karol', text: ' It would be.' },
+  { startTime: 4773.38, person: 'Aaron', text: ' It would be.' },
   {
     startTime: 4774,
     person: 'Karol',
@@ -3269,14 +3261,14 @@ const transcript = ref([
     person: 'Karol',
     text: " If I look at the apps I ever used on my phone, this kind of filtering would be something that, let's say Uber or any other taxi app to just find taxis in my area."
   },
-  { startTime: 5050.72, person: 'Karol', text: ' Tell them to call me.' },
-  { startTime: 5051.44, person: 'Karol', text: " I'll give it to, I'll tell them how to do it." },
+  { startTime: 5050.72, person: 'Aaron', text: ' Tell them to call me.' },
+  { startTime: 5051.44, person: 'Aaron', text: " I'll give it to, I'll tell them how to do it." },
   {
     startTime: 5053.5,
     person: 'Karol',
     text: " But also if you look at, for example, dating apps, a lot of them have, like in what range from your current location you're looking for potential dates, right?"
   },
-  { startTime: 5065.18, person: 'Karol', text: ' Yeah.' },
+  { startTime: 5065.18, person: 'Aaron', text: ' Yeah.' },
   { startTime: 5065.46, person: 'Karol', text: ' Tinder had that definitely.' },
   {
     startTime: 5066.96,
@@ -3330,12 +3322,12 @@ const transcript = ref([
   {
     startTime: 5117.86,
     person: 'Karol',
-    text: ' So for example, live tracking of our phones, our service providers for mobile phones, they basically can track SIM and email because those are registered metadata in the network.'
+    text: ' So for example, live tracking of our phones, our service providers for mobile phones, they basically can track SIM and IMEIs because those are registered metadata in the network.'
   },
   { startTime: 5135.42, person: 'Aaron', text: ' Or Bluetooth.' },
-  { startTime: 5135.68, person: 'Aaron', text: ' Or Bluetooth.' },
-  { startTime: 5136.24, person: 'Karol', text: ' Or your Wi-Fi, MAC address.' },
-  { startTime: 5138, person: 'Karol', text: " I mean, that's, that's happening." },
+  { startTime: 5135.68, person: 'Karol', text: ' Or Bluetooth.' },
+  { startTime: 5136.24, person: 'Aaron', text: ' Or your Wi-Fi, MAC address.' },
+  { startTime: 5138, person: 'Aaron', text: " I mean, that's, that's happening." },
   { startTime: 5139.58, person: 'Karol', text: ' Yes.' },
   {
     startTime: 5140.16,
@@ -3490,7 +3482,7 @@ const transcript = ref([
   { startTime: 5441.9, person: 'Aaron', text: ' Loosely.' },
   { startTime: 5442.94, person: 'Aaron', text: ' Is there an E in loosely?' },
   { startTime: 5444.26, person: 'Aaron', text: ' How do you spell it?' },
-  { startTime: 5446.02, person: 'Aaron', text: ' L-O-O-S-E-L-Y.' },
+  { startTime: 5446.02, person: 'Karol', text: ' L-O-O-S-E-L-Y.' },
   { startTime: 5449.02, person: 'Aaron', text: ' There we go.' },
   { startTime: 5449.54, person: 'Aaron', text: ' All right.' },
   { startTime: 5449.94, person: 'Aaron', text: ' So run that.' },
@@ -3538,12 +3530,12 @@ const transcript = ref([
   { startTime: 5503.38, person: 'Karol', text: ' So...' },
   { startTime: 5503.66, person: 'Karol', text: ' Oh, we have a yellow team.' },
   { startTime: 5504.84, person: 'Karol', text: " Yeah, there's somebody else." },
-  { startTime: 5506.06, person: 'Karol', text: " I'm on the green." },
+  { startTime: 5506.06, person: 'Aaron', text: " I'm on the green." },
   { startTime: 5506.9, person: 'Karol', text: ' Oh, we got four.' },
-  { startTime: 5507.62, person: 'Aaron', text: ' Oh, nice.' },
-  { startTime: 5508.46, person: 'Aaron', text: ' All right.' },
-  { startTime: 5508.82, person: 'Aaron', text: ' Woo.' },
-  { startTime: 5510, person: 'Aaron', text: ' Okay.' },
+  { startTime: 5507.62, person: 'Karol', text: ' Oh, nice.' },
+  { startTime: 5508.46, person: 'Karol', text: ' All right.' },
+  { startTime: 5508.82, person: 'Karol', text: ' Woo.' },
+  { startTime: 5510, person: 'Karol', text: ' Okay.' },
   { startTime: 5510.34, person: 'Aaron', text: ' We need at least four.' },
   {
     startTime: 5511.4,
@@ -3580,12 +3572,12 @@ const transcript = ref([
   {
     startTime: 5536.7,
     person: 'Aaron',
-    text: ' And the winner is going to win a big prize from Carol.'
+    text: ' And the winner is going to win a big prize from Karol.'
   },
   { startTime: 5540.92, person: 'Karol', text: ' Yeah, right.' },
   { startTime: 5541.8, person: 'Karol', text: ' Like I have the budget.' },
   { startTime: 5546.78, person: 'Karol', text: ' We can agree on a private sparring session.' },
-  { startTime: 5552.6, person: 'Karol', text: ' Sure.' },
+  { startTime: 5552.6, person: 'Aaron', text: ' Sure.' },
   { startTime: 5553.66, person: 'Aaron', text: ' All right.' },
   {
     startTime: 5553.98,
@@ -3600,17 +3592,17 @@ const transcript = ref([
   { startTime: 5561.66, person: 'Aaron', text: " And so it's not that good." },
   { startTime: 5562.72, person: 'Aaron', text: ' I should probably tidy it up a bit.' },
   { startTime: 5565.04, person: 'Aaron', text: ' All right.' },
-  { startTime: 5565.26, person: 'Karol', text: ' Are we ready?' },
+  { startTime: 5565.26, person: 'Aaron', text: ' Are we ready?' },
   { startTime: 5565.78, person: 'Aaron', text: " We're going to do this race." },
   { startTime: 5567.02, person: 'Aaron', text: ' Some event-driven racing.' },
   { startTime: 5569.5, person: 'Aaron', text: ' All right.' },
   { startTime: 5569.78, person: 'Aaron', text: " Here, let's do this thing." },
-  { startTime: 5573, person: 'Aaron', text: ' Ooh.' },
+  { startTime: 5573, person: 'Karol', text: ' Ooh.' },
   { startTime: 5576.6, person: 'Aaron', text: ' All right.' },
   { startTime: 5577.74, person: 'Aaron', text: ' Ready, set, go.' },
   { startTime: 5579.5, person: 'Aaron', text: ' Go, go, go, go, go.' },
   { startTime: 5582.3, person: 'Aaron', text: ' Holy hell.' },
-  { startTime: 5583.32, person: 'Aaron', text: ' Carol.' },
+  { startTime: 5583.32, person: 'Aaron', text: ' Karol.' },
   { startTime: 5586.96, person: 'Aaron', text: ' What the heck?' },
   { startTime: 5587.78, person: 'Aaron', text: ' Oh, six fingers.' },
   { startTime: 5590.08, person: 'Aaron', text: ' Six fingers.' },
@@ -3626,7 +3618,7 @@ const transcript = ref([
   },
   { startTime: 5602.74, person: 'Aaron', text: ' Anyway, thanks.' },
   { startTime: 5604.1, person: 'Karol', text: ' Should we restart?' },
-  { startTime: 5605.9, person: 'Aaron', text: " I'll give you a chance." },
+  { startTime: 5605.9, person: 'Karol', text: " I'll give you a chance." },
   { startTime: 5608.72, person: 'Aaron', text: " That's right." },
   {
     startTime: 5609.58,
@@ -3774,7 +3766,7 @@ const transcript = ref([
     text: " It's not smart enough to do that, but when the race starts, I do get rid of."
   },
   { startTime: 5782.82, person: 'Karol', text: " I promise I'm going to be using one hand only." },
-  { startTime: 5785.52, person: 'Aaron', text: ' My everybody remain in the air.' },
+  { startTime: 5785.52, person: 'Aaron', text: ' Oh right everybody.' },
   { startTime: 5787.34, person: 'Aaron', text: ' As many fingers, as many taps as you can.' },
   { startTime: 5789.44, person: 'Aaron', text: ' Are you ready?' },
   { startTime: 5790.4, person: 'Aaron', text: ' Seven, seven.' },
@@ -3867,7 +3859,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' I seen Sean McAllister actually present that, exactly that metric and that study on a Solace user group.'
   },
-  { startTime: 5903.62, person: 'Karol', text: " But it's a study." },
+  { startTime: 5903.62, person: 'Aaron', text: " But it's a study." },
   { startTime: 5904.48, person: 'Aaron', text: ' Okay.' },
   { startTime: 5904.74, person: 'Aaron', text: ' So, okay.' },
   { startTime: 5905.34, person: 'Aaron', text: ' All right.' },
@@ -3939,7 +3931,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' And see, that was, that could probably be a feasible mechanism 20 years ago.'
   },
-  { startTime: 5973.8, person: 'Karol', text: ' Yeah.' },
+  { startTime: 5973.8, person: 'Aaron', text: ' Yeah.' },
   {
     startTime: 5974.44,
     person: 'Karol',
@@ -4008,12 +4000,12 @@ const transcript = ref([
     person: 'Karol',
     text: ' So we set the polling intervals, for example, every one minute.'
   },
-  { startTime: 6078.68, person: 'Aaron', text: ' And we poll every one minute.' },
+  { startTime: 6078.68, person: 'Karol', text: ' And we poll every one minute.' },
   { startTime: 6080.56, person: 'Aaron', text: ' Real time.' },
   { startTime: 6080.72, person: 'Karol', text: " No, it's not real time." },
   { startTime: 6082.36, person: 'Karol', text: " That's near real time." },
   { startTime: 6084.72, person: 'Karol', text: ' Real time is never achievable with polling.' },
-  { startTime: 6088.2, person: 'Karol', text: ' Sure.' },
+  { startTime: 6088.2, person: 'Aaron', text: ' Sure.' },
   { startTime: 6088.84, person: 'Karol', text: ' Ever.' },
   {
     startTime: 6091.1,
@@ -4095,7 +4087,7 @@ const transcript = ref([
     text: ' As far as I remember, in telco environment, we resorted to polling with databases.'
   },
   { startTime: 6213.28, person: 'Karol', text: ' At that time, we used Oracle.' },
-  { startTime: 6214.5, person: 'Karol', text: ' Yeah.' },
+  { startTime: 6214.5, person: 'Aaron', text: ' Yeah.' },
   { startTime: 6215.44, person: 'Karol', text: ' With Oracle in a version lower than 10.' },
   { startTime: 6219.34, person: 'Karol', text: ' Okay.' },
   {
@@ -4108,7 +4100,7 @@ const transcript = ref([
     person: 'Karol',
     text: " They didn't have the mechanisms for the database to make a proper call."
   },
-  { startTime: 6230.38, person: 'Karol', text: ' Yeah.' },
+  { startTime: 6230.38, person: 'Aaron', text: ' Yeah.' },
   { startTime: 6231.38, person: 'Karol', text: ' Right?' },
   {
     startTime: 6231.92,
@@ -4172,7 +4164,7 @@ const transcript = ref([
   { startTime: 6345.32, person: 'Aaron', text: ' these are emitted as events,' },
   { startTime: 6346.92, person: 'Aaron', text: ' as triggers, as updates' },
   { startTime: 6348.42, person: 'Aaron', text: ' to another database,' },
-  { startTime: 6350.34, person: 'Aaron', text: ' which can run over GMS.' },
+  { startTime: 6350.34, person: 'Aaron', text: ' which can run over JMS.' },
   { startTime: 6352.02, person: 'Aaron', text: " I mean, that's actually" },
   { startTime: 6352.64, person: 'Aaron', text: ' a really old use case' },
   { startTime: 6353.76, person: 'Aaron', text: ' that saw us like 12 years ago.' },
@@ -4231,9 +4223,9 @@ const transcript = ref([
   {
     startTime: 6423.5,
     person: 'Karol',
-    text: " There's plenty, plenty of solutions for change data capture and plenty of databases now they support these mechanisms."
+    text: " There's plenty, plenty of solutions for change data capture and plenty of databases nowadays support these mechanisms."
   },
-  { startTime: 6433.68, person: 'Karol', text: ' Anyway, Kafka has all this stuff as well.' },
+  { startTime: 6433.68, person: 'Aaron', text: ' Anyway, Kafka has all this stuff as well.' },
   { startTime: 6435.54, person: 'Aaron', text: " You know, I mean, it's not uncommon." },
   { startTime: 6440.66, person: 'Aaron', text: " So I'm sure you'll find some." },
   {
@@ -4241,7 +4233,7 @@ const transcript = ref([
     person: 'Karol',
     text: " It's just a matter of understanding the use case is that actually an operational event or is that something you need for like analytics?"
   },
-  { startTime: 6453.34, person: 'Karol', text: ' Yeah, right.' },
+  { startTime: 6453.34, person: 'Aaron', text: ' Right?' },
   {
     startTime: 6453.84,
     person: 'Karol',
@@ -4327,7 +4319,7 @@ const transcript = ref([
   { startTime: 6583.38, person: 'Aaron', text: ' Yeah, yeah, yeah.' },
   { startTime: 6583.8, person: 'Aaron', text: " Of course you're right." },
   { startTime: 6584.54, person: 'Aaron', text: ' Yeah, yeah, yeah.' },
-  { startTime: 6585.26, person: 'Aaron', text: " That's anaemic events versus thin events." },
+  { startTime: 6585.26, person: 'Karol', text: " That's anaemic events." },
   { startTime: 6587.88, person: 'Aaron', text: ' Yeah, yeah, exactly.' },
   {
     startTime: 6588.68,
@@ -4363,7 +4355,7 @@ const transcript = ref([
   },
   {
     startTime: 6675.64,
-    person: 'Karol',
+    person: 'Aaron',
     text: " Don't have time for that today, that's for sure."
   },
   {
@@ -4371,7 +4363,7 @@ const transcript = ref([
     person: 'Karol',
     text: " But if you're not going to jump into the distinctions between patterns and anti-patterns, but..."
   },
-  { startTime: 6688.56, person: 'Karol', text: ' I thought we were going to talk about AI.' },
+  { startTime: 6688.56, person: 'Aaron', text: ' I thought we were going to talk about AI.' },
   { startTime: 6691.48, person: 'Karol', text: ' We will, we will.' },
   {
     startTime: 6693.26,
@@ -4450,7 +4442,7 @@ const transcript = ref([
     text: " So they're actually gathering metadata that somebody accessed and then redirecting to the right place."
   },
   { startTime: 6827.34, person: 'Karol', text: ' So we know you scan.' },
-  { startTime: 6829.94, person: 'Karol', text: ' I will read that later.' },
+  { startTime: 6829.94, person: 'Aaron', text: ' I will read that later.' },
   {
     startTime: 6831.98,
     person: 'Karol',
@@ -4492,7 +4484,7 @@ const transcript = ref([
     text: " So shoot, let's have the EDA perspective and Solace perspective on..."
   },
   { startTime: 6887.66, person: 'Aaron', text: ' Solace perspective, yeah.' },
-  { startTime: 6890.64, person: 'Aaron', text: ' Shoot, man.' },
+  { startTime: 6890.64, person: 'Karol', text: ' Shoot, man.' },
   {
     startTime: 6891.82,
     person: 'Aaron',
@@ -4614,7 +4606,7 @@ const transcript = ref([
     person: 'Karol',
     text: " That's definitely something to use for agentic environments, but that doesn't really fully answer the question."
   },
-  { startTime: 7081.42, person: 'Karol', text: " No, no, that's not, yeah." },
+  { startTime: 7081.42, person: 'Aaron', text: " No, no, that's not, yeah." },
   { startTime: 7083.58, person: 'Karol', text: ' Pose there.' },
   {
     startTime: 7084.2,
@@ -4648,7 +4640,12 @@ const transcript = ref([
   {
     startTime: 7146.68,
     person: 'Aaron',
-    text: ' And he explains the kind of the Solace agent mesh, the different components of it and why we feel that kind of agentic AI needs to look at, you know, EDA and publish subscribe as a- Yeah, so actually, I actually used those to prepare this deck.'
+    text: ' And he explains the kind of the Solace agent mesh, the different components of it and why we feel that kind of agentic AI needs to look at, you know, EDA and publish subscribe as a'
+  },
+  {
+    startTime: 7157.08,
+    person: 'Karol',
+    text: ' Yeah, so actually, I actually used those to prepare this deck.'
   },
   { startTime: 7164.24, person: 'Karol', text: " They're great videos." },
   { startTime: 7165.74, person: 'Karol', text: ' I watched them all.' },
@@ -4745,11 +4742,8 @@ const transcript = ref([
     person: 'Karol',
     text: " That's exactly that 80% is that plumbing, thought through, understood so that we know which agent has access to what data."
   },
-  {
-    startTime: 7338.36,
-    person: 'Karol',
-    text: ' While we can set up- Authorisation, authentication.'
-  },
+  { startTime: 7338.36, person: 'Karol', text: ' While we can set up.' },
+  { startTime: 7339.94, person: 'Aaron', text: ' Authorisation, authentication.' },
   {
     startTime: 7342.65,
     person: 'Karol',
@@ -4763,7 +4757,7 @@ const transcript = ref([
   {
     startTime: 7359.36,
     person: 'Karol',
-    text: ' But basically the analogue is, if you look at MCP from a perspective of the API led architecture, so that layered architecture where you have the channel layer that is the representation of what that system or what that agent has access to, then basically the MCP server becomes one application and channel layer.'
+    text: ' But basically the analogue is, if you look at MCP from a perspective of the API-led architecture, so that layered architecture where you have the channel layer that is the representation of what that system or what that agent has access to, then basically the MCP server becomes one application and channel layer.'
   },
   {
     startTime: 7383.12,
@@ -4778,7 +4772,7 @@ const transcript = ref([
   {
     startTime: 7407.94,
     person: 'Karol',
-    text: ' So if a company already has a API led architecture platform in place, easy peasy.'
+    text: ' So if a company already has a API-led architecture platform in place, easy peasy.'
   },
   {
     startTime: 7414.88,
@@ -4798,7 +4792,7 @@ const transcript = ref([
   {
     startTime: 7441.76,
     person: 'Karol',
-    text: ' And on top of that, if you add the communication, the agentic communication, which is A2A or A2A wrapped with async, like done by Solace.'
+    text: ' And on top of that, if you add the communication, the agentic communication, which is A2A or A2A wrapped with async, like done by Solace. Whole new world'
   },
   {
     startTime: 7456.78,
@@ -4813,7 +4807,7 @@ const transcript = ref([
   {
     startTime: 7473.4,
     person: 'Aaron',
-    text: " And so like if you're a customer facing person, you like get a support call."
+    text: " And so like if you're a customer facing person, you like to get a support call."
   },
   {
     startTime: 7477.42,
@@ -4916,12 +4910,12 @@ const transcript = ref([
   {
     startTime: 7647.74,
     person: 'Karol',
-    text: ' And I just hooked up willy nilly all the data to that chatbot agent.'
+    text: ' And I just hooked up willingly all the data to that chatbot agent.'
   },
   {
     startTime: 7654.26,
     person: 'Karol',
-    text: ' And I also hooked up my CD that I made myself and started asking that agent questions about me.'
+    text: ' And I also hooked up my CV that I made myself and started asking that agent questions about me.'
   },
   { startTime: 7661.94, person: 'Karol', text: ' The results were astounding.' },
   {
@@ -5026,7 +5020,7 @@ const transcript = ref([
   { startTime: 7803.3, person: 'Karol', text: ' Hallucinogens, yes.' },
   { startTime: 7805.08, person: 'Karol', text: " I'm happy to get those that AI is doing." },
   { startTime: 7808.2, person: 'Karol', text: ' Looking at the...' },
-  { startTime: 7809.04, person: 'Karol', text: ' Very creative.' },
+  { startTime: 7809.04, person: 'Aaron', text: ' Very creative.' },
   { startTime: 7810.08, person: 'Karol', text: ' Very creative.' },
   {
     startTime: 7811.08,
@@ -5046,7 +5040,7 @@ const transcript = ref([
     person: 'Karol',
     text: ' So proper handling of data, proper handling of integrations is now ever more so crucial.'
   },
-  { startTime: 7840.1, person: 'Aaron', text: ' In my opinion, at least.' },
+  { startTime: 7840.1, person: 'Karol', text: ' In my opinion, at least.' },
   { startTime: 7841.68, person: 'Aaron', text: ' Agreed.' },
   { startTime: 7842.32, person: 'Aaron', text: ' Yeah.' },
   {
@@ -5093,7 +5087,7 @@ const transcript = ref([
     person: 'Aaron',
     text: " Otherwise, you just sound like a marketing person who's just reading the slides and, you know, whatever, right?"
   },
-  { startTime: 7887.22, person: 'Karol', text: " So yeah, I don't want to say too much about..." },
+  { startTime: 7887.22, person: 'Aaron', text: " I don't want to say too much about..." },
   {
     startTime: 7889.76,
     person: 'Karol',
@@ -5135,11 +5129,11 @@ const transcript = ref([
     person: 'Aaron',
     text: " We're just trying to make them talk better, that's all."
   },
-  { startTime: 7935.16, person: 'Aaron', text: ' So yeah.' },
+  { startTime: 7935.16, person: 'Aaron', text: ' So.' },
   {
     startTime: 7936.6,
     person: 'Karol',
-    text: " And that's absolutely going to be extremely important in proper adoption of Generative AI and later models to make them talk properly with proper boundaries and proper context of semantic understanding, semantic coupling of what they're doing."
+    text: " Yeah, and that's absolutely going to be extremely important in proper adoption of Generative AI and later models to make them talk properly with proper boundaries and proper context of semantic understanding, semantic coupling of what they're doing."
   },
   {
     startTime: 7955.94,
@@ -5187,12 +5181,12 @@ const transcript = ref([
   },
   { startTime: 7997.9, person: 'Aaron', text: ' So yeah.' },
   { startTime: 8001.76, person: 'Karol', text: ' Yeah.' },
-  { startTime: 8003.42, person: 'Karol', text: " We're biased as well, though." },
-  { startTime: 8004.6, person: 'Karol', text: " We're all biased here." },
+  { startTime: 8003.42, person: 'Aaron', text: " We're biased as well, though." },
+  { startTime: 8004.6, person: 'Aaron', text: " We're all biased here." },
   {
     startTime: 8005.86,
     person: 'Karol',
-    text: ' So and AI and generative AI LLMs only amplify our biases, basically.'
+    text: ' And AI and generative AI LLMs only amplify our biases, basically.'
   },
   {
     startTime: 8014.18,
@@ -5230,7 +5224,7 @@ const transcript = ref([
     text: ' So any use cases that are prone to bias already should be disqualified from use because you would have to actually sit down in your company, take a vetted data set, check it for biases, train the model yourself, build the model yourself and then utilise it for your use cases.'
   },
   { startTime: 8084.37, person: 'Karol', text: ' That is a multi-million dollar endeavour.' },
-  { startTime: 8088.83, person: 'Karol', text: ' Easily.' },
+  { startTime: 8088.83, person: 'Aaron', text: ' Easily.' },
   { startTime: 8089.25, person: 'Karol', text: ' Not a lot of companies can afford that.' },
   {
     startTime: 8091.59,
@@ -5243,20 +5237,20 @@ const transcript = ref([
     text: " And we've already seen that in different ATS systems."
   },
   { startTime: 8108.47, person: 'Karol', text: ' Workday was recently sued for their ATS system.' },
-  { startTime: 8114.37, person: 'Karol', text: " What's ATS?" },
+  { startTime: 8114.37, person: 'Aaron', text: " What's ATS?" },
   {
     startTime: 8115.55,
     person: 'Karol',
     text: " ATS, I don't really remember what the abbreviation stands for, but that's basically a system that's vetting candidates."
   },
-  { startTime: 8124.37, person: 'Karol', text: ' Okay, okay.' },
+  { startTime: 8124.37, person: 'Aaron', text: ' Okay, okay.' },
   { startTime: 8125.65, person: 'Karol', text: ' Analysing CVs, vetting candidates.' },
   {
     startTime: 8128.57,
     person: 'Karol',
     text: ' And it turns out that their ATS, presumably, was already biased towards, for example, people over 50.'
   },
-  { startTime: 8139.25, person: 'Karol', text: ' Okay.' },
+  { startTime: 8139.25, person: 'Aaron', text: ' Okay.' },
   { startTime: 8140.67, person: 'Karol', text: ' Right?' },
   {
     startTime: 8141.27,
@@ -5325,7 +5319,7 @@ const transcript = ref([
     person: 'Karol',
     text: " I'm still waiting for a lovely project somewhere of a client that actually wants to utilise MCP so I can jump into domain-driven design and actually building that..."
   },
-  { startTime: 8249.91, person: 'Aaron', text: ' Get a project.' },
+  { startTime: 8249.91, person: 'Aaron', text: ' Get a project. Best way to learn.' },
   {
     startTime: 8251.03,
     person: 'Karol',
@@ -5341,7 +5335,7 @@ const transcript = ref([
     person: 'Karol',
     text: " That's definitely going to be a mandatory thing to handle that data in that specific way."
   },
-  { startTime: 8275.33, person: 'Karol', text: ' Yep.' },
+  { startTime: 8275.33, person: 'Aaron', text: ' Yep.' },
   { startTime: 8276.95, person: 'Karol', text: ' That said, we are way over two hours.' },
   { startTime: 8280.549, person: 'Aaron', text: ' Yeah, we are actually.' },
   { startTime: 8281.59, person: 'Aaron', text: " Yeah, I'm like, I got to go pee soon." },
@@ -5385,7 +5379,7 @@ const transcript = ref([
   },
   { startTime: 8331.03, person: 'Karol', text: ' Oh, definitely.' },
   { startTime: 8332.53, person: 'Karol', text: ' Office hours for the win.' },
-  { startTime: 8333.77, person: 'Karol', text: ' Office hours.' },
+  { startTime: 8333.77, person: 'Aaron', text: ' Office hours.' },
   { startTime: 8334.37, person: 'Karol', text: ' All those office hours.' },
   {
     startTime: 8336.11,
@@ -5393,7 +5387,7 @@ const transcript = ref([
     text: " And for those, I'm going to switch for a moment."
   },
   { startTime: 8339.23, person: 'Karol', text: ' Take us, well, okay.' },
-  { startTime: 8343.52, person: 'Aaron', text: ' Take us off screen.' },
+  { startTime: 8343.52, person: 'Karol', text: ' Take us off screen.' },
   { startTime: 8345.209, person: 'Karol', text: ' Coming up next week.' },
   { startTime: 8347.45, person: 'Karol', text: ' Exactly next week.' },
   { startTime: 8348.51, person: 'Karol', text: " We're going to be having a bit of a discussion." },
@@ -5501,7 +5495,7 @@ const transcript = ref([
     text: " Yeah, we'll be chatting about more event-driven topics later on."
   },
   { startTime: 8523.79, person: 'Karol', text: " I'll ping you offline to chat about those." },
-  { startTime: 8526.83, person: 'Karol', text: " We'll figure something out." },
+  { startTime: 8526.83, person: 'Aaron', text: " We'll figure something out." },
   { startTime: 8528.19, person: 'Aaron', text: " I didn't show my sunburst." },
   {
     startTime: 8529.37,
