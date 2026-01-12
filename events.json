@@ -395,8 +395,8 @@
     "details": {
       "date": {
         "type": "date",
-        "startDate": "2026-01-19",
-        "endDate": "2026-01-30",
+        "startDate": "2026-04-20",
+        "endDate": "2026-04-30",
         "startTime": "9:30",
         "endTime": "13:00"
       },
@@ -541,6 +541,28 @@
     },
     "LN": "https://www.linkedin.com/events/7408860899597291520/",
     "YT": "https://youtube.com/live/oWH6dTCAQmE"
+  },
+  {
+    "name": "Loosely Coupled - Deep dive into coupling with Domain-Driven Design",
+    "img": "/events/Loosely_Coupled_Deep_dive_into_coupling_with_Domain-Driven_Design.webp",
+    "description": "What would be the cardinal sin of architects when they create architecture and visualise it with lines and boxes? - Focusing mostly on the boxes. When this happens, we can experience a myriad of problems ranging from brittleness of code to frictions between dev teams, business units or even organizations.\n\nWhat would be the cardinal sin of architects when they create architecture and visualise it with lines and boxes? - Focusing mostly on the boxes. When this happens, we can experience a myriad of problems ranging from brittleness of code to frictions between dev teams, business units or even organizations.\n\nCoupling lives on many abstraction levels. It is in the interactions between classes, modules, components, or systems. It is not a binary thing, nor is it always unwanted. In this episode of Loosely Coupled: “Deep dive into coupling with Domain-Driven Design” (DDD) we will take a deeper dive into coupling and how we can surface it and address it using the language of DDD. Our guide for this journey will be Vlad Khononov, an expert in DDD and Balancing Coupling, the author of “Learning Domain-Driven Design” and “Balancing Coupling in Software Design”.\n\nJoin us in the discussion as we’ll dismantle misconceptions about coupling through real life examples.",
+    "date": "2026-01-28",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-01-28",
+        "endDate": "2026-01-28",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Exploration of coupling with Domain-Driven Design",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7416564999621578753/",
+    "YT": "https://youtube.com/live/NGENigtNUck"
   }
 ]
 
