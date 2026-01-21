@@ -563,6 +563,75 @@
     },
     "LN": "https://www.linkedin.com/events/7416564999621578753/",
     "YT": "https://youtube.com/live/NGENigtNUck"
+  },
+  {
+    "name": "Integration Design with DDD",
+    "img": "/events/integration-design-with-ddd.webp",
+    "description": "In today's rapidly evolving technological landscape, businesses rely heavily on interconnected systems to operate efficiently. However, integrating these distributed systems seamlessly presents significant challenges. Enterprise Application Integration (EAI) has become a critical aspect of modern software architecture, and achieving true interoperability requires more than just technical solutions. This workshop explores how to leverage the tools provided by Domain-Driven Design (DDD) to not only address the technical hurdles of EAI but also to align integration efforts with the core business domains. We will move beyond simply connecting disparate systems and delve into understanding the underlying business logic and data flows that must be integrated. This interactive workshop aims to provide you with practical, actionable knowledge and hands-on experience. You'll participate in scenario-based exercises, collaborative discussions, and trade-off analysis, ensuring you leave with new skills and tools to explore that will allow you to tackle real-world integration challenges.\n\nKey Activities:\n• Trade-Off Analysis: Perform comparative assessments of architectural options, weighing their pros and cons relative to the scenario's requirements.\n• Quality Attributes Focus: Each scenario will highlight one or two critical architectural characteristics (e.g., \"Time to Market\", extensibility, composability) of EAI, which will be introduced and discussed.\n• Decision Justification: Articulate the reasoning behind architectural choices, fostering a deeper understanding of how to align technical decisions with business needs.\n\nKey Learnings: By the end of this workshop, you will have gained:\n• Interoperability as a first-class citizen in architectural design. Understand the importance of designing systems with interoperability in mind from the start.\n• Practical experience in using DDD to determine appropriate coupling degrees between systems. Learn how to strategically manage dependencies and connections between systems using DDD principles.\n• Insights into selecting the right Ecosystem Architectural Style to facilitate seamless integration. Gain the ability to choose the most suitable architectural style from a range of options (Point-to-point, Event-Driven Architecture, Broker Topology, API-Led Architecture).",
+    "date": "2026-03-20",
+    "eventType": "Workshop",
+    "tags": ["Workshop"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-03-20",
+        "endDate": "2026-03-30",
+        "startTime": "9:00",
+        "endTime": "17:00"
+      },
+      "place": "Polish Dreamin'26",
+      "eventTopic": "Interoperability design with Domain-Driven Design",
+      "eventType": "Workshop",
+      "registrationLink": {
+        "type": "link",
+        "link": "https://dreamin.coffeeforce.pl/",
+        "name": "Join the conference!"
+      }
+    }
+  },
+  {
+    "name": "Loosely Coupled - API Semantic Maps and how they can help you manage coupling in your ecosystem",
+    "img": "/events/Loosely_Coupled_Tackling_complexity-with-Semantic-Metadata.webp",
+    "description": "Coupling is a hard concept to grasp. While various types of specialists deal with various types of it, in the field of Integration Architecture we deal with those that relate to system interoperability. In BridgingTheGap.eu.com we dive deeper into the topic through qualitative research, interviewing architects and studying various use cases. This sometimes leads us on unexpected paths.\n\nCoupling is a hard concept to grasp. While various types of specialists deal with various types of it, in the field of Integration Architecture we deal with those that relate to system interoperability. In BridgingTheGap.eu.com we dive deeper into the topic through qualitative research, interviewing architects and studying various use cases. This sometimes leads us on unexpected paths.\n\nOne of these trails continued through the discussions and led to a more practical look on how we can tackle the problem! In this episode of Loosely Coupled: “Tackling complexity with Semantic Metadata”, instead of just talking about the concepts, we’ll be modelling our way through them, to build a semantic layer that visualizes dependencies between various models, API, services, or databases. To help us on this path we have invited Marty Pitt, an engineer and open source developer, who created Taxi - a language that can be used to describe how your data and services relate across your entire ecosystem, and TaxiQL - which leverages semantics to automate federated integration, keeping systems loosely coupled.\n\nJoin us and together we’ll grab a compass, take a walk through the tools, and create a semantic map that anyone can use to understand more about their landscape!",
+    "date": "2026-02-04",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-02-04",
+        "endDate": "2026-02-04",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Semantic Metadata modelling for interoperability",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "linkedin.com/events/7419482945238802432/",
+    "YT": "https://youtube.com/live/J84uhDJd0W8"
+  },
+  {
+    "name": "Loosely Coupled - Mapping stakeholder chaos by slicing and dicing stakeholders",
+    "img": "/events/Loosely_Coupled_Mapping_stakeholder_chaos_by_slicing_and_dicing_stakeholders.webp",
+    "description": "Be honest! Do you know and understand your stakeholders? But really, be honest about it! What are their personal views on the business they are running? What are their motivations, drivers, hopes, ambitions? What are their relationships in the company, what are the areas of their influence? If you are a consultant working directly with clients, this should probably be on your radar quite often! If you work in-house, you probably know the power structure, that is outside of the org chart.\n\nWhat if you don’t know these things?\n\nBe honest! Do you know and understand your stakeholders? But really, be honest about it! What are their personal views on the business they are running? What are their motivations, drivers, hopes, ambitions? What are their relationships in the company, what are the areas of their influence? If you are a consultant working directly with clients, this should probably be on your radar quite often! If you work in-house, you probably know the power structure, that is outside of the org chart.\n\nWhat if you don’t know these things?\n\nYour biggest project risks sit with your stakeholders. Scope creep, unmanaged expectations, hidden influence and power struggles - these are only some of the risks. What if we could actually map and address those risks early before they can have a significant chance of materializing?\n\nIn this episode of Loosely Coupled: “Mapping stakeholder chaos by slicing and dicing stakeholders”, we’ll be diving into the complexities of stakeholder identification and management. Joining us for this session is Pamela Paterson, speaker, author, and senior tech consultant with deep expertise in business systems analysis and project management. Together we’ll dive into how to expose real power, influence, and resistance using stakeholder mapping techniques that go beyond org charts, job titles, and static stakeholder maps. We’ll explore how to slice and dice stakeholders into meaningful groups and reveal the forces that impact our tech projects. We’ll dive into tools that will enable us to better understand the forces at play and identify balance, power, and tension to extract the information and make the decisions you need.\n\nJoin us live to see how we can reframe stakeholders as a living system - one you can understand, influence, and work with more effectively.",
+    "date": "2026-02-11",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-02-11",
+        "endDate": "2026-02-11",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Mapping stakeholders in IT projects",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/event/manage/7419495153867952128/",
+    "YT": "https://youtube.com/live/Cd7y2zU9A4k"
   }
 ]
 
