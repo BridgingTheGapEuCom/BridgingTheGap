@@ -152,7 +152,7 @@ const smallWidth = computed(() => {
  * @returns {string} The formatted link to the stream's video page.
  */
 const prepareLink = computed(() => {
-  return `/streams/${props.name.replaceAll(' ', '_').replaceAll('(', '').replaceAll(')', '')}/video`
+  return `/streams/${props.name.replaceAll(' ', '_').replaceAll('(', '').replaceAll(')', '').replaceAll('?', '').replaceAll("'", '').replaceAll('‘', '').replaceAll('’', '')}/video`
 })
 
 /**
