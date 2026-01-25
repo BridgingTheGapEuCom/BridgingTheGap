@@ -253,7 +253,7 @@ const submit = async () => {
       body: {
         token,
         formBody: {
-          formName: 'Strategic Integration Design with DDD',
+          formName: formName.value,
           answers: {
             FirstName: name.value,
             LastName: lastName.value,

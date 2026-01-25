@@ -1,5 +1,6 @@
 <template>
-  <div class="justify-between w-full articleLinkHeight max-w-screen-xl flex flex-grow">
+  <div class="justify-between w-full articleLinkHeight max-w-screen-xl flex flex-col flex-grow">
+    <h2 class="text-center">{{ formName }} application form</h2>
     <div
       v-if="formSubmitted"
       class="absolute flex items-center justify-center w-screen h-screen top-0 left-0 bg-gray-500/75 transition-opacity z-10"
@@ -27,7 +28,7 @@
 
     <div class="flex justify-center flex-grow">
       <form novalidate class="article flex flex-col w-full" @submit.prevent="submit">
-        <transition name="scale-card">
+        <transition name="scale">
           <div
             v-if="errorsAfterSubmit"
             role="alert"
@@ -65,6 +66,8 @@
         <BTGInput
           v-model="email"
           name="email"
+          type="email"
+          autocomplete="email"
           class="my-8 email"
           :class="{
             invalidEmail:
@@ -88,6 +91,7 @@
         <BTGInput
           v-if="role === 'Other'"
           v-model="other"
+          autocomplete="organization-title"
           class="mt-2 mb-8 ml-8"
           label="Other"
           :class="{ emptyValue: role === 'Other' && other === '' }"
@@ -114,11 +118,27 @@ interface FormResponse {
   status: number
 }
 
+const formName = ref(
+  'Exploratory Session Context Mapping as a sociotechnical tool for interoperability'
+)
+
 const email = ref<string | null>(null)
 const name = ref<string | null>(null)
 const lastName = ref<string | null>(null)
 const role = ref<string | null>(null)
-const roles = ref(['Architect', 'Developer', 'Other'])
+const roles = ref([
+  'Business Analyst',
+  'CTO/CIO',
+  'Enterprise Architect',
+  'IT Manager',
+  'Integration Architect',
+  'Software Developer',
+  'Software Engineer',
+  'Solutions Architect',
+  'System Architect',
+  'Tech Lead',
+  'Other'
+])
 const roleBlured = ref(false)
 const other = ref<string | null>(null)
 
@@ -135,6 +155,13 @@ if (import.meta.client) {
   recaptcha = useReCaptcha()
 }
 
+/**
+ * Lifecycle hook that initializes the reCAPTCHA component when the component is mounted.
+ * @async
+ * @function onMounted
+ * @returns {Promise<void>} A promise that resolves when reCAPTCHA is loaded or rejects if loading fails.
+ * @throws {Error} Logs an error if reCAPTCHA fails to load.
+ */
 onMounted(async () => {
   if (recaptcha) {
     try {
@@ -145,6 +172,17 @@ onMounted(async () => {
   }
 })
 
+/**
+ * Validates the form fields and updates the error state accordingly.
+ * @function validate
+ * @returns {void} Updates the form validation state and error messages.
+ * @description
+ * - Resets the error state and error messages.
+ * - Validates required fields (name, lastName, email, role).
+ * - Validates email format.
+ * - Validates the 'Other' role field if selected.
+ * - Sets appropriate error messages for invalid fields.
+ */
 const validate = () => {
   errorsAfterSubmit.value = false
   invalidInfoArray.value = []
@@ -183,6 +221,21 @@ const validate = () => {
   }
 }
 
+/**
+ * Handles form submission, including validation, reCAPTCHA verification, and API request.
+ * @async
+ * @function submit
+ * @returns {Promise<void>} A promise that resolves when the form submission is complete.
+ * @throws {Error} Logs an error if reCAPTCHA fails or the API request fails.
+ * @description
+ * - Sets the submitting state to true.
+ * - Validates the form fields.
+ * - If validation fails or reCAPTCHA is not available, returns early.
+ * - Executes reCAPTCHA verification.
+ * - Submits form data to the API endpoint.
+ * - Handles different response statuses (409, 200, others).
+ * - Updates the form submission state and response message.
+ */
 const submit = async () => {
   isSubmitting.value = true
   validate()
@@ -202,8 +255,7 @@ const submit = async () => {
       body: {
         token,
         formBody: {
-          formName:
-            'Exploratory Session: Context Mapping as a sociotechnical tool for interoperability',
+          formName: formName.value,
           answers: {
             FirstName: name.value,
             LastName: lastName.value,
@@ -233,27 +285,20 @@ const submit = async () => {
   }
 }
 
-watch(name, () => {
-  if (errorsAfterSubmit.value) {
-    validate()
-  }
-})
-watch(lastName, () => {
-  if (errorsAfterSubmit.value) {
-    validate()
-  }
-})
-watch(email, () => {
-  if (errorsAfterSubmit.value) {
-    validate()
-  }
-})
-watch(role, () => {
-  if (errorsAfterSubmit.value) {
-    validate()
-  }
-})
-watch(other, () => {
+/**
+ * Watches for changes in form fields and revalidates the form if errors were previously displayed.
+ * @function
+ * @param {Array} [name, lastName, email, role, other] - The form fields to watch for changes.
+ * @returns {void} Revalidates the form if errors were previously displayed.
+ * @description
+ * - Watches for changes in the form fields (name, lastName, email, role, other).
+ * - If errors were previously displayed (errorsAfterSubmit.value is true), revalidates the form.
+ * - This ensures that error messages are updated in real-time as the user corrects invalid fields.
+ * - Edge cases:
+ *   - If no errors were previously displayed, the watcher does nothing.
+ *   - If validation passes after corrections, errorsAfterSubmit.value will be set to false.
+ */
+watch([name, lastName, email, role, other], () => {
   if (errorsAfterSubmit.value) {
     validate()
   }
