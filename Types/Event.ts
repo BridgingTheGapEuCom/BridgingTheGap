@@ -38,5 +38,6 @@ export enum EventDetailTypes {
 export enum EventType {
   Meetup = 'Meetup',
   Stream = 'Stream',
-  Training = 'Training'
+  Training = 'Training',
+  Workshop = 'Workshop'
 }

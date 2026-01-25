@@ -51,6 +51,7 @@ export default defineNuxtConfig({
         ],
         'connect-src': [
           "'self'",
+          'https://www.google.com',
           'https://www.googletagmanager.com',
           'https://www.google-analytics.com',
           'https://*.google-analytics.com'
@@ -158,7 +159,8 @@ export default defineNuxtConfig({
     'nuxt-seo-utils',
     'nuxt-mongoose',
     'nuxt-gtag',
-    '@nuxt/scripts'
+    '@nuxt/scripts',
+    '@nuxt/icon'
   ],
 
   gtag: {

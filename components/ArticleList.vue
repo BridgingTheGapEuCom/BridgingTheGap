@@ -5,7 +5,7 @@
         <div
           class="w-full border rounded-md px-3 dark:border-neutral-800 dark:bg-neutral-900 border-neutral-400 bg-neutral-100"
         >
-          <BTGInput v-model="articleFilter" class="mt-7 mb-5" />
+          <BTGInput v-model="articleFilter" class="mt-7 mb-5" icon="mdi:magnify" />
           <div class="flex justify-center gap-2 mb-5 tab line-clamp-1">
             <div
               class="px-4 text-white bg-neutral-600 rounded-xl cursor-pointer flex justify-center items-center"

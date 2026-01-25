@@ -1,38 +1,32 @@
 <template>
   <div class="flex">
-    <SvgIcon class="pointer-events-none mr-1.5" type="mdi" :path="icon" :size="28" />
+    <Icon :name="icon" size="28" />
     <div class="input-container">
       <input
-        id="input"
+        :id="`input-${uuid}`"
+        :autocomplete="autocomplete"
+        :name="name"
         type="text"
         :value="model"
         required="true"
         @input="(event) => (model = event?.target?.value)"
       />
-      <label
-        for="input"
-        type="text"
-        autocomplete="off"
-        autocorrect="off"
-        autocapitalize="none"
-        spellcheck="false"
-        class="label h2"
-        >{{ label }}</label
-      >
+      <label :for="`input-${uuid}`" class="label h2">{{ label }}</label>
       <div class="underline" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { mdiMagnify } from '@mdi/js'
-import SvgIcon from '@jamescoyle/vue-icon'
+const uuid = Math.random().toString(36).substring(2, 15)
 
 const model = defineModel()
 
 defineProps({
   label: { type: String, required: false, default: 'Search in articles and events' },
-  icon: { type: String, required: false, default: mdiMagnify }
+  icon: { type: String, required: false, default: 'mdi:magnify' },
+  autocomplete: { type: String, required: false, default: null },
+  name: { type: String, required: false, default: null }
 })
 </script>
 
@@ -62,7 +56,7 @@ defineProps({
 }
 
 .input-container .underline {
-  @apply bg-neutral-900 dark:bg-neutral-100 w-full bottom-0 absolute left-0 h-0.5;
+  @apply w-full bottom-0 absolute left-0 border-b-2 border-neutral-950 dark:border-neutral-50;
   transform: scaleX(0);
   transition: var(--mainTransition);
 }
