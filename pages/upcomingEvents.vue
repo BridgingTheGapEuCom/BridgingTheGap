@@ -340,6 +340,8 @@ onMounted(() => {
     return aDate > bDate ? 1 : -1
   })
 
+  const queryParams = route.query
+
   // Assign a unique ID to each event
   events.value.map((el, index) => {
     el.id = index
@@ -375,11 +377,22 @@ onMounted(() => {
       }
     })
   } else {
-    // If no hash is present, find the closest upcoming event
-    const closestEvent = findClosestUpcomingEventByDate(events.value)
-    if (closestEvent) {
-      currentEvent.value = closestEvent.event
-      chosenDate.value = new Date(closestEvent.event.date)
+    let event = null
+    if (queryParams.eventName) {
+      event = events.value.find((el) => el.name === queryParams.eventName)
+      if (event) {
+        currentEvent.value = event
+        chosenDate.value = new Date(event.date)
+      }
+    }
+
+    if (!event) {
+      // If no hash is present, find the closest upcoming event
+      const closestEvent = findClosestUpcomingEventByDate(events.value)
+      if (closestEvent && closestEvent.event) {
+        currentEvent.value = closestEvent.event
+        chosenDate.value = new Date(closestEvent.event.date)
+      }
     }
   }
 })
