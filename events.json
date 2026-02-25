@@ -657,6 +657,28 @@
         "name": "Sign-up here!"
       }
     }
+  },
+  {
+    "name": "Loosely Coupled - Decision-making - the skill lost in all the tasks",
+    "img": "/events/Loosely_Coupled_Decision-making_the_skill_lost_in_all_the_tasks.webp",
+    "description": "“Because we’ve always done it this way” - is a phrase I hear quite often in my line of work, because I usually got places where a change is needed. This is decision-making driven by habits, blindly following best practices or latest trends. The problem? No one took time to understand the problem domain, build up context, and check if this workflow applies to the current situation! Through that we get overcomplicated solutions, before a single service is actually deployed.\n\nIn an earlier episode with Woody Zuill we were discussing the differences between problems, symptoms and how they should be used as signals. This session, we’ll be taking a dive into decision-making and to guide us we’ll have someone who is very passionate about the topic: Gien Verschatse, a Consultant from Aardling. As a side project, to which she refers to as ‘getting slightly out of hand’, she is researching the science of decision-making strategies, which aims at helping teams improve on how they make all sorts of decisions!\n\nIn this episode we’ll talk about the importance of critical thinking in decision-making and the way that decisions are made, probably define a few terms that are not commonly known, and discuss tools to help us on the decision-making journey!\n\n“Because we’ve always done it this way” - is a phrase I hear quite often in my line of work, because I usually got places where a change is needed. This is decision-making driven by habits, blindly following best practices or latest trends. The problem? No one took time to understand the problem domain, build up context, and check if this workflow applies to the current situation! Through that we get overcomplicated solutions, before a single service is actually deployed.\n\nIn an earlier episode with Woody Zuill we were discussing the differences between problems, symptoms and how they should be used as signals. This session, we’ll be taking a dive into decision-making and to guide us we’ll have someone who is very passionate about the topic: Gien Verschatse, a Consultant from Aardling. As a side project, to which she refers to as ‘getting slightly out of hand’, she is researching the science of decision-making strategies, which aims at helping teams improve on how they make all sorts of decisions!\n\nIn this episode we’ll talk about the importance of critical thinking in decision-making and the way that decisions are made, probably define a few terms that are not commonly known, and discuss tools to help us on the decision-making journey!",
+    "date": "2026-03-04",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-03-04",
+        "endDate": "2026-03-04",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Exploration of decision-making problems",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7432361128577605632/",
+    "YT": "https://youtube.com/live/5YmXHXrFz2c"
   }
 ]
 
