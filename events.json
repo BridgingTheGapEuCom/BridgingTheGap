@@ -679,6 +679,50 @@
     },
     "LN": "https://www.linkedin.com/events/7432361128577605632/",
     "YT": "https://youtube.com/live/5YmXHXrFz2c"
+  },
+  {
+    "name": "Loosely Coupled - Domain storytelling by example",
+    "img": "/events/Loosely_Coupled_Domain_Storytelling_by_Example.webp",
+    "description": "One of the things that many architects learn early when they switch from a developer role is that there is a shift in the scope of work they do and the understanding they need to build to be effective. This shift is moving away from the technology they know and worked with towards understanding their business. That is a difficult shift, because as engineers we’re wired and conditioned to provide solutions rather than deep dive into problems. “Don’t come to me with problems! Bring me solutions!” - a phrase often said by managers, which is supposed to boost ownership, mostly discourages critical thinking and finding the root cause of the actual problem.\n\nOne of the things that many architects learn early when they switch from a developer role is that there is a shift in the scope of work they do and the understanding they need to build to be effective. This shift is moving away from the technology they know and worked with towards understanding their business. That is a difficult shift, because as engineers we’re wired and conditioned to provide solutions rather than deep dive into problems. “Don’t come to me with problems! Bring me solutions!” - a phrase often said by managers, which is supposed to boost ownership, mostly discourages critical thinking and finding the root cause of the actual problem.\n\nTo equip you with tools, we’re continuing the journey into collaborative modelling as a means of understanding problem domains! In this session, we will dive deep into Domain Storytelling, a powerful technique that can give us insights into how people work together and help us transform domain knowledge into business software!\n\nTelling stories is the most basic form of human communication. To tell a story, we invited Woody Zuill, a Lean and Agile Guide, to serve as our Subject Matter Expert. And as we dive into collaborative modelling based on the story, we’re being guided by two experts to help us capture the details and ask questions: Dr. Annegret Junker, Chief Software Architect @ codecentric AG, and Fabrizio Lazzaretti, Managing Consultant @ Wavestone!\n\nIf you wish to learn how to dive into understanding the problem domain, join us live! ",
+    "date": "2026-03-10",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-03-10",
+        "endDate": "2026-03-10",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Exploration of Domain Storytelling as a collaborative modelling tool.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7434598861857329152/",
+    "YT": "https://youtube.com/live/_tPlWjg7sro"
+  },
+  {
+    "name": "Loosely Coupled - Sustainable Architecture in Corporate Environments",
+    "img": "/events/Loosely_Coupled_Sustainable_Architecture_in_Corporate_Environments.webp",
+    "description": "How many times have you felt like architects are sitting somewhere in an ivory tower, making decisions disconnected from the reality of messy IT ecosystems? Decisions are made, not aligned, not understood, not enforced. Months later people ponder on what went wrong.\n\nHow many times have you felt like architects are sitting somewhere in an ivory tower, making decisions disconnected from the reality of messy IT ecosystems? Decisions are made, not aligned, not understood, not enforced. Months later people ponder on what went wrong.\n\nWhat if there is another way? What if we could make the process more aligned with business needs and the organization as a whole. At the same time making the right people involved and sharing common understanding of the problem domain instead of making unnamed and unspoken assumptions about what is being delivered? In a corporate environment we usually have many teams working on different business cases. That by itself usually requires different architecture approaches. Sustainable architecture is a result of an ongoing process aiming to align the siloed approaches done by different teams. What if the balancing mechanism to achieve this is not by having the architect as an explicit role, but instead by facilitating architecture through technical coaching.\n\nJoining us in this session is Mufrid Krilic, Domain-Driven Design Coach. He’ll guide us through how technical and modelling excellence can bring value to organizations on all levels. We’ll explore real world examples and stories about scaling organizations and challenges in maintaining sustainability in architecture and alignment processes!\n\nJoin us in this important conversation!",
+    "date": "2026-03-25",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-03-25",
+        "endDate": "2026-03-25",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Exploration on how technical and modelling excelence can make architecture sustainable.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7437440337549262848/",
+    "YT": "https://youtube.com/live/xyrDLrODzBY"
   }
 ]
 
