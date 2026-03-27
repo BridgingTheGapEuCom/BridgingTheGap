@@ -723,6 +723,50 @@
     },
     "LN": "https://www.linkedin.com/events/7437440337549262848/",
     "YT": "https://youtube.com/live/xyrDLrODzBY"
+  },
+  {
+    "name": "Loosely Coupled - Defence of technical excellence - working with causal loops",
+    "img": "/events/Loosely_Coupled_Defence_of_technical_excellence_-_working_with_causal_loops.webp",
+    "description": "In meetings with non-technical stakeholders an image can speak a thousand words. In that case a simulation speaks hundreds of thousands! While we’re dealing with technical details, implementation, environment problems, quality is not something done only bottoms-up. It is also something that needs to be explained and supported top-down. \n\nIn meetings with non-technical stakeholders an image can speak a thousand words. In that case a simulation speaks hundreds of thousands! While we’re dealing with technical details, implementation, environment problems, quality is not something done only bottoms-up. It is also something that needs to be explained and supported top-down. \n\nQuite often, when faced with the speed versus quality trade-off we unwillingly stumble into a fallacy that gets many teams stuck in negative feedback loops - sacrificing quality for speed. As a result both are lost sooner or later. Teams find their backlogs filled with bugs, their stakeholders frustrated by missed deadlines and the teams themselves unhappy and stressed.\n\nIn this episode of Loosely Coupled we’re joined by a defender of technical excellence - Chris Simon! Coming back to the stream, Chris will guide us through the path of Systems thinking, and in particular using causal loop diagrams to identify the feedback loops at play that can shed light on how and why the fallacy is so tempting yet so destructive.\n\nWe’ll dive into the building of a range of causal feedback loops to visualise the underlying causes of problems. We’ll also experiment a bit, to practice framing the causality, so we can use such visualisations to advocate for the practices of technical excellence that counter the pressures of the fallacy, such as collaborative modelling with domain-driven design, test driven development and living documentation.",
+    "date": "2026-04-16",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-04-16",
+        "endDate": "2026-04-16",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Causal loops and how to use them in defence of technical excellence.",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "linkedin.com/events/7442145815143350273/?",
+    "YT": "https://youtube.com/live/DbrWe82K_CY"
+  },
+  {
+    "name": "Loosely Coupled - Dealing with the Blast Radius - Impact Analysis",
+    "img": "/events/Loosely_Coupled_Dealing_with_the_Blast_Radius_-_Impact_Analysis.webp",
+    "description": "Ever shipped a \"small change\" that broke half the system? Or this tiny change that touched more systems than anyone would think humanly possible? Hours of debugging, analyzing dependencies, managing not-exactly-happy stakeholders only to realize that all of this could have been avoided by putting a little bit more effort before making the change! And then, what about security and the blast radius of a breach? \n\nEver shipped a \"small change\" that broke half the system? Or this tiny change that touched more systems than anyone would think humanly possible? Hours of debugging, analyzing dependencies, managing not-exactly-happy stakeholders only to realize that all of this could have been avoided by putting a little bit more effort before making the change! And then, what about security and the blast radius of a breach? \n\nIf you haven't experienced those things, you must be either extremely lucky or new on the job - either way, this live stream will be also for you! In this episode we’ll be taking a deep dive into Impact Analysis - a powerful discipline that can save a lot of time and stress if done in the right time and stage of a project, and how it can help stop things from happening!\n\nIn this episode of Loosely Coupled we’re joined by Frédérique Mounier, a former communications manager that switched to IT, and now works as a Salesforce Solution Architect and a member of The Adecco Group Tech Design Authority! She’ll be our guide on navigating the potential blast radius and a structured approach to dealing with it, hopefully before it swoops up half of the IT landscape!\n\nTogether we’ll explore:\n\nWhat is impact analysis and why it matters,\n\nWhat problems we can solve with it,\n\nHow to approach it without making it a document dense nightmare,\n\nWhen should it be done,\n\nWhether you're a developer, tech lead, or project manager, you'll leave with a practical framework you can apply the next day.",
+    "date": "2026-04-08",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-04-08",
+        "endDate": "2026-04-08",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Impact Analysis - critical discipline in software architecture",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7442550186310172672/",
+    "YT": "https://youtube.com/live/lsquGR9GQWk"
   }
 ]
 
