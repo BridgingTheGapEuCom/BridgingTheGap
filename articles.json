@@ -1,12 +1,66 @@
 [
   {
+    "name": "Data_Integration_vs_Application_Integration",
+    "title": "Data Integration vs Application Integration",
+    "short": "Working in any industry brings all sorts of terms and abbreviations that are specific to that particular industry or even specific to a narrow field of it. During our working day we more often use job specific jargon then we think, and that jargon when used outside of the industry context may be a cause of a lot of misunderstandings or even problems. That is exactly the case with Data Integration and Application Integration. Both of these terms have the word “integration” in them, which is commonly used by specialists of those two fields alone without the preceding word meaning their respective terms. Why is that a problem? People outside of that field mostly hear the word “integration” instead of the full term and because of that they tend to think that this is one and the same thing. To be honest even specialists in those fields make that mistake when they are not aware of the existence of the other field in IT. An application integration specialist might think: “Oh, data integration, yes, we move data from place to place, hence we integrate it! That is the same thing!”.",
+    "tags": ["Basic Definitions", "Concepts"],
+    "publishDate": "2024-03-10",
+    "lastUpdate": "2024-03-10",
+    "authors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/",
+        "photo": "/Karol_portrait.webp",
+        "title": "Enterprise/Integration Architect",
+        "mail": "karol@bridgingthegap.eu.com"
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "Top 10 Data Integration Tools & Software for 2024",
+        "link": "https://www.astera.com/type/blog/data-integration-tools-for-businesses/?utm_source=dataversity&utm_medium=organic",
+        "ISBN": "",
+        "type": "article",
+        "author": "Khurram Haider"
+      },
+      {
+        "title": "Data Integration",
+        "link": "https://www.qlik.com/us/data-integration",
+        "ISBN": "",
+        "type": "article",
+        "author": "Qlik"
+      }
+    ],
+    "reviewers": [
+      {
+        "reviewer": "Maciej Grabowski",
+        "link": "https://www.linkedin.com/in/maciejg/"
+      },
+      {
+        "reviewer": "Maciej Skorupka",
+        "link": "https://www.linkedin.com/in/maciej-skorupka/"
+      },
+      {
+        "reviewer": "Przemek Blicharski",
+        "link": "https://www.linkedin.com/in/blicharskip/"
+      }
+    ]
+  },
+  {
     "name": "What_is_Application_Integration",
     "title": "What is Application Integration?",
     "short": "This seems to be a very easy question, ain't it? But if you go to google and search the phrase \"Application Integration\", you will get a multitude of vendor specific sites that try to define application integration to align with their marketing philosophy, not entirely saying what it is. Some focus on heavy integration platforms, others around message brokers, while some also speak of API Management solutions. All of those are components that compose application integration and can be used or not, depending on what are the requirements and what is the architecture of a particular application, system or IT ecosystem. Don't even try asking ChatGPT, as it will also produce an answer that has all of the Internet bias.",
-    "tags": [
-      "Basic Definitions",
-      "Concepts"
-    ],
+    "tags": ["Basic Definitions", "Concepts"],
     "publishDate": "2024-03-10",
     "lastUpdate": "2024-10-11",
     "authors": [
@@ -71,73 +125,10 @@
     ]
   },
   {
-    "name": "Data_Integration_vs_Application_Integration",
-    "title": "Data Integration vs Application Integration",
-    "short": "Working in any industry brings all sorts of terms and abbreviations that are specific to that particular industry or even specific to a narrow field of it. During our working day we more often use job specific jargon then we think, and that jargon when used outside of the industry context may be a cause of a lot of misunderstandings or even problems. That is exactly the case with Data Integration and Application Integration. Both of these terms have the word “integration” in them, which is commonly used by specialists of those two fields alone without the preceding word meaning their respective terms. Why is that a problem? People outside of that field mostly hear the word “integration” instead of the full term and because of that they tend to think that this is one and the same thing. To be honest even specialists in those fields make that mistake when they are not aware of the existence of the other field in IT. An application integration specialist might think: “Oh, data integration, yes, we move data from place to place, hence we integrate it! That is the same thing!”.",
-    "tags": [
-      "Basic Definitions",
-      "Concepts"
-    ],
-    "publishDate": "2024-03-10",
-    "lastUpdate": "2024-03-10",
-    "authors": [
-      {
-        "author": "Karol Skrzymowski",
-        "link": "https://www.linkedin.com/in/karolskrzymowski/",
-        "photo": "/Karol_portrait.webp",
-        "title": "Enterprise/Integration Architect",
-        "mail": "karol@bridgingthegap.eu.com"
-      }
-    ],
-    "coAuthors": [
-      {
-        "author": "Radosław Przewuski",
-        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
-      },
-      {
-        "author": "Hubert Drabczyk",
-        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
-      }
-    ],
-    "bibliography": [
-      {
-        "title": "Top 10 Data Integration Tools & Software for 2024",
-        "link": "https://www.astera.com/type/blog/data-integration-tools-for-businesses/?utm_source=dataversity&utm_medium=organic",
-        "ISBN": "",
-        "type": "article",
-        "author": "Khurram Haider"
-      },
-      {
-        "title": "Data Integration",
-        "link": "https://www.qlik.com/us/data-integration",
-        "ISBN": "",
-        "type": "article",
-        "author": "Qlik"
-      }
-    ],
-    "reviewers": [
-      {
-        "reviewer": "Maciej Grabowski",
-        "link": "https://www.linkedin.com/in/maciejg/"
-      },
-      {
-        "reviewer": "Maciej Skorupka",
-        "link": "https://www.linkedin.com/in/maciej-skorupka/"
-      },
-      {
-        "reviewer": "Przemek Blicharski",
-        "link": "https://www.linkedin.com/in/blicharskip/"
-      }
-    ]
-  },
-  {
     "name": "Modern_Application_Integration_Principles",
     "title": "Modern Application Integration Principles",
     "short": "Working in corporate environments often entails dealing with technical debt that arose over the years of the company building up its IT, merging with other companies, acquiring software, SaaS solutions, etc.. Technical systems are often at the very end of this list, as they have lower priority in the eyes of the business, as they do not provide direct business value, at least not one that will be easily understood. Application Integration is unfortunately one of those technical systems that are often neglected, especially if the business is not technology driven (so not e.g. telecommunications, technology vendors, SaaS solution vendors).",
-    "tags": [
-      "Basic Definitions",
-      "Concepts"
-    ],
+    "tags": ["Basic Definitions", "Concepts"],
     "publishDate": "2024-04-16",
     "lastUpdate": "2024-04-16",
     "authors": [
@@ -190,12 +181,8 @@
     "name": "System_vs_Ecosystem_Architectural_Styles",
     "title": "System vs Ecosystem Architectural Styles",
     "short": "When we think about architecture, we usually think of building a system. There are no right answers to how to build, most of the time we use our experience and expertise, or we look towards more advanced techniques like trade-off analysis to choose “the least worst” solution. Luckily there are shortcuts that can help make decisions over what type of architectural style (or mix of those) you could use to build your system based on the architectural capabilities rather than functional behavior.",
-    "tags": [
-      "Ecosystem Architectural Styles"
-    ],
-    "relatedTags": [
-      "Ecosystem Architectural Styles"
-    ],
+    "tags": ["Ecosystem Architectural Styles"],
+    "relatedTags": ["Ecosystem Architectural Styles"],
     "publishDate": "2024-10-07",
     "lastUpdate": "2025-03-06",
     "authors": [
@@ -251,9 +238,7 @@
     "name": "Qualitative_Analysis_of_Ecosystem_Architectural_Styles",
     "title": "Qualitative Analysis of Ecosystem Architectural Styles",
     "short": "As we were preparing to write some of the articles and outlined our collective knowledge about Enterprise Application Integration (EAI), we identified many gaps in our understanding of the field we work in. Some were assumptions made over time, others simply lack of working experience in certain areas, simply by a lack of customers that wanted to do something in a specific way. Usually those gaps were easy to fill in, by discussion, a bit of research or reaching out to other specialists for an architectural sparring.",
-    "tags": [
-      "Ecosystem Architectural Styles"
-    ],
+    "tags": ["Ecosystem Architectural Styles"],
     "publishDate": "2024-10-07",
     "lastUpdate": "2024-10-07",
     "authors": [
@@ -309,10 +294,7 @@
     "name": "Synchronous_vs_Asynchronous",
     "title": "Synchronous vs Asynchronous",
     "short": "While communication was always the key to success for humankind, since 1969 and the  creation of ARPANet, communication has become something very different, quicker and more robust with every single decade, ever speeding up. The forecasts for 2025 are that we will produce 147 ZB of data over the year, this means about 407200000 TB a day. To put that in perspective, YouTube alone currently uses approximately 440000 TB daily, and your message on Whatsapp is under the size of 5KB = 5120 characters (1 TB = 1073741824 KB, so around 214.7 million messages).",
-    "tags": [
-      "Basic Definitions",
-      "Concepts"
-    ],
+    "tags": ["Basic Definitions", "Concepts"],
     "publishDate": "2024-12-03",
     "lastUpdate": "2025-05-05",
     "authors": [
@@ -357,17 +339,13 @@
         "author": "Petroc Taylor"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "From_Point-to-point_to_Spaghetti_Architecture",
     "title": "From Point-to-point to Spaghetti Architecture",
     "short": "While we’d like to discuss Enterprise Application Integration it is important to start with the most basic approach to data exchange and why is it crucial to understand it fully before jumping into more complex architectural styles that support ecosystem interoperability. Point-to-point as an architectural approach is exactly that. This is the most commonly known approach used by all developers and architects. So let’s take the time to explore the benefits and pitfalls of this architectural style.",
-    "tags": [
-      "Architectural styles",
-      "Qualitative analysis"
-    ],
+    "tags": ["Architectural styles", "Qualitative analysis"],
     "publishDate": "2024-12-08",
     "lastUpdate": "2024-12-08",
     "authors": [
@@ -389,19 +367,14 @@
         "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
       }
     ],
-    "bibliography": [
-    ],
-    "reviewers": [
-    ]
+    "bibliography": [],
+    "reviewers": []
   },
   {
     "name": "Degrees_of_coupling_in_IT_ecosystems",
     "title": "Degrees of coupling in IT ecosystems",
     "short": "One of the key problems Enterprise Application Integration (EAI) is addressing in various ways is coupling. While we explore how we can address it by applying specific architectural styles and patterns in other articles, we’d like to explore what is coupling and define, from a variety of types, which coupling types are relevant in ecosystem interoperability topics. What is coupling?\nTo take a closer look at coupling, let’s start by looking at a few definitions:\n\nIn software engineering, coupling is the degree of interdependence between software modules; a measure of how closely connected two routines or modules are; the strength of the relationships between modules. Coupling is not binary but it is multi-dimensional.",
-    "tags": [
-      "Complexity",
-      "The Hard Parts"
-    ],
+    "tags": ["Complexity", "The Hard Parts"],
     "publishDate": "2024-12-31",
     "lastUpdate": "2025-03-27",
     "authors": [
@@ -453,20 +426,14 @@
         "author": "Vlad Khononov, Addison-Wesley Professional"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "Event-Driven_Architecture_for_IT_ecosystems",
     "title": "Event-Driven Architecture for IT ecosystems",
     "short": "Modern businesses rely on a diverse ecosystem of applications, including custom-built systems and cloud-based services. Integrating these disparate systems can be challenging, often leading to tightly coupled (spaghetti) integrations that are difficult to maintain and scale. Event-Driven Architecture (EDA) offers a more flexible approach to interoperability. By leveraging events as the foundation for communication, EDA enables systems to exchange data more loosely, improving maintainability and facilitating easier adaptation to changing business requirements.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "Event-Driven Architecture"
-    ],
-    "relatedTags": [
-      "Event-Driven Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "Event-Driven Architecture"],
+    "relatedTags": ["Event-Driven Architecture"],
     "publishDate": "2024-12-31",
     "lastUpdate": "2024-12-31",
     "authors": [
@@ -522,20 +489,14 @@
         "author": "Mark Richards; DeveloperToArchitect.com"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "Event-Driven_One-way_point-to-point",
     "title": "Event-Driven One-way point-to-point",
     "short": "As we describe the architectural styles for ecosystems, for some of them we can identify distinct and repeatable architectural patterns that we can leverage to build better interoperability. As we dive into Event-Driven Architecture, let’s take a look at the first of the integration patterns deriving from this architectural style. Pattern nameplate. Let’s start with a small summary, we dubbed the “pattern nameplate” (an analog to a device nameplate that you can find on any electrical device, that describes its basic characteristics).",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "Event-Driven Architecture"
-    ],
-    "relatedTags": [
-      "Event-Driven Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "Event-Driven Architecture"],
+    "relatedTags": ["Event-Driven Architecture"],
     "publishDate": "2024-12-31",
     "lastUpdate": "2025-03-27",
     "authors": [
@@ -570,20 +531,14 @@
         "author": "AMQP.org"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "EDA_Broadcast_and_Multicast",
     "title": "EDA Broadcast and Multicast",
     "short": "When you dive into the world of Event-Driven Architecture, the phrase you hear most often is “pub-sub” or “publish-subscribe”, which seems to be the most commonly used data distribution pattern in this architecture. And for a lot of cases this will be very true, especially when we'd take a look at MQTT, where the only available structure on the broker is a topic. In essence, this pattern could cover all possible cases for the number of communication participants: one-to-one, one-to-many, many-to-one, and many-to-many.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "Event-Driven Architecture"
-    ],
-    "relatedTags": [
-      "Event-Driven Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "Event-Driven Architecture"],
+    "relatedTags": ["Event-Driven Architecture"],
     "publishDate": "2025-02-02",
     "lastUpdate": "2025-03-27",
     "authors": [
@@ -618,20 +573,14 @@
         "author": "AMQP.org"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "Event-Driven_Callbacks",
     "title": "Event-Driven Callbacks",
     "short": "Callbacks are one of those patterns that might be a bit troublesome to form a philosophical point of view. They are fairly straightforward technically speaking, but it is debatable whether or not they fall under the category of event-driven. The key question to explore here is that if we are sending a message and we are expecting a response, perhaps not an instantaneous one, rather over time or in an undetermined time, is that still event-driven? If we consider the callback alone, without the triggering subscription or event, then it seems to always be an event of sorts, marking the completion of a processing task, an occurrence in a system, etc. Let us consider this when exploring this pattern.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "Event-Driven Architecture"
-    ],
-    "relatedTags": [
-      "Event-Driven Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "Event-Driven Architecture"],
+    "relatedTags": ["Event-Driven Architecture"],
     "publishDate": "2025-02-09",
     "lastUpdate": "2025-03-27",
     "authors": [
@@ -666,20 +615,14 @@
         "author": "AMQP.org"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "Event-Driven_Waiter_Pattern",
     "title": "Event-Driven Waiter Pattern",
     "short": "Processing, please do not wait... As we dive deeper into Event-Driven Architecture (EDA), there is a specific scenario that deserves attention on its own. As we already established that EDA patterns can be used to loosen the coupling between different applications and systems so they can operate in a more independent manner. The waiter pattern builds on top of that capability allowing the applications that produce data over a long span of time to deliver them in an organized and standardized way.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "Event-Driven Architecture"
-    ],
-    "relatedTags": [
-      "Event-Driven Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "Event-Driven Architecture"],
+    "relatedTags": ["Event-Driven Architecture"],
     "publishDate": "2025-02-11",
     "lastUpdate": "2025-03-27",
     "authors": [
@@ -714,20 +657,14 @@
         "author": "AMQP.org"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "Broker_Architecture",
     "title": "Broker Architecture",
     "short": "There comes a certain point in an ecosystem's growth, when due to its expansion and business growth, operating and maintaining point-to-point, or event-driven interoperability becomes a nightmare of tangled dependencies for each system involved in the communication. All of this is the result of complexity that is not only specific to the business domain, which dictates functional requirements for each of those systems, but also due to the communication overhead that forces the systems to manage connections, various API contracts, data access logic, or credentials. All of this builds up to a hefty load of work, shifting the balance of time consumed on operations and development. This can further lead to bottlenecks in project development or complete stop of further growth as the team will be busy with solving production issues or locked in a fight between development and operations. This is where we can find help by looking into a law postulated in the mid-1980s.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "Broker Architecture"
-    ],
-    "relatedTags": [
-      "Broker Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "Broker Architecture"],
+    "relatedTags": ["Broker Architecture"],
     "publishDate": "2025-03-15",
     "lastUpdate": "2025-03-15",
     "authors": [
@@ -762,18 +699,14 @@
         "author": "Wikipedia"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "Pattern_of_an_antipattern",
     "title": "Pattern of an antipattern",
     "short": "Working in IT we hear a lot of jargon, phrases that have a specific meaning often only in this industry. While those terms are fairly common, and we hear them a lot, everyone has their own definitions as to what they actually mean. A large part of the role of an IT specialist, an architect especially, is to clarify those definitions and foster ubiquitous language in conversations within IT and when talking with any stakeholders. One of such words that constantly escapes a proper definition in common use is an antipattern. We hear it all the time in meetings, discussions over code and changes made to systems. Most commonly it is used as a description of something that should not be done that particular way, meaning it’s been done badly.",
-    "tags": [
-      "Basic Definitions"
-    ],
-    "relatedTags": [
-    ],
+    "tags": ["Basic Definitions"],
+    "relatedTags": [],
     "publishDate": "2025-03-16",
     "lastUpdate": "2025-03-16",
     "authors": [
@@ -843,20 +776,14 @@
         "author": "Wikipedia"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "Event-Driven_Polling",
     "title": "Event-Driven Polling",
     "short": "There are many controversial patterns in the world of IT architecture, some are even considered antipatterns, which by most people are flagged as “avoid at all cost”, or “always bad”. So like with any other architectural style, Event-Driven Architecture (EDA) also has a pattern that brings controversy to the table. While initially this article was supposed to be named an antipattern, we decided not to name it so, due to the fact that this is still a valid pattern, but one that is difficult to place in the right context where it should be used. To cover that problem area we wrote a separate article that provides a bit more explanation on the matter. Instead of discussing how problematic this pattern might be we decided to present it to you as any pattern and provide the right context to understand it and be able to use it with success.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "Event-Driven Architecture"
-    ],
-    "relatedTags": [
-      "Event-Driven Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "Event-Driven Architecture"],
+    "relatedTags": ["Event-Driven Architecture"],
     "publishDate": "2025-03-30",
     "lastUpdate": "2025-03-30",
     "authors": [
@@ -891,20 +818,14 @@
         "author": "Mark Richards"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "EDA_Content-based_filtering",
     "title": "EDA Content-based filtering",
     "short": "Event-Driven Content-based routing Sorting through the messages When working with Event-Driven Architecture on an ecosystem level, efficient message routing is an essential feature. Typically, routing decisions are based on metadata included with the message, so a structure like a JMS Header, routing key in AMQP0.9 or variables in topic name in AMQP1.0. But what if the producer does not provide these metadata? The common sense is to go to that particular system and make changes to it so that it supplements the communication with additional information. Well then, what if that is not possible? This might lead to a number of communication inefficiencies and consumers processing data they don’t need to process.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "Event-Driven Architecture"
-    ],
-    "relatedTags": [
-      "Event-Driven Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "Event-Driven Architecture"],
+    "relatedTags": ["Event-Driven Architecture"],
     "publishDate": "2025-04-07",
     "lastUpdate": "2025-04-07",
     "authors": [
@@ -930,22 +851,15 @@
         "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
       }
     ],
-    "bibliography": [
-    ],
-    "reviewers": [
-    ]
+    "bibliography": [],
+    "reviewers": []
   },
   {
     "name": "API-Led_Architecture",
     "title": "API-Led Architecture",
     "short": "As we take deeper dives into ecosystem architectural styles, we can see that we already solved some problems using Event-Driven Architecture and Broker Architecture, but more challenges come with scale. As we keep introducing new complexity and dependencies with new business systems, those architectures start to become overcumbersome, with a large number of repetitions. Now we are facing a challenge that could be named \"Dedicated vs Composable integration flows” which would be an architectural equivalent of the “DRY code vs WET code” in development.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "API-Led Architecture"
-    ],
-    "relatedTags": [
-      "API-Led Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "API-Led Architecture"],
+    "relatedTags": ["API-Led Architecture"],
     "publishDate": "2025-04-13",
     "lastUpdate": "2025-04-13",
     "authors": [
@@ -980,20 +894,14 @@
         "author": "Wikipedia"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "API-Led_Synchronous_point-to-point",
     "title": "API-Led Synchronous point-to-point",
     "short": "In the landscape of API-Led Architecture, the Synchronous point-to-point pattern might initially appear as a roundabout route for a simple exchange. One could question the need for mediating applications within an integration platform when a direct system-to-system call seems more straightforward. However, to view it this way is to miss the fundamental purpose of this pattern. It isn't just about connecting two points; it's about constructing a robust, adaptable, and reusable infrastructure that transcends individual interactions. With this article we will explore this pattern shifting the perspective from the grain of sand to a wider picture.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "API-Led Architecture"
-    ],
-    "relatedTags": [
-      "API-Led Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "API-Led Architecture"],
+    "relatedTags": ["API-Led Architecture"],
     "publishDate": "2025-05-12",
     "lastUpdate": "2025-05-12",
     "authors": [
@@ -1019,22 +927,15 @@
         "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
       }
     ],
-    "bibliography": [
-    ],
-    "reviewers": [
-    ]
+    "bibliography": [],
+    "reviewers": []
   },
   {
     "name": "API-Led_Synchronous_Service",
     "title": "API-Led Synchronous Service",
     "short": "In the world of application integration, managing complexity is an unending challenge. As we navigate the labyrinth of data flows and system interactions, we must acknowledge that complexity, especially that of communication, is inherent and unavoidable. The core issue lies not in eliminating it altogether, but rather in strategically assigning the responsibility of handling it. This is perfectly captured by Tesler’s Law: “Every application must have an inherent amount of irreducible complexity. The only question is who will have to deal with it.” Law of conservation of complexity, Larry Tesler As we dive into Synchronous Services in API-Led Architecture we can see that this pattern is a crucial strategy for addressing communication complexity and moving it away from business systems through orchestrating complex data flows in distributed environments. Unlike direct point-to-point integrations, this pattern leverages the qualities of an API-Led Integration Platform to manage and orchestrate data traffic and transformation between multiple business systems. This approach simplifies the communication logic required on the consumer side to a minimum. At the same time it promotes reusability of composed and data services. In environments where data sources are fragmented and fulfilling a specific use case requires orchestrating multiple calls, the Synchronous Service pattern proves invaluable.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "API-Led Architecture"
-    ],
-    "relatedTags": [
-      "API-Led Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "API-Led Architecture"],
+    "relatedTags": ["API-Led Architecture"],
     "publishDate": "2025-05-18",
     "lastUpdate": "2025-05-18",
     "authors": [
@@ -1060,23 +961,15 @@
         "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
       }
     ],
-    "bibliography": [
-    ],
-    "reviewers": [
-    ]
+    "bibliography": [],
+    "reviewers": []
   },
   {
     "name": "Bridging_Worlds_EAI_and_DDD_for_seamless_interoperability",
     "title": "Bridging Worlds: EAI and DDD for seamless interoperability",
     "short": "In the intricate landscape of modern enterprise systems, the challenge of integrating diverse applications and data sources is a constant. Often, these systems evolve independently, leading to a complex web of interactions that can be difficult to manage and maintain. We can address the technical challenges of communication with proper integration patterns, good practices and architectural styles. Unfortunately there are aspects of communication, like understanding data, business behaviour and language in various contexts, or mapping out dependencies, that also need to be addressed. This is where the purely technical approach fails.",
-    "tags": [
-      "The Hard Parts",
-      "Complexity",
-      "DDD"
-    ],
-    "relatedTags": [
-      "DDD"
-    ],
+    "tags": ["The Hard Parts", "Complexity", "DDD"],
+    "relatedTags": ["DDD"],
     "publishDate": "2025-06-02",
     "lastUpdate": "2025-06-02",
     "authors": [
@@ -1109,22 +1002,15 @@
         "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
       }
     ],
-    "bibliography": [
-    ],
-    "reviewers": [
-    ]
+    "bibliography": [],
+    "reviewers": []
   },
   {
     "name": "Understanding_Active_and_Passive_Broker",
     "title": "Understanding Active and Passive Broker",
     "short": "There are many various approaches to application integration, as we may see by looking at least at the ecosystem architectural styles. Today we’ll have a closer look at one such approach rooted in the broker architectural style, where we encounter two distinct behaviors in integration platforms and integration flows built within them: the active and passive participant. These behaviors define how communication is initiated and managed, significantly impacting the overall architecture, operational efficiency, and reusability of the integration flows. Understanding the nuances of these behaviors is crucial for designing robust and scalable integration solutions.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "Broker Architecture"
-    ],
-    "relatedTags": [
-      "Broker Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "Broker Architecture"],
+    "relatedTags": ["Broker Architecture"],
     "publishDate": "2025-05-24",
     "lastUpdate": "2025-05-24",
     "authors": [
@@ -1159,21 +1045,14 @@
         "author": "Brian Cooksey; Zapier"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "When_Worlds_Collide_EAI_and_DDD",
     "title": "When Worlds Collide: EAI and DDD",
     "short": "As Integration Architects, we are navigating a constantly shifting landscape. It’s a world where rapid change, complex systems, and sprawling networks of interconnected applications are the daily bread. These systems often stretch across departments, technologies, and ownership models - making it incredibly hard to achieve smooth collaboration and seamless interoperability. That’s why Enterprise Application Integration (EAI) has been and most likely always will be a critical discipline: it allows us to exchange data reliably, automate shared processes across diverse systems, and provide much-needed visibility into the flows that connect our businesses.",
-    "tags": [
-      "The Hard Parts",
-      "Complexity",
-      "DDD"
-    ],
-    "relatedTags": [
-      "DDD"
-    ],
+    "tags": ["The Hard Parts", "Complexity", "DDD"],
+    "relatedTags": ["DDD"],
     "publishDate": "2025-06-01",
     "lastUpdate": "2025-06-01",
     "authors": [
@@ -1257,21 +1136,14 @@
         "author": "Microsoft"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "Putting_Broker_Architectural_style_into_context_maps",
     "title": "Putting Broker Architectural style into context (maps)",
     "short": "Ever felt like integrating with various systems is a bit like trying to deliver mail without any idea how postal codes work? One mistake and you're overrun by chaos, bombarded by complaints from unhappy customers. In our hyper-connected era, where applications must collaborate seamlessly, this integration battleground can swiftly become a nightmare. We're not merely transferring data; we're managing systems that speak different protocols, possess incompatible data structures, and occasionally exhibit unpredictable behaviors.",
-    "tags": [
-      "The Hard Parts",
-      "Complexity",
-      "DDD"
-    ],
-    "relatedTags": [
-      "DDD"
-    ],
+    "tags": ["The Hard Parts", "Complexity", "DDD"],
+    "relatedTags": ["DDD"],
     "publishDate": "2025-06-03",
     "lastUpdate": "2025-06-03",
     "authors": [
@@ -1320,20 +1192,14 @@
         "author": "Wikipedia"
       }
     ],
-    "reviewers": [
-    ]
+    "reviewers": []
   },
   {
     "name": "API-Led_One-way_point-to-point",
     "title": "API-Led One-way point-to-point",
     "short": "As we dive deeper into API-Led Architecture, we can notice that some patterns resemble those found in a different Ecosystem Architectural Style - specifically Event-Driven Architecture (EDA). This similarity exists because API-Led Architecture inherits qualities, so also patterns, from EDA. As API-Led introduces new capabilities, it also addresses challenges that were difficult or impossible to solve in the architectural styles it draws from. In this article, we will discuss the key differences that API-Led Architecture brings to the one-way point-to-point pattern.",
-    "tags": [
-      "Ecosystem Architectural Styles",
-      "API-Led Architecture"
-    ],
-    "relatedTags": [
-      "API-Led Architecture"
-    ],
+    "tags": ["Ecosystem Architectural Styles", "API-Led Architecture"],
+    "relatedTags": ["API-Led Architecture"],
     "publishDate": "2025-08-27",
     "lastUpdate": "2025-08-27",
     "authors": [
@@ -1360,7 +1226,6 @@
       }
     ],
     "bibliography": [],
-    "reviewers": [
-    ]
+    "reviewers": []
   }
 ]
