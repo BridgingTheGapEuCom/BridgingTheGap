@@ -1227,5 +1227,68 @@
     ],
     "bibliography": [],
     "reviewers": []
+  },
+  {
+    "name": "The_business_value_of_Application_Integration",
+    "title": "The business value of Application Integration",
+    "short": "Have you seen or read “The Twelve Tasks of Asterix”? Do you recall \"The Place That Sends You Mad\" task? While this is most of all a joke on bureaucracy, you can also think of it as living in an environment without communication. Regardless of the mechanics behind – paper documents delivered to the offices by internal messenger, pneumatic tubes system, modern computer network, Telepathy data transfer – the problem is that data is not flowing from one involved party (office) to the other. As a result, no work is being done and finally the system collapses when disturbance is introduced (it is the purposeful action of Asterix in the movie/comic… but could be anything in the real world).",
+    "tags": ["Basic Definitions", "Business"],
+    "relatedTags": ["Business"],
+    "publishDate": "2026-04-03",
+    "lastUpdate": "2026-04-03",
+    "authors": [
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/",
+        "photo": "/Hubert_portrait.webp",
+        "title": "Business Analyst / Solution Architect",
+        "mail": "hubert@bridgingthegap.eu.com"
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
+      },
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "Software Architecture: The Hard Parts",
+        "link": "https://www.oreilly.com/library/view/software-architecture-the/9781492086888/",
+        "ISBN": "1492086894",
+        "type": "book",
+        "author": "Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani"
+      },
+      {
+        "title": "The profitability paradox: Competing for relevance and returns",
+        "link": "https://www.pwc.com/gx/en/issues/transformation/asset-and-wealth-management-revolution.html?WT.mc_id=GMO-BMR-NA-FY25-INDF-TRNSIC-T8-FS-XLOS-PUB-GMOTR00048-EN-ENL-T4&j=623883&jb=6&l=16_HTML&mid=510000034&sfmc_sub=315831&u=11591289",
+        "ISBN": "",
+        "type": "report",
+        "author": "PwC"
+      },
+      {
+        "title": "Learn About Citizen Integration",
+        "link": "https://trailhead.salesforce.com/content/learn/modules/democratized-innovation-through-citizen-integration/learn-about-citizen-integration",
+        "ISBN": "",
+        "type": "training",
+        "author": "Salesforce"
+      },
+      {
+        "title": "Decoupling Architecture",
+        "link": "https://www.itarch.info/2020/05/decoupling-architecture.html",
+        "ISBN": "",
+        "type": "article",
+        "author": "Michael Widjaja"
+      }
+    ],
+    "reviewers": []
   }
 ]

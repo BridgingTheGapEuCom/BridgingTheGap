@@ -1,7 +1,7 @@
 <template>
   <!-- Main container for the article card with responsive styling -->
   <div
-    class="card bg-neutral-50 dark:bg-neutral-900 dark:text-gray-50 text-black grid md:flex md:grid-cols-2 w-full border-gray-400 rounded-md border dark:border-gray-800 md:hover:shadow-lg relative"
+    class="card min-h-[11.75rem] bg-neutral-50 dark:bg-neutral-900 dark:text-gray-50 text-black grid md:flex md:grid-cols-2 w-full border-gray-400 rounded-md border dark:border-gray-800 md:hover:shadow-lg relative"
   >
     <NuxtLink to="upcomingEvents" class="absolute top-0 left-0 w-full h-full z-10"></NuxtLink>
     <!-- Link wrapping the article image, navigates to the article's page -->
@@ -144,6 +144,7 @@ const smallWidth = computed(() => {
  * @returns {string} The formatted link to the stream's video page.
  */
 const prepareLink = computed(() => {
+  if (!props.name) return ''
   return `/streams/${props.name.replaceAll(' ', '_').replaceAll('(', '').replaceAll(')', '')}/video`
 })
 
