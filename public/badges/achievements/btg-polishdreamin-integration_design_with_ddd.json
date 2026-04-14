@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://purl.imsglobal.org/spec/ob/v3p0/context.json"
+  ],
+  "id": "https://bridgingthegap.eu.com/badges/achievements/btg-polishdreamin-integration_design_with_ddd.json",
+  "type": "Achievement",
+  "name": "Integration Design with DDD (Polish Dreamin'26)",
+  "description": "Holder of this badge attended and completed Integration Design with DDD by BridgingTheGap.eu.com @ Polish Dreamin'26.",
+  "image": {
+    "id": "https://bridgingthegap.eu.com/badges/images/btg-polishdreamin-integration_design_with_ddd.png",
+    "type": "Image"
+  },
+  "criteria": {
+    "type": "Criteria",
+    "narrative": "This badge confirms active engagement in our “Integration Design with DDD” workshop. Earners attended the live session, collaborated on group exercises. It signifies applied understanding of Domain-Driven Design strategic tools for application integration and a commitment to professional development."
+  }
+}
