@@ -3,7 +3,7 @@
     "https://www.w3.org/2018/credentials/v1",
     "https://purl.imsglobal.org/spec/ob/v3p0/context.json"
   ],
-  "id": "https://bridgingthegap.eu.com/badges/achievements/public/badges/achievements/btg-strategic_integration_design_with_DDD_dryrun.json",
+  "id": "https://bridgingthegap.eu.com/badges/achievements/btg-strategic_integration_design_with_DDD_dryrun.json",
   "type": "Achievement",
   "name": "Strategic Integration Design with DDD (BridgingTheGap.eu.com)",
   "description": "Holder of this badge attended and completed Strategic Integration Design with DDD by BridgingTheGap.eu.com.",
