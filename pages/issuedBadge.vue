@@ -52,10 +52,7 @@
       </div>
     </div>
     <div v-if="loading">Please wait, loading badge details...</div>
-    <div
-      v-else-if="badgeDetails"
-      class="h-full max-h-[50rem] flex flex-col items-center justify-between"
-    >
+    <div v-else-if="badgeDetails" class="h-full flex flex-col items-center justify-between">
       <div class="flex flex-col items-center justify-center">
         <img :src="image" alt="Achievement badge" class="w-[250px] dark:invert" />
         <h2 class="mx-9">{{ achievementDetails.name }}</h2>
