@@ -767,6 +767,52 @@
     },
     "LN": "https://www.linkedin.com/events/7442550186310172672/",
     "YT": "https://youtube.com/live/lsquGR9GQWk"
+  },
+  {
+    "name": "Loosely Coupled - How being a part of a community can change your career",
+    "img": "/events/Loosely_Coupled_How_being_a_part_of_a_community_can_change_your_career.webp",
+    "description": "“I didn’t go to IT to work with people!” is something that I have heard from colleagues time and time again when I was in university and later on a junior developer. From the perspective of time, I think this was a statement that led a lot of them to trouble instead of growth within the career they chose. As software developers, engineers, architects can we really afford to work in isolation? Is it possible to grow in such a case?\n\n“I didn’t go to IT to work with people!” is something that I have heard from colleagues time and time again when I was in university and later on a junior developer. From the perspective of time, I think this was a statement that led a lot of them to trouble instead of growth within the career they chose. As software developers, engineers, architects can we really afford to work in isolation? Is it possible to grow in such a case?\n\nIf I look at my work right now, especially from the perspective of Integration Architecture - my work is dependent on so many people, so that already invalidates the statement, but to truly grow, it requires something different - a community of peers that can put what you do every day into perspective!\n\nIn this episode of Loosely Coupled we’re joined by Vinicius Albano, a Software Architect, AI Systems Engineer. Vinicius is also the founder of DDD Brazil, a rising community of interdisciplinary specialists sharing their experiences and making them a practical learning - not just theory, but a means to align business and engineering, especially in the age of AI.\n\nTogether we’ll explore the various aspects of creating and contributing to an IT community and dive into:\n\nThe importance of a community for your career growth,\n\nHow communities support learning and change your approach to various aspects of technology, architecture and collaboration,\n\nThe hurdles of starting a community and what does that really mean,",
+    "date": "2026-04-30",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-04-30",
+        "endDate": "2026-04-30",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "We'll be discussing the importance of IT communities for career growth",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7449466303750328320/",
+    "YT": "https://youtube.com/live/taoUVue0hnw"
+  },
+  {
+    "name": "Iasa Netherlands Quarterly Event",
+    "img": "iasa_NL_may_2026.webp",
+    "description": "Curious about making the leap from developer to architect? The Utrecht Mulesoft Meetup invites you to an engaging and insightful online discussion happening on June 18th at 18:30. This is a wonderful opportunity for developers aspiring to shift gears and step into the exciting world of architecture.\n\nJoin hosts Nicky van Steensel van der Aa and Karol Skrzymowski as they orchestrate a lively conversation with distinguished guests who have successfully walked this path:\n\n • Patryk Bandurski, an experienced Mulesoft Integration Architect currently working at PwC, proudly holding the title of Mulesoft Ambassador. He will share his insights and journey.\n\n • Mark Richards, a renowned Solutions Architect known all over the world. As an independent consultant and the mastermind behind developertoarchitect.com, Mark offers invaluable wisdom and practical advice on bridging the gap between development and architectural roles.\n\nThis panel discussion promises a deep dive into each of their personal journeys, elaborating on the challenges they faced, the resources, and the learning paths that paved their way. They'll discuss what contributed to their successful transitions, useful strategies for staying involved with coding despite the shift, and how becoming an architect has altered their view on development.\n\nFor those contemplating a career shift towards an architect role, this session is crafted particularly for you. Align your aspirations with knowledge and learn directly from the experts. Let their experiences guide you in carving your very own path to architecture success. Secure your spot and arm yourself with the insights necessary to elevate your professional journey!\n\nDon't miss out on this unique chance to learn, ask questions, and perhaps even network with these industry leaders. This session is not just a conversation; it's a stepping stone towards achieving your career dreams. Whether you're just starting to explore or are already on your way, there’s something beneficial here for everyone.\n\nPrepare to be inspired and informed through this enriching experience that aims to ignite your passion for growth and continuous learning in the field of software architecture.",
+    "date": "2026-05-07",
+    "eventType": "Meetup",
+    "tags": ["Meetup"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-05-07",
+        "endDate": "2026-05-07",
+        "startTime": "16:00",
+        "endTime": "19:30"
+      },
+      "place": "TrendAI™, Jupiter Building Amsterdam",
+      "eventTopic": "IASA NL Chapter Quarterly meeting",
+      "eventType": "Meetup",
+      "eventLink": {
+        "type": "link",
+        "link": "https://netherlands.iasaglobal.org/event/connect-inperson-free-q2-iasa-quarterly-event/",
+        "name": "IASA Netherlands"
+      }
+    }
   }
 ]
-
