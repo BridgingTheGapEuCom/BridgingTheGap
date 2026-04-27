@@ -1,7 +1,7 @@
-import Badge20Schema from '~/server/models/badge.schema'
+import Badge20Model from '~/server/models/badge.schema'
 
 export default defineEventHandler(async (event) => {
-  const { id } = getQuery(event)
+  const id = getRouterParam(event, 'badge')
 
   if (!id) {
     throw createError({
@@ -12,9 +12,9 @@ export default defineEventHandler(async (event) => {
 
   let badge
   try {
-    badge = await Badge20Schema.findOne({
+    badge = await Badge20Model.findOne({
       'badgeContent.id': `https://bridgingthegap.eu.com/api/credentials/${id}`
-    })
+    }).exec()
   } catch (error) {
     console.error('Error fetching badge:', error)
     throw createError({
@@ -30,5 +30,5 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  return badge
+  return badge.badgeContent
 })

@@ -1,4 +1,4 @@
-import BadgeSchema from '~/server/models/badge.schema'
+import Badge20Schema from '~/server/models/badge.schema'
 import { createHash } from 'crypto'
 
 export default defineEventHandler(async (event) => {
@@ -36,8 +36,8 @@ export default defineEventHandler(async (event) => {
   try {
     const salt = 'BridgingTheGap'
     const sha = createHash('sha256').update(`${email}${salt}`).digest('hex')
-    badges = await BadgeSchema.find({
-      'credentialSubject.identifier.identityHash': `sha256:${sha}`
+    badges = await Badge20Schema.find({
+      'badgeContent.recipient.identity': `sha256:${sha}`
     })
   } catch (error) {
     console.error('Error fetching badges:', error)
@@ -54,5 +54,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  return badges
+  const badgesList = badges.map((badge) => badge.badgeContent)
+
+  return badgesList
 })

@@ -100,7 +100,7 @@
       <div v-else id="list" class="flex flex-col">
         <h1 class="text-center mb-1">Congratulations! Here Are Your Achievements</h1>
         <h4 class="text-center mb-3">Showing badges awarded to {{ email }}</h4>
-        <div v-for="badge of badgesList" :key="badge.id">
+        <div v-for="badge of badgesList" :key="badge._id">
           <NuxtLink
             :to="`/issuedBadge?id=${badge._id}`"
             class="flex md:flex-row flex-col items-center border dark:border-neutral-600 rounded-lg p-4 mb-4 bg-gray-50 dark:bg-neutral-950 hover:shadow-lg dark:shadow-neutral-100"
@@ -142,7 +142,8 @@
 import { type IReCaptchaComposition, useReCaptcha } from 'vue-recaptcha-v3'
 import { useRoute } from 'vue-router'
 import { DateTime } from 'luxon'
-import type { SignedBadge } from '~/Types/open-badges.d.ts'
+import type { BadgeContent, OpenBadges20 } from '~/Types/OpenBadges.20.d.ts'
+import type { OpenBadgesDescription20 } from '~/Types/OpenBadgesDescription.20'
 
 interface BadgesList {
   _id: string
@@ -256,7 +257,7 @@ const submit = async () => {
         messageDialog.value = true
         errorMessage.value = `Hmm, We couldn't find any badges here. We searched for badges awarded to ${email.value} but didn't find any.`
       } else {
-        await processBadges(response as Array<SignedBadge>)
+        await processBadges(response as unknown as Array<BadgeContent>)
         await nextTick(async () => {
           await router.push({
             hash: '#list'
@@ -284,30 +285,15 @@ const submit = async () => {
  * During development mode, URLs are dynamically replaced to correspond to the local development server.
  * Handles errors by logging them and updating user-facing error messages.
  *
- * @param {Array<SignedBadge>} badges - An array of `SignedBadge` objects to be processed.
+ * @param {Array<BadgeContent>} badges - An array of `SignedBadge` objects to be processed.
  * @returns {Promise<void>} A promise that resolves once all badge information is processed.
  */
-const processBadges = async (badges: Array<SignedBadge>) => {
-  const allToFetch = []
-
-  for (const badge of badges) {
-    let url = badge.credentialSubject.achievement.id
-
-    // Development workaround
-    if (process.env.NODE_ENV === 'development') {
-      url = url.replace('https://bridgingthegap.eu.com', 'http://localhost:3000')
-    }
-
-    allToFetch.push($fetch(url))
-  }
-
+const processBadges = async (badges: Array<BadgeContent>): Promise<void> => {
   try {
-    const allResponses = await Promise.all(allToFetch)
-    for (let i = 0; i < allResponses.length; i++) {
-      const badge = badges[i]
-      const achievement = allResponses[i]
+    for (let i = 0; i < badges.length; i++) {
+      const badge = badges[i] as BadgeContent
 
-      let imageUrl = achievement.image.id
+      let imageUrl = badge.image
 
       // Development workaround
       if (process.env.NODE_ENV === 'development') {
@@ -315,22 +301,35 @@ const processBadges = async (badges: Array<SignedBadge>) => {
       }
 
       if (badge) {
+        let badgeDescriptor = badge.badge
+
+        if (process.env.NODE_ENV === 'development') {
+          badgeDescriptor = badgeDescriptor.replace(
+            'https://bridgingthegap.eu.com',
+            'http://localhost:3000'
+          )
+        }
+
+        const badgeDetails = await $fetch(badgeDescriptor)
+
+        const id = badge.id.replace('https://bridgingthegap.eu.com/api/credentials/', '')
+
         badgesList.value.push({
-          _id: badge._id,
-          issuanceDate: DateTime.fromISO(badge.issuanceDate).toJSDate().toLocaleString('en-GB', {
+          _id: encodeURI(id),
+          issuanceDate: DateTime.fromISO(badge.issuedOn).toJSDate().toLocaleString('en-GB', {
             weekday: 'long',
             month: 'long',
             day: 'numeric',
             year: 'numeric'
           }),
-          description: achievement.description,
+          description: (badgeDetails as OpenBadgesDescription20).description,
           image: imageUrl,
-          name: achievement.name
+          name: (badgeDetails as OpenBadgesDescription20).name
         })
       }
     }
   } catch (e) {
-    console.log(e)
+    console.error(e)
     messageDialog.value = true
     errorMessage.value = 'Sorry, something went wrong. Please try again later.'
   }
