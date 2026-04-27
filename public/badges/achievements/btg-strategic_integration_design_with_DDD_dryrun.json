@@ -1,18 +1,12 @@
 {
-  "@context": [
-    "https://www.w3.org/2018/credentials/v1",
-    "https://purl.imsglobal.org/spec/ob/v3p0/context.json"
-  ],
+  "@context": "https://w3id.org/openbadges/v2",
+  "type": "BadgeClass",
   "id": "https://bridgingthegap.eu.com/badges/achievements/btg-strategic_integration_design_with_DDD_dryrun.json",
-  "type": "Achievement",
   "name": "Strategic Integration Design with DDD (BridgingTheGap.eu.com)",
   "description": "Holder of this badge attended and completed Strategic Integration Design with DDD by BridgingTheGap.eu.com.",
-  "image": {
-    "id": "https://bridgingthegap.eu.com/badges/images/btg-strategic_integration_design_with_DDD.png",
-    "type": "Image"
-  },
+  "issuer": "https://bridgingthegap.eu.com/badges/issuer.json",
+  "image": "https://bridgingthegap.eu.com/badges/images/btg-strategic_integration_design_with_DDD.png",
   "criteria": {
-    "type": "Criteria",
-    "narrative": "This badge confirms active engagement in our “Strategic Integration Design with DDD” course. Earners attended four modules during live sessions and collaborated on group exercises. It signifies applied understanding of Domain-Driven Design strategic tools for Integration Architecture and interoperability design, and a commitment to professional development. Additionally earners had the exclusive first look at the course material and provided feedback on the course content, exercises and execution."
+    "narrative": "Attend and complete the Strategic Integration Design with DDD by BridgingTheGap.eu.com."
   }
 }

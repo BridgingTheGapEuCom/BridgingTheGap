@@ -160,7 +160,8 @@ export default defineNuxtConfig({
     'nuxt-mongoose',
     'nuxt-gtag',
     '@nuxt/scripts',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    'nuxt-svgo'
   ],
 
   gtag: {
