@@ -4211,7 +4211,7 @@ css-select@^5.1.0:
     domutils "^3.0.1"
     nth-check "^2.0.1"
 
-css-tree@^2.2.1, css-tree@^2.3.1:
+css-tree@^2.2.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/css-tree/-/css-tree-2.3.1.tgz#10264ce1e5442e8572fc82fbe490644ff54b5c20"
   integrity sha512-6Fv1DV/TYw//QF5IzQdqsNDjx/wc8TrMBZsqjL9eW01tWb7R7k/mq+/VXfJCl7SoD5emsJop9cOByJZfs8hYIw==
@@ -6469,6 +6469,11 @@ nanoid@^3.3.11:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.11.tgz#4f4f112cefbe303202f2199838128936266d185b"
   integrity sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==
 
+nanoid@^5.1.9:
+  version "5.1.9"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-5.1.9.tgz#aac959acf7d685269fb1be7f70a90d9db0848948"
+  integrity sha512-ZUvP7KeBLe3OZ1ypw6dI/TzYJuvHP77IM4Ry73waSQTLn8/g8rpdjfyVAh7t1/+FjBtG4lCP42MEbDxOsRpBMw==
+
 nanotar@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/nanotar/-/nanotar-0.3.0.tgz#0a1839731ecbdd910129244a563f73183eb80c6a"
@@ -8494,19 +8499,6 @@ svgo@3.0.2:
     csso "^5.0.5"
     picocolors "^1.0.0"
 
-svgo@^3.3.3:
-  version "3.3.3"
-  resolved "https://registry.yarnpkg.com/svgo/-/svgo-3.3.3.tgz#8246aee0b08791fde3b0ed22b5661b471fadf58e"
-  integrity sha512-+wn7I4p7YgJhHs38k2TNjy1vCfPIfLIJWR5MnCStsN8WuuTcBnRKcMHQLMM2ijxGZmDoZwNv8ipl5aTTen62ng==
-  dependencies:
-    commander "^7.2.0"
-    css-select "^5.1.0"
-    css-tree "^2.3.1"
-    css-what "^6.1.0"
-    csso "^5.0.5"
-    picocolors "^1.0.0"
-    sax "^1.5.0"
-
 svgo@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-4.0.1.tgz#c82dacd04ee9f1d55cd4e0b7f9a214c86670e3ee"
@@ -9150,14 +9142,6 @@ vite-plugin-vue-tracer@^1.3.0:
     magic-string "^0.30.21"
     pathe "^2.0.3"
     source-map-js "^1.2.1"
-
-vite-svg-loader@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/vite-svg-loader/-/vite-svg-loader-5.1.1.tgz#27cbd5e092cc2b2b17ba574cfb2ecf72389e2a3c"
-  integrity sha512-RPzcXA/EpKJA0585x58DBgs7my2VfeJ+j2j1EoHY4Zh82Y7hV4cR1fElgy2aZi85+QSrcLLoTStQ5uZjD68u+Q==
-  dependencies:
-    debug "^4.3.4"
-    svgo "^3.3.3"
 
 vite@^7.3.1:
   version "7.3.2"
