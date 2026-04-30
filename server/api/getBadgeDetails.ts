@@ -12,9 +12,24 @@ export default defineEventHandler(async (event) => {
 
   let badge
   try {
-    badge = await Badge20Schema.findOne({
-      'badgeContent.id': `https://bridgingthegap.eu.com/api/credentials/${id}`
-    })
+    badge = await Badge20Schema.aggregate([
+      {
+        $match: {
+          'badgeContent.id': `https://bridgingthegap.eu.com/api/credentials/${id}`
+        }
+      },
+      {
+        $addFields: {
+          // Convert the string field to a proper Date object for comparison
+          issuedOnDate: { $toDate: '$badgeContent.issuedOn' }
+        }
+      },
+      {
+        $match: {
+          issuedOnDate: { $lt: new Date() }
+        }
+      }
+    ])
   } catch (error) {
     console.error('Error fetching badge:', error)
     throw createError({
@@ -23,12 +38,12 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  if (!badge) {
+  if (!badge || badge.length === 0) {
     throw createError({
       statusCode: 404,
       statusMessage: 'Not Found: A badge with the provided ID could not be found.'
     })
   }
 
-  return badge
+  return badge[0]
 })

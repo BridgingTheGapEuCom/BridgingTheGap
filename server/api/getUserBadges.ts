@@ -36,9 +36,24 @@ export default defineEventHandler(async (event) => {
   try {
     const salt = 'BridgingTheGap'
     const sha = createHash('sha256').update(`${email}${salt}`).digest('hex')
-    badges = await Badge20Schema.find({
-      'badgeContent.recipient.identity': `sha256:${sha}`
-    })
+
+    badges = await Badge20Schema.aggregate([
+      {
+        $match: {
+          'badgeContent.recipient.identity': `sha256$${sha}`
+        }
+      },
+      {
+        $addFields: {
+          issuedOnDate: { $toDate: '$badgeContent.issuedOn' }
+        }
+      },
+      {
+        $match: {
+          issuedOnDate: { $lt: new Date() }
+        }
+      }
+    ])
   } catch (error) {
     console.error('Error fetching badges:', error)
     throw createError({
