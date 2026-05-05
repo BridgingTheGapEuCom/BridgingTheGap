@@ -127,6 +127,16 @@ const achievementDetails: Ref<OpenBadgesDescription20 | null> = ref(null)
 const showJSON = ref(false)
 const jsonCopied = ref(false)
 
+/**
+ * Computes the URL used to add the badge to a LinkedIn profile as a certification.
+ *
+ * @returns {string} A pre-filled LinkedIn certification URL or an empty string if the badge data is not available.
+ *
+ * @edgeCases
+ * - Returns an empty string if `badgeDetails.value` is null or undefined.
+ * - Relies on `achievementDetails.value?.name` being available to populate the certification name.
+ * - If `badgeDetails.value.issuedOn` is an invalid date, the year and month parameters will result in NaN.
+ */
 const linkedInLink = computed(() => {
   if (badgeDetails.value) {
     const issueDate = new Date(badgeDetails.value.issuedOn)
@@ -141,7 +151,17 @@ const linkedInLink = computed(() => {
 loading.value = true
 
 /**
- * Fetch badge details from the API using the badge ID from the route query.
+ * Fetches badge and achievement details from the API using the badge ID from the route query.
+ * Updates reactive state for the UI, handling environment-specific URL transformations.
+ *
+ * @async
+ * @returns {Promise<void>}
+ *
+ * @edgeCases
+ * - If `route.query.id` is undefined, the API request might fail or return an error response.
+ * - If the network request fails, the error is caught and logged to the console, and `loading` is set to false.
+ * - If `badgeDetails.value.badge` is missing, the secondary fetch for achievement details is skipped.
+ * - Environment-specific logic: Replaces production URLs with localhost if `NODE_ENV` is 'development'.
  */
 try {
   const url = useRequestURL()
@@ -177,6 +197,17 @@ try {
 
 loading.value = false
 
+/**
+ * Copies the current badge details as a JSON string to the user's clipboard.
+ * Briefly toggles the `jsonCopied` state to provide visual feedback.
+ *
+ * @returns {void}
+ *
+ * @edgeCases
+ * - If `badgeDetails.value` is null, it stringifies and copies the value "null".
+ * - Requires a secure context (HTTPS) or localhost for `navigator.clipboard` to function.
+ * - Does not handle potential promise rejection from `writeText`.
+ */
 const copyToClipboard = () => {
   navigator.clipboard.writeText(JSON.stringify(badgeDetails.value))
   jsonCopied.value = true

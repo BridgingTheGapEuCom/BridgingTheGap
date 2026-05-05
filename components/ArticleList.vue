@@ -154,6 +154,7 @@
                 :name="(article as Event).name"
                 :publication-date="(article as Event).date as string"
                 :tags="(article as Event).tags"
+                :yt="(article as Event).YT"
                 class="mb-4"
               ></EventCard>
             </template>

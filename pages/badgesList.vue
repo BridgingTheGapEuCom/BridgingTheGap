@@ -142,7 +142,7 @@
 import { type IReCaptchaComposition, useReCaptcha } from 'vue-recaptcha-v3'
 import { useRoute } from 'vue-router'
 import { DateTime } from 'luxon'
-import type { BadgeContent, OpenBadges20 } from '~/Types/OpenBadges.20.d.ts'
+import type { BadgeContent } from '~/Types/OpenBadges.20.d.ts'
 import type { OpenBadgesDescription20 } from '~/Types/OpenBadgesDescription.20'
 
 interface BadgesList {
