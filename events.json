@@ -814,5 +814,99 @@
         "name": "IASA Netherlands"
       }
     }
+  },
+  {
+    "name": "Loosely Coupled - The role of an architect in the the modern IT landscape",
+    "img": "/events/Loosely_Coupled_The_role_of_an_architect_in_the_the_modern_IT_landscape.webp",
+    "description": "The modern Architect is often seen as a master of technical trades, but what if the most crucial 'technology' they need to master isn't a framework or tech stack, but purpose itself? The role of the architect is in constant flux, moving beyond purely technical aspects to driving core business strategy and delivery. It's a fundamental change, and to succeed, we need to redefine what the role should be in a modern enterprise.\n\nThe modern Architect is often seen as a master of technical trades, but what if the most crucial 'technology' they need to master isn't a framework or tech stack, but purpose itself? The role of the architect is in constant flux, moving beyond purely technical aspects to driving core business strategy and delivery. It's a fundamental change, and to succeed, we need to redefine what the role should be in a modern enterprise.\n\nJoining us this session is Paul Preiss, CEO and Founder of IASA, a global association dedicated to building a unified architecture profession and standardization of architectural practices focused on the business purpose of the profession.\n\nTogether, we’ll dive into the essential pillars of the modern architect’s function, exploring:\n• The evolving role of the architect and how to ensure its relevance over time.\n• Achieving enterprise standardization without stifling necessary innovation.\n• The imperative of teaching in a technology-agnostic manner, \n• Strategies for strong alignment of the architect’s function with explicit business purpose and corporate strategy.",
+    "date": "2026-05-21",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-05-21",
+        "endDate": "2026-05-21",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "The role of an architect in the modern IT landscape",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7455579526509707264/",
+    "YT": "https://youtube.com/live/3fQafttVeQ4"
+  },
+  {
+    "name": "Loosely Coupled - Moving fast and not breaking the wrong things in the age of AI",
+    "img": "/events/Loosely_Coupled_Moving_fast_and_not_breaking_the_wrong_things_in_the_age_of_AI.webp",
+    "description": "“Nothing is certain, but death and taxes” is what I heard so many times. The truth is that “Nothing is certain but change.” And change seems to be happening faster and faster. There are two architectural characteristics that we can use to describe said change: volatility and variability.\n\n“Nothing is certain, but death and taxes” is what I heard so many times. The truth is that “Nothing is certain but change.” And change seems to be happening faster and faster. There are two architectural characteristics that we can use to describe said change: volatility and variability.\n\nNowadays we move faster and faster to catch up with the reality of the market, hype cycles, needs and wants of ‘the business’. We finally managed to understand that variability is the second hardest problem in software architecture, and volatility is only making it worse. Then came the age of ‘AI’ tools, bringing new products, new ways of working, a new hype to have a race in. We’re moving faster or at least it seems like it is so. The question is, how can we keep on going? How can we figure out what to do and not break things that we shouldn’t be breaking?\n\nJoining us this session are Andrew Harmel-Law, a highly enthusiastic, self-starting and responsible tech principal at Thoughtworks. Together we’ll dive into further exploration of variability extending the conversation from DDD Europe 2025. We’ll dismantle the shift in the problem space of architectural variability and how to make the right decisions at the new speed!\n\nJoin us live in this discussion!",
+    "date": "2026-05-28",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-05-28",
+        "endDate": "2026-05-28",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Variability and Volatility in the age of AI",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7465366099073744897/",
+    "YT": "https://youtube.com/live/Sj8A4ObIru4"
+  },
+  {
+    "name": "Sociotechnical Engineering in Integration Architecture",
+    "img": "/events/Sociotechnical_Engineering_classroom.webp",
+    "description": "Most application integration failures aren't caused by choosing the wrong message broker or IPaaS technology. They happen because the technical architecture ignores the sociopolitical reality of the teams involved. If you implement a high-trust Shared Database pattern between teams that have a low-trust Customer/Supplier relationship, your system will shatter the moment one team changes a schema without asking.\n\nIn this hands-on lab, we will solve this mismatch by explicitly mapping DDD Context Mapping patterns (the social boundaries) to Integration Architectural Styles (the technical implementation) and related integration patterns. We won’t just discuss \"trade-offs\"; we will apply design heuristics to real-world scenarios involving a range of systems, from legacy ERPs to modern microservices.",
+    "date": "2026-06-12",
+    "eventType": "Workshop",
+    "tags": ["Workshop"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-06-12",
+        "endDate": "2026-06-12",
+        "startTime": "11:00",
+        "endTime": "13:00"
+      },
+      "place": "Classroom - limited seats, for conference attendees",
+      "eventTopic": "We’re exploring the Sociotechnical Engineering in Integration Architecture",
+      "eventType": "Workshop",
+      "eventLink": {
+        "type": "link",
+        "link": "https://2026.dddeurope.com/program/sociotechnical-engineering-in-integration-architecture/",
+        "name": "DDD Europe 2026"
+      }
+    }
+  },
+  {
+    "name": "Can AI be a Co-Domain Expert in Domain Modelling?",
+    "img": "/events/AI_a_Co-Domain_Expert_classroom.webp",
+    "description": "Large Language Models like ChatGPT, Gemini, or Claude are very good at generating events, actors, and processes on demand. Big Picture EventStorming is very good at exposing what people really know, what they only assume, and where the real problems live. In this workshop, we put the two together and ask a simple question: Can AI actually help, or does it just create smarter looking slob?\n\nIn this hands-on lab we will simulate a Big Picture EventStorming around a real world use case.\n\nWe work under a realistic constraint. You do not have a dedicated domain expert in the room. Instead, you only get a short written brief or notes from a rushed interview with the expert, and the LLM helps fill in the blanks. Instead of starting from a blank wall, each group is supported by an LLM that can suggest domain events, actors, systems, and problems on request.\n\nTogether we will: Use AI to bootstrap the chaotic exploration phase and then clean up hallucinations and weak assumptions. Enforce a shared timeline and highlight pivotal domain events, this time with every AI suggestion clearly marked as strong, inferred, or speculative.\n\nMap people and systems, paying attention to sociotechnical aspects like ownership, handovers, and conflicting goals. Surface hotspots, bottlenecks, and opportunities, and then reflect together on how useful the AI aided discovery really was and how far they would trust the resulting picture.\n\nThroughout the workshop we will treat the LLM as a junior domain expert that is allowed to be wrong but must be transparent about its assumptions.\n\nWe will close with a joint reflection: When is AI a useful accelerator for Big Picture EventStorming, when is it risky when you only have a brief use case description or a single short expert interview, and how could you safely experiment with this format in your own organization or classroom.",
+    "date": "2026-06-10",
+    "eventType": "Workshop",
+    "tags": ["Workshop"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-06-10",
+        "endDate": "2026-06-10",
+        "startTime": "11:00",
+        "endTime": "13:00"
+      },
+      "place": "Classroom - limited seats, for conference attendees",
+      "eventTopic": "We’re exploring the use of LLMs as Co-Domain Experts",
+      "eventType": "Workshop",
+      "eventLink": {
+        "type": "link",
+        "link": "https://2026.dddeurope.com/program/can-ai-be-a-co-domain-expert-in-domain-modelling/",
+        "name": "DDD Europe 2026"
+      }
+    }
   }
 ]
