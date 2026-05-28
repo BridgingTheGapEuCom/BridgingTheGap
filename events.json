@@ -908,5 +908,26 @@
         "name": "DDD Europe 2026"
       }
     }
+  },
+  {
+    "name": "Loosely Coupled - Residuality, philosophy and what is there between the boxes",
+    "img": "/events/Loosely_Coupled_Residuality_philosophy_and_what_is_there_between_the_boxes.webp",
+    "description": "For decades, the practice of software architecture has relied heavily on blueprints and models borrowed from traditional, static engineering disciplines. But in today's landscape - where systems are increasingly distributed, services are ephemeral, and change is the only constant - do those old analogies still hold up? We’re finding that the lines and boxes we draw on diagrams often fail to capture the complex, human, and messy reality of integration. If the old ways are failing, how do we find a new philosophical foundation for our profession?\n\nFor decades, the practice of software architecture has relied heavily on blueprints and models borrowed from traditional, static engineering disciplines. But in today's landscape - where systems are increasingly distributed, services are ephemeral, and change is the only constant - do those old analogies still hold up? We’re finding that the lines and boxes we draw on diagrams often fail to capture the complex, human, and messy reality of integration. If the old ways are failing, how do we find a new philosophical foundation for our profession?\n\nArchitecture, as a profession, is at a crossroads! Joining this live stream is Barry O'Reilly, creator of Residuality Theory. Together we’ll challenge the fundamental assumptions about what it is to be an architect! The argument is that our profession has leaned too heavily on traditional engineering - a model that is failing in the age of distributed systems, AI and the unstable relationship between IT systems and business environments.\n\nJoin us as we explore the implications of Residuality Theory and redefine what it truly means to be a modern architect in a world where architecture is more and more distributed. Tune in for a profound conversation about the future of the architect's role and why we need to shift our thinking and approach.",
+    "date": "2026-06-15",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-06-15",
+        "endDate": "2026-06-15",
+        "startTime": "19:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Residuality, philosophy and what is there between the boxes",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7465715671893536768/",
+    "YT": "https://youtube.com/live/7zTfPLO3Bf0"
   }
 ]
