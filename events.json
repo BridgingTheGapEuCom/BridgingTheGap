@@ -929,5 +929,28 @@
     },
     "LN": "https://www.linkedin.com/events/7465715671893536768/",
     "YT": "https://youtube.com/live/7zTfPLO3Bf0"
-  }
+  },
+  {
+    "name": "Loosely Coupled - Domain-Driven Design and more...",
+    "img": "/events/Loosely_Coupled_Domain-Driven_Design_and_more.webp",
+    "description": "Is design still relevant in the age of AI? Is AI capable of replacing domain experts, architects and developers? Where are the limits? How do promises of companies providing us with Large Language Models hold up to the reality of software design and development?\n\nIs design still relevant in the age of AI? Is AI capable of replacing domain experts, architects and developers? Where are the limits? How do promises of companies providing us with Large Language Models hold up to the reality of software design and development?\n\nThis time around we have no idea what will happen! \n\nWe’ll be coming live from DDD Europe 2026 in Antwerp! There is an amazing line-up of speakers talking about the future of business aligned software design and tackling complexity at the heart of software!\n\nWe’ll be inviting various speakers to join us in a panel discussion! Curious what the top experts in the field think about what the near future holds for organizations, architects, developers…\n\nIs design dead, or more relevant than ever before?\n\nTune in and join the discussion! ",
+    "date": "2026-06-11",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-06-11",
+        "endDate": "2026-06-11",
+        "startTime": "14:00",
+        "endTime": "16:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "The future of design in the software industry!",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7468312226790092800/",
+    "YT": "https://youtube.com/live/g5WfzxSktc4"
+}
+
 ]
