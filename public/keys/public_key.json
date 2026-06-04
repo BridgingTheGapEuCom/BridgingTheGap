@@ -1,0 +1,7 @@
+{
+  "@context": "https://w3id.org/security/suites/ed25519-2020/v1",
+  "id": "https://bridgingthegap.eu.com/keys/public_key.json",
+  "type": "Ed25519VerificationKey2020",
+  "controller": "https://bridgingthegap.eu.com/badges/issuer.json",
+  "publicKeyMultibase": "z6MkvLg2aYTmzx8Pxj59jUfZPAiqnGkBpy6CNzAap27ELNXd"
+}

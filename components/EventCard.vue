@@ -101,7 +101,8 @@ const props = defineProps({
   publicationDate: { type: String, required: true }, // The publication date of the video.
 
   img: { type: String, required: true },
-  description: { type: String, required: true }
+  description: { type: String, required: true },
+  yt: { type: String, required: false }
 })
 
 const route = useRoute()
@@ -152,7 +153,9 @@ const smallWidth = computed(() => {
  * @returns {string} The formatted link to the stream's video page.
  */
 const prepareLink = computed(() => {
-  return `/streams/${props.name.replaceAll(' ', '_').replaceAll('(', '').replaceAll(')', '')}/video`
+  return props.yt
+    ? `/streams/${props.yt.replace(/.*\//, '')}`
+    : `/streams/${props.name.replaceAll(' ', '_').replaceAll('(', '').replaceAll(')', '').replaceAll('?', '').replaceAll("'", '').replaceAll('‘', '').replaceAll('’', '')}`
 })
 
 /**

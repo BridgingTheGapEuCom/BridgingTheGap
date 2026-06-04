@@ -2,6 +2,7 @@ import { google } from 'googleapis'
 import { JWT } from 'google-auth-library'
 import * as nodemailer from 'nodemailer'
 import * as path from 'path'
+import fs from 'fs'
 
 const SERVICE_ACCOUNT_KEY_FILE: string = path.join(process.cwd(), 'gmail.private.key.json')
 
@@ -39,8 +40,13 @@ export default defineEventHandler(async (event) => {
   const EMAIL_TEXT_BODY: string = `${name ? `Message from ${name}\n` : ''}${email ? `Email for replies ${email}\n\n` : name ? '\n' : ''}${message}`
 
   try {
+    const filePath = path.resolve(SERVICE_ACCOUNT_KEY_FILE)
+    const fileContent = fs.readFileSync(filePath, 'utf8')
+    const credentials = JSON.parse(fileContent)
+
     const auth = new JWT({
-      keyFile: SERVICE_ACCOUNT_KEY_FILE,
+      email: credentials.client_email,
+      key: credentials.private_key,
       scopes: SCOPES,
       subject: USER_TO_IMPERSONATE
     })

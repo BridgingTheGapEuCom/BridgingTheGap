@@ -1,136 +1,85 @@
-import { model, Schema } from 'mongoose'
+import { Schema, model, type Document } from 'mongoose'
 
-/**
- * Describes the visual image for the badge or issuer.
- */
-const ImageSchema = new Schema(
-  {
-    id: { type: String, required: true },
-    type: { type: String, required: true, default: 'Image' }
-  },
-  { _id: false }
-)
+interface IRecipient {
+  type: string
+  hashed: boolean
+  salt?: string
+  identity: string
+}
 
-/**
- * Describes the requirements for earning the badge.
- */
-const CriteriaSchema = new Schema(
-  {
-    type: { type: String, required: true, default: 'Criteria' },
-    narrative: { type: String, required: true }
-  },
-  { _id: false }
-)
+interface IVerification {
+  type: string
+}
 
-/**
- * Defines the badge itself (equivalent to "BadgeClass" in OB 2.0).
- */
-const AchievementSchema = new Schema(
-  {
-    id: { type: String, required: true },
-    type: { type: String, required: true, default: 'Achievement' },
-    name: { type: String, required: true },
-    description: { type: String, required: true },
-    criteria: { type: CriteriaSchema, required: true },
-    image: { type: ImageSchema, required: true }
-  },
-  { _id: false }
-)
+interface IAssertion {
+  atContext: string // Mapping '@context'
+  type: string
+  id: string
+  recipient: IRecipient
+  issuedOn: Date
+  verification: IVerification
+  badge: string
+  image: string
+}
 
-/**
- * Describes the person or entity who earned the badge.
- */
-const CredentialSubjectSchema = new Schema(
-  {
-    type: { type: String, default: 'AchievementSubject' },
-    // Optional unique ID for the subject (e.g., a Decentralized Identifier)
-    id: { type: String },
-    name: { type: String },
-    email: { type: String },
-    achievement: { type: AchievementSchema, required: true }
-  },
-  { _id: false }
-)
+interface IAll extends Document {
+  fullName: string
+  badgeContent: IAssertion
+}
 
-/**
- * Defines the cryptographic proof section of the credential.
- */
-const ProofSchema = new Schema(
+const Badge20Schema = new Schema<IAll>(
   {
-    type: { type: String, required: true },
-    created: { type: Date, required: true },
-    verificationMethod: { type: String, required: true },
-    proofPurpose: { type: String, required: true, enum: ['assertionMethod'] },
-    proofValue: { type: String, required: true }
-  },
-  { _id: false }
-)
-
-/**
- * Main schema for a signed Open Badge 3.0 Verifiable Credential document.
- */
-const BadgeSchema = new Schema(
-  {
-    /**
-     * Maps the DB field 'context' to JSON '@context'.
-     * The '@' is a reserved character in MongoDB keys.
-     */
-    context: {
-      type: [String],
-      required: true,
-      alias: '@context'
-    },
-    /**
-     * The unique URL identifier for this specific issued badge.
-     * Should be unique to prevent duplicate documents.
-     */
-    id: {
-      type: String,
-      required: true,
-      unique: true
-    },
-    /**
-     * The type of credential, must include 'VerifiableCredential' and 'OpenBadgeCredential'.
-     */
-    type: {
-      type: [String],
-      required: true
-    },
-    /**
-     * URL pointing to the issuer's profile JSON.
-     */
-    issuer: {
+    fullName: {
       type: String,
       required: true
     },
-    /**
-     * The date the badge was issued.
-     */
-    issuanceDate: {
-      type: Date,
-      required: true
-    },
-    /**
-     * The recipient of the badge and the achievement details.
-     */
-    credentialSubject: {
-      type: CredentialSubjectSchema,
-      required: true
-    },
-    /**
-     * The cryptographic signature that makes the badge verifiable.
-     */
-    proof: {
-      type: ProofSchema,
-      required: true
+    badgeContent: {
+      atContext: {
+        type: String,
+        required: true,
+        default: 'https://w3id.org/openbadges/v2',
+        alias: '@context' // Helps with JSON ld compatibility
+      },
+      type: {
+        type: String,
+        required: true,
+        enum: ['Assertion'],
+        default: 'Assertion'
+      },
+      id: {
+        type: String,
+        required: true,
+        unique: true
+      },
+      recipient: {
+        type: { type: String, required: true },
+        hashed: { type: Boolean, required: true },
+        salt: { type: String },
+        identity: { type: String, required: true }
+      },
+      issuedOn: {
+        type: Date,
+        required: true
+      },
+      verification: {
+        type: { type: String, required: true, default: 'HostedBadge' }
+      },
+      badge: {
+        type: String,
+        required: true
+      },
+      image: {
+        type: String,
+        required: true
+      }
     }
   },
   {
-    /**
-     * Mongoose option to automatically add createdAt and updatedAt timestamps.
-     */
-    timestamps: true
+    timestamps: true,
+    toJSON: { virtuals: true, getters: true },
+    toObject: { virtuals: true, getters: true },
+    collection: 'badges20'
   }
 )
 
-export default model('Badge', BadgeSchema)
+export default model('Badge20', Badge20Schema)

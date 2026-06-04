@@ -11,9 +11,9 @@
           This code defines your badge award and conforms to the
           <a
             class="link text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-            href="https://www.imsglobal.org/spec/ob/v3p0/"
+            href="https://www.imsglobal.org/sites/default/files/Badges/OBv2p0Final/index.html"
             target="_blank"
-            >Open Badges 3.0</a
+            >Open Badges 2.0</a
           >
           Assertion specification.
         </div>
@@ -52,20 +52,17 @@
       </div>
     </div>
     <div v-if="loading">Please wait, loading badge details...</div>
-    <div
-      v-else-if="badgeDetails"
-      class="h-full max-h-[50rem] flex flex-col items-center justify-between"
-    >
+    <div v-else-if="badgeDetails" class="h-full flex flex-col items-center justify-between">
       <div class="flex flex-col items-center justify-center">
         <img :src="image" alt="Achievement badge" class="w-[250px] dark:invert" />
-        <h2 class="mx-9">{{ achievementDetails.name }}</h2>
+        <h2 class="mx-9">{{ achievementDetails?.name }}</h2>
       </div>
       <div class="flex flex-col items-center justify-center">
-        <div class="my-3 mx-9">{{ achievementDetails.description }}</div>
+        <div class="my-3 mx-9">{{ achievementDetails?.description }}</div>
         <div class="mt-3">Awarded to</div>
-        <h1>{{ badgeDetails.credentialSubject.name }}</h1>
+        <h1>{{ badgeRecipient }}</h1>
         <div class="font-bold mt-3">Earning Criteria</div>
-        <div>{{ achievementDetails.criteria.narrative }}</div>
+        <div>{{ achievementDetails?.criteria.narrative }}</div>
       </div>
       <div class="flex flex-col items-center justify-center">
         <img alt="Bridging The Gap logo" class="w-16 mx-auto mt-5 dark:invert" src="/logo.webp" />
@@ -73,7 +70,7 @@
         <div>
           on
           {{
-            new Date(badgeDetails.issuanceDate).toLocaleDateString('en-GB', {
+            new Date(badgeDetails?.issuedOn).toLocaleDateString('en-GB', {
               weekday: 'long',
               month: 'long',
               day: 'numeric',
@@ -99,6 +96,14 @@
           View JSON
         </div>
       </div>
+      <div class="flex flex-col items-center my-5">
+        <div>Add this badge to your</div>
+        <div class="flex gap-2">
+          <a :href="linkedInLink" target="_blank">
+            <svgo-linkedin class="w-5 cursor-pointer text-neutral-600" :font-controlled="false" />
+          </a>
+        </div>
+      </div>
     </div>
     <div v-else class="h-full flex flex-col items-center justify-center font-bold text-2xl">
       Invalid badge
@@ -107,48 +112,79 @@
 </template>
 
 <script lang="ts" setup>
-import type { SignedBadge } from '~/Types/open-badges'
+import type { OpenBadges20, BadgeContent } from '~/Types/OpenBadges.20'
+import type { OpenBadgesDescription20 } from '~/Types/OpenBadgesDescription.20'
 import { mdiContentCopy } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
 
 const route = useRoute()
 
 const loading = ref(false)
-const badgeDetails: Ref<SignedBadge | null> = ref(null)
-const image = ref('')
-const achievementDetails = ref({})
+const badgeDetails: Ref<BadgeContent | null> = ref(null)
+const badgeRecipient: Ref<string | null> = ref(null)
+const image: Ref<string> = ref('')
+const achievementDetails: Ref<OpenBadgesDescription20 | null> = ref(null)
 const showJSON = ref(false)
 const jsonCopied = ref(false)
+
+/**
+ * Computes the URL used to add the badge to a LinkedIn profile as a certification.
+ *
+ * @returns {string} A pre-filled LinkedIn certification URL or an empty string if the badge data is not available.
+ *
+ * @edgeCases
+ * - Returns an empty string if `badgeDetails.value` is null or undefined.
+ * - Relies on `achievementDetails.value?.name` being available to populate the certification name.
+ * - If `badgeDetails.value.issuedOn` is an invalid date, the year and month parameters will result in NaN.
+ */
+const linkedInLink = computed(() => {
+  if (badgeDetails.value) {
+    const issueDate = new Date(badgeDetails.value.issuedOn)
+
+    const url = encodeURIComponent(`https://bridgingthegap.eu.com${route.fullPath}`)
+    return `https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAME&name=${achievementDetails.value?.name}&organizationId=107412373&issueYear=${issueDate.getFullYear()}&issueMonth=${issueDate.getMonth()}&certUrl=${url}&certId=${encodeURI(badgeDetails.value.id)}`
+  }
+
+  return ''
+})
 
 loading.value = true
 
 /**
- * Fetch badge details from the API using the badge ID from the route query.
+ * Fetches badge and achievement details from the API using the badge ID from the route query.
+ * Updates reactive state for the UI, handling environment-specific URL transformations.
+ *
+ * @async
+ * @returns {Promise<void>}
+ *
+ * @edgeCases
+ * - If `route.query.id` is undefined, the API request might fail or return an error response.
+ * - If the network request fails, the error is caught and logged to the console, and `loading` is set to false.
+ * - If `badgeDetails.value.badge` is missing, the secondary fetch for achievement details is skipped.
+ * - Environment-specific logic: Replaces production URLs with localhost if `NODE_ENV` is 'development'.
  */
 try {
-  const response = await useFetch(`/api/getBadgeDetails?id=${route.query.id}`)
+  const url = useRequestURL()
 
-  badgeDetails.value = response.data.value
+  const response = await useFetch(`${url.origin}/api/getBadgeDetails?id=${route.query.id}`)
 
-  if (
-    badgeDetails.value?.credentialSubject?.achievement?.id &&
-    badgeDetails.value.credentialSubject.achievement.id.startsWith(
-      'https://bridgingthegap.eu.com/badges/achievements'
-    )
-  ) {
-    let url = badgeDetails.value.credentialSubject.achievement.id
+  badgeDetails.value = (response.data.value as OpenBadges20).badgeContent
+  badgeRecipient.value = (response.data.value as OpenBadges20).fullName
+
+  if (badgeDetails.value?.badge) {
+    let url = badgeDetails.value.badge
 
     // Development workaround
     if (process.env.NODE_ENV === 'development') {
-      url = badgeDetails.value.credentialSubject.achievement.id.replace(
+      url = badgeDetails.value.badge.replace(
         'https://bridgingthegap.eu.com',
         'http://localhost:3000'
       )
     }
 
-    achievementDetails.value = await useFetch(url)
-    achievementDetails.value = achievementDetails.value?.data
-    image.value = achievementDetails.value.image?.id ?? ''
+    const achievementResponse = await useFetch(url)
+    achievementDetails.value = achievementResponse.data.value as OpenBadgesDescription20
+    image.value = achievementDetails.value.image ?? ''
 
     // Development workaround
     if (process.env.NODE_ENV === 'development') {
@@ -156,11 +192,22 @@ try {
     }
   }
 } catch (error) {
-  console.log(error)
+  console.error(error)
 }
 
 loading.value = false
 
+/**
+ * Copies the current badge details as a JSON string to the user's clipboard.
+ * Briefly toggles the `jsonCopied` state to provide visual feedback.
+ *
+ * @returns {void}
+ *
+ * @edgeCases
+ * - If `badgeDetails.value` is null, it stringifies and copies the value "null".
+ * - Requires a secure context (HTTPS) or localhost for `navigator.clipboard` to function.
+ * - Does not handle potential promise rejection from `writeText`.
+ */
 const copyToClipboard = () => {
   navigator.clipboard.writeText(JSON.stringify(badgeDetails.value))
   jsonCopied.value = true

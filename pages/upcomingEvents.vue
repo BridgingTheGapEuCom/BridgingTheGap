@@ -159,6 +159,32 @@
                   class="lg:w-2/3 lg:float-left lg:mr-5 px-1 lg:px-0 mb-1 m-auto"
                 />
                 <ul class="lg:mt-0 mt-3">
+                  <div v-if="event.LN || event.YT" class="flex flex-row justify-start my-1">
+                    <div v-if="event.LN" class="flex items-center">
+                      <a
+                        :href="event.LN"
+                        :tabindex="currentEvent?.id === event.id ? undefined : '-1'"
+                        class="link hover:text-[#0E76A8]"
+                        :class="{ 'text-[#0E76A8]': !isOldEvent(event) }"
+                        style="margin-left: -6px"
+                        target="_blank"
+                      >
+                        <SvgIcon :path="mdiLinkedin" :size="46" class="my-0" type="mdi" />
+                      </a>
+                    </div>
+                    <div v-if="event.YT" class="flex items-center">
+                      <a
+                        :href="event.YT"
+                        :tabindex="currentEvent?.id === event.id ? undefined : '-1'"
+                        class="link hover:text-[#c4302b]"
+                        :class="{ 'text-[#c4302b]': !isOldEvent(event) }"
+                        target="_blank"
+                      >
+                        <SvgIcon :path="mdiYoutube" :size="46" class="my-0" type="mdi" />
+                      </a>
+                    </div>
+                  </div>
+
                   <li
                     v-for="detailKey of Object.keys(event.details)"
                     v-if="event.details"
@@ -215,28 +241,6 @@
                   style="font-family: 'Atkinson Hyperlegible', sans-serif"
                   >{{ event.description }}</pre
                 >
-                <div v-if="event.LN || event.YT" class="flex flex-row justify-center my-5">
-                  <div v-if="event.LN" class="flex items-center">
-                    <a
-                      :href="event.LN"
-                      :tabindex="currentEvent?.id === event.id ? undefined : '-1'"
-                      class="link ml-2"
-                      target="_blank"
-                    >
-                      <SvgIcon :path="mdiLinkedin" :size="46" class="my-0" type="mdi" />
-                    </a>
-                  </div>
-                  <div v-if="event.YT" class="flex items-center">
-                    <a
-                      :href="event.YT"
-                      :tabindex="currentEvent?.id === event.id ? undefined : '-1'"
-                      class="link ml-2"
-                      target="_blank"
-                    >
-                      <SvgIcon :path="mdiYoutube" :size="46" class="my-0" type="mdi" />
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
           </EventsLayout>
@@ -340,6 +344,8 @@ onMounted(() => {
     return aDate > bDate ? 1 : -1
   })
 
+  const queryParams = route.query
+
   // Assign a unique ID to each event
   events.value.map((el, index) => {
     el.id = index
@@ -375,11 +381,22 @@ onMounted(() => {
       }
     })
   } else {
-    // If no hash is present, find the closest upcoming event
-    const closestEvent = findClosestUpcomingEventByDate(events.value)
-    if (closestEvent) {
-      currentEvent.value = closestEvent.event
-      chosenDate.value = new Date(closestEvent.event.date)
+    let event = null
+    if (queryParams.eventName) {
+      event = events.value.find((el) => el.name === queryParams.eventName)
+      if (event) {
+        currentEvent.value = event
+        chosenDate.value = new Date(event.date)
+      }
+    }
+
+    if (!event) {
+      // If no hash is present, find the closest upcoming event
+      const closestEvent = findClosestUpcomingEventByDate(events.value)
+      if (closestEvent && closestEvent.event) {
+        currentEvent.value = closestEvent.event
+        chosenDate.value = new Date(closestEvent.event.date)
+      }
     }
   }
 })
