@@ -94,7 +94,7 @@
       "eventType": "Live Stream Discussion"
     },
     "LN": "https://www.linkedin.com/events/looselycoupled-adoptingevent-dr7339424982973751296/about/",
-    "YT": "https://www.youtube.com/live/DqBJnNKcL44"
+    "YT": "https://tinyurl.com/56rj848e"
   },
   {
     "name": "Effective Enterprise Application Integration",
@@ -951,5 +951,49 @@
     },
     "LN": "https://www.linkedin.com/events/7468312226790092800/",
     "YT": "https://youtube.com/live/g5WfzxSktc4"
+  },
+  {
+    "name": "Loosely Coupled - Socio-technical API patterns and more",
+    "img": "/events/Loosely_Coupled_Socio-technical_API_patterns_and_more.webp",
+    "description": "APIs - write a spec, implement it, deploy it, and we’re done. That’s all to it, isn’t it? \n\nAPIs - write a spec, implement it, deploy it, and we’re done. That’s all to it, isn’t it? \n\nIf life was that simple! A large number of developers, architects and other professionals are convinced that they have a grip on APIs, but when asked they often struggle trying to answer “what is an API?” It seems like a fairly easy question, right? If your answer is “REST”, you might be in for quite a shock. And that’s ok, because given the flood of AI generated content and infographics oversimplifying the matter it’s hard to find a good source of knowledge!\n\nThe question then is: \n\nWhat are the factors composing an API?\n\nWhat is the definition?\n\nWhat is there beyond the API spec and implementation?\n\nAll of this and more in this episode of Loosely Coupled! Our guest this time around will be Einar Høst, Software Developer with a knack for finding patterns beyond the technical aspects of interoperability. We’ll walk through various aspects of API lifecycle and all the related patterns that are not necessarily technical, but heavily influence how an API is designed, implemented and how it operates in production!\n\nJoin the conversation! Share your observations and stories!",
+    "date": "2026-06-25",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-06-25",
+        "endDate": "2026-06-25",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Socio-technical API patterns",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7471114756280578048/",
+    "YT": "https://youtube.com/live/eqrRbYMguTQ"
+  },
+  {
+    "name": "Loosely Coupled - Teaching a new generation of software professionals",
+    "img": "/events/Loosely_Coupled_Teaching_a_new_generation_of_software_professionals.webp",
+    "description": "IT professionals composing the current workforce were mostly educated in a Prussian classroom model, that aimed to produce manufacturing workers that follow commands, not think creatively. Over the last few decades we see a lot of movements trying to change that. Unfortunately for us, we’re making education a lot harder with advancement of technology and that technology invading schools and universities. In the age of AI education is suffering and at the same time it is more and more important that we educate better.\n\nThis episode we’ll tackle the topic of how to educate young IT professionals in a world that is moving faster than we can comprehend. We have access to near-infinite knowledge through the Internet and AI chatbot. We also struggle with misinformation, hallucinations and lack of comprehension! The key question is: what good is all that information if we are incapable of using it in context?\n\nIT professionals composing the current workforce were mostly educated in a Prussian classroom model, that aimed to produce manufacturing workers that follow commands, not think creatively. Over the last few decades we see a lot of movements trying to change that. Unfortunately for us, we’re making education a lot harder with advancement of technology and that technology invading schools and universities. In the age of AI education is suffering and at the same time it is more and more important that we educate better.\n\nThis episode we’ll tackle the topic of how to educate young IT professionals in a world that is moving faster than we can comprehend. We have access to near-infinite knowledge through the Internet and AI chatbot. We also struggle with misinformation, hallucinations and lack of comprehension! The key question is: what good is all that information if we are incapable of using it in context?\n\nLet’s tackle the problem of education! This stream our guest will be Chelsea Troy, Machine Learning Operations Engineer at Mozilla, who is also an adjunct associate professor of University of Chicago. Chelsea is teaching machine learning, data analysis and programming and has a first hand view on the future of our IT workforce.\n\nJoin us in the discussion and learn how can we change the approach to professional learning to fit the current age.",
+    "date": "2006-07-09",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2006-07-09",
+        "endDate": "2006-07-09",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Education of young IT professionals",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7470757344344260610/",
+    "YT": "https://youtube.com/live/QionuS_FWM0"
   }
 ]
