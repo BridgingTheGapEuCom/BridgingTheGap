@@ -228,6 +228,7 @@ import { useRoute, useRouter } from 'vue-router'
 import articles from '../articles.json'
 import { mdiArrowLeft } from '@mdi/js'
 import SvgIcon from '@jamescoyle/vue-icon'
+import { DEFAULT_OG_IMAGE, getArticleOgImage, SITE_NAME, SITE_URL } from '~/utils/seo'
 
 /**
  * @typedef {Object} Props
@@ -476,21 +477,41 @@ const updateData = async (ssr) => {
       relatedArticles.value = findRelatedArticles(articleMeta.relatedTags)
     }
 
+    const articleUrl = `${SITE_URL}/articles/${articleMeta.name}`
+    const articleOgImage = getArticleOgImage(articleMeta.name)
+
     useHead(
       {
-        title: `Bridging the Gap - ${title.value}`,
+        title: title.value,
+        link: [
+          {
+            rel: 'canonical',
+            href: articleUrl
+          }
+        ],
         script: [
           {
-            key: 'pageMeta',
+            key: 'article-schema',
             type: 'application/ld+json',
-            children: JSON.stringify({
+            innerHTML: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Article',
               headline: title.value,
-              image: [],
-              datePublished: published.value,
-              dateModified: lastUpdate.value,
-              author: seoAuthors
+              image: [articleOgImage],
+              datePublished: articleMeta.publishDate,
+              dateModified: articleMeta.lastUpdate,
+              author: seoAuthors,
+              url: articleUrl,
+              mainEntityOfPage: articleUrl,
+              publisher: {
+                '@type': 'Organization',
+                name: SITE_NAME,
+                url: SITE_URL,
+                logo: {
+                  '@type': 'ImageObject',
+                  url: DEFAULT_OG_IMAGE
+                }
+              }
             })
           }
         ]
@@ -500,12 +521,16 @@ const updateData = async (ssr) => {
 
     useSeoMeta({
       ogType: 'article',
-      title: `Bridging the Gap - ${title.value}`,
-      ogTitle: `Bridging the Gap - ${title.value}`,
-      twitterTitle: `Bridging the Gap - ${title.value}`,
+      title: title.value,
+      ogTitle: title.value,
+      twitterTitle: title.value,
       description: articleMeta.short,
       ogDescription: articleMeta.short,
       twitterDescription: articleMeta.short,
+      ogImage: articleOgImage,
+      twitterImage: articleOgImage,
+      twitterCard: 'summary_large_image',
+      ogUrl: articleUrl,
       author: articleAuthors
     })
   }

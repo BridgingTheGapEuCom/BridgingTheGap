@@ -87,6 +87,13 @@
 </template>
 
 <script setup>
+usePageSeo({
+  title: 'Our Reviewers',
+  description:
+    'Meet the expert reviewers who help ensure the quality and accuracy of Bridging the Gap integration architecture articles.',
+  path: '/aboutOurReviewers'
+})
+
 // This script processes a list of articles to create a sorted list of unique reviewers
 // and the articles they have reviewed. It also provides functionality to expand and
 // collapse the list of reviewed articles for each reviewer.

@@ -5,7 +5,7 @@
     </div>
     <div class="text-center flex flex-col items-center justify-center">
       <div style="font-size: min(2.8dvh, 4.4dvw)">
-        Behind <b>Bridging The Gap</b> are seasoned
+        Behind <b>Bridging the Gap</b> are seasoned
       </div>
       <div style="font-size: min(2.8dvh, 4.4dvw)">
         professionals dedicated to demystifying

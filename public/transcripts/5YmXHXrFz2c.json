@@ -1,0 +1,4287 @@
+[
+  {
+    "startTime": 61.57,
+    "person": "Karol",
+    "text": " Good morning, good afternoon, and good evening, everybody."
+  },
+  {
+    "startTime": 64.67,
+    "person": "Karol",
+    "text": " Welcome back to Loosely Coupled by Bridging the Gap."
+  },
+  {
+    "startTime": 66.93,
+    "person": "Karol",
+    "text": " My name is Karol Skrzymowski, and I'll be your host tonight."
+  },
+  {
+    "startTime": 70.47,
+    "person": "Karol",
+    "text": " And I hope everybody has something nice to drink."
+  },
+  {
+    "startTime": 73.93,
+    "person": "Karol",
+    "text": " I got my standard jug of coffee for this evening."
+  },
+  {
+    "startTime": 78.79,
+    "person": "Karol",
+    "text": " And, yeah, that was a no-brainer decision, right?"
+  },
+  {
+    "startTime": 82.31,
+    "person": "Karol",
+    "text": " Just coffee every single time, unless I'm run out of beans, which happened a few times already."
+  },
+  {
+    "startTime": 88.47,
+    "person": "Karol",
+    "text": " So, today, we're continuing on a little bit on solving problems and working with signals from organisations, from our units, ourselves, our environment, and we're today talking about decision-making for a change."
+  },
+  {
+    "startTime": 105.01,
+    "person": "Karol",
+    "text": " Now, I don't know about you, but if I had one euro for every time I heard we've always done it this way, I would be quite rich, and that is, for me, quite a strong signal that decision-making is something that doesn't really happen in the organisation I'm working with at this point."
+  },
+  {
+    "startTime": 124.07,
+    "person": "Karol",
+    "text": " So, decision-making is some sort of problem for people, probably a lot of us."
+  },
+  { "startTime": 129.41, "person": "Karol", "text": " Some decisions we make subconsciously." },
+  {
+    "startTime": 131.71,
+    "person": "Karol",
+    "text": " Some decisions we make quite in a long time."
+  },
+  { "startTime": 135.91, "person": "Karol", "text": " I know I take my time making decisions." },
+  { "startTime": 138.53, "person": "Karol", "text": " Others jump to decisions." },
+  { "startTime": 140.75, "person": "Karol", "text": " Well, all sorts of things happen." },
+  {
+    "startTime": 142.75,
+    "person": "Karol",
+    "text": " And today, we have somebody to talk about decision-making, a bit of a hobby that got out of hand."
+  },
+  { "startTime": 150.01, "person": "Karol", "text": " So, welcome to the show." },
+  { "startTime": 152.61, "person": "Karol", "text": " Gien Verschatse from Aardling." },
+  { "startTime": 155.99, "person": "Karol", "text": " Hello." },
+  { "startTime": 157.01, "person": "Gien", "text": " Hello, hello." },
+  { "startTime": 159.19, "person": "Karol", "text": " Gien, so." },
+  { "startTime": 161.23, "person": "Karol", "text": " Yes." },
+  { "startTime": 162.25, "person": "Karol", "text": " Wonderful to have you here." },
+  { "startTime": 164.01, "person": "Karol", "text": " Glad to be here." },
+  {
+    "startTime": 165.23,
+    "person": "Karol",
+    "text": " Before we jump into those decision-making processes, strategies, and whatnot, why decision-making?"
+  },
+  {
+    "startTime": 172.45,
+    "person": "Karol",
+    "text": " What brought you to this hobby getting out of hand?"
+  },
+  {
+    "startTime": 177.53,
+    "person": "Gien",
+    "text": " Well, so, I think I started, like, I don't want to say I started like most programmers, because I feel it sets a bad precedence."
+  },
+  {
+    "startTime": 186.63,
+    "person": "Gien",
+    "text": " But, like, I started when I was 13, 14 years, because I loved it."
+  },
+  {
+    "startTime": 192.09,
+    "person": "Gien",
+    "text": " And I mostly started in Notepad, making a very boring HTML website, and then Dreamweaver."
+  },
+  { "startTime": 200.61, "person": "Gien", "text": " Yeah, I'm that old." },
+  {
+    "startTime": 201.93,
+    "person": "Gien",
+    "text": " You can sort of start guessing how old I am now."
+  },
+  { "startTime": 204.87, "person": "Gien", "text": " I did it in Notepad, and then Dreamweaver." },
+  {
+    "startTime": 207.91,
+    "person": "Gien",
+    "text": " And then I understood that, hey, you could actually have those buttons do stuff, and I started digging into programming."
+  },
+  {
+    "startTime": 215.41,
+    "person": "Gien",
+    "text": " And I went to college, and I got my degree in programming."
+  },
+  {
+    "startTime": 219.23,
+    "person": "Gien",
+    "text": " And then I went into, you know, the workforce."
+  },
+  { "startTime": 222.83, "person": "Gien", "text": " And I was, you know, severely disappointed." },
+  {
+    "startTime": 226.97,
+    "person": "Gien",
+    "text": " I don't know if anyone who's listening now kind of had that same experience."
+  },
+  {
+    "startTime": 232.37,
+    "person": "Gien",
+    "text": " Because, you know, there were a lot of meetings, and there were a lot of things."
+  },
+  {
+    "startTime": 236.65,
+    "person": "Gien",
+    "text": " And, you know, you just had to sit there, and everything wasn't going great."
+  },
+  {
+    "startTime": 242.23,
+    "person": "Gien",
+    "text": " Then I swapped jobs, and I still saw the same problem."
+  },
+  {
+    "startTime": 246.67,
+    "person": "Gien",
+    "text": " And back then, I wasn't as outspoken and fluent in communicating."
+  },
+  {
+    "startTime": 253.93,
+    "person": "Gien",
+    "text": " And so often, the people whose ideas got, you know, sort of taken were the people who shouted the loudest in the room."
+  },
+  { "startTime": 264.51, "person": "Gien", "text": " And I was not that person." },
+  {
+    "startTime": 266.01,
+    "person": "Gien",
+    "text": " And so a lot of my ideas, like I even couldn't decently articulate them, was why I thought they were good."
+  },
+  {
+    "startTime": 272.95,
+    "person": "Gien",
+    "text": " And I was talking, I met Matthias Brandewende, also a programmer."
+  },
+  { "startTime": 279.91, "person": "Gien", "text": " And he has an economics background." },
+  { "startTime": 282.85, "person": "Gien", "text": " And I was talking about that." },
+  {
+    "startTime": 284.05,
+    "person": "Gien",
+    "text": " And I was like, I mean, how decisions are made is just so ridiculous."
+  },
+  {
+    "startTime": 288.63,
+    "person": "Gien",
+    "text": " You know, it's whoever shouts the loudest of whatever is trending right now, or you walk out of the meeting, and you're not entirely sure what has been decided."
+  },
+  { "startTime": 297.75, "person": "Gien", "text": " It's just such a mess working." },
+  {
+    "startTime": 301.05,
+    "person": "Gien",
+    "text": " It's not what I thought being a programmer would be professionally."
+  },
+  { "startTime": 305.25, "person": "Gien", "text": " It's quite the mess out there." },
+  {
+    "startTime": 309.09,
+    "person": "Gien",
+    "text": " And he says, well, actually, we taught, I'm from economics, and we have a course there called Decision Making Theory."
+  },
+  {
+    "startTime": 317.53,
+    "person": "Gien",
+    "text": " And so we started explaining a bit, and I started buying the books, which are quite expensive."
+  },
+  {
+    "startTime": 324.91,
+    "person": "Gien",
+    "text": " So don't do it unless you're really dedicated, like I am."
+  },
+  {
+    "startTime": 328.05,
+    "person": "Gien",
+    "text": " So one of the books was like, it was for a Stanford course, it was like 110 euros."
+  },
+  { "startTime": 333.77, "person": "Gien", "text": " It was quite a lot of money." },
+  {
+    "startTime": 338.73,
+    "person": "Karol",
+    "text": " I do the same, I do buy a lot of specialised books, and they, they cost a small fortune already."
+  },
+  { "startTime": 344.61, "person": "Karol", "text": " So I get that." },
+  { "startTime": 346.73, "person": "Gien", "text": " Yeah." },
+  { "startTime": 347.71, "person": "Gien", "text": " And I was digging into it." },
+  { "startTime": 349.39, "person": "Gien", "text": " And I sort of liked the theory around it." },
+  {
+    "startTime": 352.55,
+    "person": "Gien",
+    "text": " But I thought that, you know, in my job as a programmer, and, you know, moving into more domain modelling and architecture and software design, you know, how they approach it in economics just isn't that handy."
+  },
+  {
+    "startTime": 369.31,
+    "person": "Gien",
+    "text": " I was sorry, I was, it's the first time I'm here."
+  },
+  { "startTime": 371.89, "person": "Gien", "text": " So I saw the high." },
+  {
+    "startTime": 372.83,
+    "person": "Gien",
+    "text": " So I was because it's all about, you know, probability and calculating that from an economical perspective."
+  },
+  { "startTime": 386.25, "person": "Gien", "text": " And it was like, hey, that's great." },
+  { "startTime": 387.85, "person": "Gien", "text": " But that's not what I need." },
+  {
+    "startTime": 389.09,
+    "person": "Gien",
+    "text": " I want more structure on faster ways to make decisions, but at the same time, more thought through."
+  },
+  { "startTime": 396.23, "person": "Gien", "text": " And so it started expanding." },
+  {
+    "startTime": 398.33,
+    "person": "Gien",
+    "text": " And it turns out that, you know, if you start looking at how to solve problems, there's actually a hell of a lot out there."
+  },
+  {
+    "startTime": 407.17,
+    "person": "Gien",
+    "text": " And then, you know, Kenny Bass asked me, hey, you know, you have this hobby called decision making, do you want to help write a book on collaborative software design?"
+  },
+  {
+    "startTime": 419.65,
+    "person": "Gien",
+    "text": " And, you know, fill it in with your experience there, because, you know, I think it will be valuable."
+  },
+  {
+    "startTime": 423.97,
+    "person": "Gien",
+    "text": " And so that's the reason why I said it's getting out of hand."
+  },
+  { "startTime": 428.03, "person": "Gien", "text": " I kind of wrote a book about it." },
+  {
+    "startTime": 430.79,
+    "person": "Gien",
+    "text": " I kind of been doing talks about it and podcasts."
+  },
+  { "startTime": 434.93, "person": "Gien", "text": " So that's sort of what happened." },
+  { "startTime": 439.21, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 439.69,
+    "person": "Karol",
+    "text": " I mean, looking at my lovely neurotypical self, I know that my decision making is"
+  },
+  {
+    "startTime": 445.43,
+    "person": "Karol",
+    "text": " completely different than a large number of people because in the conversations with my wife over"
+  },
+  {
+    "startTime": 453.37,
+    "person": "Karol",
+    "text": " my specific flavour of being neurospicy, I was like, you know, I went out to the apartment"
+  },
+  {
+    "startTime": 460.89,
+    "person": "Karol",
+    "text": " when I was in university, and I had an algorithm in my head that was adapting through the path that"
+  },
+  { "startTime": 468.07, "person": "Karol", "text": " I was taking to the university." },
+  { "startTime": 470.29, "person": "Karol", "text": " And that was only a 10 minute walk." },
+  {
+    "startTime": 472.17,
+    "person": "Karol",
+    "text": " And I had a whole algorithm of which points I need to pass through, go through to achieve all the points that I have on my list before I go to class."
+  },
+  {
+    "startTime": 483.37,
+    "person": "Karol",
+    "text": " And that's, I had the same kind of sensation looking back that joining the workforce completely derailed my decision making, because all of a sudden I was stumped with lack of decision making, or decision by shouting, which was like, what the hell's going on here?"
+  },
+  { "startTime": 503.09, "person": "Karol", "text": " Where's the merit of that decision?" },
+  { "startTime": 504.75, "person": "Karol", "text": " This is a stupid thing to do." },
+  { "startTime": 507.03, "person": "Karol", "text": " The shouting and the decision at hand." },
+  { "startTime": 511.77, "person": "Karol", "text": " Why?" },
+  { "startTime": 513.53, "person": "Karol", "text": " And there's that." },
+  {
+    "startTime": 518.19,
+    "person": "Karol",
+    "text": " So good that we talk about decisions, because I think decision making is one of the most problematic aspects of work in general."
+  },
+  {
+    "startTime": 526.17,
+    "person": "Karol",
+    "text": " And I think that a lot of people are making decisions being uninformed, or not even digging enough into the problem space."
+  },
+  {
+    "startTime": 536.03,
+    "person": "Karol",
+    "text": " We mentioned that quite a couple of times, we had the lovely stream with Woody Zhu on problem signals and symptoms, discussing this."
+  },
+  { "startTime": 546.39, "person": "Karol", "text": " So we did the problem aspects there." },
+  {
+    "startTime": 550.95,
+    "person": "Karol",
+    "text": " But if we're talking now about decisions, and decisions are usually about, well, we need to solve something, we need to make a decision about a specific topic."
+  },
+  {
+    "startTime": 559.35,
+    "person": "Karol",
+    "text": " So we can, can we make an assumption that we already dived into a problem space?"
+  },
+  {
+    "startTime": 564.97,
+    "person": "Karol",
+    "text": " Or should we not make that assumption for the sake of conversation?"
+  },
+  {
+    "startTime": 571.11,
+    "person": "Gien",
+    "text": " Um, I think, like, I'm not going to go too much into how to analyse the problems, because you mentioned a lot of it, and a lot of it is overlapping, like root cause analysis, and things like that."
+  },
+  {
+    "startTime": 588.29,
+    "person": "Gien",
+    "text": " So in a decision making theory, very often, we talk about the frame."
+  },
+  {
+    "startTime": 593.75,
+    "person": "Gien",
+    "text": " And how it so the frame is how you look at the decision that you have to make."
+  },
+  { "startTime": 599.13, "person": "Gien", "text": " And that's basically the problem." },
+  { "startTime": 601.35, "person": "Gien", "text": " How do I look at the problem?" },
+  {
+    "startTime": 603.71,
+    "person": "Gien",
+    "text": " And how you frame it sort of, you need to have options."
+  },
+  {
+    "startTime": 610.01,
+    "person": "Gien",
+    "text": " So I'm going to give a definition that I use for what a decision is, it's basically a choice between two or more alternatives that involves an irrevocable allocation of resources."
+  },
+  { "startTime": 621.39, "person": "Gien", "text": " It's a very boring definition." },
+  {
+    "startTime": 625.05,
+    "person": "Gien",
+    "text": " But it's interesting in two aspects, saying that one, you need more than one option, it says two or more, like, if there's only one thing, then you're not making a decision, technically."
+  },
+  {
+    "startTime": 639.91,
+    "person": "Gien",
+    "text": " And the irrevocable, irrevocable allocation of resources kind of helps you decide, well, to notice when have I made a decision?"
+  },
+  {
+    "startTime": 649.75,
+    "person": "Gien",
+    "text": " So we're talking about time, money, energy, and it turns a decision from a point in time into a process."
+  },
+  {
+    "startTime": 658.29,
+    "person": "Gien",
+    "text": " And the more time you invest in it, the more you have irrevocable allocation of resources."
+  },
+  { "startTime": 666.37, "person": "Gien", "text": " There." },
+  {
+    "startTime": 667.61,
+    "person": "Gien",
+    "text": " So that's why I think it's an interesting definition."
+  },
+  {
+    "startTime": 671.05,
+    "person": "Gien",
+    "text": " But you need more than, you know, one option."
+  },
+  {
+    "startTime": 674.49,
+    "person": "Gien",
+    "text": " And that's something that's often already missing, if you go to companies."
+  },
+  {
+    "startTime": 678.29,
+    "person": "Gien",
+    "text": " So how they talk about the problem, they said, like, do we swap to event sourcing or not?"
+  },
+  { "startTime": 685.23, "person": "Gien", "text": " Do we use Kafka or not?" },
+  {
+    "startTime": 688.01,
+    "person": "Gien",
+    "text": " And what they're actually doing is framing one of their options as the problem."
+  },
+  {
+    "startTime": 695.55,
+    "person": "Gien",
+    "text": " And so you still have two or more alternatives there, because we either go for Kafka or we don't."
+  },
+  { "startTime": 702.29, "person": "Gien", "text": " So that's good there." },
+  {
+    "startTime": 704.19,
+    "person": "Gien",
+    "text": " But because the solution or, you know, one of the options is inside your problem, how you analyse that entire thing is just very different than if you make a more clear problem statement."
+  },
+  {
+    "startTime": 718.57,
+    "person": "Gien",
+    "text": " And so we call that the framing of the problem."
+  },
+  {
+    "startTime": 721.63,
+    "person": "Gien",
+    "text": " And I think what Woody touched on about, you know, having the symptoms and needing to dive a bit deeper into it there, that's sort of where it fits in."
+  },
+  {
+    "startTime": 732.31,
+    "person": "Gien",
+    "text": " And it is, I always say, it is the hardest part of any decision, because it will set the, you know, the trajectory for whatever happens after for your analysis of the decision for your, the options that you generate for the outcome that you have."
+  },
+  { "startTime": 748.23, "person": "Gien", "text": " So it is the hardest part." },
+  {
+    "startTime": 750.39,
+    "person": "Gien",
+    "text": " That's sort of how I look at it most of the time."
+  },
+  {
+    "startTime": 756.87,
+    "person": "Karol",
+    "text": " In that sense, it's this kind of framing is then diluting the problem space."
+  },
+  {
+    "startTime": 766.59,
+    "person": "Karol",
+    "text": " Because you're not analysing the actual problem you're solving, you're already solutioning for the problem."
+  },
+  {
+    "startTime": 771.61,
+    "person": "Karol",
+    "text": " Yeah, which is, which is a fairly common, fairly common thing."
+  },
+  {
+    "startTime": 776.39,
+    "person": "Karol",
+    "text": " And now I'm lacking the, I had a stack of books on my on my desk, and I cleaned them today."
+  },
+  {
+    "startTime": 782.23,
+    "person": "Karol",
+    "text": " And now I would love to have that one book available."
+  },
+  {
+    "startTime": 785.15,
+    "person": "Karol",
+    "text": " So now I need to dig into my Google Drive to just bring it quickly back."
+  },
+  {
+    "startTime": 789.95,
+    "person": "Karol",
+    "text": " But basically, I loved the approach that was described in domain driven refactoring."
+  },
+  { "startTime": 799.63, "person": "Karol", "text": " Well, that was somewhere in the intro." },
+  {
+    "startTime": 801.89,
+    "person": "Karol",
+    "text": " Now, because I don't have it highlighted in the PDF, obviously, I don't, there's going to be a moment to find it."
+  },
+  {
+    "startTime": 806.83,
+    "person": "Karol",
+    "text": " But there was this description of problem solving that was attributed to Einstein."
+  },
+  {
+    "startTime": 815.37,
+    "person": "Karol",
+    "text": " That Einstein would spend when saving the world, which he would spend 55 minutes understanding the problem space, and only five minutes finding the actual solution."
+  },
+  {
+    "startTime": 829.55,
+    "person": "Karol",
+    "text": " And of course, I'm not able to find it in the in the PDF."
+  },
+  {
+    "startTime": 834.68,
+    "person": "Gien",
+    "text": " Yeah, if you had an hour to say there we go."
+  },
+  { "startTime": 838.34, "person": "Karol", "text": " So there we go." },
+  {
+    "startTime": 843.32,
+    "person": "Karol",
+    "text": " The actual quote from the book is we tend to seek and try to find the solution as quickly as possible, and leave the problem space as quickly too."
+  },
+  {
+    "startTime": 852.1,
+    "person": "Karol",
+    "text": " We are uncomfortable staying in this area, but it is where our client needs to reside."
+  },
+  {
+    "startTime": 858.08,
+    "person": "Karol",
+    "text": " It is the zone that allows us to acquire more information about the problems our client asks us to solve through the software we will develop for them."
+  },
+  {
+    "startTime": 867,
+    "person": "Karol",
+    "text": " Because writing software means solving business problems."
+  },
+  {
+    "startTime": 871.74,
+    "person": "Karol",
+    "text": " And I find it that quite often the decisions being made are completely misaligned with the actual problem."
+  },
+  {
+    "startTime": 882.51,
+    "person": "Karol",
+    "text": " Also, a different thing that comes to mind, maybe that's a completely different topic, is a lack of a decision also a decision?"
+  },
+  { "startTime": 891.19, "person": "Gien", "text": " It is." },
+  {
+    "startTime": 893.21,
+    "person": "Gien",
+    "text": " I think not making a decision is making a decision."
+  },
+  { "startTime": 898.41, "person": "Karol", "text": " Because you decided to postpone?" },
+  { "startTime": 900.85, "person": "Gien", "text": " Time will decide for you." },
+  {
+    "startTime": 904.49,
+    "person": "Gien",
+    "text": " You will have less and less alternatives available."
+  },
+  {
+    "startTime": 909.27,
+    "person": "Gien",
+    "text": " Yeah, I think at some point, was it Rebecca that talked about the last responsible moment of making a decision is when you should make the decision when it comes to software design?"
+  },
+  {
+    "startTime": 923.05,
+    "person": "Gien",
+    "text": " I'm blanking on the name there, but there's like this last responsible moment."
+  },
+  {
+    "startTime": 930.03,
+    "person": "Gien",
+    "text": " And if you don't take that, then time will decide for you."
+  },
+  {
+    "startTime": 937.39,
+    "person": "Gien",
+    "text": " As a decision maker, what could happen is that someone else decides because they're tired of waiting."
+  },
+  {
+    "startTime": 948.41,
+    "person": "Gien",
+    "text": " So from a decision maker perspective, time has decided for me."
+  },
+  {
+    "startTime": 955.07,
+    "person": "Gien",
+    "text": " So that's how you kind of could look at it there."
+  },
+  {
+    "startTime": 959.27,
+    "person": "Karol",
+    "text": " I think you're mentioning Rebecca Wirfsbrock, to be precise, because the audience has no idea what Rebecca we're talking about."
+  },
+  {
+    "startTime": 974.33,
+    "person": "Karol",
+    "text": " Agile architecture myths, myth number two, architecture decisions should be made at the last responsible moment."
+  },
+  {
+    "startTime": 980.65,
+    "person": "Karol",
+    "text": " I think that's the thing you're referring to here, right?"
+  },
+  { "startTime": 984.39, "person": "Karol", "text": " Yeah." },
+  { "startTime": 986.45, "person": "Karol", "text": " Sounds like that." },
+  { "startTime": 988.17, "person": "Karol", "text": " All right." },
+  { "startTime": 988.55, "person": "Karol", "text": " Yeah." },
+  { "startTime": 989.93, "person": "Karol", "text": " Probably a good read." },
+  {
+    "startTime": 991.19,
+    "person": "Karol",
+    "text": " I have no idea what it is about, because I never saw that article."
+  },
+  {
+    "startTime": 995.89,
+    "person": "Karol",
+    "text": " But I'm just going to quickly push this as a QR code for our audience."
+  },
+  {
+    "startTime": 1001.29,
+    "person": "Karol",
+    "text": " If somebody is interested to read up on this, here we go."
+  },
+  {
+    "startTime": 1004.79,
+    "person": "Karol",
+    "text": " Agile architecture myths, number two, architecture decisions should be made at the last responsible moment."
+  },
+  {
+    "startTime": 1014.67,
+    "person": "Karol",
+    "text": " And yeah, that's probably a problem of, again, not making a decision then."
+  },
+  { "startTime": 1020.43, "person": "Gien", "text": " Yeah." },
+  {
+    "startTime": 1022.17,
+    "person": "Gien",
+    "text": " The way I calculate it, so what wasn't in the podcast is sort of the model I have in my head for going through it."
+  },
+  { "startTime": 1033.69, "person": "Gien", "text": " So I have this problem." },
+  {
+    "startTime": 1038.27,
+    "person": "Gien",
+    "text": " And so the first thing I ask myself is, do I have a problem or do I have a polarity?"
+  },
+  { "startTime": 1046.51, "person": "Karol", "text": " Okay." },
+  { "startTime": 1046.829, "person": "Karol", "text": " What's the polarity then?" },
+  {
+    "startTime": 1049.31,
+    "person": "Gien",
+    "text": " So a polarity is basically an ongoing issue or a challenge where picking one solution over another will not be a good outcome."
+  },
+  { "startTime": 1062.15, "person": "Gien", "text": " You'll not get a good solution from it." },
+  {
+    "startTime": 1064.73,
+    "person": "Gien",
+    "text": " For example, since I do have domain-driven design and software design as a background, people often ask, yeah, but when should we model and when should we code?"
+  },
+  { "startTime": 1079.15, "person": "Gien", "text": " When do we go from modelling to coding?" },
+  { "startTime": 1081.95, "person": "Gien", "text": " But that's not a problem." },
+  {
+    "startTime": 1086.15,
+    "person": "Gien",
+    "text": " They try to solve it by tell us when we need to do this, but it's a polarity that you need to manage."
+  },
+  { "startTime": 1093.09, "person": "Gien", "text": " Because polarity needs to be managed." },
+  { "startTime": 1094.87, "person": "Gien", "text": " You can't solve them." },
+  {
+    "startTime": 1096.69,
+    "person": "Gien",
+    "text": " So you model, you're in that problem space."
+  },
+  {
+    "startTime": 1101.47,
+    "person": "Gien",
+    "text": " You model, you try to understand the problem."
+  },
+  { "startTime": 1103.79, "person": "Gien", "text": " You go a bit deeper." },
+  {
+    "startTime": 1104.97,
+    "person": "Gien",
+    "text": " At some point, you feel you're not getting valuable information anymore."
+  },
+  {
+    "startTime": 1108.35,
+    "person": "Gien",
+    "text": " So you move to the other point, the coding."
+  },
+  { "startTime": 1112.45, "person": "Gien", "text": " You code." },
+  {
+    "startTime": 1113.53,
+    "person": "Gien",
+    "text": " But as you code, you hit a problem and you're like, oh, yeah, something isn't clear here."
+  },
+  { "startTime": 1119.27, "person": "Gien", "text": " I don't understand something." },
+  { "startTime": 1120.69, "person": "Gien", "text": " We haven't thought of something." },
+  {
+    "startTime": 1122.17,
+    "person": "Gien",
+    "text": " So you go back to modelling and you model a bit more and you figure this out and you go back to coding."
+  },
+  { "startTime": 1128.89, "person": "Gien", "text": " So you don't solve that." },
+  {
+    "startTime": 1130.89,
+    "person": "Gien",
+    "text": " There's no solving the modelling versus coding thing."
+  },
+  {
+    "startTime": 1134.37,
+    "person": "Gien",
+    "text": " It's more about finding a good balance between doing those two."
+  },
+  { "startTime": 1138.55, "person": "Gien", "text": " You have to manage." },
+  {
+    "startTime": 1140.23,
+    "person": "Gien",
+    "text": " That's the big difference between a problem and a polarity."
+  },
+  { "startTime": 1143.71, "person": "Gien", "text": " And very often, yeah." },
+  {
+    "startTime": 1146.03,
+    "person": "Karol",
+    "text": " That sounds like an iterative approach, basically."
+  },
+  { "startTime": 1151.53, "person": "Gien", "text": " Yeah." },
+  { "startTime": 1152.45, "person": "Gien", "text": " We represent it by the infinity symbol." },
+  { "startTime": 1157.99, "person": "Gien", "text": " There's a polarity map for that as well." },
+  {
+    "startTime": 1162.05,
+    "person": "Gien",
+    "text": " The name of the person escapes me, but if you buy the book, you'll find a topic on polarity management and the map there where you say that you sort of get good things from both."
+  },
+  {
+    "startTime": 1175.29,
+    "person": "Gien",
+    "text": " But if you do it for too long, you get negative effects from both."
+  },
+  {
+    "startTime": 1180.17,
+    "person": "Gien",
+    "text": " And you sort of, you know, you analyse that."
+  },
+  {
+    "startTime": 1182.45,
+    "person": "Gien",
+    "text": " And then what you have to do is find that balance so that you don't get the negative effects of or get them as less often as possible."
+  },
+  {
+    "startTime": 1193.95,
+    "person": "Gien",
+    "text": " So that's why we say you manage a polarity."
+  },
+  {
+    "startTime": 1196.21,
+    "person": "Gien",
+    "text": " And that's why we have that infinity symbol because the moment you go into the negative side of something, you actually have to go back to the other side and balance everything."
+  },
+  {
+    "startTime": 1210.05,
+    "person": "Karol",
+    "text": " So just to put the picture to it, does that look graphically something like this?"
+  },
+  { "startTime": 1218.91, "person": "Gien", "text": " Yes." },
+  {
+    "startTime": 1220.19,
+    "person": "Gien",
+    "text": " We extended it a bit because we look for signals and observations so that you know when you're hitting the negative side and you know what happens."
+  },
+  {
+    "startTime": 1233.81,
+    "person": "Gien",
+    "text": " For example, if you're in a modelling session and people start taking a lot of toilet breaks or they start checking their phones, you know that, hey, this is not that interesting anymore for people."
+  },
+  { "startTime": 1245.47, "person": "Gien", "text": " We probably should go back to coding." },
+  {
+    "startTime": 1249.09,
+    "person": "Gien",
+    "text": " And then in the coding, you also have the signals and the observations that tell you, OK, it's probably time to move back to the other side because we're seeing too many of these."
+  },
+  {
+    "startTime": 1262.07,
+    "person": "Gien",
+    "text": " So we extended it a bit than what you have here."
+  },
+  { "startTime": 1265.25, "person": "Gien", "text": " But that's basically the polarity map." },
+  {
+    "startTime": 1267.31,
+    "person": "Gien",
+    "text": " It's a really interesting exercise to do whenever you have a polarity to sort of sit down with your team and say, OK, how are we going to manage this?"
+  },
+  { "startTime": 1277.59, "person": "Gien", "text": " How are we going to deal with it?" },
+  {
+    "startTime": 1281.53,
+    "person": "Gien",
+    "text": " That's why we have the map and that's why we put it in."
+  },
+  {
+    "startTime": 1286.63,
+    "person": "Karol",
+    "text": " I'm trying to imagine in my head a few examples, but I'm struggling."
+  },
+  { "startTime": 1297.21, "person": "Karol", "text": " Can you give a few more examples?" },
+  {
+    "startTime": 1299.17,
+    "person": "Karol",
+    "text": " Because, OK, modelling versus coding, one thing, but any others that could?"
+  },
+  {
+    "startTime": 1305.81,
+    "person": "Gien",
+    "text": " Yeah, in software context, we often have either the whole versus the parts."
+  },
+  {
+    "startTime": 1313.87,
+    "person": "Gien",
+    "text": " That's a very generic one, but you do see it often happening."
+  },
+  {
+    "startTime": 1317.73,
+    "person": "Gien",
+    "text": " Like you have a team and things you have to do as team and individual freedom."
+  },
+  {
+    "startTime": 1324.47,
+    "person": "Gien",
+    "text": " So team decisions and team constraints and individual freedom."
+  },
+  {
+    "startTime": 1328.95,
+    "person": "Gien",
+    "text": " And that's also something that you have to balance and you have to try to find a way to deal with that."
+  },
+  {
+    "startTime": 1335.11,
+    "person": "Gien",
+    "text": " And it's not a problem you can solve because sometimes you'll be a bit too much on the team side and sometimes you'll be a bit more too much on the individual side."
+  },
+  {
+    "startTime": 1346.09,
+    "person": "Gien",
+    "text": " So you kind of have to try to find a balance so that you get the best of both worlds."
+  },
+  {
+    "startTime": 1353.85,
+    "person": "Karol",
+    "text": " So like, for example, in terms of decisions over whatever we're building, which part should be a team decision and which part should be an individual's decision in code?"
+  },
+  { "startTime": 1365.05, "person": "Karol", "text": " That's a polarity that needs managing." },
+  { "startTime": 1368.17, "person": "Gien", "text": " Yeah." },
+  {
+    "startTime": 1368.81,
+    "person": "Gien",
+    "text": " And at some point you'll notice that, oh, actually this is making this as an individual decision, you know, wasn't the best thing after all."
+  },
+  {
+    "startTime": 1377.11,
+    "person": "Gien",
+    "text": " So we'll probably have to, you know, go back to the team and reach a consensus there."
+  },
+  {
+    "startTime": 1382.33,
+    "person": "Gien",
+    "text": " And then I can go back to whatever I'm doing and continue to do it individually."
+  },
+  { "startTime": 1389.4, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 1390.08,
+    "person": "Karol",
+    "text": " And then in that, of course, we have some decisions to make because we need to manage it."
+  },
+  {
+    "startTime": 1394.76,
+    "person": "Karol",
+    "text": " So we need to decide what are the points where we start managing to work, to move towards the other pole and back."
+  },
+  { "startTime": 1402.12, "person": "Karol", "text": " So where are the negatives?" },
+  {
+    "startTime": 1403.44,
+    "person": "Karol",
+    "text": " We start hitting the negatives so that we need to flip to the pole."
+  },
+  { "startTime": 1406.3, "person": "Gien", "text": " Yeah." },
+  { "startTime": 1407.88, "person": "Karol", "text": " Oh, OK." },
+  { "startTime": 1410.54, "person": "Gien", "text": " If I'm making." },
+  { "startTime": 1411.66, "person": "Gien", "text": " Yeah." },
+  {
+    "startTime": 1413.2,
+    "person": "Gien",
+    "text": " Like the example that I actually made a bunch of decisions and we have a team of eight people and already three people actually came to me because they were stuck and they didn't understand."
+  },
+  {
+    "startTime": 1426.22,
+    "person": "Gien",
+    "text": " Then you're something like, oh, we actually have to go to team and discuss this and align and make a decision there and reach a consensus there because I made them individually."
+  },
+  {
+    "startTime": 1436.02,
+    "person": "Gien",
+    "text": " But we're hitting these negatives of people getting stuck in their, you know, in their day to day to day work with what I decided."
+  },
+  { "startTime": 1444.8, "person": "Gien", "text": " So a bit like that." },
+  {
+    "startTime": 1448.56,
+    "person": "Karol",
+    "text": " OK, so polarity and bad framing of problems is, let's say."
+  },
+  {
+    "startTime": 1456.36,
+    "person": "Karol",
+    "text": " One of the problems of decision making that we're trying to decide."
+  },
+  {
+    "startTime": 1462.68,
+    "person": "Karol",
+    "text": " Instead of managing polarity, we try to decide for polarity, for a specific pole and then bad framing also creates a problem."
+  },
+  {
+    "startTime": 1472.78,
+    "person": "Karol",
+    "text": " What are mechanisms you see that heavily derail decision making processes?"
+  },
+  {
+    "startTime": 1481.64,
+    "person": "Gien",
+    "text": " Mechanisms that heavily derail the decision making process?"
+  },
+  {
+    "startTime": 1486.08,
+    "person": "Karol",
+    "text": " Yeah, because making decisions over polarity rather than managing it, I see that as something that could derail a decision making process."
+  },
+  {
+    "startTime": 1497.64,
+    "person": "Karol",
+    "text": " Bad framing of a problem that definitely is going to derail a decision making process and will not reach a good decision that way."
+  },
+  {
+    "startTime": 1506.76,
+    "person": "Karol",
+    "text": " What other aspects could affect the decision making so that it actually derails and we reach the wrong decision or we reach an ineffective, inefficient, whatever the actual need is?"
+  },
+  { "startTime": 1524.52, "person": "Gien", "text": " I would say people." },
+  {
+    "startTime": 1528.12,
+    "person": "Gien",
+    "text": " People is one of the biggest things that can derail a decision making process."
+  },
+  {
+    "startTime": 1534.36,
+    "person": "Karol",
+    "text": " The first biggest problem in software architecture by Andrew Harmel."
+  },
+  { "startTime": 1540.78, "person": "Gien", "text": " Yeah, we have something similar." },
+  {
+    "startTime": 1544.18,
+    "person": "Gien",
+    "text": " In one of our talks about collaborative software side, we explain the process that we go through when you're doing collaborative modelling with event storing and then putting everyone in a room and decomposing and then strategising."
+  },
+  {
+    "startTime": 1561.68,
+    "person": "Gien",
+    "text": " Then we ask the question, what could go wrong?"
+  },
+  { "startTime": 1564.74, "person": "Gien", "text": " The answer is people." },
+  { "startTime": 1566.2, "person": "Gien", "text": " People can go wrong very much." },
+  {
+    "startTime": 1569.68,
+    "person": "Gien",
+    "text": " That's the same for any decision that you make."
+  },
+  { "startTime": 1572.52, "person": "Gien", "text": " We already mentioned a few." },
+  {
+    "startTime": 1574,
+    "person": "Gien",
+    "text": " The person who yells the loudest gets their way."
+  },
+  {
+    "startTime": 1580.1,
+    "person": "Gien",
+    "text": " That is a person derailing the decision making there."
+  },
+  {
+    "startTime": 1586.16,
+    "person": "Gien",
+    "text": " I think conflict is the most common one, not agreeing on which option you should go for, which is why the model that I use talks about preferences, expressing one's preference on a decision, on which option do you prefer and why."
+  },
+  { "startTime": 1610.94, "person": "Gien", "text": " That helps with that conflict." },
+  {
+    "startTime": 1615.16,
+    "person": "Gien",
+    "text": " People are getting listened to and they get to express that."
+  },
+  { "startTime": 1621.1, "person": "Gien", "text": " That's great." },
+  {
+    "startTime": 1622.24,
+    "person": "Gien",
+    "text": " The other thing that I do is it's a very simple technique."
+  },
+  { "startTime": 1627, "person": "Gien", "text": " I love it." },
+  { "startTime": 1629.34, "person": "Gien", "text": " Everyone I introduced it to also loves it." },
+  { "startTime": 1632.2, "person": "Gien", "text": " It's called the Procon Fix List." },
+  { "startTime": 1638, "person": "Gien", "text": " Everyone knows the Procon List, right?" },
+  { "startTime": 1641.56, "person": "Gien", "text": " It's that with a twist, basically." },
+  {
+    "startTime": 1644.66,
+    "person": "Gien",
+    "text": " That's what makes it so interesting because you add a fix to it."
+  },
+  {
+    "startTime": 1649.52,
+    "person": "Gien",
+    "text": " For every negative thing that you can come up with, you think, is there anything we can do to mitigate it?"
+  },
+  {
+    "startTime": 1658.32,
+    "person": "Gien",
+    "text": " You're never going to turn something negative into something positive."
+  },
+  {
+    "startTime": 1662.62,
+    "person": "Gien",
+    "text": " You can make the impact of some negative consequences of picking one option over another have less impact."
+  },
+  { "startTime": 1670.32, "person": "Gien", "text": " That's the fix." },
+  {
+    "startTime": 1672.36,
+    "person": "Gien",
+    "text": " A simple example of day-to-day life is that you can say, I want to exercise more."
+  },
+  {
+    "startTime": 1677.36,
+    "person": "Gien",
+    "text": " I'm going to drive to work by bike, which a lot of people already do in the Netherlands."
+  },
+  {
+    "startTime": 1685.3,
+    "person": "Gien",
+    "text": " One of the biggest downsides for me when I had to bike to school was that you get wet when it rains."
+  },
+  {
+    "startTime": 1693.7,
+    "person": "Gien",
+    "text": " A fix is that I'll put some dry clothes in the office."
+  },
+  {
+    "startTime": 1698.82,
+    "person": "Gien",
+    "text": " I'll buy some rain protection equipment for it."
+  },
+  { "startTime": 1705.6, "person": "Gien", "text": " You're still driving to rain." },
+  { "startTime": 1707.58, "person": "Gien", "text": " Maybe you like that, but I don't." },
+  {
+    "startTime": 1709.46,
+    "person": "Gien",
+    "text": " It's not something positive all of a sudden, but it does have less impact."
+  },
+  {
+    "startTime": 1715.8,
+    "person": "Gien",
+    "text": " Even then, when you pick an alternative, that might not be someone's preference."
+  },
+  {
+    "startTime": 1722.7,
+    "person": "Gien",
+    "text": " If you don't have a preference, you care more about all the negative consequences you're going to get."
+  },
+  { "startTime": 1727.74, "person": "Gien", "text": " There are fixes and they're mitigated." },
+  {
+    "startTime": 1731.62,
+    "person": "Gien",
+    "text": " It makes easier to accept something you might not have a preference for."
+  },
+  { "startTime": 1736.96, "person": "Gien", "text": " You do that together with the entire team." },
+  {
+    "startTime": 1739.42,
+    "person": "Gien",
+    "text": " They help think about the fixes and they help think about the positive things of the alternatives that they don't like."
+  },
+  {
+    "startTime": 1748.96,
+    "person": "Gien",
+    "text": " That broadens the mind again there as well."
+  },
+  {
+    "startTime": 1755.42,
+    "person": "Karol",
+    "text": " That sounds like, from my architecture language, a trade-off analysis on steroids."
+  },
+  {
+    "startTime": 1766.5,
+    "person": "Gien",
+    "text": " So, when I talk about making design decisions, I've heard it a thousand times."
+  },
+  { "startTime": 1775.52, "person": "Gien", "text": " Everything is a trade-off." },
+  {
+    "startTime": 1777.8,
+    "person": "Gien",
+    "text": " But when you use this pro-com fix list, you make different designs, something that most teams already don't do."
+  },
+  {
+    "startTime": 1787.4,
+    "person": "Gien",
+    "text": " But then you're not making a decision because you only have one design."
+  },
+  { "startTime": 1792.08, "person": "Gien", "text": " So, you need multiple designs." },
+  {
+    "startTime": 1793.8,
+    "person": "Gien",
+    "text": " When you have two designs, you can easily take bits of it and start making three and four."
+  },
+  { "startTime": 1799.14, "person": "Gien", "text": " The ball gets rolling once you have two." },
+  {
+    "startTime": 1803.36,
+    "person": "Gien",
+    "text": " You think of some interesting combinations that are very worth considering."
+  },
+  {
+    "startTime": 1808.64,
+    "person": "Gien",
+    "text": " Then you analyse them with this simple visualisation technique."
+  },
+  {
+    "startTime": 1812.58,
+    "person": "Gien",
+    "text": " I said, if you take design A over design B, what is your trade-off?"
+  },
+  {
+    "startTime": 1819.8,
+    "person": "Gien",
+    "text": " Everything you're going to get from picking design A and nothing you're going to get because you're not picking the others."
+  },
+  { "startTime": 1826.94, "person": "Gien", "text": " That is your trade-off." },
+  { "startTime": 1828.72, "person": "Gien", "text": " It's visually in front of you." },
+  {
+    "startTime": 1833.52,
+    "person": "Gien",
+    "text": " When people say it's always a trade-off, you can actually point at it and say, but look at this trade-off."
+  },
+  {
+    "startTime": 1839.46,
+    "person": "Gien",
+    "text": " I don't agree with the trade-off we're getting."
+  },
+  {
+    "startTime": 1844.31,
+    "person": "Karol",
+    "text": " Yeah, because you can disagree with the statement of a trade-off because that can be actually a false positive of a trade-off."
+  },
+  {
+    "startTime": 1854.99,
+    "person": "Karol",
+    "text": " Somebody identified that this is actually the consequence of this."
+  },
+  {
+    "startTime": 1858.73,
+    "person": "Karol",
+    "text": " This is the trade-off we'd be getting, but that might not be true."
+  },
+  { "startTime": 1862.89, "person": "Karol", "text": " That might be mitigated." },
+  { "startTime": 1864.69, "person": "Karol", "text": " Like you said, pro-cons and fix." },
+  {
+    "startTime": 1866.91,
+    "person": "Karol",
+    "text": " So, if you can mitigate that this suddenly is not a problematic aspect or not as problematic anymore."
+  },
+  {
+    "startTime": 1875.01,
+    "person": "Karol",
+    "text": " That will do in favour of this design, for example, or this technology or everything is a trade-off."
+  },
+  {
+    "startTime": 1883.05,
+    "person": "Karol",
+    "text": " We can apply this to anything outside of architecture, really."
+  },
+  { "startTime": 1888.45, "person": "Gien", "text": " I only asked for preferences." },
+  { "startTime": 1890.59, "person": "Gien", "text": " I only opened the preference." },
+  {
+    "startTime": 1893.93,
+    "person": "Gien",
+    "text": " So, first, I do the more analytical, rational thinking about all the options that we have, which opens people's minds."
+  },
+  {
+    "startTime": 1901.95,
+    "person": "Gien",
+    "text": " Then I start asking about preferences because while you're doing the first thing, their preference might actually already change because you're now thinking about it a bit better."
+  },
+  { "startTime": 1913.45, "person": "Gien", "text": " I remember this three or four jobs ago." },
+  { "startTime": 1916.77, "person": "Gien", "text": " We had micro front-ends." },
+  {
+    "startTime": 1919.83,
+    "person": "Gien",
+    "text": " The reason why we had micro front-ends was one, very fuzzy."
+  },
+  {
+    "startTime": 1924.97,
+    "person": "Gien",
+    "text": " Two, it hadn't really been thought through."
+  },
+  {
+    "startTime": 1928.39,
+    "person": "Gien",
+    "text": " The original reasoning behind it just never happened."
+  },
+  {
+    "startTime": 1932.11,
+    "person": "Gien",
+    "text": " It was also because of how our back-end was structured, not possible because we could not deploy a front-end on its own."
+  },
+  { "startTime": 1941.01, "person": "Gien", "text": " We couldn't do that." },
+  {
+    "startTime": 1941.89,
+    "person": "Gien",
+    "text": " I was like, why don't we go back to one big front-end here because we have a lot of accidental complexity with these micro front-ends and we're actually not using the benefits of it."
+  },
+  { "startTime": 1955.23, "person": "Gien", "text": " Most of what I got was, yeah, but what if?" },
+  { "startTime": 1958.33, "person": "Gien", "text": " What if this happens?" },
+  { "startTime": 1959.73, "person": "Gien", "text": " What if that happens?" },
+  { "startTime": 1960.85, "person": "Gien", "text": " What if this and that?" },
+  { "startTime": 1965.25, "person": "Gien", "text": " Basically, there was fear behind it." },
+  {
+    "startTime": 1973.47,
+    "person": "Gien",
+    "text": " If you talk about preferences, you can express that, but nobody wants to come out and say, I'm actually scared if we do this, it will bite us in the ass, which is mostly what they meant."
+  },
+  {
+    "startTime": 1990.39,
+    "person": "Gien",
+    "text": " We don't talk about that because you have to make rational decisions and you have to be a rational human being, which we're not."
+  },
+  {
+    "startTime": 1998.27,
+    "person": "Gien",
+    "text": " We all know that we're not, but you have to be that because it's technology and software."
+  },
+  {
+    "startTime": 2006.71,
+    "person": "Gien",
+    "text": " Most of it was just the people that were resisting it were just scared that we were going to make this decision, revert back to a single front-end, and that it will really bite us in the ass."
+  },
+  {
+    "startTime": 2023.65,
+    "person": "Gien",
+    "text": " Then I did the Procon fix analysis and we sat down and we thought about it."
+  },
+  {
+    "startTime": 2028.13,
+    "person": "Gien",
+    "text": " It was how much traffic are we going to get?"
+  },
+  { "startTime": 2030.37, "person": "Gien", "text": " What's the biggest thing?" },
+  { "startTime": 2032.43, "person": "Gien", "text": " Then you can bring that down." },
+  {
+    "startTime": 2036.17,
+    "person": "Gien",
+    "text": " If you never do any analysis, all people have is those emotions that they're expressing as rational reasons why they don't want an option."
+  },
+  {
+    "startTime": 2048.57,
+    "person": "Gien",
+    "text": " You do the analysis, you mitigate those emotions, and then you start talking about, okay, but what preference do you have and why do you have them?"
+  },
+  {
+    "startTime": 2058.33,
+    "person": "Gien",
+    "text": " Sometimes you get things like, well, we tried it two companies ago."
+  },
+  { "startTime": 2063.15, "person": "Gien", "text": " It really didn't work well." },
+  { "startTime": 2065.01, "person": "Gien", "text": " Okay, well, we're in a different context." },
+  { "startTime": 2067.85, "person": "Gien", "text": " We're in a different situation." },
+  { "startTime": 2069.429, "person": "Gien", "text": " We can learn from that." },
+  { "startTime": 2071.05, "person": "Gien", "text": " Why didn't it work well?" },
+  {
+    "startTime": 2072.409,
+    "person": "Gien",
+    "text": " Please tell us so that we can incorporate this."
+  },
+  { "startTime": 2075.71, "person": "Gien", "text": " I find it very handy." },
+  {
+    "startTime": 2078.429,
+    "person": "Gien",
+    "text": " You get a lot deeper into what exactly is happening in people's minds when they're making a decision, which is those two very simple things."
+  },
+  {
+    "startTime": 2088.429,
+    "person": "Karol",
+    "text": " I find it myself that quite often, emotions when unaddressed in a decision-making process, they speak a lot louder than any kind of argument if they're not voiced through why, why, why, why, why."
+  },
+  {
+    "startTime": 2106.75,
+    "person": "Karol",
+    "text": " What is the actual root cause of those emotions?"
+  },
+  {
+    "startTime": 2110.79,
+    "person": "Karol",
+    "text": " Then when they are completely not voiced, it's not even about creating the space to make them hurt, because if somebody doesn't want to express that, they will not express that anyways."
+  },
+  {
+    "startTime": 2123.41,
+    "person": "Karol",
+    "text": " But they become more of a problem and derailment than any decision we need to make."
+  },
+  {
+    "startTime": 2129.29,
+    "person": "Karol",
+    "text": " Going back to the biggest problem in software architecture, people and their emotions, right?"
+  },
+  { "startTime": 2135.33, "person": "Karol", "text": " Yeah." },
+  { "startTime": 2136.03, "person": "Karol", "text": " Which is the standard problem there." },
+  {
+    "startTime": 2138.93,
+    "person": "Gien",
+    "text": " If you look at how you can make decisions, you can go very authoritative and do it all on your own and then simply say, hey, this is the thing that we're going to do."
+  },
+  {
+    "startTime": 2157.07,
+    "person": "Gien",
+    "text": " Or you can go very broad and you can say, you know, very democratic and you say, you know, I have an idea or I have this problem."
+  },
+  { "startTime": 2166.19, "person": "Gien", "text": " Let's, you know, work on it together." },
+  { "startTime": 2168.21, "person": "Gien", "text": " Anything goes." },
+  { "startTime": 2169.13, "person": "Gien", "text": " Anything is welcome." },
+  {
+    "startTime": 2170.63,
+    "person": "Gien",
+    "text": " And then you have any stage in between those two extremes, basically."
+  },
+  {
+    "startTime": 2176.77,
+    "person": "Gien",
+    "text": " And people always say like, oh yeah, but you can't do the authoritative decision-making."
+  },
+  { "startTime": 2182.79, "person": "Gien", "text": " No, you can't do that." },
+  { "startTime": 2184.37, "person": "Gien", "text": " And I'm like, yes, you can." },
+  {
+    "startTime": 2185.63,
+    "person": "Gien",
+    "text": " And sometimes you have to, because doing it more democratic takes a hell of a lot more time, right?"
+  },
+  {
+    "startTime": 2193.85,
+    "person": "Gien",
+    "text": " It's a far longer process than if you're making a decision on your own."
+  },
+  {
+    "startTime": 2198.37,
+    "person": "Gien",
+    "text": " And also like if you're deciding about, okay, which technologies is the company allowed to use, which programming languages are they allowed to use, then it's okay to do this in an authoritative way."
+  },
+  {
+    "startTime": 2211.71,
+    "person": "Gien",
+    "text": " Because, you know, if you're a CTO or something like that, you have very different concerns."
+  },
+  {
+    "startTime": 2217.61,
+    "person": "Gien",
+    "text": " And so when you say, look, only Java or Python, and we're going to do it this way, and that's fine."
+  },
+  {
+    "startTime": 2226.29,
+    "person": "Gien",
+    "text": " The problem is with how it gets communicated."
+  },
+  {
+    "startTime": 2232.73,
+    "person": "Gien",
+    "text": " They just say like, that's what you're going to do from now on."
+  },
+  { "startTime": 2236.53, "person": "Gien", "text": " And then they just walk away." },
+  { "startTime": 2239.21, "person": "Gien", "text": " And then you get resistance." },
+  {
+    "startTime": 2242.37,
+    "person": "Gien",
+    "text": " Because, and I have done this myself, and maybe some people who I can't see, hi, lovely people."
+  },
+  {
+    "startTime": 2250.41,
+    "person": "Gien",
+    "text": " I keep forgetting we're having an audience."
+  },
+  { "startTime": 2253.39, "person": "Gien", "text": " I'm so sorry, but it's..." },
+  { "startTime": 2256.05, "person": "Karol", "text": " That's fine." },
+  { "startTime": 2257.53, "person": "Karol", "text": " Okay." },
+  {
+    "startTime": 2260.55,
+    "person": "Gien",
+    "text": " Maybe you have that too, that people came in and they made a decision and it's going to affect your job and not their job."
+  },
+  { "startTime": 2269.73, "person": "Gien", "text": " And they're going to tell you what to do?" },
+  {
+    "startTime": 2272.45,
+    "person": "Gien",
+    "text": " They're going to make the decision without consulting you?"
+  },
+  { "startTime": 2275.29, "person": "Gien", "text": " Are you serious?" },
+  { "startTime": 2276.81, "person": "Gien", "text": " Hell no." },
+  {
+    "startTime": 2282.13,
+    "person": "Karol",
+    "text": " I've been in that emotional state quite a few times."
+  },
+  {
+    "startTime": 2284.95,
+    "person": "Karol",
+    "text": " But then if I dig deeper, I know that this also affects their work."
+  },
+  {
+    "startTime": 2290.95,
+    "person": "Karol",
+    "text": " But the problem is the lack of why and lack of understanding why that decision was made."
+  },
+  { "startTime": 2297.39, "person": "Karol", "text": " And that just throws me off entirely." },
+  {
+    "startTime": 2300.79,
+    "person": "Karol",
+    "text": " I hate this kind of situation where I'm communicated with a decision without any proper grounds for that decision."
+  },
+  {
+    "startTime": 2308.09,
+    "person": "Karol",
+    "text": " Even worse, if we actually discussed that topic a week ago, decided that that decision is not optimal, and then there's a revert to that decision without any justification, any reason."
+  },
+  { "startTime": 2324.5, "person": "Gien", "text": " Just..." },
+  { "startTime": 2325.16, "person": "Gien", "text": " I know, right?" },
+  {
+    "startTime": 2326.08,
+    "person": "Gien",
+    "text": " And so that's called, it's a special form of conflict, and it's called resistance."
+  },
+  {
+    "startTime": 2334.26,
+    "person": "Gien",
+    "text": " And resistance, basically, it happens when you don't get any input into a decision, or you don't feel heard."
+  },
+  {
+    "startTime": 2347.72,
+    "person": "Gien",
+    "text": " I had this at one point, we needed to enable a formatter."
+  },
+  {
+    "startTime": 2357.14,
+    "person": "Gien",
+    "text": " And our team lead formulated it as, I want to hear what you think would be the best way to format your code."
+  },
+  {
+    "startTime": 2366.9,
+    "person": "Gien",
+    "text": " And of course, you're asking that to a bunch of programmers."
+  },
+  {
+    "startTime": 2371.14,
+    "person": "Gien",
+    "text": " And so I sat down, I was like, oh yeah, because the way I format my code is the best way to format code, of course."
+  },
+  {
+    "startTime": 2379.54,
+    "person": "Gien",
+    "text": " And so I started, I do it like this, and I made this little presentation, and I wrote down the reasons why, and then I went to it."
+  },
+  {
+    "startTime": 2386.78,
+    "person": "Gien",
+    "text": " And it was just swept off the table constantly."
+  },
+  {
+    "startTime": 2389.18,
+    "person": "Gien",
+    "text": " And it was like, no, no, we're going to go with the default settings."
+  },
+  { "startTime": 2392.96, "person": "Gien", "text": " And I was like, what the hell?" },
+  {
+    "startTime": 2394.6,
+    "person": "Gien",
+    "text": " And so I started resisting, and it took a long time before I installed that formatter."
+  },
+  {
+    "startTime": 2400.72,
+    "person": "Gien",
+    "text": " And you might think that I was a child, I was not a child."
+  },
+  { "startTime": 2404.34, "person": "Gien", "text": " I was in my 30s." },
+  {
+    "startTime": 2406.56,
+    "person": "Gien",
+    "text": " And then I did instal the formatter, and it didn't work."
+  },
+  { "startTime": 2410.16, "person": "Gien", "text": " It genuinely didn't work." },
+  {
+    "startTime": 2412.92,
+    "person": "Gien",
+    "text": " But I also didn't spend a lot of time trying to fix it, to get it to work."
+  },
+  {
+    "startTime": 2421.32,
+    "person": "Gien",
+    "text": " And you know, anyways, I quit my job without ever using that formatter."
+  },
+  {
+    "startTime": 2428.18,
+    "person": "Gien",
+    "text": " And I didn't quit my job because of the formatter, but it was sort of like the last thing that made the bucket overflow."
+  },
+  {
+    "startTime": 2438.22,
+    "person": "Gien",
+    "text": " That's a Dutch thing, I don't know if it works in English, but people will get the thing."
+  },
+  {
+    "startTime": 2443.8,
+    "person": "Gien",
+    "text": " And it's because he, you know, they have made an authoritative decision."
+  },
+  {
+    "startTime": 2449.28,
+    "person": "Gien",
+    "text": " They didn't want to open the discussion of how to format code, which I can understand, if you know programmers."
+  },
+  {
+    "startTime": 2457.44,
+    "person": "Gien",
+    "text": " So I would have been able to agree with the decision, if it just had been communicated."
+  },
+  { "startTime": 2463.86, "person": "Gien", "text": " Why?" },
+  {
+    "startTime": 2465,
+    "person": "Gien",
+    "text": " If they had said, you know, we're going to try this formatter on the default settings for six months, and you're all going to try it for six months, and then we're going to come back and we're going to see, but you have to give it an honest chance."
+  },
+  {
+    "startTime": 2481.02,
+    "person": "Gien",
+    "text": " That would have been completely different than saying, hey, I want to hear your thoughts on this, because they did not want to hear my thoughts on it."
+  },
+  { "startTime": 2489.76, "person": "Gien", "text": " They already have made the decision." },
+  {
+    "startTime": 2492.18,
+    "person": "Gien",
+    "text": " And so you're not being heard and you start resisting that decision that is human to do."
+  },
+  { "startTime": 2500.64, "person": "Karol", "text": " Very much so." },
+  {
+    "startTime": 2502.4,
+    "person": "Gien",
+    "text": " And then that resistance, you know, escalates as well."
+  },
+  {
+    "startTime": 2507.7,
+    "person": "Gien",
+    "text": " There's an escalation line of resistance, like if you have a team that makes a lot of sarcastic jokes, like not always, it's also depending on context, but if it's about a decision that some higher up made, and they're making a lot of sarcastic jokes about it, they are resisting."
+  },
+  {
+    "startTime": 2525.46,
+    "person": "Gien",
+    "text": " They're not actively resisting, but they're still resisting by making very sarcastic jokes about it."
+  },
+  {
+    "startTime": 2532.5,
+    "person": "Gien",
+    "text": " And you notice that, oh, there's actually, there's a conflict here."
+  },
+  { "startTime": 2536.12, "person": "Gien", "text": " There's something going on." },
+  {
+    "startTime": 2539.04,
+    "person": "Gien",
+    "text": " Why don't I put my head in that wasp nest and see what's happening?"
+  },
+  { "startTime": 2544.94, "person": "Gien", "text": " That's what I do when I'm a consultant." },
+  {
+    "startTime": 2548.36,
+    "person": "Karol",
+    "text": " That's a very nice signal of a problem brewing, basically, right?"
+  },
+  {
+    "startTime": 2552.8,
+    "person": "Karol",
+    "text": " Because that kind of conflict, while the resistance is passive, is probably going to brew into something more substantial later on with another decision that was authoritatively presented without justification."
+  },
+  {
+    "startTime": 2567.48,
+    "person": "Karol",
+    "text": " And that's, oh, I've seen this so many times."
+  },
+  {
+    "startTime": 2570.78,
+    "person": "Karol",
+    "text": " It's just a recurring pattern over and over again, if managers think that they can go authoritative without treating people with this dignity of making them understand."
+  },
+  {
+    "startTime": 2584.18,
+    "person": "Karol",
+    "text": " It just always backfires, sooner or later."
+  },
+  {
+    "startTime": 2587.16,
+    "person": "Karol",
+    "text": " I mean, it can take time for a backfire, but sooner or later, it will backfire to that extent."
+  },
+  {
+    "startTime": 2595.38,
+    "person": "Karol",
+    "text": " We jumped into conflict, but in the back of my mind, I have the word bias."
+  },
+  {
+    "startTime": 2602.84,
+    "person": "Karol",
+    "text": " And I think that just this word bias is one of the key aspects why decisions can be very much derailed."
+  },
+  { "startTime": 2615.02, "person": "Karol", "text": " And it creates conflict as well." },
+  {
+    "startTime": 2619.18,
+    "person": "Karol",
+    "text": " At least I've seen it create conflict, oh, so many times."
+  },
+  {
+    "startTime": 2623.66,
+    "person": "Karol",
+    "text": " So how do we weave in biases into the decision-making process?"
+  },
+  { "startTime": 2630.42, "person": "Karol", "text": " What's the impact there?" },
+  {
+    "startTime": 2632.82,
+    "person": "Karol",
+    "text": " Of course, context-wise, it's going to be different bias per context, but that's a different story."
+  },
+  { "startTime": 2638.88, "person": "Gien", "text": " Yeah." },
+  {
+    "startTime": 2640.9,
+    "person": "Gien",
+    "text": " So first of all, I think biases are getting a bit of a bad rep."
+  },
+  { "startTime": 2646.14, "person": "Karol", "text": " Oh." },
+  { "startTime": 2647.92, "person": "Gien", "text": " Yes, but hear me out." },
+  {
+    "startTime": 2653.34,
+    "person": "Gien",
+    "text": " Because some of these things allow us to make very, they enable us to make very quick decisions."
+  },
+  { "startTime": 2661.5, "person": "Karol", "text": " Hmm, that's fair." },
+  { "startTime": 2663.36, "person": "Gien", "text": " Which is great." },
+  {
+    "startTime": 2665.02,
+    "person": "Gien",
+    "text": " And so when we're talking about quick decisions, very often we're talking about heuristics, which we have a lot of definitions for a heuristic, but I'm going to take the one from Intuition Comes right now, which is a book, if you want to look it up, very interesting, which is a sort of a rule of thumb."
+  },
+  { "startTime": 2686.56, "person": "Gien", "text": " That's a heuristic." },
+  {
+    "startTime": 2688.52,
+    "person": "Gien",
+    "text": " And so a bias is basically the negative side effect that you have from that."
+  },
+  { "startTime": 2698.2, "person": "Karol", "text": " That's a heuristic." },
+  { "startTime": 2700.26, "person": "Gien", "text": " Yeah." },
+  { "startTime": 2701.64, "person": "Gien", "text": " Like you're applying it at a wrong moment." },
+  { "startTime": 2706.06, "person": "Gien", "text": " Like we've always done it like that." },
+  {
+    "startTime": 2709.46,
+    "person": "Gien",
+    "text": " Is a heuristic, it's a quick way to make a decision."
+  },
+  { "startTime": 2713.22, "person": "Gien", "text": " Should we change this?" },
+  { "startTime": 2714.28, "person": "Gien", "text": " No, we've always done it like that." },
+  { "startTime": 2715.7, "person": "Gien", "text": " Move on." },
+  {
+    "startTime": 2717.12,
+    "person": "Gien",
+    "text": " It's just that sometimes that doesn't really work out all that well."
+  },
+  {
+    "startTime": 2721.4,
+    "person": "Gien",
+    "text": " And sometimes you have to say like, oh, but right now we've always done it like that."
+  },
+  {
+    "startTime": 2727,
+    "person": "Gien",
+    "text": " It's not working anymore and we need to, you know, dig a bit deeper into it and see if we have to change it."
+  },
+  {
+    "startTime": 2735.3,
+    "person": "Gien",
+    "text": " But in itself, it allowed me to make a very quick decision."
+  },
+  { "startTime": 2740.6, "person": "Karol", "text": " Right." },
+  { "startTime": 2741.4, "person": "Gien", "text": " Yeah." },
+  {
+    "startTime": 2742.04,
+    "person": "Gien",
+    "text": " You have the laws, you know, the laws like we have Conway's law."
+  },
+  { "startTime": 2746.7, "person": "Gien", "text": " I know you have a pop-up within those." },
+  {
+    "startTime": 2751.88,
+    "person": "Gien",
+    "text": " So the laws were basically the basis for system thinking."
+  },
+  { "startTime": 2758.02, "person": "Gien", "text": " That's what the laws were." },
+  {
+    "startTime": 2760.44,
+    "person": "Gien",
+    "text": " And in those laws, you also have something called a razor."
+  },
+  {
+    "startTime": 2766.28,
+    "person": "Gien",
+    "text": " I think Occam's razor is one of the most known ones."
+  },
+  {
+    "startTime": 2774.18,
+    "person": "Gien",
+    "text": " And a razor is basically, it shaves off options."
+  },
+  {
+    "startTime": 2780.36,
+    "person": "Gien",
+    "text": " It's why they call it a razor, because you shave away alternatives from your decision in a very quick way."
+  },
+  { "startTime": 2789.36, "person": "Gien", "text": " Like, name escapes me." },
+  {
+    "startTime": 2794.24,
+    "person": "Gien",
+    "text": " I have a heuristics diary, so I can look it up if I want to."
+  },
+  {
+    "startTime": 2798.54,
+    "person": "Gien",
+    "text": " But it's basically, if you have two models with the same power of explanation, then the simplest one will suffice."
+  },
+  { "startTime": 2808.04, "person": "Gien", "text": " That is a razor." },
+  {
+    "startTime": 2809.4,
+    "person": "Gien",
+    "text": " I forgot which person's name I have to put in front of it, but it exists."
+  },
+  {
+    "startTime": 2816.1,
+    "person": "Gien",
+    "text": " And it just means that if you have a lot of models that, you know, you could use in your code, it just easily eliminates a whole bunch of them without having to do much thought."
+  },
+  { "startTime": 2831, "person": "Gien", "text": " So I find it very helpful." },
+  {
+    "startTime": 2835.34,
+    "person": "Gien",
+    "text": " Of course, you know, the biases are the negative side of that, and they do heavily influence that as well."
+  },
+  {
+    "startTime": 2847.66,
+    "person": "Gien",
+    "text": " But I feel that if you visualise the decisions, you're already, it's easier to capture them, to become aware of them, just simply by, you know, going to whiteboard and modelling the decision."
+  },
+  {
+    "startTime": 2865.86,
+    "person": "Gien",
+    "text": " I'm not mean like, if you have to make design decisions specifically, I just mean like, you wrote down the problem statements, you write down your pro con fix list, you show all the preferences of everyone."
+  },
+  {
+    "startTime": 2881.72,
+    "person": "Gien",
+    "text": " And, you know, because you slow down, that bias is less there."
+  },
+  {
+    "startTime": 2888.12,
+    "person": "Gien",
+    "text": " Because basically, that's just you wanting to make a very quick decision."
+  },
+  { "startTime": 2893.02, "person": "Gien", "text": " And so you slow the process down." },
+  { "startTime": 2895.12, "person": "Gien", "text": " And so they have less influence there." },
+  { "startTime": 2899.01, "person": "Karol", "text": " I'm thinking about this." },
+  {
+    "startTime": 2900.59,
+    "person": "Karol",
+    "text": " I never looked at it from the perspective of heuristics of bias."
+  },
+  {
+    "startTime": 2904.45,
+    "person": "Karol",
+    "text": " I tend to look at a bias from a psychological perspective of, we're wired this way, we have biases."
+  },
+  {
+    "startTime": 2912.63,
+    "person": "Karol",
+    "text": " But from a heuristics perspective, now what I was describing, is that the negative rep of biases is actually just side effect of how we are, well, basically brain, how our brain chemistry works."
+  },
+  {
+    "startTime": 2928.75,
+    "person": "Karol",
+    "text": " Because how I always explain biases to people is that, well, we cannot understand everything."
+  },
+  {
+    "startTime": 2937.73,
+    "person": "Karol",
+    "text": " So we model things subconsciously, and our brain works on simplified models of reality."
+  },
+  {
+    "startTime": 2943.87,
+    "person": "Karol",
+    "text": " Because it's impossible to have a actual reality in our head, because that's too complex for us to comprehend as human beings, because we're not evolved to the stage where we can comprehend all that is around us."
+  },
+  {
+    "startTime": 2960.21,
+    "person": "Karol",
+    "text": " So that means we make those models, and we make those simplifications, so we can cope with reality itself."
+  },
+  {
+    "startTime": 2966.59,
+    "person": "Karol",
+    "text": " And certain aspects we dive deeper into, like, in your case, that's decision making, that's gotten a little bit out of hand."
+  },
+  {
+    "startTime": 2973.87,
+    "person": "Karol",
+    "text": " In my case, that's integration architecture, which is a passion topic of mine and my field of work."
+  },
+  {
+    "startTime": 2980.61,
+    "person": "Karol",
+    "text": " And my model, mental model of integration architecture, is a lot bigger than most architects have in their heads, right?"
+  },
+  {
+    "startTime": 2991.37,
+    "person": "Karol",
+    "text": " Your model of decision making is a lot larger than most people ever get thought to."
+  },
+  {
+    "startTime": 2999.57,
+    "person": "Karol",
+    "text": " And then we have those simplifications, so then we make decisions based on those simplifications without digging into the matter of things, right?"
+  },
+  {
+    "startTime": 3009.11,
+    "person": "Karol",
+    "text": " I'm not going to dig into taxes in the Netherlands, because I'm just going to hire an accountant."
+  },
+  { "startTime": 3014.79, "person": "Karol", "text": " Well, sorry, that's, that's, that's good." },
+  {
+    "startTime": 3017.33,
+    "person": "Karol",
+    "text": " That would be an offence for accountants to do my personal taxes."
+  },
+  { "startTime": 3021.27, "person": "Karol", "text": " But that's a completely different story." },
+  {
+    "startTime": 3023.51,
+    "person": "Karol",
+    "text": " Again, see, in model wise, in Polish language, somebody doing my taxes as my personal taxes or my company taxes, the same word accountant."
+  },
+  {
+    "startTime": 3034.29,
+    "person": "Karol",
+    "text": " In Dutch language, these are two different occupations, two different words describing that person, that kind of person."
+  },
+  {
+    "startTime": 3041.09,
+    "person": "Karol",
+    "text": " If I say to an accountant in the Netherlands that I want to do my personal taxes, he's going to take offence to his occupation, because that's not what an accountant does in the Netherlands."
+  },
+  {
+    "startTime": 3052.63,
+    "person": "Karol",
+    "text": " My model simplified the role of an accountant, hence creating a problematic situation was when I was looking for somebody who can help me do taxes."
+  },
+  {
+    "startTime": 3065.31,
+    "person": "Karol",
+    "text": " Because they started calling accountants to do that."
+  },
+  {
+    "startTime": 3068.85,
+    "person": "Karol",
+    "text": " And they were like, why would I care about your personal taxes?"
+  },
+  {
+    "startTime": 3072.53,
+    "person": "Gien",
+    "text": " I do mean, you don't care about my personal taxes."
+  },
+  { "startTime": 3076.73, "person": "Karol", "text": " Precisely." },
+  {
+    "startTime": 3077.91,
+    "person": "Karol",
+    "text": " And then from that, we can have different kind of biases."
+  },
+  {
+    "startTime": 3083.65,
+    "person": "Karol",
+    "text": " And then in decision making, especially in architecture, the biases that I found that are always relevant for for decisions, and all of them are stemming from this, this, this quote, we always done it this way."
+  },
+  {
+    "startTime": 3100.57,
+    "person": "Karol",
+    "text": " And I found that, like, for example, status quo bias, so we have an emotional preference to keep things the same way, is one of those that that we already talked about that, really, but to name it."
+  },
+  {
+    "startTime": 3112.73,
+    "person": "Karol",
+    "text": " So we keep it this way, because that's the correct way."
+  },
+  {
+    "startTime": 3116.13,
+    "person": "Karol",
+    "text": " And that's in our environment, we've done it this way, just let's keep to it, right?"
+  },
+  {
+    "startTime": 3121.07,
+    "person": "Karol",
+    "text": " Or loss aversion bias, where the pain of losing something familiarity is very much influencing our decision making process, or then the sunken cost policy, where we already invested so much into this."
+  },
+  {
+    "startTime": 3136.35,
+    "person": "Karol",
+    "text": " And then now, to make the decision to move out of this path and take another path is now emotionally problematic."
+  },
+  {
+    "startTime": 3145.71,
+    "person": "Karol",
+    "text": " Or then my favourite one, which I always attribute to my discussions with around Kafka, is the conformity bias, the bandwagon effect, the fact that everybody's doing it."
+  },
+  { "startTime": 3156.89, "person": "Karol", "text": " So we need to do it as well." },
+  {
+    "startTime": 3158.11,
+    "person": "Karol",
+    "text": " And I, why would you want to use Kafka for notifications?"
+  },
+  { "startTime": 3164.59, "person": "Karol", "text": " Why are you doing this to yourself?" },
+  {
+    "startTime": 3167.83,
+    "person": "Karol",
+    "text": " No, because they're using Kafka, it's great."
+  },
+  { "startTime": 3171.91, "person": "Karol", "text": " No, no, it's not." },
+  { "startTime": 3174.27, "person": "Karol", "text": " It's not the use case for that." },
+  { "startTime": 3176.03, "person": "Karol", "text": " And it's all over like that." },
+  {
+    "startTime": 3178.37,
+    "person": "Karol",
+    "text": " And I've seen those decisions being made all the time, with people having a simplified model of the problem."
+  },
+  {
+    "startTime": 3187.11,
+    "person": "Karol",
+    "text": " And then making decisions based on lack, I would say, lack of knowledge, basically, in that sense, lack of information."
+  },
+  { "startTime": 3195.21, "person": "Gien", "text": " I agree." },
+  {
+    "startTime": 3197.67,
+    "person": "Gien",
+    "text": " And I think in the same time, and maybe you noticed while you were explaining, they do allow you to make very quick decisions."
+  },
+  { "startTime": 3205.85, "person": "Karol", "text": " Absolutely." },
+  {
+    "startTime": 3209.53,
+    "person": "Gien",
+    "text": " It's just that your context is completely wrong to say that we'll do Kafka if we just want notifications."
+  },
+  {
+    "startTime": 3218.39,
+    "person": "Gien",
+    "text": " I mean, I feel like we're also always using Kafka as an example."
+  },
+  {
+    "startTime": 3221.91,
+    "person": "Gien",
+    "text": " But I think it's one of the technologies I have seen misused most of the time."
+  },
+  { "startTime": 3227.53, "person": "Karol", "text": " Oh, so many times." },
+  { "startTime": 3228.63, "person": "Karol", "text": " Yes." },
+  { "startTime": 3230.77, "person": "Gien", "text": " Yes." },
+  { "startTime": 3231.91, "person": "Gien", "text": " And, but it's there." },
+  {
+    "startTime": 3234.33,
+    "person": "Gien",
+    "text": " And again, if you slow that process down, like you already have a problem with your framing, right?"
+  },
+  { "startTime": 3242.89, "person": "Gien", "text": " Because you say, we have to have Kafka." },
+  {
+    "startTime": 3245.55,
+    "person": "Gien",
+    "text": " And basically, one of the options is in your problem statement."
+  },
+  { "startTime": 3248.73, "person": "Gien", "text": " So we're going to restate this problem." },
+  {
+    "startTime": 3253.85,
+    "person": "Gien",
+    "text": " And we're going to dig deeper into this problem."
+  },
+  {
+    "startTime": 3256.33,
+    "person": "Gien",
+    "text": " Problem restatement is one of the things that you can do."
+  },
+  {
+    "startTime": 3259.57,
+    "person": "Gien",
+    "text": " And there, you just keep asking yourself why, like being a very annoying child."
+  },
+  { "startTime": 3265.63, "person": "Gien", "text": " We need to have Kafka." },
+  { "startTime": 3267.13, "person": "Gien", "text": " Why?" },
+  {
+    "startTime": 3267.47,
+    "person": "Gien",
+    "text": " Well, we want to have notifications, but why?"
+  },
+  {
+    "startTime": 3269.89,
+    "person": "Gien",
+    "text": " And so you dig deeper into it until you sort of come to the problem."
+  },
+  {
+    "startTime": 3274.67,
+    "person": "Gien",
+    "text": " You're like, okay, yeah, we can solve this."
+  },
+  {
+    "startTime": 3276.39,
+    "person": "Gien",
+    "text": " Like, this will actually make sense trying to solve that."
+  },
+  {
+    "startTime": 3278.93,
+    "person": "Karol",
+    "text": " That's by the way, that's the five why's technique."
+  },
+  { "startTime": 3282.17, "person": "Gien", "text": " Yeah." },
+  { "startTime": 3282.93, "person": "Gien", "text": " Or 10, if you have to." },
+  { "startTime": 3285.25, "person": "Karol", "text": " If you have to, yeah." },
+  { "startTime": 3286.33, "person": "Karol", "text": " But it's called five why's." },
+  {
+    "startTime": 3287.65,
+    "person": "Karol",
+    "text": " The usual level of depth of why's is five."
+  },
+  { "startTime": 3291.45, "person": "Karol", "text": " That's the average." },
+  { "startTime": 3293.09, "person": "Karol", "text": " So they named it five why's." },
+  {
+    "startTime": 3294.65,
+    "person": "Karol",
+    "text": " But yeah, you can do 10, but that's going to be very annoying."
+  },
+  { "startTime": 3298.27, "person": "Gien", "text": " Yes." },
+  { "startTime": 3298.83, "person": "Gien", "text": " And that is heuristic." },
+  { "startTime": 3300.39, "person": "Gien", "text": " The five why's is heuristic." },
+  {
+    "startTime": 3303.31,
+    "person": "Gien",
+    "text": " Not to make a decision, but to easily reframe your problem."
+  },
+  {
+    "startTime": 3309.21,
+    "person": "Gien",
+    "text": " So heuristics are not just to make decisions, but they move things along rather quickly there."
+  },
+  { "startTime": 3318.31, "person": "Karol", "text": " How would you define the term heuristic?" },
+  {
+    "startTime": 3323.79,
+    "person": "Gien",
+    "text": " Actually, I opened my PowerPoint slide because I was like, well, if somebody asks me, I'm not going to be able to do that by heart."
+  },
+  { "startTime": 3331.41, "person": "Gien", "text": " Good." },
+  {
+    "startTime": 3334.45,
+    "person": "Gien",
+    "text": " So don't think I know this by heart, and I don't expect you to know this by heart either."
+  },
+  { "startTime": 3340.29, "person": "Gien", "text": " I like the one of Billy Von Pooh." },
+  { "startTime": 3343.57, "person": "Karol", "text": " Okay." },
+  {
+    "startTime": 3344.73,
+    "person": "Gien",
+    "text": " And it says a heuristic is anything that provides a plausible aid or direction in the solution of a problem, but is in its final analysis unjustified, incapable of justification, and fallible."
+  },
+  {
+    "startTime": 3359.13,
+    "person": "Gien",
+    "text": " It is anything that is used to guide discovery and reveal a possible, but not necessarily correct way to solve a problem."
+  },
+  { "startTime": 3368.93, "person": "Gien", "text": " That's the one I use." },
+  { "startTime": 3372.41, "person": "Karol", "text": " Oh, wow." },
+  { "startTime": 3374.37, "person": "Gien", "text": " There's a lot in it." },
+  { "startTime": 3375.63, "person": "Karol", "text": " Complex." },
+  { "startTime": 3376.01, "person": "Karol", "text": " That's a complex one." },
+  {
+    "startTime": 3377.51,
+    "person": "Karol",
+    "text": " Please do make a copy paste and send it to me."
+  },
+  {
+    "startTime": 3380.89,
+    "person": "Karol",
+    "text": " I'll dig into it probably tomorrow just to dismantle it piece by piece."
+  },
+  {
+    "startTime": 3385.11,
+    "person": "Karol",
+    "text": " But basically it sounds like heuristic is a kind of a mental shortcut."
+  },
+  { "startTime": 3390.27, "person": "Gien", "text": " Yeah." },
+  {
+    "startTime": 3391.33,
+    "person": "Karol",
+    "text": " Basically, the simplest words I could find for this."
+  },
+  { "startTime": 3395.77, "person": "Gien", "text": " I can't type in the chat." },
+  { "startTime": 3398.35, "person": "Gien", "text": " Oh, no." },
+  { "startTime": 3401.19, "person": "Gien", "text": " I was going to paste the definition there." },
+  {
+    "startTime": 3403.31,
+    "person": "Gien",
+    "text": " I think the two most important things is it's a plausible aid."
+  },
+  { "startTime": 3408.93, "person": "Gien", "text": " It will give you some form of solution." },
+  { "startTime": 3414.85, "person": "Gien", "text": " And it's fallible." },
+  {
+    "startTime": 3417.71,
+    "person": "Gien",
+    "text": " It doesn't mean you'll actually get the right answer, although I think right is also very subjective."
+  },
+  {
+    "startTime": 3429.59,
+    "person": "Gien",
+    "text": " But if you pick the wrong heuristic to apply in a situation, well, then you can fail."
+  },
+  {
+    "startTime": 3438.65,
+    "person": "Gien",
+    "text": " The interesting thing about heuristics is that they're not software specific, although Billy Von Kuhn was active in this."
+  },
+  {
+    "startTime": 3449.31,
+    "person": "Gien",
+    "text": " But like I already mentioned the book Intuition Punks, it also talks about, they're also heuristics, basically, that they're talking about."
+  },
+  {
+    "startTime": 3458.41,
+    "person": "Gien",
+    "text": " And for example, if you go to the ER, they use a heuristic to determine whether or not you're having a heart attack."
+  },
+  {
+    "startTime": 3466.89,
+    "person": "Gien",
+    "text": " And they have discovered through research, they're not just doing this because I just said it's fallible and people are like, who is it?"
+  },
+  {
+    "startTime": 3476.65,
+    "person": "Gien",
+    "text": " They discovered that it doesn't yield worse results than if they actually run tests."
+  },
+  {
+    "startTime": 3485.26,
+    "person": "Gien",
+    "text": " So it's a form of a checklist that they made and that checklist is a heuristic that they use to see whether or not someone is having a heart attack."
+  },
+  {
+    "startTime": 3495.82,
+    "person": "Gien",
+    "text": " And it yields equal results as having to run all the tests."
+  },
+  {
+    "startTime": 3502.22,
+    "person": "Gien",
+    "text": " Because you get there quicker and you get false positives and you get false negatives as well."
+  },
+  {
+    "startTime": 3509.02,
+    "person": "Gien",
+    "text": " But at the same time, if you have to start running tests and someone actually is having a heart attack, they can die and you're not quick enough."
+  },
+  { "startTime": 3518.86, "person": "Karol", "text": " Right." },
+  { "startTime": 3519.62, "person": "Karol", "text": " So we have to take shortcuts." },
+  { "startTime": 3521.58, "person": "Gien", "text": " We have to take a shortcut." },
+  {
+    "startTime": 3523.64,
+    "person": "Gien",
+    "text": " And the shortcut doesn't give us worse results than if we don't take the shortcut."
+  },
+  { "startTime": 3528.9, "person": "Karol", "text": " But it gives us probability." },
+  {
+    "startTime": 3533.39,
+    "person": "Karol",
+    "text": " We get a percentage of that probability, right?"
+  },
+  { "startTime": 3538.05, "person": "Karol", "text": " So just discussing." },
+  {
+    "startTime": 3540.29,
+    "person": "Gien",
+    "text": " Yeah, we have a high probability if you went through the checklist and I don't know the exact details, but I think there are eight questions."
+  },
+  {
+    "startTime": 3549.21,
+    "person": "Gien",
+    "text": " And if you sort of have a yes to six of them, then you just go, they treat it like a heart attack."
+  },
+  { "startTime": 3555.13, "person": "Gien", "text": " And that saves a lot of lives." },
+  { "startTime": 3560.57, "person": "Gien", "text": " So they're really good." },
+  {
+    "startTime": 3561.49,
+    "person": "Gien",
+    "text": " And heuristics is the thing I use the most to actually design software there."
+  },
+  {
+    "startTime": 3569.33,
+    "person": "Gien",
+    "text": " As I said, I have a heuristics and model diary."
+  },
+  {
+    "startTime": 3575.31,
+    "person": "Gien",
+    "text": " Because I'm a consultant or I have worked with consultants as well."
+  },
+  {
+    "startTime": 3580.53,
+    "person": "Gien",
+    "text": " And we're very annoying because we always say it depends."
+  },
+  { "startTime": 3585.51, "person": "Karol", "text": " I mean, that's my favourite phrase." },
+  { "startTime": 3587.57, "person": "Karol", "text": " I even have a t-shirt with that phrase." },
+  {
+    "startTime": 3589.21,
+    "person": "Karol",
+    "text": " And I know, for example, Mark Richards also has a lovely t-shirt with it depends on it."
+  },
+  {
+    "startTime": 3596.11,
+    "person": "Karol",
+    "text": " And that's his like favourite phrase of all time for every conversation."
+  },
+  {
+    "startTime": 3601.41,
+    "person": "Karol",
+    "text": " And we joke with Mark that, and this is again, this would be a heuristic that you can understand somebody's seniority in a specific field based on the answer to a question."
+  },
+  {
+    "startTime": 3614.91,
+    "person": "Karol",
+    "text": " If the answer is very, very specific, that's probably a junior."
+  },
+  {
+    "startTime": 3619.85,
+    "person": "Karol",
+    "text": " If the answer is, it depends, it's a meteor."
+  },
+  {
+    "startTime": 3622.25,
+    "person": "Karol",
+    "text": " And then if it depends and the person starts explaining based on depends on what, that's the senior."
+  },
+  { "startTime": 3629.55, "person": "Gien", "text": " That's mostly what I do." },
+  { "startTime": 3630.75, "person": "Gien", "text": " It depends." },
+  {
+    "startTime": 3631.37,
+    "person": "Gien",
+    "text": " And then I explain on what it would have like, this is the information I'm giving you that I'm missing for not being able to give you a better answer than it depends right now."
+  },
+  {
+    "startTime": 3641.03,
+    "person": "Gien",
+    "text": " So like, I don't know these things, and I would have to know these things."
+  },
+  {
+    "startTime": 3647.49,
+    "person": "Gien",
+    "text": " I kind of got, yeah, so there's design heuristics there."
+  },
+  {
+    "startTime": 3655.05,
+    "person": "Gien",
+    "text": " And they, you know, don't yield worst result."
+  },
+  {
+    "startTime": 3660.03,
+    "person": "Gien",
+    "text": " And so if you're thinking about how should I draw my boundaries?"
+  },
+  { "startTime": 3663.43, "person": "Gien", "text": " Where do I draw my boundaries?" },
+  {
+    "startTime": 3666.71,
+    "person": "Gien",
+    "text": " And you talk to like, you know, I spoke to one of the senior people, they were like, I don't know, it's just it's a gut feeling that we have to do it this way."
+  },
+  {
+    "startTime": 3676.09,
+    "person": "Gien",
+    "text": " And that or just heuristics, that people are heavily unaware of."
+  },
+  {
+    "startTime": 3682.81,
+    "person": "Gien",
+    "text": " And so if you want to start understanding the gut feeling of people, first, you have to make them aware that heuristics exist."
+  },
+  {
+    "startTime": 3693.41,
+    "person": "Gien",
+    "text": " And then you sort of have to try to find them like with what sort of things are they now weighing against each other?"
+  },
+  {
+    "startTime": 3702.23,
+    "person": "Gien",
+    "text": " What would heuristic or they're applying here?"
+  },
+  { "startTime": 3704.63, "person": "Gien", "text": " And why does that?" },
+  {
+    "startTime": 3705.95,
+    "person": "Gien",
+    "text": " Why do they pick that heuristic over any other heuristic you could have had?"
+  },
+  {
+    "startTime": 3709.97,
+    "person": "Gien",
+    "text": " And so then you can start gaining insight into how someone designs whether it's code or the architecture or things like that."
+  },
+  {
+    "startTime": 3719.73,
+    "person": "Gien",
+    "text": " And you also because now you understand, you can start applying it."
+  },
+  { "startTime": 3726.74, "person": "Gien", "text": " And you can start explaining yourself." },
+  {
+    "startTime": 3728.98,
+    "person": "Gien",
+    "text": " Once you know the heuristics that you know, once you analyse your own heuristics as to why do I have this gut feeling?"
+  },
+  { "startTime": 3735.78, "person": "Gien", "text": " You can teach other people how to do it." },
+  { "startTime": 3738.5, "person": "Gien", "text": " You can explain yourself better." },
+  {
+    "startTime": 3741.74,
+    "person": "Gien",
+    "text": " It's like, well, no, actually, this is my reasoning."
+  },
+  {
+    "startTime": 3744.92,
+    "person": "Gien",
+    "text": " I think it's valid to apply it in this context because of ABC."
+  },
+  {
+    "startTime": 3750.56,
+    "person": "Gien",
+    "text": " And, you know, people listen to you more there."
+  },
+  {
+    "startTime": 3758.1,
+    "person": "Karol",
+    "text": " I recall that actually heuristics and being asked about heuristics, I think was one of the key elements that drove Barry O'Reilly to do a PhD."
+  },
+  {
+    "startTime": 3771.08,
+    "person": "Karol",
+    "text": " As far as I recall, because he's been asked to train architects to do this magical thing that he does as an architect that makes him so successful."
+  },
+  {
+    "startTime": 3779.9,
+    "person": "Karol",
+    "text": " And he then started looking into what are his heuristics, why his approach to architecture is at times so much better than his peers and makes that architecture more successful."
+  },
+  {
+    "startTime": 3792.86,
+    "person": "Karol",
+    "text": " And that basically drove him to write the Residuality Theory as a PhD."
+  },
+  {
+    "startTime": 3801.02,
+    "person": "Karol",
+    "text": " And that's, I think, just the work on heuristics that he's done was humongous, just to identify all those heuristics that he was doing as an architect, using as an architect, because you don't do heuristics, you use heuristics, that were so successful, so spot on in the process of designing an architecture for a problem."
+  },
+  {
+    "startTime": 3827.8,
+    "person": "Gien",
+    "text": " Yeah, and they're quite like, I have, I was going to do, I'm going to do his workshop in two weeks, I think, in Paris."
+  },
+  {
+    "startTime": 3839.84,
+    "person": "Gien",
+    "text": " Join me, if you want to see Paris, if you want to learn residuality, because they're quite different than mine."
+  },
+  {
+    "startTime": 3847.54,
+    "person": "Gien",
+    "text": " I go from it from a very different perspective."
+  },
+  {
+    "startTime": 3856.06,
+    "person": "Gien",
+    "text": " He's more the architecture side, and I'm more the design side, which are sort of very different ways of looking at the same problem."
+  },
+  { "startTime": 3867.56, "person": "Gien", "text": " And so I'm very interested." },
+  {
+    "startTime": 3869.42,
+    "person": "Gien",
+    "text": " And now he can teach this to people because he examined, okay, what the hell are my heuristics?"
+  },
+  {
+    "startTime": 3875.08,
+    "person": "Gien",
+    "text": " And I teach this to, like, if people ask me, but how do I come up with bounded context?"
+  },
+  {
+    "startTime": 3882.68,
+    "person": "Gien",
+    "text": " So that's what I mean with, I go at it from a design perspective, I look at, what are my bounded context, basically, a word, how am I going to design my domain models, how I'm going to draw boundaries around them to protect it, which is still very different from architecture and how to design that."
+  },
+  {
+    "startTime": 3903.42,
+    "person": "Gien",
+    "text": " And I investigated that, and I wrote them all down."
+  },
+  {
+    "startTime": 3906.86,
+    "person": "Gien",
+    "text": " And now I can actually teach people this, these methods, and it will take a while before they get good at it, because it's experience, like, you learn when one doesn't work, or when one should work, or works better."
+  },
+  {
+    "startTime": 3923.76,
+    "person": "Gien",
+    "text": " But I can teach this now to people, how I make these design decisions."
+  },
+  {
+    "startTime": 3931.91,
+    "person": "Karol",
+    "text": " But it takes a lot of time, I suppose, for most people to actually realise that they're, they have those heuristics in their decision making processes, that they use those heuristics completely subconsciously, and that they're most of the times a very heavy influence on the decisions."
+  },
+  {
+    "startTime": 3953.27,
+    "person": "Gien",
+    "text": " I think it takes a lot of time to understand the extent of how much our life is heuristic driven."
+  },
+  {
+    "startTime": 3965.45,
+    "person": "Gien",
+    "text": " Because I think, I don't remember the exact number, but I think Microsoft did research on it, and they said, like, people make, like, was it an enormous number, like 100,000 decisions a day."
+  },
+  { "startTime": 3978.39, "person": "Gien", "text": " Like, that's what they do." },
+  { "startTime": 3981.03, "person": "Gien", "text": " What are we going to eat?" },
+  { "startTime": 3982.51, "person": "Gien", "text": " What are we, am I going to do this first?" },
+  { "startTime": 3984.31, "person": "Gien", "text": " Or am I going to do that first?" },
+  { "startTime": 3986.29, "person": "Gien", "text": " So you go pretty crazy." },
+  {
+    "startTime": 3988.13,
+    "person": "Gien",
+    "text": " If you did something like a pro-confix analysis on all of them, then your mind would explode."
+  },
+  {
+    "startTime": 3996.59,
+    "person": "Gien",
+    "text": " And I think I can sort of pick a bit back to when you were mentioning your neuroatypical self, trying to navigate, and you had algorithms for that more consciously, is that I have, like, I have this thing where I have to, I have to, I had to analyse, like, I wanted to analyse decisions."
+  },
+  {
+    "startTime": 4022.63,
+    "person": "Gien",
+    "text": " And it just, you know, blew my mind, because you can't do that."
+  },
+  {
+    "startTime": 4026.81,
+    "person": "Gien",
+    "text": " For the amount of decisions that you have to make in a day, you just cannot do that."
+  },
+  {
+    "startTime": 4036.4,
+    "person": "Gien",
+    "text": " So learning about heuristic, it wasn't something, but I had it, but also, it kind of failed in my brain."
+  },
+  {
+    "startTime": 4043.64,
+    "person": "Gien",
+    "text": " And so being able to do this, like, I'll just apply a heuristic, won't necessarily yield worse results."
+  },
+  {
+    "startTime": 4049.84,
+    "person": "Gien",
+    "text": " It's actually, ooh, life is so much simpler, now that I have that."
+  },
+  { "startTime": 4055.1, "person": "Gien", "text": " And so we do it all the time." },
+  { "startTime": 4056.7, "person": "Gien", "text": " We're just very unaware of that." },
+  {
+    "startTime": 4058.7,
+    "person": "Gien",
+    "text": " Like, when I do a brainstorm, I explain heuristics."
+  },
+  {
+    "startTime": 4061.54,
+    "person": "Gien",
+    "text": " And then I say, okay, within your teams now, think about which heuristics you already have, and you have them."
+  },
+  {
+    "startTime": 4068.06,
+    "person": "Gien",
+    "text": " And without a fail, we at least come up with 20 heuristics that people already have when it comes to software design or architecture."
+  },
+  {
+    "startTime": 4078.08,
+    "person": "Gien",
+    "text": " For example, when it comes to team size, you have the American pizza, I always say pizza heuristic."
+  },
+  {
+    "startTime": 4085.5,
+    "person": "Gien",
+    "text": " A team is not allowed to be bigger than a pizza."
+  },
+  {
+    "startTime": 4090.5,
+    "person": "Gien",
+    "text": " And the first time I heard this was like, but then you have all teams of one."
+  },
+  { "startTime": 4096.38, "person": "Gien", "text": " What the hell?" },
+  { "startTime": 4097.8, "person": "Gien", "text": " Turns out, it comes from the US." },
+  {
+    "startTime": 4100.479,
+    "person": "Gien",
+    "text": " And in the US, you have ginormous pizza, of which you can eat with like five or six people."
+  },
+  {
+    "startTime": 4109.62,
+    "person": "Gien",
+    "text": " So if we would apply that heuristic here in Europe, we would have teams of one, so it wouldn't work."
+  },
+  {
+    "startTime": 4116.16,
+    "person": "Gien",
+    "text": " But it's the thing that people, they're already there."
+  },
+  {
+    "startTime": 4121.439,
+    "person": "Karol",
+    "text": " And wasn't that not the size of the pizza?"
+  },
+  {
+    "startTime": 4125.02,
+    "person": "Karol",
+    "text": " It was actually, I think, the two pizza rule from Amazon."
+  },
+  { "startTime": 4129.3, "person": "Gien", "text": " Two pizza?" },
+  { "startTime": 4130.16, "person": "Gien", "text": " Is it a two pizza rule?" },
+  { "startTime": 4131.24, "person": "Gien", "text": " I don't know." },
+  { "startTime": 4131.84, "person": "Gien", "text": " But ginormous pizzas." },
+  { "startTime": 4133.62, "person": "Karol", "text": " No, no, it was the two pizza rule." },
+  {
+    "startTime": 4136.279,
+    "person": "Karol",
+    "text": " I remember that I heard about this somewhere."
+  },
+  { "startTime": 4140.24, "person": "Karol", "text": " And yes, American, obviously." },
+  {
+    "startTime": 4142.3,
+    "person": "Karol",
+    "text": " Is it Amazon management principle created by Jeff Bezos stating that any internal team should be small enough to be fed with two large pizzas?"
+  },
+  { "startTime": 4150.62, "person": "Gien", "text": " Yeah." },
+  {
+    "startTime": 4151.24,
+    "person": "Gien",
+    "text": " And I think you'll have 12 people or something like that then."
+  },
+  {
+    "startTime": 4155.06,
+    "person": "Karol",
+    "text": " Typically limiting the size to less than 10 people."
+  },
+  { "startTime": 4158.3, "person": "Gien", "text": " Yeah." },
+  { "startTime": 4159.16, "person": "Gien", "text": " See?" },
+  { "startTime": 4161.38, "person": "Gien", "text": " Two person team in Europe." },
+  {
+    "startTime": 4164.64,
+    "person": "Gien",
+    "text": " So I was kind of baffled when I heard that one, because I was like, they have like one."
+  },
+  {
+    "startTime": 4170.899,
+    "person": "Gien",
+    "text": " They did say like the one pizza rule, which five or six, like something that was the number they have in their company."
+  },
+  { "startTime": 4177.96, "person": "Gien", "text": " Probably adapted from the Amazon one." },
+  { "startTime": 4179.88, "person": "Gien", "text": " And so you always find them." },
+  { "startTime": 4181.64, "person": "Gien", "text": " You always find them." },
+  { "startTime": 4183, "person": "Gien", "text": " Always have them." },
+  { "startTime": 4184.899, "person": "Gien", "text": " You just need to get conscious of it." },
+  {
+    "startTime": 4189,
+    "person": "Gien",
+    "text": " And I think you'll start making better decisions the more conscious you get about it."
+  },
+  { "startTime": 4196.64, "person": "Gien", "text": " Because you then can reason more." },
+  {
+    "startTime": 4198.96,
+    "person": "Gien",
+    "text": " It's like, OK, I think maybe this way, but does it apply in this situation?"
+  },
+  { "startTime": 4204.12, "person": "Gien", "text": " Because gut feelings can be wrong." },
+  { "startTime": 4208.76, "person": "Karol", "text": " Very true." },
+  { "startTime": 4209.36, "person": "Gien", "text": " I had gut feelings." },
+  { "startTime": 4210.4, "person": "Gien", "text": " Yeah, that went wrong." },
+  {
+    "startTime": 4212.12,
+    "person": "Karol",
+    "text": " I mean, just looking at the content I teach about integration architecture, we often talk about, well, that's general architecture, really."
+  },
+  {
+    "startTime": 4224.36,
+    "person": "Karol",
+    "text": " I ask people in the class, what is an anti-pattern?"
+  },
+  {
+    "startTime": 4230.76,
+    "person": "Karol",
+    "text": " And everybody has some sort of a definition of that anti-pattern and a heuristic behind it stating, don't use that pattern ever, for example."
+  },
+  {
+    "startTime": 4243.28,
+    "person": "Karol",
+    "text": " And I'm like, OK, but is that always true?"
+  },
+  {
+    "startTime": 4248.02,
+    "person": "Karol",
+    "text": " Is that a heuristic that is actually true all the time?"
+  },
+  { "startTime": 4252.3, "person": "Karol", "text": " Is that something that is based in fact?" },
+  {
+    "startTime": 4256.84,
+    "person": "Karol",
+    "text": " And when we start digging into some patterns that are called anti-patterns, it turns out that it's absolutely not true that certain, for example, integration patterns are very, very much useful, but in a specific niche context."
+  },
+  {
+    "startTime": 4275.06,
+    "person": "Karol",
+    "text": " And because people have their own personal heuristics, they treat them as binary rather than context-wise, spectrum-wise."
+  },
+  {
+    "startTime": 4285.26,
+    "person": "Karol",
+    "text": " And then we have decisions being made based on those heuristics that they're biassed towards a specific pattern because they learned somewhere that it was wrong."
+  },
+  { "startTime": 4295.3, "person": "Karol", "text": " Yeah, wrong for that context, obviously." },
+  {
+    "startTime": 4298.32,
+    "person": "Gien",
+    "text": " And that's where I think I differ, also because I have that fallible in mind."
+  },
+  {
+    "startTime": 4305.78,
+    "person": "Gien",
+    "text": " I know my heuristics can fail me, but also because heuristics allow me to make designs very quickly."
+  },
+  { "startTime": 4315.96, "person": "Gien", "text": " But then I have to make a decision." },
+  {
+    "startTime": 4317.94,
+    "person": "Gien",
+    "text": " And in order to make a decision, I need multiple designs."
+  },
+  { "startTime": 4321.7, "person": "Gien", "text": " And I have to compare designs." },
+  { "startTime": 4326.54, "person": "Gien", "text": " And I want to compare designs." },
+  {
+    "startTime": 4328.64,
+    "person": "Gien",
+    "text": " I want to sit down and slow that down again, because my heuristics makes me go fast."
+  },
+  {
+    "startTime": 4333.84,
+    "person": "Gien",
+    "text": " And then I have that point in time or that process, my entire design process, there's this moment in it where I slow down again."
+  },
+  {
+    "startTime": 4342.24,
+    "person": "Gien",
+    "text": " And I actually start comparing the options with each other and start seeing, okay, what is better?"
+  },
+  {
+    "startTime": 4347.64,
+    "person": "Gien",
+    "text": " And actually, oh, if I think, well, these bound of context from that design and these bound of context from that design, I put them together, I will actually probably have a better solution."
+  },
+  { "startTime": 4357.26, "person": "Gien", "text": " And now I have a third option." },
+  { "startTime": 4358.52, "person": "Gien", "text": " And I said, so that's what you have to do." },
+  { "startTime": 4362.16, "person": "Gien", "text": " You have to slow down again at some point." },
+  {
+    "startTime": 4365,
+    "person": "Karol",
+    "text": " Now, you see, you taught me about polarities."
+  },
+  { "startTime": 4366.92, "person": "Karol", "text": " Now I see the polarity in this." },
+  {
+    "startTime": 4370.06,
+    "person": "Karol",
+    "text": " Because you first sit down and design, design, design, design, and then you go into the second, the other polarity, other pole."
+  },
+  {
+    "startTime": 4378.68,
+    "person": "Karol",
+    "text": " I'm going to analyse my designs and compare and contrast and derive understanding from them."
+  },
+  { "startTime": 4387.54, "person": "Gien", "text": " Yes, I managed to learn." },
+  {
+    "startTime": 4391.52,
+    "person": "Gien",
+    "text": " And then maybe I noticed that my two options actually needed for them are good enough."
+  },
+  {
+    "startTime": 4397.1,
+    "person": "Gien",
+    "text": " And then I design, design, design, design again."
+  },
+  { "startTime": 4398.92, "person": "Gien", "text": " And so I have a few other options." },
+  {
+    "startTime": 4400.24,
+    "person": "Gien",
+    "text": " And then I still slow the thing down again and start thinking about it a bit more clear."
+  },
+  { "startTime": 4405.66, "person": "Gien", "text": " So, yeah." },
+  { "startTime": 4407.68, "person": "Karol", "text": " Oh, yeah." },
+  {
+    "startTime": 4414.01,
+    "person": "Karol",
+    "text": " Well, my brain is already overloaded with biases, heuristics, polarities, decision-making."
+  },
+  {
+    "startTime": 4423.25,
+    "person": "Gien",
+    "text": " I have a talk on this and the title of it is slow down to speed up your decision-making."
+  },
+  { "startTime": 4429.25, "person": "Gien", "text": " What I do is literally in the title." },
+  {
+    "startTime": 4433.65,
+    "person": "Gien",
+    "text": " I slow it down to speed it up because the likelihood of having a good outcome is better if you, at some point, slow that thing down."
+  },
+  { "startTime": 4447.85, "person": "Karol", "text": " Some people state, take a step back." },
+  { "startTime": 4452.15, "person": "Gien", "text": " Yeah." },
+  { "startTime": 4453.25, "person": "Karol", "text": " Provide perspective." },
+  {
+    "startTime": 4455.05,
+    "person": "Karol",
+    "text": " Slowing down also provides that perspective because the things you do just don't fly before your eyes."
+  },
+  { "startTime": 4462.13, "person": "Karol", "text": " You can have the time to look at them." },
+  {
+    "startTime": 4465.13,
+    "person": "Karol",
+    "text": " So, yeah, that's pretty much the same principle there."
+  },
+  {
+    "startTime": 4469.31,
+    "person": "Karol",
+    "text": " Just slow down or take a step back to see the whole picture to see does that fit?"
+  },
+  { "startTime": 4475.31, "person": "Karol", "text": " Is that the context?" },
+  { "startTime": 4476.33, "person": "Karol", "text": " Is the context right?" },
+  { "startTime": 4477.67, "person": "Karol", "text": " Et cetera, et cetera." },
+  {
+    "startTime": 4478.91,
+    "person": "Karol",
+    "text": " But I think this approach kind of comes with experience because if you would ask me, let's say seven years ago, I would definitely have in my brain a lot of heuristics that I took as factual and infallible where I, at times, learned the hard way that these heuristics are exactly fallible."
+  },
+  {
+    "startTime": 4506.45,
+    "person": "Karol",
+    "text": " So, I now keep in mind that my heuristics can be wrong and I need to validate them."
+  },
+  {
+    "startTime": 4511.07,
+    "person": "Karol",
+    "text": " So, I need to always, if I notice that I assume context, I always need to validate context."
+  },
+  {
+    "startTime": 4518.61,
+    "person": "Karol",
+    "text": " And that becomes a heuristic in its own, but it brings a lot of sense to the decision-making process then."
+  },
+  { "startTime": 4528.33, "person": "Gien", "text": " Yeah." },
+  {
+    "startTime": 4529.41,
+    "person": "Gien",
+    "text": " And I think the infallible, yes, but also something I learned along the way, that's something that really came from the economics, which I thought I was very grateful for, like making a good decision does not in no way guarantee a good outcome."
+  },
+  {
+    "startTime": 4552.19,
+    "person": "Gien",
+    "text": " Like even if you analyse, you don't have that."
+  },
+  {
+    "startTime": 4556.17,
+    "person": "Gien",
+    "text": " And the reason for it is because in order to make a decision, you need information and having a hundred percent all information is impossible."
+  },
+  {
+    "startTime": 4568.13,
+    "person": "Gien",
+    "text": " So, any decision is made under a level of uncertainty."
+  },
+  {
+    "startTime": 4572.23,
+    "person": "Gien",
+    "text": " And because you have to make decisions with varied levels of uncertainty, of course, but because there is always uncertainty in a decision, you are never guaranteed a good outcome."
+  },
+  {
+    "startTime": 4586.67,
+    "person": "Gien",
+    "text": " But what you can do is make a good decision."
+  },
+  {
+    "startTime": 4589.43,
+    "person": "Gien",
+    "text": " And that means that you use your heuristics, you slow it down, you analyse, you compare, you make sure that there's a decision maker, there are options there, you look for information, you have some sort of process to eliminate the options and you boil it down to one, because often a decision just doesn't get boiled down to one."
+  },
+  {
+    "startTime": 4613.77,
+    "person": "Gien",
+    "text": " You keep discussing and discussing and discussing until someone gets tired of it and just picks ones and runs with it."
+  },
+  {
+    "startTime": 4621.03,
+    "person": "Gien",
+    "text": " And if I can do that, if I feel that I did that, I made a good decision."
+  },
+  {
+    "startTime": 4628.25,
+    "person": "Gien",
+    "text": " And what if I have a bad outcome, then well, yeah, that happens because I still made it under uncertainty."
+  },
+  {
+    "startTime": 4636.79,
+    "person": "Karol",
+    "text": " There are always factors that are unknown in everything."
+  },
+  {
+    "startTime": 4643.65,
+    "person": "Karol",
+    "text": " I always enjoy the same kind of analogous approach to what it means to be an architect and knowledge management in an architect's head."
+  },
+  {
+    "startTime": 4654.99,
+    "person": "Karol",
+    "text": " If you're a developer, you're focussing on your expertise, and this is deep dive into knowledge, right?"
+  },
+  { "startTime": 4663.75, "person": "Karol", "text": " In a specific knowledge to extend that." },
+  { "startTime": 4666.51, "person": "Karol", "text": " So this is the knowledge depth." },
+  {
+    "startTime": 4668.55,
+    "person": "Karol",
+    "text": " And then when you become an architect, you start caring about the knowledge breadth, so that you have more knowledge about the things you don't know, so that you know that you don't know."
+  },
+  {
+    "startTime": 4683.61,
+    "person": "Karol",
+    "text": " But then at the same time, there's always this part of things that you don't know that you don't know."
+  },
+  {
+    "startTime": 4689.75,
+    "person": "Karol",
+    "text": " And that's exactly, connections in my brain just sparking, that's exactly analogous to decision making."
+  },
+  {
+    "startTime": 4697.11,
+    "person": "Karol",
+    "text": " There are always the parts that we will know."
+  },
+  {
+    "startTime": 4700.97,
+    "person": "Karol",
+    "text": " There's always the parts that we can assume, because we know that we don't know them, or validate them later on through, let's say, experimentation, analysis, whatever that may be."
+  },
+  {
+    "startTime": 4713.37,
+    "person": "Karol",
+    "text": " And there will be always parts that will be the unknown unknowns that we cannot really foresee until they start happening, or until they surface through whatever means."
+  },
+  { "startTime": 4728.41, "person": "Gien", "text": " Yeah, there's a model for that." },
+  { "startTime": 4731.53, "person": "Gien", "text": " I think it has four categories." },
+  { "startTime": 4734.23, "person": "Gien", "text": " It has known knowns, unknown knowns." },
+  {
+    "startTime": 4739.03,
+    "person": "Karol",
+    "text": " And I exactly know which one you're referring to."
+  },
+  { "startTime": 4740.91, "person": "Gien", "text": " Known unknowns and unknown unknowns." },
+  {
+    "startTime": 4743.71,
+    "person": "Gien",
+    "text": " So anyway, it's a combination of the word I know, and I don't know."
+  },
+  { "startTime": 4748.21, "person": "Gien", "text": " And you get four because of that." },
+  {
+    "startTime": 4751.33,
+    "person": "Gien",
+    "text": " And sometimes, you know, like the unknown known is that, well, we should have that information, but we don't have it, and there's no way to actually get it."
+  },
+  {
+    "startTime": 4760.07,
+    "person": "Gien",
+    "text": " So you know, there are things that the information is missing."
+  },
+  {
+    "startTime": 4765.15,
+    "person": "Gien",
+    "text": " And the unknown unknowns are things you can't predict, because you're not even aware of it that you don't know it at all."
+  },
+  {
+    "startTime": 4773.51,
+    "person": "Karol",
+    "text": " I'll bring it up in a moment, because I exactly know which model you're talking about."
+  },
+  {
+    "startTime": 4777.89,
+    "person": "Karol",
+    "text": " I just want to grab a decent picture of it."
+  },
+  { "startTime": 4783.2, "person": "Karol", "text": " And that's called, it's a good model." },
+  {
+    "startTime": 4785.62,
+    "person": "Karol",
+    "text": " It's called the Kinefin model, Kinefin framework, I believe."
+  },
+  { "startTime": 4793.76, "person": "Gien", "text": " It is from that you have the, yeah." },
+  {
+    "startTime": 4796.56,
+    "person": "Karol",
+    "text": " It's the clear context, complicated context, complex context, and chaotic context."
+  },
+  {
+    "startTime": 4803.8,
+    "person": "Karol",
+    "text": " And of course, the confusion, which is the middle ground there."
+  },
+  {
+    "startTime": 4809.64,
+    "person": "Gien",
+    "text": " I think the Kinefin is based on those four categories."
+  },
+  { "startTime": 4817.52, "person": "Gien", "text": " I would have to look up on your, I forgot." },
+  { "startTime": 4819.78, "person": "Karol", "text": " Let me put it on screen." },
+  { "startTime": 4821.44, "person": "Karol", "text": " There we go." },
+  { "startTime": 4821.94, "person": "Gien", "text": " But yeah." },
+  { "startTime": 4824, "person": "Karol", "text": " That's Kinefin." },
+  { "startTime": 4825.86, "person": "Karol", "text": " This is basically this model then." },
+  {
+    "startTime": 4829.8,
+    "person": "Karol",
+    "text": " So clear is the known knowns, complicated is the known unknowns, complex."
+  },
+  { "startTime": 4839.68, "person": "Karol", "text": " I might be getting that mapping wrong." },
+  {
+    "startTime": 4846.92,
+    "person": "Karol",
+    "text": " I'm wondering if I have, oh, I do have it."
+  },
+  { "startTime": 4849.72, "person": "Karol", "text": " Oh, yes." },
+  {
+    "startTime": 4851.8,
+    "person": "Karol",
+    "text": " Complex is unknown unknowns, and then chaotic is unknowable."
+  },
+  {
+    "startTime": 4856.28,
+    "person": "Karol",
+    "text": " Where we have so much chaos that we cannot really even understand where we are at."
+  },
+  { "startTime": 4862.9, "person": "Karol", "text": " Are we in the known knowns?" },
+  { "startTime": 4864.12, "person": "Karol", "text": " Are we in the known unknowns?" },
+  {
+    "startTime": 4865.54,
+    "person": "Karol",
+    "text": " And there needs to be somebody stepping in and taking control to drive us into one of the other aspects."
+  },
+  {
+    "startTime": 4875.26,
+    "person": "Karol",
+    "text": " Because otherwise we are not capable of doing anything because we're just in chaos running like headless chickens."
+  },
+  {
+    "startTime": 4883.44,
+    "person": "Karol",
+    "text": " But that happens quite a lot in projects at times."
+  },
+  {
+    "startTime": 4888.02,
+    "person": "Karol",
+    "text": " So that's a familiar state for a lot of consultants, I suppose."
+  },
+  { "startTime": 4892.66, "person": "Gien", "text": " Yeah." },
+  { "startTime": 4893.46, "person": "Gien", "text": " And I have a heuristic to tackle that." },
+  {
+    "startTime": 4899.18,
+    "person": "Gien",
+    "text": " Of course, I have a heuristic to tackle that."
+  },
+  { "startTime": 4901.24, "person": "Gien", "text": " I call it the clairvoyant." },
+  {
+    "startTime": 4904.3,
+    "person": "Gien",
+    "text": " And it's basically I ask myself, if there was a clairvoyant standing in front of me, and I could ask it a single question that it would give me the accurate and correct information to, to make this decision, what question would I ask?"
+  },
+  {
+    "startTime": 4928.72,
+    "person": "Gien",
+    "text": " And then I go after that information to make my decision."
+  },
+  {
+    "startTime": 4937.01,
+    "person": "Karol",
+    "text": " That's a good heuristic to figure out what information you need to make a decision."
+  },
+  {
+    "startTime": 4945.91,
+    "person": "Karol",
+    "text": " That definitely could bring you out of the chaotic context in Kinefin, because then you actually try to order things somehow."
+  },
+  { "startTime": 4956.47, "person": "Gien", "text": " Yeah." },
+  { "startTime": 4957.39, "person": "Gien", "text": " Like, what the hell do I want to know?" },
+  {
+    "startTime": 4960.61,
+    "person": "Gien",
+    "text": " Like, what is the most important thing that I want?"
+  },
+  { "startTime": 4963.43, "person": "Gien", "text": " And you can repeat this a few times." },
+  {
+    "startTime": 4965.51,
+    "person": "Gien",
+    "text": " Of course, at some point, information, like, it doesn't change your mind anymore."
+  },
+  {
+    "startTime": 4971.79,
+    "person": "Gien",
+    "text": " You know, you go after information, as long as it keeps changing your mind on which option would be best."
+  },
+  {
+    "startTime": 4981.15,
+    "person": "Gien",
+    "text": " And the moment it stops changing your mind, that is a waste of time."
+  },
+  { "startTime": 4988.07, "person": "Gien", "text": " Like, you don't need that information." },
+  { "startTime": 4990.17, "person": "Gien", "text": " It's a waste of your time." },
+  { "startTime": 4993.09, "person": "Gien", "text": " Do I still?" },
+  { "startTime": 4994.87, "person": "Gien", "text": " Yeah." },
+  { "startTime": 4995.61, "person": "Gien", "text": " Are there things I don't know?" },
+  { "startTime": 4998.33, "person": "Gien", "text": " I don't have?" },
+  { "startTime": 4999.25, "person": "Gien", "text": " Sure." },
+  {
+    "startTime": 5000.29,
+    "person": "Gien",
+    "text": " But at this point in time, they're like, they're not changing my mind anymore."
+  },
+  { "startTime": 5003.73, "person": "Gien", "text": " So I don't want to waste my time." },
+  {
+    "startTime": 5005.51,
+    "person": "Gien",
+    "text": " And then I have to go over to eliminating options."
+  },
+  {
+    "startTime": 5009.77,
+    "person": "Gien",
+    "text": " That's sort of the moment you go over to start eliminating my options."
+  },
+  {
+    "startTime": 5014.41,
+    "person": "Gien",
+    "text": " Because I have enough information to not change my mind anymore on where my preference lies on all these options."
+  },
+  { "startTime": 5024.14, "person": "Karol", "text": " Fair enough." },
+  {
+    "startTime": 5024.8,
+    "person": "Karol",
+    "text": " I'm just right now thinking I'm in a process of discovery right now for a new client."
+  },
+  {
+    "startTime": 5033.12,
+    "person": "Karol",
+    "text": " And we have large questionnaires of, well, questionnaires, a list of questions that we want to ask to understand the context."
+  },
+  {
+    "startTime": 5042.98,
+    "person": "Karol",
+    "text": " And because those lists are very long, like 100 rows of questions, then this brings us to the point, well, who is going to be able to answer all 100 questions?"
+  },
+  { "startTime": 5053.92, "person": "Karol", "text": " Probably no one." },
+  {
+    "startTime": 5055.26,
+    "person": "Karol",
+    "text": " So we need to, first of all, figure out which questions to ask."
+  },
+  {
+    "startTime": 5059.54,
+    "person": "Karol",
+    "text": " So I figured I'm going to classify those questions by the impact they can bring on the discovery."
+  },
+  {
+    "startTime": 5067.66,
+    "person": "Karol",
+    "text": " So basically, which questions, which answers and information brought by the answers would change my mind about how to approach this topic project, because discovery is in front of a project, right?"
+  },
+  {
+    "startTime": 5086.74,
+    "person": "Karol",
+    "text": " So I classified them with high impact, well, very high impact, high impact, medium, low, and very low impact."
+  },
+  {
+    "startTime": 5094.66,
+    "person": "Karol",
+    "text": " So basically, I figured, okay, those with high and very high impact, I'm going to ask first and then the rest as they come up in conversations in discovery."
+  },
+  {
+    "startTime": 5106.44,
+    "person": "Karol",
+    "text": " And those with lowest impact, I can just completely disregard if I don't have the time to ask them, because they will surface anyways, for example, as requirements later in the project, or we'll go back to them in the actual project after the discovery."
+  },
+  {
+    "startTime": 5122.14,
+    "person": "Karol",
+    "text": " Because we'll still have to deal with them, but they may be in so fine details, that it might not be relevant anymore."
+  },
+  { "startTime": 5132.18, "person": "Karol", "text": " As in not, at least not for discovery." },
+  { "startTime": 5135.7, "person": "Gien", "text": " Yeah." },
+  {
+    "startTime": 5136.74,
+    "person": "Gien",
+    "text": " And I think that's, you know, it's a variant, a variation on the, on the, on the clear point, when the data is to, to figure out, okay, where do I point my arrow to first here?"
+  },
+  {
+    "startTime": 5150.16,
+    "person": "Gien",
+    "text": " Because especially, yeah, as a consultant, you're, you're brought into most of the time, I'm brought into, you know, help them design their software system."
+  },
+  {
+    "startTime": 5166.72,
+    "person": "Gien",
+    "text": " And there's just so much that I need to know."
+  },
+  {
+    "startTime": 5171.42,
+    "person": "Gien",
+    "text": " And I'm really good at getting information out of people fast."
+  },
+  {
+    "startTime": 5176.5,
+    "person": "Gien",
+    "text": " But at the same time, you will never be able to have all information."
+  },
+  {
+    "startTime": 5182.8,
+    "person": "Gien",
+    "text": " And I still need to be able to start designing this thing."
+  },
+  {
+    "startTime": 5189.16,
+    "person": "Gien",
+    "text": " And so I have my techniques for that, which we talked about."
+  },
+  { "startTime": 5192.36, "person": "Gien", "text": " But also, I implement feedback loops." },
+  {
+    "startTime": 5195.58,
+    "person": "Gien",
+    "text": " And I think often that's missing from decisions."
+  },
+  {
+    "startTime": 5198.18,
+    "person": "Gien",
+    "text": " And it's because how we look at a problem, right?"
+  },
+  { "startTime": 5201.1, "person": "Gien", "text": " You solve it, you're done." },
+  { "startTime": 5203.56, "person": "Gien", "text": " That's how we look at problems." },
+  {
+    "startTime": 5206,
+    "person": "Gien",
+    "text": " You solve a problem, you decide on something, and it's done."
+  },
+  { "startTime": 5210.36, "person": "Gien", "text": " But that's just not true." },
+  {
+    "startTime": 5212.66,
+    "person": "Gien",
+    "text": " It's about that irrevocable of irrevocable allocation of resources that I talked about, and the fact that we make decisions under uncertainty."
+  },
+  { "startTime": 5224.12, "person": "Karol", "text": " Right?" },
+  {
+    "startTime": 5225.14,
+    "person": "Gien",
+    "text": " Because at some point, some of that information that you didn't know, you didn't know, might come up."
+  },
+  {
+    "startTime": 5232.94,
+    "person": "Gien",
+    "text": " And people have like, well, it's too late now, we made a decision."
+  },
+  {
+    "startTime": 5239.12,
+    "person": "Gien",
+    "text": " But this is valuable information, which really does change my mind."
+  },
+  {
+    "startTime": 5247.08,
+    "person": "Gien",
+    "text": " And I would like to go back to the analysis part a bit, to see if we're still going in the right direction."
+  },
+  {
+    "startTime": 5255.58,
+    "person": "Gien",
+    "text": " But you have that sunken cost fallacy, like, oh, we're too far down the road, we have allocated too many resources to this right now."
+  },
+  {
+    "startTime": 5265.88,
+    "person": "Gien",
+    "text": " And we don't want to change our minds anymore."
+  },
+  {
+    "startTime": 5270.7,
+    "person": "Gien",
+    "text": " And I just frame it in the way that am I, you know, I can always change my mind if I'm willing to pay the cost."
+  },
+  {
+    "startTime": 5279.24,
+    "person": "Gien",
+    "text": " And once you talk about it, especially with higher management, if you talk about look, um, I think it's worth paying the cost of changing our minds here."
+  },
+  { "startTime": 5291.44, "person": "Gien", "text": " And it's a very different conversation." },
+  {
+    "startTime": 5295.08,
+    "person": "Gien",
+    "text": " Because basically, any decision you make almost any decision you make is, you know, not irrevocable anymore, you have this concept of a one, a one way and a two way door, which means a one way door is that you have to make a decision and you go through it, and you can never go back."
+  },
+  {
+    "startTime": 5317,
+    "person": "Gien",
+    "text": " And often we treat as if everything you do is that one way door."
+  },
+  {
+    "startTime": 5322.08,
+    "person": "Gien",
+    "text": " But if you look at it from the perspective of I'll pay the cost, and I'll be able to come back, not many decisions, actually, or a one way door, and it really takes off the pressure, and I can deal with that uncertainty a hell of a lot better."
+  },
+  {
+    "startTime": 5340.88,
+    "person": "Gien",
+    "text": " And unless I have to make a decision that would actually, I don't know, bankrupt Ashley, I'm generally comfortable because that's the one way to once I have bankrupt, the company I worked for, that is it."
+  },
+  { "startTime": 5354.34, "person": "Gien", "text": " That is the one." },
+  { "startTime": 5356.04, "person": "Karol", "text": " Let's not do that, though." },
+  { "startTime": 5358.12, "person": "Gien", "text": " No, no." },
+  {
+    "startTime": 5360.58,
+    "person": "Gien",
+    "text": " And I mean, but that's, that's the one way to anything else, like, whatever they ask of me, and I can comfortably make a decision and I can change my mind along the way."
+  },
+  {
+    "startTime": 5372.64,
+    "person": "Gien",
+    "text": " And sure, there's a cost we'll have to pay."
+  },
+  {
+    "startTime": 5375.68,
+    "person": "Gien",
+    "text": " But the cost, so you start asking, how can I keep that cost as low as possible, and you start introducing those feedback loops, saying, do I have any more information, like while you're executing your decision, your alternative, you look back and you say, okay, yeah, does this still make sense?"
+  },
+  {
+    "startTime": 5394.58,
+    "person": "Gien",
+    "text": " And you try to catch it as early as possible, so that the costs stay as low as possible, should I have to change my mind?"
+  },
+  {
+    "startTime": 5401.68,
+    "person": "Gien",
+    "text": " And you know, sometimes you just, you know, the decision gets implemented, and you have your outcome, and you didn't change your mind."
+  },
+  {
+    "startTime": 5409.26,
+    "person": "Gien",
+    "text": " And sometimes you're like, might actually have to change directions."
+  },
+  {
+    "startTime": 5413.3,
+    "person": "Gien",
+    "text": " And like, there's so less pressure on making a software design decision, or making an architectural decision, or making any type of decision in your life, if you start thinking like that, because I will just pay the cost."
+  },
+  {
+    "startTime": 5427.56,
+    "person": "Karol",
+    "text": " And I think that this kind of one way door thinking is very deeply embedded in, in culture."
+  },
+  {
+    "startTime": 5441.2,
+    "person": "Karol",
+    "text": " And it's, it's, to extend that, when you when you started describing this, what popped into my mind is pop culture and movies, where the phrase used, oh, you said, hey, now you have to say B, as the typical one, one way door, you're not trapped into that, in that decision, because you made one decision that we have to continue alongside that decision, just go."
+  },
+  {
+    "startTime": 5468.74,
+    "person": "Karol",
+    "text": " And that's a narrative of a lot of stories."
+  },
+  {
+    "startTime": 5474.5,
+    "person": "Karol",
+    "text": " A lot of movies, animations, I do remember some cartoons, cartoon movies, with exactly that kind of narrative, that somebody got trapped in that decision."
+  },
+  {
+    "startTime": 5489.16,
+    "person": "Karol",
+    "text": " But the trap was a complete illusion, they could have backed out."
+  },
+  {
+    "startTime": 5493.24,
+    "person": "Karol",
+    "text": " But the kind of way of thinking was embedded in the story, which was a false narrative in that sense, because that took away a free will of that character, etc, etc."
+  },
+  {
+    "startTime": 5507.06,
+    "person": "Karol",
+    "text": " But that then, this kind of a way of thinking that translates into actual thinking of how people think."
+  },
+  {
+    "startTime": 5515.44,
+    "person": "Karol",
+    "text": " And it's not not a conscious decision that they make that they start thinking that way, they're just exposed to that way of thinking."
+  },
+  {
+    "startTime": 5522.16,
+    "person": "Karol",
+    "text": " And they adopt that way of thinking, instead of being critical about this."
+  },
+  { "startTime": 5529.14, "person": "Gien", "text": " Absolutely." },
+  {
+    "startTime": 5529.86,
+    "person": "Gien",
+    "text": " It is so funny that you mentioned this, because it is one of the things that since I started, it's a negative consequence of me digging into decision making theory, is that some movies have become unenjoyable."
+  },
+  {
+    "startTime": 5542.82,
+    "person": "Gien",
+    "text": " Because whenever someone says, but I didn't have a choice, I'm just yelling at the television."
+  },
+  { "startTime": 5548.2, "person": "Gien", "text": " Yes, you did." },
+  { "startTime": 5549.62, "person": "Gien", "text": " You just didn't have a preference for it." },
+  { "startTime": 5552.86, "person": "Gien", "text": " It ruins a lot of action movies." },
+  { "startTime": 5556, "person": "Gien", "text": " It's like, I didn't have a choice." },
+  { "startTime": 5558.94, "person": "Gien", "text": " They were going to kill my wife." },
+  { "startTime": 5560.56, "person": "Gien", "text": " And it's like, yeah, you had a choice." },
+  { "startTime": 5562, "person": "Gien", "text": " You could have let them kill your wife." },
+  { "startTime": 5563.56, "person": "Gien", "text": " You just didn't like it." },
+  {
+    "startTime": 5565.44,
+    "person": "Gien",
+    "text": " It ruins a lot of good movies for me, unfortunately."
+  },
+  {
+    "startTime": 5570.46,
+    "person": "Karol",
+    "text": " Yeah, or horror movies with, you know, have this old school horrors that somebody is in a scary house or something, and they just go into that room."
+  },
+  { "startTime": 5584.28, "person": "Karol", "text": " And they're sitting there." },
+  {
+    "startTime": 5585.16,
+    "person": "Karol",
+    "text": " It's like, why the freaking hell are you going into that room?"
+  },
+  { "startTime": 5587.8, "person": "Karol", "text": " Run!" },
+  {
+    "startTime": 5590.62,
+    "person": "Karol",
+    "text": " They made a conscious decision to go forward instead of getting out of there."
+  },
+  { "startTime": 5595.46, "person": "Karol", "text": " Which made no sense at all." },
+  { "startTime": 5597.7, "person": "Karol", "text": " But it's interesting." },
+  { "startTime": 5602.39, "person": "Karol", "text": " But yeah, you're right." },
+  { "startTime": 5602.97, "person": "Karol", "text": " That kind of ruins the movie." },
+  {
+    "startTime": 5605.41,
+    "person": "Karol",
+    "text": " Now I'm going to watch movies in a different way."
+  },
+  { "startTime": 5611.67, "person": "Karol", "text": " Thank you." },
+  { "startTime": 5612.93, "person": "Gien", "text": " You're welcome." },
+  { "startTime": 5614.17, "person": "Gien", "text": " You're welcome, everyone." },
+  { "startTime": 5615.97, "person": "Gien", "text": " Movies ruined." },
+  { "startTime": 5617.51, "person": "Gien", "text": " Tom Cruise movies ruined." },
+  { "startTime": 5622.55, "person": "Gien", "text": " Yeah." },
+  {
+    "startTime": 5623.23,
+    "person": "Gien",
+    "text": " You're saying they consciously chose to bring on another very sort of cool thing about decisions, which is unconscious versus conscious decisions."
+  },
+  {
+    "startTime": 5637.99,
+    "person": "Gien",
+    "text": " And I had a lot of discussion with a friend because I think like you don't have a decision if it's not conscious."
+  },
+  { "startTime": 5644.19, "person": "Gien", "text": " And they say the exact opposite." },
+  {
+    "startTime": 5647.11,
+    "person": "Gien",
+    "text": " They say that, well, no, I mean, even if the decision is unconscious, it's still a decision."
+  },
+  {
+    "startTime": 5654.83,
+    "person": "Gien",
+    "text": " We had a lot of interesting discussions on that."
+  },
+  {
+    "startTime": 5658.45,
+    "person": "Gien",
+    "text": " So I would like to hear your take on it, because I think you don't have a decision if you are not consciously making it."
+  },
+  {
+    "startTime": 5668.45,
+    "person": "Gien",
+    "text": " And maybe some of the audience there as well."
+  },
+  {
+    "startTime": 5671.99,
+    "person": "Karol",
+    "text": " Well, I would say that you can make, see, I wouldn't use the phrase unconsciously."
+  },
+  {
+    "startTime": 5684.66,
+    "person": "Karol",
+    "text": " I would use the phrase subconsciously, because it's part of your consciousness."
+  },
+  {
+    "startTime": 5690.46,
+    "person": "Karol",
+    "text": " But if you're unconscious, then obviously you're not making a decision because you're out of it and you have no control whatsoever."
+  },
+  {
+    "startTime": 5697.9,
+    "person": "Karol",
+    "text": " But if you're doing this decision completely automatically, because you have a baked in model and a heuristic attached to it, like my decision, am I going for a shower first or am I brushing my teeth first?"
+  },
+  {
+    "startTime": 5714.42,
+    "person": "Karol",
+    "text": " That's a completely subconscious decision."
+  },
+  { "startTime": 5716.74, "person": "Karol", "text": " I do it automatically." },
+  { "startTime": 5718.08, "person": "Karol", "text": " I don't think about it." },
+  { "startTime": 5719.02, "person": "Karol", "text": " I just do it." },
+  { "startTime": 5720.46, "person": "Karol", "text": " But it's still a decision made." },
+  { "startTime": 5723.98, "person": "Gien", "text": " Is it?" },
+  {
+    "startTime": 5726.32,
+    "person": "Karol",
+    "text": " Yeah, it's been made years ago and I'm just repeating the pattern day and day and day after."
+  },
+  { "startTime": 5732.32, "person": "Karol", "text": " But that decision was made." },
+  { "startTime": 5736.44, "person": "Karol", "text": " Now I'm just redoing it all over." },
+  {
+    "startTime": 5741.59,
+    "person": "Karol",
+    "text": " And sometimes, sometimes I do switch up and don't do it this way."
+  },
+  {
+    "startTime": 5747.03,
+    "person": "Karol",
+    "text": " So that then I make a very conscious decision that I'm going to just brush my teeth down and then I'm going to take a shower, for example, in an hour."
+  },
+  { "startTime": 5755.19, "person": "Karol", "text": " Right." },
+  { "startTime": 5755.85, "person": "Karol", "text": " But that's the conscious involvement." },
+  {
+    "startTime": 5757.87,
+    "person": "Karol",
+    "text": " So I would say that even if I unconsciously, subconsciously do things exactly the same way, and that comes from my lovely autistic part, that I exactly repeat the sequence of events in certain situations the same exact way."
+  },
+  {
+    "startTime": 5773.63,
+    "person": "Karol",
+    "text": " There was somewhere a decision making process that put me on the path of making those things exactly the same way every single day."
+  },
+  {
+    "startTime": 5786.18,
+    "person": "Karol",
+    "text": " And now, obviously, I forgot to turn off one source of sound, so it started buzzing."
+  },
+  {
+    "startTime": 5796.74,
+    "person": "Karol",
+    "text": " But basically, that would be something like this then."
+  },
+  { "startTime": 5802.8, "person": "Gien", "text": " I would call that a habit, not a decision." },
+  { "startTime": 5806.9, "person": "Gien", "text": " You have a habit." },
+  { "startTime": 5810.45, "person": "Gien", "text": " Mmm." },
+  { "startTime": 5818.56, "person": "Karol", "text": " But then, OK, you'd call it a habit." },
+  {
+    "startTime": 5826.23,
+    "person": "Karol",
+    "text": " A different thing that I wouldn't say I make this consciously."
+  },
+  {
+    "startTime": 5830.85,
+    "person": "Karol",
+    "text": " It's just somewhat automated, but I don't really give it a second thought or or even the first thought."
+  },
+  {
+    "startTime": 5839.19,
+    "person": "Karol",
+    "text": " If I'm going to my closet in the morning, I have a rack of T-shirts and unless I'm going to the office, I grab a T-shirt and just wear it."
+  },
+  {
+    "startTime": 5854.66,
+    "person": "Karol",
+    "text": " I quite often don't even think about it, what kind of T-shirt I'm wearing."
+  },
+  {
+    "startTime": 5860.82,
+    "person": "Karol",
+    "text": " But subconsciously, there is a decision making process, what kind of T-shirt I feel for, because all of my T-shirts have a print on them, because I do enjoy wacky prints."
+  },
+  {
+    "startTime": 5873.38,
+    "person": "Karol",
+    "text": " So, for example, today I'm wearing, Houston, I have so many problems."
+  },
+  {
+    "startTime": 5880.18,
+    "person": "Karol",
+    "text": " Which was what I needed this day to get through in terms of my mentality in the morning."
+  },
+  {
+    "startTime": 5888.76,
+    "person": "Karol",
+    "text": " If I go back to the morning when I picked the T-shirt out of the closet, I recall that I have these kind of thoughts of like, oh, Houston is that bit."
+  },
+  {
+    "startTime": 5899.72,
+    "person": "Karol",
+    "text": " Was that a very conscious decision or was it subconscious by the train of thoughts that I had during that time in the morning?"
+  },
+  { "startTime": 5913.64, "person": "Karol", "text": " There was a decision." },
+  { "startTime": 5914.9, "person": "Karol", "text": " I picked that T-shirt." },
+  {
+    "startTime": 5916.34,
+    "person": "Karol",
+    "text": " It was not the force of habit that I picked that particular T-shirt."
+  },
+  { "startTime": 5919.94, "person": "Karol", "text": " I have plenty others." },
+  { "startTime": 5926.88, "person": "Karol", "text": " Hard to put a pin in it." },
+  { "startTime": 5928.56, "person": "Karol", "text": " Is that conscious or subconscious?" },
+  { "startTime": 5930.94, "person": "Gien", "text": " Yeah, I know." },
+  {
+    "startTime": 5932.66,
+    "person": "Gien",
+    "text": " I have gone back and forth on this many, many times."
+  },
+  {
+    "startTime": 5939.86,
+    "person": "Gien",
+    "text": " I find it interesting to think about because on one hand, I can say that a decision is a conscious choice."
+  },
+  { "startTime": 5950.94, "person": "Gien", "text": " There has to be some consciousness to it." },
+  {
+    "startTime": 5957.52,
+    "person": "Gien",
+    "text": " If not, you have a habit and it's not really making a decision, which would, by the way, eliminate a lot of things we view as a decision today."
+  },
+  {
+    "startTime": 5967.3,
+    "person": "Gien",
+    "text": " It would get rid of a whole bunch of things that don't fall."
+  },
+  {
+    "startTime": 5972.98,
+    "person": "Karol",
+    "text": " If I break a habit, then I'm making a decision."
+  },
+  {
+    "startTime": 5979.08,
+    "person": "Gien",
+    "text": " It's very difficult to break a habit, right?"
+  },
+  { "startTime": 5981.6, "person": "Gien", "text": " It's a habit." },
+  {
+    "startTime": 5983.68,
+    "person": "Gien",
+    "text": " If I remove it from it, and then you go to the aesthetics of it, what is a good decision?"
+  },
+  {
+    "startTime": 5994.98,
+    "person": "Gien",
+    "text": " You can put the consciousness there and say that, well, you're actually making a good decision."
+  },
+  {
+    "startTime": 6001.4,
+    "person": "Gien",
+    "text": " If it is, it has a level of consciousness in it."
+  },
+  {
+    "startTime": 6005.82,
+    "person": "Gien",
+    "text": " The more conscious you are about it, the better your decision is."
+  },
+  { "startTime": 6011.02, "person": "Gien", "text": " I'm constantly weighing between those two." },
+  {
+    "startTime": 6016.94,
+    "person": "Gien",
+    "text": " I'm not sure which way I should go there because heuristics make you able to do things subconsciously."
+  },
+  { "startTime": 6030.62, "person": "Gien", "text": " On the other hand, I want..." },
+  {
+    "startTime": 6033.28,
+    "person": "Karol",
+    "text": " You kind of split between, are there subconscious decisions or not?"
+  },
+  {
+    "startTime": 6039.3,
+    "person": "Karol",
+    "text": " Heuristics would point towards you're making subconscious decisions because they're fast, but then again, from that perspective, if there is no consciousness in it, is that actually a decision?"
+  },
+  { "startTime": 6051.3, "person": "Karol", "text": " Is that a forced habit?" },
+  {
+    "startTime": 6057.05,
+    "person": "Karol",
+    "text": " Now we're in the philosophical part of making decisions, basically."
+  },
+  { "startTime": 6062.09, "person": "Gien", "text": " Absolutely, but I bet that's big." },
+  {
+    "startTime": 6065.37,
+    "person": "Gien",
+    "text": " If you want to have a topic, if you say, hey, I want to dig into decision-making, first thing you do is you gather a whole bunch of information."
+  },
+  {
+    "startTime": 6076.01,
+    "person": "Gien",
+    "text": " I don't want to be alone in this, but then at some point you sit down and you have to ask yourself, okay, what is it for me and how do I see this?"
+  },
+  { "startTime": 6085.91, "person": "Gien", "text": " How do I want to use it?" },
+  { "startTime": 6087.19, "person": "Gien", "text": " What will be useful to use?" },
+  {
+    "startTime": 6090.31,
+    "person": "Gien",
+    "text": " The first thing you do is basically you think about ontology, what is the decision?"
+  },
+  { "startTime": 6096.09, "person": "Gien", "text": " How am I going to frame it?" },
+  {
+    "startTime": 6098.49,
+    "person": "Gien",
+    "text": " You get to your own definition by reading a lot of other people's definitions of what they think that thing is."
+  },
+  { "startTime": 6106.65, "person": "Gien", "text": " Then you try to figure it out yourself." },
+  {
+    "startTime": 6111.43,
+    "person": "Gien",
+    "text": " Then you go to aesthetics and you're like, okay, this thing that I have, how do I know it's good or beautiful or whatever?"
+  },
+  { "startTime": 6118.41, "person": "Gien", "text": " How do I know I'm making a good decision?" },
+  {
+    "startTime": 6123.03,
+    "person": "Gien",
+    "text": " At some point, you become philosophical about the topic if you want to teach it to other people."
+  },
+  {
+    "startTime": 6134.27,
+    "person": "Gien",
+    "text": " I'm sharing the end result of my thought process in my talks on decisions and in the book."
+  },
+  {
+    "startTime": 6141.47,
+    "person": "Gien",
+    "text": " That's the end result of my thought process, which is in a way an interesting part because it would help you start your thought process on decisions and how you should all do that."
+  },
+  {
+    "startTime": 6155.11,
+    "person": "Gien",
+    "text": " What I don't want people to do is just take everything I tell them and apply it to them."
+  },
+  {
+    "startTime": 6161.77,
+    "person": "Gien",
+    "text": " I want to motivate them to start thinking about this."
+  },
+  { "startTime": 6171.03, "person": "Karol", "text": " It's actually mirrored." },
+  {
+    "startTime": 6176.49,
+    "person": "Karol",
+    "text": " It's one of the things, learnings from my management training course that I did some time ago."
+  },
+  {
+    "startTime": 6182.03,
+    "person": "Karol",
+    "text": " I was sent by a company in terms of, well, I was placed in the title manager, but without any team to manage."
+  },
+  {
+    "startTime": 6194.51,
+    "person": "Karol",
+    "text": " I wasn't managing really anybody, but since the title was there, they sent me on the management training course."
+  },
+  {
+    "startTime": 6200.53,
+    "person": "Karol",
+    "text": " I was like, one of the takeaways to reflect on things."
+  },
+  {
+    "startTime": 6204.71,
+    "person": "Karol",
+    "text": " You're basically saying, well, don't take everything as factual, but take it with a grain of salt and reflect on it yourself and start your own process of getting to your own definition, your own heuristic, your own truth in this, that is pretty much suited to your context."
+  },
+  {
+    "startTime": 6230.02,
+    "person": "Karol",
+    "text": " That's what we should all be doing because everybody's context is somewhat different, right?"
+  },
+  { "startTime": 6235.4, "person": "Karol", "text": " Our realities are different." },
+  { "startTime": 6238.04, "person": "Karol", "text": " Our mental models are different." },
+  {
+    "startTime": 6241.82,
+    "person": "Karol",
+    "text": " The way we interact with the world will be different."
+  },
+  { "startTime": 6247.44, "person": "Gien", "text": " Yeah, absolutely." },
+  { "startTime": 6248.86, "person": "Gien", "text": " I have to make design decisions." },
+  { "startTime": 6251.54, "person": "Gien", "text": " I have to make a lot of design decisions." },
+  {
+    "startTime": 6253.78,
+    "person": "Gien",
+    "text": " Anything I said for almost the past two hours and any research I did, it started out as general knowledge and then it started targeting this like, hey, we're really bad at doing this specific thing and I want to help improve it."
+  },
+  {
+    "startTime": 6272,
+    "person": "Gien",
+    "text": " Anything I came up with is to improve that into making software design decisions."
+  },
+  { "startTime": 6279.48, "person": "Gien", "text": " Sure, you can apply that." },
+  {
+    "startTime": 6281.7,
+    "person": "Gien",
+    "text": " You can take that profound fixed list and you can apply it to when you want to pick a technology, for example, but I have a completely different way of dealing with picking technologies than I have on how I actually, you know, my process for making design decisions and how I look at decisions and what they are."
+  },
+  { "startTime": 6308.54, "person": "Gien", "text": " I have a talk on that as well." },
+  {
+    "startTime": 6310.6,
+    "person": "Gien",
+    "text": " I think it's called Reducing Risk in Picking a Technology and it has completely different structure."
+  },
+  {
+    "startTime": 6317.92,
+    "person": "Gien",
+    "text": " It works with matrices and pair ranking, right?"
+  },
+  {
+    "startTime": 6321.82,
+    "person": "Gien",
+    "text": " They're different strategies depending on which type of decisions am I actually making."
+  },
+  {
+    "startTime": 6331.28,
+    "person": "Karol",
+    "text": " Sounds very familiar because I do technology choices as well."
+  },
+  {
+    "startTime": 6336.1,
+    "person": "Karol",
+    "text": " Well, as a consultant, I need to advise my clients on technology choices and there's so many processes baked into that that one process of choosing a technology."
+  },
+  {
+    "startTime": 6352.22,
+    "person": "Karol",
+    "text": " Comparisons, weighted averages, scoring of technologies based on context, based on the requirements, based on priority of requirements, etc."
+  },
+  {
+    "startTime": 6364.88,
+    "person": "Karol",
+    "text": " It's a whole model on how to deal with that and it's completely different than dealing with trade-off analysis and making the architecture decisions and design decisions."
+  },
+  { "startTime": 6377.44, "person": "Gien", "text": " Absolutely." },
+  {
+    "startTime": 6378.36,
+    "person": "Gien",
+    "text": " And it's also like one of the models I have is on type of problems."
+  },
+  { "startTime": 6384.26, "person": "Gien", "text": " What type of problem am I dealing with?" },
+  {
+    "startTime": 6386.78,
+    "person": "Gien",
+    "text": " And it has four categories and so it sort of looks at the influence, the factual and the judgement influence on it and then it starts categorising."
+  },
+  {
+    "startTime": 6403.68,
+    "person": "Gien",
+    "text": " And so it has a simple and deterministic which are basically two categories."
+  },
+  { "startTime": 6411.44, "person": "Gien", "text": " So you have a fact." },
+  { "startTime": 6413.32, "person": "Gien", "text": " If I ask the question, what is F sharp?" },
+  { "startTime": 6415.6, "person": "Gien", "text": " Then I have an answer to that." },
+  { "startTime": 6416.94, "person": "Gien", "text": " It's very simple." },
+  { "startTime": 6418.62, "person": "Gien", "text": " It's all factual." },
+  { "startTime": 6420.22, "person": "Gien", "text": " No judgement needed." },
+  {
+    "startTime": 6422.3,
+    "person": "Gien",
+    "text": " And then you have deterministic which is you have a single answer but you have to apply some sort of logic or formula to get to that answer which is still very high on facts because you have that formula and you have that."
+  },
+  {
+    "startTime": 6439.22,
+    "person": "Gien",
+    "text": " And then we go to random which means that there actually are multiple answers."
+  },
+  { "startTime": 6445.28, "person": "Gien", "text": " So we have one answer." },
+  {
+    "startTime": 6447.04,
+    "person": "Gien",
+    "text": " We have a fact and we have a formula that actually will give us one answer and then we go to we have multiple answers."
+  },
+  { "startTime": 6454.5, "person": "Gien", "text": " But I can determine all." },
+  {
+    "startTime": 6457.3,
+    "person": "Gien",
+    "text": " If I can determine all possible answers there which is a technology."
+  },
+  {
+    "startTime": 6464.5,
+    "person": "Gien",
+    "text": " It's where picking a technology falls in that and they call that a random problem."
+  },
+  {
+    "startTime": 6468.54,
+    "person": "Gien",
+    "text": " And you do have to exert a bit of judgement there when you make that type of decision."
+  },
+  {
+    "startTime": 6476.52,
+    "person": "Gien",
+    "text": " And then the last category is undeterministic which means I have multiple solutions."
+  },
+  {
+    "startTime": 6483.46,
+    "person": "Gien",
+    "text": " And no matter what I do, I cannot find all the answers."
+  },
+  {
+    "startTime": 6487.26,
+    "person": "Gien",
+    "text": " Like I can never come up with all the answers where software design is situated."
+  },
+  {
+    "startTime": 6493.3,
+    "person": "Gien",
+    "text": " And so that means you're going to have to apply a lot of judgments and there will not be that much factuality involved."
+  },
+  {
+    "startTime": 6502.92,
+    "person": "Gien",
+    "text": " And so that's how I also explain to higher management why we have to change our mind, why we have to pay the cost, why it is so hard what we do."
+  },
+  {
+    "startTime": 6513.06,
+    "person": "Gien",
+    "text": " Let's say okay because we have an undeterministic problem we're trying to solve here."
+  },
+  {
+    "startTime": 6519.7,
+    "person": "Gien",
+    "text": " I can give you like four or five designs or most of the time I go for three because why not."
+  },
+  {
+    "startTime": 6529,
+    "person": "Gien",
+    "text": " There's a reason why I go for three but that's a different discussion."
+  },
+  { "startTime": 6534.16, "person": "Karol", "text": " That's another heuristic." },
+  {
+    "startTime": 6536.02,
+    "person": "Gien",
+    "text": " Yeah no matter what I try I can't come up with all the answers."
+  },
+  {
+    "startTime": 6541.12,
+    "person": "Gien",
+    "text": " So is there a better answer that I can't come up with?"
+  },
+  { "startTime": 6544.56, "person": "Gien", "text": " Yeah sure." },
+  {
+    "startTime": 6546.22,
+    "person": "Gien",
+    "text": " When I can come up with it I'm going to change my mind and we're going to change direction."
+  },
+  {
+    "startTime": 6553.38,
+    "person": "Gien",
+    "text": " And if I test my models in production I will have that feedback loop and I will actually have more information to actually make better answers."
+  },
+  {
+    "startTime": 6564.52,
+    "person": "Gien",
+    "text": " So it's also why I don't can just say like it's done now we're going to spend three years on re-implementing this and I will never look back on it."
+  },
+  {
+    "startTime": 6575.36,
+    "person": "Gien",
+    "text": " Because I need to push something to production which I think will it will serve well and then I need to start fine-tuning this thing because now I have information on how useful it is which I did not have before because it is high on judgement."
+  },
+  {
+    "startTime": 6591.38,
+    "person": "Gien",
+    "text": " And I was judging from past experience and now actually I'm getting information that allows me to judge within this context and I will start doing that then."
+  },
+  {
+    "startTime": 6600.98,
+    "person": "Gien",
+    "text": " And it helps them to understand why it's so hard for people to do that."
+  },
+  {
+    "startTime": 6606.42,
+    "person": "Karol",
+    "text": " Then the question would be what's the then relationship of models in decision making?"
+  },
+  {
+    "startTime": 6616,
+    "person": "Karol",
+    "text": " Because when I'm listening to the classifiers you say deterministic, undeterministic, I have a tendency of creating tools that simplify the process to have it slightly more deterministic from an undeterministic aspect."
+  },
+  {
+    "startTime": 6641.67,
+    "person": "Karol",
+    "text": " So for example and my biggest problem usually is the scale problem because I work on a scale of an ecosystem so that's usually extremely large scale compared to most architects working on a scale of an individual domain system."
+  },
+  {
+    "startTime": 6662.45,
+    "person": "Karol",
+    "text": " So to make any decision on a scale of an ecosystem especially about architecture of an ecosystem and then the interactions between domain systems in that ecosystem there is a lot more moving parts and a lot of parts that are completely undeterministic."
+  },
+  {
+    "startTime": 6681.7,
+    "person": "Karol",
+    "text": " But I tend to simplify the process by applying a model."
+  },
+  {
+    "startTime": 6689.79,
+    "person": "Karol",
+    "text": " I built a specific model for these kind of decisions on how to define what architectural style architectural approach should be done for that particular ecosystem and then from that also we have derived quite a few design heuristics for individual solutions within that architecture ecosystem architecture."
+  },
+  {
+    "startTime": 6714.71,
+    "person": "Karol",
+    "text": " So the thing I use to simplify things to make things more deterministic is a specific model which is not quantitative it's qualitative because quantitative is impossible to be done at this scale because it would cost so much that we would go bankrupt."
+  },
+  { "startTime": 6734.95, "person": "Karol", "text": " We don't want that right." },
+  { "startTime": 6736.81, "person": "Karol", "text": " So that's a one-way door." },
+  { "startTime": 6739.47, "person": "Karol", "text": " That's a one-way door." },
+  { "startTime": 6740.67, "person": "Karol", "text": " We don't want one-way doors." },
+  {
+    "startTime": 6742.89,
+    "person": "Karol",
+    "text": " So through a hundred or so hours of discussions between different architects I came up with a model that simplifies that decision-making process based on analysing the context, analysing business briefs, analysing things that are not directly factual but they're statements, certain statements or certain occurrences in the ecosystem that point us in a, let's say, specific direction."
+  },
+  {
+    "startTime": 6775.51,
+    "person": "Karol",
+    "text": " So I trained myself to identify those things that happen that start pointing towards the direction but they're not entirely factual."
+  },
+  { "startTime": 6785.83, "person": "Karol", "text": " There's no direct indicator." },
+  {
+    "startTime": 6789.69,
+    "person": "Karol",
+    "text": " They're always, most of them are indirect right."
+  },
+  {
+    "startTime": 6793.85,
+    "person": "Karol",
+    "text": " So I would name it a model but perhaps I'm wrong."
+  },
+  {
+    "startTime": 6800.13,
+    "person": "Karol",
+    "text": " So I'm curious how would you then tie the using models for decision-making?"
+  },
+  {
+    "startTime": 6809.99,
+    "person": "Gien",
+    "text": " So from your explanation, so one thing I would say is that your model helps you to make undeterministic decisions easier."
+  },
+  {
+    "startTime": 6825.53,
+    "person": "Gien",
+    "text": " They do not push your decision from undeterministic to deterministic."
+  },
+  {
+    "startTime": 6830.25,
+    "person": "Gien",
+    "text": " You don't all of a sudden just have one answer."
+  },
+  {
+    "startTime": 6833.65,
+    "person": "Gien",
+    "text": " In the model I was talking about right with the four categories."
+  },
+  {
+    "startTime": 6838.61,
+    "person": "Gien",
+    "text": " So that's, there are a lot of models out there on how to classify problems."
+  },
+  { "startTime": 6844.83, "person": "Gien", "text": " You should check it out." },
+  {
+    "startTime": 6845.93,
+    "person": "Gien",
+    "text": " It's very interesting but that's what I find helpful for when I talk to higher management and to explain design decisions."
+  },
+  { "startTime": 6853.29, "person": "Gien", "text": " So you have a model." },
+  {
+    "startTime": 6855.85,
+    "person": "Gien",
+    "text": " So any decision, so you need as an input, you need alternatives, you need information and you need preferences."
+  },
+  {
+    "startTime": 6865.95,
+    "person": "Gien",
+    "text": " Then you have a process and out of that comes, often it's called a plan of action but it's basically a way to execute."
+  },
+  {
+    "startTime": 6878.33,
+    "person": "Gien",
+    "text": " So you boil down all your options to one and then you find a way to actually execute and bring that option into reality."
+  },
+  {
+    "startTime": 6886.55,
+    "person": "Gien",
+    "text": " So that sort of is there and I would say that if we look at that process that is needed within a decision, that is where your models lie."
+  },
+  { "startTime": 6898.27, "person": "Gien", "text": " That's also what I did." },
+  {
+    "startTime": 6899.23,
+    "person": "Gien",
+    "text": " I made a, when I say for my alternatives here in order to actually have alternatives coming into my decision, I'm going to use heuristics and that allows me to actually generate those alternatives and then I have my pro-con fix."
+  },
+  {
+    "startTime": 6916.01,
+    "person": "Gien",
+    "text": " Very simple process to actually boil it down to one."
+  },
+  { "startTime": 6921.05, "person": "Gien", "text": " Sometimes I do a deep democracy." },
+  {
+    "startTime": 6923.87,
+    "person": "Gien",
+    "text": " If we can't reach a single thing from just the analysis, we go to deep democracy which is more of a focussing again on the people part of everything to boil it down to one."
+  },
+  {
+    "startTime": 6936.83,
+    "person": "Gien",
+    "text": " So that sort of is my model of how I tackle decisions and I would say that you also have a model that allows you to do that process in a way that works for you."
+  },
+  {
+    "startTime": 6950.71,
+    "person": "Gien",
+    "text": " That's how I would, that's where I would place the models."
+  },
+  {
+    "startTime": 6956.01,
+    "person": "Karol",
+    "text": " Oh, I'll have to sleep on it to make it cohesive in my brain because that's overall plenty of context on decision making that makes it a lot more conscious effort then and just making it a conscious effort makes it all sorts of more difficult to an extent."
+  },
+  {
+    "startTime": 6988.74,
+    "person": "Karol",
+    "text": " At the same time making it simpler because applying consciousness to that decision making"
+  },
+  {
+    "startTime": 6996.28,
+    "person": "Karol",
+    "text": " process makes it all the, let's say compute effort of your brain a lot higher at the same"
+  },
+  {
+    "startTime": 7003.08,
+    "person": "Karol",
+    "text": " time making it simpler because you acknowledge that things, some things are automated, some"
+  },
+  {
+    "startTime": 7008.7,
+    "person": "Karol",
+    "text": " things are heuristics, some things are subconscious processes that you don't,"
+  },
+  {
+    "startTime": 7014.48,
+    "person": "Karol",
+    "text": " you don't control entirely and just acknowledging that this process is fallible"
+  },
+  {
+    "startTime": 7026.25,
+    "person": "Karol",
+    "text": " that's already making it a lot more hefty in effort but at the same time it makes it simpler"
+  },
+  {
+    "startTime": 7036.2,
+    "person": "Karol",
+    "text": " because then you know where the gaps are and where you know where you need to put effort"
+  },
+  {
+    "startTime": 7041.96,
+    "person": "Karol",
+    "text": " but I think that requires a little bit of practise to understand"
+  },
+  {
+    "startTime": 7045.68,
+    "person": "Karol",
+    "text": " where you automate things in your, in your thinking process towards a decision."
+  },
+  {
+    "startTime": 7054.48,
+    "person": "Gien",
+    "text": " Yeah, yeah I think so where can I, where can I automate"
+  },
+  {
+    "startTime": 7060.02,
+    "person": "Gien",
+    "text": " not just in your decision process but also in general in your life"
+  },
+  {
+    "startTime": 7066.9,
+    "person": "Gien",
+    "text": " because like I said I overthought every decision basically, heuristic like I did not have that"
+  },
+  {
+    "startTime": 7075.6,
+    "person": "Gien",
+    "text": " naturally in my head there and it just made life a hell of a lot easier to say like okay but"
+  },
+  {
+    "startTime": 7085.2,
+    "person": "Gien",
+    "text": " I can use heuristics here, sure they might fail, don't necessarily yield worse results"
+  },
+  {
+    "startTime": 7091.7,
+    "person": "Gien",
+    "text": " and I won't have to think about it anymore and then you can say okay for the important decisions"
+  },
+  {
+    "startTime": 7097.64,
+    "person": "Gien",
+    "text": " I need to think about it a bit more, I need to sit down, I need to write the options,"
+  },
+  {
+    "startTime": 7103.4,
+    "person": "Gien",
+    "text": " I'm gonna you know compare them a bit, try to find some more information on them, compare them a bit"
+  },
+  {
+    "startTime": 7109.72,
+    "person": "Gien",
+    "text": " there, I think how I feel emotionally, how do I feel emotionally about it, is there any in my,"
+  },
+  {
+    "startTime": 7115.62,
+    "person": "Gien",
+    "text": " in my morals or my values that I want to think about, like if I'm very ecological that will"
+  },
+  {
+    "startTime": 7123.68,
+    "person": "Gien",
+    "text": " influence it, that's also a preference there, your morals and your values will influence your"
+  },
+  {
+    "startTime": 7130.56,
+    "person": "Gien",
+    "text": " preference there as well and to think about it actually what is what is driving this so that"
+  },
+  {
+    "startTime": 7136.68,
+    "person": "Gien",
+    "text": " you understand and then you can explain it to other people, I think that's the most"
+  },
+  {
+    "startTime": 7142.46,
+    "person": "Gien",
+    "text": " sort of the most thing I got out of all of this is that now I can actually"
+  },
+  {
+    "startTime": 7150.06,
+    "person": "Gien",
+    "text": " explain it to other people and if I have to make an authoritarian decision I know how to sit down,"
+  },
+  {
+    "startTime": 7157.98,
+    "person": "Gien",
+    "text": " I know how to write everything out and then I can go to people and say this is what we're going to"
+  },
+  {
+    "startTime": 7161.94,
+    "person": "Gien",
+    "text": " do, this is why these are the things I have considered, this is why I think those are bad"
+  },
+  {
+    "startTime": 7166.7,
+    "person": "Gien",
+    "text": " options, this is why right now my mind is made up and we're going to go for that one, how are you"
+  },
+  {
+    "startTime": 7172.98,
+    "person": "Gien",
+    "text": " feeling, great, go and you don't get the resistance, you don't get the conflict because that's what I"
+  },
+  {
+    "startTime": 7182.28,
+    "person": "Gien",
+    "text": " got out of all of this in the end, a way to sit down and be able to explain it to other people"
+  },
+  {
+    "startTime": 7192.04,
+    "person": "Gien",
+    "text": " because if you can't explain why you think one of your designs is better or why you want to go"
+  },
+  {
+    "startTime": 7198.96,
+    "person": "Gien",
+    "text": " for microservices or why you want to introduce event sourcing and if you can't show them that"
+  },
+  {
+    "startTime": 7207.06,
+    "person": "Gien",
+    "text": " you actually really thought about it, well why would they go for your opinion in the end?"
+  },
+  { "startTime": 7218.19, "person": "Karol", "text": " That's the value of why." },
+  { "startTime": 7221.17, "person": "Gien", "text": " That is the value of why." },
+  { "startTime": 7223.57, "person": "Karol", "text": " And that's, I think," },
+  {
+    "startTime": 7226.29,
+    "person": "Karol",
+    "text": " we can kind of cut here as this is the highlight of the discussion that"
+  },
+  {
+    "startTime": 7235.67,
+    "person": "Karol",
+    "text": " in the decision-making process having that conscious effort to define the why behind"
+  },
+  {
+    "startTime": 7243.43,
+    "person": "Karol",
+    "text": " your decision on top of the whole process is something that is making that decision"
+  },
+  {
+    "startTime": 7255.89,
+    "person": "Karol",
+    "text": " work and be accepted because it's not only about making that decision, it's also about making that"
+  },
+  {
+    "startTime": 7262.75,
+    "person": "Karol",
+    "text": " decision live and accepted and workable within the environment and the context you're in"
+  },
+  {
+    "startTime": 7270.53,
+    "person": "Karol",
+    "text": " because if you cannot convince people that this decision is a good decision,"
+  },
+  { "startTime": 7275.43, "person": "Karol", "text": " what's the value of that decision?" },
+  { "startTime": 7278.17, "person": "Gien", "text": " Exactly." },
+  { "startTime": 7280.29, "person": "Gien", "text": " You might as well not make it." },
+  { "startTime": 7283.89, "person": "Karol", "text": " Oh, fantastic." },
+  { "startTime": 7285.51, "person": "Karol", "text": " All right." },
+  {
+    "startTime": 7285.93,
+    "person": "Karol",
+    "text": " Before we go, a little bit of shameless advertisement."
+  },
+  {
+    "startTime": 7292.11,
+    "person": "Karol",
+    "text": " So next week, well in six days because for a change we're going to be doing the live stream on a Tuesday, we're actually having the first time ever more than two people joining as guests."
+  },
+  {
+    "startTime": 7306.65,
+    "person": "Karol",
+    "text": " So we're being joined by Woody Zhu, Anagret Juncker and Fabrizio Lazzaretti."
+  },
+  {
+    "startTime": 7315.53,
+    "person": "Karol",
+    "text": " And we're going to be talking, well not talking, we're actually going to be doing collaborative modelling using domain storytelling where we have a specific topic we're going to be modelling and Woody will be joining as our subject matter expert and we'll be guided in the process of collaborative domain storytelling by Anagret and Fabrizio."
+  },
+  {
+    "startTime": 7337.87,
+    "person": "Karol",
+    "text": " So that's going to be a more active interactive session to have a little fun with."
+  },
+  {
+    "startTime": 7345.31,
+    "person": "Karol",
+    "text": " And then of course, if you manage to survive till this hour and we've been at it for two hours, of course you can look up upcoming events and articles on bridgingthegap.eu.com."
+  },
+  {
+    "startTime": 7356.85,
+    "person": "Karol",
+    "text": " We're also running a course on strategic integration design with Didi at Didi Academy."
+  },
+  {
+    "startTime": 7363.81,
+    "person": "Karol",
+    "text": " A lot of heuristics in there and decision-making processes described or simplified by models."
+  },
+  {
+    "startTime": 7371.87,
+    "person": "Karol",
+    "text": " And then lastly, if you're new to Bridging the Gap YouTube channel, scan the QR code to subscribe and hit the bell there to be notified of new live streams."
+  },
+  {
+    "startTime": 7384.93,
+    "person": "Karol",
+    "text": " Hopefully soon we'll actually get to recorded content instead of, well not instead of, alongside live streams."
+  },
+  {
+    "startTime": 7392.59,
+    "person": "Karol",
+    "text": " That said, Gien, thank you so much for the conversation."
+  },
+  { "startTime": 7399.53, "person": "Karol", "text": " Thank you for having me." },
+  { "startTime": 7402.13, "person": "Karol", "text": " More than welcome." },
+  {
+    "startTime": 7403.97,
+    "person": "Karol",
+    "text": " And everybody have a, I assume given that most viewers are in Europe, have a lovely evening."
+  },
+  {
+    "startTime": 7409.97,
+    "person": "Karol",
+    "text": " And for those watching the recording, whatever time you're at, have a lovely day."
+  }
+]

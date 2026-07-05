@@ -1,33 +1,30 @@
 import { SubscriptionSchema } from '~/server/models/subscription.schema'
+import { isRecaptchaValid, verifyRecaptcha } from '~/server/utils/recaptcha'
+import { isValidEmail } from '~/server/utils/validation'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
   const { email, token } = body
+
+  if (!token) {
+    return { status: 400, body: 'recaptcha token is missing' }
+  }
+
+  const recaptchaResult = await verifyRecaptcha(token)
+
+  if (!isRecaptchaValid(recaptchaResult)) {
+    return { status: 400, body: 'Recaptcha verification failed' }
+  }
+
+  if (!isValidEmail(email)) {
+    return { status: 400, body: 'Invalid email address' }
+  }
+
   try {
-    if (!token) {
-      return { status: 400, body: 'recaptcha token is missing' }
-    }
-
-    const config = useRuntimeConfig()
-
-    const recaptchaSecret = config.RECAPTCHA_SECRET_KEY
-    const response = await fetch(
-      `https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${token}`,
-      {
-        method: 'POST'
-      }
-    )
-
-    const data = await response.json()
-
-    if (!data.success || data.score < 0.5) {
-      return { status: 400, body: 'recaptcha verification failed' }
-    }
-
     await SubscriptionSchema.findOneAndDelete({ email })
-    return {}
+    return { status: 200 }
   } catch (error) {
-    console.log(error)
-    return error
+    console.error('Error removing subscriber:', error)
+    return { status: 500, body: 'Error removing subscriber' }
   }
 })

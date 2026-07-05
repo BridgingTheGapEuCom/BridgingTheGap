@@ -12,6 +12,15 @@ export default defineNuxtConfig({
 
   css: ['~/assets/style/main.scss'],
   vite: {
+    optimizeDeps: {
+      include: [
+        'v-calendar',
+        'vue-recaptcha-v3',
+        '@mdi/js',
+        'tailwindcss/resolveConfig',
+        '@vueuse/core'
+      ]
+    },
     css: {
       preprocessorOptions: {
         scss: {
@@ -31,6 +40,15 @@ export default defineNuxtConfig({
 
   security: {
     strict: true,
+    corsHandler: {
+      origin: ['https://bridgingthegap.eu.com', 'http://localhost:3000', 'http://127.0.0.1:3000'],
+      methods: ['GET', 'HEAD', 'POST']
+    },
+    rateLimiter: {
+      tokensPerInterval: 150,
+      interval: 300000,
+      throwError: true
+    },
     headers: {
       contentSecurityPolicy: {
         'img-src': [
@@ -101,12 +119,22 @@ export default defineNuxtConfig({
   },
 
   robots: {
-    blockNonSeoBots: true
+    blockNonSeoBots: true,
+    disallow: ['/*?*']
   },
 
   site: {
     url: 'https://bridgingthegap.eu.com',
-    name: 'Bridging The Gap'
+    name: 'Bridging the Gap'
+  },
+
+  sitemap: {
+    sources: ['/api/__sitemap__/streams'],
+    exclude: ['/unsubscribePage', '/issuedBadge']
+  },
+
+  seo: {
+    canonicalLowercase: false
   },
 
   devServer: {
@@ -131,6 +159,24 @@ export default defineNuxtConfig({
   router: {
     options: {
       strict: false
+    }
+  },
+
+  routeRules: {
+    '/unsubscribePage': { robots: false },
+    '/issuedBadge': { robots: false },
+    '/api/**': {
+      security: {
+        rateLimiter: {
+          tokensPerInterval: 30,
+          interval: 60000,
+          throwError: true
+        },
+        corsHandler: {
+          origin: ['https://bridgingthegap.eu.com', 'http://localhost:3000', 'http://127.0.0.1:3000'],
+          methods: ['GET', 'POST']
+        }
+      }
     }
   },
 

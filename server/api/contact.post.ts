@@ -3,6 +3,8 @@ import { JWT } from 'google-auth-library'
 import * as nodemailer from 'nodemailer'
 import * as path from 'path'
 import fs from 'fs'
+import { isRecaptchaValid, verifyRecaptcha } from '~/server/utils/recaptcha'
+import { isValidEmail, sanitizeString } from '~/server/utils/validation'
 
 const SERVICE_ACCOUNT_KEY_FILE: string = path.join(process.cwd(), 'gmail.private.key.json')
 
@@ -18,26 +20,30 @@ export default defineEventHandler(async (event) => {
     return { status: 400, body: 'recaptcha token is missing' }
   }
 
-  const config = useRuntimeConfig()
+  const recaptchaResult = await verifyRecaptcha(token)
 
-  const USER_TO_IMPERSONATE: string = config.USER_TO_IMPERSONATE
-  const recaptchaSecret = config.RECAPTCHA_SECRET_KEY
-  const response = await fetch(
-    `https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${token}`,
-    {
-      method: 'POST'
-    }
-  )
-
-  const data = await response.json()
-
-  if (!data.success || data.score < 0.5) {
+  if (!isRecaptchaValid(recaptchaResult)) {
     return { status: 400, body: 'recaptcha verification failed' }
   }
 
+  const sanitizedMessage = sanitizeString(message, 10000)
+  if (!sanitizedMessage) {
+    return { status: 400, body: 'Message is required' }
+  }
+
+  const sanitizedName = name ? sanitizeString(name, 200) : null
+  const sanitizedEmail = email ? (isValidEmail(email) ? email.trim() : null) : null
+
+  if (email && !sanitizedEmail) {
+    return { status: 400, body: 'Invalid email address' }
+  }
+
+  const config = useRuntimeConfig()
+
+  const USER_TO_IMPERSONATE: string = config.USER_TO_IMPERSONATE
   const RECIPIENT_EMAIL: string = config.RECIPIENT_EMAIL
-  const EMAIL_SUBJECT: string = `Website Contact Form ${name ? `from ${name}` : ''}`
-  const EMAIL_TEXT_BODY: string = `${name ? `Message from ${name}\n` : ''}${email ? `Email for replies ${email}\n\n` : name ? '\n' : ''}${message}`
+  const EMAIL_SUBJECT: string = `Website Contact Form ${sanitizedName ? `from ${sanitizedName}` : ''}`
+  const EMAIL_TEXT_BODY: string = `${sanitizedName ? `Message from ${sanitizedName}\n` : ''}${sanitizedEmail ? `Email for replies ${sanitizedEmail}\n\n` : sanitizedName ? '\n' : ''}${sanitizedMessage}`
 
   try {
     const filePath = path.resolve(SERVICE_ACCOUNT_KEY_FILE)
@@ -73,7 +79,6 @@ export default defineEventHandler(async (event) => {
         if (err) {
           reject(err)
         } else {
-          // The info.message contains the raw MIME message buffer
           resolve(info.message.toString())
         }
       })

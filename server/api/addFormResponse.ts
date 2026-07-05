@@ -1,4 +1,6 @@
 import { FormResponseSchema } from '~/server/models/form.schema'
+import { isRecaptchaValid, verifyRecaptcha } from '~/server/utils/recaptcha'
+import { isPlainStringRecord, isValidEmail } from '~/server/utils/validation'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
@@ -8,44 +10,44 @@ export default defineEventHandler(async (event) => {
     return { status: 400, body: 'recaptcha token is missing' }
   }
 
-  const config = useRuntimeConfig()
+  const recaptchaResult = await verifyRecaptcha(token)
 
-  const recaptchaSecret = config.RECAPTCHA_SECRET_KEY
-  const response = await fetch(
-    `https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${token}`,
-    {
-      method: 'POST'
-    }
-  )
-
-  const data = await response.json()
-
-  if (!data.success || data.score < 0.5) {
+  if (!isRecaptchaValid(recaptchaResult)) {
     return { status: 400, body: 'Recaptcha verification failed' }
   }
 
-  if (!formBody.answers.Email) {
-    return { status: 400, body: 'Invalid request body: no Email address' }
+  if (!formBody || typeof formBody !== 'object') {
+    return { status: 400, body: 'Invalid request body' }
   }
 
-  if (!formBody.formName) {
+  const { formName, answers } = formBody
+
+  if (!formName || typeof formName !== 'string' || formName.length > 200) {
     return { status: 400, body: 'Invalid request body: no form name' }
+  }
+
+  if (!isPlainStringRecord(answers)) {
+    return { status: 400, body: 'Invalid request body: answers must be strings' }
+  }
+
+  if (!isValidEmail(answers.Email)) {
+    return { status: 400, body: 'Invalid request body: no Email address' }
   }
 
   try {
     const formAnswerExists = await FormResponseSchema.find({
-      'answers.Email': formBody.answers.Email,
-      formName: formBody.formName
+      'answers.Email': answers.Email,
+      formName
     })
 
     if (formAnswerExists && formAnswerExists.length > 0) {
       return { status: 409, body: 'Form answer provided already' }
     }
 
-    await new FormResponseSchema(formBody).save()
+    await FormResponseSchema.create({ formName, answers })
     return { status: 200 }
   } catch (error) {
-    console.log(error)
-    return error
+    console.error('Error saving form response:', error)
+    return { status: 500, body: 'Error saving form response' }
   }
 })

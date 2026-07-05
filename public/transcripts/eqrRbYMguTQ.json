@@ -1,0 +1,4638 @@
+[
+  {
+    "startTime": 59.87,
+    "person": "Karol",
+    "text": " Good morning, good afternoon, and good evening, everybody, and welcome to another episode of Loosely Coupled by Bridging the Gap."
+  },
+  {
+    "startTime": 66.83,
+    "person": "Karol",
+    "text": " My name is Karol Skrzymowski, and I'll be your host tonight, and I hope with the heatwave in Europe, it's been around 37 degrees at 5 p.m. here outside."
+  },
+  { "startTime": 77.93, "person": "Karol", "text": " I literally checked on the thermometer." },
+  { "startTime": 79.51, "person": "Karol", "text": " It was like crazy hot." },
+  {
+    "startTime": 81.31,
+    "person": "Karol",
+    "text": " Hope everybody has something nice and cool to drink."
+  },
+  {
+    "startTime": 84.07,
+    "person": "Karol",
+    "text": " This time, coffee again, but with tonic, so a bit of a summer drink."
+  },
+  {
+    "startTime": 90.01,
+    "person": "Karol",
+    "text": " So hopefully everybody's staying hydrated, and today we have a very, very, very special episode because exactly one year ago, exactly one year ago, we aired our first episode of Loosely Coupled with Fran Mendes, and we were talking about the adoption of even-driven architectures, so Loosely Coupled is one year old, and today, we're continuing on an integration topic."
+  },
+  {
+    "startTime": 115.33,
+    "person": "Karol",
+    "text": " Today, we're talking about sociotechnical API patterns and all the sociotechnical aspects that we commonly overlook when working with APIs, and joining me today in the studio is somebody who made me really chuckle two weeks ago at the conference."
+  },
+  {
+    "startTime": 131.93,
+    "person": "Karol",
+    "text": " DDD Europe was two weeks ago, and I was sitting in the front row, and I had the laugh of my life of very specific comments, so without further ado, welcome Einar Høst."
+  },
+  { "startTime": 144.63, "person": "Karol", "text": " Hi." },
+  { "startTime": 145.73, "person": "Karol", "text": " Very nice to be here." },
+  { "startTime": 147.79, "person": "Karol", "text": " Thanks for having me." },
+  { "startTime": 149.85, "person": "Karol", "text": " I have some cold drink as well." },
+  { "startTime": 152.91, "person": "Karol", "text": " Very good, very good." },
+  { "startTime": 154.31, "person": "Karol", "text": " Stay hydrated." },
+  { "startTime": 155.03, "person": "Karol", "text": " Raspberry lemonade." },
+  { "startTime": 155.77, "person": "Karol", "text": " Yes, so my name is Einar Høst." },
+  { "startTime": 158.67, "person": "Karol", "text": " I'm a Norwegian software developer." },
+  {
+    "startTime": 160.39,
+    "person": "Karol",
+    "text": " I work for a company called Nordkarch, and I'm interested in APIs and sociotechnical stuff."
+  },
+  {
+    "startTime": 169,
+    "person": "Karol",
+    "text": " And one thing you're not disclosing that often, at least I never heard you say it."
+  },
+  { "startTime": 173.46, "person": "Karol", "text": " I had to dig it out of your profile." },
+  {
+    "startTime": 175.48,
+    "person": "Karol",
+    "text": " You actually have a PhD in computer science."
+  },
+  {
+    "startTime": 177.96,
+    "person": "Karol",
+    "text": " Yes, I did a PhD in computer science probably probably like 15 years ago now or something like that."
+  },
+  {
+    "startTime": 184.66,
+    "person": "Karol",
+    "text": " So yeah, before I started working as a consultant many, many, many years ago."
+  },
+  { "startTime": 191.1, "person": "Karol", "text": " So what was the PhD about?" },
+  {
+    "startTime": 195.64,
+    "person": "Karol",
+    "text": " The sort of the research programme was called Reducing Software Entropy."
+  },
+  {
+    "startTime": 198.82,
+    "person": "Karol",
+    "text": " It was kind of interesting, like broad topic, but the thing that I ended up studying was the relationship between natural language in code and like formal semantics, basically byte code, byte level code."
+  },
+  {
+    "startTime": 217.66,
+    "person": "Karol",
+    "text": " And the idea was that there would be some sort of correlation, right?"
+  },
+  {
+    "startTime": 221.88,
+    "person": "Karol",
+    "text": " So that method names are sort of like meaningful."
+  },
+  {
+    "startTime": 224.46,
+    "person": "Karol",
+    "text": " They influence what actually goes on in your programmes."
+  },
+  {
+    "startTime": 228.7,
+    "person": "Karol",
+    "text": " And so there was a bit of like natural language processing, part of speech tagging and stuff and also like byte code analysis, which was sort of like high level and low level together."
+  },
+  { "startTime": 240.32, "person": "Karol", "text": " And that was kind of fun." },
+  {
+    "startTime": 242.78,
+    "person": "Karol",
+    "text": " Yeah, at least I learned some byte code analysis."
+  },
+  {
+    "startTime": 247.92,
+    "person": "Karol",
+    "text": " It was maybe a little bit, it was like prior to a lot of sort of code being very easily available on GitHub."
+  },
+  {
+    "startTime": 257.26,
+    "person": "Karol",
+    "text": " So I had sort of like a mass, a corpus of things to analyse."
+  },
+  {
+    "startTime": 262.48,
+    "person": "Karol",
+    "text": " That would have been much, much easier today."
+  },
+  {
+    "startTime": 265.16,
+    "person": "Karol",
+    "text": " And of course, with sort of like the advent of LLMs and stuff like that for analysing the text as well, would have been very different kind of work today, I think."
+  },
+  { "startTime": 279.56, "person": "Karol", "text": " Maybe still fun, different." },
+  {
+    "startTime": 282.96,
+    "person": "Karol",
+    "text": " Possibly another study to be done by somebody else doing a PhD, right?"
+  },
+  {
+    "startTime": 288,
+    "person": "Karol",
+    "text": " Because in those 15 years, a lot has changed in all aspects of our work as developers, architects, et cetera."
+  },
+  {
+    "startTime": 297.44,
+    "person": "Karol",
+    "text": " The APIs we were doing 15 years ago are very, well, to be honest, quite different than those that we're doing today."
+  },
+  {
+    "startTime": 307.9,
+    "person": "Karol",
+    "text": " Yet they express exactly the same qualities most of the times."
+  },
+  {
+    "startTime": 312,
+    "person": "Karol",
+    "text": " I think with JSON and REST services, we kind of reinvented the wheel of services to an extent, right?"
+  },
+  {
+    "startTime": 322.06,
+    "person": "Karol",
+    "text": " So it would be probably interesting to look at it again from a perspective of time, how that changed."
+  },
+  {
+    "startTime": 329.54,
+    "person": "Karol",
+    "text": " Because with literally programming or programming LLMs with the natural language that we use right now, that's a very, very different thing."
+  },
+  {
+    "startTime": 338.86,
+    "person": "Karol",
+    "text": " With also the spread of domain-driven design, which puts emphasis on ubiquitous language and having that language expressed both by business and code, that's also a completely different story."
+  },
+  {
+    "startTime": 353.56,
+    "person": "Karol",
+    "text": " So it would be probably quite interesting to look at it because language is what shapes our thinking and what shapes our code to an extent."
+  },
+  {
+    "startTime": 361.94,
+    "person": "Karol",
+    "text": " So probably would be very interesting to have a look."
+  },
+  {
+    "startTime": 365.1,
+    "person": "Karol",
+    "text": " But we're not talking about code per se today."
+  },
+  {
+    "startTime": 368.12,
+    "person": "Karol",
+    "text": " We're talking about APIs and socio-technical aspects of said APIs."
+  },
+  {
+    "startTime": 374.04,
+    "person": "Karol",
+    "text": " I think it would be worth starting with your definition, because everybody has their own mental model."
+  },
+  { "startTime": 380.5, "person": "Karol", "text": " So what the hell is an API?" },
+  {
+    "startTime": 382.24,
+    "person": "Karol",
+    "text": " Because I think that's still a very problematic term."
+  },
+  { "startTime": 386.32, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 387.5,
+    "person": "Karol",
+    "text": " So for the talk, I was specifically thinking about web APIs, because that's basically what I've been working with at least the 10 last years."
+  },
+  {
+    "startTime": 398.36,
+    "person": "Karol",
+    "text": " I think that's been the kind of API that I've been involved with."
+  },
+  {
+    "startTime": 404.54,
+    "person": "Karol",
+    "text": " I think in general, I guess, it's going to be like application programming or interface."
+  },
+  {
+    "startTime": 410.12,
+    "person": "Karol",
+    "text": " So it's a way that maybe one programme can talk to another programme or something like that."
+  },
+  {
+    "startTime": 416.88,
+    "person": "Karol",
+    "text": " And I guess you can do that in a great number of ways, not just over HTTP."
+  },
+  {
+    "startTime": 422.66,
+    "person": "Karol",
+    "text": " But we sort of ended up in many cases doing that."
+  },
+  {
+    "startTime": 428.26,
+    "person": "Karol",
+    "text": " But I don't have a particular definition apart from, well, I'm kind of exposing this interface to you that you may use to get something done, right?"
+  },
+  {
+    "startTime": 440.42,
+    "person": "Karol",
+    "text": " Maybe you query for some data or you want something executed on my end, so you send me a command, and then I sort of respond to that."
+  },
+  {
+    "startTime": 449.24,
+    "person": "Karol",
+    "text": " But that's a very broad definition, I guess."
+  },
+  {
+    "startTime": 451.2,
+    "person": "Karol",
+    "text": " I'm not sure that's the correct definition or something like that."
+  },
+  {
+    "startTime": 457.8,
+    "person": "Karol",
+    "text": " I'm not sure what you would say, if you've been working with APIs as well."
+  },
+  { "startTime": 462.4, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 465.16,
+    "person": "Karol",
+    "text": " Looking at the broad spectrum of different interfaces that I used over the years, I started with SOAP and XML over JMS. These are APIs."
+  },
+  { "startTime": 478.82, "person": "Karol", "text": " Anything over JMS can be an API." },
+  {
+    "startTime": 480.68,
+    "person": "Karol",
+    "text": " Anything over HTTP, whether it's SOAP, REST, CSV, you name it."
+  },
+  {
+    "startTime": 487.68,
+    "person": "Karol",
+    "text": " Anything over AMQP, MQTT, these can be APIs."
+  },
+  {
+    "startTime": 493.24,
+    "person": "Karol",
+    "text": " JDBC, OData, ODBC, remote function calls, you name it."
+  },
+  { "startTime": 501.68, "person": "Karol", "text": " Are you old enough to remember Corba?" },
+  { "startTime": 504.42, "person": "Karol", "text": " Have you used it?" },
+  { "startTime": 505, "person": "Karol", "text": " No." },
+  { "startTime": 505.58, "person": "Karol", "text": " No, I never touched Corba." },
+  {
+    "startTime": 507.54,
+    "person": "Karol",
+    "text": " I heard about it several times, even on loosely coupled, but have no interaction with Corba, but I'm aware of it."
+  },
+  { "startTime": 518.5, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 519.62,
+    "person": "Karol",
+    "text": " Literally anything for data exchange can be called an API."
+  },
+  { "startTime": 524.2, "person": "Karol", "text": " Yeah." },
+  { "startTime": 525.36, "person": "Karol", "text": " We're in sync with that." },
+  { "startTime": 527, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 527.4,
+    "person": "Karol",
+    "text": " We used to joke back in the day that certain integrations are also..."
+  },
+  {
+    "startTime": 533.4,
+    "person": "Karol",
+    "text": " We have SOAP integrations, we have JDBC integrations, we also have protein based integrations."
+  },
+  {
+    "startTime": 539.12,
+    "person": "Karol",
+    "text": " If a human type it in on a keyboard, that is also a form of an API, only very abstract from our perspective."
+  },
+  { "startTime": 547.14, "person": "Karol", "text": " Yeah." },
+  { "startTime": 548.04, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 548.42,
+    "person": "Karol",
+    "text": " It's a very interesting question, actually."
+  },
+  { "startTime": 550.24, "person": "Karol", "text": " What is an interface?" },
+  { "startTime": 551.88, "person": "Karol", "text": " It's a broad abstraction in a sense." },
+  { "startTime": 557.6, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 558.1,
+    "person": "Karol",
+    "text": " Then application programming or programmable, because there are two words."
+  },
+  {
+    "startTime": 563.2,
+    "person": "Karol",
+    "text": " That kind of narrows it down to something that is technical rather than interaction of a human on the computer."
+  },
+  { "startTime": 569.98, "person": "Andrew", "text": " Yep." },
+  {
+    "startTime": 570.94,
+    "person": "Karol",
+    "text": " So today we're talking about those that are technical, but we're going to be looking at the human aspect of them."
+  },
+  { "startTime": 578.42, "person": "Andrew", "text": " Yes." },
+  {
+    "startTime": 579.52,
+    "person": "Karol",
+    "text": " That was the premise of the talk at DDD Europe."
+  },
+  { "startTime": 583.88, "person": "Karol", "text": " Yep." },
+  { "startTime": 584.68, "person": "Karol", "text": " Exactly." },
+  {
+    "startTime": 585.8,
+    "person": "Karol",
+    "text": " So what's the key problem that we're looking at in terms of those socio-technical aspects and those socio-technical patterns in APIs?"
+  },
+  { "startTime": 596.46, "person": "Andrew", "text": " Yeah." },
+  {
+    "startTime": 599.74,
+    "person": "Karol",
+    "text": " The base idea of the talk was that, okay, when you connect two software systems, you implicitly also connect people, right?"
+  },
+  {
+    "startTime": 607.24,
+    "person": "Karol",
+    "text": " Because if we accept that software is socio-technical in the sense that, yes, we are building some sort of artefacts that's going to be executed in some runtime environment, but it's interlinked with the people who are working on those systems and involving them and supporting them and so on and so forth."
+  },
+  {
+    "startTime": 626.2,
+    "person": "Karol",
+    "text": " So if we accept that software is socio-technical, then it means that we're not just connecting these technical software systems, which obviously we are, but also connecting these socio-technical systems, creating basically a larger socio-technical system that now involves not just the technical part, but also the people that serve us around it."
+  },
+  { "startTime": 646.2, "person": "Karol", "text": " That was the basis of the talk." },
+  {
+    "startTime": 648.9,
+    "person": "Karol",
+    "text": " And of course, I like to say that conference talks are like villains in movies, that they have an origin story, right?"
+  },
+  { "startTime": 660, "person": "Karol", "text": " A whole way that it came about." },
+  {
+    "startTime": 662.84,
+    "person": "Karol",
+    "text": " And I think in my case, what I wanted to express was some of the, call it personal pain, that I've been involved with related to this."
+  },
+  { "startTime": 676.98, "person": "Karol", "text": " Like, okay, so we are people, right?" },
+  {
+    "startTime": 678.64,
+    "person": "Karol",
+    "text": " And we talk to a little, and we don't discuss our real problems because, again, we are like, maybe are insecure or it's uncomfortable to talk to someone else or to sort of, maybe there's a disagreement and stuff like that."
+  },
+  { "startTime": 695.72, "person": "Karol", "text": " And that's very uncomfortable." },
+  {
+    "startTime": 696.76,
+    "person": "Karol",
+    "text": " And so we sort of under communicate typically when we're connecting these systems."
+  },
+  {
+    "startTime": 701.14,
+    "person": "Karol",
+    "text": " And I felt some consequences of that during my career."
+  },
+  {
+    "startTime": 704.78,
+    "person": "Karol",
+    "text": " So that's basically sort of like the origin story for this talk, right?"
+  },
+  {
+    "startTime": 710.4,
+    "person": "Karol",
+    "text": " And it wasn't an idea to be sort of like comprehensive and cover every possible pain that could be or the solutions to it."
+  },
+  {
+    "startTime": 717.66,
+    "person": "Karol",
+    "text": " But basically, here are some of my experiences with this."
+  },
+  {
+    "startTime": 722.54,
+    "person": "Karol",
+    "text": " And then it's nice if that resonates with someone else, right?"
+  },
+  {
+    "startTime": 727.7,
+    "person": "Karol",
+    "text": " It's rare, I think, that you have an entirely unique pain in working with software."
+  },
+  {
+    "startTime": 734.26,
+    "person": "Karol",
+    "text": " And it's sort of nice that we can sort of share experiences and talk about, well, how was this for you?"
+  },
+  { "startTime": 740.96, "person": "Karol", "text": " And that was the idea." },
+  {
+    "startTime": 743.28,
+    "person": "Karol",
+    "text": " That reminds me a very specific situation from my career."
+  },
+  {
+    "startTime": 749.92,
+    "person": "Karol",
+    "text": " Early in the days when I turned to be an architect, in T-Mobile Poland, we had a team of 10 or 11 integration architects working on the integration platform."
+  },
+  {
+    "startTime": 761.68,
+    "person": "Karol",
+    "text": " And all of us had at least two or three projects running simultaneously that we had to cater to and figure out whatever we were building."
+  },
+  {
+    "startTime": 772.02,
+    "person": "Karol",
+    "text": " And of course, from time to time, some of us went for vacation."
+  },
+  {
+    "startTime": 777.58,
+    "person": "Karol",
+    "text": " So obviously, somebody had to fill in for the person that's going away."
+  },
+  {
+    "startTime": 784.22,
+    "person": "Karol",
+    "text": " And the integration team in terms of the integration platform and people working on that platform was the biggest one in T-Mobile."
+  },
+  {
+    "startTime": 792.46,
+    "person": "Karol",
+    "text": " Other teams for domain systems, sometimes there was one so-called change manager or architect for two or three systems."
+  },
+  {
+    "startTime": 801.46,
+    "person": "Karol",
+    "text": " So there was this one situation where we had a colleague, she went on a vacation and I took her projects for the time being."
+  },
+  {
+    "startTime": 810.94,
+    "person": "Karol",
+    "text": " And then one of those domain systems architects writes to me an email stating, can you send me the whistle file?"
+  },
+  { "startTime": 818.86, "person": "Karol", "text": " That's it." },
+  {
+    "startTime": 819.76,
+    "person": "Karol",
+    "text": " No context which project, no context which system, no context for which release."
+  },
+  {
+    "startTime": 826.34,
+    "person": "Karol",
+    "text": " Because we were bound by quarterly releases that were major and in between some minor releases."
+  },
+  {
+    "startTime": 832.18,
+    "person": "Karol",
+    "text": " So I had absolutely no context to which I could use and figure it out."
+  },
+  {
+    "startTime": 840.62,
+    "person": "Karol",
+    "text": " After a year, when we started bridging the gap, I figured I will write one day this kind of a joke, I don't know, maybe I pro-fools article on what we did, what stupid things we did just for the fun of it."
+  },
+  {
+    "startTime": 854.06,
+    "person": "Karol",
+    "text": " And I just copied out of that Google doc just right now, copied a whistle file that I recreated, that I did back in the day."
+  },
+  { "startTime": 865.92, "person": "Karol", "text": " I don't know if it's readable." },
+  { "startTime": 868.28, "person": "Karol", "text": " Hopefully, let me try to..." },
+  {
+    "startTime": 871.56,
+    "person": "Karol",
+    "text": " Now, again, I'm quite new with Linux, so obviously I'm now struggling with how to do something that is very obvious on Windows, which is control scroll."
+  },
+  { "startTime": 887.36, "person": "Karol", "text": " Anyhow, no idea how to enlarge the font." },
+  { "startTime": 892.74, "person": "Karol", "text": " That's my problem with using Linux." },
+  { "startTime": 894.8, "person": "Karol", "text": " I don't know all the key shortcuts yet." },
+  { "startTime": 899.94, "person": "Karol", "text": " Anyhow, so this is a normal whistle file." },
+  {
+    "startTime": 902.88,
+    "person": "Karol",
+    "text": " Whistle file is the definition of a soap service for those who've never did soap."
+  },
+  {
+    "startTime": 907.6,
+    "person": "Karol",
+    "text": " So there's an input message, output message, fold, all of those resolve to dummy."
+  },
+  {
+    "startTime": 914.3,
+    "person": "Karol",
+    "text": " And then everything is dummy, everything is just empty."
+  },
+  { "startTime": 917.58, "person": "Karol", "text": " This is the whole whistle file." },
+  { "startTime": 918.86, "person": "Karol", "text": " There are no imports, nothing." },
+  { "startTime": 920, "person": "Karol", "text": " This is what I sent that colleague." },
+  { "startTime": 922.06, "person": "Karol", "text": " Like, here's the whistle file." },
+  { "startTime": 924.34, "person": "Karol", "text": " Well, it was a whistle file." },
+  {
+    "startTime": 926.26,
+    "person": "Karol",
+    "text": " Anyway, that was the whistle file, which we made fun about for the next, I believe, two or three months."
+  },
+  {
+    "startTime": 936.04,
+    "person": "Karol",
+    "text": " Because in the whistle file, there was this annotation here, annotation documentation, which stated, for future reference, Adam, name changed, when asking for a whistle file, please specify what project or system this whistle file is for."
+  },
+  {
+    "startTime": 951.14,
+    "person": "Karol",
+    "text": " And I just sent this whistle file as this, like that."
+  },
+  {
+    "startTime": 955.84,
+    "person": "Karol",
+    "text": " Two weeks have passed, and I get the reply message to that email, asking, is that the final form of the whistle file?"
+  },
+  {
+    "startTime": 965.76,
+    "person": "Karol",
+    "text": " And that was the question from the dev team."
+  },
+  {
+    "startTime": 967.7,
+    "person": "Karol",
+    "text": " Because that guy has never opened that file, just forwarded it to the dev team."
+  },
+  {
+    "startTime": 974.62,
+    "person": "Karol",
+    "text": " I think that's a good intro to the problem space."
+  },
+  { "startTime": 981.28, "person": "Karol", "text": " Yes, absolutely." },
+  {
+    "startTime": 983,
+    "person": "Karol",
+    "text": " There is a particular kind of problem also when you have human messengers that relay messages between other humans."
+  },
+  {
+    "startTime": 993.54,
+    "person": "Karol",
+    "text": " That should really be communicating directly, but then there are sort of like corporate reasons or whatever, bureaucracy."
+  },
+  {
+    "startTime": 1003.16,
+    "person": "Karol",
+    "text": " In this case, all the dev teams were developing vendors, were outside companies."
+  },
+  {
+    "startTime": 1009.42,
+    "person": "Karol",
+    "text": " So usually, we didn't have direct interactions with other systems, dev teams, because they were hired dev mercenaries, right?"
+  },
+  { "startTime": 1017.12, "person": "Karol", "text": " That was probably the key reason." },
+  {
+    "startTime": 1020.38,
+    "person": "Karol",
+    "text": " Every change manager in T-Mobile catered to their groups of developers."
+  },
+  {
+    "startTime": 1025.94,
+    "person": "Karol",
+    "text": " We had two development vendors, so that was about 16, 20 people divided into two companies."
+  },
+  {
+    "startTime": 1034.56,
+    "person": "Karol",
+    "text": " So very hard to manage that if you're from a completely different system."
+  },
+  { "startTime": 1038.599, "person": "Karol", "text": " Absolutely, yeah." },
+  { "startTime": 1039.68, "person": "Karol", "text": " Which makes sense." },
+  {
+    "startTime": 1041.96,
+    "person": "Karol",
+    "text": " I think that's very interesting because I think some of those examples that you have give rise to some patterns that I haven't seen myself, because I think probably in the cases where I've done API development or design, it's been fewer actors involved."
+  },
+  { "startTime": 1070.24, "person": "Karol", "text": " And even that is difficult enough, right?" },
+  {
+    "startTime": 1072.94,
+    "person": "Karol",
+    "text": " With not so many people having to coordinate and stuff like that, or not so many systems integrating at the same time."
+  },
+  {
+    "startTime": 1082.16,
+    "person": "Karol",
+    "text": " So it's not necessarily an easy problem, but one thing is that if you have two systems that need to integrate, and then if there are like 100 systems that need to integrate with this other system, that's a different kind of problem with some unique characteristics, I think."
+  },
+  {
+    "startTime": 1102.42,
+    "person": "Karol",
+    "text": " And I haven't really been much in that situation."
+  },
+  {
+    "startTime": 1105.24,
+    "person": "Karol",
+    "text": " So I would love to hear more about what would be some patterns arising from that kind of social technical context."
+  },
+  {
+    "startTime": 1114.42,
+    "person": "Karol",
+    "text": " Yeah, I think our contexts are different because you're literally doing the job of a software developer, so you actually work on domain systems, right?"
+  },
+  { "startTime": 1121.86, "person": "Karol", "text": " Yeah, that's true." },
+  {
+    "startTime": 1123.92,
+    "person": "Karol",
+    "text": " In the 15 years that I work as a developer or architect, I have never built a domain system."
+  },
+  {
+    "startTime": 1131.78,
+    "person": "Karol",
+    "text": " So I never built a system that is supposed to facilitate a business logic."
+  },
+  {
+    "startTime": 1135.92,
+    "person": "Karol",
+    "text": " All I do is literally move data from point A to B, C, D, E, F, G, whatever that may be, which means that my context of APIs and interoperability is completely different than yours because you actually have business functionality underneath those APIs, while for me, that's transport."
+  },
+  {
+    "startTime": 1156.9,
+    "person": "Karol",
+    "text": " And that spins a different tale because when I'm working on an integration platform, I'm the mediator and negotiator between everybody."
+  },
+  { "startTime": 1166.74, "person": "Andrew", "text": " Yes, exactly." },
+  {
+    "startTime": 1167.56,
+    "person": "Karol",
+    "text": " While if you work on a specific domain system, especially in a smaller environment, then you're negotiating with those people who consume your APIs or whose APIs you're consuming."
+  },
+  { "startTime": 1183.48, "person": "Karol", "text": " Yes." },
+  {
+    "startTime": 1184.42,
+    "person": "Karol",
+    "text": " Which makes it a completely different dynamic in that sense."
+  },
+  { "startTime": 1188.2, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 1190.26,
+    "person": "Karol",
+    "text": " I mean, you have to answer to this, but I think it sounds like you have a hard job, man."
+  },
+  {
+    "startTime": 1198.56,
+    "person": "Karol",
+    "text": " So last week, Monday, I talked to Barry O'Reilly."
+  },
+  {
+    "startTime": 1204.9,
+    "person": "Karol",
+    "text": " Barry said that basically, because he used to be an integration architect and his residuality theory comes by a certain degree of thinking from integration architecture."
+  },
+  {
+    "startTime": 1217.9,
+    "person": "Karol",
+    "text": " He said that basically, when he hires for Black Tool of Technology, when he looks on the CV and he sees somebody with integration architecture experience, that person is like 20 times more valuable in that time than a JavaScript developer or architect dealing with JavaScript."
+  },
+  {
+    "startTime": 1237.9,
+    "person": "Karol",
+    "text": " And I asked him, well, okay, if you look at half a year, that's of value."
+  },
+  { "startTime": 1243.44, "person": "Karol", "text": " What about me where I did 15 years?" },
+  { "startTime": 1245.92, "person": "Karol", "text": " He was like, you're a masochist." },
+  { "startTime": 1248.82, "person": "Andrew", "text": " Yeah, exactly." },
+  { "startTime": 1249.7, "person": "Karol", "text": " So yes, you're right." },
+  {
+    "startTime": 1250.94,
+    "person": "Karol",
+    "text": " It's a completely different job because it involves a lot of that social technical aspects of being the negotiator and man in the middle."
+  },
+  {
+    "startTime": 1262.32,
+    "person": "Karol",
+    "text": " But we'll get to those patterns, I think, later, because to go to those patterns, I think we need to cover those easier patterns that you already have outlined very well."
+  },
+  { "startTime": 1273.14, "person": "Karol", "text": " So let's get into those." },
+  {
+    "startTime": 1274.7,
+    "person": "Karol",
+    "text": " What kind of social technical problems we actually have with APIs?"
+  },
+  { "startTime": 1279.4, "person": "Karol", "text": " Tell us." },
+  { "startTime": 1280.16, "person": "Karol", "text": " Right." },
+  { "startTime": 1280.56, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 1281.24,
+    "person": "Karol",
+    "text": " So I'm not entirely sure where I should start, but I think, as in many cases, we start by not really acknowledging that when we're connecting these systems through these APIs, we're facing a social problem, which is that we have a communication problem."
+  },
+  {
+    "startTime": 1306.21,
+    "person": "Karol",
+    "text": " Now we have to work out how this is going to work."
+  },
+  { "startTime": 1309.35, "person": "Karol", "text": " Fair." },
+  {
+    "startTime": 1310.17,
+    "person": "Karol",
+    "text": " I mean, it could be that someone comes from the outside and mandates how this is going to integrate or something like that."
+  },
+  {
+    "startTime": 1319.09,
+    "person": "Karol",
+    "text": " But apart from that, and the situation where I've been, it's basically two teams that need to work something out, right?"
+  },
+  {
+    "startTime": 1326.55,
+    "person": "Karol",
+    "text": " And then we sort of try to, because it's uncomfortable to work things out, I think we sort of tend to neglect that there is some working out to do."
+  },
+  {
+    "startTime": 1335.75,
+    "person": "Karol",
+    "text": " And so it's much easier if you can sort of like, okay, could you just solve this from us?"
+  },
+  { "startTime": 1342.35, "person": "Karol", "text": " And then we can try to sort of use that." },
+  {
+    "startTime": 1345.69,
+    "person": "Karol",
+    "text": " And then we don't take into account, I think, the context for each party, right?"
+  },
+  {
+    "startTime": 1352.23,
+    "person": "Karol",
+    "text": " So we don't think much about, okay, the people are going to build this API or implement this API for someone else."
+  },
+  { "startTime": 1360.55, "person": "Karol", "text": " What is their context?" },
+  { "startTime": 1363.07, "person": "Karol", "text": " How invested in this task are they?" },
+  {
+    "startTime": 1366.65,
+    "person": "Karol",
+    "text": " Do they have a lot of time and resources for it?"
+  },
+  {
+    "startTime": 1368.59,
+    "person": "Karol",
+    "text": " Or are they sort of like already resource strained?"
+  },
+  {
+    "startTime": 1371.01,
+    "person": "Karol",
+    "text": " And then someone said, you have to provide this to these other people."
+  },
+  {
+    "startTime": 1376.83,
+    "person": "Karol",
+    "text": " And then they sort of actually hate the job."
+  },
+  {
+    "startTime": 1378.91,
+    "person": "Karol",
+    "text": " That's a very different situation to them, right?"
+  },
+  {
+    "startTime": 1382.17,
+    "person": "Karol",
+    "text": " And then on top of that, I think the additional aspect is, do they actually understand what you're going to be using that API for?"
+  },
+  {
+    "startTime": 1389.83,
+    "person": "Karol",
+    "text": " Which is then the business process aspect and all the building for purpose aspect, which is often also very much missing, right?"
+  },
+  { "startTime": 1397.83, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 1398.47,
+    "person": "Karol",
+    "text": " And this is one of the reasons why I talked about in the talk, sort of the distinction between what I call unilateral API design and bilateral, which means a distinction between, okay, I'm going to provide this API for you."
+  },
+  { "startTime": 1412.61, "person": "Karol", "text": " Either I just design everything myself." },
+  {
+    "startTime": 1414.97,
+    "person": "Karol",
+    "text": " And then I come back to you and I say, can you use this?"
+  },
+  { "startTime": 1417.95, "person": "Karol", "text": " Or we try to collaborate." },
+  {
+    "startTime": 1419.53,
+    "person": "Karol",
+    "text": " And the reason why I sort of fallen kind of strongly into this collaboration preference, if you like, if it's at all possible, like practically possible is because I've been in that situation where I tried to do a really good job in designing the API based on my understanding on what problem they were going to solve."
+  },
+  { "startTime": 1443.2, "person": "Karol", "text": " And I thought it did a really good job." },
+  {
+    "startTime": 1445,
+    "person": "Karol",
+    "text": " And then it sort of turned out that I didn't, right?"
+  },
+  {
+    "startTime": 1448.5,
+    "person": "Karol",
+    "text": " Or I implemented something that worked, right?"
+  },
+  {
+    "startTime": 1451.2,
+    "person": "Karol",
+    "text": " But it wasn't really the way they wanted to solve the problem."
+  },
+  {
+    "startTime": 1455.82,
+    "person": "Karol",
+    "text": " And so I put in all this work, created this lovely API, and it was sort of like, well, we would rather have something else."
+  },
+  {
+    "startTime": 1464.24,
+    "person": "Karol",
+    "text": " And then it's, okay, what's something else going to be?"
+  },
+  {
+    "startTime": 1467.48,
+    "person": "Karol",
+    "text": " And then when you sort of can start to iterate over that, then it turns out that that's much more rewarding as an implementer as well, then you actually solve their problem, right?"
+  },
+  {
+    "startTime": 1479.04,
+    "person": "Karol",
+    "text": " And there's not, I think there's, I'm not sure."
+  },
+  {
+    "startTime": 1483.74,
+    "person": "Karol",
+    "text": " At least my experience has been that there is a bit of like passive aggressive communication when you don't do this collaboration, right?"
+  },
+  {
+    "startTime": 1492.98,
+    "person": "Karol",
+    "text": " And then you sort of, you come like a proud API provider."
+  },
+  {
+    "startTime": 1498.12,
+    "person": "Karol",
+    "text": " I mean, this is my beautiful API that I built for you."
+  },
+  {
+    "startTime": 1500.64,
+    "person": "Karol",
+    "text": " And then you have this sort of like, how dare you say it's not useful."
+  },
+  { "startTime": 1504.9, "person": "Andrew", "text": " Yeah, exactly." },
+  {
+    "startTime": 1505.74,
+    "person": "Karol",
+    "text": " And they're not going to even, because at least in Norway, because we're sort of like shy about this and you're not supposed to criticise people like that."
+  },
+  {
+    "startTime": 1514.04,
+    "person": "Karol",
+    "text": " But they're going to, you're going to sense that they're not entirely happy and you're not really going to not going to know exactly why, but then, and then you're sort of like, okay, well, maybe I hate you a little bit too."
+  },
+  {
+    "startTime": 1528.34,
+    "person": "Karol",
+    "text": " It's not a very constructive setting, right?"
+  },
+  {
+    "startTime": 1532.28,
+    "person": "Karol",
+    "text": " So it's much better to actually try to understand each other and get to know each other a little bit."
+  },
+  {
+    "startTime": 1537.68,
+    "person": "Karol",
+    "text": " I think that cultural aspect would play very differently in different parts of Europe, given that, well, Scandinavia, Norway, Finland, Sweden would probably exactly actually describe it as kind of passive aggressive and not unsaid."
+  },
+  {
+    "startTime": 1558.18,
+    "person": "Karol",
+    "text": " While UK as well, UK would be probably something would be said, but it would be so convoluted in fluffy words that you wouldn't be able to understand that the actual meaning of somebody, what somebody is saying."
+  },
+  {
+    "startTime": 1569.64,
+    "person": "Karol",
+    "text": " And then you go to countries like Germany and the Netherlands, where everything is just fully direct."
+  },
+  {
+    "startTime": 1575.86,
+    "person": "Karol",
+    "text": " So somebody literally tell you, this is shit, I'm not going to be able to use it."
+  },
+  {
+    "startTime": 1580.44,
+    "person": "Karol",
+    "text": " It's also not incredibly constructive, but at least it's straightforward."
+  },
+  { "startTime": 1585.98, "person": "Karol", "text": " Yeah, it's true." },
+  { "startTime": 1587.2, "person": "Andrew", "text": " True." },
+  {
+    "startTime": 1587.52,
+    "person": "Andrew",
+    "text": " You don't have to unpack it that much, right?"
+  },
+  { "startTime": 1589.66, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 1590.12,
+    "person": "Karol",
+    "text": " And then you can go into a constructive discussion over why is it not going to be usable?"
+  },
+  {
+    "startTime": 1595.36,
+    "person": "Karol",
+    "text": " But at least somebody states that firmly and openly that this is not useful at all."
+  },
+  {
+    "startTime": 1601.74,
+    "person": "Karol",
+    "text": " That's one of the aspects of socio-technical dramas, right?"
+  },
+  {
+    "startTime": 1606.56,
+    "person": "Karol",
+    "text": " Because culturally, I don't know, do you work mostly in a kind of homogeneous Scandinavian environment?"
+  },
+  { "startTime": 1614.84, "person": "Andrew", "text": " Well, mostly, yeah." },
+  {
+    "startTime": 1616.34,
+    "person": "Andrew",
+    "text": " So I have not had much, because obviously, like, cultural differences are going to play a big part as well, right?"
+  },
+  { "startTime": 1623.88, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 1624.26,
+    "person": "Andrew",
+    "text": " And that's only going to add to the problem, because you can't really read the cultural cues that well, cross-culture."
+  },
+  {
+    "startTime": 1639.14,
+    "person": "Andrew",
+    "text": " But mostly, I've been faced with Norwegian passive aggressiveness, which I sort of know how to handle, right?"
+  },
+  { "startTime": 1648.12, "person": "Andrew", "text": " Mostly." },
+  {
+    "startTime": 1649.32,
+    "person": "Karol",
+    "text": " So you see, me being Polish and very direct for a Polish person, Polish are kind of like in between, you know, Dutch and Swedish, let's say, right?"
+  },
+  { "startTime": 1660.94, "person": "Karol", "text": " Somewhere in the middle." },
+  {
+    "startTime": 1662.84,
+    "person": "Karol",
+    "text": " And now I'm living in the Netherlands, where people are very direct, a lot more direct than Polish people, where I fit a lot better."
+  },
+  { "startTime": 1668.94, "person": "Karol", "text": " But I was working with Swedes." },
+  { "startTime": 1671.42, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 1671.82,
+    "person": "Karol",
+    "text": " Complete nightmare for my brain, because I had absolutely no idea how to navigate that in terms of socio-technical aspects."
+  },
+  { "startTime": 1679.44, "person": "Karol", "text": " Is this okay?" },
+  { "startTime": 1680.5, "person": "Karol", "text": " Is this not okay?" },
+  { "startTime": 1681.82, "person": "Karol", "text": " What's going on?" },
+  { "startTime": 1684.66, "person": "Karol", "text": " Ah, right." },
+  { "startTime": 1685.9, "person": "Karol", "text": " Yeah." },
+  { "startTime": 1686.28, "person": "Karol", "text": " I haven't worked with Swedes." },
+  {
+    "startTime": 1689.58,
+    "person": "Karol",
+    "text": " I think we're probably kind of similar, but also not entirely, because there are subtle differences between everyone, right?"
+  },
+  {
+    "startTime": 1696.46,
+    "person": "Karol",
+    "text": " And of course, not all Norwegians are the same, not all Swedes are the same, but obviously, but like, as a broad cultural pattern, I think there's something to it."
+  },
+  {
+    "startTime": 1706.57,
+    "person": "Karol",
+    "text": " There always are those cultural patterns we either conform to or try to break out of."
+  },
+  { "startTime": 1714.6, "person": "Karol", "text": " That's all the time what it is." },
+  {
+    "startTime": 1717.82,
+    "person": "Karol",
+    "text": " I try to constantly break out of my Polish thinking patterns, as I'm not a typical representative of Polish people, because I don't like those patterns."
+  },
+  {
+    "startTime": 1729.22,
+    "person": "Karol",
+    "text": " And I try to avoid them, but I'm coming back to them subconsciously, because they're just printed into my brain by upbringing."
+  },
+  {
+    "startTime": 1737.56,
+    "person": "Karol",
+    "text": " And for a lot of people, that's exactly the same, the type of upbringing, the culture they raise in, that's how they behave and how they understand the world."
+  },
+  {
+    "startTime": 1747.06,
+    "person": "Karol",
+    "text": " And this translates to building and consuming APIs for some reason, right?"
+  },
+  { "startTime": 1752.6, "person": "Karol", "text": " Yeah, exactly." },
+  { "startTime": 1754.46, "person": "Karol", "text": " Who would have thought, right?" },
+  {
+    "startTime": 1756.06,
+    "person": "Karol",
+    "text": " It's supposed to be a technical problem, and then we have all this human stuff, sort of like seeping in and affecting everything."
+  },
+  {
+    "startTime": 1762.84,
+    "person": "Karol",
+    "text": " I still remember my colleagues at university when I was still in my bachelor's studies for being an electrical engineer, saying that they're going to go to work in IT, and well, they didn't study computer science or relevant other engineering disciplines to work with people."
+  },
+  {
+    "startTime": 1782.54,
+    "person": "Karol",
+    "text": " And now I look at it 15 years later, it's like, ha ha, yep."
+  },
+  { "startTime": 1786.02, "person": "Karol", "text": " Yeah, exactly." },
+  { "startTime": 1786.5, "person": "Karol", "text": " You're not going to work with people." },
+  { "startTime": 1788.16, "person": "Karol", "text": " That turned out well." },
+  { "startTime": 1789.86, "person": "Karol", "text": " Yeah, right." },
+  {
+    "startTime": 1791.98,
+    "person": "Karol",
+    "text": " I mean, it is a real problem as well, because a lot of people, I think, entered the field because they, at least originally, there was probably an over tendency for people who are good at logic or quick to do the math, right, would enter the field of programming."
+  },
+  {
+    "startTime": 1817.46,
+    "person": "Karol",
+    "text": " And then it turns out that that's part of it, yes, but perhaps a much smaller part than you would have imagined."
+  },
+  {
+    "startTime": 1828.06,
+    "person": "Karol",
+    "text": " I think it really depends what you do in the field, right?"
+  },
+  {
+    "startTime": 1832.14,
+    "person": "Karol",
+    "text": " Because architects will have a lot more of those socio-technical aspects, while developers deeply embedded in code, where they just get tasks to develop, they probably going to have a lot less, depending how much you need to interact with what is outside of your code base, I suppose."
+  },
+  { "startTime": 1851.24, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 1851.98,
+    "person": "Karol",
+    "text": " And I think, I mean, developers can do different kinds of things."
+  },
+  {
+    "startTime": 1856.26,
+    "person": "Karol",
+    "text": " So some people can focus mostly on execution of tasks, right?"
+  },
+  {
+    "startTime": 1862.32,
+    "person": "Karol",
+    "text": " And that fits their personality, I guess, and maybe their skills as well."
+  },
+  {
+    "startTime": 1868.6,
+    "person": "Karol",
+    "text": " And then there are others who sort of want to do other stuff as well."
+  },
+  {
+    "startTime": 1874.6,
+    "person": "Karol",
+    "text": " I think, for me, I've always been like a developer with opinions, one of those annoying people."
+  },
+  {
+    "startTime": 1886,
+    "person": "Karol",
+    "text": " But at the same time, I've always been what you could call like, introverted, right?"
+  },
+  {
+    "startTime": 1891.68,
+    "person": "Karol",
+    "text": " So I have to overcome some of those natural tendencies, because I feel I have to say something."
+  },
+  { "startTime": 1900.42, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 1901.5,
+    "person": "Karol",
+    "text": " So going back to bilateral and unilateral API design."
+  },
+  {
+    "startTime": 1907.66,
+    "person": "Karol",
+    "text": " So what are the key problems there when we're discussing socio-technical patterns?"
+  },
+  { "startTime": 1915.38, "person": "Karol", "text": " I think bilateral is the one better." },
+  { "startTime": 1917.82, "person": "Karol", "text": " So let's go with unilateral first." },
+  { "startTime": 1920.42, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 1920.62,
+    "person": "Karol",
+    "text": " So the one I like is bilateral, if you can."
+  },
+  {
+    "startTime": 1923.92,
+    "person": "Karol",
+    "text": " Unilateral is basically, let's solve this by not talking."
+  },
+  {
+    "startTime": 1931.44,
+    "person": "Karol",
+    "text": " It's my kind of like, not so generous way of framing it, right?"
+  },
+  {
+    "startTime": 1935.14,
+    "person": "Karol",
+    "text": " But the idea there is that, okay, someone is going to build an API, and then someone is going to try to use that afterwards."
+  },
+  {
+    "startTime": 1945.87,
+    "person": "Karol",
+    "text": " But then sort of the design effort is on the provider team."
+  },
+  { "startTime": 1949.75, "person": "Karol", "text": " And that makes some sense, right?" },
+  {
+    "startTime": 1951.11,
+    "person": "Karol",
+    "text": " Because they have some expertise with respect to, okay, this is part of our domain, the logic, we know how to sort of implement this."
+  },
+  {
+    "startTime": 1962.07,
+    "person": "Karol",
+    "text": " So presumably, we have some opinion of the best way of solving problems within our domain, right?"
+  },
+  { "startTime": 1968.25, "person": "Karol", "text": " Or answer queries or execute commands." },
+  {
+    "startTime": 1972.21,
+    "person": "Karol",
+    "text": " Maybe it's not so unreasonable that the API provider has a reasonable idea of how to do that well."
+  },
+  {
+    "startTime": 1981.33,
+    "person": "Karol",
+    "text": " And of course, when I say unilateral, it doesn't necessarily mean that you never talk to the consumer, right?"
+  },
+  {
+    "startTime": 1986.83,
+    "person": "Karol",
+    "text": " Presumably, you have some meetings, or if you can, to sort of discuss, okay, what are the things that you really need, and so on and so forth."
+  },
+  {
+    "startTime": 1995.11,
+    "person": "Karol",
+    "text": " So that's eliciting requirements, and then you sort of go back to your cave, and then you sort of hammer on the keyboard for a while."
+  },
+  {
+    "startTime": 2004.09,
+    "person": "Karol",
+    "text": " Then you come back and say, is this going to work?"
+  },
+  {
+    "startTime": 2007.69,
+    "person": "Karol",
+    "text": " And then that's, at least that's sort of like a slow feedback loop, right?"
+  },
+  {
+    "startTime": 2012.55,
+    "person": "Karol",
+    "text": " And when you have these problems, where if I worked on this for two weeks, now to implement it for you, then I'm going to be sort of like invested in my design choices, right?"
+  },
+  {
+    "startTime": 2023.29,
+    "person": "Karol",
+    "text": " And I'm going to hope that you don't complain too much."
+  },
+  {
+    "startTime": 2026.91,
+    "person": "Karol",
+    "text": " And the other part is probably, at least, unless they're Dutch, or whatever, they're going to be inclined to sort of acknowledge that you put a lot of work into this, so I shouldn't be complaining too much, right?"
+  },
+  {
+    "startTime": 2039.67,
+    "person": "Karol",
+    "text": " So if I can, in any sense, sort of work with it, even though it's not very good, or not really solving it in an efficient manner, or something like that, it would be socially preferable to accept it, and then to do workarounds, right?"
+  },
+  {
+    "startTime": 2057.19,
+    "person": "Karol",
+    "text": " I can see that you're probably thinking, oh, Scandinavians are fucked up, but there is some of that, I think."
+  },
+  {
+    "startTime": 2066.01,
+    "person": "Karol",
+    "text": " And maybe we're not entirely alone in the world."
+  },
+  { "startTime": 2068.909, "person": "Karol", "text": " Definitely not." },
+  {
+    "startTime": 2070.69,
+    "person": "Karol",
+    "text": " Not being confrontational about someone else's work, right?"
+  },
+  {
+    "startTime": 2076.67,
+    "person": "Karol",
+    "text": " So that's sort of part of the unilateral thing."
+  },
+  {
+    "startTime": 2079.73,
+    "person": "Karol",
+    "text": " Another thing that sort of strikes me with is that when you do this unilateral design, this is sort of one of my claims, I assert that it is like this, then sort of the contract that you offer, if it's something like an open API document, or something like that for a JSON API, then that's going to basically be documentation of the implementation that you made, right?"
+  },
+  {
+    "startTime": 2107.57,
+    "person": "Karol",
+    "text": " So you're documenting what you built, and then what you want is for that to sort of be, of course, a reasonably accurate documentation for what you built, which is distinct from, if you make a collaboration, my idea of this open API document is that it's more like a contract."
+  },
+  { "startTime": 2129.69, "person": "Karol", "text": " This is what we agreed upon." },
+  {
+    "startTime": 2131.49,
+    "person": "Karol",
+    "text": " And that's sort of like a kind of interpretation of the same document."
+  },
+  {
+    "startTime": 2137.91,
+    "person": "Karol",
+    "text": " For a contract, you have very different kinds of demands."
+  },
+  {
+    "startTime": 2143.01,
+    "person": "Karol",
+    "text": " For a contract, you want it to be stable, and you want changes to it to be very much controlled."
+  },
+  {
+    "startTime": 2150.17,
+    "person": "Karol",
+    "text": " And both parties have to agree that the contract should change."
+  },
+  {
+    "startTime": 2154.81,
+    "person": "Karol",
+    "text": " Whereas if you're doing sort of like unilateral API design, and something changes in your API, then basically what you want for the open API document to do is basically just to update itself magically, right?"
+  },
+  {
+    "startTime": 2167.31,
+    "person": "Karol",
+    "text": " And that's why we do stuff like reverse engineering open API documents from running implementations, right?"
+  },
+  {
+    "startTime": 2172.89,
+    "person": "Karol",
+    "text": " Because then it's guaranteed that it doesn't drift out of sync."
+  },
+  {
+    "startTime": 2177.33,
+    "person": "Karol",
+    "text": " But the bad thing about that is that it could change without even the API provider knowing it, right?"
+  },
+  {
+    "startTime": 2184.43,
+    "person": "Karol",
+    "text": " Suddenly you change sort of like the contract that the consumer is supposed to use, and then you break consumers."
+  },
+  {
+    "startTime": 2192.21,
+    "person": "Karol",
+    "text": " Right, that dependency is a problem because then we introduce a very problematic volatile coupling to the mix, and that's very painful most of the times."
+  },
+  {
+    "startTime": 2201.81,
+    "person": "Karol",
+    "text": " So just to do a very quick summary, what resonated and popped into my head is that if I look unilateral, these are very slow feedback loops."
+  },
+  {
+    "startTime": 2214.67,
+    "person": "Karol",
+    "text": " Then bilateral, they basically mean very quick feedback loops."
+  },
+  { "startTime": 2219.07, "person": "Karol", "text": " Yes." },
+  {
+    "startTime": 2219.77,
+    "person": "Karol",
+    "text": " And then if we go unilateral, that would be documentation as specification, but bilateral would be specification-driven development, which means contract as a specification in that sense."
+  },
+  { "startTime": 2236.19, "person": "Karol", "text": " Yes." },
+  {
+    "startTime": 2238.33,
+    "person": "Karol",
+    "text": " And there are some sort of like, I think it means, again, if you're talking particularly about JSON APIs and open API as a format to sort of specify what the API should do, then that means basically handcrafting it."
+  },
+  {
+    "startTime": 2256.23,
+    "person": "Karol",
+    "text": " And that's something that most developers find incredibly tedious, and they don't want to do it, and they don't really see the point of it."
+  },
+  {
+    "startTime": 2264.41,
+    "person": "Karol",
+    "text": " So I always have a hard time sort of selling handwritten open API documents, sort of like contract-first API design."
+  },
+  {
+    "startTime": 2273.87,
+    "person": "Karol",
+    "text": " But it is, I think it is necessary in order to have a quick enough feedback loop that you can actually sort of like sit in a text editor and sort of co-edit it with a consumer, right?"
+  },
+  {
+    "startTime": 2287.93,
+    "person": "Karol",
+    "text": " Nowadays what I do, I just, if somebody provides me with examples of data, I just put that into an LLM to generate me an open API spec out of that."
+  },
+  {
+    "startTime": 2299.49,
+    "person": "Karol",
+    "text": " And then I hand change everything that needs changing, adjusting, and then this is my proposal."
+  },
+  { "startTime": 2305.69, "person": "Karol", "text": " Let's talk about this." },
+  {
+    "startTime": 2306.87,
+    "person": "Karol",
+    "text": " It's not exactly handcrafted, but it's done by hand without any implementation."
+  },
+  {
+    "startTime": 2313.35,
+    "person": "Karol",
+    "text": " Or in terms of integration platforms, we tend to do these humongous spreadsheets with data mapping spreadsheets, where we take the data model from left side, right side, and then the integration platform data model, and then just start matching."
+  },
+  { "startTime": 2330.41, "person": "Karol", "text": " Do these actually match?" },
+  {
+    "startTime": 2332.73,
+    "person": "Karol",
+    "text": " And that's a completely different approach in terms of specifying."
+  },
+  { "startTime": 2337.35, "person": "Karol", "text": " Here's a good comment from Maxime." },
+  { "startTime": 2340.89, "person": "Karol", "text": " Hello, Maxime." },
+  { "startTime": 2342.01, "person": "Karol", "text": " He's a common viewer here." },
+  {
+    "startTime": 2345.85,
+    "person": "Karol",
+    "text": " So we got also that multilateral design approach, which is exactly where we go into integration platforms, because we have the ecosystem aspect where we have multiple consumers in various contexts of consumption."
+  },
+  {
+    "startTime": 2359.49,
+    "person": "Karol",
+    "text": " And that happens also in that kind of point-to-point scenario where you have open host services, so that kind of generic API as a product exposed to multiple consumers."
+  },
+  {
+    "startTime": 2376.47,
+    "person": "Karol",
+    "text": " That's how we think about those in a very different way."
+  },
+  { "startTime": 2379.81, "person": "Karol", "text": " Yeah, I think it's a very fair point." },
+  {
+    "startTime": 2383.13,
+    "person": "Karol",
+    "text": " And I think you could probably distinguish between like, okay, we can rule out sort of zero consumer APIs, because they're not very interesting."
+  },
+  {
+    "startTime": 2391.85,
+    "person": "Karol",
+    "text": " But if you have one consumer, then it's easy to do this bilateral thing, at least if you're in the same organisation, stuff like that."
+  },
+  {
+    "startTime": 2399.43,
+    "person": "Karol",
+    "text": " But then you have other cases, like few consumers, like n equals up to five."
+  },
+  {
+    "startTime": 2406.65,
+    "person": "Karol",
+    "text": " And then you have a lot of consumers, and then it starts to become a very different kind of a sort of technical challenge, I think, to sort of work with that."
+  },
+  {
+    "startTime": 2416.35,
+    "person": "Karol",
+    "text": " And again, thinking about sort of the origin story for my talk, and it's based on my experiences, which hasn't been much in the like, n is very large domain, so maybe n is five."
+  },
+  {
+    "startTime": 2432.25,
+    "person": "Karol",
+    "text": " Yeah, like consumers, a number of consumers is five."
+  },
+  {
+    "startTime": 2435.35,
+    "person": "Karol",
+    "text": " Then my experience has been that it's better to choose one or two of them and collaborate with them and solve their problems well."
+  },
+  {
+    "startTime": 2446.15,
+    "person": "Karol",
+    "text": " And then it hasn't been that much of a problem to sort of onboard the others."
+  },
+  {
+    "startTime": 2450.95,
+    "person": "Karol",
+    "text": " There was a comment by Alberto Mandolini said that you risk overfitting to the first consumer, right?"
+  },
+  { "startTime": 2459.07, "person": "Karol", "text": " And that is a potential problem." },
+  {
+    "startTime": 2461.09,
+    "person": "Karol",
+    "text": " I haven't sort of been bitten by it myself, but that is something that could happen."
+  },
+  {
+    "startTime": 2465.21,
+    "person": "Karol",
+    "text": " At the same time, I think it's, if you do it unilaterally, you risk the sort of one size fits no one scenario."
+  },
+  {
+    "startTime": 2475.69,
+    "person": "Karol",
+    "text": " So one size fits one is better than one size fits no one."
+  },
+  {
+    "startTime": 2480.13,
+    "person": "Karol",
+    "text": " But again, it matters your concrete socio-technical context."
+  },
+  { "startTime": 2485.41, "person": "Karol", "text": " And I have only related my context." },
+  { "startTime": 2488.35, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 2488.97,
+    "person": "Karol",
+    "text": " So actually for that multilateral design, in integration platforms, we have it solved."
+  },
+  {
+    "startTime": 2496.17,
+    "person": "Karol",
+    "text": " We actually have it as multilateral, but at the same time, bilateral."
+  },
+  { "startTime": 2502.25, "person": "Karol", "text": " We solve it." },
+  { "startTime": 2504.21, "person": "Karol", "text": " I'll get to that a little bit later." },
+  {
+    "startTime": 2505.97,
+    "person": "Karol",
+    "text": " So if we're looking at, and I think we can dive into Draw.io just to put it also in the context of domain driven design."
+  },
+  { "startTime": 2516.03, "person": "Karol", "text": " Boom." },
+  { "startTime": 2516.65, "person": "Karol", "text": " There we go." },
+  { "startTime": 2518.05, "person": "Karol", "text": " Let me make it slightly bigger." },
+  {
+    "startTime": 2519.77,
+    "person": "Karol",
+    "text": " Now this works with control scrolls, that this is not a problem."
+  },
+  {
+    "startTime": 2523.47,
+    "person": "Karol",
+    "text": " So if we have two systems and we're doing unilateral, then we're having a problem that, well, this party that's consuming will have to conform."
+  },
+  {
+    "startTime": 2538.35,
+    "person": "Karol",
+    "text": " What that means that they probably will have to build an intake corruption layer."
+  },
+  {
+    "startTime": 2542.83,
+    "person": "Karol",
+    "text": " That's going to be that translation layer."
+  },
+  { "startTime": 2545.41, "person": "Karol", "text": " So they don't corrupt their models." },
+  {
+    "startTime": 2548.13,
+    "person": "Karol",
+    "text": " They don't corrupt their software with too tight of a coupling, which means an additional layer that translates between whatever is there."
+  },
+  {
+    "startTime": 2555.65,
+    "person": "Karol",
+    "text": " But unilateral also can mean that we're building that kind of generic API, which is an open host."
+  },
+  { "startTime": 2564.47, "person": "Karol", "text": " And we just don't care who consumes." },
+  { "startTime": 2566.57, "person": "Karol", "text": " This is our language." },
+  { "startTime": 2568.41, "person": "Karol", "text": " This is our model." },
+  {
+    "startTime": 2569.57,
+    "person": "Karol",
+    "text": " We expose it this way, live with it or die."
+  },
+  {
+    "startTime": 2573.59,
+    "person": "Karol",
+    "text": " And then we have the published language or don't have it."
+  },
+  {
+    "startTime": 2576.91,
+    "person": "Karol",
+    "text": " Usually the published language is with products like SAS products."
+  },
+  {
+    "startTime": 2583.93,
+    "person": "Karol",
+    "text": " So for example, Salesforce, if it has a API arrive that is out of the box, that's that basically open host service with a published language."
+  },
+  {
+    "startTime": 2591.79,
+    "person": "Karol",
+    "text": " And of course you can customise it and make it very specific, which then it's not an open host, but you can also make it an open host, but basically like that."
+  },
+  {
+    "startTime": 2603.29,
+    "person": "Karol",
+    "text": " So these are those very quickly dependencies of context mapping that are described in domain-driven design."
+  },
+  {
+    "startTime": 2612.23,
+    "person": "Karol",
+    "text": " And then if we look at it from those social technical aspects, then okay, if we're having an open host service, then all the political power is on the party that's hosting that service."
+  },
+  { "startTime": 2626.07, "person": "Karol", "text": " They hold all the power." },
+  { "startTime": 2628.37, "person": "Karol", "text": " They can say, I don't care what you need." },
+  {
+    "startTime": 2630.53,
+    "person": "Karol",
+    "text": " This is what you have, which is by the way, my current peeve with the studio we're in because their API is not as useful as I would want it."
+  },
+  { "startTime": 2641.79, "person": "Karol", "text": " So I actually made some feature requests." },
+  {
+    "startTime": 2644.21,
+    "person": "Karol",
+    "text": " Hopefully they'll make some new changes in the API so I can actually automate scheduling live streams because for the moment they can't."
+  },
+  { "startTime": 2653.19, "person": "Karol", "text": " But they hold all the power." },
+  {
+    "startTime": 2655.59,
+    "person": "Karol",
+    "text": " I have no influence other than raising a ticket and just praying that they pick up the ticket and actually do what I asked them to do, which I find very usable, but they can ignore me all the way."
+  },
+  { "startTime": 2665.79, "person": "Karol", "text": " And this is basically what it is." },
+  {
+    "startTime": 2669.43,
+    "person": "Karol",
+    "text": " Now in domain-driven design, if we have point-to-point connection that is bilateral, that's called either a partnership or a consumer provider relationship."
+  },
+  {
+    "startTime": 2682.91,
+    "person": "Karol",
+    "text": " So it doesn't have to be like, oh, there's an OHS or we need to conform or anything."
+  },
+  {
+    "startTime": 2689.49,
+    "person": "Karol",
+    "text": " Usually this means we do an ACL on the consuming side."
+  },
+  {
+    "startTime": 2692.91,
+    "person": "Karol",
+    "text": " It doesn't necessarily mean we're doing an OHS."
+  },
+  {
+    "startTime": 2700.19,
+    "person": "Karol",
+    "text": " But tell me, because we're talking about APIs, but the context that we're currently constantly in is synchronous calls."
+  },
+  { "startTime": 2712.17, "person": "Karol", "text": " So HTTP-based APIs." },
+  {
+    "startTime": 2714.95,
+    "person": "Karol",
+    "text": " What about those that are actually asynchronous?"
+  },
+  { "startTime": 2723.1, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 2725.88,
+    "person": "Karol",
+    "text": " I haven't worked that much with asynchronous APIs like that."
+  },
+  {
+    "startTime": 2735.04,
+    "person": "Karol",
+    "text": " I think I prefer the same sort of way of collaborating."
+  },
+  {
+    "startTime": 2745.89,
+    "person": "Karol",
+    "text": " But async is by default, most of the times, multilateral, not bilateral."
+  },
+  { "startTime": 2754.73, "person": "Karol", "text": " Right." },
+  { "startTime": 2755.65, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 2756.65,
+    "person": "Karol",
+    "text": " Again, I think that's the thing that you have to look at, how many people are going to be involved, right?"
+  },
+  {
+    "startTime": 2762.97,
+    "person": "Karol",
+    "text": " And how realistic is it that you can sort of bring these people, make them agree, bring them together to even work out if they're going to agree?"
+  },
+  {
+    "startTime": 2775.17,
+    "person": "Karol",
+    "text": " So I think that's going to be sort of the determining factor if it's feasible to do bilateral design."
+  },
+  {
+    "startTime": 2783.55,
+    "person": "Karol",
+    "text": " And then you sort of have to fall back on something else if you can't, right?"
+  },
+  {
+    "startTime": 2786.71,
+    "person": "Karol",
+    "text": " And it's the same thing if you cross organisational boundaries, presumably you won't be able to sit down like that and work together very closely over time, right?"
+  },
+  {
+    "startTime": 2797.79,
+    "person": "Karol",
+    "text": " So I think that's probably what's going to determine that."
+  },
+  {
+    "startTime": 2804.05,
+    "person": "Karol",
+    "text": " So what I find really interesting and what most people don't really look at in terms of that async aspect, it really looks something like this."
+  },
+  {
+    "startTime": 2814.87,
+    "person": "Karol",
+    "text": " So now when we have a consumer, well, provider of an API, now we have the provider of an event."
+  },
+  {
+    "startTime": 2821.99,
+    "person": "Karol",
+    "text": " So that power shifts to whoever is generating that first message."
+  },
+  {
+    "startTime": 2829.45,
+    "person": "Karol",
+    "text": " So if system B consumes a message and in point-to-point communication, that would still be the same system consuming that message, but system A is the one producing an event."
+  },
+  {
+    "startTime": 2840.17,
+    "person": "Karol",
+    "text": " So usually when we do broadcasts, all the API political power shifts towards the one that's producing the broadcast, producing the event."
+  },
+  {
+    "startTime": 2851.33,
+    "person": "Karol",
+    "text": " Not always, but because if we do point-to-point over queues, that doesn't have to be the case, then it's negotiable."
+  },
+  { "startTime": 2858.53, "person": "Karol", "text": " Who's the owner?" },
+  { "startTime": 2859.41, "person": "Karol", "text": " Is it the producer or is it the consumer?" },
+  {
+    "startTime": 2861.57,
+    "person": "Karol",
+    "text": " Because sometimes you may say, oh, this is the consumer, that's the owner, and they own the queue and whatever is the schema, et cetera, owns that queue."
+  },
+  {
+    "startTime": 2871.73,
+    "person": "Karol",
+    "text": " Because then it really depends on the aspect of business purpose, functionality."
+  },
+  {
+    "startTime": 2879.01,
+    "person": "Karol",
+    "text": " So it makes it already quite trickier and different from that perspective."
+  },
+  { "startTime": 2886.23, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 2886.45,
+    "person": "Karol",
+    "text": " I think if what you're doing is publishing events from your system or even from your domain model and say, this happens inside our system, and this is what we were going to tell the rest of the world about what happened inside our system, then that leans naturally towards more like a unilateral design, I think."
+  },
+  {
+    "startTime": 2909.95,
+    "person": "Karol",
+    "text": " And then it's up to each consumer to work out how we're going to respond to this, how we're going to interpret that this happened."
+  },
+  {
+    "startTime": 2917.49,
+    "person": "Karol",
+    "text": " And then that might be very different between different systems as well, I think."
+  },
+  { "startTime": 2922.93, "person": "Karol", "text": " Yeah." },
+  { "startTime": 2923.15, "person": "Karol", "text": " It does lean to that unilateral usually." },
+  { "startTime": 2926.77, "person": "Karol", "text": " Yeah." },
+  { "startTime": 2927.43, "person": "Karol", "text": " Makes sense." },
+  { "startTime": 2928.83, "person": "Karol", "text": " Although not always." },
+  {
+    "startTime": 2931.63,
+    "person": "Karol",
+    "text": " We've been pondering because in DDD, you have the concept of interchange context, which concept was never properly defined."
+  },
+  {
+    "startTime": 2941.27,
+    "person": "Karol",
+    "text": " We asked, with Philip, we asked Eric Evans this year at the conference, hey, Eric, did you ever properly define what is an interchange context?"
+  },
+  { "startTime": 2952.95, "person": "Andrew", "text": " Yeah." },
+  {
+    "startTime": 2953.27,
+    "person": "Karol",
+    "text": " And it turns out the definition was never there."
+  },
+  {
+    "startTime": 2956.47,
+    "person": "Karol",
+    "text": " Eric did present it a few times at various conferences like 10 years ago or so."
+  },
+  {
+    "startTime": 2963.57,
+    "person": "Karol",
+    "text": " But that idea never went further than that."
+  },
+  {
+    "startTime": 2969.01,
+    "person": "Karol",
+    "text": " It was never contextualised into a definition."
+  },
+  {
+    "startTime": 2973.23,
+    "person": "Karol",
+    "text": " So this year at DDD Europe, we actually run a session introducing interchange context."
+  },
+  {
+    "startTime": 2979.41,
+    "person": "Karol",
+    "text": " And we did a lot of research, especially in terms of integration platforms."
+  },
+  {
+    "startTime": 2982.63,
+    "person": "Karol",
+    "text": " And it turns out there are multiple types of interchange contexts."
+  },
+  {
+    "startTime": 2986.93,
+    "person": "Karol",
+    "text": " And then we needed to add even new terms that were not there previously to be able to accommodate for what integration platforms do."
+  },
+  { "startTime": 2999.37, "person": "Karol", "text": " So one of the fun things in terms of..." },
+  {
+    "startTime": 3003.87,
+    "person": "Karol",
+    "text": " Okay, let's do some actual live modelling on the screen."
+  },
+  {
+    "startTime": 3008.09,
+    "person": "Karol",
+    "text": " So if we have the broadcast, the async communication, and this one is setting an event."
+  },
+  {
+    "startTime": 3015.65,
+    "person": "Karol",
+    "text": " Now, what if these two systems, system B and C, they are regulatory systems."
+  },
+  {
+    "startTime": 3021.51,
+    "person": "Karol",
+    "text": " For example, this would be police, this would be, I don't know, a prosecution, or a tax authority, and something else related, interested in your financials."
+  },
+  {
+    "startTime": 3035.75,
+    "person": "Karol",
+    "text": " And because they are government institution, they have the political power to tell you what you need to send."
+  },
+  {
+    "startTime": 3045.57,
+    "person": "Karol",
+    "text": " So now, you as a system, as the provider of the event, have no political power."
+  },
+  { "startTime": 3052.37, "person": "Karol", "text": " You are the conformist here." },
+  { "startTime": 3054.25, "person": "Karol", "text": " So, da-da-da, conformist." },
+  {
+    "startTime": 3056.99,
+    "person": "Karol",
+    "text": " What happens here is that if we have those systems, well, now we have something else here."
+  },
+  {
+    "startTime": 3063.71,
+    "person": "Karol",
+    "text": " We have actually some sort of an interchange context between them."
+  },
+  { "startTime": 3068.23, "person": "Karol", "text": " Oh, right, sorry, wrong..." },
+  {
+    "startTime": 3069.47,
+    "person": "Karol",
+    "text": " So then, we have that interchange context."
+  },
+  { "startTime": 3074.81, "person": "Karol", "text": " Now, come on, snap the grid." },
+  { "startTime": 3076.39, "person": "Karol", "text": " There we go." },
+  {
+    "startTime": 3078.35,
+    "person": "Karol",
+    "text": " And the interchange context is something that..."
+  },
+  { "startTime": 3082.23, "person": "Karol", "text": " Oh, what the hell?" },
+  { "startTime": 3083.89, "person": "Karol", "text": " Why is there an..." },
+  { "startTime": 3084.91, "person": "Karol", "text": " Ah, okay." },
+  {
+    "startTime": 3086.37,
+    "person": "Karol",
+    "text": " And this interchange context is something that is not owned by either of those two systems, but rather shared, of a shared ownership."
+  },
+  {
+    "startTime": 3096.97,
+    "person": "Karol",
+    "text": " And this is the key aspect, because now the interchange context needs to conform to both of those, and it is the open host service."
+  },
+  {
+    "startTime": 3107.03,
+    "person": "Karol",
+    "text": " An open host service is without any implementation of its own, only the implementation of a, let's say, async API spec."
+  },
+  { "startTime": 3115.89, "person": "Karol", "text": " Right?" },
+  {
+    "startTime": 3116.73,
+    "person": "Karol",
+    "text": " So now, you have all the political power, literally on this side."
+  },
+  {
+    "startTime": 3123.27,
+    "person": "Karol",
+    "text": " And now, these guys here, whoever they may be, let's say a company in the Netherlands, they have no political power, they just need to conform to whatever."
+  },
+  {
+    "startTime": 3132.49,
+    "person": "Karol",
+    "text": " They're saying that you need to send as a company in terms of, for example, reporting on your taxes."
+  },
+  {
+    "startTime": 3139.39,
+    "person": "Karol",
+    "text": " It's like, now we have a very different sociotechnical dynamic."
+  },
+  { "startTime": 3144.25, "person": "Karol", "text": " Yes." },
+  {
+    "startTime": 3145.19,
+    "person": "Karol",
+    "text": " Because now we have completely unilateral design."
+  },
+  { "startTime": 3150.07, "person": "Karol", "text": " Yes." },
+  { "startTime": 3150.27, "person": "Karol", "text": " Well, is it unilateral though?" },
+  {
+    "startTime": 3154.37,
+    "person": "Karol",
+    "text": " Because this is, of course, we have somebody pushing a interface, well, some sort of a definition on us, but it's actually designed by multiple parties."
+  },
+  { "startTime": 3165.07, "person": "Karol", "text": " So now, is that unilateral?" },
+  { "startTime": 3166.97, "person": "Karol", "text": " Is that bilateral?" },
+  { "startTime": 3168.01, "person": "Karol", "text": " Or what the hell is that?" },
+  { "startTime": 3169.11, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 3171.55,
+    "person": "Karol",
+    "text": " I think what I was implicitly thinking about is, okay, so there is going to be..."
+  },
+  {
+    "startTime": 3184.11,
+    "person": "Karol",
+    "text": " I didn't think about the scenario of more than one provider, if you like."
+  },
+  {
+    "startTime": 3190.43,
+    "person": "Karol",
+    "text": " So I was implicitly thinking one too many, and the provider is one, and there is zero to N consumers."
+  },
+  {
+    "startTime": 3200.37,
+    "person": "Karol",
+    "text": " But here you sort of have more than one source of providing what the API should be, right?"
+  },
+  { "startTime": 3210.01, "person": "Karol", "text": " Yeah." },
+  { "startTime": 3211.47, "person": "Karol", "text": " I skipped the script a little, eh?" },
+  { "startTime": 3213.97, "person": "Karol", "text": " Yeah." },
+  { "startTime": 3214.59, "person": "Karol", "text": " This is a curve ball, right?" },
+  {
+    "startTime": 3217.59,
+    "person": "Karol",
+    "text": " I think, again, it's going to be the sociotechnicals, if you like, the context is going to trump what actually happens in practise, right?"
+  },
+  {
+    "startTime": 3229.89,
+    "person": "Karol",
+    "text": " Maybe one of these systems has more clout than the other, and then it's going to presumably be unilateral, and they're going to be dominant in determining what it's going to be like, right?"
+  },
+  {
+    "startTime": 3240.43,
+    "person": "Karol",
+    "text": " If it's not like that, then they're going to have to work it out somehow."
+  },
+  {
+    "startTime": 3247.19,
+    "person": "Karol",
+    "text": " Knowing developers, they'll prefer not to collaborate."
+  },
+  {
+    "startTime": 3252.07,
+    "person": "Karol",
+    "text": " So I actually recently been in a similar situation, where we have"
+  },
+  {
+    "startTime": 3258.91,
+    "person": "Karol",
+    "text": " three organisations cooperating with one another, and they need to agree on how they communicate"
+  },
+  {
+    "startTime": 3264.89,
+    "person": "Karol",
+    "text": " with one another, and how they standardise that communication, which basically resulted in a"
+  },
+  {
+    "startTime": 3271.57,
+    "person": "Karol",
+    "text": " three-sided meeting, where we had three different institutions, public institutions, in one"
+  },
+  {
+    "startTime": 3277.35,
+    "person": "Karol",
+    "text": " conference room, debating, but that wasn't an even relationship, because me as a representative of"
+  },
+  {
+    "startTime": 3288.55,
+    "person": "Karol",
+    "text": " one of those institutions, I came with a proposal of how it should look like."
+  },
+  { "startTime": 3293.15, "person": "Karol", "text": " So you see, this is like..." },
+  { "startTime": 3294.51, "person": "Karol", "text": " That is one approach, right?" },
+  {
+    "startTime": 3297.65,
+    "person": "Karol",
+    "text": " If you have strong opinions, be better prepared than anyone else."
+  },
+  {
+    "startTime": 3303.53,
+    "person": "Karol",
+    "text": " That's a smart approach, if you want to influence the design."
+  },
+  { "startTime": 3307.31, "person": "Karol", "text": " Yep." },
+  { "startTime": 3308.55, "person": "Karol", "text": " So that's exactly what I did." },
+  {
+    "startTime": 3310.03,
+    "person": "Karol",
+    "text": " I saw gaps in the design, because there was a previous version of said design, and I was like, okay, this needs fixing, this needs fixing."
+  },
+  {
+    "startTime": 3316.91,
+    "person": "Karol",
+    "text": " I'm just going to write a whole new spec, and then present my changes, and let's discuss those changes."
+  },
+  { "startTime": 3323.07, "person": "Karol", "text": " Do we agree on those changes?" },
+  {
+    "startTime": 3324.89,
+    "person": "Karol",
+    "text": " And then we posted that into GitLab, and gave it a one-month grace period of people to review it in details, and comment on it, or any changes needed."
+  },
+  {
+    "startTime": 3339.51,
+    "person": "Karol",
+    "text": " So that's one of the ways to do it, but if we look at EU regulations for, let's say, PSD2, and all sorts of other regulations, this is a very common situation, this kind of behaviour, because we have, let's say, PSD2."
+  },
+  {
+    "startTime": 3358.25,
+    "person": "Karol",
+    "text": " PSD2 is an open banking regulation, right?"
+  },
+  {
+    "startTime": 3362.31,
+    "person": "Karol",
+    "text": " And while the EU regulations stated that we need to standardise and all sorts of things, then each country, each member state of the European Union, they actually had to draft their own local law, and their own local specifications."
+  },
+  {
+    "startTime": 3381.59,
+    "person": "Karol",
+    "text": " So basically, the banks in Europe, in every country, they're standardised, but they're not standardised the same way across all Europe."
+  },
+  {
+    "startTime": 3390.57,
+    "person": "Karol",
+    "text": " They all have open banking interfaces, but the standards are mandated by local governments, country governments."
+  },
+  {
+    "startTime": 3400.25,
+    "person": "Karol",
+    "text": " So we have, to a certain extent, EU influencing all, they kind of agree on a very high level, and then, in detail, they impose different on different parties within those territories, which is a completely different dynamic, and one that not a lot of developers will encounter, unless you're actually this kind of regulatory domain systems."
+  },
+  {
+    "startTime": 3428.89,
+    "person": "Karol",
+    "text": " But otherwise, it's just a different scale, in that sense."
+  },
+  {
+    "startTime": 3435.47,
+    "person": "Karol",
+    "text": " We also have these kind of situations within companies that, let's say, design board or design authority says, it has to be this way, period."
+  },
+  { "startTime": 3446.43, "person": "Karol", "text": " And then you just do it this way." },
+  { "startTime": 3448.55, "person": "Andrew", "text": " Yeah." },
+  {
+    "startTime": 3449.69,
+    "person": "Karol",
+    "text": " It really shows how varied the socio-technical sort of context can be, right?"
+  },
+  {
+    "startTime": 3461.69,
+    "person": "Karol",
+    "text": " And that means that there are a tonne of potential solutions that are going to be appropriate in different contexts."
+  },
+  {
+    "startTime": 3470.77,
+    "person": "Karol",
+    "text": " So I mostly dabbled in one kind of context, right?"
+  },
+  {
+    "startTime": 3477.47,
+    "person": "Karol",
+    "text": " And that's sort of the original story for the talk."
+  },
+  { "startTime": 3481.73, "person": "Karol", "text": " Those particular pains." },
+  {
+    "startTime": 3484.33,
+    "person": "Karol",
+    "text": " I think it's worthwhile to articulate pains, and then you can start to look for good solutions afterwards."
+  },
+  {
+    "startTime": 3491.03,
+    "person": "Karol",
+    "text": " And some of those solutions are already quite available in strategic patterns for context mapping."
+  },
+  { "startTime": 3501.16, "person": "Karol", "text": " Yeah, that's true." },
+  { "startTime": 3502.32, "person": "Karol", "text": " But not all of them." },
+  {
+    "startTime": 3504.8,
+    "person": "Karol",
+    "text": " So if we go to the stories of an integration architect, and look at integration platforms, that's very different."
+  },
+  {
+    "startTime": 3513.4,
+    "person": "Karol",
+    "text": " And I'm just trying to find the right background, because because we were doing that lab at BBD Europe this year, we actually have plenty of diagrams."
+  },
+  {
+    "startTime": 3529.26,
+    "person": "Karol",
+    "text": " So let me just switch the tabs and put that on screen again."
+  },
+  { "startTime": 3536.92, "person": "Karol", "text": " There we go." },
+  {
+    "startTime": 3537.96,
+    "person": "Karol",
+    "text": " So for example, we have API management, right?"
+  },
+  { "startTime": 3543.44, "person": "Karol", "text": " It's the API gateway." },
+  { "startTime": 3545.14, "person": "Karol", "text": " Yes." },
+  {
+    "startTime": 3545.66,
+    "person": "Karol",
+    "text": " It's a very straightforward, because usually an API gateway is just a representation of some sort of an API exposed by the system, right?"
+  },
+  { "startTime": 3553.62, "person": "Karol", "text": " Not always one-to-one representation." },
+  {
+    "startTime": 3556.48,
+    "person": "Karol",
+    "text": " So that means that the gateway itself becomes an open host, but it conforms to that system."
+  },
+  {
+    "startTime": 3561.92,
+    "person": "Karol",
+    "text": " So now who's going to be taking care of that gateway?"
+  },
+  { "startTime": 3564.94, "person": "Karol", "text": " That's the question." },
+  {
+    "startTime": 3565.8,
+    "person": "Karol",
+    "text": " So if you have a small environment, that's usually the same team that actually built that API on that system that's going to take care of the API gateway itself, right?"
+  },
+  { "startTime": 3575.68, "person": "Karol", "text": " Absolutely." },
+  {
+    "startTime": 3576.1,
+    "person": "Karol",
+    "text": " But if you have a large corporate environment, that API gateway is absolutely under somebody else's control."
+  },
+  {
+    "startTime": 3586.18,
+    "person": "Karol",
+    "text": " And what goes there and what is available there is therefore political power."
+  },
+  {
+    "startTime": 3591.66,
+    "person": "Karol",
+    "text": " So sometimes it turns out that that system, that the provider needs to conform to a certain extent to the gateway."
+  },
+  { "startTime": 3599.7, "person": "Karol", "text": " Yes, exactly." },
+  { "startTime": 3601, "person": "Karol", "text": " Again, it's the balance of power, right?" },
+  {
+    "startTime": 3602.96,
+    "person": "Karol",
+    "text": " That determines how it's going to function."
+  },
+  {
+    "startTime": 3605.78,
+    "person": "Karol",
+    "text": " And then the more fun part is actually looking at integration platforms, in this case, an integration broker."
+  },
+  {
+    "startTime": 3612.86,
+    "person": "Karol",
+    "text": " So to distinguish it a little bit better, because I tend to dislike nowadays the term integration platform because it's an umbrella term."
+  },
+  { "startTime": 3625.42, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 3627.12,
+    "person": "Karol",
+    "text": " Architecturally, there are two types of integration platforms."
+  },
+  {
+    "startTime": 3629.66,
+    "person": "Karol",
+    "text": " One is integration broker, which is one layer of abstraction."
+  },
+  {
+    "startTime": 3632.84,
+    "person": "Karol",
+    "text": " The other one is an ESB, so Enterprise Service Plus."
+  },
+  { "startTime": 3636.4, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 3637,
+    "person": "Karol",
+    "text": " Nowadays known as API led architecture or a lot of other names as well."
+  },
+  {
+    "startTime": 3645.5,
+    "person": "Karol",
+    "text": " There are common representatives in technology for that."
+  },
+  {
+    "startTime": 3649.4,
+    "person": "Karol",
+    "text": " So if you have, and I've just reminded myself that I have layers in here, so there's actually multiple options."
+  },
+  {
+    "startTime": 3658.6,
+    "person": "Karol",
+    "text": " So if we have a typical integration platform, well, okay, we get something, we have a dedicated flow, integration flow that orchestrates because an integration platform is always an orchestrator."
+  },
+  {
+    "startTime": 3672.74,
+    "person": "Karol",
+    "text": " Orchestrates the communication, gets data from multiple sources."
+  },
+  {
+    "startTime": 3677.06,
+    "person": "Karol",
+    "text": " Usually that integration platform conforms to everybody."
+  },
+  { "startTime": 3682.16, "person": "Karol", "text": " Right." },
+  { "startTime": 3683.18, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 3684.12,
+    "person": "Karol",
+    "text": " So we conform to the providers, we conform to the consumers, everybody's happy, they do their own thing."
+  },
+  { "startTime": 3691.42, "person": "Karol", "text": " Perfect." },
+  { "startTime": 3692.26, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 3692.86,
+    "person": "Karol",
+    "text": " But sometimes we also expose generic services."
+  },
+  {
+    "startTime": 3697.94,
+    "person": "Karol",
+    "text": " That's a trait of integration brokers that we either conform, so we have a flow that is specific to a specific consumer, or we do an open host service."
+  },
+  {
+    "startTime": 3710.96,
+    "person": "Karol",
+    "text": " So then we have a tighter coupling between our API on integration platform and all the consumers."
+  },
+  {
+    "startTime": 3717.36,
+    "person": "Karol",
+    "text": " So then all the other consumers need to conform to us in a way."
+  },
+  { "startTime": 3722.8, "person": "Karol", "text": " Yeah." },
+  { "startTime": 3723.14, "person": "Karol", "text": " That's a trade off, right?" },
+  { "startTime": 3724.46, "person": "Karol", "text": " Sure." },
+  { "startTime": 3725.86, "person": "Karol", "text": " And this is like a very normal scenario." },
+  {
+    "startTime": 3727.98,
+    "person": "Karol",
+    "text": " This is not very, nothing very specific about it."
+  },
+  {
+    "startTime": 3733.08,
+    "person": "Karol",
+    "text": " There's a different way to it when we have an integration broker that is an ETL flow."
+  },
+  {
+    "startTime": 3739.42,
+    "person": "Karol",
+    "text": " It's basically integration platform initiates all communication."
+  },
+  {
+    "startTime": 3742.64,
+    "person": "Karol",
+    "text": " So we either way going to conform to everybody because we're calling everybody."
+  },
+  {
+    "startTime": 3746.76,
+    "person": "Karol",
+    "text": " So they expose APIs to us, whatever those APIs would be."
+  },
+  {
+    "startTime": 3752.18,
+    "person": "Karol",
+    "text": " And then there are variations like this one, where we have a combination of sync and async, which is less important."
+  },
+  { "startTime": 3761.6, "person": "Karol", "text": " And then we go to actual ESBs." },
+  {
+    "startTime": 3767.48,
+    "person": "Karol",
+    "text": " Now, ESBs here are, let me just dial down the rows."
+  },
+  {
+    "startTime": 3771.46,
+    "person": "Karol",
+    "text": " This would be a broker situation, an integration flow that's tailored to a specific system."
+  },
+  {
+    "startTime": 3777.02,
+    "person": "Karol",
+    "text": " The moment we want to make it an actual ESB, now the ESB also conforms to everybody, but now it has ACLs, not just true conformist, because now the ESB actually has its own data model."
+  },
+  { "startTime": 3790.52, "person": "Karol", "text": " It's a broader system." },
+  {
+    "startTime": 3794.5,
+    "person": "Karol",
+    "text": " So now we have a very fun thing, which is what I mentioned earlier, that we have a design that is multilateral and bilateral at the same time."
+  },
+  {
+    "startTime": 3805.58,
+    "person": "Karol",
+    "text": " Because while we're building a generic service on the integration platform, we can actually expose a service that is dedicated to a specific consumer."
+  },
+  {
+    "startTime": 3816.84,
+    "person": "Karol",
+    "text": " So if you look at this, this is a, we have a ACL with a published language, which we dubbed this a conforming published language."
+  },
+  {
+    "startTime": 3827.98,
+    "person": "Karol",
+    "text": " And then that means that system A can get a REST-like endpoint, and system B can get a SOAP-like endpoint."
+  },
+  {
+    "startTime": 3837.02,
+    "person": "Karol",
+    "text": " Because each has a dedicated endpoint, they don't use the same endpoint."
+  },
+  {
+    "startTime": 3843.42,
+    "person": "Karol",
+    "text": " And this is also the fun part why we never do versioning on integration platforms, because we don't have to."
+  },
+  {
+    "startTime": 3851.5,
+    "person": "Karol",
+    "text": " If you have a domain system and you expose an array of productized APIs, you have to do versioning on them."
+  },
+  {
+    "startTime": 3859.58,
+    "person": "Karol",
+    "text": " Otherwise, you'll break a lot of people's integrations."
+  },
+  {
+    "startTime": 3863.62,
+    "person": "Karol",
+    "text": " And you have to notify about deprecating that version, et cetera."
+  },
+  {
+    "startTime": 3869.2,
+    "person": "Karol",
+    "text": " In integration platforms, you don't do that at all, unless you're communicating with the outside world."
+  },
+  {
+    "startTime": 3874.02,
+    "person": "Karol",
+    "text": " Otherwise, everything is in the release cycle of systems."
+  },
+  {
+    "startTime": 3877.48,
+    "person": "Karol",
+    "text": " And then you just build those APIs and change and update them as you go, often without impacting those other systems."
+  },
+  { "startTime": 3887.12, "person": "Karol", "text": " Internally, it looks something like this." },
+  {
+    "startTime": 3890.44,
+    "person": "Karol",
+    "text": " Let me just dial down a number of things that are in here."
+  },
+  { "startTime": 3895.68, "person": "Karol", "text": " Let's see, where am I?" },
+  { "startTime": 3897.24, "person": "Karol", "text": " Nope, this way." },
+  {
+    "startTime": 3902.18,
+    "person": "Karol",
+    "text": " Internally, an integration platform is a microservice system nowadays."
+  },
+  {
+    "startTime": 3906.32,
+    "person": "Karol",
+    "text": " They used to be composed exactly the same way back 15 years ago, only we didn't have microservices, but they were divided in the way that we divide coarse-grained microservices."
+  },
+  {
+    "startTime": 3918,
+    "person": "Karol",
+    "text": " So we have an adapter system that exposes data directly from the system."
+  },
+  {
+    "startTime": 3923.64,
+    "person": "Karol",
+    "text": " So it connects and conforms to the APIs of this system over here."
+  },
+  {
+    "startTime": 3928.3,
+    "person": "Karol",
+    "text": " And this adapter exposes an open host service."
+  },
+  {
+    "startTime": 3931.66,
+    "person": "Karol",
+    "text": " So it's a generic API, standardised, with its own specific language."
+  },
+  {
+    "startTime": 3937.94,
+    "person": "Karol",
+    "text": " That's why we have a CPL here, so conforming published language."
+  },
+  {
+    "startTime": 3942.14,
+    "person": "Karol",
+    "text": " Now, conforming may be very puzzling here."
+  },
+  { "startTime": 3944.24, "person": "Karol", "text": " What the hell it conforms to?" },
+  {
+    "startTime": 3946.5,
+    "person": "Karol",
+    "text": " Because this one is also conforming, right?"
+  },
+  {
+    "startTime": 3950.54,
+    "person": "Karol",
+    "text": " And this one exposes a dedicated endpoint to its specific system."
+  },
+  { "startTime": 3955.04, "person": "Karol", "text": " Now, we can extend that." },
+  { "startTime": 3957.52, "person": "Karol", "text": " So we have a situation like this." },
+  { "startTime": 3960.84, "person": "Karol", "text": " The composition app is an orchestrator." },
+  { "startTime": 3964.02, "person": "Karol", "text": " That's the fun part, right?" },
+  {
+    "startTime": 3966.22,
+    "person": "Karol",
+    "text": " And then it orchestrates and combines the functionality of two different adapter applications."
+  },
+  {
+    "startTime": 3973.78,
+    "person": "Karol",
+    "text": " So it uses those generic APIs and composes an actual generic API with a published language."
+  },
+  { "startTime": 3980.9, "person": "Karol", "text": " Now, this one has a published language." },
+  {
+    "startTime": 3983.02,
+    "person": "Karol",
+    "text": " These two have a conforming language because this is the app that holds the political power on the data model."
+  },
+  {
+    "startTime": 3991.6,
+    "person": "Karol",
+    "text": " So those apps need to conform to this one in terms of the data model."
+  },
+  {
+    "startTime": 3998.08,
+    "person": "Karol",
+    "text": " Now, if this is done by one cohesive team, it's peachy."
+  },
+  {
+    "startTime": 4006.08,
+    "person": "Karol",
+    "text": " If you start dividing this work into multiple development teams, especially if you partition the work per system, that becomes very messy, even more messy than just point to point."
+  },
+  {
+    "startTime": 4021.08,
+    "person": "Karol",
+    "text": " Because if the team doing system C is in charge of the adapter, they still need to conform to whatever is done by the platform team, building the orchestrations, et cetera."
+  },
+  { "startTime": 4035.02, "person": "Karol", "text": " That can be a hell of a mess." },
+  {
+    "startTime": 4037,
+    "person": "Karol",
+    "text": " And then further on, we add consumers to that."
+  },
+  {
+    "startTime": 4041.18,
+    "person": "Karol",
+    "text": " So they consume the same service, but they make it specific to a specific consumer."
+  },
+  {
+    "startTime": 4049.74,
+    "person": "Karol",
+    "text": " So you see, we don't have that problem with dependencies anymore because we can mitigate the changes internally in the integration platform."
+  },
+  {
+    "startTime": 4057.7,
+    "person": "Karol",
+    "text": " If this is divided into multiple teams, that's even more hellish than just going point to point at times."
+  },
+  {
+    "startTime": 4069.86,
+    "person": "Karol",
+    "text": " It's all really in the social technical aspect and not in the technical patterns."
+  },
+  {
+    "startTime": 4078.22,
+    "person": "Karol",
+    "text": " The technical patterns for this are extremely easy and straightforward."
+  },
+  {
+    "startTime": 4082.54,
+    "person": "Karol",
+    "text": " The social technical patterns and how the work is organised then starts to play even more of a meaning than anything else."
+  },
+  {
+    "startTime": 4094.42,
+    "person": "Karol",
+    "text": " So you see, now you kind of have an idea where I'm at in terms of social technical patterns."
+  },
+  {
+    "startTime": 4102.42,
+    "person": "Karol",
+    "text": " Because when we were in Antwerp, I told you that my social technical patterns do not match yours because they're different because of the way I work."
+  },
+  { "startTime": 4112.16, "person": "Karol", "text": " Yes, exactly." },
+  {
+    "startTime": 4114.6,
+    "person": "Karol",
+    "text": " I don't want to be rude, but you don't exist in my world."
+  },
+  {
+    "startTime": 4120.74,
+    "person": "Karol",
+    "text": " Yes, you're just one of those systems I conform to."
+  },
+  { "startTime": 4124, "person": "Karol", "text": " Yeah, yeah, exactly." },
+  { "startTime": 4125.399, "person": "Karol", "text": " Yes." },
+  {
+    "startTime": 4126.899,
+    "person": "Karol",
+    "text": " And I have to say, again, it seems like hard work because it's hard enough to talk to one side, right?"
+  },
+  {
+    "startTime": 4140.56,
+    "person": "Karol",
+    "text": " If you have to talk to multiple sides, it's always going to be much harder."
+  },
+  {
+    "startTime": 4146.3,
+    "person": "Karol",
+    "text": " And you sort of have to put yourself in more than one extra pair of shoes, right?"
+  },
+  {
+    "startTime": 4152.6,
+    "person": "Karol",
+    "text": " You have to put yourself in a lot of different kinds of shoes in order to sort of understand the problems that teams are facing."
+  },
+  { "startTime": 4160.54, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 4161.92,
+    "person": "Karol",
+    "text": " And that's why if you're doing an ESB, it's exhausting and difficult from the social technical standpoint."
+  },
+  {
+    "startTime": 4171.76,
+    "person": "Karol",
+    "text": " But it's so extremely interesting because you get to learn about how different teams and different systems function."
+  },
+  {
+    "startTime": 4179.979,
+    "person": "Karol",
+    "text": " How they work, how they build functionality, how they build or do not build for purpose, and how they're able to comprehend and explain what the hell they're doing in terms of implementation."
+  },
+  {
+    "startTime": 4195.86,
+    "person": "Karol",
+    "text": " Or even how the workflow between a, let's say, in that traditional approach between the business analyst and the actual dev team and testers work in terms of conveying that meaning to the development team and test team what they're actually building, how many layers of translations you have."
+  },
+  {
+    "startTime": 4216.94,
+    "person": "Karol",
+    "text": " And that's extremely interesting and extremely exhausting at the same time."
+  },
+  { "startTime": 4220.92, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 4221.96,
+    "person": "Karol",
+    "text": " Because my impression is that most of the pain in software is sort of like, at least becomes manifest at the borders, at the integration points, right?"
+  },
+  {
+    "startTime": 4234.24,
+    "person": "Karol",
+    "text": " Where different contexts, different teams, different people meet."
+  },
+  { "startTime": 4238.86, "person": "Karol", "text": " And then you sort of..." },
+  {
+    "startTime": 4240.42,
+    "person": "Karol",
+    "text": " One thing that I watched the stream with Barry, and he was talking about sort of how you needed to really understand distributed systems, which is sort of like the technical part of it."
+  },
+  { "startTime": 4250.1, "person": "Karol", "text": " But then you sort of also have to..." },
+  {
+    "startTime": 4255.5,
+    "person": "Karol",
+    "text": " So you have chosen as your habitat to live on the border, between where there's always friction."
+  },
+  { "startTime": 4263.04, "person": "Karol", "text": " Friction." },
+  { "startTime": 4263.72, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 4264.64,
+    "person": "Karol",
+    "text": " Which is a very, very interesting place to be."
+  },
+  {
+    "startTime": 4268.04,
+    "person": "Karol",
+    "text": " Of course, you learn a lot about distributed systems, but also a lot about people, I guess."
+  },
+  { "startTime": 4275.44, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 4275.96,
+    "person": "Karol",
+    "text": " Because my mental state is always, I need to learn."
+  },
+  {
+    "startTime": 4280.84,
+    "person": "Karol",
+    "text": " That was something that followed me in my career always."
+  },
+  {
+    "startTime": 4285.66,
+    "person": "Karol",
+    "text": " When I started to work as an integration architect, instead of working as a integration developer, I quickly learned how much knowledge I didn't have."
+  },
+  {
+    "startTime": 4296.94,
+    "person": "Karol",
+    "text": " So basically, if I worked as an integration developer, yeah, okay."
+  },
+  { "startTime": 4300.36, "person": "Karol", "text": " I'm using..." },
+  {
+    "startTime": 4301.34,
+    "person": "Karol",
+    "text": " At that time, I was using typical business world spy."
+  },
+  { "startTime": 4304, "person": "Karol", "text": " I learned that tool." },
+  { "startTime": 4305.68, "person": "Karol", "text": " I could teach that tool." },
+  {
+    "startTime": 4307,
+    "person": "Karol",
+    "text": " I literally run workshops for people to teach them how to develop in that technology."
+  },
+  { "startTime": 4313.8, "person": "Karol", "text": " And that's perfectly fine." },
+  {
+    "startTime": 4315.62,
+    "person": "Karol",
+    "text": " The moment I stepped into the world of integration architecture, so designing these things, I realised that I need to learn how databases works."
+  },
+  {
+    "startTime": 4324.74,
+    "person": "Karol",
+    "text": " You will not find a database on an integration platform, because we don't want state on an integration platform."
+  },
+  {
+    "startTime": 4329.84,
+    "person": "Karol",
+    "text": " Now I need to learn how databases works, because I need to design against the integration flow against whatever that database is."
+  },
+  {
+    "startTime": 4337.68,
+    "person": "Karol",
+    "text": " In my case, these were Oracle 9, Oracle 10, 11 databases, which is quite old school."
+  },
+  {
+    "startTime": 4343.94,
+    "person": "Karol",
+    "text": " They didn't have capabilities to expose a HTTP based API."
+  },
+  {
+    "startTime": 4351.12,
+    "person": "Karol",
+    "text": " So everything was a view or a table or a stored procedure or a function."
+  },
+  {
+    "startTime": 4357.68,
+    "person": "Karol",
+    "text": " So suddenly you need to understand how those works so that you can invoke them properly or help build them properly, because you need to tell those people what you need from them."
+  },
+  { "startTime": 4368.3, "person": "Karol", "text": " They're providing you with data." },
+  {
+    "startTime": 4371,
+    "person": "Karol",
+    "text": " Some people working on databases still don't know how to properly abstract databases to safeguard them from external calls so that those external calls do not corrupt data."
+  },
+  {
+    "startTime": 4385,
+    "person": "Karol",
+    "text": " And that means you need to learn how to build a dedicated schema for interoperability."
+  },
+  {
+    "startTime": 4391.72,
+    "person": "Karol",
+    "text": " And in that schema, you build a layer that is this staging area for data not to corrupt the internals."
+  },
+  { "startTime": 4398.74, "person": "Karol", "text": " I had to learn how testers work." },
+  {
+    "startTime": 4402.48,
+    "person": "Karol",
+    "text": " So I actually got myself ISTQB certified just to be able to talk with testers, et cetera, et cetera."
+  },
+  {
+    "startTime": 4412.6,
+    "person": "Karol",
+    "text": " So it's a completely different world of dependencies, because suddenly you need to understand everybody's language."
+  },
+  {
+    "startTime": 4420.08,
+    "person": "Karol",
+    "text": " It's extremely difficult at times, depending on how mature the organisation is."
+  },
+  {
+    "startTime": 4426.12,
+    "person": "Karol",
+    "text": " The less mature, the more difficult it is, obviously."
+  },
+  { "startTime": 4430.16, "person": "Karol", "text": " And then, of course, it differs in scale." },
+  {
+    "startTime": 4433.5,
+    "person": "Karol",
+    "text": " If it's a small environment, even if they're not mature, that's manageable."
+  },
+  {
+    "startTime": 4438.94,
+    "person": "Karol",
+    "text": " But if you have an environment where I was taught to live in, which was a corporate environment of over 100 domain systems integrated through an integration platform with over 100 integration apps and thousands of integration flows, and all of that on two nodes running active-active, that becomes a spiderweb of connections."
+  },
+  {
+    "startTime": 4473.33,
+    "person": "Karol",
+    "text": " And then those socio-technical aspects really come to play in terms of not really even talking, but actually relationship building."
+  },
+  { "startTime": 4482.89, "person": "Karol", "text": " Yes." },
+  { "startTime": 4483.41, "person": "Karol", "text": " Yes, absolutely." },
+  {
+    "startTime": 4485.49,
+    "person": "Karol",
+    "text": " So that is also one of the things that, to circle back to this bilateral thing, is that it is a good way to build a relationship with people, to design things together, solve problems together, because you have to listen."
+  },
+  {
+    "startTime": 4501.71,
+    "person": "Karol",
+    "text": " And when you start listening, then you're sort of sort of, oh, okay, your context is a little bit different than I thought it was."
+  },
+  {
+    "startTime": 4507.89,
+    "person": "Karol",
+    "text": " And then you sort of start to understand each other a little bit better."
+  },
+  { "startTime": 4510.97, "person": "Karol", "text": " So that's also great." },
+  {
+    "startTime": 4514.17,
+    "person": "Karol",
+    "text": " And I think it's also useful in the sense that it is humbling, right?"
+  },
+  {
+    "startTime": 4517.77,
+    "person": "Karol",
+    "text": " Because it's very tempting when you live inside your bubble to think that you understand how the entire world works, right?"
+  },
+  {
+    "startTime": 4524.23,
+    "person": "Karol",
+    "text": " And then you discover that there are all these different worlds out there that have different priorities, and your angle isn't the only one, right?"
+  },
+  {
+    "startTime": 4533.73,
+    "person": "Karol",
+    "text": " We are all subjects to the Dunning-Kruger effect."
+  },
+  { "startTime": 4537.79, "person": "Karol", "text": " Yeah, yeah, absolutely, yeah." },
+  {
+    "startTime": 4539.47,
+    "person": "Karol",
+    "text": " If we think that our API is important, we're definitely at the peak of stupidity."
+  },
+  {
+    "startTime": 4546.03,
+    "person": "Karol",
+    "text": " We're going to fall into the valley of despair soon enough, hopefully, to start learning how to design with purpose."
+  },
+  {
+    "startTime": 4554.05,
+    "person": "Karol",
+    "text": " And that's a very difficult thing to go through."
+  },
+  { "startTime": 4560.65, "person": "Andrew", "text": " Yeah." },
+  {
+    "startTime": 4561.81,
+    "person": "Karol",
+    "text": " Because the professional challenge then is not technical, not something you can learn from a book, not something you can learn from coding."
+  },
+  {
+    "startTime": 4572.45,
+    "person": "Karol",
+    "text": " This is something you need to kind of live through."
+  },
+  { "startTime": 4574.83, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 4577.09,
+    "person": "Karol",
+    "text": " But it's, I mean, we've been in the industry for a while, so we've seen things, right?"
+  },
+  {
+    "startTime": 4584.77,
+    "person": "Karol",
+    "text": " And there is this, I think it's still kind of funny to me how developers can, for a very long time, maintain this idea that they've always been working in very hard domains, wherever they've been."
+  },
+  {
+    "startTime": 4599.91,
+    "person": "Karol",
+    "text": " But everyone else, wherever they've been, have been working with very easy problems, right?"
+  },
+  {
+    "startTime": 4605.29,
+    "person": "Karol",
+    "text": " And you can sort of keep having that image of the world, that it just so happened that this problem that I'm solving is really hard, and everyone else is solving really easy problems."
+  },
+  {
+    "startTime": 4617.33,
+    "person": "Karol",
+    "text": " And if they would just sort of listen to me, then it would work out fine."
+  },
+  { "startTime": 4622.19, "person": "Karol", "text": " That's kind of funny." },
+  {
+    "startTime": 4623.29,
+    "person": "Karol",
+    "text": " I mean, in a sense, it's endearing, because it's human, I guess, but it's also kind of naive, I guess."
+  },
+  {
+    "startTime": 4632.67,
+    "person": "Karol",
+    "text": " Well, if we would grab Barry for this conversation, he would say we all do naive architectures, right?"
+  },
+  { "startTime": 4639.59, "person": "Karol", "text": " Yes, yes." },
+  {
+    "startTime": 4641.79,
+    "person": "Karol",
+    "text": " I remember very vividly that I used to have this kind of a notion that an integration platform should impose an interface on consumers."
+  },
+  { "startTime": 4651.37, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 4652.73,
+    "person": "Karol",
+    "text": " Back in the day, some day, quite a long time ago, luckily."
+  },
+  {
+    "startTime": 4658.45,
+    "person": "Karol",
+    "text": " But I had this notion, why the hell are we modelling our interfaces to accommodate them?"
+  },
+  { "startTime": 4665.13, "person": "Karol", "text": " They should conform to us." },
+  { "startTime": 4666.57, "person": "Karol", "text": " Yes." },
+  {
+    "startTime": 4666.85,
+    "person": "Karol",
+    "text": " Now I'm like, no, that's not the purpose of the integration platform."
+  },
+  {
+    "startTime": 4670.01,
+    "person": "Karol",
+    "text": " But that took a lot of learning and experiences to actually understand and realise that this is actually not a good idea to do so, because then we're losing a lot of things."
+  },
+  {
+    "startTime": 4679.17,
+    "person": "Karol",
+    "text": " We're doing a lot of architectural trade-offs, but also a lot of those socio-technical trade-offs."
+  },
+  { "startTime": 4684.47, "person": "Andrew", "text": " Yes." },
+  {
+    "startTime": 4685.29,
+    "person": "Karol",
+    "text": " And that can be a very painful realisation for some people, because this kind of behaviour then can cost a career at times."
+  },
+  { "startTime": 4692.89, "person": "Karol", "text": " Yes, yes." },
+  {
+    "startTime": 4695.19,
+    "person": "Karol",
+    "text": " If you remember in the service-orientated days, like 20 years ago, there was this concept of canonical data models."
+  },
+  {
+    "startTime": 4713.85,
+    "person": "Karol",
+    "text": " For those who don't know what the canonical data model is, or they're known as CDM, by the way, MuleSoft also uses that abbreviation, but they mean common data model, which in their nomenclature means an interchange context or a bounded context, luckily."
+  },
+  {
+    "startTime": 4731.15,
+    "person": "Karol",
+    "text": " So they chose a very poor name with a very bad abbreviation that means something opposing what they chose."
+  },
+  {
+    "startTime": 4740.35,
+    "person": "Karol",
+    "text": " But if we go back to canonical data models and we look at the socio-technical aspects of this, in large environments, if somebody was pushing for canonical data models and they were doing canonical data models, that was an opposite of doing good relationships."
+  },
+  { "startTime": 4761.41, "person": "Karol", "text": " Yes, yes." },
+  { "startTime": 4764.13, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 4764.65,
+    "person": "Karol",
+    "text": " It was just a killer of productivity all the way, and source of so many frustrations."
+  },
+  {
+    "startTime": 4770.79,
+    "person": "Karol",
+    "text": " And that's why we don't use canonical data models nowadays."
+  },
+  {
+    "startTime": 4775.35,
+    "person": "Karol",
+    "text": " That's why we do bounded context, because that makes sense."
+  },
+  {
+    "startTime": 4782.16,
+    "person": "Karol",
+    "text": " I mean, I can understand it as sort of like an abstract ideal, and viewed from a large distance, it would seem that a lot of problems would just go away if we could sort of have, we'd just agree on what everything meant and have a uniform version."
+  },
+  {
+    "startTime": 4798.92,
+    "person": "Karol",
+    "text": " I think there's something similar to the book Seeing Like a State, which is this idea that from the outside, you want something that's understandable at a high level of abstraction."
+  },
+  {
+    "startTime": 4814.14,
+    "person": "Karol",
+    "text": " Then the cost is that it doesn't really fit the problems on the ground very well anywhere."
+  },
+  {
+    "startTime": 4819.64,
+    "person": "Karol",
+    "text": " So it is sort of trade this visibility, external visibility, which can be sort of rewarding to see that, well, we have this, it seems very uniform and structured at one level, but then that structure doesn't really solve any problems in the concrete, different concrete context."
+  },
+  {
+    "startTime": 4846.68,
+    "person": "Karol",
+    "text": " And it causes a lot of problems because it doesn't really fit anything."
+  },
+  { "startTime": 4850.62, "person": "Karol", "text": " So it sort of reminded me of that." },
+  {
+    "startTime": 4853.56,
+    "person": "Karol",
+    "text": " I mean, I very recently, where the hell is, there we go."
+  },
+  {
+    "startTime": 4858.1,
+    "person": "Karol",
+    "text": " I very recently went through this lovely book."
+  },
+  {
+    "startTime": 4860.78,
+    "person": "Karol",
+    "text": " You had the pleasure of, I believe, helping write it to a certain extent, or at least reviewing it, right?"
+  },
+  { "startTime": 4867.52, "person": "Karol", "text": " Yeah, yeah." },
+  { "startTime": 4868.04, "person": "Karol", "text": " I read the book." },
+  { "startTime": 4869.22, "person": "Karol", "text": " Yeah." },
+  { "startTime": 4869.34, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 4870.38,
+    "person": "Karol",
+    "text": " So Barry O'Reilly wrote the book Residues alongside with another one on the philosophy of architecture, the architect's paradox."
+  },
+  { "startTime": 4881.32, "person": "Karol", "text": " So I really love his approach." },
+  { "startTime": 4884.38, "person": "Karol", "text": " Well, he introduced some new terms." },
+  {
+    "startTime": 4886.52,
+    "person": "Karol",
+    "text": " One of the terms is that hyperliminal system, hyperliminality."
+  },
+  {
+    "startTime": 4892.76,
+    "person": "Karol",
+    "text": " So when we were talking, we kind of, the natural, more visual analogue to this is a stone rolling in water, right?"
+  },
+  {
+    "startTime": 4903.04,
+    "person": "Karol",
+    "text": " So if I look at this kind of like idealistic approach with those canonical data models, it's like we were trying to flash freeze the water with the stone in it."
+  },
+  { "startTime": 4916.02, "person": "Karol", "text": " This is it." },
+  { "startTime": 4917.22, "person": "Karol", "text": " Nothing will change." },
+  { "startTime": 4918.32, "person": "Karol", "text": " This is it." },
+  {
+    "startTime": 4919.72,
+    "person": "Karol",
+    "text": " And then reality came and it turns out that in certain contexts, certain things mean completely different things, et cetera, et cetera, et cetera."
+  },
+  { "startTime": 4926.64, "person": "Andrew", "text": " Yes." },
+  {
+    "startTime": 4927.1,
+    "person": "Karol",
+    "text": " And that this flash frozen set that we took as axiomatic has no purpose."
+  },
+  { "startTime": 4935.28, "person": "Andrew", "text": " No." },
+  { "startTime": 4935.66, "person": "Andrew", "text": " Yeah, exactly." },
+  { "startTime": 4936.44, "person": "Karol", "text": " It just fails us on every step." },
+  { "startTime": 4938.64, "person": "Karol", "text": " It is just painful." },
+  {
+    "startTime": 4941.06,
+    "person": "Karol",
+    "text": " And that's another aspect that we all have these kinds of mental models of things."
+  },
+  { "startTime": 4946.22, "person": "Karol", "text": " Yes." },
+  {
+    "startTime": 4947.02,
+    "person": "Karol",
+    "text": " And we all know that all models are wrong, but some of them are useful."
+  },
+  { "startTime": 4955.3, "person": "Karol", "text": " So we should know that." },
+  {
+    "startTime": 4957.24,
+    "person": "Karol",
+    "text": " And then it's like, oh yeah, we modelled that."
+  },
+  { "startTime": 4960.42, "person": "Karol", "text": " Yeah." },
+  { "startTime": 4960.8, "person": "Karol", "text": " Well, fantastic." },
+  { "startTime": 4962.68, "person": "Karol", "text": " Yeah." },
+  { "startTime": 4963.24, "person": "Karol", "text": " But it's not the reality." },
+  { "startTime": 4966.06, "person": "Karol", "text": " Yeah." },
+  { "startTime": 4966.28, "person": "Karol", "text": " Yeah, exactly." },
+  {
+    "startTime": 4967.3,
+    "person": "Karol",
+    "text": " And I think it's a very important property of models that it needs to be sort of like scoped down and valid within what you could call it a bounded context, right?"
+  },
+  {
+    "startTime": 4976.1,
+    "person": "Karol",
+    "text": " You need to say within this domain or within these boundaries, then we can usefully talk about these things, right?"
+  },
+  { "startTime": 4983.5, "person": "Karol", "text": " For now." },
+  {
+    "startTime": 4984.46,
+    "person": "Karol",
+    "text": " And then maybe it can evolve over time, but you sort of have to scope things down."
+  },
+  {
+    "startTime": 4989.12,
+    "person": "Karol",
+    "text": " Otherwise it's going to have to sort of try to be useful in too many contexts."
+  },
+  {
+    "startTime": 4996.58,
+    "person": "Karol",
+    "text": " It's much easier for a model to be useful if the context is limited."
+  },
+  { "startTime": 5002.34, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 5002.88,
+    "person": "Karol",
+    "text": " And I believe that the same thing in terms of usability in that context is something that, well, previous guests of our show tried to get into with data interface quadrants."
+  },
+  { "startTime": 5022.36, "person": "Karol", "text": " Okay." },
+  {
+    "startTime": 5022.62,
+    "person": "Karol",
+    "text": " So that's Daniel Cotswold and Miriam Kreis."
+  },
+  {
+    "startTime": 5026.98,
+    "person": "Karol",
+    "text": " Again, I'm pretty sure I'm butchering this German name."
+  },
+  {
+    "startTime": 5030.32,
+    "person": "Karol",
+    "text": " Daniel is easier because his name is actually Polish while he's being German."
+  },
+  {
+    "startTime": 5037.9,
+    "person": "Karol",
+    "text": " So they devised that we can divide APIs into quadrants in terms of usability based on two axes."
+  },
+  {
+    "startTime": 5046.76,
+    "person": "Karol",
+    "text": " One being, are we dealing with raw data or aggregated transformed data?"
+  },
+  { "startTime": 5051.62, "person": "Karol", "text": " Yep." },
+  {
+    "startTime": 5052,
+    "person": "Karol",
+    "text": " And raw data usually is like rows in a database, right?"
+  },
+  {
+    "startTime": 5055.62,
+    "person": "Karol",
+    "text": " Well, aggregated transformed is that kind of tree-like structure of XML and JSON most likely."
+  },
+  {
+    "startTime": 5062.7,
+    "person": "Karol",
+    "text": " And then we can look at the up and down axis, external or reusable versus internal."
+  },
+  {
+    "startTime": 5072.16,
+    "person": "Karol",
+    "text": " And basically it goes down to how we productize our data for a specific purpose."
+  },
+  {
+    "startTime": 5079.24,
+    "person": "Karol",
+    "text": " And then we need to think in those quadrants, what are the standards for this purpose?"
+  },
+  {
+    "startTime": 5085.72,
+    "person": "Karol",
+    "text": " Is that some sort of a backend for frontend?"
+  },
+  {
+    "startTime": 5088.04,
+    "person": "Karol",
+    "text": " Is that a direct communication between databases, for example, for eventual consistency of a read and write database, right?"
+  },
+  {
+    "startTime": 5096.04,
+    "person": "Karol",
+    "text": " Is that the data platform that's offering data for BI analytics purposes?"
+  },
+  {
+    "startTime": 5103.02,
+    "person": "Karol",
+    "text": " Or is that something that is operational that we try to use for internal use or we try to use for externalised customers, right?"
+  },
+  {
+    "startTime": 5115.4,
+    "person": "Karol",
+    "text": " Because in this case, again, their context is API design like yours, so on the domain system."
+  },
+  {
+    "startTime": 5122.62,
+    "person": "Karol",
+    "text": " So this diagram does not really reference my world as an integration architect."
+  },
+  {
+    "startTime": 5131.02,
+    "person": "Karol",
+    "text": " My world is always on the external reusable here."
+  },
+  {
+    "startTime": 5134,
+    "person": "Karol",
+    "text": " So composition services and data products in that sense."
+  },
+  { "startTime": 5137.92, "person": "Karol", "text": " Because I don't see those data links." },
+  {
+    "startTime": 5139.92,
+    "person": "Karol",
+    "text": " I don't see that backend for frontend because that's not my technical concern."
+  },
+  {
+    "startTime": 5144.38,
+    "person": "Karol",
+    "text": " That's a design concern for team building that domain system and I don't build those domain systems."
+  },
+  {
+    "startTime": 5150.8,
+    "person": "Karol",
+    "text": " And that kind of working in that purpose, it's, I think, one of the key things that we're missing because that purpose derives from actually clashing our mental models and having that bilateral design."
+  },
+  {
+    "startTime": 5165,
+    "person": "Karol",
+    "text": " Without that purpose, we cannot derive that purpose without that."
+  },
+  {
+    "startTime": 5170.52,
+    "person": "Karol",
+    "text": " So in terms of building fit for purpose, what kind of heuristics do you have as a person designing interoperability for domain systems to actually build for purpose when we're dealing with that socio-technical aspect of APIs?"
+  },
+  { "startTime": 5195.6, "person": "Karol", "text": " I'm sorry." },
+  { "startTime": 5196.54, "person": "Karol", "text": " Can you repeat the question?" },
+  { "startTime": 5198.46, "person": "Andrew", "text": " Yeah." },
+  { "startTime": 5199.14, "person": "Karol", "text": " Okay." },
+  { "startTime": 5200.02, "person": "Karol", "text": " Okay." },
+  { "startTime": 5200.36, "person": "Karol", "text": " Yeah." },
+  { "startTime": 5200.78, "person": "Karol", "text": " This is quite a long one then." },
+  { "startTime": 5203.48, "person": "Karol", "text": " I'm sorry." },
+  { "startTime": 5204.68, "person": "Karol", "text": " Yeah, that's fine." },
+  {
+    "startTime": 5206.02,
+    "person": "Karol",
+    "text": " So what would be your design heuristics as a person building a domain system to actually build that API fit for purpose?"
+  },
+  { "startTime": 5220.36, "person": "Karol", "text": " You're right." },
+  {
+    "startTime": 5221.92,
+    "person": "Karol",
+    "text": " I mean, it feels very cheap to say, talk to people again and just understand their problem."
+  },
+  {
+    "startTime": 5228.64,
+    "person": "Karol",
+    "text": " I mean, that's a very generic advice, so it doesn't really help much."
+  },
+  {
+    "startTime": 5234.5,
+    "person": "Karol",
+    "text": " But I think it's going to depend a little bit on how close to your domain is it, this problem that you're solving."
+  },
+  { "startTime": 5250.2, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 5251.18,
+    "person": "Karol",
+    "text": " I'm not sure I have particular heuristics on how to do it well."
+  },
+  {
+    "startTime": 5259.04,
+    "person": "Karol",
+    "text": " Of course, I mean, collaborative modelling is going to help, I think, if you can do some of that."
+  },
+  {
+    "startTime": 5267.86,
+    "person": "Karol",
+    "text": " And that doesn't necessarily mean sitting down just doing like, okay, we're going to co-author this OpenAPI document now."
+  },
+  {
+    "startTime": 5276.68,
+    "person": "Karol",
+    "text": " It could mean like, okay, let's do an event storming or something like that to sort of see how this fits into the greater picture and see if we can sort of arrive at a shared understanding on what we're actually trying to do."
+  },
+  {
+    "startTime": 5287.98,
+    "person": "Karol",
+    "text": " So I think there's stuff like that to sort of focus in on the domain problem, which is particularly important when you're sort of like crossing, again, boundaries, right, same boundaries and domain boundaries, because you sort of have to work out, okay, what's actually going to happen here."
+  },
+  {
+    "startTime": 5310.34,
+    "person": "Karol",
+    "text": " But I'm not sure I have design heuristics apart from that."
+  },
+  { "startTime": 5315.17, "person": "Karol", "text": " Okay." },
+  {
+    "startTime": 5315.8,
+    "person": "Karol",
+    "text": " So let me try and pick your brain with another question."
+  },
+  {
+    "startTime": 5319.14,
+    "person": "Karol",
+    "text": " Because if you're designing a domain system, defined broadly, and we're going to hit Conway's law anyways."
+  },
+  {
+    "startTime": 5328.82,
+    "person": "Karol",
+    "text": " So if we're designing that domain system, most of the times nowadays, we're not building monoliths."
+  },
+  {
+    "startTime": 5337.46,
+    "person": "Karol",
+    "text": " We're building event-driven systems, we're building microservice systems, we're building event-driven microservices, or all sorts of others like microkernel, layer architecture, et cetera, right?"
+  },
+  {
+    "startTime": 5352,
+    "person": "Karol",
+    "text": " So between various modules of your system, you definitely have some communication, some interoperability for which you use whatever APIs you have."
+  },
+  {
+    "startTime": 5364.06,
+    "person": "Karol",
+    "text": " Sometimes it's a JDBC, sometimes it's going to be JSON over HTTP, sometimes it's going to be XML over JMS, because why not, et cetera."
+  },
+  {
+    "startTime": 5378.24,
+    "person": "Karol",
+    "text": " And now, I don't know about your reality, but a lot of clients that I work with, quite often, those systems are not developed by a single team."
+  },
+  {
+    "startTime": 5389.18,
+    "person": "Karol",
+    "text": " Those systems are often developed by multiple teams, because my reality is large enterprise ecosystems."
+  },
+  { "startTime": 5397.14, "person": "Karol", "text": " So we have these kind of two..." },
+  { "startTime": 5403.36, "person": "Karol", "text": " I forgot the word in English." },
+  { "startTime": 5407.4, "person": "Karol", "text": " The Polish word is bigune, so two..." },
+  { "startTime": 5412.06, "person": "Karol", "text": " Yeah." },
+  { "startTime": 5416.14, "person": "Karol", "text": " Two end nodes, right?" },
+  { "startTime": 5417.96, "person": "Karol", "text": " Two very distant nodes." },
+  {
+    "startTime": 5420.08,
+    "person": "Karol",
+    "text": " You have a small system that can be developed by one team, so you have that..."
+  },
+  {
+    "startTime": 5425,
+    "person": "Karol",
+    "text": " In both cases, you need to have cohesion, but now in a small team, a small system with one team, you have a high cohesion within the team, hopefully, right?"
+  },
+  {
+    "startTime": 5434.84,
+    "person": "Karol",
+    "text": " In a larger system developed by multiple teams, you have multiple teams that should have cohesion within those teams, not necessarily have a cohesion between them, depending on the composition of that system."
+  },
+  {
+    "startTime": 5449.5,
+    "person": "Karol",
+    "text": " If it's modular, then each team can work in as some sort of a limited isolation, because they only express an interface that is consumed by another team, and that should be fine, right?"
+  },
+  {
+    "startTime": 5463.16,
+    "person": "Karol",
+    "text": " That's still that kind of point-to-point behaviour, and it will work."
+  },
+  {
+    "startTime": 5467.36,
+    "person": "Karol",
+    "text": " So if we're dealing with these kinds of socio-technical systems that we have here on one hand, a small ecosystem, small system, and one team governing the whole system, on the other side, we have larger ecosystems with very large systems done by multiple teams."
+  },
+  {
+    "startTime": 5486,
+    "person": "Karol",
+    "text": " What would be the, let's say, design heuristics, the way of proceeding, the way of thinking about how to go with that on that spectrum?"
+  },
+  {
+    "startTime": 5497.04,
+    "person": "Karol",
+    "text": " Yeah, it's going to be, again, very context-dependent, but it seems, I mean, how long is a long chain, right?"
+  },
+  { "startTime": 5509.3, "person": "Karol", "text": " How many teams?" },
+  {
+    "startTime": 5511.5,
+    "person": "Karol",
+    "text": " Is it realistic to sort of talk to everyone along?"
+  },
+  {
+    "startTime": 5516.62,
+    "person": "Karol",
+    "text": " Say your team is part of a value chain that delivers something."
+  },
+  { "startTime": 5523.32, "person": "Karol", "text": " How realistic is it to talk to everyone?" },
+  { "startTime": 5528.48, "person": "Andrew", "text": " Do you have to?" },
+  { "startTime": 5530, "person": "Karol", "text": " Right." },
+  { "startTime": 5532.5, "person": "Karol", "text": " Maybe you don't, right?" },
+  { "startTime": 5539.18, "person": "Karol", "text": " But it's like..." },
+  {
+    "startTime": 5541.32,
+    "person": "Karol",
+    "text": " At least, I mean, I don't think I've been part of a very long value chain like that."
+  },
+  {
+    "startTime": 5546.74,
+    "person": "Karol",
+    "text": " So, I mean, it's been reasonable, I think, to sort of get in touch with everyone, and surprisingly useful to talk to even the people who are furthest away from you, in my experience, but of course, different contexts again, right?"
+  },
+  {
+    "startTime": 5568.82,
+    "person": "Karol",
+    "text": " What I think is, at least, it's a problem that it tends to be very shallow."
+  },
+  {
+    "startTime": 5577.12,
+    "person": "Karol",
+    "text": " If you think of communication as, you could talk to your immediate people that you have to communicate with, but then they have to communicate with other people as well, and then we very rarely talk to those other people to know anything at all about them, because we hardly talk to even the adjacent teams at times."
+  },
+  { "startTime": 5600.36, "person": "Karol", "text": " So, we're playing the deaf telephone." },
+  { "startTime": 5603.36, "person": "Karol", "text": " Yeah, exactly." },
+  { "startTime": 5603.86, "person": "Karol", "text": " What's the name?" },
+  {
+    "startTime": 5604.68,
+    "person": "Karol",
+    "text": " So, I think it's, if you can, again, sort of try to trace your value stream and to know it as well as you can, because it's probably going to affect you anyhow, then try to..."
+  },
+  { "startTime": 5621.12, "person": "Karol", "text": " So, that would be my heuristic, right?" },
+  {
+    "startTime": 5623.04,
+    "person": "Karol",
+    "text": " Try to meet people, and if at all possible, I mean, you could model your value stream in an event-storming session if it's not too humongous for that."
+  },
+  {
+    "startTime": 5637.18,
+    "person": "Karol",
+    "text": " And that's, I mean, one thing is the exact, like, the design that comes out of that or sort of the insights that come out of that, but mostly the insights are going to be, okay, I understand these other people a bit better now, and that's going to help you in other circumstances, I think."
+  },
+  {
+    "startTime": 5654.3,
+    "person": "Karol",
+    "text": " I'm not sure if that answers what you were..."
+  },
+  {
+    "startTime": 5656.56,
+    "person": "Karol",
+    "text": " Yeah, basically, I could sum it up as a heuristic that be open to listening to other people, because this will enrich your understanding of what you're doing."
+  },
+  {
+    "startTime": 5665.64,
+    "person": "Karol",
+    "text": " Yeah, and I think it's also, like, it's probably going to be you that reaches out, because the default is not to reach out across team boundaries, and maybe people will be a little bit uncomfortable with that at first, but at least if you're sort of reasonably pleasant about it, I think it's going to work out for the better, right?"
+  },
+  {
+    "startTime": 5687.96,
+    "person": "Karol",
+    "text": " But then if you meet somebody who's actually a very nerdy geek about his work, then given us as nerds and conference speakers, we love to talk about the stuff we do, right?"
+  },
+  { "startTime": 5702.26, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 5703.6,
+    "person": "Karol",
+    "text": " So, if you find yourself that kind of person in the company and the other team that you're working with, you'll learn more than you want to."
+  },
+  { "startTime": 5712.56, "person": "Karol", "text": " Sure, yes." },
+  {
+    "startTime": 5714.18,
+    "person": "Karol",
+    "text": " And then you sort of have to manage your own time again about that."
+  },
+  {
+    "startTime": 5717.6,
+    "person": "Karol",
+    "text": " I mean, if you find it interesting, even though you're sort of not that interested, I mean, it could be cool just to listen to someone go on and on about something that you're not really interested in, because you sort of like just appreciate their enthusiasm or something like that."
+  },
+  {
+    "startTime": 5731.4,
+    "person": "Karol",
+    "text": " But of course, you sort of have to manage your time, I guess, and how it works out."
+  },
+  { "startTime": 5738.62, "person": "Karol", "text": " I think, yeah." },
+  { "startTime": 5740.96, "person": "Karol", "text": " Everything's a trade-off, right?" },
+  { "startTime": 5742.64, "person": "Karol", "text": " It is, right?" },
+  {
+    "startTime": 5744.18,
+    "person": "Karol",
+    "text": " And you sort of have to work out how much time are we going to invest in this, but investing a little bit time is a cheap investment with potentially huge returns, I think."
+  },
+  {
+    "startTime": 5762.79,
+    "person": "Karol",
+    "text": " Now, it comes to mind that we haven't touched one more aspect that is a socio-technical design aspect around APIs."
+  },
+  {
+    "startTime": 5772.89,
+    "person": "Karol",
+    "text": " You are very familiar with the lovely term called cargo cults."
+  },
+  { "startTime": 5777.83, "person": "Karol", "text": " Cargo cults, yes." },
+  { "startTime": 5779.55, "person": "Karol", "text": " Right?" },
+  {
+    "startTime": 5780.11,
+    "person": "Karol",
+    "text": " And we have probably quite a few cargo cults when it comes to APIs."
+  },
+  { "startTime": 5784.09, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 5785.21,
+    "person": "Karol",
+    "text": " For those who don't know, I don't really know which, that's something, somewhere in Indonesia, somewhere there, the term originated from planes dropping cargo onto the islands, and people were believing that the planes were gods, and they were giving gifts, etc."
+  },
+  {
+    "startTime": 5801.75,
+    "person": "Karol",
+    "text": " So, they started literally performing cults, praying to those planes."
+  },
+  { "startTime": 5808.05, "person": "Karol", "text": " Back, I don't know, 100 years ago or so." },
+  {
+    "startTime": 5811.41,
+    "person": "Karol",
+    "text": " Maybe less than 100, but something like that, right?"
+  },
+  {
+    "startTime": 5817.71,
+    "person": "Karol",
+    "text": " So, we have the effect of cargo cults, which is a psychological, well, cognitive bias, basically, right?"
+  },
+  {
+    "startTime": 5826.17,
+    "person": "Karol",
+    "text": " Those cargo cults mean we basically start believing in the godlike power of certain things, and we have those cargo cults in IT as well, plenty of them."
+  },
+  {
+    "startTime": 5840.89,
+    "person": "Karol",
+    "text": " One of those cargo cult kind of behaviours is a bandwagon effect."
+  },
+  {
+    "startTime": 5845.97,
+    "person": "Karol",
+    "text": " For example, oh, AWS is doing something, every company now needs to do the same."
+  },
+  {
+    "startTime": 5851.09,
+    "person": "Karol",
+    "text": " So, AWS is going into microservices, the whole world follows."
+  },
+  {
+    "startTime": 5855.83,
+    "person": "Karol",
+    "text": " There was this lovely article that started screaming that AWS is backing out of microservices."
+  },
+  { "startTime": 5863.13, "person": "Karol", "text": " Panic across the board, right?" },
+  {
+    "startTime": 5866.71,
+    "person": "Karol",
+    "text": " That was four or five years ago, something like that, I believe, where they didn't state that they were going out of microservices."
+  },
+  {
+    "startTime": 5873.53,
+    "person": "Karol",
+    "text": " They reconsidered how fine-grained those microservices should be because they introduced more latency than needed, right?"
+  },
+  { "startTime": 5881.29, "person": "Karol", "text": " But still, cargo cult went crazy." },
+  {
+    "startTime": 5884.83,
+    "person": "Karol",
+    "text": " So, the blind kind of following of things without proper understanding of things."
+  },
+  {
+    "startTime": 5890.69,
+    "person": "Karol",
+    "text": " Now, what kind of cargo cults you see that actually very much influence these kind of sociotechnical aspects and translate to certain patterns when we deal with API?"
+  },
+  { "startTime": 5902.83, "person": "Karol", "text": " Oh, wow." },
+  {
+    "startTime": 5905.17,
+    "person": "Karol",
+    "text": " And you named one in your presentation at BDD Europe."
+  },
+  { "startTime": 5911.01, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 5912.09,
+    "person": "Karol",
+    "text": " So, it's, I think, basically, I think a lot of things we do are sort of like various degrees of cargo cults, right?"
+  },
+  {
+    "startTime": 5922.77,
+    "person": "Karol",
+    "text": " Because we don't necessarily know the best approach to do something until we reach for something that could, like, reasonably remove our feeling of doubt about our choices, right?"
+  },
+  {
+    "startTime": 5937.75,
+    "person": "Karol",
+    "text": " So, if we just say, so, I don't really know what's going to be best here, but if you could call something a best practise, then it's fine, right?"
+  },
+  {
+    "startTime": 5946.51,
+    "person": "Karol",
+    "text": " So, because then how could you do better than best practise, right?"
+  },
+  { "startTime": 5949.85, "person": "Karol", "text": " It's already best." },
+  {
+    "startTime": 5951.71,
+    "person": "Karol",
+    "text": " So, it's, you have sort of your, you have your back covered and you don't have to argue much more once you can say this is best practise to do."
+  },
+  {
+    "startTime": 5960.77,
+    "person": "Karol",
+    "text": " And I think we have that technically, right?"
+  },
+  {
+    "startTime": 5964.11,
+    "person": "Karol",
+    "text": " So, we want to follow whatever architecture is in vogue now, whether it's microservices or if it's now the modular monolith or whatever, or even at the process level, right?"
+  },
+  {
+    "startTime": 5978.07,
+    "person": "Karol",
+    "text": " So, suddenly, everyone is going to do OKRs because originally, like, Google were doing OKRs and then Google were really successful."
+  },
+  {
+    "startTime": 5985.99,
+    "person": "Karol",
+    "text": " So, hopefully, if we do OKRs, maybe we will be as successful at Google as well."
+  },
+  {
+    "startTime": 5990.67,
+    "person": "Karol",
+    "text": " So, that is also sort of like, you can call it cargo culture, you could call it pop culture, but it spreads in the same way."
+  },
+  {
+    "startTime": 5997.49,
+    "person": "Karol",
+    "text": " So, we're going to, we don't necessarily know why it works in any given circumstance, but if it worked for someone else, let's try that."
+  },
+  {
+    "startTime": 6006.43,
+    "person": "Karol",
+    "text": " And there's something like, it's not entirely unreasonable to try that, but because you want to understand why does it work."
+  },
+  { "startTime": 6013.35, "person": "Karol", "text": " And I think the" },
+  {
+    "startTime": 6013.95,
+    "person": "Karol",
+    "text": " thing that you talked about, that you referenced and that I talked about in my talk was I had this"
+  },
+  {
+    "startTime": 6019.45,
+    "person": "Karol",
+    "text": " quip about REST APIs, which is, the quip was really just that we have, for whatever reason,"
+  },
+  {
+    "startTime": 6029.01,
+    "person": "Karol",
+    "text": " ended up calling these CRUD JSON APIs with perhaps some structure to the URLs and some"
+  },
+  {
+    "startTime": 6039.15,
+    "person": "Karol",
+    "text": " ideas that we need to exploit, like the return codes for HTTP and give them sort of like semantic"
+  },
+  { "startTime": 6047.27, "person": "Karol", "text": " meaning in our APIs." },
+  {
+    "startTime": 6049.75,
+    "person": "Karol",
+    "text": " And then we think that now we're doing REST, right?"
+  },
+  {
+    "startTime": 6053.75,
+    "person": "Karol",
+    "text": " And I don't have a problem with JSON APIs, it's fine, right?"
+  },
+  {
+    "startTime": 6059.79,
+    "person": "Karol",
+    "text": " It's a reasonable architecture to choose in many situations."
+  },
+  {
+    "startTime": 6064.65,
+    "person": "Karol",
+    "text": " And I have this pet peeve that it's not really a REST API."
+  },
+  {
+    "startTime": 6068.11,
+    "person": "Karol",
+    "text": " But it's not, by saying so, I don't mean that and you should be doing REST APIs, because that's not necessarily the case, right?"
+  },
+  {
+    "startTime": 6076.85,
+    "person": "Karol",
+    "text": " Probably you shouldn't, probably you should do something else."
+  },
+  {
+    "startTime": 6080.65,
+    "person": "Karol",
+    "text": " Then I think it's weird that we call it REST. And I know that I'm fighting like there's a lost battle because REST APIs now basically means that you're doing HTTP, you're sending some JSON and you're using your gets and your posts and you're expected to get like, okay, I created something that's going to give me a 201 or whatever."
+  },
+  {
+    "startTime": 6103.31,
+    "person": "Karol",
+    "text": " But I think like, yeah, the point of saying that, well, that's, I think it's weird that we call these APIs REST APIs."
+  },
+  {
+    "startTime": 6117.97,
+    "person": "Karol",
+    "text": " The point is not that we should be doing REST APIs and the world would be better for it."
+  },
+  { "startTime": 6121.75, "person": "Karol", "text": " I don't think that's true." },
+  {
+    "startTime": 6123.27,
+    "person": "Karol",
+    "text": " I think REST as an architectural style is very interesting because it was designed to solve the problem of the web, right?"
+  },
+  {
+    "startTime": 6130.53,
+    "person": "Karol",
+    "text": " So how can we basically, how can someone publish a new website without breaking all the existing browsers, which is an interesting challenge, right?"
+  },
+  {
+    "startTime": 6140.63,
+    "person": "Karol",
+    "text": " If our websites were like bespoke JSON, then just publishing a new website would require us to roll out new sort of new clients that could all talk to that new service, right?"
+  },
+  {
+    "startTime": 6157.79,
+    "person": "Karol",
+    "text": " And the point of having this RESTful architecture is to have like this generic format with self describing messages so that we wouldn't break the browsers all the time."
+  },
+  {
+    "startTime": 6168.05,
+    "person": "Karol",
+    "text": " And that's not the same situation that most people who want to sort of connect APIs find themselves in."
+  },
+  {
+    "startTime": 6174.59,
+    "person": "Karol",
+    "text": " So it's fine for them to say, okay, we have now basically an RPC API with JSON, and it's going to break if the servers changes something, it's going to break the client."
+  },
+  {
+    "startTime": 6185.43,
+    "person": "Karol",
+    "text": " But we can fix that because we can update the client."
+  },
+  { "startTime": 6189.15, "person": "Karol", "text": " We own the client." },
+  { "startTime": 6190.19, "person": "Karol", "text": " So it's not that big of a problem." },
+  {
+    "startTime": 6192.05,
+    "person": "Karol",
+    "text": " So unless you have a problem that's sort of like similar to the one that Roy Fielding had when he tried to sort of reason about how they built the web, then maybe a REST API is not really what you want."
+  },
+  { "startTime": 6206.19, "person": "Karol", "text": " And that's fine." },
+  { "startTime": 6207.45, "person": "Karol", "text": " I think, still think it's fine." },
+  {
+    "startTime": 6209.07,
+    "person": "Karol",
+    "text": " Until I die, I'm going to think it's weird that we call these other things REST APIs that there are really not."
+  },
+  { "startTime": 6215.65, "person": "Karol", "text": " You can call me a fanatic for that." },
+  {
+    "startTime": 6217.33,
+    "person": "Karol",
+    "text": " No, I will call those people that tend to name those REST APIs, I call them fanatics because they're just by the definition of it, they're wrong."
+  },
+  {
+    "startTime": 6228.79,
+    "person": "Karol",
+    "text": " And I just opened up Fielding's dissertation on one relevant page that's a table in chapter five."
+  },
+  {
+    "startTime": 6238.13,
+    "person": "Karol",
+    "text": " It lists all the elements that a REST API must have."
+  },
+  { "startTime": 6244.83, "person": "Karol", "text": " Most people just do this." },
+  {
+    "startTime": 6249.39,
+    "person": "Karol",
+    "text": " Just the resource identifier being some sort of a very nicely composed URI that is resource-driven URI in terms of taxonomy."
+  },
+  { "startTime": 6258.99, "person": "Karol", "text": " Otherwise, nothing else." },
+  { "startTime": 6260.73, "person": "Karol", "text": " They don't apply hypertext reference." },
+  {
+    "startTime": 6265.57,
+    "person": "Karol",
+    "text": " They don't represent anything with this type of thing."
+  },
+  {
+    "startTime": 6269.83,
+    "person": "Karol",
+    "text": " They very often misrepresent media type and they do not add last modified."
+  },
+  { "startTime": 6277.29, "person": "Karol", "text": " And please do forget about those things." },
+  {
+    "startTime": 6280.45,
+    "person": "Karol",
+    "text": " I have never seen those things in any API I consumed as an integrator."
+  },
+  { "startTime": 6284.71, "person": "Karol", "text": " They just don't exist most of the times." },
+  {
+    "startTime": 6289.03,
+    "person": "Karol",
+    "text": " So this is the scope of what is a REST API."
+  },
+  { "startTime": 6292.85, "person": "Karol", "text": " And you're absolutely right." },
+  {
+    "startTime": 6294.31,
+    "person": "Karol",
+    "text": " That doesn't mean we always have to do REST APIs."
+  },
+  {
+    "startTime": 6297.81,
+    "person": "Karol",
+    "text": " It's absolutely fine because they were developed for a specific purpose of the web."
+  },
+  {
+    "startTime": 6302.83,
+    "person": "Karol",
+    "text": " For some goddamn reason, the Congo Code of the web went into all interoperability and pushed out XML and JSON entirely, which were at the time more mature standards than JSON was."
+  },
+  {
+    "startTime": 6322.03,
+    "person": "Karol",
+    "text": " And then for the last five years, JSON was catching up to have types other than string, regular expressions, enumerations, patterns, namespaces."
+  },
+  {
+    "startTime": 6339.05,
+    "person": "Karol",
+    "text": " JSON, I believe, started as a flat format, right?"
+  },
+  {
+    "startTime": 6343.21,
+    "person": "Karol",
+    "text": " It wasn't a tree-like format from the beginning, as far as I recall."
+  },
+  { "startTime": 6348.05, "person": "Karol", "text": " Not sure about that, but yeah." },
+  {
+    "startTime": 6351.39,
+    "person": "Karol",
+    "text": " Something in the back of my head says that it wasn't."
+  },
+  { "startTime": 6354.87, "person": "Karol", "text": " But I may be wrong on that one." },
+  {
+    "startTime": 6356.55,
+    "person": "Karol",
+    "text": " But basically, we had all of these things since XML1 literally, which was 1980s."
+  },
+  { "startTime": 6367.03, "person": "Karol", "text": " I don't really recall when XML was made." },
+  { "startTime": 6369.29, "person": "Karol", "text": " I'd have to check." },
+  { "startTime": 6371.35, "person": "Karol", "text": " But a long time ago." },
+  { "startTime": 6376.09, "person": "Karol", "text": " But we just took..." },
+  { "startTime": 6378.77, "person": "Karol", "text": " Oh, we're going to..." },
+  { "startTime": 6379.49, "person": "Karol", "text": " Oh, sorry." },
+  { "startTime": 6379.97, "person": "Karol", "text": " Okay." },
+  { "startTime": 6380.67, "person": "Karol", "text": " 1996, not 80s." },
+  { "startTime": 6382.21, "person": "Karol", "text": " 96." },
+  { "startTime": 6383.29, "person": "Karol", "text": " Still, 30 years." },
+  {
+    "startTime": 6385.35,
+    "person": "Karol",
+    "text": " And then for some reason, we all switched to doing JSON over HTTP."
+  },
+  { "startTime": 6389.45, "person": "Karol", "text": " I think..." },
+  {
+    "startTime": 6391.05,
+    "person": "Karol",
+    "text": " Without even considering the trade-offs of what JSON was lacking at the time."
+  },
+  { "startTime": 6395.51, "person": "Karol", "text": " No." },
+  {
+    "startTime": 6395.87,
+    "person": "Karol",
+    "text": " I think a lot of people were daunted by the XML and the SOAP stack and found that, well, this is a lot of stuff, and I don't necessarily understand what it's trying to solve."
+  },
+  { "startTime": 6410.93, "person": "Karol", "text": " So, could we please throw it out?" },
+  {
+    "startTime": 6414.65,
+    "person": "Karol",
+    "text": " And I mean, in some scenarios, that's fine, right?"
+  },
+  {
+    "startTime": 6418.99,
+    "person": "Karol",
+    "text": " So, what's sort of the least ceremony data exchange we could possibly have, if we don't need a lot of other services involved in that integration?"
+  },
+  {
+    "startTime": 6430.51,
+    "person": "Karol",
+    "text": " Maybe it's fine to send this, basically, a text document with some structure in it, and that's enough for our purposes."
+  },
+  {
+    "startTime": 6439.47,
+    "person": "Karol",
+    "text": " And then, of course, there's the thing with throwing out the baby with the bathwater, where you sort of..."
+  },
+  {
+    "startTime": 6445.65,
+    "person": "Karol",
+    "text": " For the circumstances where you're sort of throwing out solutions to problems that you now have, right?"
+  },
+  {
+    "startTime": 6453.39,
+    "person": "Karol",
+    "text": " That you actually have, and that you should be thinking about."
+  },
+  {
+    "startTime": 6456.03,
+    "person": "Karol",
+    "text": " Then you sort of come in this situation where you sort of have to retrofit things onto JSON that you already had, but you threw away 20 years ago."
+  },
+  { "startTime": 6464.75, "person": "Karol", "text": " And that's..." },
+  {
+    "startTime": 6466.11,
+    "person": "Karol",
+    "text": " I think that's how we often do things, is that we sort of like..."
+  },
+  {
+    "startTime": 6471.13,
+    "person": "Karol",
+    "text": " We build things, and sometimes they get..."
+  },
+  {
+    "startTime": 6475.37,
+    "person": "Karol",
+    "text": " The accumulated complexity with some stack gets large and overwhelming, and so we sort of try to throw it out and start over again."
+  },
+  {
+    "startTime": 6486.31,
+    "person": "Karol",
+    "text": " But then, of course, then we sort of reinvent a lot of things, because it wasn't entirely accidental that some of those things were there, right?"
+  },
+  { "startTime": 6493.35, "person": "Karol", "text": " So, I think that's..." },
+  {
+    "startTime": 6494.29,
+    "person": "Karol",
+    "text": " And then, to the sort of the cargo cult part, is that I think it's kind of strange that we did a"
+  },
+  {
+    "startTime": 6503.77,
+    "person": "Karol",
+    "text": " lot of sort of, in my view, not significant, not very interesting cargo culting on top of the"
+  },
+  {
+    "startTime": 6513.97,
+    "person": "Karol",
+    "text": " JSON data exchange to justify that it's called REST. And this is sort of, okay, the URLs have"
+  },
+  {
+    "startTime": 6520.67,
+    "person": "Karol",
+    "text": " to be specified in this particular way, and you have to use nouns, you kind of possibly have a"
+  },
+  {
+    "startTime": 6525.41,
+    "person": "Karol",
+    "text": " verb, stuff like that, which is not really important."
+  },
+  {
+    "startTime": 6528.69,
+    "person": "Karol",
+    "text": " Again, if you read the dissertation, that's not important, right?"
+  },
+  {
+    "startTime": 6533.17,
+    "person": "Karol",
+    "text": " So, that's a set of ceremonies that sort of justifies..."
+  },
+  {
+    "startTime": 6540.01,
+    "person": "Karol",
+    "text": " I believe that in the original dissertation, there was no mention of HTTP verbs."
+  },
+  { "startTime": 6547.13, "person": "Karol", "text": " Right, yeah." },
+  {
+    "startTime": 6548.53,
+    "person": "Karol",
+    "text": " REST was nowhere tied to those, and we treat them as, it has to be get, it has to be post, it has to be put, no specific."
+  },
+  { "startTime": 6559.09, "person": "Karol", "text": " Right." },
+  { "startTime": 6559.39, "person": "Karol", "text": " Because that's REST. No, it's not." },
+  { "startTime": 6561.35, "person": "Andrew", "text": " Yeah." },
+  {
+    "startTime": 6562.37,
+    "person": "Karol",
+    "text": " And again, for some reason, that has been connected to JSON as well, which has nothing to do with REST. So, again, you will not find..."
+  },
+  {
+    "startTime": 6571.09,
+    "person": "Karol",
+    "text": " I would be very surprised if you search through that is JSON, and find the word JSON."
+  },
+  {
+    "startTime": 6576.67,
+    "person": "Karol",
+    "text": " And if you do, it's going to be accidental, or as an example, you could very well create a hypermedia system that doesn't use JSON, right?"
+  },
+  { "startTime": 6585.75, "person": "Karol", "text": " You could use it XML." },
+  {
+    "startTime": 6587.05,
+    "person": "Karol",
+    "text": " Obviously, you can use HTML, which is an actual hypermedia format."
+  },
+  { "startTime": 6592.91, "person": "Karol", "text": " Yeah." },
+  { "startTime": 6593.69, "person": "Karol", "text": " Right." },
+  { "startTime": 6594.19, "person": "Karol", "text": " It's fine to..." },
+  {
+    "startTime": 6595.49,
+    "person": "Karol",
+    "text": " You could have created a REST API using XML, of course."
+  },
+  { "startTime": 6601.21, "person": "Karol", "text": " Let's see." },
+  { "startTime": 6602.41, "person": "Karol", "text": " Let's see when was the dissertation." },
+  { "startTime": 6604.53, "person": "Karol", "text": " The dissertation was in the year 2000." },
+  {
+    "startTime": 6608.45,
+    "person": "Karol",
+    "text": " A bit early for JSON, but it's around that time, I think."
+  },
+  { "startTime": 6612.77, "person": "Karol", "text": " JSON was invented a year later." },
+  { "startTime": 6615.27, "person": "Karol", "text": " Yeah, exactly." },
+  { "startTime": 6615.99, "person": "Karol", "text": " So, a bit late, but..." },
+  { "startTime": 6617.95, "person": "Karol", "text": " Or a bit early for JSON." },
+  {
+    "startTime": 6620.13,
+    "person": "Karol",
+    "text": " But so, we cannot possibly reference JSON, right?"
+  },
+  { "startTime": 6624.49, "person": "Karol", "text": " No, no." },
+  {
+    "startTime": 6625.73,
+    "person": "Karol",
+    "text": " I just did a CTRL F on the PDF of the dissertation."
+  },
+  { "startTime": 6629.11, "person": "Karol", "text": " There is no reference to JSON ever." },
+  {
+    "startTime": 6631.57,
+    "person": "Karol",
+    "text": " So, if people associate REST with JSON, that's a faulty assumption, because REST by default in that time was XML, and REST can do both XML and JSON."
+  },
+  { "startTime": 6643.45, "person": "Karol", "text": " And people are like, no, no, no." },
+  { "startTime": 6644.77, "person": "Karol", "text": " REST is JSON." },
+  {
+    "startTime": 6645.89,
+    "person": "Karol",
+    "text": " It's like this belief that they cannot be wrong about that."
+  },
+  {
+    "startTime": 6649.97,
+    "person": "Karol",
+    "text": " And it's like, yeah, but the facts are in."
+  },
+  {
+    "startTime": 6652.51,
+    "person": "Karol",
+    "text": " The dissertation happened before JSON was created."
+  },
+  {
+    "startTime": 6657.35,
+    "person": "Karol",
+    "text": " It's like, why the hell are we still arguing about that?"
+  },
+  { "startTime": 6660.13, "person": "Karol", "text": " No, no, it must be JSON." },
+  {
+    "startTime": 6662.25,
+    "person": "Karol",
+    "text": " And it's kind of strange, because you could argue that, okay, I don't care about the dissertation, but then you also shouldn't care about calling it REST, right?"
+  },
+  { "startTime": 6671.11, "person": "Karol", "text": " Because that's sort of what it is." },
+  {
+    "startTime": 6673.23,
+    "person": "Karol",
+    "text": " And yet again, people are very, very, very adamant about calling it REST. Yeah."
+  },
+  { "startTime": 6678.69, "person": "Karol", "text": " I don't know why that is." },
+  {
+    "startTime": 6680.33,
+    "person": "Karol",
+    "text": " I mean, the name stuck for some reason, right?"
+  },
+  { "startTime": 6685.95, "person": "Karol", "text": " And it's fine." },
+  { "startTime": 6687.81, "person": "Karol", "text": " JSON over HTTP is not a very catchy name." },
+  {
+    "startTime": 6690.31,
+    "person": "Karol",
+    "text": " So, if you could have something better than that."
+  },
+  {
+    "startTime": 6692.51,
+    "person": "Karol",
+    "text": " I tried to call it unrest once, but it didn't really work."
+  },
+  { "startTime": 6697.31, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 6698.67,
+    "person": "Karol",
+    "text": " But basically, in that sense, I think it's worth mentioning that there is actually, there are steps towards REST, which is called the Richards maturity model, which explains very, very well, in practise, what the hell is REST and what is not."
+  },
+  {
+    "startTime": 6719.51,
+    "person": "Karol",
+    "text": " And then just applying resources to an API and the URI that doesn't make it REST. The level three of Richardson maturity model is REST. But anything before that, not really."
+  },
+  {
+    "startTime": 6737.17,
+    "person": "Karol",
+    "text": " And for some reason, and I don't know why I'd have to dig into this more, but level two actually states HTTP verbs."
+  },
+  { "startTime": 6744.81, "person": "Andrew", "text": " Yeah." },
+  {
+    "startTime": 6745.01,
+    "person": "Karol",
+    "text": " And now I'm puzzled, because I actually went through the dissertation like a week ago, and I was like, okay, where are those verbs?"
+  },
+  { "startTime": 6752.71, "person": "Andrew", "text": " Yeah." },
+  { "startTime": 6752.93, "person": "Karol", "text": " It's like, okay." },
+  { "startTime": 6756.23, "person": "Andrew", "text": " Yeah." },
+  { "startTime": 6756.41, "person": "Karol", "text": " That doesn't make sense." },
+  {
+    "startTime": 6757.39,
+    "person": "Karol",
+    "text": " But for some reason, they are included in the maturity model."
+  },
+  {
+    "startTime": 6762.77,
+    "person": "Karol",
+    "text": " For those interested in reading more on this one, there's a QR code right here that leads to Martin Fowler's blog."
+  },
+  {
+    "startTime": 6772.27,
+    "person": "Karol",
+    "text": " And I believe that this article was written by Martin Fowler himself, which is a very good article just to understand the levels of complexity of APIs that we can have."
+  },
+  {
+    "startTime": 6786.31,
+    "person": "Karol",
+    "text": " Instead of just being adamant on calling things the way they are, we actually have some more vocabulary to call what we're actually doing."
+  },
+  {
+    "startTime": 6795.03,
+    "person": "Karol",
+    "text": " And most of us are doing level one or level two."
+  },
+  { "startTime": 6797.93, "person": "Andrew", "text": " Yeah." },
+  { "startTime": 6798.41, "person": "Karol", "text": " And that's it." },
+  {
+    "startTime": 6799.49,
+    "person": "Karol",
+    "text": " We don't need that hypermedia because, for example, in interoperability between systems in one ecosystem of a company, why would I need those hypermedia?"
+  },
+  { "startTime": 6811.01, "person": "Karol", "text": " I'm not trading web things." },
+  { "startTime": 6814.15, "person": "Karol", "text": " I'm moving data between domain systems." },
+  {
+    "startTime": 6818.01,
+    "person": "Karol",
+    "text": " Most of the times those hypermedia controls, unless I'm really going through large datasets, they are meaningless because I try to invoke a specific service that has a business intent."
+  },
+  {
+    "startTime": 6836.31,
+    "person": "Karol",
+    "text": " And that's usually operationalised to a specific object, an instance of an object with a specific identifier."
+  },
+  { "startTime": 6842.25, "person": "Karol", "text": " So those hypermedia are like, no." },
+  { "startTime": 6846.85, "person": "Karol", "text": " But then this cargo call persists." },
+  {
+    "startTime": 6850.27,
+    "person": "Karol",
+    "text": " And for some reason, we have either people who insist on specific formatting, even if it doesn't make sense, or insist on adding this kind of hypermedia, which is a little bit rarer, which makes no sense and complicates that communication even further."
+  },
+  {
+    "startTime": 6869.53,
+    "person": "Karol",
+    "text": " Because now you have to go through all sorts of hypermedia metadata that you need to include in your call to get the result, which is a very simplistic one single record."
+  },
+  {
+    "startTime": 6879.87,
+    "person": "Karol",
+    "text": " And it's like, why are we overcomplicating these things?"
+  },
+  {
+    "startTime": 6883.49,
+    "person": "Karol",
+    "text": " One thing that I would like to see more in APIs is, without going to the full rest thing with hypermedia controls and everything, is that I think at least some APIs or some domain APIs that I've been working on benefited from having simple links in them, sort of chained together the operations that you call."
+  },
+  {
+    "startTime": 6907.25,
+    "person": "Andrew",
+    "text": " Because you can do a little bit of hypermedia as the application of the ADOs thing, right?"
+  },
+  {
+    "startTime": 6922.53,
+    "person": "Karol",
+    "text": " Because then you can sort of guide the consumer to what is the reasonable next thing to do for them."
+  },
+  {
+    "startTime": 6928.91,
+    "person": "Karol",
+    "text": " If you have like, if your API model is a process, then it can start at some point."
+  },
+  {
+    "startTime": 6933.35,
+    "person": "Karol",
+    "text": " And then given the state of the API now, you may do this or this, that might be useful in some circumstances."
+  },
+  {
+    "startTime": 6941.63,
+    "person": "Karol",
+    "text": " And just adding the semantics for saying these are links, and links have relations and these relations mean something, that can be useful more broadly, I think, than sort of going full rest, right?"
+  },
+  {
+    "startTime": 6957.21,
+    "person": "Karol",
+    "text": " And I think it's a shame that links are not, I think, I don't know, it's been a while since I studied this maturity model, but it would be more interesting to me to see like, well, I guess it's like dipping your toes in level three rest, perhaps."
+  },
+  { "startTime": 6973.31, "person": "Karol", "text": " Yeah, level three maturity." },
+  {
+    "startTime": 6976.81,
+    "person": "Karol",
+    "text": " But yeah, having links is useful in many contexts that I've worked in."
+  },
+  {
+    "startTime": 6986.61,
+    "person": "Karol",
+    "text": " I would guess that if you're building a productized API layer, so an API as a product, extremely useful, because you can guide your external consumer through the process, whatever that process may be."
+  },
+  {
+    "startTime": 7000.01,
+    "person": "Karol",
+    "text": " But also for AI, it would be extremely useful."
+  },
+  {
+    "startTime": 7002.73,
+    "person": "Karol",
+    "text": " For the purpose of system to system communication within a company, for me, that would be useless, because we build the orchestration outside of that system anyways, you build it either on the integration platform or in the business system running that business process."
+  },
+  {
+    "startTime": 7021.17,
+    "person": "Karol",
+    "text": " So it's an orchestration on the business process level or an orchestration on the integration platform level in the interchange."
+  },
+  {
+    "startTime": 7029.03,
+    "person": "Karol",
+    "text": " And then those links, they're just added bytes, they don't pose meaning, unless there is a specific reason for them in the process, so that you have references to specific objects that are related, that can be conveyed to that consuming system."
+  },
+  { "startTime": 7046.19, "person": "Karol", "text": " Oh, these are the relationships." },
+  { "startTime": 7047.93, "person": "Karol", "text": " Ah, now that makes sense." },
+  {
+    "startTime": 7049.63,
+    "person": "Karol",
+    "text": " But you can also convey that in the payload with additional identifiers somewhere."
+  },
+  {
+    "startTime": 7054.81,
+    "person": "Karol",
+    "text": " So for example, put identifiers, a list of identifiers for other objects that are related in the payload."
+  },
+  {
+    "startTime": 7062.69,
+    "person": "Karol",
+    "text": " And these are things that can be done in multiple ways."
+  },
+  {
+    "startTime": 7066.43,
+    "person": "Karol",
+    "text": " But that really depends on what is the business purpose of it."
+  },
+  {
+    "startTime": 7071.59,
+    "person": "Karol",
+    "text": " To put my spin on the Cargo Cult, my favourite Cargo Cult is the Kafka Cult."
+  },
+  {
+    "startTime": 7079.51,
+    "person": "Karol",
+    "text": " Because a lot of people, instead of reaching for a simple operational message broker, like RabbitMQ, ActiveMQ, or even those that are licenced, like, let's say, old school typical EMS, or the more new school Solace, they reach for Kafka."
+  },
+  {
+    "startTime": 7097.65,
+    "person": "Karol",
+    "text": " And they go into a happy streaming state machine."
+  },
+  {
+    "startTime": 7102.79,
+    "person": "Karol",
+    "text": " They don't even know why they need those partitions with this state."
+  },
+  { "startTime": 7107.05, "person": "Karol", "text": " But they're just going to keep having it." },
+  {
+    "startTime": 7110.93,
+    "person": "Karol",
+    "text": " It's like, okay, why do you go into that kind of, you know, canon for a mosquito complexity, where you can just have a simple lightweight, JMS, AMQP broker that facilitates communication, you don't need that state, you just need to push that many people that event, kind of in that kind of a fire and forget manner."
+  },
+  {
+    "startTime": 7133.61,
+    "person": "Karol",
+    "text": " You don't need that replayability and all that."
+  },
+  {
+    "startTime": 7136.25,
+    "person": "Karol",
+    "text": " And you still need to manage that for performance reasons, you need to manage disc space."
+  },
+  {
+    "startTime": 7141.43,
+    "person": "Karol",
+    "text": " Not that you don't need to manage that with operational brokers."
+  },
+  {
+    "startTime": 7146.77,
+    "person": "Karol",
+    "text": " But you need to manage that a lot less, because they're a lot more lightweight than Kafka."
+  },
+  {
+    "startTime": 7157.45,
+    "person": "Karol",
+    "text": " So that's my personal favourite Cargo Cult."
+  },
+  {
+    "startTime": 7161.23,
+    "person": "Karol",
+    "text": " Do you have any hypothesis why Kafka has become so popular?"
+  },
+  { "startTime": 7167.49, "person": "Karol", "text": " Is it just mimicry?" },
+  { "startTime": 7169.77, "person": "Karol", "text": " Is it like mimicking someone huge?" },
+  { "startTime": 7173.97, "person": "Karol", "text": " Netflix?" },
+  { "startTime": 7175.19, "person": "Karol", "text": " LinkedIn?" },
+  { "startTime": 7176.31, "person": "Karol", "text": " I think Kafka came from LinkedIn, right?" },
+  { "startTime": 7180.33, "person": "Karol", "text": " I don't remember." },
+  { "startTime": 7181.55, "person": "Karol", "text": " No." },
+  { "startTime": 7183.21, "person": "Karol", "text": " Let's see." },
+  { "startTime": 7189.02, "person": "Karol", "text": " Quick check." },
+  { "startTime": 7191.48, "person": "Karol", "text": " Let's see what Google says." },
+  { "startTime": 7194.08, "person": "Karol", "text": " Yeah, LinkedIn, 2010." },
+  { "startTime": 7196.1, "person": "Karol", "text": " Okay, right." },
+  {
+    "startTime": 7197.49,
+    "person": "Karol",
+    "text": " So that was open sourced and donated to the Apache Software Foundation in 2011 from LinkedIn."
+  },
+  {
+    "startTime": 7204.98,
+    "person": "Karol",
+    "text": " So yeah, in LinkedIn, your whole stream is a Kafka partition, basically."
+  },
+  {
+    "startTime": 7211.42,
+    "person": "Karol",
+    "text": " And then if you go to use cases like Netflix, a whole show is fitted into a partition."
+  },
+  {
+    "startTime": 7218.52,
+    "person": "Karol",
+    "text": " So every episode of your favourite TV show that you're watching on Netflix, every episode is a partition."
+  },
+  { "startTime": 7224.72, "person": "Karol", "text": " You just replay all the show." },
+  { "startTime": 7226.9, "person": "Karol", "text": " It's streaming, right?" },
+  { "startTime": 7228.8, "person": "Karol", "text": " And same in LinkedIn." },
+  {
+    "startTime": 7230.1,
+    "person": "Karol",
+    "text": " You have a stream of posts that you see that they're intertwined, et cetera."
+  },
+  {
+    "startTime": 7236.6,
+    "person": "Karol",
+    "text": " And that makes sense for that, because you literally view social media like Twitter, LinkedIn, Facebook as streams of data."
+  },
+  { "startTime": 7244.24, "person": "Karol", "text": " You scroll through them." },
+  {
+    "startTime": 7245.5,
+    "person": "Karol",
+    "text": " Same goes for Instagram, YouTube Shorts, et cetera, right?"
+  },
+  {
+    "startTime": 7249,
+    "person": "Karol",
+    "text": " So from that perspective, that makes all the sense that you have those somewhere embedded in that kind of a partition that is filtered towards you."
+  },
+  {
+    "startTime": 7257.24,
+    "person": "Karol",
+    "text": " But if you look at operational messaging where you need single record processing and that single record cannot be cohesively put into a partition because those records do not have other than semantic meaning of the object, they don't have really relevance between one another often, right?"
+  },
+  {
+    "startTime": 7275.7,
+    "person": "Karol",
+    "text": " Like you're streaming a creation of a customer account."
+  },
+  {
+    "startTime": 7279,
+    "person": "Karol",
+    "text": " Yeah, these are customer account created events, but every single event is a different customer."
+  },
+  {
+    "startTime": 7284.36,
+    "person": "Karol",
+    "text": " So they don't have relationship between them."
+  },
+  {
+    "startTime": 7287.4,
+    "person": "Karol",
+    "text": " So why would you put them in one partition other than the fact that they're customers?"
+  },
+  {
+    "startTime": 7292.22,
+    "person": "Karol",
+    "text": " You can still design certain persistence so that everything is eventually consistent without having that storage."
+  },
+  {
+    "startTime": 7299.02,
+    "person": "Karol",
+    "text": " And I already seen people turning Kafka into humongous databases and calling that event-driven architecture."
+  },
+  {
+    "startTime": 7307.06,
+    "person": "Karol",
+    "text": " And I'm like, okay, that's not event-driven."
+  },
+  {
+    "startTime": 7310.2,
+    "person": "Karol",
+    "text": " Events are here, now this happened, period."
+  },
+  { "startTime": 7313.86, "person": "Karol", "text": " Fire and forget." },
+  { "startTime": 7315.34, "person": "Karol", "text": " End of event." },
+  {
+    "startTime": 7316.14,
+    "person": "Karol",
+    "text": " You want to change the state, fire another event."
+  },
+  {
+    "startTime": 7319.06,
+    "person": "Karol",
+    "text": " But for some reason, marketing from Confluent holds that Kafka is for event-driven systems."
+  },
+  {
+    "startTime": 7326.02,
+    "person": "Karol",
+    "text": " And then people going, event streaming and event sourcing, they're like, yes, that's very relevant for event-driven architecture."
+  },
+  { "startTime": 7335.34, "person": "Karol", "text": " Not precisely yet, et cetera, et cetera." },
+  {
+    "startTime": 7339,
+    "person": "Karol",
+    "text": " Because there's many more like that that are just bandwagon effects piling up because other people are doing it and they're successful at it."
+  },
+  {
+    "startTime": 7347.62,
+    "person": "Karol",
+    "text": " But we have no idea what the purpose is, how they did it, what effort was there in terms of making it work, and why in their specific case it works."
+  },
+  {
+    "startTime": 7358.06,
+    "person": "Karol",
+    "text": " And these are usually those cases that work and the broader application does not apply."
+  },
+  {
+    "startTime": 7365.84,
+    "person": "Karol",
+    "text": " Same with REST, same with certain other technologies or approaches."
+  },
+  {
+    "startTime": 7373.36,
+    "person": "Karol",
+    "text": " I think it's very tempting to reach for something canonical, right?"
+  },
+  {
+    "startTime": 7377.42,
+    "person": "Karol",
+    "text": " That's going to be good in all circumstances so you don't have to make the trade-off."
+  },
+  {
+    "startTime": 7381.88,
+    "person": "Karol",
+    "text": " Because trade-offs, typically, you have to trade something off, right?"
+  },
+  {
+    "startTime": 7386.82,
+    "person": "Karol",
+    "text": " And you have to choose something in and then you have to opt out of something, probably."
+  },
+  { "startTime": 7391.1, "person": "Karol", "text": " You have to pay the cost as well." },
+  {
+    "startTime": 7393.44,
+    "person": "Karol",
+    "text": " There are no free lunches, I think, in architecture."
+  },
+  {
+    "startTime": 7396.94,
+    "person": "Karol",
+    "text": " And then I believe, what is that, the first law of software architecture coined by Mark Richards and Neil Ford is everything's a trade-off?"
+  },
+  { "startTime": 7406.1, "person": "Karol", "text": " Or is that the second?" },
+  {
+    "startTime": 7409.18,
+    "person": "Karol",
+    "text": " I think that was, I think, the first law of software architecture."
+  },
+  {
+    "startTime": 7417.5,
+    "person": "Karol",
+    "text": " I'll look it up in a sec because that's easy to find, luckily."
+  },
+  { "startTime": 7423.92, "person": "Karol", "text": " Let's see." },
+  {
+    "startTime": 7440.2,
+    "person": "Karol",
+    "text": " Search engine, naturally, in the books is not as great."
+  },
+  { "startTime": 7448.24, "person": "Karol", "text": " Let's see." },
+  {
+    "startTime": 7450.46,
+    "person": "Karol",
+    "text": " The first law, yeah, everything in software architecture is a trade-off."
+  },
+  {
+    "startTime": 7455.28,
+    "person": "Karol",
+    "text": " Mark and Neil tend to tell a story about how they figured it out that this is an actual axiomatic law."
+  },
+  {
+    "startTime": 7465.84,
+    "person": "Karol",
+    "text": " Supposedly, they were sitting, I think, the story was in New Mexico on a vacation, you know, drinking drinks on the beach with their families."
+  },
+  { "startTime": 7474.42, "person": "Karol", "text": " And then Neil goes to Mark." },
+  { "startTime": 7476.62, "person": "Karol", "text": " I think everything is a trade-off." },
+  {
+    "startTime": 7478.6,
+    "person": "Karol",
+    "text": " And then Mark spent the entirety of the vacation trying to prove Neil wrong on that aspect."
+  },
+  {
+    "startTime": 7486.22,
+    "person": "Karol",
+    "text": " And then they build a corollary to that law, stating that if you think you've discovered something that isn't a trade-off, more likely you haven't identified the trade-off yet."
+  },
+  { "startTime": 7498.58, "person": "Andrew", "text": " Yes, exactly." },
+  { "startTime": 7499.58, "person": "Andrew", "text": " Yes." },
+  {
+    "startTime": 7500.1,
+    "person": "Karol",
+    "text": " And this is basically the trap that a lot of people fall into, especially if they're doing that kind of linear thinking of developers like Barry states."
+  },
+  {
+    "startTime": 7510.82,
+    "person": "Karol",
+    "text": " We need to have a predictable, specification-bound instruction for developers to build software, because that needs to be deterministic."
+  },
+  { "startTime": 7523.76, "person": "Karol", "text": " But architecture is lateral." },
+  {
+    "startTime": 7526.24,
+    "person": "Karol",
+    "text": " So if we're sure there's no trade-offs to it, we just don't understand what we're building enough."
+  },
+  { "startTime": 7531.58, "person": "Karol", "text": " And that's basically what it is." },
+  {
+    "startTime": 7533.34,
+    "person": "Karol",
+    "text": " And same goes to APIs in regards from what I see, because that's part of your architecture."
+  },
+  {
+    "startTime": 7542.06,
+    "person": "Karol",
+    "text": " So if you build it without purpose, without understanding who's going to consume that, well, we're building something very linearly."
+  },
+  {
+    "startTime": 7550.7,
+    "person": "Karol",
+    "text": " Yeah, that is the thing, because if you don't understand sort of the context that you're in, and you're choosing something, then basically how do you know that your trade-offs are any good for the situation that you're in?"
+  },
+  {
+    "startTime": 7566.24,
+    "person": "Karol",
+    "text": " Because you're making some trade-offs, but you didn't do the part where you sort of fit the trade-off to the problem."
+  },
+  { "startTime": 7573.56, "person": "Karol", "text": " Yeah, pretty much." },
+  { "startTime": 7575.76, "person": "Karol", "text": " All right." },
+  {
+    "startTime": 7577.02,
+    "person": "Karol",
+    "text": " I don't know, because we've been at it for over two hours."
+  },
+  { "startTime": 7580.02, "person": "Karol", "text": " Yes." },
+  { "startTime": 7581.78, "person": "Karol", "text": " See, time flies, right?" },
+  { "startTime": 7583.22, "person": "Karol", "text": " Yeah." },
+  { "startTime": 7585.9, "person": "Karol", "text": " Quick summary." },
+  { "startTime": 7587.36, "person": "Karol", "text": " And I have some notes, not a lot of them." },
+  {
+    "startTime": 7589.86,
+    "person": "Karol",
+    "text": " So apart from laws of software architecture, that everything is a trade-off, and we need to look at those trade-offs."
+  },
+  {
+    "startTime": 7595.86,
+    "person": "Karol",
+    "text": " First of all, API is not just JSON over HTTP, dubbed by many people REST. That's a lot more things than that."
+  },
+  {
+    "startTime": 7607.4,
+    "person": "Karol",
+    "text": " We have a lot of socio-technical aspects, especially around the usability of APIs, because it all goes down to the usability of it."
+  },
+  {
+    "startTime": 7615.28,
+    "person": "Karol",
+    "text": " Because in unilateral design, that means that the usability can be very low, or we just enforce this on people and don't care about that."
+  },
+  {
+    "startTime": 7626.74,
+    "person": "Karol",
+    "text": " If we do bilateral design, that's going to be probably a lot better in a point-to-point scenario."
+  },
+  {
+    "startTime": 7632.9,
+    "person": "Karol",
+    "text": " And then we also identify that we have this kind of a multilateral aspect to it when we are building API products."
+  },
+  {
+    "startTime": 7641.1,
+    "person": "Karol",
+    "text": " And that is also, again, the tendency goes to unilateral, because we own the product, we define the product."
+  },
+  {
+    "startTime": 7648.22,
+    "person": "Karol",
+    "text": " So we can have a zero-consumer subset product, because we didn't look at our consumers."
+  },
+  {
+    "startTime": 7655.46,
+    "person": "Karol",
+    "text": " And that unilateral means we basically have slower feedback loops."
+  },
+  {
+    "startTime": 7660.64,
+    "person": "Karol",
+    "text": " And that's going to be a problem that's going to be a time-ticking bomb, with a delayed explosion."
+  },
+  {
+    "startTime": 7667.68,
+    "person": "Karol",
+    "text": " Bilateral is going to be a lot better, because we get those feedback loops a lot quicker."
+  },
+  {
+    "startTime": 7672.38,
+    "person": "Karol",
+    "text": " And, of course, there are pitfalls to it, there are cargo calls, there are people that are stubborn, and it's all about navigating those social interactions and actually building relationships with people to understand their context and not close yourself in a silo of your context only."
+  },
+  {
+    "startTime": 7691.82,
+    "person": "Karol",
+    "text": " Because if you do that, you will not be able to produce a good API."
+  },
+  { "startTime": 7695.34, "person": "Karol", "text": " Yeah, yeah." },
+  {
+    "startTime": 7696.84,
+    "person": "Karol",
+    "text": " There's a quote I liked by someone who once told me that some people you can work with and some people you have to work around, and I kind of like that."
+  },
+  { "startTime": 7710.7, "person": "Karol", "text": " That's a fair assessment." },
+  { "startTime": 7712.02, "person": "Karol", "text": " That happens quite a lot of times." },
+  {
+    "startTime": 7714.68,
+    "person": "Karol",
+    "text": " Best if you could work with all those people instead of work around them."
+  },
+  { "startTime": 7719.56, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 7721.22,
+    "person": "Karol",
+    "text": " Often you can find an angle to work with people, right?"
+  },
+  { "startTime": 7724.24, "person": "Karol", "text": " Yeah." },
+  { "startTime": 7724.46, "person": "Karol", "text": " Or leverage." },
+  { "startTime": 7726.42, "person": "Karol", "text": " Yeah, yeah." },
+  { "startTime": 7726.88, "person": "Karol", "text": " That's another thing, yeah." },
+  { "startTime": 7729.14, "person": "Karol", "text": " All right." },
+  {
+    "startTime": 7729.9,
+    "person": "Karol",
+    "text": " Before we go offline, some quick announcements."
+  },
+  {
+    "startTime": 7733.5,
+    "person": "Karol",
+    "text": " So, next week there is no stream, but in two weeks we're going to be tackling a very, very interesting problem space of how the hell do we teach new generation of software professionals?"
+  },
+  {
+    "startTime": 7745.7,
+    "person": "Karol",
+    "text": " And this means developers, testers, architects, et cetera."
+  },
+  {
+    "startTime": 7750.6,
+    "person": "Karol",
+    "text": " Because the age of AI is now messing up royally our approach to educating juniors and bringing juniors into the fold and making them, in the end, senior developers and architects."
+  },
+  {
+    "startTime": 7765.28,
+    "person": "Karol",
+    "text": " And that is more and more of a problem, especially with unbound use of AI, where people just do things without understanding them."
+  },
+  {
+    "startTime": 7775.16,
+    "person": "Karol",
+    "text": " So, to have a chat about this particular topic, we're going to be having Chelsea Troy on the live stream."
+  },
+  {
+    "startTime": 7783.14,
+    "person": "Karol",
+    "text": " And Chelsea, alongside being a machine learning operations engineer at Mozilla, she's also a professor at University of Chicago."
+  },
+  {
+    "startTime": 7792.44,
+    "person": "Karol",
+    "text": " So, that's going to be one of the most interesting talks this year, I believe, to just take a look at how we educate people, because that's going to be relevant for all environments."
+  },
+  {
+    "startTime": 7804.04,
+    "person": "Karol",
+    "text": " Wherever you work as a senior engineer, how do you educate your juniors?"
+  },
+  {
+    "startTime": 7809.32,
+    "person": "Karol",
+    "text": " How do you approach people coming from university, et cetera?"
+  },
+  {
+    "startTime": 7813.42,
+    "person": "Karol",
+    "text": " That is potentially now the most crucial part of our work in IT."
+  },
+  { "startTime": 7820.34, "person": "Karol", "text": " Who's going to work after we go away?" },
+  {
+    "startTime": 7823.72,
+    "person": "Karol",
+    "text": " And, of course, some QR codes for those who are still with us."
+  },
+  {
+    "startTime": 7829.12,
+    "person": "Karol",
+    "text": " So, if you want to learn about more events that we're doing at Bridging the Gap, and we're going to be doing more events, not only loosely coupled, but also online workshops, hopefully in some time, potentially some conferences, then QR code to the left."
+  },
+  {
+    "startTime": 7844.38,
+    "person": "Karol",
+    "text": " If you want to enrol in training and learn about integration architecture and how to design integration architecture with DVD, we do have that training at DVD Academy, and we recently also started doing this with Avanza Scoperta, which is a company, lovely company from Italy, run by Alberto Grandelini."
+  },
+  {
+    "startTime": 7865.02,
+    "person": "Karol",
+    "text": " And, of course, if you're watching on LinkedIn, or you're new to the channel on YouTube, hit the subscribe or scan the QR code to subscribe to the YouTube channel."
+  },
+  { "startTime": 7876.72, "person": "Karol", "text": " Now, Einar, it's been a pleasure." },
+  { "startTime": 7879.18, "person": "Karol", "text": " Hopefully, not the last time." },
+  {
+    "startTime": 7880.18,
+    "person": "Karol",
+    "text": " We still have that AI around to do with Chris."
+  },
+  {
+    "startTime": 7886.04,
+    "person": "Karol",
+    "text": " But, hopefully, we'll also find some other lovely topics to chat about in terms of IT architecture development, et cetera."
+  },
+  { "startTime": 7894.58, "person": "Karol", "text": " Thank you for joining." },
+  { "startTime": 7896.18, "person": "Karol", "text": " It's been a pleasure." },
+  { "startTime": 7896.7, "person": "Karol", "text": " Thank you very much." },
+  {
+    "startTime": 7897.08,
+    "person": "Andrew",
+    "text": " It's been a pleasure to be on this stream."
+  },
+  { "startTime": 7899.38, "person": "Karol", "text": " And, hopefully, see you soon." },
+  { "startTime": 7901.74, "person": "Karol", "text": " Absolutely." }
+]
