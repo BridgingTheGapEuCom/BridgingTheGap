@@ -978,14 +978,14 @@
     "name": "Loosely Coupled - Teaching a new generation of software professionals",
     "img": "/events/Loosely_Coupled_Teaching_a_new_generation_of_software_professionals.webp",
     "description": "IT professionals composing the current workforce were mostly educated in a Prussian classroom model, that aimed to produce manufacturing workers that follow commands, not think creatively. Over the last few decades we see a lot of movements trying to change that. Unfortunately for us, we’re making education a lot harder with advancement of technology and that technology invading schools and universities. In the age of AI education is suffering and at the same time it is more and more important that we educate better.\n\nThis episode we’ll tackle the topic of how to educate young IT professionals in a world that is moving faster than we can comprehend. We have access to near-infinite knowledge through the Internet and AI chatbot. We also struggle with misinformation, hallucinations and lack of comprehension! The key question is: what good is all that information if we are incapable of using it in context?\n\nIT professionals composing the current workforce were mostly educated in a Prussian classroom model, that aimed to produce manufacturing workers that follow commands, not think creatively. Over the last few decades we see a lot of movements trying to change that. Unfortunately for us, we’re making education a lot harder with advancement of technology and that technology invading schools and universities. In the age of AI education is suffering and at the same time it is more and more important that we educate better.\n\nThis episode we’ll tackle the topic of how to educate young IT professionals in a world that is moving faster than we can comprehend. We have access to near-infinite knowledge through the Internet and AI chatbot. We also struggle with misinformation, hallucinations and lack of comprehension! The key question is: what good is all that information if we are incapable of using it in context?\n\nLet’s tackle the problem of education! This stream our guest will be Chelsea Troy, Machine Learning Operations Engineer at Mozilla, who is also an adjunct associate professor of University of Chicago. Chelsea is teaching machine learning, data analysis and programming and has a first hand view on the future of our IT workforce.\n\nJoin us in the discussion and learn how can we change the approach to professional learning to fit the current age.",
-    "date": "2006-07-09",
+    "date": "2026-07-09",
     "eventType": "Stream",
     "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
-        "startDate": "2006-07-09",
-        "endDate": "2006-07-09",
+        "startDate": "2026-07-09",
+        "endDate": "2026-07-09",
         "startTime": "19:00",
         "endTime": "21:00"
       },
@@ -995,5 +995,27 @@
     },
     "LN": "https://www.linkedin.com/events/7470757344344260610/",
     "YT": "https://youtube.com/live/QionuS_FWM0"
+  },
+  {
+    "name": "Loosely Coupled - Lost in translation - Data vs Integration Architecture",
+    "img": "/events/Loosely_Coupled_Lost_in_translation_-_Data_vs_Integration_Architecture.webp",
+    "description": "We communicate daily. It’s easy if we use the same language, work in the same context. The reality is, we really don’t - we live in different contexts and use different languages even if we all speak English - our internal dictionaries, mental models and jargon differ.\n\nWe communicate daily. It’s easy if we use the same language, work in the same context. The reality is, we really don’t - we live in different contexts and use different languages even if we all speak English - our internal dictionaries, mental models and jargon differ.\n\nJargons differ, especially at work. We would like to have cohesive languages to communicate with between all lines of business, all units, departments, etc. The facts are that we don’t have them, we all assume we understand the same terms the same way, and that creates a lot of friction and confrontation. \n\nThe same applies to architecture fields - and this is very visible when we compare Data and Integration Architecture and how specialists in those fields communicate with each other. Best example, a Loosely Coupled episode we did in August last year (https://www.youtube.com/watch?v=JaCuv8gRnJg), where we had so much trouble with understanding the terms we used.\n\nThis episode we’ll dive back into the topic of Data and Integration Architectures and try to find where we have mismatches! Hopefully we can create a common dictionary translating between the two worlds! To help us in the endeavor, joining as a guest is Andrew Jones! Returning to the stream to have yet another lost in translation moment. \n\nJoin us in the discussion! Post your terms in advance! Let’s see how many mismatches we can find and solve!",
+    "date": "2026-07-21",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-07-21",
+        "endDate": "2026-07-21",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "We're creating a dictionary between Data and Integration Architecture",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7478766928451510272/",
+    "YT": "https://youtube.com/live/D7GnrngEmHE"
   }
 ]
