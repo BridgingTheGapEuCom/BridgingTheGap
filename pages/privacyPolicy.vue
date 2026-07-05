@@ -228,7 +228,14 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+usePageSeo({
+  title: 'Privacy Policy',
+  description:
+    'Privacy policy for Bridging the Gap — how we collect, use, and protect your personal data in compliance with GDPR.',
+  path: '/privacyPolicy'
+})
+</script>
 
 <style lang="scss" scoped>
 table {

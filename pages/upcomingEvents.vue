@@ -268,6 +268,13 @@
 </template>
 
 <script lang="ts" setup>
+usePageSeo({
+  title: 'Upcoming Events',
+  description:
+    'Upcoming live streams, workshops, and training events from Bridging the Gap on application integration and enterprise architecture.',
+  path: '/upcomingEvents'
+})
+
 import { computed, ref, type Ref } from 'vue'
 import jsonEvents from '../events.json'
 import {

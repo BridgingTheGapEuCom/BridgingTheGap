@@ -13,6 +13,12 @@
 </template>
 
 <script setup>
+usePageSeo({
+  description:
+    'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture.',
+  path: '/'
+})
+
 import articles from '../articles.json'
 import events from '../events.json'
 import lodash from 'lodash'

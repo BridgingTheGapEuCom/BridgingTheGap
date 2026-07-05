@@ -1,12 +1,13 @@
 import Badge20Schema from '~/server/models/badge.schema'
+import { isValidBadgeId } from '~/server/utils/validation'
 
 export default defineEventHandler(async (event) => {
   const id = getRouterParam(event, 'badge')
 
-  if (!id) {
+  if (!id || !isValidBadgeId(id)) {
     throw createError({
       statusCode: 400,
-      statusMessage: 'Bad Request: An "id" is required.'
+      statusMessage: 'Bad Request: A valid badge "id" is required.'
     })
   }
 

@@ -25,10 +25,11 @@
       />
       <button
         class="bg-gray-200 border border-gray-500 p-3 mt-4 rounded-lg dark:text-black min-w-28"
-        :class="{ 'opacity-50': notValid, 'cursor-not-allowed': notValid }"
+        :class="{ 'opacity-50': notValid || subscribing, 'cursor-not-allowed': notValid || subscribing }"
+        :disabled="notValid || subscribing"
         @click="subscribe"
       >
-        Subscribe
+        {{ subscribing ? 'Subscribing...' : 'Subscribe' }}
       </button>
     </div>
     <div
@@ -44,18 +45,35 @@
         class="dark:invert"
         style="width: 20dvh"
       >
-      <b>Bridging The Gap</b>
+      <b>Bridging the Gap</b>
     </div>
   </LandingPageLandingLayout>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import BTGInput from '~/components/helpers/BTGInput.vue'
 import { mdiAt } from '@mdi/js'
-import axios from 'axios'
+import { type IReCaptchaComposition, useReCaptcha } from 'vue-recaptcha-v3'
 
 const email = ref('')
 const SubscribeMessage = ref('')
+const subscribing = ref(false)
+
+let recaptcha: IReCaptchaComposition | undefined = undefined
+
+if (import.meta.client) {
+  recaptcha = useReCaptcha()
+}
+
+onMounted(async () => {
+  if (recaptcha) {
+    try {
+      await recaptcha.recaptchaLoaded()
+    } catch (error) {
+      console.error('reCAPTCHA failed to load:', error)
+    }
+  }
+})
 
 const invalidEmailAddress = computed(() => {
   return email.value !== '' && !/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value)
@@ -66,34 +84,38 @@ const notValid = computed(() => {
 })
 
 const subscribe = async () => {
-  if (notValid.value) {
+  if (notValid.value || subscribing.value || !recaptcha) {
     return
   }
+
+  subscribing.value = true
 
   try {
-    await axios.post(
-      '/api/addSubscriber',
-      JSON.stringify({
-        email: email.value
-      }),
-      {
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      }
-    )
-  } catch (e) {
-    if (e.response?.data?.message) {
-      if (e.response.data.message.startsWith('E11000')) {
-        SubscribeMessage.value = 'You are already subscribed!'
-        return
-      }
-    }
-    SubscribeMessage.value = 'Something went wrong. Please try again later.'
-    return
-  }
+    await recaptcha.recaptchaLoaded()
 
-  SubscribeMessage.value = 'Thank you for subscribing!'
+    const token = await recaptcha.executeRecaptcha('submit_message')
+
+    const response = await $fetch('/api/addSubscriber', {
+      method: 'POST',
+      body: {
+        email: email.value,
+        token
+      }
+    })
+
+    if (response.status === 409) {
+      SubscribeMessage.value = 'You are already subscribed!'
+    } else if (response.status === 500) {
+      SubscribeMessage.value = 'Something went wrong. Please try again later.'
+    } else {
+      SubscribeMessage.value = 'Thank you for subscribing!'
+    }
+  } catch (error) {
+    console.error('Subscription failed:', error)
+    SubscribeMessage.value = 'Something went wrong. Please try again later.'
+  } finally {
+    subscribing.value = false
+  }
 }
 </script>
 

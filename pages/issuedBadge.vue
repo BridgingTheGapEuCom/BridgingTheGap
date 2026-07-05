@@ -65,7 +65,7 @@
         <div>{{ achievementDetails?.criteria.narrative }}</div>
       </div>
       <div class="flex flex-col items-center justify-center">
-        <img alt="Bridging The Gap logo" class="w-16 mx-auto mt-5 dark:invert" src="/logo.webp" />
+        <img alt="Bridging the Gap logo" class="w-16 mx-auto mt-5 dark:invert" src="/logo.webp" />
         <div>Issued by <b>BridgingTheGap.eu.com</b></div>
         <div>
           on
@@ -112,6 +112,8 @@
 </template>
 
 <script lang="ts" setup>
+useSeoMeta({ robots: 'noindex, nofollow' })
+
 import type { OpenBadges20, BadgeContent } from '~/Types/OpenBadges.20'
 import type { OpenBadgesDescription20 } from '~/Types/OpenBadgesDescription.20'
 import { mdiContentCopy } from '@mdi/js'

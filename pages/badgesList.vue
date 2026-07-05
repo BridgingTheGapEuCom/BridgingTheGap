@@ -139,6 +139,13 @@
 </template>
 
 <script lang="ts" setup>
+usePageSeo({
+  title: 'Open Badges',
+  description:
+    'Look up and showcase your Open Badges earned through Bridging the Gap workshops and educational events.',
+  path: '/badgesList'
+})
+
 import { type IReCaptchaComposition, useReCaptcha } from 'vue-recaptcha-v3'
 import { useRoute } from 'vue-router'
 import { DateTime } from 'luxon'

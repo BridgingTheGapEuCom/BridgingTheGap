@@ -289,6 +289,13 @@
 </template>
 
 <script setup>
+usePageSeo({
+  title: 'About Us',
+  description:
+    'Meet the integration architects behind Bridging the Gap — enterprise architects sharing vendor-agnostic knowledge on application integration.',
+  path: '/about'
+})
+
 // This page introduces the core team members.
 // The script section contains logic for processing and displaying article reviewers,
 // which seems to be intended for the 'About our Reviewers' page and is not used in this component's template.

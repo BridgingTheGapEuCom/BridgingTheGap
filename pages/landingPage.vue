@@ -15,6 +15,12 @@
 </template>
 
 <script setup>
+usePageSeo({
+  description:
+    'Bridging the Gap — a collaboration of integration architects creating a simple, vendor-agnostic guide to integration architecture.',
+  path: '/landingPage'
+})
+
 import LandingPage1 from '~/components/landingPage/LandingPage_1.vue'
 import LandingPage2 from '~/components/landingPage/LandingPage_2.vue'
 import LandingPage3 from '~/components/landingPage/LandingPage_3.vue'

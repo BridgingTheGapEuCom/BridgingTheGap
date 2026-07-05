@@ -112,6 +112,12 @@
 </template>
 
 <script setup>
+usePageSeo({
+  title: 'About the Project',
+  description:
+    'Bridging the Gap is an open-source educational project providing vendor-agnostic guides, patterns, and insights on application integration architecture.',
+  path: '/aboutTheProject'
+})
 </script>
 
 <style scoped>

@@ -156,6 +156,13 @@
 </template>
 
 <script lang="ts" setup>
+usePageSeo({
+  title: 'Contact Us',
+  description:
+    'Get in touch with the Bridging the Gap team — questions, ideas, collaboration, or feedback on application integration architecture.',
+  path: '/contactUs'
+})
+
 import { type IReCaptchaComposition, useReCaptcha } from 'vue-recaptcha-v3'
 import { ref } from 'vue'
 
