@@ -1017,5 +1017,27 @@
     },
     "LN": "https://www.linkedin.com/events/7478766928451510272/",
     "YT": "https://youtube.com/live/D7GnrngEmHE"
+  },
+  {
+    "name": "Loosely Coupled - Exploring TDD by playing a game of JitterTed",
+    "img": "/events/Loosely_Coupled_Exploring_TDD_by_playing_a_game_of_JitterTed.webp",
+    "description": "Testing has always been a part of work in many engineering fields. IT is no exception. Methods differ between different fields. The idea of testing software is not a new concept, but is probably as misunderstood as many other concepts! For some it is running a SoapUI test suite, for others it is a collection in postman. Then we have test cases and scenarios. All of this culmination to the false notion of 100% test coverage.\n\nTesting has always been a part of work in many engineering fields. IT is no exception. Methods differ between different fields. The idea of testing software is not a new concept, but is probably as misunderstood as many other concepts! For some it is running a SoapUI test suite, for others it is a collection in postman. Then we have test cases and scenarios. All of this culmination to the false notion of 100% test coverage.\n\nLet’s talk about a broader picture! How testing actually can shape software and change the way we work on it to boost that ‘fail fast’ approach and create short feedback loops! For this purpose our next guest is Ted M. Young, a seasoned software developer with a knack for Test-Driven Development. Together we’ll dive into TDD, what that is and how to apply it! This time with a twist, because Ted is bringing his game to the stream - JitterTed’s TDD Game! We’ll be learning by playing!\n\nSo let’s dive in and see how collaborative small steps can get us further than scatter-gather isolated approaches. Join us live!",
+    "date": "2026-07-16",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-07-16",
+        "endDate": "2026-07-16",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Learning TDD by playing JitterTed's TDD Game",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7479628441051652096/",
+    "YT": "https://youtube.com/live/VfKXcvidRqU"
   }
 ]
