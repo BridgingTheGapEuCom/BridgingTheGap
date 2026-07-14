@@ -1039,5 +1039,49 @@
     },
     "LN": "https://www.linkedin.com/events/7479628441051652096/",
     "YT": "https://youtube.com/live/VfKXcvidRqU"
+  },
+  {
+    "name": "Loosely Coupled - Identity as Architecture: Rethinking Coupling, Cohesion, and Transition in the Age of AI",
+    "img": "/events/Loosely_Coupled_Identity_as_Architecture.webp",
+    "description": "AI is changing far more than how we build software. It is fundamentally reshaping the craft and our identity. As AI commoditizes specialist skills, developers and architects are shifting toward new perceptions of their roles - reviewers, orchestrators, and stewards of autonomous systems. For many, this transition sparks excitement, while for others, it brings uncertainty. In an era where the pace of AI leaves little room for reflection, we find ourselves consuming more knowledge but often feeling less connected to our work, our colleagues, and ourselves.\n\nAI is changing far more than how we build software. It is fundamentally reshaping the craft and our identity. As AI commoditizes specialist skills, developers and architects are shifting toward new perceptions of their roles - reviewers, orchestrators, and stewards of autonomous systems. For many, this transition sparks excitement, while for others, it brings uncertainty. In an era where the pace of AI leaves little room for reflection, we find ourselves consuming more knowledge but often feeling less connected to our work, our colleagues, and ourselves.\n\nIn this episode, we’ll explore identity through an architectural lens. We'll discuss how our professional identity can be understood as an architecture, where its coupling to the world and internal cohesion evolve alongside our environment. Drawing on concepts from cognitive science, complexity theory, and sociotechnical practices, we’ll examine how to consciously redesign our coupling with the world to discover a deeper sense of lived fittedness between who we are, what we do, and the possibilities AI creates.\n\nWe’ll tackle critical questions:\n\nHow do we transition our craft from writing code to designing sociotechnical systems?\n\nWhere do human judgment, design, and modeling become even more valuable?\n\nHow do we consciously reshape our coupling with the world and maintain cohesion?\n\nWhat practices help us stay connected to ourselves and others during this transition?\n\nThis stream, our guest will be Xin Yao, a Sociotechnical architect and change facilitator, who will help us explore what it means to not just survive the AI era, but to thrive within it.\n\nJoin us in the discussion as we apply architectural thinking to ourselves, and learn how to navigate the transition toward greater professional and personal cohesion.",
+    "date": "2026-07-30",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-07-30",
+        "endDate": "2026-07-30",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Identity as Architecture: Rethinking Coupling, Cohesion, and Transition in the Age of AI",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7481300830701412352/",
+    "YT": "https://youtube.com/live/lcsPTjephjM"
+  },
+  {
+    "name": "Loosely Coupled - Career leadership in IT",
+    "img": "/events/Loosely_Coupled_Career_leadership_in_IT.webp",
+    "description": "Does career growth and loyalty happen naturally within business environments? Every business owner would probably wish it did. But is there any truth to such wishful thinking? Can a person’s career in a business be anything more than just an employee-employer relationship, where both parties merely benefit from their contractual agreement?\n\nDoes career growth and loyalty happen naturally within business environments? Every business owner would probably wish it did. But is there any truth to such wishful thinking? Can a person’s career in a business be anything more than just an employee-employer relationship, where both parties merely benefit from their contractual agreement?\n\nHow can we facilitate empathy and compassion into our career paths? How can we deal with extremely long feedback loops, and delayed gratification of seeing the results of your efforts? Is it worth the time and effort to care? All of these are valid questions, especially in times where human connection is often disappearing behind digital screens and all sorts of apps that are supposed to support collaboration.\n\nTo talk about all of this, our next guest is Hannes Lowette, a developer turned mentor, coach and a person contributing to the learning culture at Axxes for the last 15 years. He finds that careers not being a zero sum game is something to reach for and we can all win! He believes that bringing empathy and compassion to the job can change people’s growth tremendously! As he says: “I get out of bed to help others succeed.”\n\nJoin the discussion!",
+    "date": "2026-08-06",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-08-06",
+        "endDate": "2026-08-06",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Career leadership in IT",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "linkedin.com/events/7482709246510505984/",
+    "YT": "https://youtube.com/live/EUzHjQRofoQ"
   }
 ]
