@@ -1083,5 +1083,27 @@
     },
     "LN": "linkedin.com/events/7482709246510505984/",
     "YT": "https://youtube.com/live/EUzHjQRofoQ"
+  },
+  {
+    "name": "Loosely Coupled - The Kafka Cargo Cult",
+    "img": "/events/Loosely_Coupled_The_Kafka_Cargo_Cult.webp",
+    "description": "“We don’t do message brokers and Event-Driven at this company” is what I heard from one client some time ago. I was puzzled, because why would someone discard a whole valid set of architectural patterns? Turns out a few years back they suffered heavily because someone thought they could be like Netflix or LinkedIn and use Kafka. “It worked for those companies - right?” Absolutely! The problem was that this client was not a streaming service and had no use case for streams! The result? Heavy implementation, high cognitive cost for all teams, serious operational problems.\n\n“We don’t do message brokers and Event-Driven at this company” is what I heard from one client some time ago. I was puzzled, because why would someone discard a whole valid set of architectural patterns? Turns out a few years back they suffered heavily because someone thought they could be like Netflix or LinkedIn and use Kafka. “It worked for those companies - right?” Absolutely! The problem was that this client was not a streaming service and had no use case for streams! The result? Heavy implementation, high cognitive cost for all teams, serious operational problems.\n\nWe often look at the success of various companies, their tech stack and think: “Hey! We can do the same thing! It will work because it worked for them!” The problem is that we often do that without looking at trade-offs, added complexity, or even having a valid use case for such technology. This effect is dubbed a “cargo cult”, and while it originates from people’s behaviour in Melanesia during the 2nd World War, it has found its home in IT!\n\nLet’s have a chat about one of the most famous cargo cult in Integration Architecture - Kafka! For that we’re bringing to the stream two returning guests:\n\nChris Simon, a technology coach and advisor helping technology teams drive business success. Chris talked about this this year at DDD Europe “It’s like 10000 streams when what you need is a queue”\n\nAaron Lee, a Senior Solutions Engineer at Solace. Aaron will happily discuss event-driven architecture, networking protocols, application design, monitoring, time-series data, and visualization frameworks for as long as you’ll listen.\n\nTogether we’ll dive into Event-Driven Architecture and when to use Kafka and other message brokers! Join us live!",
+    "date": "2026-08-13",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-08-13",
+        "endDate": "2026-08-13",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "The Kafka Cargo Cult",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7487825576490336257/",
+    "YT": "https://youtube.com/live/Esovkr-seAQ"
   }
 ]
