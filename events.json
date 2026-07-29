@@ -1097,7 +1097,8 @@
         "startDate": "2026-08-13",
         "endDate": "2026-08-13",
         "startTime": "19:00",
-        "endTime": "21:00"
+        "endTime": "21:00",
+        "timezone": "UTC+2"
       },
       "place": "Live Stream on LinkedIn and YouTube",
       "eventTopic": "The Kafka Cargo Cult",
