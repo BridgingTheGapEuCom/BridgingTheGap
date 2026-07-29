@@ -102,7 +102,7 @@
             class="p-1 mx-1 cursor-pointer text-center hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-xl border-neutral-400 my-1"
             @click="setEventAndCloseEventsList(event)"
           >
-            <strong>{{ new Date(event.date).toLocaleDateString() }}</strong
+            <strong>{{ getDateFromEvent(event).toJSDate().toLocaleDateString() }}</strong
             >&nbsp;- {{ event.name }}
           </div>
         </div>
@@ -149,7 +149,7 @@
           >
             <div class="flex flex-col justify-center">
               <div class="text-center text-2xl font-bold mb-5">
-                {{ event.name }} - {{ new Date(event.date).toLocaleDateString() }}
+                {{ event.name }} - {{ getDateFromEvent(event).toJSDate().toLocaleDateString() }}
               </div>
               <div>
                 <img
@@ -357,9 +357,7 @@ onMounted(() => {
   events.value.map((el, index) => {
     el.id = index
     if (!(el.date instanceof Date)) {
-      el.date = DateTime.fromISO(el.date, {
-        zone: 'cet'
-      }).toJSDate()
+      el.date = getDateFromEvent(el).toJSDate()
     }
     return el
   })
@@ -384,7 +382,7 @@ onMounted(() => {
         return `${el.id}` === `${Number(id) - 1}`
       })
       if (currentEvent.value) {
-        chosenDate.value = new Date(currentEvent.value.date)
+        chosenDate.value = getDateFromEvent(currentEvent.value).toJSDate()
       }
     })
   } else {
@@ -393,7 +391,7 @@ onMounted(() => {
       event = events.value.find((el) => el.name === queryParams.eventName)
       if (event) {
         currentEvent.value = event
-        chosenDate.value = new Date(event.date)
+        chosenDate.value = getDateFromEvent(event).toJSDate()
       }
     }
 
@@ -409,8 +407,14 @@ onMounted(() => {
 })
 
 const getDateFromEvent = (event: Event) => {
-  return DateTime.fromISO((event.details[EventDetailTypes.Date] as EventDetailsDate).startDate, {
-    zone: 'CET'
+  const details = event.details[EventDetailTypes.Date] as EventDetailsDate
+  let startTime = details.startTime
+  if(startTime.length !== 5) {
+    startTime = `0${startTime.length}`
+  }
+
+  return DateTime.fromISO(`${details.startDate}T${startTime}`, {
+    zone: details.timezone ? details.timezone : "UTC"
   })
 }
 
@@ -428,12 +432,14 @@ const getDateTimeFromEvent = (
     time = `0${time}`
   }
 
-  let date = (event.details[EventDetailTypes.Date] as EventDetailsDate).startDate
+  const details = event.details[EventDetailTypes.Date] as EventDetailsDate
+
+  let date = details.startDate
   if (!startDate) {
-    date = (event.details[EventDetailTypes.Date] as EventDetailsDate).endDate
+    date = details.endDate
   }
 
-  return DateTime.fromISO(`${date}T${time}`, { zone: 'CET' })
+  return DateTime.fromISO(`${date}T${time}`, { zone: details.timezone ? details.timezone : "UTC" })
 }
 
 /**
@@ -596,7 +602,7 @@ const pageChange = (id: string) => {
  */
 const setEvent = (event: Event) => {
   currentEvent.value = event
-  chosenDate.value = new Date(event.date)
+  chosenDate.value = getDateFromEvent(event).toJSDate()
 }
 
 /**
@@ -614,14 +620,16 @@ const setEventAndCloseEventsList = (event: Event) => {
  * @returns {string} The formatted date string.
  */
 const getEventDatesAsString = (event: Event) => {
-  const date = new Date(event.date)
-  let text = `${date.toLocaleDateString()}`
-  if (event.span) {
-    date.setDate(date.getDate() + (event.span - 1))
-    text = `${text} - ${date.toLocaleDateString()}`
-  }
+  // const date = new Date(event.date)
+  // let text = `${date.toLocaleDateString()}`
+  // if (event.span) {
+  //   date.setDate(date.getDate() + (event.span - 1))
+  //   text = `${text} - ${date.toLocaleDateString()}`
+  // }
 
-  return text
+  // return text
+
+  return getDateFromEvent(event).toLocaleString()
 }
 
 /**

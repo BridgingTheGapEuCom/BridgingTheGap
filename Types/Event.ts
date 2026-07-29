@@ -28,6 +28,7 @@ export interface EventDetailsDate {
   endDate: string
   startTime: string
   endTime: string
+  timezone?: string
 }
 
 export enum EventDetailTypes {
