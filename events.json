@@ -575,7 +575,7 @@
       "date": {
         "type": "date",
         "startDate": "2026-03-20",
-        "endDate": "2026-03-30",
+        "endDate": "2026-03-20",
         "startTime": "9:00",
         "endTime": "17:00"
       },
@@ -1106,5 +1106,30 @@
     },
     "LN": "https://www.linkedin.com/events/7487825576490336257/",
     "YT": "https://youtube.com/live/Esovkr-seAQ"
+  },
+  {
+    "name": "Sociotechnical Application Integration using Context Maps",
+    "img": "/events/Sociotechnical_App_Int_using_Context_Maps.webp",
+    "description": "We're back after summer with a hands-on workshop by Karol Skrzymowski about using DDD context mapping as the starting point to choose integration patterns that are fit for purpose, then pick the technology.\n\nWorkshop: Sociotechnical Application Integration using Context Maps\nby Karol Skrzymowski\n\nMost application integration failures aren't caused by choosing the wrong message broker or IPaaS technology. They happen because the technical architecture ignores the sociopolitical reality of the teams involved, or organizations ignore the sociotechnical aspects of what they try to introduce in their IT Ecosystems. What happens if you implement a high-trust Shared Database between teams that have a low-trust Customer/Supplier relationship? Most likely your system will shatter the moment one team changes a schema without asking.\n\nIn this hands-on lab, we will address this mismatch by explicitly mapping DDD Context Mapping patterns (the social boundaries) to Ecosystem Architectural Styles (the technical implementation) and related integration patterns. We won’t just discuss \"trade-offs\"; we will apply design heuristics that are useful in real-world scenarios involving a range of systems, from legacy ERPs to modern microservices.\n\nYou will learn to operationalize mappings like:\n• Partnership, where the relationship allows for the tight coupling of synchronous calls.\n• The Conformist relationship in which the upstream team has no motivation to support you, so it requires a strictly defensive Anti-Corruption Layer (ACL) within the consumer.\n• Open Host Service, that creates reusability, but not always allows for loose coupling as scale.\n• Interchange Context relationships, where integration is extracted from domain systems and implemented as middleware!\n\nThis session is designed for architects who are tired of guessing how to integrate systems. You will leave with a range of heuristics on how to explore and identify the risks to integrations stemming from the political landscape of your IT ecosystem. This will give you the vocabulary to express those risks and relationships, and to design for a better future, based on the domain boundaries, not just the technology stack.\n\n🚋 About the Host & Location 🌍\nBig thanks to the people at QWAN (Quality Without a Name) to host us this time.\n\nLocation: Space to Create on the Utrecht Stationsplein\nRoom: Olympic Space 2\nhttps://spacetocreate.nl/routebeschrijving-utrecht/\n\nAt QWAN, they take a systemic approach to support software development organizations to become better at what they do and more fun places to work for. Their approach is grounded in systems thinking, Domain Driven Design, DevOps, agile and lean approaches like eXtreme Programming, Kanban, Scrum, and test driven development. They always keep an eye on the goal: delivering valuable software better, faster, with more joy.\n\n🕖 Schedule 🕙\n17:00 - 17:45 Doors open, welcome with food and drinks\n17:45 - 18:00 Welcome by our hosts\n18:00 - 20:30: Workshop Sociotechnical Application Integration using Context Maps by Karol Skrzymowski\n20:30 - 21:00: Social drinks + networking\n\n🎯Target audience 👥\nYou have an interest in Domain-Driven Design, want to learn more about it, or want to share your experiences with others. Feel free to drop a comment if you're not sure if you should attend.\n\n🍝 RSVP correctly for your fellow members and host 🍕\nPlease ensure that you update your RSVP. We understand that attending a meetup isn't always possible even though you wanted to come. Throwing away food is just waste, so feel free to change your mind but update your RSVP accordingly :-)",
+    "date": "2026-09-09",
+    "eventType": "Workshop",
+    "tags": ["Workshop"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-09-09",
+        "endDate": "2026-09-09",
+        "startTime": "17:00",
+        "endTime": "21:00"
+      },
+      "place": "Online - limited seats, open call",
+      "eventTopic": "We’re exploring the sociotechnical aspects of Integration Architecture using Context Maps",
+      "eventType": "Workshop",
+      "registrationLink": {
+        "type": "link",
+        "link": "https://www.meetup.com/domain-driven-design-nederland/events/315599488/?utm_medium=referral&utm_campaign=announce_event&utm_source=link&utm_version=v2&member_id=119959132",
+        "name": "Register here!"
+      }
+    }
   }
 ]
