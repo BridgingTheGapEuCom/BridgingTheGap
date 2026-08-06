@@ -1131,5 +1131,27 @@
         "name": "Register here!"
       }
     }
+  },
+  {
+    "name": "Loosely Coupled - BridgingTheGap goes Ensemble Programming! Live coding session!",
+    "img": "/events/Loosely_Coupled_BridgingTheGap_goes_Ensemble_Programming_Live_coding_session.webp",
+    "description": "How do we work as programmers, architects? How do we solve problems? What are our ways of working? Is the team we’re on an actual team if we put on our headphones, put music on and everyone focuses on their own ticket in jira? These are a few of the core questions that are the subject of ways of working. \n\nHow do we work as programmers, architects? How do we solve problems? What are our ways of working? Is the team we’re on an actual team if we put on our headphones, put music on and everyone focuses on their own ticket in jira? These are a few of the core questions that are the subject of ways of working. \n\nMost people (not IT) view programming as an activity, where you sit in solitude in front of a computer and write code. That’s it! Done! Software is born and we move one to another project. The reality, as always, is more complex than that. Software engineering is a complex endeavor. While this notion may work for small programs like automating your own workspace, or writing a small app for your phone for your particular needs, this is not how programming works in business environments - it is a collaborative effort.\n\nOver the years there have been many approaches to programming, we still do solo programming and then validate it through code reviews. We do pair programming, where the core practice is that we have a pair of people working on a piece of code on the same workstation. Some developers do rubber ducking, where they debug and extend the code through explaining it to inanimate rubber ducky, or a(n) (un)willing colleague.\n\nThis episode we’ll be a little bit different! Usually we have a conversation, share examples, and discuss a problem. This time around we’ll attempt to solve a problem by coding! And for that part not any kind of coding! We’ll jump right into a practice that originates from eXtreme Programming and goes further! We’ll be doing Ensemble Programming! We have invited two Fullstack Engineers and Ensemble practitioners, James Herr and Arthur Morrow to guide us through the process! Let’s see if together we can solve the problem we prepared!",
+    "date": "2026-08-27",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-08-27",
+        "endDate": "2026-08-27",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Live Ensemble Programming session!",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "linkedin.com/events/7491225993408561153/",
+    "YT": "https://youtube.com/live/a8qPgO7Jfo4"
   }
 ]
