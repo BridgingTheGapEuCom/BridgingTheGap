@@ -1152,5 +1152,49 @@
     },
     "LN": "linkedin.com/events/7491225993408561153/",
     "YT": "https://youtube.com/live/a8qPgO7Jfo4"
+  },
+  {
+    "name": "Loosely Coupled - APIs - moving beyond specification and documentation to actionable knowledge",
+    "img": "/events/Loosely_Coupled_APIs_-_moving_beyond_specification_and_documentation_to_actionable_knowledge.webp",
+    "description": "In today's distributed IT world APIs are everywhere! We use them to send statuses, query data, post social-media posts, and most of all we use them in systems in our organizations. But do we really understand the landscapes they create? \n\nIn today's distributed IT world APIs are everywhere! We use them to send statuses, query data, post social-media posts, and most of all we use them in systems in our organizations. But do we really understand the landscapes they create? \n\n\n\nLet’s discuss why an API catalog is only a starting point! How can OpenAPI and AsyncAPI contracts, quality checks, enterprise architecture, ownership, and runtime relationships be connected? Can we digest this knowledge and derive more meaning out of it?\n\n\n\nJoining us this session is Daniel Kocot, Principal Integration Architect @ adorsys, and together we will take a look at what a graph-based knowledge layer makes possible. Can we, using the API Knowledge Stack as a practical example, follow the path from an API definition and a quality finding to an actionable view of the API, its context, its responsibilities, and its next steps.\n\n\n\nWe’ll be also looking beyond discovery: how APIs can become curated API products, how teams can preserve the intended use and trust, and how organizations can keep their knowledge useful without turning governance into bloated bureaucracy.\n\n\n\nHow do we move from knowing where an API is to understanding what it means and what to do with it?\n\n\n\nJoin us in the discussion!",
+    "date": "2026-10-07",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-10-07",
+        "endDate": "2026-10-07",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "APIs as a source of organizational knowledge",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "linkedin.com/events/7498670344405172225/",
+    "YT": "https://youtube.com/live/kRpsgh5KMjE"
+  },
+  {
+    "name": "Strategic Integration Design with DDD - Philipp Kostyra & Karol Skrzymowski",
+    "img": "/events/SID_smalltalk.webp",
+    "description": "Strategic Integration Design with DDD: A Small Talk with Karol Skrzymowski and Philipp Kostyra 📹\n\nYour integrations grew and nobody designed them!\n\nAn informal chat with Karol Skrzymowski and Philipp Kostyra to learn more about their upcoming Strategic Integration Design with DDD Workshop, why this topic matters, how the workshop is structured, what problems it addresses, and why people should join.\n\nIt’s also a chance to hear what Philip and Karol are working on today and to get Alberto Brandolini’s insights on the topic.\n\n🎙 Guests\nPhilipp Kostyra\n🐜Karol Skrzymowski\n\n🎙 Moderator\nAlberto Brandolini\n\n🛜 Info\nWhen: Sept 1st, at 7:00 pm CEST\nWhere: live streaming on Youtube or Linkedin\n\n👉 Workshop: https://lnkd.in/ezGgxYWT\n\n🔔 Subscribe to our YouTube channel: https://lnkd.in/dZHa-3Dy\n\n📩 Join our newsletter: https://lnkd.in/dpC_jvKg\n\n🗓 Upcoming Public Events: https://lnkd.in/djY7yTK6",
+    "date": "2026-10-07",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-10-07",
+        "endDate": "2026-10-07",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "APIs as a source of organizational knowledge",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/strategicintegrationdesignwithd7498047112547340288/",
+    "YT": "https://www.youtube.com/watch?v=MRZDK5UdM5Q"
   }
 ]
