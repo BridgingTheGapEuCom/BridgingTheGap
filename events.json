@@ -1180,16 +1180,16 @@
     "name": "Strategic Integration Design with DDD - Philipp Kostyra & Karol Skrzymowski",
     "img": "/events/SID_smalltalk.webp",
     "description": "Strategic Integration Design with DDD: A Small Talk with Karol Skrzymowski and Philipp Kostyra 📹\n\nYour integrations grew and nobody designed them!\n\nAn informal chat with Karol Skrzymowski and Philipp Kostyra to learn more about their upcoming Strategic Integration Design with DDD Workshop, why this topic matters, how the workshop is structured, what problems it addresses, and why people should join.\n\nIt’s also a chance to hear what Philip and Karol are working on today and to get Alberto Brandolini’s insights on the topic.\n\n🎙 Guests\nPhilipp Kostyra\n🐜Karol Skrzymowski\n\n🎙 Moderator\nAlberto Brandolini\n\n🛜 Info\nWhen: Sept 1st, at 7:00 pm CEST\nWhere: live streaming on Youtube or Linkedin\n\n👉 Workshop: https://lnkd.in/ezGgxYWT\n\n🔔 Subscribe to our YouTube channel: https://lnkd.in/dZHa-3Dy\n\n📩 Join our newsletter: https://lnkd.in/dpC_jvKg\n\n🗓 Upcoming Public Events: https://lnkd.in/djY7yTK6",
-    "date": "2026-10-07",
+    "date": "2026-09-01",
     "eventType": "Stream",
     "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
-        "startDate": "2026-10-07",
-        "endDate": "2026-10-07",
+        "startDate": "2026-09-01",
+        "endDate": "2026-09-01",
         "startTime": "19:00",
-        "endTime": "21:00"
+        "endTime": "19:30"
       },
       "place": "Live Stream on LinkedIn and YouTube",
       "eventTopic": "APIs as a source of organizational knowledge",
