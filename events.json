@@ -1192,10 +1192,32 @@
         "endTime": "19:30"
       },
       "place": "Live Stream on LinkedIn and YouTube",
-      "eventTopic": "APIs as a source of organizational knowledge",
+      "eventTopic": "Strategic Integration Design with DDD - a trainer spotlight!",
       "eventType": "Live Stream Discussion"
     },
     "LN": "https://www.linkedin.com/events/strategicintegrationdesignwithd7498047112547340288/",
     "YT": "https://www.youtube.com/watch?v=MRZDK5UdM5Q"
+  },
+  {
+    "name": "Loosely Coupled - Architecture Debt: The Hidden Risk That Breaks Transformations",
+    "img": "/events/Loosely_Coupled_Architecture_Debt_The_Hidden_Risk_That_Breaks_Transformations.webp",
+    "description": "We have a tendency to call something \"technical debt\", perhaps even register it in some sort of a log, and move on. That is what is happening most of the time. Business requires immediate action. We refer to the “Quality, time, cost” triangle and say “choose two”. The result? Business wants it fast and cheap - quality suffers. And the worst part is that this tool has been already changed and misused so much that no one remembers what was the original “iron triangle”.\n\nWe have a tendency to call something \"technical debt\", perhaps even register it in some sort of a log, and move on. That is what is happening most of the time. Business requires immediate action. We refer to the “Quality, time, cost” triangle and say “choose two”. The result? Business wants it fast and cheap - quality suffers. And the worst part is that this tool has been already changed and misused so much that no one remembers what was the original “iron triangle”.\n\nThis is how we create “technical debt”, which can have a multitude of forms. Corner cutting on development, not having full test coverage, or having implicit architecture simply by building instead of designing first.\n\nThis session we’ll be diving into Architectural Debt, which may be mistaken for “technical debt”. While it is similar it often has far more severe delayed consequences. This is the kind of debt that can go unnoticed until everything starts breaking down - impacting the most meaningful programs and projects, and in the end business flexibility and adaptability to the business reality. It is not visible in code, you cannot trace it to a single repository, or domain system! These are our architectural decisions, exceptions, duplicated capabilities, temporary solutions (that live forever), architectural compromises and more.\n\nTo talk about the impact of Architectural Debt we have invited Nadzeya Stalbouskaya, Co-Founder, Enterprise Architecture & Transformation Adviser. Together we’ll discuss the various aspects of Architectural Debt, how to identify it, how it manifests and what that means for organizations.\n\nLet’s discuss how to manage it without making Enterprise Architecture a bloated bureaucratic sinkhole!",
+    "date": "2026-10-14",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-10-14",
+        "endDate": "2026-10-14",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Architecture Debt: The hidden risk that breaks transformations",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7500620321914347520/",
+    "YT": "https://youtube.com/live/FlhClL5Drf0"
   }
 ]
