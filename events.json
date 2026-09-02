@@ -1786,6 +1786,19 @@
     "date": "2026-10-14",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Nadzeya Stalbouskaya",
+        "role": "Co-Founder, Enterprise Architecture & Transformation Adviser",
+        "photo": "Nadzeya_Stalbouskaya.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "photo": "/Karol_portrait.webp",
+        "role": "Integration Architect",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
