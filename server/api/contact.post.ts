@@ -4,7 +4,13 @@ import * as nodemailer from 'nodemailer'
 import * as path from 'path'
 import fs from 'fs'
 import { isRecaptchaValid, verifyRecaptcha } from '~/server/utils/recaptcha'
-import { isValidEmail, sanitizeString } from '~/server/utils/validation'
+import {
+  getErrorMessage,
+  getErrorResponseData,
+  isPlainRecord,
+  isValidEmail,
+  sanitizeString
+} from '~/server/utils/validation'
 
 const SERVICE_ACCOUNT_KEY_FILE: string = path.join(process.cwd(), 'gmail.private.key.json')
 
@@ -13,7 +19,11 @@ const FROM_ADDRESS: string = 'info@bridgingthegap.eu.com'
 const SCOPES: string[] = ['https://www.googleapis.com/auth/gmail.send']
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event)
+  const body = await readBody<unknown>(event)
+  if (!isPlainRecord(body)) {
+    return { status: 400, body: 'Invalid request body' }
+  }
+
   const { name, email, message, token } = body
 
   if (!token) {
@@ -40,8 +50,8 @@ export default defineEventHandler(async (event) => {
 
   const config = useRuntimeConfig()
 
-  const USER_TO_IMPERSONATE: string = config.USER_TO_IMPERSONATE
-  const RECIPIENT_EMAIL: string = config.RECIPIENT_EMAIL
+  const userToImpersonate: string = config.userToImpersonate
+  const recipientEmail: string = config.recipientEmail
   const EMAIL_SUBJECT: string = `Website Contact Form ${sanitizedName ? `from ${sanitizedName}` : ''}`
   const EMAIL_TEXT_BODY: string = `${sanitizedName ? `Message from ${sanitizedName}\n` : ''}${sanitizedEmail ? `Email for replies ${sanitizedEmail}\n\n` : sanitizedName ? '\n' : ''}${sanitizedMessage}`
 
@@ -54,7 +64,7 @@ export default defineEventHandler(async (event) => {
       email: credentials.client_email,
       key: credentials.private_key,
       scopes: SCOPES,
-      subject: USER_TO_IMPERSONATE
+      subject: userToImpersonate
     })
 
     await auth.authorize()
@@ -69,7 +79,7 @@ export default defineEventHandler(async (event) => {
 
     const mailOptions: nodemailer.SendMailOptions = {
       from: FROM_ADDRESS,
-      to: RECIPIENT_EMAIL,
+      to: recipientEmail,
       subject: EMAIL_SUBJECT,
       text: EMAIL_TEXT_BODY
     }
@@ -96,10 +106,11 @@ export default defineEventHandler(async (event) => {
         raw: base64EncodedEmail
       }
     })
-  } catch (error: any) {
-    console.error('Error sending email:', error.message || error)
-    if (error.response && error.response.data) {
-      console.error('Error details:', error.response.data)
+  } catch (error: unknown) {
+    console.error('Error sending email:', getErrorMessage(error))
+    const responseData = getErrorResponseData(error)
+    if (responseData !== undefined) {
+      console.error('Error details:', responseData)
     }
     return { status: 500, body: 'Error sending email' }
   }

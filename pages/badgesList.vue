@@ -1,366 +1,617 @@
 <template>
-  <div class="h-full w-full flex flex-col">
-    <div
-      v-if="messageDialog"
-      class="absolute flex items-center justify-center w-screen h-screen top-0 left-0 bg-gray-500/75 transition-opacity z-10"
-    >
-      <div
-        class="bg-white dark:bg-neutral-950 rounded-lg p-8 flex flex-col justify-center text-center"
-      >
-        <div>
-          {{ errorMessage }}
+  <div class="badges-page">
+    <section class="badge-lookup" :aria-busy="collectingData">
+      <header class="badge-lookup-heading">
+        <img src="~/assets/logo_low_poly.webp" alt="" aria-hidden="true" />
+        <h1>Your badges</h1>
+        <p v-if="!hasResults">
+          Enter your email address and we’ll find any badges issued to you by BridgingTheGap.eu.com.
+        </p>
+      </header>
+
+      <form v-if="!hasResults" class="badge-form" novalidate @submit.prevent="submit">
+        <div class="email-field">
+          <label for="badge-email">Email address</label>
+          <div class="email-control" :class="{ 'has-error': invalidEmailAddress }">
+            <SvgIcon :path="mdiEmailOutline" :size="20" type="mdi" aria-hidden="true" />
+            <input
+              id="badge-email"
+              v-model="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              :aria-invalid="invalidEmailAddress"
+              :aria-describedby="emailDescription"
+              @blur="emailTouched = true"
+              @input="clearLookupMessage"
+            />
+          </div>
+          <p v-if="invalidEmailAddress" id="badge-email-error" class="field-error" role="alert">
+            Enter a valid email address.
+          </p>
         </div>
+
+        <p
+          v-if="lookupMessage"
+          id="badge-lookup-status"
+          class="lookup-status"
+          :class="`is-${lookupMessageType}`"
+          role="status"
+        >
+          {{ lookupMessage }}
+        </p>
+
         <button
-          :class="{
-            'hover:bg-neutral-100': errorMessage,
-            'dark:hover:bg-neutral-700': errorMessage
-          }"
-          :tabindex="errorMessage ? '0' : '-1'"
-          class="py-2.5 mt-5 self-center cursor-pointer w-32 bg-neutral-50 rounded-lg border border-neutral-200 dark:bg-neutral-800 dark:text-white text-neutral-600 dark:border-neutral-600"
+          class="lookup-submit"
           type="submit"
-          @click="messageDialog = false"
+          :disabled="submitDisabled"
+          :aria-describedby="lookupMessage ? 'badge-lookup-status' : undefined"
         >
-          OK
+          <span v-if="collectingData" class="loading-indicator" aria-hidden="true" />
+          {{ collectingData ? 'Finding your badges…' : 'Find my badges' }}
         </button>
-      </div>
-    </div>
-    <div class="flex-1 flex flex-col justify-center">
-      <div class="mt-8 mb-8">
-        <img
-          alt="Bridging the Gap Logo"
-          class="m-auto w-1/6 min-w-64 dark:invert"
-          src="~/assets/logo.webp"
-        />
-      </div>
-      <form
-        v-if="badgesList.length === 0"
-        class="flex flex-col items-center w-full"
-        @submit.prevent="submit"
-      >
-        <h2 class="text-center">Showcase Your Achievements</h2>
-        <div class="my-5 w-80">
-          <label
-            :class="{ 'text-red-500': invalidEmailAddress }"
-            class="block mb-2 text-center"
-            for="email"
-            >Email address</label
-          >
-          <input
-            id="email"
-            v-model="email"
-            :class="{ invalidEmail: invalidEmailAddress }"
-            aria-describedby="Email address"
-            class="border border-neutral-200 bg-transparent rounded-lg block p-2.5 w-full dark:border-neutral-600 placeholder-neutral-400 dark:placeholder-neutral-400"
-            type="email"
-          />
-        </div>
-        <div class="flex flex-col">
-          <button
-            :class="{
-              'hover:bg-neutral-100': email,
-              'dark:hover:bg-neutral-700': email,
-              'cursor-not-allowed': !email || collectingData || invalidEmailAddress,
-              'opacity-50': !email || collectingData || invalidEmailAddress,
-              'cursor-pointer': email && !collectingData && !invalidEmailAddress
-            }"
-            :disabled="!email || collectingData"
-            :tabindex="email ? '0' : '-1'"
-            class="py-2.5 mt-5 self-center w-44 bg-neutral-50 rounded-lg border border-neutral-200 dark:bg-neutral-800 dark:text-white text-neutral-600 dark:border-neutral-600"
-            type="submit"
-          >
-            <template v-if="collectingData">
-              <div class="flex w-full justify-center">
-                <svg
-                  class="animate-spin text-black dark:text-gray-100 hover:text-black dark:hover:text-white mr-2 max-h-5 max-w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle
-                    class="opacity-25"
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    stroke-width="4"
-                  />
-                  <path
-                    class="opacity-75"
-                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                    fill="currentColor"
-                  />
-                </svg>
-                <span>Processing...</span>
-              </div>
-            </template>
-            <template v-else>Show me my badges</template>
-          </button>
-        </div>
+
+        <p class="privacy-note">
+          <SvgIcon :path="mdiLockOutline" :size="19" type="mdi" aria-hidden="true" />
+          <span>We’ll only use your email address to find badges issued to you.</span>
+        </p>
       </form>
-      <div v-else id="list" class="flex flex-col">
-        <h1 class="text-center mb-1">Congratulations! Here Are Your Achievements</h1>
-        <h4 class="text-center mb-3">Showing badges awarded to {{ email }}</h4>
-        <div v-for="badge of badgesList" :key="badge._id">
-          <NuxtLink
-            :to="`/issuedBadge?id=${badge._id}`"
-            class="flex md:flex-row flex-col items-center border dark:border-neutral-600 rounded-lg p-4 mb-4 bg-gray-50 dark:bg-neutral-950 hover:shadow-lg dark:shadow-neutral-100"
-            target="_blank"
-          >
-            <img :src="badge.image" alt="Achievement image" class="w-36 dark:invert" />
-            <div class="mx-5 md:text-left text-center">
-              <h2>{{ badge.name }}</h2>
-              <div class="mb-2">{{ badge.description }}</div>
-              <div>Issued by <b>BridgingTheGap.eu.com</b> on {{ badge.issuanceDate }}</div>
-            </div>
-          </NuxtLink>
+
+      <div v-else id="results" ref="resultsSection" class="badge-results">
+        <div class="result-identity">
+          <span>{{ submittedEmail }}</span>
         </div>
+
+        <p class="result-count" aria-live="polite">
+          {{ badgesList.length }} {{ badgesList.length === 1 ? 'result' : 'results' }} found
+        </p>
+
+        <h2 ref="resultsHeading" class="sr-only" tabindex="-1">
+          Badges issued to {{ submittedEmail }}
+        </h2>
+
+        <ul class="badge-list">
+          <li v-for="badge in badgesList" :key="badge.id" class="badge-result">
+            <img :src="badge.image" :alt="`Artwork for ${badge.name}`" />
+            <div class="badge-result-content">
+              <h3>{{ badge.name }}</h3>
+              <p>Badge</p>
+              <time :datetime="badge.issuedOn">
+                <SvgIcon :path="mdiCalendarBlankOutline" :size="17" type="mdi" aria-hidden="true" />
+                Earned {{ formatDate(badge.issuedOn) }}
+              </time>
+            </div>
+            <NuxtLink
+              class="badge-action"
+              :to="{ path: '/issuedBadge', query: { id: badge.id } }"
+              target="_blank"
+              :aria-label="`View ${badge.name} badge in a new tab`"
+            >
+              View badge
+            </NuxtLink>
+          </li>
+        </ul>
+
+        <p class="results-help">
+          <SvgIcon :path="mdiHelpCircleOutline" :size="20" type="mdi" aria-hidden="true" />
+          <span>
+            Can’t find your badge? Make sure you’re using the email address you used when you
+            registered or attended the event.
+          </span>
+        </p>
       </div>
-    </div>
-    <div v-if="badgesList.length === 0" class="text-center w-full">
-      <div class="text-xs text-gray-600 dark:text-gray-400">
-        This site is protected by reCAPTCHA and the Google
-        <a
-          class="link items-end text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-          href="https://policies.google.com/privacy"
-          target="_blank"
-          >Privacy Policy</a
-        >
-        and
-        <a
-          class="link items-end text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-          href="https://policies.google.com/terms"
-          target="_blank"
-          >Terms of Service</a
-        >
-        apply.
-      </div>
-    </div>
+    </section>
+
+    <p v-if="!hasResults" class="recaptcha-notice">
+      This site is protected by reCAPTCHA and the Google
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer"
+        >Privacy Policy</a
+      >
+      and
+      <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer"
+        >Terms of Service</a
+      >
+      apply.
+    </p>
   </div>
 </template>
 
 <script lang="ts" setup>
+import SvgIcon from '@jamescoyle/vue-icon'
+import {
+  mdiCalendarBlankOutline,
+  mdiEmailOutline,
+  mdiHelpCircleOutline,
+  mdiLockOutline
+} from '@mdi/js'
+import { DateTime } from 'luxon'
+import { type IReCaptchaComposition, useReCaptcha } from 'vue-recaptcha-v3'
+import type { BadgeContent } from '~/Types/OpenBadges.20'
+import type { OpenBadgesDescription20 } from '~/Types/OpenBadgesDescription.20'
+import { extractBadgeId } from '~/utils/badges'
+
 usePageSeo({
   title: 'Open Badges',
   description:
-    'Look up and showcase your Open Badges earned through Bridging the Gap workshops and educational events.',
+    'Look up and showcase your Open Badges earned through BridgingTheGap.eu.com workshops and educational events.',
   path: '/badgesList'
 })
 
-import { type IReCaptchaComposition, useReCaptcha } from 'vue-recaptcha-v3'
-import { useRoute } from 'vue-router'
-import { DateTime } from 'luxon'
-import type { BadgeContent } from '~/Types/OpenBadges.20.d.ts'
-import type { OpenBadgesDescription20 } from '~/Types/OpenBadgesDescription.20'
-
-interface BadgesList {
-  _id: string
-  issuanceDate: string
+interface BadgeResult {
+  id: string
+  issuedOn: string
   description: string
   image: string
   name: string
 }
 
+type LookupMessageType = 'error' | 'not-found'
+
 const email = ref('')
+const submittedEmail = ref('')
+const emailTouched = ref(false)
 const collectingData = ref(false)
+const recaptchaReady = ref(false)
+const lookupMessage = ref('')
+const lookupMessageType = ref<LookupMessageType>('error')
+const badgesList = ref<BadgeResult[]>([])
+const resultsSection = useTemplateRef<HTMLElement>('resultsSection')
+const resultsHeading = useTemplateRef<HTMLElement>('resultsHeading')
 
-const messageDialog = ref(false)
-const errorMessage = ref('')
+let recaptcha: IReCaptchaComposition | undefined
 
-const badgesList: Ref<Array<BadgesList>> = ref([])
+if (import.meta.client) recaptcha = useReCaptcha()
 
-const router = useRouter()
-const route = useRoute()
+const hasResults = computed(() => badgesList.value.length > 0)
+const emailIsInvalid = computed(
+  () => email.value.trim() !== '' && !/^[\w-.]+@([\w-]+\.)+[\w-]{2,}$/.test(email.value.trim())
+)
+const invalidEmailAddress = computed(() => emailTouched.value && emailIsInvalid.value)
+const submitDisabled = computed(
+  () => !email.value.trim() || emailIsInvalid.value || collectingData.value || !recaptchaReady.value
+)
+const emailDescription = computed(() => {
+  const descriptions = []
+  if (invalidEmailAddress.value) descriptions.push('badge-email-error')
+  if (lookupMessage.value) descriptions.push('badge-lookup-status')
+  return descriptions.join(' ') || undefined
+})
 
-let recaptcha: IReCaptchaComposition | undefined = undefined
-
-if (import.meta.client) {
-  recaptcha = useReCaptcha()
-}
-
-/**
- * onMounted
- */
 onMounted(async () => {
-  if (recaptcha) {
-    try {
-      await recaptcha.recaptchaLoaded()
-    } catch (error) {
-      console.error('reCAPTCHA failed to load:', error)
-    }
-  }
-})
-
-/**
- * A computed property that determines whether the provided email address is invalid.
- * The email address is considered invalid if it is not empty and does not match
- * the standard email format pattern.
- *
- * The validity is evaluated based on the following conditions:
- * - The `email` value must not be empty.
- * - The `email` value must conform to the regular expression pattern for standard email format:
- *   `^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$`.
- *
- * This property is reactive and updates whenever the value of `email` changes.
- */
-const invalidEmailAddress = computed(() => {
-  return email.value !== '' && !/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email.value)
-})
-
-/**
- * Asynchronous function `submit` is responsible for validating the user input, executing reCAPTCHA,
- * and subsequently fetching the user's badge data from the server.
- * It handles different success and failure scenarios and updates the app's state accordingly.
- *
- * Functionality:
- * - Checks for invalid email input or missing reCAPTCHA instance and exits early if found.
- * - Sets up loading indicators and clears existing badge data.
- * - Loads and executes reCAPTCHA to retrieve the verification token.
- * - Sends a POST request to fetch user badge data using the email and reCAPTCHA token.
- * - Handles various response states:
- *   - No response or error -> Displays a generic error message.
- *   - Empty array response -> Displays a message indicating no badges found for the given email.
- *   - Successful response with badges -> Processes badges and navigates to the badge list.
- * - Handles and logs any errors encountered during the reCAPTCHA or fetch operations.
- *
- * Variables:
- * - `invalidEmailAddress.value`: Indicates whether the email input is valid.
- * - `recaptcha`: Represents the reCAPTCHA instance.
- * - `collectingData.value`: Tracks the loading state during data submission.
- * - `badgesList.value`: Holds the list of badges fetched from the server.
- * - `messageDialog.value`: Controls visibility of the error message dialog.
- * - `errorMessage.value`: Stores the error message to be displayed.
- * - `email.value`: Contains the email address entered by the user.
- *
- * Error Handling:
- * - Displays a generic error message if the reCAPTCHA fails or no response is received from the server.
- * - Logs detailed error information to the console for debugging purposes.
- */
-const submit = async () => {
-  if (invalidEmailAddress.value || collectingData.value || !recaptcha) {
+  if (!recaptcha) {
+    showLookupMessage('Badge lookup is unavailable right now. Please try again later.')
     return
   }
+
+  try {
+    await recaptcha.recaptchaLoaded()
+    recaptchaReady.value = true
+  } catch (error) {
+    console.error('reCAPTCHA failed to load:', error)
+    showLookupMessage('Badge lookup is unavailable right now. Please try again later.')
+  }
+})
+
+function clearLookupMessage() {
+  if (lookupMessage.value) lookupMessage.value = ''
+}
+
+function showLookupMessage(message: string, type: LookupMessageType = 'error') {
+  lookupMessage.value = message
+  lookupMessageType.value = type
+}
+
+function normalizeDevelopmentUrl(url: string) {
+  return process.env.NODE_ENV === 'development'
+    ? url.replace('https://bridgingthegap.eu.com', 'http://localhost:3000')
+    : url
+}
+
+async function submit() {
+  emailTouched.value = true
+  clearLookupMessage()
+
+  if (submitDisabled.value || !recaptcha) return
 
   collectingData.value = true
   badgesList.value = []
 
   try {
     await recaptcha.recaptchaLoaded()
-
     const token = await recaptcha.executeRecaptcha('submit_message')
-
     const response = await $fetch('/api/getUserBadges', {
       method: 'POST',
-      body: {
-        email: email.value,
-        token
-      }
+      body: { email: email.value.trim(), token }
     })
 
-    if (!response) {
-      messageDialog.value = true
-      errorMessage.value = 'Sorry, something went wrong. Please try again later.'
-    } else {
-      if (Array.isArray(response) && response.length === 0) {
-        messageDialog.value = true
-        errorMessage.value = `Hmm, We couldn't find any badges here. We searched for badges awarded to ${email.value} but didn't find any.`
-      } else {
-        await processBadges(response as unknown as Array<BadgeContent>)
-        await nextTick(async () => {
-          await router.push({
-            hash: '#list'
-          })
-        })
-      }
+    if (!Array.isArray(response) || response.length === 0) {
+      showLookupMessage(
+        `We couldn’t find any badges issued to ${email.value.trim()}. Check the address and try again.`,
+        'not-found'
+      )
+      return
     }
+
+    badgesList.value = await processBadges(response as unknown as BadgeContent[])
+    submittedEmail.value = email.value.trim()
+    window.history.replaceState(window.history.state, '', `${window.location.pathname}#results`)
+
+    await nextTick()
+    resultsHeading.value?.focus({ preventScroll: true })
+    resultsSection.value?.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      block: 'start'
+    })
   } catch (error) {
-    messageDialog.value = true
-    errorMessage.value = 'Sorry, something went wrong. Please try again later.'
-    console.error('reCAPTCHA failed to load:', error)
-  }
-
-  collectingData.value = false
-}
-
-/**
- * Asynchronously processes and retrieves badge data and updates the badge list.
- *
- * This function fetches and processes badge data from a given array of `SignedBadge` objects.
- * It constructs a list of data retrieval promises based on the badge URLs, attempts to fetch data
- * for all the badges in parallel, and updates the badge list with retrieved information,
- * including details such as description, issuance date, and image.
- *
- * During development mode, URLs are dynamically replaced to correspond to the local development server.
- * Handles errors by logging them and updating user-facing error messages.
- *
- * @param {Array<BadgeContent>} badges - An array of `SignedBadge` objects to be processed.
- * @returns {Promise<void>} A promise that resolves once all badge information is processed.
- */
-const processBadges = async (badges: Array<BadgeContent>): Promise<void> => {
-  try {
-    for (let i = 0; i < badges.length; i++) {
-      const badge = badges[i] as BadgeContent
-
-      let imageUrl = badge.image
-
-      // Development workaround
-      if (process.env.NODE_ENV === 'development') {
-        imageUrl = imageUrl.replace('https://bridgingthegap.eu.com', 'http://localhost:3000')
-      }
-
-      if (badge) {
-        let badgeDescriptor = badge.badge
-
-        if (process.env.NODE_ENV === 'development') {
-          badgeDescriptor = badgeDescriptor.replace(
-            'https://bridgingthegap.eu.com',
-            'http://localhost:3000'
-          )
-        }
-
-        const badgeDetails = await $fetch(badgeDescriptor)
-
-        const id = badge.id.replace('https://bridgingthegap.eu.com/api/credentials/', '')
-
-        badgesList.value.push({
-          _id: encodeURI(id),
-          issuanceDate: DateTime.fromISO(badge.issuedOn).toJSDate().toLocaleString('en-GB', {
-            weekday: 'long',
-            month: 'long',
-            day: 'numeric',
-            year: 'numeric'
-          }),
-          description: (badgeDetails as OpenBadgesDescription20).description,
-          image: imageUrl,
-          name: (badgeDetails as OpenBadgesDescription20).name
-        })
-      }
+    const statusCode = getErrorStatus(error)
+    if (statusCode === 404) {
+      showLookupMessage(
+        `We couldn’t find any badges issued to ${email.value.trim()}. Check the address and try again.`,
+        'not-found'
+      )
+    } else {
+      console.error('Badge lookup failed:', error)
+      showLookupMessage('Something went wrong while finding your badges. Please try again.')
     }
-  } catch (e) {
-    console.error(e)
-    messageDialog.value = true
-    errorMessage.value = 'Sorry, something went wrong. Please try again later.'
+  } finally {
+    collectingData.value = false
   }
 }
 
-watch(route, (current) => {
-  if (!current.hash || current.hash !== '#list') {
-    badgesList.value = []
-  }
-})
+async function processBadges(badges: BadgeContent[]): Promise<BadgeResult[]> {
+  return Promise.all(
+    badges.map(async (badge) => {
+      const badgeDetails = await $fetch<OpenBadgesDescription20>(
+        normalizeDevelopmentUrl(badge.badge)
+      )
+      const id = extractBadgeId(badge.id)
+
+      if (!id) throw new Error(`Invalid badge assertion ID: ${badge.id}`)
+
+      return {
+        id,
+        issuedOn: badge.issuedOn,
+        description: badgeDetails.description,
+        image: normalizeDevelopmentUrl(badge.image),
+        name: badgeDetails.name
+      }
+    })
+  )
+}
+
+function getErrorStatus(error: unknown) {
+  if (!error || typeof error !== 'object') return undefined
+  const fetchError = error as { statusCode?: number; response?: { status?: number } }
+  return fetchError.statusCode ?? fetchError.response?.status
+}
+
+function formatDate(value: string) {
+  const locale = import.meta.client ? navigator.language : 'en'
+  return DateTime.fromISO(value)
+    .setLocale(locale)
+    .toLocaleString({ day: 'numeric', month: 'long', year: 'numeric' })
+}
 </script>
 
-<style lang="scss" scoped>
-.invalidEmail {
-  color: theme('colors.red.500');
-  border-color: theme('colors.red.500');
-  outline-color: theme('colors.red.500');
+<style scoped>
+.badges-page {
+  display: flex;
+  width: min(100%, 58rem);
+  min-height: calc(100dvh - 8.5rem);
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem) 0 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  &:before {
-    content: 'Invalid email address';
-    position: absolute;
-    bottom: 1rem;
-    left: 2rem;
-    font-size: 0.7rem;
+.badge-lookup {
+  width: 100%;
+}
+
+.badge-lookup-heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.badge-lookup-heading img {
+  width: 7rem;
+  height: 4.5rem;
+  margin-bottom: 0.35rem;
+  filter: grayscale(1) brightness(0);
+  object-fit: contain;
+}
+
+:global(.dark .badge-lookup-heading img) {
+  filter: grayscale(1) brightness(0) invert(1);
+}
+
+.badge-lookup-heading h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.badge-lookup-heading p {
+  max-width: 52ch;
+  margin: 0.65rem 0 0;
+  color: var(--editorial-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.badge-form {
+  display: flex;
+  width: min(100%, 31rem);
+  margin: 1.5rem auto 0;
+  flex-direction: column;
+}
+
+.email-field label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.email-control {
+  display: flex;
+  align-items: center;
+  min-height: 3.1rem;
+  padding: 0 0.85rem;
+  border: 1px solid var(--editorial-border-strong);
+  border-radius: 0.4rem;
+  color: var(--editorial-muted);
+  background: var(--editorial-surface);
+  gap: 0.65rem;
+}
+
+.email-control:focus-within {
+  border-color: var(--editorial-text);
+}
+
+.email-control.has-error {
+  border-color: currentColor;
+  color: #a52a2a;
+}
+
+.email-control input {
+  width: 100%;
+  min-width: 0;
+  padding: 0.8rem 0;
+  border: 0;
+  outline: 0;
+  color: var(--editorial-text);
+  background: transparent;
+  font: inherit;
+}
+
+.email-control input::placeholder {
+  color: var(--editorial-muted);
+}
+
+.field-error,
+.lookup-status {
+  margin: 0.45rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.field-error,
+.lookup-status.is-error {
+  color: #a52a2a;
+}
+
+:global(.dark .field-error),
+:global(.dark .lookup-status.is-error) {
+  color: #ffaaaa;
+}
+
+.lookup-status.is-not-found {
+  color: var(--editorial-muted);
+}
+
+.lookup-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 16rem);
+  min-height: 3rem;
+  margin: 1rem auto 0;
+  padding: 0.65rem 1.25rem;
+  border: 1px solid var(--editorial-text);
+  border-radius: 0.35rem;
+  color: var(--editorial-bg);
+  background: var(--editorial-text);
+  font-weight: 700;
+  gap: 0.55rem;
+}
+
+.lookup-submit:hover:not(:disabled) {
+  background: var(--editorial-accent-hover);
+}
+
+.lookup-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.loading-indicator {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: lookup-spin 0.75s linear infinite;
+}
+
+.privacy-note {
+  display: flex;
+  align-items: flex-start;
+  max-width: 25rem;
+  margin: 0.85rem auto 0;
+  color: var(--editorial-muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  gap: 0.55rem;
+}
+
+.privacy-note svg {
+  flex: 0 0 auto;
+}
+
+.recaptcha-notice {
+  margin: 1.75rem 0 0;
+  color: var(--editorial-muted);
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.recaptcha-notice a {
+  color: var(--editorial-text);
+  text-decoration: underline;
+  text-underline-offset: 0.16rem;
+}
+
+.badge-results {
+  margin-top: 0.6rem;
+  scroll-margin-top: 6rem;
+}
+
+.result-identity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.65rem;
+  color: var(--editorial-muted);
+  font-size: 0.85rem;
+  gap: 0.9rem;
+}
+
+.result-count {
+  margin: 0.45rem 0 0.85rem;
+  color: var(--editorial-muted);
+  font-size: 0.82rem;
+  text-align: center;
+}
+
+.badge-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  gap: 0.7rem;
+  list-style: none;
+}
+
+.badge-result {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: center;
+  min-height: 6.2rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--editorial-border);
+  border-radius: 0.4rem;
+  background: var(--editorial-surface);
+  gap: 1rem;
+}
+
+.badge-result > img {
+  width: 4rem;
+  height: 4rem;
+  filter: grayscale(1);
+  object-fit: contain;
+}
+
+.badge-result h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.badge-result-content > p {
+  margin: 0.2rem 0 0;
+  color: var(--editorial-muted);
+  font-size: 0.76rem;
+}
+
+.badge-result time {
+  display: flex;
+  align-items: center;
+  margin-top: 0.45rem;
+  color: var(--editorial-muted);
+  font-size: 0.76rem;
+  gap: 0.35rem;
+}
+
+.badge-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 7.5rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--editorial-border-strong);
+  border-radius: 0.35rem;
+  color: var(--editorial-text);
+  background: var(--editorial-bg);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.badge-action:hover {
+  border-color: var(--editorial-text);
+  background: var(--editorial-surface-muted);
+}
+
+.results-help {
+  display: flex;
+  align-items: flex-start;
+  max-width: 36rem;
+  margin: 1.15rem auto 0;
+  color: var(--editorial-muted);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  gap: 0.6rem;
+}
+
+.results-help svg {
+  flex: 0 0 auto;
+}
+
+@keyframes lookup-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-indicator {
+    animation-duration: 1.5s;
+  }
+}
+
+@media (max-width: 42rem) {
+  .badges-page {
+    justify-content: flex-start;
+    min-height: 0;
+    padding-top: 2.25rem;
+  }
+
+  .badge-result {
+    grid-template-columns: 3.75rem minmax(0, 1fr);
+  }
+
+  .badge-result > img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .badge-action {
+    grid-column: 1 / -1;
+    width: 100%;
   }
 }
 </style>

@@ -110,9 +110,9 @@
 </template>
 
 <script lang="ts" setup>
-useSeoMeta({ robots: 'noindex, nofollow' })
-
 import { type IReCaptchaComposition, useReCaptcha } from 'vue-recaptcha-v3'
+
+useSeoMeta({ robots: 'noindex, nofollow' })
 
 interface ApiResponse {
   status: number

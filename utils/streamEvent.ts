@@ -1,6 +1,9 @@
 import events from '~/events.json'
+import type { Event } from '~/Types/Event'
 
-type StreamEvent = (typeof events)[number]
+export type StreamEvent = Event
+
+const streamEvents = events as unknown as Event[]
 
 export function slugifyStreamName(name: string): string {
   return name
@@ -14,14 +17,21 @@ export function slugifyStreamName(name: string): string {
 }
 
 export function extractYoutubeVideoId(ytUrl: string): string {
-  return ytUrl.replace(/.*\//, '')
+  const match = ytUrl.match(
+    /(?:youtu\.be\/|(?:youtube\.com\/)(?:live\/|watch\?v=|embed\/))([\w-]{11})/
+  )
+  return match?.[1] ?? ytUrl.replace(/.*\//, '').replace(/[?&].*$/, '')
+}
+
+export function isYoutubeVideoId(value: string): boolean {
+  return /^[\w-]{11}$/.test(value)
 }
 
 export function findStreamEvent(routeParam: string): StreamEvent | undefined {
-  return events.find((event) => {
+  return streamEvents.find((event) => {
     if (event.YT) {
       const ytId = extractYoutubeVideoId(event.YT)
-      if (ytId === routeParam || event.YT.includes(routeParam)) {
+      if (ytId === routeParam) {
         return true
       }
     }
@@ -32,4 +42,9 @@ export function findStreamEvent(routeParam: string): StreamEvent | undefined {
 
 export function getStreamDescription(event: StreamEvent, maxLength = 160): string {
   return event.description.replace(/\n+/g, ' ').trim().slice(0, maxLength)
+}
+
+export function resolveStreamSpeakerPhoto(photo?: string): string | undefined {
+  if (!photo || photo.startsWith('/') || /^https?:\/\//.test(photo)) return photo
+  return `/streams/${photo}`
 }

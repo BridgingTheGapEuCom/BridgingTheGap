@@ -1,9 +1,13 @@
 import { SubscriptionSchema } from '~/server/models/subscription.schema'
 import { isRecaptchaValid, verifyRecaptcha } from '~/server/utils/recaptcha'
-import { isValidEmail } from '~/server/utils/validation'
+import { isErrorWithCode, isPlainRecord, isValidEmail } from '~/server/utils/validation'
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event)
+  const body = await readBody<unknown>(event)
+  if (!isPlainRecord(body)) {
+    return { status: 400, body: 'Invalid request body' }
+  }
+
   const { email, token } = body
 
   if (!token) {
@@ -23,8 +27,8 @@ export default defineEventHandler(async (event) => {
   try {
     await SubscriptionSchema.create({ email })
     return { status: 200 }
-  } catch (error: any) {
-    if (error?.code === 11000) {
+  } catch (error: unknown) {
+    if (isErrorWithCode(error) && error.code === 11000) {
       return { status: 409, body: 'Email already subscribed' }
     }
     console.error('Error adding subscriber:', error)

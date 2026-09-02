@@ -1013,6 +1013,7 @@
     "relatedTags": ["Broker Architecture"],
     "publishDate": "2025-05-24",
     "lastUpdate": "2025-05-24",
+    "readingMinutes": 10,
     "authors": [
       {
         "author": "Karol Skrzymowski",
@@ -1236,6 +1237,7 @@
     "relatedTags": ["Business"],
     "publishDate": "2026-04-03",
     "lastUpdate": "2026-04-03",
+    "readingMinutes": 14,
     "authors": [
       {
         "author": "Hubert Drabczyk",

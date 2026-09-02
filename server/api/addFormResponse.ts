@@ -1,9 +1,13 @@
 import { FormResponseSchema } from '~/server/models/form.schema'
 import { isRecaptchaValid, verifyRecaptcha } from '~/server/utils/recaptcha'
-import { isPlainStringRecord, isValidEmail } from '~/server/utils/validation'
+import { isPlainRecord, isPlainStringRecord, isValidEmail } from '~/server/utils/validation'
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event)
+  const body = await readBody<unknown>(event)
+  if (!isPlainRecord(body)) {
+    return { status: 400, body: 'Invalid request body' }
+  }
+
   const { formBody, token } = body
 
   if (!token) {
@@ -16,7 +20,7 @@ export default defineEventHandler(async (event) => {
     return { status: 400, body: 'Recaptcha verification failed' }
   }
 
-  if (!formBody || typeof formBody !== 'object') {
+  if (!isPlainRecord(formBody)) {
     return { status: 400, body: 'Invalid request body' }
   }
 

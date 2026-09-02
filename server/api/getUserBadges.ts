@@ -1,10 +1,14 @@
 import Badge20Schema from '~/server/models/badge.schema'
 import { createHash } from 'crypto'
 import { isRecaptchaValid, verifyRecaptcha } from '~/server/utils/recaptcha'
-import { isValidEmail } from '~/server/utils/validation'
+import { isPlainRecord, isValidEmail } from '~/server/utils/validation'
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event)
+  const body = await readBody<unknown>(event)
+  if (!isPlainRecord(body)) {
+    throw createError({ statusCode: 400, statusMessage: 'Invalid request body' })
+  }
+
   const { email, token } = body
 
   if (!token) {

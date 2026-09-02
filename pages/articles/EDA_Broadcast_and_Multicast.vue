@@ -196,8 +196,6 @@
 <script setup lang="ts">
 import EDA_Asynchronous_Broadcast_Multicast from '~/components/articles/EDA_Broadcast_and_Multicast/EDA_Asynchronous_Broadcast_Multicast.vue'
 import EDA_Asynchronous_Broadcast_Multicast_Bridged from '~/components/articles/EDA_Broadcast_and_Multicast/EDA_Asynchronous_Broadcast_Multicast_Bridged.vue'
-
-const dark = useState('dark', () => false)
 </script>
 
 <style scoped></style>

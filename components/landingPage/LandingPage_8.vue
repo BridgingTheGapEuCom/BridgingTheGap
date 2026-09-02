@@ -1,15 +1,8 @@
 <template>
-  <LandingPageLandingLayout
-    :page-id="8"
-    :last-page="true"
-  >
+  <LandingPageLandingLayout :page-id="8" :last-page="true">
     <div class="text-center flex flex-col items-center justify-center mt-5">
-      <div style="font-size: min(5dvh, 10dvw)">
-        Join our Newsletter
-      </div>
-      <div style="font-size: min(5dvh, 10dvw)">
-        and Get Notified!
-      </div>
+      <div style="font-size: min(5dvh, 10dvw)">Join our Newsletter</div>
+      <div style="font-size: min(5dvh, 10dvw)">and Get Notified!</div>
     </div>
     <div
       v-if="!SubscribeMessage"
@@ -21,38 +14,32 @@
         class="email w-full"
         :class="{ invalidEmail: invalidEmailAddress, 'mb-4': invalidEmailAddress }"
         label="Your Email address"
-        :icon="mdiAt"
+        icon="mdi:at"
       />
       <button
         class="bg-gray-200 border border-gray-500 p-3 mt-4 rounded-lg dark:text-black min-w-28"
-        :class="{ 'opacity-50': notValid || subscribing, 'cursor-not-allowed': notValid || subscribing }"
+        :class="{
+          'opacity-50': notValid || subscribing,
+          'cursor-not-allowed': notValid || subscribing
+        }"
         :disabled="notValid || subscribing"
         @click="subscribe"
       >
         {{ subscribing ? 'Subscribing...' : 'Subscribe' }}
       </button>
     </div>
-    <div
-      v-else
-      class="text-center font-bold"
-      style="font-size: min(3vh, 5dvw)"
-    >
+    <div v-else class="text-center font-bold" style="font-size: min(3vh, 5dvw)">
       {{ SubscribeMessage }}
     </div>
     <div class="text-center flex flex-col items-center justify-center">
-      <img
-        src="~/assets/logo.webp"
-        class="dark:invert"
-        style="width: 20dvh"
-      >
-      <b>Bridging the Gap</b>
+      <img src="~/assets/logo.webp" class="dark:invert" style="width: 20dvh" />
+      <b>BridgingTheGap.eu.com</b>
     </div>
   </LandingPageLandingLayout>
 </template>
 
 <script lang="ts" setup>
 import BTGInput from '~/components/helpers/BTGInput.vue'
-import { mdiAt } from '@mdi/js'
 import { type IReCaptchaComposition, useReCaptcha } from 'vue-recaptcha-v3'
 
 const email = ref('')

@@ -1,387 +1,538 @@
 <template>
-  <div class="flex-col items-center sm:article">
-    <!-- Logo display -->
-    <div class="flex flex-col mt-10 mb-10">
-      <img
-        src="~/assets/logo.webp"
-        class="m-auto dark:invert"
-        alt="Bridging the Gap Logo"
-      >
-    </div>
-    <!-- Divider line -->
-    <div
-      class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
-    />
-    <!-- Profile section for Karol Skrzymowski -->
-    <div class="flex flex-col lg:flex-row items-center gap-3">
-      <img
-        src="/Karol.webp"
-        class="w-[18rem] h-[18rem] mr-3 grayImage rounded-xl"
-        width="1500"
-        height="1500"
-        alt="Karol Skrzymowski's picture"
-      >
-      <div class="flex flex-col items-center">
-        <div class="text-3xl font-bold my-0">
-          Karol Skrzymowski
-        </div>
-        <div class="text-base font-semibold mb-2">
-          Enterprise / Integration Architect
-        </div>
-        <div class="flex flex-col">
-          <article class="article hyphens-auto">
-            <!-- Bio -->
-            <p class="indent-6">
-              I'm an Enterprise and Integration Architect with a passion for application integration
-              and over a decade of specialized experience in the field. My journey began as a junior
-              developer, who stumbled onto Application Integration by pure chance and stayed for the
-              joy of learning.
-            </p>
-            <p class="indent-6">
-              My expertise lies primarily in API-Led Architecture, although I've also delved into
-              the realm of Event-Driven Architecture (EDA) to broaden my professional toolkit. I've
-              worked extensively with a myriad of integration platforms, including Tibco
-              BusinessWorks 5.x and 6.x, Boomi, WebMethods, Mulesoft, Azure Integration Services,
-              and WSO2, constantly adapting to the evolving landscape of integration technologies.
-            </p>
-            <p class="indent-6">
-              I see the world of Application Integration as not just a profession but a passion. I
-              believe it to be one of the most fascinating fields in IT, with endless possibilities
-              for innovation and problem-solving. To further this belief, I actively try to
-              contribute to helping others understand this field by creating whitepapers and
-              training materials that explain complex integration concepts, empowering others to
-              navigate this exciting domain with confidence.
-            </p>
-            <!-- Social and contact links -->
-            <p class="flex items-center justify-center">
-              <SvgIcon
-                :path="mdiLinkedin"
-                type="mdi"
-                :size="24"
-                class="max-w-8 my-0"
-              />
-              <a
-                class="link ml-2"
-                href="https://www.linkedin.com/in/karolskrzymowski/"
-              >https://www.linkedin.com/in/karolskrzymowski</a>
-            </p>
-            <p class="flex items-center justify-center">
-              <SvgIcon
-                :path="mdiAt"
-                type="mdi"
-                :size="24"
-                class="max-w-6 my-0"
-              />
-              <a
-                class="link ml-2"
-                href="mailto:karol@bridgingthegap.eu.com"
-              >karol@bridgingthegap.eu.com</a>
-            </p>
-          </article>
-        </div>
+  <div class="about-page">
+    <header class="about-hero">
+      <p class="about-eyebrow">About</p>
+      <h1>The people and idea behind</h1>
+      <h1>BridgingTheGap.eu.com</h1>
+      <div class="about-bridge" aria-hidden="true">
+        <img src="~/assets/logo.webp" alt="" />
       </div>
-    </div>
-    <!-- Divider line -->
-    <div
-      class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
-    />
-    <!-- Profile section for Radosław Przewuski -->
-    <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
-      <img
-        src="/Radek.webp"
-        class="w-[18rem] h-[18rem] mr-3 grayImage rounded-xl"
-        width="1500"
-        height="1500"
-        alt="Radoslaw Przewuski's picture"
-      >
-      <div class="flex flex-col items-center">
-        <div class="text-3xl font-bold my-0">
-          Radosław Przewuski
-        </div>
-        <div class="text-base font-semibold mb-2">
-          Integration Platforms Expert
-        </div>
-        <div class="flex flex-col">
-          <article class="article hyphens-auto">
-            <!-- Bio -->
-            <p class="indent-6">
-              Greetings, tech aficionados! I'm the Integration Whisperer, boasting over a decade of
-              experience in the mystical arts of integration platforms. Picture me as the Gandalf of
-              your digital realm, wielding my staff of code with the wisdom of a thousand sages.
-              From the humble beginnings of coding in caves to now surfing the binary waves of
-              innovation, I've journeyed through the ages of technology. It's like I've embarked on
-              an epic quest through the realms of integration, slaying dragons of data inconsistency
-              and forging alliances between disparate systems.
-            </p>
-            <p class="indent-6">
-              With extensive experience in Tibco BusinessWorks, WebMethods, Mulesoft, and more, I'm
-              equipped to cast spells of integration magic like no other. So, whether you're lost in
-              the labyrinth of legacy systems or venturing into the unknown territories of modern
-              APIs, fear not! I'm here to help.
-            </p>
-            <!-- Social and contact links -->
-            <p class="flex items-center justify-center">
-              <SvgIcon
-                :path="mdiLinkedin"
-                type="mdi"
-                :size="24"
-                class="max-w-8 my-0"
-              />
+    </header>
+
+    <section class="project-overview" aria-labelledby="project-heading">
+      <div class="project-summary">
+        <p class="section-eyebrow">About the project</p>
+        <h2 id="project-heading">
+          BridgingTheGap.eu.com is an open-source, vendor-agnostic knowledge base about application
+          integration.
+        </h2>
+        <a
+          class="editorial-action"
+          href="https://github.com/BridgingTheGapEuCom/BridgingTheGap"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SvgIcon :path="mdiGithub" :size="20" type="mdi" aria-hidden="true" />
+          <span>View source code on GitHub</span>
+          <SvgIcon :path="mdiOpenInNew" :size="17" type="mdi" aria-hidden="true" />
+          <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </div>
+
+      <div class="project-description">
+        <p>
+          Application integration is a critical part of modern IT, yet formal, vendor-neutral
+          learning material is surprisingly difficult to find. Much of the available training
+          focuses on particular products rather than the architectural concepts behind them.
+        </p>
+        <p>
+          We collect practical knowledge from people working in the field and make it freely
+          available. Our goal is to explain integration concepts, patterns, and architectural
+          approaches independently of any particular vendor or technology.
+        </p>
+        <p>
+          BridgingTheGap.eu.com is open source and community-driven. We believe collaboration helps
+          create high-quality, unbiased content that supports architects and engineers solving
+          real-world integration challenges.
+        </p>
+      </div>
+    </section>
+
+    <section class="team" aria-labelledby="team-heading">
+      <p id="team-heading" class="section-eyebrow team-heading">
+        The people behind BridgingTheGap.eu.com
+      </p>
+
+      <article v-for="member in team" :key="member.name" class="team-member">
+        <img
+          class="team-portrait"
+          :src="member.photo"
+          :alt="`${member.name} portrait`"
+          :width="member.photoSize"
+          :height="member.photoSize"
+        />
+
+        <div class="team-member-content">
+          <header>
+            <h2>{{ member.name }}</h2>
+            <p>{{ member.role }}</p>
+          </header>
+
+          <div class="team-biography">
+            <p v-for="paragraph in member.biography" :key="paragraph">{{ paragraph }}</p>
+          </div>
+
+          <ul class="team-contact" :aria-label="`${member.name} contact links`">
+            <li>
               <a
-                class="link ml-2"
-                href="https://www.linkedin.com/in/rados%C5%82aw-przewuski/"
-              >https://www.linkedin.com/in/radosław-przewuski/</a>
-            </p>
-            <p class="flex items-center justify-center">
-              <SvgIcon
-                :path="mdiAt"
-                type="mdi"
-                :size="24"
-                class="max-w-6 my-0"
-              />
-              <a
-                class="link ml-2"
-                href="mailto:radek@bridgingthegap.eu.com"
-              >radek@bridgingthegap.eu.com</a>
-            </p>
-          </article>
+                :href="member.linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+                :aria-label="`${member.name} on LinkedIn (opens in a new tab)`"
+              >
+                <SvgIcon :path="mdiLinkedin" type="mdi" :size="20" aria-hidden="true" />
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a :href="`mailto:${member.email}`" :aria-label="`Email ${member.name}`">
+                <SvgIcon :path="mdiAt" type="mdi" :size="20" aria-hidden="true" />
+                <span>Email</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <!-- Divider line -->
-    <div
-      class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
-    />
-    <!-- Profile section for Hubert Drabczyk -->
-    <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
-      <img
-        src="/Hubert.webp"
-        class="w-[18rem] h-[18rem] mr-3 grayImage rounded-xl"
-        width="2014"
-        height="2014"
-        alt="Hubert Drabczyk's picture"
-      >
-      <div class="flex flex-col items-center">
-        <div class="text-3xl font-bold my-0">
-          Hubert Drabczyk
+      </article>
+    </section>
+
+    <section class="about-links" aria-label="More about BridgingTheGap.eu.com">
+      <article class="about-link-card">
+        <SvgIcon class="about-link-icon" :path="mdiAccountGroupOutline" :size="42" type="mdi" />
+        <div>
+          <h2>Reviewers</h2>
+          <p>Our content is reviewed by experienced integration practitioners.</p>
+          <NuxtLink class="editorial-action" to="/aboutOurReviewers">
+            <span>Meet our reviewers</span>
+            <SvgIcon :path="mdiArrowRight" :size="18" type="mdi" aria-hidden="true" />
+          </NuxtLink>
         </div>
-        <div class="text-base font-semibold mb-2">
-          Business Analyst / Solution Architect
+      </article>
+
+      <article class="about-link-card">
+        <SvgIcon class="about-link-icon" :path="mdiGithub" :size="42" type="mdi" />
+        <div>
+          <h2>Open source</h2>
+          <p>Our content and source code are freely available for everyone.</p>
+          <a
+            class="editorial-action"
+            href="https://github.com/BridgingTheGapEuCom/BridgingTheGap"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>View on GitHub</span>
+            <SvgIcon :path="mdiOpenInNew" :size="17" type="mdi" aria-hidden="true" />
+            <span class="sr-only">(opens in a new tab)</span>
+          </a>
         </div>
-        <article class="article hyphens-auto">
-          <!-- Bio -->
-          <p class="indent-6">
-            With background in electronics and actual experience in turning an idea into a
-            manufactured device, I also studied IT management and most of my career was in IT. I
-            worked as developer, project manager, systems analyst, solution and integration
-            architect and as a business analyst.
-          </p>
-          <p class="indent-6">
-            Alternating between analyst and architect roles, I worked for telco, banks, insurer,
-            airline, goods manufacturers and retailers, utilities and more. I have experience as
-            employee, consultant and even as company owner (UBO) - which gives good, multiple points
-            of view insight into business around IT.
-          </p>
-          <p class="indent-6">
-            My expertise is in understanding the context of IT projects and figuring out, what has
-            to be done, and more importantly, what should not be done. That involves modeling the
-            business processes, system-to-system and system-to-user interactions; understanding the
-            data and mapping it between domains and systems. I see integration as next level of IT
-            systems evolution, the level which brings its own challenges and promises. I&#39;m eager
-            to help solving the challenges to take the promised profit.
-          </p>
-          <!-- Social and contact links -->
-          <p class="flex items-center justify-center">
-            <SvgIcon
-              :path="mdiLinkedin"
-              type="mdi"
-              :size="24"
-              class="max-w-8 my-0"
-            />
-            <a
-              class="link ml-2"
-              href="https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
-            >https://www.linkedin.com/in/hubert-drabczyk-63b06628</a>
-          </p>
-          <p class="flex items-center justify-center">
-            <SvgIcon
-              :path="mdiAt"
-              type="mdi"
-              :size="24"
-              class="max-w-6 my-0"
-            />
-            <a
-              class="link ml-2"
-              href="mailto:hubert@bridgingthegap.eu.com"
-            >hubert@bridgingthegap.eu.com</a>
-          </p>
-        </article>
-      </div>
-    </div>
-    <!-- Divider line -->
-    <div
-      class="flex-1 h-[1px] mx-auto max-w-screen-sm my-10 dark:bg-neutral-700 bg-neutral-300 self-center"
-    />
-    <!-- Profile section for Dominik Kruszewski -->
-    <div class="flex flex-col lg:flex-row items-center gap-3 mt-10">
-      <img
-        src="/Dominik.webp"
-        class="w-[18rem] h-[18rem] mr-3 grayImage rounded-xl"
-        width="904"
-        height="904"
-        alt="Dominik Kruszewski's picture"
-      >
-      <div class="flex flex-col items-center">
-        <div class="text-3xl font-bold my-0">
-          Dominik Kruszewski
-        </div>
-        <div class="text-base font-semibold mb-2">
-          DevOps Expert
-        </div>
-        <article class="article hyphens-auto">
-          <!-- Bio -->
-          <p class="indent-6">
-            For over a decade, I've been roaming the IT landscape, building, breaking, and fixing
-            whatever crosses my path. My tools? BASH, CLI, and a steady supply of energy drinks.
-            Part caffeine-fueled coding machine, part stay-at-home dad with a secret identity as a
-            gym rat.
-          </p>
-          <p class="indent-6">
-            My expertise spans a wide range of technologies, from in-depth details of Linux to the
-            lofty heights of cloud computing - Oracle Cloud, Azure, GCP and AWS. I've wrangled
-            containers, managed Kubernetes and OpenShift clusters from cradle to grave, and battled
-            the complexities of on-premises installations.
-          </p>
-          <p class="indent-6">
-            Integration? Been there, done that. I've stitched together systems with numerous
-            providers such as SoftwareAG WebMethods, TIBCO, and MuleSoft to ensure smooth data flow
-            between platforms. Need a one-man army? I've got you covered.
-          </p>
-          <!-- Social and contact links -->
-          <p class="flex items-center justify-center">
-            <SvgIcon
-              :path="mdiLinkedin"
-              type="mdi"
-              :size="24"
-              class="max-w-8 my-0"
-            />
-            <a
-              class="link ml-2"
-              href="https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
-            >https://www.linkedin.com/in/dominik-kruszewski-a30829aa</a>
-          </p>
-          <p class="flex items-center justify-center">
-            <SvgIcon
-              :path="mdiAt"
-              type="mdi"
-              :size="24"
-              class="max-w-6 my-0"
-            />
-            <a
-              class="link ml-2"
-              href="mailto:dominik@bridgingthegap.eu.com"
-            >dominik@bridgingthegap.eu.com</a>
-          </p>
-        </article>
-      </div>
-    </div>
+      </article>
+    </section>
   </div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
+import SvgIcon from '@jamescoyle/vue-icon'
+import {
+  mdiAccountGroupOutline,
+  mdiArrowRight,
+  mdiAt,
+  mdiGithub,
+  mdiLinkedin,
+  mdiOpenInNew
+} from '@mdi/js'
+
 usePageSeo({
-  title: 'About Us',
+  title: 'About BridgingTheGap.eu.com',
   description:
-    'Meet the integration architects behind Bridging the Gap — enterprise architects sharing vendor-agnostic knowledge on application integration.',
+    'Learn about the open-source BridgingTheGap.eu.com project and meet the integration architects who share vendor-agnostic application integration knowledge.',
   path: '/about'
 })
 
-// This page introduces the core team members.
-// The script section contains logic for processing and displaying article reviewers,
-// which seems to be intended for the 'About our Reviewers' page and is not used in this component's template.
+interface TeamMember {
+  name: string
+  role: string
+  photo: string
+  photoSize: number
+  biography: string[]
+  linkedin: string
+  email: string
+}
 
-import articles from '../articles.json'
-import { onBeforeMount, ref, watch } from 'vue'
-import { useRoute } from 'vue-router'
-import { mdiAt, mdiLinkedin } from '@mdi/js'
-import SvgIcon from '@jamescoyle/vue-icon'
-
-// Gets the current route object to access route parameters.
-const route = useRoute()
-
-// Reactive references for reviewer data and UI state. Note: These are not used by the template above.
-const reviewers = ref([])
-const showMore = ref('')
-
-/**
- * Lifecycle hook that runs before the component is mounted.
- * It processes the articles.json file to build a list of reviewers and the articles they have reviewed.
- */
-onBeforeMount(() => {
-  reviewers.value = []
-
-  // Reads a query parameter, likely to highlight a specific reviewer.
-  showMore.value = route.query.reviewed
-
-  const reviewersMap = new Map()
-  const reviewerDetails = new Map()
-
-  // Loop through all articles to find reviewers.
-  for (const article of articles) {
-    if (article.reviewers) {
-      for (const reviewer of article.reviewers) {
-        // Store reviewer details (name and link).
-        reviewerDetails.set(reviewer.reviewer, reviewer.link)
-        // Group articles by reviewer.
-        if (reviewersMap.has(reviewer.reviewer)) {
-          const newArray = reviewersMap.get(reviewer.reviewer)
-          newArray.push({
-            title: article.title,
-            link: article.name
-          })
-          reviewersMap.set(reviewer.reviewer, newArray)
-        } else {
-          reviewersMap.set(reviewer.reviewer, [
-            {
-              title: article.title,
-              link: article.name
-            }
-          ])
-        }
-      }
-    }
+const team: TeamMember[] = [
+  {
+    name: 'Karol Skrzymowski',
+    role: 'Enterprise / Integration Architect',
+    photo: '/Karol.webp',
+    photoSize: 1500,
+    biography: [
+      "I'm an Enterprise and Integration Architect with a passion for application integration and over a decade of specialized experience in the field. My journey began as a junior developer, who stumbled onto Application Integration by pure chance and stayed for the joy of learning.",
+      "My expertise lies primarily in API-Led Architecture, although I've also delved into the realm of Event-Driven Architecture (EDA) to broaden my professional toolkit. I've worked extensively with a myriad of integration platforms, including Tibco BusinessWorks 5.x and 6.x, Boomi, WebMethods, Mulesoft, Azure Integration Services, and WSO2, constantly adapting to the evolving landscape of integration technologies.",
+      'I see the world of Application Integration as not just a profession but a passion. I believe it to be one of the most fascinating fields in IT, with endless possibilities for innovation and problem-solving. To further this belief, I actively try to contribute to helping others understand this field by creating whitepapers and training materials that explain complex integration concepts, empowering others to navigate this exciting domain with confidence.'
+    ],
+    linkedin: 'https://www.linkedin.com/in/karolskrzymowski/',
+    email: 'karol@bridgingthegap.eu.com'
+  },
+  {
+    name: 'Radosław Przewuski',
+    role: 'Integration Platforms Expert',
+    photo: '/Radek.webp',
+    photoSize: 1500,
+    biography: [
+      "Greetings, tech aficionados! I'm the Integration Whisperer, boasting over a decade of experience in the mystical arts of integration platforms. Picture me as the Gandalf of your digital realm, wielding my staff of code with the wisdom of a thousand sages. From the humble beginnings of coding in caves to now surfing the binary waves of innovation, I've journeyed through the ages of technology. It's like I've embarked on an epic quest through the realms of integration, slaying dragons of data inconsistency and forging alliances between disparate systems.",
+      "With extensive experience in Tibco BusinessWorks, WebMethods, Mulesoft, and more, I'm equipped to cast spells of integration magic like no other. So, whether you're lost in the labyrinth of legacy systems or venturing into the unknown territories of modern APIs, fear not! I'm here to help."
+    ],
+    linkedin: 'https://www.linkedin.com/in/rados%C5%82aw-przewuski/',
+    email: 'radek@bridgingthegap.eu.com'
+  },
+  {
+    name: 'Hubert Drabczyk',
+    role: 'Business Analyst / Solution Architect',
+    photo: '/Hubert.webp',
+    photoSize: 1200,
+    biography: [
+      'With background in electronics and actual experience in turning an idea into a manufactured device, I also studied IT management and most of my career was in IT. I worked as developer, project manager, systems analyst, solution and integration architect and as a business analyst.',
+      'Alternating between analyst and architect roles, I worked for telco, banks, insurer, airline, goods manufacturers and retailers, utilities and more. I have experience as employee, consultant and even as company owner (UBO) - which gives good, multiple points of view insight into business around IT.',
+      "My expertise is in understanding the context of IT projects and figuring out, what has to be done, and more importantly, what should not be done. That involves modeling the business processes, system-to-system and system-to-user interactions; understanding the data and mapping it between domains and systems. I see integration as next level of IT systems evolution, the level which brings its own challenges and promises. I'm eager to help solving the challenges to take the promised profit."
+    ],
+    linkedin: 'https://www.linkedin.com/in/hubert-drabczyk-63b06628/',
+    email: 'hubert@bridgingthegap.eu.com'
+  },
+  {
+    name: 'Dominik Kruszewski',
+    role: 'DevOps Expert',
+    photo: '/Dominik.webp',
+    photoSize: 904,
+    biography: [
+      "For over a decade, I've been roaming the IT landscape, building, breaking, and fixing whatever crosses my path. My tools? BASH, CLI, and a steady supply of energy drinks. Part caffeine-fueled coding machine, part stay-at-home dad with a secret identity as a gym rat.",
+      "My expertise spans a wide range of technologies, from in-depth details of Linux to the lofty heights of cloud computing - Oracle Cloud, Azure, GCP and AWS. I've wrangled containers, managed Kubernetes and OpenShift clusters from cradle to grave, and battled the complexities of on-premises installations.",
+      "Integration? Been there, done that. I've stitched together systems with numerous providers such as SoftwareAG WebMethods, TIBCO, and MuleSoft to ensure smooth data flow between platforms. Need a one-man army? I've got you covered."
+    ],
+    linkedin: 'https://www.linkedin.com/in/dominik-kruszewski-a30829aa/',
+    email: 'dominik@bridgingthegap.eu.com'
   }
-
-  let i = 0
-
-  // Create the final, structured list of reviewers.
-  for (const reviewer of reviewersMap.keys()) {
-    reviewers.value.push({
-      id: i++,
-      name: reviewer,
-      link: reviewerDetails.get(reviewer),
-      reviewed: reviewersMap.get(reviewer)
-    })
-  }
-
-  // Sort reviewers alphabetically by name.
-  reviewers.value = reviewers.value.sort((a, b) => {
-    return a.name.localeCompare(b.name)
-  })
-})
-
-/**
- * Watches for changes in the route's query parameters.
- * @param {object} current - The new route object.
- */
-watch(route, (current) => {
-  showMore.value = current.query.reviewed
-})
+]
 </script>
 
 <style scoped>
-/* Applies a grayscale filter to images, typically used for profile pictures. */
-.grayImage {
-  filter: grayscale(100%);
+.about-page {
+  width: min(100%, 74rem);
+  margin: 0 auto;
+}
+
+.about-hero {
+  display: flex;
+  align-items: center;
+  padding: clamp(2.25rem, 5vw, 4rem) 0 clamp(2rem, 4vw, 3rem);
+  flex-direction: column;
+  text-align: center;
+}
+
+.about-eyebrow,
+.section-eyebrow {
+  margin: 0;
+  color: var(--editorial-muted);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-hero h1 {
+  max-width: 28ch;
+  margin: 0.75rem 0 0;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  line-height: 1.04;
+  letter-spacing: -0.045em;
+}
+
+.about-bridge {
+  display: grid;
+  width: min(100%, 44rem);
+  margin-top: clamp(1.5rem, 3vw, 2.25rem);
+  place-items: center;
+}
+
+.about-bridge img {
+  display: block;
+  width: min(100%, 23rem);
+  height: auto;
+  margin: 0;
+  filter: grayscale(1);
+}
+
+:global(html:has(.dark) .about-bridge img) {
+  filter: grayscale(1) invert(1);
+}
+
+.project-overview {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.9fr) minmax(0, 1.35fr);
+  padding: clamp(2rem, 4vw, 3.5rem) 0;
+  border-bottom: 1px solid var(--editorial-border);
+  gap: clamp(2rem, 8vw, 7rem);
+}
+
+.project-summary {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.project-summary h2 {
+  margin: 0.75rem 0 0;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.project-summary .editorial-action {
+  margin-top: auto;
+}
+
+.project-description {
+  display: grid;
+  color: var(--editorial-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  gap: 1rem;
+}
+
+.project-description p,
+.about-link-card p {
+  margin: 0;
+}
+
+.editorial-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--editorial-border-strong);
+  border-radius: 0.45rem;
+  color: var(--editorial-text);
+  background: var(--editorial-surface);
+  font-size: 0.85rem;
+  font-weight: 700;
+  gap: 0.55rem;
+  text-decoration: none;
+}
+
+.editorial-action:hover {
+  border-color: var(--editorial-text);
+}
+
+.editorial-action :deep(svg),
+.team-contact :deep(svg) {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+.team-heading {
+  padding: 2rem 0 1rem;
+}
+
+.team-member {
+  display: grid;
+  grid-template-areas: 'portrait content';
+  grid-template-columns: clamp(15rem, 15vw, 20rem) minmax(0, 1fr);
+  align-items: start;
+  padding: clamp(1.5rem, 3vw, 2.25rem) 0;
+  border-bottom: 1px solid var(--editorial-border);
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+}
+
+.team-member:nth-of-type(even) {
+  grid-template-areas: 'content portrait';
+  grid-template-columns: minmax(0, 1fr) clamp(15rem, 15vw, 20rem);
+}
+
+.team-portrait {
+  grid-area: portrait;
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 0;
+  border: 1px solid var(--editorial-border);
+  border-radius: 0.55rem;
+  background: var(--editorial-surface-muted);
+  filter: grayscale(1);
+  object-fit: cover;
+}
+
+.team-member-content {
+  grid-area: content;
+  min-width: 0;
+  max-width: 76ch;
+}
+
+.team-member-content header {
+  margin-bottom: 0.85rem;
+}
+
+.team-member h2 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.1vw, 1.8rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.team-member-content header p {
+  margin: 0.3rem 0 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.team-biography {
+  display: grid;
+  color: var(--editorial-text);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  gap: 0.8rem;
+}
+
+.team-biography p {
+  margin: 0;
+  text-align: left;
+}
+
+.team-contact {
+  display: flex;
+  align-items: center;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  gap: 0.85rem;
+  list-style: none;
+}
+
+.team-contact li {
+  display: flex;
+  align-items: center;
+}
+
+.team-contact li + li::before {
+  width: 1px;
+  height: 1.2rem;
+  margin-right: 0.85rem;
+  content: '';
+  background: var(--editorial-border-strong);
+}
+
+.team-contact a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--editorial-text);
+  font-size: 0.86rem;
+  gap: 0.45rem;
+  text-decoration: none;
+}
+
+.team-contact a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2rem;
+}
+
+.about-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: clamp(2rem, 4vw, 3rem) 0;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.about-link-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  padding: clamp(1.25rem, 2vw, 1.75rem);
+  border: 1px solid var(--editorial-border);
+  border-radius: 0.55rem;
+  background: var(--editorial-surface);
+  gap: 1rem;
+}
+
+.about-link-icon {
+  width: 2.625rem;
+  height: 2.625rem;
+  margin: 0;
+  flex: 0 0 auto;
+  color: var(--editorial-muted);
+}
+
+.about-link-card h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.about-link-card p {
+  max-width: 36ch;
+  margin-top: 0.35rem;
+  color: var(--editorial-text);
+  font-size: 0.88rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.about-link-card .editorial-action {
+  margin-top: 1rem;
+}
+
+@media (max-width: 52rem) {
+  .about-page {
+    width: min(100%, 42rem);
+  }
+
+  .project-overview {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .project-summary .editorial-action {
+    margin-top: 1.5rem;
+  }
+
+  .team-member,
+  .team-member:nth-of-type(even) {
+    grid-template-areas:
+      'portrait'
+      'content';
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .team-portrait {
+    width: min(100%, 20rem);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 38rem) {
+  .about-hero {
+    padding-top: 2rem;
+  }
+
+  .team-heading {
+    padding-top: 1.75rem;
+  }
+
+  .team-member,
+  .team-member:nth-of-type(even) {
+    padding: 1.75rem 0;
+  }
+
+  .about-links {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 25rem) {
+  .editorial-action {
+    width: 100%;
+  }
+
+  .about-link-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 </style>

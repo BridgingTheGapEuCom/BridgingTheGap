@@ -10,6 +10,23 @@ export interface Event {
   LN?: string
   YT?: string
   tags: string[]
+  durationMinutes?: number
+  speakers?: EventSpeaker[]
+  summary?: string
+  topics?: string[]
+}
+
+export interface EventSpeaker {
+  name: string
+  role?: string
+  photo?: string
+  isHost?: boolean
+}
+
+export interface TranscriptLine {
+  startTime: number
+  person: string
+  text: string
 }
 
 export interface EventDetails {

@@ -5,29 +5,8 @@
 </template>
 
 <script lang="ts" setup>
-import { useRoute } from 'vue-router'
-import { useHead } from '@unhead/vue'
-import { watch } from 'vue'
+import { useHead } from '#imports'
 import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from '~/utils/seo'
-
-const route = useRoute()
-
-if (route && route.query) {
-  if (route.query.tags) {
-    route.query.tags = route.query.tags.split(',')
-  }
-}
-
-/**
- * Watch for route changes to update query parameters
- */
-watch(route, (current) => {
-  if (current && current.query) {
-    if (route.query.tags) {
-      route.query.tags = route.query.tags.split(',')
-    }
-  }
-})
 
 const websiteSchema = JSON.stringify({
   '@context': 'https://schema.org',
@@ -59,7 +38,7 @@ useHead({
     {
       name: 'description',
       content:
-        'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture'
+        'BridgingTheGap.eu.com is a collaboration of integration architects working together to create a simple guide to integration architecture'
     },
     { name: 'theme-color', content: 'rgb(250,250,250)' }
   ],
@@ -83,14 +62,14 @@ useSeoMeta({
   ogTitle: SITE_NAME,
   ogSiteName: SITE_NAME,
   description:
-    'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
+    'BridgingTheGap.eu.com is a collaboration of integration architects working together to create a simple guide to integration architecture',
   ogDescription:
-    'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
+    'BridgingTheGap.eu.com is a collaboration of integration architects working together to create a simple guide to integration architecture',
   ogImage: DEFAULT_OG_IMAGE,
   ogUrl: SITE_URL,
   twitterTitle: SITE_NAME,
   twitterDescription:
-    'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
+    'BridgingTheGap.eu.com is a collaboration of integration architects working together to create a simple guide to integration architecture',
   twitterImage: DEFAULT_OG_IMAGE,
   twitterCard: 'summary_large_image'
 })
@@ -98,5 +77,4 @@ useSeoMeta({
 
 <style lang="scss">
 @use '@/assets/style/base.css';
-@use '@/assets/style/main.scss';
 </style>

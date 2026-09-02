@@ -1,9 +1,13 @@
 import { SubscriptionSchema } from '~/server/models/subscription.schema'
 import { isRecaptchaValid, verifyRecaptcha } from '~/server/utils/recaptcha'
-import { isValidEmail } from '~/server/utils/validation'
+import { isPlainRecord, isValidEmail } from '~/server/utils/validation'
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event)
+  const body = await readBody<unknown>(event)
+  if (!isPlainRecord(body)) {
+    return { status: 400, body: 'Invalid request body' }
+  }
+
   const { email, token } = body
 
   if (!token) {

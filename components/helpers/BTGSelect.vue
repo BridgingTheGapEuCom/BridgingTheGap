@@ -48,24 +48,34 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
+
+type SelectOption = string | { label: string; value: string }
 
 const model = defineModel({ type: String as PropType<string | null>, required: true })
 const isOpen = ref(false)
-const container = ref(null)
+const container = ref<HTMLElement | null>(null)
 
-const props = defineProps({
-  label: { type: String, required: false, default: 'Select an option' },
-  icon: { type: String, required: false, default: '' },
-  options: {
-    type: Array,
-    required: true
-  },
-  autocomplete: { type: String, required: false, default: null },
-  name: { type: String, required: false, default: null }
-})
+const props = withDefaults(
+  defineProps<{
+    label?: string
+    icon?: string
+    options: SelectOption[]
+    autocomplete?: string | null
+    name?: string | null
+  }>(),
+  {
+    label: 'Select an option',
+    icon: '',
+    autocomplete: null,
+    name: null
+  }
+)
 
-const emits = defineEmits(['focus', 'blur'])
+const emits = defineEmits<{
+  focus: []
+  blur: []
+}>()
 
 const onBlur = () => {
   isOpen.value = false
@@ -77,19 +87,11 @@ const onFocus = () => {
   emits('focus')
 }
 
-/**
- * @param {any} option
- * @returns {string | number}
- */
-const getOptionValue = (option: any): string | number => {
+const getOptionValue = (option: SelectOption): string => {
   return typeof option === 'string' ? option : option.value
 }
 
-/**
- * @param {any} option
- * @returns {string}
- */
-const getOptionLabel = (option: any): string => {
+const getOptionLabel = (option: SelectOption): string => {
   return typeof option === 'string' ? option : option.label
 }
 
@@ -99,19 +101,13 @@ const selectedLabel = computed(() => {
   return selected ? getOptionLabel(selected) : ''
 })
 
-/**
- * @param {any} option
- */
-const selectOption = (option) => {
+const selectOption = (option: SelectOption) => {
   model.value = getOptionValue(option)
   isOpen.value = false
 }
 
-/**
- * @param {any} event
- */
-const handleClickOutside = (event) => {
-  if (container.value && (container.value as any).contains(event.target)) {
+const handleClickOutside = (event: MouseEvent) => {
+  if (event.target instanceof Node && container.value?.contains(event.target)) {
     return
   }
   isOpen.value = false

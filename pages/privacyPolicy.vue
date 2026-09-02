@@ -4,11 +4,11 @@
     <h2>Key Information</h2>
     <ul class="list-disc text-left ml-5">
       <li>
-        Bridging the Gap (BtG) is an open source educational initiative focused on IT systems
+        BridgingTheGap.eu.com (BtG) is an open source educational initiative focused on IT systems
         integration architecture and related topics.
       </li>
       <li>
-        Bridging the Gap is the Data Controller of the information we collected about you, unless
+        BridgingTheGap.eu.com is the Data Controller of the information we collected about you, unless
         otherwise specified for selected educational events conducted jointly with other entities.
         For these joint events you will be asked to explicitly agree to share your data with other
         involved entities, no data will be shared by default.
@@ -17,7 +17,7 @@
       <li>
         We use data for the purpose of informing on new educational events or available materials
         and for issuing credentials (badges). We may also use this for sending offerings,
-        suggestions, and surveys related to Bridging the Gap content and events.
+        suggestions, and surveys related to BridgingTheGap.eu.com content and events.
       </li>
       <li>
         You have a number of rights related to your data, as listed in the detailed section below.
@@ -117,7 +117,7 @@
     </p>
     <h2>Data retention</h2>
     <p>
-      Bridging the Gap keeps your data for as long as it is required to provide services and meet
+      BridgingTheGap.eu.com keeps your data for as long as it is required to provide services and meet
       legal obligations.
     </p>
     <p>
@@ -127,7 +127,7 @@
     </p>
     <h2>Security</h2>
     <p>
-      Bridging the Gap takes appropriate security measures to protect against unauthorized access,
+      BridgingTheGap.eu.com takes appropriate security measures to protect against unauthorized access,
       alteration, disclosure, or destruction of your personal data that we collect and store.
       Unfortunately, however, no system can be 100% secured, so we cannot guarantee that BtG will
       always block unauthorized access by third parties.
@@ -232,7 +232,7 @@
 usePageSeo({
   title: 'Privacy Policy',
   description:
-    'Privacy policy for Bridging the Gap — how we collect, use, and protect your personal data in compliance with GDPR.',
+    'Privacy policy for BridgingTheGap.eu.com — how we collect, use, and protect your personal data in compliance with GDPR.',
   path: '/privacyPolicy'
 })
 </script>
