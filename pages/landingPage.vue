@@ -15,12 +15,6 @@
 </template>
 
 <script setup>
-usePageSeo({
-  description:
-    'Bridging the Gap — a collaboration of integration architects creating a simple, vendor-agnostic guide to integration architecture.',
-  path: '/landingPage'
-})
-
 import LandingPage1 from '~/components/landingPage/LandingPage_1.vue'
 import LandingPage2 from '~/components/landingPage/LandingPage_2.vue'
 import LandingPage3 from '~/components/landingPage/LandingPage_3.vue'
@@ -29,6 +23,12 @@ import LandingPage5 from '~/components/landingPage/LandingPage_5.vue'
 import LandingPage6 from '~/components/landingPage/LandingPage_6.vue'
 import LandingPage7 from '~/components/landingPage/LandingPage_7.vue'
 import LandingPage8 from '~/components/landingPage/LandingPage_8.vue'
+
+usePageSeo({
+  description:
+    'BridgingTheGap.eu.com — a collaboration of integration architects creating a simple, vendor-agnostic guide to integration architecture.',
+  path: '/landingPage'
+})
 
 definePageMeta({
   layout: 'landingLayout'

@@ -77,10 +77,19 @@
   {
     "name": "Loosely Coupled - Adopting Event-Driven Architecture",
     "img": "/events/Loosely_Coupled_Adopting_Event_Driven_Architecture.webp",
-    "description": "Welcome to \"Loosely Coupled,\" the brand new Live Stream series brought to you by BridgingTheGap.eu.com! Our project is dedicated to closing the knowledge divide in the IT field of Enterprise Application Integration by providing vendor-agnostic knowledge and comprehensive insights.\n\nFor our highly anticipated debut session, we are thrilled to host Fran Mendez, the creator of AsyncAPI, as our special guest. Together, we will explore the critical topic of \"Adopting Event-Driven Architecture.\"\n\nEvent-Driven Architecture plays a crucial role in ensuring seamless communication and functionality across diverse systems. However, its adoption often comes with significant challenges. In this session, we will deep-dive into the common hurdles, complexities, and real-world problemscape that organizations encounter when integrating EDA into their ecosystems. We aim to shed light on these obstacles, offering valuable perspectives to help you navigate this intricate domain.\n\nThis is a unique opportunity to gain a broader perspective on architectural styles and understand how application integration fits within them, empowering you with the knowledge to make informed decisions.\n\nAt Bridging the Gap, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of application integration!",
+    "description": "Welcome to \"Loosely Coupled,\" the brand new Live Stream series brought to you by BridgingTheGap.eu.com! Our project is dedicated to closing the knowledge divide in the IT field of Enterprise Application Integration by providing vendor-agnostic knowledge and comprehensive insights.\n\nFor our highly anticipated debut session, we are thrilled to host Fran Mendez, the creator of AsyncAPI, as our special guest. Together, we will explore the critical topic of \"Adopting Event-Driven Architecture.\"\n\nEvent-Driven Architecture plays a crucial role in ensuring seamless communication and functionality across diverse systems. However, its adoption often comes with significant challenges. In this session, we will deep-dive into the common hurdles, complexities, and real-world problemscape that organizations encounter when integrating EDA into their ecosystems. We aim to shed light on these obstacles, offering valuable perspectives to help you navigate this intricate domain.\n\nThis is a unique opportunity to gain a broader perspective on architectural styles and understand how application integration fits within them, empowering you with the knowledge to make informed decisions.\n\nAt BridgingTheGap.eu.com, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of application integration!",
     "date": "2025-06-25",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      { "name": "Fran Mendez", "role": "Creator of AsyncAPI", "photo": "Fran_Mendez.webp" },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -94,7 +103,7 @@
       "eventType": "Live Stream Discussion"
     },
     "LN": "https://www.linkedin.com/events/looselycoupled-adoptingevent-dr7339424982973751296/about/",
-    "YT": "https://tinyurl.com/56rj848e"
+    "YT": "https://www.youtube.com/live/DqBJnNKcL44"
   },
   {
     "name": "Effective Enterprise Application Integration",
@@ -124,10 +133,19 @@
   {
     "name": "Loosely Coupled - The IT Talent Trap",
     "img": "/events/Loosely_Coupled_The_IT_Talent_Trap.webp",
-    "description": "For our next session, I'll be joined by Phillip Poynton - a recruiter with over 18 years of experience, and for the past 6 years, he's been exclusively focused on hiring Salesforce talent. Half British, half Polish, and living in Poland, Phillip brings a unique perspective on both the international and local recruitment landscapes.\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nThis will be a no-filter conversation about recruitment - the good, the bad, and the ugly. From the perspective of both recruiters and candidates, we'll dive into what's really going on in the job market today. With Phillip's candid approach, you can expect zero sugar-coating and plenty of real talk about what works (and what doesn't) in hiring.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.\n\nAt Bridging the Gap, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of IT talent!",
+    "description": "For our next session, I'll be joined by Phillip Poynton - a recruiter with over 18 years of experience, and for the past 6 years, he's been exclusively focused on hiring Salesforce talent. Half British, half Polish, and living in Poland, Phillip brings a unique perspective on both the international and local recruitment landscapes.\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nThis will be a no-filter conversation about recruitment - the good, the bad, and the ugly. From the perspective of both recruiters and candidates, we'll dive into what's really going on in the job market today. With Phillip's candid approach, you can expect zero sugar-coating and plenty of real talk about what works (and what doesn't) in hiring.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.\n\nAt BridgingTheGap.eu.com, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of IT talent!",
     "date": "2025-07-31",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      { "name": "Phillip Poynton", "role": "IT Recruiter", "photo": "Phillip_Poynton.webp" },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -150,6 +168,19 @@
     "date": "2025-08-06",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Radek Orszewski",
+        "role": "Lean Agile Coach and Consultant",
+        "photo": "Radek_Orszewski.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -172,6 +203,19 @@
     "date": "2025-09-10",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Aleix Morgadas",
+        "role": "Engineering Strategy Consultant and CPTO at Teamperature",
+        "photo": "Aleix_Morgadas.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -194,6 +238,20 @@
     "date": "2025-08-20",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Rachel Barton",
+        "role": "Principal Data and Domain Architect",
+        "photo": "Rachel_Barton.webp"
+      },
+      { "name": "Andrew Jones", "role": "Staff Data Engineer", "photo": "Andrew_Jones.webp" },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -216,6 +274,15 @@
     "date": "2025-08-13",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      { "name": "Aaron Lee", "role": "Solutions Engineer at Solace", "photo": "Aaron_Lee.webp" },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -238,6 +305,20 @@
     "date": "2025-09-24",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Gabi Preston-Phypers",
+        "role": "Founder at Tooled Up Raccoons",
+        "photo": "Gabi_Preston-Phypers.webp"
+      },
+      { "name": "Phillip Poynton", "role": "IT Recruiter", "photo": "Phillip_Poynton.webp" },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -260,6 +341,24 @@
     "date": "2025-10-09",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Dr. Miriam Greis",
+        "role": "Lead API Consultant",
+        "photo": "Miriam_Greis.webp"
+      },
+      {
+        "name": "Daniel Kocot",
+        "role": "Principal API Consultant",
+        "photo": "Daniel_Kocot.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -282,6 +381,15 @@
     "date": "2025-09-03",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      { "name": "Adeeb Tahir", "role": "Field CTO at APIwiz", "photo": "Adeeb_Tahir.webp" },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -304,6 +412,19 @@
     "date": "2025-10-11",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Mark Richards",
+        "role": "Architect, Author, Founder @ DeveloperToArchitect.com",
+        "photo": "Mark_Richards.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -326,6 +447,19 @@
     "date": "2025-10-22",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Valeriia Filimonova",
+        "role": "Staff Engineer at Picnic",
+        "photo": "Valeriia_Filimonova.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -344,10 +478,23 @@
   {
     "name": "Loosely Coupled - Migrating away from IPaaS technologies",
     "img": "/events/Loosely_Coupled_Migrating_away_from_IPaaS_technologies.webp",
-    "description": "Is the high cost of your IPaaS license forcing your company to reconsider their technology choices? Many companies are looking to escape platform lock-in by migrating from IPaaS technology vendors to open-source integration solutions or even just build interoperability capabilities from scratch. It sounds like a clear cost-saver, but are the hidden costs of such endeavor truly understood?\n\nIn line with our mission at Bridging the Gap to provide vendor-agnostic insight, we’re thrilled to host Brian Labelle, Enterprise Architect at Bribelle Business Solution Limited, for a crucial conversation that goes beyond the spreadsheet. We’ll be looking at how to approach such a migration and explain all the dependencies that reach way beyond technology and licenses.\n\nBrian will help us dissect:\n• The strategic drivers (beyond just licensing) pushing companies towards pure Java.\n• The critical challenges and hidden costs associated with this large-scale migration.\n• How to ensure you’re aware of all the costs before making the final decision.\n\nJoin the discussion! Don't make a multi-year architecture decision without the full picture.",
+    "description": "Is the high cost of your IPaaS license forcing your company to reconsider their technology choices? Many companies are looking to escape platform lock-in by migrating from IPaaS technology vendors to open-source integration solutions or even just build interoperability capabilities from scratch. It sounds like a clear cost-saver, but are the hidden costs of such endeavor truly understood?\n\nIn line with our mission at BridgingTheGap.eu.com to provide vendor-agnostic insight, we’re thrilled to host Brian Labelle, Enterprise Architect at Bribelle Business Solution Limited, for a crucial conversation that goes beyond the spreadsheet. We’ll be looking at how to approach such a migration and explain all the dependencies that reach way beyond technology and licenses.\n\nBrian will help us dissect:\n• The strategic drivers (beyond just licensing) pushing companies towards pure Java.\n• The critical challenges and hidden costs associated with this large-scale migration.\n• How to ensure you’re aware of all the costs before making the final decision.\n\nJoin the discussion! Don't make a multi-year architecture decision without the full picture.",
     "date": "2025-11-05",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Brian Labelle",
+        "role": "Enterprise Architect at Bribelle Business Solution Limited",
+        "photo": "Brian_Labelle.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -370,6 +517,19 @@
     "date": "2025-11-12",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Dr. Annegret Junker",
+        "role": "Chief Software Architect at codecentric",
+        "photo": "Annegret_Junker.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -417,6 +577,15 @@
     "date": "2025-11-19",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      { "name": "Woody Zuill", "role": "Lean and Agile Guide", "photo": "Woody_Zuill.webp" },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -439,6 +608,19 @@
     "date": "2025-12-03",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Joanna Gruszczyńska",
+        "role": "Job and ADHD Coach",
+        "photo": "Joanna_Gruszczyńska.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -461,6 +643,20 @@
     "date": "2025-12-09",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      { "name": "Anneke Schoonjans", "role": "Event Manager", "photo": "Anneke_Schoonjans.webp" },
+      {
+        "name": "Maxime Sanglan-Charlier",
+        "role": "Engineering Manager",
+        "photo": "Maxime_Sanglan-Charlier.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -483,6 +679,19 @@
     "date": "2025-12-17",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Luca Mezzalira",
+        "role": "Serverless Specialist at AWS and Author of Building Micro-Frontends",
+        "photo": "Luca_Mezzalira.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -505,6 +714,19 @@
     "date": "2026-01-14",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Chris Simon",
+        "role": "Technology Coach and Advisor",
+        "photo": "Chris_Simon.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -527,6 +749,19 @@
     "date": "2026-01-22",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Swen-Helge Huber",
+        "role": "Senior Director with the Office of the CTO at Solace",
+        "photo": "Swen-Helge_Huber.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -549,6 +784,19 @@
     "date": "2026-01-28",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Vlad Khononov",
+        "role": "Domain-Driven Design Expert and Author",
+        "photo": "Vlad_Khononov.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -596,6 +844,19 @@
     "date": "2026-02-04",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Marty Pitt",
+        "role": "Engineer and Open Source Developer",
+        "photo": "Marty_Pitt.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -618,6 +879,19 @@
     "date": "2026-02-11",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Pamela Paterson",
+        "role": "Author and Senior Technology Consultant",
+        "photo": "Pamela_Paterson.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -665,6 +939,19 @@
     "date": "2026-03-04",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Gien Verschatse",
+        "role": "Consultant at Aardling",
+        "photo": "Gien_Verschatse.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -687,6 +974,25 @@
     "date": "2026-03-10",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      { "name": "Woody Zuill", "role": "Lean and Agile Guide", "photo": "Woody_Zuill.webp" },
+      {
+        "name": "Dr. Annegret Junker",
+        "role": "Chief Software Architect at codecentric",
+        "photo": "Annegret_Junker.webp"
+      },
+      {
+        "name": "Fabrizio Lazzaretti",
+        "role": "Managing Consultant at Wavestone",
+        "photo": "Fabrizio_Lazzaretti.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -709,6 +1015,19 @@
     "date": "2026-03-25",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Mufrid Krilic",
+        "role": "Domain-Driven Design Coach",
+        "photo": "Mufrid_Krilic.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -731,6 +1050,19 @@
     "date": "2026-04-16",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Chris Simon",
+        "role": "Technology coach and advisor",
+        "photo": "Chris_Simon.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -753,6 +1085,19 @@
     "date": "2026-04-08",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Frédérique Mounier",
+        "role": "Salesforce Solution Architect",
+        "photo": "Frédérique_Mounier.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -775,6 +1120,19 @@
     "date": "2026-04-30",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Vinicius Albano",
+        "role": "Software Architect | DDD & AI Systems | Founder @ DDD Brasil",
+        "photo": "Vinicius_Albano.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -822,6 +1180,19 @@
     "date": "2026-05-21",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Paul Preiss",
+        "role": "Founder, Iasa Global",
+        "photo": "Paul_Preiss.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -844,6 +1215,19 @@
     "date": "2026-05-28",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Andrew Harmel-Law",
+        "role": "Author of “Facilitating Software Architecture” and Technical Director at ThoughtWorks",
+        "photo": "Andrew_Harmel-Law.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -916,6 +1300,20 @@
     "date": "2026-06-15",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Barry O'Reilly",
+        "role": "Architect",
+        "photo": "Barry_O_Reilly.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
+    "durationMinutes": 120,
     "details": {
       "date": {
         "type": "date",
@@ -937,6 +1335,34 @@
     "date": "2026-06-11",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Mathias Verraes",
+        "role": "CEO & Principal Consultant at Aardling",
+        "photo": "Mathias_Verraes.webp"
+      },
+      {
+        "name": "Martin Fowler",
+        "role": "Author of Refactoring, hosts martinfowler.com, Thoughtworker",
+        "photo": "Martin_Fowler.webp"
+      },
+      {
+        "name": "Xin Yao",
+        "role": "Sociotechnical architect and change facilitator",
+        "photo": "Xin_Yao.webp"
+      },
+      {
+        "name": "Andrew Harmel-Law",
+        "role": "Author of “Facilitating Software Architecture” and Technical Director at ThoughtWorks",
+        "photo": "Andrew_Harmel-Law.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -956,16 +1382,32 @@
     "name": "Loosely Coupled - Socio-technical API patterns and more",
     "img": "/events/Loosely_Coupled_Socio-technical_API_patterns_and_more.webp",
     "description": "APIs - write a spec, implement it, deploy it, and we’re done. That’s all to it, isn’t it? \n\nAPIs - write a spec, implement it, deploy it, and we’re done. That’s all to it, isn’t it? \n\nIf life was that simple! A large number of developers, architects and other professionals are convinced that they have a grip on APIs, but when asked they often struggle trying to answer “what is an API?” It seems like a fairly easy question, right? If your answer is “REST”, you might be in for quite a shock. And that’s ok, because given the flood of AI generated content and infographics oversimplifying the matter it’s hard to find a good source of knowledge!\n\nThe question then is: \n\nWhat are the factors composing an API?\n\nWhat is the definition?\n\nWhat is there beyond the API spec and implementation?\n\nAll of this and more in this episode of Loosely Coupled! Our guest this time around will be Einar Høst, Software Developer with a knack for finding patterns beyond the technical aspects of interoperability. We’ll walk through various aspects of API lifecycle and all the related patterns that are not necessarily technical, but heavily influence how an API is designed, implemented and how it operates in production!\n\nJoin the conversation! Share your observations and stories!",
+    "summary": "What makes an API more than a specification and an implementation? Einar Waaler Høst joins Karol Skrzymowski to explore the social and technical patterns that shape an API throughout its lifecycle.",
     "date": "2026-06-25",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "topics": ["API design", "Sociotechnical systems", "Interoperability", "API lifecycle"],
+    "speakers": [
+      {
+        "name": "Einar Waaler Høst",
+        "role": "Software Developer",
+        "photo": "Einar_Waaler_Høst.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
         "startDate": "2026-06-25",
         "endDate": "2026-06-25",
         "startTime": "19:00",
-        "endTime": "21:00"
+        "endTime": "21:00",
+        "timezone": "GMT+2"
       },
       "place": "Live Stream on LinkedIn and YouTube",
       "eventTopic": "Socio-technical API patterns",
@@ -981,6 +1423,19 @@
     "date": "2026-07-09",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Chelsea Troy",
+        "role": "Machine Learning Operations Engineer",
+        "photo": "Chelsea_Troy.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "photo": "/Karol_portrait.webp",
+        "role": "Integration Architect",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1003,6 +1458,19 @@
     "date": "2026-07-21",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Andrew Jones",
+        "role": "Staff Data Engineer",
+        "photo": "Andrew_Jones.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "photo": "/Karol_portrait.webp",
+        "role": "Integration Architect",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1025,6 +1493,19 @@
     "date": "2026-07-16",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Ted M. Young",
+        "role": "Learning Experience Designer",
+        "photo": "Ted_M._Young.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "photo": "/Karol_portrait.webp",
+        "role": "Integration Architect",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1047,6 +1528,19 @@
     "date": "2026-07-30",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Xin Yao",
+        "role": "Sociotechnical architect and change facilitator",
+        "photo": "Xin_Yao.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "photo": "/Karol_portrait.webp",
+        "role": "Integration Architect",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1069,6 +1563,19 @@
     "date": "2026-08-06",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Hannes Lowette",
+        "role": "Developer, mentor and coach",
+        "photo": "Hannes_Lowette.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "photo": "/Karol_portrait.webp",
+        "role": "Integration Architect",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1091,6 +1598,24 @@
     "date": "2026-08-13",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Chris Simon",
+        "role": "Technology coach and advisor",
+        "photo": "Chris_Simon.webp"
+      },
+      {
+        "name": "Aaron Lee",
+        "role": "Senior Solutions Engineer at Solace",
+        "photo": "Aaron_Lee.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "photo": "/Karol_portrait.webp",
+        "role": "Integration Architect",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1114,6 +1639,13 @@
     "date": "2026-09-16",
     "eventType": "Workshop",
     "tags": ["Workshop"],
+    "speakers": [
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Workshop leader",
+        "photo": "/Karol_portrait.webp"
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1133,12 +1665,30 @@
     }
   },
   {
-    "name": "Loosely Coupled - BridgingTheGap goes Ensemble Programming! Live coding session!",
+    "name": "Loosely Coupled - BridgingTheGap.eu.com goes Ensemble Programming! Live coding session!",
     "img": "/events/Loosely_Coupled_BridgingTheGap_goes_Ensemble_Programming_Live_coding_session.webp",
     "description": "How do we work as programmers, architects? How do we solve problems? What are our ways of working? Is the team we’re on an actual team if we put on our headphones, put music on and everyone focuses on their own ticket in jira? These are a few of the core questions that are the subject of ways of working. \n\nHow do we work as programmers, architects? How do we solve problems? What are our ways of working? Is the team we’re on an actual team if we put on our headphones, put music on and everyone focuses on their own ticket in jira? These are a few of the core questions that are the subject of ways of working. \n\nMost people (not IT) view programming as an activity, where you sit in solitude in front of a computer and write code. That’s it! Done! Software is born and we move one to another project. The reality, as always, is more complex than that. Software engineering is a complex endeavor. While this notion may work for small programs like automating your own workspace, or writing a small app for your phone for your particular needs, this is not how programming works in business environments - it is a collaborative effort.\n\nOver the years there have been many approaches to programming, we still do solo programming and then validate it through code reviews. We do pair programming, where the core practice is that we have a pair of people working on a piece of code on the same workstation. Some developers do rubber ducking, where they debug and extend the code through explaining it to inanimate rubber ducky, or a(n) (un)willing colleague.\n\nThis episode we’ll be a little bit different! Usually we have a conversation, share examples, and discuss a problem. This time around we’ll attempt to solve a problem by coding! And for that part not any kind of coding! We’ll jump right into a practice that originates from eXtreme Programming and goes further! We’ll be doing Ensemble Programming! We have invited two Fullstack Engineers and Ensemble practitioners, James Herr and Arthur Morrow to guide us through the process! Let’s see if together we can solve the problem we prepared!",
     "date": "2026-08-27",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Arthur Morrow",
+        "role": "Fullstack Engineer and Ensemble practitioner",
+        "photo": "Arthur_Morrow.webp"
+      },
+      {
+        "name": "James Herr",
+        "role": "Fullstack Engineer and Ensemble practitioner",
+        "photo": "James_Herr.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "photo": "/Karol_portrait.webp",
+        "role": "Integration Architect",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1161,6 +1711,19 @@
     "date": "2026-10-07",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Daniel Kocot",
+        "role": "Principal Integration Architect at adorsys",
+        "photo": "Daniel_Kocot.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "photo": "/Karol_portrait.webp",
+        "role": "Integration Architect",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1183,6 +1746,24 @@
     "date": "2026-09-01",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Philipp Kostyra",
+        "role": "Guest",
+        "photo": "/Philipp_portrait.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Guest",
+        "photo": "/Karol_portrait.webp"
+      },
+      {
+        "name": "Alberto Brandolini",
+        "role": "Moderator",
+        "photo": "Alberto_Brandolini.webp",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1205,6 +1786,19 @@
     "date": "2026-10-14",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Nadzeya Stalbouskaya",
+        "role": "Co-Founder, Enterprise Architecture & Transformation Adviser",
+        "photo": "Nadzeya_Stalbouskaya.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "photo": "/Karol_portrait.webp",
+        "role": "Integration Architect",
+        "isHost": true
+      }
+    ],
     "details": {
       "date": {
         "type": "date",

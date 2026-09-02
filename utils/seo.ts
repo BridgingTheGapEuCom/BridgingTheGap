@@ -1,5 +1,5 @@
 export const SITE_URL = 'https://bridgingthegap.eu.com'
-export const SITE_NAME = 'Bridging the Gap'
+export const SITE_NAME = 'BridgingTheGap.eu.com'
 export const SITE_LOGO = `${SITE_URL}/logo.webp`
 export const DEFAULT_OG_IMAGE = SITE_LOGO
 

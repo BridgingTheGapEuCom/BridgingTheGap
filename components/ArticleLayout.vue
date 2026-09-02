@@ -1,717 +1,427 @@
 <template>
-  <div class="justify-between w-full articleLinkHeight max-w-screen-xl flex flex-grow">
-    <div class="flex justify-center flex-grow">
-      <div class="article">
-        <div class="mb-5">
-          <NuxtLink
-            class="flex link items-end text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white"
-            to="/"
-          >
-            <SvgIcon :path="mdiArrowLeft" :size="24" type="mdi" />
-            <div class="ml-1">Back to articles list</div>
-          </NuxtLink>
-        </div>
-        <h1 class="mt-3 mb-2.5">
-          {{ title }}
-        </h1>
-        <div class="text-justify hyphens-auto my-2 sm:block flex flex-col">
-          <NuxtLink
-            v-for="tag of tags"
-            :key="tag"
-            :to="tagLink(tag)"
-            class="pr-2 navigation-button text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
-          >
+  <div v-if="articleMeta" class="article-layout">
+    <main class="article-reading-column">
+      <NuxtLink class="article-back-link" to="/articles">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6" /></svg>
+        Back to articles
+      </NuxtLink>
+
+      <header class="article-header">
+        <span class="article-kind">Article</span>
+        <h1>{{ articleMeta.title }}</h1>
+
+        <nav class="article-tags" aria-label="Article topics">
+          <NuxtLink v-for="tag in articleMeta.tags" :key="tag" :to="tagLink(tag)">
             #{{ tag }}
           </NuxtLink>
-        </div>
-        <div class="border-t dark:border-neutral-800">
-          <div class="my-2 pb-1 flex lg:flex-col flex-col flex-1 justify-between">
-            <div
-              v-for="(author, i) of authors"
-              :key="author.author"
-              :class="{ 'mb-2': i < authors.length - 1 }"
-              class="flex flex-row"
-            >
-              <img
-                :alt="`${author.author}s photo`"
-                :src="author.photo"
-                class="grayscale rounded-md max-h-20"
-                height="90"
-                width="90"
-              />
-              <div id="article_authors" class="ml-3 flex flex-col justify-end">
-                <div>Author</div>
-                <div>
-                  <div class="font-bold h2">
-                    {{ author.author }}
-                  </div>
-                  <div>{{ author.title }}</div>
-                </div>
-              </div>
+        </nav>
+
+        <div class="article-primary-authors">
+          <div v-for="author in articleMeta.authors" :key="author.author" class="primary-author">
+            <img :src="author.photo" :alt="`${author.author} portrait`" />
+            <div>
+              <span>Author</span>
+              <strong>{{ author.author }}</strong>
+              <p>{{ author.title }}</p>
             </div>
           </div>
         </div>
-        <div class="flex flex-col lg:flex-row justify-between border-t dark:border-neutral-800">
-          <div v-if="coAuthors.length > 0">
-            <div class="h4 mt-3">Co-authors</div>
-            <div v-for="author of coAuthors" :key="author.author">
-              <a
-                :href="author.link"
-                class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
-                target="_blank"
-                >{{ author.author }}</a
-              >
-            </div>
+
+        <dl class="article-metadata">
+          <div v-if="articleMeta.coAuthors?.length">
+            <dt>Co-authors</dt>
+            <dd v-for="author in articleMeta.coAuthors" :key="author.author">
+              <a :href="author.link" target="_blank" rel="noopener noreferrer">
+                {{ author.author }}
+              </a>
+            </dd>
           </div>
-          <div v-if="reviewers.length > 0">
-            <div class="h4 mt-3">Article Reviewers</div>
-            <div v-for="reviewer of sortedReviewers" :key="reviewer.reviewer">
-              <a
-                :href="reviewer.link"
-                class="link text-gray-600 dark:text-gray-400 hover:text-black hover:dark:text-gray-50"
-                target="_blank"
-                >{{ reviewer.reviewer }}</a
-              >
-            </div>
+          <div v-if="sortedReviewers.length">
+            <dt>Article reviewers</dt>
+            <dd v-for="reviewer in sortedReviewers" :key="reviewer.reviewer">
+              <a :href="reviewer.link" target="_blank" rel="noopener noreferrer">
+                {{ reviewer.reviewer }}
+              </a>
+            </dd>
           </div>
-          <div class="text-justify hyphens-auto block">
-            <div class="mt-3" />
-            <div class="h4">Published</div>
-            <div class="text-gray-600 dark:text-gray-400">
-              {{ published }}
-            </div>
-            <div class="h4 mb-1">Last update</div>
-            <div class="text-gray-600 dark:text-gray-400">
-              {{ lastUpdate }}
-            </div>
+          <div>
+            <dt>Published</dt>
+            <dd>
+              <time :datetime="articleMeta.publishDate">{{ publishedDate }}</time>
+            </dd>
           </div>
-        </div>
-        <div class="my-2 border-b dark:border-neutral-800" />
-        <div class="max-w-screen-xl flex flex-grow">
-          <slot :dark="props.dark" />
-        </div>
-        <div v-if="relatedArticles.length > 0">
-          <div class="mt-3 border-b dark:border-neutral-800" />
-          <div class="h4 mt-3">Related articles</div>
-          <div v-for="related of relatedArticles" :key="related.title" class="articleLinkHeight">
-            <NuxtLink
-              :href="`/articles/${related.name}`"
-              class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
-            >
-              {{ related.title }}
-            </NuxtLink>
+          <div>
+            <dt>Last update</dt>
+            <dd>
+              <time :datetime="articleMeta.lastUpdate">{{ updatedDate }}</time>
+            </dd>
+          </div>
+        </dl>
+
+        <div class="article-summary" aria-label="Article details">
+          <div>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3 2" />
+            </svg>
+            <span v-if="readingMinutes">{{ readingMinutes }} min read</span>
+            <span v-else aria-label="Reading time being calculated">—</span>
+          </div>
+          <div>
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <rect x="4" y="5" width="16" height="15" rx="2" />
+              <path d="M8 3v4M16 3v4M4 10h16M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01" />
+            </svg>
+            <time :datetime="articleMeta.publishDate">{{ publishedDate }}</time>
           </div>
         </div>
-        <div v-if="bibliography.length > 0">
-          <div class="mt-3 border-b dark:border-neutral-800" />
-          <div class="h4 mt-3">Bibliography</div>
-          <div v-for="bib of bibliography" :key="bib.title" class="articleLinkHeight break-all">
-            <a
-              :href="bib.link"
-              class="link text-gray-500 hover:text-black dark:text-gray-400 dark:hover:text-white"
-              target="_blank"
-              >{{ bib.title }}</a
-            >
-            <span v-if="bib.ISBN">;&nbsp;ISBN {{ bib.ISBN }}</span>
-            <span>;&nbsp;{{ bib.author }}</span>
-          </div>
-        </div>
+      </header>
+
+      <details
+        v-if="tableOfContents.length"
+        ref="mobileToc"
+        class="article-mobile-toc"
+        @keydown.esc="closeMobileToc"
+      >
+        <summary>
+          On this page
+          <svg aria-hidden="true" viewBox="0 0 20 20"><path d="m5 7.5 5 5 5-5" /></svg>
+        </summary>
+        <nav aria-label="On this page">
+          <a
+            v-for="heading in tableOfContents"
+            :key="heading.id"
+            :class="[`toc-level-${heading.level}`, { active: activeHeading === heading.id }]"
+            :href="`#${encodeURIComponent(heading.id)}`"
+            @click.prevent="navigateToHeading(heading)"
+          >
+            {{ heading.text }}
+          </a>
+        </nav>
+      </details>
+
+      <div ref="articleContent" class="article-content">
+        <slot :dark="props.dark" />
       </div>
-    </div>
-    <div class="w-[12rem] self-stretch ml-3 hidden lg:block">
-      <div class="sticky top-16 dark:border-neutral-900 border-l overflow-auto">
-        <div class="flex flex-col justify-between items-stretch pageHeight">
-          <div class="text-left">
-            <div class="font-bold h3 mb-2 pl-3">Table of contents</div>
-            <template v-if="contentElements.length > 0">
-              <div
-                v-for="(element, i) of contentElements"
-                :key="element.id"
-                class="text-gray-500 dark:text-gray-400"
-              >
-                <template v-if="element.localName === 'h2'">
-                  <div
-                    :class="{
-                      'border-black': lowestIntersecting === i,
-                      'dark:border-white': lowestIntersecting === i,
-                      'border-transparent': lowestIntersecting !== i
-                    }"
-                    class="ml-2 pl-1 border-l-2 py-0.5"
-                  >
-                    <a
-                      :id="`${encodeURI(element.id)}_anchor`"
-                      :class="{
-                        'text-black': lowestIntersecting === i,
-                        'dark:text-white': lowestIntersecting === i
-                      }"
-                      :href="`#${encodeURI(element.id)}`"
-                      class="articleContentLink hover:underline"
-                      >{{ element.textContent }}</a
-                    >
-                  </div>
-                </template>
-                <template v-if="element.localName === 'h3'">
-                  <div
-                    :class="{
-                      'border-black': lowestIntersecting === i,
-                      'dark:border-white': lowestIntersecting === i,
-                      'border-transparent': lowestIntersecting !== i
-                    }"
-                    class="ml-2 pl-4 border-l-2 py-0.5"
-                  >
-                    <a
-                      :id="`${encodeURI(element.id)}_anchor`"
-                      :class="{
-                        'text-black': lowestIntersecting === i,
-                        'dark:text-white': lowestIntersecting === i
-                      }"
-                      :href="`#${encodeURI(element.id)}`"
-                      class="articleContentLink hover:underline"
-                      >{{ element.textContent }}</a
-                    >
-                  </div>
-                </template>
-                <template v-if="element.localName === 'h4'">
-                  <div
-                    :class="{
-                      'border-black': lowestIntersecting === i,
-                      'dark:border-white': lowestIntersecting === i,
-                      'border-transparent': lowestIntersecting !== i
-                    }"
-                    class="ml-2 pl-7 border-l-2 py-0.5"
-                  >
-                    <a
-                      :id="`${encodeURI(element.id)}_anchor`"
-                      :class="{
-                        'text-black': lowestIntersecting === i,
-                        'dark:text-white': lowestIntersecting === i
-                      }"
-                      :href="`#${encodeURI(element.id)}`"
-                      class="articleContentLink hover:underline"
-                      >{{ element.textContent }}</a
-                    >
-                  </div>
-                </template>
-                <template v-if="element.localName === 'h5'">
-                  <div
-                    :class="{
-                      'border-black': lowestIntersecting === i,
-                      'dark:border-white': lowestIntersecting === i,
-                      'border-transparent': lowestIntersecting !== i
-                    }"
-                    class="ml-2 pl-10 border-l-2 py-0.5"
-                  >
-                    <a
-                      :id="`${encodeURI(element.id)}_anchor`"
-                      :class="{
-                        'text-black': lowestIntersecting === i,
-                        'dark:text-white': lowestIntersecting === i
-                      }"
-                      :href="`#${encodeURI(element.id)}`"
-                      class="articleContentLink hover:underline"
-                      >{{ element.textContent }}</a
-                    >
-                  </div>
-                </template>
-              </div>
-            </template>
-          </div>
-        </div>
-      </div>
-    </div>
+
+      <section v-if="relatedArticles.length" class="article-supporting-section">
+        <h2>Related articles</h2>
+        <ul>
+          <li v-for="related in relatedArticles" :key="related.name">
+            <NuxtLink :to="`/articles/${related.name}`">{{ related.title }}</NuxtLink>
+          </li>
+        </ul>
+      </section>
+
+      <section v-if="articleMeta.bibliography?.length" class="article-supporting-section">
+        <h2>Bibliography</h2>
+        <ul>
+          <li v-for="entry in articleMeta.bibliography" :key="entry.title">
+            <a :href="entry.link" target="_blank" rel="noopener noreferrer">{{ entry.title }}</a>
+            <span v-if="entry.ISBN">; ISBN {{ entry.ISBN }}</span>
+            <span v-if="entry.author">; {{ entry.author }}</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <aside v-if="tableOfContents.length" class="article-desktop-toc">
+      <nav aria-label="On this page">
+        <h2>On this page</h2>
+        <a
+          v-for="heading in tableOfContents"
+          :key="heading.id"
+          :class="[`toc-level-${heading.level}`, { active: activeHeading === heading.id }]"
+          :href="`#${encodeURIComponent(heading.id)}`"
+          @click.prevent="navigateToHeading(heading)"
+        >
+          {{ heading.text }}
+        </a>
+      </nav>
+    </aside>
   </div>
 </template>
 
-<script setup>
-import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import articles from '../articles.json'
-import { mdiArrowLeft } from '@mdi/js'
-import SvgIcon from '@jamescoyle/vue-icon'
+<script lang="ts" setup>
+import type { Article, Author, Reviewer } from '~/Types/Article'
+import articlesData from '~/articles.json'
 import { DEFAULT_OG_IMAGE, getArticleOgImage, SITE_NAME, SITE_URL } from '~/utils/seo'
 
-/**
- * @typedef {Object} Props
- * @property {boolean} [dark=false] - Determines if the component should render in dark mode. Default is false.
- */
-const props = defineProps({
-  dark: { type: Boolean, default: false }
-})
-
-/**
- * Provides access to the current route information within a React component.
- * Returns an object containing details about the active route, such as the path, parameters, and query string.
- *
- * @returns {Object} An object with the following properties:
- *  - path: A string representing the current URL path.
- *  - params: An object containing dynamic route parameters if any.
- *  - query: An object containing query parameters from the URL.
- */
-const route = useRoute()
-/**
- * Returns the router instance associated with the current component or application context.
- * This instance provides methods for navigation, route management, and obtaining information about the current route.
- *
- * @returns {Router} The router instance.
- */
-const router = useRouter()
-
-/**
- * A reactive reference to the name of an article.
- * Used for managing state in Vue 3 components, especially when dealing with form data or dynamic content rendering.
- */
-const articleName = ref('')
-/**
- * A reactive reference that holds a string value.
- * This is useful for managing state in reactive applications, allowing the value to be observed and updated.
- */
-const title = ref('')
-/**
- * Reactive reference to a string that indicates whether content is published or not.
- *
- * @type {Ref<string>}
- * @public
- */
-const published = ref('')
-/**
- * Reactive reference to the last update timestamp of some data.
- * This variable holds a string representing the most recent modification time in ISO 8601 format.
- * It is typically updated whenever the associated data is changed, ensuring that it reflects the latest update.
- */
-const lastUpdate = ref('')
-/**
- * An array reference used to store bibliographic entries. This variable acts as a container for managing collections of sources, such as books, articles, or other scholarly works, that are referenced in a document or project.
- *
- * @type {Array}
- * @property {Object} bibliography - The array storing bibliographic entries.
- */
-const bibliography = ref([])
-/**
- * A reactive reference to an array of related articles.
- * This variable is used to store and manage a list of articles that are relevant or similar to the current content being viewed.
- * It provides reactivity, allowing components to automatically update when the related articles change.
- */
-const relatedArticles = ref([])
-/**
- * An array that holds references to reviewers.
- * Each element in the array should be a reference object representing a reviewer.
- */
-const reviewers = ref([])
-/**
- * An array of author objects. Each object represents an author with their details.
- * The array is mutable and can be modified to add, remove, or update authors.
- *
- * @type {Array<Object>}
- * @property {string} name - The full name of the author.
- * @property {string} email - The contact email address of the author.
- * @property {string} affiliation - The organization or institution the author belongs to.
- * @property {boolean} isPrimary - Indicates if this author is the primary point of contact for a work.
- *
- * Example:
- * const authors = ref([
- *   {
- *     name: 'John Doe',
- *     email: 'john.doe@example.com',
- *     affiliation: 'Example Corp',
- *     isPrimary: true
- *   }
- * ]);
- */
-const authors = ref([])
-/**
- * A reference to an array of co-authors.
- * Initially empty, it can be used to store information about contributors to a project or document.
- * Each element in the array is expected to represent a single co-author and could contain relevant data like name, email, etc.
- */
-const coAuthors = ref([])
-/**
- * A reference to an empty array.
- *
- * @type {Array}
- */
-const contents = ref([])
-/**
- * Variable representing the lowest intersecting index.
- * Default value is -1, indicating no intersection found.
- */
-const lowestIntersecting = ref(-1)
-/**
- * A reference to an array that holds content elements.
- * This array is used to store and manage various components or data
- * that are dynamically added or manipulated within a user interface.
- */
-const contentElements = ref([])
-
-/**
- * A reference to an array of elements. This variable holds a mutable list that can be modified at runtime, including adding or removing items.
- *
- * @type {Array}
- */
-const tags = ref([])
-
-onMounted(async () => {
-  await updateData(false)
-  const body = document.getElementById('body')
-  body.addEventListener('scroll', onScroll)
-})
-
-onBeforeUnmount(() => {
-  const body = document.getElementById('body')
-  body.removeEventListener('scroll', onScroll)
-})
-
-watch(route, async (current, prev) => {
-  if (current.fullPath !== prev.fullPath) {
-    await updateData(false)
-  }
-})
-
-/**
- * A computed property that returns a sorted array of reviewers.
- *
- * The sorting is based on the 'reviewer' field of each item in ascending order.
- * If `reviewers.value` is not defined or null, an empty array is returned.
- *
- * @type {Ref<Array<Object>>}
- */
-const sortedReviewers = computed(() => {
-  if (reviewers.value) {
-    return [...reviewers.value].sort((a, b) => {
-      return a.reviewer.localeCompare(b.reviewer)
-    })
-  }
-
-  return []
-})
-
-/**
- * Handles the scroll event for a list of content elements.
- * Updates the URL hash based on the current visible content element.
- * Scrolls to the top of the body if the list is empty.
- *
- * @function
- * @name onScroll
- * @listens window#scroll
- * @returns {void}
- */
-const onScroll = () => {
-  let last = null
-  if (contentElements.value.length > 0) {
-    last = contentElements.value[0].intersectionId
-  }
-
-  const body = document.getElementById('body')
-
-  const scrollValue = body.scrollTop + 80
-  for (let i = 0; i < contentElements.value.length; i++) {
-    if (contentElements.value[i].offsetTop > scrollValue) {
-      if (contentElements.value[i - 1]) {
-        router.replace({
-          hash: `#${contentElements.value[i - 1].id}`
-        })
-      }
-      i = contentElements.value.length
-      lowestIntersecting.value = last
-      return
-    }
-    last = contentElements.value[i].intersectionId
-  }
-
-  if (contentElements.value.length > 0) {
-    if (contentElements.value[contentElements.value.length - 1].offsetTop < scrollValue) {
-      lowestIntersecting.value =
-        contentElements.value[contentElements.value.length - 1].intersectionId
-      router.replace({
-        hash: `#${contentElements.value[contentElements.value.length - 1].id}`
-      })
-    }
-  }
+interface LinkedAuthor {
+  author: string
+  link: string
 }
 
-/**
- * Asynchronously updates the article data based on the current route and SSR status.
- *
- * @param {boolean} ssr - Indicates whether the function is running in a server-side rendering environment.
- * @async
- * @returns {void}
- */
-const updateData = async (ssr) => {
-  if (articleName.value === route.name.replace('articles-', '')) {
-    await nextTick(() => {
-      onScroll()
-    })
+interface ArticleRecord extends Article {
+  coAuthors?: LinkedAuthor[]
+  relatedTags?: string[]
+}
+
+interface TableOfContentsEntry {
+  id: string
+  text: string
+  level: number
+  element: HTMLElement
+}
+
+const props = withDefaults(defineProps<{ dark?: boolean }>(), { dark: false })
+const route = useRoute()
+const articleContent = useTemplateRef<HTMLElement>('articleContent')
+const mobileToc = useTemplateRef<HTMLDetailsElement>('mobileToc')
+const tableOfContents = ref<TableOfContentsEntry[]>([])
+const activeHeading = ref('')
+const readingMinutes = ref<number>()
+const articles = articlesData as ArticleRecord[]
+
+const articleName = computed(() => String(route.name ?? '').replace('articles-', ''))
+const articleMeta = computed(() => articles.find((article) => article.name === articleName.value))
+const sortedReviewers = computed<Reviewer[]>(() =>
+  [...(articleMeta.value?.reviewers ?? [])].sort((first, second) =>
+    first.reviewer.localeCompare(second.reviewer)
+  )
+)
+const relatedArticles = computed(() => {
+  const relatedTags = articleMeta.value?.relatedTags ?? []
+  if (!relatedTags.length) return []
+  return articles.filter(
+    (article) =>
+      article.name !== articleMeta.value?.name &&
+      relatedTags.some((tag) => article.tags?.includes(tag))
+  )
+})
+
+const acceptLanguage = import.meta.server ? useRequestHeader('accept-language') : undefined
+const userLocale = import.meta.client
+  ? navigator.language
+  : acceptLanguage?.split(',')[0]?.trim() || 'en'
+const dateFormatter = new Intl.DateTimeFormat(userLocale, { dateStyle: 'long' })
+const formatDate = (value: string) => dateFormatter.format(new Date(`${value}T00:00:00`))
+const publishedDate = computed(() =>
+  articleMeta.value ? formatDate(articleMeta.value.publishDate) : ''
+)
+const updatedDate = computed(() =>
+  articleMeta.value ? formatDate(articleMeta.value.lastUpdate) : ''
+)
+
+const tagLink = (tag: string) => ({ path: '/articles', query: { tags: tag } })
+
+const headingId = (text: string, usedIds: Map<string, number>) => {
+  const base = text.trim().replace(/\s+/g, '_') || 'section'
+  const occurrence = usedIds.get(base) ?? 0
+  usedIds.set(base, occurrence + 1)
+  return occurrence ? `${base}_${occurrence}` : base
+}
+
+const scrollToHeading = (heading: TableOfContentsEntry, smooth = false) => {
+  const body = document.getElementById('body')
+  if (!body) return
+
+  const headerHeight = document.querySelector<HTMLElement>('.site-header')?.offsetHeight ?? 0
+  const headingTop = heading.element.getBoundingClientRect().top
+  const bodyTop = body.getBoundingClientRect().top
+  const targetTop = body.scrollTop + headingTop - bodyTop - headerHeight - 24
+
+  if (smooth && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    body.scrollTo({ top: targetTop, behavior: 'smooth' })
     return
   }
 
-  articleName.value = route.name.replace('articles-', '')
+  const previousScrollBehavior = body.style.scrollBehavior
+  body.style.scrollBehavior = 'auto'
+  body.scrollTop = targetTop
+  body.style.scrollBehavior = previousScrollBehavior
+}
 
-  bibliography.value = []
+const replaceHash = (id: string) => {
+  const hash = `#${encodeURIComponent(id)}`
+  if (window.location.hash === hash) return
+  window.history.replaceState(window.history.state, '', `${route.fullPath.split('#')[0]}${hash}`)
+}
 
-  const articleMeta = articles.find((el) => {
-    return el.name === articleName.value
-  })
+const closeMobileToc = () => {
+  if (mobileToc.value?.open) mobileToc.value.open = false
+}
 
-  if (articleMeta) {
-    title.value = articleMeta.title
-    published.value = new Date(articleMeta.publishDate).toLocaleDateString()
-    lastUpdate.value = new Date(articleMeta.lastUpdate).toLocaleDateString()
-    tags.value = articleMeta.tags ? articleMeta.tags : []
-    bibliography.value = articleMeta.bibliography ? articleMeta.bibliography : []
-    reviewers.value = articleMeta.reviewers ? articleMeta.reviewers : []
-    authors.value = articleMeta.authors ? articleMeta.authors : []
-    coAuthors.value = articleMeta.coAuthors ? articleMeta.coAuthors : []
+const onDocumentPointerDown = (event: PointerEvent) => {
+  const toc = mobileToc.value
+  if (!toc?.open || toc.contains(event.target as Node)) return
+  closeMobileToc()
+}
 
-    const seoAuthors = []
-    const articleAuthors = []
-    for (const author of authors.value) {
-      seoAuthors.push({
-        '@type': 'Person',
-        name: author.author,
-        url: author.link
-      })
-      articleAuthors.push(author.author)
+let isNavigatingToHeading = false
+let navigationEndTimer: number | undefined
+let removeNavigationEndListener: (() => void) | undefined
+
+const finishHeadingNavigation = () => {
+  if (!isNavigatingToHeading) return
+  isNavigatingToHeading = false
+  if (navigationEndTimer) window.clearTimeout(navigationEndTimer)
+  removeNavigationEndListener?.()
+  removeNavigationEndListener = undefined
+  updateActiveHeading(false)
+}
+
+const navigateToHeading = (heading: TableOfContentsEntry) => {
+  const body = document.getElementById('body')
+  if (!body) return
+
+  closeMobileToc()
+  if (navigationEndTimer) window.clearTimeout(navigationEndTimer)
+  removeNavigationEndListener?.()
+  isNavigatingToHeading = true
+  activeHeading.value = heading.id
+  replaceHash(heading.id)
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  if (reduceMotion) {
+    scrollToHeading(heading)
+    finishHeadingNavigation()
+    return
+  }
+
+  const onScrollEnd = () => finishHeadingNavigation()
+  body.addEventListener('scrollend', onScrollEnd, { once: true })
+  removeNavigationEndListener = () => body.removeEventListener('scrollend', onScrollEnd)
+  navigationEndTimer = window.setTimeout(finishHeadingNavigation, 1600)
+  scrollToHeading(heading, true)
+}
+
+const buildArticleNavigation = async () => {
+  await nextTick()
+  const article = articleContent.value?.querySelector('article')
+  if (!article) return
+
+  const words = article.textContent?.trim().split(/\s+/).filter(Boolean).length ?? 0
+  readingMinutes.value = words ? Math.max(1, Math.ceil(words / 200)) : undefined
+
+  const usedIds = new Map<string, number>()
+  tableOfContents.value = [...article.querySelectorAll<HTMLElement>('h2, h3, h4, h5')].map(
+    (element) => {
+      const text = element.textContent?.trim() ?? ''
+      const id = headingId(text, usedIds)
+      element.id = id
+      return {
+        id,
+        text,
+        level: Number(element.tagName.slice(1)),
+        element
+      }
     }
+  )
+  activeHeading.value = tableOfContents.value[0]?.id ?? ''
 
-    relatedArticles.value = []
-    if (articleMeta.relatedTags && articleMeta.relatedTags.length > 0) {
-      relatedArticles.value = findRelatedArticles(articleMeta.relatedTags)
-    }
-
-    const articleUrl = `${SITE_URL}/articles/${articleMeta.name}`
-    const articleOgImage = getArticleOgImage(articleMeta.name)
-
-    useHead(
-      {
-        title: title.value,
-        link: [
-          {
-            rel: 'canonical',
-            href: articleUrl
-          }
-        ],
-        script: [
-          {
-            key: 'article-schema',
-            type: 'application/ld+json',
-            innerHTML: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Article',
-              headline: title.value,
-              image: [articleOgImage],
-              datePublished: articleMeta.publishDate,
-              dateModified: articleMeta.lastUpdate,
-              author: seoAuthors,
-              url: articleUrl,
-              mainEntityOfPage: articleUrl,
-              publisher: {
-                '@type': 'Organization',
-                name: SITE_NAME,
-                url: SITE_URL,
-                logo: {
-                  '@type': 'ImageObject',
-                  url: DEFAULT_OG_IMAGE
-                }
-              }
-            })
-          }
-        ]
-      },
-      {}
-    )
-
-    useSeoMeta({
-      ogType: 'article',
-      title: title.value,
-      ogTitle: title.value,
-      twitterTitle: title.value,
-      description: articleMeta.short,
-      ogDescription: articleMeta.short,
-      twitterDescription: articleMeta.short,
-      ogImage: articleOgImage,
-      twitterImage: articleOgImage,
-      twitterCard: 'summary_large_image',
-      ogUrl: articleUrl,
-      author: articleAuthors
-    })
+  const initialHash = window.location.hash || route.hash
+  if (initialHash) {
+    const id = decodeURIComponent(initialHash.slice(1))
+    await nextTick()
+    const heading = tableOfContents.value.find((entry) => entry.id === id)
+    if (heading) scrollToHeading(heading)
   }
-
-  if (!ssr) {
-    await nextTick(() => {
-      createContents()
-      onScroll()
-    })
-  } else {
-    articleName.value = 'waiting for client mount'
-  }
+  updateActiveHeading(false)
 }
 
-/**
- * Finds and returns an array of articles related to the given tags.
- *
- * @param {Array<string>} relatedTags - An array of tags to search for.
- * @returns {Array<{ title: string, name: string }>} - An array of objects containing the title and name of related articles.
- */
-const findRelatedArticles = (relatedTags) => {
-  const articleSet = new Set()
-  relatedTags.forEach((tag) => {
-    articles.forEach((article) => {
-      if (article.title !== title.value && article.tags && article.tags.includes(tag)) {
-        articleSet.add({ title: article.title, name: article.name })
-      }
-    })
-  })
+const updateActiveHeading = (updateHash = true) => {
+  const body = document.getElementById('body')
+  if (!body || !tableOfContents.value.length) return
 
-  return Array.from(articleSet)
-}
-
-/**
- * Creates a hierarchical structure of content elements from the first 'article' element in the DOM.
- * Each heading ('h2', 'h3', 'h4', 'h5') becomes a node in this hierarchy, with IDs and intersection IDs.
- * Handles duplicate IDs by appending a count to them.
- * Updates the route hash if it matches an ID within the content structure.
- */
-const createContents = () => {
-  const article = document.getElementsByTagName('article')[0]
-
-  contentElements.value = []
-
-  if (article && article.children) {
-    let intersectionId = -1
-    const allIds = []
-    Object.keys(article.children).forEach((childKey) => {
-      const child = article.children[childKey]
-      if (['h2', 'h3', 'h4', 'h5'].includes(child.localName)) {
-        contentElements.value.push(child)
-        intersectionId++
-        child.intersectionId = intersectionId
-        if (child.localName === 'h2') {
-          child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}`
-          if (allIds.includes(child.id)) {
-            let count = 0
-            allIds.forEach((el) => {
-              if (el === child.id) {
-                count++
-              }
-            })
-            child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}_${count}`
-          }
-          allIds.push(child.id)
-          contents.value.push({
-            title: child.textContent,
-            id: child.id,
-            intersectionId: intersectionId,
-            children: []
-          })
-        } else if (child.localName === 'h3') {
-          child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}`
-          if (allIds.includes(child.id)) {
-            let count = 0
-            allIds.forEach((el) => {
-              if (el === child.id) {
-                count++
-              }
-            })
-            child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}_${count}`
-          }
-          allIds.push(child.id)
-
-          contents.value[contents.value.length - 1].children.push({
-            title: child.textContent,
-            id: child.id,
-            intersectionId: intersectionId,
-            children: []
-          })
-        } else if (child.localName === 'h4') {
-          const h2Length = contents.value.length
-          const h3Length = contents.value[h2Length - 1].children.length
-
-          child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}`
-          if (allIds.includes(child.id)) {
-            let count = 0
-            allIds.forEach((el) => {
-              if (el === child.id) {
-                count++
-              }
-            })
-            child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}_${count}`
-          }
-          allIds.push(child.id)
-
-          contents.value[h2Length - 1].children[h3Length - 1].children.push({
-            title: child.textContent,
-            intersectionId: intersectionId,
-            id: child.id,
-            children: []
-          })
-        } else if (child.localName === 'h5') {
-          const h2Length = contents.value.length
-          const h3Length = contents.value[h2Length - 1].children.length
-          const h4Length = contents.value[h2Length - 1].children[h3Length - 1].children.length
-
-          child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}`
-          if (allIds.includes(child.id)) {
-            let count = 0
-            allIds.forEach((el) => {
-              if (el === child.id) {
-                count++
-              }
-            })
-            child.id = `${encodeURI(child.textContent.replaceAll(' ', '_'))}_${count}`
-          }
-          allIds.push(child.id)
-
-          contents.value[h2Length - 1].children[h3Length - 1].children[h4Length - 1].children.push({
-            title: child.textContent,
-            intersectionId: intersectionId,
-            id: child.id
-          })
-        }
-      }
-    })
-
-    nextTick(() => {
-      let hash = route.hash
-      if (hash) {
-        hash = encodeURI(hash).substring(1)
-        const el = document.getElementById(`${hash}_anchor`)
-        if (el) {
-          el.click()
-        }
-      }
-    })
-  }
-}
-
-/**
- * Generates a URL with the specified tag added or removed from the query parameter 'tags'.
- *
- * @param {string} tag - The tag to add or remove from the URL.
- * @return {string} - The new URL with the updated 'tags' query parameter.
- */
-const tagLink = (tag) => {
-  if (route.query && route.query.tags) {
-    if (!route.query.tags.split(',').includes(tag)) {
-      return `/?tags=${route.query.tags + ',' + tag}`
+  const bodyTop = body.getBoundingClientRect().top
+  let current = tableOfContents.value[0]
+  let passedHeading = false
+  for (const heading of tableOfContents.value) {
+    if (heading.element.getBoundingClientRect().top - bodyTop <= 120) {
+      current = heading
+      passedHeading = true
     } else {
-      const filter = route.query.tags.split(',').filter((el) => {
-        return el !== tag
-      })
-      if (filter.length === 0) {
-        return `/`
-      } else {
-        return `/?tags=${filter}`
-      }
+      break
     }
-  } else {
-    return `/?tags=${tag}`
   }
+
+  if (body.scrollTop + body.clientHeight >= body.scrollHeight - 2) {
+    current = tableOfContents.value.at(-1) ?? current
+    passedHeading = true
+  }
+
+  if (activeHeading.value !== current.id) activeHeading.value = current.id
+  if (updateHash && passedHeading) replaceHash(current.id)
 }
 
-updateData(true)
+let scrollBody: HTMLElement | null = null
+const onScroll = () => {
+  if (!isNavigatingToHeading) updateActiveHeading()
+}
+
+onMounted(async () => {
+  await buildArticleNavigation()
+  scrollBody = document.getElementById('body')
+  scrollBody?.addEventListener('scroll', onScroll, { passive: true })
+  document.addEventListener('pointerdown', onDocumentPointerDown)
+})
+
+onBeforeUnmount(() => {
+  scrollBody?.removeEventListener('scroll', onScroll)
+  document.removeEventListener('pointerdown', onDocumentPointerDown)
+  if (navigationEndTimer) window.clearTimeout(navigationEndTimer)
+  removeNavigationEndListener?.()
+})
+
+watch(
+  () => route.path,
+  async () => {
+    tableOfContents.value = []
+    readingMinutes.value = undefined
+    await buildArticleNavigation()
+  }
+)
+
+useHead(() => {
+  if (!articleMeta.value) return {}
+  const articleUrl = `${SITE_URL}/articles/${articleMeta.value.name}`
+  const articleOgImage = getArticleOgImage(articleMeta.value.name)
+  return {
+    title: articleMeta.value.title,
+    link: [{ rel: 'canonical', href: articleUrl }],
+    script: [
+      {
+        key: 'article-schema',
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: articleMeta.value.title,
+          image: [articleOgImage],
+          datePublished: articleMeta.value.publishDate,
+          dateModified: articleMeta.value.lastUpdate,
+          author: articleMeta.value.authors.map((author: Author) => ({
+            '@type': 'Person',
+            name: author.author,
+            url: author.link
+          })),
+          url: articleUrl,
+          mainEntityOfPage: articleUrl,
+          publisher: {
+            '@type': 'Organization',
+            name: SITE_NAME,
+            url: SITE_URL,
+            logo: { '@type': 'ImageObject', url: DEFAULT_OG_IMAGE }
+          }
+        })
+      }
+    ]
+  }
+})
+
+useSeoMeta({
+  ogType: 'article',
+  title: () => articleMeta.value?.title,
+  ogTitle: () => articleMeta.value?.title,
+  twitterTitle: () => articleMeta.value?.title,
+  description: () => articleMeta.value?.short,
+  ogDescription: () => articleMeta.value?.short,
+  twitterDescription: () => articleMeta.value?.short,
+  ogImage: () => (articleMeta.value ? getArticleOgImage(articleMeta.value.name) : undefined),
+  twitterImage: () => (articleMeta.value ? getArticleOgImage(articleMeta.value.name) : undefined),
+  twitterCard: 'summary_large_image',
+  ogUrl: () => (articleMeta.value ? `${SITE_URL}/articles/${articleMeta.value.name}` : undefined),
+  author: () => articleMeta.value?.authors.map((author) => author.author)
+})
 </script>
-
-<style scoped>
-.pageHeight {
-  height: calc(100svh - 6.5rem);
-}
-</style>

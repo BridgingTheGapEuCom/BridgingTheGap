@@ -200,8 +200,6 @@
 <script setup lang="ts">
 import Synchronous from '~/components/articles/Synchronous_vs_Asynchronous/Synchronous.vue'
 import Asynchronous from '~/components/articles/Synchronous_vs_Asynchronous/Asynchronous.vue'
-
-const dark = useState('dark', () => false)
 </script>
 
 <style scoped></style>

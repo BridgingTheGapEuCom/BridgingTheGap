@@ -10,6 +10,6 @@ export interface OpenBadgesDescription20 {
 }
 
 export interface Criteria {
-  type: string
+  type?: string
   narrative: string
 }

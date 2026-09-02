@@ -1,25 +1,23 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
+const isDevelopment = process.env.NODE_ENV === 'development'
+const allowedOrigins = [
+  'https://bridgingthegap.eu.com',
+  ...(isDevelopment ? ['http://localhost:3000', 'http://127.0.0.1:3000'] : [])
+]
+
 export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
     preset: 'node-server'
   },
 
-  ssr: true,
-
   compatibilityDate: '2024-04-03',
 
   css: ['~/assets/style/main.scss'],
   vite: {
     optimizeDeps: {
-      include: [
-        'v-calendar',
-        'vue-recaptcha-v3',
-        '@mdi/js',
-        'tailwindcss/resolveConfig',
-        '@vueuse/core'
-      ]
+      include: ['v-calendar', 'vue-recaptcha-v3', '@mdi/js', '@vueuse/core']
     },
     css: {
       preprocessorOptions: {
@@ -30,20 +28,16 @@ export default defineNuxtConfig({
     }
   },
 
-  hooks: {
-    'nitro:config': (nitroConfig) => {
-      nitroConfig.esbuild = nitroConfig.esbuild || {}
-      nitroConfig.esbuild.define = nitroConfig.esbuild.define || {}
-      nitroConfig.esbuild.define.nonce = () => `"${generateNonce()}"`
-    }
-  },
-
   security: {
     strict: true,
-    corsHandler: {
-      origin: ['https://bridgingthegap.eu.com', 'http://localhost:3000', 'http://127.0.0.1:3000'],
-      methods: ['GET', 'HEAD', 'POST']
+    nonce: true,
+    sri: true,
+    requestSizeLimiter: {
+      maxRequestSizeInBytes: 100_000,
+      maxUploadFileRequestInBytes: 100_000,
+      throwError: true
     },
+    corsHandler: false,
     rateLimiter: {
       tokensPerInterval: 150,
       interval: 300000,
@@ -61,6 +55,8 @@ export default defineNuxtConfig({
         'script-src': [
           "'self'",
           "'unsafe-inline'",
+          "'strict-dynamic'",
+          "'nonce-{{nonce}}'",
           '*.youtube.com',
           'https://www.googletagmanager.com',
           'https://www.google.com',
@@ -81,7 +77,12 @@ export default defineNuxtConfig({
           'https://www.youtube-nocookie.com',
           'https://www.google.com'
         ],
-        'frame-ancestors': ["'self'", 'https://www.youtube.com']
+        'base-uri': ["'none'"],
+        'form-action': ["'self'"],
+        'frame-ancestors': ["'self'"],
+        'object-src': ["'none'"],
+        'script-src-attr': ["'none'"],
+        'upgrade-insecure-requests': true
       },
       crossOriginEmbedderPolicy: 'unsafe-none',
       crossOriginOpenerPolicy: 'same-origin',
@@ -109,12 +110,12 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    RECAPTCHA_SECRET_KEY: process.env.RECAPTCHA_SECRET_KEY,
-    RECIPIENT_EMAIL: process.env.RECIPIENT_EMAIL,
-    USER_TO_IMPERSONATE: process.env.USER_TO_IMPERSONATE,
+    recaptchaSecretKey: '',
+    recipientEmail: '',
+    userToImpersonate: '',
 
     public: {
-      RECAPTCHA_SITE_KEY: process.env.RECAPTCHA_SITE_KEY // This will be exposed to the client
+      recaptchaSiteKey: ''
     }
   },
 
@@ -125,7 +126,7 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://bridgingthegap.eu.com',
-    name: 'Bridging the Gap'
+    name: 'BridgingTheGap.eu.com'
   },
 
   sitemap: {
@@ -138,15 +139,12 @@ export default defineNuxtConfig({
   },
 
   devServer: {
-    host: '0.0.0.0',
+    host: '127.0.0.1',
     port: 3000
   },
 
   devtools: {
-    enabled: true,
-    timeline: {
-      enabled: true
-    }
+    enabled: false
   },
 
   postcss: {
@@ -156,13 +154,9 @@ export default defineNuxtConfig({
     }
   },
 
-  router: {
-    options: {
-      strict: false
-    }
-  },
-
   routeRules: {
+    '/aboutTheProject': { redirect: { to: '/about', statusCode: 301 } },
+    '/upcomingEvents': { redirect: { to: '/events', statusCode: 301 } },
     '/unsubscribePage': { robots: false },
     '/issuedBadge': { robots: false },
     '/api/**': {
@@ -173,7 +167,7 @@ export default defineNuxtConfig({
           throwError: true
         },
         corsHandler: {
-          origin: ['https://bridgingthegap.eu.com', 'http://localhost:3000', 'http://127.0.0.1:3000'],
+          origin: allowedOrigins,
           methods: ['GET', 'POST']
         }
       }
@@ -183,7 +177,6 @@ export default defineNuxtConfig({
   experimental: {
     defaults: {
       nuxtLink: {
-        activeClass: 'nuxt-link-active',
         trailingSlash: 'remove'
       }
     }
@@ -193,10 +186,6 @@ export default defineNuxtConfig({
     pageTransition: { name: 'fade', mode: 'out-in' }
   },
 
-  plugins: [
-    { src: '~/plugins/recaptcha.client.ts', mode: 'client' } // Ensure .ts extension and mode: 'client'
-  ],
-
   modules: [
     '@nuxt/eslint',
     'nuxt-security',
@@ -205,9 +194,7 @@ export default defineNuxtConfig({
     'nuxt-seo-utils',
     'nuxt-mongoose',
     'nuxt-gtag',
-    '@nuxt/scripts',
-    '@nuxt/icon',
-    'nuxt-svgo'
+    '@nuxt/icon'
   ],
 
   gtag: {

@@ -16,7 +16,10 @@ export default defineEventHandler(async (event) => {
     badge = await Badge20Schema.aggregate([
       {
         $match: {
-          'badgeContent.id': `https://bridgingthegap.eu.com/api/credentials/${id}`
+          'badgeContent.id': {
+            $regex: `/api/credentials/${id}/?$`,
+            $options: 'i'
+          }
         }
       },
       {
