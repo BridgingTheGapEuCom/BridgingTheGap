@@ -4,9 +4,18 @@
       :events="events"
       :active-anchor="activeAnchor"
       :displayed-month="displayedMonth"
+      :earliest-date="earliestDate"
       @navigate="$emit('navigate', $event)"
       @update:displayed-month="$emit('update:displayed-month', $event)"
     />
+    <button
+      class="load-earlier-events"
+      type="button"
+      :disabled="!hasEarlierEvents"
+      @click="$emit('load-earlier')"
+    >
+      {{ earlierEventsLabel }}
+    </button>
     <div class="desktop-index-scroll">
       <EventsEventIndex
         :events="events"
@@ -29,10 +38,25 @@
         :events="events"
         :active-anchor="activeAnchor"
         :displayed-month="displayedMonth"
+        :earliest-date="earliestDate"
         @navigate="navigateMobile"
         @update:displayed-month="$emit('update:displayed-month', $event)"
       />
-      <EventsEventIndex :events="events" :active-anchor="activeAnchor" @navigate="navigateMobile" />
+      <div class="mobile-event-index">
+        <button
+          class="load-earlier-events"
+          type="button"
+          :disabled="!hasEarlierEvents"
+          @click="$emit('load-earlier')"
+        >
+          {{ earlierEventsLabel }}
+        </button>
+        <EventsEventIndex
+          :events="events"
+          :active-anchor="activeAnchor"
+          @navigate="navigateMobile"
+        />
+      </div>
     </div>
   </details>
 </template>
@@ -45,10 +69,14 @@ const props = defineProps<{
   events: Event[]
   activeAnchor?: string
   displayedMonth: Date
+  earliestDate?: Date
+  hasEarlierEvents: boolean
+  earlierEventsLabel: string
 }>()
 
 const emit = defineEmits<{
   navigate: [anchor: string]
+  'load-earlier': []
   'update:displayed-month': [month: Date]
 }>()
 
@@ -96,6 +124,30 @@ function navigateMobile(anchor: string) {
   padding-right: 0.25rem;
   overflow-y: auto;
   overscroll-behavior: contain;
+}
+
+.load-earlier-events {
+  min-height: 2.75rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--editorial-border-strong);
+  border-radius: 0.3rem;
+  color: var(--editorial-text);
+  background: var(--editorial-surface);
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.load-earlier-events:hover:not(:disabled) {
+  border-color: var(--editorial-text);
+  background: var(--editorial-surface-muted);
+}
+
+.load-earlier-events:disabled {
+  color: var(--editorial-muted);
+  cursor: default;
 }
 
 .mobile-event-navigation {
@@ -169,6 +221,12 @@ function navigateMobile(anchor: string) {
     gap: 1rem;
     overflow: auto;
     overscroll-behavior: contain;
+  }
+
+  .mobile-event-index {
+    display: grid;
+    align-content: start;
+    gap: 0.9rem;
   }
 }
 

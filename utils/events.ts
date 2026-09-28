@@ -9,9 +9,10 @@ export function eventDateDetails(event: Event): EventDetailsDate {
 export function eventStart(event: Event): DateTime {
   const details = eventDateDetails(event)
   const startTime = details.startTime.padStart(5, '0')
+  const timezone = details.timezone?.replace(/^GMT(?=[+-]\d{1,2}$)/, 'UTC') || 'UTC'
 
   return DateTime.fromISO(`${details.startDate}T${startTime}`, {
-    zone: details.timezone || 'UTC'
+    zone: timezone
   })
 }
 

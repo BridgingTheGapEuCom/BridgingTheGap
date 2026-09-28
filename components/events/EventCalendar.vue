@@ -4,6 +4,7 @@
       ref="calendar"
       class="event-calendar"
       :attributes="attributes"
+      :min-date="earliestDate"
       :is-dark="isDark"
       :locale="eventLocale"
       borderless
@@ -26,6 +27,7 @@ const props = defineProps<{
   events: Event[]
   activeAnchor?: string
   displayedMonth: Date
+  earliestDate?: Date
 }>()
 
 const emit = defineEmits<{
