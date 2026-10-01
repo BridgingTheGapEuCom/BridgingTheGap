@@ -1,0 +1,4967 @@
+[
+  {
+    "startTime": 64.12,
+    "person": "Karol",
+    "text": " Good morning, good afternoon, and good evening, everybody."
+  },
+  {
+    "startTime": 68.4,
+    "person": "Karol",
+    "text": " And welcome to another episode of Loosely Coupled by Bridging the Gap."
+  },
+  {
+    "startTime": 71,
+    "person": "Karol",
+    "text": " My name is Karol Skrzymowski and I'll be your host tonight."
+  },
+  {
+    "startTime": 74.9,
+    "person": "Karol",
+    "text": " And I've been just checking because LinkedIn didn't want to go live, but luckily we're live on LinkedIn as well."
+  },
+  { "startTime": 80.64, "person": "Karol", "text": " So all checks are good." },
+  {
+    "startTime": 83.1,
+    "person": "Karol",
+    "text": " This one was lagging, but hey, technology, right, API is for the win."
+  },
+  {
+    "startTime": 87.93,
+    "person": "Karol",
+    "text": " So I hope everybody has something nice to drink, like coffee like me or another beverage."
+  },
+  {
+    "startTime": 95.26,
+    "person": "Karol",
+    "text": " And today we're diving into career leadership, career leadership."
+  },
+  {
+    "startTime": 101.12,
+    "person": "Karol",
+    "text": " So basically to an extent, the relationship of an employee and employer, but also just building people and transitioning to a leadership role in IT."
+  },
+  {
+    "startTime": 112.62,
+    "person": "Karol",
+    "text": " And who better to talk about this than our today's guest, Hannes Lowette, the Head of Learning and Development in Access."
+  },
+  { "startTime": 123.82, "person": "Karol", "text": " And Hannes, welcome to the stream." },
+  { "startTime": 126.38, "person": "Karol", "text": " Hi, Karel." },
+  { "startTime": 127, "person": "Karol", "text": " Good evening." },
+  { "startTime": 127.979, "person": "Karol", "text": " I just realised- It's evening here." },
+  { "startTime": 129.78, "person": "Hannes", "text": " It's not evening for everyone." },
+  { "startTime": 131.38, "person": "Karol", "text": " Not evening for everybody." },
+  {
+    "startTime": 132.7,
+    "person": "Karol",
+    "text": " We have people from all over the world tuning in."
+  },
+  {
+    "startTime": 136.22,
+    "person": "Karol",
+    "text": " I just realised that on the graphics, it actually said Principal Consultant, not Head of Learning and Development."
+  },
+  {
+    "startTime": 142.52,
+    "person": "Hannes",
+    "text": " Maybe that's an interesting thing to start with."
+  },
+  {
+    "startTime": 145.24,
+    "person": "Hannes",
+    "text": " I hold multiple roles because I am very bad at doing the same thing for a long time, which luckily my employer has recognised."
+  },
+  {
+    "startTime": 158.08,
+    "person": "Hannes",
+    "text": " And so they've given me a whole collection of different tasks, which hold different titles."
+  },
+  {
+    "startTime": 164.88,
+    "person": "Hannes",
+    "text": " Basically I try to contribute to the success of the company in whichever way I think I can apply my skills and in whichever way I think I can have the most impact."
+  },
+  {
+    "startTime": 176.28,
+    "person": "Hannes",
+    "text": " So that led to a couple of different roles."
+  },
+  { "startTime": 180.04, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 180.26,
+    "person": "Karol",
+    "text": " And that's what you wrote in the speaker's form for Loosely Coupled, that you're a Principal Consultant, not the Head of Learning and Development."
+  },
+  { "startTime": 188.22, "person": "Hannes", "text": " Sure." },
+  { "startTime": 188.64, "person": "Hannes", "text": " Yeah." },
+  {
+    "startTime": 189.08,
+    "person": "Hannes",
+    "text": " But both two things can be true at the same time."
+  },
+  { "startTime": 193.22, "person": "Hannes", "text": " Sure." },
+  { "startTime": 194.4, "person": "Karol", "text": " They are aspects of what we do." },
+  { "startTime": 196.76, "person": "Karol", "text": " Exactly." },
+  {
+    "startTime": 197.24,
+    "person": "Karol",
+    "text": " So you said to me just before the stream that you used to build mostly software."
+  },
+  { "startTime": 204.04, "person": "Karol", "text": " Now mostly you build people." },
+  { "startTime": 206.46, "person": "Karol", "text": " Yes." },
+  { "startTime": 207.18, "person": "Karol", "text": " Can you elaborate on that aspect?" },
+  {
+    "startTime": 209.14,
+    "person": "Karol",
+    "text": " Because well, you have a tech background, that's obvious."
+  },
+  { "startTime": 211.3, "person": "Karol", "text": " Yes." },
+  { "startTime": 212.06, "person": "Hannes", "text": " Yeah." },
+  { "startTime": 212.28, "person": "Karol", "text": " So what's the shift here?" },
+  {
+    "startTime": 216.36,
+    "person": "Hannes",
+    "text": " I'm always one of those people driven by sharing what I learn."
+  },
+  {
+    "startTime": 222.76,
+    "person": "Hannes",
+    "text": " So when I joined this company, one of the reasons for joining, and we're talking 15 years ago, I've been with Access for 15 years now."
+  },
+  {
+    "startTime": 232.26,
+    "person": "Hannes",
+    "text": " One of the reasons for joining was that they had an active knowledge sharing culture and it's one of the things that I could see myself fit into."
+  },
+  {
+    "startTime": 242.4,
+    "person": "Hannes",
+    "text": " And obviously like I had subjects that I wanted to talk about."
+  },
+  {
+    "startTime": 246.4,
+    "person": "Hannes",
+    "text": " So I started giving some of the knowledge sharing evenings and so on."
+  },
+  { "startTime": 250.7, "person": "Hannes", "text": " And I got recognised." },
+  {
+    "startTime": 252.56,
+    "person": "Hannes",
+    "text": " And at some point the company grew to the point where a centralised HR department couldn't follow up with all the consultants anymore because we're a consultancy firm."
+  },
+  {
+    "startTime": 265.1,
+    "person": "Hannes",
+    "text": " And they looked for people who wanted to maybe coach and guide their peers."
+  },
+  {
+    "startTime": 273.42,
+    "person": "Hannes",
+    "text": " And they obviously looked at the people who had naturally already been doing part of that."
+  },
+  {
+    "startTime": 279.8,
+    "person": "Hannes",
+    "text": " And well, knowledge sharing is part of doing that as well."
+  },
+  {
+    "startTime": 283.2,
+    "person": "Hannes",
+    "text": " So that's why I was asked to also apply for the role and I ended up getting it."
+  },
+  {
+    "startTime": 289.58,
+    "person": "Hannes",
+    "text": " So I started in the beginning, it was something that I did like half a day a month or two or a day a month, something like on the side of my job."
+  },
+  {
+    "startTime": 298.54,
+    "person": "Hannes",
+    "text": " But that it evolved to the point where I'm mostly building software developers and trying to make sure that we have the right missions for them, whereas I'm not writing that much code anymore."
+  },
+  {
+    "startTime": 316.12,
+    "person": "Hannes",
+    "text": " I'll still write it in the context of doing proof of concepts."
+  },
+  {
+    "startTime": 320.3,
+    "person": "Hannes",
+    "text": " I'll still draw a bunch of architecture like that's what I do in my principal consultant role."
+  },
+  {
+    "startTime": 326.48,
+    "person": "Hannes",
+    "text": " It's a lot of solution architecture and trying to design the projects that my colleagues will build."
+  },
+  {
+    "startTime": 334.02,
+    "person": "Hannes",
+    "text": " And yeah, a lot of my time I'm also responsible for making sure that the people around me grow and become better at their jobs and actually start coaching people themselves."
+  },
+  {
+    "startTime": 346.74,
+    "person": "Hannes",
+    "text": " Like that's been my Simba moment is where people that at one point we hired fresh out of college, seven or eight years into their career started coaching people themselves and it's like, oh, this is full circle."
+  },
+  {
+    "startTime": 363.54,
+    "person": "Hannes",
+    "text": " Like we've done, we've reached the end of that cycle and yeah, that's one of the things that legit makes me happy, like helping people grow and sharing knowledge and that's why we're here."
+  },
+  { "startTime": 378.1, "person": "Hannes", "text": " Okay." },
+  { "startTime": 379.44, "person": "Karol", "text": " Okay." },
+  {
+    "startTime": 380.04,
+    "person": "Karol",
+    "text": " So what does it take as in let's, let's, let's try to dismantle it because I think that sharing knowledge is a skill that some of us have naturally, others can learn."
+  },
+  {
+    "startTime": 393.08,
+    "person": "Karol",
+    "text": " So if somebody doesn't have that skill, what does it take to, to build up that person to be able to do this for a second?"
+  },
+  { "startTime": 403.9, "person": "Hannes", "text": " Oh wait, what's happening?" },
+  { "startTime": 406.08, "person": "Hannes", "text": " My screen just went black for a second." },
+  { "startTime": 408.68, "person": "Hannes", "text": " So give, okay." },
+  { "startTime": 409.34, "person": "Hannes", "text": " It's back." },
+  { "startTime": 410.04, "person": "Hannes", "text": " Sorry." },
+  { "startTime": 410.76, "person": "Hannes", "text": " I don't, well, it's doing it again." },
+  { "startTime": 413.78, "person": "Hannes", "text": " It never does this and now it does." },
+  { "startTime": 416.08, "person": "Hannes", "text": " So this is fantastic." },
+  { "startTime": 417.2, "person": "Hannes", "text": " I hope you still hear me." },
+  { "startTime": 418.44, "person": "Hannes", "text": " Do you still hear me?" },
+  { "startTime": 419.58, "person": "Hannes", "text": " Yeah." },
+  { "startTime": 419.84, "person": "Hannes", "text": " Yeah." },
+  { "startTime": 420.1, "person": "Hannes", "text": " You're still here." },
+  {
+    "startTime": 421.16,
+    "person": "Hannes",
+    "text": " I'm going to hope that it comes back and that it came back."
+  },
+  { "startTime": 423.92, "person": "Hannes", "text": " Okay." },
+  { "startTime": 424.1, "person": "Hannes", "text": " That's great." },
+  {
+    "startTime": 425.58,
+    "person": "Hannes",
+    "text": " Um, is it installing driver updates or something?"
+  },
+  {
+    "startTime": 428.54,
+    "person": "Hannes",
+    "text": " Like I did not disable that for this, something like that, right?"
+  },
+  {
+    "startTime": 434.44,
+    "person": "Hannes",
+    "text": " Why would, why else would my screen go black?"
+  },
+  { "startTime": 436.54, "person": "Hannes", "text": " Like one moment to the next." },
+  {
+    "startTime": 438.06,
+    "person": "Karol",
+    "text": " For me, one of the screens goes black every time I turn off, turn on and off my, my, uh, lamps."
+  },
+  { "startTime": 446.58, "person": "Karol", "text": " Oh really?" },
+  { "startTime": 447.34, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 447.9,
+    "person": "Karol",
+    "text": " Because the, the small surge of electricity going just goes like done, no, no screen for a second."
+  },
+  {
+    "startTime": 454.86,
+    "person": "Hannes",
+    "text": " But well, this, I don't know what's usually is rock solid."
+  },
+  { "startTime": 458.64, "person": "Hannes", "text": " So let's hope that it remains as such." },
+  {
+    "startTime": 461.28,
+    "person": "Karol",
+    "text": " Um, if you're, if you're gone by any chance, we know your, your machine is doing updates."
+  },
+  { "startTime": 466.46, "person": "Hannes", "text": " It's doing something weird." },
+  {
+    "startTime": 468.2,
+    "person": "Hannes",
+    "text": " Um, I agree that people can, can learn how to share knowledge."
+  },
+  {
+    "startTime": 474.34,
+    "person": "Hannes",
+    "text": " Um, I think it is the first misconception is that there's a lot of people out there that believe that they don't have anything worthwhile to share."
+  },
+  {
+    "startTime": 485.4,
+    "person": "Hannes",
+    "text": " And usually I would argue that as soon as you have some experience in your career, you will have had experiences that a bunch of other people have not had."
+  },
+  {
+    "startTime": 499.98,
+    "person": "Hannes",
+    "text": " You will have worked with technology that although it might be ubiquitous, like there's a bunch of people out there that have not touched that."
+  },
+  {
+    "startTime": 510.28,
+    "person": "Hannes",
+    "text": " You might've had experiences on a project that others have not had."
+  },
+  {
+    "startTime": 514.44,
+    "person": "Hannes",
+    "text": " So I think that as soon as people have experience, everybody has a story to tell, right?"
+  },
+  {
+    "startTime": 521.72,
+    "person": "Hannes",
+    "text": " And it might be a matter of finding the right audience for it, but at least everybody has something that they can share."
+  },
+  {
+    "startTime": 529.44,
+    "person": "Hannes",
+    "text": " That's the first thing that we usually had to, to battle when we asked experienced people like, Hey, can you maybe do one, do a knowledge sharing sessions?"
+  },
+  {
+    "startTime": 540.28,
+    "person": "Hannes",
+    "text": " Like, I don't have any stories to tell, like all the stuff that I know, everybody knows."
+  },
+  {
+    "startTime": 545.26,
+    "person": "Hannes",
+    "text": " And this is a, this is a proven bias as a proven psychological bias, um, that we think that all the stuff that we work on, um, because we touch it day to day, it's trivial."
+  },
+  { "startTime": 558.6, "person": "Hannes", "text": " Like everybody knows this." },
+  { "startTime": 559.96, "person": "Hannes", "text": " We know it intimately." },
+  { "startTime": 561.08, "person": "Hannes", "text": " Right." },
+  { "startTime": 561.76, "person": "Hannes", "text": " Um, and it's simply not true." },
+  {
+    "startTime": 564.66,
+    "person": "Karol",
+    "text": " It's called the, the curse of knowledge bias."
+  },
+  { "startTime": 567.76, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 568.24,
+    "person": "Karol",
+    "text": " It's, it's very, very good to be aware of it because, uh, it, uh, at least from my perspective, I always tell people, uh, like juniors or mid developers that work with me as an architect, I always tell them, Hey, I suffer from a curse of knowledge bias."
+  },
+  {
+    "startTime": 585.28,
+    "person": "Karol",
+    "text": " I tend to think that certain things should be obvious and are obvious because they're obvious to me."
+  },
+  { "startTime": 590.18, "person": "Karol", "text": " They might not be obvious to you." },
+  {
+    "startTime": 592.24,
+    "person": "Karol",
+    "text": " So if I say something that you don't understand, you need to ask the question, what the hell am I talking about?"
+  },
+  {
+    "startTime": 597,
+    "person": "Karol",
+    "text": " Otherwise I will not explain it to you because I consider that obvious and that, that thinking about this, uh, that certain things are obvious."
+  },
+  {
+    "startTime": 605.82,
+    "person": "Karol",
+    "text": " Uh, I know that for some people is that that kind of blocker that they, Oh, everybody knows that."
+  },
+  { "startTime": 611.44, "person": "Karol", "text": " No, no, that's not true." },
+  { "startTime": 612.84, "person": "Karol", "text": " Not everybody knows that." },
+  {
+    "startTime": 613.92,
+    "person": "Karol",
+    "text": " There are people who literally don't know that, uh, those people experience."
+  },
+  {
+    "startTime": 618.56,
+    "person": "Hannes",
+    "text": " It is the one thing that prevents most people from actually taking the step to sharing the knowledge that they have because they think that all of the things that they know are trivial to everyone."
+  },
+  {
+    "startTime": 631.34,
+    "person": "Hannes",
+    "text": " Um, so that's, that's one of the things that I often, uh, when I have this conversation with someone, uh, to get them to share their knowledge for the first time, like maybe for their colleagues, do a lunch session or whatever."
+  },
+  {
+    "startTime": 647,
+    "person": "Hannes",
+    "text": " Um, like that's, that's one of the first thing they, things they usually need to overcome."
+  },
+  {
+    "startTime": 652.38,
+    "person": "Hannes",
+    "text": " Um, then, and, and this is the second thing that I truly believe, like I, I love speaking at conferences."
+  },
+  {
+    "startTime": 662.7,
+    "person": "Hannes",
+    "text": " It's one of those things that me 10 years ago was going to a conference as an attendee and looking up at these conference speakers who were these amazing heroes who were on the stage and they were so much better than everybody else."
+  },
+  {
+    "startTime": 678.52,
+    "person": "Hannes",
+    "text": " Now, along the way, a lot of these people became my friends and the only thing that sets them apart from all the other software developers that are not doing that is like they're up on the stage sharing knowledge."
+  },
+  {
+    "startTime": 694.04,
+    "person": "Hannes",
+    "text": " Like they're apart from that, like they're not that special."
+  },
+  {
+    "startTime": 697.38,
+    "person": "Hannes",
+    "text": " They're regular people, uh, regular developers."
+  },
+  {
+    "startTime": 700.58,
+    "person": "Hannes",
+    "text": " They just like, uh, most of them like being at the centre of attention and, and, and, uh, and sharing knowledge, right?"
+  },
+  {
+    "startTime": 709.76,
+    "person": "Hannes",
+    "text": " So you don't need to be special in order to get good at it."
+  },
+  { "startTime": 715.5, "person": "Hannes", "text": " You need to get good at storytelling." },
+  {
+    "startTime": 717.54,
+    "person": "Hannes",
+    "text": " That is true because you can have all the technical knowledge in the world."
+  },
+  {
+    "startTime": 722.9,
+    "person": "Hannes",
+    "text": " If you can't create a story arc on stage that draws people in and that, um, I always see it as my job when I'm on a stage to lift as many people up as I can."
+  },
+  {
+    "startTime": 736.9,
+    "person": "Hannes",
+    "text": " So I want to start as far back as I humanly can so that as far back as I can go to the junior who just started, where I can still reach my final point in the presentation that I'm about to give, I want to pick everybody up on the story without boring the more senior people in the room."
+  },
+  {
+    "startTime": 762.38,
+    "person": "Hannes",
+    "text": " And this is, this is tricky and it's a learnable skill."
+  },
+  {
+    "startTime": 767.1,
+    "person": "Hannes",
+    "text": " Like there, there are certain things that you can do to actually learn how to write a better talk."
+  },
+  {
+    "startTime": 775.36,
+    "person": "Hannes",
+    "text": " There's formats that you can use, but a lot of it is also practise and practise in front of a mirror practise to, um, to make slide decks, make sure that like practise your delivery, practise your jokes."
+  },
+  {
+    "startTime": 790.32,
+    "person": "Hannes",
+    "text": " It's, it's a lot of stupid practise to get to a point where you can deliver, um, a smooth talk."
+  },
+  {
+    "startTime": 798.8,
+    "person": "Hannes",
+    "text": " And, and I, I often see people fall into that gap."
+  },
+  {
+    "startTime": 802.08,
+    "person": "Hannes",
+    "text": " It's like they, they have a great technical presentation, like the content is legit great and they've made good slides and they've never practised the delivery."
+  },
+  {
+    "startTime": 816.14,
+    "person": "Hannes",
+    "text": " And for some reason the talk is only half of what it could have been."
+  },
+  { "startTime": 820.3, "person": "Hannes", "text": " And it's always such a shame." },
+  {
+    "startTime": 823.06,
+    "person": "Hannes",
+    "text": " Um, and I always hope that that like I try to be the person who, who gives them that feedback, but I hope they run into somebody who tells them like, Hey, if you practise delivery on that, like this, this is a great talk."
+  },
+  { "startTime": 835, "person": "Hannes", "text": " Uh, Yeah." },
+  {
+    "startTime": 836.52,
+    "person": "Karol",
+    "text": " I remember my conversations a few years back with Mark Richards."
+  },
+  {
+    "startTime": 841.34,
+    "person": "Karol",
+    "text": " Uh, I think that was, uh, after one of the conference days of DDD Europe 24, uh, we were going, going back."
+  },
+  {
+    "startTime": 848.66,
+    "person": "Karol",
+    "text": " I was walking him back to his hotel because he was staying somewhere."
+  },
+  {
+    "startTime": 851.52,
+    "person": "Karol",
+    "text": " Well, I was staying somewhere in Amsterdam, not even in a hotel."
+  },
+  {
+    "startTime": 854.16,
+    "person": "Karol",
+    "text": " He was staying in a different hotel than the conference hotel."
+  },
+  {
+    "startTime": 856.88,
+    "person": "Karol",
+    "text": " And we were just walking after dinner just to having a conversation."
+  },
+  {
+    "startTime": 861.16,
+    "person": "Karol",
+    "text": " And uh, I was asking him how did he get into public speaking and speaking at conferences?"
+  },
+  {
+    "startTime": 868.02,
+    "person": "Karol",
+    "text": " And he said, well, I first started, uh, going to Java user groups and presenting on Java user groups."
+  },
+  {
+    "startTime": 875.8,
+    "person": "Karol",
+    "text": " And I've been told I absolutely suck at speaking, right?"
+  },
+  {
+    "startTime": 882.16,
+    "person": "Karol",
+    "text": " So, so what, what Mark did with his, with his amazing brain, and this is, this is very unique to Mark."
+  },
+  {
+    "startTime": 888.66,
+    "person": "Karol",
+    "text": " I would believe not, not everybody would do that, uh, in their same mind."
+  },
+  {
+    "startTime": 892.92,
+    "person": "Karol",
+    "text": " Mark just went to different conferences and user groups."
+  },
+  {
+    "startTime": 895.68,
+    "person": "Karol",
+    "text": " And instead of listening to the talks, he observed what the speaker was doing and was taking notes on what, uh, what those people were doing that made the talks really successful."
+  },
+  {
+    "startTime": 906.04,
+    "person": "Karol",
+    "text": " And he was making those observation, making those notes and making adjustments to his own, uh, talks per what he saw on stage, uh, which is so very, very typical of him."
+  },
+  {
+    "startTime": 918.88,
+    "person": "Hannes",
+    "text": " And I have to say, it's one of the curses of getting into this way too deep."
+  },
+  {
+    "startTime": 924.38,
+    "person": "Hannes",
+    "text": " You start appreciating talks for completely different reasons, like, um, I, I can look at a talk that is finally crafted."
+  },
+  {
+    "startTime": 933.96,
+    "person": "Hannes",
+    "text": " It has some great callbacks into it, like where the setup happens 20 minutes before the punchline and they somehow make it work."
+  },
+  {
+    "startTime": 941.5,
+    "person": "Hannes",
+    "text": " It's like, oh, it's so beautiful that you did that."
+  },
+  {
+    "startTime": 945.18,
+    "person": "Hannes",
+    "text": " Um, like it doesn't even matter what it's about."
+  },
+  {
+    "startTime": 947.72,
+    "person": "Hannes",
+    "text": " Like I know people who deliver talks like that time and time again, and whenever they come up with a new subject, I'll go and see it because I know it's going to be good."
+  },
+  {
+    "startTime": 956.42,
+    "person": "Hannes",
+    "text": " Um, so yeah, that's, it's, it's, it's, it's a learnable craft and, and I'm pretty sure that you don't have to be on your own to get started like the, um, first of all, like there's workshops you can take, um, there's a bunch of companies out there that train presentation skills."
+  },
+  {
+    "startTime": 977.74,
+    "person": "Hannes",
+    "text": " I would argue if you want to deliver like the presentation skills are usually focused on at like business communication in the boardroom, that sort of stuff."
+  },
+  {
+    "startTime": 989.54,
+    "person": "Hannes",
+    "text": " If, if you really want to do conference talks or user group talks, um, it's better to get training from somebody who focusses on that."
+  },
+  {
+    "startTime": 1000.3,
+    "person": "Hannes",
+    "text": " Um, Dylan Beatty runs that online from time to time."
+  },
+  {
+    "startTime": 1004.48,
+    "person": "Hannes",
+    "text": " He has a great workshop called from keyboard to keynote."
+  },
+  {
+    "startTime": 1008.68,
+    "person": "Hannes",
+    "text": " Um, incidentally he's the, the front man of our band."
+  },
+  {
+    "startTime": 1011.9,
+    "person": "Hannes",
+    "text": " Um, but yeah, he has a great workshop about exactly that people wanting to do their first tech talk."
+  },
+  {
+    "startTime": 1020.28,
+    "person": "Hannes",
+    "text": " And, and there's a couple of great reasons, uh, why that type of training works."
+  },
+  { "startTime": 1024.94, "person": "Hannes", "text": " First of all, he's a tech speaker." },
+  {
+    "startTime": 1027.06,
+    "person": "Hannes",
+    "text": " Um, it's somebody who has delivered successful talks time and time and time again."
+  },
+  {
+    "startTime": 1033.079,
+    "person": "Hannes",
+    "text": " Um, and he has put way more effort into researching what makes talks work."
+  },
+  { "startTime": 1039.9, "person": "Hannes", "text": " Um, than anybody else I know." },
+  {
+    "startTime": 1041.839,
+    "person": "Hannes",
+    "text": " So that's the kind of training you should be looking at because it gives you, it saves you from doing a bunch of unsuccessful ones."
+  },
+  {
+    "startTime": 1052.64,
+    "person": "Hannes",
+    "text": " Um, and probably skips like the, the, the first couple of sucky talks that I went through, I could have probably skipped that learning curve by taking that workshop."
+  },
+  { "startTime": 1063.04, "person": "Karol", "text": " Um, eventually." },
+  { "startTime": 1064.66, "person": "Hannes", "text": " Yeah." },
+  {
+    "startTime": 1066.04,
+    "person": "Hannes",
+    "text": " So, so, so that's, that's one of the things."
+  },
+  {
+    "startTime": 1069.56,
+    "person": "Hannes",
+    "text": " What I can also recommend is start like for a small audience and if you feel vulnerable doing it in front of a couple of colleagues, look at a local user group and you'll get like local people in a small room, but it will not be your colleagues."
+  },
+  {
+    "startTime": 1089.3,
+    "person": "Hannes",
+    "text": " And, and for some, some, for some people, the colleagues work because they know them for other people, strangers work better."
+  },
+  {
+    "startTime": 1096.9,
+    "person": "Hannes",
+    "text": " And because they feel weirdly self-conscious in front of their colleagues, like do some soul searching for yourself."
+  },
+  { "startTime": 1103.4, "person": "Hannes", "text": " See how, like, see how you feel about it." },
+  {
+    "startTime": 1107.4,
+    "person": "Hannes",
+    "text": " Um, it's a trick I use on a lot of things."
+  },
+  {
+    "startTime": 1110.22,
+    "person": "Hannes",
+    "text": " If I'm struggling to make a decision, I try to explain my two options to my partner."
+  },
+  {
+    "startTime": 1117.62,
+    "person": "Hannes",
+    "text": " And instead of, um, gouging her reaction, I will see how I feel about the two options when I'm describing them."
+  },
+  {
+    "startTime": 1129.72,
+    "person": "Hannes",
+    "text": " And that inevitably tells me a lot more about how I feel than, than whatever she will say as a response."
+  },
+  { "startTime": 1137.7, "person": "Hannes", "text": " And she knows me well." },
+  {
+    "startTime": 1139.1,
+    "person": "Hannes",
+    "text": " So usually she will go like, yeah, you're probably going to want to do that one."
+  },
+  { "startTime": 1143.92, "person": "Hannes", "text": " She's usually right." },
+  {
+    "startTime": 1145.62,
+    "person": "Hannes",
+    "text": " Um, but the, the, the looking at your own feeling when you're describing options helps really well to do, to see what you're comfortable with."
+  },
+  {
+    "startTime": 1154.48,
+    "person": "Karol",
+    "text": " But I think this, uh, there's one thing that you didn't tell us yet about this."
+  },
+  {
+    "startTime": 1160.44,
+    "person": "Karol",
+    "text": " And we talked about it just before the stream."
+  },
+  {
+    "startTime": 1164.1,
+    "person": "Karol",
+    "text": " It's also this, a little bit of, of courage to say yes to opportunities."
+  },
+  { "startTime": 1170.98, "person": "Hannes", "text": " Yes." },
+  {
+    "startTime": 1171.44,
+    "person": "Karol",
+    "text": " Because without saying yes to those opportunities, you will not go and speak publicly."
+  },
+  { "startTime": 1176.26, "person": "Karol", "text": " You will not start sharing knowledge." },
+  {
+    "startTime": 1177.92,
+    "person": "Karol",
+    "text": " You will not start, uh, that kind of leadership career, uh, path."
+  },
+  { "startTime": 1183.92, "person": "Karol", "text": " Right." },
+  { "startTime": 1185.08, "person": "Hannes", "text": " Definitely." },
+  { "startTime": 1185.8, "person": "Hannes", "text": " And also this is a personality thing." },
+  {
+    "startTime": 1188.58,
+    "person": "Hannes",
+    "text": " Like, um, one of the talks I was most annoyed with, um, in the last couple of years was an influencer dude who came to speak at a conference where I was also giving a talk, not going to name him."
+  },
+  { "startTime": 1206.76, "person": "Hannes", "text": " Uh, it's not important." },
+  {
+    "startTime": 1209.2,
+    "person": "Hannes",
+    "text": " Um, and he came to describe his story towards success, like how he arrived at like starting a successful YouTube channel and, and his brand and everything."
+  },
+  {
+    "startTime": 1220.5,
+    "person": "Hannes",
+    "text": " And, and basically his entire pitch was just get up and do stuff, which I can relate to."
+  },
+  { "startTime": 1228.92, "person": "Hannes", "text": " I'm that kind of person." },
+  {
+    "startTime": 1230.16,
+    "person": "Hannes",
+    "text": " I'm the kind of person that is presented with an idea and what happens in the back of my head is like, yes, I want to do this."
+  },
+  {
+    "startTime": 1239.48,
+    "person": "Hannes",
+    "text": " What things will I have to move around to make it happen?"
+  },
+  { "startTime": 1242.72, "person": "Hannes", "text": " That's how my brain works." },
+  { "startTime": 1244.99, "person": "Karol", "text": " That doesn't work for everybody." },
+  {
+    "startTime": 1246.76,
+    "person": "Hannes",
+    "text": " I've been coaching people for such a long time."
+  },
+  {
+    "startTime": 1249.28,
+    "person": "Hannes",
+    "text": " And I've, I've seen so many different personalities that I know that that is only true for a very small percentage of people or a lot of people getting out of that comfort zone takes conscious effort."
+  },
+  {
+    "startTime": 1261.98,
+    "person": "Hannes",
+    "text": " And it's not an insurmountable problem, but if you're responsible for coaching a team, it's very important to be aware that these differences exist, because when I first became a coach, my first idea was like, I need to make everybody like treat their careers the way that I treat my career."
+  },
+  {
+    "startTime": 1284.88,
+    "person": "Hannes",
+    "text": " And then everybody's going to be successful."
+  },
+  {
+    "startTime": 1287.38,
+    "person": "Hannes",
+    "text": " And I got confronted with the reality of that, like really quickly and really hard."
+  },
+  {
+    "startTime": 1292.74,
+    "person": "Hannes",
+    "text": " And luckily I had coaching around me, people that helped me see the reality of things."
+  },
+  {
+    "startTime": 1300.04,
+    "person": "Hannes",
+    "text": " And that's one of the things that I really needed to learn is like, Hey, like there's all these different personalities out there and your job is not to make them all like you."
+  },
+  {
+    "startTime": 1309.6,
+    "person": "Hannes",
+    "text": " Your job is to get all of them more successful than they were yesterday."
+  },
+  { "startTime": 1316.4, "person": "Hannes", "text": " Like that's your job." },
+  {
+    "startTime": 1318.38,
+    "person": "Hannes",
+    "text": " And for some people that will go really quickly because they're maybe wired like you and, and, and they're fine with taking risks and they're fine with saying yes to opportunities and all you, for them, all you will need to do is facilitate."
+  },
+  {
+    "startTime": 1331.6,
+    "person": "Hannes",
+    "text": " And some people will need a little nudge, but like once they get there, they'll feel confident, confident and it will work."
+  },
+  {
+    "startTime": 1339.4,
+    "person": "Hannes",
+    "text": " And for others, like it, it seems like an, a huge, huge, huge mountain."
+  },
+  {
+    "startTime": 1346,
+    "person": "Hannes",
+    "text": " And for some reason, they need to climb to just get on a stage in front of 10 colleagues."
+  },
+  {
+    "startTime": 1350.74,
+    "person": "Hannes",
+    "text": " And for those people, you may need to look at other ways that they can contribute to the group."
+  },
+  {
+    "startTime": 1355.96,
+    "person": "Hannes",
+    "text": " Not everybody needs to contribute in the same way."
+  },
+  {
+    "startTime": 1359.44,
+    "person": "Hannes",
+    "text": " People can share knowledge in different ways as well."
+  },
+  {
+    "startTime": 1362.52,
+    "person": "Hannes",
+    "text": " They can write a blog post about a technical problem that they solved and share that with their colleagues."
+  },
+  {
+    "startTime": 1368.58,
+    "person": "Hannes",
+    "text": " It's a lot less daunting if you have stage fright, but it's, it's a completely valid way to share the things that you learn to a broader audience."
+  },
+  {
+    "startTime": 1380.26,
+    "person": "Hannes",
+    "text": " It's actually easier to scale than standing in front of people on stage and, and telling stories."
+  },
+  { "startTime": 1385.92, "person": "Hannes", "text": " Right." },
+  {
+    "startTime": 1388.42,
+    "person": "Karol",
+    "text": " But that comes also with the knowledge and capability, how to do storytelling and how to build a story, right?"
+  },
+  {
+    "startTime": 1395.68,
+    "person": "Karol",
+    "text": " Because that blog also requires the same set of skills to that extent."
+  },
+  { "startTime": 1399.78, "person": "Hannes", "text": " It requires storytelling." },
+  {
+    "startTime": 1401.08,
+    "person": "Hannes",
+    "text": " But the big advantage of a blog post is you can like edit before you publish."
+  },
+  {
+    "startTime": 1406.62,
+    "person": "Hannes",
+    "text": " So you can get feedback from somebody like, Hey, like, how about we structure it like this?"
+  },
+  {
+    "startTime": 1413.46,
+    "person": "Hannes",
+    "text": " Or how have you thought about maybe throwing in a little joke about this or whatever?"
+  },
+  { "startTime": 1420.54, "person": "Hannes", "text": " Like you can even hire a copywriter." },
+  {
+    "startTime": 1423.18,
+    "person": "Hannes",
+    "text": " Like if you want to facilitate this in your company, like let people write down the tech story in the way that they're capable of doing it."
+  },
+  {
+    "startTime": 1435.08,
+    "person": "Hannes",
+    "text": " And before you push it out to the world, like let a tech copywriter, like format the article into something that has a bit of flow in it."
+  },
+  {
+    "startTime": 1442.8,
+    "person": "Hannes",
+    "text": " It's not that expensive to hire a copywriter to do that."
+  },
+  { "startTime": 1447.62, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 1448.04,
+    "person": "Karol",
+    "text": " And nowadays, nowadays when we have LLMs handy, that's also not a big problem to also use an LLM to structure the same thing."
+  },
+  {
+    "startTime": 1459.56,
+    "person": "Karol",
+    "text": " I mean, for writing, I also use LLMs, right?"
+  },
+  {
+    "startTime": 1463.3,
+    "person": "Karol",
+    "text": " So for example, my neurotypical lovely brain has the so-called blank page paralysis, and I'm incapable of starting a new article because it takes me just so long to get that going."
+  },
+  {
+    "startTime": 1477.32,
+    "person": "Karol",
+    "text": " So I just dump it as a transcript of me talking about it because talking about it is not a problem."
+  },
+  { "startTime": 1485.2, "person": "Karol", "text": " Right?" },
+  {
+    "startTime": 1485.76,
+    "person": "Karol",
+    "text": " So I just transcribe it on, let's say Google meet and dump it into an LLM and it organises that into a draft."
+  },
+  {
+    "startTime": 1493.3,
+    "person": "Karol",
+    "text": " And then I just edit the draft and it makes it a lot easier."
+  },
+  { "startTime": 1497.58, "person": "Karol", "text": " It's not the LLM that is creating it." },
+  {
+    "startTime": 1500.1,
+    "person": "Karol",
+    "text": " It's just organising this into something that is, well, readable."
+  },
+  {
+    "startTime": 1504.26,
+    "person": "Karol",
+    "text": " And then I still need to go in and fix it because the LLM will hallucinate some of the content as it understood from my, well, not exactly structured speech."
+  },
+  {
+    "startTime": 1515.8,
+    "person": "Hannes",
+    "text": " And it's very similar to how I start my talk writing process."
+  },
+  {
+    "startTime": 1520.34,
+    "person": "Hannes",
+    "text": " It's like, I'll write down a couple of talking points, like probably just some bullets, maybe 10 or 15 or whatever."
+  },
+  {
+    "startTime": 1527.76,
+    "person": "Hannes",
+    "text": " And I'll tell the story to the mirror and I'll be watching for two things."
+  },
+  {
+    "startTime": 1533.1,
+    "person": "Hannes",
+    "text": " And I'll be watching for how long does each section take and is there any discrepancies in like, I would have wanted that to happen before this, because then I can tie back into that."
+  },
+  {
+    "startTime": 1543.9,
+    "person": "Hannes",
+    "text": " That's, that's my first step because usually I have two hours of content for like a 15 minute slot and I need to cut half of it anyway."
+  },
+  {
+    "startTime": 1551.68,
+    "person": "Hannes",
+    "text": " Um, that comes after the tremendous stress about how am I going to fill an hour about this shit?"
+  },
+  { "startTime": 1558.9, "person": "Hannes", "text": " They accepted this abstract, right?" },
+  {
+    "startTime": 1562.62,
+    "person": "Hannes",
+    "text": " Because I go through the same emotional rollercoaster every time."
+  },
+  {
+    "startTime": 1567.22,
+    "person": "Hannes",
+    "text": " It's like, I'll write an abstract about something I'm enthusiastic about and I'll submit it to a bunch of events and then somebody accepted."
+  },
+  {
+    "startTime": 1574.44,
+    "person": "Hannes",
+    "text": " And the first reaction is, Oh fuck, like now I need to talk an hour about stuff."
+  },
+  {
+    "startTime": 1580.76,
+    "person": "Hannes",
+    "text": " And it's usually not a problem because it's, it's usually those subjects that I think, um, are obvious to everyone."
+  },
+  {
+    "startTime": 1590.68,
+    "person": "Hannes",
+    "text": " It's, it's the things that I have a lot of experience with."
+  },
+  {
+    "startTime": 1594.32,
+    "person": "Hannes",
+    "text": " And because it seems so obvious to me, it's like, how am I going to fill an hour?"
+  },
+  {
+    "startTime": 1598.24,
+    "person": "Hannes",
+    "text": " And then I start thinking like, what do people need to know to understand the thing that I'm going to try to explain to them?"
+  },
+  {
+    "startTime": 1606.28,
+    "person": "Hannes",
+    "text": " And usually getting them on that journey of understanding where I'm going with this, um, that already feels like a big portion of, of the slot."
+  },
+  {
+    "startTime": 1616.66,
+    "person": "Hannes",
+    "text": " Um, so yeah, usually I'm not, I'm not struggling to fill the slot."
+  },
+  { "startTime": 1621.5, "person": "Hannes", "text": " Usually the opposite." },
+  { "startTime": 1622.94, "person": "Hannes", "text": " Right." },
+  {
+    "startTime": 1624.44,
+    "person": "Hannes",
+    "text": " Also experience, Eric, uh, the thing you posted in the chat, um, I feel that a lot of us who get on stage and, and, and give presentations, um, feel that way."
+  },
+  { "startTime": 1637.42, "person": "Hannes", "text": " Like in the beginning, it's scary." },
+  {
+    "startTime": 1639.62,
+    "person": "Hannes",
+    "text": " I still get stressed whenever I'm doing a new talk."
+  },
+  {
+    "startTime": 1643.12,
+    "person": "Hannes",
+    "text": " Like it's imposter syndrome messing with me."
+  },
+  { "startTime": 1646.12, "person": "Hannes", "text": " I know this still happens." },
+  {
+    "startTime": 1648.82,
+    "person": "Hannes",
+    "text": " Um, because usually like I'm, I'm, I'm worried."
+  },
+  {
+    "startTime": 1652.1,
+    "person": "Hannes",
+    "text": " Like it's, am I the person to be telling this story?"
+  },
+  {
+    "startTime": 1656.56,
+    "person": "Hannes",
+    "text": " Uh, am I enough of an expert to even talk about this?"
+  },
+  { "startTime": 1660.68, "person": "Hannes", "text": " Are people gonna find this interesting?" },
+  { "startTime": 1663.04, "person": "Hannes", "text": " Because doesn't everybody know this?" },
+  {
+    "startTime": 1664.92,
+    "person": "Hannes",
+    "text": " Like, like this is super, every time I do a new talk, like that is the stuff that goes through my mind."
+  },
+  { "startTime": 1671.86, "person": "Hannes", "text": " I get super nervous." },
+  {
+    "startTime": 1673.48,
+    "person": "Hannes",
+    "text": " I know that when I get on stage and I start telling my story that that disappears."
+  },
+  {
+    "startTime": 1679.28,
+    "person": "Hannes",
+    "text": " So what I usually do is I put something really personal or like a small, um, just like a kickstarting story in the beginning of the talk that I know, like, if I mess this up, the rest of the talk is still going to make sense because when I'm three slides in, it's going to be fine."
+  },
+  { "startTime": 1695.44, "person": "Hannes", "text": " But that's how I deal with this." },
+  {
+    "startTime": 1697.12,
+    "person": "Hannes",
+    "text": " It's not the way that everybody deals with this."
+  },
+  { "startTime": 1698.98, "person": "Hannes", "text": " Everybody has their own." },
+  {
+    "startTime": 1700.56,
+    "person": "Hannes",
+    "text": " I know people who do breathing exercises before they get on stage, like we've done some music, leave me the fuck alone."
+  },
+  {
+    "startTime": 1706.02,
+    "person": "Hannes",
+    "text": " I'm going to be doing breathing exercises for five minutes."
+  },
+  {
+    "startTime": 1709.16,
+    "person": "Hannes",
+    "text": " It's like, everybody has their own routine and nobody's, nobody's wrong in the way that they cope with it."
+  },
+  { "startTime": 1716.18, "person": "Hannes", "text": " Yeah." },
+  {
+    "startTime": 1717.8,
+    "person": "Karol",
+    "text": " So, so going back to building up people, so that building people, uh, how does that look like from a perspective of an organisation?"
+  },
+  {
+    "startTime": 1733.65,
+    "person": "Hannes",
+    "text": " Um, yeah, from the perspective of our organisation."
+  },
+  {
+    "startTime": 1737.53,
+    "person": "Hannes",
+    "text": " Um, yeah, I was reading Eric's question that came in the chat."
+  },
+  {
+    "startTime": 1741.87,
+    "person": "Karol",
+    "text": " I think I just, uh, there is a bit of a delay between, uh, what we talk about in the studio and what is transmitted to YouTube and LinkedIn."
+  },
+  { "startTime": 1752.07, "person": "Karol", "text": " LinkedIn has a bigger delay." },
+  {
+    "startTime": 1753.51,
+    "person": "Karol",
+    "text": " So you just covered the question basically, but that's good."
+  },
+  {
+    "startTime": 1757.13,
+    "person": "Hannes",
+    "text": " Um, how does it work from a company perspective?"
+  },
+  {
+    "startTime": 1760.09,
+    "person": "Hannes",
+    "text": " Um, we, that's one of the reasons I joined this company is, um, I wanted to work for a company that invests in its people because, um, I didn't know how to put it in words back then."
+  },
+  {
+    "startTime": 1780.03,
+    "person": "Hannes",
+    "text": " I think I have now often described it as careers are not a zero sum game, which means that between an employer and an employee, it's not the kind of relationship where one of them benefits and the other loses."
+  },
+  {
+    "startTime": 1800.75,
+    "person": "Hannes",
+    "text": " I know there's a lot of sentiment out there where people think that all corporations are evil, evil."
+  },
+  {
+    "startTime": 1806.89,
+    "person": "Hannes",
+    "text": " They're all trying to benefit from the labour of their employees and they're only there to get rich."
+  },
+  {
+    "startTime": 1811.69,
+    "person": "Hannes",
+    "text": " So you, as an employee better like defend against that and don't do anything that is more effort than what you are supposed to be doing, right?"
+  },
+  { "startTime": 1820.33, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 1820.97,
+    "person": "Karol",
+    "text": " And then we have people treating employment purely transactional, which also from the perspective of different generations, we, you can see the shift towards that kind of a behaviour."
+  },
+  { "startTime": 1832.39, "person": "Karol", "text": " This is a transactional eight." },
+  {
+    "startTime": 1834.51,
+    "person": "Karol",
+    "text": " You have my eight hours and nothing more and we're done."
+  },
+  { "startTime": 1837.81, "person": "Karol", "text": " That's it." },
+  {
+    "startTime": 1838.73,
+    "person": "Karol",
+    "text": " And that is because people saw, for example, their parents burning out in a job they didn't like, or they had issues with, but they worked because they had to work or because the notion of those evil corporate things, et cetera, et cetera."
+  },
+  {
+    "startTime": 1855.55,
+    "person": "Karol",
+    "text": " So the various reasons for that kind of thinking, but there are definitely people who treat that their jobs purely transactionally."
+  },
+  { "startTime": 1862.87, "person": "Hannes", "text": " And I don't disagree." },
+  {
+    "startTime": 1865.43,
+    "person": "Hannes",
+    "text": " I mean, money corrupts and there's a lot of corporations out there where pleasing shareholders is the prime objective."
+  },
+  {
+    "startTime": 1874.97,
+    "person": "Hannes",
+    "text": " And the fact that human resources is called resources and not something like the people department tells you a lot."
+  },
+  {
+    "startTime": 1885.59,
+    "person": "Hannes",
+    "text": " Um, we've actually stopped calling it human resources."
+  },
+  { "startTime": 1889.97, "person": "Hannes", "text": " Like we call it people." },
+  {
+    "startTime": 1891.35,
+    "person": "Hannes",
+    "text": " So we still, we still talk about HR sometimes, like when we talk about recruiting or whatever, but like when it comes to the followup of our consultants, like that's people stuff."
+  },
+  {
+    "startTime": 1907.15,
+    "person": "Hannes",
+    "text": " Um, but I think I understand why people have this sentiment."
+  },
+  { "startTime": 1910.53, "person": "Hannes", "text": " Now it doesn't have to be like that." },
+  {
+    "startTime": 1913.55,
+    "person": "Hannes",
+    "text": " And it's the same as being in a toxic relationship."
+  },
+  {
+    "startTime": 1916.41,
+    "person": "Hannes",
+    "text": " Whereas you're in a nice symbiotic relationship where you really try to enjoy each other's company and try to help each other succeed."
+  },
+  {
+    "startTime": 1926.11,
+    "person": "Hannes",
+    "text": " I think that can happen between employers and employees as well."
+  },
+  {
+    "startTime": 1931.25,
+    "person": "Hannes",
+    "text": " Because as I mentioned, like we're a consulting firm."
+  },
+  { "startTime": 1933.59, "person": "Hannes", "text": " So what are we selling?" },
+  {
+    "startTime": 1935.31,
+    "person": "Hannes",
+    "text": " We are selling the knowledge in the heads of our people, right?"
+  },
+  { "startTime": 1940.13, "person": "Hannes", "text": " That's what our customers pay us for." },
+  {
+    "startTime": 1942.45,
+    "person": "Hannes",
+    "text": " So the more knowledge they have in their heads, the more we can charge for them, right?"
+  },
+  {
+    "startTime": 1949.37,
+    "person": "Hannes",
+    "text": " So the more we train them, the more valuable they become."
+  },
+  {
+    "startTime": 1955.79,
+    "person": "Hannes",
+    "text": " And the more they will benefit from the relationship as well."
+  },
+  {
+    "startTime": 1959.55,
+    "person": "Hannes",
+    "text": " Because every skill that they learn is their skill."
+  },
+  { "startTime": 1963.31, "person": "Hannes", "text": " It's not the company's skill." },
+  {
+    "startTime": 1964.45,
+    "person": "Hannes",
+    "text": " They're not going to leave it behind if they, if they go and work elsewhere, right?"
+  },
+  { "startTime": 1968.53, "person": "Hannes", "text": " It's, it's their acquired skill." },
+  {
+    "startTime": 1970.43,
+    "person": "Hannes",
+    "text": " And so I think by making sure your people don't burn out, making sure your people are properly trained, making sure your people are well cared for, you're actually making the company more successful as well."
+  },
+  { "startTime": 1989.04, "person": "Hannes", "text": " It's a valid business strategy." },
+  {
+    "startTime": 1991.86,
+    "person": "Hannes",
+    "text": " It's not always the way to the quickest profit, but long-term, it actually works surprisingly well because one of the hardest thing, things of growing a company is actually making sure that you have more money, more people, more people in an industry where the number of candidates are scarce."
+  },
+  { "startTime": 2015.56, "person": "Hannes", "text": " So hiring is difficult." },
+  {
+    "startTime": 2017.66,
+    "person": "Hannes",
+    "text": " It's maybe a little bit easier now because we've had a little bit of a, let's say, economic event going on the last two years."
+  },
+  {
+    "startTime": 2026.04,
+    "person": "Hannes",
+    "text": " But I mean, it's still relatively hard compared to other industries."
+  },
+  {
+    "startTime": 2031.8,
+    "person": "Hannes",
+    "text": " If you want to substantially grow a business, the first and foremost thing that every business strategist will tell you is make sure they don't leave."
+  },
+  {
+    "startTime": 2043.8,
+    "person": "Hannes",
+    "text": " Like make sure that your people are happy where they are and they stay behind."
+  },
+  {
+    "startTime": 2047.12,
+    "person": "Hannes",
+    "text": " And you can use more money to keep somebody on board."
+  },
+  {
+    "startTime": 2052.08,
+    "person": "Hannes",
+    "text": " Like somebody is threatening to leave, you can give them more money."
+  },
+  {
+    "startTime": 2054.44,
+    "person": "Hannes",
+    "text": " That usually works for about three months."
+  },
+  {
+    "startTime": 2058.06,
+    "person": "Hannes",
+    "text": " Like giving them more money will buy you three months to prove that you mean well and to prove that all the other things you promised them about their careers, you're actually going to make happen."
+  },
+  {
+    "startTime": 2073.82,
+    "person": "Hannes",
+    "text": " So for us, training people, helping them grow, like growth is one of our three core values in the company."
+  },
+  {
+    "startTime": 2082.78,
+    "person": "Hannes",
+    "text": " And everybody that you ask at Access will tell you in a heartbeat like what the three core values are."
+  },
+  { "startTime": 2089.679, "person": "Hannes", "text": " It's quality, it's growth, it's fun." },
+  {
+    "startTime": 2093.639,
+    "person": "Hannes",
+    "text": " Quality because we always want to do a great job for our customers, but we want to do quality in everything we do."
+  },
+  {
+    "startTime": 2099.68,
+    "person": "Hannes",
+    "text": " We want to do quality in the way that we do company events."
+  },
+  {
+    "startTime": 2103.5,
+    "person": "Hannes",
+    "text": " We want to have quality when we have conversations with one another, like it's everywhere."
+  },
+  { "startTime": 2110.48, "person": "Hannes", "text": " Growth, same thing." },
+  { "startTime": 2111.64, "person": "Hannes", "text": " We want to help people grow." },
+  { "startTime": 2113.22, "person": "Hannes", "text": " We want to help the company grow." },
+  {
+    "startTime": 2115.08,
+    "person": "Hannes",
+    "text": " We want to make sure that everybody is better than they were last year."
+  },
+  {
+    "startTime": 2119.4,
+    "person": "Hannes",
+    "text": " And fun is like, yeah, it's a job we spend a lot of time doing in the job."
+  },
+  {
+    "startTime": 2123.68,
+    "person": "Hannes",
+    "text": " We might as well make sure that we enjoy ourselves."
+  },
+  {
+    "startTime": 2128.47,
+    "person": "Hannes",
+    "text": " And having all that as core values made it evident that we needed to train people well so that they felt at ease, so that they didn't burn out, so that they felt appreciated."
+  },
+  {
+    "startTime": 2140.19,
+    "person": "Hannes",
+    "text": " Like it's very easy in consultancy to go on the quick buck route."
+  },
+  {
+    "startTime": 2145.11,
+    "person": "Hannes",
+    "text": " Like you hire somebody, you possibly overpay them a little bit because then you can afford to not invest as much in training and you sell them for the biggest profit you probably can."
+  },
+  {
+    "startTime": 2157.87,
+    "person": "Hannes",
+    "text": " And if they leave, you replace them, right?"
+  },
+  {
+    "startTime": 2160.87,
+    "person": "Hannes",
+    "text": " And that's not the type of company that I landed in."
+  },
+  { "startTime": 2164.53, "person": "Hannes", "text": " I'm super happy about that." },
+  {
+    "startTime": 2166.81,
+    "person": "Hannes",
+    "text": " We try to make long-term plans with people."
+  },
+  {
+    "startTime": 2171.21,
+    "person": "Hannes",
+    "text": " And that's why helping people grow, helping people achieve their next step, much more than just like training for the next tech skill."
+  },
+  {
+    "startTime": 2180.51,
+    "person": "Hannes",
+    "text": " We've acknowledged that when people become more senior in a tech role, they will need to get good at communicating with management, but also communicating with juniors and coaching juniors."
+  },
+  {
+    "startTime": 2195.53,
+    "person": "Hannes",
+    "text": " That's a skill that everybody will at some point need when they're in a team and they're more senior."
+  },
+  {
+    "startTime": 2202.05,
+    "person": "Hannes",
+    "text": " So we have looked at those skills in the bigger scheme of things and make sure that whenever we feel that people are at the point where those skills become relevant, they get some leadership training."
+  },
+  {
+    "startTime": 2216.77,
+    "person": "Hannes",
+    "text": " How to deal with some of the stuff that I already talked about, like deal with different personalities on your team, deal with how do I prepare a coaching conversation?"
+  },
+  {
+    "startTime": 2227.51,
+    "person": "Hannes",
+    "text": " How do I make sure that people trust me and that I remain authentic?"
+  },
+  {
+    "startTime": 2233.87,
+    "person": "Hannes",
+    "text": " Because that buys a lot, like being authentic with people, not having any hidden agendas, but also like being able to admit that you fucked up."
+  },
+  { "startTime": 2243.65, "person": "Hannes", "text": " It buys so much goodwill." },
+  {
+    "startTime": 2247.65,
+    "person": "Hannes",
+    "text": " You don't have to know it all to be a leader on a team."
+  },
+  {
+    "startTime": 2252.39,
+    "person": "Hannes",
+    "text": " And I say leader specifically because I don't think you have to be the team lead or the architect or the lead developer to actually be a leader in your team."
+  },
+  {
+    "startTime": 2264.53,
+    "person": "Hannes",
+    "text": " I think you can lead from any role, any position by just like doing the right thing and caring about the people around you and showing empathy."
+  },
+  {
+    "startTime": 2278.05,
+    "person": "Hannes",
+    "text": " I've seen people carry a whole theme around them, like a whole theme that looked at them when stuff needed to happen, not at the project manager, not at the team lead, because it just came natural and they had empathy for everybody around them."
+  },
+  { "startTime": 2296.75, "person": "Karol", "text": " Right." },
+  {
+    "startTime": 2297.57,
+    "person": "Karol",
+    "text": " You mentioned teaching people those leadership skills and especially communication."
+  },
+  {
+    "startTime": 2305.69,
+    "person": "Karol",
+    "text": " I think looking back at my junior days, et cetera, I had plenty of colleagues that said, well, I didn't go to IT to work with people, right?"
+  },
+  { "startTime": 2315.83, "person": "Karol", "text": " I came to IT to code." },
+  { "startTime": 2318.99, "person": "Karol", "text": " Well, yeah, great." },
+  {
+    "startTime": 2320.05,
+    "person": "Karol",
+    "text": " That's not the reality of things because nowadays we need to work with people more and more because that's where the hard parts of the job are."
+  },
+  { "startTime": 2330.23, "person": "Hannes", "text": " Always have been." },
+  { "startTime": 2331.21, "person": "Karol", "text": " Always have been, really." },
+  { "startTime": 2332.41, "person": "Karol", "text": " Yes, very true." },
+  {
+    "startTime": 2333.83,
+    "person": "Karol",
+    "text": " And that kind of notion of programmers being somewhere in the basement, in a room with isolated from the rest of the company is a very false notion."
+  },
+  {
+    "startTime": 2348.81,
+    "person": "Karol",
+    "text": " But at the same time, in most places, in most companies, universities, there is no emphasis on soft skills, on communication skills, on leadership skills, on team building."
+  },
+  {
+    "startTime": 2365.41,
+    "person": "Hannes",
+    "text": " I don't really like the term soft skills for that."
+  },
+  { "startTime": 2368.51, "person": "Karol", "text": " Because they're also hard." },
+  { "startTime": 2370.91, "person": "Hannes", "text": " They're hard to learn." },
+  { "startTime": 2373.47, "person": "Hannes", "text": " Also, there's nothing soft about them." },
+  {
+    "startTime": 2377.57,
+    "person": "Hannes",
+    "text": " Communication and people skills make or break careers on the regular."
+  },
+  {
+    "startTime": 2384.09,
+    "person": "Hannes",
+    "text": " If you neglect those skills, you're only going to go so far."
+  },
+  {
+    "startTime": 2389.05,
+    "person": "Hannes",
+    "text": " There might be this occasional tech weirdo who is so genius that they go far without developing those skills."
+  },
+  {
+    "startTime": 2398.85,
+    "person": "Hannes",
+    "text": " And I'm not thinking about the CEO of a certain electric car manufacturer or anything like no."
+  },
+  {
+    "startTime": 2407.17,
+    "person": "Hannes",
+    "text": " But there's the occasional person that might go far without developing those skills."
+  },
+  {
+    "startTime": 2413.73,
+    "person": "Hannes",
+    "text": " But on the most side, people will need to be able to communicate their ideas with others to make sure that they're successful."
+  },
+  { "startTime": 2423.77, "person": "Karol", "text": " Yeah, and build rapport with others." },
+  {
+    "startTime": 2425.41,
+    "person": "Karol",
+    "text": " So that they continue having a relationship, not just communicating."
+  },
+  { "startTime": 2432.63, "person": "Karol", "text": " One thing is to be able to communicate." },
+  {
+    "startTime": 2435.01,
+    "person": "Karol",
+    "text": " The other thing is to actually build a rapport and relationship with people so that you can continue working with them."
+  },
+  {
+    "startTime": 2441.55,
+    "person": "Karol",
+    "text": " Yeah, I think that's an important aspect, at least from my perspective."
+  },
+  {
+    "startTime": 2446.73,
+    "person": "Hannes",
+    "text": " Building trust everywhere, like not just building trust with your manager, but also building trust with the people that might be coached by you."
+  },
+  {
+    "startTime": 2459.13,
+    "person": "Hannes",
+    "text": " Building trust with the rest of your team."
+  },
+  {
+    "startTime": 2463.39,
+    "person": "Hannes",
+    "text": " Simon Sinek has like a whole thing about high trust environments, like when they looked at Navy SEALs, like high trust was more important than high performance, like the high technical performance."
+  },
+  {
+    "startTime": 2480.99,
+    "person": "Hannes",
+    "text": " And I see the same thing in tech teams, like the person that usually keeps the team together is not always the person that contributes the most individually or is technically the strongest person on the team."
+  },
+  {
+    "startTime": 2495.41,
+    "person": "Hannes",
+    "text": " It's the person that checks in on everyone."
+  },
+  { "startTime": 2497.55, "person": "Hannes", "text": " It's like, how are you doing?" },
+  {
+    "startTime": 2500.27,
+    "person": "Hannes",
+    "text": " It's sometimes the person that cleans up the mess when somebody, and maybe controversial, but usually that's a white dude who started a very nice technical story and got bored after the hard part was out of the way."
+  },
+  {
+    "startTime": 2515.15,
+    "person": "Hannes",
+    "text": " And then somebody needs to come and clean up and finish the damn thing."
+  },
+  {
+    "startTime": 2520.43,
+    "person": "Hannes",
+    "text": " The person who does that, makes sure that the team actually delivers, is the person that is liked within the team, because everybody on the team knows what they did."
+  },
+  {
+    "startTime": 2533.09,
+    "person": "Karol",
+    "text": " As far as I remember their argument from Simon Sinek, because I do recall that YouTube video where he explains, he says, we're not measuring trust at all."
+  },
+  {
+    "startTime": 2547.99,
+    "person": "Karol",
+    "text": " We're measuring key performance indicators, but in our jobs, we do not measure trust."
+  },
+  {
+    "startTime": 2554.21,
+    "person": "Karol",
+    "text": " Anyhow, Navy SEALs, they do measure trust and they do not care if somebody is a low performer or a medium performer, as long as they're high trust."
+  },
+  {
+    "startTime": 2565.07,
+    "person": "Karol",
+    "text": " Because that trust that they will not leave you there behind or something is a lot more important to them than the fact that somebody is performing."
+  },
+  {
+    "startTime": 2577.07,
+    "person": "Karol",
+    "text": " Also, because this is a high risk job that they're doing, because that's a completely other thing."
+  },
+  {
+    "startTime": 2582.97,
+    "person": "Karol",
+    "text": " But that really does translate in my head to our environments in IT, where that trust is important."
+  },
+  {
+    "startTime": 2591.95,
+    "person": "Karol",
+    "text": " As far as I remember that video, when Simon Sinek goes into a certain corporate environment, he would ask a question, who's the arsehole in the group?"
+  },
+  {
+    "startTime": 2605.73,
+    "person": "Karol",
+    "text": " Everybody instantly knows who the arsehole is, right?"
+  },
+  {
+    "startTime": 2608.51,
+    "person": "Karol",
+    "text": " Who's that high performance, low trust person in the group?"
+  },
+  {
+    "startTime": 2613.43,
+    "person": "Karol",
+    "text": " This is most likely the person that would probably destroy the team effort."
+  },
+  { "startTime": 2618.97, "person": "Hannes", "text": " Sure, yeah." },
+  {
+    "startTime": 2622.51,
+    "person": "Hannes",
+    "text": " There's a couple of things that I've noticed and that I try to teach juniors as well."
+  },
+  {
+    "startTime": 2627.83,
+    "person": "Hannes",
+    "text": " First of all, don't take credit for other people's work."
+  },
+  {
+    "startTime": 2630.71,
+    "person": "Hannes",
+    "text": " It's the first way that you can destroy a relationship with somebody on the team."
+  },
+  {
+    "startTime": 2635.05,
+    "person": "Hannes",
+    "text": " If somebody else did it, give them credit for it and applaud their effort."
+  },
+  { "startTime": 2640.35, "person": "Hannes", "text": " Very important." },
+  {
+    "startTime": 2643.85,
+    "person": "Hannes",
+    "text": " Also, make sure that when you say you're going to do something, make sure that you either deliver or communicate that for some reason it's not working out."
+  },
+  {
+    "startTime": 2654.25,
+    "person": "Hannes",
+    "text": " Those are two pretty easy things that anybody can understand."
+  },
+  {
+    "startTime": 2659.63,
+    "person": "Hannes",
+    "text": " They're two of the easiest ways to make sure that you won't fit into a team after a very, very short period."
+  },
+  {
+    "startTime": 2673.37,
+    "person": "Hannes",
+    "text": " And again, sorry for coming back to the gender thing."
+  },
+  {
+    "startTime": 2678.31,
+    "person": "Hannes",
+    "text": " I've seen it happen where one of the female devs on the team has a great idea, and it gets stolen and picked up and reappropriated by one of the tech pros if it's a good idea, and they steal credit for it."
+  },
+  {
+    "startTime": 2694.29,
+    "person": "Hannes",
+    "text": " Like when you see that happen, step in and go like, hey, it was a great idea as well 15 minutes ago when Sarah said it."
+  },
+  {
+    "startTime": 2705.99,
+    "person": "Hannes",
+    "text": " That's like one of the easiest ways that you can earn Sarah's trust."
+  },
+  {
+    "startTime": 2711.51,
+    "person": "Hannes",
+    "text": " And she's probably the person keeping the team together."
+  },
+  {
+    "startTime": 2714.53,
+    "person": "Hannes",
+    "text": " So better make sure that she gets appreciation for the work that she does."
+  },
+  {
+    "startTime": 2723.19,
+    "person": "Hannes",
+    "text": " It's those things, like simple, simple things that seem obvious, like from a human perspective, like treat others the way that you would want to be treated, that for some reason in the workplace, we disregard too often."
+  },
+  {
+    "startTime": 2741.48,
+    "person": "Hannes",
+    "text": " And everybody is trying to put out their elbows and trying to get ahead, trying to get noticed for the next promotion and so on."
+  },
+  {
+    "startTime": 2752.7,
+    "person": "Hannes",
+    "text": " And usually the person who commits the least code might be the person that is helping the team the most, because they're pairing with everybody else and making sure that they deliver all their stuff, which means that they're not behind their own computer and delivering codes, their own features, but like take them away from the team and the whole thing collapses."
+  },
+  {
+    "startTime": 2777.15,
+    "person": "Hannes",
+    "text": " So noticing that as a leader and a team is also super important, like give people recognition for not for delivering, like it's super easy to count story points."
+  },
+  {
+    "startTime": 2790.7,
+    "person": "Hannes",
+    "text": " And it's that thing where as soon as something becomes a metric, it becomes a goal and it ceases to be a good metric."
+  },
+  {
+    "startTime": 2802.14,
+    "person": "Hannes",
+    "text": " Like if you put targets on something, like it's gone."
+  },
+  {
+    "startTime": 2805.54,
+    "person": "Hannes",
+    "text": " Story points, like I would argue it was never good to begin with, but as soon as you start measuring team output in story points or individual output in any kind of points, like you're measuring the wrong things."
+  },
+  { "startTime": 2822.5, "person": "Hannes", "text": " I love Woody Zuul's take on this." },
+  { "startTime": 2826.6, "person": "Hannes", "text": " Have you met Woody at some point?" },
+  { "startTime": 2828.42, "person": "Karol", "text": " Oh, yeah." },
+  { "startTime": 2829.24, "person": "Karol", "text": " Literally talked to him yesterday." },
+  { "startTime": 2831.34, "person": "Karol", "text": " Oh, really?" },
+  { "startTime": 2832.16, "person": "Karol", "text": " How's he doing?" },
+  { "startTime": 2833.24, "person": "Hannes", "text": " It's been a while since I've seen him." },
+  { "startTime": 2835.06, "person": "Karol", "text": " Very good." },
+  {
+    "startTime": 2835.74,
+    "person": "Karol",
+    "text": " He told me he's just starting a new contract."
+  },
+  {
+    "startTime": 2838.44,
+    "person": "Karol",
+    "text": " He's very excited about that and that's going to consume a lot of his time."
+  },
+  {
+    "startTime": 2842.02,
+    "person": "Karol",
+    "text": " So I'm a little bit worried that I'm not going to be able to talk to him anytime soon because of that."
+  },
+  {
+    "startTime": 2847.94,
+    "person": "Karol",
+    "text": " But yes, we just had a conversation yesterday about Ensemble Programming."
+  },
+  { "startTime": 2853.78, "person": "Hannes", "text": " Yeah." },
+  { "startTime": 2854.16, "person": "Hannes", "text": " And he calls it that now." },
+  { "startTime": 2856.34, "person": "Hannes", "text": " He started calling it Mob Programming." },
+  {
+    "startTime": 2860.72,
+    "person": "Hannes",
+    "text": " But the whole idea is like, instead of just looking at the team output, like why not work on everything as a team?"
+  },
+  {
+    "startTime": 2868.6,
+    "person": "Hannes",
+    "text": " And I love the way that he reasons about productivity as a team because he takes all of that to the extreme."
+  },
+  {
+    "startTime": 2877.16,
+    "person": "Hannes",
+    "text": " He's also like the loveliest person out there."
+  },
+  {
+    "startTime": 2879.32,
+    "person": "Hannes",
+    "text": " Like I cannot imagine that somebody would be offended by Woody."
+  },
+  {
+    "startTime": 2884.24,
+    "person": "Hannes",
+    "text": " Like he's just the nicest person out there."
+  },
+  { "startTime": 2887.04, "person": "Hannes", "text": " Like I love the dude." },
+  {
+    "startTime": 2888.86,
+    "person": "Hannes",
+    "text": " But the way that he looks at things, I think a lot of those values, you don't need to do Ensemble Programming to apply some of the stuff that he preaches."
+  },
+  {
+    "startTime": 2898.48,
+    "person": "Hannes",
+    "text": " It's like, look at the things that work well and do those more."
+  },
+  { "startTime": 2903.18, "person": "Hannes", "text": " Like turn up the good." },
+  {
+    "startTime": 2904.24,
+    "person": "Hannes",
+    "text": " I've used that from him like a bunch of times."
+  },
+  {
+    "startTime": 2907.86,
+    "person": "Hannes",
+    "text": " That's a way to remove friction in teams."
+  },
+  {
+    "startTime": 2910.52,
+    "person": "Hannes",
+    "text": " Like notice something that is working well and just try and do that more."
+  },
+  {
+    "startTime": 2914.98,
+    "person": "Hannes",
+    "text": " And if you notice there's friction in the team, but this one thing works well, like apply that."
+  },
+  { "startTime": 2921.32, "person": "Hannes", "text": " Make sure that there's high trust." },
+  {
+    "startTime": 2923.44,
+    "person": "Hannes",
+    "text": " Like it's very important when you're doing an Ensemble Programming, but it's also like super important in any team."
+  },
+  { "startTime": 2929.84, "person": "Hannes", "text": " So make sure that you build that." },
+  {
+    "startTime": 2932.76,
+    "person": "Hannes",
+    "text": " Like he thinks about those things and he takes all of it to an extreme."
+  },
+  { "startTime": 2937.1, "person": "Hannes", "text": " I love that about him." },
+  {
+    "startTime": 2939.92,
+    "person": "Karol",
+    "text": " Yeah, I've been researching Ensemble because we're actually having a live stream by the end of August where we will be doing live programming, live Ensemble."
+  },
+  {
+    "startTime": 2954.02,
+    "person": "Karol",
+    "text": " Which was exactly when I was, before starting in the studio, I was literally writing up the event description, preparing to set the event on LinkedIn, which I haven't finished yet."
+  },
+  {
+    "startTime": 2966.08,
+    "person": "Karol",
+    "text": " That's going to be after this stream that I'm going to publish it on LinkedIn."
+  },
+  { "startTime": 2968.4, "person": "Karol", "text": " But that's coming very soon." },
+  {
+    "startTime": 2970.74,
+    "person": "Karol",
+    "text": " And I have two guys that are full stack developers that are going to come to the stream and we're going to build something together as a change of a format, change of pace."
+  },
+  {
+    "startTime": 2981.18,
+    "person": "Karol",
+    "text": " That's somewhere at the end of August that's going to happen."
+  },
+  {
+    "startTime": 2985.9,
+    "person": "Karol",
+    "text": " So not the next stream, but the next one over."
+  },
+  {
+    "startTime": 2989.2,
+    "person": "Karol",
+    "text": " And I was like, okay, I have no idea what Ensemble is."
+  },
+  { "startTime": 2993.94, "person": "Karol", "text": " So I'm going to research that." },
+  {
+    "startTime": 2994.96,
+    "person": "Karol",
+    "text": " And I just put it in Genie and Genie tells me, oh, popularised by Woody Zool in 2011."
+  },
+  { "startTime": 3003.52, "person": "Karol", "text": " I'm like, hold on." },
+  {
+    "startTime": 3005.18,
+    "person": "Karol",
+    "text": " Woody Zool, that's too specific to be a coincidence."
+  },
+  { "startTime": 3009.34, "person": "Karol", "text": " That Woody Zool?" },
+  { "startTime": 3010.46, "person": "Karol", "text": " Oh yeah, that Woody Zool." },
+  { "startTime": 3011.66, "person": "Karol", "text": " Okay, let's have a chat with Woody." },
+  {
+    "startTime": 3014,
+    "person": "Karol",
+    "text": " So that's a pure coincidence that literally talked to him yesterday night, somewhere at 11 PM or so, because obviously US time, right?"
+  },
+  { "startTime": 3025.74, "person": "Karol", "text": " Yeah, time zones, yeah." },
+  { "startTime": 3027.46, "person": "Karol", "text": " Time zones." },
+  { "startTime": 3028.1, "person": "Hannes", "text": " Hardest thing as a programmer, right?" },
+  { "startTime": 3030.1, "person": "Karol", "text": " The most annoying thing as a programmer." },
+  {
+    "startTime": 3033.44,
+    "person": "Karol",
+    "text": " Just store everything as UTC and be done with it, right?"
+  },
+  { "startTime": 3036.5, "person": "Karol", "text": " Well, locale, locale, locale, right?" },
+  { "startTime": 3041, "person": "Karol", "text": " That's the most fun I've had with anything." },
+  {
+    "startTime": 3044.1,
+    "person": "Karol",
+    "text": " Luckily in my job, I don't deal with locale, but I'm guessing front-end development."
+  },
+  {
+    "startTime": 3049.12,
+    "person": "Karol",
+    "text": " That's one of the luckiest nightmares ever."
+  },
+  { "startTime": 3053.66, "person": "Hannes", "text": " Yeah, there's too many." },
+  {
+    "startTime": 3056.42,
+    "person": "Hannes",
+    "text": " But there's problems with dates that you never..."
+  },
+  {
+    "startTime": 3063.24,
+    "person": "Hannes",
+    "text": " There's not a single way of fixing it that's always going to be correct."
+  },
+  {
+    "startTime": 3067.38,
+    "person": "Hannes",
+    "text": " If you're doing a scheduling appointment, let's say, I'm giving a talk in Kansas City in September."
+  },
+  {
+    "startTime": 3077.36,
+    "person": "Hannes",
+    "text": " That's in my calendar now in the middle of the night."
+  },
+  {
+    "startTime": 3082.04,
+    "person": "Hannes",
+    "text": " When I look at that, what I actually want to see is local time when I'll be there."
+  },
+  { "startTime": 3089.46, "person": "Hannes", "text": " What time is this talk going to be?" },
+  {
+    "startTime": 3092.2,
+    "person": "Hannes",
+    "text": " On the other hand, when I have a Zoom call with somebody like you, we happen to be in the same time zone."
+  },
+  {
+    "startTime": 3099.1,
+    "person": "Hannes",
+    "text": " We're probably less than 100 kilometres apart anyway."
+  },
+  {
+    "startTime": 3103.84,
+    "person": "Hannes",
+    "text": " But if we're in different time zones, what I want to see is in my own time zone."
+  },
+  {
+    "startTime": 3107.52,
+    "person": "Hannes",
+    "text": " I need to know when to dial into the call."
+  },
+  { "startTime": 3109.82, "person": "Hannes", "text": " There's no one-size-fits-all answer." },
+  { "startTime": 3112.6, "person": "Hannes", "text": " Dates are hard." },
+  { "startTime": 3113.92, "person": "Hannes", "text": " Dates are always hard." },
+  {
+    "startTime": 3115.86,
+    "person": "Karol",
+    "text": " Well, my Google Calendar that I use is wired to local time and Eastern time."
+  },
+  {
+    "startTime": 3122.4,
+    "person": "Karol",
+    "text": " I always have two times on the side to just see what this US..."
+  },
+  {
+    "startTime": 3126.12,
+    "person": "Karol",
+    "text": " Because I have so many calls with US that this is always..."
+  },
+  {
+    "startTime": 3129.24,
+    "person": "Karol",
+    "text": " I always need that local time of at least Eastern time because then from that, I can derive a Central and Pacific easily."
+  },
+  { "startTime": 3136.4, "person": "Karol", "text": " That makes it a lot easier." },
+  {
+    "startTime": 3137.88,
+    "person": "Karol",
+    "text": " But yeah, that's basically how it goes all the time."
+  },
+  { "startTime": 3143.04, "person": "Karol", "text": " By the way, maybe a bit of commercial." },
+  { "startTime": 3146.5, "person": "Karol", "text": " Next stream over, which is this exactly." },
+  {
+    "startTime": 3149.56,
+    "person": "Karol",
+    "text": " We're going to be talking about the Cargo Cult."
+  },
+  {
+    "startTime": 3151.66,
+    "person": "Karol",
+    "text": " Actually, we're going to have a lot of fun with time zones because I'm in Central European summertime."
+  },
+  { "startTime": 3159.3, "person": "Karol", "text": " Aaron is in Canada." },
+  {
+    "startTime": 3161.22,
+    "person": "Karol",
+    "text": " So he's going to be, I think, Eastern time."
+  },
+  { "startTime": 3163.92, "person": "Karol", "text": " And Chris is..." },
+  { "startTime": 3164.6, "person": "Hannes", "text": " Chris is going to be back in Australia." },
+  { "startTime": 3166.5, "person": "Karol", "text": " Exactly." },
+  { "startTime": 3167.06, "person": "Karol", "text": " So it's going to be..." },
+  { "startTime": 3168.4, "person": "Karol", "text": " For me, it's going to be 7pm." },
+  { "startTime": 3170.52, "person": "Karol", "text": " For Aaron, it's going to be like 1pm." },
+  {
+    "startTime": 3174.7,
+    "person": "Hannes",
+    "text": " And for Chris, it's going to be very late at night."
+  },
+  { "startTime": 3177.1, "person": "Karol", "text": " For Chris, I believe that's 3am." },
+  { "startTime": 3180.66, "person": "Karol", "text": " Oh my God." },
+  {
+    "startTime": 3182.12,
+    "person": "Karol",
+    "text": " He was like, yes, I'm going to do it at 3am."
+  },
+  { "startTime": 3184.18, "person": "Hannes", "text": " I was like, are you sure?" },
+  {
+    "startTime": 3185.76,
+    "person": "Hannes",
+    "text": " Like, they're not going to let him sleep in in the morning."
+  },
+  { "startTime": 3188.38, "person": "Hannes", "text": " No." },
+  { "startTime": 3190.56, "person": "Karol", "text": " But time zones." },
+  { "startTime": 3192.18, "person": "Karol", "text": " He said he's fine with that." },
+  { "startTime": 3193.82, "person": "Karol", "text": " I'm going to take him for the board." },
+  {
+    "startTime": 3195.28,
+    "person": "Karol",
+    "text": " He promised that he's going to be fine with that."
+  },
+  {
+    "startTime": 3197.08,
+    "person": "Karol",
+    "text": " We tried to find a compromise, but he said, okay."
+  },
+  { "startTime": 3200.14, "person": "Karol", "text": " Well, that's next week." },
+  {
+    "startTime": 3202,
+    "person": "Karol",
+    "text": " We're going to be talking about the Kafka Cult."
+  },
+  { "startTime": 3204.84, "person": "Karol", "text": " That's going to be..." },
+  {
+    "startTime": 3205.56,
+    "person": "Karol",
+    "text": " That's going to be all the fun about event-driven architecture and the common misconceptions."
+  },
+  { "startTime": 3211.98, "person": "Karol", "text": " Either way, going back to..." },
+  { "startTime": 3214.8, "person": "Karol", "text": " Where were we before the time zones?" },
+  { "startTime": 3216.08, "person": "Karol", "text": " We're all over the place, right?" },
+  { "startTime": 3218.38, "person": "Karol", "text": " Exactly." },
+  { "startTime": 3219.48, "person": "Karol", "text": " You want to go further off topic?" },
+  { "startTime": 3221.88, "person": "Karol", "text": " Maybe not today." },
+  {
+    "startTime": 3223.9,
+    "person": "Karol",
+    "text": " I know we're both capable of this with our ADHD brains, but maybe let's dial down to..."
+  },
+  { "startTime": 3230.84, "person": "Karol", "text": " So yeah, Ensemble." },
+  {
+    "startTime": 3232.9,
+    "person": "Karol",
+    "text": " Yeah, this notion of a team output instead of the notion of an individual output."
+  },
+  {
+    "startTime": 3238.04,
+    "person": "Karol",
+    "text": " I think this is, from that perspective, is a very important indicator."
+  },
+  {
+    "startTime": 3245.04,
+    "person": "Karol",
+    "text": " More important than individual contribution."
+  },
+  {
+    "startTime": 3247.48,
+    "person": "Karol",
+    "text": " Of course, there will be individuals, probably disruptive in the team, et cetera, that as a leader, you need to spot it and take care of it."
+  },
+  {
+    "startTime": 3259.72,
+    "person": "Karol",
+    "text": " But measuring output, measuring performance on a level of an individual, there are so many things that you will never capture in any quantifiable metrics because we're human."
+  },
+  {
+    "startTime": 3272.72,
+    "person": "Karol",
+    "text": " And how we interact as a group is very, very different than what we can quantify and measure."
+  },
+  { "startTime": 3281.72, "person": "Karol", "text": " That's the difficult part, I think." },
+  {
+    "startTime": 3284.06,
+    "person": "Hannes",
+    "text": " And that's why I believe, and I've always taken that into the performance reviews that I'm doing, I want to reward the behaviour that I want to see more than the output that people affect."
+  },
+  { "startTime": 3302.88, "person": "Hannes", "text": " Let me clarify that." },
+  { "startTime": 3305.36, "person": "Hannes", "text": " Output is important." },
+  { "startTime": 3306.56, "person": "Hannes", "text": " Like on any team, output is important." },
+  {
+    "startTime": 3309.08,
+    "person": "Hannes",
+    "text": " But somebody that is willing to upset all of their colleagues to just achieve more output is not behaviour that I want to reward."
+  },
+  {
+    "startTime": 3317.94,
+    "person": "Hannes",
+    "text": " On the other hand, people sharing knowledge, people helping each other, people checking in, making sure that everybody's feeling safe, that everybody's feeling heard, like all that sort of behaviour is stuff that I want to reward in a team."
+  },
+  { "startTime": 3337.06, "person": "Hannes", "text": " Same with our consultants." },
+  {
+    "startTime": 3339.08,
+    "person": "Hannes",
+    "text": " Like I want to reward them for growing, for sharing with the group."
+  },
+  {
+    "startTime": 3347.06,
+    "person": "Hannes",
+    "text": " Like that's one of the things that when we do a performance review, if you've shared your knowledge in any way, like written work or given a session for colleagues or running a workshop for the juniors, like there's many things you can do."
+  },
+  {
+    "startTime": 3362.16,
+    "person": "Hannes",
+    "text": " Like if you share your knowledge in some way, like that's always going to be valued much more than you achieved 240 billable days this year."
+  },
+  {
+    "startTime": 3376.22,
+    "person": "Hannes",
+    "text": " Like we have a baseline, like we have a number that is like somebody working full time, taking all of their holiday days, having a couple of sick days, having a couple of training days, like whatever remains then is like the baseline."
+  },
+  {
+    "startTime": 3400.18,
+    "person": "Hannes",
+    "text": " If you're close to that number, it doesn't matter whether you're below or above it, like you've done an adequate job."
+  },
+  {
+    "startTime": 3408,
+    "person": "Hannes",
+    "text": " If you're below that because you were on the bench without a project, because sales didn't find something for you, you should not be penalised for that."
+  },
+  { "startTime": 3417.72, "person": "Hannes", "text": " That's not your fault." },
+  {
+    "startTime": 3420.46,
+    "person": "Hannes",
+    "text": " On the other hand, if you go to an interview and you show up with an attitude, like this job is shit and your tech stack sucks and so on, like we're going to have a different conversation because that's not the behaviour we want to see."
+  },
+  {
+    "startTime": 3432.72,
+    "person": "Hannes",
+    "text": " Even if you hate whatever the customer is doing, like at least when you're talking to them, you show interest and you try and learn what they're trying to do."
+  },
+  {
+    "startTime": 3441.76,
+    "person": "Hannes",
+    "text": " If you afterwards say like this project isn't for me, that's fine."
+  },
+  {
+    "startTime": 3446.16,
+    "person": "Hannes",
+    "text": " The way you approach an interview, that is behaviour that I do want to see."
+  },
+  {
+    "startTime": 3452.08,
+    "person": "Hannes",
+    "text": " If there were no interviews to judge, how can I judge the fact that you've been on the bench for two months?"
+  },
+  { "startTime": 3458.28, "person": "Hannes", "text": " That's not your fault." },
+  {
+    "startTime": 3462.22,
+    "person": "Hannes",
+    "text": " So all of this looking at what is the behaviour that we want to see and reward that helps a lot in building a culture inside a company that has the things happening that you want to see."
+  },
+  {
+    "startTime": 3480.48,
+    "person": "Karol",
+    "text": " So let me ask you this, from your perspective as the head of learning and development, what would be your stance on literally logging hours if you're, let's say you're 40 hours on the project and then after hours, you still are running knowledge sharing sessions."
+  },
+  { "startTime": 3504.52, "person": "Hannes", "text": " Huh, that's a great question." },
+  { "startTime": 3507.22, "person": "Hannes", "text": " I love that question." },
+  {
+    "startTime": 3508.4,
+    "person": "Karol",
+    "text": " Right, because that's a common, for example, in a large number of consulting companies because those extra hours are not locked anywhere and they're not treated as overtime."
+  },
+  {
+    "startTime": 3522.8,
+    "person": "Karol",
+    "text": " They're not given as, for example, compensation as leave."
+  },
+  {
+    "startTime": 3529.48,
+    "person": "Karol",
+    "text": " That really discourages people because those companies, they force you to do 40 hour projects without leaving you any space to actually do that knowledge sharing within the work hours."
+  },
+  {
+    "startTime": 3539.94,
+    "person": "Karol",
+    "text": " They force you to do that knowledge sharing after hours and that makes it for a lot of people very discouraging to actually do any knowledge sharing."
+  },
+  {
+    "startTime": 3550.96,
+    "person": "Hannes",
+    "text": " The answer to this is far more complex than just a simple yes or no."
+  },
+  { "startTime": 3556.22, "person": "Karol", "text": " Of course, always." },
+  {
+    "startTime": 3558.1,
+    "person": "Hannes",
+    "text": " See, we started, like when I started at XS, all of the knowledge sharing was happening exactly in the way that you just described it, after hours."
+  },
+  {
+    "startTime": 3567.68,
+    "person": "Hannes",
+    "text": " When I became a coach of our .NET team, at some point, our knowledge sharing was running well."
+  },
+  {
+    "startTime": 3576.4,
+    "person": "Hannes",
+    "text": " Like we had candidates to give sessions, people were showing up and so on."
+  },
+  {
+    "startTime": 3579.92,
+    "person": "Hannes",
+    "text": " I started noticing that some people never showed up."
+  },
+  {
+    "startTime": 3584.76,
+    "person": "Hannes",
+    "text": " So I'm the kind of person that goes like, why, why is that happening?"
+  },
+  { "startTime": 3590.3, "person": "Hannes", "text": " Like, are these subjects not for you?" },
+  { "startTime": 3592.2, "person": "Hannes", "text": " What's going on?" },
+  {
+    "startTime": 3593.02,
+    "person": "Hannes",
+    "text": " So I just started looking at who is there every time and started looking at who is not there."
+  },
+  {
+    "startTime": 3601.16,
+    "person": "Hannes",
+    "text": " And I asked them, like in a very, very open way, like, hey, why, why is this happening?"
+  },
+  { "startTime": 3610.96, "person": "Hannes", "text": " Like, you're not in trouble or anything." },
+  { "startTime": 3613.02, "person": "Hannes", "text": " This is not about that." },
+  {
+    "startTime": 3614.76,
+    "person": "Hannes",
+    "text": " Like, is there anything we can do to make it easier for you to attend?"
+  },
+  { "startTime": 3619.42, "person": "Hannes", "text": " And we noticed a bunch of weird things." },
+  { "startTime": 3622.06, "person": "Hannes", "text": " Like this always happens on a Tuesday." },
+  { "startTime": 3623.78, "person": "Hannes", "text": " On Tuesday, I play volleyball." },
+  { "startTime": 3626.26, "person": "Hannes", "text": " And this is always in the evening." },
+  { "startTime": 3629, "person": "Hannes", "text": " And I'm a mom." },
+  {
+    "startTime": 3630.6,
+    "person": "Hannes",
+    "text": " So I need to run home to take care of the kids."
+  },
+  { "startTime": 3633.62, "person": "Hannes", "text": " So I would love to attend." },
+  {
+    "startTime": 3635.04,
+    "person": "Hannes",
+    "text": " And if like there would be a live stream, I would tune into it while I'm cooking dinner for the kids."
+  },
+  {
+    "startTime": 3640.32,
+    "person": "Hannes",
+    "text": " But I can't be at the office at the time because I'm taking care of my family."
+  },
+  {
+    "startTime": 3646.32,
+    "person": "Hannes",
+    "text": " So for some people, it's more like, yeah, if I'm going to work for eight hours, I'm tired and I need to recuperate."
+  },
+  {
+    "startTime": 3659.36,
+    "person": "Hannes",
+    "text": " So if we could make this happen, like during the workday, I would probably make it work somehow."
+  },
+  { "startTime": 3665.82, "person": "Hannes", "text": " But like at night, I need to unwind." },
+  {
+    "startTime": 3668.66,
+    "person": "Hannes",
+    "text": " And it was very important that we did not judge any of those reasons."
+  },
+  {
+    "startTime": 3675.04,
+    "person": "Hannes",
+    "text": " We all took them in as data and took them in as things that we needed to look at."
+  },
+  {
+    "startTime": 3681.8,
+    "person": "Hannes",
+    "text": " And like a lot of these have simple solutions."
+  },
+  { "startTime": 3685.32, "person": "Hannes", "text": " Like you do the things during the hours." },
+  { "startTime": 3688.56, "person": "Hannes", "text": " You make sure that you alternate days." },
+  {
+    "startTime": 3691.44,
+    "person": "Hannes",
+    "text": " You make sure that you live stream them so that people can tune in from everywhere."
+  },
+  {
+    "startTime": 3697.96,
+    "person": "Hannes",
+    "text": " You make sure that when you do stuff, you provide food."
+  },
+  { "startTime": 3700.8, "person": "Hannes", "text": " We've always done that." },
+  {
+    "startTime": 3702.04,
+    "person": "Hannes",
+    "text": " But like, I think that's the low bar for asking people's free time."
+  },
+  {
+    "startTime": 3709.7,
+    "person": "Hannes",
+    "text": " If you schedule something during lunch, you provide food for people."
+  },
+  { "startTime": 3713.44, "person": "Hannes", "text": " This goes for business meetings." },
+  { "startTime": 3715, "person": "Hannes", "text": " This goes for knowledge sharing." },
+  { "startTime": 3716.44, "person": "Hannes", "text": " It's like you provide food." },
+  {
+    "startTime": 3718.56,
+    "person": "Hannes",
+    "text": " And you do it at the evening as well, by the way."
+  },
+  {
+    "startTime": 3720.76,
+    "person": "Hannes",
+    "text": " And in the evening, you might as well also make sure that there's drinks."
+  },
+  { "startTime": 3725.76, "person": "Hannes", "text": " But like there's solutions." },
+  { "startTime": 3728.44, "person": "Hannes", "text": " There is no..." },
+  {
+    "startTime": 3730.4,
+    "person": "Hannes",
+    "text": " And this is where budget comes into play as well."
+  },
+  {
+    "startTime": 3734.78,
+    "person": "Hannes",
+    "text": " Because why does it happen after hours in a lot of companies?"
+  },
+  { "startTime": 3739.24, "person": "Hannes", "text": " It's like, it's virtually free." },
+  {
+    "startTime": 3741.96,
+    "person": "Hannes",
+    "text": " We can run as many of these sessions as we want and everybody grows and it's only costing us food."
+  },
+  {
+    "startTime": 3748.52,
+    "person": "Hannes",
+    "text": " As soon as we do it during work hours, we're cutting into billable time."
+  },
+  { "startTime": 3753.28, "person": "Hannes", "text": " Yeah." },
+  {
+    "startTime": 3754.16,
+    "person": "Hannes",
+    "text": " So the balance that we struck there, and I'm not even saying that this is the right answer for everyone because every organisation will be different and everybody will have different values."
+  },
+  {
+    "startTime": 3765.76,
+    "person": "Hannes",
+    "text": " We have started alternating doing some stuff during hours and some stuff after hours."
+  },
+  {
+    "startTime": 3771.38,
+    "person": "Hannes",
+    "text": " And the reason for that is it allows us to run more sessions than we would be able to run if we did everything during hours."
+  },
+  {
+    "startTime": 3780.72,
+    "person": "Hannes",
+    "text": " And we have a relatively large group of people that are willing to invest some of their own time into growing faster."
+  },
+  {
+    "startTime": 3790.7,
+    "person": "Hannes",
+    "text": " The thing that's important to us is that people who don't have that luxury, because I'm going to say that that is a privilege to have, the privilege to be able to spend some of your free time on learning and growing."
+  },
+  {
+    "startTime": 3806.6,
+    "person": "Hannes",
+    "text": " So make sure that the people who don't have that privilege still have the opportunity to grow."
+  },
+  { "startTime": 3812.72, "person": "Hannes", "text": " Make sure that there's recording." },
+  {
+    "startTime": 3814.64,
+    "person": "Hannes",
+    "text": " Make sure that they can watch the live stream."
+  },
+  {
+    "startTime": 3816.92,
+    "person": "Hannes",
+    "text": " Make sure that they have sessions they can attend during work time without taking time off, right?"
+  },
+  {
+    "startTime": 3824.48,
+    "person": "Hannes",
+    "text": " But if we only do it during work time, we're not going to be able to organise as much."
+  },
+  {
+    "startTime": 3829.76,
+    "person": "Hannes",
+    "text": " So we might be slowing down the people that want to move a little bit faster."
+  },
+  {
+    "startTime": 3835.92,
+    "person": "Hannes",
+    "text": " And this is a balance that, it's still one of those dilemmas that I still struggle with."
+  },
+  {
+    "startTime": 3841.82,
+    "person": "Hannes",
+    "text": " And because ideally, I want to include everyone in everything."
+  },
+  {
+    "startTime": 3847.37,
+    "person": "Hannes",
+    "text": " But that would mean like doing less and moving everybody to the pace of the slowest person in the herd, which isn't necessarily the right choice."
+  },
+  { "startTime": 3864.05, "person": "Hannes", "text": " So it's a super tricky question." },
+  {
+    "startTime": 3867.13,
+    "person": "Hannes",
+    "text": " What I would give people as advice when you're looking at this and trying to optimise that is gather data."
+  },
+  {
+    "startTime": 3878.47,
+    "person": "Hannes",
+    "text": " Make sure that you know what your heuristics are that you want to optimise for."
+  },
+  {
+    "startTime": 3882.25,
+    "person": "Hannes",
+    "text": " If you want to make sure that everybody attends at least one or two sessions a year or X amount of sessions a year, right?"
+  },
+  { "startTime": 3891.53, "person": "Hannes", "text": " Make sure that you achieve that." },
+  {
+    "startTime": 3894.15,
+    "person": "Hannes",
+    "text": " If you want to make sure that it doesn't put stress on people, like look what stresses them out in joining."
+  },
+  {
+    "startTime": 3905.69,
+    "person": "Hannes",
+    "text": " If it's the driving distance to come to the office, make sure that you stream the sessions."
+  },
+  {
+    "startTime": 3910.81,
+    "person": "Hannes",
+    "text": " Like a good recording session, a good recording setup at the office is gonna run you what?"
+  },
+  {
+    "startTime": 3916.23,
+    "person": "Hannes",
+    "text": " Like a decent camera, an ATEM maybe, some microphones, like three, 4K, you can do decent work."
+  },
+  {
+    "startTime": 3926.91,
+    "person": "Hannes",
+    "text": " And for a company, that's not a lot of money."
+  },
+  {
+    "startTime": 3929.31,
+    "person": "Hannes",
+    "text": " Like if you do anything training, like a 4K investment that will last you a couple of years is peanuts."
+  },
+  {
+    "startTime": 3935.63,
+    "person": "Hannes",
+    "text": " Like that shouldn't even be an argument, right?"
+  },
+  {
+    "startTime": 3938.61,
+    "person": "Hannes",
+    "text": " You'll earn that back in two or three sessions if people actually tune in."
+  },
+  {
+    "startTime": 3944.19,
+    "person": "Hannes",
+    "text": " But yeah, make sure that you hit the targets that you want to hit, but also gather heuristics."
+  },
+  {
+    "startTime": 3951.41,
+    "person": "Hannes",
+    "text": " Like make sure that you know who's joining, who's not joining and why."
+  },
+  {
+    "startTime": 3957.11,
+    "person": "Hannes",
+    "text": " And then optimise for the balance that you wanna achieve."
+  },
+  {
+    "startTime": 3961.15,
+    "person": "Hannes",
+    "text": " And we picked our balance for our reasons."
+  },
+  {
+    "startTime": 3964.91,
+    "person": "Hannes",
+    "text": " But I can imagine that in a product company with a fixed team, you wanna make sure that everybody learns all the things and that you're gonna do everything during hours."
+  },
+  { "startTime": 3976.99, "person": "Hannes", "text": " And that's a valid choice to make." },
+  {
+    "startTime": 3981.35,
+    "person": "Hannes",
+    "text": " On the other hand, like I also understand companies that say, teams that say like, hey, we're not getting budget from the company, but we wanna share knowledge."
+  },
+  { "startTime": 3990.87, "person": "Hannes", "text": " So we're doing it after hours." },
+  {
+    "startTime": 3992.37,
+    "person": "Hannes",
+    "text": " Because that's a reality that happens in a lot of companies."
+  },
+  {
+    "startTime": 3995.35,
+    "person": "Hannes",
+    "text": " Like the company doesn't believe in knowledge sharing, doesn't mean you shouldn't be doing it."
+  },
+  { "startTime": 4000.83, "person": "Hannes", "text": " Very true." },
+  {
+    "startTime": 4001.85,
+    "person": "Hannes",
+    "text": " Because it's something you can do from the ground up that benefits everyone around you."
+  },
+  {
+    "startTime": 4006.27,
+    "person": "Hannes",
+    "text": " And if everybody is fine with putting in the after hours time, like there's nothing wrong with that."
+  },
+  {
+    "startTime": 4012.21,
+    "person": "Hannes",
+    "text": " It should not be a thing we force people into."
+  },
+  {
+    "startTime": 4015.31,
+    "person": "Hannes",
+    "text": " And that's a hard stance that we have taken."
+  },
+  {
+    "startTime": 4017.29,
+    "person": "Hannes",
+    "text": " Like if we do it after hours, like it should be optional."
+  },
+  {
+    "startTime": 4021.37,
+    "person": "Hannes",
+    "text": " Nobody should be forced to spend their evenings, but we wanna offer it."
+  },
+  {
+    "startTime": 4026.97,
+    "person": "Hannes",
+    "text": " But yeah, tricky question, but I love it."
+  },
+  { "startTime": 4030.07, "person": "Hannes", "text": " I love it." },
+  {
+    "startTime": 4030.61,
+    "person": "Hannes",
+    "text": " It's one of the big dilemmas that I've struggled with the last couple of years and finding that balance."
+  },
+  {
+    "startTime": 4035.97,
+    "person": "Hannes",
+    "text": " And I love that you asked it because it's not a good thing."
+  },
+  {
+    "startTime": 4042.19,
+    "person": "Karol",
+    "text": " It's also the same problem with community building."
+  },
+  { "startTime": 4047.55, "person": "Karol", "text": " Sure, yeah." },
+  {
+    "startTime": 4048.57,
+    "person": "Karol",
+    "text": " If you're trying to build a community and people just don't show up, that's the same problem because you need to understand why they're not showing up, why they're not sharing into the events, et cetera."
+  },
+  {
+    "startTime": 4061.99,
+    "person": "Karol",
+    "text": " And it's a difficult thing because the more distributed the community is, the harder it is to gather this data and gather those heuristics and build those heuristics for your events."
+  },
+  {
+    "startTime": 4077.83,
+    "person": "Karol",
+    "text": " And well, pretty much the same thing with this live stream."
+  },
+  {
+    "startTime": 4081.87,
+    "person": "Karol",
+    "text": " It's also, it's to an extent a community building effort and some things work, some things don't work."
+  },
+  { "startTime": 4089.11, "person": "Karol", "text": " This is a live stream, so it's recorded." },
+  {
+    "startTime": 4090.71,
+    "person": "Karol",
+    "text": " I know that some people just watch it after some pattern a few days later over the weekend or so because they're just not able to tune in on a Thursday evening."
+  },
+  {
+    "startTime": 4102.43,
+    "person": "Karol",
+    "text": " I know that there are some people that are watching literally cooking dinner."
+  },
+  { "startTime": 4107.13, "person": "Karol", "text": " They just put it on the phone." },
+  {
+    "startTime": 4109.649,
+    "person": "Hannes",
+    "text": " And for all of you out there, we appreciate that you're watching us during cooking dinner."
+  },
+  { "startTime": 4115.09, "person": "Karol", "text": " Absolutely, yes." },
+  {
+    "startTime": 4116.55,
+    "person": "Karol",
+    "text": " Yes, thank you for that because that's great."
+  },
+  {
+    "startTime": 4119.97,
+    "person": "Karol",
+    "text": " And this is also that difficult part of engaging the community."
+  },
+  {
+    "startTime": 4125.71,
+    "person": "Karol",
+    "text": " And that said, that works the same for communities in a workplace."
+  },
+  {
+    "startTime": 4130.37,
+    "person": "Karol",
+    "text": " And depending on the workplace, you have a tighter community or more distributed community in terms of consulting, where people are at client offices, etc."
+  },
+  { "startTime": 4139.77, "person": "Karol", "text": " That's usually very distributed." },
+  {
+    "startTime": 4141.77,
+    "person": "Karol",
+    "text": " So it's very hard to gather everybody back in the office for an event."
+  },
+  {
+    "startTime": 4146.31,
+    "person": "Karol",
+    "text": " So a lot of people then become passive consumers of content."
+  },
+  {
+    "startTime": 4152.89,
+    "person": "Karol",
+    "text": " And that's also fine to be a passive consumer."
+  },
+  {
+    "startTime": 4154.99,
+    "person": "Karol",
+    "text": " There's basically 95% or more of people on LinkedIn are passive consumers."
+  },
+  {
+    "startTime": 4161.45,
+    "person": "Karol",
+    "text": " Most people watching YouTube are passive consumers."
+  },
+  { "startTime": 4164.569, "person": "Karol", "text": " They don't leave likes." },
+  { "startTime": 4165.83, "person": "Karol", "text": " They don't comment at all." },
+  { "startTime": 4167.63, "person": "Karol", "text": " They just consume." },
+  {
+    "startTime": 4169.59,
+    "person": "Karol",
+    "text": " And that's also OK as long as we can produce content for them to digest and consume."
+  },
+  { "startTime": 4177.45, "person": "Hannes", "text": " But that's a challenge." },
+  { "startTime": 4178.27, "person": "Karol", "text": " It is a challenge." },
+  {
+    "startTime": 4180.189,
+    "person": "Hannes",
+    "text": " To those people, like to all of the passive consumers out there, think about how you can give something back."
+  },
+  {
+    "startTime": 4189.109,
+    "person": "Hannes",
+    "text": " And something can be how you can share it, what you learned today with the people around you at the office in the next coming week, or just leave a like on the video."
+  },
+  {
+    "startTime": 4197.93,
+    "person": "Hannes",
+    "text": " Give something back to the community that is happening around you."
+  },
+  {
+    "startTime": 4203.31,
+    "person": "Hannes",
+    "text": " Because we do a lot of community at work and access, but I also love the local user groups and meetup."
+  },
+  {
+    "startTime": 4212.51,
+    "person": "Hannes",
+    "text": " And I think that is still one of the purest forms of people getting together and help each other get ahead."
+  },
+  {
+    "startTime": 4224.69,
+    "person": "Hannes",
+    "text": " No speaker at a meetup is getting paid to do what they do."
+  },
+  {
+    "startTime": 4228.37,
+    "person": "Hannes",
+    "text": " They all do it for the love of just like, hey, I want to share and maybe help some other people in my field of expertise succeed in some of the things that I've struggled with."
+  },
+  { "startTime": 4239.01, "person": "Hannes", "text": " I love everything about that." },
+  {
+    "startTime": 4241.81,
+    "person": "Hannes",
+    "text": " And it's why I think it's important that as a company, if you can, sponsor your local meetups because your employees are getting knowledge from them."
+  },
+  { "startTime": 4252.85, "person": "Hannes", "text": " Host the session, provide the catering." },
+  {
+    "startTime": 4255.79,
+    "person": "Hannes",
+    "text": " It doesn't cost you a significant amount of money, but it's gonna enable a whole bunch of people to learn and to get better."
+  },
+  {
+    "startTime": 4266.93,
+    "person": "Hannes",
+    "text": " So I think community building is both one of the hardest and one of the most rewarding things that you will ever see."
+  },
+  {
+    "startTime": 4278.25,
+    "person": "Karol",
+    "text": " And on top of that, if you sponsor a local meetup, then that's already great PR, right?"
+  },
+  { "startTime": 4284.49, "person": "Karol", "text": " Sure." },
+  {
+    "startTime": 4285.05,
+    "person": "Karol",
+    "text": " If you'll be looking for new specialists, I mean, just being a sponsor for a meetup, that already builds rapport for the company amongst those people visiting for their meetup."
+  },
+  { "startTime": 4297.87, "person": "Karol", "text": " That is the amazing part." },
+  { "startTime": 4299.91, "person": "Karol", "text": " As well." },
+  {
+    "startTime": 4300.97,
+    "person": "Karol",
+    "text": " So it's beneficial, but not all companies see it that way."
+  },
+  {
+    "startTime": 4307.01,
+    "person": "Hannes",
+    "text": " We always try to encourage, like we have a list of meetups that we sponsor because we're pretty, we do a bunch of different programming language and stacks."
+  },
+  {
+    "startTime": 4320.73,
+    "person": "Hannes",
+    "text": " We have a bunch of different roles in our consultants."
+  },
+  {
+    "startTime": 4323.11,
+    "person": "Hannes",
+    "text": " Like it's not like we're a .NET consulting firm."
+  },
+  {
+    "startTime": 4325.51,
+    "person": "Hannes",
+    "text": " Like we do .NET, Java, JavaScript, a bit of Python."
+  },
+  {
+    "startTime": 4328.87,
+    "person": "Hannes",
+    "text": " We have scrum masters, product owners, analysts, testers, like everything."
+  },
+  { "startTime": 4334.91, "person": "Hannes", "text": " So we sponsor a bunch of meetups." },
+  {
+    "startTime": 4338.33,
+    "person": "Hannes",
+    "text": " Like whenever, when somebody advocates for sponsoring a meetup, we go like, sure, but how can we also contribute more than just writing a check?"
+  },
+  {
+    "startTime": 4349.69,
+    "person": "Hannes",
+    "text": " Because all of these meetups also struggle for content."
+  },
+  { "startTime": 4352.65, "person": "Hannes", "text": " So how can we enable one of our people?" },
+  {
+    "startTime": 4354.85,
+    "person": "Hannes",
+    "text": " Doesn't necessarily have to be you, but like, how can we support them in more ways than just writing a check and being taken into the sponsor list?"
+  },
+  {
+    "startTime": 4366.31,
+    "person": "Hannes",
+    "text": " And often it's like, make sure that they have a space to host, provide catering, provide a speaker, like all that sort of stuff, which is all for a company, not expensive to do."
+  },
+  {
+    "startTime": 4380.31,
+    "person": "Hannes",
+    "text": " Like if you sponsor a commercial conference, for the budget of sponsoring one conference, you can probably sponsor 10 local meetups."
+  },
+  {
+    "startTime": 4390.59,
+    "person": "Hannes",
+    "text": " So it's not about money and it's the best PR you can get, like literally, like contributing to a meetup, like being seen as an expert on that local stage, like it works."
+  },
+  {
+    "startTime": 4404.91,
+    "person": "Hannes",
+    "text": " It's almost impossible to measure, which is why a lot of companies don't value it."
+  },
+  {
+    "startTime": 4410.93,
+    "person": "Hannes",
+    "text": " How do you measure the return on sponsoring meetups?"
+  },
+  { "startTime": 4415.65, "person": "Hannes", "text": " It's like, it's impossible." },
+  {
+    "startTime": 4418.77,
+    "person": "Hannes",
+    "text": " But like, let me tell you, if you over time, like even if you sponsor 10 meetups a year and you spend, let's say like a typical yearly sponsorship for a local meetup is what?"
+  },
+  { "startTime": 4430.87, "person": "Hannes", "text": " Like a thousand euros, ballpark?" },
+  { "startTime": 4434.21, "person": "Karol", "text": " Maybe a little bit more, but yeah, well." },
+  { "startTime": 4437.11, "person": "Karol", "text": " Well, let's say two thousand." },
+  {
+    "startTime": 4438.83,
+    "person": "Karol",
+    "text": " Let's say two thousand, that's more realistic, given the current prices."
+  },
+  { "startTime": 4442.55, "person": "Hannes", "text": " You sponsor 10 of them." },
+  { "startTime": 4444.73, "person": "Karol", "text": " Yeah." },
+  { "startTime": 4445.53, "person": "Karol", "text": " 20k a year, right?" },
+  { "startTime": 4447.11, "person": "Karol", "text": " Oh, oh, you meant, okay." },
+  { "startTime": 4448.71, "person": "Karol", "text": " Yeah, yeah." },
+  { "startTime": 4449.69, "person": "Karol", "text": " Oh, sorry." },
+  {
+    "startTime": 4450.41,
+    "person": "Karol",
+    "text": " I meant, I thought you'd said one thousand per year."
+  },
+  {
+    "startTime": 4452.87,
+    "person": "Karol",
+    "text": " I mean, a meetup can, if you're giving a space and then adding budget to it."
+  },
+  { "startTime": 4459.07, "person": "Hannes", "text": " Oh yeah, no, no, no." },
+  { "startTime": 4459.71, "person": "Hannes", "text": " Just a sponsorship, right?" },
+  { "startTime": 4461.55, "person": "Karol", "text": " Okay." },
+  { "startTime": 4462.15, "person": "Karol", "text": " Yeah, then one thousand is plenty." },
+  {
+    "startTime": 4464.47,
+    "person": "Hannes",
+    "text": " But then you also host an evening and you provide the catering."
+  },
+  { "startTime": 4467.53, "person": "Hannes", "text": " So like, let's not add another thousand." },
+  {
+    "startTime": 4469.83,
+    "person": "Hannes",
+    "text": " We're still at two thousand per user group per year, right?"
+  },
+  { "startTime": 4472.49, "person": "Hannes", "text": " You do 10 of them, 20k a year, right?" },
+  { "startTime": 4475.29, "person": "Hannes", "text": " Yeah." },
+  {
+    "startTime": 4476.11,
+    "person": "Hannes",
+    "text": " With that money, you've had all of those visit your company premises because you've provided the space."
+  },
+  {
+    "startTime": 4483.65,
+    "person": "Hannes",
+    "text": " So all of those user groups have been where you work."
+  },
+  { "startTime": 4487.09, "person": "Hannes", "text": " They've seen where you are, right?" },
+  { "startTime": 4489.33, "person": "Hannes", "text": " Yeah." },
+  {
+    "startTime": 4489.57,
+    "person": "Hannes",
+    "text": " If you provide speakers, which is literally free, they've all seen your people be the expert on stage."
+  },
+  {
+    "startTime": 4498.35,
+    "person": "Hannes",
+    "text": " How many hires do we need to get to justify spending 20k?"
+  },
+  { "startTime": 4504.27, "person": "Hannes", "text": " One?" },
+  { "startTime": 4505.35, "person": "Hannes", "text": " Exactly." },
+  { "startTime": 4506.17, "person": "Hannes", "text": " Like one." },
+  {
+    "startTime": 4507.63,
+    "person": "Hannes",
+    "text": " Get one hire out of that, like long-term."
+  },
+  { "startTime": 4510.59, "person": "Hannes", "text": " Doesn't have to be this year." },
+  {
+    "startTime": 4511.63,
+    "person": "Hannes",
+    "text": " But like, if our efforts this year result in one hire long-term, like we've already made a problem."
+  },
+  { "startTime": 4519.25, "person": "Karol", "text": " Yeah, basically." },
+  {
+    "startTime": 4520.71,
+    "person": "Karol",
+    "text": " I mean, looking at the consulting prices per so-called mandate for like a senior specialist."
+  },
+  {
+    "startTime": 4528.63,
+    "person": "Karol",
+    "text": " I remember, for example, my wages when I was working as a consultant for PwC for UK."
+  },
+  { "startTime": 4537.19, "person": "Karol", "text": " Oh, yeah, yeah." },
+  {
+    "startTime": 4538.35,
+    "person": "Karol",
+    "text": " And it was like UK charged the client about 600 pounds per day."
+  },
+  {
+    "startTime": 4548.47,
+    "person": "Karol",
+    "text": " About one third of that was maybe reaching me."
+  },
+  {
+    "startTime": 4553.51,
+    "person": "Karol",
+    "text": " The rest was spread across UK and Poland, right?"
+  },
+  { "startTime": 4559.91, "person": "Hannes", "text": " Yeah." },
+  { "startTime": 4562.15, "person": "Karol", "text": " So..." },
+  { "startTime": 4562.71, "person": "Hannes", "text": " What's the reason you..." },
+  { "startTime": 4564.31, "person": "Hannes", "text": " As gross salary or as net salary?" },
+  {
+    "startTime": 4568.33,
+    "person": "Karol",
+    "text": " Oh, I don't remember what was that specifically."
+  },
+  { "startTime": 4572.27, "person": "Karol", "text": " But still, it's about 60%." },
+  {
+    "startTime": 4575.79,
+    "person": "Karol",
+    "text": " More than 60% of it is retained as margin."
+  },
+  { "startTime": 4581.03, "person": "Hannes", "text": " Right, yeah, yeah." },
+  { "startTime": 4582.03, "person": "Karol", "text": " Right?" },
+  {
+    "startTime": 4582.73,
+    "person": "Karol",
+    "text": " The goal for many consulting companies is to achieve about, let's say, 40% of a margin on a project."
+  },
+  { "startTime": 4589.29, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 4591.53,
+    "person": "Karol",
+    "text": " So if you hire from such a meetup, you hire a senior specialist, that's usually an expensive person, fine."
+  },
+  {
+    "startTime": 4598.97,
+    "person": "Karol",
+    "text": " But you also charge, as a consulting company, you charge your client more for that person."
+  },
+  { "startTime": 4603.81, "person": "Karol", "text": " So..." },
+  { "startTime": 4603.99, "person": "Karol", "text": " How the business works." },
+  { "startTime": 4605.57, "person": "Karol", "text": " That's how the business works." },
+  { "startTime": 4606.75, "person": "Karol", "text": " There's no doubt about that." },
+  {
+    "startTime": 4608.23,
+    "person": "Karol",
+    "text": " I think if somebody is having a different idea about that, they're very much illusioned."
+  },
+  {
+    "startTime": 4615.71,
+    "person": "Karol",
+    "text": " And this really, within the scope of a month, you can already earn for more than one meetup with that person."
+  },
+  {
+    "startTime": 4626.65,
+    "person": "Hannes",
+    "text": " The problem is, and this is a discussion I've had over the years a bunch of times, like A, our profit margins are not in the vicinity of the 40% that you mentioned."
+  },
+  {
+    "startTime": 4639.21,
+    "person": "Hannes",
+    "text": " We might earn 40% on a project, which doesn't mean that our company's baseline is at 40%."
+  },
+  { "startTime": 4645.87, "person": "Karol", "text": " No, absolutely." },
+  {
+    "startTime": 4647.71,
+    "person": "Hannes",
+    "text": " It's much closer to 10% to 15%, which is still a very financially healthy company."
+  },
+  {
+    "startTime": 4656.13,
+    "person": "Hannes",
+    "text": " But people see their day rate and they see their own net pay and it goes like, what happened here?"
+  },
+  { "startTime": 4663.55, "person": "Karol", "text": " Yeah, that's the usual notion there." },
+  {
+    "startTime": 4666.29,
+    "person": "Hannes",
+    "text": " You need to pay for your company buildings."
+  },
+  { "startTime": 4668.81, "person": "Hannes", "text": " You need to pay for all the training." },
+  {
+    "startTime": 4670.11,
+    "person": "Hannes",
+    "text": " You need to pay for all of the people that are not being built, like your salespeople, your people people, your administration, your accountant, like all of that needs to be paid as well."
+  },
+  {
+    "startTime": 4681.71,
+    "person": "Hannes",
+    "text": " And then you have the people that don't have a project at the moment."
+  },
+  {
+    "startTime": 4685.59,
+    "person": "Hannes",
+    "text": " They need to be paid by the margin that we make on the others."
+  },
+  {
+    "startTime": 4688.47,
+    "person": "Hannes",
+    "text": " Like the whole machine consumes quite a bit of money."
+  },
+  {
+    "startTime": 4693.31,
+    "person": "Hannes",
+    "text": " Especially if you treat your people well and you invest in them."
+  },
+  {
+    "startTime": 4697.47,
+    "person": "Hannes",
+    "text": " Like providing a lot of training for people is not cheap."
+  },
+  {
+    "startTime": 4703.03,
+    "person": "Hannes",
+    "text": " Like it costs a lot of money and it's a conscious choice to spend that money because we believe that in the long term that is the right thing to do."
+  },
+  {
+    "startTime": 4710.83,
+    "person": "Hannes",
+    "text": " If we help our people grow, we will also benefit."
+  },
+  {
+    "startTime": 4713.65,
+    "person": "Hannes",
+    "text": " Like this is literally something we believe."
+  },
+  {
+    "startTime": 4716.01,
+    "person": "Hannes",
+    "text": " It's very easy to look at a company's budget and look at your profit margins and go, ah, training."
+  },
+  { "startTime": 4723.05, "person": "Hannes", "text": " Why would we need training?" },
+  { "startTime": 4724.79, "person": "Hannes", "text": " Like there's a financial crisis." },
+  { "startTime": 4727.13, "person": "Hannes", "text": " People aren't going anywhere." },
+  { "startTime": 4728.31, "person": "Hannes", "text": " Let's cut the training." },
+  {
+    "startTime": 4729.61,
+    "person": "Hannes",
+    "text": " Which is why a lot of conferences and workshop providers are actually struggling at the moment."
+  },
+  {
+    "startTime": 4735.79,
+    "person": "Hannes",
+    "text": " Like a lot of companies are saying like, oh, we used to do a lot of training and we did that because of the retention because otherwise people left but now we don't have to."
+  },
+  { "startTime": 4745.43, "person": "Hannes", "text": " So let's cut the training budget." },
+  { "startTime": 4747.63, "person": "Hannes", "text": " Yeah." },
+  {
+    "startTime": 4747.91,
+    "person": "Hannes",
+    "text": " I would argue that that is the wrong decision to make."
+  },
+  {
+    "startTime": 4751.61,
+    "person": "Hannes",
+    "text": " But hey, my title is head of learning and development."
+  },
+  { "startTime": 4754.03, "person": "Hannes", "text": " So I'm not always recommended." },
+  { "startTime": 4758.59, "person": "Karol", "text": " But then Hannes, I gotta ask." },
+  {
+    "startTime": 4761.75,
+    "person": "Karol",
+    "text": " That's also a bit of a culture question, but this is also on the behaviour of a company."
+  },
+  {
+    "startTime": 4768.33,
+    "person": "Karol",
+    "text": " From your perspective as the head of learning and development, what do you think about the situation where companies impose clauses in the contracts that if they invest in the training for you, you need to pay back a percentage if you leave before, let's say, two years after the training."
+  },
+  {
+    "startTime": 4791.26,
+    "person": "Karol",
+    "text": " And then the behaviour, also additional behaviour, if the company mandates a training for the whole team, that's not included in that clause."
+  },
+  {
+    "startTime": 4801.7,
+    "person": "Karol",
+    "text": " But if you are charged in your personal development plan, you agree with your manager that this is the scope that I need to learn over the year."
+  },
+  { "startTime": 4811.52, "person": "Karol", "text": " This is my development plan." },
+  {
+    "startTime": 4813.36,
+    "person": "Karol",
+    "text": " And then the company charges you for that training that was in your personal development plan because you left after a year."
+  },
+  { "startTime": 4821.9, "person": "Karol", "text": " How do you feel about that?" },
+  { "startTime": 4823.5, "person": "Karol", "text": " In terms of that leadership." },
+  { "startTime": 4827.36, "person": "Karol", "text": " Okay, go on." },
+  {
+    "startTime": 4831.4,
+    "person": "Hannes",
+    "text": " First of all, having demotivated people on my team is in nobody's best interest."
+  },
+  {
+    "startTime": 4837.9,
+    "person": "Hannes",
+    "text": " It's not in the best interest of the company."
+  },
+  {
+    "startTime": 4840.02,
+    "person": "Hannes",
+    "text": " It will not allow us to achieve our quality value when we go to a customer and the person that is doing the project is not motivated."
+  },
+  { "startTime": 4848.52, "person": "Hannes", "text": " Right." },
+  {
+    "startTime": 4851.52,
+    "person": "Hannes",
+    "text": " So I understand the idea like when I invest in this person, like I want that investment to earn itself back."
+  },
+  {
+    "startTime": 4863.94,
+    "person": "Hannes",
+    "text": " And which is, as I've already argued tonight, like that is the goal of doing training."
+  },
+  {
+    "startTime": 4869.52,
+    "person": "Hannes",
+    "text": " We're investing in people and we're hoping that these investments pay off."
+  },
+  { "startTime": 4873.88, "person": "Hannes", "text": " Right." },
+  { "startTime": 4874.02, "person": "Hannes", "text": " We're not doing this." },
+  {
+    "startTime": 4875.58,
+    "person": "Hannes",
+    "text": " We're not doing this out of the kindness of our heart."
+  },
+  {
+    "startTime": 4879.62,
+    "person": "Hannes",
+    "text": " Well, part of it maybe, but like it is a business strategy."
+  },
+  { "startTime": 4883.92, "person": "Hannes", "text": " Sure." },
+  { "startTime": 4884.44, "person": "Hannes", "text": " So we're hoping that that pays off." },
+  {
+    "startTime": 4886.54,
+    "person": "Hannes",
+    "text": " But is it going to pay off if we try and lock people in?"
+  },
+  { "startTime": 4891.86, "person": "Hannes", "text": " Probably not." },
+  { "startTime": 4893.36, "person": "Hannes", "text": " I don't think so." },
+  { "startTime": 4894.6, "person": "Hannes", "text": " I don't believe so." },
+  {
+    "startTime": 4895.58,
+    "person": "Hannes",
+    "text": " If somebody is not motivated to be with you, they're going to make everybody around them miserable."
+  },
+  {
+    "startTime": 4903.1,
+    "person": "Hannes",
+    "text": " They're not going to deliver on their projects."
+  },
+  {
+    "startTime": 4905.84,
+    "person": "Hannes",
+    "text": " They're going to make their colleagues miserable."
+  },
+  { "startTime": 4907.8, "person": "Hannes", "text": " They're going to be toxic as fuck." },
+  {
+    "startTime": 4909.24,
+    "person": "Hannes",
+    "text": " They're going to be complaining about everything."
+  },
+  { "startTime": 4911.74, "person": "Hannes", "text": " You don't want them around." },
+  {
+    "startTime": 4913.74,
+    "person": "Hannes",
+    "text": " If they don't want to be with you, they should be free to leave."
+  },
+  { "startTime": 4917.98, "person": "Hannes", "text": " And it sucks." },
+  {
+    "startTime": 4919.38,
+    "person": "Hannes",
+    "text": " Like I've recently had a couple of guys leave our company that I've known since like the year they graduated when they joined us as juniors that had become some of my most reliable seniors in the company."
+  },
+  {
+    "startTime": 4933.76,
+    "person": "Hannes",
+    "text": " And some of them decided that it wasn't even a move out of hostility."
+  },
+  {
+    "startTime": 4938.86,
+    "person": "Hannes",
+    "text": " It was more of like I've been with you for 9 or 10 or 11 years."
+  },
+  { "startTime": 4945.56, "person": "Hannes", "text": " I've never had another employer." },
+  { "startTime": 4947.96, "person": "Hannes", "text": " I've had this other opportunity." },
+  { "startTime": 4950.12, "person": "Hannes", "text": " I think I should try something else." },
+  { "startTime": 4952.16, "person": "Hannes", "text": " It was literally that." },
+  { "startTime": 4953.08, "person": "Hannes", "text": " There was no hostility." },
+  { "startTime": 4954.58, "person": "Hannes", "text": " It fucking hurts." },
+  { "startTime": 4956.28, "person": "Hannes", "text": " Like I helped build that person, right?" },
+  { "startTime": 4959.38, "person": "Hannes", "text": " And I did nothing." },
+  {
+    "startTime": 4961.18,
+    "person": "Hannes",
+    "text": " Like they built their own career on their own."
+  },
+  {
+    "startTime": 4963.62,
+    "person": "Hannes",
+    "text": " Like all I did was facilitate and coach and whatever."
+  },
+  {
+    "startTime": 4969.24,
+    "person": "Hannes",
+    "text": " But I cannot coach somebody who doesn't want to grow."
+  },
+  { "startTime": 4972.14, "person": "Hannes", "text": " I cannot coach somebody into growing." },
+  { "startTime": 4975.22, "person": "Hannes", "text": " They need to do that themselves." },
+  { "startTime": 4977.14, "person": "Hannes", "text": " True." },
+  {
+    "startTime": 4977.7,
+    "person": "Hannes",
+    "text": " But I helped like create the environment where that person thrives and then they leave us."
+  },
+  { "startTime": 4982.5, "person": "Hannes", "text": " And it sucks." },
+  { "startTime": 4983.32, "person": "Hannes", "text": " Like it hurts." },
+  { "startTime": 4984.68, "person": "Hannes", "text": " And you take it personal." },
+  {
+    "startTime": 4987.28,
+    "person": "Hannes",
+    "text": " I still think that it's the right thing that they are free to do that."
+  },
+  {
+    "startTime": 4993.62,
+    "person": "Hannes",
+    "text": " Because I do think that as a company you should invest in the relationship."
+  },
+  {
+    "startTime": 5000.74,
+    "person": "Hannes",
+    "text": " You should try like what we have started actively working on to counteract that."
+  },
+  {
+    "startTime": 5007.22,
+    "person": "Hannes",
+    "text": " Like the thing that people are worried about most is we train them."
+  },
+  {
+    "startTime": 5012.08,
+    "person": "Hannes",
+    "text": " They put this training on their LinkedIn as one of their accreditations or whatever you want to call it."
+  },
+  {
+    "startTime": 5019.86,
+    "person": "Hannes",
+    "text": " Some other company notices and makes them a job offer."
+  },
+  { "startTime": 5024.54, "person": "Hannes", "text": " And they leave." },
+  {
+    "startTime": 5025.56,
+    "person": "Hannes",
+    "text": " That's the thing that we're literally scared of."
+  },
+  { "startTime": 5028.4, "person": "Hannes", "text": " Sure." },
+  { "startTime": 5030, "person": "Hannes", "text": " There are ways that you..." },
+  { "startTime": 5031.84, "person": "Hannes", "text": " Well, you cannot stop all of them." },
+  { "startTime": 5033.46, "person": "Hannes", "text": " Some of them are going to do that." },
+  { "startTime": 5035, "person": "Hannes", "text": " And that sucks." },
+  { "startTime": 5035.98, "person": "Hannes", "text": " It's always going to suck." },
+  { "startTime": 5038.54, "person": "Hannes", "text": " But..." },
+  { "startTime": 5038.74, "person": "Hannes", "text": " But you can counteract some of that." },
+  {
+    "startTime": 5043.26,
+    "person": "Hannes",
+    "text": " Like the thing that most often happens when people that are not dissatisfied."
+  },
+  {
+    "startTime": 5048.82,
+    "person": "Hannes",
+    "text": " Like sometimes like you hire somebody that's a mismatch or their personal situation has grown where it no longer matches the way that you do business."
+  },
+  {
+    "startTime": 5057.96,
+    "person": "Hannes",
+    "text": " Like there are many reasons that people legit want to leave a company."
+  },
+  { "startTime": 5063.6, "person": "Hannes", "text": " Like this is not for me anymore." },
+  { "startTime": 5065.02, "person": "Hannes", "text": " I need to be someplace else." },
+  {
+    "startTime": 5067.34,
+    "person": "Hannes",
+    "text": " But when people that are not dissatisfied when they leave, we have analysed this and we have noticed that it usually happens from a skewed comparison."
+  },
+  {
+    "startTime": 5079.22,
+    "person": "Hannes",
+    "text": " Somebody approaches them and paints them a picture of how their career would evolve with them over the next three to five years."
+  },
+  { "startTime": 5090.7, "person": "Karol", "text": " Okay." },
+  {
+    "startTime": 5091.62,
+    "person": "Hannes",
+    "text": " And their instinct is to compare that with how is my career here today."
+  },
+  {
+    "startTime": 5097.92,
+    "person": "Hannes",
+    "text": " And you're comparing apples and oranges because you're comparing five years from now with the other company."
+  },
+  {
+    "startTime": 5105.86,
+    "person": "Hannes",
+    "text": " The grass is always greener on the other side with your current situation and your current client here."
+  },
+  {
+    "startTime": 5112.1,
+    "person": "Hannes",
+    "text": " Which is why we have taken to very actively talk to people about their future."
+  },
+  {
+    "startTime": 5119.12,
+    "person": "Hannes",
+    "text": " Make sure that at all times like their career path with you is clear to them."
+  },
+  {
+    "startTime": 5125.56,
+    "person": "Hannes",
+    "text": " When they talk to this other company and they will, like don't make any mistakes about it."
+  },
+  {
+    "startTime": 5132.8,
+    "person": "Hannes",
+    "text": " Like everybody talks to other companies from time to time."
+  },
+  {
+    "startTime": 5136.98,
+    "person": "Hannes",
+    "text": " And they're at least comparing apples to apples."
+  },
+  {
+    "startTime": 5142.3,
+    "person": "Hannes",
+    "text": " And make it clear in your company policy that talking about the intent of maybe leaving is not something that's going to haunt anyone."
+  },
+  {
+    "startTime": 5155.7,
+    "person": "Hannes",
+    "text": " And I've had this conversation with my boss."
+  },
+  {
+    "startTime": 5157.96,
+    "person": "Hannes",
+    "text": " Like I've been with the company for 15 years."
+  },
+  {
+    "startTime": 5160.36,
+    "person": "Hannes",
+    "text": " I've had this conversation like two, I think two times."
+  },
+  {
+    "startTime": 5165.06,
+    "person": "Hannes",
+    "text": " Like where I legit had another offer where I was like, this looks interesting."
+  },
+  {
+    "startTime": 5171.06,
+    "person": "Hannes",
+    "text": " And never have I been penalised for even bringing that up with my boss and going, hey, like I've had this opportunity."
+  },
+  { "startTime": 5178, "person": "Hannes", "text": " I'm strongly considering this." },
+  { "startTime": 5179.58, "person": "Hannes", "text": " Can we talk?" },
+  {
+    "startTime": 5182.22,
+    "person": "Hannes",
+    "text": " If then you decide to stay, but it haunts you forever because they always throw it in your face."
+  },
+  {
+    "startTime": 5187.52,
+    "person": "Hannes",
+    "text": " Like, yeah, but you doubted to leave for that other company."
+  },
+  {
+    "startTime": 5190.76,
+    "person": "Hannes",
+    "text": " Like that creates a toxic environment again and they're going to leave."
+  },
+  { "startTime": 5194.12, "person": "Hannes", "text": " It's a self-fulfilling prophecy." },
+  {
+    "startTime": 5196.64,
+    "person": "Hannes",
+    "text": " So make it an open thing that people can discuss."
+  },
+  {
+    "startTime": 5200.54,
+    "person": "Hannes",
+    "text": " Like, hey, I'm considering other career options."
+  },
+  {
+    "startTime": 5203.98,
+    "person": "Hannes",
+    "text": " Like make that a conversation that people can have without being judged for it."
+  },
+  {
+    "startTime": 5210.06,
+    "person": "Hannes",
+    "text": " And it's hard because it requires you as the person that represents the company."
+  },
+  {
+    "startTime": 5215.1,
+    "person": "Hannes",
+    "text": " I've had some of these conversations myself."
+  },
+  {
+    "startTime": 5217.94,
+    "person": "Hannes",
+    "text": " Like at that moment, you're wearing the company hat."
+  },
+  {
+    "startTime": 5223.18,
+    "person": "Hannes",
+    "text": " And it's quite hard to put your own ego aside because you're in the position where you're going like, everything's great here and this is where you should stay and you want that person to stay."
+  },
+  {
+    "startTime": 5235.66,
+    "person": "Hannes",
+    "text": " But the way that you should approach that conversation is with empathy."
+  },
+  { "startTime": 5239.08, "person": "Hannes", "text": " Like, hey, why are you considering this?" },
+  { "startTime": 5241.92, "person": "Hannes", "text": " And don't take that personal." },
+  { "startTime": 5243.14, "person": "Hannes", "text": " Like whatever they say next." },
+  {
+    "startTime": 5245.42,
+    "person": "Hannes",
+    "text": " Like it's not an attack on you unless they say like, you're an arsehole and I want to leave."
+  },
+  { "startTime": 5250.04, "person": "Hannes", "text": " I don't want to work on your team." },
+  {
+    "startTime": 5251.18,
+    "person": "Hannes",
+    "text": " But like whatever they say, whatever situation they bring up, whether you agree with it or not, you should try to empathise with it and understand like why this is something that makes them consider leaving."
+  },
+  {
+    "startTime": 5265.16,
+    "person": "Hannes",
+    "text": " And you can, like as I said earlier tonight, like you can offer them more pay to stay with you for three months, but then you have to rectify that thing that they said."
+  },
+  {
+    "startTime": 5274.78,
+    "person": "Hannes",
+    "text": " If you're not willing to rectify it, like legit, like let them go."
+  },
+  {
+    "startTime": 5279.44,
+    "person": "Hannes",
+    "text": " Because they might leave today or they might leave in three months, but they're going to leave."
+  },
+  {
+    "startTime": 5284.66,
+    "person": "Hannes",
+    "text": " But if you have the intent to make them happy again and it's legit something you can fix, like it makes sense to give them a raise and then like rectify the thing."
+  },
+  {
+    "startTime": 5296.68,
+    "person": "Hannes",
+    "text": " And I have people that are still with access that I've had those conversations with and that are still with us like six years after an incident like that."
+  },
+  { "startTime": 5308.32, "person": "Hannes", "text": " But you can't hold it against them." },
+  {
+    "startTime": 5310.58,
+    "person": "Hannes",
+    "text": " You can't take it personal and you need to legit fix the situation."
+  },
+  {
+    "startTime": 5314.52,
+    "person": "Hannes",
+    "text": " Giving them more money is not going to keep them on board."
+  },
+  {
+    "startTime": 5317.56,
+    "person": "Hannes",
+    "text": " Which is why I truly believe like if you try and lock them in with training, like the moment that that deadline expires, they're going to start looking around."
+  },
+  {
+    "startTime": 5326.02,
+    "person": "Hannes",
+    "text": " This cannot be the motivator for them to stay with you."
+  },
+  {
+    "startTime": 5329.68,
+    "person": "Karol",
+    "text": " Yeah, that's a very bad motivator in general."
+  },
+  {
+    "startTime": 5332.16,
+    "person": "Karol",
+    "text": " And just considering that if that person leaves either way, what's holding them back from telling other people about the situation and the toxicity and the actual, how you actually work in that company, what's happening."
+  },
+  {
+    "startTime": 5347.38,
+    "person": "Karol",
+    "text": " They'll tell everybody and they will not spare you at all as an employer."
+  },
+  {
+    "startTime": 5352,
+    "person": "Karol",
+    "text": " And they will even potentially embellish quite a bit because they are dissatisfied."
+  },
+  { "startTime": 5358.26, "person": "Karol", "text": " They're a disgruntled employee." },
+  { "startTime": 5361.24, "person": "Karol", "text": " And it's a negative spiral." },
+  { "startTime": 5363.14, "person": "Hannes", "text": " It's a downward spiral." },
+  { "startTime": 5365.44, "person": "Hannes", "text": " Nine Inch Nails blog." },
+  { "startTime": 5367.2, "person": "Hannes", "text": " But it doesn't result in anything good." },
+  {
+    "startTime": 5376.26,
+    "person": "Hannes",
+    "text": " And I say this and I know that it will sound fake to people who work for employers that are these corporations that try to extract as much value from their people as possible."
+  },
+  {
+    "startTime": 5390.26,
+    "person": "Hannes",
+    "text": " We legit care about how our people feel and how they're doing."
+  },
+  { "startTime": 5397.14, "person": "Hannes", "text": " And this is not something you can fake." },
+  {
+    "startTime": 5399.62,
+    "person": "Hannes",
+    "text": " If you're empathic to the people that work for you and you try to make their lives better and you try to help them grow, but it's not just about growth."
+  },
+  {
+    "startTime": 5407.4,
+    "person": "Hannes",
+    "text": " It's also like, I've had plenty of coaching conversations over the years where I arrive prepared to talk about a person's career and how they're doing at the customer and what their next steps are."
+  },
+  {
+    "startTime": 5419.06,
+    "person": "Hannes",
+    "text": " And they walk into the room and you can feel something is off."
+  },
+  { "startTime": 5423.18, "person": "Hannes", "text": " Maybe their pet dies." },
+  {
+    "startTime": 5424.74,
+    "person": "Hannes",
+    "text": " Maybe they had something happen in their family."
+  },
+  {
+    "startTime": 5427.2,
+    "person": "Hannes",
+    "text": " Maybe they just had a fight with their wife."
+  },
+  { "startTime": 5431.38, "person": "Hannes", "text": " Like anything." },
+  {
+    "startTime": 5433.66,
+    "person": "Hannes",
+    "text": " Like you gotta be prepared to do all that prep to have the optimal conversation."
+  },
+  {
+    "startTime": 5439,
+    "person": "Hannes",
+    "text": " And then at a moment's notice, throw it all out the window and go like, hey, how are you coping?"
+  },
+  {
+    "startTime": 5445.48,
+    "person": "Hannes",
+    "text": " You can have that conversation another time."
+  },
+  {
+    "startTime": 5448.36,
+    "person": "Hannes",
+    "text": " If you show no empathy at that moment, they are gonna probably take that personal and they're probably gonna remember that."
+  },
+  {
+    "startTime": 5456.06,
+    "person": "Hannes",
+    "text": " And it might be the first domino in them leaving the company."
+  },
+  { "startTime": 5460.9, "person": "Hannes", "text": " And you cannot fake that." },
+  { "startTime": 5462.36, "person": "Hannes", "text": " You cannot fake care about people." },
+  {
+    "startTime": 5466.52,
+    "person": "Hannes",
+    "text": " Like if you have hidden agendas, people are gonna notice."
+  },
+  {
+    "startTime": 5471.14,
+    "person": "Hannes",
+    "text": " So if you make it a company strategy, like we're gonna care about our people, you better make sure that it's legit."
+  },
+  { "startTime": 5478.9, "person": "Hannes", "text": " Because it never passes the test." },
+  { "startTime": 5480.72, "person": "Hannes", "text": " It never, never does." },
+  { "startTime": 5483.62, "person": "Hannes", "text": " You cannot fake empathy anything." },
+  { "startTime": 5486.66, "person": "Hannes", "text": " Like you can try, but it won't work." },
+  {
+    "startTime": 5489.68,
+    "person": "Karol",
+    "text": " And that's quite often the case about behaviour."
+  },
+  {
+    "startTime": 5493.62,
+    "person": "Karol",
+    "text": " Especially for people who are neurotypical, that's very difficult."
+  },
+  {
+    "startTime": 5499.16,
+    "person": "Karol",
+    "text": " For ADHDers, that's called the rejection sensitivity dysphoria."
+  },
+  {
+    "startTime": 5506.22,
+    "person": "Karol",
+    "text": " When people lash out for whatever reason, we tend to take it personally."
+  },
+  {
+    "startTime": 5512.92,
+    "person": "Karol",
+    "text": " Where in fact, it's something happening in their life that's making them act out because they're going through something."
+  },
+  {
+    "startTime": 5522.86,
+    "person": "Karol",
+    "text": " It's never about us when it's directed at us from them."
+  },
+  {
+    "startTime": 5527.28,
+    "person": "Karol",
+    "text": " It could be, but it's most likely not about us."
+  },
+  {
+    "startTime": 5531.26,
+    "person": "Karol",
+    "text": " It's about something happening in their lives."
+  },
+  {
+    "startTime": 5533.44,
+    "person": "Karol",
+    "text": " And you first have to put in the effort to learn what's their story, what's going on in their lives to actually care."
+  },
+  {
+    "startTime": 5541.96,
+    "person": "Karol",
+    "text": " Otherwise, you'll not be able to resolve that."
+  },
+  {
+    "startTime": 5543.88,
+    "person": "Karol",
+    "text": " You'll just escalate it if you don't do that."
+  },
+  {
+    "startTime": 5547.56,
+    "person": "Hannes",
+    "text": " Saying sorry, even if it's not your fault, is a very easy way to deescalate one of those people lashing out."
+  },
+  { "startTime": 5556.92, "person": "Hannes", "text": " Like, hey, I'm so sorry." },
+  { "startTime": 5559, "person": "Hannes", "text": " I did not intend to hurt you in that way." },
+  {
+    "startTime": 5563.26,
+    "person": "Hannes",
+    "text": " Even if you truly believe that you did nothing wrong, saying sorry is a very easy way to deescalate and to get to the point where you can talk about it."
+  },
+  {
+    "startTime": 5575.9,
+    "person": "Karol",
+    "text": " Yeah, because in emotions, you cannot talk about it."
+  },
+  { "startTime": 5578.86, "person": "Karol", "text": " It's impossible." },
+  { "startTime": 5580.24, "person": "Karol", "text": " You need to deescalate first, yeah." },
+  { "startTime": 5582.54, "person": "Hannes", "text": " And fake caring about people." },
+  {
+    "startTime": 5584.92,
+    "person": "Hannes",
+    "text": " We are first place in the Belgium Great Place to Work."
+  },
+  {
+    "startTime": 5589.76,
+    "person": "Hannes",
+    "text": " And I know that some of those certification programmes, there's companies that are using that as a marketing tool."
+  },
+  { "startTime": 5596.12, "person": "Hannes", "text": " Mm-hmm." },
+  {
+    "startTime": 5596.62,
+    "person": "Hannes",
+    "text": " I legit believe that we deserve to be at the top of that ranking because we legit care about our people."
+  },
+  { "startTime": 5605.84, "person": "Hannes", "text": " There's other companies out there." },
+  {
+    "startTime": 5607.86,
+    "person": "Hannes",
+    "text": " I'm pretty sure that out of the top 10 of that ranking, most of those companies actually care about their people."
+  },
+  {
+    "startTime": 5617.66,
+    "person": "Hannes",
+    "text": " But yeah, and the fact that I've never had it held against me when I discussed leaving made me realise that whenever somebody comes at me with a topic like that, like this has been the best school of learning how to deal with that stuff."
+  },
+  {
+    "startTime": 5635.16,
+    "person": "Hannes",
+    "text": " When somebody comes at me with that attitude, like everything sucks and I want to leave, I learned how to respond, how my boss responded when I came up with a conversation like that."
+  },
+  { "startTime": 5646.72, "person": "Hannes", "text": " And make it non-toxic." },
+  { "startTime": 5649.8, "person": "Hannes", "text": " Make it something people can discuss." },
+  { "startTime": 5651.82, "person": "Hannes", "text": " And if they want to leave, they leave." },
+  {
+    "startTime": 5655.2,
+    "person": "Hannes",
+    "text": " They're going to make your life miserable if you try and lock them in."
+  },
+  {
+    "startTime": 5660.1,
+    "person": "Hannes",
+    "text": " And it's going to do more damage than the revenue that you're going to miss because they leave."
+  },
+  { "startTime": 5665.72, "person": "Karol", "text": " True." },
+  {
+    "startTime": 5667.46,
+    "person": "Karol",
+    "text": " I would like to shift the topic for a little bit."
+  },
+  { "startTime": 5672.44, "person": "Hannes", "text": " Something happier?" },
+  {
+    "startTime": 5675.12,
+    "person": "Karol",
+    "text": " Perhaps a little, but also a slightly different problem space."
+  },
+  {
+    "startTime": 5681.3,
+    "person": "Karol",
+    "text": " But that also is part of that career leadership aspect."
+  },
+  {
+    "startTime": 5687.6,
+    "person": "Karol",
+    "text": " Because nowadays there's a lot of talk about, well, where do we get seniors?"
+  },
+  {
+    "startTime": 5693.36,
+    "person": "Karol",
+    "text": " Because we're stopping on hiring juniors because of AI."
+  },
+  {
+    "startTime": 5697.36,
+    "person": "Karol",
+    "text": " Which is, in my head, that's an absolutely false notion."
+  },
+  {
+    "startTime": 5700.74,
+    "person": "Karol",
+    "text": " That's just a smokescreen to hide the real reasons why we're not hiring or why we're hiring."
+  },
+  { "startTime": 5705.24, "person": "Hannes", "text": " It's pleasing shareholders." },
+  { "startTime": 5706.5, "person": "Hannes", "text": " It's always pleasing shareholders." },
+  { "startTime": 5708.04, "person": "Karol", "text": " Yeah." },
+  { "startTime": 5709.16, "person": "Karol", "text": " So let's leave it at that." },
+  {
+    "startTime": 5710.62,
+    "person": "Karol",
+    "text": " Because we know that AI is not the reason."
+  },
+  { "startTime": 5712.92, "person": "Karol", "text": " It's always something else." },
+  {
+    "startTime": 5715.86,
+    "person": "Karol",
+    "text": " But quite recently, we had Chelsea Troy on Loosely Coupled."
+  },
+  {
+    "startTime": 5721.72,
+    "person": "Karol",
+    "text": " We were talking about- Oh, Chelsea's amazing, yeah."
+  },
+  { "startTime": 5724.12, "person": "Karol", "text": " Chelsea's amazing, yeah." },
+  {
+    "startTime": 5725.76,
+    "person": "Karol",
+    "text": " We were talking about educating the new generation of IT specialists."
+  },
+  {
+    "startTime": 5730.68,
+    "person": "Karol",
+    "text": " And the problem that this whole thing with AI now created is that, well, okay, there's some sort of a notion in business people running companies that, okay, we don't need to hire juniors because we can replace them with AI."
+  },
+  { "startTime": 5748.16, "person": "Karol", "text": " Short term, maybe." },
+  { "startTime": 5749.68, "person": "Karol", "text": " Short term, probably." },
+  { "startTime": 5752.22, "person": "Karol", "text": " Neither do I, but that's the notion." },
+  {
+    "startTime": 5755.28,
+    "person": "Karol",
+    "text": " Also the notion that, well, we can hire a lot less because we have AI and AI will deal with the things that those junior developers are doing."
+  },
+  {
+    "startTime": 5764.42,
+    "person": "Karol",
+    "text": " But that leaves us with a bit of a problem."
+  },
+  { "startTime": 5767.86, "person": "Karol", "text": " Well, where do we get mid and seniors?" },
+  { "startTime": 5771.54, "person": "Karol", "text": " Somebody has to train them." },
+  { "startTime": 5773.58, "person": "Karol", "text": " Someone has to train them?" },
+  { "startTime": 5775.34, "person": "Karol", "text": " Somebody has to hire and train them." },
+  { "startTime": 5777.62, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 5777.9,
+    "person": "Karol",
+    "text": " People usually learn on the job more than through training, more than through coaching."
+  },
+  {
+    "startTime": 5783.34,
+    "person": "Karol",
+    "text": " They need to actually have work experience that they learn something on the job that makes them actually effective in the workplace later as mid and senior engineers, developers, whatever the role you attach to that."
+  },
+  {
+    "startTime": 5797.28,
+    "person": "Karol",
+    "text": " Because everybody at a certain point is a junior."
+  },
+  { "startTime": 5800.58, "person": "Karol", "text": " Sure." },
+  {
+    "startTime": 5801.24,
+    "person": "Karol",
+    "text": " Now we are facing this problem of people, companies not hiring, whatever the reason is, where it's maybe not discussed us because that's irrelevant, but we have people hiring less juniors."
+  },
+  {
+    "startTime": 5816.96,
+    "person": "Karol",
+    "text": " Now, how to make it as a leader, in that career leadership, how to make it actually stick that we also need those people and we need to build them and train them so that later we actually have specialists."
+  },
+  { "startTime": 5835.82, "person": "Hannes", "text": " Yeah." },
+  {
+    "startTime": 5838.92,
+    "person": "Hannes",
+    "text": " This is something I'm really passionate about."
+  },
+  {
+    "startTime": 5841.36,
+    "person": "Hannes",
+    "text": " And Andrew Murphy wrote a great blog post."
+  },
+  {
+    "startTime": 5847.72,
+    "person": "Hannes",
+    "text": " Like it's kind of a rant, but it's also a constructive rant about what we're doing by hollowing out the pipeline of our mid and senior developers."
+  },
+  {
+    "startTime": 5857.08,
+    "person": "Hannes",
+    "text": " I'll make sure to find that blog post later."
+  },
+  {
+    "startTime": 5861.7,
+    "person": "Hannes",
+    "text": " I plagiarised some of it when I wrote my own."
+  },
+  {
+    "startTime": 5864.98,
+    "person": "Hannes",
+    "text": " So I want to give credit where credit's due."
+  },
+  {
+    "startTime": 5867.32,
+    "person": "Hannes",
+    "text": " Like Andrew put it into writing in such a great way."
+  },
+  {
+    "startTime": 5872.15,
+    "person": "Hannes",
+    "text": " And the whole point is, if we stop hiring juniors and giving them the time of day and training them, like our generation is gonna at some point exit the workforce."
+  },
+  {
+    "startTime": 5888.3,
+    "person": "Hannes",
+    "text": " And if we haven't trained new people, like we're gonna have a problem."
+  },
+  { "startTime": 5892.58, "person": "Hannes", "text": " And the work isn't gonna disappear." },
+  {
+    "startTime": 5896.48,
+    "person": "Hannes",
+    "text": " We have trained organisations to only invest in writing software for the problems that are worth it because we're never gonna get to the end of the to-do list."
+  },
+  {
+    "startTime": 5908.22,
+    "person": "Hannes",
+    "text": " We can start by telling companies like, hey, we can build more."
+  },
+  { "startTime": 5912.32, "person": "Hannes", "text": " So give us more ideas." },
+  {
+    "startTime": 5913.54,
+    "person": "Hannes",
+    "text": " They usually have more ideas, but they're already trained and don't give us the stuff that you are not sure is gonna provide value because we won't have the time to do it anyway."
+  },
+  {
+    "startTime": 5925.6,
+    "person": "Hannes",
+    "text": " So I'm not seeing the bottom of the to-do list."
+  },
+  {
+    "startTime": 5928.4,
+    "person": "Hannes",
+    "text": " Even if we train more juniors, like there's not gonna be a point in the near future where we have done all the work."
+  },
+  {
+    "startTime": 5935.42,
+    "person": "Hannes",
+    "text": " Until we've optimised all the jobs away, there is still work to do."
+  },
+  {
+    "startTime": 5940.64,
+    "person": "Hannes",
+    "text": " Until everybody is at the beach, like there's still work."
+  },
+  {
+    "startTime": 5945.46,
+    "person": "Hannes",
+    "text": " So I don't think that that is the problem."
+  },
+  {
+    "startTime": 5948.14,
+    "person": "Hannes",
+    "text": " We have to start training people to make sure that we have a pipeline."
+  },
+  {
+    "startTime": 5951.48,
+    "person": "Hannes",
+    "text": " But I believe in training juniors for other reasons."
+  },
+  {
+    "startTime": 5956.24,
+    "person": "Hannes",
+    "text": " Like definitely we do need seniors and we do need to train juniors."
+  },
+  {
+    "startTime": 5960.64,
+    "person": "Hannes",
+    "text": " And as a company, we need to invest in that pipeline if we wanna remain successful and if we wanna keep growing and if we wanna keep replacing the people."
+  },
+  {
+    "startTime": 5972.2,
+    "person": "Hannes",
+    "text": " There are a couple of things about having juniors on a team that are dynamics that I absolutely love."
+  },
+  {
+    "startTime": 5978.26,
+    "person": "Hannes",
+    "text": " The fact that you were forced to re-explain some of the decisions that you've made to a junior that has joined your team is super valuable because it helps you detect your own smells."
+  },
+  {
+    "startTime": 5995.48,
+    "person": "Hannes",
+    "text": " All the stuff that you possibly did wrong, like you'll need to acknowledge that at some point."
+  },
+  {
+    "startTime": 6002.64,
+    "person": "Hannes",
+    "text": " What's also great is it takes a village to raise a child."
+  },
+  { "startTime": 6006.96, "person": "Hannes", "text": " I love this saying." },
+  {
+    "startTime": 6008.78,
+    "person": "Hannes",
+    "text": " I think it takes a company to train a junior and we take this shit literally."
+  },
+  { "startTime": 6016.32, "person": "Hannes", "text": " Like we do a traineeship." },
+  {
+    "startTime": 6018.4,
+    "person": "Hannes",
+    "text": " We've been doing that for more than a decade."
+  },
+  {
+    "startTime": 6021.34,
+    "person": "Hannes",
+    "text": " Like we hire people freshly graduated to join the company."
+  },
+  {
+    "startTime": 6027.4,
+    "person": "Hannes",
+    "text": " We give them a bootcamp, like a five or six week bootcamp to actually bridge the gap between..."
+  },
+  { "startTime": 6036.92, "person": "Hannes", "text": " Nice." },
+  {
+    "startTime": 6038.8,
+    "person": "Hannes",
+    "text": " Bridge the gap between the knowledge that they get in their education and what they'll actually need to do the job because nobody learned how to do an enterprise project with a whole team of developers that has a legacy code base that has been going on for five years."
+  },
+  { "startTime": 6055.4, "person": "Hannes", "text": " Like you don't have the time, right?" },
+  {
+    "startTime": 6058.5,
+    "person": "Karol",
+    "text": " Hannes, it's the blog post from Andrew Murphy."
+  },
+  {
+    "startTime": 6061.04,
+    "person": "Karol",
+    "text": " AI didn't kill your junior pipeline, you did."
+  },
+  { "startTime": 6063.52, "person": "Karol", "text": " Is that the one?" },
+  { "startTime": 6064.5, "person": "Hannes", "text": " Yes, that's the blog post." },
+  { "startTime": 6065.98, "person": "Hannes", "text": " Like read that one." },
+  { "startTime": 6067.08, "person": "Hannes", "text": " Don't read mine, read Andrew's." },
+  { "startTime": 6068.96, "person": "Hannes", "text": " That is a beautiful blog post." },
+  {
+    "startTime": 6072.36,
+    "person": "Hannes",
+    "text": " I love Andrew and I love that he wrote that piece."
+  },
+  {
+    "startTime": 6076.8,
+    "person": "Hannes",
+    "text": " And it puts the finger on the wound really well."
+  },
+  {
+    "startTime": 6080.28,
+    "person": "Hannes",
+    "text": " Now, I was like, we have been trying to bridge that gap for years because we noticed like we can get junior consultants up to speed way faster if we explain a bunch of things to them."
+  },
+  {
+    "startTime": 6095.74,
+    "person": "Hannes",
+    "text": " And if we give them six weeks of training, like the pace at which we push training through them is insane because we have all the trainings done by our own consultants."
+  },
+  {
+    "startTime": 6107.82,
+    "person": "Hannes",
+    "text": " Everybody comes to teach about their area of expertise."
+  },
+  {
+    "startTime": 6111.66,
+    "person": "Hannes",
+    "text": " They all get like half a day or a day or maybe like a day and a half for their subject."
+  },
+  {
+    "startTime": 6116.94,
+    "person": "Hannes",
+    "text": " They're always gonna cram as much knowledge into that like one day that they get."
+  },
+  {
+    "startTime": 6124.12,
+    "person": "Hannes",
+    "text": " But for the classroom, like they're absorbing this knowledge at this pace like every day for five or six weeks."
+  },
+  {
+    "startTime": 6131.74,
+    "person": "Hannes",
+    "text": " The goal is not to have them become experts."
+  },
+  { "startTime": 6134.62, "person": "Hannes", "text": " Like that's impossible." },
+  {
+    "startTime": 6135.72,
+    "person": "Hannes",
+    "text": " Like we would need to pace this training down a lot if we wanted all of the knowledge to stick."
+  },
+  { "startTime": 6142.02, "person": "Hannes", "text": " That's not the goal." },
+  {
+    "startTime": 6142.9,
+    "person": "Hannes",
+    "text": " The goal is to give them ideas, like give them an understanding of the stuff that's out there."
+  },
+  {
+    "startTime": 6149.9,
+    "person": "Hannes",
+    "text": " So when they're confronted with certain problems on their first couple of jobs, he goes, oh, wait, I remember this one thing."
+  },
+  { "startTime": 6156.72, "person": "Hannes", "text": " I'm gonna look that up." },
+  {
+    "startTime": 6158.6,
+    "person": "Hannes",
+    "text": " That is literally all we can achieve, right?"
+  },
+  {
+    "startTime": 6161.9,
+    "person": "Hannes",
+    "text": " But it helps them get up to speed so much faster in those first two years of their career because they have this frame of reference which we've given them in that bootcamp."
+  },
+  {
+    "startTime": 6172.68,
+    "person": "Karol",
+    "text": " That's literally what I learned in the university as an electrical engineer."
+  },
+  { "startTime": 6176.56, "person": "Karol", "text": " That's the engineering mindset." },
+  {
+    "startTime": 6179.12,
+    "person": "Karol",
+    "text": " You don't have to retain all the knowledge."
+  },
+  {
+    "startTime": 6182.1,
+    "person": "Karol",
+    "text": " You have to know where to find said knowledge."
+  },
+  {
+    "startTime": 6184.06,
+    "person": "Karol",
+    "text": " And you have to have the capacity to comprehend said knowledge."
+  },
+  {
+    "startTime": 6186.98,
+    "person": "Karol",
+    "text": " If you're building for the capacity to comprehend and building for the retention of where to seek knowledge, you're already winning because finding the right knowledge is always the hardest part."
+  },
+  {
+    "startTime": 6199.2,
+    "person": "Karol",
+    "text": " If you know where to look, you've already done 80% of the work."
+  },
+  {
+    "startTime": 6203.36,
+    "person": "Karol",
+    "text": " Now you just need to apply it in the context."
+  },
+  {
+    "startTime": 6206.88,
+    "person": "Hannes",
+    "text": " So like we've noticed that that works, but it takes so much effort from the entire organisation because all of our consultants, like all of our experts are coming to teach their subjects."
+  },
+  {
+    "startTime": 6219.18,
+    "person": "Hannes",
+    "text": " And we see people like as early as two or three years into their career, they're already participating in teaching that new generation of juniors that are joining us."
+  },
+  {
+    "startTime": 6229.56,
+    "person": "Hannes",
+    "text": " So like, again, one of those circle of life moments."
+  },
+  {
+    "startTime": 6233.02,
+    "person": "Hannes",
+    "text": " And it brings together all the tech people to like, hey, let's get this new generation on the rails."
+  },
+  {
+    "startTime": 6239.54,
+    "person": "Hannes",
+    "text": " And we, our programme typically was everything that was enterprise application developments as we know it, as we do it at our customers."
+  },
+  {
+    "startTime": 6249.38,
+    "person": "Hannes",
+    "text": " Now, it also brings together like our people department because they need to onboard all these people."
+  },
+  {
+    "startTime": 6257.36,
+    "person": "Hannes",
+    "text": " It takes a tremendous effort from our account managers because finding projects for juniors is way harder than for seniors."
+  },
+  {
+    "startTime": 6265.08,
+    "person": "Hannes",
+    "text": " So like in those summer months, they're all focussing on finding these first projects for these junior consultants."
+  },
+  {
+    "startTime": 6272.08,
+    "person": "Hannes",
+    "text": " Like it brings the whole company together to make this happen."
+  },
+  {
+    "startTime": 6276.24,
+    "person": "Hannes",
+    "text": " Even on our administration department, like they need to prepare."
+  },
+  {
+    "startTime": 6282.86,
+    "person": "Hannes",
+    "text": " Like we've had years where we hire 35 people, like logistically preparing 35 company cars for the day that they start."
+  },
+  { "startTime": 6290.5, "person": "Hannes", "text": " Like it's a nightmare." },
+  { "startTime": 6291.6, "person": "Hannes", "text": " It's a lot of work, right?" },
+  { "startTime": 6292.86, "person": "Hannes", "text": " True." },
+  {
+    "startTime": 6294.38,
+    "person": "Hannes",
+    "text": " But like this joint effort, like the whole company coming together, like let's make this new generation succeed."
+  },
+  {
+    "startTime": 6304.08,
+    "person": "Hannes",
+    "text": " That brings a vibe for the rest of the company as well."
+  },
+  { "startTime": 6307.44, "person": "Hannes", "text": " Like a very positive vibe." },
+  {
+    "startTime": 6309.08,
+    "person": "Hannes",
+    "text": " Like we all need to put together, like it puts all the noses in the same direction."
+  },
+  { "startTime": 6313.36, "person": "Hannes", "text": " Like let's go for this goal." },
+  {
+    "startTime": 6316.72,
+    "person": "Hannes",
+    "text": " And people forget about their differences maybe a little bit more."
+  },
+  {
+    "startTime": 6320.34,
+    "person": "Hannes",
+    "text": " And they all work towards this joint success."
+  },
+  {
+    "startTime": 6324.62,
+    "person": "Hannes",
+    "text": " Like that's something that those juniors give us without even knowing it."
+  },
+  {
+    "startTime": 6330.42,
+    "person": "Hannes",
+    "text": " And obviously they benefit from having their career launched, but the rest of the company also benefits."
+  },
+  {
+    "startTime": 6336.6,
+    "person": "Hannes",
+    "text": " Everybody who teaches understands their subject way better after they have tried to put it into a training because you have to really think about how you're going to explain something."
+  },
+  {
+    "startTime": 6347.5,
+    "person": "Hannes",
+    "text": " So even those experts, they benefit from preparing their thing."
+  },
+  { "startTime": 6353.76, "person": "Hannes", "text": " And I loved everything about that." },
+  {
+    "startTime": 6357.24,
+    "person": "Hannes",
+    "text": " Last year for the first time in I think 15 years, we didn't do one."
+  },
+  {
+    "startTime": 6361.82,
+    "person": "Hannes",
+    "text": " The reason that we didn't do a bootcamp was because not everybody from the bootcamp of the year before had managed to get a project in the meanwhile."
+  },
+  { "startTime": 6370.9, "person": "Hannes", "text": " So we give them internal projects." },
+  { "startTime": 6373.92, "person": "Hannes", "text": " We give them training and so on." },
+  {
+    "startTime": 6376.52,
+    "person": "Hannes",
+    "text": " As long as they're on the bench, we try to support them in becoming successful."
+  },
+  {
+    "startTime": 6380.8,
+    "person": "Hannes",
+    "text": " But it wouldn't be fair to hire a new generation if we've not been successful in launching everybody from the year before."
+  },
+  { "startTime": 6390.12, "person": "Hannes", "text": " It wouldn't be fair to them." },
+  { "startTime": 6392.16, "person": "Hannes", "text": " It wouldn't be fair to us." },
+  { "startTime": 6393.52, "person": "Hannes", "text": " It wouldn't make sense financially." },
+  { "startTime": 6396.18, "person": "Hannes", "text": " Making that decision hurt from my role." },
+  {
+    "startTime": 6400.36,
+    "person": "Hannes",
+    "text": " I saw all of the benefits of doing those programmes."
+  },
+  {
+    "startTime": 6405.55,
+    "person": "Hannes",
+    "text": " This year, I'm happy to say in two weeks, we have not 35."
+  },
+  { "startTime": 6409.85, "person": "Hannes", "text": " It'll be a lot less than that." },
+  {
+    "startTime": 6411.45,
+    "person": "Hannes",
+    "text": " But we have a new generation of juniors starting with us, some young graduates."
+  },
+  {
+    "startTime": 6416.01,
+    "person": "Hannes",
+    "text": " The curriculum is going to be completely revised."
+  },
+  {
+    "startTime": 6421.61,
+    "person": "Hannes",
+    "text": " Because not that we have stripped all of the classic engineering on the contrary."
+  },
+  {
+    "startTime": 6428.53,
+    "person": "Hannes",
+    "text": " Like we have kept a lot of classic software engineering in the programme."
+  },
+  { "startTime": 6433.71, "person": "Hannes", "text": " The way that we're teaching has changed." },
+  {
+    "startTime": 6436.49,
+    "person": "Hannes",
+    "text": " We will see some of the AI stuff up front in the beginning of the traineeship."
+  },
+  {
+    "startTime": 6442.01,
+    "person": "Hannes",
+    "text": " And then we will use LLMs in some of the exercises on the other subjects as well."
+  },
+  {
+    "startTime": 6449.39,
+    "person": "Hannes",
+    "text": " And we will tell them if some exercises without LLMs, some exercises with LLMs. It's all a big experiment."
+  },
+  {
+    "startTime": 6457.23,
+    "person": "Hannes",
+    "text": " Nobody has been successful with this yet."
+  },
+  {
+    "startTime": 6460.07,
+    "person": "Hannes",
+    "text": " And we are doing this to the best of our knowledge with the best intentions."
+  },
+  { "startTime": 6468.55, "person": "Hannes", "text": " We're going to try and make this work." },
+  {
+    "startTime": 6471.15,
+    "person": "Hannes",
+    "text": " If we're successful, we'll probably write some kind of reference case about this."
+  },
+  { "startTime": 6475.75, "person": "Hannes", "text": " But it's a courageous decision to make." },
+  { "startTime": 6481.63, "person": "Hannes", "text": " It's also going to be fun as hell." },
+  {
+    "startTime": 6483.15,
+    "person": "Hannes",
+    "text": " And it's going to bring everybody together."
+  },
+  { "startTime": 6484.53, "person": "Hannes", "text": " Like it's..." },
+  {
+    "startTime": 6486.65,
+    "person": "Hannes",
+    "text": " But yeah, I believe we should bring juniors into teams because they will ask all the hard questions and they will challenge the seniors."
+  },
+  {
+    "startTime": 6494.51,
+    "person": "Hannes",
+    "text": " And they bring the company together in getting them launched."
+  },
+  {
+    "startTime": 6497.13,
+    "person": "Hannes",
+    "text": " And I love the dynamic of onboarding people onto it."
+  },
+  {
+    "startTime": 6501.87,
+    "person": "Hannes",
+    "text": " I also love how with Woody's tactic in ensemble programming, like he has managed to remove the friction of onboarding new team members as well."
+  },
+  { "startTime": 6513.61, "person": "Hannes", "text": " You just put them with the mob." },
+  {
+    "startTime": 6516.93,
+    "person": "Hannes",
+    "text": " And the moment they think they can contribute, they contribute."
+  },
+  {
+    "startTime": 6521.71,
+    "person": "Hannes",
+    "text": " It takes the friction away from onboarding somebody on a team."
+  },
+  {
+    "startTime": 6526.29,
+    "person": "Hannes",
+    "text": " It's like, hey, your whole job is to sit with the group."
+  },
+  {
+    "startTime": 6529.99,
+    "person": "Hannes",
+    "text": " And as soon as you feel like you have something to say, just say it."
+  },
+  { "startTime": 6533.73, "person": "Hannes", "text": " Done." },
+  { "startTime": 6536.4, "person": "Hannes", "text": " It's a marvellous way to go about that." },
+  { "startTime": 6539.58, "person": "Hannes", "text": " But yeah, I think we should..." },
+  {
+    "startTime": 6541.92,
+    "person": "Hannes",
+    "text": " I hope to inspire other companies to also start hiring juniors again."
+  },
+  {
+    "startTime": 6547.48,
+    "person": "Hannes",
+    "text": " If we can get anything out of our experiment is to hopefully have all of our competitors do the same next year."
+  },
+  {
+    "startTime": 6556.36,
+    "person": "Hannes",
+    "text": " Because I think it would be disastrous if we keep on the current path."
+  },
+  { "startTime": 6561.52, "person": "Hannes", "text": " Like for our industry as a whole." },
+  { "startTime": 6566.2, "person": "Hannes", "text": " And rant over, rant over." },
+  { "startTime": 6569.42, "person": "Karol", "text": " Rant over." },
+  { "startTime": 6572.04, "person": "Karol", "text": " Now then, going back for the moment to..." },
+  {
+    "startTime": 6578.38,
+    "person": "Karol",
+    "text": " And I think this would be a bit of a wrap up here."
+  },
+  { "startTime": 6581.82, "person": "Karol", "text": " To saying yes to opportunities." },
+  {
+    "startTime": 6585.42,
+    "person": "Karol",
+    "text": " From your personal perspective, and I'm not looking at the head of learning and development perspective, I'm looking at your perspective as a person."
+  },
+  {
+    "startTime": 6595.62,
+    "person": "Karol",
+    "text": " And I know you're very much jumping to opportunities yourself because for you saying yes is something more natural than for most people."
+  },
+  { "startTime": 6603.96, "person": "Karol", "text": " I get that." },
+  {
+    "startTime": 6606.96,
+    "person": "Karol",
+    "text": " Just as a matter of inspiration, what kind of opportunities were really awesome that you did?"
+  },
+  {
+    "startTime": 6615.8,
+    "person": "Karol",
+    "text": " That you said yes, just because you could and you were like, okay, let's explore and see what happens."
+  },
+  {
+    "startTime": 6620.98,
+    "person": "Karol",
+    "text": " And that sprang to something you didn't expect."
+  },
+  { "startTime": 6625.74, "person": "Karol", "text": " Yeah." },
+  {
+    "startTime": 6627.04,
+    "person": "Hannes",
+    "text": " I mean, all of the career opportunities that I've said yes to have worked out pretty well."
+  },
+  {
+    "startTime": 6635.88,
+    "person": "Hannes",
+    "text": " Starting to speak more at events has given me so much."
+  },
+  {
+    "startTime": 6643.74,
+    "person": "Hannes",
+    "text": " Say, like I started speaking and I looked up at all these people and they were my heroes and now they are my friends."
+  },
+  { "startTime": 6653.46, "person": "Hannes", "text": " Because like doing that." },
+  { "startTime": 6655.1, "person": "Hannes", "text": " And from that came the question." },
+  {
+    "startTime": 6659.42,
+    "person": "Hannes",
+    "text": " I've mentioned Dylan before with his keyboard to keynote workshop."
+  },
+  {
+    "startTime": 6663.7,
+    "person": "Hannes",
+    "text": " At some points, like still early in my speaking career, Dylan messaged me and goes like, hey, can you bring a guitar to build stuff in Lithuania?"
+  },
+  { "startTime": 6674.68, "person": "Hannes", "text": " Because Dylan makes these parody songs." },
+  {
+    "startTime": 6679.08,
+    "person": "Hannes",
+    "text": " He does what Weird Al Jankovic does, but everything is in a tech team."
+  },
+  {
+    "startTime": 6685.1,
+    "person": "Hannes",
+    "text": " So You Give Rest, You Give Love a Bad Name becomes You Give Rest a Bad Name and it's a song about writing bad APIs."
+  },
+  { "startTime": 6694.5, "person": "Hannes", "text": " My favourite." },
+  {
+    "startTime": 6695.94,
+    "person": "Hannes",
+    "text": " Another Brick in the Wall becomes Enterprise Waterfall."
+  },
+  {
+    "startTime": 6698.88,
+    "person": "Hannes",
+    "text": " It's about being stuck in a dead end project that doesn't move."
+  },
+  {
+    "startTime": 6702.16,
+    "person": "Hannes",
+    "text": " We have these parody songs that, and I say we now because like that moment that I said, yes, I can bring a guitar."
+  },
+  {
+    "startTime": 6711.84,
+    "person": "Hannes",
+    "text": " I kind of became part of the band and I'm now one of the official members of the Line Breakers, which is the world's foremost pop and rock tech parody cover band."
+  },
+  {
+    "startTime": 6722.1,
+    "person": "Hannes",
+    "text": " If you add enough adjectives, your sample set becomes one and you can be the best."
+  },
+  {
+    "startTime": 6727.4,
+    "person": "Hannes",
+    "text": " But it started with just a couple of songs."
+  },
+  {
+    "startTime": 6730.02,
+    "person": "Hannes",
+    "text": " I think that first gig I played like three or four songs, maybe five, but that was it."
+  },
+  {
+    "startTime": 6736.38,
+    "person": "Hannes",
+    "text": " At the moment, we're at a point where we have a repertoire that if we would play everything back to back, we would be close to four hours."
+  },
+  {
+    "startTime": 6745.26,
+    "person": "Hannes",
+    "text": " So this has completely escalated to the point where I'm starting to optimise my luggage when I travel to conferences."
+  },
+  {
+    "startTime": 6752.68,
+    "person": "Hannes",
+    "text": " So I have a huge duffel bag that is 23 kilos that has all of my performing gear in it."
+  },
+  {
+    "startTime": 6758.72,
+    "person": "Hannes",
+    "text": " It has my guitar, my in-ear monitors, my effects pedal, all of my cables, the stuff that I need to perform the music."
+  },
+  {
+    "startTime": 6767.68,
+    "person": "Hannes",
+    "text": " Then I have my carry-on stroller that has my clothes in it."
+  },
+  {
+    "startTime": 6772.7,
+    "person": "Hannes",
+    "text": " And then I have my backpack with my laptop in it and all the stuff that I do need to..."
+  },
+  {
+    "startTime": 6781.26,
+    "person": "Hannes",
+    "text": " Like that stuff, I need to do my actual conference talk, right?"
+  },
+  { "startTime": 6784.48, "person": "Hannes", "text": " But I don't need to do that as well." },
+  {
+    "startTime": 6786.84,
+    "person": "Hannes",
+    "text": " Which means that when I get on a plane, I usually have like 45 kilos of luggage."
+  },
+  {
+    "startTime": 6792.3,
+    "person": "Hannes",
+    "text": " In the beginning, I did everything with my fender."
+  },
+  {
+    "startTime": 6794.52,
+    "person": "Hannes",
+    "text": " I had the case cracked a few times on a flight."
+  },
+  {
+    "startTime": 6798.34,
+    "person": "Hannes",
+    "text": " So at some point, like I'm a hobby guitar builder."
+  },
+  {
+    "startTime": 6802.06,
+    "person": "Hannes",
+    "text": " So at some point, I decided like I need to build myself a guitar that's easier to fly with because it makes like playing gigs at conferences easy."
+  },
+  {
+    "startTime": 6813.78,
+    "person": "Hannes",
+    "text": " And I have it on standby because we did talk about this."
+  },
+  { "startTime": 6819.88, "person": "Hannes", "text": " So I built something that is headless." },
+  {
+    "startTime": 6822.7,
+    "person": "Hannes",
+    "text": " So I tried to remove like all of the space behind the bridge."
+  },
+  { "startTime": 6828.38, "person": "Hannes", "text": " Also, it doesn't have a headstock." },
+  { "startTime": 6830.24, "person": "Hannes", "text": " Normally your tuning machines are here." },
+  {
+    "startTime": 6832.24,
+    "person": "Hannes",
+    "text": " So you have another almost 20 centimetres here."
+  },
+  { "startTime": 6836.54, "person": "Hannes", "text": " And usually you have another 15 here." },
+  {
+    "startTime": 6839.38,
+    "person": "Hannes",
+    "text": " So the guitar became more than 30 centimetres shorter while preserving the normal length from here to there."
+  },
+  {
+    "startTime": 6845.58,
+    "person": "Hannes",
+    "text": " So this feels like a normal full-size fender guitar is just like a lot shorter, which makes it just short enough to fit into a standard size luggage duffel bag."
+  },
+  { "startTime": 6857.16, "person": "Hannes", "text": " So I made a case for this as well." },
+  {
+    "startTime": 6859.56,
+    "person": "Hannes",
+    "text": " And yes, that is a Visual Studio logo inlay."
+  },
+  {
+    "startTime": 6862.84,
+    "person": "Hannes",
+    "text": " It's not a sticker like that is purple hardwood inlaid into the body of this body because well, yeah, might as well."
+  },
+  { "startTime": 6872.08, "person": "Karol", "text": " Now that's commitment." },
+  {
+    "startTime": 6873.68,
+    "person": "Hannes",
+    "text": " And so yeah, that is my weasel is handcrafted in Belgium is my guitar brand."
+  },
+  {
+    "startTime": 6881.04,
+    "person": "Hannes",
+    "text": " I needed to build this just like if you commit to the bit, you might as well commit like 110%."
+  },
+  {
+    "startTime": 6887.6,
+    "person": "Hannes",
+    "text": " Like why stop at just performing parody songs?"
+  },
+  {
+    "startTime": 6890.86,
+    "person": "Hannes",
+    "text": " If you can perform them on a guitar, you built yourself, right?"
+  },
+  {
+    "startTime": 6895.56,
+    "person": "Hannes",
+    "text": " Some of that is not just saying yes, it's saying yes and then taking it 10 steps further."
+  },
+  {
+    "startTime": 6903.68,
+    "person": "Hannes",
+    "text": " Dylan has a mug and I think it kind of represents not just Dylan, but all of us."
+  },
+  {
+    "startTime": 6909.6,
+    "person": "Hannes",
+    "text": " It says life starts where the comfort zone ends."
+  },
+  {
+    "startTime": 6912.8,
+    "person": "Hannes",
+    "text": " And I think we are all the kind of personalities that think in opportunities."
+  },
+  {
+    "startTime": 6918.8,
+    "person": "Hannes",
+    "text": " Like we see an opportunity and it's like, what can we do with this?"
+  },
+  {
+    "startTime": 6923.58,
+    "person": "Hannes",
+    "text": " And a lot of it is for fun, for entertainment, but I would argue it's also about making the lives of the people around you better."
+  },
+  {
+    "startTime": 6936.04,
+    "person": "Hannes",
+    "text": " Like we never get paid to play the music at the conference."
+  },
+  {
+    "startTime": 6939.92,
+    "person": "Hannes",
+    "text": " Why do we take all this luggage with us and spend the whole afternoon setting up and spend time rehearsing in somebody's hotel room is because the payoff of just like that, that one hour that you get on stage, like you will have improved the conference experience for those people that were there."
+  },
+  { "startTime": 6957.34, "person": "Hannes", "text": " And that's worth doing." },
+  {
+    "startTime": 6958.8,
+    "person": "Hannes",
+    "text": " Even if they don't learn anything from it, like if they get some laughs out of it, like it's worth doing."
+  },
+  {
+    "startTime": 6965.3,
+    "person": "Hannes",
+    "text": " And I truly believe that there should be a balance in my life, maybe even in my career, where not everything is about profit or compensation or making the most amount of money."
+  },
+  {
+    "startTime": 6984.76,
+    "person": "Hannes",
+    "text": " I'm severely driven by the impact that I have around, impact on other people's career, and impact on other people's experiences, the network that I built, like all of that is more important."
+  },
+  {
+    "startTime": 7001.16,
+    "person": "Hannes",
+    "text": " It gives me more satisfaction than earning more money."
+  },
+  {
+    "startTime": 7004.5,
+    "person": "Hannes",
+    "text": " And I know that, again, that's a statement from somebody who has a lot of privilege because like I'm at a point in my life where making more money wouldn't significantly impact like anything major in my life."
+  },
+  {
+    "startTime": 7020.14,
+    "person": "Hannes",
+    "text": " I feel all of my basic needs are covered."
+  },
+  {
+    "startTime": 7023.22,
+    "person": "Hannes",
+    "text": " I know for a lot of people making more money is life-changing."
+  },
+  {
+    "startTime": 7027.38,
+    "person": "Hannes",
+    "text": " So like no shade on anybody who needs to chase like a higher pay, like I'm not judging, right?"
+  },
+  { "startTime": 7035.02, "person": "Hannes", "text": " I have that privilege." },
+  {
+    "startTime": 7037.42,
+    "person": "Hannes",
+    "text": " It's also like, it allows me to do whatever I wanna do."
+  },
+  { "startTime": 7041.88, "person": "Hannes", "text": " And a lot of it is not for money." },
+  { "startTime": 7044.54, "person": "Hannes", "text": " It is for fun." },
+  { "startTime": 7045.58, "person": "Hannes", "text": " It is saying yes to funding things." },
+  { "startTime": 7047.84, "person": "Hannes", "text": " And then 100% committing to the bid." },
+  {
+    "startTime": 7051.76,
+    "person": "Hannes",
+    "text": " I made a bet with somebody at a conference earlier this year that if my talk would be accepted, I would show up as a princess because the theme was middle ages."
+  },
+  {
+    "startTime": 7062.86,
+    "person": "Hannes",
+    "text": " And I made the statement like, it's better to be a princess than a knight."
+  },
+  {
+    "startTime": 7066.94,
+    "person": "Hannes",
+    "text": " Go on LinkedIn, you'll find the pictures."
+  },
+  {
+    "startTime": 7072.08,
+    "person": "Hannes",
+    "text": " I think it's important to not take yourself too seriously."
+  },
+  {
+    "startTime": 7077.84,
+    "person": "Hannes",
+    "text": " Probably won't be judged even if you show up as a princess, like it only makes people laugh."
+  },
+  {
+    "startTime": 7084.72,
+    "person": "Karol",
+    "text": " I mean, I imagine you walking on stage and just saying, hey, I lost a bad deal with it."
+  },
+  { "startTime": 7089.74, "person": "Karol", "text": " Now I'm a princess." },
+  { "startTime": 7090.52, "person": "Hannes", "text": " I didn't do my talk in a princess dress." },
+  {
+    "startTime": 7093.58,
+    "person": "Hannes",
+    "text": " I showed up on the second day when I didn't have a talk, but I rented a proper like princess dress, not some cheap Amazon, like it had a petticoat and everything."
+  },
+  {
+    "startTime": 7105.04,
+    "person": "Hannes",
+    "text": " Like I was a proper princess for the day."
+  },
+  { "startTime": 7107.2, "person": "Hannes", "text": " Yeah." },
+  {
+    "startTime": 7108.28,
+    "person": "Hannes",
+    "text": " And I think all of that stuff is like you say yes and then you commit."
+  },
+  {
+    "startTime": 7116.1,
+    "person": "Hannes",
+    "text": " And it's usually a lot of work and a lot of efforts."
+  },
+  { "startTime": 7119.52, "person": "Hannes", "text": " Like none of it comes for free." },
+  { "startTime": 7120.9, "person": "Hannes", "text": " Like none of it happens magically." },
+  {
+    "startTime": 7125.94,
+    "person": "Hannes",
+    "text": " I love, like one of my speaker's friends has a motto."
+  },
+  {
+    "startTime": 7130.1,
+    "person": "Hannes",
+    "text": " He said, always do sober what you said you do drunk."
+  },
+  {
+    "startTime": 7134.18,
+    "person": "Hannes",
+    "text": " Like if you are in a bar and you drunken commit to doing something, you should always follow true when you're sober the next day."
+  },
+  { "startTime": 7142.82, "person": "Hannes", "text": " And I think that's a great motto." },
+  {
+    "startTime": 7144.86,
+    "person": "Hannes",
+    "text": " Like whenever you commit to a crazy thing, like do everything in your power to follow true."
+  },
+  {
+    "startTime": 7151.34,
+    "person": "Hannes",
+    "text": " Like good things will happen when you do."
+  },
+  {
+    "startTime": 7154.72,
+    "person": "Karol",
+    "text": " Well, to follow through on your statement, I believe this is the picture."
+  },
+  { "startTime": 7163.66, "person": "Hannes", "text": " That is indeed the princess dress." },
+  { "startTime": 7166.62, "person": "Hannes", "text": " Yeah." },
+  {
+    "startTime": 7167.52,
+    "person": "Hannes",
+    "text": " Notice how I also had shaved off my chest hair for this."
+  },
+  {
+    "startTime": 7174.38,
+    "person": "Hannes",
+    "text": " I mean, you either commit to the bed or you don't at all."
+  },
+  {
+    "startTime": 7181.6,
+    "person": "Hannes",
+    "text": " It's to be honest, I never expected the stream to go that way."
+  },
+  {
+    "startTime": 7186.76,
+    "person": "Hannes",
+    "text": " I mean, I wouldn't have done it if I would be ashamed of doing something like that."
+  },
+  {
+    "startTime": 7191.3,
+    "person": "Hannes",
+    "text": " So I knew full well that there would have been pictures."
+  },
+  { "startTime": 7196.38, "person": "Hannes", "text": " But no." },
+  { "startTime": 7197.9, "person": "Karol", "text": " I'm a father of two girls." },
+  { "startTime": 7200.76, "person": "Karol", "text": " I do tea parties and princesses." },
+  { "startTime": 7203.78, "person": "Karol", "text": " I get that." },
+  { "startTime": 7206, "person": "Karol", "text": " That's perfectly fine." },
+  {
+    "startTime": 7208.76,
+    "person": "Hannes",
+    "text": " So yeah, say yes to all the crazy things as well."
+  },
+  {
+    "startTime": 7211.48,
+    "person": "Hannes",
+    "text": " Like don't only do things that advance your career or increase your pay or whatever."
+  },
+  { "startTime": 7220.34, "person": "Hannes", "text": " Sometimes saying yes to the crazy." },
+  {
+    "startTime": 7224.2,
+    "person": "Hannes",
+    "text": " I have no way of proving this because I cannot do a controlled experiment."
+  },
+  {
+    "startTime": 7231.24,
+    "person": "Hannes",
+    "text": " I do believe that having said yes to a lot of the crazy things, like playing in Dylan's band, well, our band now, playing in the band, doing funny stand-up talks at a conference after party, and organising dinner for a bunch of people."
+  },
+  {
+    "startTime": 7254.3,
+    "person": "Hannes",
+    "text": " Like all of those things that everything will have an effect on the network you build."
+  },
+  {
+    "startTime": 7260.56,
+    "person": "Hannes",
+    "text": " And at some point, that network will repay you somehow."
+  },
+  { "startTime": 7265, "person": "Hannes", "text": " And I feel like that has happened for me." },
+  { "startTime": 7269.1, "person": "Hannes", "text": " I just like, I can't go back." },
+  {
+    "startTime": 7271.24,
+    "person": "Hannes",
+    "text": " I don't have a separate timeline where I can try not doing all the things."
+  },
+  { "startTime": 7276.94, "person": "Karol", "text": " And so I can't compare." },
+  { "startTime": 7279.02, "person": "Karol", "text": " I can't prove that it works." },
+  {
+    "startTime": 7281.6,
+    "person": "Hannes",
+    "text": " I can only assume that it works because I feel like it has all paid off and it's all gone in a direction where I love the people that I spend time with and that I do crazy shit with."
+  },
+  {
+    "startTime": 7294.56,
+    "person": "Hannes",
+    "text": " And we will be playing a gig later this year in Vilnius."
+  },
+  {
+    "startTime": 7299.28,
+    "person": "Hannes",
+    "text": " We will play one in Norway in Stavanger with Hello Stavanger."
+  },
+  {
+    "startTime": 7303.92,
+    "person": "Hannes",
+    "text": " So if you want to see the band, like one of those two conferences, Build Stuff or Hello Stavanger would be where you can catch us."
+  },
+  {
+    "startTime": 7310.08,
+    "person": "Hannes",
+    "text": " If you book us as speakers at your events, because all of us are pretty accomplished conference speakers."
+  },
+  {
+    "startTime": 7318.14,
+    "person": "Hannes",
+    "text": " Like if you book us as speakers, like we will do the music for free."
+  },
+  {
+    "startTime": 7321.14,
+    "person": "Hannes",
+    "text": " If you want to have us as your after party at your event, like get in touch."
+  },
+  {
+    "startTime": 7325.46,
+    "person": "Hannes",
+    "text": " I promise we will make it as frictionless as we can make it."
+  },
+  { "startTime": 7329.8, "person": "Hannes", "text": " We want to do the thing." },
+  { "startTime": 7332, "person": "Hannes", "text": " So yeah, let's end there." },
+  {
+    "startTime": 7335.44,
+    "person": "Hannes",
+    "text": " Like make things frictionless around you and good things will happen."
+  },
+  { "startTime": 7341.32, "person": "Karol", "text": " Amazing." },
+  { "startTime": 7342.68, "person": "Karol", "text": " All right." },
+  { "startTime": 7343.44, "person": "Karol", "text": " Before we jump off." },
+  {
+    "startTime": 7345.28,
+    "person": "Karol",
+    "text": " So as mentioned before, next week we're doing a little bit of a Kafka runt."
+  },
+  {
+    "startTime": 7350.8,
+    "person": "Karol",
+    "text": " Well, we're talking about the cargo cult behaviour."
+  },
+  {
+    "startTime": 7354.7,
+    "person": "Karol",
+    "text": " Well, in this case centred around Kafka because that's one of the objects in integration architecture that is a subject to cargo culting."
+  },
+  {
+    "startTime": 7364.86,
+    "person": "Karol",
+    "text": " And of course, if you manage to survive to this hour watching us, then of course there are some QR codes."
+  },
+  {
+    "startTime": 7371.92,
+    "person": "Karol",
+    "text": " So if you want to find the articles, previous live streams, or see upcoming events of Bridging the Gap, QR code to the left."
+  },
+  {
+    "startTime": 7381.6,
+    "person": "Karol",
+    "text": " Me and Philip were running in a strategic integration design with DDD."
+  },
+  { "startTime": 7386, "person": "Karol", "text": " Currently next session is in November." },
+  { "startTime": 7388.44, "person": "Karol", "text": " You can buy a seat at Avant Scoperta." },
+  { "startTime": 7391.74, "person": "Karol", "text": " That's the middle QR." },
+  {
+    "startTime": 7392.98,
+    "person": "Karol",
+    "text": " And of course, if you're here watching us on LinkedIn or YouTube, well, you can subscribe to the YouTube channel to be notified about next loosely coupled episodes."
+  },
+  {
+    "startTime": 7402.64,
+    "person": "Karol",
+    "text": " So feel free to just grab this QR code and subscribe."
+  },
+  {
+    "startTime": 7408,
+    "person": "Karol",
+    "text": " I don't know, hit the bell icon or something like that."
+  },
+  { "startTime": 7410.68, "person": "Karol", "text": " That I think is to notify about things." },
+  {
+    "startTime": 7413.68,
+    "person": "Karol",
+    "text": " Either way, I do it for the fun of it, not for the numbers."
+  },
+  { "startTime": 7418.92, "person": "Karol", "text": " So what the hell." },
+  {
+    "startTime": 7421.22,
+    "person": "Karol",
+    "text": " Hannes, it was absolutely an amazing conversation to hear your thoughts on career leadership and building people instead of building software."
+  },
+  { "startTime": 7436.08, "person": "Karol", "text": " Thank you for that." },
+  {
+    "startTime": 7437.52,
+    "person": "Hannes",
+    "text": " Thank you for having me and letting me rant about a lot of the stuff that I really care about."
+  },
+  { "startTime": 7443.06, "person": "Hannes", "text": " So yeah." },
+  { "startTime": 7444.28, "person": "Karol", "text": " Amazing." },
+  {
+    "startTime": 7445.38,
+    "person": "Karol",
+    "text": " And for all of you still with us, thank you for watching."
+  },
+  {
+    "startTime": 7448.92,
+    "person": "Karol",
+    "text": " And for those watching the recording, also thank you for watching."
+  },
+  { "startTime": 7452.44, "person": "Karol", "text": " And see you next episode." },
+  { "startTime": 7454.84, "person": "Karol", "text": " Yes." },
+  { "startTime": 7455.28, "person": "Karol", "text": " And if you book the band, we will come." },
+  { "startTime": 7459.4, "person": "Karol", "text": " Perfect." },
+  { "startTime": 7460.12, "person": "Karol", "text": " All right." }
+]
