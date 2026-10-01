@@ -194,6 +194,7 @@ export default defineNuxtConfig({
     'nuxt-seo-utils',
     'nuxt-mongoose',
     'nuxt-gtag',
+    '@nuxt/scripts',
     '@nuxt/icon'
   ],
 

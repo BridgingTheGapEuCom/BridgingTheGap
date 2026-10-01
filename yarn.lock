@@ -1295,6 +1295,28 @@
     pkg-types "^2.3.1"
     std-env "^4.2.0"
 
+"@nuxt/scripts@^0.13.0":
+  version "0.13.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/scripts/-/scripts-0.13.4.tgz#735df8fd72089d21f9c9545b45fe7c66ccbaced7"
+  integrity sha512-VYsoSAA7JIfSHN7f7WgBbSeKunwLFIzIlx171Cep2LTszgLFX20SjsRTeNbw746LuSB2aWjVSN40Sx+/g/6WdA==
+  dependencies:
+    "@nuxt/kit" "^4.2.2"
+    "@vueuse/core" "^14.1.0"
+    consola "^3.4.2"
+    defu "^6.1.4"
+    h3 "^1.15.4"
+    magic-string "^0.30.21"
+    ofetch "^1.5.1"
+    ohash "^2.0.11"
+    pathe "^2.0.3"
+    pkg-types "^2.3.0"
+    sirv "^3.0.2"
+    std-env "^3.10.0"
+    ufo "^1.6.1"
+    unplugin "^2.3.11"
+    unstorage "^1.17.3"
+    valibot "^1.2.0"
+
 "@nuxt/telemetry@^2.8.0":
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/@nuxt/telemetry/-/telemetry-2.9.1.tgz#aaef7bb3ab71bfe6142eb2cb73e4bc8d49b7b82b"
@@ -4757,7 +4779,7 @@ gzip-size@^7.0.0:
   dependencies:
     duplexer "^0.1.2"
 
-h3@^1.15.10, h3@^1.15.11, h3@^1.15.5:
+h3@^1.15.10, h3@^1.15.11, h3@^1.15.4, h3@^1.15.5:
   version "1.15.11"
   resolved "https://registry.yarnpkg.com/h3/-/h3-1.15.11.tgz#831179fc6b4bc06de8ad1077e7a5c7d63b796577"
   integrity sha512-L3THSe2MPeBwgIZVSH5zLdBBU90TOxarvhK9d04IDY2AmVS8j2Jz2LIWtwsGOU3lu2I5jCN7FNvVfY2+XyF+mg==
@@ -7430,6 +7452,11 @@ statuses@^2.0.2, statuses@~2.0.2:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-2.0.2.tgz#8f75eecef765b5e1cfcdc080da59409ed424e382"
   integrity sha512-DvEy55V3DB7uknRo+4iOGT5fP1slR8wQohVdknigZPMpMstaKJQWhwiYBACJE3Ul2pTnATihhBYnRhZQHGBiRw==
 
+std-env@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/std-env/-/std-env-3.10.0.tgz#d810b27e3a073047b2b5e40034881f5ea6f9c83b"
+  integrity sha512-5GS12FdOZNliM5mAOxFRg7Ir0pWz8MdpYm6AY6VPkGpbA7ZzmbzNcBJQ0GPvvyWgcY7QAhCgf9Uy89I03faLkg==
+
 std-env@^4.1.0, std-env@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-4.2.0.tgz#8ebe0ec60485668ab47227b312f4254cdf80c9d3"
@@ -8050,7 +8077,7 @@ unrs-resolver@^1.9.2:
     "@unrs/resolver-binding-win32-ia32-msvc" "1.12.2"
     "@unrs/resolver-binding-win32-x64-msvc" "1.12.2"
 
-unstorage@^1.17.1, unstorage@^1.17.4, unstorage@^1.17.5:
+unstorage@^1.17.1, unstorage@^1.17.3, unstorage@^1.17.4, unstorage@^1.17.5:
   version "1.17.5"
   resolved "https://registry.yarnpkg.com/unstorage/-/unstorage-1.17.5.tgz#e76c82fdc1d2c04cb0e2c0a1de08aa08b2253f51"
   integrity sha512-0i3iqvRfx29hkNntHyQvJTpf5W9dQ9ZadSoRU8+xVlhVtT7jAX57fazYO9EHvcRCfBCyi5YRya7XCDOsbTgkPg==
@@ -8133,6 +8160,11 @@ v-calendar@^3.1.2:
     date-fns-tz "^2.0.0"
     lodash "^4.17.20"
     vue-screen-utils "^1.0.0-beta.13"
+
+valibot@^1.2.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/valibot/-/valibot-1.5.0.tgz#c05adda6b2823807bb0248e2952c35e1a50046fd"
+  integrity sha512-nil6AkP2TChWL43Z5uJ6GTxX01CUA+g8LWUM+N/rB9NBbkUMaUsi9PUNzlUPgoKASgmx9f7eGOYpJ04/fSa6FQ==
 
 vaul-vue@0.4.1:
   version "0.4.1"

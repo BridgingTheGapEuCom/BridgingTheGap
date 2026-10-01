@@ -9,13 +9,17 @@
       </p>
     </header>
 
-    <div v-if="visibleEvents.length" class="events-reader-layout">
+    <div v-if="allEvents.length" class="events-reader-layout">
       <EventsEventNavigation
         :events="visibleEvents"
         :active-anchor="activeAnchor"
         :displayed-month="displayedMonth"
+        :earliest-date="earliestEventDate"
+        :has-earlier-events="hasEarlierEvents"
+        :earlier-events-label="earlierEventsLabel"
         @navigate="navigateToEvent"
-        @update:displayed-month="displayedMonth = $event"
+        @load-earlier="showEarlierEvents"
+        @update:displayed-month="updateDisplayedMonth"
       />
       <div class="event-timeline" aria-label="Chronological events">
         <EventsEventSection
@@ -25,6 +29,11 @@
           :anchor="eventAnchor(event)"
           :active="eventAnchor(event) === activeAnchor"
         />
+        <section v-if="!visibleEvents.length" class="events-range-empty">
+          <h2>Nothing scheduled just yet</h2>
+          <p>You can still browse previous workshops, streams, and community sessions.</p>
+          <button type="button" @click="showEarlierEvents">{{ earlierEventsLabel }}</button>
+        </section>
       </div>
     </div>
 
@@ -87,11 +96,26 @@ function resolveRequestedEvent(): Event | undefined {
 }
 
 const requestedEvent = resolveRequestedEvent()
-const rangeStart =
+const initialRangeStart =
   requestedEvent && eventStart(requestedEvent) < defaultStart
     ? eventStart(requestedEvent).startOf('month')
     : defaultStart
-const visibleEvents = allEvents.filter((event) => eventStart(event) >= rangeStart)
+const rangeStart = ref(initialRangeStart)
+const earliestEventMonth = allEvents.length
+  ? eventStart(allEvents[0]).startOf('month')
+  : defaultStart
+const earliestEventDate = allEvents.length
+  ? eventStart(allEvents[0]).startOf('day').toJSDate()
+  : undefined
+const visibleEvents = computed(() =>
+  allEvents.filter((event) => eventStart(event) >= rangeStart.value)
+)
+const hasEarlierEvents = computed(() => earliestEventMonth.toMillis() < rangeStart.value.toMillis())
+const earlierEventsLabel = computed(() =>
+  hasEarlierEvents.value
+    ? `Show events before ${rangeStart.value.setLocale(eventLocale.value).toFormat('LLLL yyyy')}`
+    : 'All events are shown'
+)
 
 function nearestEvent(events: Event[]): Event | undefined {
   return [...events].sort((first, second) => {
@@ -108,7 +132,7 @@ function nearestEvent(events: Event[]): Event | undefined {
   })[0]
 }
 
-const initialEvent = requestedEvent ?? nearestEvent(visibleEvents)
+const initialEvent = requestedEvent ?? nearestEvent(visibleEvents.value)
 const activeAnchor = ref(initialEvent ? eventAnchor(initialEvent) : undefined)
 const displayedMonth = ref(monthForEvent(initialEvent))
 let observer: IntersectionObserver | undefined
@@ -117,6 +141,9 @@ let updateActiveFromScroll: (() => void) | undefined
 let isNavigatingToEvent = false
 let navigationEndTimer: number | undefined
 let removeNavigationEndListener: (() => void) | undefined
+let eventSections: HTMLElement[] = []
+let isExtendingRange = false
+let rangeExtensionEndTimer: number | undefined
 
 function monthForEvent(event?: Event) {
   const start = event ? eventStart(event) : now
@@ -127,10 +154,78 @@ function prefersReducedMotion() {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches
 }
 
+function refreshEventSections() {
+  eventSections = Array.from(document.querySelectorAll<HTMLElement>('[data-event-anchor]'))
+  observer?.disconnect()
+  eventSections.forEach((section) => observer?.observe(section))
+}
+
+async function extendRangeStart(targetMonth: DateTime) {
+  const nextRangeStart =
+    targetMonth.toMillis() < earliestEventMonth.toMillis()
+      ? earliestEventMonth
+      : targetMonth.startOf('month')
+  if (nextRangeStart.toMillis() >= rangeStart.value.toMillis()) return
+
+  const scrollRoot = document.getElementById('body')
+  const positionAnchor = activeAnchor.value
+    ? document.getElementById(activeAnchor.value)
+    : eventSections[0]
+  const anchorTop = positionAnchor?.getBoundingClientRect().top
+  const previousScrollBehavior = scrollRoot?.style.scrollBehavior ?? ''
+  const previousOverflowAnchor = scrollRoot?.style.overflowAnchor ?? ''
+
+  if (rangeExtensionEndTimer !== undefined) window.clearTimeout(rangeExtensionEndTimer)
+  isExtendingRange = true
+  if (scrollRoot) {
+    scrollRoot.style.scrollBehavior = 'auto'
+    scrollRoot.style.overflowAnchor = 'none'
+  }
+
+  rangeStart.value = nextRangeStart
+  await nextTick()
+  await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
+  refreshEventSections()
+
+  if (!activeAnchor.value && visibleEvents.value.length) {
+    const nearestVisibleEvent = nearestEvent(visibleEvents.value)
+    if (nearestVisibleEvent) setActive(eventAnchor(nearestVisibleEvent), false)
+  }
+
+  const updatedAnchor = positionAnchor?.id ? document.getElementById(positionAnchor.id) : undefined
+  if (scrollRoot && anchorTop !== undefined && updatedAnchor) {
+    scrollRoot.scrollTop += updatedAnchor.getBoundingClientRect().top - anchorTop
+  }
+
+  await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
+  if (scrollRoot) {
+    scrollRoot.style.scrollBehavior = previousScrollBehavior
+    scrollRoot.style.overflowAnchor = previousOverflowAnchor
+  }
+  rangeExtensionEndTimer = window.setTimeout(() => {
+    isExtendingRange = false
+    rangeExtensionEndTimer = undefined
+  }, 150)
+}
+
+function showEarlierEvents() {
+  if (!hasEarlierEvents.value) return
+  void extendRangeStart(rangeStart.value.minus({ months: 3 }))
+}
+
+async function updateDisplayedMonth(month: Date) {
+  const monthStart = DateTime.fromObject(
+    { year: month.getUTCFullYear(), month: month.getUTCMonth() + 1, day: 1 },
+    { zone: 'utc' }
+  )
+  await extendRangeStart(monthStart)
+  displayedMonth.value = month
+}
+
 function setActive(anchor: string, updateUrl = true) {
-  if (!visibleEvents.some((event) => eventAnchor(event) === anchor)) return
+  if (!visibleEvents.value.some((event) => eventAnchor(event) === anchor)) return
   activeAnchor.value = anchor
-  const event = visibleEvents.find((candidate) => eventAnchor(candidate) === anchor)
+  const event = visibleEvents.value.find((candidate) => eventAnchor(candidate) === anchor)
   if (event) displayedMonth.value = monthForEvent(event)
 
   if (updateUrl && window.location.hash !== `#${anchor}`) {
@@ -229,19 +324,17 @@ async function initializeScrolling() {
   const fragmentEvent = resolveHashEvent(window.location.hash)
   const initialAnchor = stableTarget?.dataset.eventAnchor
     ? stableTarget.dataset.eventAnchor
-    : fragmentEvent && visibleEvents.includes(fragmentEvent)
+    : fragmentEvent && visibleEvents.value.includes(fragmentEvent)
       ? eventAnchor(fragmentEvent)
       : activeAnchor.value
-  if (!initialAnchor) return
 
-  setActive(initialAnchor, false)
-  const sections = Array.from(document.querySelectorAll<HTMLElement>('[data-event-anchor]'))
+  if (initialAnchor) setActive(initialAnchor, false)
   await document.fonts.ready
   await new Promise<void>((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)))
 
-  const initialTarget = document.getElementById(initialAnchor)
+  const initialTarget = initialAnchor ? document.getElementById(initialAnchor) : null
   if (initialTarget) scrollEventIntoView(initialTarget, 'auto')
-  setActive(initialAnchor)
+  if (initialAnchor) setActive(initialAnchor)
 
   updateActiveFromScroll = () => {
     const readingLine =
@@ -261,9 +354,9 @@ async function initializeScrolling() {
       return
     }
 
-    let currentSection = sections[0]
+    let currentSection = eventSections[0]
 
-    for (const section of sections) {
+    for (const section of eventSections) {
       if (section.getBoundingClientRect().top > readingLine) break
       currentSection = section
     }
@@ -274,7 +367,7 @@ async function initializeScrolling() {
 
   observer = new IntersectionObserver(
     () => {
-      if (!isNavigatingToEvent) updateActiveFromScroll?.()
+      if (!isNavigatingToEvent && !isExtendingRange) updateActiveFromScroll?.()
     },
     {
       root: scrollRoot,
@@ -282,13 +375,13 @@ async function initializeScrolling() {
       threshold: [0, 0.01, 0.35]
     }
   )
-  sections.forEach((section) => observer?.observe(section))
+  refreshEventSections()
 
   bodyScrollHandler = () => {
-    if (isNavigatingToEvent) return
+    if (isNavigatingToEvent || isExtendingRange) return
 
     const atBottom = scrollRoot.scrollTop + scrollRoot.clientHeight >= scrollRoot.scrollHeight - 3
-    const lastAnchor = sections.at(-1)?.dataset.eventAnchor
+    const lastAnchor = eventSections.at(-1)?.dataset.eventAnchor
     if (atBottom && lastAnchor) {
       setActive(lastAnchor)
       return
@@ -304,6 +397,7 @@ onMounted(() => void initializeScrolling())
 onBeforeUnmount(() => {
   observer?.disconnect()
   cancelNavigationEndWait()
+  if (rangeExtensionEndTimer !== undefined) window.clearTimeout(rangeExtensionEndTimer)
   const scrollRoot = document.getElementById('body')
   if (scrollRoot && bodyScrollHandler) scrollRoot.removeEventListener('scroll', bodyScrollHandler)
 })
@@ -352,6 +446,38 @@ onBeforeUnmount(() => {
 .event-timeline {
   min-width: 0;
   flex: 1;
+}
+
+.events-range-empty {
+  max-width: 42rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  border: 1px solid var(--editorial-border);
+}
+
+.events-range-empty h2 {
+  margin: 0 0 0.5rem;
+}
+
+.events-range-empty p {
+  color: var(--editorial-muted);
+}
+
+.events-range-empty button {
+  min-height: 2.75rem;
+  margin-top: 1rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--editorial-border-strong);
+  border-radius: 0.3rem;
+  color: var(--editorial-text);
+  background: var(--editorial-surface);
+  font: inherit;
+  font-weight: 700;
+}
+
+.events-range-empty button:hover {
+  border-color: var(--editorial-text);
+  background: var(--editorial-surface-muted);
 }
 
 .events-empty {

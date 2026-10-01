@@ -16,6 +16,7 @@
     "@jamescoyle/vue-icon": "^0.1.2",
     "@mdi/js": "^7.4.47",
     "@nuxt/icon": "2.5.1",
+    "@nuxt/scripts": "^0.13.0",
     "@popperjs/core": "^2.11.8",
     "@vueuse/core": "^14.4.0",
     "@vueuse/nuxt": "^14.4.0",
