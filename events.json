@@ -1154,17 +1154,17 @@
     "YT": "https://youtube.com/live/a8qPgO7Jfo4"
   },
   {
-    "name": "[TO BE RESCHEDULED!] Loosely Coupled - APIs - moving beyond specification and documentation to actionable knowledge",
+    "name": "Loosely Coupled - APIs - moving beyond specification and documentation to actionable knowledge",
     "img": "/events/Loosely_Coupled_APIs_-_moving_beyond_specification_and_documentation_to_actionable_knowledge.webp",
     "description": "In today's distributed IT world APIs are everywhere! We use them to send statuses, query data, post social-media posts, and most of all we use them in systems in our organizations. But do we really understand the landscapes they create? \n\nIn today's distributed IT world APIs are everywhere! We use them to send statuses, query data, post social-media posts, and most of all we use them in systems in our organizations. But do we really understand the landscapes they create?\n\nLet’s discuss why an API catalog is only a starting point! How can OpenAPI and AsyncAPI contracts, quality checks, enterprise architecture, ownership, and runtime relationships be connected? Can we digest this knowledge and derive more meaning out of it?\n\nJoining us this session is Daniel Kocot, Principal Integration Architect @ adorsys, and together we will take a look at what a graph-based knowledge layer makes possible. Can we, using the API Knowledge Stack as a practical example, follow the path from an API definition and a quality finding to an actionable view of the API, its context, its responsibilities, and its next steps.\n\nWe’ll be also looking beyond discovery: how APIs can become curated API products, how teams can preserve the intended use and trust, and how organizations can keep their knowledge useful without turning governance into bloated bureaucracy.\n\nHow do we move from knowing where an API is to understanding what it means and what to do with it?\n\nJoin us in the discussion!",
-    "date": "2026-10-07",
+    "date": "2026-11-11",
     "eventType": "Stream",
     "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
-        "startDate": "2026-10-07",
-        "endDate": "2026-10-07",
+        "startDate": "2026-11-11",
+        "endDate": "2026-11-11",
         "startTime": "19:00",
         "endTime": "21:00"
       },
@@ -1218,5 +1218,28 @@
     },
     "LN": "https://www.linkedin.com/events/7500620321914347520/",
     "YT": "https://youtube.com/live/FlhClL5Drf0"
+  },
+  {
+    "name": "Loosely Coupled - Domain-Driven Design in the Agentic Software Development",
+    "img": "/events/Loosely_Coupled_Domain-Driven_Design_in_the_agentic_software_development.webp",
+    "description": "In today’s world, where most tech conversations are focused around Agentic AI and LLMs, there is a lot of noise. Amongst it there is a recurring sentiment that most developers will have to switch to be more of an architect rather than a developer. The question is: Are we ready for such a shift? How should we prepare? What does this mean?\n\nIn today’s world, where most tech conversations are focused around Agentic AI and LLMs, there is a lot of noise. Amongst it there is a recurring sentiment that most developers will have to switch to be more of an architect rather than a developer. The question is: Are we ready for such a shift? How should we prepare? What does this mean?\n\nIn this episode of Loosely Coupled we’ll try to answer a few of these questions from the angle of design - a very human practice, that AI is not entirely capable of mimicking on its own. With the help of Alberto Brandolini, the “Supreme EventStormer” we’ll dive into the intersection between Domain-Driven Design and Agentic Software Development! What does Ubiquitous Language mean for a probabilistic behaviour of LLMs?\n\nLet’s talk about language being the key shifting point for the industry! What does it mean the language we use daily suddenly changed from an intermediate design artifact and became the primary executable representation of intent? Is it the same language? Which are the possibilities and pitfalls of collaboration with AI agents in writing, controlling and sharing the domain language?\n\nJoin the conversation!",
+    "date": "2026-10-21",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-10-21",
+        "endDate": "2026-10-21",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Domain-Driven Design in the agentic software development",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7513325729976344576/",
+    "YT": "https://youtube.com/live/CHFQ7pYJZ-Y"
   }
+
 ]
