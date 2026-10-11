@@ -1240,6 +1240,27 @@
     },
     "LN": "https://www.linkedin.com/events/7513325729976344576/",
     "YT": "https://youtube.com/live/CHFQ7pYJZ-Y"
+  },
+  {
+    "name": "Loosely Coupled - Making Generative AI practical for the Enterprises",
+    "img": "/events/Loosely_Coupled_Making_Generative_AI_practical_for_the_Enterprises.webp",
+    "description": "Being on LinkedIn, substack or medium, or meet-ups and conferences it may seem like everyone is way ahead with Agentic AI adoption. FOMO is prevalent. The most important question is: What is the reality?\n\nBeing on LinkedIn, substack or medium, or meet-ups and conferences it may seem like everyone is way ahead with Agentic AI adoption. FOMO is prevalent. The most important question is: What is the reality?\n\nGenerative AI is a powerful tool, there is no doubt about that. However, there is a huge difference between experimentation within an isolated environment and releasing AI Agents into the messy reality or IT Ecosystems of all sorts of companies. Building AI solutions in an isolated environment when you have full control over the context, data, or APIs in a greenfield is not directly translatable to the brownfield reality of businesses.\n\nLet’s talk about making generative AI practical for the Enterprises! To guide us through this messy problem space we have invited Michael Bachman, Head of Research, AI and Emerging Technology Strategy @ Boomi! We’ll dive into translating the learnings from experimentation with generative AI into an overview on how to apply this at organizations!\n\nJoin the conversation!",
+    "date": "2026-11-18",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-11-18",
+        "endDate": "2026-11-18",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Making Generative AI practical for the Enterprises",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7515155420106080256/?",
+    "YT": "https://youtube.com/live/xXlxRcpaq6g"
   }
-
 ]
