@@ -1855,7 +1855,29 @@
       "eventTopic": "Making Generative AI practical for the Enterprises",
       "eventType": "Live Stream Discussion"
     },
-    "LN": "https://www.linkedin.com/events/7515155420106080256/?",
+    "LN": "https://www.linkedin.com/events/7515155420106080256/",
     "YT": "https://youtube.com/live/xXlxRcpaq6g"
+  },
+  {
+    "name": "[Webinar] Sociotechnical Engineering in Integration Architecture",
+    "img": "/events/Webinar_Sociotechnial_Engineering.webp",
+    "description": "Most application integration failures aren't caused by choosing the wrong message broker or IPaaS technology. They happen because the technical architecture ignores the sociopolitical reality of the teams involved. If you implement a high-trust Shared Database pattern between teams that have a low-trust Customer/Supplier relationship, your system will shatter the moment one team changes a schema without asking.\n\nJoin us for a webinar, where we will explore this mismatch through the lense of Domain-Driven Design Context Mapping patterns (the social boundaries) to Ecosystem Architectural Styles (the architectural approach) and related integration patterns. We won’t just discuss \"trade-offs\"; we will look at design heuristics with real-world scenarios.\n\nYou will learn to operationalize context maps by understanding:\n• Why a Conformist relationship (where the upstream team has no motivation to support you) mandates a strictly defensive Anti-Corruption Layer (ACL) within the consumer.\n• How to implement an Open Host Service using an IPaaS to loosen the coupling between legacy monoliths and multiple downstream consumers.\n• Where does the Context Mapping language break and needs to be supplemented by new vocabulary, such as Interchange Context.\n\nThis session is for architects and engineers who are tired of designs failing when they meet the messy human reality, and guessing how to integrate systems. You will leave with a range of heuristics on how to explore and identify the risks to integrations stemming from the political landscape of your ecosystem. This will give you the vocabulary to express those risks and relationships, and to design for a better future, based on the domain boundaries, not just the technology stack.\n\nWhat can you expect:\n• A quick dive into the extended Context Mapping vocabulary designed for Integration Architecture,\n• Examples inspired by real-life scenarios,\n• A Q&A with live modelling over questions!",
+    "date": "2026-11-05",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-11-05",
+        "endDate": "2026-11-05",
+        "startTime": "20:30",
+        "endTime": "22:30"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Context Mapping for Integration Architecture - mapping the sociotechnical engineering aspects",
+      "eventType": "Live Stream Webinar"
+    },
+    "LN": "https://www.linkedin.com/events/7515789386119204864/",
+    "YT": "https://youtube.com/live/u4KeXm-SXVc"
   }
 ]
