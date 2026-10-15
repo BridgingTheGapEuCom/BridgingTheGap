@@ -206,7 +206,7 @@
         As mentioned earlier, sometimes integration is imposed by law directly or by required speed
         of reaction, which makes any kind of manual entry of the data into your system not feasible.
         While in this case “if” is not a question, “how” still provides a huge area to investigate.
-        Other Bridging The Gap articles provide a comprehensive resource on “how” to integrate. A
+        Other BridgingTheGap.eu.com articles provide a comprehensive resource on “how” to integrate. A
         good start will be Modern Application Integration Principles article.
       </p>
       <h3>New business capabilities and opportunities</h3>

@@ -1,12 +1,13 @@
 import Badge20Schema from '~/server/models/badge.schema'
+import { extractBadgeId } from '~/utils/badges'
 
 export default defineEventHandler(async (event) => {
-  const { id } = getQuery(event)
+  const id = extractBadgeId(getQuery(event).id)
 
   if (!id) {
     throw createError({
       statusCode: 400,
-      statusMessage: 'Bad Request: An "id" is required.'
+      statusMessage: 'Bad Request: A valid badge "id" is required.'
     })
   }
 
@@ -15,7 +16,10 @@ export default defineEventHandler(async (event) => {
     badge = await Badge20Schema.aggregate([
       {
         $match: {
-          'badgeContent.id': `https://bridgingthegap.eu.com/api/credentials/${id}`
+          'badgeContent.id': {
+            $regex: `/api/credentials/${id}/?$`,
+            $options: 'i'
+          }
         }
       },
       {

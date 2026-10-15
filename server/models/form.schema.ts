@@ -14,7 +14,7 @@ export const FormResponseSchema = defineMongooseModel({
   },
   options: {
     timestamps: true,
-    strict: false,
+    strict: true,
     collection: 'form_responses'
   }
 })

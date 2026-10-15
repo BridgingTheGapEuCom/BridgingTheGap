@@ -1,34 +1,30 @@
 import Badge20Schema from '~/server/models/badge.schema'
 import { createHash } from 'crypto'
+import { isRecaptchaValid, verifyRecaptcha } from '~/server/utils/recaptcha'
+import { isPlainRecord, isValidEmail } from '~/server/utils/validation'
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event)
+  const body = await readBody<unknown>(event)
+  if (!isPlainRecord(body)) {
+    throw createError({ statusCode: 400, statusMessage: 'Invalid request body' })
+  }
+
   const { email, token } = body
 
   if (!token) {
     return { status: 400, body: 'recaptcha token is missing' }
   }
 
-  const config = useRuntimeConfig()
+  const recaptchaResult = await verifyRecaptcha(token)
 
-  const recaptchaSecret = config.RECAPTCHA_SECRET_KEY
-  const response = await fetch(
-    `https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${token}`,
-    {
-      method: 'POST'
-    }
-  )
-
-  const data = await response.json()
-
-  if (!data.success || data.score < 0.5) {
+  if (!isRecaptchaValid(recaptchaResult)) {
     return { status: 400, body: 'recaptcha verification failed' }
   }
 
-  if (!email) {
+  if (!isValidEmail(email)) {
     throw createError({
       statusCode: 400,
-      statusMessage: 'Bad Request: An "email" is required.'
+      statusMessage: 'Bad Request: A valid "email" is required.'
     })
   }
 
@@ -62,14 +58,12 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  if (!badges) {
+  if (!badges || badges.length === 0) {
     throw createError({
       statusCode: 404,
       statusMessage: 'Not Found: There are no badges issued for this email address'
     })
   }
 
-  const badgesList = badges.map((badge) => badge.badgeContent)
-
-  return badgesList
+  return badges.map((badge) => badge.badgeContent)
 })

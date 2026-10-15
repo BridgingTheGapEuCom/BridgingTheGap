@@ -303,8 +303,4 @@
   </ArticleLayout>
 </template>
 
-<script setup>
-const dark = useState("dark", () => false);
-</script>
-
 <style scoped></style>

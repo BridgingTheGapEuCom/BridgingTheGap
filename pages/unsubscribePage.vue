@@ -112,6 +112,8 @@
 <script lang="ts" setup>
 import { type IReCaptchaComposition, useReCaptcha } from 'vue-recaptcha-v3'
 
+useSeoMeta({ robots: 'noindex, nofollow' })
+
 interface ApiResponse {
   status: number
   message: string

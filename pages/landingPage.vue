@@ -24,6 +24,12 @@ import LandingPage6 from '~/components/landingPage/LandingPage_6.vue'
 import LandingPage7 from '~/components/landingPage/LandingPage_7.vue'
 import LandingPage8 from '~/components/landingPage/LandingPage_8.vue'
 
+usePageSeo({
+  description:
+    'BridgingTheGap.eu.com — a collaboration of integration architects creating a simple, vendor-agnostic guide to integration architecture.',
+  path: '/landingPage'
+})
+
 definePageMeta({
   layout: 'landingLayout'
 })

@@ -1,0 +1,4579 @@
+[
+  {
+    "startTime": 60.04,
+    "person": "Karol",
+    "text": " Good morning, good afternoon, and good evening, everybody, and welcome to another episode of Loosely Coupled."
+  },
+  { "startTime": 65.38, "person": "Karol", "text": " I hope you're doing well." },
+  {
+    "startTime": 66.18,
+    "person": "Karol",
+    "text": " My name is Karol Skrzymowski, and I'll be your host tonight."
+  },
+  {
+    "startTime": 68.46,
+    "person": "Karol",
+    "text": " Well, today, tonight, because that's still not in the meeting here, but this time around."
+  },
+  {
+    "startTime": 73.02,
+    "person": "Karol",
+    "text": " And today we're having a very, very, very special session."
+  },
+  { "startTime": 77.64, "person": "Karol", "text": " Welcome to our very amazing speakers." },
+  { "startTime": 85.66, "person": "Karol", "text": " So, without further ado, here we go." },
+  { "startTime": 89.32, "person": "Karol", "text": " Hello, hello, everybody." },
+  { "startTime": 91.62, "person": "Karol", "text": " A round of introductions, then, I suppose." },
+  { "startTime": 94.48, "person": "Mathias", "text": " Sure." },
+  { "startTime": 95.4, "person": "Mathias", "text": " My name is Mathias Verraes." },
+  {
+    "startTime": 96.92,
+    "person": "Mathias",
+    "text": " I am the CEO, well, former CEO, since recently, of Arting."
+  },
+  {
+    "startTime": 101.82,
+    "person": "Mathias",
+    "text": " We're a software design and strategy consultancy."
+  },
+  {
+    "startTime": 105.26,
+    "person": "Mathias",
+    "text": " And I'm also the founder of Domain Driven Design Europe."
+  },
+  {
+    "startTime": 109.62,
+    "person": "Mathias",
+    "text": " And yeah, that's the short version, I guess."
+  },
+  {
+    "startTime": 113.04,
+    "person": "Mathias",
+    "text": " And I'm the author of Design and Reality, together with Rebecca Wirfs-Brock, a book on software design and the philosophy of it and practical applications."
+  },
+  { "startTime": 123.7, "person": "Xin", "text": " All right, it's my turn." },
+  { "startTime": 125.94, "person": "Xin", "text": " I'm Xin." },
+  { "startTime": 126.92, "person": "Xin", "text": " I've almost lost my voice." },
+  { "startTime": 128.5, "person": "Xin", "text": " I hope it was carried through the podcast." },
+  { "startTime": 132.58, "person": "Xin", "text": " I come from Copenhagen, Denmark." },
+  {
+    "startTime": 134.62,
+    "person": "Xin",
+    "text": " I used to be chief architect in large financial institutions."
+  },
+  { "startTime": 139.76, "person": "Xin", "text": " Right now, I'm self-employed." },
+  { "startTime": 141.18, "person": "Xin", "text": " I call myself a socio-technical architect." },
+  {
+    "startTime": 144.06,
+    "person": "Xin",
+    "text": " These days, I help companies sort of navigate a little bit of the AI transformation from a socio-technical architecture perspective and taking the technical and human perspectives."
+  },
+  {
+    "startTime": 156.52,
+    "person": "Xin",
+    "text": " I am a frequent speaker at DDD Europe, also run workshops."
+  },
+  {
+    "startTime": 162.16,
+    "person": "Xin",
+    "text": " Really thrilled to be invited to this workshop with so many amazing people."
+  },
+  { "startTime": 167.88, "person": "Andrew", "text": " To you, Andrew." },
+  { "startTime": 169.26, "person": "Andrew", "text": " I am Andrew Harmel-Law." },
+  {
+    "startTime": 171.28,
+    "person": "Andrew",
+    "text": " I'm a director at ThoughtWorks, and I'm the author of Facilitating Software Architecture, published by O'Reilly."
+  },
+  {
+    "startTime": 178.28,
+    "person": "Andrew",
+    "text": " And what interests me is the whole socio-technical human being interface with technology, with a kind of specific leaning towards anarchy from a political and kind of self-organising perspective."
+  },
+  {
+    "startTime": 192.46,
+    "person": "Andrew",
+    "text": " And that's why I love kind of conferences like this, because for me, it's all about the conversations and the people you meet."
+  },
+  {
+    "startTime": 197.24,
+    "person": "Andrew",
+    "text": " So I'm really excited to have this chance."
+  },
+  { "startTime": 200.6, "person": "Martin", "text": " And I'm Martin Fowler." },
+  {
+    "startTime": 201.72,
+    "person": "Martin",
+    "text": " I'm chief scientist at ThoughtWorks, the same company as Andrew."
+  },
+  { "startTime": 205.4, "person": "Martin", "text": " I've written a few books." },
+  {
+    "startTime": 206.96,
+    "person": "Martin",
+    "text": " I host the site martinfowler.com, and I'm interested in software design, how to do it well, and what it looks like."
+  },
+  { "startTime": 215.64, "person": "Andrew", "text": " Now, a bit of a disclaimer." },
+  {
+    "startTime": 218.56,
+    "person": "Andrew",
+    "text": " Matthias invited Martin in and didn't tell me and kept it a secret."
+  },
+  {
+    "startTime": 222.46,
+    "person": "Andrew",
+    "text": " I was in the dark, unknowing that I will be joined by Martin at this panel."
+  },
+  { "startTime": 228.88, "person": "Andrew", "text": " And thank you for being here." },
+  { "startTime": 230.24, "person": "Andrew", "text": " Thank you all for being here." },
+  {
+    "startTime": 231.1,
+    "person": "Andrew",
+    "text": " It's amazing to have you all on the stream."
+  },
+  {
+    "startTime": 234.06,
+    "person": "Andrew",
+    "text": " So, DDD and more as the title of today's episode."
+  },
+  {
+    "startTime": 240.76,
+    "person": "Andrew",
+    "text": " Now, the question is, in this modern age of lovely LLMs, AI, and all this that's going on, is design still relevant?"
+  },
+  {
+    "startTime": 251.74,
+    "person": "Andrew",
+    "text": " Or are we going to be as architects, designers, developers, domain experts soon replaced by automatons run by whatever AI models come to play?"
+  },
+  {
+    "startTime": 264.12,
+    "person": "Martin",
+    "text": " I would start by saying fundamentally, we don't know."
+  },
+  { "startTime": 268.92, "person": "Martin", "text": " Right." },
+  {
+    "startTime": 269.22,
+    "person": "Martin",
+    "text": " I mean, we're in a stage of a rapidly changing technology that has surprised us already, I think."
+  },
+  {
+    "startTime": 276.92,
+    "person": "Martin",
+    "text": " Certainly surprised me at how effective it is compared to what one might have imagined a few years ago."
+  },
+  {
+    "startTime": 284.88,
+    "person": "Martin",
+    "text": " We don't really know what its trajectory is going to go."
+  },
+  {
+    "startTime": 288.74,
+    "person": "Martin",
+    "text": " We still don't know whether it's going to be good or bad for mankind, as it were."
+  },
+  { "startTime": 294.64, "person": "Martin", "text": " Lots of open questions." },
+  {
+    "startTime": 297.38,
+    "person": "Martin",
+    "text": " And one thing that was clear when I've talked with other people who are much more involved in AI than even I am, is that we still don't really know what's going to come."
+  },
+  {
+    "startTime": 309.2,
+    "person": "Martin",
+    "text": " And we still don't really know how it's all going to shake out."
+  },
+  {
+    "startTime": 311.36,
+    "person": "Martin",
+    "text": " We know there's going to be a big change to the profession of software development, but we don't know what it's going to look like or how it's going to shake."
+  },
+  {
+    "startTime": 320.16,
+    "person": "Martin",
+    "text": " And so we're going to talk a bit here and we'll talk about what we've seen."
+  },
+  {
+    "startTime": 323.4,
+    "person": "Martin",
+    "text": " We'll talk about some speculation about the future, but really we don't know."
+  },
+  {
+    "startTime": 327.46,
+    "person": "Martin",
+    "text": " And that's the strongest thing that I want to bring out is we don't know and nobody knows."
+  },
+  { "startTime": 332.78, "person": "Mathias", "text": " Fair to say." },
+  {
+    "startTime": 334.16,
+    "person": "Mathias",
+    "text": " Well, I don't like to speculate either, although, well, I enjoy doing it, but I don't like having done it because you're always proven wrong, of course."
+  },
+  {
+    "startTime": 343.18,
+    "person": "Mathias",
+    "text": " What I do like to do is look at, you know, what existing philosophy do we have?"
+  },
+  { "startTime": 347.86, "person": "Mathias", "text": " What have we seen in history?" },
+  {
+    "startTime": 349.08,
+    "person": "Mathias",
+    "text": " What are patterns that are maybe repeating?"
+  },
+  {
+    "startTime": 352.42,
+    "person": "Mathias",
+    "text": " Can they help us prepare for the unknown?"
+  },
+  {
+    "startTime": 356.68,
+    "person": "Mathias",
+    "text": " So that's sort of the angle I would love to explore a bit with all of you."
+  },
+  { "startTime": 361.46, "person": "Mathias", "text": " OK." },
+  {
+    "startTime": 363.52,
+    "person": "Xin",
+    "text": " So for me, I want to take a more pragmatic angle in this transition phase."
+  },
+  {
+    "startTime": 370.56,
+    "person": "Xin",
+    "text": " I personally believe we still need design if design can."
+  },
+  { "startTime": 375.54, "person": "Xin", "text": " How do we define design?" },
+  {
+    "startTime": 378.1,
+    "person": "Xin",
+    "text": " In my training courses, I tend to describe design as the sort of the intentional formation of purposeful systems."
+  },
+  {
+    "startTime": 390.14,
+    "person": "Xin",
+    "text": " And in this age, I mean, we have a lot of productivity gains."
+  },
+  {
+    "startTime": 395.18,
+    "person": "Xin",
+    "text": " We all know that a lot of companies have started using the LLMs to generate code and to help us with a lot of our analytical thinking and so forth."
+  },
+  {
+    "startTime": 406.16,
+    "person": "Xin",
+    "text": " And code is potentially being produced at a faster pace than the human comprehension can keep up."
+  },
+  {
+    "startTime": 415.82,
+    "person": "Xin",
+    "text": " So design thinking, so coming back to DDD+, so how do we produce software in a way so that we can still sort of divide and conquer and can still mess things up in small contexts without having systemic impact?"
+  },
+  {
+    "startTime": 435.28,
+    "person": "Xin",
+    "text": " I think design from that sense is still relevant in this transition phase, and it can help us navigate a lot of the current challenges."
+  },
+  {
+    "startTime": 444.22,
+    "person": "Xin",
+    "text": " We're not able to articulate so clearly in the AI space yet."
+  },
+  {
+    "startTime": 449.64,
+    "person": "Martin",
+    "text": " It strikes me that there are two kind of hypotheses as to where this is going."
+  },
+  {
+    "startTime": 454.4,
+    "person": "Martin",
+    "text": " One is that the AI will be such an incredibly clever galaxy brain thing that it doesn't matter how much spaghetti is produced by it or its earlier versions of it, because the future, it will be just so clever, it will figure it all out."
+  },
+  {
+    "startTime": 469.22,
+    "person": "Martin",
+    "text": " But then there's another hypothesis that Laura Tacko beautifully described as saying the intersection, the Diven diagram of developer experience and agent experience is a circle."
+  },
+  {
+    "startTime": 483,
+    "person": "Martin",
+    "text": " It means that the same things that we need to make software understandable for humans are the things that LLMs need to find."
+  },
+  {
+    "startTime": 489.84,
+    "person": "Martin",
+    "text": " So well-constructed modular software, all the kinds of things that we do to make humans work, actually makes the agents more effective as well."
+  },
+  { "startTime": 497.56, "person": "Martin", "text": " So how they can understand the software." },
+  {
+    "startTime": 500.46,
+    "person": "Martin",
+    "text": " And we've got to bear in mind, you know, tokens are not infinite."
+  },
+  {
+    "startTime": 504.32,
+    "person": "Martin",
+    "text": " So to do this efficiently and effectively, we need to actually use exactly the same kind of design principles we use for humans, because after all, they're trained on our writing."
+  },
+  {
+    "startTime": 514.4,
+    "person": "Andrew",
+    "text": " Yeah, there's a phrase that one of our Martin and I's colleagues, Keith Morris, keeps saying."
+  },
+  {
+    "startTime": 519.86,
+    "person": "Andrew",
+    "text": " So he's been fiddling around a lot with agents and LLMs, et cetera, in his area, which is infrastructure, but it kind of holds true."
+  },
+  {
+    "startTime": 528.88,
+    "person": "Andrew",
+    "text": " And his big experience is you'll see the output of an agent and his first reaction will be, I've worked with that developer."
+  },
+  {
+    "startTime": 534,
+    "person": "Andrew",
+    "text": " Because it'll do something like, so for Keith, he'll be like, right, we have a mutable infrastructure."
+  },
+  {
+    "startTime": 539.08,
+    "person": "Andrew",
+    "text": " So therefore, the way to change infrastructure is you have to make a change to a Terraform file."
+  },
+  {
+    "startTime": 542.46,
+    "person": "Andrew",
+    "text": " You push it into source control and then some build runs and updates the infrastructure."
+  },
+  {
+    "startTime": 546.02,
+    "person": "Andrew",
+    "text": " And then it will go and automatically like directly change some configuration value on infrastructure."
+  },
+  {
+    "startTime": 551.02,
+    "person": "Andrew",
+    "text": " And Keith's like, I've worked with the developer."
+  },
+  {
+    "startTime": 552.64,
+    "person": "Andrew",
+    "text": " He's like, it's definitely faster to just SSH into a box and change something."
+  },
+  {
+    "startTime": 557.08,
+    "person": "Andrew",
+    "text": " And like Martin said, I think we'll see that, right, because it's trained on us."
+  },
+  {
+    "startTime": 560.48,
+    "person": "Andrew",
+    "text": " And maybe not the best bits of us or the bits that we're proud of."
+  },
+  { "startTime": 563.24, "person": "Andrew", "text": " It'll be the messy bits." },
+  {
+    "startTime": 565.08,
+    "person": "Andrew",
+    "text": " Looking at the outputs, I see that LLMs amaze people, but mostly people who are not experts at what they're asking LLMs to provide."
+  },
+  {
+    "startTime": 575.64,
+    "person": "Andrew",
+    "text": " So it's the gentleman amnesia effect all over again."
+  },
+  { "startTime": 578.18, "person": "Andrew", "text": " Pretty much." },
+  {
+    "startTime": 580.12,
+    "person": "Andrew",
+    "text": " So I utilise LLMs all the times for the things I have no expertise in because I need to get them done."
+  },
+  {
+    "startTime": 585.86,
+    "person": "Andrew",
+    "text": " And I don't have the time in the day to do all the research to learn it properly."
+  },
+  { "startTime": 589.58, "person": "Andrew", "text": " I just need them done." },
+  { "startTime": 590.86, "person": "Andrew", "text": " And that works marvellously." },
+  {
+    "startTime": 592.48,
+    "person": "Andrew",
+    "text": " So if I need to, for example, figure out how to work any marketing stuff, let's deal social media, how to deal with social media, how to make myself a campaign."
+  },
+  { "startTime": 602.86, "person": "Andrew", "text": " Yeah, works peachy." },
+  {
+    "startTime": 603.84,
+    "person": "Andrew",
+    "text": " If I need to ask it, at this moment I utilise mostly the Gemini Google LLM due to licences."
+  },
+  {
+    "startTime": 612.72,
+    "person": "Andrew",
+    "text": " So if I ask that LLM about anything from Google portfolio, yeah, it works peachy."
+  },
+  {
+    "startTime": 617.24,
+    "person": "Andrew",
+    "text": " It has access to all the documentation and it gives me the right answers that I'm looking for."
+  },
+  { "startTime": 622.46, "person": "Andrew", "text": " Sometimes." },
+  { "startTime": 623.82, "person": "Andrew", "text": " Not all the time." },
+  {
+    "startTime": 625.16,
+    "person": "Andrew",
+    "text": " But I found it amazing for Google Scripts."
+  },
+  {
+    "startTime": 627.48,
+    "person": "Andrew",
+    "text": " It works fantastically with the repositories of the documentation that it has, examples of code."
+  },
+  { "startTime": 632.56, "person": "Andrew", "text": " Yeah, it works." },
+  {
+    "startTime": 635.04,
+    "person": "Andrew",
+    "text": " If I would ask an LLM about my particular field, which is integration architecture, I get only gibberish and hallucination."
+  },
+  {
+    "startTime": 643.86,
+    "person": "Andrew",
+    "text": " Because LLM was not, any LLM was not trained on anything integration architecture because there are no sources for that."
+  },
+  {
+    "startTime": 650.28,
+    "person": "Andrew",
+    "text": " And so goes for all the other areas of expertise that have no public sources or are just too niche for those companies to train the models on."
+  },
+  {
+    "startTime": 659.32,
+    "person": "Andrew",
+    "text": " And that requires even more work to get there."
+  },
+  { "startTime": 664.3, "person": "Martin", "text": " Well, yeah." },
+  {
+    "startTime": 665.08,
+    "person": "Martin",
+    "text": " I mean, but the thing is you can get them there."
+  },
+  { "startTime": 667.38, "person": "Martin", "text": " Yeah, you can." },
+  {
+    "startTime": 667.88,
+    "person": "Martin",
+    "text": " We've got a very good example of a project that occurred."
+  },
+  { "startTime": 671.28, "person": "Martin", "text": " I wasn't involved in it." },
+  {
+    "startTime": 673.32,
+    "person": "Martin",
+    "text": " ThoughtWorks did with the pharmaceutical effort."
+  },
+  {
+    "startTime": 678.84,
+    "person": "Martin",
+    "text": " And basically what they wanted was that they have a huge amount of information stashed in PDFs of drug trials going back decades."
+  },
+  { "startTime": 687.66, "person": "Martin", "text": " And it's PDFs." },
+  {
+    "startTime": 689.6,
+    "person": "Martin",
+    "text": " Now, there's really valuable data in a table in a PDF."
+  },
+  { "startTime": 693.66, "person": "Martin", "text": " How do you get at that information?" },
+  {
+    "startTime": 695.72,
+    "person": "Martin",
+    "text": " It takes a long time to go through the file."
+  },
+  {
+    "startTime": 697.82,
+    "person": "Martin",
+    "text": " Well, built an LLM-based tool, does the typical RAG kind of stuff, vector indexes and word indexes and puts a clever little front end onto it that does the chat-like interface to allow researchers to query this big hunk of PDFs and get information out of it."
+  },
+  {
+    "startTime": 714.14,
+    "person": "Martin",
+    "text": " Now, in that case, no, the LLM is not trained on it formally, but you can provide it with the corpus of information that it can actually produce and produce really good results from that."
+  },
+  {
+    "startTime": 725.82,
+    "person": "Martin",
+    "text": " And I would say one of the prime values that we know LLMs are effective and that have been for the last couple of years, because this has actually been running for a couple of years, this project, is dealing with large amounts of unstructured information."
+  },
+  {
+    "startTime": 739.4,
+    "person": "Martin",
+    "text": " If you set it up, if you build the necessary things to give them access to."
+  },
+  { "startTime": 743.4, "person": "Martin", "text": " It's not straight out of the box." },
+  {
+    "startTime": 745.36,
+    "person": "Martin",
+    "text": " It takes work to set that stuff up, but it can be quite effective when it's done."
+  },
+  {
+    "startTime": 749.68,
+    "person": "Mathias",
+    "text": " And that will probably get a lot easier in the future as well."
+  },
+  { "startTime": 752.14, "person": "Mathias", "text": " You do not have to do all the work." },
+  {
+    "startTime": 754.86,
+    "person": "Mathias",
+    "text": " But going back to design and what you said earlier, of course, we don't know what will happen."
+  },
+  {
+    "startTime": 761.04,
+    "person": "Mathias",
+    "text": " We know something about design and the nature of design."
+  },
+  {
+    "startTime": 764.36,
+    "person": "Mathias",
+    "text": " And I very much like the definition by Billy von Kohn."
+  },
+  {
+    "startTime": 767.38,
+    "person": "Mathias",
+    "text": " It's called the definition of the engineering methods."
+  },
+  {
+    "startTime": 769.78,
+    "person": "Mathias",
+    "text": " Same as you have a definition of the scientific methods, which is empirical, et cetera."
+  },
+  {
+    "startTime": 775.68,
+    "person": "Mathias",
+    "text": " In the engineering method, he says you use heuristics to make an impactful change on your environment, in an environment that is ill understood, and you have limited resources."
+  },
+  {
+    "startTime": 789.52,
+    "person": "Mathias",
+    "text": " So if we break this down in the age of AI, will we still want to make a meaningful impact on our environment to improve things?"
+  },
+  { "startTime": 798.06, "person": "Mathias", "text": " I'm pretty sure we will, right?" },
+  { "startTime": 800.36, "person": "Mathias", "text": " Hopefully." },
+  { "startTime": 800.9, "person": "Mathias", "text": " Hopefully." },
+  {
+    "startTime": 801.78,
+    "person": "Mathias",
+    "text": " Unless we're all hooked up to the matrix machine and service batteries."
+  },
+  { "startTime": 805.96, "person": "Mathias", "text": " That's another thing." },
+  { "startTime": 807.04, "person": "Mathias", "text": " That's another thing." },
+  {
+    "startTime": 809.44,
+    "person": "Mathias",
+    "text": " Is it still an ill understood environment?"
+  },
+  {
+    "startTime": 813.04,
+    "person": "Mathias",
+    "text": " Because all engineering is like that, right?"
+  },
+  {
+    "startTime": 814.74,
+    "person": "Mathias",
+    "text": " You don't know everything up to the atom or even lower."
+  },
+  {
+    "startTime": 819.1,
+    "person": "Mathias",
+    "text": " You build a bridge based on this stuff we know about materials and structural integrity and all these things."
+  },
+  {
+    "startTime": 827.16,
+    "person": "Mathias",
+    "text": " You cannot guarantee black and white that this bridge will serve its purpose forever."
+  },
+  {
+    "startTime": 833.68,
+    "person": "Mathias",
+    "text": " And this is true in any kind of engineering."
+  },
+  {
+    "startTime": 836.52,
+    "person": "Mathias",
+    "text": " In AI, for example, right now, prompt engineering is a good example."
+  },
+  {
+    "startTime": 841.02,
+    "person": "Mathias",
+    "text": " Because what you're really doing is trying to improve text that will be converted to numbers, that will be fed into a huge database of numbers."
+  },
+  {
+    "startTime": 850.74,
+    "person": "Mathias",
+    "text": " Some numbers will come out and they will be turned into text again."
+  },
+  {
+    "startTime": 854.08,
+    "person": "Mathias",
+    "text": " Nobody, I would say in this room, but anywhere in the world understands this whole box of numbers."
+  },
+  {
+    "startTime": 860.18,
+    "person": "Andrew",
+    "text": " Even the producers of the models don't understand it fully."
+  },
+  { "startTime": 863.66, "person": "Mathias", "text": " Yes." },
+  {
+    "startTime": 863.82,
+    "person": "Andrew",
+    "text": " I ran into a quote literally today on LinkedIn that there was a quote from somebody that we don't really understand what's going on inside those black boxes."
+  },
+  { "startTime": 871.04, "person": "Andrew", "text": " We're literally dealing with black boxes." },
+  {
+    "startTime": 872.56,
+    "person": "Mathias",
+    "text": " And the reason we build it is to do things that are beyond what the human brain can do, of course."
+  },
+  {
+    "startTime": 878.28,
+    "person": "Mathias",
+    "text": " Like reading thousands of PDFs and structuring them."
+  },
+  { "startTime": 882.64, "person": "Mathias", "text": " So it's kind of the point." },
+  { "startTime": 885.02, "person": "Mathias", "text": " It's not just a side effect." },
+  { "startTime": 887.5, "person": "Mathias", "text": " I would say it's the goal of the system." },
+  {
+    "startTime": 889.66,
+    "person": "Mathias",
+    "text": " So we are moving in a nil understood environment."
+  },
+  {
+    "startTime": 895.2,
+    "person": "Mathias",
+    "text": " Not just the environment that we're trying to change, but also the tools we use to change it."
+  },
+  { "startTime": 901.42, "person": "Mathias", "text": " We have limited resources." },
+  { "startTime": 902.76, "person": "Mathias", "text": " Of course, now that would be tokens." },
+  {
+    "startTime": 905.48,
+    "person": "Mathias",
+    "text": " But we don't know at this point if the economy can support the AI boom."
+  },
+  {
+    "startTime": 914.42,
+    "person": "Mathias",
+    "text": " We may see huge failures when they all try to do big IPOs."
+  },
+  {
+    "startTime": 919.06,
+    "person": "Mathias",
+    "text": " And it turns out there's not enough money for that or to pay back all the investments that they have been doing."
+  },
+  {
+    "startTime": 925.24,
+    "person": "Mathias",
+    "text": " And of course, we don't even know if the planet will be able to support the energy and water use."
+  },
+  {
+    "startTime": 930.1,
+    "person": "Mathias",
+    "text": " So there's a lot of obvious limited resources here."
+  },
+  { "startTime": 934.48, "person": "Mathias", "text": " Are we using heuristics?" },
+  {
+    "startTime": 935.74,
+    "person": "Mathias",
+    "text": " Yes, because if we don't understand how any of this really works, then all of prompt engineering is heuristical."
+  },
+  {
+    "startTime": 942.9,
+    "person": "Mathias",
+    "text": " We seem to think, based on experience and talking to other people and learning what they do, that this seems to work."
+  },
+  {
+    "startTime": 951.74,
+    "person": "Mathias",
+    "text": " But then a new model comes, and maybe that has already changed."
+  },
+  {
+    "startTime": 955.2,
+    "person": "Mathias",
+    "text": " And now you can use an LLM to produce prompts for you, which are based on the knowledge that they have."
+  },
+  {
+    "startTime": 963.82,
+    "person": "Mathias",
+    "text": " Which is everything everyone else has written about prompt engineering."
+  },
+  {
+    "startTime": 967.54,
+    "person": "Mathias",
+    "text": " So will we not need prompt engineering at some point?"
+  },
+  { "startTime": 970.68, "person": "Mathias", "text": " Possibly." },
+  {
+    "startTime": 971.16,
+    "person": "Mathias",
+    "text": " But then there will be a higher layer of abstractions of where we will need to approach it with heuristics."
+  },
+  { "startTime": 978.52, "person": "Mathias", "text": " So I agree that we don't know." },
+  {
+    "startTime": 981.58,
+    "person": "Mathias",
+    "text": " But if we look backwards, the entire history of humankind has been solving things with engineering under any other name."
+  },
+  {
+    "startTime": 992.06,
+    "person": "Mathias",
+    "text": " The science has always followed the engineering."
+  },
+  {
+    "startTime": 994.78,
+    "person": "Mathias",
+    "text": " The insight has always followed the engineering."
+  },
+  {
+    "startTime": 997.02,
+    "person": "Mathias",
+    "text": " Why does this building stand and not that one?"
+  },
+  { "startTime": 1000.9, "person": "Mathias", "text": " That didn't start from science." },
+  {
+    "startTime": 1002.96,
+    "person": "Mathias",
+    "text": " You just observed that this seems to work."
+  },
+  {
+    "startTime": 1005.68,
+    "person": "Mathias",
+    "text": " So as long as we have agency ourselves, we will want to do design."
+  },
+  {
+    "startTime": 1013.24,
+    "person": "Mathias",
+    "text": " What is the amount of design we'll still be doing?"
+  },
+  {
+    "startTime": 1015.72,
+    "person": "Mathias",
+    "text": " Will it be so high level that it doesn't feel like design anymore?"
+  },
+  { "startTime": 1020.92, "person": "Mathias", "text": " Which is already happening, right?" },
+  {
+    "startTime": 1022.78,
+    "person": "Mathias",
+    "text": " Just prompting something doesn't feel like designing, but you're still trying to manipulate an outcome."
+  },
+  {
+    "startTime": 1029.579,
+    "person": "Mathias",
+    "text": " So I think we don't have to worry about design not being relevant, but what kind of design."
+  },
+  {
+    "startTime": 1038.26,
+    "person": "Andrew",
+    "text": " And then this will probably crash into the world of feasibility in that sense."
+  },
+  { "startTime": 1043.359, "person": "Mathias", "text": " That too, right?" },
+  {
+    "startTime": 1044.02,
+    "person": "Mathias",
+    "text": " Is the sort of design that we want to do becoming easier, but we will demand more and will we still be able to do it?"
+  },
+  {
+    "startTime": 1055.02,
+    "person": "Mathias",
+    "text": " And will the AI and the planet be able to support our ambitions?"
+  },
+  {
+    "startTime": 1065.03,
+    "person": "Xin",
+    "text": " So a lot of times I think design can be in a way supported by the LLMs like prototyping."
+  },
+  {
+    "startTime": 1074.51,
+    "person": "Xin",
+    "text": " If we design for the complex rather than complicated domains, where, you know, let's say in DTG, almost the mantra is to go user first, lead with the why."
+  },
+  {
+    "startTime": 1091.13,
+    "person": "Xin",
+    "text": " And in that space, when there are human interaction, when the human-machine interaction is involved, a lot of things are not that easy to standardise."
+  },
+  {
+    "startTime": 1100.69,
+    "person": "Xin",
+    "text": " We are not able to containerise the human need, basically, the perception of what is that human need."
+  },
+  {
+    "startTime": 1111.71,
+    "person": "Xin",
+    "text": " In many ways, design is about predicting the future because we are thinking that, OK, this piece of software, we want to go about it this way with our best intention."
+  },
+  {
+    "startTime": 1122.67,
+    "person": "Xin",
+    "text": " But until that software is going to reality, meets the user in the context with the affordance or not, we don't know what kind of effect is that."
+  },
+  {
+    "startTime": 1133.95,
+    "person": "Xin",
+    "text": " So that kind of complexity, I often wonder how do we feed the complex business context into an engineering pipeline?"
+  },
+  {
+    "startTime": 1144.69,
+    "person": "Xin",
+    "text": " It seems that prior to the AI age, we talked a lot about the difference between complex and complicated domains."
+  },
+  {
+    "startTime": 1153.89,
+    "person": "Xin",
+    "text": " And right now, everything is about engineering."
+  },
+  {
+    "startTime": 1156.07,
+    "person": "Xin",
+    "text": " Like engineering is probably the execution part of design and it's not really design itself."
+  },
+  {
+    "startTime": 1163.91,
+    "person": "Xin",
+    "text": " I just want to say that I also think design should be about systems."
+  },
+  { "startTime": 1170.09, "person": "Xin", "text": " It's also about me as a system." },
+  {
+    "startTime": 1171.83,
+    "person": "Xin",
+    "text": " So right now, I just feel in my work with a lot of teams, there's so much fear."
+  },
+  {
+    "startTime": 1177.99,
+    "person": "Xin",
+    "text": " Like these systems, these biological systems are going through a fear cycle."
+  },
+  {
+    "startTime": 1183.03,
+    "person": "Xin",
+    "text": " And I think it's because knowledge is being commoditised."
+  },
+  { "startTime": 1186.43, "person": "Xin", "text": " Oh, let me be precise." },
+  {
+    "startTime": 1187.65,
+    "person": "Xin",
+    "text": " I think it's the transactional knowledge that is being commoditised, whereas relational knowledge keeps being a complex domain."
+  },
+  {
+    "startTime": 1197.23,
+    "person": "Xin",
+    "text": " And I feel the teams, like if you fear that, okay, if I don't get the best AI skills, I might be the one being made redundant."
+  },
+  {
+    "startTime": 1210.05,
+    "person": "Xin",
+    "text": " And then the choices, the design choices you made either in modernising a legacy systems or making a greenfield system will be drastically different than if you feel free and light and inspired and collaborative with the others."
+  },
+  {
+    "startTime": 1226.17,
+    "person": "Xin",
+    "text": " Right now, people tend to see each other also as a little bit of a threat."
+  },
+  {
+    "startTime": 1231.13,
+    "person": "Xin",
+    "text": " The fear response is basically fight, flight, freeze, or feed, feed with more LLM hours."
+  },
+  {
+    "startTime": 1239.79,
+    "person": "Xin",
+    "text": " And so I think design should be, I don't know, our design thinking needs to be broadened a lot more in the problem state."
+  },
+  {
+    "startTime": 1247.17,
+    "person": "Xin",
+    "text": " So we need to diverge more and converge more as well in the LLM space because it's non-deterministic in that."
+  },
+  { "startTime": 1254.55, "person": "Xin", "text": " It's very fascinating." },
+  {
+    "startTime": 1256.29,
+    "person": "Xin",
+    "text": " And I see a polarisation between fear-based thinking and this AI hype of, you know, we can just do everything."
+  },
+  {
+    "startTime": 1262.87,
+    "person": "Xin",
+    "text": " We can just delegate design and engineering everything to the AI now."
+  },
+  {
+    "startTime": 1267.43,
+    "person": "Andrew",
+    "text": " I think on that, I think that the human aspect, the human condition in all of this is one of the points that we subconsciously omit."
+  },
+  {
+    "startTime": 1278.25,
+    "person": "Andrew",
+    "text": " While it is, I think, at this point, the most important aspect, because even before AI, people have problems expressing what they actually need."
+  },
+  {
+    "startTime": 1288.41,
+    "person": "Andrew",
+    "text": " They could express what they want, not entirely what they need."
+  },
+  {
+    "startTime": 1291.77,
+    "person": "Andrew",
+    "text": " And it was up to other people to grasp the context, figure it out and actually deliver what is needed, not what is wanted."
+  },
+  {
+    "startTime": 1300.31,
+    "person": "Andrew",
+    "text": " And if we deliver what is wanted, then it's usually, unfortunately, a failure."
+  },
+  { "startTime": 1304.57, "person": "Andrew", "text": " Right." },
+  {
+    "startTime": 1304.67,
+    "person": "Andrew",
+    "text": " And then if the aspect of human relationships is so disturbed by the current changes, it's harder and harder for us to grasp that context."
+  },
+  {
+    "startTime": 1317.59,
+    "person": "Andrew",
+    "text": " And we were already very bad at a given context because we assume context all the time because we have our mental models that assume context rather than build context consciously."
+  },
+  {
+    "startTime": 1327.41,
+    "person": "Andrew",
+    "text": " And now we're working with tools that require a lot more context than human beings."
+  },
+  {
+    "startTime": 1332.81,
+    "person": "Andrew",
+    "text": " And we're struggling at learning how to provide context."
+  },
+  {
+    "startTime": 1337.73,
+    "person": "Andrew",
+    "text": " I think that was one of the first learnings when I started using LLMs is that the less context I provide, the worse output I get."
+  },
+  {
+    "startTime": 1346.37,
+    "person": "Andrew",
+    "text": " And I realised that I've been doing that all my life in relationships with humans, that if I didn't provide context, I had terrible conversations."
+  },
+  {
+    "startTime": 1354.01,
+    "person": "Andrew",
+    "text": " But the more context, the more common dictionaries we build, the more understanding we build, the better those conversations were and the better the understanding was."
+  },
+  {
+    "startTime": 1364.95,
+    "person": "Andrew",
+    "text": " And now with all this fear, with developers being scared for the jobs, with architects, some being scared for the jobs."
+  },
+  { "startTime": 1372.01, "person": "Xin", "text": " And product managers." },
+  {
+    "startTime": 1372.83,
+    "person": "Andrew",
+    "text": " Product managers, designers, all sorts of other professionals, not limiting to IT because LLMs touch upon so many professions right now."
+  },
+  {
+    "startTime": 1385.21,
+    "person": "Andrew",
+    "text": " We see LLMs being used by doctors, we see LLMs being used by artists, we see LLMs being used by musicians."
+  },
+  { "startTime": 1394.01, "person": "Andrew", "text": " Is that good, bad?" },
+  { "startTime": 1397.25, "person": "Andrew", "text": " Like you stated, Martin, we don't know." },
+  {
+    "startTime": 1399.21,
+    "person": "Andrew",
+    "text": " We will see probably in some time that we have no idea of predicting how this will turn out."
+  },
+  {
+    "startTime": 1405.99,
+    "person": "Martin",
+    "text": " Yeah, the point about context is sort of echoes a set of articles that Rahul Garg published on my site recently where he says, really what we're doing is providing these documents that are exactly the same as we do with human collaborators."
+  },
+  {
+    "startTime": 1423.49,
+    "person": "Martin",
+    "text": " But we write them down and put them in the source code repository so that the LLM can read them."
+  },
+  {
+    "startTime": 1427.75,
+    "person": "Martin",
+    "text": " With the great advantage, of course, that the LLM will actually read the documents."
+  },
+  {
+    "startTime": 1434.21,
+    "person": "Mathias",
+    "text": " But the fear is, so you said, is this bad?"
+  },
+  { "startTime": 1437.73, "person": "Mathias", "text": " Is this revolution going to be bad?" },
+  {
+    "startTime": 1440.65,
+    "person": "Mathias",
+    "text": " We have to ask bad for me or bad for all of us on the planet."
+  },
+  {
+    "startTime": 1446.87,
+    "person": "Mathias",
+    "text": " Because a lot of times the question is not like here, your podcast, the future of design."
+  },
+  {
+    "startTime": 1453.57,
+    "person": "Mathias",
+    "text": " It's the future of my job as a designer or a lawyer or all humans have loss aversion as a strong origin of fear."
+  },
+  {
+    "startTime": 1463.27,
+    "person": "Mathias",
+    "text": " It's the fear of losing something which is usually either wealth or status or power or one of the many variations of those three."
+  },
+  {
+    "startTime": 1474.49,
+    "person": "Mathias",
+    "text": " And yeah, there is, of course, a huge risk that we will all lose our jobs and that we will all lose power to a few billionaires who will own it."
+  },
+  {
+    "startTime": 1487.57,
+    "person": "Mathias",
+    "text": " And status as sort of a consequence of, you know, we attach in the capitalist system, we attach our value to our job and our status."
+  },
+  {
+    "startTime": 1495.45,
+    "person": "Mathias",
+    "text": " And so, yeah, it's normal for all of us to be very afraid of all that."
+  },
+  {
+    "startTime": 1502.27,
+    "person": "Mathias",
+    "text": " The exercise is seeing if despite all of this, is there a bigger benefit that warrants this?"
+  },
+  {
+    "startTime": 1511.21,
+    "person": "Mathias",
+    "text": " Or is it really just this that we all lose everything and there's nothing left?"
+  },
+  {
+    "startTime": 1516.35,
+    "person": "Mathias",
+    "text": " So it's, yeah, it's not just the future of design, it's the future of mankind, humankind."
+  },
+  { "startTime": 1525.84, "person": "Mathias", "text": " I didn't want to depress anyone." },
+  { "startTime": 1529.16, "person": "Andrew", "text": " Fair." },
+  {
+    "startTime": 1530.48,
+    "person": "Andrew",
+    "text": " But the fear is pretty much everywhere nowadays in that sense."
+  },
+  { "startTime": 1536.4, "person": "Andrew", "text": " It's very hard to get rid of." },
+  {
+    "startTime": 1538.1,
+    "person": "Andrew",
+    "text": " It's kind of back of the head in that sense, right?"
+  },
+  {
+    "startTime": 1540.6,
+    "person": "Xin",
+    "text": " But it's also, I don't know, Martin, you know this more than you have more data and your company is going out and helping a lot of really large global clients to navigate this challenge."
+  },
+  {
+    "startTime": 1553.48,
+    "person": "Xin",
+    "text": " I'm just thinking there's a big, just like the earlier service orientation, all these platforms and there is a big industry for harness engineering and platforming around this."
+  },
+  {
+    "startTime": 1565.34,
+    "person": "Xin",
+    "text": " And I hear, I see that in the comments, people are like saying that you guys are just making these things overly complex."
+  },
+  {
+    "startTime": 1571.82,
+    "person": "Xin",
+    "text": " I think there's also a commercial, like there are some people who are probably trying to ride this wave and make it more complex than it actually is."
+  },
+  {
+    "startTime": 1581.96,
+    "person": "Xin",
+    "text": " And to make some tooling and to make some things that, to, I don't know, to have a monopoly, in a way to monopoly around this space, rather than making it a more democratically available space to navigate."
+  },
+  {
+    "startTime": 1602.32,
+    "person": "Xin",
+    "text": " It's just like putting more people in the fear grave and see, okay, we can't afford this, we can't, these big methodologies."
+  },
+  {
+    "startTime": 1610.14,
+    "person": "Xin",
+    "text": " So I just wonder, Martin, what's your view on this huge growing industry of, you know, harness engineering, this engineering and AI-assisted pipeline being commercialised and being maybe also on the profit-driven side?"
+  },
+  {
+    "startTime": 1626.74,
+    "person": "Martin",
+    "text": " Yeah, well, I mean, yes, there's fears of change there and well-founded."
+  },
+  { "startTime": 1632.84, "person": "Speaker 6", "text": " Yeah." },
+  {
+    "startTime": 1633.2,
+    "person": "Martin",
+    "text": " To make it clear that that's understandable."
+  },
+  {
+    "startTime": 1635.46,
+    "person": "Martin",
+    "text": " But also a lot of excitement as to new possibilities."
+  },
+  { "startTime": 1638.22, "person": "Martin", "text": " Yes." },
+  {
+    "startTime": 1638.74,
+    "person": "Martin",
+    "text": " I mean, the people that I talk to that are kind of interested, they say, we can, with these kinds of tools, we can do much more."
+  },
+  {
+    "startTime": 1646.64,
+    "person": "Martin",
+    "text": " People who aren't software developers can do things."
+  },
+  {
+    "startTime": 1650.48,
+    "person": "Martin",
+    "text": " I mean, they could always do interesting things with spreadsheets, but they now have the ability to go with much more capable tools potentially."
+  },
+  {
+    "startTime": 1658.72,
+    "person": "Martin",
+    "text": " Now, there's dangers with that kind of bytecoding, of course, as we're quite aware of, but there's also great potential."
+  },
+  {
+    "startTime": 1664.5,
+    "person": "Martin",
+    "text": " And the professional software developers, again and again, I talk to people saying, you know, really experienced developers."
+  },
+  {
+    "startTime": 1670.9,
+    "person": "Martin",
+    "text": " I mean, people like Eric Evans, like Kent Beck, like Craig Dave Thomas, who say, I'm having more excitement and enjoyment out of programming now than I've had for years because I can do so much more with these tools."
+  },
+  { "startTime": 1684.34, "person": "Martin", "text": " These tools amplify my capabilities." },
+  {
+    "startTime": 1686.94,
+    "person": "Martin",
+    "text": " And so, I mean, I'm seeing, you know, yeah, there's a mix of fear, but also a very genuine excitement."
+  },
+  {
+    "startTime": 1693.06,
+    "person": "Martin",
+    "text": " And excitement that's not blinded excitement."
+  },
+  { "startTime": 1696.56, "person": "Martin", "text": " I mean, we're very aware of this." },
+  {
+    "startTime": 1698.74,
+    "person": "Martin",
+    "text": " This is a very powerful technology, and all powerful technologies can yield a lot of danger as well as a lot of potential."
+  },
+  {
+    "startTime": 1706.14,
+    "person": "Martin",
+    "text": " But it's about, well, we've got a desire to dive in and explore, because if you don't do that, you're not going to have a hand in shaping where it goes."
+  },
+  { "startTime": 1716.16, "person": "Andrew", "text": " Yeah, it's really interesting." },
+  {
+    "startTime": 1717.56,
+    "person": "Andrew",
+    "text": " Like, yeah, just to kind of extend that a little bit."
+  },
+  { "startTime": 1719.66, "person": "Andrew", "text": " It's interesting to me." },
+  {
+    "startTime": 1720.94,
+    "person": "Andrew",
+    "text": " So, I've done, the client I'm with at the moment, our core national infrastructure."
+  },
+  {
+    "startTime": 1724.84,
+    "person": "Andrew",
+    "text": " So, they're like, definitely, please do not use any of this stuff, because we don't want, like, information to leak out accidentally."
+  },
+  {
+    "startTime": 1730.52,
+    "person": "Andrew",
+    "text": " That's what most of my experience has been me fiddling around."
+  },
+  { "startTime": 1733.76, "person": "Andrew", "text": " Kind of taking what Martin said." },
+  {
+    "startTime": 1735.82,
+    "person": "Andrew",
+    "text": " As someone who's, my first degree was in psychology with a side hustle in neural networks in 1997, which is now kind of, what I did in 1997 has now grown arms and legs."
+  },
+  {
+    "startTime": 1745.88,
+    "person": "Andrew",
+    "text": " The fact that this can feed into, like, the dopamine rewards, like, it was interesting to me that you would think that the things we enjoyed as developers, that we liked, you know, there's the interaction, there's the cycle of, like, we have a thought, we turn it into code, then the compiler runs and tells us whether it works or not, and we deploy, maybe."
+  },
+  {
+    "startTime": 1763.98,
+    "person": "Andrew",
+    "text": " I thought lots of the LLMs would kind of remove the dopamine reward cycle, and so we wouldn't be hooked."
+  },
+  { "startTime": 1768.06, "person": "Andrew", "text": " But it's really interesting." },
+  { "startTime": 1768.96, "person": "Andrew", "text": " Like, you can still get that hit." },
+  {
+    "startTime": 1770.9,
+    "person": "Andrew",
+    "text": " Even without physically writing, you know, like, public static void main and then pressing the compiler and stuff."
+  },
+  {
+    "startTime": 1775.8,
+    "person": "Andrew",
+    "text": " And I think that's another, it's an interesting dynamic that, like you said, it's not just broadening and democratising some of this stuff."
+  },
+  {
+    "startTime": 1782.82,
+    "person": "Andrew",
+    "text": " It's making, it's a lot more exciting in a lot of ways if you're, if you kind of shout the terror at the same time."
+  },
+  {
+    "startTime": 1788.98,
+    "person": "Mathias",
+    "text": " I think that's very biassed to people in tech who are at the forefront of all of this."
+  },
+  {
+    "startTime": 1793.98,
+    "person": "Mathias",
+    "text": " For most people, I think we're going to the same thing that Mark described, basically, that people get removed from the actual skill."
+  },
+  {
+    "startTime": 1804.52,
+    "person": "Mathias",
+    "text": " They are simply becoming a cog in the machine telling something to do something, but they have no bond with the thing they created or built."
+  },
+  {
+    "startTime": 1814.26,
+    "person": "Mathias",
+    "text": " It's just, we become, and then we are already in the phase where it's machines telling humans to do the next, you know, do this thing, screw in this screw, basically, right?"
+  },
+  {
+    "startTime": 1825,
+    "person": "Mathias",
+    "text": " There's no, for most people, except for, you know, this privileged group of tech people, it will not be the dopamine hit."
+  },
+  { "startTime": 1835.78, "person": "Mathias", "text": " It will be the separation." },
+  {
+    "startTime": 1837.48,
+    "person": "Andrew",
+    "text": " And they all become hooked on the dopamine hit as well."
+  },
+  {
+    "startTime": 1840,
+    "person": "Andrew",
+    "text": " Furthermore, we already have studies on cognitive load."
+  },
+  {
+    "startTime": 1843.42,
+    "person": "Andrew",
+    "text": " Dr. Laura Weiss, lots of really great posts and research on the topic of cognitive load."
+  },
+  {
+    "startTime": 1848.42,
+    "person": "Andrew",
+    "text": " We were promised that LLMs and AI will alleviate our workload."
+  },
+  { "startTime": 1853.18, "person": "Andrew", "text": " We'll have less work." },
+  {
+    "startTime": 1855.8,
+    "person": "Andrew",
+    "text": " It turns out we're working at the same amount of hours in a day and we're working harder because the LLMs, they remove the easy work of our workload."
+  },
+  {
+    "startTime": 1865.12,
+    "person": "Andrew",
+    "text": " So our cognitive load over the whole day increased."
+  },
+  {
+    "startTime": 1868.52,
+    "person": "Andrew",
+    "text": " So we have a spike of people, not tech people precisely, but those that are actual users of LLMs for other reasons than tech, other reasons than coding, being burned out, being depressed and suffering mentally because they don't get that dopamine hit because that's a different use of AI."
+  },
+  {
+    "startTime": 1888.78,
+    "person": "Andrew",
+    "text": " It's just like your brain isn't set up to be that high on dopamine."
+  },
+  {
+    "startTime": 1892.06,
+    "person": "Andrew",
+    "text": " And also not to be so high on output because they're constantly outputting."
+  },
+  {
+    "startTime": 1899.26,
+    "person": "Andrew",
+    "text": " They're constantly cognitively engaged on a high level because LLMs took over all the easy stuff and it's just promptable."
+  },
+  { "startTime": 1906.92, "person": "Andrew", "text": " It's just boom, boom, done." },
+  {
+    "startTime": 1908.64,
+    "person": "Andrew",
+    "text": " And now they're left with all the hard stuff."
+  },
+  {
+    "startTime": 1910.5,
+    "person": "Andrew",
+    "text": " And they didn't limit the hard stuff to two hours a day because that's somewhat of a proportion of what we were doing normally before LLMs. Two hours of hard stuff, six hours of the easier stuff that we had to do, but they were relaxing for the brain because we didn't have to think about it that intensively."
+  },
+  {
+    "startTime": 1926.5,
+    "person": "Andrew",
+    "text": " Now we're thinking intensively eight hours a day because we have LLMs and they remove that easy factor."
+  },
+  {
+    "startTime": 1932.08,
+    "person": "Martin",
+    "text": " I think that's one of the things that we have to learn how to deal with and change."
+  },
+  {
+    "startTime": 1936.84,
+    "person": "Martin",
+    "text": " I've heard the comments from several people who have been actively involved in working with LLMs. They're saying really they can only work effectively for three or four hours a day and they're learning to deal with that."
+  },
+  {
+    "startTime": 1948.12,
+    "person": "Martin",
+    "text": " Which may mean, yeah, I'm going to spend a lot more time walking the dog or something or having coffee or whatever."
+  },
+  {
+    "startTime": 1955.14,
+    "person": "Martin",
+    "text": " Or find other tasks that don't require that degree of mental exertion in order to be able to do."
+  },
+  {
+    "startTime": 1961.52,
+    "person": "Martin",
+    "text": " We're going to have to reorient how we think about our workday."
+  },
+  {
+    "startTime": 1964.3,
+    "person": "Martin",
+    "text": " The idea of an eight-hour workday is a product of the Industrial Revolution."
+  },
+  {
+    "startTime": 1969.92,
+    "person": "Martin",
+    "text": " It's not how we operated when we were doing subsistence agriculture, for instance."
+  },
+  {
+    "startTime": 1976.76,
+    "person": "Martin",
+    "text": " We have to learn to deal with a new reality."
+  },
+  { "startTime": 1980.28, "person": "Mathias", "text": " That's a short-term solvable problem." },
+  {
+    "startTime": 1983.78,
+    "person": "Mathias",
+    "text": " The people who are highly skilled and can do these things, they learn it by first doing the easy things."
+  },
+  {
+    "startTime": 1991.24,
+    "person": "Andrew",
+    "text": " The bottom runs of the ladder might be disappearing, right?"
+  },
+  {
+    "startTime": 1994.04,
+    "person": "Mathias",
+    "text": " Yes, so we don't know how in the future we will skill up people to do that."
+  },
+  { "startTime": 2000.14, "person": "Martin", "text": " I think we'll find a way." },
+  { "startTime": 2001.6, "person": "Martin", "text": " But again, it will be different." },
+  { "startTime": 2002.72, "person": "Martin", "text": " It will have to look different." },
+  {
+    "startTime": 2004.84,
+    "person": "Martin",
+    "text": " One of the things that I'm seeing as I talk to people is saying that actually relatively junior people are in quite a strong position at the moment."
+  },
+  { "startTime": 2015.22, "person": "Martin", "text": " They're relatively new." },
+  {
+    "startTime": 2017.72,
+    "person": "Martin",
+    "text": " They have the enthusiasm and they're also kind of grown up a little bit with these AI tools."
+  },
+  {
+    "startTime": 2023.86,
+    "person": "Martin",
+    "text": " So they've at least had them a little while."
+  },
+  {
+    "startTime": 2026.22,
+    "person": "Martin",
+    "text": " They've got some sense of how to use them."
+  },
+  {
+    "startTime": 2028.9,
+    "person": "Martin",
+    "text": " They don't feel invested in current ways of doing things."
+  },
+  {
+    "startTime": 2033,
+    "person": "Martin",
+    "text": " So they're inclined to try new things out and we're finding it forward."
+  },
+  {
+    "startTime": 2036.58,
+    "person": "Martin",
+    "text": " Many of our colleagues who have just come into the company have really been pushing the barrier forwards."
+  },
+  {
+    "startTime": 2042.16,
+    "person": "Martin",
+    "text": " At the other end, a lot of the more experienced people, and again I mentioned folks like Kent and Dave and Eric, have kind of latched on to this as well."
+  },
+  {
+    "startTime": 2050.719,
+    "person": "Martin",
+    "text": " It's often the people who are a few years into the industry that they often are struggling more."
+  },
+  {
+    "startTime": 2060.52,
+    "person": "Martin",
+    "text": " But I'm much more positive about the future for juniors, as it were."
+  },
+  { "startTime": 2066.139, "person": "Martin", "text": " I think there's a good one." },
+  { "startTime": 2067.52, "person": "Martin", "text": " It's going to look different." },
+  {
+    "startTime": 2069.409,
+    "person": "Martin",
+    "text": " I think there will be definitely places, because I still feel that there's so much more that we can do with software."
+  },
+  {
+    "startTime": 2078.659,
+    "person": "Martin",
+    "text": " We haven't tapped the capabilities that we can provide."
+  },
+  {
+    "startTime": 2083.76,
+    "person": "Andrew",
+    "text": " On that note of learning funny enough today, I scheduled a live stream with Chelsea Troy to talk about education of young professionals in the age of AI."
+  },
+  {
+    "startTime": 2092.56,
+    "person": "Andrew",
+    "text": " To see how we need to shift the education, not only university-wise or high school-wise, but also looking at professional education of those young professionals joining the workforce."
+  },
+  {
+    "startTime": 2106.5,
+    "person": "Andrew",
+    "text": " Because the world will be completely different in a few years in terms of those people joining the workforce."
+  },
+  { "startTime": 2111.84, "person": "Andrew", "text": " We were set on teaching them the basics." },
+  {
+    "startTime": 2114.18,
+    "person": "Andrew",
+    "text": " We were set on giving them easy tasks so they learn the ropes of programming, learn the ropes of specific technologies or frameworks."
+  },
+  {
+    "startTime": 2120.68,
+    "person": "Andrew",
+    "text": " Now these things are either heavily automated or promptable."
+  },
+  {
+    "startTime": 2126.44,
+    "person": "Andrew",
+    "text": " That doesn't require that much work anymore, but that takes away that learning and making those mistakes."
+  },
+  {
+    "startTime": 2132.8,
+    "person": "Andrew",
+    "text": " We as human beings, as far as my knowledge of educational psychology goes, we learn mostly on mistakes."
+  },
+  {
+    "startTime": 2139.64,
+    "person": "Andrew",
+    "text": " Mostly on our own rather than somebody else's."
+  },
+  {
+    "startTime": 2142.36,
+    "person": "Andrew",
+    "text": " It's a rare trait to learn on somebody else's mistakes."
+  },
+  { "startTime": 2145.26, "person": "Martin", "text": " There's another trait as well." },
+  {
+    "startTime": 2146.92,
+    "person": "Martin",
+    "text": " We want the young people of today to suffer in the same way that we did."
+  },
+  {
+    "startTime": 2154.22,
+    "person": "Martin",
+    "text": " You don't have to learn assembler language anymore."
+  },
+  { "startTime": 2157.84, "person": "Martin", "text": " I definitely remember that line." },
+  {
+    "startTime": 2160.6,
+    "person": "Martin",
+    "text": " How can you possibly write code if you don't actually work?"
+  },
+  {
+    "startTime": 2163.14,
+    "person": "Martin",
+    "text": " Well, actually, I did do some assembler when I started out."
+  },
+  { "startTime": 2165.76, "person": "Martin", "text": " There is that line, right?" },
+  {
+    "startTime": 2169,
+    "person": "Martin",
+    "text": " You've got to do your own memory management."
+  },
+  {
+    "startTime": 2172.34,
+    "person": "Martin",
+    "text": " You can't have the computer do that for you."
+  },
+  {
+    "startTime": 2174.82,
+    "person": "Martin",
+    "text": " We've all gone through those kinds of cycles."
+  },
+  {
+    "startTime": 2177.1,
+    "person": "Martin",
+    "text": " What we've got to learn is that actually the stuff that was hard for us when we were younger, it's a different set of things now."
+  },
+  { "startTime": 2184.78, "person": "Martin", "text": " Things change as technology moves on." },
+  {
+    "startTime": 2187.3,
+    "person": "Andrew",
+    "text": " Looking at the conversations I have had over the evenings at this conference right now, will we get to a stage where all the basics are so abstracted that we have no idea what they are?"
+  },
+  { "startTime": 2200.62, "person": "Andrew", "text": " Science fiction did that several times." },
+  { "startTime": 2202.4, "person": "Andrew", "text": " Star Trek did it." },
+  { "startTime": 2205.02, "person": "Andrew", "text": " Stargate did it." },
+  {
+    "startTime": 2206.22,
+    "person": "Andrew",
+    "text": " They had episodes like they were landing with civilisations that went into some sort of artificial intelligence automation machinery that the machinery run all the complex things of life."
+  },
+  {
+    "startTime": 2217.52,
+    "person": "Andrew",
+    "text": " Then people were left to basically enjoy themselves, do art and whatever."
+  },
+  {
+    "startTime": 2222.5,
+    "person": "Andrew",
+    "text": " After a few generations, they had no idea how those machines worked, and they just failed drastically."
+  },
+  {
+    "startTime": 2228.4,
+    "person": "Andrew",
+    "text": " I think that Alex Turov yesterday mentioned the book The Machine Stops."
+  },
+  {
+    "startTime": 2235.64,
+    "person": "Andrew",
+    "text": " This is a potential reality that we're facing, that without educating about these basics, how processors work, how binary code, right?"
+  },
+  {
+    "startTime": 2247.6,
+    "person": "Andrew",
+    "text": " I still remember logic gates and how to use logic gates."
+  },
+  {
+    "startTime": 2250.6,
+    "person": "Andrew",
+    "text": " I went through all the generations of languages for my studies because I studied electrical engineering, not computer science, so I had exposure to everything from electrical signals."
+  },
+  { "startTime": 2262.14, "person": "Andrew", "text": " Is that useful now in my work?" },
+  { "startTime": 2264.16, "person": "Andrew", "text": " No." },
+  {
+    "startTime": 2264.64,
+    "person": "Andrew",
+    "text": " Is that useful to understand what I'm doing and why things are happening the way they are?"
+  },
+  { "startTime": 2269.9, "person": "Andrew", "text": " To a large extent, yes." },
+  {
+    "startTime": 2271.96,
+    "person": "Andrew",
+    "text": " Now we're not going into those topics at all."
+  },
+  {
+    "startTime": 2274.48,
+    "person": "Andrew",
+    "text": " They have been abstracted by several layers of technology, whatever that technology may be."
+  },
+  {
+    "startTime": 2280.86,
+    "person": "Andrew",
+    "text": " We're at risk that at a certain point in time, we will have no idea how that technology works."
+  },
+  {
+    "startTime": 2286.18,
+    "person": "Martin",
+    "text": " But we have the advantage that AI can teach us."
+  },
+  {
+    "startTime": 2288.52,
+    "person": "Martin",
+    "text": " We can ask the AI how does this stuff work."
+  },
+  {
+    "startTime": 2291.04,
+    "person": "Martin",
+    "text": " As long as we have the necessary verification mechanism to ensure it's not hallucinating, which of course is all over it."
+  },
+  { "startTime": 2298.82, "person": "Martin", "text": " We're already finding we do that." },
+  {
+    "startTime": 2300.64,
+    "person": "Martin",
+    "text": " There's a comment Kent made in a conversation that we had on one of our video things."
+  },
+  {
+    "startTime": 2305.94,
+    "person": "Martin",
+    "text": " He said, I don't care about what programming language I'm using anymore."
+  },
+  {
+    "startTime": 2309.24,
+    "person": "Martin",
+    "text": " Because, hey, if I'm doing this in Rust and I don't happen to know anything about Rust, that's fine."
+  },
+  {
+    "startTime": 2314.82,
+    "person": "Martin",
+    "text": " The AI will do all the syntax stuff and teach me how to use Rust as I'm going along, and I can do that."
+  },
+  {
+    "startTime": 2321.76,
+    "person": "Martin",
+    "text": " And I've heard that kind of message again and again and again."
+  },
+  { "startTime": 2324.24, "person": "Martin", "text": " And frankly, I do it myself." },
+  { "startTime": 2325.94, "person": "Martin", "text": " I go, I can't remember how to do this." },
+  {
+    "startTime": 2328.36,
+    "person": "Martin",
+    "text": " Just write me the list that will do this."
+  },
+  {
+    "startTime": 2330.3,
+    "person": "Martin",
+    "text": " And sometimes it works, sometimes it doesn't."
+  },
+  {
+    "startTime": 2332.02,
+    "person": "Martin",
+    "text": " The thing is, of course, is that with software, we can verify to see whether it works."
+  },
+  { "startTime": 2336.24, "person": "Martin", "text": " True." },
+  {
+    "startTime": 2336.42,
+    "person": "Martin",
+    "text": " That's not true, for instance, in, say, the law, where the AI will make up citations and judges will go, you made up, you got AI to write that and made up a citation."
+  },
+  {
+    "startTime": 2345.98,
+    "person": "Martin",
+    "text": " And of course, that's a bad thing in that situation."
+  },
+  { "startTime": 2347.9, "person": "Martin", "text": " And that already happened several times." },
+  { "startTime": 2349.66, "person": "Martin", "text": " Yeah, it has happened." },
+  {
+    "startTime": 2351.58,
+    "person": "Martin",
+    "text": " I think I heard of an example where both sides of the case."
+  },
+  {
+    "startTime": 2356.18,
+    "person": "Martin",
+    "text": " But I mean, I think this is the interesting thing, is the shift."
+  },
+  { "startTime": 2361, "person": "Martin", "text": " There's a comment." },
+  {
+    "startTime": 2362.46,
+    "person": "Martin",
+    "text": " My namesake, Chad Fowler, said that what we're seeing here is a shift in where discipline lies."
+  },
+  {
+    "startTime": 2369.44,
+    "person": "Martin",
+    "text": " And it's actually an interesting parallel to extreme programming."
+  },
+  {
+    "startTime": 2372.34,
+    "person": "Martin",
+    "text": " But with extreme programming appeared, people said, oh, they're not doing these upfront diagrams or whatever."
+  },
+  { "startTime": 2378.24, "person": "Martin", "text": " They're losing discipline." },
+  { "startTime": 2379.7, "person": "Martin", "text": " They're chaotic people." },
+  {
+    "startTime": 2380.86,
+    "person": "Martin",
+    "text": " And of course, what happened was a shift in discipline in extreme programming from to moving to how to slice up in small increments and a big emphasis on testing."
+  },
+  {
+    "startTime": 2389.8,
+    "person": "Martin",
+    "text": " Now, with AI, again, we're going to see a shift in discipline."
+  },
+  {
+    "startTime": 2394.9,
+    "person": "Martin",
+    "text": " Exactly what that shift turns out to be, we don't know."
+  },
+  {
+    "startTime": 2397.6,
+    "person": "Martin",
+    "text": " But there's a very good chance it's actually putting more effort on the verification and testing."
+  },
+  {
+    "startTime": 2402.7,
+    "person": "Andrew",
+    "text": " At least it seems so at the moment, looking at the current practises, that we have a shift towards design to an extent."
+  },
+  {
+    "startTime": 2411.42,
+    "person": "Andrew",
+    "text": " We need to think of the context, think of what we're doing."
+  },
+  {
+    "startTime": 2414.6,
+    "person": "Andrew",
+    "text": " And then where the focus was on implementing that, that linear work of implementing, that now shifted to verification."
+  },
+  {
+    "startTime": 2422.26,
+    "person": "Andrew",
+    "text": " Testing, verification output, verifying what is produced and verifying the sanity of code."
+  },
+  {
+    "startTime": 2429.66,
+    "person": "Andrew",
+    "text": " And that is where a lot of people struggle."
+  },
+  {
+    "startTime": 2433.64,
+    "person": "Andrew",
+    "text": " Because if you get a pull request with 50 lines of code, yeah, you can review that."
+  },
+  {
+    "startTime": 2438.52,
+    "person": "Andrew",
+    "text": " But if you get a pull request with 50,000 lines of code, how do you approach that?"
+  },
+  {
+    "startTime": 2443.88,
+    "person": "Andrew",
+    "text": " And then we've already seen that people are like, okay, let's put an agent to that."
+  },
+  { "startTime": 2449, "person": "Andrew", "text": " And it reviews that." },
+  { "startTime": 2450.68, "person": "Andrew", "text": " And it reviews, yeah, it's okay." },
+  {
+    "startTime": 2452.38,
+    "person": "Andrew",
+    "text": " And then somebody actually sits down and reads it."
+  },
+  {
+    "startTime": 2454.9,
+    "person": "Andrew",
+    "text": " And it's like, oh, no, no, no, no, no, no, no."
+  },
+  { "startTime": 2456.96, "person": "Andrew", "text": " This is a security leak." },
+  { "startTime": 2458.86, "person": "Andrew", "text": " This is a memory leak." },
+  { "startTime": 2460.28, "person": "Andrew", "text": " This is going to fail." },
+  { "startTime": 2461.9, "person": "Andrew", "text": " This is not maintainable." },
+  {
+    "startTime": 2463.54,
+    "person": "Andrew",
+    "text": " And we're not at the point in time yet where we have those verification measures at all."
+  },
+  {
+    "startTime": 2470.6,
+    "person": "Andrew",
+    "text": " Because we never had to do them, because all the focus was on programming in the first place."
+  },
+  {
+    "startTime": 2475.92,
+    "person": "Andrew",
+    "text": " And then just verifying the output, which would be unit tests, end-to-end tests, UAT, et cetera."
+  },
+  {
+    "startTime": 2484.4,
+    "person": "Andrew",
+    "text": " The interesting thing to me is that our world, we're very used to our world being deterministic in a lot of senses."
+  },
+  {
+    "startTime": 2490.92,
+    "person": "Andrew",
+    "text": " And then you throw it over the wall to operations, and their world is very non-deterministic."
+  },
+  {
+    "startTime": 2494.26,
+    "person": "Andrew",
+    "text": " So the things we create in a deterministic world are suddenly very non-deterministic, apart from network computing and stuff."
+  },
+  {
+    "startTime": 2501.18,
+    "person": "Andrew",
+    "text": " But we pretend that that's not a problem."
+  },
+  {
+    "startTime": 2503.58,
+    "person": "Andrew",
+    "text": " Hence the fallacies of network computing."
+  },
+  {
+    "startTime": 2505.74,
+    "person": "Andrew",
+    "text": " But what's interesting is the world of the non-deterministic is coming hard into our world."
+  },
+  { "startTime": 2511.76, "person": "Andrew", "text": " I'm not ready for it yet." },
+  { "startTime": 2513.08, "person": "Andrew", "text": " It's very interesting to see that." },
+  {
+    "startTime": 2514.56,
+    "person": "Andrew",
+    "text": " I would argue that we always had the world of non-deterministic."
+  },
+  { "startTime": 2517.54, "person": "Andrew", "text": " But we could pretend that we didn't." },
+  { "startTime": 2519.04, "person": "Speaker 6", "text": " We could pretend that we didn't." },
+  { "startTime": 2520.78, "person": "Andrew", "text": " But if I press compile..." },
+  { "startTime": 2522.16, "person": "Martin", "text": " We treat it as an exception." },
+  { "startTime": 2523.24, "person": "Martin", "text": " Exactly." },
+  {
+    "startTime": 2525.48,
+    "person": "Andrew",
+    "text": " And I'm fresh into reading Barry O'Reilly's Residues book."
+  },
+  {
+    "startTime": 2530.08,
+    "person": "Andrew",
+    "text": " So if I look at hyperliminal systems, hyperliminality that Barry defines."
+  },
+  {
+    "startTime": 2534.8,
+    "person": "Andrew",
+    "text": " Okay, so basically our lovely toys that we have, the software that we produce is basically a stone just rolling around in flowing water, which is the context that we're in."
+  },
+  {
+    "startTime": 2545.06,
+    "person": "Andrew",
+    "text": " That context, that water, is basically all the business models, all the business things that change constantly."
+  },
+  {
+    "startTime": 2553.22,
+    "person": "Andrew",
+    "text": " And they're non-deterministic, because we don't know where that stressor will come from."
+  },
+  {
+    "startTime": 2557.76,
+    "person": "Andrew",
+    "text": " We don't know if that's going to be some sort of a wonky, let's say, EU regulation or UK Brexiting from EU that changed a lot of things."
+  },
+  {
+    "startTime": 2567.68,
+    "person": "Andrew",
+    "text": " We don't know if that's going to be some sort of an economic situation that happens."
+  },
+  {
+    "startTime": 2573.74,
+    "person": "Andrew",
+    "text": " A shift in consumers that they suddenly figure that, oh, this is a new fad and we're going to now consume this instead of that."
+  },
+  {
+    "startTime": 2581.38,
+    "person": "Andrew",
+    "text": " There's so many variables that are completely non-deterministic, because it's in human nature that we're non-deterministic."
+  },
+  {
+    "startTime": 2588.86,
+    "person": "Andrew",
+    "text": " And I think in that sense, LLMs and AI really reflects our nature tenfold."
+  },
+  { "startTime": 2593.94, "person": "Mathias", "text": " They do, but they cannot address it." },
+  { "startTime": 2597.76, "person": "Mathias", "text": " So an LLM is non-deterministic." },
+  { "startTime": 2600, "person": "Mathias", "text": " It's complex by any measure." },
+  {
+    "startTime": 2602.14,
+    "person": "Mathias",
+    "text": " Our world is complex and non-deterministic."
+  },
+  { "startTime": 2604, "person": "Mathias", "text": " Yes." },
+  {
+    "startTime": 2604.78,
+    "person": "Mathias",
+    "text": " All engineering is attempting to take chunks from reality and find something that's small and analyzable enough."
+  },
+  { "startTime": 2613.16, "person": "Mathias", "text": " That's basically modelling." },
+  { "startTime": 2614.38, "person": "Mathias", "text": " That's basically modelling." },
+  { "startTime": 2615.36, "person": "Mathias", "text": " Right." },
+  {
+    "startTime": 2615.6,
+    "person": "Mathias",
+    "text": " And turning that into a product or some solution that helps us in 80% of the cases."
+  },
+  { "startTime": 2622.58, "person": "Mathias", "text": " Right." },
+  { "startTime": 2623.5, "person": "Mathias", "text": " What are LLMs very good at?" },
+  {
+    "startTime": 2625.18,
+    "person": "Mathias",
+    "text": " Looking at all the work that we have written about it and summarising that and getting, you know, simulating human answers."
+  },
+  {
+    "startTime": 2634.16,
+    "person": "Mathias",
+    "text": " What it's not good at is actually being embodied in the world, experiencing complexity, feeling a problem that they like detecting."
+  },
+  {
+    "startTime": 2645.14,
+    "person": "Mathias",
+    "text": " We humans, we are like many things are problems that we mostly ignore."
+  },
+  {
+    "startTime": 2649.8,
+    "person": "Mathias",
+    "text": " Sometimes somebody realises like this is actually a problem that I want to focus on."
+  },
+  {
+    "startTime": 2654.32,
+    "person": "Mathias",
+    "text": " And finds a solution for it or a good enough solution and innovate something."
+  },
+  {
+    "startTime": 2659.66,
+    "person": "Mathias",
+    "text": " But this comes from gut feeling, from intuition, from emotion."
+  },
+  {
+    "startTime": 2664.02,
+    "person": "Mathias",
+    "text": " It starts from living in that world, from feeling pain, feeling love and anger and hunger."
+  },
+  {
+    "startTime": 2670.96,
+    "person": "Mathias",
+    "text": " And, well, that was probably one of the first ones, right?"
+  },
+  {
+    "startTime": 2672.9,
+    "person": "Mathias",
+    "text": " Hunger has been a huge driver for a lot of innovations in early human history."
+  },
+  {
+    "startTime": 2678.38,
+    "person": "Mathias",
+    "text": " AI can simulate a poem, but it has never felt love."
+  },
+  { "startTime": 2682.62, "person": "Mathias", "text": " It cannot actually write poetry." },
+  {
+    "startTime": 2684.04,
+    "person": "Mathias",
+    "text": " It can simulate because it has read so many more poems than I ever will read in my life."
+  },
+  { "startTime": 2689.3, "person": "Mathias", "text": " True." },
+  { "startTime": 2690.08, "person": "Mathias", "text": " And that's just poetry." },
+  { "startTime": 2691.1, "person": "Mathias", "text": " But engineering, same thing." },
+  {
+    "startTime": 2693.06,
+    "person": "Mathias",
+    "text": " We will need design in the sense of detecting problems and figuring out that they might be solvable and putting the energy in that."
+  },
+  {
+    "startTime": 2702.28,
+    "person": "Mathias",
+    "text": " And there will be novel problems that AI has no literature about."
+  },
+  { "startTime": 2708.52, "person": "Mathias", "text": " It can never be original in that sense." },
+  { "startTime": 2710.6, "person": "Andrew", "text": " That's true." },
+  { "startTime": 2711.92, "person": "Andrew", "text": " Only by accident." },
+  {
+    "startTime": 2712.72,
+    "person": "Mathias",
+    "text": " Because it's non-deterministic and has some randomness."
+  },
+  {
+    "startTime": 2715.86,
+    "person": "Andrew",
+    "text": " And on top of that, we never returned the best answer."
+  },
+  {
+    "startTime": 2719.76,
+    "person": "Andrew",
+    "text": " We're returning statistically average answer."
+  },
+  { "startTime": 2723.48, "person": "Andrew", "text": " Statistically relevant." },
+  {
+    "startTime": 2724.74,
+    "person": "Andrew",
+    "text": " Statistically relevant is basically averaged."
+  },
+  { "startTime": 2727.06, "person": "Mathias", "text": " This explains why the gelman effect." },
+  {
+    "startTime": 2730.52,
+    "person": "Mathias",
+    "text": " If you're an expert in something, you compare the average to your own skills."
+  },
+  {
+    "startTime": 2735.28,
+    "person": "Mathias",
+    "text": " If you know nothing about something, you compare the average to your own skills, which are zero."
+  },
+  { "startTime": 2739.08, "person": "Mathias", "text": " So it always looks amazing." },
+  {
+    "startTime": 2740.7,
+    "person": "Mathias",
+    "text": " And that's what we're experiencing with the majority of users that use LLMs for things they don't know."
+  },
+  {
+    "startTime": 2745.26,
+    "person": "Mathias",
+    "text": " And all users, because I use it also for things I don't know, but they have the same feeling."
+  },
+  { "startTime": 2749.92, "person": "Mathias", "text": " If I use it for a software, it's..." },
+  {
+    "startTime": 2751.42,
+    "person": "Xin",
+    "text": " So that brings me to this skills discussion about junior engineers, about what skills do we need."
+  },
+  {
+    "startTime": 2758.64,
+    "person": "Xin",
+    "text": " And this embodied experience makes me think that we have come a long way, but a lot of our thinking is still based on the industrial age."
+  },
+  {
+    "startTime": 2767.8,
+    "person": "Xin",
+    "text": " Thinking like Taylorism, thinking of ourselves as production factors."
+  },
+  {
+    "startTime": 2774.72,
+    "person": "Xin",
+    "text": " Like, okay, to produce some production factors, like to produce something, you sometimes need material."
+  },
+  {
+    "startTime": 2781.62,
+    "person": "Xin",
+    "text": " And then sometimes you need financial input."
+  },
+  { "startTime": 2784.06, "person": "Xin", "text": " And then you need human input." },
+  {
+    "startTime": 2786.64,
+    "person": "Xin",
+    "text": " And so we think of ourselves as the, I don't know, the possessor of certain static inputs."
+  },
+  {
+    "startTime": 2795.07,
+    "person": "Xin",
+    "text": " And then I think education, it will always be sort of necessary for human beings to learn critical thinking."
+  },
+  {
+    "startTime": 2804.65,
+    "person": "Xin",
+    "text": " But also those three things Eric Evans mentioned in the keynote."
+  },
+  { "startTime": 2808.41, "person": "Xin", "text": " Curiosity, fun, and wonder." },
+  {
+    "startTime": 2811.13,
+    "person": "Xin",
+    "text": " We think about, oh, those are soft skills, and not really."
+  },
+  { "startTime": 2815.15, "person": "Xin", "text": " But those are really essential skills." },
+  {
+    "startTime": 2817.63,
+    "person": "Xin",
+    "text": " Like, for instance, this problem like dopamine fix, like the spinning versus learning, right?"
+  },
+  {
+    "startTime": 2823.83,
+    "person": "Xin",
+    "text": " I'm spinning with the LLMs. I'm using a lot of hours."
+  },
+  { "startTime": 2827.79, "person": "Xin", "text": " I'm having my dopamine fix." },
+  {
+    "startTime": 2828.89,
+    "person": "Xin",
+    "text": " Oh, yes, another round done, another piece of swarm done."
+  },
+  { "startTime": 2835.19, "person": "Xin", "text": " And I'm monitoring this." },
+  { "startTime": 2837.49, "person": "Xin", "text": " But am I learning anything?" },
+  { "startTime": 2839.69, "person": "Speaker 6", "text": " Is it like empty calories, right?" },
+  { "startTime": 2841.35, "person": "Xin", "text": " Yeah, exactly." },
+  {
+    "startTime": 2842.37,
+    "person": "Xin",
+    "text": " So I think it all comes from the mindset that production is the point."
+  },
+  {
+    "startTime": 2847.99,
+    "person": "Xin",
+    "text": " But production isn't the point for human existence."
+  },
+  {
+    "startTime": 2850.87,
+    "person": "Xin",
+    "text": " And talking about design, so what do we, so what do we, why did we, what did we, I think, I studied computer science."
+  },
+  { "startTime": 2858.89, "person": "Xin", "text": " I don't know, some of you might also have." },
+  {
+    "startTime": 2861.25,
+    "person": "Andrew",
+    "text": " No, I'm masquerading as a, I didn't do computer science."
+  },
+  { "startTime": 2864.53, "person": "Xin", "text": " Anyway." },
+  { "startTime": 2865.25, "person": "Mathias", "text": " I have a master's in music, so." },
+  { "startTime": 2867.05, "person": "Xin", "text": " I'm a female, I'm a woman, right?" },
+  {
+    "startTime": 2870.59,
+    "person": "Xin",
+    "text": " I think one of the drivers, one of the motivators for me to go into computer science is that I somehow want to have that control."
+  },
+  {
+    "startTime": 2879.99,
+    "person": "Xin",
+    "text": " I want to have self-impression, something that I can code and I can, you know, be in control of."
+  },
+  {
+    "startTime": 2885.91,
+    "person": "Xin",
+    "text": " And that urge of self-impression, like to create something that I can predict what happens."
+  },
+  { "startTime": 2892.53, "person": "Xin", "text": " I think that thing is still there." },
+  {
+    "startTime": 2895.13,
+    "person": "Xin",
+    "text": " The question is, Eric also hinted about this, maybe design."
+  },
+  { "startTime": 2899.31, "person": "Xin", "text": " So we need this, assuming we need design." },
+  { "startTime": 2902.63, "person": "Xin", "text": " I don't know." },
+  { "startTime": 2903.15, "person": "Xin", "text": " We've been questioning that." },
+  { "startTime": 2904.95, "person": "Speaker 6", "text": " It's a good assumption." },
+  { "startTime": 2905.77, "person": "Xin", "text": " It's a good assumption." },
+  { "startTime": 2906.59, "person": "Xin", "text": " To do design, we need some abstractions." },
+  { "startTime": 2909.49, "person": "Xin", "text": " We need some models." },
+  {
+    "startTime": 2910.59,
+    "person": "Xin",
+    "text": " We need, you know, boundaries and the relations, integration and whatever."
+  },
+  {
+    "startTime": 2915.67,
+    "person": "Xin",
+    "text": " And then, and so what kind of, what kind of modelling do we still need?"
+  },
+  {
+    "startTime": 2920.99,
+    "person": "Xin",
+    "text": " And Eric hinted about maybe it's the intent."
+  },
+  {
+    "startTime": 2923.63,
+    "person": "Xin",
+    "text": " In the future, we don't need, you know, to talk about these tactical patterns about, I don't know, the how in the system."
+  },
+  { "startTime": 2930.89, "person": "Xin", "text": " But our intention, the why." },
+  {
+    "startTime": 2933.17,
+    "person": "Xin",
+    "text": " What do we want to get out of this thing I want the LLM to make for me?"
+  },
+  {
+    "startTime": 2939.71,
+    "person": "Xin",
+    "text": " And I think curiosity is such an important thing."
+  },
+  {
+    "startTime": 2943.53,
+    "person": "Xin",
+    "text": " And maybe wonder is even more important because wonder is curiosity without the need to have a definitive answer."
+  },
+  {
+    "startTime": 2950.81,
+    "person": "Xin",
+    "text": " If I say I'm curious of something, I still think I need the answer."
+  },
+  { "startTime": 2954.67, "person": "Xin", "text": " But wonder is like open-ended." },
+  {
+    "startTime": 2956.89,
+    "person": "Xin",
+    "text": " And that open-endedness will get us away from this polarisation."
+  },
+  { "startTime": 2960.45, "person": "Xin", "text": " I'm either a loser or I'm a winner." },
+  { "startTime": 2962.41, "person": "Xin", "text": " I can be actually be both." },
+  { "startTime": 2965.39, "person": "Xin", "text": " It's in that struggle." },
+  { "startTime": 2966.39, "person": "Xin", "text": " It's in that hunger." },
+  { "startTime": 2967.23, "person": "Xin", "text": " It's in that despair that I learned." },
+  { "startTime": 2969.91, "person": "Andrew", "text": " I can just be." },
+  { "startTime": 2971.05, "person": "Andrew", "text": " Yeah." },
+  { "startTime": 2971.35, "person": "Andrew", "text": " That would be the thing." },
+  {
+    "startTime": 2972.19,
+    "person": "Xin",
+    "text": " So, distinguishing between spinning and learning the cycle."
+  },
+  {
+    "startTime": 2976.51,
+    "person": "Xin",
+    "text": " We design feedback cycles for our software for heaven's sake."
+  },
+  {
+    "startTime": 2979.53,
+    "person": "Xin",
+    "text": " Why don't we design feedback cycles for ourselves?"
+  },
+  {
+    "startTime": 2982.33,
+    "person": "Andrew",
+    "text": " And that's called reflection, which is a skill that is not exactly easy to master."
+  },
+  {
+    "startTime": 2986.37,
+    "person": "Xin",
+    "text": " The LLM, how about set out five minutes to say if productivity gains are the trees, what's the forest?"
+  },
+  { "startTime": 2996.07, "person": "Xin", "text": " What's the why behind all this?" },
+  {
+    "startTime": 2998.55,
+    "person": "Andrew",
+    "text": " Looking at education, the current model that we have in majority of classrooms, at least in Europe, and I suffered through it as a person in school over 20 years ago, is a Prussian model."
+  },
+  { "startTime": 3012.87, "person": "Andrew", "text": " Prussian model was late 1800s." },
+  {
+    "startTime": 3017.61,
+    "person": "Andrew",
+    "text": " And basically, it was designed to produce manufacturing worker."
+  },
+  { "startTime": 3021.89, "person": "Andrew", "text": " That's what it was." },
+  {
+    "startTime": 3023.25,
+    "person": "Andrew",
+    "text": " And it was designed to produce people that follow orders, not think creatively, not think critically."
+  },
+  {
+    "startTime": 3029.55,
+    "person": "Andrew",
+    "text": " Critical thinking was actually punished in that kind of model."
+  },
+  {
+    "startTime": 3032.59,
+    "person": "Andrew",
+    "text": " And we're still utilising the same model in our classrooms today."
+  },
+  {
+    "startTime": 3036.31,
+    "person": "Andrew",
+    "text": " Majority of schools are still working in a Prussian education model where you have classrooms and you need to fit the key."
+  },
+  {
+    "startTime": 3042.33,
+    "person": "Andrew",
+    "text": " A great example, years back when I was preparing for end of high school exam, all those exams were key based, even those on interpreting poetry, pieces of artwork."
+  },
+  {
+    "startTime": 3056.17,
+    "person": "Andrew",
+    "text": " So we had a – in Polish it's called matura."
+  },
+  {
+    "startTime": 3059.09,
+    "person": "Andrew",
+    "text": " The matura exam had – you often needed to interpret a piece of text or write an essay on a specific book, novel."
+  },
+  {
+    "startTime": 3069.77,
+    "person": "Andrew",
+    "text": " So in one of those, there was an interpretation of a poem by a Polish poet."
+  },
+  { "startTime": 3076.09, "person": "Andrew", "text": " Luckily, she was still alive." },
+  {
+    "startTime": 3077.67,
+    "person": "Andrew",
+    "text": " So they took that exam, put it in front of her, and asked her to create an interpretation based on the question that was in the exam."
+  },
+  {
+    "startTime": 3087.89,
+    "person": "Andrew",
+    "text": " And she scored zero points because the answer did not fit the key."
+  },
+  {
+    "startTime": 3094.01,
+    "person": "Andrew",
+    "text": " This is the education model we're facing."
+  },
+  {
+    "startTime": 3096.29,
+    "person": "Andrew",
+    "text": " So now if we have LLMs that take away a substantial chunk of knowledge work, that's what they do at this point, right?"
+  },
+  {
+    "startTime": 3105.03,
+    "person": "Andrew",
+    "text": " So we need to shift towards critical thinking, wonder, creativity, and we have no tools to do that education-wise at this point."
+  },
+  {
+    "startTime": 3116.41,
+    "person": "Andrew",
+    "text": " We're producing people who are not supposed to think critically."
+  },
+  {
+    "startTime": 3119.95,
+    "person": "Andrew",
+    "text": " Majority of the workforce is educated not to think critically."
+  },
+  {
+    "startTime": 3123.91,
+    "person": "Andrew",
+    "text": " And you can see that on Twitter, on any social media."
+  },
+  {
+    "startTime": 3130.17,
+    "person": "Andrew",
+    "text": " You see that in elections, especially vocal in U.S. elections, right?"
+  },
+  {
+    "startTime": 3135.59,
+    "person": "Andrew",
+    "text": " Because that's always a lovely show to watch from abroad, etc., etc."
+  },
+  {
+    "startTime": 3141.11,
+    "person": "Andrew",
+    "text": " But we have those influences also in Europe."
+  },
+  {
+    "startTime": 3143.17,
+    "person": "Andrew",
+    "text": " In elections in Europe, there's also a large influence of misinformation and lack of critical thinking, lack of fact-checking."
+  },
+  {
+    "startTime": 3153.09,
+    "person": "Mathias",
+    "text": " There exists education for critical thinking."
+  },
+  { "startTime": 3157.17, "person": "Mathias", "text": " But it's not common." },
+  { "startTime": 3158.99, "person": "Mathias", "text": " It's not common." },
+  {
+    "startTime": 3159.67,
+    "person": "Mathias",
+    "text": " It's Brandolini's law as well, of course, right?"
+  },
+  {
+    "startTime": 3161.37,
+    "person": "Mathias",
+    "text": " The bullshit always travels faster than the corrections."
+  },
+  {
+    "startTime": 3166.01,
+    "person": "Andrew",
+    "text": " And it takes ten times more energy to disprove bullshit than to create bullshit."
+  },
+  { "startTime": 3170.25, "person": "Andrew", "text": " Yes." },
+  {
+    "startTime": 3172.88,
+    "person": "Xin",
+    "text": " So where's the place for the collaborative modelling?"
+  },
+  {
+    "startTime": 3176.56,
+    "person": "Xin",
+    "text": " I mean, DDD has been sort of extended to have almost a pillar."
+  },
+  {
+    "startTime": 3182.96,
+    "person": "Xin",
+    "text": " We tend to say there's almost like a language in the middle."
+  },
+  { "startTime": 3187.54, "person": "Xin", "text": " We have the strategic modelling." },
+  { "startTime": 3189.32, "person": "Xin", "text": " Then we have the tactical patterns." },
+  {
+    "startTime": 3191.8,
+    "person": "Xin",
+    "text": " And then we almost have a third pillar called collaborative modelling."
+  },
+  {
+    "startTime": 3195.62,
+    "person": "Xin",
+    "text": " And this piece, I feel, it's still being explored but not successfully in the age of engaging with LLMs as, I think, Kent Beck called it multiplayer game."
+  },
+  {
+    "startTime": 3206,
+    "person": "Xin",
+    "text": " How do we play that multiplayer game with the LLM?"
+  },
+  { "startTime": 3209.42, "person": "Mathias", "text": " I mean, in a positive way." },
+  {
+    "startTime": 3210.92,
+    "person": "Mathias",
+    "text": " I think that's also our education and our whole system, right?"
+  },
+  { "startTime": 3213.94, "person": "Mathias", "text": " You have to go to school." },
+  {
+    "startTime": 3215.62,
+    "person": "Mathias",
+    "text": " You're not allowed to – you have to ask permission to go to the bathroom until you're 18."
+  },
+  {
+    "startTime": 3219.52,
+    "person": "Mathias",
+    "text": " Then you have to decide what you're going to do for the rest of your life."
+  },
+  {
+    "startTime": 3222.8,
+    "person": "Mathias",
+    "text": " And then you're put in a job where suddenly you are supposed to collaborate, but you are judged in your individual performance."
+  },
+  { "startTime": 3230.38, "person": "Mathias", "text": " We have no system." },
+  {
+    "startTime": 3231.56,
+    "person": "Mathias",
+    "text": " And the way AI works, the way a chatbot works is a direct consequence of this internalised way of thinking."
+  },
+  { "startTime": 3240.6, "person": "Mathias", "text": " It's built as a one-on-one conversation." },
+  {
+    "startTime": 3243.34,
+    "person": "Mathias",
+    "text": " I'm not aware of – maybe you are, but I'm not aware of any chatbot-like products that are designed around collaboration first."
+  },
+  {
+    "startTime": 3253.08,
+    "person": "Mathias",
+    "text": " You're supposed to – you can still collaborate."
+  },
+  { "startTime": 3255.68, "person": "Mathias", "text": " We have a meeting." },
+  {
+    "startTime": 3256.3,
+    "person": "Mathias",
+    "text": " And then you might instruct me, okay, go build something on your own with an LLM."
+  },
+  {
+    "startTime": 3262.44,
+    "person": "Andrew",
+    "text": " But funny enough, we're making agentic networks that are agents that are supposed to collaborate with one another."
+  },
+  {
+    "startTime": 3268.6,
+    "person": "Mathias",
+    "text": " While we have no means of collaborating human to agent."
+  },
+  {
+    "startTime": 3272.86,
+    "person": "Mathias",
+    "text": " But I think that was in the first place."
+  },
+  { "startTime": 3275.78, "person": "Mathias", "text": " I'm not sure." },
+  { "startTime": 3276.86, "person": "Mathias", "text": " I wasn't there." },
+  {
+    "startTime": 3278.18,
+    "person": "Mathias",
+    "text": " But a technical solution to a problem of constraints, right?"
+  },
+  {
+    "startTime": 3282.72,
+    "person": "Mathias",
+    "text": " You cannot feed a very large text into an LLM."
+  },
+  { "startTime": 3286.92, "person": "Andrew", "text": " The context constraint, right?" },
+  { "startTime": 3288.4, "person": "Mathias", "text": " Yes." },
+  { "startTime": 3289.04, "person": "Mathias", "text": " Context window." },
+  { "startTime": 3289.98, "person": "Mathias", "text": " So can we automate the cutting up?" },
+  { "startTime": 3293, "person": "Mathias", "text": " You know, the Cartesian reduction, right?" },
+  {
+    "startTime": 3295.44,
+    "person": "Mathias",
+    "text": " We can split the problem into smaller parts and solve the smaller parts and put them back together."
+  },
+  {
+    "startTime": 3301.42,
+    "person": "Mathias",
+    "text": " Which, as Romeo was saying earlier today in a session, that works for if you take apart a car and put all the pieces back together, you have a working car."
+  },
+  {
+    "startTime": 3309.56,
+    "person": "Mathias",
+    "text": " But if you take apart a human and you put all the pieces back together, you have a dead human."
+  },
+  {
+    "startTime": 3316.34,
+    "person": "Mathias",
+    "text": " And it's a very, like, engineering, you know, tailrist manufacturing way of thinking that everything is just parts that can be combined."
+  },
+  {
+    "startTime": 3326.58,
+    "person": "Mathias",
+    "text": " So in a way, you use these agents as an example of collaboration."
+  },
+  { "startTime": 3332.76, "person": "Mathias", "text": " But it really isn't." },
+  { "startTime": 3334.32, "person": "Mathias", "text": " It's an example of splitting." },
+  {
+    "startTime": 3336.44,
+    "person": "Mathias",
+    "text": " We're trying to mimic that, but it's not it."
+  },
+  {
+    "startTime": 3341.14,
+    "person": "Mathias",
+    "text": " We're mimicking a machine or a factory where people produce parts and assemble them."
+  },
+  {
+    "startTime": 3346.6,
+    "person": "Mathias",
+    "text": " We're not mimicking a real human collaboration."
+  },
+  {
+    "startTime": 3349.18,
+    "person": "Mathias",
+    "text": " We're mimicking assembly line more than collaboration."
+  },
+  {
+    "startTime": 3351.96,
+    "person": "Andrew",
+    "text": " We're naming it collaboration, but it's actually assembly."
+  },
+  { "startTime": 3355.54, "person": "Andrew", "text": " It's strongly textual based, right?" },
+  {
+    "startTime": 3357.28,
+    "person": "Andrew",
+    "text": " Because the models we use and, like, because there were other models and there are other ones out there, right?"
+  },
+  {
+    "startTime": 3362.34,
+    "person": "Andrew",
+    "text": " But the one that's taken off is the large language models, because language is easier to model and all this kind of stuff."
+  },
+  {
+    "startTime": 3367.5,
+    "person": "Andrew",
+    "text": " So it helps people who can collaborate using linguistic approaches."
+  },
+  {
+    "startTime": 3372.3,
+    "person": "Andrew",
+    "text": " And it's good for code, because code is stuff that we write down in ASCII characters."
+  },
+  {
+    "startTime": 3375.58,
+    "person": "Andrew",
+    "text": " But, like, that's not the only way that we model, right?"
+  },
+  {
+    "startTime": 3377.88,
+    "person": "Andrew",
+    "text": " Like, all the collaborative modelling stuff that we now have in this community is, like, visual and, like, all that kind of stuff."
+  },
+  { "startTime": 3383.7, "person": "Xin", "text": " There are nuances, I think." },
+  {
+    "startTime": 3385.46,
+    "person": "Xin",
+    "text": " So one recent experiment I did, I didn't do that."
+  },
+  {
+    "startTime": 3390.3,
+    "person": "Xin",
+    "text": " I saw a team do with this new voice feature of cloud is that this cloud agent basically went in and analysed a legacy database."
+  },
+  {
+    "startTime": 3401.7,
+    "person": "Xin",
+    "text": " And basically it was used as an explainer in a mob session."
+  },
+  {
+    "startTime": 3407.06,
+    "person": "Xin",
+    "text": " So the team basically asked, so what are the five most important functions in the systems?"
+  },
+  {
+    "startTime": 3413.02,
+    "person": "Xin",
+    "text": " And please explain to us what their purposes are."
+  },
+  { "startTime": 3417.08, "person": "Xin", "text": " So it's kind of like a voice." },
+  { "startTime": 3418.96, "person": "Xin", "text": " It's not the communication bandwidth." },
+  {
+    "startTime": 3421.46,
+    "person": "Xin",
+    "text": " For me to experience this, it's no longer constrained to that chat window."
+  },
+  { "startTime": 3426.94, "person": "Xin", "text": " It's a voice." },
+  { "startTime": 3428.12, "person": "Xin", "text": " Yeah." },
+  {
+    "startTime": 3428.48,
+    "person": "Xin",
+    "text": " So it's kind of like there's still all kinds of limitations to get down a rabbit hole."
+  },
+  { "startTime": 3433.64, "person": "Xin", "text": " It's too verbose." },
+  { "startTime": 3434.62, "person": "Xin", "text": " It's kind of like, please be short." },
+  {
+    "startTime": 3436.3,
+    "person": "Xin",
+    "text": " And it just makes a long speech about everything."
+  },
+  { "startTime": 3440.52, "person": "Xin", "text": " And you just get bored and so forth." },
+  { "startTime": 3442.66, "person": "Xin", "text": " So that's one thing." },
+  {
+    "startTime": 3443.88,
+    "person": "Xin",
+    "text": " The other thing is that with event storming, a lot of these visual collaborative approach, the collaboration bandwidth is just like the whole room, the whole space."
+  },
+  {
+    "startTime": 3453.1,
+    "person": "Xin",
+    "text": " And how do we sort of recreate that experience with the involvement of AI and in that small interface, either voice-based or text-based and without the humans getting constrained."
+  },
+  {
+    "startTime": 3473.4,
+    "person": "Xin",
+    "text": " So yesterday in Phyllis' workshop, we did an experiment with LLMs as a domain expert."
+  },
+  { "startTime": 3480.24, "person": "Speaker 6", "text": " Right." },
+  { "startTime": 3480.36, "person": "Xin", "text": " But we went really into extreme." },
+  {
+    "startTime": 3484.72,
+    "person": "Xin",
+    "text": " But one positive thing definitely is that if you knew nothing about a domain, getting started, getting a jumpstart about this domain, LLM is actually quite helpful."
+  },
+  { "startTime": 3496.56, "person": "Mathias", "text": " Summarising existing text, right?" },
+  { "startTime": 3498.8, "person": "Xin", "text": " Yes." },
+  { "startTime": 3498.98, "person": "Xin", "text": " You've got a jumpstart." },
+  {
+    "startTime": 3500.3,
+    "person": "Xin",
+    "text": " And then basically we have to know when to start and when to stop and say, okay, here to here and the rest of this piece is what we're going to do together."
+  },
+  { "startTime": 3512.32, "person": "Xin", "text": " And then we perhaps can get back." },
+  {
+    "startTime": 3514.4,
+    "person": "Xin",
+    "text": " So I think it's again about that intentionality, about experience design, coming back to design again."
+  },
+  {
+    "startTime": 3521.34,
+    "person": "Xin",
+    "text": " So this experience needs to be intentionally designed for it to be productive."
+  },
+  {
+    "startTime": 3527.38,
+    "person": "Mathias",
+    "text": " And so it's an interesting example because I'm sure many people here have thoughts as well about modelling and event storming and what could be the role of AI in that."
+  },
+  {
+    "startTime": 3539.3,
+    "person": "Mathias",
+    "text": " In fact, somebody gave me a demo of an event storming tool where you will be able to talk to it."
+  },
+  {
+    "startTime": 3546,
+    "person": "Mathias",
+    "text": " And then I am trying to always think about what are we not seeing?"
+  },
+  { "startTime": 3551.3, "person": "Mathias", "text": " What are we missing?" },
+  { "startTime": 3552.22, "person": "Mathias", "text": " This is basically my job." },
+  { "startTime": 3553.84, "person": "Mathias", "text": " This is how I do consulting." },
+  { "startTime": 3555.42, "person": "Mathias", "text": " Right." },
+  { "startTime": 3555.52, "person": "Mathias", "text": " So I have an example, right?" },
+  { "startTime": 3557.84, "person": "Mathias", "text": " Well, maybe two examples." },
+  {
+    "startTime": 3559.38,
+    "person": "Mathias",
+    "text": " One is that this is one from Alberto Brandolini."
+  },
+  {
+    "startTime": 3563.48,
+    "person": "Mathias",
+    "text": " In event storming, how do you measure progress?"
+  },
+  {
+    "startTime": 3565.94,
+    "person": "Mathias",
+    "text": " It's the number of stickies on the floor."
+  },
+  {
+    "startTime": 3568.1,
+    "person": "Mathias",
+    "text": " So it's everything that you remove that has meaning, that has value, knowing the discussion and the fact that you removed it."
+  },
+  {
+    "startTime": 3576.18,
+    "person": "Mathias",
+    "text": " This tool that I was demoing did not have a floor where post-its that you remove end up on."
+  },
+  { "startTime": 3583.42, "person": "Mathias", "text": " That is a solvable problem." },
+  {
+    "startTime": 3585.4,
+    "person": "Mathias",
+    "text": " He could design that into the system and maybe more effective than an actual physical floor."
+  },
+  {
+    "startTime": 3591.48,
+    "person": "Mathias",
+    "text": " But I was thinking what other kinds of things do I do in a modelling session?"
+  },
+  {
+    "startTime": 3595.7,
+    "person": "Mathias",
+    "text": " I remember, for example, that I often take a step back and I watch people work and do things and debate."
+  },
+  {
+    "startTime": 3605.2,
+    "person": "Mathias",
+    "text": " And I look for patterns, like even body language."
+  },
+  {
+    "startTime": 3609.66,
+    "person": "Mathias",
+    "text": " For example, if somebody is explaining something and they're doing this move, like, yeah, and then the process needs to go into this means."
+  },
+  { "startTime": 3617.98, "person": "Mathias", "text": " I'm not very interested." },
+  { "startTime": 3619.28, "person": "Mathias", "text": " I'm not the expert." },
+  { "startTime": 3620.24, "person": "Mathias", "text": " Ask someone else." },
+  {
+    "startTime": 3621.72,
+    "person": "Mathias",
+    "text": " I don't want to be involved in that thing or I don't think it's important."
+  },
+  { "startTime": 3625.08, "person": "Mathias", "text": " One of those many things." },
+  {
+    "startTime": 3626.66,
+    "person": "Mathias",
+    "text": " If somebody is very active, it means they care and they are involved and it's part of their job maybe."
+  },
+  {
+    "startTime": 3632.04,
+    "person": "Mathias",
+    "text": " If people are pointing to things like this instead of more like this, maybe their problem should be better visualised as a graph than a linear timeline."
+  },
+  { "startTime": 3643.22, "person": "Mathias", "text": " That's what we do in event storming." },
+  {
+    "startTime": 3644.86,
+    "person": "Mathias",
+    "text": " So I tell them, can we take those post-its and arrange them in a different way?"
+  },
+  {
+    "startTime": 3648.52,
+    "person": "Mathias",
+    "text": " When people with a sort of typical engineering mindset which constrains the problem to the solvable aspects, none of the tools I've seen, two demos of two different tools, allow this sort of freedom."
+  },
+  {
+    "startTime": 3664.12,
+    "person": "Mathias",
+    "text": " Allow observing the behaviour and even if they are collaborative, which then means that you can all sit at your own computer and move objects around on this board."
+  },
+  {
+    "startTime": 3674.26,
+    "person": "Mathias",
+    "text": " They're not collaborative in terms of creating the space where this happens."
+  },
+  {
+    "startTime": 3681.36,
+    "person": "Andrew",
+    "text": " In that sense, you take a lot more from the nonverbal communication that's happening in the room rather than the actual words that fly around."
+  },
+  {
+    "startTime": 3689.9,
+    "person": "Mathias",
+    "text": " And that's my main concern that all LLMs can do."
+  },
+  {
+    "startTime": 3694.82,
+    "person": "Mathias",
+    "text": " They can only base themselves on written descriptions of everything."
+  },
+  { "startTime": 3698.78, "person": "Mathias", "text": " What we express consciously." },
+  { "startTime": 3700.58, "person": "Mathias", "text": " I already gave the example of poetry." },
+  {
+    "startTime": 3704.36,
+    "person": "Mathias",
+    "text": " It can mimic poetry based on written other poems."
+  },
+  {
+    "startTime": 3711.84,
+    "person": "Mathias",
+    "text": " You could train it on a body of body language videos, etc."
+  },
+  {
+    "startTime": 3718.72,
+    "person": "Mathias",
+    "text": " But body language is a living language, so it would also always be behind."
+  },
+  { "startTime": 3723, "person": "Mathias", "text": " And it's contextual." },
+  { "startTime": 3724.06, "person": "Mathias", "text": " And it's contextual." },
+  {
+    "startTime": 3725.44,
+    "person": "Mathias",
+    "text": " And then you can train it on being able to take in more context."
+  },
+  {
+    "startTime": 3729.58,
+    "person": "Andrew",
+    "text": " But then it needs to identify what is the actual context."
+  },
+  { "startTime": 3732.66, "person": "Andrew", "text": " And that's extremely difficult." },
+  {
+    "startTime": 3734.94,
+    "person": "Mathias",
+    "text": " But all these problems become invisible."
+  },
+  {
+    "startTime": 3737.92,
+    "person": "Mathias",
+    "text": " If you only model remotely, you don't know that there is a hidden layer that you could be using to get information from."
+  },
+  {
+    "startTime": 3746.64,
+    "person": "Mathias",
+    "text": " If you always work with an LLM, I fear, you don't know that there's a world of non-written or non-documented information that has an impact."
+  },
+  {
+    "startTime": 3757.4,
+    "person": "Mathias",
+    "text": " So design needs to live in this friction."
+  },
+  {
+    "startTime": 3762.44,
+    "person": "Mathias",
+    "text": " And if you create a sort of very constrained environment where there is no friction or the friction is invisible, you have no reason to design."
+  },
+  { "startTime": 3772.98, "person": "Mathias", "text": " Your critical thinking lowers." },
+  {
+    "startTime": 3774.36,
+    "person": "Mathias",
+    "text": " There's already studies that using LLMs a lot can lower your critical thinking, your cognitive skills, your ability to..."
+  },
+  {
+    "startTime": 3782.7,
+    "person": "Mathias",
+    "text": " Which is probably combined with our use of phones and our attention span declining and all these things."
+  },
+  {
+    "startTime": 3789.88,
+    "person": "Andrew",
+    "text": " I recall studies that the current young generation is the first generation that has a decline in IQ."
+  },
+  {
+    "startTime": 3801.9,
+    "person": "Andrew",
+    "text": " Because the IQ tests are always normalised against the average."
+  },
+  {
+    "startTime": 3806.8,
+    "person": "Andrew",
+    "text": " So now we're seeing for the first time in many generations that we have a step downwards instead of upwards."
+  },
+  { "startTime": 3815.58, "person": "Andrew", "text": " It was a growing trend." },
+  {
+    "startTime": 3817.8,
+    "person": "Andrew",
+    "text": " And as far as I recall, the study, it does blame the distractions that are these dopamine boosts that we're getting from digital media."
+  },
+  {
+    "startTime": 3828.6,
+    "person": "Mathias",
+    "text": " First, IQ doesn't test for potential new skills that have emerged."
+  },
+  {
+    "startTime": 3833.14,
+    "person": "Andrew",
+    "text": " Yeah, it's a very specifically framed Western kind of cultural thing, right?"
+  },
+  { "startTime": 3837.44, "person": "Martin", "text": " Very true." },
+  {
+    "startTime": 3838.24,
+    "person": "Martin",
+    "text": " Again, it's tradition in all of human history to say the kids today."
+  },
+  { "startTime": 3844.06, "person": "Martin", "text": " All the kids today." },
+  { "startTime": 3845.52, "person": "Xin", "text": " Yeah, yeah." },
+  {
+    "startTime": 3847.24,
+    "person": "Xin",
+    "text": " I'm wondering, like design and architecture."
+  },
+  {
+    "startTime": 3850.82,
+    "person": "Xin",
+    "text": " So I've been applying your architecture advice process, right?"
+  },
+  {
+    "startTime": 3857.02,
+    "person": "Xin",
+    "text": " And Martin, you have been promoting Andrew's article as well."
+  },
+  { "startTime": 3861.3, "person": "Xin", "text": " It's wonderful." },
+  {
+    "startTime": 3862.74,
+    "person": "Xin",
+    "text": " It's a way to basically bring, yeah, bringing everyone the potential of becoming an architect, to partake in the architecture game and architecture thinking."
+  },
+  {
+    "startTime": 3874.08,
+    "person": "Xin",
+    "text": " So how do you see that process and architecture in general in this age where we're living?"
+  },
+  { "startTime": 3882.6, "person": "Andrew", "text": " It's super interesting." },
+  {
+    "startTime": 3883.26,
+    "person": "Andrew",
+    "text": " So I actively avoided using LLMs when I was writing my book because the concept of the fact an LLM could write as a book."
+  },
+  {
+    "startTime": 3890.34,
+    "person": "Andrew",
+    "text": " Like I was worried an LLM would write a better book than me."
+  },
+  {
+    "startTime": 3893.38,
+    "person": "Andrew",
+    "text": " So I avoided the question by not using LLMs. What I have used it for now is like optionality."
+  },
+  {
+    "startTime": 3899.4,
+    "person": "Andrew",
+    "text": " So coming up with different because one of the big things is blind spots."
+  },
+  {
+    "startTime": 3902.86,
+    "person": "Andrew",
+    "text": " Like you get everyone in a room and then there'll still be blind spots of the people in the room."
+  },
+  {
+    "startTime": 3906.64,
+    "person": "Andrew",
+    "text": " Whoever's not in the room will be at one."
+  },
+  { "startTime": 3908.66, "person": "Andrew", "text": " True." },
+  {
+    "startTime": 3909.04,
+    "person": "Andrew",
+    "text": " So LLMs for giving you like asking, and it still doesn't negate the blind spots, but it can give you more kind of stuff."
+  },
+  {
+    "startTime": 3916.4,
+    "person": "Andrew",
+    "text": " You need them to be able to cope with all of that kind of stuff and be able to summarise, hopefully, and pull things up levels or dig into things and go down levels."
+  },
+  {
+    "startTime": 3923.1,
+    "person": "Andrew",
+    "text": " And like Martin said, things that we never talk about in software architecture is we design a system and there's a bunch of people and they eventually get on really well."
+  },
+  {
+    "startTime": 3930.93,
+    "person": "Andrew",
+    "text": " And the socio-technical system is amazing."
+  },
+  { "startTime": 3932.45, "person": "Andrew", "text": " And we're best friends." },
+  {
+    "startTime": 3933.25,
+    "person": "Andrew",
+    "text": " And Alberto came in and we're doing event storming."
+  },
+  {
+    "startTime": 3936.45,
+    "person": "Andrew",
+    "text": " Five years, 10 years later, half of the people have left."
+  },
+  {
+    "startTime": 3939.91,
+    "person": "Andrew",
+    "text": " And the only thing that's remembered is the code and everyone else has left."
+  },
+  {
+    "startTime": 3943.89,
+    "person": "Andrew",
+    "text": " And we're left with implicit architecture because nobody can explain it."
+  },
+  {
+    "startTime": 3946.51,
+    "person": "Andrew",
+    "text": " Implicit architecture or it drifted or whatever."
+  },
+  {
+    "startTime": 3949.35,
+    "person": "Andrew",
+    "text": " So it's quite nice if you fill it in with all of the context of your stuff and all of your fuzzy, like your specific stuff, which is the code and all the fuzzy stuff, which is the documentation and the wiki, which contradicts itself 17 times."
+  },
+  {
+    "startTime": 3960.77,
+    "person": "Andrew",
+    "text": " All of these other things, plus the ADRs of what we thought might, you know, like Alberto would say, the intention of what was going to go into prod and then there's the code that went to prod."
+  },
+  {
+    "startTime": 3969.95,
+    "person": "Andrew",
+    "text": " But it's a nicer way of, it is very good at going out and bringing all this stuff and bringing it together."
+  },
+  { "startTime": 3975.03, "person": "Andrew", "text": " So it's a good tool for that." },
+  {
+    "startTime": 3976.81,
+    "person": "Andrew",
+    "text": " I still think that kind of, there's an old IBM quote, which is something like, never let a machine make a decision for you."
+  },
+  {
+    "startTime": 3981.77,
+    "person": "Andrew",
+    "text": " And I think the fundamental key thing is like being conscious it's a decision."
+  },
+  {
+    "startTime": 3985.51,
+    "person": "Andrew",
+    "text": " And even if you're accepting completely blindly what's being told, suggested to you by an LLM, it's you that decides to do it."
+  },
+  {
+    "startTime": 3993.75,
+    "person": "Andrew",
+    "text": " You're the person who presses the green arrow to make whatever LLM tool it is to do the change and push it."
+  },
+  {
+    "startTime": 3999.33,
+    "person": "Andrew",
+    "text": " It's basically analogue to being a consultant."
+  },
+  {
+    "startTime": 4002.21,
+    "person": "Andrew",
+    "text": " Because one of the things we're taught as senior consultants is like, you're consultants."
+  },
+  { "startTime": 4007.27, "person": "Andrew", "text": " You are liable if you make the decision." },
+  { "startTime": 4009.39, "person": "Andrew", "text": " The decision is on your client." },
+  { "startTime": 4011.55, "person": "Andrew", "text": " The client needs to make the decision." },
+  { "startTime": 4012.85, "person": "Andrew", "text": " You make the recommendations." },
+  {
+    "startTime": 4014.75,
+    "person": "Andrew",
+    "text": " Because otherwise you bring liability to the company."
+  },
+  {
+    "startTime": 4016.95,
+    "person": "Andrew",
+    "text": " And here with LLM making decisions, if you're not taking accountability for that, well, it basically introduces a liability."
+  },
+  {
+    "startTime": 4024.75,
+    "person": "Andrew",
+    "text": " Somebody's going to pay for that liability."
+  },
+  {
+    "startTime": 4027.17,
+    "person": "Andrew",
+    "text": " And it's going to be extremely difficult to say who."
+  },
+  {
+    "startTime": 4029.73,
+    "person": "Andrew",
+    "text": " It's what I was talking about in accountability because it's a big, like, yeah, accountability is a big thing."
+  },
+  {
+    "startTime": 4036.13,
+    "person": "Mathias",
+    "text": " I think we're treating it like a bug, but it's a feature."
+  },
+  {
+    "startTime": 4041.91,
+    "person": "Mathias",
+    "text": " People want to be able to blame the LLMs as discovered in many forms of management and everything."
+  },
+  { "startTime": 4051.69, "person": "Mathias", "text": " So this is not an accident." },
+  {
+    "startTime": 4053.63,
+    "person": "Mathias",
+    "text": " This is almost, it's not designed in LLMs per se."
+  },
+  {
+    "startTime": 4057.99,
+    "person": "Mathias",
+    "text": " But it is designed into people's adoption of AI."
+  },
+  {
+    "startTime": 4064.11,
+    "person": "Mathias",
+    "text": " They want to be able to say, oh, that bad thing was, it's already happened."
+  },
+  { "startTime": 4069.17, "person": "Mathias", "text": " This is not something." },
+  {
+    "startTime": 4069.85,
+    "person": "Mathias",
+    "text": " There's already reports of, you know, big companies blaming an LLM for wrong marketing thing or, you know, all kinds of stuff."
+  },
+  {
+    "startTime": 4079.53,
+    "person": "Mathias",
+    "text": " Ranging from, oh, the price is too high."
+  },
+  { "startTime": 4081.47, "person": "Mathias", "text": " Oh, sorry." },
+  { "startTime": 4082.05, "person": "Mathias", "text": " That was the machine." },
+  { "startTime": 4084.15, "person": "Mathias", "text": " Well, of course we disagree." },
+  {
+    "startTime": 4085.87,
+    "person": "Mathias",
+    "text": " But many people are out of self-interest to cover their arses, pushing for a world where this is the norm, where we cannot blame anyone anymore."
+  },
+  {
+    "startTime": 4101.29,
+    "person": "Mathias",
+    "text": " And if you'll excuse me, another trip into philosophy."
+  },
+  {
+    "startTime": 4106.35,
+    "person": "Mathias",
+    "text": " So in feudalism, the social contract was that a lord would protect the people in exchange for taxes."
+  },
+  {
+    "startTime": 4118.729,
+    "person": "Mathias",
+    "text": " You work, I protect you against invaders and criminals."
+  },
+  { "startTime": 4123.33, "person": "Mathias", "text": " How do you maintain that system?" },
+  {
+    "startTime": 4124.99,
+    "person": "Mathias",
+    "text": " You show that you're doing that work by publicly executing criminals because it makes it very visible."
+  },
+  {
+    "startTime": 4134.49,
+    "person": "Mathias",
+    "text": " Like, look, I am actually upholding my part of the contract."
+  },
+  {
+    "startTime": 4137.37,
+    "person": "Mathias",
+    "text": " Don't revolt when I ask for taxes because I'm literally protecting you against."
+  },
+  {
+    "startTime": 4141.71,
+    "person": "Mathias",
+    "text": " The downside of that whole system is it's very clear to people."
+  },
+  { "startTime": 4145.93, "person": "Mathias", "text": " If stuff goes wrong, who's to blame?" },
+  {
+    "startTime": 4148.95,
+    "person": "Mathias",
+    "text": " And it's very clear what to do with them."
+  },
+  { "startTime": 4151.13, "person": "Mathias", "text": " And then you get the French Revolution." },
+  {
+    "startTime": 4152.649,
+    "person": "Mathias",
+    "text": " You know exactly who to blame and you know exactly how to get rid of them."
+  },
+  {
+    "startTime": 4157.63,
+    "person": "Mathias",
+    "text": " So the modern system has made that a lot more invisible."
+  },
+  { "startTime": 4164.029, "person": "Mathias", "text": " We cannot really blame individuals." },
+  {
+    "startTime": 4167.689,
+    "person": "Mathias",
+    "text": " It's a huge, messy, complex system that we don't understand."
+  },
+  {
+    "startTime": 4171.45,
+    "person": "Mathias",
+    "text": " Sure, we can blame a president, but the president is really just a symptom of the system."
+  },
+  {
+    "startTime": 4176.17,
+    "person": "Mathias",
+    "text": " It's a disposable role in the sense that Trumpism will not disappear when Trump disappears."
+  },
+  {
+    "startTime": 4187.39,
+    "person": "Mathias",
+    "text": " So that drive to remove accountability has always been there."
+  },
+  {
+    "startTime": 4195.61,
+    "person": "Mathias",
+    "text": " And now there's a new tool that makes this..."
+  },
+  { "startTime": 4198.31, "person": "Mathias", "text": " It hypercharges it, right?" },
+  { "startTime": 4199.57, "person": "Mathias", "text": " Yeah." },
+  {
+    "startTime": 4200.05,
+    "person": "Andrew",
+    "text": " Basically, it's a drive towards finding scapegoats rather than somebody to help you."
+  },
+  {
+    "startTime": 4204.03,
+    "person": "Mathias",
+    "text": " Yeah, basically being able to do whatever you want, collect power and wealth and everything, and never be at the receiving end of the blame for all the externalities."
+  },
+  {
+    "startTime": 4216.01,
+    "person": "Andrew",
+    "text": " So we're basically trying to remove causality out of the equation."
+  },
+  {
+    "startTime": 4220.03,
+    "person": "Mathias",
+    "text": " Well, not causality, but accountability."
+  },
+  {
+    "startTime": 4222.33,
+    "person": "Andrew",
+    "text": " Well, causality connected to accountability."
+  },
+  { "startTime": 4224.77, "person": "Mathias", "text": " The ability to find cause." },
+  { "startTime": 4226.83, "person": "Mathias", "text": " Yes, that sense." },
+  {
+    "startTime": 4228.11,
+    "person": "Mathias",
+    "text": " So it becomes more and more invisible to find out who's responsible for your terrible life."
+  },
+  {
+    "startTime": 4233.57,
+    "person": "Mathias",
+    "text": " And then, of course, it also makes it very easy to say, oh, it's the immigrants or it's..."
+  },
+  {
+    "startTime": 4238.97,
+    "person": "Andrew",
+    "text": " Then we got jumped to baked in pop cultural or cultural heuristics."
+  },
+  { "startTime": 4244.35, "person": "Mathias", "text": " Yes." },
+  { "startTime": 4244.53, "person": "Mathias", "text": " Basically, right?" },
+  { "startTime": 4245.73, "person": "Mathias", "text": " So it's not a bug in the system." },
+  { "startTime": 4247.61, "person": "Mathias", "text": " It's the point of the system." },
+  {
+    "startTime": 4249.75,
+    "person": "Mathias",
+    "text": " In systems thinking, we say that the system opposes its own function."
+  },
+  {
+    "startTime": 4254.89,
+    "person": "Mathias",
+    "text": " So you could say that the official function is helping humanity."
+  },
+  {
+    "startTime": 4259.75,
+    "person": "Mathias",
+    "text": " And OpenAI's mission was for the benefit of humanity."
+  },
+  {
+    "startTime": 4266.45,
+    "person": "Mathias",
+    "text": " But the other powers are not interested in that."
+  },
+  { "startTime": 4269.87, "person": "Mathias", "text": " But it's always power." },
+  { "startTime": 4274.79, "person": "Andrew", "text": " That's capitalism at its best." },
+  { "startTime": 4276.59, "person": "Andrew", "text": " Yeah." },
+  {
+    "startTime": 4277.21,
+    "person": "Mathias",
+    "text": " And we're not even anymore in capitalism."
+  },
+  {
+    "startTime": 4279.91,
+    "person": "Mathias",
+    "text": " We're in what a lot of philosophers are now calling techno feudalism, because we're going back to a space where you own nothing."
+  },
+  { "startTime": 4287.13, "person": "Mathias", "text": " You rent." },
+  { "startTime": 4288.27, "person": "Mathias", "text": " You pay for that." },
+  {
+    "startTime": 4290.23,
+    "person": "Mathias",
+    "text": " Ranging from Netflix to washing machines to everything is rentable now."
+  },
+  { "startTime": 4295.05, "person": "Mathias", "text": " Intelligence is now for rent." },
+  { "startTime": 4297.43, "person": "Mathias", "text": " You own nothing." },
+  { "startTime": 4298.25, "person": "Andrew", "text": " Intelligence is commoditised, right?" },
+  { "startTime": 4299.73, "person": "Andrew", "text": " Everything is corruption based." },
+  { "startTime": 4301.87, "person": "Mathias", "text": " Yes." },
+  { "startTime": 4302.57, "person": "Mathias", "text": " But that's just a symptom of it, right?" },
+  {
+    "startTime": 4305.69,
+    "person": "Mathias",
+    "text": " There's corporate overlords, millionaires who control more and more of our lives."
+  },
+  { "startTime": 4312.53, "person": "Mathias", "text": " They decide what they censor." },
+  { "startTime": 4314.67, "person": "Mathias", "text": " They decide..." },
+  {
+    "startTime": 4315.27,
+    "person": "Mathias",
+    "text": " And this, again, is not science fiction, right?"
+  },
+  {
+    "startTime": 4316.89,
+    "person": "Mathias",
+    "text": " Grok has been stated publicly, is trained on right-wing literature, has been instructed at some point."
+  },
+  {
+    "startTime": 4328.69,
+    "person": "Mathias",
+    "text": " I don't know if that's still the case, but to prioritise Elon Musk's opinions about things."
+  },
+  {
+    "startTime": 4333.63,
+    "person": "Mathias",
+    "text": " So the idea of AI as a control mechanism, as a public opinion manipulation thing, is not science fiction."
+  },
+  { "startTime": 4340.93, "person": "Mathias", "text": " It is literally happening right now." },
+  { "startTime": 4344.19, "person": "Mathias", "text": " And that is the whole point." },
+  {
+    "startTime": 4346.01,
+    "person": "Mathias",
+    "text": " This is why billionaires invest in it so much."
+  },
+  {
+    "startTime": 4349.13,
+    "person": "Mathias",
+    "text": " The same way they used to invest in newspapers and television stations and social media."
+  },
+  {
+    "startTime": 4355.05,
+    "person": "Mathias",
+    "text": " And the forms of control become more subtle and more subtle so that it becomes harder to blame."
+  },
+  {
+    "startTime": 4361.51,
+    "person": "Mathias",
+    "text": " You can blame the owner of a newspaper for printing something, but it becomes very hard to blame the owner of an AI for the AI recommending you something."
+  },
+  { "startTime": 4371.73, "person": "Mathias", "text": " It's a lot harder to prove that." },
+  {
+    "startTime": 4374.45,
+    "person": "Andrew",
+    "text": " Because that's basically unprovable because it's invisible."
+  },
+  { "startTime": 4378.31, "person": "Mathias", "text": " It's the AI." },
+  { "startTime": 4379.15, "person": "Mathias", "text": " It's non-deterministic." },
+  { "startTime": 4379.99, "person": "Andrew", "text": " It's the training data." },
+  {
+    "startTime": 4381.63,
+    "person": "Andrew",
+    "text": " And then on top of that, we have no idea what these models, what heuristics are baked into those models."
+  },
+  { "startTime": 4389.45, "person": "Andrew", "text": " We had an example at work." },
+  {
+    "startTime": 4392.29,
+    "person": "Andrew",
+    "text": " Kev Gemini is investing a lot in ethics around AI and trying to figure out how to ethically use AI."
+  },
+  {
+    "startTime": 4397.93,
+    "person": "Andrew",
+    "text": " And one of the conversations was how to use AI in the public sector, for example, for police prosecution, etc."
+  },
+  {
+    "startTime": 4408.37,
+    "person": "Andrew",
+    "text": " So a group of people was discussing on a team's call different topics, different cases that, for example, police might have."
+  },
+  {
+    "startTime": 4417.21,
+    "person": "Andrew",
+    "text": " And they looked after the meeting at the summary of the conversation produced by AI."
+  },
+  { "startTime": 4424.23, "person": "Andrew", "text": " Two-thirds of the meeting was gone." },
+  { "startTime": 4426.37, "person": "Andrew", "text": " Looked at the transcript." },
+  { "startTime": 4427.61, "person": "Andrew", "text": " Everything was there." },
+  { "startTime": 4428.91, "person": "Andrew", "text": " But the summary?" },
+  {
+    "startTime": 4429.79,
+    "person": "Andrew",
+    "text": " Two-thirds of the meeting is completely eradicated."
+  },
+  { "startTime": 4432.03, "person": "Andrew", "text": " Why?" },
+  {
+    "startTime": 4432.63,
+    "person": "Andrew",
+    "text": " Because the topics of the meeting, giving police work and police use cases, hit a specific, baked-in heuristic of a guardrail."
+  },
+  { "startTime": 4440.67, "person": "Andrew", "text": " You are not supposed to process this." },
+  { "startTime": 4443.03, "person": "Andrew", "text": " Period." },
+  { "startTime": 4445.11, "person": "Andrew", "text": " Eradicated entirely." },
+  {
+    "startTime": 4446.63,
+    "person": "Andrew",
+    "text": " So this eliminated completely the use cases for that particular model to be used in these kind of cases."
+  },
+  { "startTime": 4453.35, "person": "Andrew", "text": " Well, unfortunate." },
+  { "startTime": 4456.35, "person": "Andrew", "text": " Maybe fortunate at this point also." },
+  {
+    "startTime": 4458.77,
+    "person": "Andrew",
+    "text": " But basically, we have no idea what are the heuristics."
+  },
+  { "startTime": 4462.57, "person": "Mathias", "text": " Unless we've trained them ourselves." },
+  { "startTime": 4464.31, "person": "Mathias", "text": " We do from reverse engineering." },
+  { "startTime": 4468.03, "person": "Andrew", "text": " Experimentation, basically." },
+  {
+    "startTime": 4469.09,
+    "person": "Mathias",
+    "text": " We know that some of these chatbots will always agree with you."
+  },
+  { "startTime": 4474.15, "person": "Andrew", "text": " The sycophancy level is high." },
+  { "startTime": 4476.37, "person": "Mathias", "text": " They have been instructed to do that." },
+  {
+    "startTime": 4478.23,
+    "person": "Mathias",
+    "text": " It's not that they have been only trained on a body of text where the opinion of the author changes mid-sentence."
+  },
+  { "startTime": 4484.61, "person": "Mathias", "text": " They have been instructed to do that." },
+  {
+    "startTime": 4487.33,
+    "person": "Mathias",
+    "text": " And that has very direct consequences on people."
+  },
+  {
+    "startTime": 4491.01,
+    "person": "Mathias",
+    "text": " For example, there's documented cases where this has led to the chatbot recommending suicide to people who are seeking help."
+  },
+  {
+    "startTime": 4500.11,
+    "person": "Mathias",
+    "text": " That is because it was agreeing with whatever dark thoughts maybe they were communicating."
+  },
+  {
+    "startTime": 4506.67,
+    "person": "Andrew",
+    "text": " And that's why also things like adversarial prompting and prompt ejection work amazingly."
+  },
+  {
+    "startTime": 4512.65,
+    "person": "Andrew",
+    "text": " Because they are baked in to agree with you."
+  },
+  {
+    "startTime": 4515.39,
+    "person": "Andrew",
+    "text": " So if they agree that they are Bob and they can do everything."
+  },
+  {
+    "startTime": 4518.43,
+    "person": "Andrew",
+    "text": " And you remind them that they're Bob and Bob can do anything."
+  },
+  { "startTime": 4521.05, "person": "Andrew", "text": " They do anything." },
+  {
+    "startTime": 4522.31,
+    "person": "Mathias",
+    "text": " I'm sure they will be built more resilient to these things over time."
+  },
+  {
+    "startTime": 4526.59,
+    "person": "Mathias",
+    "text": " But that also means if you can build them more resilient to these kind of attacks."
+  },
+  {
+    "startTime": 4531.35,
+    "person": "Mathias",
+    "text": " You also build them more resilient to maintain your view of the world."
+  },
+  {
+    "startTime": 4536.45,
+    "person": "Mathias",
+    "text": " And make sure that all outputs somehow conform to that."
+  },
+  {
+    "startTime": 4541.53,
+    "person": "Mathias",
+    "text": " And the same way that YouTube's algorithm is sycophantic in the sense that it keeps showing you things that you want to see."
+  },
+  { "startTime": 4549.97, "person": "Mathias", "text": " And measures your engagement." },
+  {
+    "startTime": 4551.89,
+    "person": "Mathias",
+    "text": " And we know that the angrier you get, the more engagement it creates."
+  },
+  {
+    "startTime": 4556.11,
+    "person": "Mathias",
+    "text": " So it leads into far right conspiracy theories and everything."
+  },
+  { "startTime": 4561.53, "person": "Mathias", "text": " Just because of an algorithm." },
+  {
+    "startTime": 4563.59,
+    "person": "Mathias",
+    "text": " And then people say, oh but it's accidental."
+  },
+  { "startTime": 4566.89, "person": "Mathias", "text": " It's not." },
+  { "startTime": 4567.61, "person": "Mathias", "text": " It could have been prevented." },
+  { "startTime": 4569.15, "person": "Mathias", "text": " It could have been stopped." },
+  {
+    "startTime": 4570.65,
+    "person": "Mathias",
+    "text": " But the other pressure was it generates income."
+  },
+  { "startTime": 4574.71, "person": "Andrew", "text": " It's by design." },
+  { "startTime": 4575.81, "person": "Andrew", "text": " There are cases." },
+  { "startTime": 4577.39, "person": "Andrew", "text": " What was that?" },
+  { "startTime": 4578.21, "person": "Andrew", "text": " With TikTok?" },
+  {
+    "startTime": 4579.45,
+    "person": "Andrew",
+    "text": " That the algorithm pushed content that was around suicide, self-harm, etc."
+  },
+  {
+    "startTime": 4586.31,
+    "person": "Andrew",
+    "text": " To people suffering mentally because of what they were doing."
+  },
+  { "startTime": 4591.09, "person": "Andrew", "text": " Because of their history of doing." },
+  { "startTime": 4592.79, "person": "Andrew", "text": " Because they were suffering." },
+  {
+    "startTime": 4594.71,
+    "person": "Andrew",
+    "text": " Which the algorithm has no idea about, of course."
+  },
+  {
+    "startTime": 4596.87,
+    "person": "Andrew",
+    "text": " But it's designed that way to propagate whatever is there."
+  },
+  { "startTime": 4601.13, "person": "Andrew", "text": " And this is tenfold in LLM models." },
+  {
+    "startTime": 4607.41,
+    "person": "Mathias",
+    "text": " And it seems that we have learned nothing from the social media age."
+  },
+  {
+    "startTime": 4612.15,
+    "person": "Mathias",
+    "text": " And Cambridge Analytica and all these things."
+  },
+  { "startTime": 4614.83, "person": "Mathias", "text": " And we are just very bad at..." },
+  {
+    "startTime": 4617.17,
+    "person": "Mathias",
+    "text": " We have a very short memory for all this stuff."
+  },
+  { "startTime": 4619.23, "person": "Mathias", "text": " Which is..." },
+  { "startTime": 4620.47, "person": "Mathias", "text": " That's something that concerns me." },
+  { "startTime": 4622.53, "person": "Mathias", "text": " I tried an example yesterday." },
+  { "startTime": 4624.75, "person": "Mathias", "text": " I don't know if people work here." },
+  { "startTime": 4625.79, "person": "Mathias", "text": " But you remember LeftPath?" },
+  {
+    "startTime": 4627.77,
+    "person": "Mathias",
+    "text": " So, it was a very small JavaScript library with LeftPath as the string of text."
+  },
+  { "startTime": 4635.39, "person": "Mathias", "text": " And I forgot the reasons and whatever." },
+  {
+    "startTime": 4638.65,
+    "person": "Mathias",
+    "text": " But there was sort of a hostile takedown of that."
+  },
+  {
+    "startTime": 4641.87,
+    "person": "Mathias",
+    "text": " Which caused half the internet to go down."
+  },
+  { "startTime": 4646.63, "person": "Mathias", "text": " Because so many things depended on it." },
+  {
+    "startTime": 4648.23,
+    "person": "Andrew",
+    "text": " It was because the author had a name that also a different company tried to trademark."
+  },
+  {
+    "startTime": 4652.63,
+    "person": "Andrew",
+    "text": " And he was first in the repository with that name."
+  },
+  {
+    "startTime": 4655.51,
+    "person": "Andrew",
+    "text": " And they tried to take over that repository."
+  },
+  {
+    "startTime": 4657.65,
+    "person": "Mathias",
+    "text": " But the point is that this incredibly small little bit of infrastructure."
+  },
+  {
+    "startTime": 4662.25,
+    "person": "Mathias",
+    "text": " That is probably just like one or two lines of code."
+  },
+  {
+    "startTime": 4664.51,
+    "person": "Mathias",
+    "text": " Was enough to take down half the internet."
+  },
+  { "startTime": 4666.79, "person": "Andrew", "text": " Like the SKCD car table." },
+  { "startTime": 4668.35, "person": "Mathias", "text": " So, what did we learn from that?" },
+  { "startTime": 4671.61, "person": "Mathias", "text": " I asked people after that incident." },
+  {
+    "startTime": 4673.79,
+    "person": "Mathias",
+    "text": " If they had changed how they decide on which npm packages to use."
+  },
+  {
+    "startTime": 4678.81,
+    "person": "Mathias",
+    "text": " Whether they store local copies or they store them in their git repositories."
+  },
+  { "startTime": 4683.13, "person": "Mathias", "text": " Nobody had changed anything." },
+  { "startTime": 4684.33, "person": "Mathias", "text": " So, LeftPath can happen again anytime." },
+  { "startTime": 4689.29, "person": "Mathias", "text": " It is not a black swan thing." },
+  { "startTime": 4690.51, "person": "Mathias", "text": " This is now a known thing." },
+  {
+    "startTime": 4694.13,
+    "person": "Mathias",
+    "text": " If we cannot learn from this issue with the one line npm package."
+  },
+  { "startTime": 4699.95, "person": "Mathias", "text": " We didn't learn from the pandemic." },
+  { "startTime": 4703.35, "person": "Mathias", "text": " Half the..." },
+  { "startTime": 4704.47, "person": "Mathias", "text": " Or a lot of..." },
+  { "startTime": 4706.51, "person": "Mathias", "text": " It was politicised." },
+  { "startTime": 4708.17, "person": "Mathias", "text": " It was polarised." },
+  {
+    "startTime": 4709.35,
+    "person": "Mathias",
+    "text": " People were not wearing masks, et cetera."
+  },
+  {
+    "startTime": 4713.21,
+    "person": "Mathias",
+    "text": " These same people now have survivor's bias."
+  },
+  {
+    "startTime": 4715.85,
+    "person": "Mathias",
+    "text": " Like, look, I didn't wear a mask and I'm still fine."
+  },
+  {
+    "startTime": 4718.11,
+    "person": "Mathias",
+    "text": " Of course, because the others did not live to tell the story."
+  },
+  {
+    "startTime": 4722.27,
+    "person": "Mathias",
+    "text": " And now we're just head on jumping into the air."
+  },
+  {
+    "startTime": 4726.37,
+    "person": "Mathias",
+    "text": " I think partly out of fear of being left out."
+  },
+  { "startTime": 4729.07, "person": "Mathias", "text": " And losing our job and status." },
+  { "startTime": 4730.91, "person": "Mathias", "text": " And being left behind." },
+  { "startTime": 4733.13, "person": "Mathias", "text": " And not have an income, et cetera." },
+  {
+    "startTime": 4738.11,
+    "person": "Mathias",
+    "text": " So, everybody does it because everybody does it."
+  },
+  {
+    "startTime": 4741.17,
+    "person": "Mathias",
+    "text": " And then critical voices are seen as, you know, techno pessimists."
+  },
+  { "startTime": 4748.59, "person": "Mathias", "text": " Which I don't think I am." },
+  {
+    "startTime": 4750.11,
+    "person": "Mathias",
+    "text": " I do see the potential of all this stuff."
+  },
+  { "startTime": 4754.13, "person": "Mathias", "text": " But who's going to be in control?" },
+  { "startTime": 4756.77, "person": "Mathias", "text": " That's the thing." },
+  {
+    "startTime": 4758.39,
+    "person": "Xin",
+    "text": " So, in the closing keynote yesterday, Phylline Hermans quoted..."
+  },
+  {
+    "startTime": 4765.07,
+    "person": "Xin",
+    "text": " Well, she actually quoted Martin Luther King."
+  },
+  { "startTime": 4768.97, "person": "Xin", "text": " Who quoted Thoreau." },
+  {
+    "startTime": 4772.05,
+    "person": "Xin",
+    "text": " Something about an improved means to an unimproved end."
+  },
+  {
+    "startTime": 4779.81,
+    "person": "Xin",
+    "text": " I wonder if we could bring the conversation back to a more hopeful note."
+  },
+  {
+    "startTime": 4789.29,
+    "person": "Xin",
+    "text": " How can we have improved means and improved ends?"
+  },
+  { "startTime": 4793.57, "person": "Xin", "text": " And what are our possibilities?" },
+  { "startTime": 4798.81, "person": "Xin", "text": " And what is our own agency?" },
+  { "startTime": 4802.37, "person": "Xin", "text": " Yeah." },
+  { "startTime": 4802.81, "person": "Mathias", "text": " But I do see a lot of..." },
+  {
+    "startTime": 4804.49,
+    "person": "Mathias",
+    "text": " Well, I should clarify, I'm a short-term pessimist and a long-term optimist."
+  },
+  {
+    "startTime": 4809.65,
+    "person": "Mathias",
+    "text": " I just don't know what the long-term is."
+  },
+  {
+    "startTime": 4812.51,
+    "person": "Mathias",
+    "text": " But, for example, friends of mine went with a flotilla to Gaza to deliver humanitarian aid."
+  },
+  { "startTime": 4820.97, "person": "Mathias", "text": " They never got there." },
+  {
+    "startTime": 4821.81,
+    "person": "Mathias",
+    "text": " They were stopped by Israel in international waters."
+  },
+  {
+    "startTime": 4826.75,
+    "person": "Mathias",
+    "text": " Kidnapped, tortured, and finally released again."
+  },
+  { "startTime": 4829.89, "person": "Mathias", "text": " That is very depressing." },
+  {
+    "startTime": 4832.15,
+    "person": "Mathias",
+    "text": " But modern humanitarian aid, it's a very recent invention."
+  },
+  { "startTime": 4836.49, "person": "Mathias", "text": " I'm guessing first World War era." },
+  {
+    "startTime": 4838.87,
+    "person": "Mathias",
+    "text": " It's not that people didn't help each other before."
+  },
+  {
+    "startTime": 4841.31,
+    "person": "Mathias",
+    "text": " But as sort of an organised global thing."
+  },
+  { "startTime": 4846.67, "person": "Mathias", "text": " We have built infrastructure." },
+  { "startTime": 4848.55, "person": "Mathias", "text": " We have built software." },
+  {
+    "startTime": 4850.69,
+    "person": "Mathias",
+    "text": " Disaster management software and all these kind of things."
+  },
+  { "startTime": 4854.03, "person": "Mathias", "text": " We have built funding mechanisms." },
+  { "startTime": 4859.09, "person": "Mathias", "text": " Legal everything." },
+  {
+    "startTime": 4861.87,
+    "person": "Mathias",
+    "text": " And we have the concept itself of humanitarian aid as something that we could and should do."
+  },
+  { "startTime": 4867.49, "person": "Mathias", "text": " All of that exists now." },
+  { "startTime": 4870.03, "person": "Mathias", "text": " That is not just going away." },
+  { "startTime": 4872.93, "person": "Mathias", "text": " USAID was cut." },
+  {
+    "startTime": 4873.99,
+    "person": "Mathias",
+    "text": " This has harmed hundreds of thousands of people."
+  },
+  {
+    "startTime": 4877.71,
+    "person": "Mathias",
+    "text": " But the concept, the knowledge is not going away."
+  },
+  {
+    "startTime": 4880.99,
+    "person": "Mathias",
+    "text": " In fact, that knowledge is now more accessible than ever thanks to AI."
+  },
+  { "startTime": 4885.89, "person": "Mathias", "text": " Same as the PDFs at Bayer, for example." },
+  {
+    "startTime": 4888.67,
+    "person": "Mathias",
+    "text": " This is where knowledge used to get lost over time a bit."
+  },
+  {
+    "startTime": 4893.79,
+    "person": "Mathias",
+    "text": " It's still there, but it becomes inaccessible."
+  },
+  { "startTime": 4895.99, "person": "Mathias", "text": " We no longer have that problem." },
+  {
+    "startTime": 4897.85,
+    "person": "Mathias",
+    "text": " In the future, we will have access to everything."
+  },
+  { "startTime": 4901.99, "person": "Mathias", "text": " Better than we even had so far." },
+  {
+    "startTime": 4904.57,
+    "person": "Mathias",
+    "text": " So at any point, if anyone has this idea of, hey, we should build humanitarian aid in the future."
+  },
+  {
+    "startTime": 4911.49,
+    "person": "Mathias",
+    "text": " If it no longer exists, they will have this huge body of things they will be able to learn from USAID."
+  },
+  {
+    "startTime": 4918.05,
+    "person": "Mathias",
+    "text": " Same thing with the suicide example, right?"
+  },
+  {
+    "startTime": 4920.31,
+    "person": "Mathias",
+    "text": " I would consider this a growing pain, of course."
+  },
+  {
+    "startTime": 4925.87,
+    "person": "Mathias",
+    "text": " We couldn't know about this problem until it happened."
+  },
+  { "startTime": 4929.79, "person": "Mathias", "text": " That doesn't make it less sad." },
+  {
+    "startTime": 4932.29,
+    "person": "Mathias",
+    "text": " But that also means that there are designable solutions to that."
+  },
+  {
+    "startTime": 4935.91,
+    "person": "Mathias",
+    "text": " For example, what could actual proper therapy look like with a chatbot?"
+  },
+  {
+    "startTime": 4942.95,
+    "person": "Mathias",
+    "text": " Right now, people use general chatbots and ask therapy questions."
+  },
+  {
+    "startTime": 4947.03,
+    "person": "Mathias",
+    "text": " But what if you specifically build one for that?"
+  },
+  { "startTime": 4950.33, "person": "Mathias", "text": " I'm sure people are doing it." },
+  { "startTime": 4951.55, "person": "Mathias", "text": " I can't imagine they don't." },
+  {
+    "startTime": 4953.01,
+    "person": "Mathias",
+    "text": " Of course, your criticism will be you will get an average, depending on how much effort you put in it."
+  },
+  {
+    "startTime": 4959.05,
+    "person": "Mathias",
+    "text": " But the basic would be an average therapist that you only talk to over text or voice, maybe."
+  },
+  {
+    "startTime": 4967.29,
+    "person": "Mathias",
+    "text": " But most people in the world do not have access to any therapy."
+  },
+  {
+    "startTime": 4972.21,
+    "person": "Mathias",
+    "text": " So average therapy will be way better than no therapy."
+  },
+  {
+    "startTime": 4977.27,
+    "person": "Mathias",
+    "text": " And it will also be better than bad therapy."
+  },
+  {
+    "startTime": 4979.53,
+    "person": "Andrew",
+    "text": " Self-medication or speaking to their friends will give them terrible advice."
+  },
+  {
+    "startTime": 4982.89,
+    "person": "Mathias",
+    "text": " Or actual licenced therapists who are just not very good."
+  },
+  {
+    "startTime": 4986.27,
+    "person": "Mathias",
+    "text": " So if we can get the whole world on average therapy, we can maybe lift huge amounts of people out of the loop of generational trauma."
+  },
+  {
+    "startTime": 5000.23,
+    "person": "Mathias",
+    "text": " If you can lift people out of that, you can lift them out of the cycles of violence and abuse and all these things."
+  },
+  {
+    "startTime": 5009.49,
+    "person": "Mathias",
+    "text": " We can create a new version of ourselves as a species who is better than we've ever been before."
+  },
+  {
+    "startTime": 5017.49,
+    "person": "Mathias",
+    "text": " Of course, who will own the therapist bots?"
+  },
+  { "startTime": 5020.73, "person": "Mathias", "text": " That is a huge problem." },
+  {
+    "startTime": 5023.95,
+    "person": "Mathias",
+    "text": " I think the French Revolution could give us some ideas."
+  },
+  { "startTime": 5027.07, "person": "Andrew", "text": " But we already see that happening." },
+  {
+    "startTime": 5030.33,
+    "person": "Andrew",
+    "text": " I literally know a person who's been to therapy."
+  },
+  { "startTime": 5033.75, "person": "Andrew", "text": " And he at that point had therapy online." },
+  {
+    "startTime": 5037.93,
+    "person": "Andrew",
+    "text": " So he had all of this recorded, transcribed, fed into an LLM."
+  },
+  {
+    "startTime": 5042.61,
+    "person": "Andrew",
+    "text": " And basically returning to different problems that he had and just reviewing that was what they were talking about in therapy."
+  },
+  {
+    "startTime": 5049.09,
+    "person": "Andrew",
+    "text": " Just to help himself, remind himself what mechanisms he may have towards solving the current conundrums that might be analogous to what he already discussed."
+  },
+  {
+    "startTime": 5061.41,
+    "person": "Andrew",
+    "text": " So it's already in that sense working as an improvement."
+  },
+  {
+    "startTime": 5066.45,
+    "person": "Andrew",
+    "text": " But at this point it's working on the level of individuals that are creative enough to think of that kind of solution."
+  },
+  { "startTime": 5074.01, "person": "Mathias", "text": " It's not systemic yet." },
+  { "startTime": 5075.29, "person": "Mathias", "text": " That's the thing." },
+  {
+    "startTime": 5077.63,
+    "person": "Mathias",
+    "text": " That is mimicking an individual therapist."
+  },
+  {
+    "startTime": 5081.87,
+    "person": "Mathias",
+    "text": " Theoretically, and of course, there's privacy concerns and everything."
+  },
+  {
+    "startTime": 5084.49,
+    "person": "Mathias",
+    "text": " But if you can do automated therapy on a billion people and actually measure what works at this scale, this has never been done before."
+  },
+  {
+    "startTime": 5093.91,
+    "person": "Mathias",
+    "text": " So far, therapy is a relatively anecdotal profession."
+  },
+  {
+    "startTime": 5099.47,
+    "person": "Mathias",
+    "text": " You learn from other experience reports."
+  },
+  {
+    "startTime": 5102.13,
+    "person": "Mathias",
+    "text": " What if you can learn from data at this scale?"
+  },
+  { "startTime": 5104.87, "person": "Mathias", "text": " We could do amazing things." },
+  {
+    "startTime": 5108.11,
+    "person": "Mathias",
+    "text": " But it's a chicken and egg problem because the people in power did not have that kind of energy."
+  },
+  { "startTime": 5113.95, "person": "Andrew", "text": " This is interesting." },
+  {
+    "startTime": 5115.29,
+    "person": "Andrew",
+    "text": " So like because it was a talk Jay Bloom gave maybe two years ago at DDD Europe, which was about like the tragedy of the commons."
+  },
+  {
+    "startTime": 5123.21,
+    "person": "Andrew",
+    "text": " But like the idea of recommoning because of like, as Jay explained, the idea of the tragedy of the commons."
+  },
+  {
+    "startTime": 5128.79,
+    "person": "Andrew",
+    "text": " But the person who wrote that paper was coming from a very political perspective and they were like common ownership of things can't work."
+  },
+  {
+    "startTime": 5136.07,
+    "person": "Andrew",
+    "text": " And then Jay explained why common ownership of things can and does work depending on things."
+  },
+  {
+    "startTime": 5140.71,
+    "person": "Andrew",
+    "text": " So the idea of open source, which is native to us in our industry."
+  },
+  { "startTime": 5144.93, "person": "Andrew", "text": " Right." },
+  {
+    "startTime": 5145.21,
+    "person": "Andrew",
+    "text": " And it's currently moving away from maybe from open source or LMs are going to open source models like which could be owned in a common way because the political like structures for that kind of stuff exists."
+  },
+  { "startTime": 5156.79, "person": "Andrew", "text": " Right." },
+  {
+    "startTime": 5156.95,
+    "person": "Andrew",
+    "text": " As opposed to like a monopoly of one commercial owner."
+  },
+  { "startTime": 5159.57, "person": "Andrew", "text": " It could be like owned by everybody." },
+  {
+    "startTime": 5162.25,
+    "person": "Andrew",
+    "text": " That could change the dynamics of lots of different things."
+  },
+  {
+    "startTime": 5165.61,
+    "person": "Xin",
+    "text": " I find it very interesting when Jay coined the term recommoning, whereas Kent Beck was talking about re-soloing."
+  },
+  {
+    "startTime": 5178.21,
+    "person": "Andrew",
+    "text": " I think the dynamics are going to change."
+  },
+  {
+    "startTime": 5181.13,
+    "person": "Andrew",
+    "text": " And to Matthias' point, we don't have to have to just sit there and like accept all of this stuff kind of coming along."
+  },
+  { "startTime": 5188.57, "person": "Andrew", "text": " Very interesting." },
+  {
+    "startTime": 5189.57,
+    "person": "Andrew",
+    "text": " Like I said at the start, my degree was in psychology."
+  },
+  {
+    "startTime": 5191.77,
+    "person": "Andrew",
+    "text": " Lots of the things that I learned about, which I thought were going to be completely irrelevant are now LLMs are like black boxes, very similar to human brains, which were black boxes when I was doing psychology."
+  },
+  { "startTime": 5201.51, "person": "Andrew", "text": " Right." },
+  {
+    "startTime": 5201.75,
+    "person": "Andrew",
+    "text": " And there are ways to think like there are hundreds of years worth of certain things to kind of think about these things and to kind of like maybe interrogate what LLMs have structurally."
+  },
+  {
+    "startTime": 5211.73,
+    "person": "Andrew",
+    "text": " Like the anthropic people are doing this allegedly in the names of safety, but they are doing these kind of things."
+  },
+  {
+    "startTime": 5223.03,
+    "person": "Andrew",
+    "text": " So in the essence of building towards something good, where do we start as professionals?"
+  },
+  {
+    "startTime": 5232.09,
+    "person": "Andrew",
+    "text": " Because it's not in building software directly."
+  },
+  {
+    "startTime": 5235.63,
+    "person": "Xin",
+    "text": " I think it's really to take a deeper look inside toward ourselves and to say what is it that makes this whole thing, this whole my work and my life interesting for me."
+  },
+  {
+    "startTime": 5258.26,
+    "person": "Xin",
+    "text": " And I think we need an identity model that does not only consist of our professional identity, our skills, but also consists of what is the impact I can make in the world, in my family and in my team and that sort of thing."
+  },
+  {
+    "startTime": 5278.2,
+    "person": "Xin",
+    "text": " I think capacity is not it does not always equal capability."
+  },
+  { "startTime": 5283.52, "person": "Xin", "text": " Right." },
+  {
+    "startTime": 5283.78,
+    "person": "Xin",
+    "text": " So the capacity is really, really about what is my support system and how can I make how can I have my agency in the system?"
+  },
+  { "startTime": 5293.38, "person": "Xin", "text": " So where is my influence?" },
+  { "startTime": 5295, "person": "Xin", "text": " That sort of thing." },
+  {
+    "startTime": 5297.24,
+    "person": "Xin",
+    "text": " But also what makes me safe and what do I want to create?"
+  },
+  {
+    "startTime": 5301.16,
+    "person": "Xin",
+    "text": " So the capability and the capacity and the core, I think we sort of need to redesign and remodel our self-perception before we can go out and engage with the world and see what is it I can, you know, how can I?"
+  },
+  {
+    "startTime": 5316.64,
+    "person": "Xin",
+    "text": " So basically the game is right now either it's a survival game for a lot of us."
+  },
+  {
+    "startTime": 5322.72,
+    "person": "Xin",
+    "text": " So I think we can push it back to a sort of a thrival game or sort of a thrivival game."
+  },
+  { "startTime": 5330.26, "person": "Xin", "text": " So these two pieces can fit together." },
+  {
+    "startTime": 5334.4,
+    "person": "Xin",
+    "text": " I think it's really like no matter how much intellectual podcast and whatever people have listened to like this one, people just have to, you know, take a moment with themselves and ask themselves these questions."
+  },
+  {
+    "startTime": 5347.78,
+    "person": "Andrew",
+    "text": " It's the work of an individual and no podcast, no literature, nothing will save them from that."
+  },
+  {
+    "startTime": 5352.34,
+    "person": "Xin",
+    "text": " No, we're so used to, you know, if I'm sick right now, if my throat hurts, where is the pill?"
+  },
+  { "startTime": 5358.32, "person": "Xin", "text": " The fix is outside of me." },
+  { "startTime": 5361.44, "person": "Xin", "text": " The fix is never outside of us." },
+  {
+    "startTime": 5363.54,
+    "person": "Xin",
+    "text": " And I think this is a tremendous opportunity right now for us."
+  },
+  {
+    "startTime": 5367.1,
+    "person": "Xin",
+    "text": " For better or worse, it brings my agency back to me."
+  },
+  {
+    "startTime": 5371.06,
+    "person": "Xin",
+    "text": " It's really up to people who say, oh, well, it's all the system."
+  },
+  { "startTime": 5375.88, "person": "Xin", "text": " It's not up to me." },
+  { "startTime": 5376.62, "person": "Xin", "text": " What can I do?" },
+  {
+    "startTime": 5377.28,
+    "person": "Xin",
+    "text": " I'm such a small person, but it's all up to you."
+  },
+  {
+    "startTime": 5380.82,
+    "person": "Mathias",
+    "text": " So I'm bothered when a lot of tech people, and you mentioned as well, Martin, you know, and Eric, curiosity and fun."
+  },
+  { "startTime": 5391.86, "person": "Mathias", "text": " And yes, this is amazing technology." },
+  {
+    "startTime": 5393.66,
+    "person": "Mathias",
+    "text": " Someone somewhere right now is being paid six figures to do fun, interesting things with LLMs and tech managing data and organising how ICE is deporting and detecting immigrants so they can deport them."
+  },
+  {
+    "startTime": 5412.44,
+    "person": "Mathias",
+    "text": " And so you can look at that as an interesting tech problem."
+  },
+  {
+    "startTime": 5417.16,
+    "person": "Mathias",
+    "text": " And a lot of our identity in this community is, oh, we just love building interesting tech."
+  },
+  { "startTime": 5425.06, "person": "Mathias", "text": " All right." },
+  { "startTime": 5425.76, "person": "Mathias", "text": " What are we building it for?" },
+  { "startTime": 5428.48, "person": "Mathias", "text": " Right." },
+  {
+    "startTime": 5428.74,
+    "person": "Mathias",
+    "text": " And where does it end up and how is it going to be used?"
+  },
+  { "startTime": 5432.02, "person": "Xin", "text": " And it has to be not only about psychology." },
+  {
+    "startTime": 5434.3,
+    "person": "Xin",
+    "text": " I mean, it has to be about sociology as well."
+  },
+  { "startTime": 5437.44, "person": "Xin", "text": " Psychology is about the person's thrival." },
+  {
+    "startTime": 5440,
+    "person": "Xin",
+    "text": " Sociology is that a lot of our personal traumas are developed while we're in relation with others, and they have to be healed while we're in relation with others."
+  },
+  {
+    "startTime": 5450.26,
+    "person": "Xin",
+    "text": " And this whole thing with the LLM, I think before it traumatised ourselves."
+  },
+  {
+    "startTime": 5456,
+    "person": "Xin",
+    "text": " I hate to quote Kent Beck so much, but he's just one of my."
+  },
+  { "startTime": 5460.34, "person": "Mathias", "text": " He likes being quoted." },
+  { "startTime": 5462.04, "person": "Xin", "text": " That's fine." },
+  { "startTime": 5463.14, "person": "Andrew", "text": " The Kent sense was going off." },
+  { "startTime": 5465.36, "person": "Xin", "text": " The Kent sense, yes." },
+  {
+    "startTime": 5466.62,
+    "person": "Xin",
+    "text": " Also because he just gave this keynote at Kraft, and it was such a moving keynote, also very personal."
+  },
+  {
+    "startTime": 5473.14,
+    "person": "Xin",
+    "text": " And he said, there is so much more we can accomplish together than we can ever alone in this game."
+  },
+  { "startTime": 5480.86, "person": "Xin", "text": " So it's not a romantic call to action." },
+  { "startTime": 5485.44, "person": "Xin", "text": " It's realistic." },
+  { "startTime": 5486.96, "person": "Xin", "text": " It's really about how can I be powerful?" },
+  { "startTime": 5490.8, "person": "Xin", "text": " So the Ubuntu, right?" },
+  { "startTime": 5494.22, "person": "Xin", "text": " Ubuntu means I am because we are." },
+  {
+    "startTime": 5497.82,
+    "person": "Xin",
+    "text": " So how can I navigate this maze without all of us can go through it together?"
+  },
+  {
+    "startTime": 5506.8,
+    "person": "Andrew",
+    "text": " I think the biggest challenge here is that we create in essence the approach that we make people reflect on what they value."
+  },
+  {
+    "startTime": 5519.94,
+    "person": "Andrew",
+    "text": " Because if you look like 20 years ago, look at my parents' generation, the value was how much you had in your account and what was your position in the company."
+  },
+  { "startTime": 5531.72, "person": "Andrew", "text": " What was your title?" },
+  {
+    "startTime": 5533.46,
+    "person": "Andrew",
+    "text": " And there's so much more that we can put into that space of what are the values that would completely lessen the percentage of how we look at money and status."
+  },
+  {
+    "startTime": 5545.5,
+    "person": "Andrew",
+    "text": " Instead, look at how much good we can do, how we interact with people, how much of a community we build."
+  },
+  { "startTime": 5554.6, "person": "Andrew", "text": " The list goes on." },
+  { "startTime": 5556.32, "person": "Andrew", "text": " There's so much to it." },
+  {
+    "startTime": 5557.38,
+    "person": "Andrew",
+    "text": " But because of culture, because of the upbringing, there's a lot of that emphasis."
+  },
+  { "startTime": 5566.1, "person": "Andrew", "text": " There is a shift going on." },
+  { "startTime": 5567.38, "person": "Andrew", "text": " People look at the newer generations." },
+  {
+    "startTime": 5569.7,
+    "person": "Andrew",
+    "text": " They don't look at money and status as value as much as previous generations."
+  },
+  { "startTime": 5577.54, "person": "Andrew", "text": " That's lesser and lesser." },
+  { "startTime": 5578.54, "person": "Andrew", "text": " They find other things valuable." },
+  { "startTime": 5580.06, "person": "Andrew", "text": " They find their free time valuable." },
+  {
+    "startTime": 5581.84,
+    "person": "Andrew",
+    "text": " They don't want to work 60 hours overtime all the time."
+  },
+  {
+    "startTime": 5587.98,
+    "person": "Andrew",
+    "text": " They have a transactional, contractual obligation."
+  },
+  { "startTime": 5591.72, "person": "Andrew", "text": " 40 hours, I'm done." },
+  { "startTime": 5593.2, "person": "Andrew", "text": " See you." },
+  { "startTime": 5594.7, "person": "Andrew", "text": " Right?" },
+  { "startTime": 5594.88, "person": "Andrew", "text": " There is already that shift going on." },
+  {
+    "startTime": 5597.88,
+    "person": "Andrew",
+    "text": " But it's a matter of also putting somewhere that emphasis on that sociological aspect, community aspect, collaboration aspect, to make that a value that people sense that as their own value as well."
+  },
+  {
+    "startTime": 5614.58,
+    "person": "Andrew",
+    "text": " And that's a thing that's something that is still ahead of us with a lot of work that needs to be there."
+  },
+  {
+    "startTime": 5621.12,
+    "person": "Andrew",
+    "text": " Because first of all, we're expressed by ego."
+  },
+  { "startTime": 5625.58, "person": "Andrew", "text": " And that's normal psychology." },
+  { "startTime": 5627.06, "person": "Andrew", "text": " That's psychology 101." },
+  { "startTime": 5628.2, "person": "Andrew", "text": " Ego is the thing directing most people." },
+  {
+    "startTime": 5632.28,
+    "person": "Andrew",
+    "text": " And then how to dissolve that ego into relationships, that's a key question that I think a lot of people have been pondering in various ways."
+  },
+  { "startTime": 5643.1, "person": "Andrew", "text": " And how to make it systemic." },
+  {
+    "startTime": 5645.32,
+    "person": "Andrew",
+    "text": " Because that's the key then, to make it systemic."
+  },
+  { "startTime": 5649.6, "person": "Xin", "text": " Yeah." },
+  {
+    "startTime": 5650.64,
+    "person": "Xin",
+    "text": " It's just like the time with the Agile manifesto."
+  },
+  {
+    "startTime": 5653.56,
+    "person": "Xin",
+    "text": " I mean, the Agile, if you really want to do things well with Agile, some of the basic skills, like basic software engineering discipline, those have to be in place."
+  },
+  {
+    "startTime": 5669.2,
+    "person": "Xin",
+    "text": " And I think there are skills that we need to be able to be more comfortable with."
+  },
+  { "startTime": 5676.26, "person": "Xin", "text": " Like not being in control." },
+  {
+    "startTime": 5678.3,
+    "person": "Xin",
+    "text": " Like being in the, yeah, I hate to say it, a lot of people complain about it."
+  },
+  {
+    "startTime": 5683.62,
+    "person": "Xin",
+    "text": " We are more grown into this managing supervisory role with the execution part of our game."
+  },
+  { "startTime": 5693.54, "person": "Xin", "text": " That is also necessary." },
+  {
+    "startTime": 5694.98,
+    "person": "Xin",
+    "text": " I think before we let this become an AI rant, we have to say it's an exciting space for us to navigate."
+  },
+  {
+    "startTime": 5704.32,
+    "person": "Xin",
+    "text": " Those skills are also very, very exciting to see."
+  },
+  { "startTime": 5707.54, "person": "Xin", "text": " How can I architect a harness engineering?" },
+  {
+    "startTime": 5714.32,
+    "person": "Xin",
+    "text": " How can I architect the how loop, the what loop, and the why loop, and the who loop together?"
+  },
+  { "startTime": 5721.18, "person": "Xin", "text": " That's so exciting." },
+  {
+    "startTime": 5722.32,
+    "person": "Xin",
+    "text": " And I think we'll raise the bar for our intellectual pursuit as well."
+  },
+  {
+    "startTime": 5726.9,
+    "person": "Xin",
+    "text": " But we cannot let it be an intellectual pursuit only."
+  },
+  {
+    "startTime": 5730.02,
+    "person": "Xin",
+    "text": " I mean, talking about sociology doesn't mean anything."
+  },
+  {
+    "startTime": 5733.36,
+    "person": "Xin",
+    "text": " We have to be able to bring people together and talk about this."
+  },
+  {
+    "startTime": 5736.98,
+    "person": "Xin",
+    "text": " I run an experimental workshop to talk about, to use emotional enquiry."
+  },
+  { "startTime": 5741.22, "person": "Xin", "text": " That's kind of a sociology practise." },
+  {
+    "startTime": 5744.08,
+    "person": "Xin",
+    "text": " And there were several people who came to tell me, it's so difficult to actually get, for me, they said, for me to get in touch with my emotions."
+  },
+  {
+    "startTime": 5752.3,
+    "person": "Xin",
+    "text": " So it's basically not possible to find that vocabulary without getting the connection with yourself."
+  },
+  {
+    "startTime": 5759.4,
+    "person": "Xin",
+    "text": " And I think a lot of times we fear that connection with ourselves in many ways and with each other."
+  },
+  {
+    "startTime": 5766.16,
+    "person": "Xin",
+    "text": " So conversation, I think it's the way to go."
+  },
+  {
+    "startTime": 5770.4,
+    "person": "Xin",
+    "text": " And those conversations doesn't have to be like taking extra time."
+  },
+  {
+    "startTime": 5775.7,
+    "person": "Xin",
+    "text": " Hack our existing agile rituals and team rituals can be one way to do it."
+  },
+  {
+    "startTime": 5781.48,
+    "person": "Xin",
+    "text": " And process like this architectural advice process, I feel is a really good way to smuggle those conversations into the design space."
+  },
+  {
+    "startTime": 5792.76,
+    "person": "Xin",
+    "text": " I mean, it's also, I think we have so many ways to smuggle things."
+  },
+  {
+    "startTime": 5798.06,
+    "person": "Andrew",
+    "text": " The original book, the title that I pitched to O'Reilly was Organisation, Refactoring and Culture Hacking."
+  },
+  { "startTime": 5805.2, "person": "Andrew", "text": " And they were like, that's culture hack." },
+  {
+    "startTime": 5806.7,
+    "person": "Andrew",
+    "text": " That doesn't sound like an interesting book."
+  },
+  {
+    "startTime": 5808.24,
+    "person": "Andrew",
+    "text": " And then I published a very small, I was like, maybe I can sneak this in under the guise of like doing architecture."
+  },
+  { "startTime": 5814.66, "person": "Andrew", "text": " And then Martin published my thing." },
+  {
+    "startTime": 5816.94,
+    "person": "Andrew",
+    "text": " And then, so then, because you're right, this is super sociological."
+  },
+  {
+    "startTime": 5819.72,
+    "person": "Andrew",
+    "text": " It's the three things that inform the book are what happens if we let people self-organise?"
+  },
+  {
+    "startTime": 5825.34,
+    "person": "Andrew",
+    "text": " Bruce Mallon's architecture is conversations."
+  },
+  {
+    "startTime": 5827.5,
+    "person": "Andrew",
+    "text": " Anne Alberto's, it's the, you know, the developers of assumptions, what ships into prod, not the diagrams you draw in a bookie."
+  },
+  {
+    "startTime": 5833.5,
+    "person": "Andrew",
+    "text": " And then wind it up and then you let the book go."
+  },
+  { "startTime": 5837.8, "person": "Speaker 6", "text": " Yeah." },
+  { "startTime": 5839.78, "person": "Andrew", "text": " All right." },
+  {
+    "startTime": 5842.46,
+    "person": "Andrew",
+    "text": " I guess, given that we're all somewhat tired from intensive conference days, any closing remarks to this then?"
+  },
+  { "startTime": 5852.86, "person": "Andrew", "text": " Hopes for the future of design?" },
+  {
+    "startTime": 5855.66,
+    "person": "Andrew",
+    "text": " I'm hoping that my degree in psychology will become more important, not less important going forward."
+  },
+  {
+    "startTime": 5861.3,
+    "person": "Andrew",
+    "text": " And like, I live with, hopefully, and it's like picking up some of the points that Matthias was kind of making."
+  },
+  {
+    "startTime": 5869.1,
+    "person": "Andrew",
+    "text": " Like there is, there was a voice, which was quite a lone voice in 1997, which is when I did my psychology degree."
+  },
+  {
+    "startTime": 5876.08,
+    "person": "Andrew",
+    "text": " But like Matthias was saying, like the idea of embodiment, if you have a system which doesn't have a body and doesn't live in a feedback cycle with the world, then it's not a real part of the world."
+  },
+  {
+    "startTime": 5885.12,
+    "person": "Andrew",
+    "text": " But like you're saying, if you put these things into the world, embody them somehow, and then give them a feedback cycle, then it can be interesting."
+  },
+  {
+    "startTime": 5892.54,
+    "person": "Andrew",
+    "text": " I think it's going to be, putting it into a feedback cycle with us, I think can be very interesting."
+  },
+  { "startTime": 5898.42, "person": "Mathias", "text": " Yeah, I'm a long-term optimist." },
+  {
+    "startTime": 5900.26,
+    "person": "Mathias",
+    "text": " I think at some point we will reach a Star Trek-like post-scarcity and we'll all be making music and art together and be happy."
+  },
+  {
+    "startTime": 5909.16,
+    "person": "Andrew",
+    "text": " Hopefully without the turmoil of the 22nd century."
+  },
+  {
+    "startTime": 5912.12,
+    "person": "Mathias",
+    "text": " We will need some turmoil for the insights to hit."
+  },
+  {
+    "startTime": 5917.34,
+    "person": "Mathias",
+    "text": " But turmoil tends to be, and chaos tends to be, a great catalyst for improvement and social change."
+  },
+  { "startTime": 5930.58, "person": "Mathias", "text": " So, I'm hopeful." },
+  {
+    "startTime": 5934.65,
+    "person": "Martin",
+    "text": " I'm just uncertain and interested to watch the process develop."
+  },
+  { "startTime": 5938.93, "person": "Andrew", "text": " I'm going to remain the observer." },
+  { "startTime": 5945.55, "person": "Xin", "text": " I am super excited." },
+  { "startTime": 5949.81, "person": "Xin", "text": " I think we are really at a threshold." },
+  {
+    "startTime": 5953.99,
+    "person": "Xin",
+    "text": " If you think about how we learn most and how do we develop ourselves for basically these breakthrough points in our lives, these milestones."
+  },
+  {
+    "startTime": 5962.61,
+    "person": "Xin",
+    "text": " When people get serious cancer, disease, divorce, or any kind of crisis, this is the place we are forced to reflect and learn."
+  },
+  {
+    "startTime": 5977.79,
+    "person": "Xin",
+    "text": " For better or worse, I think everybody is given that opportunity now."
+  },
+  { "startTime": 5983.77, "person": "Xin", "text": " It's our choice." },
+  { "startTime": 5989.03, "person": "Xin", "text": " We can choose to let others decide for us." },
+  {
+    "startTime": 5992.69,
+    "person": "Xin",
+    "text": " We can choose to ride with it with curiosity, fun, and wonder."
+  },
+  {
+    "startTime": 5999.87,
+    "person": "Andrew",
+    "text": " My personal take is that I hope that the effort on connection and collaboration will be more and more in emphasis in regards to producing code, producing lines, producing software and deployment."
+  },
+  {
+    "startTime": 6018.07,
+    "person": "Andrew",
+    "text": " That shift, of course, that verification, that software will continue to grow."
+  },
+  {
+    "startTime": 6023.39,
+    "person": "Andrew",
+    "text": " But we will actually shift the focus towards that collaboration and connection and relationships rather than just producing lines."
+  },
+  { "startTime": 6033.25, "person": "Andrew", "text": " Just making it a manufacturing process." },
+  {
+    "startTime": 6036.27,
+    "person": "Andrew",
+    "text": " Hopefully, that's the future we are going to have."
+  },
+  {
+    "startTime": 6039.49,
+    "person": "Andrew",
+    "text": " Maybe soon, maybe a little bit later, but hopefully that."
+  },
+  { "startTime": 6044.67, "person": "Xin", "text": " Connection isn't a skill, it's a choice." },
+  { "startTime": 6047.41, "person": "Andrew", "text": " Connection is definitely a choice, yes." },
+  { "startTime": 6049.73, "person": "Andrew", "text": " All right, before we go, goodbye." },
+  {
+    "startTime": 6083.41,
+    "person": "Andrew",
+    "text": " That said, thank you all for joining the discussion."
+  },
+  {
+    "startTime": 6088.11,
+    "person": "Andrew",
+    "text": " It was wonderful to have a discussion actually in person, because normally we do this online individual studio, so it's less of a connection, but still a good discussion always."
+  },
+  {
+    "startTime": 6098.21,
+    "person": "Andrew",
+    "text": " But this is amazing to have you all in the same room."
+  },
+  { "startTime": 6101.41, "person": "Speaker 6", "text": " Thank you for having us." },
+  { "startTime": 6103.01, "person": "Andrew", "text": " You're welcome." },
+  {
+    "startTime": 6104.53,
+    "person": "Andrew",
+    "text": " So, with that said, thank you, and to the audience, goodbye."
+  }
+]

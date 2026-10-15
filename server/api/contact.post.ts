@@ -3,6 +3,14 @@ import { JWT } from 'google-auth-library'
 import * as nodemailer from 'nodemailer'
 import * as path from 'path'
 import fs from 'fs'
+import { isRecaptchaValid, verifyRecaptcha } from '~/server/utils/recaptcha'
+import {
+  getErrorMessage,
+  getErrorResponseData,
+  isPlainRecord,
+  isValidEmail,
+  sanitizeString
+} from '~/server/utils/validation'
 
 const SERVICE_ACCOUNT_KEY_FILE: string = path.join(process.cwd(), 'gmail.private.key.json')
 
@@ -11,33 +19,41 @@ const FROM_ADDRESS: string = 'info@bridgingthegap.eu.com'
 const SCOPES: string[] = ['https://www.googleapis.com/auth/gmail.send']
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event)
+  const body = await readBody<unknown>(event)
+  if (!isPlainRecord(body)) {
+    return { status: 400, body: 'Invalid request body' }
+  }
+
   const { name, email, message, token } = body
 
   if (!token) {
     return { status: 400, body: 'recaptcha token is missing' }
   }
 
-  const config = useRuntimeConfig()
+  const recaptchaResult = await verifyRecaptcha(token)
 
-  const USER_TO_IMPERSONATE: string = config.USER_TO_IMPERSONATE
-  const recaptchaSecret = config.RECAPTCHA_SECRET_KEY
-  const response = await fetch(
-    `https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${token}`,
-    {
-      method: 'POST'
-    }
-  )
-
-  const data = await response.json()
-
-  if (!data.success || data.score < 0.5) {
+  if (!isRecaptchaValid(recaptchaResult)) {
     return { status: 400, body: 'recaptcha verification failed' }
   }
 
-  const RECIPIENT_EMAIL: string = config.RECIPIENT_EMAIL
-  const EMAIL_SUBJECT: string = `Website Contact Form ${name ? `from ${name}` : ''}`
-  const EMAIL_TEXT_BODY: string = `${name ? `Message from ${name}\n` : ''}${email ? `Email for replies ${email}\n\n` : name ? '\n' : ''}${message}`
+  const sanitizedMessage = sanitizeString(message, 10000)
+  if (!sanitizedMessage) {
+    return { status: 400, body: 'Message is required' }
+  }
+
+  const sanitizedName = name ? sanitizeString(name, 200) : null
+  const sanitizedEmail = email ? (isValidEmail(email) ? email.trim() : null) : null
+
+  if (email && !sanitizedEmail) {
+    return { status: 400, body: 'Invalid email address' }
+  }
+
+  const config = useRuntimeConfig()
+
+  const userToImpersonate: string = config.userToImpersonate
+  const recipientEmail: string = config.recipientEmail
+  const EMAIL_SUBJECT: string = `Website Contact Form ${sanitizedName ? `from ${sanitizedName}` : ''}`
+  const EMAIL_TEXT_BODY: string = `${sanitizedName ? `Message from ${sanitizedName}\n` : ''}${sanitizedEmail ? `Email for replies ${sanitizedEmail}\n\n` : sanitizedName ? '\n' : ''}${sanitizedMessage}`
 
   try {
     const filePath = path.resolve(SERVICE_ACCOUNT_KEY_FILE)
@@ -48,7 +64,7 @@ export default defineEventHandler(async (event) => {
       email: credentials.client_email,
       key: credentials.private_key,
       scopes: SCOPES,
-      subject: USER_TO_IMPERSONATE
+      subject: userToImpersonate
     })
 
     await auth.authorize()
@@ -63,7 +79,7 @@ export default defineEventHandler(async (event) => {
 
     const mailOptions: nodemailer.SendMailOptions = {
       from: FROM_ADDRESS,
-      to: RECIPIENT_EMAIL,
+      to: recipientEmail,
       subject: EMAIL_SUBJECT,
       text: EMAIL_TEXT_BODY
     }
@@ -73,7 +89,6 @@ export default defineEventHandler(async (event) => {
         if (err) {
           reject(err)
         } else {
-          // The info.message contains the raw MIME message buffer
           resolve(info.message.toString())
         }
       })
@@ -91,10 +106,11 @@ export default defineEventHandler(async (event) => {
         raw: base64EncodedEmail
       }
     })
-  } catch (error: any) {
-    console.error('Error sending email:', error.message || error)
-    if (error.response && error.response.data) {
-      console.error('Error details:', error.response.data)
+  } catch (error: unknown) {
+    console.error('Error sending email:', getErrorMessage(error))
+    const responseData = getErrorResponseData(error)
+    if (responseData !== undefined) {
+      console.error('Error details:', responseData)
     }
     return { status: 500, body: 'Error sending email' }
   }

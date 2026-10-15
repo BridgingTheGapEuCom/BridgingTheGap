@@ -5,6 +5,7 @@ export interface Article {
   tags: Array<string>
   publishDate: string
   lastUpdate: string
+  readingMinutes?: number
   authors: Array<Author>
   bibliography: Array<Bibliography>
   reviewers: Array<Reviewer>

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Alwyn Van Niekerk",
+    "photo": null,
+    "role": "Director, PwC UK",
+    "biography": "Specializes in enterprise integration, API-led architecture, and digital transformation."
+  },
+  {
+    "name": "Bartosz Sosnowski",
+    "photo": null,
+    "role": "Independent / Self-employed Software Engineer & Architect",
+    "biography": "Focuses on scalable software architecture, application modernization, and reducing system complexity."
+  },
+  {
+    "name": "Emmanuel Marchiset",
+    "photo": "/reviewers/emmanuel-marchiset.webp",
+    "role": "Architect, Cloud Software Group / TIBCO",
+    "biography": "Expert in enterprise integration, TIBCO BusinessWorks, messaging, and cloud-native integration technologies."
+  },
+  {
+    "name": "Maciej Grabowski",
+    "photo": "/reviewers/maciej-grabowski.webp",
+    "role": "Senior Architect, Sii Poland",
+    "biography": "Specializes in data integration, Informatica, databases, and architecture for complex data platforms."
+  },
+  {
+    "name": "Maciej Skorupka",
+    "photo": "/reviewers/maciej-skorupka.webp",
+    "role": "Hitachi Energy",
+    "biography": "Experienced technology professional with a background in data and enterprise integration solutions."
+  },
+  {
+    "name": "Marcin Nowiński",
+    "photo": "/reviewers/marcin-nowinski.webp",
+    "role": "Chief Integration Architect, PwC Polska",
+    "biography": "Specializes in enterprise integration, solution architecture, MuleSoft, and complex application ecosystems."
+  },
+  {
+    "name": "Przemek Blicharski",
+    "photo": "/reviewers/przemek-blicharski.webp",
+    "role": "Founder / AI Trainer & Implementation Strategist, PBX Agency",
+    "biography": "Combines data, analytics, and AI expertise with practical experience in technology adoption and transformation."
+  },
+  {
+    "name": "William Beshilas",
+    "photo": "/reviewers/william-beshilas.webp",
+    "role": "Technology / Enterprise Architecture Leader",
+    "biography": "Experienced technology architect and leader focused on enterprise architecture, integration, and large-scale technology organizations."
+  }
+]

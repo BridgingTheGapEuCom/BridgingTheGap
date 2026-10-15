@@ -1,635 +1,574 @@
 <template>
-  <div class="flex flex-col w-full justify-start items-start">
-    <div id="articleList" class="flex flex-col w-full">
-      <div class="mb-3 w-full">
-        <div
-          class="w-full border rounded-md px-3 dark:border-neutral-800 dark:bg-neutral-900 border-neutral-400 bg-neutral-100"
-        >
-          <BTGInput v-model="articleFilter" class="mt-7 mb-5" icon="mdi:magnify" />
-          <div class="flex justify-center gap-2 mb-5 tab line-clamp-1">
-            <div
-              class="px-4 text-white bg-neutral-600 rounded-xl cursor-pointer flex justify-center items-center"
-              :class="{
-                'opacity-100':
-                  currentContentType.length === 0 ||
-                  currentContentType.length === contentTypes.length,
-                'opacity-50':
-                  currentContentType.length > 0 && currentContentType.length !== contentTypes.length
-              }"
-              @click="currentContentType = ['Articles', 'Streams']"
-            >
-              <div class="text-lg">All</div>
-              <SvgIcon
-                v-if="currentContentType.length === contentTypes.length"
-                :path="mdiCheck"
-                class="ml-2 inline-block"
-                type="mdi"
-              />
-            </div>
-            <div class="border border-r-0 h-8 border-neutral-300 dark:border-neutral-700"></div>
-            <template v-for="(type, index) of contentTypes" :key="`content-type-${index}`">
-              <div
-                class="px-4 bg-neutral-300 dark:bg-neutral-700 border border-neutral-500 rounded-xl cursor-pointer flex justify-center items-center hover:opacity-100"
-                :class="{
-                  'opacity-100':
-                    currentContentType.includes(type) &&
-                    currentContentType.length !== contentTypes.length,
-                  'opacity-50':
-                    !currentContentType.includes(type) ||
-                    currentContentType.length === 0 ||
-                    currentContentType.length === contentTypes.length
-                }"
-                @click="toggleContentType(type)"
-              >
-                <div class="text-lg">{{ type }}</div>
-                <SvgIcon
-                  v-if="
-                    currentContentType.includes(type) &&
-                    currentContentType.length !== contentTypes.length
-                  "
-                  :path="mdiCheck"
-                  class="ml-2 inline-block"
-                  type="mdi"
-                />
-              </div>
-            </template>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-wrap justify-center gap-2 mb-3 w-full px-3">
-        <span
-          v-for="(tag, i) of allTags"
-          :key="tag"
-          :class="{
-            'cursor-pointer': !tags.includes(tag as string),
-            tag: !tags.includes(tag),
-            taggedTag: tags.includes(tag),
-            hidden: i > 2 && tags.length == 0 && !showAllTags
-          }"
-          class="inline-flex items-center px-2 py-1 font-medium mainTransition md:block"
-          @click="addTag(tag)"
-        >
-          <span>
-            #{{ tag }}
-            <button
-              v-if="tags.includes(tag)"
-              aria-label="Remove Tag"
-              class="inline-flex items-center p-1 ms-2 text-sm text-neutral-300 dark:text-neutral-400 bg-transparent rounded-sm hover:bg-neutral-600 hover:text-neutral-100 dark:hover:bg-neutral-200 dark:hover:text-neutral-950"
-              data-dismiss-target="#badge-dismiss-default"
-              type="button"
-              @click="removeTag(tag)"
-            >
-              <svg
-                aria-hidden="true"
-                class="w-2 h-2"
-                viewBox="0 0 14 14"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                />
-              </svg>
-              <span class="sr-only">Remove badge</span>
-            </button>
-          </span>
-        </span>
-        <span
-          :class="{
-            hidden: tags.length > 0
-          }"
-          class="inline-flex items-center px-2 py-1 font-medium mainTransition cursor-pointer md:hidden taggedTag"
-          @click="showAllTags = !showAllTags"
-        >
-          <span>{{ showAllTags ? 'Hide Tags' : `Show Hidden Tags (${allTags.length - 3})` }}</span>
-        </span>
-      </div>
+  <section id="articleList" aria-labelledby="catalogue-results-heading" class="catalogue">
+    <h2 id="catalogue-results-heading" class="sr-only">Knowledge catalogue</h2>
 
-      <div class="w-full px-3 pb-3 flex items-center justify-center">
-        <div>
-          Showing <span class="font-bold">{{ filteredArticles?.length }}</span> of
-          <span class="font-bold">{{
-            (props?.articles ? props?.articles?.length : 0) +
-            (props?.events ? props?.events?.length : 0)
-          }}</span>
-          articles/events
-        </div>
-      </div>
-      <div
-        v-if="filteredArticles?.length === 0"
-        class="w-full border rounded-md px-3 mb-3 dark:border-neutral-800 dark:bg-neutral-900 border-neutral-400 bg-neutral-100 min-h-32 flex items-center justify-center"
-      >
-        <div class="font-bold">
-          Oops! We couldn't find any articles matching your current search. Try broadening your
-          search terms.
-        </div>
-      </div>
-      <div>
-        <transition-group name="scale-card">
-          <upcoming-event-card
-            v-if="newestEvent && filteredArticles.length > 0"
-            :name="newestEvent?.name as string"
-            :img="newestEvent?.img as string"
-            :publication-date="newestEvent?.date as string"
-            :description="newestEvent?.description as string"
-            :tags="newestEvent?.tags"
-            :key="`upcoming-event-${newestEvent?.description}`"
-            class="mb-4"
+    <div class="catalogue-toolbar">
+      <label class="catalogue-search">
+        <span class="catalogue-field-label">Search the knowledge base</span>
+        <span class="catalogue-search-control">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m16.5 16.5 4 4" />
+          </svg>
+          <input
+            v-model="searchDraft"
+            type="search"
+            placeholder="Title, topic, or keyword…"
+            autocomplete="off"
           />
-          <div
-            v-for="(article, index) of filteredArticles"
-            :id="`article-${index}`"
-            :key="article.name"
-            v-resize-observer="onResizeOne"
-            class="flex md:flex-row flex-col text-justify"
-          >
-            <template v-if="(article as Event).eventType">
-              <EventCard
-                :current-tags="tags"
-                :description="(article as Event).description"
-                :img="(article as Event).img"
-                :name="(article as Event).name"
-                :publication-date="(article as Event).date as string"
-                :tags="(article as Event).tags"
-                :yt="(article as Event).YT"
-                class="mb-4"
-              ></EventCard>
-            </template>
-            <template v-else
-              ><ArticleCard
-                :authors="(article as Article).authors"
-                :current-tags="tags"
-                :name="(article as Article).name"
-                :publication-date="(article as Article).publishDate"
-                :short="(article as Article).short"
-                :tags="(article as Article).tags"
-                :title="(article as Article).title"
-                class="mb-4"
-            /></template>
-          </div>
-        </transition-group>
+        </span>
+      </label>
+
+      <div class="catalogue-selectors">
+        <details ref="topicFilter" class="topic-filter" @keydown.esc="closeTopicFilter">
+          <summary>
+            <span>Topic:</span> {{ topicSummary }}
+            <svg aria-hidden="true" viewBox="0 0 20 20"><path d="m5 7.5 5 5 5-5" /></svg>
+          </summary>
+          <fieldset>
+            <legend class="sr-only">Filter by topic</legend>
+            <label v-for="tag in allTags" :key="tag">
+              <input
+                type="checkbox"
+                :checked="selectedTags.includes(tag)"
+                @change="toggleTag(tag)"
+              />
+              <span>{{ tag }}</span>
+            </label>
+            <button v-if="selectedTags.length" type="button" @click="clearTags">
+              Clear topics
+            </button>
+          </fieldset>
+        </details>
+
+        <label class="catalogue-select">
+          <span>Sort:</span>
+          <select :value="sortOrder" aria-label="Sort results" @change="changeSort">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="title">Title A–Z</option>
+          </select>
+          <svg aria-hidden="true" viewBox="0 0 20 20"><path d="m5 7.5 5 5 5-5" /></svg>
+        </label>
       </div>
     </div>
-  </div>
+
+    <div class="catalogue-type-filter" role="group" aria-label="Filter by content type">
+      <button
+        v-for="option in typeOptions"
+        :key="option.value"
+        type="button"
+        :aria-pressed="contentType === option.value"
+        @click="setContentType(option.value)"
+      >
+        {{ option.label }} <span>{{ optionCount(option.value) }}</span>
+      </button>
+    </div>
+
+    <div v-if="searchTerm" class="catalogue-query-summary" aria-live="polite" aria-atomic="true">
+      <h2>Results for “{{ queryValue(route.query.q).trim() }}”</h2>
+      <p>{{ matchingItems.length }} {{ matchingItems.length === 1 ? 'result' : 'results' }}</p>
+    </div>
+
+    <div v-if="selectedTags.length" class="selected-topics" aria-label="Selected topics">
+      <span>Topics</span>
+      <button v-for="tag in selectedTags" :key="tag" type="button" @click="toggleTag(tag)">
+        {{ tag }}
+        <span aria-hidden="true">×</span>
+        <span class="sr-only">Remove {{ tag }}</span>
+      </button>
+    </div>
+
+    <div class="catalogue-table-shell">
+      <table class="catalogue-table">
+        <caption class="sr-only">
+          Filtered articles and streams
+        </caption>
+        <colgroup>
+          <col class="catalogue-title-column" />
+          <col class="catalogue-topics-column" />
+          <col class="catalogue-people-column" />
+          <col class="catalogue-duration-column" />
+          <col class="catalogue-date-column" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Topics</th>
+            <th scope="col">By / with</th>
+            <th scope="col">Length</th>
+            <th scope="col">Published</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="item in pagedItems" :key="item.key">
+            <td class="result-title-cell" data-label="Title">
+              <div :class="['result-icon', `result-icon--${item.kind}`]" aria-hidden="true">
+                <svg v-if="item.kind === 'article'" viewBox="0 0 24 24">
+                  <path d="M6 3h12v18H6zM9 8h6M9 12h6M9 16h4" />
+                </svg>
+                <svg v-else viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z" /></svg>
+              </div>
+              <div class="result-copy">
+                <span class="result-kind">
+                  {{ item.kind === 'article' ? 'Article' : 'Stream' }}
+                </span>
+                <NuxtLink :to="item.to">{{ item.title }}</NuxtLink>
+                <p>{{ item.description }}</p>
+              </div>
+            </td>
+            <td data-label="Topics">
+              <div class="result-topics">
+                <button
+                  v-for="tag in item.tags"
+                  :key="tag"
+                  type="button"
+                  :aria-pressed="selectedTags.includes(tag)"
+                  @click="toggleTag(tag)"
+                >
+                  {{ tag }}
+                </button>
+              </div>
+            </td>
+            <td data-label="By / with">
+              <div v-if="item.people.length" class="result-people">
+                <div class="result-people-avatars" aria-hidden="true">
+                  <span v-for="person in item.people" :key="person.name">
+                    <img v-if="person.photo" :src="person.photo" alt="" loading="lazy" />
+                    <span v-else class="result-person-initials">{{
+                      getInitials(person.name)
+                    }}</span>
+                  </span>
+                </div>
+                <span class="result-people-names">
+                  <span v-for="(person, index) in item.people" :key="person.name">
+                    {{ person.name }}{{ index < item.people.length - 1 ? ', ' : '' }}
+                  </span>
+                </span>
+              </div>
+              <span v-else class="result-people-empty">Guest information unavailable</span>
+            </td>
+            <td data-label="Length">
+              <div class="result-duration">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+                <span v-if="item.kind === 'article'">{{ item.readingMinutes }} min read</span>
+                <span v-else>{{ item.durationMinutes }} min</span>
+              </div>
+            </td>
+            <td data-label="Published">
+              <time :datetime="item.date">{{ formatDate(item.date) }}</time>
+            </td>
+          </tr>
+          <tr v-if="!pagedItems.length" class="catalogue-empty-row">
+            <td colspan="5">
+              <strong>No results found.</strong>
+              <span>Try a broader search or clear one of the filters.</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer class="catalogue-pagination">
+      <p aria-live="polite">{{ resultSummary }}</p>
+      <nav v-if="totalPages > 1" aria-label="Results pages">
+        <button type="button" :disabled="currentPage === 1" @click="setPage(currentPage - 1)">
+          <span aria-hidden="true">‹</span> Prev
+        </button>
+        <template v-for="(page, index) in visiblePages" :key="`${page}-${index}`">
+          <span v-if="page === 'ellipsis'" aria-hidden="true">…</span>
+          <button
+            v-else
+            type="button"
+            :aria-current="page === currentPage ? 'page' : undefined"
+            @click="setPage(page)"
+          >
+            {{ page }}
+          </button>
+        </template>
+        <button
+          type="button"
+          :disabled="currentPage === totalPages"
+          @click="setPage(currentPage + 1)"
+        >
+          Next <span aria-hidden="true">›</span>
+        </button>
+      </nav>
+      <label class="page-size">
+        <span>Results per page</span>
+        <select :value="pageSize" @change="changePageSize">
+          <option :value="10">10 per page</option>
+          <option :value="20">20 per page</option>
+          <option :value="50">50 per page</option>
+        </select>
+        <svg aria-hidden="true" viewBox="0 0 20 20"><path d="m5 7.5 5 5 5-5" /></svg>
+      </label>
+    </footer>
+  </section>
 </template>
 
 <script lang="ts" setup>
-import { computed, onMounted, ref, watch } from 'vue'
-import { type LocationQueryValue, useRoute, useRouter } from 'vue-router'
-import { vResizeObserver } from '@vueuse/components'
-import BTGInput from '~/components/helpers/BTGInput.vue'
+import Fuse from 'fuse.js'
+import type { LocationQueryRaw } from 'vue-router'
 import type { Article, ArticleContentRaw } from '~/Types/Article'
-import type { Event } from '~/Types/Event'
-import fuse from 'fuse.js'
-import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiCheck } from '@mdi/js'
+import type { Event as StreamEvent, EventDetailsDate } from '~/Types/Event'
+import articlesContentData from '~/articlesContent.json'
+import { resolveStreamSpeakerPhoto } from '~/utils/streamEvent'
 
-/**
- * Reactive reference to a string or array of LocationQueryValue.
- *
- * @type {Ref<(string | Array<LocationQueryValue>)>}
- * @default ref([])
- */
-const tags: Ref<string | Array<LocationQueryValue>> = ref([])
-/**
- * Returns the current route object.
- * The route object contains information about the current location in a web application,
- * including the path, query parameters, and other relevant details.
- *
- * @returns {Object} The current route object.
- */
+type ContentType = 'all' | 'articles' | 'streams'
+type SortOrder = 'newest' | 'oldest' | 'title'
+type PageEntry = number | 'ellipsis'
+
+interface CatalogueItem {
+  key: string
+  kind: 'article' | 'stream'
+  title: string
+  description: string
+  date: string
+  tags: string[]
+  to: string
+  people: CataloguePerson[]
+  searchPeople: string[]
+  searchText: string
+  readingMinutes?: number
+  durationMinutes?: number
+}
+
+interface CataloguePerson {
+  name: string
+  photo?: string
+}
+
+const props = withDefaults(
+  defineProps<{
+    articles?: Article[]
+    events?: StreamEvent[]
+  }>(),
+  {
+    articles: () => [],
+    events: () => []
+  }
+)
+
 const route = useRoute()
-/**
- * Returns a router instance that provides methods for managing navigation between different views or pages in a web application.
- * The returned router can be used to programmatically navigate to new routes, check the current route, and listen for changes in the route.
- */
 const router = useRouter()
+const topicFilter = useTemplateRef<HTMLDetailsElement>('topicFilter')
+const typeOptions: Array<{ label: string; value: ContentType }> = [
+  { label: 'All', value: 'all' },
+  { label: 'Articles', value: 'articles' },
+  { label: 'Streams', value: 'streams' }
+]
+const validPageSizes = [10, 20, 50]
+const contentByTitle = new Map(
+  (articlesContentData as ArticleContentRaw[]).map((article) => [article.title, article.raw])
+)
 
-/**
- * Reactive reference to a filter string used for searching or filtering articles. The value of this reference is a string that represents the current state of the article filter.
- *
- * @type {Ref<string>}
- */
-const articleFilter = ref('')
-/**
- * Reactive reference to an array of articles and events filtered by name.
- *
- * @type {Ref<Array<Article | Event>>}
- * @description Holds a reactive collection of article and event objects that have been filtered based on their names. This is typically used in data-driven applications where filtering based on user input or other dynamic criteria is required.
- */
-const articlesFilteredByName: Ref<Array<Article | Event>> = ref([])
-/**
- * Reactive reference to an array of raw article content objects.
- * Used to store and manage the current list of articles fetched or generated within the application.
- * Each ArticleContentRaw object represents a single piece of article data, its structure is not specified here.
- */
-const articlesContent: Ref<Array<ArticleContentRaw>> = ref([])
-
-/**
- * maxHeight is a reactive reference that holds the maximum height value.
- * It is typically used to dynamically set the height of elements or containers.
- */
-const maxHeight = ref(0)
-/**
- * A reactive reference indicating whether all tags should be shown.
- *
- * @type {Ref<boolean>}
- * @default false
- */
-const showAllTags: Ref<boolean> = ref(false)
-
-/**
- * An array of content types used for filtering or categorization.
- *
- * @type {Ref<Array<string>>}
- * @default ['Article', 'Stream']
- */
-const contentTypes: Ref<Array<string>> = ref(['Articles', 'Streams'])
-
-/**
- * A reactive reference to the current content types being used.
- *
- * @type {Ref<Array<string>>}
- * @default ref([])
- */
-const currentContentType: Ref<Array<string>> = ref([])
-
-/**
- * A reactive reference to a Node.js timeout object, used to debounce function calls.
- * This variable is initialized as `null` and can be set to a timeout object when debouncing is required,
- * or reset to `null` when debouncing is not active.
- *
- * @type {Ref<NodeJS.Timeout | null>}
- * @ref
- */
-const debounceWait: Ref<NodeJS.Timeout | null> = ref(null)
-
-/**
- * Object containing arrays of data.
- *
- * @property {Array<Article>} articles - List of article objects.
- * @property {Array<Event>} events - List of event objects.
- * @property {Event} newestEvent - The most recent event object.
- */
-const props = defineProps({
-  articles: Array<Article>,
-  events: Array<Event>,
-  newestEvent: Object
+const queryValue = (value: unknown) =>
+  Array.isArray(value) ? String(value[0] ?? '') : String(value ?? '')
+const queryTags = computed(() =>
+  queryValue(route.query.tags)
+    .split(',')
+    .map((tag) => tag.trim())
+    .filter(Boolean)
+)
+const selectedTags = computed(() => [...new Set(queryTags.value)])
+const contentType = computed<ContentType>(() => {
+  const value = queryValue(route.query.type)
+  return value === 'articles' || value === 'streams' ? value : 'all'
 })
-
-props.articles?.sort((a, b) => {
-  return Date.parse(a.publishDate) > Date.parse(b.publishDate) ? -1 : 1
+const sortOrder = computed<SortOrder>(() => {
+  const value = queryValue(route.query.sort)
+  return value === 'oldest' || value === 'title' ? value : 'newest'
 })
-
-props.events?.sort((a, b) => {
-  return Date.parse(a.date as string) > Date.parse(b.date as string) ? -1 : 1
+const requestedPage = computed(() => {
+  const value = Number.parseInt(queryValue(route.query.page), 10)
+  return Number.isFinite(value) && value > 0 ? value : 1
 })
+const pageSize = computed(() => {
+  const value = Number.parseInt(queryValue(route.query.perPage), 10)
+  return validPageSizes.includes(value) ? value : 20
+})
+const searchDraft = ref(queryValue(route.query.q))
+let searchTimer: ReturnType<typeof setTimeout> | undefined
 
-/**
- * Lifecycle hook that is called when the component is mounted.
- * It initializes the articlesFilteredByName with a combination of articles and events,
- * sets up a resize event listener, and loads article content from a JSON file.
- */
-onMounted(async () => {
-  articlesFilteredByName.value = [...(props.articles as Article[]), ...(props.events as Event[])]
-  window.addEventListener('resize', onResize)
+const closeTopicFilter = () => {
+  topicFilter.value?.removeAttribute('open')
+}
 
-  if (route.query && route.query.tags) {
-    tags.value = route.query.tags
-  } else {
-    tags.value = []
+const closeTopicFilterFromOutside = (event: PointerEvent) => {
+  if (
+    topicFilter.value?.open &&
+    event.target instanceof Node &&
+    !topicFilter.value.contains(event.target)
+  ) {
+    closeTopicFilter()
   }
+}
 
-  currentContentType.value = [...contentTypes.value]
-
-  articlesContent.value = (await import('../articlesContent.json')).default
+onMounted(() => document.addEventListener('pointerdown', closeTopicFilterFromOutside))
+watch(
+  () => route.query.q,
+  (value) => {
+    const routeSearch = queryValue(value)
+    if (routeSearch !== searchDraft.value) searchDraft.value = routeSearch
+  }
+)
+watch(searchDraft, (value) => {
+  clearTimeout(searchTimer)
+  searchTimer = setTimeout(() => updateQuery({ q: value.trim() || undefined }, true), 250)
+})
+onBeforeUnmount(() => {
+  clearTimeout(searchTimer)
+  document.removeEventListener('pointerdown', closeTopicFilterFromOutside)
 })
 
-/**
- * Callback function for handling the resizing of an element.
- * Updates the 'max-height' CSS variable in the :root selector based on the border box size of the resized element, if it exceeds the current max height.
- *
- * @param {ResizeObserverEntry[]} resizeEvent - Array containing one or more ResizeObserverEntry objects representing the elements that have been resized.
- */
-const onResizeOne = (resizeEvent: ResizeObserverEntry[]) => {
-  if (resizeEvent && resizeEvent[0] && resizeEvent[0].borderBoxSize[0]) {
-    if (maxHeight.value < resizeEvent[0].borderBoxSize[0].blockSize) {
-      maxHeight.value = resizeEvent[0].borderBoxSize[0].blockSize
+const articleReadingMinutes = (article: Article) => {
+  if (article.readingMinutes) return article.readingMinutes
+  const raw = contentByTitle.get(article.title)
+  const text = raw?.trim() || article.short.trim()
+  return Math.max(1, Math.ceil(text.split(/\s+/).length / 200))
+}
 
-      document
-        ?.querySelector(':root')
-        ?.style.setProperty('--scaleTransitionMaxHeight', `${maxHeight.value}px`)
+const streamDurationMinutes = (event: StreamEvent) => {
+  if (event.durationMinutes) return event.durationMinutes
+  const dateDetails = Object.values(event.details).find(
+    (detail): detail is EventDetailsDate =>
+      typeof detail === 'object' && detail !== null && 'startTime' in detail && 'endTime' in detail
+  )
+  if (!dateDetails?.startTime || !dateDetails.endTime) return 120
+
+  const minutesFromTime = (time: string) => {
+    const [hours, minutes] = time.split(':').map(Number)
+    return hours * 60 + minutes
+  }
+  let duration = minutesFromTime(dateDetails.endTime) - minutesFromTime(dateDetails.startTime)
+  if (duration <= 0) duration += 24 * 60
+  return duration
+}
+
+const streamLink = (event: StreamEvent) => {
+  if (event.YT) return `/streams/${event.YT.replace(/.*\//, '')}`
+  const slug = event.name.replaceAll(' ', '_').replace(/[()?"'‘’]/g, '')
+  return `/streams/${slug}`
+}
+
+const items = computed<CatalogueItem[]>(() => [
+  ...props.articles.map((article) => {
+    const people = article.authors.map((author) => ({
+      name: author.author,
+      photo: author.photo
+    }))
+    return {
+      key: `article-${article.name}`,
+      kind: 'article' as const,
+      title: article.title,
+      description: article.short,
+      date: article.publishDate,
+      tags: article.tags,
+      to: `/articles/${article.name}`,
+      people,
+      searchPeople: people.map((person) => person.name),
+      searchText: [
+        article.title,
+        article.short,
+        article.tags.join(' '),
+        people.map((person) => person.name).join(' '),
+        contentByTitle.get(article.title) ?? ''
+      ].join(' '),
+      readingMinutes: articleReadingMinutes(article)
     }
-  }
-}
-
-/**
- * Toggles the current content type based on the provided type.
- *
- * @param {string} type - The content type to toggle.
- */
-const toggleContentType = (type: string) => {
-  currentContentType.value = [type]
-}
-
-/**
- * This function is called when the window size is resized.
- * It updates the maximum height of articles and sets a CSS variable
- * for smooth transition effects based on the new height.
- *
- * @function onResize
- * @type {function}
- * @description Adjusts maxHeight based on article heights and updates CSS variable
- */
-const onResize = () => {
-  maxHeight.value = 0
-  for (const articleIndex in filteredArticles.value) {
-    const el = document.getElementById(`article-${articleIndex}`)
-    if (el && el.offsetHeight > maxHeight.value) {
-      maxHeight.value = el.offsetHeight
+  }),
+  ...props.events.map((event) => {
+    const speakers = event.speakers ?? []
+    const people = speakers
+      .filter((speaker) => !speaker.isHost)
+      .map((speaker) => ({
+        name: speaker.name,
+        photo: resolveStreamSpeakerPhoto(speaker.photo)
+      }))
+    const tags = [...new Set([...(event.topics ?? []), ...event.tags])]
+    return {
+      key: `stream-${event.id ?? event.name}`,
+      kind: 'stream' as const,
+      title: event.name,
+      description: event.summary ?? event.description,
+      date: String(event.date),
+      tags,
+      to: streamLink(event),
+      people,
+      searchPeople: speakers.map((speaker) => speaker.name),
+      searchText: [
+        event.name,
+        event.summary ?? '',
+        event.description,
+        tags.join(' '),
+        speakers
+          .map(
+            (speaker) =>
+              `${speaker.name} ${speaker.role ?? ''} ${speaker.isHost ? 'host' : 'guest'}`
+          )
+          .join(' ')
+      ].join(' '),
+      durationMinutes: streamDurationMinutes(event)
     }
-  }
-
-  document
-    ?.querySelector(':root')
-    ?.style.setProperty('--scaleTransitionMaxHeight', `${maxHeight.value}px`)
-}
-
-/**
- * Removes a specified tag from the current list of tags and updates the URL accordingly.
- *
- * @param {string} tag - The tag to be removed.
- */
-const removeTag = (tag: string) => {
-  const tempArray = [...tags.value].filter((el) => {
-    return el !== tag
   })
+])
 
-  if (tag.includes(' ')) {
-    tag = tag.replaceAll(' ', '%20')
-  }
-
-  if (tempArray.length > 0) {
-    router.push(`/?tags=${tempArray.join(',')}`)
-  } else {
-    showAllTags.value = false
-    router.push(`/`)
-  }
-}
-
-/**
- * Adds a tag to the current route's query parameters.
- *
- * If the specified tag is already present, no action is taken.
- * Otherwise, the tag is appended to the 'tags' parameter in the route's query string,
- * separating multiple tags with commas if necessary.
- *
- * @param {string} tag - The tag to be added.
- */
-const addTag = (tag: string) => {
-  if (tags.value.includes(tag)) {
-    return
-  }
-
-  const query = { ...route.query }
-  if (query.tags) {
-    query.tags = query.tags + ',' + tag
-  } else {
-    query.tags = tag
-  }
-  router.replace({ query })
-}
-
-/**
- * A computed property that filters and sorts articles and events based on tags and a filter.
- * It combines both articles and events into one array, then applies the following filters:
- * 1. Tags: Filters articles/events that include any of the specified tags.
- * 2. Name Filter: Filters articles/events whose titles match any item in `articlesFilteredByName`.
- *
- * The resulting array is sorted by date, with more recent items appearing first.
- *
- * @type {ComputedRef<Array<Article | Event>>}
- * @returns {Array<Article | Event>} - An array of filtered and sorted articles and events.
- */
-const filteredArticles = computed(() => {
-  if (tags.value.length === 0 && articleFilter.value.length === 0) {
-    let array = [...(props.articles as Article[]), ...(props.events as Event[])]
-    if (currentContentType.value.length === 1) {
-      if (currentContentType.value[0] === 'Articles') {
-        array = props.articles as Article[]
-      } else if (currentContentType.value[0] === 'Streams') {
-        array = props.events as Event[]
-      }
-    }
-    return array.sort((a: Article | Event, b: Article | Event) => {
-      const ADate = (a as Article).publishDate ? (a as Article).publishDate : (a as Event).date
-      const BDate = (b as Article).publishDate ? (b as Article).publishDate : (b as Event).date
-
-      return Date.parse(ADate as string) > Date.parse(BDate as string) ? -1 : 1
+const allTags = computed(() =>
+  [...new Set(items.value.flatMap((item) => item.tags))].sort((a, b) => a.localeCompare(b))
+)
+const topicSummary = computed(() =>
+  selectedTags.value.length ? `${selectedTags.value.length} selected` : 'All topics'
+)
+const fuse = computed(
+  () =>
+    new Fuse(items.value, {
+      keys: [
+        { name: 'title', weight: 0.42 },
+        { name: 'tags', weight: 0.2 },
+        { name: 'searchPeople', weight: 0.16 },
+        { name: 'description', weight: 0.14 },
+        { name: 'searchText', weight: 0.08 }
+      ],
+      threshold: 0.32,
+      ignoreLocation: true,
+      minMatchCharLength: 2
     })
-  }
+)
 
-  let tagFiltered = [...(props.articles as Article[]), ...(props.events as Event[])]
-  if (currentContentType.value.length === 1) {
-    if (currentContentType.value[0] === 'Articles') {
-      tagFiltered = props.articles as Article[]
-    } else if (currentContentType.value[0] === 'Streams') {
-      tagFiltered = props.events as Event[]
-    }
-  }
-  if (tags.value.length > 0) {
-    tagFiltered = tagFiltered.filter((article) => {
-      for (let i = 0; i < tags.value.length; i++) {
-        if (article.tags.includes(tags.value[i] as string)) {
-          return true
-        }
-      }
-
+const searchTerm = computed(() => queryValue(route.query.q).trim().toLowerCase())
+const searchMatches = computed(() => {
+  if (!searchTerm.value) return undefined
+  const matches = new Set(fuse.value.search(searchTerm.value).map((result) => result.item.key))
+  items.value.forEach((item) => {
+    if (item.searchText.toLowerCase().includes(searchTerm.value)) matches.add(item.key)
+  })
+  return matches
+})
+const matchingItems = computed(() => {
+  return items.value.filter((item) => {
+    if (
+      selectedTags.value.length &&
+      !selectedTags.value.some((selectedTag) => item.tags.includes(selectedTag))
+    ) {
       return false
-    })
-  }
-
-  const array = tagFiltered.filter((el) => {
-    const title = (el as Article).title ? (el as Article).title : el.name
-    return articlesFilteredByName.value.some(
-      (article) => (article as Article).title === title || (article as Event).name === title
-    )
-  })
-
-  return array.sort((a: Article | Event, b: Article | Event) => {
-    const ADate = (a as Article).publishDate ? (a as Article).publishDate : (a as Event).date
-    const BDate = (b as Article).publishDate ? (b as Article).publishDate : (b as Event).date
-
-    return Date.parse(ADate as string) > Date.parse(BDate as string) ? -1 : 1
+    }
+    return !searchMatches.value || searchMatches.value.has(item.key)
   })
 })
+const filteredItems = computed(() =>
+  matchingItems.value.filter(
+    (item) => contentType.value === 'all' || `${item.kind}s` === contentType.value
+  )
+)
+const typeCounts = computed(() => ({
+  all: matchingItems.value.length,
+  articles: matchingItems.value.filter((item) => item.kind === 'article').length,
+  streams: matchingItems.value.filter((item) => item.kind === 'stream').length
+}))
 
-/**
- * Computed property that retrieves and sorts unique tags from articles.
- *
- * @returns {Array<string>} - A sorted array of unique tags extracted from the `props.articles`.
- */
-const allTags = computed((): Array<string> => {
-  const all = new Set()
-  if (props.articles && props.events) {
-    if (currentContentType.value.includes('Articles')) {
-      for (const article of props.articles) {
-        for (const tag of article.tags) {
-          all.add(tag)
-        }
-      }
-    }
-    if (currentContentType.value.includes('Streams')) {
-      for (const event of props.events) {
-        for (const tag of event.tags) {
-          all.add(tag)
-        }
-      }
-    }
-  }
-
-  return [...all].sort() as Array<string>
+const sortedItems = computed(() =>
+  [...filteredItems.value].sort((first, second) => {
+    if (sortOrder.value === 'title') return first.title.localeCompare(second.title)
+    const difference = Date.parse(first.date) - Date.parse(second.date)
+    return sortOrder.value === 'oldest' ? difference : -difference
+  })
+)
+const totalPages = computed(() => Math.max(1, Math.ceil(sortedItems.value.length / pageSize.value)))
+const currentPage = computed(() => Math.min(requestedPage.value, totalPages.value))
+const pagedItems = computed(() => {
+  const start = (currentPage.value - 1) * pageSize.value
+  return sortedItems.value.slice(start, start + pageSize.value)
+})
+const visiblePages = computed<PageEntry[]>(() => {
+  if (totalPages.value <= 7)
+    return Array.from({ length: totalPages.value }, (_, index) => index + 1)
+  const pages = new Set([1, totalPages.value, currentPage.value])
+  if (currentPage.value > 1) pages.add(currentPage.value - 1)
+  if (currentPage.value < totalPages.value) pages.add(currentPage.value + 1)
+  const sorted = [...pages].sort((a, b) => a - b)
+  const result: PageEntry[] = []
+  sorted.forEach((page, index) => {
+    if (index && page - sorted[index - 1] > 1) result.push('ellipsis')
+    result.push(page)
+  })
+  return result
+})
+const resultSummary = computed(() => {
+  const total = sortedItems.value.length
+  if (!total) return 'Showing 0 results'
+  const start = (currentPage.value - 1) * pageSize.value + 1
+  const end = Math.min(currentPage.value * pageSize.value, total)
+  return `Showing ${start}–${end} of ${total} results`
 })
 
-/**
- * Debounces a given function so it is only called after a specified wait time has elapsed since the last call.
- *
- * @param {Function} func - The function to be debounced.
- * @param {number} wait - The number of milliseconds that must elapse before `func` is invoked again.
- * @returns {Function} A new function that, when invoked, will debounce the original `func`.
- */
-const debounce = (func: () => void, wait: number) => {
-  return function executedFunction(...args) {
-    if (debounceWait.value) {
-      clearTimeout(debounceWait) // Clear any previous timeout
-    }
-    debounceWait.value = setTimeout(() => func.apply(this, args), wait)
+watch([requestedPage, totalPages], ([requested, total]) => {
+  if (requested > total) updateQuery({ page: total === 1 ? undefined : String(total) })
+})
+
+function updateQuery(changes: LocationQueryRaw, resetPage = false) {
+  const page = Object.prototype.hasOwnProperty.call(changes, 'page')
+    ? changes.page
+    : route.query.page
+  const query: LocationQueryRaw = {
+    ...route.query,
+    ...changes,
+    page: resetPage ? undefined : page
   }
+  void router.replace({ path: '/articles', query })
 }
 
-/**
- * Searches for articles based on user input.
- *
- * This function debounces the search process to avoid excessive calls,
- * filters articles by a given keyword, and updates the filtered list accordingly.
- * If no keyword is provided or the keyword is too short, it displays all available articles.
- *
- * @param {Article[]} props.articles - List of article objects to be searched.
- * @param {Event[]} props.events - List of event objects to be searched.
- * @param {string} articleFilter.value - The current user input used for filtering articles.
- * @param {Article[]} articlesContent.value - Array containing all articles and events.
- * @param {Article[]} articlesFilteredByName.value - Output array displaying filtered articles.
- */
-const searchForArticles = () => {
-  if (articlesContent.value.length === 0) {
-    const func = debounce(searchForArticles, 300)
-    func()
-  } else {
-    if (articleFilter.value.length > 2) {
-      const filterLower = articleFilter.value.toLowerCase().trim()
-
-      const tempArticles = [...(props.articles as Article[]), ...(props.events as Event[])]
-
-      const options = {
-        isCaseSensitive: true,
-        keys: ['title', 'raw'],
-        minMatchCharLength: 3,
-        distance: 300,
-        threshold: 0.2,
-        ignoreLocation: true
-      }
-
-      const Fuse = new fuse(articlesContent.value, options)
-      const fuseSearchResult = Fuse.search(filterLower)
-
-      articlesFilteredByName.value = tempArticles.filter((article) => {
-        if (
-          fuseSearchResult.some((el) => {
-            return (
-              el.item.title === (article as Article).title ||
-              el.item.title === (article as Event).name
-            )
-          })
-        ) {
-          return true
-        }
-
-        if ((article as Article).title) {
-          if ((article as Article).title.toLocaleLowerCase().includes(filterLower)) {
-            return true
-          }
-        } else {
-          if ((article as Event).name.toLocaleLowerCase().includes(filterLower)) {
-            return true
-          }
-        }
-      })
-    } else {
-      articlesFilteredByName.value = [
-        ...(props.articles as Article[]),
-        ...(props.events as Event[])
-      ]
-    }
-  }
+function setContentType(value: ContentType) {
+  updateQuery({ type: value === 'all' ? undefined : value }, true)
 }
 
-/**
- * Watches for changes in the currentContentType and filters tags accordingly.
- */
-watch(currentContentType, () => {
-  tags.value = tags.value.filter((tag) => {
-    if (currentContentType.value.includes('Articles') && props.articles) {
-      for (const article of props.articles) {
-        if (article.tags.includes(tag as string)) {
-          return true
-        }
-      }
-    }
+function optionCount(value: ContentType) {
+  return typeCounts.value[value]
+}
 
-    if (currentContentType.value.includes('Streams') && props.events) {
-      for (const event of props.events) {
-        if (event.tags.includes(tag as string)) {
-          return true
-        }
-      }
-    }
+function toggleTag(tag: string) {
+  const tags = selectedTags.value.includes(tag)
+    ? selectedTags.value.filter((selectedTag) => selectedTag !== tag)
+    : [...selectedTags.value, tag]
+  updateQuery({ tags: tags.length ? tags.join(',') : undefined }, true)
+}
 
-    nextTick(() => {
-      removeTag(tag)
-    })
-    return false
-  })
-})
+function clearTags() {
+  updateQuery({ tags: undefined }, true)
+}
 
-/**
- * Watches for changes in the articleFilter and triggers a debounced search for articles.
- */
-watch(articleFilter, async () => {
-  const func = debounce(searchForArticles, 300)
-  func()
-})
+function changeSort(event: Event) {
+  const value = (event.target as HTMLSelectElement).value as SortOrder
+  updateQuery({ sort: value === 'newest' ? undefined : value }, true)
+}
 
-/**
- * Watches for changes in the route and updates the tags accordingly.
- */
-watch(route, (current) => {
-  if (current.query && current.query.tags) {
-    tags.value = current.query.tags as Array<string>
-  } else {
-    tags.value = []
-  }
-})
+function changePageSize(event: Event) {
+  const value = Number((event.target as HTMLSelectElement).value)
+  updateQuery({ perPage: value === 20 ? undefined : String(value) }, true)
+}
+
+function setPage(page: number) {
+  if (page < 1 || page > totalPages.value) return
+  updateQuery({ page: page === 1 ? undefined : String(page) })
+}
+
+function formatDate(date: string) {
+  return new Intl.DateTimeFormat('en', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
+  }).format(new Date(date))
+}
+
+function getInitials(name: string) {
+  return name
+    .split(/\s+/)
+    .map((part) => part[0])
+    .join('')
+    .slice(0, 2)
+    .toUpperCase()
+}
 </script>
-
-<style lang="scss" scoped>
-.tag {
-  @apply text-neutral-700 bg-neutral-300 rounded-md dark:bg-neutral-700 dark:text-neutral-300;
-}
-
-.taggedTag {
-  @apply text-white bg-neutral-900 rounded-md dark:bg-neutral-100 dark:text-black;
-}
-</style>

@@ -5,50 +5,30 @@
 </template>
 
 <script lang="ts" setup>
-import { useRoute } from 'vue-router'
-import { useHead } from '@unhead/vue'
-import { watch } from 'vue'
+import { useHead } from '#imports'
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from '~/utils/seo'
 
-const route = useRoute()
-
-if (route && route.query) {
-  if (route.query.tags) {
-    route.query.tags = route.query.tags.split(',')
-  }
-}
-
-/**
- * Watch for route changes to update query parameters
- */
-watch(route, (current) => {
-  if (current && current.query) {
-    if (route.query.tags) {
-      route.query.tags = route.query.tags.split(',')
+const websiteSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE_NAME,
+  url: SITE_URL,
+  publisher: {
+    '@type': 'Organization',
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: {
+      '@type': 'ImageObject',
+      url: DEFAULT_OG_IMAGE
     }
   }
 })
-
-const script = [
-  {
-    key: 'pageMeta',
-    type: 'application/ld+json',
-    children: JSON.stringify({
-      '@context': 'https://schema.org',
-      '@type': 'WebSite',
-      name: 'Bridging the Gap',
-      url: 'https://bridgingthegap.eu.com'
-    })
-  }
-]
 
 /**
  * Set up head metadata
  */
 useHead({
-  title: 'Bridging the Gap',
-  titleTemplate: (siteTitle) => {
-    return siteTitle ? `Bridging The Gap` : 'Bridging The Gap'
-  },
+  titleTemplate: (title) => (title ? `${title} | ${SITE_NAME}` : SITE_NAME),
   link: {
     rel: 'icon',
     type: 'image/x-icon',
@@ -58,11 +38,17 @@ useHead({
     {
       name: 'description',
       content:
-        'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture'
+        'BridgingTheGap.eu.com is a collaboration of integration architects working together to create a simple guide to integration architecture'
     },
     { name: 'theme-color', content: 'rgb(250,250,250)' }
   ],
-  script: script,
+  script: [
+    {
+      key: 'website-schema',
+      type: 'application/ld+json',
+      innerHTML: websiteSchema
+    }
+  ],
   htmlAttrs: {
     lang: 'en'
   }
@@ -72,24 +58,23 @@ useHead({
  * SEO Meta Information
  */
 useSeoMeta({
-  title: 'Bridging the Gap',
-  ogTitle: 'Bridging the Gap',
-  ogSiteName: 'Bridging the Gap',
+  title: SITE_NAME,
+  ogTitle: SITE_NAME,
+  ogSiteName: SITE_NAME,
   description:
-    'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
+    'BridgingTheGap.eu.com is a collaboration of integration architects working together to create a simple guide to integration architecture',
   ogDescription:
-    'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
-  ogImage: 'https://bridgingthegap.eu.com/favicon.png',
-  ogUrl: 'https://bridgingthegap.eu.com',
-  twitterTitle: 'Bridging the Gap',
+    'BridgingTheGap.eu.com is a collaboration of integration architects working together to create a simple guide to integration architecture',
+  ogImage: DEFAULT_OG_IMAGE,
+  ogUrl: SITE_URL,
+  twitterTitle: SITE_NAME,
   twitterDescription:
-    'Bridging the Gap is a collaboration of integration architects working together to create a simple guide to integration architecture',
-  twitterImage: 'https://bridgingthegap.eu.com/favicon.png',
-  twitterCard: 'summary'
+    'BridgingTheGap.eu.com is a collaboration of integration architects working together to create a simple guide to integration architecture',
+  twitterImage: DEFAULT_OG_IMAGE,
+  twitterCard: 'summary_large_image'
 })
 </script>
 
 <style lang="scss">
 @use '@/assets/style/base.css';
-@use '@/assets/style/main.scss';
 </style>
