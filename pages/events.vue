@@ -12,6 +12,8 @@
     <div v-if="allEvents.length" class="events-reader-layout">
       <EventsEventNavigation
         :events="visibleEvents"
+        :all-events="allEvents"
+        :selected-event-type="selectedEventType"
         :active-anchor="activeAnchor"
         :displayed-month="displayedMonth"
         :earliest-date="earliestEventDate"
@@ -20,6 +22,7 @@
         @navigate="navigateToEvent"
         @load-earlier="showEarlierEvents"
         @update:displayed-month="updateDisplayedMonth"
+        @update:event-type="setEventType"
       />
       <div class="event-timeline" aria-label="Chronological events">
         <EventsEventSection
@@ -47,9 +50,11 @@
 
 <script lang="ts" setup>
 import { DateTime } from 'luxon'
-import type { Event } from '~/Types/Event'
+import { EventType, type Event } from '~/Types/Event'
 import eventsData from '~/events.json'
 import { chronologicalEvents, eventAnchor, eventStart } from '~/utils/events'
+
+type EventTypeFilter = EventType | 'all'
 
 usePageSeo({
   title: 'Events',
@@ -59,6 +64,7 @@ usePageSeo({
 })
 
 const route = useRoute()
+const router = useRouter()
 const requestHeaders = useRequestHeaders(['accept-language'])
 const eventLocale = useState('event-locale', () => {
   if (import.meta.client) return navigator.language || 'en'
@@ -72,6 +78,19 @@ provide('eventLocale', readonly(eventLocale))
 const allEvents = chronologicalEvents(eventsData as Event[])
 const now = DateTime.utc()
 const defaultStart = now.startOf('month')
+const queryValue = (value: unknown) =>
+  Array.isArray(value) ? String(value[0] ?? '') : String(value ?? '')
+const selectedEventType = computed<EventTypeFilter>(() => {
+  const requestedType = queryValue(route.query.type).toLowerCase()
+  return (
+    Object.values(EventType).find((eventType) => eventType.toLowerCase() === requestedType) ?? 'all'
+  )
+})
+const eventsForType = computed(() =>
+  selectedEventType.value === 'all'
+    ? allEvents
+    : allEvents.filter((event) => event.eventType === selectedEventType.value)
+)
 
 function resolveHashEvent(hash: string): Event | undefined {
   const stableAnchor = hash.replace(/^#/, '')
@@ -95,22 +114,36 @@ function resolveRequestedEvent(): Event | undefined {
   return eventName ? allEvents.find((event) => event.name === eventName) : undefined
 }
 
-const requestedEvent = resolveRequestedEvent()
+const requestedEventCandidate = resolveRequestedEvent()
+const requestedEvent =
+  requestedEventCandidate && eventsForType.value.includes(requestedEventCandidate)
+    ? requestedEventCandidate
+    : undefined
+const nearestInitialTypeEvent = nearestEvent(eventsForType.value)
+const hasEventsInDefaultRange = eventsForType.value.some(
+  (event) => eventStart(event) >= defaultStart
+)
 const initialRangeStart =
   requestedEvent && eventStart(requestedEvent) < defaultStart
     ? eventStart(requestedEvent).startOf('month')
-    : defaultStart
+    : selectedEventType.value !== 'all' && !hasEventsInDefaultRange && nearestInitialTypeEvent
+      ? eventStart(nearestInitialTypeEvent).startOf('month')
+      : defaultStart
 const rangeStart = ref(initialRangeStart)
-const earliestEventMonth = allEvents.length
-  ? eventStart(allEvents[0]).startOf('month')
-  : defaultStart
-const earliestEventDate = allEvents.length
-  ? eventStart(allEvents[0]).startOf('day').toJSDate()
-  : undefined
-const visibleEvents = computed(() =>
-  allEvents.filter((event) => eventStart(event) >= rangeStart.value)
+const earliestEventMonth = computed(() =>
+  eventsForType.value.length ? eventStart(eventsForType.value[0]).startOf('month') : defaultStart
 )
-const hasEarlierEvents = computed(() => earliestEventMonth.toMillis() < rangeStart.value.toMillis())
+const earliestEventDate = computed(() =>
+  eventsForType.value.length
+    ? eventStart(eventsForType.value[0]).startOf('day').toJSDate()
+    : undefined
+)
+const visibleEvents = computed(() =>
+  eventsForType.value.filter((event) => eventStart(event) >= rangeStart.value)
+)
+const hasEarlierEvents = computed(
+  () => earliestEventMonth.value.toMillis() < rangeStart.value.toMillis()
+)
 const earlierEventsLabel = computed(() =>
   hasEarlierEvents.value
     ? `Show events before ${rangeStart.value.setLocale(eventLocale.value).toFormat('LLLL yyyy')}`
@@ -162,8 +195,8 @@ function refreshEventSections() {
 
 async function extendRangeStart(targetMonth: DateTime) {
   const nextRangeStart =
-    targetMonth.toMillis() < earliestEventMonth.toMillis()
-      ? earliestEventMonth
+    targetMonth.toMillis() < earliestEventMonth.value.toMillis()
+      ? earliestEventMonth.value
       : targetMonth.startOf('month')
   if (nextRangeStart.toMillis() >= rangeStart.value.toMillis()) return
 
@@ -211,6 +244,18 @@ async function extendRangeStart(targetMonth: DateTime) {
 function showEarlierEvents() {
   if (!hasEarlierEvents.value) return
   void extendRangeStart(rangeStart.value.minus({ months: 3 }))
+}
+
+function setEventType(eventType: EventTypeFilter) {
+  if (eventType === selectedEventType.value) return
+  void router.replace({
+    path: '/events',
+    query: {
+      ...route.query,
+      type: eventType === 'all' ? undefined : eventType.toLowerCase()
+    },
+    hash: ''
+  })
 }
 
 async function updateDisplayedMonth(month: Date) {
@@ -314,6 +359,31 @@ function scrollEventIntoView(target: HTMLElement, behavior: ScrollBehavior) {
     desiredTop
   scrollRoot.scrollTo({ top: destination, behavior })
 }
+
+watch(selectedEventType, async () => {
+  if (!import.meta.client) return
+
+  cancelNavigationEndWait()
+  const currentEvent = visibleEvents.value.find(
+    (event) => eventAnchor(event) === activeAnchor.value
+  )
+  let nextEvent = currentEvent ?? nearestEvent(visibleEvents.value)
+
+  if (!nextEvent) {
+    nextEvent = nearestEvent(eventsForType.value)
+    if (nextEvent) rangeStart.value = eventStart(nextEvent).startOf('month')
+  }
+
+  activeAnchor.value = nextEvent ? eventAnchor(nextEvent) : undefined
+  displayedMonth.value = monthForEvent(nextEvent)
+  await nextTick()
+  refreshEventSections()
+
+  if (!nextEvent) return
+  setActive(eventAnchor(nextEvent))
+  const target = document.getElementById(eventAnchor(nextEvent))
+  if (target) scrollEventIntoView(target, 'auto')
+})
 
 async function initializeScrolling() {
   const scrollRoot = document.getElementById('body')

@@ -11,6 +11,7 @@
       expanded
       transparent
       @dayclick="selectDay"
+      @daykeydown="selectDayWithKeyboard"
       @did-move="calendarMoved"
     />
     <template #fallback>
@@ -89,6 +90,12 @@ function selectDay(day: { date: Date }) {
   if (selected) emit('navigate', eventAnchor(selected))
 }
 
+function selectDayWithKeyboard(day: { date: Date }, event: KeyboardEvent) {
+  if (event.key !== 'Enter' && event.key !== ' ') return
+  event.preventDefault()
+  selectDay(day)
+}
+
 function calendarMoved(
   pages: Array<{ year: number; month: number }> | { year: number; month: number }
 ) {
@@ -106,7 +113,7 @@ function calendarMoved(
   color: var(--editorial-muted);
 }
 
-:deep(.event-calendar) {
+:global(.event-calendar.vc-container) {
   --vc-accent-50: var(--editorial-surface-muted);
   --vc-accent-100: var(--editorial-surface-muted);
   --vc-accent-200: var(--editorial-border);
@@ -117,10 +124,15 @@ function calendarMoved(
   --vc-accent-700: var(--editorial-text);
   --vc-accent-800: var(--editorial-text);
   --vc-accent-900: var(--editorial-text);
+  --vc-focus-ring: 0 0 0 3px var(--editorial-focus);
   width: 100%;
   color: var(--editorial-text);
   background: transparent;
   font-family: inherit;
+}
+
+:global(.event-calendar.vc-container .vc-focus:focus-within) {
+  box-shadow: var(--vc-focus-ring);
 }
 
 :deep(.vc-header .vc-title),
@@ -153,7 +165,7 @@ function calendarMoved(
   background: var(--editorial-text);
 }
 
-:deep(button:focus-visible) {
+:global(.event-calendar.vc-container button:focus-visible) {
   outline: 3px solid var(--editorial-focus);
   outline-offset: 2px;
 }

@@ -80,6 +80,11 @@ a:hover {
   background: var(--editorial-surface-muted);
 }
 
+a:focus-visible {
+  position: relative;
+  z-index: 1;
+}
+
 a[aria-current='location'] {
   border-left-color: var(--editorial-text);
   color: var(--editorial-text);

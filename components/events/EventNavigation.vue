@@ -8,6 +8,17 @@
       @navigate="$emit('navigate', $event)"
       @update:displayed-month="$emit('update:displayed-month', $event)"
     />
+    <div class="event-type-filter" role="group" aria-label="Filter by event type">
+      <button
+        v-for="option in eventTypeOptions"
+        :key="option.value"
+        type="button"
+        :aria-pressed="selectedEventType === option.value"
+        @click="$emit('update:event-type', option.value)"
+      >
+        {{ option.label }} <span>{{ option.count }}</span>
+      </button>
+    </div>
     <button
       class="load-earlier-events"
       type="button"
@@ -42,6 +53,17 @@
         @navigate="navigateMobile"
         @update:displayed-month="$emit('update:displayed-month', $event)"
       />
+      <div class="event-type-filter" role="group" aria-label="Filter by event type">
+        <button
+          v-for="option in eventTypeOptions"
+          :key="option.value"
+          type="button"
+          :aria-pressed="selectedEventType === option.value"
+          @click="$emit('update:event-type', option.value)"
+        >
+          {{ option.label }} <span>{{ option.count }}</span>
+        </button>
+      </div>
       <div class="mobile-event-index">
         <button
           class="load-earlier-events"
@@ -62,11 +84,15 @@
 </template>
 
 <script lang="ts" setup>
-import type { Event } from '~/Types/Event'
+import { EventType, type Event } from '~/Types/Event'
 import { eventAnchor, eventStart } from '~/utils/events'
+
+type EventTypeFilter = EventType | 'all'
 
 const props = defineProps<{
   events: Event[]
+  allEvents: Event[]
+  selectedEventType: EventTypeFilter
   activeAnchor?: string
   displayedMonth: Date
   earliestDate?: Date
@@ -78,6 +104,7 @@ const emit = defineEmits<{
   navigate: [anchor: string]
   'load-earlier': []
   'update:displayed-month': [month: Date]
+  'update:event-type': [eventType: EventTypeFilter]
 }>()
 
 const mobileOpen = ref(false)
@@ -88,6 +115,14 @@ const eventLocale = inject<Readonly<Ref<string>>>(
 const activeEvent = computed(() =>
   props.events.find((event) => eventAnchor(event) === props.activeAnchor)
 )
+const eventTypeOptions = computed(() => [
+  { label: 'All', value: 'all' as const, count: props.allEvents.length },
+  ...Object.values(EventType).map((eventType) => ({
+    label: eventType === EventType.Training ? 'Training' : `${eventType}s`,
+    value: eventType,
+    count: props.allEvents.filter((event) => event.eventType === eventType).length
+  }))
+])
 const activeLabel = computed(() => {
   if (!activeEvent.value) return 'Browse the event calendar'
   return `${eventStart(activeEvent.value).setLocale(eventLocale.value).toFormat('d LLL')} — ${activeEvent.value.name}`
@@ -121,9 +156,57 @@ function navigateMobile(anchor: string) {
 
 .desktop-index-scroll {
   min-height: 0;
-  padding-right: 0.25rem;
+  padding: 0 0.4rem 0.4rem;
   overflow-y: auto;
   overscroll-behavior: contain;
+}
+
+.event-type-filter {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.3rem;
+}
+
+.event-type-filter button {
+  min-height: 2.65rem;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 0.45rem;
+  color: var(--editorial-text);
+  background: transparent;
+  font: inherit;
+  font-size: 0.76rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.event-type-filter button:first-child {
+  grid-column: 1 / -1;
+}
+
+.event-type-filter button span {
+  margin-left: 0.2rem;
+  color: var(--editorial-muted);
+  font-size: 0.7rem;
+}
+
+.event-type-filter button:hover {
+  background: var(--editorial-surface-muted);
+}
+
+.event-type-filter button[aria-pressed='true'] {
+  border-color: var(--editorial-text);
+  background: var(--editorial-surface-muted);
+  font-weight: 700;
+}
+
+.event-type-filter button[aria-pressed='true'] span {
+  color: currentColor;
+}
+
+.event-type-filter button:focus-visible {
+  outline: 3px solid var(--editorial-focus);
+  outline-offset: 2px;
 }
 
 .load-earlier-events {
@@ -223,8 +306,16 @@ function navigateMobile(anchor: string) {
     overscroll-behavior: contain;
   }
 
+  .mobile-navigation-content > .event-type-filter {
+    grid-row: 2;
+    grid-column: 1;
+    align-self: start;
+  }
+
   .mobile-event-index {
     display: grid;
+    grid-row: 1 / span 2;
+    grid-column: 2;
     align-content: start;
     gap: 0.9rem;
   }
@@ -233,6 +324,21 @@ function navigateMobile(anchor: string) {
 @media (max-width: 42rem) {
   .mobile-navigation-content {
     grid-template-columns: 1fr;
+  }
+
+  .event-type-filter {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  .event-type-filter button:first-child {
+    grid-column: auto;
+  }
+
+  .mobile-event-index {
+    grid-row: auto;
+    grid-column: auto;
   }
 }
 </style>
