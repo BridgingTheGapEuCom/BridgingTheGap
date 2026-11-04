@@ -1,6 +1,7 @@
 [
   {
     "name": "DDD for Enterprise Application Integration Workshop",
+    "eventId": "000BVC",
     "img": "/events/DDD_for_Enterprise_Application_Integration.webp",
     "description": "Integrating today's interconnected systems presents significant challenges, requiring more than just technical solutions; this workshop explores how to leverage Domain-Driven Design (DDD) to tackle Enterprise Application Integration (EAI) by aligning technical efforts with core business domains. Moving beyond simple system connections, the interactive session provides practical, hands-on experience through scenarios, discussions, and trade-off analysis, equipping you with the skills and tools to design for interoperability, strategically manage system coupling with DDD, select appropriate EAI styles, and avoid common pitfalls in real-world integration challenges.",
     "date": "2025-05-21",
@@ -17,7 +18,7 @@
       "place": "Online - limited seats, open call",
       "eventTopic": "We’re exploring the use of Domain-Driven Design to augment the design of Enterprise Application Integration",
       "eventType": "Workshop",
-      "registrationLink": {
+      "eventLink": {
         "type": "link",
         "link": "https://forms.gle/zLJsN8YBFGboJcjy7",
         "name": "Apply here!"
@@ -26,6 +27,7 @@
   },
   {
     "name": "DDD for Enterprise Application Integration",
+    "eventId": "005CHm",
     "img": "/events/DDD_for_Enterprise_Application_Integration_classroom.webp",
     "description": "Integrating today's interconnected systems presents significant challenges, requiring more than just technical solutions; this workshop explores how to leverage Domain-Driven Design (DDD) to tackle Enterprise Application Integration (EAI) by aligning technical efforts with core business domains. Moving beyond simple system connections, the interactive session provides practical, hands-on experience through scenarios, discussions, and trade-off analysis, equipping you with the skills and tools to design for interoperability, strategically manage system coupling with DDD, select appropriate EAI styles, and avoid common pitfalls in real-world integration challenges.",
     "date": "2025-06-04",
@@ -51,11 +53,12 @@
   },
   {
     "name": "Unlock Your Path to being an Architect: A Panel Discussion",
+    "eventId": "00aLgY",
     "img": "/events/Unlock_Your_Path_to_being_an_Architect_A_Panel_Discussion.webp",
     "description": "Curious about making the leap from developer to architect? The Utrecht Mulesoft Meetup invites you to an engaging and insightful online discussion happening on June 18th at 18:30. This is a wonderful opportunity for developers aspiring to shift gears and step into the exciting world of architecture.\n\nJoin hosts Nicky van Steensel van der Aa and Karol Skrzymowski as they orchestrate a lively conversation with distinguished guests who have successfully walked this path:\n\n • Patryk Bandurski, an experienced Mulesoft Integration Architect currently working at PwC, proudly holding the title of Mulesoft Ambassador. He will share his insights and journey.\n\n • Mark Richards, a renowned Solutions Architect known all over the world. As an independent consultant and the mastermind behind developertoarchitect.com, Mark offers invaluable wisdom and practical advice on bridging the gap between development and architectural roles.\n\nThis panel discussion promises a deep dive into each of their personal journeys, elaborating on the challenges they faced, the resources, and the learning paths that paved their way. They'll discuss what contributed to their successful transitions, useful strategies for staying involved with coding despite the shift, and how becoming an architect has altered their view on development.\n\nFor those contemplating a career shift towards an architect role, this session is crafted particularly for you. Align your aspirations with knowledge and learn directly from the experts. Let their experiences guide you in carving your very own path to architecture success. Secure your spot and arm yourself with the insights necessary to elevate your professional journey!\n\nDon't miss out on this unique chance to learn, ask questions, and perhaps even network with these industry leaders. This session is not just a conversation; it's a stepping stone towards achieving your career dreams. Whether you're just starting to explore or are already on your way, there’s something beneficial here for everyone.\n\nPrepare to be inspired and informed through this enriching experience that aims to ignite your passion for growth and continuous learning in the field of software architecture.",
     "date": "2025-06-18",
-    "eventType": "Workshop",
-    "tags": ["Workshop"],
+    "eventType": "Stream",
+    "tags": ["Stream"],
     "details": {
       "date": {
         "type": "date",
@@ -76,13 +79,18 @@
   },
   {
     "name": "Loosely Coupled - Adopting Event-Driven Architecture",
+    "eventId": "00djxS",
     "img": "/events/Loosely_Coupled_Adopting_Event_Driven_Architecture.webp",
     "description": "Welcome to \"Loosely Coupled,\" the brand new Live Stream series brought to you by BridgingTheGap.eu.com! Our project is dedicated to closing the knowledge divide in the IT field of Enterprise Application Integration by providing vendor-agnostic knowledge and comprehensive insights.\n\nFor our highly anticipated debut session, we are thrilled to host Fran Mendez, the creator of AsyncAPI, as our special guest. Together, we will explore the critical topic of \"Adopting Event-Driven Architecture.\"\n\nEvent-Driven Architecture plays a crucial role in ensuring seamless communication and functionality across diverse systems. However, its adoption often comes with significant challenges. In this session, we will deep-dive into the common hurdles, complexities, and real-world problemscape that organizations encounter when integrating EDA into their ecosystems. We aim to shed light on these obstacles, offering valuable perspectives to help you navigate this intricate domain.\n\nThis is a unique opportunity to gain a broader perspective on architectural styles and understand how application integration fits within them, empowering you with the knowledge to make informed decisions.\n\nAt BridgingTheGap.eu.com, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of application integration!",
     "date": "2025-06-25",
     "eventType": "Stream",
     "tags": ["Stream"],
     "speakers": [
-      { "name": "Fran Mendez", "role": "Creator of AsyncAPI", "photo": "Fran_Mendez.webp" },
+      { 
+        "name": "Fran Mendez", 
+        "role": "Creator of AsyncAPI", 
+        "photo": "Fran_Mendez.webp" 
+      },
       {
         "name": "Karol Skrzymowski",
         "role": "Integration Architect",
@@ -107,6 +115,7 @@
   },
   {
     "name": "Effective Enterprise Application Integration",
+    "eventId": "00pW0M",
     "img": "/events/Effective_Enterprise_Application_Integration.webp",
     "description": "This O'Reilly live event focuses on Effective Enterprise Application Integration (EAI), addressing the complexities of integrating distributed systems in today's data-driven world where data consistency and adaptability are crucial, especially with the rise of generative AI. Led by expert Karol Skrzymowski, the course delves into established architectural styles and patterns, teaching participants how to design and implement effective integration strategies, analyze trade-offs, and tackle common challenges like data quality and security, making it ideal for those working with complex integration solutions or looking to advance their skills in building interoperable IT ecosystems.",
     "date": "2025-07-30",
@@ -132,6 +141,7 @@
   },
   {
     "name": "Loosely Coupled - The IT Talent Trap",
+    "eventId": "00qmHC",
     "img": "/events/Loosely_Coupled_The_IT_Talent_Trap.webp",
     "description": "For our next session, I'll be joined by Phillip Poynton - a recruiter with over 18 years of experience, and for the past 6 years, he's been exclusively focused on hiring Salesforce talent. Half British, half Polish, and living in Poland, Phillip brings a unique perspective on both the international and local recruitment landscapes.\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nThis will be a no-filter conversation about recruitment - the good, the bad, and the ugly. From the perspective of both recruiters and candidates, we'll dive into what's really going on in the job market today. With Phillip's candid approach, you can expect zero sugar-coating and plenty of real talk about what works (and what doesn't) in hiring.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.\n\nAt BridgingTheGap.eu.com, we believe in the power of open collaboration and community-driven learning to democratize access to essential education. Join us on this journey to empower yourself in the world of IT talent!",
     "date": "2025-07-31",
@@ -163,6 +173,7 @@
   },
   {
     "name": "Loosely Coupled - Recognizing and managing Cognitive Load",
+    "eventId": "00sx5S",
     "img": "/events/Loosely_Coupled_Recognizing_and_managing_Cognitive_Load.webp",
     "description": "For our next insightful session, we are thrilled to host Radek Orszewski, a distinguished Lean Agile Coach & Consultant, as our special guest. Together, we will explore the critical and often overlooked topic of \"Recognizing and Managing Cognitive Load.\"\n\nIn the demanding world of IT, cognitive load may significantly influence specialists in the industry. But what exactly is cognitive load? How can we effectively spot it, and more importantly, how do we get to the core of the problem to handle it? In this session we will dive into real-life examples of cognitive load and its impact, providing insight into how it may cause burnout and employee churn. This is an important discussion from the perspective of every employee, and an extremely vital one for team leaders and company management seeking to foster healthier, more productive environments.\n\nWe'll also touch upon the fascinating topic of how the popularization of Generative AI tools may change cognitive load, and how this relates to the evolving idea of a \"10x developer.\"\n\nThis is a unique opportunity to gain a broader perspective on mental well-being in the tech industry and empower yourself with the knowledge to make informed decisions for a more sustainable and effective work life.",
     "date": "2025-08-06",
@@ -198,6 +209,7 @@
   },
   {
     "name": "Loosely Coupled - Understanding Cognitive Load",
+    "eventId": "00xBLy",
     "img": "/events/Loosely_Coupled_Understanding_Cognitive_Load.webp",
     "description": "As a powerful follow-up to our upcoming session on \"Recognizing and Managing Cognitive Load\" with Radek Orszewski, we're excited to continue this crucial conversation with a deeper dive. For this session, we are thrilled to host Aleix Morgadas, an esteemed Engineering Strategy Consultant and CPTO at Teamperature, as our special guest. Together, we will further explore \"Understanding Cognitive Load\" and how to approach it in a more organized and impactful way.\n\nIn the demanding world of IT, truly understanding cognitive load goes beyond just recognizing its symptoms. This session will move beyond surface-level indicators like Key Performance Indicators (KPIs) to ask the right questions and delve into the core of how cognitive load influences IT specialists. We'll explore practical ways to gain a more comprehensive understanding of its presence and effects within teams and organizations.\n\nCrucially, we'll examine how to effectively bring this awareness to leadership and enable a better, more supportive workplace. This is an essential discussion for individuals looking to deepen their understanding, and particularly vital for team leaders and company management committed to fostering healthier, more productive, and sustainable environments.\n\nThis is a unique opportunity to gain advanced insights into managing mental well-being in the tech industry and empower yourself with the knowledge to make informed, systemic decisions for your team and organization.",
     "date": "2025-09-10",
@@ -233,6 +245,7 @@
   },
   {
     "name": "Loosely Coupled - Data Mesh vs Application Integration",
+    "eventId": "00v4qI",
     "img": "/events/Loosely_Coupled_Data_Mesh_vs_Application_Integration.webp",
     "description": "In this session, we're tackling a crucial topic: \"Data Mesh vs Application Integration.\" Join our guests Rachel Barton and Andrew Jones as we demystify the data mesh concept, contrasting it with traditional approaches and highlighting its focus on domain-based data products. We'll explore the link between application integration and data mesh, revealing what is the role of application integration in a successful data mesh implementation.\n\nOur discussion will bridge the language gap between data integration and application integration, stressing the need for a shared vocabulary across teams. We'll emphasize the critical collaboration required between data and integration architects to streamline data flow and achieve an enterprise-wide view of data, ensuring lineage and observability.\n\nFurthermore, we'll delve into the practical challenges of data mesh adoption, including the \"data product\" mindset and the tendency to overcomplicate new frameworks. This session will shed light on how organizational barriers - people, power struggles, and egos - often outweigh technical hurdles, underscoring the importance of data literacy and addressing resistance. Finally, we'll examine data contracts as a powerful mechanism for governance and quality in data movement, connecting them to real-world application integration practices.\n\nThis is an unmissable opportunity to gain clarity and strategic insights into these interconnected domains!",
     "date": "2025-08-20",
@@ -244,7 +257,11 @@
         "role": "Principal Data and Domain Architect",
         "photo": "Rachel_Barton.webp"
       },
-      { "name": "Andrew Jones", "role": "Staff Data Engineer", "photo": "Andrew_Jones.webp" },
+      { 
+        "name": "Andrew Jones", 
+        "role": "Staff Data Engineer", 
+        "photo": "Andrew_Jones.webp" 
+      },
       {
         "name": "Karol Skrzymowski",
         "role": "Integration Architect",
@@ -269,13 +286,17 @@
   },
   {
     "name": "Loosely Coupled - Exploring Publish-Subscribe (EDA)",
+    "eventId": "00FdM4",
     "img": "/events/Loosely_Coupled_Exploring_Publish_Subscribe.webp",
     "description": "For our next session, we're excited to host Aaron Lee, Solutions Engineer at Solace. Aaron enjoys coding demos, making videos, and running workshops. He's an expert in Event-Driven Architecture (EDA), Microservices, application design, monitoring, time-series data, and visualization frameworks.\n\nIn this session, we'll explore how Publish-Subscribe differs from point-to-point communication, supported by engaging demos and real-life examples, including an interactive game!\n\nThis time around, we'll dive into the fundamental differences between Publish-Subscribe and point-to-point communication patterns. Get ready for some seriously cool demos and real-life examples! Plus, we've got an interactive game lined up to show the differences in practice, so we can get a real feel for how EDA works. It's going to be a blast!",
     "date": "2025-08-13",
     "eventType": "Stream",
     "tags": ["Stream"],
     "speakers": [
-      { "name": "Aaron Lee", "role": "Solutions Engineer at Solace", "photo": "Aaron_Lee.webp" },
+      { 
+        "name": "Aaron Lee", 
+        "role": "Solutions Engineer at Solace", 
+        "photo": "Aaron_Lee.webp" },
       {
         "name": "Karol Skrzymowski",
         "role": "Integration Architect",
@@ -300,6 +321,7 @@
   },
   {
     "name": "Loosely Coupled - The IT Talent Trap vol.2",
+    "eventId": "00KirK",
     "img": "/events/Loosely_Coupled_The_IT_Talent_Trap_2.webp",
     "description": "We’ve tackled this topic before and it’s making a comeback! We’ll be diving into IT recruitment once again! Joining us on this turbulent journey is: Gabi Preston-Phypers, Founder at Tooled Up Raccoons, and coming back to the stream: Phillip Poynton, who is Recruiting Salesforce Superstars.\n\nIn today's rapidly shifting job market, both companies and candidates are facing significant challenges. Companies struggle to source the best talent, often ending up with candidates who excel at navigating Applicant Tracking Systems (ATS) and processes rather than being the ideal fit. Meanwhile, professionals are finding it increasingly difficult to secure stable positions.\n\nIn this follow-up session, we will broaden the scope and look at the problem from various angles. We’ll discuss things like boolean searches, where candidates just fall through the cracks. We’ll take a go at unicorn hunting, where companies try to hire half a department in a single position. We’ll look underneath buzzwords and try to put that in the candidates perspective! We will be sprinting through various obstacles that sometimes we set for ourselves as candidates, recruiters or hiring managers! This isn't just about working with a broken process. It's about understanding how to survive it from both the employer and candidate perspectives.\n\nThis is a unique opportunity to gain a broader perspective on the dynamics of IT talent acquisition and empower yourself with the knowledge to make informed decisions, whether you're hiring or seeking your next role.",
     "date": "2025-09-24",
@@ -311,7 +333,11 @@
         "role": "Founder at Tooled Up Raccoons",
         "photo": "Gabi_Preston-Phypers.webp"
       },
-      { "name": "Phillip Poynton", "role": "IT Recruiter", "photo": "Phillip_Poynton.webp" },
+      { 
+        "name": "Phillip Poynton", 
+        "role": "IT Recruiter", 
+        "photo": "Phillip_Poynton.webp" 
+      },
       {
         "name": "Karol Skrzymowski",
         "role": "Integration Architect",
@@ -336,6 +362,7 @@
   },
   {
     "name": "Loosely Coupled - Navigating through API Design",
+    "eventId": "00PJAY",
     "img": "/events/Loosely_Coupled_Navigating_through_API_Design.webp",
     "description": "Are you struggling to find the right API design for your project? Or perhaps your organization is suffering from “we’ve always done it this way” statements? The landscape is constantly evolving, and a \"one-size-fits-all\" approach just doesn't work.\n\nTune in to our next Live Stream: Navigating API Design. We’re bringing together two amazing minds from Codecentric, Dr. Miriam Greis and Daniel Kocot, to help you tackle the challenge of navigating API design!\n\nIn this session we’ll be diving head first into the Data Interface Quadrants (DIQs), a very interesting concept that goes beyond traditional API definitions. We'll discuss different approaches to APIs. We’ll touch upon the typical problems that we can stumble into at various companies in terms of perception of what APIs are for. On top of that we’ll have a chance to discuss how to turn APIs from just technical interfaces into being a part of the business model!\n\nJoin us if you’d like to move past the buzzwords and get a practical understanding of the role of APIs and API design in the modern IT landscape!",
     "date": "2025-10-09",
@@ -376,13 +403,18 @@
   },
   {
     "name": "Loosely Coupled - Federated API Management",
+    "eventId": "00CGre",
     "img": "/events/Loosely_Coupled_Federated_API_Management.webp",
     "description": "For our next insightful session, we are thrilled to host Adeeb Tahir, the Field CTO at APIwiz, as our special guest. Together, we will dive deep into the critical topic of \"Federated API Management\", exploring the challenges and solutions in today's complex IT ecosystems.\n\nIn the modern world of distributed systems and microservices, the API Management problem is more complex than ever. What exactly is the core issue, and why are traditional approaches falling short? In this session, we will take a closer look at how API Management Federation is currently being done and, more importantly, how it could be done better. We’ll explore the essential components and strategic steps required to implement it properly, ensuring a more scalable and organized approach to your API landscape.\n\nThis is a unique opportunity to gain a broader perspective on modern API strategy and empower yourself with the knowledge to make informed decisions for a more coherent and effective API management framework.",
     "date": "2025-09-03",
     "eventType": "Stream",
     "tags": ["Stream"],
     "speakers": [
-      { "name": "Adeeb Tahir", "role": "Field CTO at APIwiz", "photo": "Adeeb_Tahir.webp" },
+      { 
+        "name": "Adeeb Tahir", 
+        "role": "Field CTO at APIwiz", 
+        "photo": "Adeeb_Tahir.webp" 
+      },
       {
         "name": "Karol Skrzymowski",
         "role": "Integration Architect",
@@ -407,6 +439,7 @@
   },
   {
     "name": "Loosely Coupled Special Edition - Architects Navigating the Human Condition",
+    "eventId": "00Qtu8",
     "img": "/events/Loosely_Coupled_Architects_Navigating_the_Human_Condition.webp",
     "description": "Are you constantly grappling with the paradox of IT architecture? You have a vision for an elegant, perfect system (the desire), but you’re constrained by legacy debt, tight budgets, and shifting requirements (the limitation). Do you ever feel the unique psychological weight of constantly building for a future that doesn't yet exist?\n\nTune in to our next Live Stream: Architects Navigating the Human Condition, a special edition! We are thrilled to host renowned expert Mark Richards, architect, author, and founder of developertoarchitect.com, to help us unpack the challenges unique to the architect role.\n\nIn this session, we’ll move beyond diagrams and technical patterns to explore the human element of architecture. We will discuss:\n• The Cycle of Triumph and Failure: How to develop resilience and manage the emotional extremes of shipping a successful product versus a critical system failure.\n• The Burden of Foresight (Consciousness): Strategies for coping with the constant pressure of future-proofing and making today's decisions that impact tomorrow’s operations.\n• Making Order from Chaos: The psychological drive to simplify complexity and how architects can find meaning by connecting technical blueprints to clear, tangible business value.\n\nJoin us if you’re ready to acknowledge and conquer the shared, universal struggles of the IT Architect role, turning constraints into creative catalysts!",
     "date": "2025-10-11",
@@ -442,6 +475,7 @@
   },
   {
     "name": "Loosely Coupled - EDA to Power Warehouse Systems",
+    "eventId": "00UrN6",
     "img": "/events/Loosely_Coupled_EDA_to_Power_Warehouse_Systems.webp",
     "description": "Ever wonder what it takes to design a truly maintainable and scalable system in a very complex environment? On our next live stream, we'll be looking into a scenario, where IT architecture meets the physical world within a very lively environment of a Fast Moving Consumer Goods (FMCG) Warehouse!\n\nWe're thrilled to be joined by Valeriia Filimonova, a Staff Engineer at Picnic with extensive experience in Event-Driven Architecture. Valeriia will be pulling back the curtain to show us how they've leveraged EDA to power the warehouse systems. This is your chance to hear about a real-world implementation, from the initial problem statement to the specific decisions that led to their current success.\n\nDon't miss out on this practical session where we’ll discuss the role of EDA in warehouse systems, as well as, the journey of implementing this approach, including the challenges, successes and the rationale behind key architectural decisions.",
     "date": "2025-10-22",
@@ -477,6 +511,7 @@
   },
   {
     "name": "Loosely Coupled - Migrating away from IPaaS technologies",
+    "eventId": "00ZxoQ",
     "img": "/events/Loosely_Coupled_Migrating_away_from_IPaaS_technologies.webp",
     "description": "Is the high cost of your IPaaS license forcing your company to reconsider their technology choices? Many companies are looking to escape platform lock-in by migrating from IPaaS technology vendors to open-source integration solutions or even just build interoperability capabilities from scratch. It sounds like a clear cost-saver, but are the hidden costs of such endeavor truly understood?\n\nIn line with our mission at BridgingTheGap.eu.com to provide vendor-agnostic insight, we’re thrilled to host Brian Labelle, Enterprise Architect at Bribelle Business Solution Limited, for a crucial conversation that goes beyond the spreadsheet. We’ll be looking at how to approach such a migration and explain all the dependencies that reach way beyond technology and licenses.\n\nBrian will help us dissect:\n• The strategic drivers (beyond just licensing) pushing companies towards pure Java.\n• The critical challenges and hidden costs associated with this large-scale migration.\n• How to ensure you’re aware of all the costs before making the final decision.\n\nJoin the discussion! Don't make a multi-year architecture decision without the full picture.",
     "date": "2025-11-05",
@@ -512,6 +547,7 @@
   },
   {
     "name": "Loosely Coupled - Collaborative Modelling and API definitions in the age of AI",
+    "eventId": "0124JG",
     "img": "/events/Loosely_Coupled_Collaborative_Modelling_and_API_definitions_AI.webp",
     "description": "Do you struggle to build APIs whose purpose is shared and understood throughout your system landscape and beyond into the ecosystem? We’re continuing the conversation about proper API design and giving them purpose! This time, we’ll be tackling the design aspect from a more practical perspective with a live design session, where we’ll dismantle a use case - step-by-step! We’ll focus not only on designing a good API but also on building a shared understanding of its purpose using tools from Domain-Driven Design!\n\nTune in to our next Live Stream: Collaborative Modelling and API definitions in the age of AI. Guiding us through the process will be Dr. Annegret Junker, Chief Software Architect @ codecentric AG, a specialist in collaborative modelling and API design. We’ll be exploring not only modelling, but also speeding up the process by using Generative AI to craft a ready-to-implement specification more quickly.\n\nThis session will provide a practical viewpoint, covering:\n• Building a shared understanding with Domain Storytelling and a Visual Glossary.\n• Modeling a domain system's internal and external interoperability using domain events and context mapping to outline the interactions between various system modules,\n• Generating OpenAPI specifications by using the modeling output as input for Large Language Models (LLMs).\n\nIf you want to build APIs that are clearer, more purposeful, and driven by collective domain knowledge, join us live! Remember to ask questions!.",
     "date": "2025-11-12",
@@ -547,11 +583,12 @@
   },
   {
     "name": "Strategic Integration Design with DDD",
+    "eventId": "01XyGc",
     "img": "/events/Strategic_Integration_Design_with_DDD_1.webp",
     "description": "Most integration landscapes grow messy, siloed, and become hard to change. This course shows you how to design interoperability with purpose. Apply Domain-Driven Design to integrate architecture so your systems work together, scale with your organization, and stay aligned to your business needs.\n\nOrganisations often reinvent the wheel when connecting systems. Custom point-to-point solutions emerge, silos deepen, and technical decisions drift away from business intent. This results in unwanted complexity that slows delivery and limits agility.\n\nStrategic Integration Design with DDD equips your team to turn integration into a strategic capability. By combining collaborative modelling with proven integration patterns, you will learn how to design flows that serve business goals, create reusable assets instead of one-off fixes, and evaluate when larger transformation steps are needed. Along the way, you will see how interoperability follows organizational structure (Conway’s Law in action) and how reducing different kinds of coupling leads to systems that can evolve with the business.\n\nParticipants value this course because it gives names and theories for practices they already use informally, demystifies industry jargon and introduces practical tools for comparing trade-offs.\n\nFor who?\n• Solution & Integration Architects,\n• Staff/Principal Engineers,\n• Engineering Managers, Directors, and Business Analysts, Consultants.\n\nLearning outcomes\n\nWhat You’ll Learn\n• Elicit integration requirements with EventStorming: Quickly map business processes, events, and bounded contexts to uncover where systems must interoperate.\n• Depict flows with Domain Message Flow: Visualize how events, commands, and queries travel across systems, and match them to well established integration patterns.\n• Apply trade-off analysis: Use a structured tool to weigh integration options and choose with confidence.\n• Recognize maturity stages: Understand the complexities of Enterprise Application Integration (EAI), and that they are not binary choices.\n• Reduce coupling: Identify different types of coupling, and learn how to balance them.\n• Demystify architecture styles: Place different approaches in context, clarifying what they solve and where their limits are.\n• Plan integrations purposefully: Design reusable solutions directly aligned with business needs, rather than ad-hoc fixes.\n\nWhy Attend?\n• Strategic clarity: Understand which integration approaches fit your context and how to explain trade-offs to stakeholders.\n• Shared language: Give teams a vocabulary to describe integration patterns and styles, reducing confusion and reliance on constantly misused buzzwords.\n• Direct applicability: Learn techniques & methods, which you can apply directly to your current business problems and system.\n• Organizational awareness: See how interoperability depends on the way teams are structured, and how to align system boundaries with business domains.\n• Future-proofing: Design integrations that remain flexible and reusable as your organization and technology landscape evolve.",
     "date": "2026-04-20",
-    "eventType": "Workshop",
-    "tags": ["Workshop"],
+    "eventType": "Training",
+    "tags": ["Training"],
     "details": {
       "date": {
         "type": "date",
@@ -560,10 +597,10 @@
         "startTime": "9:30",
         "endTime": "13:00"
       },
-      "place": "Online workshop",
+      "place": "Online training",
       "eventTopic": "Practical patterns for scalable, evolvable integrations using Domain-Driven Design",
-      "eventType": "Workshop",
-      "registrationLink": {
+      "eventType": "Training",
+      "eventLink": {
         "type": "link",
         "link": "https://ddd.academy/strategic-integration-design-with-ddd/",
         "name": "Sign-up here!"
@@ -572,13 +609,17 @@
   },
   {
     "name": "Loosely Coupled - Beyond the symptoms, A deeper dive into identifying problems",
+    "eventId": "014C4w",
     "img": "/events/Loosely_Coupled_Beyond_the_symptoms.webp",
     "description": "Are you tired of \"solving\" the same \"problem\" only to see it reappear a month later? That's the challenge of focusing on symptoms, not the source. The reality is, what we call a \"problem\" is often a signal of a deeper, unaddressed issue.\n\nTune in to our next Live Stream: Beyond the symptoms - a deeper dive into identifying problems. We’re thrilled to welcome Woody Zuill, the renowned Lean and Agile Guide to challenge your perception of obstacles.\n\nIn this session, we will look deeper beneath the surface of common complaints. We'll be focusing on the often-ignored symptoms that should be critical signals for change. Woody will dive into the complex space of identifying and surfacing true problems, empowering your organization to act and finally enable meaningful solutions.\n\nJoin us to move past superficial fixes and gain a practical understanding of how to find and solve the problems that truly matter!\n\nKey Details:\n• Date: November 19, 2025\n• Time: 19:00 CEST (GMT+1)\n• Platform: Live Streamed on LinkedIn and YouTube\n• Guest Speaker: Woody Zuill, Lean and Agile Guide",
     "date": "2025-11-19",
     "eventType": "Stream",
     "tags": ["Stream"],
     "speakers": [
-      { "name": "Woody Zuill", "role": "Lean and Agile Guide", "photo": "Woody_Zuill.webp" },
+      { 
+        "name": "Woody Zuill", 
+        "role": "Lean and Agile Guide", 
+        "photo": "Woody_Zuill.webp" },
       {
         "name": "Karol Skrzymowski",
         "role": "Integration Architect",
@@ -603,6 +644,7 @@
   },
   {
     "name": "Loosely Coupled - Neuroatypicality in IT",
+    "eventId": "019GKc",
     "img": "/events/Loosely_Coupled_Neuroatypicality_in_IT.webp",
     "description": "Have you ever heard casual remarks about IT professionals being autistic or having ADHD and wondered about the underlying truth? There might be more to it than just a joke! In this session, we will dive into the potential commonness of neuroatypicality within the IT sector. Is it a hidden aspect of the industry, or an ignored part within our workplaces? What are the potential consequences if it remains unrecognized and unaddressed, both for individuals and teams?\n\nFor our upcoming session, we are incredibly pleased to host Joanna Gruszczyńska, a dedicated Job & ADHD Coach. Together, we will explore the critical and often misunderstood topic of \"Neuroatypicality in IT\".\n\nArmed with essential facts and real-world examples, we will examine how neuroatypical employees can empower themselves, and crucially, how team leaders and managers can effectively support their neuroatypical team members.\n\nThis is a unique opportunity to gain a broader perspective on creating equitable and high-performing IT environments, empowering yourself with the knowledge to build workplaces where everyone feels valued and can flourish.\n\nKey Details:\n• Date: December 03, 2025\n• Time: 19:00 CET (GMT+1)\n• Platform: Live Streamed on LinkedIn and YouTube\n• Guest Speaker: Joanna Gruszczyńska, Job & ADHD Coach",
     "date": "2025-12-03",
@@ -638,13 +680,18 @@
   },
   {
     "name": "Loosely Coupled - Organizing a conference; Behind the scenes",
+    "eventId": "01bRBu",
     "img": "/events/Loosely_Coupled_Organizing_a_conference.webp",
     "description": "Ever wonder what it takes to launch a successful tech conference? This is your all-access pass! We're pulling back the curtain on conference organization! 🤯\n\nWe'll dive into the real work and effort required to get an event off the ground, from managing venues to evaluating talk proposals. If you've ever wanted to speak, organize, or just appreciate the magic behind the curtain, you won't want to miss this!\n\nTune in to our next Loosely Coupled Live Stream, where Anneke Schoonjans and Maxime Sanglan-Charlier will be telling us about their work on DDD Europe and Newcrafts conferences.\n\nIf you’d like to know more, beyond the participant perspective, join us live!",
     "date": "2025-12-09",
     "eventType": "Stream",
     "tags": ["Stream"],
     "speakers": [
-      { "name": "Anneke Schoonjans", "role": "Event Manager", "photo": "Anneke_Schoonjans.webp" },
+      { 
+        "name": "Anneke Schoonjans", 
+        "role": "Event Manager", 
+        "photo": "Anneke_Schoonjans.webp" 
+      },
       {
         "name": "Maxime Sanglan-Charlier",
         "role": "Engineering Manager",
@@ -674,6 +721,7 @@
   },
   {
     "name": "Loosely Coupled - Interoperability in Micro-frontends",
+    "eventId": "01eLpS",
     "img": "/events/Loosely_Coupled_Interoperability_in_Micro-frontends.webp",
     "description": "In modern IT ecosystems interoperability is a critical factor to success. As systems are distributed and developed by different teams, we deal with different types of architectural styles, as well as differences in interoperability needs within and externally of those systems.\n\nIn modern IT ecosystems interoperability is a critical factor to success. As systems are distributed and developed by different teams, we deal with different types of architectural styles, as well as differences in interoperability needs within and externally of those systems.\n\nFrom the perspective of an integration specialist there is one key area, where personally I get easily lost due to a completely different nature of the way these systems are designed: Frontends! It is a world of its own with a completely different level of complexity!\n\nFor the discussion on interoperability in Frontend design and taking a deeper dive into the more complex cases of Micro-frontends we have found the perfect guide: Luca Mezzalira, Serverless Specialist at AWS and the author of “Building Micro-Frontends”. Together we’ll look at how frontends built by different teams or technologies can fit into one seamless experience, and how this approach scales across an entire organisation using integration platforms.\n\nJoin us as we’ll explore the nuances of interoperability and gain a practical understanding of various patterns to move data in and out of frontend applications.",
     "date": "2025-12-17",
@@ -709,6 +757,7 @@
   },
   {
     "name": "Loosely Coupled - Talk the Talk and Walk the Walk with a Living Language",
+    "eventId": "01oULe",
     "img": "/events/Loosely_Coupled_talk_the_talk_and_walk_the_walk.webp",
     "description": "“Context is king!” - I hear very often now, as we dive into various discussions about software architecture. “It depends” - is something I often say, and I know it is one of the most annoying answers the business gets from architects. But why does it matter?\n\nIt matters, because we do not live in a void of unified theory and single meaning semantics. All of us have their own dictionaries and models of reality. We strive to make it cohesive and put it into context, but it is a difficult task. This is where Domain-Driven Design (DDD) helps by introducing the concept Ubiquitous Language, but even this practice is subject to entropy, without an active effort to maintain it!\n\nIn this episode of Loosely Coupled: “Talk the Talk and Walk the Walk with a Living Language” we will be diving into the complexities of maintaining a shared language and the steps that are needed to properly maintain it! Joining us for this session will be Chris Simon, Technology Coach and Advisor, who is a DDD advocate and an expert on modelling in complex business environments.\n\nJoin us in the discussion on how to maintain a shared understanding and context in a constantly changing world of IT and business,",
     "date": "2026-01-14",
@@ -744,6 +793,7 @@
   },
   {
     "name": "Loosely Coupled - Can we get rid of developers? Is ‘Specification’ the new superskill?",
+    "eventId": "01rOzC",
     "img": "/events/Loosely_Coupled_can_we_get_rid_of_developers.webp",
     "description": "“Can we get rid of developers?” - this is a question I keep hearing quite often in discussions over all sorts of Generative AI topics. There is a lot to unpack here, with lots of emotions on all sides of the discussion. \n\nIf we take a look through the conversations under LinkedIn posts, we can find a few groups of people:\n• LLM enthusiasts, who claim they can build entire systems through vibe coding, by specifying what they want,\n• Sceptics that state that these tools are far from being useful and precise,\n• Users, who use LLMs with more or less success for various tasks and topics.\n\nThe truth, as usual, is probably something in the middle. In this episode of Loosely Coupled: “Can we get rid of developers? Is ‘Specification’ the new superskill?” we’ll dive into this topic and try to make sense of various claims stated by various sources. Joining us on this topic is Swen-Helge Huber, Senior Director with the Office of the CTO @ Solace. Together we will discuss if and why ‘drafting specifications’ might be the new super skill\n\nJoin us! Voice your opinion and arguments!",
     "date": "2026-01-22",
@@ -779,6 +829,7 @@
   },
   {
     "name": "Loosely Coupled - Deep dive into coupling with Domain-Driven Design",
+    "eventId": "01tZqU",
     "img": "/events/Loosely_Coupled_Deep_dive_into_coupling_with_Domain-Driven_Design.webp",
     "description": "What would be the cardinal sin of architects when they create architecture and visualise it with lines and boxes? - Focusing mostly on the boxes. When this happens, we can experience a myriad of problems ranging from brittleness of code to frictions between dev teams, business units or even organizations.\n\nWhat would be the cardinal sin of architects when they create architecture and visualise it with lines and boxes? - Focusing mostly on the boxes. When this happens, we can experience a myriad of problems ranging from brittleness of code to frictions between dev teams, business units or even organizations.\n\nCoupling lives on many abstraction levels. It is in the interactions between classes, modules, components, or systems. It is not a binary thing, nor is it always unwanted. In this episode of Loosely Coupled: “Deep dive into coupling with Domain-Driven Design” (DDD) we will take a deeper dive into coupling and how we can surface it and address it using the language of DDD. Our guide for this journey will be Vlad Khononov, an expert in DDD and Balancing Coupling, the author of “Learning Domain-Driven Design” and “Balancing Coupling in Software Design”.\n\nJoin us in the discussion as we’ll dismantle misconceptions about coupling through real life examples.",
     "date": "2026-01-28",
@@ -814,11 +865,24 @@
   },
   {
     "name": "Integration Design with DDD",
+    "eventId": "01Mkne",
     "img": "/events/integration-design-with-ddd.webp",
     "description": "In today's rapidly evolving technological landscape, businesses rely heavily on interconnected systems to operate efficiently. However, integrating these distributed systems seamlessly presents significant challenges. Enterprise Application Integration (EAI) has become a critical aspect of modern software architecture, and achieving true interoperability requires more than just technical solutions. This workshop explores how to leverage the tools provided by Domain-Driven Design (DDD) to not only address the technical hurdles of EAI but also to align integration efforts with the core business domains. We will move beyond simply connecting disparate systems and delve into understanding the underlying business logic and data flows that must be integrated. This interactive workshop aims to provide you with practical, actionable knowledge and hands-on experience. You'll participate in scenario-based exercises, collaborative discussions, and trade-off analysis, ensuring you leave with new skills and tools to explore that will allow you to tackle real-world integration challenges.\n\nKey Activities:\n• Trade-Off Analysis: Perform comparative assessments of architectural options, weighing their pros and cons relative to the scenario's requirements.\n• Quality Attributes Focus: Each scenario will highlight one or two critical architectural characteristics (e.g., \"Time to Market\", extensibility, composability) of EAI, which will be introduced and discussed.\n• Decision Justification: Articulate the reasoning behind architectural choices, fostering a deeper understanding of how to align technical decisions with business needs.\n\nKey Learnings: By the end of this workshop, you will have gained:\n• Interoperability as a first-class citizen in architectural design. Understand the importance of designing systems with interoperability in mind from the start.\n• Practical experience in using DDD to determine appropriate coupling degrees between systems. Learn how to strategically manage dependencies and connections between systems using DDD principles.\n• Insights into selecting the right Ecosystem Architectural Style to facilitate seamless integration. Gain the ability to choose the most suitable architectural style from a range of options (Point-to-point, Event-Driven Architecture, Broker Topology, API-Led Architecture).",
     "date": "2026-03-20",
     "eventType": "Workshop",
     "tags": ["Workshop"],
+    "speakers": [
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Workshop facilitator",
+        "photo": "/Karol_portrait.webp"
+      },
+      {
+        "name": "Philipp Kostyra",
+        "role": "Workshop facilitator",
+        "photo": "/Philipp_portrait.webp"
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -830,7 +894,7 @@
       "place": "Polish Dreamin'26",
       "eventTopic": "Interoperability design with Domain-Driven Design",
       "eventType": "Workshop",
-      "registrationLink": {
+      "eventLink": {
         "type": "link",
         "link": "https://dreamin.coffeeforce.pl/",
         "name": "Join the conference!"
@@ -839,6 +903,7 @@
   },
   {
     "name": "Loosely Coupled - API Semantic Maps and how they can help you manage coupling in your ecosystem",
+    "eventId": "01wwLK",
     "img": "/events/Loosely_Coupled_Tackling_complexity-with-Semantic-Metadata.webp",
     "description": "Coupling is a hard concept to grasp. While various types of specialists deal with various types of it, in the field of Integration Architecture we deal with those that relate to system interoperability. In BridgingTheGap.eu.com we dive deeper into the topic through qualitative research, interviewing architects and studying various use cases. This sometimes leads us on unexpected paths.\n\nCoupling is a hard concept to grasp. While various types of specialists deal with various types of it, in the field of Integration Architecture we deal with those that relate to system interoperability. In BridgingTheGap.eu.com we dive deeper into the topic through qualitative research, interviewing architects and studying various use cases. This sometimes leads us on unexpected paths.\n\nOne of these trails continued through the discussions and led to a more practical look on how we can tackle the problem! In this episode of Loosely Coupled: “Tackling complexity with Semantic Metadata”, instead of just talking about the concepts, we’ll be modelling our way through them, to build a semantic layer that visualizes dependencies between various models, API, services, or databases. To help us on this path we have invited Marty Pitt, an engineer and open source developer, who created Taxi - a language that can be used to describe how your data and services relate across your entire ecosystem, and TaxiQL - which leverages semantics to automate federated integration, keeping systems loosely coupled.\n\nJoin us and together we’ll grab a compass, take a walk through the tools, and create a semantic map that anyone can use to understand more about their landscape!",
     "date": "2026-02-04",
@@ -874,6 +939,7 @@
   },
   {
     "name": "Loosely Coupled - Mapping stakeholder chaos by slicing and dicing stakeholders",
+    "eventId": "01z46A",
     "img": "/events/Loosely_Coupled_Mapping_stakeholder_chaos_by_slicing_and_dicing_stakeholders.webp",
     "description": "Be honest! Do you know and understand your stakeholders? But really, be honest about it! What are their personal views on the business they are running? What are their motivations, drivers, hopes, ambitions? What are their relationships in the company, what are the areas of their influence? If you are a consultant working directly with clients, this should probably be on your radar quite often! If you work in-house, you probably know the power structure, that is outside of the org chart.\n\nWhat if you don’t know these things?\n\nBe honest! Do you know and understand your stakeholders? But really, be honest about it! What are their personal views on the business they are running? What are their motivations, drivers, hopes, ambitions? What are their relationships in the company, what are the areas of their influence? If you are a consultant working directly with clients, this should probably be on your radar quite often! If you work in-house, you probably know the power structure, that is outside of the org chart.\n\nWhat if you don’t know these things?\n\nYour biggest project risks sit with your stakeholders. Scope creep, unmanaged expectations, hidden influence and power struggles - these are only some of the risks. What if we could actually map and address those risks early before they can have a significant chance of materializing?\n\nIn this episode of Loosely Coupled: “Mapping stakeholder chaos by slicing and dicing stakeholders”, we’ll be diving into the complexities of stakeholder identification and management. Joining us for this session is Pamela Paterson, speaker, author, and senior tech consultant with deep expertise in business systems analysis and project management. Together we’ll dive into how to expose real power, influence, and resistance using stakeholder mapping techniques that go beyond org charts, job titles, and static stakeholder maps. We’ll explore how to slice and dice stakeholders into meaningful groups and reveal the forces that impact our tech projects. We’ll dive into tools that will enable us to better understand the forces at play and identify balance, power, and tension to extract the information and make the decisions you need.\n\nJoin us live to see how we can reframe stakeholders as a living system - one you can understand, influence, and work with more effectively.",
     "date": "2026-02-11",
@@ -909,11 +975,12 @@
   },
   {
     "name": "[DRY-RUN] Strategic Integration Design with DDD",
+    "eventId": "01ykdq",
     "img": "/events/Strategic_Integration_Design_with_DDD-DRYRUN.webp",
     "description": "Be the first to see the new training material!\n\nHelp us improve out materials and content. Participate in a limited access workshop! Only now at BridgingTheGap.eu.com, you can sign up for the first run of our new course free of charge! Limited seats!\n\nLearn about interoprability design throughout four session, each touching different aspect and complexity of the problem domain.\n\nThe sessions will be held on the following dates:\n• 09.02.2026: 18:00-22:00,\n• 13.02.2026: 18:00-22:00,\n• 23.02.2026: 18:00-22:00,\n• 27.02.2026: 18:00-22:00,\n\n\nMost integration landscapes grow messy, siloed, and become hard to change. This course shows you how to design interoperability with purpose. Apply Domain-Driven Design to integrate architecture so your systems work together, scale with your organization, and stay aligned to your business needs.\n\nOrganisations often reinvent the wheel when connecting systems. Custom point-to-point solutions emerge, silos deepen, and technical decisions drift away from business intent. This results in unwanted complexity that slows delivery and limits agility.\n\nStrategic Integration Design with DDD equips your team to turn integration into a strategic capability. By combining collaborative modelling with proven integration patterns, you will learn how to design flows that serve business goals, create reusable assets instead of one-off fixes, and evaluate when larger transformation steps are needed. Along the way, you will see how interoperability follows organizational structure (Conway’s Law in action) and how reducing different kinds of coupling leads to systems that can evolve with the business.\n\nParticipants value this course because it gives names and theories for practices they already use informally, demystifies industry jargon and introduces practical tools for comparing trade-offs.\n\nFor who?\n• Solution & Integration Architects,\n• Staff/Principal Engineers,\n• Engineering Managers, Directors, and Business Analysts, Consultants.\n\nLearning outcomes\n\nWhat You’ll Learn\n• Elicit integration requirements with EventStorming: Quickly map business processes, events, and bounded contexts to uncover where systems must interoperate.\n• Depict flows with Domain Message Flow: Visualize how events, commands, and queries travel across systems, and match them to well established integration patterns.\n• Apply trade-off analysis: Use a structured tool to weigh integration options and choose with confidence.\n• Recognize maturity stages: Understand the complexities of Enterprise Application Integration (EAI), and that they are not binary choices.\n• Reduce coupling: Identify different types of coupling, and learn how to balance them.\n• Demystify architecture styles: Place different approaches in context, clarifying what they solve and where their limits are.\n• Plan integrations purposefully: Design reusable solutions directly aligned with business needs, rather than ad-hoc fixes.\n\nWhy Attend?\n• Strategic clarity: Understand which integration approaches fit your context and how to explain trade-offs to stakeholders.\n• Shared language: Give teams a vocabulary to describe integration patterns and styles, reducing confusion and reliance on constantly misused buzzwords.\n• Direct applicability: Learn techniques & methods, which you can apply directly to your current business problems and system.\n• Organizational awareness: See how interoperability depends on the way teams are structured, and how to align system boundaries with business domains.\n• Future-proofing: Design integrations that remain flexible and reusable as your organization and technology landscape evolve.",
     "date": "2026-02-09",
-    "eventType": "Workshop",
-    "tags": ["Workshop"],
+    "eventType": "Training",
+    "tags": ["Training"],
     "details": {
       "date": {
         "type": "date",
@@ -924,8 +991,8 @@
       },
       "place": "Online workshop",
       "eventTopic": "Practical patterns for scalable, evolvable integrations using Domain-Driven Design",
-      "eventType": "Workshop",
-      "registrationLink": {
+      "eventType": "Training",
+      "eventLink": {
         "type": "link",
         "link": "https://bridgingthegap.eu.com/forms/Strategic_Integration_Design_with_DDD",
         "name": "Sign-up here!"
@@ -934,6 +1001,7 @@
   },
   {
     "name": "Loosely Coupled - Decision-making - the skill lost in all the tasks",
+    "eventId": "01GG76",
     "img": "/events/Loosely_Coupled_Decision-making_the_skill_lost_in_all_the_tasks.webp",
     "description": "“Because we’ve always done it this way” - is a phrase I hear quite often in my line of work, because I usually got places where a change is needed. This is decision-making driven by habits, blindly following best practices or latest trends. The problem? No one took time to understand the problem domain, build up context, and check if this workflow applies to the current situation! Through that we get overcomplicated solutions, before a single service is actually deployed.\n\nIn an earlier episode with Woody Zuill we were discussing the differences between problems, symptoms and how they should be used as signals. This session, we’ll be taking a dive into decision-making and to guide us we’ll have someone who is very passionate about the topic: Gien Verschatse, a Consultant from Aardling. As a side project, to which she refers to as ‘getting slightly out of hand’, she is researching the science of decision-making strategies, which aims at helping teams improve on how they make all sorts of decisions!\n\nIn this episode we’ll talk about the importance of critical thinking in decision-making and the way that decisions are made, probably define a few terms that are not commonly known, and discuss tools to help us on the decision-making journey!\n\n“Because we’ve always done it this way” - is a phrase I hear quite often in my line of work, because I usually got places where a change is needed. This is decision-making driven by habits, blindly following best practices or latest trends. The problem? No one took time to understand the problem domain, build up context, and check if this workflow applies to the current situation! Through that we get overcomplicated solutions, before a single service is actually deployed.\n\nIn an earlier episode with Woody Zuill we were discussing the differences between problems, symptoms and how they should be used as signals. This session, we’ll be taking a dive into decision-making and to guide us we’ll have someone who is very passionate about the topic: Gien Verschatse, a Consultant from Aardling. As a side project, to which she refers to as ‘getting slightly out of hand’, she is researching the science of decision-making strategies, which aims at helping teams improve on how they make all sorts of decisions!\n\nIn this episode we’ll talk about the importance of critical thinking in decision-making and the way that decisions are made, probably define a few terms that are not commonly known, and discuss tools to help us on the decision-making journey!",
     "date": "2026-03-04",
@@ -969,13 +1037,18 @@
   },
   {
     "name": "Loosely Coupled - Domain storytelling by example",
+    "eventId": "01IQYo",
     "img": "/events/Loosely_Coupled_Domain_Storytelling_by_Example.webp",
     "description": "One of the things that many architects learn early when they switch from a developer role is that there is a shift in the scope of work they do and the understanding they need to build to be effective. This shift is moving away from the technology they know and worked with towards understanding their business. That is a difficult shift, because as engineers we’re wired and conditioned to provide solutions rather than deep dive into problems. “Don’t come to me with problems! Bring me solutions!” - a phrase often said by managers, which is supposed to boost ownership, mostly discourages critical thinking and finding the root cause of the actual problem.\n\nOne of the things that many architects learn early when they switch from a developer role is that there is a shift in the scope of work they do and the understanding they need to build to be effective. This shift is moving away from the technology they know and worked with towards understanding their business. That is a difficult shift, because as engineers we’re wired and conditioned to provide solutions rather than deep dive into problems. “Don’t come to me with problems! Bring me solutions!” - a phrase often said by managers, which is supposed to boost ownership, mostly discourages critical thinking and finding the root cause of the actual problem.\n\nTo equip you with tools, we’re continuing the journey into collaborative modelling as a means of understanding problem domains! In this session, we will dive deep into Domain Storytelling, a powerful technique that can give us insights into how people work together and help us transform domain knowledge into business software!\n\nTelling stories is the most basic form of human communication. To tell a story, we invited Woody Zuill, a Lean and Agile Guide, to serve as our Subject Matter Expert. And as we dive into collaborative modelling based on the story, we’re being guided by two experts to help us capture the details and ask questions: Dr. Annegret Junker, Chief Software Architect @ codecentric AG, and Fabrizio Lazzaretti, Managing Consultant @ Wavestone!\n\nIf you wish to learn how to dive into understanding the problem domain, join us live! ",
     "date": "2026-03-10",
     "eventType": "Stream",
     "tags": ["Stream"],
     "speakers": [
-      { "name": "Woody Zuill", "role": "Lean and Agile Guide", "photo": "Woody_Zuill.webp" },
+      { 
+        "name": "Woody Zuill", 
+        "role": "Lean and Agile Guide", 
+        "photo": "Woody_Zuill.webp" 
+      },
       {
         "name": "Dr. Annegret Junker",
         "role": "Chief Software Architect at codecentric",
@@ -1010,6 +1083,7 @@
   },
   {
     "name": "Loosely Coupled - Sustainable Architecture in Corporate Environments",
+    "eventId": "01Oi7C",
     "img": "/events/Loosely_Coupled_Sustainable_Architecture_in_Corporate_Environments.webp",
     "description": "How many times have you felt like architects are sitting somewhere in an ivory tower, making decisions disconnected from the reality of messy IT ecosystems? Decisions are made, not aligned, not understood, not enforced. Months later people ponder on what went wrong.\n\nHow many times have you felt like architects are sitting somewhere in an ivory tower, making decisions disconnected from the reality of messy IT ecosystems? Decisions are made, not aligned, not understood, not enforced. Months later people ponder on what went wrong.\n\nWhat if there is another way? What if we could make the process more aligned with business needs and the organization as a whole. At the same time making the right people involved and sharing common understanding of the problem domain instead of making unnamed and unspoken assumptions about what is being delivered? In a corporate environment we usually have many teams working on different business cases. That by itself usually requires different architecture approaches. Sustainable architecture is a result of an ongoing process aiming to align the siloed approaches done by different teams. What if the balancing mechanism to achieve this is not by having the architect as an explicit role, but instead by facilitating architecture through technical coaching.\n\nJoining us in this session is Mufrid Krilic, Domain-Driven Design Coach. He’ll guide us through how technical and modelling excellence can bring value to organizations on all levels. We’ll explore real world examples and stories about scaling organizations and challenges in maintaining sustainability in architecture and alignment processes!\n\nJoin us in this important conversation!",
     "date": "2026-03-25",
@@ -1045,6 +1119,7 @@
   },
   {
     "name": "Loosely Coupled - Defence of technical excellence - working with causal loops",
+    "eventId": "01WfFC",
     "img": "/events/Loosely_Coupled_Defence_of_technical_excellence_-_working_with_causal_loops.webp",
     "description": "In meetings with non-technical stakeholders an image can speak a thousand words. In that case a simulation speaks hundreds of thousands! While we’re dealing with technical details, implementation, environment problems, quality is not something done only bottoms-up. It is also something that needs to be explained and supported top-down. \n\nIn meetings with non-technical stakeholders an image can speak a thousand words. In that case a simulation speaks hundreds of thousands! While we’re dealing with technical details, implementation, environment problems, quality is not something done only bottoms-up. It is also something that needs to be explained and supported top-down. \n\nQuite often, when faced with the speed versus quality trade-off we unwillingly stumble into a fallacy that gets many teams stuck in negative feedback loops - sacrificing quality for speed. As a result both are lost sooner or later. Teams find their backlogs filled with bugs, their stakeholders frustrated by missed deadlines and the teams themselves unhappy and stressed.\n\nIn this episode of Loosely Coupled we’re joined by a defender of technical excellence - Chris Simon! Coming back to the stream, Chris will guide us through the path of Systems thinking, and in particular using causal loop diagrams to identify the feedback loops at play that can shed light on how and why the fallacy is so tempting yet so destructive.\n\nWe’ll dive into the building of a range of causal feedback loops to visualise the underlying causes of problems. We’ll also experiment a bit, to practice framing the causality, so we can use such visualisations to advocate for the practices of technical excellence that counter the pressures of the fallacy, such as collaborative modelling with domain-driven design, test driven development and living documentation.",
     "date": "2026-04-16",
@@ -1080,6 +1155,7 @@
   },
   {
     "name": "Loosely Coupled - Dealing with the Blast Radius - Impact Analysis",
+    "eventId": "01TlRe",
     "img": "/events/Loosely_Coupled_Dealing_with_the_Blast_Radius_-_Impact_Analysis.webp",
     "description": "Ever shipped a \"small change\" that broke half the system? Or this tiny change that touched more systems than anyone would think humanly possible? Hours of debugging, analyzing dependencies, managing not-exactly-happy stakeholders only to realize that all of this could have been avoided by putting a little bit more effort before making the change! And then, what about security and the blast radius of a breach? \n\nEver shipped a \"small change\" that broke half the system? Or this tiny change that touched more systems than anyone would think humanly possible? Hours of debugging, analyzing dependencies, managing not-exactly-happy stakeholders only to realize that all of this could have been avoided by putting a little bit more effort before making the change! And then, what about security and the blast radius of a breach? \n\nIf you haven't experienced those things, you must be either extremely lucky or new on the job - either way, this live stream will be also for you! In this episode we’ll be taking a deep dive into Impact Analysis - a powerful discipline that can save a lot of time and stress if done in the right time and stage of a project, and how it can help stop things from happening!\n\nIn this episode of Loosely Coupled we’re joined by Frédérique Mounier, a former communications manager that switched to IT, and now works as a Salesforce Solution Architect and a member of The Adecco Group Tech Design Authority! She’ll be our guide on navigating the potential blast radius and a structured approach to dealing with it, hopefully before it swoops up half of the IT landscape!\n\nTogether we’ll explore:\n\nWhat is impact analysis and why it matters,\n\nWhat problems we can solve with it,\n\nHow to approach it without making it a document dense nightmare,\n\nWhen should it be done,\n\nWhether you're a developer, tech lead, or project manager, you'll leave with a practical framework you can apply the next day.",
     "date": "2026-04-08",
@@ -1115,6 +1191,7 @@
   },
   {
     "name": "Loosely Coupled - How being a part of a community can change your career",
+    "eventId": "021kli",
     "img": "/events/Loosely_Coupled_How_being_a_part_of_a_community_can_change_your_career.webp",
     "description": "“I didn’t go to IT to work with people!” is something that I have heard from colleagues time and time again when I was in university and later on a junior developer. From the perspective of time, I think this was a statement that led a lot of them to trouble instead of growth within the career they chose. As software developers, engineers, architects can we really afford to work in isolation? Is it possible to grow in such a case?\n\n“I didn’t go to IT to work with people!” is something that I have heard from colleagues time and time again when I was in university and later on a junior developer. From the perspective of time, I think this was a statement that led a lot of them to trouble instead of growth within the career they chose. As software developers, engineers, architects can we really afford to work in isolation? Is it possible to grow in such a case?\n\nIf I look at my work right now, especially from the perspective of Integration Architecture - my work is dependent on so many people, so that already invalidates the statement, but to truly grow, it requires something different - a community of peers that can put what you do every day into perspective!\n\nIn this episode of Loosely Coupled we’re joined by Vinicius Albano, a Software Architect, AI Systems Engineer. Vinicius is also the founder of DDD Brazil, a rising community of interdisciplinary specialists sharing their experiences and making them a practical learning - not just theory, but a means to align business and engineering, especially in the age of AI.\n\nTogether we’ll explore the various aspects of creating and contributing to an IT community and dive into:\n\nThe importance of a community for your career growth,\n\nHow communities support learning and change your approach to various aspects of technology, architecture and collaboration,\n\nThe hurdles of starting a community and what does that really mean,",
     "date": "2026-04-30",
@@ -1150,6 +1227,7 @@
   },
   {
     "name": "Iasa Netherlands Quarterly Event",
+    "eventId": "023ORW",
     "img": "/events/iasa_NL_may_2026.webp",
     "description": "Iasa Netherlands invites you to the next Quarterly Event—a great opportunity to connect, learn, and get inspired alongside fellow professionals. Feel free to share this invitation with peers in your network, we’d love to see the community grow!\n\nWhy you should attend\n🎤 Dynamic talks\nGain fresh perspectives from two expert speakers who will share practical insights and actionable strategies.\n\n🤝 Networking opportunities\nConnect with peers from the architecture community over dinner and drinks.\n\nAgenda highlights\n🏁 16:00 – Welcome & Introduction to Iasa\n🎤 16:30 – Speaker Session 1: Beyond pair programming: Autonomous development with SpecKit and Ralph – Hidde de Smet\n🍴 17:30 – Dinner & Networking\n🎤 18:00 – Speaker Session 2: Introduction to Ecosystem Architectural Styles: The way to slay the silent killer of scalability – Karol Skrzymowski\n🍻 19:00 – Drinks & Networking\n🚪 19:30 – Event close\n\nDon’t miss this opportunity to exchange ideas, expand your knowledge, and strengthen your professional network within the Iasa community.\n\n💡 Save the date and join us!",
     "date": "2026-05-07",
@@ -1175,6 +1253,7 @@
   },
   {
     "name": "Loosely Coupled - The role of an architect in the the modern IT landscape",
+    "eventId": "028WlO",
     "img": "/events/Loosely_Coupled_The_role_of_an_architect_in_the_the_modern_IT_landscape.webp",
     "description": "The modern Architect is often seen as a master of technical trades, but what if the most crucial 'technology' they need to master isn't a framework or tech stack, but purpose itself? The role of the architect is in constant flux, moving beyond purely technical aspects to driving core business strategy and delivery. It's a fundamental change, and to succeed, we need to redefine what the role should be in a modern enterprise.\n\nThe modern Architect is often seen as a master of technical trades, but what if the most crucial 'technology' they need to master isn't a framework or tech stack, but purpose itself? The role of the architect is in constant flux, moving beyond purely technical aspects to driving core business strategy and delivery. It's a fundamental change, and to succeed, we need to redefine what the role should be in a modern enterprise.\n\nJoining us this session is Paul Preiss, CEO and Founder of IASA, a global association dedicated to building a unified architecture profession and standardization of architectural practices focused on the business purpose of the profession.\n\nTogether, we’ll dive into the essential pillars of the modern architect’s function, exploring:\n• The evolving role of the architect and how to ensure its relevance over time.\n• Achieving enterprise standardization without stifling necessary innovation.\n• The imperative of teaching in a technology-agnostic manner, \n• Strategies for strong alignment of the architect’s function with explicit business purpose and corporate strategy.",
     "date": "2026-05-21",
@@ -1210,6 +1289,7 @@
   },
   {
     "name": "Loosely Coupled - Moving fast and not breaking the wrong things in the age of AI",
+    "eventId": "02btGE",
     "img": "/events/Loosely_Coupled_Moving_fast_and_not_breaking_the_wrong_things_in_the_age_of_AI.webp",
     "description": "“Nothing is certain, but death and taxes” is what I heard so many times. The truth is that “Nothing is certain but change.” And change seems to be happening faster and faster. There are two architectural characteristics that we can use to describe said change: volatility and variability.\n\n“Nothing is certain, but death and taxes” is what I heard so many times. The truth is that “Nothing is certain but change.” And change seems to be happening faster and faster. There are two architectural characteristics that we can use to describe said change: volatility and variability.\n\nNowadays we move faster and faster to catch up with the reality of the market, hype cycles, needs and wants of ‘the business’. We finally managed to understand that variability is the second hardest problem in software architecture, and volatility is only making it worse. Then came the age of ‘AI’ tools, bringing new products, new ways of working, a new hype to have a race in. We’re moving faster or at least it seems like it is so. The question is, how can we keep on going? How can we figure out what to do and not break things that we shouldn’t be breaking?\n\nJoining us this session are Andrew Harmel-Law, a highly enthusiastic, self-starting and responsible tech principal at Thoughtworks. Together we’ll dive into further exploration of variability extending the conversation from DDD Europe 2025. We’ll dismantle the shift in the problem space of architectural variability and how to make the right decisions at the new speed!\n\nJoin us live in this discussion!",
     "date": "2026-05-28",
@@ -1245,11 +1325,24 @@
   },
   {
     "name": "Sociotechnical Engineering in Integration Architecture",
+    "eventId": "02gNlm",
     "img": "/events/Sociotechnical_Engineering_classroom.webp",
     "description": "Most application integration failures aren't caused by choosing the wrong message broker or IPaaS technology. They happen because the technical architecture ignores the sociopolitical reality of the teams involved. If you implement a high-trust Shared Database pattern between teams that have a low-trust Customer/Supplier relationship, your system will shatter the moment one team changes a schema without asking.\n\nIn this hands-on lab, we will solve this mismatch by explicitly mapping DDD Context Mapping patterns (the social boundaries) to Integration Architectural Styles (the technical implementation) and related integration patterns. We won’t just discuss \"trade-offs\"; we will apply design heuristics to real-world scenarios involving a range of systems, from legacy ERPs to modern microservices.",
     "date": "2026-06-12",
     "eventType": "Workshop",
     "tags": ["Workshop"],
+    "speakers": [
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Workshop facilitator",
+        "photo": "/Karol_portrait.webp"
+      },
+      {
+        "name": "Philipp Kostyra",
+        "role": "Workshop facilitator",
+        "photo": "/Philipp_portrait.webp"
+      }
+    ],    
     "details": {
       "date": {
         "type": "date",
@@ -1270,11 +1363,19 @@
   },
   {
     "name": "Can AI be a Co-Domain Expert in Domain Modelling?",
+    "eventId": "02g4og",
     "img": "/events/AI_a_Co-Domain_Expert_classroom.webp",
     "description": "Large Language Models like ChatGPT, Gemini, or Claude are very good at generating events, actors, and processes on demand. Big Picture EventStorming is very good at exposing what people really know, what they only assume, and where the real problems live. In this workshop, we put the two together and ask a simple question: Can AI actually help, or does it just create smarter looking slob?\n\nIn this hands-on lab we will simulate a Big Picture EventStorming around a real world use case.\n\nWe work under a realistic constraint. You do not have a dedicated domain expert in the room. Instead, you only get a short written brief or notes from a rushed interview with the expert, and the LLM helps fill in the blanks. Instead of starting from a blank wall, each group is supported by an LLM that can suggest domain events, actors, systems, and problems on request.\n\nTogether we will: Use AI to bootstrap the chaotic exploration phase and then clean up hallucinations and weak assumptions. Enforce a shared timeline and highlight pivotal domain events, this time with every AI suggestion clearly marked as strong, inferred, or speculative.\n\nMap people and systems, paying attention to sociotechnical aspects like ownership, handovers, and conflicting goals. Surface hotspots, bottlenecks, and opportunities, and then reflect together on how useful the AI aided discovery really was and how far they would trust the resulting picture.\n\nThroughout the workshop we will treat the LLM as a junior domain expert that is allowed to be wrong but must be transparent about its assumptions.\n\nWe will close with a joint reflection: When is AI a useful accelerator for Big Picture EventStorming, when is it risky when you only have a brief use case description or a single short expert interview, and how could you safely experiment with this format in your own organization or classroom.",
     "date": "2026-06-10",
     "eventType": "Workshop",
     "tags": ["Workshop"],
+    "speakers": [
+      {
+        "name": "Philipp Kostyra",
+        "role": "Workshop facilitator",
+        "photo": "/Philipp_portrait.webp"
+      }
+    ],    
     "details": {
       "date": {
         "type": "date",
@@ -1295,6 +1396,7 @@
   },
   {
     "name": "Loosely Coupled - Residuality, philosophy and what is there between the boxes",
+    "eventId": "02i0gw",
     "img": "/events/Loosely_Coupled_Residuality_philosophy_and_what_is_there_between_the_boxes.webp",
     "description": "For decades, the practice of software architecture has relied heavily on blueprints and models borrowed from traditional, static engineering disciplines. But in today's landscape - where systems are increasingly distributed, services are ephemeral, and change is the only constant - do those old analogies still hold up? We’re finding that the lines and boxes we draw on diagrams often fail to capture the complex, human, and messy reality of integration. If the old ways are failing, how do we find a new philosophical foundation for our profession?\n\nFor decades, the practice of software architecture has relied heavily on blueprints and models borrowed from traditional, static engineering disciplines. But in today's landscape - where systems are increasingly distributed, services are ephemeral, and change is the only constant - do those old analogies still hold up? We’re finding that the lines and boxes we draw on diagrams often fail to capture the complex, human, and messy reality of integration. If the old ways are failing, how do we find a new philosophical foundation for our profession?\n\nArchitecture, as a profession, is at a crossroads! Joining this live stream is Barry O'Reilly, creator of Residuality Theory. Together we’ll challenge the fundamental assumptions about what it is to be an architect! The argument is that our profession has leaned too heavily on traditional engineering - a model that is failing in the age of distributed systems, AI and the unstable relationship between IT systems and business environments.\n\nJoin us as we explore the implications of Residuality Theory and redefine what it truly means to be a modern architect in a world where architecture is more and more distributed. Tune in for a profound conversation about the future of the architect's role and why we need to shift our thinking and approach.",
     "date": "2026-06-15",
@@ -1330,6 +1432,7 @@
   },
   {
     "name": "Loosely Coupled - Domain-Driven Design and more...",
+    "eventId": "02gtG0",
     "img": "/events/Loosely_Coupled_Domain-Driven_Design_and_more.webp",
     "description": "Is design still relevant in the age of AI? Is AI capable of replacing domain experts, architects and developers? Where are the limits? How do promises of companies providing us with Large Language Models hold up to the reality of software design and development?\n\nIs design still relevant in the age of AI? Is AI capable of replacing domain experts, architects and developers? Where are the limits? How do promises of companies providing us with Large Language Models hold up to the reality of software design and development?\n\nThis time around we have no idea what will happen! \n\nWe’ll be coming live from DDD Europe 2026 in Antwerp! There is an amazing line-up of speakers talking about the future of business aligned software design and tackling complexity at the heart of software!\n\nWe’ll be inviting various speakers to join us in a panel discussion! Curious what the top experts in the field think about what the near future holds for organizations, architects, developers…\n\nIs design dead, or more relevant than ever before?\n\nTune in and join the discussion! ",
     "date": "2026-06-11",
@@ -1380,6 +1483,7 @@
   },
   {
     "name": "Loosely Coupled - Socio-technical API patterns and more",
+    "eventId": "02lD20",
     "img": "/events/Loosely_Coupled_Socio-technical_API_patterns_and_more.webp",
     "description": "APIs - write a spec, implement it, deploy it, and we’re done. That’s all to it, isn’t it? \n\nAPIs - write a spec, implement it, deploy it, and we’re done. That’s all to it, isn’t it? \n\nIf life was that simple! A large number of developers, architects and other professionals are convinced that they have a grip on APIs, but when asked they often struggle trying to answer “what is an API?” It seems like a fairly easy question, right? If your answer is “REST”, you might be in for quite a shock. And that’s ok, because given the flood of AI generated content and infographics oversimplifying the matter it’s hard to find a good source of knowledge!\n\nThe question then is: \n\nWhat are the factors composing an API?\n\nWhat is the definition?\n\nWhat is there beyond the API spec and implementation?\n\nAll of this and more in this episode of Loosely Coupled! Our guest this time around will be Einar Høst, Software Developer with a knack for finding patterns beyond the technical aspects of interoperability. We’ll walk through various aspects of API lifecycle and all the related patterns that are not necessarily technical, but heavily influence how an API is designed, implemented and how it operates in production!\n\nJoin the conversation! Share your observations and stories!",
     "summary": "What makes an API more than a specification and an implementation? Einar Waaler Høst joins Karol Skrzymowski to explore the social and technical patterns that shape an API throughout its lifecycle.",
@@ -1418,6 +1522,7 @@
   },
   {
     "name": "Loosely Coupled - Teaching a new generation of software professionals",
+    "eventId": "02qHHG",
     "img": "/events/Loosely_Coupled_Teaching_a_new_generation_of_software_professionals.webp",
     "description": "IT professionals composing the current workforce were mostly educated in a Prussian classroom model, that aimed to produce manufacturing workers that follow commands, not think creatively. Over the last few decades we see a lot of movements trying to change that. Unfortunately for us, we’re making education a lot harder with advancement of technology and that technology invading schools and universities. In the age of AI education is suffering and at the same time it is more and more important that we educate better.\n\nThis episode we’ll tackle the topic of how to educate young IT professionals in a world that is moving faster than we can comprehend. We have access to near-infinite knowledge through the Internet and AI chatbot. We also struggle with misinformation, hallucinations and lack of comprehension! The key question is: what good is all that information if we are incapable of using it in context?\n\nIT professionals composing the current workforce were mostly educated in a Prussian classroom model, that aimed to produce manufacturing workers that follow commands, not think creatively. Over the last few decades we see a lot of movements trying to change that. Unfortunately for us, we’re making education a lot harder with advancement of technology and that technology invading schools and universities. In the age of AI education is suffering and at the same time it is more and more important that we educate better.\n\nThis episode we’ll tackle the topic of how to educate young IT professionals in a world that is moving faster than we can comprehend. We have access to near-infinite knowledge through the Internet and AI chatbot. We also struggle with misinformation, hallucinations and lack of comprehension! The key question is: what good is all that information if we are incapable of using it in context?\n\nLet’s tackle the problem of education! This stream our guest will be Chelsea Troy, Machine Learning Operations Engineer at Mozilla, who is also an adjunct associate professor of University of Chicago. Chelsea is teaching machine learning, data analysis and programming and has a first hand view on the future of our IT workforce.\n\nJoin us in the discussion and learn how can we change the approach to professional learning to fit the current age.",
     "date": "2026-07-09",
@@ -1453,6 +1558,7 @@
   },
   {
     "name": "Loosely Coupled - Lost in translation - Data vs Integration Architecture",
+    "eventId": "02v3qg",
     "img": "/events/Loosely_Coupled_Lost_in_translation_-_Data_vs_Integration_Architecture.webp",
     "description": "We communicate daily. It’s easy if we use the same language, work in the same context. The reality is, we really don’t - we live in different contexts and use different languages even if we all speak English - our internal dictionaries, mental models and jargon differ.\n\nWe communicate daily. It’s easy if we use the same language, work in the same context. The reality is, we really don’t - we live in different contexts and use different languages even if we all speak English - our internal dictionaries, mental models and jargon differ.\n\nJargons differ, especially at work. We would like to have cohesive languages to communicate with between all lines of business, all units, departments, etc. The facts are that we don’t have them, we all assume we understand the same terms the same way, and that creates a lot of friction and confrontation. \n\nThe same applies to architecture fields - and this is very visible when we compare Data and Integration Architecture and how specialists in those fields communicate with each other. Best example, a Loosely Coupled episode we did in August last year (https://www.youtube.com/watch?v=JaCuv8gRnJg), where we had so much trouble with understanding the terms we used.\n\nThis episode we’ll dive back into the topic of Data and Integration Architectures and try to find where we have mismatches! Hopefully we can create a common dictionary translating between the two worlds! To help us in the endeavor, joining as a guest is Andrew Jones! Returning to the stream to have yet another lost in translation moment. \n\nJoin us in the discussion! Post your terms in advance! Let’s see how many mismatches we can find and solve!",
     "date": "2026-07-21",
@@ -1488,6 +1594,7 @@
   },
   {
     "name": "Loosely Coupled - Exploring TDD by playing a game of JitterTed",
+    "eventId": "02tf2w",
     "img": "/events/Loosely_Coupled_Exploring_TDD_by_playing_a_game_of_JitterTed.webp",
     "description": "Testing has always been a part of work in many engineering fields. IT is no exception. Methods differ between different fields. The idea of testing software is not a new concept, but is probably as misunderstood as many other concepts! For some it is running a SoapUI test suite, for others it is a collection in postman. Then we have test cases and scenarios. All of this culmination to the false notion of 100% test coverage.\n\nTesting has always been a part of work in many engineering fields. IT is no exception. Methods differ between different fields. The idea of testing software is not a new concept, but is probably as misunderstood as many other concepts! For some it is running a SoapUI test suite, for others it is a collection in postman. Then we have test cases and scenarios. All of this culmination to the false notion of 100% test coverage.\n\nLet’s talk about a broader picture! How testing actually can shape software and change the way we work on it to boost that ‘fail fast’ approach and create short feedback loops! For this purpose our next guest is Ted M. Young, a seasoned software developer with a knack for Test-Driven Development. Together we’ll dive into TDD, what that is and how to apply it! This time with a twist, because Ted is bringing his game to the stream - JitterTed’s TDD Game! We’ll be learning by playing!\n\nSo let’s dive in and see how collaborative small steps can get us further than scatter-gather isolated approaches. Join us live!",
     "date": "2026-07-16",
@@ -1523,6 +1630,7 @@
   },
   {
     "name": "Loosely Coupled - Identity as Architecture: Rethinking Coupling, Cohesion, and Transition in the Age of AI",
+    "eventId": "02yjIc",
     "img": "/events/Loosely_Coupled_Identity_as_Architecture.webp",
     "description": "AI is changing far more than how we build software. It is fundamentally reshaping the craft and our identity. As AI commoditizes specialist skills, developers and architects are shifting toward new perceptions of their roles - reviewers, orchestrators, and stewards of autonomous systems. For many, this transition sparks excitement, while for others, it brings uncertainty. In an era where the pace of AI leaves little room for reflection, we find ourselves consuming more knowledge but often feeling less connected to our work, our colleagues, and ourselves.\n\nAI is changing far more than how we build software. It is fundamentally reshaping the craft and our identity. As AI commoditizes specialist skills, developers and architects are shifting toward new perceptions of their roles - reviewers, orchestrators, and stewards of autonomous systems. For many, this transition sparks excitement, while for others, it brings uncertainty. In an era where the pace of AI leaves little room for reflection, we find ourselves consuming more knowledge but often feeling less connected to our work, our colleagues, and ourselves.\n\nIn this episode, we’ll explore identity through an architectural lens. We'll discuss how our professional identity can be understood as an architecture, where its coupling to the world and internal cohesion evolve alongside our environment. Drawing on concepts from cognitive science, complexity theory, and sociotechnical practices, we’ll examine how to consciously redesign our coupling with the world to discover a deeper sense of lived fittedness between who we are, what we do, and the possibilities AI creates.\n\nWe’ll tackle critical questions:\n\nHow do we transition our craft from writing code to designing sociotechnical systems?\n\nWhere do human judgment, design, and modeling become even more valuable?\n\nHow do we consciously reshape our coupling with the world and maintain cohesion?\n\nWhat practices help us stay connected to ourselves and others during this transition?\n\nThis stream, our guest will be Xin Yao, a Sociotechnical architect and change facilitator, who will help us explore what it means to not just survive the AI era, but to thrive within it.\n\nJoin us in the discussion as we apply architectural thinking to ourselves, and learn how to navigate the transition toward greater professional and personal cohesion.",
     "date": "2026-07-30",
@@ -1558,6 +1666,7 @@
   },
   {
     "name": "Loosely Coupled - Career leadership in IT",
+    "eventId": "02AR32",
     "img": "/events/Loosely_Coupled_Career_leadership_in_IT.webp",
     "description": "Does career growth and loyalty happen naturally within business environments? Every business owner would probably wish it did. But is there any truth to such wishful thinking? Can a person’s career in a business be anything more than just an employee-employer relationship, where both parties merely benefit from their contractual agreement?\n\nDoes career growth and loyalty happen naturally within business environments? Every business owner would probably wish it did. But is there any truth to such wishful thinking? Can a person’s career in a business be anything more than just an employee-employer relationship, where both parties merely benefit from their contractual agreement?\n\nHow can we facilitate empathy and compassion into our career paths? How can we deal with extremely long feedback loops, and delayed gratification of seeing the results of your efforts? Is it worth the time and effort to care? All of these are valid questions, especially in times where human connection is often disappearing behind digital screens and all sorts of apps that are supposed to support collaboration.\n\nTo talk about all of this, our next guest is Hannes Lowette, a developer turned mentor, coach and a person contributing to the learning culture at Axxes for the last 15 years. He finds that careers not being a zero sum game is something to reach for and we can all win! He believes that bringing empathy and compassion to the job can change people’s growth tremendously! As he says: “I get out of bed to help others succeed.”\n\nJoin the discussion!",
     "date": "2026-08-06",
@@ -1593,6 +1702,7 @@
   },
   {
     "name": "Loosely Coupled - The Kafka Cargo Cult",
+    "eventId": "02DonS",
     "img": "/events/Loosely_Coupled_The_Kafka_Cargo_Cult.webp",
     "description": "“We don’t do message brokers and Event-Driven at this company” is what I heard from one client some time ago. I was puzzled, because why would someone discard a whole valid set of architectural patterns? Turns out a few years back they suffered heavily because someone thought they could be like Netflix or LinkedIn and use Kafka. “It worked for those companies - right?” Absolutely! The problem was that this client was not a streaming service and had no use case for streams! The result? Heavy implementation, high cognitive cost for all teams, serious operational problems.\n\n“We don’t do message brokers and Event-Driven at this company” is what I heard from one client some time ago. I was puzzled, because why would someone discard a whole valid set of architectural patterns? Turns out a few years back they suffered heavily because someone thought they could be like Netflix or LinkedIn and use Kafka. “It worked for those companies - right?” Absolutely! The problem was that this client was not a streaming service and had no use case for streams! The result? Heavy implementation, high cognitive cost for all teams, serious operational problems.\n\nWe often look at the success of various companies, their tech stack and think: “Hey! We can do the same thing! It will work because it worked for them!” The problem is that we often do that without looking at trade-offs, added complexity, or even having a valid use case for such technology. This effect is dubbed a “cargo cult”, and while it originates from people’s behaviour in Melanesia during the 2nd World War, it has found its home in IT!\n\nLet’s have a chat about one of the most famous cargo cult in Integration Architecture - Kafka! For that we’re bringing to the stream two returning guests:\n\nChris Simon, a technology coach and advisor helping technology teams drive business success. Chris talked about this this year at DDD Europe “It’s like 10000 streams when what you need is a queue”\n\nAaron Lee, a Senior Solutions Engineer at Solace. Aaron will happily discuss event-driven architecture, networking protocols, application design, monitoring, time-series data, and visualization frameworks for as long as you’ll listen.\n\nTogether we’ll dive into Event-Driven Architecture and when to use Kafka and other message brokers! Join us live!",
     "date": "2026-08-13",
@@ -1634,6 +1744,7 @@
   },
   {
     "name": "Sociotechnical Application Integration using Context Maps",
+    "eventId": "02PGIo",
     "img": "/events/Sociotechnical_App_Int_using_Context_Maps.webp",
     "description": "We're back after summer with a hands-on workshop by Karol Skrzymowski about using DDD context mapping as the starting point to choose integration patterns that are fit for purpose, then pick the technology.\n\nWorkshop: Sociotechnical Application Integration using Context Maps\nby Karol Skrzymowski\n\nMost application integration failures aren't caused by choosing the wrong message broker or IPaaS technology. They happen because the technical architecture ignores the sociopolitical reality of the teams involved, or organizations ignore the sociotechnical aspects of what they try to introduce in their IT Ecosystems. What happens if you implement a high-trust Shared Database between teams that have a low-trust Customer/Supplier relationship? Most likely your system will shatter the moment one team changes a schema without asking.\n\nIn this hands-on lab, we will address this mismatch by explicitly mapping DDD Context Mapping patterns (the social boundaries) to Ecosystem Architectural Styles (the technical implementation) and related integration patterns. We won’t just discuss \"trade-offs\"; we will apply design heuristics that are useful in real-world scenarios involving a range of systems, from legacy ERPs to modern microservices.\n\nYou will learn to operationalize mappings like:\n• Partnership, where the relationship allows for the tight coupling of synchronous calls.\n• The Conformist relationship in which the upstream team has no motivation to support you, so it requires a strictly defensive Anti-Corruption Layer (ACL) within the consumer.\n• Open Host Service, that creates reusability, but not always allows for loose coupling as scale.\n• Interchange Context relationships, where integration is extracted from domain systems and implemented as middleware!\n\nThis session is designed for architects who are tired of guessing how to integrate systems. You will leave with a range of heuristics on how to explore and identify the risks to integrations stemming from the political landscape of your IT ecosystem. This will give you the vocabulary to express those risks and relationships, and to design for a better future, based on the domain boundaries, not just the technology stack.\n\n🚋 About the Host & Location 🌍\nBig thanks to the people at QWAN (Quality Without a Name) to host us this time.\n\nLocation: Space to Create on the Utrecht Stationsplein\nRoom: Olympic Space 2\nhttps://spacetocreate.nl/routebeschrijving-utrecht/\n\nAt QWAN, they take a systemic approach to support software development organizations to become better at what they do and more fun places to work for. Their approach is grounded in systems thinking, Domain Driven Design, DevOps, agile and lean approaches like eXtreme Programming, Kanban, Scrum, and test driven development. They always keep an eye on the goal: delivering valuable software better, faster, with more joy.\n\n🕖 Schedule 🕙\n17:00 - 17:45 Doors open, welcome with food and drinks\n17:45 - 18:00 Welcome by our hosts\n18:00 - 20:30: Workshop Sociotechnical Application Integration using Context Maps by Karol Skrzymowski\n20:30 - 21:00: Social drinks + networking\n\n🎯Target audience 👥\nYou have an interest in Domain-Driven Design, want to learn more about it, or want to share your experiences with others. Feel free to drop a comment if you're not sure if you should attend.\n\n🍝 RSVP correctly for your fellow members and host 🍕\nPlease ensure that you update your RSVP. We understand that attending a meetup isn't always possible even though you wanted to come. Throwing away food is just waste, so feel free to change your mind but update your RSVP accordingly :-)",
     "date": "2026-09-16",
@@ -1642,7 +1753,7 @@
     "speakers": [
       {
         "name": "Karol Skrzymowski",
-        "role": "Workshop leader",
+        "role": "Workshop facilitator",
         "photo": "/Karol_portrait.webp"
       }
     ],
@@ -1657,7 +1768,7 @@
       "place": "Online - limited seats, open call",
       "eventTopic": "We’re exploring the sociotechnical aspects of Integration Architecture using Context Maps",
       "eventType": "Workshop",
-      "registrationLink": {
+      "eventLink": {
         "type": "link",
         "link": "https://www.meetup.com/domain-driven-design-nederland/events/315973004/",
         "name": "Register here!"
@@ -1666,6 +1777,7 @@
   },
   {
     "name": "Loosely Coupled - BridgingTheGap.eu.com goes Ensemble Programming! Live coding session!",
+    "eventId": "02It3y",
     "img": "/events/Loosely_Coupled_BridgingTheGap_goes_Ensemble_Programming_Live_coding_session.webp",
     "description": "How do we work as programmers, architects? How do we solve problems? What are our ways of working? Is the team we’re on an actual team if we put on our headphones, put music on and everyone focuses on their own ticket in jira? These are a few of the core questions that are the subject of ways of working. \n\nHow do we work as programmers, architects? How do we solve problems? What are our ways of working? Is the team we’re on an actual team if we put on our headphones, put music on and everyone focuses on their own ticket in jira? These are a few of the core questions that are the subject of ways of working. \n\nMost people (not IT) view programming as an activity, where you sit in solitude in front of a computer and write code. That’s it! Done! Software is born and we move one to another project. The reality, as always, is more complex than that. Software engineering is a complex endeavor. While this notion may work for small programs like automating your own workspace, or writing a small app for your phone for your particular needs, this is not how programming works in business environments - it is a collaborative effort.\n\nOver the years there have been many approaches to programming, we still do solo programming and then validate it through code reviews. We do pair programming, where the core practice is that we have a pair of people working on a piece of code on the same workstation. Some developers do rubber ducking, where they debug and extend the code through explaining it to inanimate rubber ducky, or a(n) (un)willing colleague.\n\nThis episode we’ll be a little bit different! Usually we have a conversation, share examples, and discuss a problem. This time around we’ll attempt to solve a problem by coding! And for that part not any kind of coding! We’ll jump right into a practice that originates from eXtreme Programming and goes further! We’ll be doing Ensemble Programming! We have invited two Fullstack Engineers and Ensemble practitioners, James Herr and Arthur Morrow to guide us through the process! Let’s see if together we can solve the problem we prepared!",
     "date": "2026-08-27",
@@ -1706,6 +1818,7 @@
   },
   {
     "name": "Loosely Coupled - APIs - moving beyond specification and documentation to actionable knowledge",
+    "eventId": "03a2di",
     "img": "/events/Loosely_Coupled_APIs_-_moving_beyond_specification_and_documentation_to_actionable_knowledge.webp",
     "description": "In today's distributed IT world APIs are everywhere! We use them to send statuses, query data, post social-media posts, and most of all we use them in systems in our organizations. But do we really understand the landscapes they create? \n\nIn today's distributed IT world APIs are everywhere! We use them to send statuses, query data, post social-media posts, and most of all we use them in systems in our organizations. But do we really understand the landscapes they create?\n\nLet’s discuss why an API catalog is only a starting point! How can OpenAPI and AsyncAPI contracts, quality checks, enterprise architecture, ownership, and runtime relationships be connected? Can we digest this knowledge and derive more meaning out of it?\n\nJoining us this session is Daniel Kocot, Principal Integration Architect @ adorsys, and together we will take a look at what a graph-based knowledge layer makes possible. Can we, using the API Knowledge Stack as a practical example, follow the path from an API definition and a quality finding to an actionable view of the API, its context, its responsibilities, and its next steps.\n\nWe’ll be also looking beyond discovery: how APIs can become curated API products, how teams can preserve the intended use and trust, and how organizations can keep their knowledge useful without turning governance into bloated bureaucracy.\n\nHow do we move from knowing where an API is to understanding what it means and what to do with it?\n\nJoin us in the discussion!",
     "date": "2026-11-11",
@@ -1741,6 +1854,7 @@
   },
   {
     "name": "Strategic Integration Design with DDD - Philipp Kostyra & Karol Skrzymowski",
+    "eventId": "02Khri",
     "img": "/events/SID_smalltalk.webp",
     "description": "Strategic Integration Design with DDD: A Small Talk with Karol Skrzymowski and Philipp Kostyra 📹\n\nYour integrations grew and nobody designed them!\n\nAn informal chat with Karol Skrzymowski and Philipp Kostyra to learn more about their upcoming Strategic Integration Design with DDD Workshop, why this topic matters, how the workshop is structured, what problems it addresses, and why people should join.\n\nIt’s also a chance to hear what Philip and Karol are working on today and to get Alberto Brandolini’s insights on the topic.\n\n🎙 Guests\nPhilipp Kostyra\n🐜Karol Skrzymowski\n\n🎙 Moderator\nAlberto Brandolini\n\n🛜 Info\nWhen: Sept 1st, at 7:00 pm CEST\nWhere: live streaming on Youtube or Linkedin\n\n👉 Workshop: https://lnkd.in/ezGgxYWT\n\n🔔 Subscribe to our YouTube channel: https://lnkd.in/dZHa-3Dy\n\n📩 Join our newsletter: https://lnkd.in/dpC_jvKg\n\n🗓 Upcoming Public Events: https://lnkd.in/djY7yTK6",
     "date": "2026-09-01",
@@ -1781,6 +1895,7 @@
   },
   {
     "name": "Loosely Coupled - Architecture Debt: The Hidden Risk That Breaks Transformations",
+    "eventId": "02ZRVS",
     "img": "/events/Loosely_Coupled_Architecture_Debt_The_Hidden_Risk_That_Breaks_Transformations.webp",
     "description": "We have a tendency to call something \"technical debt\", perhaps even register it in some sort of a log, and move on. That is what is happening most of the time. Business requires immediate action. We refer to the “Quality, time, cost” triangle and say “choose two”. The result? Business wants it fast and cheap - quality suffers. And the worst part is that this tool has been already changed and misused so much that no one remembers what was the original “iron triangle”.\n\nWe have a tendency to call something \"technical debt\", perhaps even register it in some sort of a log, and move on. That is what is happening most of the time. Business requires immediate action. We refer to the “Quality, time, cost” triangle and say “choose two”. The result? Business wants it fast and cheap - quality suffers. And the worst part is that this tool has been already changed and misused so much that no one remembers what was the original “iron triangle”.\n\nThis is how we create “technical debt”, which can have a multitude of forms. Corner cutting on development, not having full test coverage, or having implicit architecture simply by building instead of designing first.\n\nThis session we’ll be diving into Architectural Debt, which may be mistaken for “technical debt”. While it is similar it often has far more severe delayed consequences. This is the kind of debt that can go unnoticed until everything starts breaking down - impacting the most meaningful programs and projects, and in the end business flexibility and adaptability to the business reality. It is not visible in code, you cannot trace it to a single repository, or domain system! These are our architectural decisions, exceptions, duplicated capabilities, temporary solutions (that live forever), architectural compromises and more.\n\nTo talk about the impact of Architectural Debt we have invited Nadzeya Stalbouskaya, Co-Founder, Enterprise Architecture & Transformation Adviser. Together we’ll discuss the various aspects of Architectural Debt, how to identify it, how it manifests and what that means for organizations.\n\nLet’s discuss how to manage it without making Enterprise Architecture a bloated bureaucratic sinkhole!",
     "date": "2026-10-14",
@@ -1816,11 +1931,25 @@
   },
   {
     "name": "Loosely Coupled - Domain-Driven Design in the Agentic Software Development",
+    "eventId": "032pgI",
     "img": "/events/Loosely_Coupled_Domain-Driven_Design_in_the_agentic_software_development.webp",
     "description": "In today’s world, where most tech conversations are focused around Agentic AI and LLMs, there is a lot of noise. Amongst it there is a recurring sentiment that most developers will have to switch to be more of an architect rather than a developer. The question is: Are we ready for such a shift? How should we prepare? What does this mean?\n\nIn today’s world, where most tech conversations are focused around Agentic AI and LLMs, there is a lot of noise. Amongst it there is a recurring sentiment that most developers will have to switch to be more of an architect rather than a developer. The question is: Are we ready for such a shift? How should we prepare? What does this mean?\n\nIn this episode of Loosely Coupled we’ll try to answer a few of these questions from the angle of design - a very human practice, that AI is not entirely capable of mimicking on its own. With the help of Alberto Brandolini, the “Supreme EventStormer” we’ll dive into the intersection between Domain-Driven Design and Agentic Software Development! What does Ubiquitous Language mean for a probabilistic behaviour of LLMs?\n\nLet’s talk about language being the key shifting point for the industry! What does it mean the language we use daily suddenly changed from an intermediate design artifact and became the primary executable representation of intent? Is it the same language? Which are the possibilities and pitfalls of collaboration with AI agents in writing, controlling and sharing the domain language?\n\nJoin the conversation!",
     "date": "2026-10-21",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      },
+      {
+        "name": "Alberto Brandolini",
+        "role": "Supreme EventStormer",
+        "photo": "Alberto_Brandolini.webp"
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1838,11 +1967,25 @@
   },
   {
     "name": "Loosely Coupled - Making Generative AI practical for the Enterprises",
+    "eventId": "03czy8",
     "img": "/events/Loosely_Coupled_Making_Generative_AI_practical_for_the_Enterprises.webp",
     "description": "Being on LinkedIn, substack or medium, or meet-ups and conferences it may seem like everyone is way ahead with Agentic AI adoption. FOMO is prevalent. The most important question is: What is the reality?\n\nBeing on LinkedIn, substack or medium, or meet-ups and conferences it may seem like everyone is way ahead with Agentic AI adoption. FOMO is prevalent. The most important question is: What is the reality?\n\nGenerative AI is a powerful tool, there is no doubt about that. However, there is a huge difference between experimentation within an isolated environment and releasing AI Agents into the messy reality or IT Ecosystems of all sorts of companies. Building AI solutions in an isolated environment when you have full control over the context, data, or APIs in a greenfield is not directly translatable to the brownfield reality of businesses.\n\nLet’s talk about making generative AI practical for the Enterprises! To guide us through this messy problem space we have invited Michael Bachman, Head of Research, AI and Emerging Technology Strategy @ Boomi! We’ll dive into translating the learnings from experimentation with generative AI into an overview on how to apply this at organizations!\n\nJoin the conversation!",
     "date": "2026-11-18",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      },
+      {
+        "name": "Michael Bachman",
+        "role": "Head of Research, AI and Emerging Technology Strategy",
+        "photo": "Michael_Bachman.webp"
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1859,12 +2002,26 @@
     "YT": "https://youtube.com/live/xXlxRcpaq6g"
   },
   {
-    "name": "[Webinar] Sociotechnical Engineering in Integration Architecture",
+    "name": "Sociotechnical Engineering in Integration Architecture",
+    "eventId": "037SL6",
     "img": "/events/Webinar_Sociotechnial_Engineering.webp",
     "description": "Most application integration failures aren't caused by choosing the wrong message broker or IPaaS technology. They happen because the technical architecture ignores the sociopolitical reality of the teams involved. If you implement a high-trust Shared Database pattern between teams that have a low-trust Customer/Supplier relationship, your system will shatter the moment one team changes a schema without asking.\n\nJoin us for a webinar, where we will explore this mismatch through the lense of Domain-Driven Design Context Mapping patterns (the social boundaries) to Ecosystem Architectural Styles (the architectural approach) and related integration patterns. We won’t just discuss \"trade-offs\"; we will look at design heuristics with real-world scenarios.\n\nYou will learn to operationalize context maps by understanding:\n• Why a Conformist relationship (where the upstream team has no motivation to support you) mandates a strictly defensive Anti-Corruption Layer (ACL) within the consumer.\n• How to implement an Open Host Service using an IPaaS to loosen the coupling between legacy monoliths and multiple downstream consumers.\n• Where does the Context Mapping language break and needs to be supplemented by new vocabulary, such as Interchange Context.\n\nThis session is for architects and engineers who are tired of designs failing when they meet the messy human reality, and guessing how to integrate systems. You will leave with a range of heuristics on how to explore and identify the risks to integrations stemming from the political landscape of your ecosystem. This will give you the vocabulary to express those risks and relationships, and to design for a better future, based on the domain boundaries, not just the technology stack.\n\nWhat can you expect:\n• A quick dive into the extended Context Mapping vocabulary designed for Integration Architecture,\n• Examples inspired by real-life scenarios,\n• A Q&A with live modelling over questions!",
     "date": "2026-11-05",
-    "eventType": "Stream",
-    "tags": ["Stream"],
+    "eventType": "Webinar",
+    "tags": ["Webinar"],
+    "speakers": [
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      },
+      {
+        "name": "Philipp Kostyra",
+        "role": "DDD Coach",
+        "photo": "/Philipp_portrait.webp"
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
@@ -1882,11 +2039,25 @@
   },
   {
     "name": "Loosely Coupled - CarWash - an AI video experiment!",
+    "eventId": "03kbyE",
     "img": "/events/Loosely_Coupled_CarWash_-_an_AI_video_experiment.webp",
     "description": "On a daily basis we are flooded by content. All sorts of content. Some platforms fight it, other welcome it. In any case the amount of content online has grown exponentially since ChatGPT was released. Is that a problem? Or is it something that can bring benefits?\n\nOn a daily basis we are flooded by content. All sorts of content. Some platforms fight it, other welcome it. In any case the amount of content online has grown exponentially since ChatGPT was released. Is that a problem? Or is it something that can bring benefits?\n\nFrom the perspective of a user of social media it is harder and harder to filter out AI slop. Platforms like LinkedIn offer mechanisms like “Seems like AI slop”, “Not interested”, or “Unfollow…”. At the same time they promote and suggest such content on interest based algorithms and promote their own AI tools for social media.\n\nA very different situation happens on platforms like YouTube. AI generated content dominates the “Shorts” feed. Synthesized voice, copy pasted video snippets unrelated to the voiceover. Plenty of videos fully generated by AI. Some better, some worse - quality of content is always subjective. The question is how the algorithm treats this content?\n\nThis episode we’ll be doing something different! We’ll look at an AI experiment and real numbers! Joining us for the conversation is Dr. Markus Schmidberger, who is currently running such experiments on YouTube and Tiktok! We’ll discuss AI generated content using a real-life example, and its consequences on the world we live in!",
     "date": "2026-12-09",
     "eventType": "Stream",
     "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      },
+      {
+        "name": "Markus Schmidberger",
+        "role": "Enterprise AI Advisor & Leadership Coach",
+        "photo": "Markus_Schmidberger.webp"
+      }
+    ],
     "details": {
       "date": {
         "type": "date",
