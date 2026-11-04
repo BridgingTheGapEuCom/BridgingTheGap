@@ -94,7 +94,9 @@ const eventsForType = computed(() =>
 
 function resolveHashEvent(hash: string): Event | undefined {
   const stableAnchor = hash.replace(/^#/, '')
-  const stableMatch = allEvents.find((event) => eventAnchor(event) === stableAnchor)
+  const stableMatch = allEvents.find(
+    (event) => eventAnchor(event) === stableAnchor || event.eventId === stableAnchor
+  )
   if (stableMatch) return stableMatch
 
   const legacyMatch = hash.match(/^#event_(\d+)(?:_pre)?$/)
@@ -174,6 +176,7 @@ let updateActiveFromScroll: (() => void) | undefined
 let isNavigatingToEvent = false
 let navigationEndTimer: number | undefined
 let removeNavigationEndListener: (() => void) | undefined
+let hashChangeHandler: (() => void) | undefined
 let eventSections: HTMLElement[] = []
 let isExtendingRange = false
 let rangeExtensionEndTimer: number | undefined
@@ -390,8 +393,17 @@ async function initializeScrolling() {
   if (!scrollRoot) return
 
   const fragmentAnchor = decodeURIComponent(window.location.hash.replace(/^#/, ''))
-  const stableTarget = document.getElementById(fragmentAnchor)
   const fragmentEvent = resolveHashEvent(window.location.hash)
+  if (
+    fragmentEvent &&
+    eventsForType.value.includes(fragmentEvent) &&
+    eventStart(fragmentEvent) < rangeStart.value
+  ) {
+    rangeStart.value = eventStart(fragmentEvent).startOf('month')
+    await nextTick()
+  }
+
+  const stableTarget = document.getElementById(fragmentAnchor)
   const initialAnchor = stableTarget?.dataset.eventAnchor
     ? stableTarget.dataset.eventAnchor
     : fragmentEvent && visibleEvents.value.includes(fragmentEvent)
@@ -462,11 +474,41 @@ async function initializeScrolling() {
   updateActiveFromScroll?.()
 }
 
-onMounted(() => void initializeScrolling())
+async function navigateToHashEvent() {
+  const fragmentEvent = resolveHashEvent(window.location.hash)
+  if (!fragmentEvent || !eventsForType.value.includes(fragmentEvent)) return
+
+  if (eventStart(fragmentEvent) < rangeStart.value) {
+    rangeStart.value = eventStart(fragmentEvent).startOf('month')
+    await nextTick()
+    refreshEventSections()
+  }
+
+  const anchor = eventAnchor(fragmentEvent)
+  const fragmentAnchor = decodeURIComponent(window.location.hash.replace(/^#/, ''))
+  const target = document.getElementById(fragmentAnchor) ?? document.getElementById(anchor)
+  if (!target) return
+
+  cancelNavigationEndWait()
+  isNavigatingToEvent = true
+  setActive(anchor, false)
+  scrollEventIntoView(target, 'auto')
+  navigationEndTimer = window.setTimeout(() => {
+    isNavigatingToEvent = false
+    navigationEndTimer = undefined
+  }, 150)
+}
+
+onMounted(() => {
+  hashChangeHandler = () => void navigateToHashEvent()
+  window.addEventListener('hashchange', hashChangeHandler)
+  void initializeScrolling()
+})
 
 onBeforeUnmount(() => {
   observer?.disconnect()
   cancelNavigationEndWait()
+  if (hashChangeHandler) window.removeEventListener('hashchange', hashChangeHandler)
   if (rangeExtensionEndTimer !== undefined) window.clearTimeout(rangeExtensionEndTimer)
   const scrollRoot = document.getElementById('body')
   if (scrollRoot && bodyScrollHandler) scrollRoot.removeEventListener('scroll', bodyScrollHandler)
