@@ -1,4 +1,5 @@
 <template>
+  <span :id="event.eventId" class="event-id-anchor" aria-hidden="true" />
   <section
     :id="anchor"
     :data-event-anchor="anchor"
@@ -73,6 +74,12 @@ function formatMonth(date: ReturnType<typeof eventStart>) {
 </script>
 
 <style scoped>
+.event-id-anchor {
+  display: block;
+  height: 0;
+  scroll-margin-top: 6.5rem;
+}
+
 .event-section {
   position: relative;
   display: grid;
@@ -202,6 +209,10 @@ h2 {
 }
 
 @media (max-width: 40rem) {
+  .event-id-anchor {
+    scroll-margin-top: 8.75rem;
+  }
+
   .event-section {
     padding-left: 1.45rem;
     scroll-margin-top: 8.75rem;

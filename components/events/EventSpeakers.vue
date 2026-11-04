@@ -1,20 +1,24 @@
 <template>
-  <section v-if="speakers.length" class="event-speakers" aria-labelledby="speaker-heading">
-    <h3 id="speaker-heading">Speakers</h3>
-    <ul>
-      <li v-for="speaker in speakers" :key="speaker.name">
-        <img
-          v-if="speaker.photo"
-          :src="photoSource(speaker.photo)"
-          :alt="`${speaker.name} portrait`"
-        />
-        <span v-else class="speaker-initials" aria-hidden="true">{{ initials(speaker.name) }}</span>
-        <span>
-          <strong>{{ speaker.name }}</strong>
-          <small v-if="speaker.role">{{ speaker.role }}</small>
-        </span>
-      </li>
-    </ul>
+  <section v-if="participantGroups.length" class="event-speakers" aria-label="Event participants">
+    <div v-for="group in participantGroups" :key="group.label" class="participant-group">
+      <h3>{{ group.label }}</h3>
+      <ul>
+        <li v-for="speaker in group.people" :key="speaker.name">
+          <img
+            v-if="speaker.photo"
+            :src="photoSource(speaker.photo)"
+            :alt="`${speaker.name} portrait`"
+          />
+          <span v-else class="speaker-initials" aria-hidden="true">
+            {{ initials(speaker.name) }}
+          </span>
+          <span>
+            <strong>{{ speaker.name }}</strong>
+            <small v-if="speaker.role">{{ speaker.role }}</small>
+          </span>
+        </li>
+      </ul>
+    </div>
   </section>
 </template>
 
@@ -23,6 +27,13 @@ import { EventType, type EventSpeaker } from '~/Types/Event'
 import { resolveStreamSpeakerPhoto } from '~/utils/streamEvent'
 
 const props = defineProps<{ speakers: EventSpeaker[]; eventType: EventType }>()
+
+const participantGroups = computed(() =>
+  [
+    { label: 'Speakers', people: props.speakers.filter((speaker) => !speaker.isHost) },
+    { label: 'Hosts', people: props.speakers.filter((speaker) => speaker.isHost) }
+  ].filter((group) => group.people.length)
+)
 
 function photoSource(photo: string) {
   return props.eventType === EventType.Stream ? resolveStreamSpeakerPhoto(photo) : photo
@@ -39,6 +50,11 @@ function initials(name: string) {
 </script>
 
 <style scoped>
+.event-speakers {
+  display: grid;
+  gap: 1.25rem;
+}
+
 .event-speakers h3 {
   margin: 0 0 0.65rem;
   color: var(--editorial-muted);
