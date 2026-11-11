@@ -1292,5 +1292,61 @@
       }
     ],
     "reviewers": []
+  },
+  {
+    "name": "AI_in_the_Integration_Architecture_Landscape",
+    "title": "AI in the Integration Architecture Landscape",
+    "short": "A few years ago, before the AI boom, a typical Enterprise Application Integration landscape could be simplified to something like this: Application → Integration Layer → Application. Today, many enterprises are experimenting with changing this model by introducing AI into the integration landscape - or, in some cases, considering whether AI could replace parts of the traditional integration layer altogether.",
+    "tags": ["The Hard Parts", "AI"],
+    "relatedTags": ["The Hard Parts", "AI"],
+    "publishDate": "2026-11-11",
+    "lastUpdate": "2026-11-11",
+    "authors": [
+      {
+        "author": "Radosław Przewuski",
+        "link": "https://www.linkedin.com/in/rados%C5%82aw-przewuski/",
+        "photo": "/Radek.webp",
+        "title": "Integration Platforms Expert",
+        "mail": "radek@bridgingthegap.eu.com"
+      }
+    ],
+    "coAuthors": [
+      {
+        "author": "Karol Skrzymowski",
+        "link": "https://www.linkedin.com/in/karolskrzymowski/"
+      },
+      {
+        "author": "Hubert Drabczyk",
+        "link": "https://www.linkedin.com/in/hubert-drabczyk-63b06628/"
+      },
+      {
+        "author": "Dominik Kruszewski",
+        "link": "https://www.linkedin.com/in/dominik-kruszewski-a30829aa/"
+      }
+    ],
+    "bibliography": [
+      {
+        "title": "OWASP Top 10 for Large Language Model Applications – LLM01:2025 Prompt Injection",
+        "link": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+        "ISBN": "",
+        "type": "article",
+        "author": "OWASP GenAI Security Project"
+      },
+      {
+        "title": "OWASP Top 10 for Large Language Model Applications – LLM06:2025 Excessive Agency",
+        "link": "https://genai.owasp.org/llmrisk/llm062025-excessive-agency/",
+        "ISBN": "",
+        "type": "article",
+        "author": "OWASP GenAI Security Project"
+      },
+      {
+        "title": "Model Deprecations",
+        "link": "https://docs.anthropic.com/en/docs/about-claude/model-deprecations",
+        "ISBN": "",
+        "type": "article",
+        "author": "Anthropic"
+      }
+    ],
+    "reviewers": []
   }
 ]
