@@ -2072,5 +2072,77 @@
     },
     "LN": "https://www.linkedin.com/events/7516227054443388928/",
     "YT": "https://youtube.com/live/kygxlboaEJQ"
+  },
+  {
+    "name": "Loosely Coupled - Building Successful Communities of Practice",
+    "eventId": "03g7Di",
+    "img": "/events/Loosely_Coupled_Building_Successful_Communities_of_Practice.webp",
+    "description": "When does a group of people become a community? And furthermore what makes that group a community of practice? I have wondered about this particular topic for a longer period of time, as I always struggled with being part of a community. \n\nWhen does a group of people become a community? And furthermore what makes that group a community of practice? I have wondered about this particular topic for a longer period of time, as I always struggled with being part of a community. \n\nWe have discussed communities on Loosely Coupled before. We touched upon the benefits of being a community member. We discussed the growth opportunities, new friendships and growing your network and opportunities. This episode, we’ll dig into something a little bit different - how to build successful communities of practice. Being a member of a community and actively working towards building and growing it are two different things! Is it something we can actually strategically plan? What should we focus on, and when is it relevant to do so?\n\nJoining us this episode is Emily Webber, an organisational consultant, coach, trainer and the author of “Building Successful Communities of Practice”. Emily will share with us her passion for creating environments that enable people to thrive so that organisations can thrive, and the findings on building communities that she gathered over the last 10 years since releasing the first edition of her book, which led to the release of the 2nd edition in April this year!\n\nJoin the conversation!",
+    "date": "2026-11-28",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      },
+      {
+        "name": "Emily Webber",
+        "role": "Organisational consultant",
+        "photo": "Emily_Webber.webp"
+      }
+    ],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-11-28",
+        "endDate": "2026-11-28",
+        "startTime": "14:00",
+        "endTime": "16:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Building Successful Communities of Practice",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7528398665007378433/",
+    "YT": "https://youtube.com/live/gPCx5nCKTKE"
+  },
+   {
+    "name": "Loosely Coupled - Language-Driven Development and the importance of language in software architecture",
+    "eventId": "03zpzG",
+    "img": "/events/Loosely_Coupled_Language-Driven_Development_and_the_importance_of_language_in_software_architecture.webp",
+    "description": "Language is one of the first things we learn to use and at the same time we make the most mistakes using. It is our tool of precision or lack of thereof. Using a language we express logical statements, emotions and intent. Each language we use, whether it is our native spoken or written language, dialect, slang, professional jargon or in the case of software engineers - programming languages - carries intent! We describe intent using words, diagrams, code, then often argue about the assumptions, misconceptions, inconsistent dictionaries. We all have different mental models, understand words and symbols in slightly different ways.\n\nLanguage is one of the first things we learn to use and at the same time we make the most mistakes using. It is our tool of precision or lack of thereof. Using a language we express logical statements, emotions and intent. Each language we use, whether it is our native spoken or written language, dialect, slang, professional jargon or in the case of software engineers - programming languages - carries intent! We describe intent using words, diagrams, code, then often argue about the assumptions, misconceptions, inconsistent dictionaries. We all have different mental models, understand words and symbols in slightly different ways.\n\nThis is why a significant number of people practice Domain-Driven Design (DDD) which puts an emphasis on ubiquitous language - the language that is cohesive within a specific bounded context, business domain. It is created organically by people working in their respective domains and we discover it through clashing mental models through the practice of collaborative modelling such as EventStorming or Domain Storytelling.\n\nBut what if we take a different route and start our design processes with designing the language instead of jumping straight into processes and architecture? This is where Language-Driven Development (LDD) comes into play and this is exactly what we’ll dive into in this episode of Loosely Coupled! Our guest is Masoud Bahrami, software architect and the author of “Language-Driven Design: A Pattern Language for Software Architecture”! Together we’ll dive into how LDD can change the way we design software!\n\nJoin the conversation!",
+    "date": "2027-01-20",
+    "eventType": "Stream",
+    "tags": ["Stream"],
+    "speakers": [
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      },
+      {
+        "name": "Masoud Bahrami",
+        "role": "Software Architect",
+        "photo": "Masoud_Bahrami.webp"
+      }
+    ],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2027-01-20",
+        "endDate": "2027-01-20",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Language-Driven Development and the importance of language in software architecture",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7528409677500506113/",
+    "YT": "https://youtube.com/live/aN9al6VGqjU"
   }
 ]
