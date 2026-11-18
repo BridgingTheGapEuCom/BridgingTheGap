@@ -663,6 +663,20 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.3.tgz#c2b9d2e374ee62c586d3adbea87199b1d7a7a6ba"
   integrity sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==
 
+"@iconify-json/akar-icons@^1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@iconify-json/akar-icons/-/akar-icons-1.2.7.tgz#aba9f3b3f734a89b8121d779530d04fde05a27fc"
+  integrity sha512-cw44dCnZgGhm6Tywxm0WALAnDB9AyGkDk7kiLMo2B/Ayt7duZu/uyrsqb55weWUN8Ge2sQAOl8MRtT6bFcLzPg==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/ant-design@^1.2.9":
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/@iconify-json/ant-design/-/ant-design-1.2.9.tgz#4d0e84b691e0f951824159a612a32afb59fe41e7"
+  integrity sha512-cAP5tQXUj05Hb0o3nyjEzYofuU5luRm6IV4FNZ3KQkG2cfzvmM34WYJuNLA3/sWqfE0cHSaaaEGvIdAUq+bN2Q==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/mdi@^1.2.3":
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/@iconify-json/mdi/-/mdi-1.2.3.tgz#5e4ee9d8c8aaad04381c8cc6c6edbe3327f031b5"

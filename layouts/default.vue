@@ -29,16 +29,27 @@
     <footer class="site-footer">
       <div>
         <span><strong>BridgingTheGap.eu.com</strong> © {{ new Date().getFullYear() }}</span>
-        <span>
-          Created by the
-          <NuxtLink to="/about">BridgingTheGap.eu.com team</NuxtLink>
-          and licensed under
-          <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="license">
-            CC BY 4.0 <CreativeCommonsIcon class="inline-license-icon" /><CreativeCommonsByIcon
-              class="inline-license-icon"
-            />
+        <div class="footer-meta">
+          <a
+            class="footer-discord"
+            href="https://discord.gg/xgBaEU9kf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon name="akar-icons:discord-fill" aria-hidden="true" />
+            Discord
           </a>
-        </span>
+          <span>
+            Created by the
+            <NuxtLink to="/about">BridgingTheGap.eu.com team</NuxtLink>
+            and licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="license">
+              CC BY 4.0 <CreativeCommonsIcon class="inline-license-icon" /><CreativeCommonsByIcon
+                class="inline-license-icon"
+              />
+            </a>
+          </span>
+        </div>
       </div>
     </footer>
   </div>

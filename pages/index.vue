@@ -96,9 +96,20 @@
         <strong>Vendor-neutral. Architect-focused. Community-driven.</strong>
         <span>BridgingTheGap.eu.com in Enterprise Application Integration.</span>
       </p>
-      <NuxtLink class="text-action" to="/aboutTheProject"
-        >Learn more about us <span>→</span></NuxtLink
-      >
+      <div class="home-statement-actions">
+        <a
+          class="home-discord-link"
+          href="https://discord.gg/xgBaEU9kf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon name="akar-icons:discord-fill" aria-hidden="true" />
+          Join us on Discord
+        </a>
+        <NuxtLink class="text-action" to="/aboutTheProject"
+          >Learn more about us <span>→</span></NuxtLink
+        >
+      </div>
     </section>
   </div>
 </template>
