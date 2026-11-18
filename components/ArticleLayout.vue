@@ -27,7 +27,10 @@
           </div>
         </div>
 
-        <dl class="article-metadata">
+        <dl
+          class="article-metadata"
+          :class="{ 'article-metadata--without-reviewers': !sortedReviewers.length }"
+        >
           <div v-if="articleMeta.coAuthors?.length">
             <dt>Co-authors</dt>
             <dd v-for="author in articleMeta.coAuthors" :key="author.author">
@@ -73,6 +76,16 @@
               <path d="M8 3v4M16 3v4M4 10h16M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01" />
             </svg>
             <time :datetime="articleMeta.publishDate">{{ publishedDate }}</time>
+          </div>
+          <div class="article-summary-community">
+            <a href="https://discord.gg/xgBaEU9kf" target="_blank" rel="noopener noreferrer">
+              <Icon
+                name="ant-design:discord-outlined"
+                aria-hidden="true"
+                class="article-summary-community-icon"
+              />
+              Discord
+            </a>
           </div>
         </div>
       </header>
