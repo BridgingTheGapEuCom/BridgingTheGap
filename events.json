@@ -2144,5 +2144,43 @@
     },
     "LN": "https://www.linkedin.com/events/7528409677500506113/",
     "YT": "https://youtube.com/live/aN9al6VGqjU"
+  },
+  {
+    "eventId": "03hEdO",
+    "name": "Domain-driven Web APIs",
+    "img": "/events/Loosely_Coupled_Domain-driven_Web_APIs.webp",
+    "description": "APIs are the fundamental building block of today’s IT Ecosystems. But do we really understand what purpose they serve? Do we understand when we’re building them the right  way for the process they are supporting? Or are we defaulting to a CRUDish behaviour with JSON, HTTP verbs and we dub that REST?\n\nThere are different types of APIs. We can classify them by protocol, by use, whether they are private, internal or external… The list goes on. APIs also bring with them the concept of contracts, which often people minimize to having an OpenAPI Specification or a conversation between two devs. Is that all that there is when discussing APIs? Specs and payloads?\n\nThis episode we’ll be taking a deep dive into Domain-driven web APIs - we’ll explore the intersection of Domain-Driven Design and building APIs! What can we learn from DDD when designing APIs for our systems, SaaS products or providing interoperability at ecosystem scale?\n\nJoining us this episode is Asbjørn Ulsberg, who dubs himself the “Code janitor”, Software Developer by hobby since 1989, professionally since 2000. Developer by day, demoscener by night, Asbjørn will guide us through the concepts of designing web APIs in a domain-driven manner and how they differ from what can be commonly found in many organizations!\n\nJoin the discussion!",
+    "date": "2026-12-02",
+    "eventType": "Stream",
+    "tags": [
+      "Stream"
+    ],
+    "details": {
+      "date": {
+        "type": "date",
+        "startDate": "2026-12-02",
+        "endDate": "2026-12-02",
+        "startTime": "19:00",
+        "endTime": "21:00"
+      },
+      "place": "Live Stream on LinkedIn and YouTube",
+      "eventTopic": "Domain-driven Web APIs",
+      "eventType": "Live Stream Discussion"
+    },
+    "LN": "https://www.linkedin.com/events/7529140421097168897/",
+    "YT": "https://youtube.com/live/d5QW6KvdgcA",
+    "speakers": [
+      {
+        "name": "Asbjørn Ulsberg",
+        "role": "Code janitor",
+        "photo": "Asbjorn_Ulsberg.webp"
+      },
+      {
+        "name": "Karol Skrzymowski",
+        "role": "Integration Architect",
+        "photo": "/Karol_portrait.webp",
+        "isHost": true
+      }
+    ]
   }
 ]
